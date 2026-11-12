@@ -1,0 +1,4 @@
+const CACHE='exam-static-2026-11-12-v2';
+self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(c=>c.addAll(['./','index.html','tasks_5_to_9_corrected.json','higher_grades_corrected.json','curriculum_units.json','OFFLINE_MEDIA_MANIFEST.json']))).then(()=>self.skipWaiting()));
+self.addEventListener('activate',event=>event.waitUntil(self.clients.claim()));
+self.addEventListener('fetch',event=>{const req=event.request;if(req.method!=='GET'||new URL(req.url).origin!==location.origin)return;event.respondWith((async()=>{const cache=await caches.open(CACHE);const hit=await cache.match(req,{ignoreSearch:true});if(hit)return hit;try{const res=await fetch(req);if(res.ok&&res.type!=='opaque')cache.put(req,res.clone());return res;}catch(e){if(req.mode==='navigate')return await cache.match('index.html');throw e}})())});

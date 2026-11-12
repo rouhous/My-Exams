@@ -1,0 +1,8 @@
+g7-a: 40 marks; listening scripts 46/45/44/44/45; dialogue 190; cloze 86; narrative 233
+g7-b: 40 marks; listening scripts 43/43/43/44/42; dialogue 193; cloze 85; narrative 236
+g7-c: 40 marks; listening scripts 46/46/45/43/44; dialogue 195; cloze 85; narrative 238
+g7-d: 40 marks; listening scripts 41/45/45/43/43; dialogue 195; cloze 88; narrative 238
+g8-a: 40 marks; listening scripts 45/44/45/43/42; dialogue 193; cloze 86; narrative 236
+g8-b: 40 marks; listening scripts 43/43/42/44/42; dialogue 194; cloze 85; narrative 237
+g8-c: 40 marks; listening scripts 42/44/42/40/42; dialogue 195; cloze 85; narrative 238
+g8-d: 40 marks; listening scripts 40/41/43/45/43; dialogue 197; cloze 88; narrative 240

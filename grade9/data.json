@@ -1,0 +1,2870 @@
+{
+  "version": "2026-11-12-grade9-unit-allocation-prototype",
+  "models": [
+    {
+      "model": "A",
+      "grade": 9,
+      "minutes": 120,
+      "marks": 40,
+      "theme": "Practical community skills",
+      "tasks": [
+        {
+          "id": "g9-A-L1",
+          "skill": "listening",
+          "group": 1,
+          "title": "Listening 1 — Choose the picture",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "Where will the club meet?",
+              "choices": [
+                "school",
+                "library",
+                "sports hall"
+              ],
+              "images": [
+                "images/illustration-1-1.png",
+                "images/illustration-1-2.png",
+                "images/illustration-1-3.png"
+              ],
+              "answer": 1,
+              "script": "Our environment club is planning its next meeting. We usually meet at school, but the hall is being repaired. Someone suggested the sports centre, but it closes too early. This Thursday, we will use the public library, where a quiet room has already been booked."
+            },
+            {
+              "stem": "Which hobby did the speaker choose?",
+              "choices": [
+                "art palette",
+                "football",
+                "camera"
+              ],
+              "images": [
+                "images/illustration-2-1.png",
+                "images/illustration-2-2.png",
+                "images/illustration-2-3.png"
+              ],
+              "answer": 0,
+              "script": "I wanted to try something creative after school. My brother plays football, and my cousin takes photographs. I enjoy both, but this term I have joined an art club. I have bought a paintbrush and a small palette because we are learning watercolour painting."
+            },
+            {
+              "stem": "What weather does the latest forecast predict?",
+              "choices": [
+                "sunny",
+                "rainy",
+                "snowy"
+              ],
+              "images": [
+                "images/illustration-3-1.png",
+                "images/illustration-3-2.png",
+                "images/illustration-3-3.png"
+              ],
+              "answer": 1,
+              "script": "We are planning a class trip tomorrow, so everyone has checked the weather. Yesterday, the forecast showed sunshine, and one website even mentioned cold winds. This morning, however, the updated forecast says there will be rain for most of the day. Remember to bring a jacket."
+            },
+            {
+              "stem": "What is the confirmed time of the event?",
+              "choices": [
+                "3 oclock",
+                "7 oclock",
+                "5 oclock"
+              ],
+              "images": [
+                "images/illustration-4-1.png",
+                "images/illustration-4-2.png",
+                "images/illustration-4-3.png"
+              ],
+              "answer": 2,
+              "script": "Please note a change to the community festival programme. Some posters showed three o'clock, and an early email said seven o'clock. The organisers have now confirmed that the opening performance will begin at five o'clock. Please arrive at least fifteen minutes before the show."
+            },
+            {
+              "stem": "What is the family's weekend plan?",
+              "choices": [
+                "beach",
+                "camping",
+                "shopping"
+              ],
+              "images": [
+                "images/illustration-5-1.png",
+                "images/illustration-5-2.png",
+                "images/illustration-5-3.png"
+              ],
+              "answer": 1,
+              "script": "My family discussed what to do this weekend. My sister wanted to go shopping, and my father suggested spending the afternoon at the beach. We finally decided to go camping in the mountains, because everyone wanted to spend the night outdoors and watch the stars."
+            }
+          ],
+          "audio": "audio/g9-a-listening-1.mp3",
+          "transcript": "Text 1. Our environment club is planning its next meeting. We usually meet at school, but the hall is being repaired. Someone suggested the sports centre, but it closes too early. This Thursday, we will use the public library, where a quiet room has already been booked.\n\nText 2. I wanted to try something creative after school. My brother plays football, and my cousin takes photographs. I enjoy both, but this term I have joined an art club. I have bought a paintbrush and a small palette because we are learning watercolour painting.\n\nText 3. We are planning a class trip tomorrow, so everyone has checked the weather. Yesterday, the forecast showed sunshine, and one website even mentioned cold winds. This morning, however, the updated forecast says there will be rain for most of the day. Remember to bring a jacket.\n\nText 4. Please note a change to the community festival programme. Some posters showed three o'clock, and an early email said seven o'clock. The organisers have now confirmed that the opening performance will begin at five o'clock. Please arrive at least fifteen minutes before the show.\n\nText 5. My family discussed what to do this weekend. My sister wanted to go shopping, and my father suggested spending the afternoon at the beach. We finally decided to go camping in the mountains, because everyone wanted to spend the night outdoors and watch the stars.",
+          "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C).",
+          "naturalAudioAvailable": true
+        },
+        {
+          "id": "g9-A-L2",
+          "skill": "listening",
+          "group": 2,
+          "title": "Listening 2 — Interview",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "Where was the first episode recorded?",
+              "choices": [
+                "the library",
+                "the sports hall",
+                "the old science classroom"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "When did the team start?",
+              "choices": [
+                "September",
+                "January",
+                "October"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Who may apply?",
+              "choices": [
+                "teachers only",
+                "Grade Twelve only",
+                "Grades Eight and Nine"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "When do they meet?",
+              "choices": [
+                "Tuesday after school",
+                "Friday morning",
+                "Sunday evening"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "What skill did they learn?",
+              "choices": [
+                "checking facts",
+                "painting walls",
+                "playing football"
+              ],
+              "answer": 0
+            }
+          ],
+          "audio": "audio/g9-a-listening-2.mp3",
+          "transcript": "Interviewer: Welcome to Student Voices. Today we are speaking with Maha about the community radio project. Why was this project started?\n\nMaha: We wanted to help our school in a practical way, not just read about problems. Students suggested ideas, and our teachers helped us organise a small team.\n\nInterviewer: Tell us about your first activity.\n\nMaha: The first episode was recorded in the old science classroom. We chose something manageable and listened to feedback from other students.\n\nInterviewer: When did everything begin?\n\nMaha: The team began in October. We prepared the materials together and agreed on simple responsibilities.\n\nInterviewer: Who can get involved?\n\nMaha: Students from Grades Eight and Nine can apply. Everyone needs to show respect and take turns.\n\nInterviewer: When does the group meet?\n\nMaha: We meet every Tuesday after school. We try to finish each session with a useful plan for the next one.\n\nInterviewer: What is the most important lesson?\n\nMaha: We learned how to check a story before sharing it. It has also helped us become more confident when explaining our ideas.\n\nInterviewer: Would you recommend joining?\n\nMaha: Yes. Try something small, listen to others, and keep improving. We are proud that young people can lead meaningful changes, even when resources are limited and progress takes time. Thank you for inviting me.",
+          "instructions": "Listen to the interview twice. Choose the correct answer (A, B or C).",
+          "naturalAudioAvailable": true
+        },
+        {
+          "id": "g9-A-GV",
+          "skill": "grammar_vocabulary",
+          "group": 1,
+          "title": "Grammar & Vocabulary — One cloze",
+          "marks": 10,
+          "passage": "Last month, our class (1) ____ a small repair café at school. We (2) ____ old objects instead of throwing them away. We (3) ____ the broken items. Our teacher showed us how to work (4) ____. Each had a (5) ____. Some students fixed chairs while others (6) ____ posters. The project was (7) ____ than we expected. We felt (8) ____ because our efforts saved materials. Next term, we (9) ____ to invite parents and (10) ____ more useful skills.",
+          "items": [
+            {
+              "stem": "Gap 1",
+              "choices": [
+                "start",
+                "started",
+                "starting",
+                "starts"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 2",
+              "choices": [
+                "collect",
+                "collected",
+                "collecting",
+                "collection"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 3",
+              "choices": [
+                "examined",
+                "examines",
+                "examining",
+                "examine"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 4",
+              "choices": [
+                "safe",
+                "safety",
+                "safer",
+                "safely"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 5",
+              "choices": [
+                "roll",
+                "rule",
+                "road",
+                "role"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 6",
+              "choices": [
+                "design",
+                "designing",
+                "designed",
+                "designs"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 7",
+              "choices": [
+                "busy",
+                "busier",
+                "busiest",
+                "busily"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 8",
+              "choices": [
+                "pride",
+                "proud",
+                "proudly",
+                "proudest"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 9",
+              "choices": [
+                "hope",
+                "hoped",
+                "hopes",
+                "hoping"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 10",
+              "choices": [
+                "learning",
+                "learned",
+                "learns",
+                "learn"
+              ],
+              "answer": 3
+            }
+          ],
+          "instructions": "Read the text. For each gap (1–10), choose the correct option (A, B, C or D)."
+        },
+        {
+          "id": "g9-A-R1",
+          "skill": "reading",
+          "group": 1,
+          "title": "Reading 1 — Matching",
+          "marks": 4,
+          "passage": "Match each person (1–4) with a suitable activity (A–E). One activity is extra.",
+          "people": [
+            "Hamad has a bicycle with a damaged light and wants to learn how to fix it.",
+            "Rana enjoys telling stories and hopes to record interviews with older relatives.",
+            "Bilal is interested in helping younger children improve their reading.",
+            "Maryam would like to grow plants in a small space at home."
+          ],
+          "options": [
+            "A free weekly book club pairs older readers with younger pupils.",
+            "The rooftop garden workshop teaches container planting and careful watering.",
+            "The community repair hub shows visitors how to maintain bicycles safely.",
+            "A weekend recording club teaches audio interviews and oral history.",
+            "The athletics centre offers team games on Friday mornings."
+          ],
+          "items": [
+            {
+              "stem": "Person 1: Hamad has a bicycle with a damaged light and wants to learn how to fix it.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Person 2: Rana enjoys telling stories and hopes to record interviews with older relatives.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Person 3: Bilal is interested in helping younger children improve their reading.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Person 4: Maryam would like to grow plants in a small space at home.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 1
+            }
+          ],
+          "instructions": "Read the four short descriptions and the five activity descriptions. Match each person to an activity."
+        },
+        {
+          "id": "g9-A-R2",
+          "skill": "reading",
+          "group": 2,
+          "title": "Reading 2 — Short answers",
+          "marks": 6,
+          "passage": "The town library recently began lending useful objects as well as books. The idea came from volunteers who noticed that families sometimes purchased equipment for a single project and never used it again. The new service offers tools for repairing furniture, simple measuring devices, and small kits for science activities. Users can borrow an item for one week after attending a short safety introduction. Some residents welcomed the scheme because it reduces unnecessary spending and encourages people to reuse resources. Others worried that borrowed equipment might be damaged or returned late. To address these concerns, the library introduced a booking system, clear instructions, and a team that checks every item when it comes back.\n\nAfter three months, the organisers collected feedback from sixty families. Most said they had completed a task they would otherwise have delayed. Several parents also reported working more closely with their children when using the science kits. Yet the project was not perfect. Popular tools were often unavailable during weekends, and some borrowers found the collection hours inconvenient. The library responded by extending opening hours on one afternoon and accepting suggestions for future equipment.\n\nThe coordinator believes that a library should offer more than objects to borrow. She wants residents to share practical knowledge, ask questions, and help one another. Next year, volunteers hope to provide repair demonstrations led by local experts. The council has not promised additional funding, so expansion will depend on donations and community involvement. The project illustrates how a small change to a familiar public service can encourage cooperation, but it also shows why organisers must listen carefully to users before deciding how to grow.",
+          "passageTitle": "A Library of Things",
+          "items": [
+            {
+              "stem": "Why did the library introduce the new service?",
+              "answers": [
+                "families bought equipment for one use"
+              ]
+            },
+            {
+              "stem": "How long may people borrow an item?",
+              "answers": [
+                "one week"
+              ]
+            },
+            {
+              "stem": "What do users attend before borrowing?",
+              "answers": [
+                "a short safety introduction"
+              ]
+            },
+            {
+              "stem": "What problem affected weekends?",
+              "answers": [
+                "popular tools were unavailable"
+              ]
+            },
+            {
+              "stem": "How did the library respond to inconvenient collection hours?",
+              "answers": [
+                "extended opening hours"
+              ]
+            },
+            {
+              "stem": "What will determine whether the project expands?",
+              "answers": [
+                "donations and community involvement"
+              ]
+            }
+          ],
+          "instructions": "Read the text, then answer the six questions in short answers."
+        },
+        {
+          "id": "g9-A-W1",
+          "skill": "writing",
+          "group": 1,
+          "title": "Writing 1 — Story",
+          "marks": 5,
+          "prompt": "Write a story about a small mistake that unexpectedly helped you learn something important. Describe the setting, the problem, and how it was resolved.",
+          "minWords": 100
+        },
+        {
+          "id": "g9-A-W2",
+          "skill": "writing",
+          "group": 2,
+          "title": "Writing 2 — Email",
+          "marks": 5,
+          "prompt": "Write an email to a friend explaining a creative community project you joined, what you did there, and why you would recommend it.",
+          "minWords": 100
+        }
+      ],
+      "unit_id": 1,
+      "unit_name": "Identity",
+      "allocation": "unit_target",
+      "verification": "pending_curriculum_content_review",
+      "original_theme": "Practical community skills"
+    },
+    {
+      "model": "B",
+      "grade": 9,
+      "minutes": 120,
+      "marks": 40,
+      "theme": "People and local heritage",
+      "tasks": [
+        {
+          "id": "g9-B-L1",
+          "skill": "listening",
+          "group": 1,
+          "title": "Listening 1 — Choose the picture",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "Which item did the speaker choose?",
+              "choices": [
+                "backpack",
+                "jacket",
+                "shoes"
+              ],
+              "images": [
+                "images/illustration-extra-1-1.png",
+                "images/illustration-extra-1-2.png",
+                "images/illustration-extra-1-3.png"
+              ],
+              "answer": 2,
+              "script": "I needed one useful item for my school activities last week. We considered backpack and jacket, but neither matched our needs. After reviewing the options, we chose shoes. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "Which sport did the speaker join?",
+              "choices": [
+                "swimming",
+                "running",
+                "cycling"
+              ],
+              "images": [
+                "images/illustration-extra-2-1.png",
+                "images/illustration-extra-2-2.png",
+                "images/illustration-extra-2-3.png"
+              ],
+              "answer": 0,
+              "script": "I compared different sports before joining a school club last week. We considered running and cycling, but neither matched our needs. After reviewing the options, we chose swimming. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "Where will the public event take place?",
+              "choices": [
+                "stadium",
+                "school building",
+                "park"
+              ],
+              "images": [
+                "images/illustration-extra-3-1.png",
+                "images/illustration-extra-3-2.png",
+                "images/illustration-extra-3-3.png"
+              ],
+              "answer": 0,
+              "script": "The organisers examined several locations for the public event last week. We considered school building and park, but neither matched our needs. After reviewing the options, we chose stadium. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "What weather does the latest forecast predict?",
+              "choices": [
+                "sunny",
+                "rainy",
+                "snowy"
+              ],
+              "images": [
+                "images/illustration-3-1.png",
+                "images/illustration-3-2.png",
+                "images/illustration-3-3.png"
+              ],
+              "answer": 0,
+              "script": "Our class looked carefully at the weather forecast last week. At first, we expected rainy weather, and some people predicted snowy conditions. However, the latest forecast says it will be sunny. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "Where will the club meet?",
+              "choices": [
+                "school",
+                "library",
+                "sports hall"
+              ],
+              "images": [
+                "images/illustration-1-1.png",
+                "images/illustration-1-2.png",
+                "images/illustration-1-3.png"
+              ],
+              "answer": 0,
+              "script": "Our club considered several places for its next meeting last week. We considered library and sports hall, but neither matched our needs. After reviewing the options, we chose school. We have now shared the final decision and everyone knows what to prepare."
+            }
+          ],
+          "audio": "audio/g9-b-listening-1.mp3",
+          "transcript": "Text 1. I needed one useful item for my school activities last week. We considered backpack and jacket, but neither matched our needs. After reviewing the options, we chose shoes. We have now shared the final decision and everyone knows what to prepare.\n\nText 2. I compared different sports before joining a school club last week. We considered running and cycling, but neither matched our needs. After reviewing the options, we chose swimming. We have now shared the final decision and everyone knows what to prepare.\n\nText 3. The organisers examined several locations for the public event last week. We considered school building and park, but neither matched our needs. After reviewing the options, we chose stadium. We have now shared the final decision and everyone knows what to prepare.\n\nText 4. Our class looked carefully at the weather forecast last week. At first, we expected rainy weather, and some people predicted snowy conditions. However, the latest forecast says it will be sunny. We have now shared the final decision and everyone knows what to prepare.\n\nText 5. Our club considered several places for its next meeting last week. We considered library and sports hall, but neither matched our needs. After reviewing the options, we chose school. We have now shared the final decision and everyone knows what to prepare.",
+          "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C)."
+        },
+        {
+          "id": "g9-B-L2",
+          "skill": "listening",
+          "group": 2,
+          "title": "Listening 2 — Interview",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "What did their first map show?",
+              "choices": [
+                "historic doors",
+                "local beaches",
+                "mountain animals"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "When was the project launched?",
+              "choices": [
+                "November",
+                "February",
+                "June"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Who shared old photographs?",
+              "choices": [
+                "families",
+                "shopkeepers only",
+                "football coaches"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "When does the team meet?",
+              "choices": [
+                "Monday morning",
+                "Thursday afternoon",
+                "Saturday evening"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "What did the team learn?",
+              "choices": [
+                "making jewellery",
+                "checking photo sources",
+                "repairing cars"
+              ],
+              "answer": 1
+            }
+          ],
+          "audio": "audio/g9-b-listening-2.mp3",
+          "transcript": "Interviewer: Welcome to our student voices programme. Today we are speaking with Salim about the heritage mapping team. Why was this project started? Salim: We wanted to help our school in a practical way, not just read about problems. Students suggested ideas, and our teachers helped us organise a small team. Interviewer: Tell us about your first activity. Salim: Their first map showed historic doors in their neighbourhood. We chose something manageable and listened to feedback from other students. Interviewer: When did everything begin? Salim: The project was launched in November. We prepared the materials together and agreed on simple responsibilities. Interviewer: Who can get involved? Salim: Families were invited to share old photographs. Everyone needs to show respect and take turns. Interviewer: When does the group meet? Salim: They meet on Thursday afternoons. We try to finish each session with a useful plan for the next one. Interviewer: What is the most important lesson? Salim: They now understand why photographs need clear sources. It has also helped us become more confident when explaining our ideas. Interviewer: Would you recommend joining? Salim: Yes. Try something small, listen to others, and keep improving. Thank you for inviting me. We are proud that young people can lead meaningful changes, even when resources are limited and progress takes time.",
+          "instructions": "Listen to the interview twice. Choose the correct answer (A, B or C)."
+        },
+        {
+          "id": "g9-B-GV",
+          "skill": "grammar_vocabulary",
+          "group": 1,
+          "title": "Grammar & Vocabulary — One cloze",
+          "marks": 10,
+          "passage": "During our school nature week, we (1) ____ a trail beside the playground. At first, the area (2) ____ untidy, so volunteers worked together. We placed (3) ____ near plants to explain their names. Each group (4) ____ a different part of the trail. We tried to (5) ____ water. We (6) ____ photographs for our records. The trail became (7) ____ after the clean-up. Visitors were (8) ____ by the results. We will (9) ____ the area regularly and share our (10) ____ with others.",
+          "items": [
+            {
+              "stem": "Gap 1",
+              "choices": [
+                "create",
+                "creating",
+                "created",
+                "creates"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 2",
+              "choices": [
+                "were",
+                "is",
+                "was",
+                "be"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 3",
+              "choices": [
+                "sings",
+                "signs",
+                "signals",
+                "sign"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 4",
+              "choices": [
+                "managed",
+                "manage",
+                "managing",
+                "manages"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 5",
+              "choices": [
+                "save",
+                "saved",
+                "saving",
+                "saves"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 6",
+              "choices": [
+                "take",
+                "taking",
+                "takes",
+                "took"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 7",
+              "choices": [
+                "clean",
+                "cleanest",
+                "cleaner",
+                "cleaning"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 8",
+              "choices": [
+                "impress",
+                "impressing",
+                "impressed",
+                "impressive"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 9",
+              "choices": [
+                "checked",
+                "check",
+                "checking",
+                "checks"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 10",
+              "choices": [
+                "findings",
+                "find",
+                "founded",
+                "finds"
+              ],
+              "answer": 0
+            }
+          ],
+          "instructions": "Read the text. For each gap (1–10), choose the correct option (A, B, C or D)."
+        },
+        {
+          "id": "g9-B-R1",
+          "skill": "reading",
+          "group": 1,
+          "title": "Reading 1 — Matching",
+          "marks": 4,
+          "passage": "Match each person (1–4) with a suitable activity (A–E). One activity is extra.",
+          "people": [
+            "Saeed wants to learn to check whether online stories are trustworthy.",
+            "Amal enjoys designing objects from materials that would otherwise be wasted.",
+            "Yusuf hopes to become more confident speaking to groups.",
+            "Noura likes studying the movement of stars through the night."
+          ],
+          "options": [
+            "Public speaking circles help learners practise short talks.",
+            "The astronomy group observes the sky and keeps nightly records.",
+            "A media workshop investigates sources and misleading headlines.",
+            "A reuse studio designs practical objects from discarded materials.",
+            "The swimming club offers beginners short water-safety lessons."
+          ],
+          "items": [
+            {
+              "stem": "Person 1: Saeed wants to learn to check whether online stories are trustworthy.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Person 2: Amal enjoys designing objects from materials that would otherwise be wasted.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Person 3: Yusuf hopes to become more confident speaking to groups.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Person 4: Noura likes studying the movement of stars through the night.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 1
+            }
+          ],
+          "instructions": "Read the four short descriptions and the five activity descriptions. Match each person to an activity."
+        },
+        {
+          "id": "g9-B-R2",
+          "skill": "reading",
+          "group": 2,
+          "title": "Reading 2 — Short answers",
+          "marks": 6,
+          "passage": "When a neighbourhood planned to improve its small square, the council invited teenagers to contribute ideas. Some adults were surprised because young people are rarely asked to comment on local planning. A group of pupils visited the site at different times of day. They recorded where people walked, which benches were used, and where shade was missing. Their first suggestion was an expensive new playground, but the council explained that the budget could not cover it.\n\nThe students then interviewed shopkeepers, parents, and older residents. Several adults preferred more seating, while children wanted room to play safely. The pupils revised their design, adding a shaded reading corner and keeping an open space for community events. A local architect helped them estimate costs, and they presented their work at a public meeting. Many residents praised the revised plan for considering people of different ages. However, others questioned whether teenagers understood the long-term costs of maintaining the site.\n\nThe council decided to test the plan using temporary benches and removable shade structures for two months. Volunteers collected comments during the trial, including reports about accessibility and cleanliness. The trial showed that the reading corner was popular, but its location blocked a busy pathway. The students moved it to a quieter area and prepared a second proposal.\n\nIn my view, young people should help design public spaces because they use them and notice problems that adults may overlook. Their ideas should not automatically become final decisions, though. Collaboration with engineers, local residents, and decision-makers helps turn enthusiasm into realistic improvements. The project was valuable because students learned to change their plans when new evidence appeared.",
+          "passageTitle": "Should Students Help Design Public Spaces?",
+          "items": [
+            {
+              "stem": "Who invited teenagers to suggest changes?",
+              "answers": [
+                "the council"
+              ]
+            },
+            {
+              "stem": "What did pupils first suggest?",
+              "answers": [
+                "an expensive new playground"
+              ]
+            },
+            {
+              "stem": "Why was the first proposal rejected?",
+              "answers": [
+                "the budget could not cover it"
+              ]
+            },
+            {
+              "stem": "Who helped pupils estimate costs?",
+              "answers": [
+                "a local architect"
+              ]
+            },
+            {
+              "stem": "How long did the council test the plan?",
+              "answers": [
+                "two months"
+              ]
+            },
+            {
+              "stem": "Why does the writer support student involvement?",
+              "answers": [
+                "young people notice overlooked problems"
+              ]
+            }
+          ],
+          "instructions": "Read the text, then answer the six questions in short answers."
+        },
+        {
+          "id": "g9-B-W1",
+          "skill": "writing",
+          "group": 1,
+          "title": "Writing 1 — Story",
+          "marks": 5,
+          "prompt": "Write a story beginning with: “The message arrived just as we were leaving.” Explain the unexpected event and its outcome.",
+          "minWords": 100
+        },
+        {
+          "id": "g9-B-W2",
+          "skill": "writing",
+          "group": 2,
+          "title": "Writing 2 — Email",
+          "marks": 5,
+          "prompt": "Write an email to a cousin about a useful skill you learned recently. Say how you learned it and how it could help in the future.",
+          "minWords": 100
+        }
+      ],
+      "unit_id": 2,
+      "unit_name": "Connections",
+      "allocation": "unit_target",
+      "verification": "pending_curriculum_content_review",
+      "original_theme": "People and local heritage"
+    },
+    {
+      "model": "C",
+      "grade": 9,
+      "minutes": 120,
+      "marks": 40,
+      "theme": "Wellbeing and responsible choices",
+      "tasks": [
+        {
+          "id": "g9-C-L1",
+          "skill": "listening",
+          "group": 1,
+          "title": "Listening 1 — Choose the picture",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "What is the family's weekend plan?",
+              "choices": [
+                "beach",
+                "camping",
+                "shopping"
+              ],
+              "images": [
+                "images/illustration-5-1.png",
+                "images/illustration-5-2.png",
+                "images/illustration-5-3.png"
+              ],
+              "answer": 2,
+              "script": "My family considered different plans for the weekend on Monday. We considered beach and camping, but neither matched our needs. After reviewing the options, we chose shopping. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "What is the confirmed time of the event?",
+              "choices": [
+                "3 oclock",
+                "7 oclock",
+                "5 oclock"
+              ],
+              "images": [
+                "images/illustration-4-1.png",
+                "images/illustration-4-2.png",
+                "images/illustration-4-3.png"
+              ],
+              "answer": 1,
+              "script": "The organisers discussed the starting time of the event on Monday. Some suggested 3 o’clock, while others preferred 5 o’clock. The official notice confirms 7 o’clock. We have now shared the final decision and everyone knows what to prepare. The"
+            },
+            {
+              "stem": "Which item did the speaker choose?",
+              "choices": [
+                "backpack",
+                "jacket",
+                "shoes"
+              ],
+              "images": [
+                "images/illustration-extra-1-1.png",
+                "images/illustration-extra-1-2.png",
+                "images/illustration-extra-1-3.png"
+              ],
+              "answer": 1,
+              "script": "I needed one useful item for my school activities on Monday. We considered backpack and shoes, but neither matched our needs. After reviewing the options, we chose jacket. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "Which hobby did the speaker choose?",
+              "choices": [
+                "art palette",
+                "football",
+                "camera"
+              ],
+              "images": [
+                "images/illustration-2-1.png",
+                "images/illustration-2-2.png",
+                "images/illustration-2-3.png"
+              ],
+              "answer": 1,
+              "script": "I talked with my friends about a new hobby on Monday. We considered art palette and camera, but neither matched our needs. After reviewing the options, we chose football. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "Where will the public event take place?",
+              "choices": [
+                "stadium",
+                "school building",
+                "park"
+              ],
+              "images": [
+                "images/illustration-extra-3-1.png",
+                "images/illustration-extra-3-2.png",
+                "images/illustration-extra-3-3.png"
+              ],
+              "answer": 1,
+              "script": "The organisers examined several locations for the public event on Monday. We considered stadium and park, but neither matched our needs. After reviewing the options, we chose school building. We have now shared the final decision and everyone knows what to prepare."
+            }
+          ],
+          "audio": "audio/g9-c-listening-1.mp3",
+          "transcript": "Text 1. My family considered different plans for the weekend on Monday. We considered beach and camping, but neither matched our needs. After reviewing the options, we chose shopping. We have now shared the final decision and everyone knows what to prepare.\n\nText 2. The organisers discussed the starting time of the event on Monday. Some suggested 3 o’clock, while others preferred 5 o’clock. The official notice confirms 7 o’clock. We have now shared the final decision and everyone knows what to prepare. The\n\nText 3. I needed one useful item for my school activities on Monday. We considered backpack and shoes, but neither matched our needs. After reviewing the options, we chose jacket. We have now shared the final decision and everyone knows what to prepare.\n\nText 4. I talked with my friends about a new hobby on Monday. We considered art palette and camera, but neither matched our needs. After reviewing the options, we chose football. We have now shared the final decision and everyone knows what to prepare.\n\nText 5. The organisers examined several locations for the public event on Monday. We considered stadium and park, but neither matched our needs. After reviewing the options, we chose school building. We have now shared the final decision and everyone knows what to prepare.",
+          "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C)."
+        },
+        {
+          "id": "g9-C-L2",
+          "skill": "listening",
+          "group": 2,
+          "title": "Listening 2 — Interview",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "What was their first activity?",
+              "choices": [
+                "a football tournament",
+                "a quiet reading corner",
+                "a computer competition"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "When did the group begin?",
+              "choices": [
+                "December",
+                "September",
+                "March"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Where do members come from?",
+              "choices": [
+                "Grade Five only",
+                "several Grade Nine classes",
+                "one teacher’s family"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "When do they meet?",
+              "choices": [
+                "Sunday night",
+                "Friday afternoon",
+                "Wednesday lunch"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "What have members learned?",
+              "choices": [
+                "building robots",
+                "cooking rice",
+                "respectful listening"
+              ],
+              "answer": 2
+            }
+          ],
+          "audio": "audio/g9-c-listening-2.mp3",
+          "transcript": "Interviewer: Welcome to our student voices programme. Today we are speaking with Alya about the student wellbeing group. Why was this project started? Alya: We wanted to help our school in a practical way, not just read about problems. Students suggested ideas, and our teachers helped us organise a small team. Interviewer: Tell us about your first activity. Alya: Their first activity was a quiet reading corner. We chose something manageable and listened to feedback from other students. Interviewer: When did everything begin? Alya: The group was established in September. We prepared the materials together and agreed on simple responsibilities. Interviewer: Who can get involved? Alya: Members come from several classes in Grade Nine. Everyone needs to show respect and take turns. Interviewer: When does the group meet? Alya: They meet during lunch on Wednesdays. We try to finish each session with a useful plan for the next one. Interviewer: What is the most important lesson? Alya: They have learned to listen without interrupting. It has also helped us become more confident when explaining our ideas. Interviewer: Would you recommend joining? Alya: Yes. Try something small, listen to others, and keep improving. Thank you for inviting me. We are proud that young people can lead meaningful changes, even when resources are limited and progress takes time.",
+          "instructions": "Listen to the interview twice. Choose the correct answer (A, B or C)."
+        },
+        {
+          "id": "g9-C-GV",
+          "skill": "grammar_vocabulary",
+          "group": 1,
+          "title": "Grammar & Vocabulary — One cloze",
+          "marks": 10,
+          "passage": "Our class (1) ____ a podcast about healthy routines last week. We (2) ____ questions before recording and (3) ____ two local athletes. They explained why sleep is (4) ____ for teenagers. One speaker (5) ____ us to take short breaks while studying. We discussed the (6) ____ of exercise. The recording was (7) ____ than our first attempt after careful planning. Everyone felt (8) ____ after the session. Next month, we (9) ____ another episode and (10) ____ it with families.",
+          "items": [
+            {
+              "stem": "Gap 1",
+              "choices": [
+                "produce",
+                "producing",
+                "produces",
+                "produced"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 2",
+              "choices": [
+                "prepare",
+                "preparing",
+                "prepares",
+                "prepared"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 3",
+              "choices": [
+                "interview",
+                "interviewing",
+                "interviewed",
+                "interviews"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 4",
+              "choices": [
+                "importance",
+                "important",
+                "importantly",
+                "import"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 5",
+              "choices": [
+                "advice",
+                "advised",
+                "advising",
+                "advise"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 6",
+              "choices": [
+                "benefits",
+                "benefit",
+                "beneficial",
+                "benefited"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 7",
+              "choices": [
+                "clear",
+                "clearest",
+                "clearly",
+                "clearer"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 8",
+              "choices": [
+                "confidence",
+                "confidently",
+                "confide",
+                "confident"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 9",
+              "choices": [
+                "recorded",
+                "recording",
+                "will record",
+                "records"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 10",
+              "choices": [
+                "shared",
+                "share",
+                "sharing",
+                "shares"
+              ],
+              "answer": 1
+            }
+          ],
+          "instructions": "Read the text. For each gap (1–10), choose the correct option (A, B, C or D)."
+        },
+        {
+          "id": "g9-C-R1",
+          "skill": "reading",
+          "group": 1,
+          "title": "Reading 1 — Matching",
+          "marks": 4,
+          "passage": "Match each person (1–4) with a suitable activity (A–E). One activity is extra.",
+          "people": [
+            "Fatma would like to help families reduce their electricity use.",
+            "Omar wants a safe place to practise drawing different buildings.",
+            "Khalid enjoys solving logical puzzles with friends.",
+            "Sara wants to learn how people lived in the past."
+          ],
+          "options": [
+            "The heritage circle collects local memories and visits old houses.",
+            "An energy team explains how to save power at home.",
+            "The puzzle laboratory runs collaborative reasoning challenges.",
+            "The sketching workshop teaches buildings and perspective.",
+            "The music room offers lessons in rhythm and melody."
+          ],
+          "items": [
+            {
+              "stem": "Person 1: Fatma would like to help families reduce their electricity use.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Person 2: Omar wants a safe place to practise drawing different buildings.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Person 3: Khalid enjoys solving logical puzzles with friends.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Person 4: Sara wants to learn how people lived in the past.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 0
+            }
+          ],
+          "instructions": "Read the four short descriptions and the five activity descriptions. Match each person to an activity."
+        },
+        {
+          "id": "g9-C-R2",
+          "skill": "reading",
+          "group": 2,
+          "title": "Reading 2 — Short answers",
+          "marks": 6,
+          "passage": "A student environmental team wanted to understand why so many usable clothes were being discarded. They asked classmates to record the number of new items they bought during one month and explain what happened to older clothes. The results surprised them. Several students replaced perfectly good items simply because a different style was fashionable. Others donated clothes that no longer fitted, while a few repaired damaged items at home.\n\nThe team organised an exchange event in the school hall. Students could bring clean clothes in good condition and choose something another person had donated. Volunteers checked items carefully and sorted them by size. The event was free, but some parents worried that exchanging clothes might embarrass students who could not afford new ones. Organisers responded by avoiding labels about who had donated each item and presenting the event as a creative way to reduce waste for everyone.\n\nBy the end of the week, more than eighty garments had found new owners. The organisers also ran a short workshop showing how to repair loose buttons and small tears. One participant said she felt more confident after repairing her school bag without buying a replacement. Nevertheless, the team recognised that clothing exchange could not solve every environmental problem. Producing textiles still requires water and energy, and some items are difficult to reuse.\n\nThe head teacher argued that the most important lesson was not to stop buying clothes completely, but to make thoughtful decisions. Students should consider quality, need, repair, and donation before throwing things away. The project encouraged discussion rather than telling families what they must purchase. It showed that practical steps can help, especially when everyone is treated with respect.",
+          "passageTitle": "The Problem with Throwaway Fashion",
+          "items": [
+            {
+              "stem": "What were students asked to record?",
+              "answers": [
+                "new clothes bought in one month"
+              ]
+            },
+            {
+              "stem": "Where was the exchange organised?",
+              "answers": [
+                "the school hall"
+              ]
+            },
+            {
+              "stem": "Why did some parents worry?",
+              "answers": [
+                "students might feel embarrassed"
+              ]
+            },
+            {
+              "stem": "How many garments found new owners?",
+              "answers": [
+                "more than eighty"
+              ]
+            },
+            {
+              "stem": "What repair skill was demonstrated?",
+              "answers": [
+                "repairing loose buttons and tears"
+              ]
+            },
+            {
+              "stem": "What does the head teacher recommend?",
+              "answers": [
+                "making thoughtful purchasing decisions"
+              ]
+            }
+          ],
+          "instructions": "Read the text, then answer the six questions in short answers."
+        },
+        {
+          "id": "g9-C-W1",
+          "skill": "writing",
+          "group": 1,
+          "title": "Writing 1 — Story",
+          "marks": 5,
+          "prompt": "Write a story about a school event where a team had to change its plan at the last minute. Include a clear ending.",
+          "minWords": 100
+        },
+        {
+          "id": "g9-C-W2",
+          "skill": "writing",
+          "group": 2,
+          "title": "Writing 2 — Email",
+          "marks": 5,
+          "prompt": "Write an email to a friend suggesting an environmentally friendly activity for your school. Explain the steps and expected benefits.",
+          "minWords": 100
+        }
+      ],
+      "unit_id": 3,
+      "unit_name": "The Future Is Now",
+      "allocation": "unit_target",
+      "verification": "pending_curriculum_content_review",
+      "original_theme": "Wellbeing and responsible choices"
+    },
+    {
+      "model": "D",
+      "grade": 9,
+      "minutes": 120,
+      "marks": 40,
+      "theme": "Mixed practice across three draft banks",
+      "allocation": "mixed",
+      "unit_id": null,
+      "verification": "mixed_structure_valid_unit_content_pending",
+      "source_models": [
+        "A",
+        "B",
+        "C",
+        "B",
+        "C",
+        "A",
+        "B"
+      ],
+      "tasks": [
+        {
+          "id": "g9-A-L1",
+          "skill": "listening",
+          "group": 1,
+          "title": "Listening 1 — Choose the picture",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "Where will the club meet?",
+              "choices": [
+                "school",
+                "library",
+                "sports hall"
+              ],
+              "images": [
+                "images/illustration-1-1.png",
+                "images/illustration-1-2.png",
+                "images/illustration-1-3.png"
+              ],
+              "answer": 1,
+              "script": "Our environment club is planning its next meeting. We usually meet at school, but the hall is being repaired. Someone suggested the sports centre, but it closes too early. This Thursday, we will use the public library, where a quiet room has already been booked."
+            },
+            {
+              "stem": "Which hobby did the speaker choose?",
+              "choices": [
+                "art palette",
+                "football",
+                "camera"
+              ],
+              "images": [
+                "images/illustration-2-1.png",
+                "images/illustration-2-2.png",
+                "images/illustration-2-3.png"
+              ],
+              "answer": 0,
+              "script": "I wanted to try something creative after school. My brother plays football, and my cousin takes photographs. I enjoy both, but this term I have joined an art club. I have bought a paintbrush and a small palette because we are learning watercolour painting."
+            },
+            {
+              "stem": "What weather does the latest forecast predict?",
+              "choices": [
+                "sunny",
+                "rainy",
+                "snowy"
+              ],
+              "images": [
+                "images/illustration-3-1.png",
+                "images/illustration-3-2.png",
+                "images/illustration-3-3.png"
+              ],
+              "answer": 1,
+              "script": "We are planning a class trip tomorrow, so everyone has checked the weather. Yesterday, the forecast showed sunshine, and one website even mentioned cold winds. This morning, however, the updated forecast says there will be rain for most of the day. Remember to bring a jacket."
+            },
+            {
+              "stem": "What is the confirmed time of the event?",
+              "choices": [
+                "3 oclock",
+                "7 oclock",
+                "5 oclock"
+              ],
+              "images": [
+                "images/illustration-4-1.png",
+                "images/illustration-4-2.png",
+                "images/illustration-4-3.png"
+              ],
+              "answer": 2,
+              "script": "Please note a change to the community festival programme. Some posters showed three o'clock, and an early email said seven o'clock. The organisers have now confirmed that the opening performance will begin at five o'clock. Please arrive at least fifteen minutes before the show."
+            },
+            {
+              "stem": "What is the family's weekend plan?",
+              "choices": [
+                "beach",
+                "camping",
+                "shopping"
+              ],
+              "images": [
+                "images/illustration-5-1.png",
+                "images/illustration-5-2.png",
+                "images/illustration-5-3.png"
+              ],
+              "answer": 1,
+              "script": "My family discussed what to do this weekend. My sister wanted to go shopping, and my father suggested spending the afternoon at the beach. We finally decided to go camping in the mountains, because everyone wanted to spend the night outdoors and watch the stars."
+            }
+          ],
+          "audio": "audio/g9-a-listening-1.mp3",
+          "transcript": "Text 1. Our environment club is planning its next meeting. We usually meet at school, but the hall is being repaired. Someone suggested the sports centre, but it closes too early. This Thursday, we will use the public library, where a quiet room has already been booked.\n\nText 2. I wanted to try something creative after school. My brother plays football, and my cousin takes photographs. I enjoy both, but this term I have joined an art club. I have bought a paintbrush and a small palette because we are learning watercolour painting.\n\nText 3. We are planning a class trip tomorrow, so everyone has checked the weather. Yesterday, the forecast showed sunshine, and one website even mentioned cold winds. This morning, however, the updated forecast says there will be rain for most of the day. Remember to bring a jacket.\n\nText 4. Please note a change to the community festival programme. Some posters showed three o'clock, and an early email said seven o'clock. The organisers have now confirmed that the opening performance will begin at five o'clock. Please arrive at least fifteen minutes before the show.\n\nText 5. My family discussed what to do this weekend. My sister wanted to go shopping, and my father suggested spending the afternoon at the beach. We finally decided to go camping in the mountains, because everyone wanted to spend the night outdoors and watch the stars.",
+          "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C).",
+          "naturalAudioAvailable": true,
+          "source_model": "A"
+        },
+        {
+          "id": "g9-B-L2",
+          "skill": "listening",
+          "group": 2,
+          "title": "Listening 2 — Interview",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "What did their first map show?",
+              "choices": [
+                "historic doors",
+                "local beaches",
+                "mountain animals"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "When was the project launched?",
+              "choices": [
+                "November",
+                "February",
+                "June"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Who shared old photographs?",
+              "choices": [
+                "families",
+                "shopkeepers only",
+                "football coaches"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "When does the team meet?",
+              "choices": [
+                "Monday morning",
+                "Thursday afternoon",
+                "Saturday evening"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "What did the team learn?",
+              "choices": [
+                "making jewellery",
+                "checking photo sources",
+                "repairing cars"
+              ],
+              "answer": 1
+            }
+          ],
+          "audio": "audio/g9-b-listening-2.mp3",
+          "transcript": "Interviewer: Welcome to our student voices programme. Today we are speaking with Salim about the heritage mapping team. Why was this project started? Salim: We wanted to help our school in a practical way, not just read about problems. Students suggested ideas, and our teachers helped us organise a small team. Interviewer: Tell us about your first activity. Salim: Their first map showed historic doors in their neighbourhood. We chose something manageable and listened to feedback from other students. Interviewer: When did everything begin? Salim: The project was launched in November. We prepared the materials together and agreed on simple responsibilities. Interviewer: Who can get involved? Salim: Families were invited to share old photographs. Everyone needs to show respect and take turns. Interviewer: When does the group meet? Salim: They meet on Thursday afternoons. We try to finish each session with a useful plan for the next one. Interviewer: What is the most important lesson? Salim: They now understand why photographs need clear sources. It has also helped us become more confident when explaining our ideas. Interviewer: Would you recommend joining? Salim: Yes. Try something small, listen to others, and keep improving. Thank you for inviting me. We are proud that young people can lead meaningful changes, even when resources are limited and progress takes time.",
+          "instructions": "Listen to the interview twice. Choose the correct answer (A, B or C).",
+          "source_model": "B"
+        },
+        {
+          "id": "g9-C-GV",
+          "skill": "grammar_vocabulary",
+          "group": 1,
+          "title": "Grammar & Vocabulary — One cloze",
+          "marks": 10,
+          "passage": "Our class (1) ____ a podcast about healthy routines last week. We (2) ____ questions before recording and (3) ____ two local athletes. They explained why sleep is (4) ____ for teenagers. One speaker (5) ____ us to take short breaks while studying. We discussed the (6) ____ of exercise. The recording was (7) ____ than our first attempt after careful planning. Everyone felt (8) ____ after the session. Next month, we (9) ____ another episode and (10) ____ it with families.",
+          "items": [
+            {
+              "stem": "Gap 1",
+              "choices": [
+                "produce",
+                "producing",
+                "produces",
+                "produced"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 2",
+              "choices": [
+                "prepare",
+                "preparing",
+                "prepares",
+                "prepared"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 3",
+              "choices": [
+                "interview",
+                "interviewing",
+                "interviewed",
+                "interviews"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 4",
+              "choices": [
+                "importance",
+                "important",
+                "importantly",
+                "import"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 5",
+              "choices": [
+                "advice",
+                "advised",
+                "advising",
+                "advise"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 6",
+              "choices": [
+                "benefits",
+                "benefit",
+                "beneficial",
+                "benefited"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 7",
+              "choices": [
+                "clear",
+                "clearest",
+                "clearly",
+                "clearer"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 8",
+              "choices": [
+                "confidence",
+                "confidently",
+                "confide",
+                "confident"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 9",
+              "choices": [
+                "recorded",
+                "recording",
+                "will record",
+                "records"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 10",
+              "choices": [
+                "shared",
+                "share",
+                "sharing",
+                "shares"
+              ],
+              "answer": 1
+            }
+          ],
+          "instructions": "Read the text. For each gap (1–10), choose the correct option (A, B, C or D).",
+          "source_model": "C"
+        },
+        {
+          "id": "g9-B-R1",
+          "skill": "reading",
+          "group": 1,
+          "title": "Reading 1 — Matching",
+          "marks": 4,
+          "passage": "Match each person (1–4) with a suitable activity (A–E). One activity is extra.",
+          "people": [
+            "Saeed wants to learn to check whether online stories are trustworthy.",
+            "Amal enjoys designing objects from materials that would otherwise be wasted.",
+            "Yusuf hopes to become more confident speaking to groups.",
+            "Noura likes studying the movement of stars through the night."
+          ],
+          "options": [
+            "Public speaking circles help learners practise short talks.",
+            "The astronomy group observes the sky and keeps nightly records.",
+            "A media workshop investigates sources and misleading headlines.",
+            "A reuse studio designs practical objects from discarded materials.",
+            "The swimming club offers beginners short water-safety lessons."
+          ],
+          "items": [
+            {
+              "stem": "Person 1: Saeed wants to learn to check whether online stories are trustworthy.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Person 2: Amal enjoys designing objects from materials that would otherwise be wasted.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Person 3: Yusuf hopes to become more confident speaking to groups.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Person 4: Noura likes studying the movement of stars through the night.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 1
+            }
+          ],
+          "instructions": "Read the four short descriptions and the five activity descriptions. Match each person to an activity.",
+          "source_model": "B"
+        },
+        {
+          "id": "g9-C-R2",
+          "skill": "reading",
+          "group": 2,
+          "title": "Reading 2 — Short answers",
+          "marks": 6,
+          "passage": "A student environmental team wanted to understand why so many usable clothes were being discarded. They asked classmates to record the number of new items they bought during one month and explain what happened to older clothes. The results surprised them. Several students replaced perfectly good items simply because a different style was fashionable. Others donated clothes that no longer fitted, while a few repaired damaged items at home.\n\nThe team organised an exchange event in the school hall. Students could bring clean clothes in good condition and choose something another person had donated. Volunteers checked items carefully and sorted them by size. The event was free, but some parents worried that exchanging clothes might embarrass students who could not afford new ones. Organisers responded by avoiding labels about who had donated each item and presenting the event as a creative way to reduce waste for everyone.\n\nBy the end of the week, more than eighty garments had found new owners. The organisers also ran a short workshop showing how to repair loose buttons and small tears. One participant said she felt more confident after repairing her school bag without buying a replacement. Nevertheless, the team recognised that clothing exchange could not solve every environmental problem. Producing textiles still requires water and energy, and some items are difficult to reuse.\n\nThe head teacher argued that the most important lesson was not to stop buying clothes completely, but to make thoughtful decisions. Students should consider quality, need, repair, and donation before throwing things away. The project encouraged discussion rather than telling families what they must purchase. It showed that practical steps can help, especially when everyone is treated with respect.",
+          "passageTitle": "The Problem with Throwaway Fashion",
+          "items": [
+            {
+              "stem": "What were students asked to record?",
+              "answers": [
+                "new clothes bought in one month"
+              ]
+            },
+            {
+              "stem": "Where was the exchange organised?",
+              "answers": [
+                "the school hall"
+              ]
+            },
+            {
+              "stem": "Why did some parents worry?",
+              "answers": [
+                "students might feel embarrassed"
+              ]
+            },
+            {
+              "stem": "How many garments found new owners?",
+              "answers": [
+                "more than eighty"
+              ]
+            },
+            {
+              "stem": "What repair skill was demonstrated?",
+              "answers": [
+                "repairing loose buttons and tears"
+              ]
+            },
+            {
+              "stem": "What does the head teacher recommend?",
+              "answers": [
+                "making thoughtful purchasing decisions"
+              ]
+            }
+          ],
+          "instructions": "Read the text, then answer the six questions in short answers.",
+          "source_model": "C"
+        },
+        {
+          "id": "g9-A-W1",
+          "skill": "writing",
+          "group": 1,
+          "title": "Writing 1 — Story",
+          "marks": 5,
+          "prompt": "Write a story about a small mistake that unexpectedly helped you learn something important. Describe the setting, the problem, and how it was resolved.",
+          "minWords": 100,
+          "source_model": "A"
+        },
+        {
+          "id": "g9-B-W2",
+          "skill": "writing",
+          "group": 2,
+          "title": "Writing 2 — Email",
+          "marks": 5,
+          "prompt": "Write an email to a cousin about a useful skill you learned recently. Say how you learned it and how it could help in the future.",
+          "minWords": 100,
+          "source_model": "B"
+        }
+      ]
+    },
+    {
+      "model": "E",
+      "grade": 9,
+      "minutes": 120,
+      "marks": 40,
+      "theme": "Mixed practice across three draft banks",
+      "allocation": "mixed",
+      "unit_id": null,
+      "verification": "mixed_structure_valid_unit_content_pending",
+      "source_models": [
+        "B",
+        "C",
+        "A",
+        "C",
+        "A",
+        "B",
+        "C"
+      ],
+      "tasks": [
+        {
+          "id": "g9-B-L1",
+          "skill": "listening",
+          "group": 1,
+          "title": "Listening 1 — Choose the picture",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "Which item did the speaker choose?",
+              "choices": [
+                "backpack",
+                "jacket",
+                "shoes"
+              ],
+              "images": [
+                "images/illustration-extra-1-1.png",
+                "images/illustration-extra-1-2.png",
+                "images/illustration-extra-1-3.png"
+              ],
+              "answer": 2,
+              "script": "I needed one useful item for my school activities last week. We considered backpack and jacket, but neither matched our needs. After reviewing the options, we chose shoes. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "Which sport did the speaker join?",
+              "choices": [
+                "swimming",
+                "running",
+                "cycling"
+              ],
+              "images": [
+                "images/illustration-extra-2-1.png",
+                "images/illustration-extra-2-2.png",
+                "images/illustration-extra-2-3.png"
+              ],
+              "answer": 0,
+              "script": "I compared different sports before joining a school club last week. We considered running and cycling, but neither matched our needs. After reviewing the options, we chose swimming. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "Where will the public event take place?",
+              "choices": [
+                "stadium",
+                "school building",
+                "park"
+              ],
+              "images": [
+                "images/illustration-extra-3-1.png",
+                "images/illustration-extra-3-2.png",
+                "images/illustration-extra-3-3.png"
+              ],
+              "answer": 0,
+              "script": "The organisers examined several locations for the public event last week. We considered school building and park, but neither matched our needs. After reviewing the options, we chose stadium. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "What weather does the latest forecast predict?",
+              "choices": [
+                "sunny",
+                "rainy",
+                "snowy"
+              ],
+              "images": [
+                "images/illustration-3-1.png",
+                "images/illustration-3-2.png",
+                "images/illustration-3-3.png"
+              ],
+              "answer": 0,
+              "script": "Our class looked carefully at the weather forecast last week. At first, we expected rainy weather, and some people predicted snowy conditions. However, the latest forecast says it will be sunny. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "Where will the club meet?",
+              "choices": [
+                "school",
+                "library",
+                "sports hall"
+              ],
+              "images": [
+                "images/illustration-1-1.png",
+                "images/illustration-1-2.png",
+                "images/illustration-1-3.png"
+              ],
+              "answer": 0,
+              "script": "Our club considered several places for its next meeting last week. We considered library and sports hall, but neither matched our needs. After reviewing the options, we chose school. We have now shared the final decision and everyone knows what to prepare."
+            }
+          ],
+          "audio": "audio/g9-b-listening-1.mp3",
+          "transcript": "Text 1. I needed one useful item for my school activities last week. We considered backpack and jacket, but neither matched our needs. After reviewing the options, we chose shoes. We have now shared the final decision and everyone knows what to prepare.\n\nText 2. I compared different sports before joining a school club last week. We considered running and cycling, but neither matched our needs. After reviewing the options, we chose swimming. We have now shared the final decision and everyone knows what to prepare.\n\nText 3. The organisers examined several locations for the public event last week. We considered school building and park, but neither matched our needs. After reviewing the options, we chose stadium. We have now shared the final decision and everyone knows what to prepare.\n\nText 4. Our class looked carefully at the weather forecast last week. At first, we expected rainy weather, and some people predicted snowy conditions. However, the latest forecast says it will be sunny. We have now shared the final decision and everyone knows what to prepare.\n\nText 5. Our club considered several places for its next meeting last week. We considered library and sports hall, but neither matched our needs. After reviewing the options, we chose school. We have now shared the final decision and everyone knows what to prepare.",
+          "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C).",
+          "source_model": "B"
+        },
+        {
+          "id": "g9-C-L2",
+          "skill": "listening",
+          "group": 2,
+          "title": "Listening 2 — Interview",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "What was their first activity?",
+              "choices": [
+                "a football tournament",
+                "a quiet reading corner",
+                "a computer competition"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "When did the group begin?",
+              "choices": [
+                "December",
+                "September",
+                "March"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Where do members come from?",
+              "choices": [
+                "Grade Five only",
+                "several Grade Nine classes",
+                "one teacher’s family"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "When do they meet?",
+              "choices": [
+                "Sunday night",
+                "Friday afternoon",
+                "Wednesday lunch"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "What have members learned?",
+              "choices": [
+                "building robots",
+                "cooking rice",
+                "respectful listening"
+              ],
+              "answer": 2
+            }
+          ],
+          "audio": "audio/g9-c-listening-2.mp3",
+          "transcript": "Interviewer: Welcome to our student voices programme. Today we are speaking with Alya about the student wellbeing group. Why was this project started? Alya: We wanted to help our school in a practical way, not just read about problems. Students suggested ideas, and our teachers helped us organise a small team. Interviewer: Tell us about your first activity. Alya: Their first activity was a quiet reading corner. We chose something manageable and listened to feedback from other students. Interviewer: When did everything begin? Alya: The group was established in September. We prepared the materials together and agreed on simple responsibilities. Interviewer: Who can get involved? Alya: Members come from several classes in Grade Nine. Everyone needs to show respect and take turns. Interviewer: When does the group meet? Alya: They meet during lunch on Wednesdays. We try to finish each session with a useful plan for the next one. Interviewer: What is the most important lesson? Alya: They have learned to listen without interrupting. It has also helped us become more confident when explaining our ideas. Interviewer: Would you recommend joining? Alya: Yes. Try something small, listen to others, and keep improving. Thank you for inviting me. We are proud that young people can lead meaningful changes, even when resources are limited and progress takes time.",
+          "instructions": "Listen to the interview twice. Choose the correct answer (A, B or C).",
+          "source_model": "C"
+        },
+        {
+          "id": "g9-A-GV",
+          "skill": "grammar_vocabulary",
+          "group": 1,
+          "title": "Grammar & Vocabulary — One cloze",
+          "marks": 10,
+          "passage": "Last month, our class (1) ____ a small repair café at school. We (2) ____ old objects instead of throwing them away. We (3) ____ the broken items. Our teacher showed us how to work (4) ____. Each had a (5) ____. Some students fixed chairs while others (6) ____ posters. The project was (7) ____ than we expected. We felt (8) ____ because our efforts saved materials. Next term, we (9) ____ to invite parents and (10) ____ more useful skills.",
+          "items": [
+            {
+              "stem": "Gap 1",
+              "choices": [
+                "start",
+                "started",
+                "starting",
+                "starts"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 2",
+              "choices": [
+                "collect",
+                "collected",
+                "collecting",
+                "collection"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 3",
+              "choices": [
+                "examined",
+                "examines",
+                "examining",
+                "examine"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 4",
+              "choices": [
+                "safe",
+                "safety",
+                "safer",
+                "safely"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 5",
+              "choices": [
+                "roll",
+                "rule",
+                "road",
+                "role"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 6",
+              "choices": [
+                "design",
+                "designing",
+                "designed",
+                "designs"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 7",
+              "choices": [
+                "busy",
+                "busier",
+                "busiest",
+                "busily"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 8",
+              "choices": [
+                "pride",
+                "proud",
+                "proudly",
+                "proudest"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 9",
+              "choices": [
+                "hope",
+                "hoped",
+                "hopes",
+                "hoping"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 10",
+              "choices": [
+                "learning",
+                "learned",
+                "learns",
+                "learn"
+              ],
+              "answer": 3
+            }
+          ],
+          "instructions": "Read the text. For each gap (1–10), choose the correct option (A, B, C or D).",
+          "source_model": "A"
+        },
+        {
+          "id": "g9-C-R1",
+          "skill": "reading",
+          "group": 1,
+          "title": "Reading 1 — Matching",
+          "marks": 4,
+          "passage": "Match each person (1–4) with a suitable activity (A–E). One activity is extra.",
+          "people": [
+            "Fatma would like to help families reduce their electricity use.",
+            "Omar wants a safe place to practise drawing different buildings.",
+            "Khalid enjoys solving logical puzzles with friends.",
+            "Sara wants to learn how people lived in the past."
+          ],
+          "options": [
+            "The heritage circle collects local memories and visits old houses.",
+            "An energy team explains how to save power at home.",
+            "The puzzle laboratory runs collaborative reasoning challenges.",
+            "The sketching workshop teaches buildings and perspective.",
+            "The music room offers lessons in rhythm and melody."
+          ],
+          "items": [
+            {
+              "stem": "Person 1: Fatma would like to help families reduce their electricity use.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Person 2: Omar wants a safe place to practise drawing different buildings.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Person 3: Khalid enjoys solving logical puzzles with friends.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Person 4: Sara wants to learn how people lived in the past.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 0
+            }
+          ],
+          "instructions": "Read the four short descriptions and the five activity descriptions. Match each person to an activity.",
+          "source_model": "C"
+        },
+        {
+          "id": "g9-A-R2",
+          "skill": "reading",
+          "group": 2,
+          "title": "Reading 2 — Short answers",
+          "marks": 6,
+          "passage": "The town library recently began lending useful objects as well as books. The idea came from volunteers who noticed that families sometimes purchased equipment for a single project and never used it again. The new service offers tools for repairing furniture, simple measuring devices, and small kits for science activities. Users can borrow an item for one week after attending a short safety introduction. Some residents welcomed the scheme because it reduces unnecessary spending and encourages people to reuse resources. Others worried that borrowed equipment might be damaged or returned late. To address these concerns, the library introduced a booking system, clear instructions, and a team that checks every item when it comes back.\n\nAfter three months, the organisers collected feedback from sixty families. Most said they had completed a task they would otherwise have delayed. Several parents also reported working more closely with their children when using the science kits. Yet the project was not perfect. Popular tools were often unavailable during weekends, and some borrowers found the collection hours inconvenient. The library responded by extending opening hours on one afternoon and accepting suggestions for future equipment.\n\nThe coordinator believes that a library should offer more than objects to borrow. She wants residents to share practical knowledge, ask questions, and help one another. Next year, volunteers hope to provide repair demonstrations led by local experts. The council has not promised additional funding, so expansion will depend on donations and community involvement. The project illustrates how a small change to a familiar public service can encourage cooperation, but it also shows why organisers must listen carefully to users before deciding how to grow.",
+          "passageTitle": "A Library of Things",
+          "items": [
+            {
+              "stem": "Why did the library introduce the new service?",
+              "answers": [
+                "families bought equipment for one use"
+              ]
+            },
+            {
+              "stem": "How long may people borrow an item?",
+              "answers": [
+                "one week"
+              ]
+            },
+            {
+              "stem": "What do users attend before borrowing?",
+              "answers": [
+                "a short safety introduction"
+              ]
+            },
+            {
+              "stem": "What problem affected weekends?",
+              "answers": [
+                "popular tools were unavailable"
+              ]
+            },
+            {
+              "stem": "How did the library respond to inconvenient collection hours?",
+              "answers": [
+                "extended opening hours"
+              ]
+            },
+            {
+              "stem": "What will determine whether the project expands?",
+              "answers": [
+                "donations and community involvement"
+              ]
+            }
+          ],
+          "instructions": "Read the text, then answer the six questions in short answers.",
+          "source_model": "A"
+        },
+        {
+          "id": "g9-B-W1",
+          "skill": "writing",
+          "group": 1,
+          "title": "Writing 1 — Story",
+          "marks": 5,
+          "prompt": "Write a story beginning with: “The message arrived just as we were leaving.” Explain the unexpected event and its outcome.",
+          "minWords": 100,
+          "source_model": "B"
+        },
+        {
+          "id": "g9-C-W2",
+          "skill": "writing",
+          "group": 2,
+          "title": "Writing 2 — Email",
+          "marks": 5,
+          "prompt": "Write an email to a friend suggesting an environmentally friendly activity for your school. Explain the steps and expected benefits.",
+          "minWords": 100,
+          "source_model": "C"
+        }
+      ]
+    },
+    {
+      "model": "F",
+      "grade": 9,
+      "minutes": 120,
+      "marks": 40,
+      "theme": "Mixed practice across three draft banks",
+      "allocation": "mixed",
+      "unit_id": null,
+      "verification": "mixed_structure_valid_unit_content_pending",
+      "source_models": [
+        "C",
+        "A",
+        "B",
+        "A",
+        "B",
+        "C",
+        "A"
+      ],
+      "tasks": [
+        {
+          "id": "g9-C-L1",
+          "skill": "listening",
+          "group": 1,
+          "title": "Listening 1 — Choose the picture",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "What is the family's weekend plan?",
+              "choices": [
+                "beach",
+                "camping",
+                "shopping"
+              ],
+              "images": [
+                "images/illustration-5-1.png",
+                "images/illustration-5-2.png",
+                "images/illustration-5-3.png"
+              ],
+              "answer": 2,
+              "script": "My family considered different plans for the weekend on Monday. We considered beach and camping, but neither matched our needs. After reviewing the options, we chose shopping. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "What is the confirmed time of the event?",
+              "choices": [
+                "3 oclock",
+                "7 oclock",
+                "5 oclock"
+              ],
+              "images": [
+                "images/illustration-4-1.png",
+                "images/illustration-4-2.png",
+                "images/illustration-4-3.png"
+              ],
+              "answer": 1,
+              "script": "The organisers discussed the starting time of the event on Monday. Some suggested 3 o’clock, while others preferred 5 o’clock. The official notice confirms 7 o’clock. We have now shared the final decision and everyone knows what to prepare. The"
+            },
+            {
+              "stem": "Which item did the speaker choose?",
+              "choices": [
+                "backpack",
+                "jacket",
+                "shoes"
+              ],
+              "images": [
+                "images/illustration-extra-1-1.png",
+                "images/illustration-extra-1-2.png",
+                "images/illustration-extra-1-3.png"
+              ],
+              "answer": 1,
+              "script": "I needed one useful item for my school activities on Monday. We considered backpack and shoes, but neither matched our needs. After reviewing the options, we chose jacket. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "Which hobby did the speaker choose?",
+              "choices": [
+                "art palette",
+                "football",
+                "camera"
+              ],
+              "images": [
+                "images/illustration-2-1.png",
+                "images/illustration-2-2.png",
+                "images/illustration-2-3.png"
+              ],
+              "answer": 1,
+              "script": "I talked with my friends about a new hobby on Monday. We considered art palette and camera, but neither matched our needs. After reviewing the options, we chose football. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "Where will the public event take place?",
+              "choices": [
+                "stadium",
+                "school building",
+                "park"
+              ],
+              "images": [
+                "images/illustration-extra-3-1.png",
+                "images/illustration-extra-3-2.png",
+                "images/illustration-extra-3-3.png"
+              ],
+              "answer": 1,
+              "script": "The organisers examined several locations for the public event on Monday. We considered stadium and park, but neither matched our needs. After reviewing the options, we chose school building. We have now shared the final decision and everyone knows what to prepare."
+            }
+          ],
+          "audio": "audio/g9-c-listening-1.mp3",
+          "transcript": "Text 1. My family considered different plans for the weekend on Monday. We considered beach and camping, but neither matched our needs. After reviewing the options, we chose shopping. We have now shared the final decision and everyone knows what to prepare.\n\nText 2. The organisers discussed the starting time of the event on Monday. Some suggested 3 o’clock, while others preferred 5 o’clock. The official notice confirms 7 o’clock. We have now shared the final decision and everyone knows what to prepare. The\n\nText 3. I needed one useful item for my school activities on Monday. We considered backpack and shoes, but neither matched our needs. After reviewing the options, we chose jacket. We have now shared the final decision and everyone knows what to prepare.\n\nText 4. I talked with my friends about a new hobby on Monday. We considered art palette and camera, but neither matched our needs. After reviewing the options, we chose football. We have now shared the final decision and everyone knows what to prepare.\n\nText 5. The organisers examined several locations for the public event on Monday. We considered stadium and park, but neither matched our needs. After reviewing the options, we chose school building. We have now shared the final decision and everyone knows what to prepare.",
+          "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C).",
+          "source_model": "C"
+        },
+        {
+          "id": "g9-A-L2",
+          "skill": "listening",
+          "group": 2,
+          "title": "Listening 2 — Interview",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "Where was the first episode recorded?",
+              "choices": [
+                "the library",
+                "the sports hall",
+                "the old science classroom"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "When did the team start?",
+              "choices": [
+                "September",
+                "January",
+                "October"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Who may apply?",
+              "choices": [
+                "teachers only",
+                "Grade Twelve only",
+                "Grades Eight and Nine"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "When do they meet?",
+              "choices": [
+                "Tuesday after school",
+                "Friday morning",
+                "Sunday evening"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "What skill did they learn?",
+              "choices": [
+                "checking facts",
+                "painting walls",
+                "playing football"
+              ],
+              "answer": 0
+            }
+          ],
+          "audio": "audio/g9-a-listening-2.mp3",
+          "transcript": "Interviewer: Welcome to Student Voices. Today we are speaking with Maha about the community radio project. Why was this project started?\n\nMaha: We wanted to help our school in a practical way, not just read about problems. Students suggested ideas, and our teachers helped us organise a small team.\n\nInterviewer: Tell us about your first activity.\n\nMaha: The first episode was recorded in the old science classroom. We chose something manageable and listened to feedback from other students.\n\nInterviewer: When did everything begin?\n\nMaha: The team began in October. We prepared the materials together and agreed on simple responsibilities.\n\nInterviewer: Who can get involved?\n\nMaha: Students from Grades Eight and Nine can apply. Everyone needs to show respect and take turns.\n\nInterviewer: When does the group meet?\n\nMaha: We meet every Tuesday after school. We try to finish each session with a useful plan for the next one.\n\nInterviewer: What is the most important lesson?\n\nMaha: We learned how to check a story before sharing it. It has also helped us become more confident when explaining our ideas.\n\nInterviewer: Would you recommend joining?\n\nMaha: Yes. Try something small, listen to others, and keep improving. We are proud that young people can lead meaningful changes, even when resources are limited and progress takes time. Thank you for inviting me.",
+          "instructions": "Listen to the interview twice. Choose the correct answer (A, B or C).",
+          "naturalAudioAvailable": true,
+          "source_model": "A"
+        },
+        {
+          "id": "g9-B-GV",
+          "skill": "grammar_vocabulary",
+          "group": 1,
+          "title": "Grammar & Vocabulary — One cloze",
+          "marks": 10,
+          "passage": "During our school nature week, we (1) ____ a trail beside the playground. At first, the area (2) ____ untidy, so volunteers worked together. We placed (3) ____ near plants to explain their names. Each group (4) ____ a different part of the trail. We tried to (5) ____ water. We (6) ____ photographs for our records. The trail became (7) ____ after the clean-up. Visitors were (8) ____ by the results. We will (9) ____ the area regularly and share our (10) ____ with others.",
+          "items": [
+            {
+              "stem": "Gap 1",
+              "choices": [
+                "create",
+                "creating",
+                "created",
+                "creates"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 2",
+              "choices": [
+                "were",
+                "is",
+                "was",
+                "be"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 3",
+              "choices": [
+                "sings",
+                "signs",
+                "signals",
+                "sign"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 4",
+              "choices": [
+                "managed",
+                "manage",
+                "managing",
+                "manages"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 5",
+              "choices": [
+                "save",
+                "saved",
+                "saving",
+                "saves"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 6",
+              "choices": [
+                "take",
+                "taking",
+                "takes",
+                "took"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 7",
+              "choices": [
+                "clean",
+                "cleanest",
+                "cleaner",
+                "cleaning"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 8",
+              "choices": [
+                "impress",
+                "impressing",
+                "impressed",
+                "impressive"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 9",
+              "choices": [
+                "checked",
+                "check",
+                "checking",
+                "checks"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 10",
+              "choices": [
+                "findings",
+                "find",
+                "founded",
+                "finds"
+              ],
+              "answer": 0
+            }
+          ],
+          "instructions": "Read the text. For each gap (1–10), choose the correct option (A, B, C or D).",
+          "source_model": "B"
+        },
+        {
+          "id": "g9-A-R1",
+          "skill": "reading",
+          "group": 1,
+          "title": "Reading 1 — Matching",
+          "marks": 4,
+          "passage": "Match each person (1–4) with a suitable activity (A–E). One activity is extra.",
+          "people": [
+            "Hamad has a bicycle with a damaged light and wants to learn how to fix it.",
+            "Rana enjoys telling stories and hopes to record interviews with older relatives.",
+            "Bilal is interested in helping younger children improve their reading.",
+            "Maryam would like to grow plants in a small space at home."
+          ],
+          "options": [
+            "A free weekly book club pairs older readers with younger pupils.",
+            "The rooftop garden workshop teaches container planting and careful watering.",
+            "The community repair hub shows visitors how to maintain bicycles safely.",
+            "A weekend recording club teaches audio interviews and oral history.",
+            "The athletics centre offers team games on Friday mornings."
+          ],
+          "items": [
+            {
+              "stem": "Person 1: Hamad has a bicycle with a damaged light and wants to learn how to fix it.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Person 2: Rana enjoys telling stories and hopes to record interviews with older relatives.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Person 3: Bilal is interested in helping younger children improve their reading.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Person 4: Maryam would like to grow plants in a small space at home.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 1
+            }
+          ],
+          "instructions": "Read the four short descriptions and the five activity descriptions. Match each person to an activity.",
+          "source_model": "A"
+        },
+        {
+          "id": "g9-B-R2",
+          "skill": "reading",
+          "group": 2,
+          "title": "Reading 2 — Short answers",
+          "marks": 6,
+          "passage": "When a neighbourhood planned to improve its small square, the council invited teenagers to contribute ideas. Some adults were surprised because young people are rarely asked to comment on local planning. A group of pupils visited the site at different times of day. They recorded where people walked, which benches were used, and where shade was missing. Their first suggestion was an expensive new playground, but the council explained that the budget could not cover it.\n\nThe students then interviewed shopkeepers, parents, and older residents. Several adults preferred more seating, while children wanted room to play safely. The pupils revised their design, adding a shaded reading corner and keeping an open space for community events. A local architect helped them estimate costs, and they presented their work at a public meeting. Many residents praised the revised plan for considering people of different ages. However, others questioned whether teenagers understood the long-term costs of maintaining the site.\n\nThe council decided to test the plan using temporary benches and removable shade structures for two months. Volunteers collected comments during the trial, including reports about accessibility and cleanliness. The trial showed that the reading corner was popular, but its location blocked a busy pathway. The students moved it to a quieter area and prepared a second proposal.\n\nIn my view, young people should help design public spaces because they use them and notice problems that adults may overlook. Their ideas should not automatically become final decisions, though. Collaboration with engineers, local residents, and decision-makers helps turn enthusiasm into realistic improvements. The project was valuable because students learned to change their plans when new evidence appeared.",
+          "passageTitle": "Should Students Help Design Public Spaces?",
+          "items": [
+            {
+              "stem": "Who invited teenagers to suggest changes?",
+              "answers": [
+                "the council"
+              ]
+            },
+            {
+              "stem": "What did pupils first suggest?",
+              "answers": [
+                "an expensive new playground"
+              ]
+            },
+            {
+              "stem": "Why was the first proposal rejected?",
+              "answers": [
+                "the budget could not cover it"
+              ]
+            },
+            {
+              "stem": "Who helped pupils estimate costs?",
+              "answers": [
+                "a local architect"
+              ]
+            },
+            {
+              "stem": "How long did the council test the plan?",
+              "answers": [
+                "two months"
+              ]
+            },
+            {
+              "stem": "Why does the writer support student involvement?",
+              "answers": [
+                "young people notice overlooked problems"
+              ]
+            }
+          ],
+          "instructions": "Read the text, then answer the six questions in short answers.",
+          "source_model": "B"
+        },
+        {
+          "id": "g9-C-W1",
+          "skill": "writing",
+          "group": 1,
+          "title": "Writing 1 — Story",
+          "marks": 5,
+          "prompt": "Write a story about a school event where a team had to change its plan at the last minute. Include a clear ending.",
+          "minWords": 100,
+          "source_model": "C"
+        },
+        {
+          "id": "g9-A-W2",
+          "skill": "writing",
+          "group": 2,
+          "title": "Writing 2 — Email",
+          "marks": 5,
+          "prompt": "Write an email to a friend explaining a creative community project you joined, what you did there, and why you would recommend it.",
+          "minWords": 100,
+          "source_model": "A"
+        }
+      ]
+    },
+    {
+      "model": "G",
+      "grade": 9,
+      "minutes": 120,
+      "marks": 40,
+      "theme": "Inventive ideas and local solutions",
+      "tasks": [
+        {
+          "id": "g9-D-L1",
+          "skill": "listening",
+          "group": 1,
+          "title": "Listening 1 — Choose the picture",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "Which sport did the speaker join?",
+              "choices": [
+                "swimming",
+                "running",
+                "cycling"
+              ],
+              "images": [
+                "images/illustration-extra-2-1.png",
+                "images/illustration-extra-2-2.png",
+                "images/illustration-extra-2-3.png"
+              ],
+              "answer": 2,
+              "script": "I compared different sports before joining a school club during our planning meeting. We considered swimming and running, but neither matched our needs. After reviewing the options, we chose cycling. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "Where will the public event take place?",
+              "choices": [
+                "stadium",
+                "school building",
+                "park"
+              ],
+              "images": [
+                "images/illustration-extra-3-1.png",
+                "images/illustration-extra-3-2.png",
+                "images/illustration-extra-3-3.png"
+              ],
+              "answer": 2,
+              "script": "The organisers examined several locations for the public event during our planning meeting. We considered stadium and school building, but neither matched our needs. After reviewing the options, we chose park. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "Which hobby did the speaker choose?",
+              "choices": [
+                "art palette",
+                "football",
+                "camera"
+              ],
+              "images": [
+                "images/illustration-2-1.png",
+                "images/illustration-2-2.png",
+                "images/illustration-2-3.png"
+              ],
+              "answer": 0,
+              "script": "I talked with my friends about a new hobby during our planning meeting. We considered football and camera, but neither matched our needs. After reviewing the options, we chose art palette. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "What is the family's weekend plan?",
+              "choices": [
+                "beach",
+                "camping",
+                "shopping"
+              ],
+              "images": [
+                "images/illustration-5-1.png",
+                "images/illustration-5-2.png",
+                "images/illustration-5-3.png"
+              ],
+              "answer": 1,
+              "script": "My family considered different plans for the weekend during our planning meeting. We considered beach and shopping, but neither matched our needs. After reviewing the options, we chose camping. We have now shared the final decision and everyone knows what to prepare."
+            },
+            {
+              "stem": "What is the confirmed time of the event?",
+              "choices": [
+                "3 oclock",
+                "7 oclock",
+                "5 oclock"
+              ],
+              "images": [
+                "images/illustration-4-1.png",
+                "images/illustration-4-2.png",
+                "images/illustration-4-3.png"
+              ],
+              "answer": 2,
+              "script": "The organisers discussed the starting time of the event during our planning meeting. Some suggested 3 o’clock, while others preferred 7 o’clock. The official notice confirms 5 o’clock. We have now shared the final decision and everyone knows what to prepare."
+            }
+          ],
+          "audio": "audio/g9-d-listening-1.mp3",
+          "transcript": "Text 1. I compared different sports before joining a school club during our planning meeting. We considered swimming and running, but neither matched our needs. After reviewing the options, we chose cycling. We have now shared the final decision and everyone knows what to prepare.\n\nText 2. The organisers examined several locations for the public event during our planning meeting. We considered stadium and school building, but neither matched our needs. After reviewing the options, we chose park. We have now shared the final decision and everyone knows what to prepare.\n\nText 3. I talked with my friends about a new hobby during our planning meeting. We considered football and camera, but neither matched our needs. After reviewing the options, we chose art palette. We have now shared the final decision and everyone knows what to prepare.\n\nText 4. My family considered different plans for the weekend during our planning meeting. We considered beach and shopping, but neither matched our needs. After reviewing the options, we chose camping. We have now shared the final decision and everyone knows what to prepare.\n\nText 5. The organisers discussed the starting time of the event during our planning meeting. Some suggested 3 o’clock, while others preferred 7 o’clock. The official notice confirms 5 o’clock. We have now shared the final decision and everyone knows what to prepare.",
+          "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C)."
+        },
+        {
+          "id": "g9-D-L2",
+          "skill": "listening",
+          "group": 2,
+          "title": "Listening 2 — Interview",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "What did students repair first?",
+              "choices": [
+                "a bicycle",
+                "a school bus",
+                "a book shelf"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "When did the workshop open?",
+              "choices": [
+                "October",
+                "May",
+                "January"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Who helps the students?",
+              "choices": [
+                "a footballer",
+                "a shop cashier",
+                "a local carpenter"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "When do they meet?",
+              "choices": [
+                "Monday after lessons",
+                "Thursday morning",
+                "Saturday noon"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "What have they learned?",
+              "choices": [
+                "measuring carefully",
+                "selling tickets",
+                "writing poems"
+              ],
+              "answer": 0
+            }
+          ],
+          "audio": "audio/g9-d-listening-2.mp3",
+          "transcript": "Interviewer: Welcome to our student voices programme. Today we are speaking with Rashid about the school repair workshop. Why was this project started? Rashid: We wanted to help our school in a practical way, not just read about problems. Students suggested ideas, and our teachers helped us organise a small team. Interviewer: Tell us about your first activity. Rashid: They first repaired a broken book shelf. We chose something manageable and listened to feedback from other students. Interviewer: When did everything begin? Rashid: The workshop opened in January. We prepared the materials together and agreed on simple responsibilities. Interviewer: Who can get involved? Rashid: A local carpenter helps the students. Everyone needs to show respect and take turns. Interviewer: When does the group meet? Rashid: They meet every Monday after lessons. We try to finish each session with a useful plan for the next one. Interviewer: What is the most important lesson? Rashid: They have learned to measure carefully before cutting wood. It has also helped us become more confident when explaining our ideas. Interviewer: Would you recommend joining? Rashid: Yes. Try something small, listen to others, and keep improving. Thank you for inviting me. We are proud that young people can lead meaningful changes, even when resources are limited and progress takes time.",
+          "instructions": "Listen to the interview twice. Choose the correct answer (A, B or C)."
+        },
+        {
+          "id": "g9-D-GV",
+          "skill": "grammar_vocabulary",
+          "group": 1,
+          "title": "Grammar & Vocabulary — One cloze",
+          "marks": 10,
+          "passage": "Last Friday, our students (1) ____ a small exhibition about inventions. They (2) ____ models from recycled materials and (3) ____ how each one works. A visitor asked (4) ____ the devices could save energy. Good practical ideas need careful (5) ____. We (6) ____ a short survey to collect opinions. The results were (7) ____ than expected. Everyone was (8) ____ when families asked questions. We (9) ____ to improve the models next term and (10) ____ another exhibition.",
+          "items": [
+            {
+              "stem": "Gap 1",
+              "choices": [
+                "organised",
+                "organise",
+                "organising",
+                "organises"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 2",
+              "choices": [
+                "built",
+                "build",
+                "building",
+                "builds"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 3",
+              "choices": [
+                "explain",
+                "explaining",
+                "explains",
+                "explained"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 4",
+              "choices": [
+                "weather",
+                "either",
+                "whether",
+                "rather"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 5",
+              "choices": [
+                "test",
+                "tested",
+                "testing",
+                "tests"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 6",
+              "choices": [
+                "conduct",
+                "conducted",
+                "conducting",
+                "conducts"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 7",
+              "choices": [
+                "better",
+                "good",
+                "best",
+                "well"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 8",
+              "choices": [
+                "delighted",
+                "delight",
+                "delighting",
+                "delightful"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 9",
+              "choices": [
+                "planned",
+                "planning",
+                "plans",
+                "plan"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Gap 10",
+              "choices": [
+                "hosted",
+                "hosting",
+                "host",
+                "hosts"
+              ],
+              "answer": 2
+            }
+          ],
+          "instructions": "Read the text. For each gap (1–10), choose the correct option (A, B, C or D)."
+        },
+        {
+          "id": "g9-D-R1",
+          "skill": "reading",
+          "group": 1,
+          "title": "Reading 1 — Matching",
+          "marks": 4,
+          "passage": "Match each person (1–4) with a suitable activity (A–E). One activity is extra.",
+          "people": [
+            "Mazin hopes to protect marine life near the coast.",
+            "Huda would like to learn how to write clear newspaper reports.",
+            "Ali wants to practise making simple computer programmes.",
+            "Layla enjoys preparing traditional food with her grandparents."
+          ],
+          "options": [
+            "The coding club starts with simple animations and games.",
+            "The coastal volunteers monitor litter and protect sea animals.",
+            "The family cooking project records recipes from older relatives.",
+            "A student newsroom publishes factual reports about school life.",
+            "The cycling group explores safe routes around town."
+          ],
+          "items": [
+            {
+              "stem": "Person 1: Mazin hopes to protect marine life near the coast.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Person 2: Huda would like to learn how to write clear newspaper reports.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Person 3: Ali wants to practise making simple computer programmes.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Person 4: Layla enjoys preparing traditional food with her grandparents.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 2
+            }
+          ],
+          "instructions": "Read the four short descriptions and the five activity descriptions. Match each person to an activity."
+        },
+        {
+          "id": "g9-D-R2",
+          "skill": "reading",
+          "group": 2,
+          "title": "Reading 2 — Short answers",
+          "marks": 6,
+          "passage": "In a town outside Muscat, parents and students began discussing the journey to school. Heavy traffic near the main gate made mornings stressful, and some families felt that walking was unsafe. A student group counted vehicles for a week and interviewed classmates about their usual travel choices. The figures showed that many pupils lived close enough to walk, but parents worried about crossing a busy road.\n\nThe school proposed a marked walking route with volunteers supervising the busiest crossings. The municipality agreed to paint clearer road markings, while a local business donated reflective signs. Not everyone supported the plan. Some parents questioned whether volunteers could keep pupils safe in bad weather, and shop owners feared losing parking spaces. The organisers therefore introduced the route as a six-week trial instead of making a permanent change immediately.\n\nDuring the trial, teachers recorded arrival times and volunteers reported dangerous situations. The school also asked pupils to describe how they felt about the journey. More students began walking in small groups, and congestion near the gate decreased on several mornings. However, rain on two days exposed a problem: parts of the path became slippery. The organisers added temporary warning signs and asked the municipality to improve the surface before expanding the route.\n\nThe trial did not prove that walking is the best choice for every family. Some children live far away or need transport for personal reasons. Still, the project showed that collecting evidence can improve everyday decisions. The school plans to review the figures next term before asking the council for permanent changes. In my opinion, safer routes are worth exploring, provided that families have choices and safety concerns are taken seriously.",
+          "passageTitle": "A New Route for School Journeys",
+          "items": [
+            {
+              "stem": "What problem occurred near the school gate?",
+              "answers": [
+                "heavy traffic"
+              ]
+            },
+            {
+              "stem": "How long did students count vehicles?",
+              "answers": [
+                "one week"
+              ]
+            },
+            {
+              "stem": "Who donated reflective signs?",
+              "answers": [
+                "a local business"
+              ]
+            },
+            {
+              "stem": "How long was the route trial?",
+              "answers": [
+                "six weeks"
+              ]
+            },
+            {
+              "stem": "What problem appeared during rain?",
+              "answers": [
+                "the path became slippery"
+              ]
+            },
+            {
+              "stem": "When will the school review the data?",
+              "answers": [
+                "next term"
+              ]
+            }
+          ],
+          "instructions": "Read the text, then answer the six questions in short answers."
+        },
+        {
+          "id": "g9-D-W1",
+          "skill": "writing",
+          "group": 1,
+          "title": "Writing 1 — Story",
+          "marks": 5,
+          "prompt": "Write a story about finding an unusual object while helping someone. Explain what happened and what you learned.",
+          "minWords": 100
+        },
+        {
+          "id": "g9-D-W2",
+          "skill": "writing",
+          "group": 2,
+          "title": "Writing 2 — Email",
+          "marks": 5,
+          "prompt": "Write an email to a friend about a public place you visited for the first time. Describe what interested you and suggest a visit together.",
+          "minWords": 100
+        }
+      ],
+      "allocation": "archive_previous_D",
+      "unit_id": null,
+      "verification": "not_unit_verified"
+    }
+  ]
+}

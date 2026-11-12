@@ -1,0 +1,75 @@
+﻿grade,model,taskId,localPath,localExists,voiceQuality,status
+5,A,5:g5-a-listening-1,grades5-6/audio/g5-a-listening-1.mp3,True,legacy_temporary,local fallback; natural voice pending
+5,A,5:g5-a-listening-2,grades5-6/audio/g5-a-listening-2.mp3,True,legacy_temporary,local fallback; natural voice pending
+5,B,5:g5-b-listening-1,grades5-6/audio/g5-b-listening-1.mp3,True,legacy_temporary,local fallback; natural voice pending
+5,B,5:g5-b-listening-2,grades5-6/audio/g5-b-listening-2.mp3,True,legacy_temporary,local fallback; natural voice pending
+5,C,5:g5-c-listening-1,grades5-6/audio/g5-c-listening-1.mp3,True,legacy_temporary,local fallback; natural voice pending
+5,C,5:g5-c-listening-2,grades5-6/audio/g5-c-listening-2.mp3,True,legacy_temporary,local fallback; natural voice pending
+5,D,5:g5-d-listening-1,grades5-6/audio/g5-d-listening-1.mp3,True,legacy_temporary,local fallback; natural voice pending
+5,D,5:g5-d-listening-2,grades5-6/audio/g5-d-listening-2.mp3,True,legacy_temporary,local fallback; natural voice pending
+6,A,6:g6-a-listening-1,grades5-6/audio/g6-a-listening-1.mp3,True,legacy_temporary,local fallback; natural voice pending
+6,A,6:g6-a-listening-2,grades5-6/audio/g6-a-listening-2.mp3,True,legacy_temporary,local fallback; natural voice pending
+6,B,6:g6-b-listening-1,grades5-6/audio/g6-b-listening-1.mp3,True,legacy_temporary,local fallback; natural voice pending
+6,B,6:g6-b-listening-2,grades5-6/audio/g6-b-listening-2.mp3,True,legacy_temporary,local fallback; natural voice pending
+6,C,6:g6-c-listening-1,grades5-6/audio/g6-c-listening-1.mp3,True,legacy_temporary,local fallback; natural voice pending
+6,C,6:g6-c-listening-2,grades5-6/audio/g6-c-listening-2.mp3,True,legacy_temporary,local fallback; natural voice pending
+6,D,6:g6-d-listening-1,grades5-6/audio/g6-d-listening-1.mp3,True,legacy_temporary,local fallback; natural voice pending
+6,D,6:g6-d-listening-2,grades5-6/audio/g6-d-listening-2.mp3,True,legacy_temporary,local fallback; natural voice pending
+7,A,7:A:listening1,grades7-8/assets/audio/g7-a-listening1.mp3,True,legacy_temporary,local fallback; natural voice pending
+7,A,7:A:listening2,grades7-8/assets/audio/g7-a-listening2.mp3,True,legacy_temporary,local fallback; natural voice pending
+7,B,7:B:listening1,grades7-8/assets/audio/g7-b-listening1.mp3,True,legacy_temporary,local fallback; natural voice pending
+7,B,7:B:listening2,grades7-8/assets/audio/g7-b-listening2.mp3,True,legacy_temporary,local fallback; natural voice pending
+7,C,7:C:listening1,grades7-8/assets/audio/g7-c-listening1.mp3,True,legacy_temporary,local fallback; natural voice pending
+7,C,7:C:listening2,grades7-8/assets/audio/g7-c-listening2.mp3,True,legacy_temporary,local fallback; natural voice pending
+7,D,7:D:listening1,grades7-8/assets/audio/g7-d-listening1.mp3,True,legacy_temporary,local fallback; natural voice pending
+7,D,7:D:listening2,grades7-8/assets/audio/g7-d-listening2.mp3,True,legacy_temporary,local fallback; natural voice pending
+8,A,8:A:listening1,grades7-8/assets/audio/g8-a-listening1.mp3,True,legacy_temporary,local fallback; natural voice pending
+8,A,8:A:listening2,grades7-8/assets/audio/g8-a-listening2.mp3,True,legacy_temporary,local fallback; natural voice pending
+8,B,8:B:listening1,grades7-8/assets/audio/g8-b-listening1.mp3,True,legacy_temporary,local fallback; natural voice pending
+8,B,8:B:listening2,grades7-8/assets/audio/g8-b-listening2.mp3,True,legacy_temporary,local fallback; natural voice pending
+8,C,8:C:listening1,grades7-8/assets/audio/g8-c-listening1.mp3,True,legacy_temporary,local fallback; natural voice pending
+8,C,8:C:listening2,grades7-8/assets/audio/g8-c-listening2.mp3,True,legacy_temporary,local fallback; natural voice pending
+8,D,8:D:listening1,grades7-8/assets/audio/g8-d-listening1.mp3,True,legacy_temporary,local fallback; natural voice pending
+8,D,8:D:listening2,grades7-8/assets/audio/g8-d-listening2.mp3,True,legacy_temporary,local fallback; natural voice pending
+9,A,9:g9-A-L1,grade9/audio/g9-a-listening-1.mp3,True,legacy_temporary,local fallback; natural voice pending
+9,A,9:g9-A-L2,grade9/audio/g9-a-listening-2.mp3,True,legacy_temporary,local fallback; natural voice pending
+9,B,9:g9-B-L1,grade9/audio/g9-b-listening-1.mp3,True,legacy_temporary,local fallback; natural voice pending
+9,B,9:g9-B-L2,grade9/audio/g9-b-listening-2.mp3,True,legacy_temporary,local fallback; natural voice pending
+9,C,9:g9-C-L1,grade9/audio/g9-c-listening-1.mp3,True,legacy_temporary,local fallback; natural voice pending
+9,C,9:g9-C-L2,grade9/audio/g9-c-listening-2.mp3,True,legacy_temporary,local fallback; natural voice pending
+11,A,11-elective:A:lst1,,False,not_produced,"script only, produce MP3"
+11,A,11-elective:A:lst2,,False,not_produced,"script only, produce MP3"
+11,B,11-elective:B:lst1,,False,not_produced,"script only, produce MP3"
+11,B,11-elective:B:lst2,,False,not_produced,"script only, produce MP3"
+11,C,11-elective:C:lst1,,False,not_produced,"script only, produce MP3"
+11,C,11-elective:C:lst2,,False,not_produced,"script only, produce MP3"
+11,D,11-elective:D:lst1,,False,not_produced,"script only, produce MP3"
+11,D,11-elective:D:lst2,,False,not_produced,"script only, produce MP3"
+11,E,11-elective:E:lst1,,False,not_produced,"script only, produce MP3"
+11,E,11-elective:E:lst2,,False,not_produced,"script only, produce MP3"
+11,F,11-elective:F:lst1,,False,not_produced,"script only, produce MP3"
+11,F,11-elective:F:lst2,,False,not_produced,"script only, produce MP3"
+12,A,12-core:A:lst1,,False,not_produced,"script only, produce MP3"
+12,A,12-core:A:lst2,,False,not_produced,"script only, produce MP3"
+12,B,12-core:B:lst1,,False,not_produced,"script only, produce MP3"
+12,B,12-core:B:lst2,,False,not_produced,"script only, produce MP3"
+12,C,12-core:C:lst1,,False,not_produced,"script only, produce MP3"
+12,C,12-core:C:lst2,,False,not_produced,"script only, produce MP3"
+12,D,12-core:D:lst1,,False,not_produced,"script only, produce MP3"
+12,D,12-core:D:lst2,,False,not_produced,"script only, produce MP3"
+12,E,12-core:E:lst1,,False,not_produced,"script only, produce MP3"
+12,E,12-core:E:lst2,,False,not_produced,"script only, produce MP3"
+12,F,12-core:F:lst1,,False,not_produced,"script only, produce MP3"
+12,F,12-core:F:lst2,,False,not_produced,"script only, produce MP3"
+12,A,12-elective:A:lst1,,False,not_produced,"script only, produce MP3"
+12,A,12-elective:A:lst2,,False,not_produced,"script only, produce MP3"
+12,B,12-elective:B:lst1,,False,not_produced,"script only, produce MP3"
+12,B,12-elective:B:lst2,,False,not_produced,"script only, produce MP3"
+12,C,12-elective:C:lst1,,False,not_produced,"script only, produce MP3"
+12,C,12-elective:C:lst2,,False,not_produced,"script only, produce MP3"
+12,D,12-elective:D:lst1,,False,not_produced,"script only, produce MP3"
+12,D,12-elective:D:lst2,,False,not_produced,"script only, produce MP3"
+12,E,12-elective:E:lst1,,False,not_produced,"script only, produce MP3"
+12,E,12-elective:E:lst2,,False,not_produced,"script only, produce MP3"
+12,F,12-elective:F:lst1,,False,not_produced,"script only, produce MP3"
+12,F,12-elective:F:lst2,,False,not_produced,"script only, produce MP3"

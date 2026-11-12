@@ -1,0 +1,172 @@
+﻿grade,track,model,task_id,skill,candidate_unit,confidence,remark
+5,general,A,5:g5-a-listening-1,listening,1,suggested_review,unit alignment not independently verified
+5,general,A,5:g5-a-listening-2,listening,,unclassified,unit alignment not independently verified
+5,general,A,5:g5-a-vocabulary,vocabulary,,unclassified,unit alignment not independently verified
+5,general,A,5:g5-a-grammar,grammar,,unclassified,unit alignment not independently verified
+5,general,A,5:g5-a-reading-1,reading,,unclassified,unit alignment not independently verified
+5,general,A,5:g5-a-reading-2,reading,,unclassified,unit alignment not independently verified
+5,general,A,5:g5-a-writing-1,writing,,unclassified,unit alignment not independently verified
+5,general,A,5:g5-a-writing-2,writing,,unclassified,unit alignment not independently verified
+5,general,B,5:g5-b-listening-1,listening,1,suggested_review,unit alignment not independently verified
+5,general,B,5:g5-b-listening-2,listening,,unclassified,unit alignment not independently verified
+5,general,B,5:g5-b-vocabulary,vocabulary,,unclassified,unit alignment not independently verified
+5,general,B,5:g5-b-grammar,grammar,,unclassified,unit alignment not independently verified
+5,general,B,5:g5-b-reading-1,reading,,unclassified,unit alignment not independently verified
+5,general,B,5:g5-b-reading-2,reading,,unclassified,unit alignment not independently verified
+5,general,B,5:g5-b-writing-1,writing,,unclassified,unit alignment not independently verified
+5,general,B,5:g5-b-writing-2,writing,,unclassified,unit alignment not independently verified
+5,general,C,5:g5-c-listening-1,listening,1,suggested_review,unit alignment not independently verified
+5,general,C,5:g5-c-listening-2,listening,4,suggested_review,unit alignment not independently verified
+5,general,C,5:g5-c-vocabulary,vocabulary,,unclassified,unit alignment not independently verified
+5,general,C,5:g5-c-grammar,grammar,,unclassified,unit alignment not independently verified
+5,general,C,5:g5-c-reading-1,reading,,unclassified,unit alignment not independently verified
+5,general,C,5:g5-c-reading-2,reading,4,suggested_review,unit alignment not independently verified
+5,general,C,5:g5-c-writing-1,writing,4,suggested_review,unit alignment not independently verified
+5,general,C,5:g5-c-writing-2,writing,,unclassified,unit alignment not independently verified
+5,general,D,5:g5-d-listening-1,listening,1,suggested_review,unit alignment not independently verified
+5,general,D,5:g5-d-listening-2,listening,,unclassified,unit alignment not independently verified
+5,general,D,5:g5-d-vocabulary,vocabulary,,unclassified,unit alignment not independently verified
+5,general,D,5:g5-d-grammar,grammar,,unclassified,unit alignment not independently verified
+5,general,D,5:g5-d-reading-1,reading,,unclassified,unit alignment not independently verified
+5,general,D,5:g5-d-reading-2,reading,,unclassified,unit alignment not independently verified
+5,general,D,5:g5-d-writing-1,writing,,unclassified,unit alignment not independently verified
+5,general,D,5:g5-d-writing-2,writing,,unclassified,unit alignment not independently verified
+6,general,A,6:g6-a-listening-1,listening,2,suggested_review,unit alignment not independently verified
+6,general,A,6:g6-a-listening-2,listening,2,suggested_review,unit alignment not independently verified
+6,general,A,6:g6-a-vocabulary,vocabulary,,unclassified,unit alignment not independently verified
+6,general,A,6:g6-a-grammar,grammar,,unclassified,unit alignment not independently verified
+6,general,A,6:g6-a-reading-1,reading,,unclassified,unit alignment not independently verified
+6,general,A,6:g6-a-reading-2,reading,2,suggested_review,unit alignment not independently verified
+6,general,A,6:g6-a-writing-1,writing,2,suggested_review,unit alignment not independently verified
+6,general,A,6:g6-a-writing-2,writing,,unclassified,unit alignment not independently verified
+6,general,B,6:g6-b-listening-1,listening,,unclassified,unit alignment not independently verified
+6,general,B,6:g6-b-listening-2,listening,3,suggested_review,unit alignment not independently verified
+6,general,B,6:g6-b-vocabulary,vocabulary,,unclassified,unit alignment not independently verified
+6,general,B,6:g6-b-grammar,grammar,,unclassified,unit alignment not independently verified
+6,general,B,6:g6-b-reading-1,reading,,unclassified,unit alignment not independently verified
+6,general,B,6:g6-b-reading-2,reading,,unclassified,unit alignment not independently verified
+6,general,B,6:g6-b-writing-1,writing,,unclassified,unit alignment not independently verified
+6,general,B,6:g6-b-writing-2,writing,,unclassified,unit alignment not independently verified
+6,general,C,6:g6-c-listening-1,listening,,unclassified,unit alignment not independently verified
+6,general,C,6:g6-c-listening-2,listening,,unclassified,unit alignment not independently verified
+6,general,C,6:g6-c-vocabulary,vocabulary,,unclassified,unit alignment not independently verified
+6,general,C,6:g6-c-grammar,grammar,,unclassified,unit alignment not independently verified
+6,general,C,6:g6-c-reading-1,reading,,unclassified,unit alignment not independently verified
+6,general,C,6:g6-c-reading-2,reading,,unclassified,unit alignment not independently verified
+6,general,C,6:g6-c-writing-1,writing,,unclassified,unit alignment not independently verified
+6,general,C,6:g6-c-writing-2,writing,,unclassified,unit alignment not independently verified
+6,general,D,6:g6-d-listening-1,listening,,unclassified,unit alignment not independently verified
+6,general,D,6:g6-d-listening-2,listening,3,suggested_review,unit alignment not independently verified
+6,general,D,6:g6-d-vocabulary,vocabulary,,unclassified,unit alignment not independently verified
+6,general,D,6:g6-d-grammar,grammar,,unclassified,unit alignment not independently verified
+6,general,D,6:g6-d-reading-1,reading,,unclassified,unit alignment not independently verified
+6,general,D,6:g6-d-reading-2,reading,,unclassified,unit alignment not independently verified
+6,general,D,6:g6-d-writing-1,writing,,unclassified,unit alignment not independently verified
+6,general,D,6:g6-d-writing-2,writing,,unclassified,unit alignment not independently verified
+7,general,A,7:A:listening1,listening1,3,suggested_review,unit alignment not independently verified
+7,general,A,7:A:listening2,listening2,,unclassified,unit alignment not independently verified
+7,general,A,7:A:grammarvocabulary,grammarvocabulary,,unclassified,unit alignment not independently verified
+7,general,A,7:A:reading1,reading1,,unclassified,unit alignment not independently verified
+7,general,A,7:A:reading2,reading2,,unclassified,unit alignment not independently verified
+7,general,A,7:A:writing1,writing1,3,suggested_review,unit alignment not independently verified
+7,general,A,7:A:writing2,writing2,,unclassified,unit alignment not independently verified
+7,general,B,7:B:listening1,listening1,3,suggested_high,unit alignment not independently verified
+7,general,B,7:B:listening2,listening2,,unclassified,unit alignment not independently verified
+7,general,B,7:B:grammarvocabulary,grammarvocabulary,,unclassified,unit alignment not independently verified
+7,general,B,7:B:reading1,reading1,,unclassified,unit alignment not independently verified
+7,general,B,7:B:reading2,reading2,,unclassified,unit alignment not independently verified
+7,general,B,7:B:writing1,writing1,,unclassified,unit alignment not independently verified
+7,general,B,7:B:writing2,writing2,,unclassified,unit alignment not independently verified
+7,general,C,7:C:listening1,listening1,,unclassified,unit alignment not independently verified
+7,general,C,7:C:listening2,listening2,,unclassified,unit alignment not independently verified
+7,general,C,7:C:grammarvocabulary,grammarvocabulary,3,suggested_review,unit alignment not independently verified
+7,general,C,7:C:reading1,reading1,,unclassified,unit alignment not independently verified
+7,general,C,7:C:reading2,reading2,,unclassified,unit alignment not independently verified
+7,general,C,7:C:writing1,writing1,,unclassified,unit alignment not independently verified
+7,general,C,7:C:writing2,writing2,,unclassified,unit alignment not independently verified
+7,general,D,7:D:listening1,listening1,2,suggested_high,unit alignment not independently verified
+7,general,D,7:D:listening2,listening2,,unclassified,unit alignment not independently verified
+7,general,D,7:D:grammarvocabulary,grammarvocabulary,,unclassified,unit alignment not independently verified
+7,general,D,7:D:reading1,reading1,,unclassified,unit alignment not independently verified
+7,general,D,7:D:reading2,reading2,,unclassified,unit alignment not independently verified
+7,general,D,7:D:writing1,writing1,,unclassified,unit alignment not independently verified
+7,general,D,7:D:writing2,writing2,,unclassified,unit alignment not independently verified
+8,general,A,8:A:listening1,listening1,1,suggested_high,unit alignment not independently verified
+8,general,A,8:A:listening2,listening2,3,suggested_review,unit alignment not independently verified
+8,general,A,8:A:grammarvocabulary,grammarvocabulary,,unclassified,unit alignment not independently verified
+8,general,A,8:A:reading1,reading1,3,suggested_review,unit alignment not independently verified
+8,general,A,8:A:reading2,reading2,,unclassified,unit alignment not independently verified
+8,general,A,8:A:writing1,writing1,,unclassified,unit alignment not independently verified
+8,general,A,8:A:writing2,writing2,,unclassified,unit alignment not independently verified
+8,general,B,8:B:listening1,listening1,2,suggested_review,unit alignment not independently verified
+8,general,B,8:B:listening2,listening2,,unclassified,unit alignment not independently verified
+8,general,B,8:B:grammarvocabulary,grammarvocabulary,,unclassified,unit alignment not independently verified
+8,general,B,8:B:reading1,reading1,3,suggested_review,unit alignment not independently verified
+8,general,B,8:B:reading2,reading2,,unclassified,unit alignment not independently verified
+8,general,B,8:B:writing1,writing1,,unclassified,unit alignment not independently verified
+8,general,B,8:B:writing2,writing2,,unclassified,unit alignment not independently verified
+8,general,C,8:C:listening1,listening1,2,suggested_review,unit alignment not independently verified
+8,general,C,8:C:listening2,listening2,1,suggested_high,unit alignment not independently verified
+8,general,C,8:C:grammarvocabulary,grammarvocabulary,,unclassified,unit alignment not independently verified
+8,general,C,8:C:reading1,reading1,1,suggested_review,unit alignment not independently verified
+8,general,C,8:C:reading2,reading2,1,suggested_review,unit alignment not independently verified
+8,general,C,8:C:writing1,writing1,,unclassified,unit alignment not independently verified
+8,general,C,8:C:writing2,writing2,,unclassified,unit alignment not independently verified
+8,general,D,8:D:listening1,listening1,1,suggested_review,unit alignment not independently verified
+8,general,D,8:D:listening2,listening2,3,suggested_high,unit alignment not independently verified
+8,general,D,8:D:grammarvocabulary,grammarvocabulary,,unclassified,unit alignment not independently verified
+8,general,D,8:D:reading1,reading1,3,suggested_high,unit alignment not independently verified
+8,general,D,8:D:reading2,reading2,3,suggested_review,unit alignment not independently verified
+8,general,D,8:D:writing1,writing1,,unclassified,unit alignment not independently verified
+8,general,D,8:D:writing2,writing2,,unclassified,unit alignment not independently verified
+9,general,A,9:g9-A-L1,listening,1,suggested_review,unit alignment not independently verified
+9,general,A,9:g9-A-L2,listening,,unclassified,unit alignment not independently verified
+9,general,A,9:g9-A-GV,grammar_vocabulary,,unclassified,unit alignment not independently verified
+9,general,A,9:g9-A-R1,reading,,unclassified,unit alignment not independently verified
+9,general,A,9:g9-A-R2,reading,3,suggested_review,unit alignment not independently verified
+9,general,A,9:g9-A-W1,writing,,unclassified,unit alignment not independently verified
+9,general,A,9:g9-A-W2,writing,,unclassified,unit alignment not independently verified
+9,general,B,9:g9-B-L1,listening,,unclassified,unit alignment not independently verified
+9,general,B,9:g9-B-L2,listening,,unclassified,unit alignment not independently verified
+9,general,B,9:g9-B-GV,grammar_vocabulary,,unclassified,unit alignment not independently verified
+9,general,B,9:g9-B-R1,reading,2,suggested_review,unit alignment not independently verified
+9,general,B,9:g9-B-R2,reading,,unclassified,unit alignment not independently verified
+9,general,B,9:g9-B-W1,writing,,unclassified,unit alignment not independently verified
+9,general,B,9:g9-B-W2,writing,,unclassified,unit alignment not independently verified
+9,general,C,9:g9-C-L1,listening,,unclassified,unit alignment not independently verified
+9,general,C,9:g9-C-L2,listening,,unclassified,unit alignment not independently verified
+9,general,C,9:g9-C-GV,grammar_vocabulary,,unclassified,unit alignment not independently verified
+9,general,C,9:g9-C-R1,reading,,unclassified,unit alignment not independently verified
+9,general,C,9:g9-C-R2,reading,,unclassified,unit alignment not independently verified
+9,general,C,9:g9-C-W1,writing,,unclassified,unit alignment not independently verified
+9,general,C,9:g9-C-W2,writing,,unclassified,unit alignment not independently verified
+10,10-core,A,10-core:A,complete_exam,1,unverified,requires textbook lesson-level review
+10,10-core,B,10-core:B,complete_exam,2,unverified,requires textbook lesson-level review
+10,10-core,C,10-core:C,complete_exam,3,unverified,requires textbook lesson-level review
+10,10-core,D,10-core:D,complete_exam,4,unverified,requires textbook lesson-level review
+10,10-core,E,10-core:E,complete_exam,all,unverified,requires textbook lesson-level review
+10,10-core,F,10-core:F,complete_exam,all,unverified,requires textbook lesson-level review
+11,11-core,A,11-core:A,complete_exam,1,unverified,requires textbook lesson-level review
+11,11-core,B,11-core:B,complete_exam,2,unverified,requires textbook lesson-level review
+11,11-core,C,11-core:C,complete_exam,3,unverified,requires textbook lesson-level review
+11,11-core,D,11-core:D,complete_exam,4,unverified,requires textbook lesson-level review
+11,11-core,E,11-core:E,complete_exam,all,unverified,requires textbook lesson-level review
+11,11-core,F,11-core:F,complete_exam,all,unverified,requires textbook lesson-level review
+11,11-elective,A,11-elective:A,complete_exam,,unverified,requires textbook lesson-level review
+11,11-elective,B,11-elective:B,complete_exam,,unverified,requires textbook lesson-level review
+11,11-elective,C,11-elective:C,complete_exam,,unverified,requires textbook lesson-level review
+11,11-elective,D,11-elective:D,complete_exam,,unverified,requires textbook lesson-level review
+11,11-elective,E,11-elective:E,complete_exam,all,unverified,requires textbook lesson-level review
+11,11-elective,F,11-elective:F,complete_exam,all,unverified,requires textbook lesson-level review
+12,12-core,A,12-core:A,complete_exam,Retail Therapy,unverified,requires textbook lesson-level review
+12,12-core,B,12-core:B,complete_exam,Starting University,unverified,requires textbook lesson-level review
+12,12-core,C,12-core:C,complete_exam,Tourism and Hospitality,unverified,requires textbook lesson-level review
+12,12-core,D,12-core:D,complete_exam,Travel and Transport,unverified,requires textbook lesson-level review
+12,12-core,E,12-core:E,complete_exam,all,unverified,requires textbook lesson-level review
+12,12-core,F,12-core:F,complete_exam,all,unverified,requires textbook lesson-level review
+12,12-elective,A,12-elective:A,complete_exam,,unverified,requires textbook lesson-level review
+12,12-elective,B,12-elective:B,complete_exam,,unverified,requires textbook lesson-level review
+12,12-elective,C,12-elective:C,complete_exam,,unverified,requires textbook lesson-level review
+12,12-elective,D,12-elective:D,complete_exam,,unverified,requires textbook lesson-level review
+12,12-elective,E,12-elective:E,complete_exam,all,unverified,requires textbook lesson-level review
+12,12-elective,F,12-elective:F,complete_exam,all,unverified,requires textbook lesson-level review

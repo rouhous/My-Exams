@@ -1,0 +1,149 @@
+[
+  {
+    "section": "listening1",
+    "segment": "intro",
+    "file": "audio-natural/g9/a/listening1/intro.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=9103ac832e9149318ceac87257460b9f.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening1",
+    "segment": "text1",
+    "file": "audio-natural/g9/a/listening1/text1.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=b0cff26cfc3a4ceaa29349e6a0bb534b.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening1",
+    "segment": "text2",
+    "file": "audio-natural/g9/a/listening1/text2.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=b94b96abd54a439faae7e3658fda29da.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening1",
+    "segment": "text3",
+    "file": "audio-natural/g9/a/listening1/text3.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=493909e362434985a3ddcbd1ec0487b3.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening1",
+    "segment": "text4",
+    "file": "audio-natural/g9/a/listening1/text4.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=8b40c571c26847708632037da70ca0fd.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening1",
+    "segment": "text5",
+    "file": "audio-natural/g9/a/listening1/text5.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=841b922718a740dab2b4685183c7d501.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening2",
+    "segment": "q1",
+    "file": "audio-natural/g9/a/listening2/q1.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=bcbedeeac83a445bbc7ade239164f59d.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening2",
+    "segment": "a1",
+    "file": "audio-natural/g9/a/listening2/a1.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=5b1d14ae0eb04fe8af20cd316529770b.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening2",
+    "segment": "q2",
+    "file": "audio-natural/g9/a/listening2/q2.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=497f272aa66b4fefb98fd2e653124adc.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening2",
+    "segment": "a2",
+    "file": "audio-natural/g9/a/listening2/a2.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=f7455b4f8dba4eb58cc989ddbd41f965.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening2",
+    "segment": "q3",
+    "file": "audio-natural/g9/a/listening2/q3.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=838cdf13a4364ae5baef59d5a3229667.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening2",
+    "segment": "a3",
+    "file": "audio-natural/g9/a/listening2/a3.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=401418d6af284feab94caa5af205091d.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening2",
+    "segment": "q4",
+    "file": "audio-natural/g9/a/listening2/q4.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=decc8ce1d13b4b2c95c930a94736acba.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening2",
+    "segment": "a4",
+    "file": "audio-natural/g9/a/listening2/a4.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=15ff9529718641ef8690d8389c16a55c.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening2",
+    "segment": "q5",
+    "file": "audio-natural/g9/a/listening2/q5.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=43b1f676297248bfa54a54396f4ad400.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening2",
+    "segment": "a5",
+    "file": "audio-natural/g9/a/listening2/a5.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=68ca038d6b9c4bcc993eb67d1ddc251f.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening2",
+    "segment": "q6",
+    "file": "audio-natural/g9/a/listening2/q6.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=bca31b49d1924777952cb6b080ea0576.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening2",
+    "segment": "a6",
+    "file": "audio-natural/g9/a/listening2/a6.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=041853f2e42b4c659d75e3857b63d6a1.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening2",
+    "segment": "q7",
+    "file": "audio-natural/g9/a/listening2/q7.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=2af27ccc041d4ba4b7dbff2365c8c7f2.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening2",
+    "segment": "a7",
+    "file": "audio-natural/g9/a/listening2/a7.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=4de730cca85941538ce949be87759ac9.mp3",
+    "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening2",
+    "segment": "intro",
+    "file": "audio-natural/g9/a/listening2/intro.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=085f6b8c528346cfb3608a96f9da528e.mp3",
+    "status": "source only, not locally downloaded"
+  }
+]
