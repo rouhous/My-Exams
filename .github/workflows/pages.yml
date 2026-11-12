@@ -1,4 +1,4 @@
-name: Deploy My Exams to GitHub Pages
+name: Deploy My Exams review application
 on:
   push:
     branches: [main]
@@ -18,9 +18,39 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Extract verified exam release ZIP for deployment
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import zipfile, pathlib, shutil
+          archive=pathlib.Path('My-Exams_GitHub_Ready_2026-11-12.zip')
+          target=pathlib.Path('_site')
+          target.mkdir(exist_ok=True)
+          if not archive.is_file():
+              raise SystemExit('Release ZIP missing. Cannot deploy a misleading placeholder.')
+          with zipfile.ZipFile(archive) as z:
+              bad=z.testzip()
+              if bad: raise SystemExit(f'Corrupt archive entry: {bad}')
+              for m in z.infolist():
+                  p=pathlib.PurePosixPath(m.filename)
+                  if p.is_absolute() or '..' in p.parts or p.parts[0] in {'_site','.git'}:
+                      raise SystemExit(f'Unsafe ZIP path: {m.filename}')
+                  # Do not deploy action workflows, private tooling, or bytecode.
+                  if '.github' in p.parts or '__pycache__' in p.parts or p.suffix in {'.pyc'}:
+                      continue
+                  dst=target.joinpath(*p.parts)
+                  if m.is_dir():
+                      dst.mkdir(parents=True,exist_ok=True)
+                  else:
+                      dst.parent.mkdir(parents=True,exist_ok=True)
+                      with z.open(m) as src, dst.open('wb') as out: shutil.copyfileobj(src,out)
+          assert (target/'index.html').is_file(), 'Missing student/review landing page'
+          print('Extracted preview files:', len(list(target.rglob('*'))))
+          PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4
