@@ -1,4 +1,7 @@
-const CACHE='exam-static-2026-11-12-v2';
-self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(c=>c.addAll(['./','index.html','tasks_5_to_9_corrected.json','higher_grades_corrected.json','curriculum_units.json','OFFLINE_MEDIA_MANIFEST.json']))).then(()=>self.skipWaiting()));
-self.addEventListener('activate',event=>event.waitUntil(self.clients.claim()));
-self.addEventListener('fetch',event=>{const req=event.request;if(req.method!=='GET'||new URL(req.url).origin!==location.origin)return;event.respondWith((async()=>{const cache=await caches.open(CACHE);const hit=await cache.match(req,{ignoreSearch:true});if(hit)return hit;try{const res=await fetch(req);if(res.ok&&res.type!=='opaque')cache.put(req,res.clone());return res;}catch(e){if(req.mode==='navigate')return await cache.match('index.html');throw e}})())});
+const CACHE='my-exams-v3-2026-11-12';
+const CORE=['./','index.html','review.html','tasks_5_to_9_corrected.json','higher_grades_corrected.json','curriculum_units.json','OFFLINE_MEDIA_MANIFEST.json'];
+self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
+self.addEventListener('activate',e=>e.waitUntil((async()=>{for(const n of await caches.keys())if(n.startsWith('exam-static-')||n.startsWith('my-exams-')&&n!==CACHE)await caches.delete(n);await self.clients.claim()})()));
+self.addEventListener('fetch',e=>{const req=e.request;if(req.method!=='GET'||new URL(req.url).origin!==location.origin)return;
+e.respondWith((async()=>{const c=await caches.open(CACHE);if(req.mode==='navigate'){try{const r=await fetch(req);if(r.ok)c.put(req,r.clone());return r}catch(err){return await c.match(req)||await c.match('index.html')||Response.error()}}
+const old=await c.match(req,{ignoreSearch:true});if(old)return old;try{const r=await fetch(req);if(r.ok&&r.type!=='opaque')c.put(req,r.clone());return r}catch(err){return old||Response.error()}})())});
