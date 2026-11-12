@@ -1,0 +1,70 @@
+name: Unpack and version My Exams assets
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'My-Exams_GitHub_Ready_2026-11-12.zip'
+      - '.github/workflows/unpack-release.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: unpack-my-exams
+  cancel-in-progress: false
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Validate and extract exam files to repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import pathlib, zipfile, shutil
+          archive=pathlib.Path('My-Exams_GitHub_Ready_2026-11-12.zip')
+          if not archive.exists():
+              raise SystemExit('Uploaded ZIP missing')
+          count=0
+          with zipfile.ZipFile(archive) as z:
+              bad=z.testzip()
+              if bad: raise SystemExit(f'Corrupt ZIP: {bad}')
+              for m in z.infolist():
+                  name=pathlib.PurePosixPath(m.filename)
+                  if name.is_absolute() or not name.parts or '..' in name.parts:
+                      raise SystemExit(f'Unsafe ZIP path: {m.filename}')
+                  if name.parts[0] in {'.git','.github','_site'} or '__pycache__' in name.parts or name.suffix == '.pyc':
+                      continue
+                  if name.as_posix() in {'README.md','.nojekyll'}:
+                      continue
+                  target=pathlib.Path(*name.parts)
+                  if m.is_dir():
+                      target.mkdir(parents=True,exist_ok=True)
+                  else:
+                      target.parent.mkdir(parents=True,exist_ok=True)
+                      with z.open(m) as src, target.open('wb') as out:
+                          shutil.copyfileobj(src,out)
+                      count+=1
+          if not pathlib.Path('grade9/index.html').is_file():
+              raise SystemExit('Required Grade 9 exam page missing')
+          if not pathlib.Path('grades5-6/index.html').is_file():
+              raise SystemExit('Required Grades 5–6 exam page missing')
+          if not pathlib.Path('grades7-8/index.html').is_file():
+              raise SystemExit('Required Grades 7–8 exam page missing')
+          print(f'Validated and extracted {count} files')
+          PY
+      - name: Commit unpacked exam and media assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Import My Exams tests, illustrations and local audio from verified release ZIP"
+            git push origin HEAD:main
+          else
+            echo "No new or changed assets"
+          fi
