@@ -25,7 +25,7 @@ const {chromium}=require('playwright');
  const models=await page.evaluate(()=>document.querySelector('#intro').textContent);
  if(!models.includes('Random complete semester'))throw Error('Random model never activated');
  await page.selectOption('#mode','practice');
- await page.selectOption('#skill','reading2');
+ await page.selectOption('#skill','reading');
  await page.click('#start');
  if(await page.locator('#exam section.section').count()!==1)throw Error('Single-skill practice failed');
  if((await page.locator('#clock').textContent())!=='Untimed')throw Error('Practice should not be timed');
