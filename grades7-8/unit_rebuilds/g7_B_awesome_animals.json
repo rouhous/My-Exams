@@ -1,0 +1,174 @@
+{
+  "grade": 7,
+  "model": "B",
+  "unit": "Awesome animals",
+  "status": "original_unit_texts_pending_audio_regeneration",
+  "listening1": [
+    {
+      "stem": "Which animal did the ranger see near the water?",
+      "options": [
+        "bird",
+        "turtle",
+        "fish"
+      ],
+      "answer": 1,
+      "images": [
+        "bird",
+        "turtle",
+        "fish"
+      ],
+      "script": "During our walk, the ranger pointed out birds on the rocks and small fish in a shallow pool. Then she noticed a turtle moving slowly towards the water. We watched it from a distance because visitors must not touch or disturb wild animals."
+    },
+    {
+      "stem": "What did the wildlife team use to record animal movements?",
+      "options": [
+        "camera",
+        "book",
+        "radio"
+      ],
+      "answer": 0,
+      "images": [
+        "camera",
+        "book",
+        "radio"
+      ],
+      "script": "The nature club wanted to study birds without approaching their nests. Some pupils suggested drawing what they saw in a notebook, while others preferred recording a spoken report. The ranger recommended using a camera with a long lens, so the animals would remain undisturbed."
+    },
+    {
+      "stem": "Where did the rescued bird finally fly?",
+      "options": [
+        "towards trees",
+        "towards the sea",
+        "towards school"
+      ],
+      "answer": 0,
+      "images": [
+        "trees",
+        "waves",
+        "school"
+      ],
+      "script": "A young bird had fallen into a garden and could not fly properly. After a veterinarian checked its wing, it rested safely for several days. When it was strong again, the ranger released it near the forest, and it immediately flew towards the trees."
+    },
+    {
+      "stem": "What caused the animals to hide?",
+      "options": [
+        "sunshine",
+        "rain",
+        "wind"
+      ],
+      "answer": 1,
+      "images": [
+        "sun",
+        "cloud-rain",
+        "wind"
+      ],
+      "script": "The school group visited a protected area to look for small desert animals. At first, the sun was bright, and the weather was calm. Suddenly, heavy rain began, so the animals disappeared under rocks and plants. The students returned to the visitor centre."
+    },
+    {
+      "stem": "What should visitors take on a long nature walk?",
+      "options": [
+        "football",
+        "backpack",
+        "piano"
+      ],
+      "answer": 1,
+      "images": [
+        "football",
+        "backpack",
+        "piano"
+      ],
+      "script": "Our guide explained that wildlife walks can take several hours. Playing football would frighten animals, and musical instruments would make too much noise. Everyone should bring a small backpack containing water, sunscreen and a notebook, and remember to leave the area clean."
+    }
+  ],
+  "listening2": {
+    "script": "Interviewer: Welcome to Nature Watch. Salim, why did your class visit the turtle reserve?\nSalim: We wanted to understand how sea turtles are protected. Our teacher reminded us that bright lights and noise can disturb them.\nInterviewer: What did you learn from the ranger?\nSalim: She explained that turtles return to beaches to lay their eggs. If people leave plastic on the sand, young turtles may become trapped.\nInterviewer: Did you see any turtles?\nSalim: Yes, we watched two from a safe distance. We did not touch them or use a camera flash.\nInterviewer: Was there a problem during the visit?\nSalim: Some visitors had left empty bottles near a path. The ranger asked us to collect them while wearing gloves.\nInterviewer: How can young people help after the trip?\nSalim: We can use reusable bottles, tell others not to litter and support beach clean-ups. If we protect nesting areas, more turtles may reach the sea safely.\nInterviewer: What would you tell someone planning a visit?\nSalim: Follow the rules and stay quiet. Seeing animals in their natural habitat is exciting, but their safety is more important than our photographs.",
+    "items": [
+      {
+        "stem": "Salim's class visited a place where turtles are protected.",
+        "answer": true
+      },
+      {
+        "stem": "The ranger said plastic waste cannot harm young turtles.",
+        "answer": false
+      },
+      {
+        "stem": "Students watched turtles without touching them.",
+        "answer": true
+      },
+      {
+        "stem": "Salim's group used camera flashes close to the turtles.",
+        "answer": false
+      },
+      {
+        "stem": "Salim recommends following reserve rules and staying quiet.",
+        "answer": true
+      }
+    ]
+  },
+  "reading1": {
+    "texts": [
+      "A birdwatching group reached the wetland at sunrise. Before they entered, the guide asked them to lower their voices and keep their distance from the nests.",
+      "A young turtle was found beside a road after heavy rain. The pupils could not decide whether to move it themselves and contacted a wildlife specialist.",
+      "A small fish became trapped in a shallow pool as the water level fell. The ranger examined the situation and warned the children not to step into the protected area.",
+      "During a school visit, a pupil noticed feathers and broken branches near a tree. He wondered whether an animal had made a nest there and began taking notes.",
+      "At the end of a nature survey, pupils compared the number of animals they had seen. They were surprised that different groups had observed different species along the same route."
+    ],
+    "continuations": [
+      "The expert explained how to help safely and collected the animal for a health check.",
+      "The ranger reminded them to observe from the path while she checked whether the fish could return to deeper water.",
+      "Everyone agreed that repeating the survey on another day would provide a more reliable picture.",
+      "The class bought tickets for a music festival, even though no wildlife survey was planned.",
+      "The students used binoculars quietly so the birds would continue feeding without becoming frightened.",
+      "He described the possible nesting place instead of climbing the tree and disturbing whatever lived there."
+    ],
+    "answers": [
+      4,
+      0,
+      1,
+      5,
+      2
+    ]
+  },
+  "reading2": {
+    "passage": "During a school visit to a nature reserve, Huda noticed that the guides spent more time looking for signs of animals than trying to see the animals themselves. She had expected to photograph every creature, but the ranger explained that wildlife often hides when people approach too closely.\n\nThe group followed a marked path beside a shallow lake. Huda saw tracks in the soft sand and guessed that they belonged to a turtle. Her friend Rashid thought they might have been made by a bird. The ranger asked both pupils to examine the marks carefully. The tracks were wide and ended near a small pool, so they were probably left by a turtle.\n\nLater, the pupils found a plastic bag tangled among the plants. They wanted to remove it immediately, but the ranger told them to check whether an animal was nearby first. After she made sure the area was safe, they collected the rubbish using gloves.\n\nAs the sun became hotter, the students moved to a shaded observation point. They watched several birds drinking without disturbing them. Huda realised that careful observation could teach them more than a hurried photograph.\n\nBefore leaving, the class discussed ways to protect the reserve. They agreed to bring reusable bottles on future visits and to remind visitors to stay on marked paths. Huda wrote in her notebook that if everyone followed the rules, the animals would have a better chance of living safely in their natural habitat.",
+    "items": [
+      {
+        "stem": "Why does wildlife often hide from visitors?",
+        "answers": [
+          "people approach too closely",
+          "visitors approach too closely",
+          "because people get too close"
+        ]
+      },
+      {
+        "stem": "What did the pupils find in the soft sand?",
+        "answers": [
+          "tracks",
+          "animal tracks",
+          "tracks in the sand"
+        ]
+      },
+      {
+        "stem": "What material was tangled among the plants?",
+        "answers": [
+          "a plastic bag",
+          "plastic bag"
+        ]
+      },
+      {
+        "stem": "Where did the group watch birds drinking?",
+        "answers": [
+          "a shaded observation point",
+          "shaded observation point"
+        ]
+      },
+      {
+        "stem": "What did the class agree to bring on future visits?",
+        "answers": [
+          "reusable bottles",
+          "reusable water bottles"
+        ]
+      }
+    ]
+  }
+}
