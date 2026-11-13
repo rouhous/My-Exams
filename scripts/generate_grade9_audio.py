@@ -63,7 +63,7 @@ async def build(model,task,tmp):
         pause(3)
         for i,item in enumerate(task['items']):
             for repetition in range(2):
-                await say(f'Text {i+1}. '+item['script'],i%2)
+                await say(f'Text {i+1}. '+re.sub(r'^Text (?:one|two|three|four|five|[1-5])[. :]+','',item['script'],flags=re.I),i%2)
                 pause(3)
     else:
         await say('You are going to hear an interview. Listen carefully and choose the correct answer, A, B or C. You will hear the interview twice.')
