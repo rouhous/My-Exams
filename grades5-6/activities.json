@@ -2,7 +2,7 @@
   "metadata": {
     "source": "original practice written for this project",
     "structure": "SAH English Grades 5-10 September 2026, semester one",
-    "note": "Grade 5 A-D and Grade 6 A-C listening revised by unit theme with picture-answer consistency; Grade 6 D is a mixed paper; further curriculum page-level review is required.",
+    "note": "Grades 5–6 vocabulary, reading, writing and grammar reviewed by taught units; space unit now correct. Existing listening audio requires regeneration from the revised unit scripts; mixed paper D carries intact source sections.",
     "audio": "local synthetic draft audio"
   },
   "activities": [
@@ -125,42 +125,43 @@
       "marks": 5,
       "format": "picture-word-match",
       "pictureOptions": [
-        "robot",
+        "drum",
+        "piano",
+        "paintbrush",
         "camera",
-        "book",
-        "plant",
-        "bus"
+        "book"
       ],
       "wordOptions": [
+        "football",
+        "piano",
+        "paintbrush",
         "camera",
-        "robot",
-        "kite",
-        "bus",
         "book",
-        "plant"
+        "drum"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 1
-        },
-        {
-          "stem": "Picture 2",
-          "answer": 0
-        },
-        {
-          "stem": "Picture 3",
-          "answer": 4
-        },
-        {
-          "stem": "Picture 4",
           "answer": 5
         },
         {
-          "stem": "Picture 5",
+          "stem": "Picture 2",
+          "answer": 1
+        },
+        {
+          "stem": "Picture 3",
+          "answer": 2
+        },
+        {
+          "stem": "Picture 4",
           "answer": 3
+        },
+        {
+          "stem": "Picture 5",
+          "answer": 4
         }
-      ]
+      ],
+      "unitTheme": "Talent show"
     },
     {
       "id": "g5-a-grammar",
@@ -224,34 +225,35 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "bus",
-        "book",
-        "plant",
+        "drum",
+        "piano",
+        "paintbrush",
         "camera",
-        "robot"
+        "book"
       ],
       "questions": [
         {
-          "stem": "At the school fair, a small robot carried a box across the table while students explained how it worked.",
-          "answer": 4
+          "stem": "A pupil will play a drum during the opening song of the school talent show.",
+          "answer": 0
         },
         {
-          "stem": "A photographer used a camera to record the children explaining their creative inventions to visitors.",
+          "stem": "The school photographer will use a camera to take pictures of the performers.",
           "answer": 3
         },
         {
-          "stem": "The class placed a young plant near the window and checked the leaves every morning.",
-          "answer": 1
+          "stem": "Salma is holding a book of poems that she wrote for the show.",
+          "answer": 4
         },
         {
-          "stem": "A pupil opened her book and read a story about an inventor who helped neighbours.",
+          "stem": "A student will use a paintbrush to create a picture while the music plays.",
           "answer": 2
         },
         {
-          "stem": "A blue bus stopped outside the school hall and the visiting families stepped out carefully.",
-          "answer": 0
+          "stem": "A young musician will play the piano after the dance group leaves the stage.",
+          "answer": 1
         }
-      ]
+      ],
+      "unitTheme": "Talent show"
     },
     {
       "id": "g5-a-reading-2",
@@ -262,29 +264,30 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "Last Monday, Noura and Rashid went to the school hall for a invention fair. They arrived early and helped their teacher set up a small table. Noura brought a robot, while Rashid carried a notebook and some water. At first, they could not find the box with their materials. They looked beside the door and behind the chairs, but the box was not there. Then a younger student pointed towards a shelf near the window. The box was waiting there. Everyone felt happy, and the activity began on time. In the afternoon, the two friends cleaned their table and thanked the visitors. They decided to prepare their things the evening before their next event.",
+      "passage": "Last Thursday, our school held a talent show in the hall. Huda played a lively tune on her drum while her friends sang. After the music, Salma read a poem that she had written about her grandmother. She was nervous at first, but the audience listened carefully. Later, Nasser played the piano, and Mariam painted a picture beside the stage. A teacher took photographs for the school website, but she asked the performers for permission first. The show began at three o'clock and finished at five. The students put away the instruments and cleaned the hall before going home.",
       "questions": [
         {
-          "stem": "Noura and Rashid arrived late.",
+          "stem": "The show was held outside the school.",
           "answer": "False"
         },
         {
-          "stem": "They could not find the box with the materials.",
+          "stem": "Huda played a drum.",
           "answer": "True"
         },
         {
-          "stem": "A younger student showed them where the box was.",
+          "stem": "Salma read a poem about her grandmother.",
           "answer": "True"
         },
         {
-          "stem": "The event was cancelled because the box was missing.",
+          "stem": "The show finished at three o'clock.",
           "answer": "False"
         },
         {
-          "stem": "The friends decided to prepare earlier next time.",
+          "stem": "The students cleaned the hall afterwards.",
           "answer": "True"
         }
-      ]
+      ],
+      "unitTheme": "Talent show"
     },
     {
       "id": "g5-a-writing-1",
@@ -430,42 +433,43 @@
       "marks": 5,
       "format": "picture-word-match",
       "pictureOptions": [
-        "fish",
         "boat",
-        "camera",
-        "backpack",
-        "plant"
+        "bicycle",
+        "clock",
+        "bus",
+        "camera"
       ],
       "wordOptions": [
-        "backpack",
-        "camera",
-        "fish",
+        "kite",
+        "bicycle",
         "clock",
-        "plant",
+        "bus",
+        "camera",
         "boat"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 2
-        },
-        {
-          "stem": "Picture 2",
           "answer": 5
         },
         {
-          "stem": "Picture 3",
+          "stem": "Picture 2",
           "answer": 1
         },
         {
+          "stem": "Picture 3",
+          "answer": 2
+        },
+        {
           "stem": "Picture 4",
-          "answer": 0
+          "answer": 3
         },
         {
           "stem": "Picture 5",
           "answer": 4
         }
-      ]
+      ],
+      "unitTheme": "Then and now"
     },
     {
       "id": "g5-b-grammar",
@@ -529,34 +533,35 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "backpack",
-        "fish",
         "boat",
-        "plant",
+        "bicycle",
+        "clock",
+        "bus",
         "camera"
       ],
       "questions": [
         {
-          "stem": "A fisherman showed the students a picture of a fish that lives in the shallow water.",
-          "answer": 1
-        },
-        {
-          "stem": "The children stood on the beach and watched the gentle waves reach the soft sand.",
-          "answer": 2
-        },
-        {
-          "stem": "Maha put her camera in a safe bag before she walked beside the sea. They enjoyed the experience.",
-          "answer": 4
-        },
-        {
-          "stem": "A sailor tied a small boat to the wooden post so it would not move away.",
+          "stem": "Grandfather crossed the bay in a wooden boat when he was young.",
           "answer": 0
         },
         {
-          "stem": "Salim carried his backpack with water, paper and pencils for the science trip. They enjoyed the experience.",
+          "stem": "A child in an old photograph is riding a bicycle to school.",
+          "answer": 1
+        },
+        {
+          "stem": "The classroom clock was large and had hands instead of a digital screen.",
+          "answer": 2
+        },
+        {
+          "stem": "Today pupils take a bus along the road where their parents once walked.",
           "answer": 3
+        },
+        {
+          "stem": "Years ago a photographer used a camera with film to take family pictures.",
+          "answer": 4
         }
-      ]
+      ],
+      "unitTheme": "Then and now"
     },
     {
       "id": "g5-b-reading-2",
@@ -567,29 +572,30 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "Last Tuesday, Maha and Salim went to the beach for a coastal science day. They arrived early and helped their teacher set up a small table. Maha brought a fish, while Salim carried a notebook and some water. At first, they could not find the box with their materials. They looked beside the door and behind the chairs, but the box was not there. Then a younger student pointed towards a shelf near the window. The box was waiting there. Everyone felt happy, and the activity began on time. In the afternoon, the two friends cleaned their table and thanked the visitors. They decided to prepare their things the evening before their next event.",
+      "passage": "My grandfather showed me some photographs of his childhood last weekend. His school was small and had only three classrooms. The children walked there because their families did not own cars. He used a pencil and paper to write his lessons. There were no computers or digital boards. After school, he played football in an empty field. His family had an old camera, but they waited several days before the pictures were printed. Today I travel to a larger school by bus. I use a computer during science lessons and can take pictures with a phone. My grandfather says that many things have changed, but good friends and hard work are important in every generation.",
       "questions": [
         {
-          "stem": "Maha and Salim arrived late.",
-          "answer": "False"
-        },
-        {
-          "stem": "They could not find the box with the materials.",
+          "stem": "Grandfather's school had three classrooms.",
           "answer": "True"
         },
         {
-          "stem": "A younger student showed them where the box was.",
-          "answer": "True"
-        },
-        {
-          "stem": "The event was cancelled because the box was missing.",
+          "stem": "He travelled to school by car.",
           "answer": "False"
         },
         {
-          "stem": "The friends decided to prepare earlier next time.",
+          "stem": "He used a pencil to write.",
+          "answer": "True"
+        },
+        {
+          "stem": "Photographs appeared immediately in the past.",
+          "answer": "False"
+        },
+        {
+          "stem": "The writer sometimes uses computers at school.",
           "answer": "True"
         }
-      ]
+      ],
+      "unitTheme": "Then and now"
     },
     {
       "id": "g5-b-writing-1",
@@ -626,19 +632,19 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "mountain",
-        "beach",
-        "bridge",
-        "boat",
-        "backpack",
-        "camera"
+        "rocket",
+        "telescope",
+        "planet",
+        "spacesuit",
+        "moon",
+        "satellite"
       ],
       "passages": [
-        "Our class is exploring a mountain path with a guide. We will stop to look at the valley and never leave the marked trail.",
-        "I packed my backpack with drinking water, fruit, a notebook and a light jacket for tomorrow's nature walk.",
-        "We will reach the small island by boat. The guide reminded everyone to wear a life jacket and stay seated.",
-        "We are visiting the beach at low tide to look for shells and crab tracks. We must not disturb living animals.",
-        "I will take my camera on the birdwatching trip so I can record what we see without getting too close to nests."
+        "A: What is the science team building for the fair? B: We are making a rocket model from recycled paper. We will show how a real rocket travels into space. A: Will it actually fly? B: No, it is just a model for our display.",
+        "A: How will we look at stars on Friday evening? B: We will use a telescope. It makes distant objects in the sky easier to see. A: Can I look directly at the Sun through it? B: Never! That is dangerous.",
+        "A: What are those eight round objects on your poster? B: They represent the planets in our solar system. Earth is one of them, and they all move around the Sun. A: Shall we add their names? B: Yes, below the pictures.",
+        "A: Why is the astronaut wearing special clothes? B: It is a spacesuit. It protects the astronaut outside a spacecraft. A: Could we wear ordinary jackets in space? B: No, they would not protect us.",
+        "A: What is the bright shape in the night sky? B: It is the Moon, Earth's natural satellite. A: Does it make its own light? B: No, it reflects sunlight."
       ],
       "questions": [
         {
@@ -647,23 +653,23 @@
         },
         {
           "stem": "Text 2",
-          "answer": 4
-        },
-        {
-          "stem": "Text 3",
-          "answer": 3
-        },
-        {
-          "stem": "Text 4",
           "answer": 1
         },
         {
+          "stem": "Text 3",
+          "answer": 2
+        },
+        {
+          "stem": "Text 4",
+          "answer": 3
+        },
+        {
           "stem": "Text 5",
-          "answer": 5
+          "answer": 4
         }
       ],
       "audio": "audio/g5-c-listening-1.mp3",
-      "unitTheme": "Let's Explore!"
+      "unitTheme": "Let's Explore! — Space"
     },
     {
       "id": "g5-c-listening-2",
@@ -674,56 +680,56 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Where did your class go last Friday, Mariam? Mariam: To a mountain nature trail. Interviewer: Who went with the class? Mariam: A local guide and our science teacher. Interviewer: What did you carry? Mariam: Water, a notebook and a first-aid kit. Interviewer: What did you see? Mariam: An eagle flying over the valley. Interviewer: What safety rule did you learn? Mariam: Stay on the marked path.",
+      "passage": "Interviewer: Welcome to Young Space Explorers. What will your class make for the science fair, Mariam? Mariam: A large model of the solar system. Interviewer: How many planets will you put around the Sun? Mariam: Eight planets. Interviewer: Which planet do we live on? Mariam: Earth. Interviewer: What will you use to look at the Moon? Mariam: A telescope on the school roof. Interviewer: What will you do before the exhibition? Mariam: We will check that every planet has the correct name. Interviewer: When will the exhibition open? Mariam: On Thursday morning.",
       "questions": [
         {
-          "stem": "Where did the class go?",
+          "stem": "What will the class make?",
           "options": [
-            "Mountain trail",
-            "Shopping centre",
-            "Airport"
-          ],
-          "answer": 0
-        },
-        {
-          "stem": "Who helped the class?",
-          "options": [
-            "A bus driver",
-            "A shopkeeper",
-            "A local guide"
-          ],
-          "answer": 2
-        },
-        {
-          "stem": "What was in Mariam's bag?",
-          "options": [
-            "Toys",
-            "Water and a notebook",
-            "A television"
+            "A bus model",
+            "A model solar system",
+            "A painting of the sea"
           ],
           "answer": 1
         },
         {
-          "stem": "Which bird did she see?",
+          "stem": "How many planets will be shown?",
           "options": [
-            "An eagle",
-            "A duck",
-            "A parrot"
+            "Eight",
+            "Seven",
+            "Ten"
           ],
           "answer": 0
         },
         {
-          "stem": "What rule did she learn?",
+          "stem": "Where do we live?",
           "options": [
-            "Pick flowers",
-            "Walk alone",
-            "Stay on the path"
+            "Mars",
+            "Venus",
+            "Earth"
           ],
           "answer": 2
+        },
+        {
+          "stem": "What will they use to see the Moon?",
+          "options": [
+            "A camera",
+            "A telescope",
+            "A clock"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "When will the exhibition open?",
+          "options": [
+            "Thursday morning",
+            "Friday evening",
+            "Sunday afternoon"
+          ],
+          "answer": 0
         }
       ],
       "audio": "audio/g5-c-listening-2.mp3",
-      "unitTheme": "Let's Explore!"
+      "unitTheme": "Let's Explore! — Space"
     },
     {
       "id": "g5-c-vocabulary",
@@ -735,32 +741,32 @@
       "marks": 5,
       "format": "picture-word-match",
       "pictureOptions": [
-        "apple",
-        "gift",
-        "cup",
-        "cake",
-        "book"
+        "rocket",
+        "telescope",
+        "planet",
+        "spacesuit",
+        "moon"
       ],
       "wordOptions": [
-        "book",
-        "bicycle",
-        "gift",
-        "cake",
-        "apple",
-        "cup"
+        "satellite",
+        "telescope",
+        "planet",
+        "spacesuit",
+        "moon",
+        "rocket"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 4
+          "answer": 5
         },
         {
           "stem": "Picture 2",
-          "answer": 2
+          "answer": 1
         },
         {
           "stem": "Picture 3",
-          "answer": 5
+          "answer": 2
         },
         {
           "stem": "Picture 4",
@@ -768,9 +774,10 @@
         },
         {
           "stem": "Picture 5",
-          "answer": 0
+          "answer": 4
         }
-      ]
+      ],
+      "unitTheme": "Let’s explore!"
     },
     {
       "id": "g5-c-grammar",
@@ -834,34 +841,35 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "cup",
-        "book",
-        "cake",
-        "gift",
-        "apple"
+        "rocket",
+        "telescope",
+        "planet",
+        "spacesuit",
+        "moon"
       ],
       "questions": [
         {
-          "stem": "The seller placed a fresh apple on the table for the customer to examine. They enjoyed the experience.",
-          "answer": 4
-        },
-        {
-          "stem": "A girl wrapped a gift in reused paper and wrote a message for her grandmother.",
-          "answer": 3
-        },
-        {
-          "stem": "The little bakery made a cake for the families visiting the neighbourhood market. They enjoyed the experience.",
+          "stem": "The children built a rocket model for the school's science fair.",
           "answer": 0
         },
         {
-          "stem": "A visitor asked for a cup so she could drink water after walking around. They enjoyed the experience.",
+          "stem": "At night the science club used a telescope to study the sky.",
+          "answer": 1
+        },
+        {
+          "stem": "Earth is a planet that moves around the Sun.",
           "answer": 2
         },
         {
-          "stem": "The children found a book about Oman at the stall beside the vegetables. They enjoyed the experience.",
-          "answer": 1
+          "stem": "An astronaut needs a spacesuit to stay safe outside a spacecraft.",
+          "answer": 3
+        },
+        {
+          "stem": "We can see the Moon in the night sky because it reflects sunlight.",
+          "answer": 4
         }
-      ]
+      ],
+      "unitTheme": "Let’s explore!"
     },
     {
       "id": "g5-c-reading-2",
@@ -872,29 +880,30 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "Last Wednesday, Asma and Huda went to the market for a neighbourhood market. They arrived early and helped their teacher set up a small table. Asma brought a apple, while Huda carried a notebook and some water. At first, they could not find the box with their materials. They looked beside the door and behind the chairs, but the box was not there. Then a younger student pointed towards a shelf near the window. The box was waiting there. Everyone felt happy, and the activity began on time. In the afternoon, the two friends cleaned their table and thanked the visitors. They decided to prepare their things the evening before their next event.",
+      "passage": "Dear Space Explorers, Today I am writing about our visit to the science centre. At first we saw a large model of the solar system. The guide explained that eight planets move around the Sun and that Earth is one of them. We watched a short video about astronauts living on a space station. They wear spacesuits when they work outside. Later we looked at a telescope, but the guide reminded us never to look directly at the Sun through it. I enjoyed learning about the Moon, which travels around Earth. Next week our class will make a model rocket and write a short blog about the exhibition. I hope we can visit the centre again.",
       "questions": [
         {
-          "stem": "Asma and Huda arrived late.",
-          "answer": "False"
-        },
-        {
-          "stem": "They could not find the box with the materials.",
+          "stem": "The group saw a model of the solar system.",
           "answer": "True"
         },
         {
-          "stem": "A younger student showed them where the box was.",
-          "answer": "True"
-        },
-        {
-          "stem": "The event was cancelled because the box was missing.",
+          "stem": "There are ten planets around the Sun.",
           "answer": "False"
         },
         {
-          "stem": "The friends decided to prepare earlier next time.",
+          "stem": "Astronauts may wear spacesuits outside the station.",
+          "answer": "True"
+        },
+        {
+          "stem": "The guide told children to look at the Sun through a telescope.",
+          "answer": "False"
+        },
+        {
+          "stem": "The class will make a rocket model next week.",
           "answer": "True"
         }
-      ]
+      ],
+      "unitTheme": "Let’s explore!"
     },
     {
       "id": "g5-c-writing-1",
@@ -1040,28 +1049,28 @@
       "marks": 5,
       "format": "picture-word-match",
       "pictureOptions": [
-        "paintbrush",
-        "flower",
-        "kite",
-        "camera",
-        "boat"
+        "market",
+        "apple",
+        "cake",
+        "gift",
+        "book"
       ],
       "wordOptions": [
-        "paintbrush",
-        "drum",
-        "kite",
-        "camera",
-        "flower",
-        "boat"
+        "cup",
+        "apple",
+        "cake",
+        "gift",
+        "book",
+        "market"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 0
+          "answer": 5
         },
         {
           "stem": "Picture 2",
-          "answer": 4
+          "answer": 1
         },
         {
           "stem": "Picture 3",
@@ -1073,9 +1082,10 @@
         },
         {
           "stem": "Picture 5",
-          "answer": 5
+          "answer": 4
         }
-      ]
+      ],
+      "unitTheme": "Off to the shops"
     },
     {
       "id": "g5-d-grammar",
@@ -1139,34 +1149,35 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "camera",
-        "paintbrush",
-        "kite",
-        "boat",
-        "flower"
+        "market",
+        "apple",
+        "cake",
+        "gift",
+        "book"
       ],
       "questions": [
         {
-          "stem": "A painter chose a wide paintbrush to cover the large page with soft lines. They enjoyed the experience.",
-          "answer": 1
-        },
-        {
-          "stem": "A young girl carefully drew a flower she found beside the park pathway. They enjoyed the experience.",
-          "answer": 4
-        },
-        {
-          "stem": "A boy flew a kite above the open grass when the wind became stronger. They enjoyed the experience.",
-          "answer": 2
-        },
-        {
-          "stem": "The teacher took a camera to photograph the finished art from every group. They enjoyed the experience.",
+          "stem": "At the market, a customer compared the prices of fresh vegetables.",
           "answer": 0
         },
         {
-          "stem": "One student painted a small boat floating beside the hills in the morning. They enjoyed the experience.",
+          "stem": "A girl bought an apple from a stall for her lunch.",
+          "answer": 1
+        },
+        {
+          "stem": "The baker put a chocolate cake in a box for a birthday party.",
+          "answer": 2
+        },
+        {
+          "stem": "Hamad chose a gift for his younger sister at the shopping centre.",
           "answer": 3
+        },
+        {
+          "stem": "Maha bought a book from the bookshop after saving her pocket money.",
+          "answer": 4
         }
-      ]
+      ],
+      "unitTheme": "Off to the shops"
     },
     {
       "id": "g5-d-reading-2",
@@ -1177,29 +1188,30 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "Last Thursday, Laila and Yousuf went to the park for a outdoor art day. They arrived early and helped their teacher set up a small table. Laila brought a paintbrush, while Yousuf carried a notebook and some water. At first, they could not find the box with their materials. They looked beside the door and behind the chairs, but the box was not there. Then a younger student pointed towards a shelf near the window. The box was waiting there. Everyone felt happy, and the activity began on time. In the afternoon, the two friends cleaned their table and thanked the visitors. They decided to prepare their things the evening before their next event.",
+      "passage": "Last Saturday, my friend Ahmed and I went shopping for his sister's birthday. Ahmed had saved five rials in his money box. We looked at the toys first, but the prices were too high. Then we visited the bookshop, where a friendly assistant showed us some adventure stories. Ahmed chose a colourful book that cost three rials. He kept the receipt and put the book in his cloth bag. We walked past the bakery and looked at the cakes, but we did not buy anything else. Ahmed decided to save the remaining two rials. His sister was delighted with the book, and Ahmed was happy that he had stayed within his budget.",
       "questions": [
         {
-          "stem": "Laila and Yousuf arrived late.",
-          "answer": "False"
-        },
-        {
-          "stem": "They could not find the box with the materials.",
+          "stem": "Ahmed had saved five rials.",
           "answer": "True"
         },
         {
-          "stem": "A younger student showed them where the box was.",
-          "answer": "True"
-        },
-        {
-          "stem": "The event was cancelled because the box was missing.",
+          "stem": "They bought a toy from the first shop.",
           "answer": "False"
         },
         {
-          "stem": "The friends decided to prepare earlier next time.",
+          "stem": "The book cost three rials.",
+          "answer": "True"
+        },
+        {
+          "stem": "Ahmed bought a cake as well.",
+          "answer": "False"
+        },
+        {
+          "stem": "He saved the remaining two rials.",
           "answer": "True"
         }
-      ]
+      ],
+      "unitTheme": "Off to the shops"
     },
     {
       "id": "g5-d-writing-1",
@@ -1345,34 +1357,35 @@
       "marks": 5,
       "format": "picture-spelling",
       "pictureOptions": [
-        "robot",
-        "camera",
-        "book",
-        "plant",
-        "bus"
+        "football",
+        "bicycle",
+        "drum",
+        "piano",
+        "kite"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "robot"
+          "answer": "football"
         },
         {
           "stem": "Picture 2",
-          "answer": "camera"
+          "answer": "bicycle"
         },
         {
           "stem": "Picture 3",
-          "answer": "book"
+          "answer": "drum"
         },
         {
           "stem": "Picture 4",
-          "answer": "plant"
+          "answer": "piano"
         },
         {
           "stem": "Picture 5",
-          "answer": "bus"
+          "answer": "kite"
         }
-      ]
+      ],
+      "unitTheme": "Free-time fun"
     },
     {
       "id": "g6-a-grammar",
@@ -1437,37 +1450,38 @@
       "format": "text-match",
       "passages": [
         {
-          "stem": "The school invention fair opened at nine. A group of pupils made a robot that could move small blocks. They tested it carefully and changed two parts before the visitors arrived. Their teacher praised the teamwork and asked everyone to explain their work clearly. This was important for their project."
+          "stem": "Every Saturday, Amina joins a sports club at the community centre. She enjoys football and cycling. The coaches remind children to warm up and drink water before activities. New members can borrow helmets and bicycles from the club."
         },
         {
-          "stem": "A second group prepared a photo exhibition about the invention fair. They used a camera to record the stages of each project. The photographs showed first attempts, mistakes and final improvements. Visitors liked seeing how an idea could become better with patient work. This was important for their project."
+          "stem": "Salim loves music. He joined a drumming group at school and practises with friends every Monday. At home, he listens to new rhythms and tries to copy them. His parents enjoy hearing his progress."
         },
         {
-          "stem": "At the end of the fair, the pupils wrote short reflections in a shared notebook. They described what they learned and how they would improve next time. Their teacher collected the notes and promised to display the best advice on a classroom wall. This was important for their project."
+          "stem": "Maha likes quiet hobbies. She paints pictures of birds and flowers, then sends photographs to her cousin. She sometimes visits the park to find new ideas. She uses a small paintbrush and keeps her colours in a box."
         }
       ],
       "questions": [
         {
-          "stem": "Which text describes a moving model?",
+          "stem": "Which text describes football and cycling?",
           "answer": 0
         },
         {
-          "stem": "Which text mentions photographs of mistakes?",
+          "stem": "Which text mentions borrowing safety equipment?",
+          "answer": 0
+        },
+        {
+          "stem": "Which text describes practising music?",
           "answer": 1
         },
         {
-          "stem": "Which text mentions advice written in a notebook?",
+          "stem": "Which text mentions sharing pictures with a cousin?",
           "answer": 2
         },
         {
-          "stem": "Which text says pupils tested and changed parts?",
-          "answer": 0
-        },
-        {
-          "stem": "Which text mentions visitors learning from pictures?",
-          "answer": 1
+          "stem": "Which text mentions looking for ideas in a park?",
+          "answer": 2
         }
-      ]
+      ],
+      "unitTheme": "Free-time fun"
     },
     {
       "id": "g6-a-reading-2",
@@ -1478,29 +1492,30 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "From: noura@school.example\nTo: rashid@school.example\nSubject: Plans for our class project\nDear Rashid,\nI hope you are enjoying your week. Our class is organising a invention fair at the school hall next Monday. We will meet at nine in the morning near the main entrance. Our teacher asked each group to prepare one small display and explain it to visiting parents. My group will bring a robot and a poster showing how we made our project. Please bring your notebook, some drinking water and a reusable bag. We do not need to buy new decorations because the school has plenty of materials we can use again. The event finishes at one o'clock. After that, we will tidy the area and return our equipment to the classroom. I hope you can come and help us. Please reply before Sunday.\nBest wishes,\nNoura",
+      "passage": "From: amina@school.example\nTo: reem@school.example\nSubject: Our new free-time club\nDear Reem,\nLast Saturday I joined the free-time club at the community sports centre. We met at nine in the morning. First, our coach showed us how to check bicycle helmets. Then we tried a short cycling course. I was nervous at the beginning, but a friend helped me. We also played a team game before lunch. Next Saturday we will try table tennis inside the centre. The club lends its equipment, so nobody needs to buy an expensive bicycle. I hope you can join us next week. Please ask the sports teacher by Thursday if you want to come.\nBest wishes,\nAmina",
       "questions": [
         {
-          "stem": "The event will take place on Monday.",
+          "stem": "The club met on Saturday morning.",
           "answer": "True"
         },
         {
-          "stem": "All groups need to buy brand-new decorations.",
+          "stem": "Amina bought an expensive new bicycle.",
           "answer": "False"
         },
         {
-          "stem": "Parents are invited to see the class displays.",
+          "stem": "Her friend helped her during the cycling activity.",
           "answer": "True"
         },
         {
-          "stem": "The event will finish at six in the evening.",
+          "stem": "The club will try table tennis next Saturday.",
+          "answer": "True"
+        },
+        {
+          "stem": "Reem must contact a bus driver.",
           "answer": "False"
-        },
-        {
-          "stem": "Noura asks for a reply before Sunday.",
-          "answer": "True"
         }
-      ]
+      ],
+      "unitTheme": "Free-time fun"
     },
     {
       "id": "g6-a-writing-1",
@@ -1650,20 +1665,20 @@
       "marks": 5,
       "format": "picture-spelling",
       "pictureOptions": [
-        "fish",
-        "boat",
+        "robot",
+        "computer",
         "camera",
-        "backpack",
-        "plant"
+        "clock",
+        "book"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "fish"
+          "answer": "robot"
         },
         {
           "stem": "Picture 2",
-          "answer": "boat"
+          "answer": "computer"
         },
         {
           "stem": "Picture 3",
@@ -1671,13 +1686,14 @@
         },
         {
           "stem": "Picture 4",
-          "answer": "backpack"
+          "answer": "clock"
         },
         {
           "stem": "Picture 5",
-          "answer": "plant"
+          "answer": "book"
         }
-      ]
+      ],
+      "unitTheme": "Technology"
     },
     {
       "id": "g6-b-grammar",
@@ -1742,37 +1758,38 @@
       "format": "text-match",
       "passages": [
         {
-          "stem": "Students visited the coast to learn about marine life. They carried notebooks and drew animals they saw in the water. Their guide explained that shells should stay on the beach because small creatures sometimes need them. Everyone followed the rules and kept the area clean."
+          "stem": "Our science club designed a robot to water plants when the soil became dry. The students connected a sensor to a simple program. They tested the model several times before showing it at the school exhibition."
         },
         {
-          "stem": "A second team observed boats near the shore. They noted the shapes and counted how many people were on each boat. The teacher reminded pupils to stay away from the edge of the water. Later, the group discussed how to make safe choices outdoors. This was important for their project."
+          "stem": "The digital photography group used a camera to record an experiment. The students took pictures before and after adding water. They compared the results on a computer and explained their findings to the class."
         },
         {
-          "stem": "After lunch, the children shared their photographs and notes. Some pupils had pictures of fish, while others had drawings of plants that grew near the sand. Each group made a small poster explaining one new fact about the coast. They were proud of their discoveries."
+          "stem": "Mariam wrote an online safety guide for younger pupils. She advised students not to share passwords and to ask an adult before downloading unknown files. Her teacher checked the guide before it appeared on the class website."
         }
       ],
       "questions": [
         {
-          "stem": "Which text describes protecting shells?",
+          "stem": "Which text describes a robot that waters plants?",
           "answer": 0
         },
         {
-          "stem": "Which text talks about boats near the water?",
+          "stem": "Which text mentions a sensor?",
+          "answer": 0
+        },
+        {
+          "stem": "Which text uses photographs to compare results?",
           "answer": 1
         },
         {
-          "stem": "Which text mentions making a poster?",
+          "stem": "Which text explains using a computer to study an experiment?",
+          "answer": 1
+        },
+        {
+          "stem": "Which text gives advice about passwords?",
           "answer": 2
-        },
-        {
-          "stem": "Which text warns pupils about water safety?",
-          "answer": 1
-        },
-        {
-          "stem": "Which text describes studying marine animals?",
-          "answer": 0
         }
-      ]
+      ],
+      "unitTheme": "Technology"
     },
     {
       "id": "g6-b-reading-2",
@@ -1783,29 +1800,30 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "From: maha@school.example\nTo: salim@school.example\nSubject: Plans for our class project\nDear Salim,\nI hope you are enjoying your week. Our class is organising a coastal science day at the beach next Tuesday. We will meet at nine in the morning near the main entrance. Our teacher asked each group to prepare one small display and explain it to visiting parents. My group will bring a fish and a poster showing how we made our project. Please bring your notebook, some drinking water and a reusable bag. We do not need to buy new decorations because the school has plenty of materials we can use again. The event finishes at one o'clock. After that, we will tidy the area and return our equipment to the classroom. I hope you can come and help us. Please reply before Sunday.\nBest wishes,\nMaha",
+      "passage": "From: fatma@school.example\nTo: salma@school.example\nSubject: Our technology project\nDear Salma,\nYesterday we presented our new robot at the school science exhibition. It can water a small plant when a sensor detects dry soil. My sister helped me check the wires safely, and I wrote a simple program on the computer. At first the sensor gave the wrong reading. We moved it and tested the robot again. The model worked during the exhibition, and our teacher was pleased. Next month we hope to add a light to show when the water tank is empty. Please visit our technology club on Tuesday if you would like to see it.\nBest wishes,\nFatma",
       "questions": [
         {
-          "stem": "The event will take place on Tuesday.",
+          "stem": "Fatma's robot waters plants.",
           "answer": "True"
         },
         {
-          "stem": "All groups need to buy brand-new decorations.",
+          "stem": "Her cousin checked the wires.",
           "answer": "False"
         },
         {
-          "stem": "Parents are invited to see the class displays.",
+          "stem": "The sensor worked perfectly from the beginning.",
+          "answer": "False"
+        },
+        {
+          "stem": "They tested the robot again after changing the sensor position.",
           "answer": "True"
         },
         {
-          "stem": "The event will finish at six in the evening.",
-          "answer": "False"
-        },
-        {
-          "stem": "Maha asks for a reply before Sunday.",
+          "stem": "They hope to add a warning light.",
           "answer": "True"
         }
-      ]
+      ],
+      "unitTheme": "Technology"
     },
     {
       "id": "g6-b-writing-1",
@@ -1955,34 +1973,35 @@
       "marks": 5,
       "format": "picture-spelling",
       "pictureOptions": [
-        "apple",
-        "gift",
-        "cup",
-        "cake",
-        "book"
+        "market",
+        "library",
+        "museum",
+        "park",
+        "clinic"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "apple"
+          "answer": "market"
         },
         {
           "stem": "Picture 2",
-          "answer": "gift"
+          "answer": "library"
         },
         {
           "stem": "Picture 3",
-          "answer": "cup"
+          "answer": "museum"
         },
         {
           "stem": "Picture 4",
-          "answer": "cake"
+          "answer": "park"
         },
         {
           "stem": "Picture 5",
-          "answer": "book"
+          "answer": "clinic"
         }
-      ]
+      ],
+      "unitTheme": "Places"
     },
     {
       "id": "g6-c-grammar",
@@ -2047,37 +2066,38 @@
       "format": "text-match",
       "passages": [
         {
-          "stem": "At the neighbourhood market, volunteers prepared a stall for fresh local fruit. They arranged apples carefully and put prices on the table. They asked customers to use reusable bags. Most families agreed because they wanted to create less rubbish in the area. This was important for their project."
+          "stem": "The public library is opposite the main park, beside the post office. It opens at nine on weekdays and has a quiet study room. Children can borrow books and join a story club every Wednesday."
         },
         {
-          "stem": "Near the bakery, a group of pupils sold small cakes for a charity project. They wrote the ingredients beside each cake to help visitors choose. A teacher checked their calculations and helped them count the money. The students learned how careful planning supports good teamwork."
+          "stem": "The town museum displays old boats and photographs of the harbour. Visitors can learn about journeys along the coast. Our class listened to a guide explain how people traded goods in the past."
         },
         {
-          "stem": "In the afternoon, visitors shared ideas about improving the market. Some wanted more shade and others suggested drinking-water stations. The pupils collected the suggestions in a notebook and promised to discuss them in class. They also thanked the shopkeepers for their friendly help. This was important for their project."
+          "stem": "The community clinic is next to the market. A nurse helps families who need medical advice. The clinic opens in the morning and afternoon, but people should telephone before visiting on holidays."
         }
       ],
       "questions": [
         {
-          "stem": "Which text describes fruit and reusable bags?",
+          "stem": "Which text mentions a study room?",
           "answer": 0
         },
         {
-          "stem": "Which text talks about a charity cake stall?",
+          "stem": "Which text describes old boats and a harbour?",
           "answer": 1
         },
         {
-          "stem": "Which text mentions suggestions for more shade?",
+          "stem": "Which text is about a health service?",
           "answer": 2
         },
         {
-          "stem": "Which text describes checking money calculations?",
-          "answer": 1
+          "stem": "Which text mentions borrowing books?",
+          "answer": 0
         },
         {
-          "stem": "Which text asks customers to make less rubbish?",
-          "answer": 0
+          "stem": "Which text advises calling before visiting on holidays?",
+          "answer": 2
         }
-      ]
+      ],
+      "unitTheme": "Places"
     },
     {
       "id": "g6-c-reading-2",
@@ -2088,29 +2108,30 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "From: asma@school.example\nTo: huda@school.example\nSubject: Plans for our class project\nDear Huda,\nI hope you are enjoying your week. Our class is organising a neighbourhood market at the market next Wednesday. We will meet at nine in the morning near the main entrance. Our teacher asked each group to prepare one small display and explain it to visiting parents. My group will bring a apple and a poster showing how we made our project. Please bring your notebook, some drinking water and a reusable bag. We do not need to buy new decorations because the school has plenty of materials we can use again. The event finishes at one o'clock. After that, we will tidy the area and return our equipment to the classroom. I hope you can come and help us. Please reply before Sunday.\nBest wishes,\nAsma",
+      "passage": "From: dana@school.example\nTo: reem@school.example\nSubject: A place I recommend\nDear Reem,\nI visited our town library with my father last Wednesday. It is opposite the main park, next to the post office. We arrived at ten in the morning. A librarian showed us the children's reading area and helped me choose a book about Oman. At eleven, we joined a storytelling activity with other pupils. My father borrowed a history book, and we walked home before lunch. I want to visit the museum next weekend because it has photographs of old boats. If you are free on Wednesday, we can go to the library together.\nBest wishes,\nDana",
       "questions": [
         {
-          "stem": "The event will take place on Wednesday.",
+          "stem": "Dana visited the library on Wednesday.",
           "answer": "True"
         },
         {
-          "stem": "All groups need to buy brand-new decorations.",
+          "stem": "The library is beside the airport.",
           "answer": "False"
         },
         {
-          "stem": "Parents are invited to see the class displays.",
+          "stem": "A librarian helped Dana find a book.",
           "answer": "True"
         },
         {
-          "stem": "The event will finish at six in the evening.",
+          "stem": "Dana's father borrowed a history book.",
+          "answer": "True"
+        },
+        {
+          "stem": "Dana has already visited the museum this weekend.",
           "answer": "False"
-        },
-        {
-          "stem": "Asma asks for a reply before Sunday.",
-          "answer": "True"
         }
-      ]
+      ],
+      "unitTheme": "Places"
     },
     {
       "id": "g6-c-writing-1",
@@ -2266,37 +2287,38 @@
       "marks": 5,
       "format": "picture-spelling",
       "pictureOptions": [
-        "apple",
-        "gift",
-        "cup",
-        "cake",
-        "book"
+        "market",
+        "library",
+        "museum",
+        "park",
+        "clinic"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "apple"
+          "answer": "market"
         },
         {
           "stem": "Picture 2",
-          "answer": "gift"
+          "answer": "library"
         },
         {
           "stem": "Picture 3",
-          "answer": "cup"
+          "answer": "museum"
         },
         {
           "stem": "Picture 4",
-          "answer": "cake"
+          "answer": "park"
         },
         {
           "stem": "Picture 5",
-          "answer": "book"
+          "answer": "clinic"
         }
       ],
       "sourceModel": "C",
       "sourceActivityId": "g6-c-vocabulary",
-      "mediaId": "g6-c-vocabulary"
+      "mediaId": "g6-c-vocabulary",
+      "unitTheme": "Comprehensive semester review"
     },
     {
       "id": "g6-d-grammar",
@@ -2361,40 +2383,41 @@
       "format": "text-match",
       "passages": [
         {
-          "stem": "The school invention fair opened at nine. A group of pupils made a robot that could move small blocks. They tested it carefully and changed two parts before the visitors arrived. Their teacher praised the teamwork and asked everyone to explain their work clearly. This was important for their project."
+          "stem": "Every Saturday, Amina joins a sports club at the community centre. She enjoys football and cycling. The coaches remind children to warm up and drink water before activities. New members can borrow helmets and bicycles from the club."
         },
         {
-          "stem": "A second group prepared a photo exhibition about the invention fair. They used a camera to record the stages of each project. The photographs showed first attempts, mistakes and final improvements. Visitors liked seeing how an idea could become better with patient work. This was important for their project."
+          "stem": "Salim loves music. He joined a drumming group at school and practises with friends every Monday. At home, he listens to new rhythms and tries to copy them. His parents enjoy hearing his progress."
         },
         {
-          "stem": "At the end of the fair, the pupils wrote short reflections in a shared notebook. They described what they learned and how they would improve next time. Their teacher collected the notes and promised to display the best advice on a classroom wall. This was important for their project."
+          "stem": "Maha likes quiet hobbies. She paints pictures of birds and flowers, then sends photographs to her cousin. She sometimes visits the park to find new ideas. She uses a small paintbrush and keeps her colours in a box."
         }
       ],
       "questions": [
         {
-          "stem": "Which text describes a moving model?",
+          "stem": "Which text describes football and cycling?",
           "answer": 0
         },
         {
-          "stem": "Which text mentions photographs of mistakes?",
+          "stem": "Which text mentions borrowing safety equipment?",
+          "answer": 0
+        },
+        {
+          "stem": "Which text describes practising music?",
           "answer": 1
         },
         {
-          "stem": "Which text mentions advice written in a notebook?",
+          "stem": "Which text mentions sharing pictures with a cousin?",
           "answer": 2
         },
         {
-          "stem": "Which text says pupils tested and changed parts?",
-          "answer": 0
-        },
-        {
-          "stem": "Which text mentions visitors learning from pictures?",
-          "answer": 1
+          "stem": "Which text mentions looking for ideas in a park?",
+          "answer": 2
         }
       ],
       "sourceModel": "A",
       "sourceActivityId": "g6-a-reading-1",
-      "mediaId": "g6-a-reading-1"
+      "mediaId": "g6-a-reading-1",
+      "unitTheme": "Comprehensive semester review"
     },
     {
       "id": "g6-d-reading-2",
@@ -2405,32 +2428,33 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "From: maha@school.example\nTo: salim@school.example\nSubject: Plans for our class project\nDear Salim,\nI hope you are enjoying your week. Our class is organising a coastal science day at the beach next Tuesday. We will meet at nine in the morning near the main entrance. Our teacher asked each group to prepare one small display and explain it to visiting parents. My group will bring a fish and a poster showing how we made our project. Please bring your notebook, some drinking water and a reusable bag. We do not need to buy new decorations because the school has plenty of materials we can use again. The event finishes at one o'clock. After that, we will tidy the area and return our equipment to the classroom. I hope you can come and help us. Please reply before Sunday.\nBest wishes,\nMaha",
+      "passage": "From: fatma@school.example\nTo: salma@school.example\nSubject: Our technology project\nDear Salma,\nYesterday we presented our new robot at the school science exhibition. It can water a small plant when a sensor detects dry soil. My sister helped me check the wires safely, and I wrote a simple program on the computer. At first the sensor gave the wrong reading. We moved it and tested the robot again. The model worked during the exhibition, and our teacher was pleased. Next month we hope to add a light to show when the water tank is empty. Please visit our technology club on Tuesday if you would like to see it.\nBest wishes,\nFatma",
       "questions": [
         {
-          "stem": "The event will take place on Tuesday.",
+          "stem": "Fatma's robot waters plants.",
           "answer": "True"
         },
         {
-          "stem": "All groups need to buy brand-new decorations.",
+          "stem": "Her cousin checked the wires.",
           "answer": "False"
         },
         {
-          "stem": "Parents are invited to see the class displays.",
+          "stem": "The sensor worked perfectly from the beginning.",
+          "answer": "False"
+        },
+        {
+          "stem": "They tested the robot again after changing the sensor position.",
           "answer": "True"
         },
         {
-          "stem": "The event will finish at six in the evening.",
-          "answer": "False"
-        },
-        {
-          "stem": "Maha asks for a reply before Sunday.",
+          "stem": "They hope to add a warning light.",
           "answer": "True"
         }
       ],
       "sourceModel": "B",
       "sourceActivityId": "g6-b-reading-2",
-      "mediaId": "g6-b-reading-2"
+      "mediaId": "g6-b-reading-2",
+      "unitTheme": "Comprehensive semester review"
     },
     {
       "id": "g6-d-writing-1",
