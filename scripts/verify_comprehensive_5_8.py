@@ -20,10 +20,10 @@ class Inline(HTMLParser):
    self.data.append((self.script.get('id'),self.script.get('type'),data))
 def embedded(path,id):
  content=path.read_text(encoding='utf-8')
- pattern=r'<script\\b[^>]*\\bid=["\\\']'+re.escape(id)+r'["\\\'][^>]*>(.*?)</script>'
- hit=re.search(pattern,content,flags=re.S|re.I)
- assert hit is not None,(str(path),id)
- return json.loads(hit.group(1))
+ mark='<script type="application/json" id="'+id+'">'
+ start=content.index(mark)+len(mark)
+ stop=content.index('</script>',start)
+ return json.loads(content[start:stop])
 def jscheck(path):
  p=Inline();p.feed(path.read_text(encoding='utf-8'))
  for n,(sid,typ,script) in enumerate(p.data):
