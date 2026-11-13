@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-13-v3",
+  "version": "2026-11-13-v4",
   "basis": "Grade 7/8 official teacher or pupil scope and sequence, Grade 9 source overview; classification of individual tasks is an editorial audit, not Ministry certification",
   "standards": {
     "7": {
@@ -61,6 +61,11 @@
           "listening2": "needs_rewrite",
           "reading2": "needs_rewrite",
           "writing1": "needs_review"
+        },
+        "D": {
+          "paper": "recomposed_comprehensive_A_B_C",
+          "scope": "mixed",
+          "approved": false
         }
       },
       "verifiedVocabularyList": [
@@ -214,6 +219,11 @@
           "listening2": "cross_unit",
           "reading2": "cross_unit",
           "writing2": "needs_review"
+        },
+        "D": {
+          "paper": "recomposed_comprehensive_A_B_C",
+          "scope": "mixed",
+          "approved": false
         }
       },
       "verifiedVocabularyList": [
@@ -640,63 +650,63 @@
       "model": "D",
       "section": "listening1",
       "targetUnit": null,
-      "status": "comprehensive",
+      "status": "mixed_comprehensive_reused",
       "approved": false,
-      "reason": "شامل متعدد الوحدات"
+      "reason": "Model D was rebuilt from original unit-model sections A/B/C and is not unit-specific."
     },
     {
       "grade": 7,
       "model": "D",
       "section": "listening2",
       "targetUnit": null,
-      "status": "comprehensive",
+      "status": "mixed_comprehensive_reused",
       "approved": false,
-      "reason": "شامل متعدد الوحدات"
+      "reason": "Model D was rebuilt from original unit-model sections A/B/C and is not unit-specific."
     },
     {
       "grade": 7,
       "model": "D",
       "section": "grammarvocabulary",
       "targetUnit": null,
-      "status": "comprehensive",
+      "status": "mixed_comprehensive_reused",
       "approved": false,
-      "reason": "شامل متعدد الوحدات"
+      "reason": "Model D was rebuilt from original unit-model sections A/B/C and is not unit-specific."
     },
     {
       "grade": 7,
       "model": "D",
       "section": "reading1",
       "targetUnit": null,
-      "status": "comprehensive",
+      "status": "mixed_comprehensive_reused",
       "approved": false,
-      "reason": "شامل متعدد الوحدات"
+      "reason": "Model D was rebuilt from original unit-model sections A/B/C and is not unit-specific."
     },
     {
       "grade": 7,
       "model": "D",
       "section": "reading2",
       "targetUnit": null,
-      "status": "comprehensive",
+      "status": "mixed_comprehensive_reused",
       "approved": false,
-      "reason": "شامل متعدد الوحدات"
+      "reason": "Model D was rebuilt from original unit-model sections A/B/C and is not unit-specific."
     },
     {
       "grade": 7,
       "model": "D",
       "section": "writing1",
       "targetUnit": null,
-      "status": "comprehensive",
+      "status": "mixed_comprehensive_reused",
       "approved": false,
-      "reason": "شامل متعدد الوحدات"
+      "reason": "Model D was rebuilt from original unit-model sections A/B/C and is not unit-specific."
     },
     {
       "grade": 7,
       "model": "D",
       "section": "writing2",
       "targetUnit": null,
-      "status": "comprehensive",
+      "status": "mixed_comprehensive_reused",
       "approved": false,
-      "reason": "شامل متعدد الوحدات"
+      "reason": "Model D was rebuilt from original unit-model sections A/B/C and is not unit-specific."
     },
     {
       "grade": 8,
@@ -892,63 +902,63 @@
       "model": "D",
       "section": "listening1",
       "targetUnit": null,
-      "status": "comprehensive",
+      "status": "mixed_comprehensive_reused",
       "approved": false,
-      "reason": "شامل متعدد الوحدات"
+      "reason": "Model D was rebuilt from original unit-model sections A/B/C and is not unit-specific."
     },
     {
       "grade": 8,
       "model": "D",
       "section": "listening2",
       "targetUnit": null,
-      "status": "comprehensive",
+      "status": "mixed_comprehensive_reused",
       "approved": false,
-      "reason": "شامل متعدد الوحدات"
+      "reason": "Model D was rebuilt from original unit-model sections A/B/C and is not unit-specific."
     },
     {
       "grade": 8,
       "model": "D",
       "section": "grammarvocabulary",
       "targetUnit": null,
-      "status": "comprehensive",
+      "status": "mixed_comprehensive_reused",
       "approved": false,
-      "reason": "شامل متعدد الوحدات"
+      "reason": "Model D was rebuilt from original unit-model sections A/B/C and is not unit-specific."
     },
     {
       "grade": 8,
       "model": "D",
       "section": "reading1",
       "targetUnit": null,
-      "status": "comprehensive",
+      "status": "mixed_comprehensive_reused",
       "approved": false,
-      "reason": "شامل متعدد الوحدات"
+      "reason": "Model D was rebuilt from original unit-model sections A/B/C and is not unit-specific."
     },
     {
       "grade": 8,
       "model": "D",
       "section": "reading2",
       "targetUnit": null,
-      "status": "comprehensive",
+      "status": "mixed_comprehensive_reused",
       "approved": false,
-      "reason": "شامل متعدد الوحدات"
+      "reason": "Model D was rebuilt from original unit-model sections A/B/C and is not unit-specific."
     },
     {
       "grade": 8,
       "model": "D",
       "section": "writing1",
       "targetUnit": null,
-      "status": "comprehensive",
+      "status": "mixed_comprehensive_reused",
       "approved": false,
-      "reason": "شامل متعدد الوحدات"
+      "reason": "Model D was rebuilt from original unit-model sections A/B/C and is not unit-specific."
     },
     {
       "grade": 8,
       "model": "D",
       "section": "writing2",
       "targetUnit": null,
-      "status": "comprehensive",
+      "status": "mixed_comprehensive_reused",
       "approved": false,
-      "reason": "شامل متعدد الوحدات"
+      "reason": "Model D was rebuilt from original unit-model sections A/B/C and is not unit-specific."
     },
     {
       "grade": 9,
@@ -1406,5 +1416,5 @@
       "verifiedFullModels": 0
     }
   },
-  "note": "Unit-specific labels for whole exams are withheld until all 7 parts meet curriculum scope, including listening scripts and pictures; natural voice existing files are retained without silently editing transcripts."
+  "note": "Unit-specific labels for whole exams are withheld until all 7 parts meet curriculum scope, including listening scripts and pictures; natural voice existing files are retained without silently editing transcripts. New Model D papers for G7 and G8 intentionally reuse complete sections A/B/C; legacy D files archived."
 }
