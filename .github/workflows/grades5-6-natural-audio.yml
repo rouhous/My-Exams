@@ -1,0 +1,48 @@
+name: Generate Grade 5 and 6 natural listening MP3
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/grades5-6-natural-audio.yml'
+permissions:
+  contents: write
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install speech and MP3 tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          pip install edge-tts mutagen
+      - name: Generate sixteen natural listening tracks
+        run: python scripts/generate_grades5_6_audio.py
+      - name: Validate and commit
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from mutagen.mp3 import MP3
+          files=list(Path('grades5-6/audio-natural').glob('*.mp3'))
+          assert len(files)==16, f'Expected 16 files, found {len(files)}'
+          for f in files:assert f.stat().st_size>15000 and MP3(f).info.length>35,f
+          print('Validated',len(files),'MP3 files')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add grades5-6/audio-natural/
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish 16 natural Grade 5 and 6 listening tracks"
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then exit 0; fi
+              sleep 5
+            done
+            exit 1
+          fi
