@@ -25,7 +25,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y ffmpeg
-          pip install edge-tts mutagen
+          pip install edge-tts mutagen gTTS
       - name: Generate natural listening for four unique unit themes and two mixed models
         run: python scripts/generate_grade11_core_audio.py
       - name: Validate and safely publish audio against the latest bank
