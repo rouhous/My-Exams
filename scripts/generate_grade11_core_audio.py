@@ -17,8 +17,19 @@ async def one(model):
             key=(text,voice)
             if key not in cache:
                 p=tmp/f'voice{len(cache):03d}.mp3'
-                await edge_tts.Communicate(text,VOICES[voice],rate='-9%').save(str(p))
-                if p.stat().st_size<1200:raise ValueError('Invalid natural audio')
+                for attempt in range(3):
+                    try:
+                        await edge_tts.Communicate(text,VOICES[voice],rate='-9%').save(str(p))
+                        if p.stat().st_size<1200:raise ValueError('Invalid neural audio')
+                        break
+                    except Exception as exc:
+                        print('Neural TTS retry',attempt+1,type(exc).__name__,flush=True)
+                        await asyncio.sleep(2**attempt)
+                else:
+                    from gtts import gTTS
+                    print('Using English TTS fallback',flush=True)
+                    gTTS(text=text,lang='en',tld='co.uk',slow=False).save(str(p))
+                if not p.exists() or p.stat().st_size<1200:raise ValueError('No valid audio after retry/fallback')
                 cache[key]=p
             seq.append(cache[key])
         def pause(sec):
