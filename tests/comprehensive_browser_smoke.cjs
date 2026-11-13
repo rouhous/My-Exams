@@ -90,5 +90,26 @@ const { chromium, devices } = require('playwright');
  },url);
  if(![200,206].includes(result.status)||result.size<100)throw Error('Offline MP3 range fetch failed '+JSON.stringify(result));
  console.log('PASS offline grade 5 E with MP3',result);
+ await context.setOffline(false);
+ await page.goto(base+'grades5-6/index.html',{waitUntil:'domcontentloaded'});
+ await page.selectOption('#grade','5');
+ await page.selectOption('#model','C');
+ await page.click('#packDownload');
+ await page.waitForFunction(()=>document.querySelector('#packProgress').textContent.includes('اكتمل التنزيل'),null,{timeout:120000});
+ await context.setOffline(true);
+ await page.reload({waitUntil:'domcontentloaded'});
+ await page.selectOption('#grade','5');
+ await page.selectOption('#model','C');
+ await page.click('#startExam');
+ if(await page.locator('#session section.section').count()!==8)throw Error('Grade 5 space unit not available offline');
+ const spaceResources=await page.evaluate(async()=>{
+  const endpoints=['images/rocket.svg','images/telescope.svg','images/planet.svg','images/spacesuit.svg','images/moon.svg','audio-natural/g5-c-listening-1.mp3'];
+  return await Promise.all(endpoints.map(async file=>{
+   const r=await fetch(file,file.endsWith('.mp3')?{headers:{range:'bytes=0-1023'}}:{});
+   return {file,status:r.status,bytes:(await r.arrayBuffer()).byteLength};
+  }));
+ });
+ if(spaceResources.some(x=>![200,206].includes(x.status)||x.bytes<100))throw Error('Missing offline space-unit resource '+JSON.stringify(spaceResources));
+ console.log('PASS Grade 5 space-unit illustrations and natural MP3 offline',spaceResources);
  await browser.close();
 })().catch(e=>{console.error(e);process.exit(1)});
