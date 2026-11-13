@@ -1,0 +1,53 @@
+name: Grade 10 student pilot structure and browser QA
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/grade10-qa.yml'
+      - 'grade10/data.json'
+      - 'grade10/index.html'
+      - 'tests/grade10_browser_smoke.cjs'
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate original bank structure
+        run: |
+          python3 - <<'PY'
+          import json
+          d=json.load(open('grade10/data.json'))
+          m=d['models']
+          assert len(m)==6
+          assert [x['id'] for x in m]==list('ABCDEF')
+          for x in m:
+              assert x['marks']==60 and x['timeMinutes']==150
+              assert len(x['listening']['questions'])==15
+              assert len(x['vocabulary']['questions'])==5
+              assert len(x['grammar']['questions'])==5
+              assert len(x['reading1']['questions'])==10
+              assert len(x['reading2']['questions'])==10
+              for skill in ('listening','vocabulary','grammar','reading1','reading2'):
+                  for q in x[skill]['questions']:
+                      if isinstance(q['answer'],int):
+                          assert 0<=q['answer']<len(q['options'])
+              assert x['writing1']['prompt'] and x['writing2']['prompt']
+          assert m[4]['listening']['passage']==m[1]['listening']['passage']
+          assert m[5]['listening']['passage']==m[1]['listening']['passage']
+          print('All six provisional Grade 10 models structurally valid.')
+          PY
+      - name: Run actual mobile-width browser checks
+        run: |
+          npm install --no-save playwright@1.56.1
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/g10.log 2>&1 &
+          sleep 3
+          node tests/grade10_browser_smoke.cjs
