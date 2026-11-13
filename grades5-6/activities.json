@@ -2137,43 +2137,46 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "camera",
+        "robot",
         "kite",
-        "flower",
-        "paintbrush",
-        "drum",
-        "boat"
+        "bus",
+        "plant",
+        "book",
+        "camera"
       ],
       "passages": [
-        "A: What is your group doing today? B: I need a paintbrush for my picture. A: What did you learn? B: A thick brush is best for the blue sky. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: I drew a flower in the garden. A: What did you learn? B: Its petals have a beautiful shape. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: My kite flew above the trees. A: What did you learn? B: I chose bright paper and a long string. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: I used my camera to record our work. A: What did you learn? B: The class can view the photographs tomorrow. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: I painted a boat beside the mountains. A: What did you learn? B: My grandfather told me stories about sailing. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions."
+        "A: What is your group doing today? B: A small robot can move coloured blocks. A: What did you learn? B: It helps our team show how simple machines work. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: We use a camera to take clear pictures. A: What did you learn? B: The visitors can see our progress in a photo album. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: I made a short book about my idea. A: What did you learn? B: I will read the first page to younger children. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: Our group grew a young plant in a jar. A: What did you learn? B: We check its water every morning. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: The visitors arrive by school bus. A: What did you learn? B: The driver stops beside the main hall. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions."
       ],
       "questions": [
         {
           "stem": "Text 1",
-          "answer": 3
-        },
-        {
-          "stem": "Text 2",
-          "answer": 2
-        },
-        {
-          "stem": "Text 3",
-          "answer": 1
-        },
-        {
-          "stem": "Text 4",
           "answer": 0
         },
         {
-          "stem": "Text 5",
+          "stem": "Text 2",
           "answer": 5
+        },
+        {
+          "stem": "Text 3",
+          "answer": 4
+        },
+        {
+          "stem": "Text 4",
+          "answer": 3
+        },
+        {
+          "stem": "Text 5",
+          "answer": 2
         }
       ],
-      "audio": "audio/g6-d-listening-1.mp3"
+      "audio": "audio/g6-a-listening-1.mp3",
+      "sourceModel": "A",
+      "sourceActivityId": "g6-a-listening-1",
+      "mediaId": "g6-a-listening-1"
     },
     {
       "id": "g6-d-listening-2",
@@ -2184,55 +2187,58 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Laila about the outdoor art day. Where will the event happen? Laila: It will take place at the park on Thursday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Laila: My friend Yousuf is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Laila: They will see a display about a paintbrush. We made it in class. Interviewer: What should visitors bring? Laila: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Laila: You are welcome. Interviewer: What did you learn from this experience? Laila: I learned to listen to others, check my work and make better plans. Working together is important because each person has a useful idea.",
+      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Maha about the coastal science day. Where will the event happen? Maha: It will take place at the beach on Tuesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Maha: My friend Salim is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Maha: They will see a display about a fish. We made it in class. Interviewer: What should visitors bring? Maha: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Maha: You are welcome. Interviewer: What did you learn from this experience? Maha: I learned to listen to others, check my work and make better plans. Working together is important because each person has a useful idea.",
       "questions": [
         {
           "stem": "Where will the event take place?",
           "options": [
-            "the park",
             "at the library",
-            "at the airport"
+            "at the airport",
+            "the beach"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
           "stem": "When is the event planned?",
           "options": [
-            "Friday",
             "Sunday",
-            "Thursday"
-          ],
-          "answer": 2
-        },
-        {
-          "stem": "Who is helping organise the event?",
-          "options": [
-            "the bus driver",
-            "Yousuf",
-            "a doctor"
+            "Tuesday",
+            "Friday"
           ],
           "answer": 1
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "Who is helping organise the event?",
           "options": [
-            "a paintbrush",
-            "a football",
-            "a bicycle"
+            "Salim",
+            "a doctor",
+            "the bus driver"
           ],
           "answer": 0
         },
         {
-          "stem": "What should people bring?",
+          "stem": "What is the first display about?",
           "options": [
-            "a large suitcase",
-            "a new computer",
-            "a reusable water bottle"
+            "a football",
+            "a bicycle",
+            "a fish"
           ],
           "answer": 2
+        },
+        {
+          "stem": "What should people bring?",
+          "options": [
+            "a new computer",
+            "a reusable water bottle",
+            "a large suitcase"
+          ],
+          "answer": 1
         }
       ],
-      "audio": "audio/g6-d-listening-2.mp3"
+      "audio": "audio/g6-b-listening-2.mp3",
+      "sourceModel": "B",
+      "sourceActivityId": "g6-b-listening-2",
+      "mediaId": "g6-b-listening-2"
     },
     {
       "id": "g6-d-vocabulary",
@@ -2244,34 +2250,37 @@
       "marks": 5,
       "format": "picture-spelling",
       "pictureOptions": [
-        "paintbrush",
-        "flower",
-        "kite",
-        "camera",
-        "boat"
+        "apple",
+        "gift",
+        "cup",
+        "cake",
+        "book"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "paintbrush"
+          "answer": "apple"
         },
         {
           "stem": "Picture 2",
-          "answer": "flower"
+          "answer": "gift"
         },
         {
           "stem": "Picture 3",
-          "answer": "kite"
+          "answer": "cup"
         },
         {
           "stem": "Picture 4",
-          "answer": "camera"
+          "answer": "cake"
         },
         {
           "stem": "Picture 5",
-          "answer": "boat"
+          "answer": "book"
         }
-      ]
+      ],
+      "sourceModel": "C",
+      "sourceActivityId": "g6-c-vocabulary",
+      "mediaId": "g6-c-vocabulary"
     },
     {
       "id": "g6-d-grammar",
@@ -2336,37 +2345,40 @@
       "format": "text-match",
       "passages": [
         {
-          "stem": "The art class visited a public park on Thursday morning. Pupils brought paper, pencils and paintbrushes to record what they could see. Their teacher asked them to observe shapes and patterns before drawing. Many students chose flowers and trees near the pathway. This was important for their project."
+          "stem": "The school invention fair opened at nine. A group of pupils made a robot that could move small blocks. They tested it carefully and changed two parts before the visitors arrived. Their teacher praised the teamwork and asked everyone to explain their work clearly. This was important for their project."
         },
         {
-          "stem": "Another group interviewed people about the colours they liked in public spaces. They listened carefully and wrote short notes. A local artist demonstrated how to draw a simple boat. The pupils practised the steps and compared their first attempts with their final pictures. This was important for their project."
+          "stem": "A second group prepared a photo exhibition about the invention fair. They used a camera to record the stages of each project. The photographs showed first attempts, mistakes and final improvements. Visitors liked seeing how an idea could become better with patient work. This was important for their project."
         },
         {
-          "stem": "Before leaving the park, everyone displayed their work on a long table. Each child described one decision and one difficulty. The teacher encouraged them to give kind, specific feedback. Later, the pupils carried their pictures back to school and planned a small exhibition. This was important for their project."
+          "stem": "At the end of the fair, the pupils wrote short reflections in a shared notebook. They described what they learned and how they would improve next time. Their teacher collected the notes and promised to display the best advice on a classroom wall. This was important for their project."
         }
       ],
       "questions": [
         {
-          "stem": "Which text describes observing shapes before drawing?",
+          "stem": "Which text describes a moving model?",
           "answer": 0
         },
         {
-          "stem": "Which text tells about interviewing park visitors?",
+          "stem": "Which text mentions photographs of mistakes?",
           "answer": 1
         },
         {
-          "stem": "Which text mentions displaying finished pictures?",
+          "stem": "Which text mentions advice written in a notebook?",
           "answer": 2
         },
         {
-          "stem": "Which text introduces a local artist?",
-          "answer": 1
+          "stem": "Which text says pupils tested and changed parts?",
+          "answer": 0
         },
         {
-          "stem": "Which text describes bringing paintbrushes to the park?",
-          "answer": 0
+          "stem": "Which text mentions visitors learning from pictures?",
+          "answer": 1
         }
-      ]
+      ],
+      "sourceModel": "A",
+      "sourceActivityId": "g6-a-reading-1",
+      "mediaId": "g6-a-reading-1"
     },
     {
       "id": "g6-d-reading-2",
@@ -2377,10 +2389,10 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "From: laila@school.example\nTo: yousuf@school.example\nSubject: Plans for our class project\nDear Yousuf,\nI hope you are enjoying your week. Our class is organising a outdoor art day at the park next Thursday. We will meet at nine in the morning near the main entrance. Our teacher asked each group to prepare one small display and explain it to visiting parents. My group will bring a paintbrush and a poster showing how we made our project. Please bring your notebook, some drinking water and a reusable bag. We do not need to buy new decorations because the school has plenty of materials we can use again. The event finishes at one o'clock. After that, we will tidy the area and return our equipment to the classroom. I hope you can come and help us. Please reply before Sunday.\nBest wishes,\nLaila",
+      "passage": "From: maha@school.example\nTo: salim@school.example\nSubject: Plans for our class project\nDear Salim,\nI hope you are enjoying your week. Our class is organising a coastal science day at the beach next Tuesday. We will meet at nine in the morning near the main entrance. Our teacher asked each group to prepare one small display and explain it to visiting parents. My group will bring a fish and a poster showing how we made our project. Please bring your notebook, some drinking water and a reusable bag. We do not need to buy new decorations because the school has plenty of materials we can use again. The event finishes at one o'clock. After that, we will tidy the area and return our equipment to the classroom. I hope you can come and help us. Please reply before Sunday.\nBest wishes,\nMaha",
       "questions": [
         {
-          "stem": "The event will take place on Thursday.",
+          "stem": "The event will take place on Tuesday.",
           "answer": "True"
         },
         {
@@ -2396,10 +2408,13 @@
           "answer": "False"
         },
         {
-          "stem": "Laila asks for a reply before Sunday.",
+          "stem": "Maha asks for a reply before Sunday.",
           "answer": "True"
         }
-      ]
+      ],
+      "sourceModel": "B",
+      "sourceActivityId": "g6-b-reading-2",
+      "mediaId": "g6-b-reading-2"
     },
     {
       "id": "g6-d-writing-1",
@@ -2411,12 +2426,15 @@
       "marks": 5,
       "format": "writing",
       "minWords": 50,
-      "prompt": "Look at the three pictures. Write a story of at least 50 words about a class trip where pupils used technology to plan an enjoyable free-time activity.",
+      "prompt": "Look at the three pictures. Write a story of at least 50 words about exploring an unfamiliar place in Oman. Include your journey, something you discovered and how you returned home.",
       "pictureOptions": [
-        "camera",
-        "park",
+        "bridge",
+        "museum",
         "boat"
-      ]
+      ],
+      "sourceModel": "C",
+      "sourceActivityId": "g6-c-writing-1",
+      "mediaId": "g6-c-writing-1"
     },
     {
       "id": "g6-d-writing-2",
@@ -2428,7 +2446,10 @@
       "marks": 5,
       "format": "writing",
       "minWords": 50,
-      "prompt": "Write a review of a trip or activity that combined travel, technology and sport. Mention at least two of these themes and give your opinion. Write at least 50 words."
+      "prompt": "Write a short review of a sports club you visited. Describe the activities, facilities, people and one improvement you would suggest. Write at least 50 words.",
+      "sourceModel": "A",
+      "sourceActivityId": "g6-a-writing-2",
+      "mediaId": "g6-a-writing-2"
     }
   ]
 }
