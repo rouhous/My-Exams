@@ -21,7 +21,18 @@ const { chromium, devices } = require('playwright');
    n=await page.locator('#session section.section').count();
    if(n!==8)throw Error('Grade '+grade+' mixed F had '+n+' sections');
    await page.click('#back');
-   console.log('PASS grades5-6',grade,'both comprehensive papers');
+   for(let attempt=0;attempt<6;attempt++){
+     await page.click('#randomExam');
+     n=await page.locator('#session section.section').count();
+     if(n!==8)throw Error('Grade '+grade+' random test had '+n+' sections');
+     const samples=await page.evaluate(()=>state.acts.map(x=>x.sourceModel));
+     const counts=Object.fromEntries(['A','B','C','D'].map(x=>[x,samples.filter(y=>y===x).length]));
+     if(Object.values(counts).some(x=>x!==2))throw Error('Grade '+grade+' random models not balanced '+JSON.stringify(counts));
+     const audioCount=await page.locator('#session audio').count();
+     if(audioCount!==2)throw Error('Grade '+grade+' random lacks exactly two audios');
+     await page.click('#back');
+   }
+   console.log('PASS grades5-6',grade,'both mixed papers, six balanced randomized papers');
  }
  async function g78(grade){
    await context.setOffline(false);
@@ -40,7 +51,17 @@ const { chromium, devices } = require('playwright');
    await page.click('#randomNew');
    n=await page.locator('.section-title').count();
    if(n!==7)throw Error('Grade '+grade+' random R had '+n+' sections');
-   console.log('PASS grades7-8',grade,'E/F/random and 15 listening pictures');
+   for(let attempt=0;attempt<6;attempt++){
+     await page.click('#randomNew');
+     n=await page.locator('.section-title').count();
+     if(n!==7)throw Error('Grade '+grade+' randomized paper has '+n+' sections');
+     const models=await page.evaluate(()=>current.sections.map(x=>x.sourceModel));
+     const counts=Object.fromEntries(['A','B','C','D'].map(x=>[x,models.filter(y=>y===x).length]));
+     if(Object.values(counts).some(x=>x<1||x>2))throw Error('Grade '+grade+' random models unbalanced '+JSON.stringify(counts));
+     const imgs=await page.locator('img[src^="assets/illustrations/"]').count();
+     if(imgs!==15)throw Error('Grade '+grade+' randomized listening missing illustrations');
+   }
+   console.log('PASS grades7-8',grade,'E/F plus six balanced randomized papers with 15 listening pictures');
  }
  await g56(5);
  await g56(6);
