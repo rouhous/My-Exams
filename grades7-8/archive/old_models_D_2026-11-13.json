@@ -1,0 +1,650 @@
+{
+  "reason": "Preserve originals before mixed D replacements",
+  "models": [
+    {
+      "id": "g7-d",
+      "grade": 7,
+      "model": "D",
+      "title": "A Safer Journey to School",
+      "theme": "a safer walking route",
+      "durationMinutes": 120,
+      "totalMarks": 40,
+      "semester": 1,
+      "sections": [
+        {
+          "key": "listening1",
+          "label": "Listening 1",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "Which musical instrument does she play?",
+              "options": [
+                "guitar",
+                "drum",
+                "piano"
+              ],
+              "answer": 2,
+              "script": "My sister is preparing for a concert at school. She practised the drum last year, and her best friend plays the guitar. My sister prefers music with a keyboard, so she will play the piano during the concert next Thursday evening.",
+              "images": [
+                "guitar",
+                "drum",
+                "piano"
+              ]
+            },
+            {
+              "stem": "Which animal did the class observe?",
+              "options": [
+                "bird",
+                "turtle",
+                "fish"
+              ],
+              "answer": 1,
+              "script": "We visited a wildlife centre to learn how animals survive. First, we saw small birds and colourful fish in separate areas. The guide then showed us a sea turtle that had been rescued. We watched it swim and learned why plastic bags can be dangerous.",
+              "images": [
+                "bird",
+                "turtle",
+                "fish"
+              ]
+            },
+            {
+              "stem": "Which device is used for the project?",
+              "options": [
+                "tablet",
+                "camera",
+                "microphone"
+              ],
+              "answer": 2,
+              "script": "For our school news project, we need to interview different people. We can use a tablet to write notes and a camera to take pictures. The most useful device for recording clear voices is a microphone, so I will borrow one from the media room.",
+              "images": [
+                "tablet",
+                "camera",
+                "mic"
+              ]
+            },
+            {
+              "stem": "What did the family plant?",
+              "options": [
+                "tree",
+                "flower",
+                "vegetable"
+              ],
+              "answer": 0,
+              "script": "My family decided to improve the small area outside our house. We already grow vegetables and flowers in pots. This weekend we planted a young tree near the gate. It will need regular water, but we hope it will provide shade in future.",
+              "images": [
+                "tree-pine",
+                "flower",
+                "carrot"
+              ]
+            },
+            {
+              "stem": "Which building is closed?",
+              "options": [
+                "hospital",
+                "school",
+                "library"
+              ],
+              "answer": 2,
+              "script": "There is a notice about building repairs in our town. The hospital and school will stay open as usual. However, the public library is closed until Wednesday because workers are repairing its roof. Books can be returned next week without an extra charge.",
+              "images": [
+                "hospital",
+                "school",
+                "book-open"
+              ]
+            }
+          ],
+          "type": "picture-choice",
+          "instructions": "You will hear five short texts twice. For each text choose the correct picture A, B or C.",
+          "audio": "assets/audio/g7-d-listening1.mp3",
+          "transcript": "Listening one. You will hear five short texts. Text 1. My sister is preparing for a concert at school. She practised the drum last year, and her best friend plays the guitar. My sister prefers music with a keyboard, so she will play the piano during the concert next Thursday evening.  Text 2. We visited a wildlife centre to learn how animals survive. First, we saw small birds and colourful fish in separate areas. The guide then showed us a sea turtle that had been rescued. We watched it swim and learned why plastic bags can be dangerous.  Text 3. For our school news project, we need to interview different people. We can use a tablet to write notes and a camera to take pictures. The most useful device for recording clear voices is a microphone, so I will borrow one from the media room.  Text 4. My family decided to improve the small area outside our house. We already grow vegetables and flowers in pots. This weekend we planted a young tree near the gate. It will need regular water, but we hope it will provide shade in future.  Text 5. There is a notice about building repairs in our town. The hospital and school will stay open as usual. However, the public library is closed until Wednesday because workers are repairing its roof. Books can be returned next week without an extra charge. "
+        },
+        {
+          "key": "listening2",
+          "label": "Listening 2",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "The project started in January.",
+              "answer": true
+            },
+            {
+              "stem": "Only experienced adults were allowed to join a safer walking route.",
+              "answer": false
+            },
+            {
+              "stem": "The group received help from a traffic officer.",
+              "answer": true
+            },
+            {
+              "stem": "The group solved its difficulty by buying expensive new equipment.",
+              "answer": false
+            },
+            {
+              "stem": "Nearly twenty people became interested in the project.",
+              "answer": true
+            }
+          ],
+          "script": "Interviewer: Welcome to Young Voices. Today we are speaking with Rashid about a safer walking route. When did the project begin?\nRashid: It began in January, when people in his coastal town asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before.\nInterviewer: What was the first thing you did?\nRashid: We started with observing busy roads. We were supported by a traffic officer, who showed us how to work safely and plan our time.\nInterviewer: Was everything easy?\nRashid: Not really. At one point, cars moved too fast near the gate. We listened to different suggestions before agreeing on adding signs and a marked crossing. That helped us continue.\nInterviewer: What was the most encouraging result?\nRashid: I was happy when more children walked safely. Nearly twenty people became interested in what we were doing.\nInterviewer: What is your advice to other students?\nRashid: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment.\nInterviewer: Thank you for sharing your experience.\nRashid: Thank you. I hope more schools try similar projects next term.",
+          "type": "true-false",
+          "instructions": "Listen to the dialogue twice. Decide whether each statement is True or False.",
+          "audio": "assets/audio/g7-d-listening2.mp3",
+          "transcript": "Listening two. Listen to the dialogue carefully. Interviewer: Welcome to Young Voices. Today we are speaking with Rashid about a safer walking route. When did the project begin? Rashid: It began in January, when people in his coastal town asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before. Interviewer: What was the first thing you did? Rashid: We started with observing busy roads. We were supported by a traffic officer, who showed us how to work safely and plan our time. Interviewer: Was everything easy? Rashid: Not really. At one point, cars moved too fast near the gate. We listened to different suggestions before agreeing on adding signs and a marked crossing. That helped us continue. Interviewer: What was the most encouraging result? Rashid: I was happy when more children walked safely. Nearly twenty people became interested in what we were doing. Interviewer: What is your advice to other students? Rashid: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment. Interviewer: Thank you for sharing your experience. Rashid: Thank you. I hope more schools try similar projects next term."
+        },
+        {
+          "key": "grammarvocabulary",
+          "label": "Grammar & Vocabulary",
+          "marks": 10,
+          "type": "cloze",
+          "passage": "A new student club (1) ____ working on a safer walking route this year. We wanted to make a (2) ____ difference. First, members (3) ____ information from teachers and local families. Ideas were written (4) ____. Some suggestions (5) ____ difficult, so we selected one practical plan. A volunteer (6) ____ us organise the equipment. We followed instructions (7) ____. When the work was finished, everyone (8) ____ proud of the team. The club hopes (9) ____ another activity soon and (10) ____ more students next time.",
+          "items": [
+            {
+              "options": [
+                "begin",
+                "began",
+                "beginning"
+              ],
+              "answer": 1
+            },
+            {
+              "options": [
+                "positively",
+                "positive",
+                "position"
+              ],
+              "answer": 1
+            },
+            {
+              "options": [
+                "collect",
+                "collecting",
+                "collected"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "care",
+                "careful",
+                "carefully"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "were",
+                "was",
+                "are"
+              ],
+              "answer": 0
+            },
+            {
+              "options": [
+                "helping",
+                "helps",
+                "helped"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "correctly",
+                "correct",
+                "correction"
+              ],
+              "answer": 0
+            },
+            {
+              "options": [
+                "feel",
+                "feeling",
+                "felt"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "organising",
+                "organised",
+                "to organise"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "including",
+                "include",
+                "included"
+              ],
+              "answer": 1
+            }
+          ],
+          "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
+        },
+        {
+          "key": "reading1",
+          "label": "Reading 1",
+          "marks": 5,
+          "type": "matching",
+          "texts": [
+            "The first meeting for a safer walking route took place in his coastal town. Rashid came early to discover what volunteers would do.",
+            "Our group brought simple supplies for observing busy roads. Nobody wanted to waste materials or spend money before planning the activity properly.",
+            "A local visitor asked why students had chosen a safer walking route. We explained how the idea could make a difference to people nearby.",
+            "During the second week, a problem appeared: cars moved too fast near the gate. Some students felt worried that the whole activity might have to stop.",
+            "On the final day, Rashid presented the group’s results. Teachers and families listened carefully and asked what the students had learned."
+          ],
+          "continuations": [
+            "After listening to suggestions, the team tried adding signs and a marked crossing. The new approach allowed the students to continue with their plans.",
+            "We checked everything first and worked in teams. This saved time and made the practical work much easier for the younger students.",
+            "The local aquarium displayed rare fish from deep water, and visitors learnt about underwater photography during the guided tour.",
+            "The organisers explained the main goal and gave everyone a small job. Rashid decided to help again the following week.",
+            "Everyone was pleased to hear that more children walked safely. The group promised to share its ideas with other schools soon.",
+            "The visitor understood our explanation and asked how other classes could take part. We invited them to the next meeting."
+          ],
+          "answers": [
+            3,
+            1,
+            5,
+            0,
+            4
+          ],
+          "instructions": "Read the five numbered excerpts and six endings A–F. Match each excerpt with its correct ending. One ending is extra."
+        },
+        {
+          "key": "reading2",
+          "label": "Reading 2",
+          "marks": 5,
+          "type": "short-answer",
+          "passage": "When Rashid heard about a safer walking route in his coastal town, the idea sounded interesting but difficult. The project had started in January, and nobody was sure how many students would join. Rashid decided to attend the first meeting anyway. At the beginning, the organisers explained why the project mattered to local people. They asked everyone to listen carefully before suggesting changes.\n\nThe group began by observing busy roads. Rashid was worried about making mistakes, but a traffic officer explained that learning through practice was an important part of the experience. After a few days, everyone had a specific responsibility. Some students recorded information, while others spoke to families who visited the area.\n\nA difficulty appeared when cars moved too fast near the gate. The group could have stopped, but the students discussed several possibilities and chose a practical solution: adding signs and a marked crossing. They tested the idea, checked the results and made small changes where necessary. Instead of blaming anyone for the delay, they shared the work fairly.\n\nAt the end of the month, more children walked safely. Rashid felt relieved and realised that a useful project does not need to be perfect on the first day. The students presented their work to the school council and suggested that another class could continue it next term. Rashid kept a notebook with photographs and reflections, hoping it would encourage younger pupils to try something similar.",
+          "items": [
+            {
+              "stem": "When did the project begin?",
+              "answers": [
+                "January"
+              ]
+            },
+            {
+              "stem": "Who helped the students learn through practice?",
+              "answers": [
+                "a traffic officer"
+              ]
+            },
+            {
+              "stem": "What did the students do when a difficulty appeared?",
+              "answers": [
+                "discussed several possibilities",
+                "discussed solutions",
+                "chose a practical solution"
+              ]
+            },
+            {
+              "stem": "How did the students share the work?",
+              "answers": [
+                "fairly",
+                "they shared the work fairly"
+              ]
+            },
+            {
+              "stem": "Who listened to their final presentation?",
+              "answers": [
+                "the school council",
+                "school council"
+              ]
+            }
+          ],
+          "instructions": "Read the narrative. Answer questions 1–5 in SHORT answers."
+        },
+        {
+          "key": "writing1",
+          "label": "Writing 1",
+          "marks": 5,
+          "type": "writing",
+          "kind": "factfile",
+          "facts": [
+            "Campaign: Safe Steps",
+            "Place: school entrance",
+            "Organiser: student council",
+            "Day: Monday",
+            "Activities: road safety posters",
+            "Partners: traffic officers",
+            "Goal: safer routes for pupils"
+          ],
+          "topic": "Write a factual report using the seven points in the information card. Write at least 80 words."
+        },
+        {
+          "key": "writing2",
+          "label": "Writing 2",
+          "marks": 5,
+          "type": "writing",
+          "kind": "email",
+          "topic": "Write an email to your friend describing a school activity that involved entertainment, animals or travel. Explain what you learned and why it was memorable. Write at least 80 words."
+        }
+      ],
+      "status": "original-practice-review"
+    },
+    {
+      "id": "g8-d",
+      "grade": 8,
+      "model": "D",
+      "title": "A Digital Map for Visitors",
+      "theme": "a digital walking map",
+      "durationMinutes": 120,
+      "totalMarks": 40,
+      "semester": 1,
+      "sections": [
+        {
+          "key": "listening1",
+          "label": "Listening 1",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "What wildlife did the students record?",
+              "options": [
+                "fish",
+                "bird",
+                "turtle"
+              ],
+              "answer": 1,
+              "script": "During the nature walk, our class observed several creatures without touching them. We saw fish beneath a bridge and read a sign about turtles. The animal we counted for our project was a small migratory bird resting near the water.",
+              "images": [
+                "fish",
+                "bird",
+                "turtle"
+              ]
+            },
+            {
+              "stem": "Which device helped make the presentation?",
+              "options": [
+                "tablet",
+                "microphone",
+                "camera"
+              ],
+              "answer": 1,
+              "script": "Our digital presentation included recorded interviews with older residents. A camera provided useful photographs, and a tablet helped us organise the slides. Unfortunately, the voices were difficult to hear until a teacher lent us a better microphone for the final recording.",
+              "images": [
+                "tablet",
+                "mic",
+                "camera"
+              ]
+            },
+            {
+              "stem": "Which building is the club visiting?",
+              "options": [
+                "school",
+                "hospital",
+                "museum"
+              ],
+              "answer": 1,
+              "script": "Our volunteering club planned to visit the history museum, but it was closed on the chosen date. We also considered holding an event at school. In the end, the members agreed to visit the hospital and deliver books to its children’s waiting area.",
+              "images": [
+                "school",
+                "hospital",
+                "landmark"
+              ]
+            },
+            {
+              "stem": "What should the group carry?",
+              "options": [
+                "umbrella",
+                "bottle",
+                "hat"
+              ],
+              "answer": 0,
+              "script": "The weather report says there may be showers during our fieldwork. I already have a water bottle, and my friend has packed a hat to protect her from the sun. Our teacher advised each student to bring an umbrella in case the rain begins suddenly.",
+              "images": [
+                "umbrella",
+                "glass-water",
+                "graduation-cap"
+              ]
+            },
+            {
+              "stem": "What did the children build?",
+              "options": [
+                "boat",
+                "bridge",
+                "plane"
+              ],
+              "answer": 1,
+              "script": "In our engineering challenge, the teacher asked each team to build a structure from paper and glue. Some groups made boats, while others designed small aircraft. Our team built a bridge and tested how much weight it could carry before the paper bent.",
+              "images": [
+                "sailboat",
+                "construction",
+                "plane"
+              ]
+            }
+          ],
+          "type": "picture-choice",
+          "instructions": "You will hear five short texts twice. For each text choose the correct picture A, B or C.",
+          "audio": "assets/audio/g8-d-listening1.mp3",
+          "transcript": "Listening one. You will hear five short texts. Text 1. During the nature walk, our class observed several creatures without touching them. We saw fish beneath a bridge and read a sign about turtles. The animal we counted for our project was a small migratory bird resting near the water.  Text 2. Our digital presentation included recorded interviews with older residents. A camera provided useful photographs, and a tablet helped us organise the slides. Unfortunately, the voices were difficult to hear until a teacher lent us a better microphone for the final recording.  Text 3. Our volunteering club planned to visit the history museum, but it was closed on the chosen date. We also considered holding an event at school. In the end, the members agreed to visit the hospital and deliver books to its children’s waiting area.  Text 4. The weather report says there may be showers during our fieldwork. I already have a water bottle, and my friend has packed a hat to protect her from the sun. Our teacher advised each student to bring an umbrella in case the rain begins suddenly.  Text 5. In our engineering challenge, the teacher asked each team to build a structure from paper and glue. Some groups made boats, while others designed small aircraft. Our team built a bridge and tested how much weight it could carry before the paper bent. "
+        },
+        {
+          "key": "listening2",
+          "label": "Listening 2",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "The project started in February.",
+              "answer": true
+            },
+            {
+              "stem": "Only experienced adults were allowed to join a digital walking map.",
+              "answer": false
+            },
+            {
+              "stem": "The group received help from a history teacher.",
+              "answer": true
+            },
+            {
+              "stem": "The group solved its difficulty by buying expensive new equipment.",
+              "answer": false
+            },
+            {
+              "stem": "Nearly seventy people became interested in the project.",
+              "answer": true
+            }
+          ],
+          "script": "Interviewer: Welcome to Young Voices. Today we are speaking with Nasser about a digital walking map. When did the project begin?\nNasser: It began in February, when people in an old market asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before.\nInterviewer: What was the first thing you did?\nNasser: We started with checking routes and collecting local stories. We were supported by a history teacher, who showed us how to work safely and plan our time.\nInterviewer: Was everything easy?\nNasser: Not really. At one point, some street names were missing. We listened to different suggestions before agreeing on asking shop owners to confirm names. That helped us continue.\nInterviewer: What was the most encouraging result?\nNasser: I was happy when visitors could find landmarks easily. Nearly seventy people became interested in what we were doing.\nInterviewer: What is your advice to other students?\nNasser: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment.\nInterviewer: Thank you for sharing your experience.\nNasser: Thank you. I hope more schools try similar projects next term.",
+          "type": "true-false",
+          "instructions": "Listen to the dialogue twice. Decide whether each statement is True or False.",
+          "audio": "assets/audio/g8-d-listening2.mp3",
+          "transcript": "Listening two. Listen to the dialogue carefully. Interviewer: Welcome to Young Voices. Today we are speaking with Nasser about a digital walking map. When did the project begin? Nasser: It began in February, when people in an old market asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before. Interviewer: What was the first thing you did? Nasser: We started with checking routes and collecting local stories. We were supported by a history teacher, who showed us how to work safely and plan our time. Interviewer: Was everything easy? Nasser: Not really. At one point, some street names were missing. We listened to different suggestions before agreeing on asking shop owners to confirm names. That helped us continue. Interviewer: What was the most encouraging result? Nasser: I was happy when visitors could find landmarks easily. Nearly seventy people became interested in what we were doing. Interviewer: What is your advice to other students? Nasser: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment. Interviewer: Thank you for sharing your experience. Nasser: Thank you. I hope more schools try similar projects next term."
+        },
+        {
+          "key": "grammarvocabulary",
+          "label": "Grammar & Vocabulary",
+          "marks": 10,
+          "type": "cloze",
+          "passage": "A new student club (1) ____ working on a digital walking map this year. We wanted to make a (2) ____ difference. First, members (3) ____ information from teachers and local families. Ideas were written (4) ____. Some suggestions (5) ____ difficult, so we selected one practical plan. A volunteer (6) ____ us organise the equipment. We followed instructions (7) ____. When the work was finished, everyone (8) ____ proud of the team. The club hopes (9) ____ another activity soon and (10) ____ more students next time.",
+          "items": [
+            {
+              "options": [
+                "begin",
+                "began",
+                "beginning"
+              ],
+              "answer": 1
+            },
+            {
+              "options": [
+                "positively",
+                "positive",
+                "position"
+              ],
+              "answer": 1
+            },
+            {
+              "options": [
+                "collect",
+                "collecting",
+                "collected"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "care",
+                "careful",
+                "carefully"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "were",
+                "was",
+                "are"
+              ],
+              "answer": 0
+            },
+            {
+              "options": [
+                "helping",
+                "helps",
+                "helped"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "correctly",
+                "correct",
+                "correction"
+              ],
+              "answer": 0
+            },
+            {
+              "options": [
+                "feel",
+                "feeling",
+                "felt"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "organising",
+                "organised",
+                "to organise"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "including",
+                "include",
+                "included"
+              ],
+              "answer": 1
+            }
+          ],
+          "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
+        },
+        {
+          "key": "reading1",
+          "label": "Reading 1",
+          "marks": 5,
+          "type": "matching",
+          "texts": [
+            "The first meeting for a digital walking map took place in an old market. Nasser came early to discover what volunteers would do.",
+            "Our group brought simple supplies for checking routes and collecting local stories. Nobody wanted to waste materials or spend money before planning the activity properly.",
+            "A local visitor asked why students had chosen a digital walking map. We explained how the idea could make a difference to people nearby.",
+            "During the second week, a problem appeared: some street names were missing. Some students felt worried that the whole activity might have to stop.",
+            "On the final day, Nasser presented the group’s results. Teachers and families listened carefully and asked what the students had learned."
+          ],
+          "continuations": [
+            "After listening to suggestions, the team tried asking shop owners to confirm names. The new approach allowed the students to continue with their plans.",
+            "We checked everything first and worked in teams. This saved time and made the practical work much easier for the younger students.",
+            "The local aquarium displayed rare fish from deep water, and visitors learnt about underwater photography during the guided tour.",
+            "The organisers explained the main goal and gave everyone a small job. Nasser decided to help again the following week.",
+            "Everyone was pleased to hear that visitors could find landmarks easily. The group promised to share its ideas with other schools soon.",
+            "The visitor understood our explanation and asked how other classes could take part. We invited them to the next meeting."
+          ],
+          "answers": [
+            3,
+            1,
+            5,
+            0,
+            4
+          ],
+          "instructions": "Read the five numbered excerpts and six endings A–F. Match each excerpt with its correct ending. One ending is extra."
+        },
+        {
+          "key": "reading2",
+          "label": "Reading 2",
+          "marks": 5,
+          "type": "short-answer",
+          "passage": "When Nasser heard about a digital walking map in an old market, the idea sounded interesting but difficult. The project had started in February, and nobody was sure how many students would join. Nasser decided to attend the first meeting anyway. At the beginning, the organisers explained why the project mattered to local people. They asked everyone to listen carefully before suggesting changes.\n\nThe group began by checking routes and collecting local stories. Nasser was worried about making mistakes, but a history teacher explained that learning through practice was an important part of the experience. After a few days, everyone had a specific responsibility. Some students recorded information, while others spoke to families who visited the area.\n\nA difficulty appeared when some street names were missing. The group could have stopped, but the students discussed several possibilities and chose a practical solution: asking shop owners to confirm names. They tested the idea, checked the results and made small changes where necessary. Instead of blaming anyone for the delay, they shared the work fairly.\n\nAt the end of the month, visitors could find landmarks easily. Nasser felt satisfied and realised that a useful project does not need to be perfect on the first day. The students presented their work to the school council and suggested that another class could continue it next term. Nasser kept a notebook with photographs and reflections, hoping it would encourage younger pupils to try something similar.",
+          "items": [
+            {
+              "stem": "When did the project begin?",
+              "answers": [
+                "February"
+              ]
+            },
+            {
+              "stem": "Who helped the students learn through practice?",
+              "answers": [
+                "a history teacher"
+              ]
+            },
+            {
+              "stem": "What did the students do when a difficulty appeared?",
+              "answers": [
+                "discussed several possibilities",
+                "discussed solutions",
+                "chose a practical solution"
+              ]
+            },
+            {
+              "stem": "How did the students share the work?",
+              "answers": [
+                "fairly",
+                "they shared the work fairly"
+              ]
+            },
+            {
+              "stem": "Who listened to their final presentation?",
+              "answers": [
+                "the school council",
+                "school council"
+              ]
+            }
+          ],
+          "instructions": "Read the narrative. Answer questions 1–5 in SHORT answers."
+        },
+        {
+          "key": "writing1",
+          "label": "Writing 1",
+          "marks": 5,
+          "type": "writing",
+          "kind": "chart",
+          "chart": {
+            "title": "How 100 students prepare for a school outing",
+            "labels": [
+              "Save money",
+              "Plan route",
+              "Check weather",
+              "Pack equipment"
+            ],
+            "values": [
+              35,
+              26,
+              22,
+              17
+            ],
+            "unit": "students (out of 100)"
+          },
+          "topic": "Study the bar chart carefully. Write a survey report comparing the four categories, using figures and an overall conclusion. Write at least 80 words."
+        },
+        {
+          "key": "writing2",
+          "label": "Writing 2",
+          "marks": 5,
+          "type": "writing",
+          "kind": "email",
+          "topic": "Write an email about planning a class outing. Explain where you would go, what it might cost, the equipment needed and how to travel safely. Write at least 80 words."
+        }
+      ],
+      "status": "original-practice-review"
+    }
+  ]
+}
