@@ -6,6 +6,10 @@ on:
     paths:
       - '.github/workflows/comprehensive-browser-qa.yml'
       - 'tests/comprehensive_browser_smoke.cjs'
+      - 'grades5-6/index.html'
+      - 'grades7-8/index.html'
+      - 'grades5-6/activities.json'
+      - 'grades7-8/activities.json'
 permissions:
   contents: read
 jobs:
