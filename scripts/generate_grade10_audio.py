@@ -46,11 +46,19 @@ async def one(model):
         return dest
 async def main():
     unique={}
+    old_manifest=json.loads((OUT/'manifest.json').read_text()) if (OUT/'manifest.json').exists() else {}
     manifest={}
     for model in DATA['models']:
         passage=model['listening']['passage']
         h=hashlib.sha256(passage.encode()).hexdigest()
-        if h not in unique:unique[h]=await one(model)
+        if h not in unique:
+            previous=old_manifest.get(model['id'],{})
+            existing=OUT/f'g10-{model["id"].lower()}-listening.mp3'
+            if previous.get('passage_sha256')==h and existing.exists() and existing.stat().st_size>20000 and MP3(existing).info.length>60:
+                unique[h]=existing
+                print('REUSING verified existing natural source',existing.name,flush=True)
+            else:
+                unique[h]=await one(model)
         out=OUT/f'g10-{model["id"].lower()}-listening.mp3'
         if unique[h]!=out:shutil.copyfile(unique[h],out)
         manifest[model['id']]={'mp3':out.name,'sourceModel':unique[h].name[4].upper(),'passage_sha256':h,'seconds':round(MP3(out).info.length,1),'size':out.stat().st_size}
