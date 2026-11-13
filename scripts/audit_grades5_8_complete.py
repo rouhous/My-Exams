@@ -85,6 +85,21 @@ for g in [7,8]:
         check(sum(x['marks'] for x in model['sections'])==40,f'{model["id"]}: expected 40 marks')
         check([x['key'] for x in model['sections']]==['listening1','listening2','grammarvocabulary','reading1','reading2','writing1','writing2'],f'{model["id"]}: wrong section order')
         for x in model['sections']:
+            if x['key']=='grammarvocabulary':
+                check(len(x.get('items',[]))==10,f'{model["id"]}: 10 cloze questions required')
+                for i,q in enumerate(x.get('items',[])):
+                    check(len(q.get('options',[]))==3 and isinstance(q.get('answer'),int) and 0<=q['answer']<3,f'{model["id"]}: invalid cloze key {i+1}')
+            if x['key']=='reading1':
+                check(len(x.get('texts',[]))==5 and len(x.get('continuations',[]))==6,f'{model["id"]}: 5 reading texts and 6 endings required')
+                check(len(x.get('answers',[]))==5 and all(isinstance(k,int) and 0<=k<6 for k in x.get('answers',[])),f'{model["id"]}: reading matching keys invalid')
+            if x['key']=='reading2':
+                check(len(x.get('items',[]))==5 and len(x.get('passage','').split())>=150,f'{model["id"]}: reading comprehension incomplete')
+            if x['key']=='listening2':
+                check(len(x.get('items',[]))==5 and len(x.get('script','').split())>=120,f'{model["id"]}: interview script too short')
+            if x['key']=='listening1':
+                for i,q in enumerate(x.get('items',[])):
+                    check(len(q.get('options',[]))==3 and isinstance(q.get('answer'),int) and 0<=q['answer']<3,f'{model["id"]}: image choice key invalid {i+1}')
+        for x in model['sections']:
             if not x['key'].startswith('listening'):continue
             backup=ROOT/'grades7-8'/x['audio']
             natural=ROOT/'grades7-8/assets/audio-natural'/f'{model["id"]}-{x["key"]}.mp3'
