@@ -1,9 +1,18 @@
 {
-  "local_mp3_count": 40,
-  "local_image_count": 25,
-  "natural_mp3_local_count": 0,
-  "repo_created": false,
-  "published": false,
-  "build": "review-preview",
-  "expected_repository": "rouhous/My-Exams"
+  "repository": "rouhous/My-Exams",
+  "repo_created": true,
+  "published": true,
+  "publish_type": "teacher_review_and_student_practice_preview",
+  "student_final_release": false,
+  "local_provisional_mp3_count": 40,
+  "natural_mp3_local_count": 21,
+  "natural_audio_completed": [
+    "grade9-modelA-listening1",
+    "grade9-modelA-listening2"
+  ],
+  "grade9_natural_audio_downloadable": true,
+  "natural_audio_other_models_pending": true,
+  "unit_alignment_fully_approved": false,
+  "audio_image_technical_inventory_verified": true,
+  "caveat": "Offline files require initial online download and browser storage permission. Higher grades and natural voices for other models remain under review."
 }
