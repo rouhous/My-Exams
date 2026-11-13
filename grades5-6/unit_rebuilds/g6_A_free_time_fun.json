@@ -1,0 +1,186 @@
+{
+  "grade": 6,
+  "model": "A",
+  "unit": "Free-time fun",
+  "status": "original_unit_content_pending_voice_regeneration",
+  "listening1": {
+    "pictureOptions": [
+      "football",
+      "bicycle",
+      "boat",
+      "piano",
+      "book",
+      "paintbrush"
+    ],
+    "passages": [
+      "A: What do you usually do after school? B: I play football with my friends. A: Are you playing today? B: Not now, because I am doing my homework. We normally meet on Mondays and Thursdays, and our coach helps us practise passing the ball.",
+      "A: Where are you going on Saturday? B: I am going cycling with my sister. A: Do you usually ride bicycles together? B: Yes, but we are trying a different route this time. We will take water and stop beside the park.",
+      "A: What is your hobby, Laila? B: I play the piano. A: Are you learning a new song? B: Yes, I am practising it for a family celebration. I usually play in the evening, but today I am practising before lunch.",
+      "A: What do you enjoy doing when it rains? B: Reading books and solving puzzles. A: Are you reading a new book now? B: Yes, it is a story about a clever girl who enjoys solving problems with her friends.",
+      "A: Which activity is your brother learning? B: He is learning to sail a small boat. A: Does he go every weekend? B: Usually, but the sailing club is closed today because of strong winds. He will practise again when the weather is calm."
+    ],
+    "questions": [
+      {
+        "stem": "Dialogue 1",
+        "answer": 0
+      },
+      {
+        "stem": "Dialogue 2",
+        "answer": 1
+      },
+      {
+        "stem": "Dialogue 3",
+        "answer": 3
+      },
+      {
+        "stem": "Dialogue 4",
+        "answer": 4
+      },
+      {
+        "stem": "Dialogue 5",
+        "answer": 2
+      }
+    ]
+  },
+  "listening2": {
+    "passage": "Interviewer: Welcome to Sport and Hobbies. Today we are meeting Yousuf, a pupil who enjoys several activities. What do you usually do on Mondays?\nYousuf: I play volleyball after school. Our team meets in the sports hall at four o'clock.\nInterviewer: Do you enjoy cycling as well?\nYousuf: Yes, I do. My cousin and I go cycling on Saturday mornings, but we do not ride when it is too hot.\nInterviewer: What are you learning this term?\nYousuf: I am learning photography. My father has lent me a camera, and I am taking pictures of plants and birds.\nInterviewer: Are you good at taking photographs already?\nYousuf: Not yet. I know some useful tricks, but I still make mistakes. Our teacher says practice is important.\nInterviewer: Do you ever play computer games?\nYousuf: Sometimes, after I have finished my homework. I also enjoy board games with my family.\nInterviewer: What advice would you give other pupils?\nYousuf: Try different hobbies, choose the ones you enjoy and remember to make time for your studies.",
+    "questions": [
+      {
+        "stem": "Which sport does Yousuf play on Mondays?",
+        "options": [
+          "volleyball",
+          "football",
+          "tennis"
+        ],
+        "answer": 0
+      },
+      {
+        "stem": "When does he usually go cycling?",
+        "options": [
+          "Sunday afternoon",
+          "Saturday morning",
+          "Friday evening"
+        ],
+        "answer": 1
+      },
+      {
+        "stem": "What is he learning this term?",
+        "options": [
+          "sailing",
+          "painting",
+          "photography"
+        ],
+        "answer": 2
+      },
+      {
+        "stem": "Who lent him a camera?",
+        "options": [
+          "his uncle",
+          "his father",
+          "his teacher"
+        ],
+        "answer": 1
+      },
+      {
+        "stem": "When does he sometimes play computer games?",
+        "options": [
+          "before school",
+          "during class",
+          "after homework"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "vocabulary": {
+    "pictureOptions": [
+      "football",
+      "bicycle",
+      "piano",
+      "book",
+      "boat"
+    ],
+    "questions": [
+      {
+        "stem": "Picture 1",
+        "answer": "football"
+      },
+      {
+        "stem": "Picture 2",
+        "answer": "bicycle"
+      },
+      {
+        "stem": "Picture 3",
+        "answer": "piano"
+      },
+      {
+        "stem": "Picture 4",
+        "answer": "book"
+      },
+      {
+        "stem": "Picture 5",
+        "answer": "boat"
+      }
+    ]
+  },
+  "reading1": {
+    "passages": [
+      {
+        "stem": "Sara enjoys playing volleyball with her school team. They practise twice a week in the sports hall. She likes working with other pupils and hopes to take part in a local competition. This week, she is helping a new player learn how to serve the ball. She thinks teamwork is more important than winning every match."
+      },
+      {
+        "stem": "Hassan loves photography. On weekends, he takes his camera to the park and looks for interesting colours and shapes. He usually photographs flowers, but today he is taking pictures of birds. He keeps his best photographs in an album and writes a short note about each one. His parents enjoy seeing what he has learned."
+      },
+      {
+        "stem": "Mariam likes music and reading. She plays the piano after dinner and often practises with her younger brother. At the moment, they are learning a song for a family celebration. When they finish practising, Mariam reads a few pages of an adventure story. She says these hobbies help her relax after a busy day."
+      }
+    ],
+    "questions": [
+      {
+        "stem": "Which text mentions a school sports competition?",
+        "answer": 0
+      },
+      {
+        "stem": "Which text describes taking pictures of birds?",
+        "answer": 1
+      },
+      {
+        "stem": "Which text mentions learning music with a sibling?",
+        "answer": 2
+      },
+      {
+        "stem": "Which text says teamwork matters more than winning?",
+        "answer": 0
+      },
+      {
+        "stem": "Which text describes keeping photographs in an album?",
+        "answer": 1
+      }
+    ]
+  },
+  "reading2": {
+    "passage": "From: salim@school.example\nTo: rashid@school.example\nSubject: Our new free-time club\n\nDear Rashid,\n\nI hope you are well. I have joined a new club at school. We meet every Tuesday afternoon in the sports hall. Some pupils play badminton, while others enjoy table tennis. I usually play badminton with my friend Ali, but this week I am learning to play table tennis.\n\nOur coach is very friendly and reminds us to warm up before we start. Last Tuesday, we tried a short team challenge. My team did not win, but we had a lot of fun and learned how to support one another.\n\nNext month the club is organising a sports day for younger pupils. I am helping to prepare the equipment and posters. Would you like to visit and watch the games?\n\nBest wishes,\nSalim",
+    "questions": [
+      {
+        "stem": "The new club meets on Tuesdays.",
+        "answer": "True"
+      },
+      {
+        "stem": "Salim always plays football at the club.",
+        "answer": "False"
+      },
+      {
+        "stem": "The coach asks pupils to warm up.",
+        "answer": "True"
+      },
+      {
+        "stem": "Salim's team won the challenge last week.",
+        "answer": "False"
+      },
+      {
+        "stem": "The club plans an event for younger pupils.",
+        "answer": "True"
+      }
+    ]
+  }
+}
