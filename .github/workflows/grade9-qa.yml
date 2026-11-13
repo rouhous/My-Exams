@@ -1,0 +1,28 @@
+name: Grade 9 exam and media validation
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'grade9/**'
+      - 'audio-natural/g9/**'
+      - 'NATURAL_AUDIO_SOURCES.json'
+      - 'scripts/validate_grade9.py'
+      - '.github/workflows/grade9-qa.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate all Grade 9 paper models and media
+        run: python scripts/validate_grade9.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: grade9-qa-report
+          path: grade9/teacher/QA_RUN_REPORT.json
