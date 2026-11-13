@@ -14,7 +14,7 @@
   "natural_audio_other_models_pending": true,
   "unit_alignment_fully_approved": false,
   "audio_image_technical_inventory_verified": true,
-  "caveat": "Grades 5-8 now pass reproducible structural, media, script hash and browser offline smoke tests. Exact page-level Ministry curriculum certification and a physical phone offline test are still pending. Grades 10-12 are not finished.",
+  "caveat": "Grades 5–8 pass technical and media QA but remain teacher review pending page-level unit confirmation and real-phone offline test. Grade 9 under curriculum review. Grade 10 has six interactive pilots and verified audio. Grade 11 Core has six interactive pilot papers with audio but is NOT yet the official nine-section SAH exam format. Grade 11 Elective and Grade 12 are not student-ready.",
   "natural_grade9_mp3_segments_A": 21,
   "natural_grade9_complete_mp3_tracks_B_C_G": 6,
   "natural_grade9_models_with_recordings": [
@@ -107,5 +107,60 @@
     "fullyUnitCertified": false,
     "feedback": "Ready for supervised trial; not officially certified."
   },
-  "natural_audio_5_8_hosted": 32
+  "natural_audio_5_8_hosted": 32,
+  "updated_at": "2026-11-13",
+  "grade10": {
+    "models": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "unitNames": [
+      "New Media",
+      "Climate Change",
+      "Renewable Energy",
+      "Civilisation"
+    ],
+    "fixedReading2UnitShift": true,
+    "objectiveChoicesBalanced": true,
+    "mixedModelsRecomposed": true,
+    "mixedAudioSources": {
+      "E": "A",
+      "F": "D"
+    },
+    "naturalListeningMP3": 6,
+    "uniqueListeningPassages": 4,
+    "browserQA": "https://github.com/rouhous/My-Exams/actions/runs/43468702756",
+    "audioQA": "https://github.com/rouhous/My-Exams/actions/runs/43469514770",
+    "status": "teacher-review pilot, not Ministry paper, page-level audit pending"
+  },
+  "grade11_core_pilot": {
+    "models": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "unitNames": [
+      "Communication",
+      "Those Teenage Things",
+      "Travellers and Tourists",
+      "Innovation"
+    ],
+    "naturalListeningMP3": 6,
+    "uniqueListeningPassages": 4,
+    "interactive": true,
+    "randomComprehensive": true,
+    "untimedSkillPractice": true,
+    "audioQA": "https://github.com/rouhous/My-Exams/actions/runs/43469618720",
+    "source": "grade11/core/data.json",
+    "status": "five-broad-section pilot, NOT official nine-section SAH semester paper"
+  },
+  "official_upper_grade_spec": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json",
+  "upper_grades_sah_alignment_approved": false
 }
