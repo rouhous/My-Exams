@@ -12,6 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install audio duration probe
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          ffprobe -version | head -1
       - name: Verify 24 fixed/mixed models and 32 natural MP3
         run: python scripts/audit_grades5_8_complete.py
       - name: Commit audit report
