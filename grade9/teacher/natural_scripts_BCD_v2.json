@@ -1,0 +1,426 @@
+{
+  "version": "2026-11-13",
+  "notes": "Original recordings replacing repetitive draft listening scripts; question keys unchanged.",
+  "segments": [
+    {
+      "model": "B",
+      "section": "listening1",
+      "segment": "intro",
+      "role": "narrator",
+      "text": "You are going to hear five short texts. For each text, choose the correct picture, A, B or C. You will hear the texts twice."
+    },
+    {
+      "model": "B",
+      "section": "listening1",
+      "segment": "text1",
+      "role": "narrator",
+      "text": "Text one. My cousins and I are preparing for a long walk around our neighbourhood. I thought about wearing my school jacket, but the afternoon will be warm. My old backpack is still strong. Instead, I bought comfortable shoes because the route includes several steep streets and narrow paths."
+    },
+    {
+      "model": "B",
+      "section": "listening1",
+      "segment": "text2",
+      "role": "narrator",
+      "text": "Text two. Last term I tried running with my brother and cycling with my friends. I enjoyed both, but I wanted to learn something different. When the new sports centre opened an indoor pool, I joined the swimming club. Now I practise twice a week and feel much more confident in the water."
+    },
+    {
+      "model": "B",
+      "section": "listening1",
+      "segment": "text3",
+      "role": "narrator",
+      "text": "Text three. The youth festival needs a place for its final match. The school building is too small, and the public park has no seats for spectators. The organisers have booked the stadium instead. The match will begin there on Saturday afternoon, and families can enter through the main gate."
+    },
+    {
+      "model": "B",
+      "section": "listening1",
+      "segment": "text4",
+      "role": "narrator",
+      "text": "Text four. Yesterday the weather website predicted rain, and my sister even worried about snow in the mountains. This morning the forecast changed. According to the latest update, the sky will be clear and sunny throughout the day. Our class can hold its outdoor activities as planned, but we should bring water."
+    },
+    {
+      "model": "B",
+      "section": "listening1",
+      "segment": "text5",
+      "role": "narrator",
+      "text": "Text five. Our school photography club cannot use the sports hall because it is booked for a tournament. We considered the public library, but we need to display our pictures near the entrance. Our head teacher has now offered us a room at school. That is where we will meet next Thursday."
+    },
+    {
+      "model": "B",
+      "section": "listening2",
+      "segment": "intro",
+      "role": "narrator",
+      "text": "You are going to hear an interview. For each question, choose the correct answer, A, B or C. You will hear the interview twice."
+    },
+    {
+      "model": "B",
+      "section": "listening2",
+      "segment": "q0",
+      "role": "interviewer",
+      "text": "Welcome to Young Historians. Today Salim is joining us to explain his community heritage-mapping project. Salim, what did your team put on its first map?"
+    },
+    {
+      "model": "B",
+      "section": "listening2",
+      "segment": "a0",
+      "role": "guest",
+      "text": "We chose the historic doors in our neighbourhood. Some have unusual wooden patterns, so we walked along the old streets and carefully recorded their locations."
+    },
+    {
+      "model": "B",
+      "section": "listening2",
+      "segment": "q1",
+      "role": "interviewer",
+      "text": "That sounds interesting. When did your project begin?"
+    },
+    {
+      "model": "B",
+      "section": "listening2",
+      "segment": "a1",
+      "role": "guest",
+      "text": "We launched it in November, just after a local museum invited schools to share ideas for protecting our heritage."
+    },
+    {
+      "model": "B",
+      "section": "listening2",
+      "segment": "q2",
+      "role": "interviewer",
+      "text": "Where did the old photographs come from?"
+    },
+    {
+      "model": "B",
+      "section": "listening2",
+      "segment": "a2",
+      "role": "guest",
+      "text": "Families shared them with us. Parents and grandparents brought photographs of streets and houses that have changed over the years."
+    },
+    {
+      "model": "B",
+      "section": "listening2",
+      "segment": "q3",
+      "role": "interviewer",
+      "text": "How often do you work on the project?"
+    },
+    {
+      "model": "B",
+      "section": "listening2",
+      "segment": "a3",
+      "role": "guest",
+      "text": "Our group meets on Thursday afternoons. That gives everyone time to finish lessons before we compare notes and plan our next visit."
+    },
+    {
+      "model": "B",
+      "section": "listening2",
+      "segment": "q4",
+      "role": "interviewer",
+      "text": "What important lesson have you learned?"
+    },
+    {
+      "model": "B",
+      "section": "listening2",
+      "segment": "a4",
+      "role": "guest",
+      "text": "We must check the source of every photograph before publishing it. A date or place written on the back can help us avoid mistakes."
+    },
+    {
+      "model": "B",
+      "section": "listening2",
+      "segment": "q5",
+      "role": "interviewer",
+      "text": "And what happens next?"
+    },
+    {
+      "model": "B",
+      "section": "listening2",
+      "segment": "a5",
+      "role": "guest",
+      "text": "We hope to add recorded memories from older residents. Their stories will explain why these places matter to the community."
+    },
+    {
+      "model": "B",
+      "section": "listening2",
+      "segment": "q6-end",
+      "role": "interviewer",
+      "text": "Thank you, Salim. Your project shows how history can connect generations."
+    },
+    {
+      "model": "C",
+      "section": "listening1",
+      "segment": "intro",
+      "role": "narrator",
+      "text": "You are going to hear five short texts. For each text, choose the correct picture, A, B or C. You will hear the texts twice."
+    },
+    {
+      "model": "C",
+      "section": "listening1",
+      "segment": "text1",
+      "role": "narrator",
+      "text": "Text one. My family had planned a day at the beach, but the forecast warned of strong winds. My brother suggested camping, although we did not have enough equipment. We finally chose shopping in the city centre. We need new trainers and a birthday present, so it seems a useful way to spend Saturday."
+    },
+    {
+      "model": "C",
+      "section": "listening1",
+      "segment": "text2",
+      "role": "narrator",
+      "text": "Text two. The organisers first announced that the school concert would begin at three o'clock. Later, somebody posted a message suggesting five. Please ignore those earlier times. The official timetable now confirms seven o'clock in the evening. Doors will open half an hour before the concert, and everyone should keep their tickets."
+    },
+    {
+      "model": "C",
+      "section": "listening1",
+      "segment": "text3",
+      "role": "narrator",
+      "text": "Text three. Our class will visit a mountain village on Friday. I have already packed my backpack and comfortable shoes, but the evenings can be cold at this time of year. My mother told me to buy a jacket before we leave. I chose a light one that will fit easily in my bag."
+    },
+    {
+      "model": "C",
+      "section": "listening1",
+      "segment": "text4",
+      "role": "narrator",
+      "text": "Text four. During the holidays I spent too much time using my camera, and my friends wanted me to join their painting club. I like art, but I prefer being outdoors with a team. This term I joined the football club instead. We train after school on Tuesdays and enjoy practising together."
+    },
+    {
+      "model": "C",
+      "section": "listening1",
+      "segment": "text5",
+      "role": "narrator",
+      "text": "Text five. The exhibition was going to be held at the stadium, but the space was too expensive. The town park was another possibility, yet there would be no shelter from the sun. The organisers have decided to use the school building. Visitors can see the displays in the main hall."
+    },
+    {
+      "model": "C",
+      "section": "listening2",
+      "segment": "intro",
+      "role": "narrator",
+      "text": "You are going to hear an interview. For each question, choose the correct answer, A, B or C. You will hear the interview twice."
+    },
+    {
+      "model": "C",
+      "section": "listening2",
+      "segment": "q0",
+      "role": "interviewer",
+      "text": "Welcome to Our School Today. Alya is here to talk about a wellbeing group for students. What was the first activity your team organised?"
+    },
+    {
+      "model": "C",
+      "section": "listening2",
+      "segment": "a0",
+      "role": "guest",
+      "text": "We created a quiet reading corner. Students wanted a peaceful place where they could relax with a book during a busy school day."
+    },
+    {
+      "model": "C",
+      "section": "listening2",
+      "segment": "q1",
+      "role": "interviewer",
+      "text": "When did you start working together?"
+    },
+    {
+      "model": "C",
+      "section": "listening2",
+      "segment": "a1",
+      "role": "guest",
+      "text": "We began in September. Our teachers helped us find a small room and invited us to suggest activities."
+    },
+    {
+      "model": "C",
+      "section": "listening2",
+      "segment": "q2",
+      "role": "interviewer",
+      "text": "Who takes part in the group?"
+    },
+    {
+      "model": "C",
+      "section": "listening2",
+      "segment": "a2",
+      "role": "guest",
+      "text": "We have members from several Grade Nine classes. Different students bring different ideas, which makes the group more useful."
+    },
+    {
+      "model": "C",
+      "section": "listening2",
+      "segment": "q3",
+      "role": "interviewer",
+      "text": "When do you usually meet?"
+    },
+    {
+      "model": "C",
+      "section": "listening2",
+      "segment": "a3",
+      "role": "guest",
+      "text": "We meet on Wednesdays during lunch. Some students visit the reading corner on other days too, whenever it is open."
+    },
+    {
+      "model": "C",
+      "section": "listening2",
+      "segment": "q4",
+      "role": "interviewer",
+      "text": "What skill has the group helped you develop?"
+    },
+    {
+      "model": "C",
+      "section": "listening2",
+      "segment": "a4",
+      "role": "guest",
+      "text": "Respectful listening. We have learned not to interrupt someone who is explaining a problem, even when we have a different opinion."
+    },
+    {
+      "model": "C",
+      "section": "listening2",
+      "segment": "q5",
+      "role": "interviewer",
+      "text": "What would you like to do next?"
+    },
+    {
+      "model": "C",
+      "section": "listening2",
+      "segment": "a5",
+      "role": "guest",
+      "text": "We hope to organise a short workshop about balancing screen time, exercise and sleep. It should be practical and enjoyable."
+    },
+    {
+      "model": "C",
+      "section": "listening2",
+      "segment": "q6-end",
+      "role": "interviewer",
+      "text": "Thank you, Alya. Those are useful ideas for a healthy school community."
+    },
+    {
+      "model": "D",
+      "section": "listening1",
+      "segment": "intro",
+      "role": "narrator",
+      "text": "You are going to hear five short texts. For each text, choose the correct picture, A, B or C. You will hear the texts twice."
+    },
+    {
+      "model": "D",
+      "section": "listening1",
+      "segment": "text1",
+      "role": "narrator",
+      "text": "Text one. I wanted an active hobby that would help me travel around my neighbourhood. The swimming pool is too far away, and I already go running at weekends. I decided to join a cycling group instead. We meet near the community centre and follow safe routes with an experienced leader."
+    },
+    {
+      "model": "D",
+      "section": "listening1",
+      "segment": "text2",
+      "role": "narrator",
+      "text": "Text two. The community event needs an open place for families to gather. The stadium is hosting a football match, and the school building is closed for maintenance. Luckily, the public park has a large shaded area. That is where the event will take place on Friday afternoon."
+    },
+    {
+      "model": "D",
+      "section": "listening1",
+      "segment": "text3",
+      "role": "narrator",
+      "text": "Text three. I wanted to learn a creative skill this holiday. My cousin offered to teach me photography, and my friends invited me to play football. I chose painting instead. Yesterday I bought an art palette and some brushes. Next week I will join a class at the cultural centre."
+    },
+    {
+      "model": "D",
+      "section": "listening1",
+      "segment": "text4",
+      "role": "narrator",
+      "text": "Text four. My family considered visiting the beach, but the weather will be windy. My sister wanted to go shopping, yet everyone preferred spending time outdoors. We finally agreed to go camping in the mountains. We have packed a tent, warm clothes and enough water for the weekend."
+    },
+    {
+      "model": "D",
+      "section": "listening1",
+      "segment": "text5",
+      "role": "narrator",
+      "text": "Text five. The school technology exhibition was originally planned for three o'clock. Some parents asked whether it could start at seven, but that was too late for younger students. The organisers have now confirmed five o'clock. Please arrive early so you can see the displays before the presentations begin."
+    },
+    {
+      "model": "D",
+      "section": "listening2",
+      "segment": "intro",
+      "role": "narrator",
+      "text": "You are going to hear an interview. For each question, choose the correct answer, A, B or C. You will hear the interview twice."
+    },
+    {
+      "model": "D",
+      "section": "listening2",
+      "segment": "q0",
+      "role": "interviewer",
+      "text": "Welcome to Makers at School. Rashid, your repair workshop has attracted a lot of attention. What did the students fix first?"
+    },
+    {
+      "model": "D",
+      "section": "listening2",
+      "segment": "a0",
+      "role": "guest",
+      "text": "Our first project was a broken bookshelf in the library. It had a loose shelf and several damaged screws, so we worked carefully to repair it."
+    },
+    {
+      "model": "D",
+      "section": "listening2",
+      "segment": "q1",
+      "role": "interviewer",
+      "text": "When did the workshop open?"
+    },
+    {
+      "model": "D",
+      "section": "listening2",
+      "segment": "a1",
+      "role": "guest",
+      "text": "It opened in January. Our teachers wanted students to learn how to repair useful items instead of throwing everything away."
+    },
+    {
+      "model": "D",
+      "section": "listening2",
+      "segment": "q2",
+      "role": "interviewer",
+      "text": "Who teaches you the practical skills?"
+    },
+    {
+      "model": "D",
+      "section": "listening2",
+      "segment": "a2",
+      "role": "guest",
+      "text": "A local carpenter visits the school and helps us. He also explains how to use tools safely."
+    },
+    {
+      "model": "D",
+      "section": "listening2",
+      "segment": "q3",
+      "role": "interviewer",
+      "text": "When does your team meet?"
+    },
+    {
+      "model": "D",
+      "section": "listening2",
+      "segment": "a3",
+      "role": "guest",
+      "text": "Every Monday after lessons. We spend the first few minutes checking our tools and deciding what needs to be done."
+    },
+    {
+      "model": "D",
+      "section": "listening2",
+      "segment": "q4",
+      "role": "interviewer",
+      "text": "What is the most important skill you have learned?"
+    },
+    {
+      "model": "D",
+      "section": "listening2",
+      "segment": "a4",
+      "role": "guest",
+      "text": "Measuring carefully before cutting wood. If a measurement is wrong, the pieces may not fit, so we always check twice."
+    },
+    {
+      "model": "D",
+      "section": "listening2",
+      "segment": "q5",
+      "role": "interviewer",
+      "text": "What would you like to repair next?"
+    },
+    {
+      "model": "D",
+      "section": "listening2",
+      "segment": "a5",
+      "role": "guest",
+      "text": "We want to repair some small wooden benches in the garden. It is a useful project because students can enjoy them afterwards."
+    },
+    {
+      "model": "D",
+      "section": "listening2",
+      "segment": "q6-end",
+      "role": "interviewer",
+      "text": "Thank you, Rashid. You have shown us that practical skills can help the whole school."
+    }
+  ]
+}
