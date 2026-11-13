@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grade 10 · My Exams · Student Review Pilot</title>
+<style>
+:root{--green:#154b44;--gold:#bb9648;--bg:#f5f7f4;--ink:#17372f}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Arial,sans-serif}
+header{padding:18px 20px;background:linear-gradient(110deg,#0e423b,#236c5f);color:white;text-align:center}
+header h1{margin:0;font-size:clamp(24px,4vw,34px)}header a{color:#ffe2a4}
+main{max-width:1020px;margin:auto;padding:16px}.panel,.section{background:#fff;border:1px solid #ccdcd4;border-radius:12px;padding:18px;margin:12px 0}
+.controls{display:flex;flex-wrap:wrap;align-items:end;gap:10px}label{display:block;font-weight:600}select,button,input,textarea{font:inherit}
+select,button{padding:9px 12px;border-radius:8px;border:1px solid #a1b9b0;background:white}
+button{cursor:pointer;background:var(--green);color:#fff;border-color:var(--green)}
+button.alt{background:#fff;color:var(--green)}button:disabled{opacity:.55;cursor:not-allowed}
+select{min-width:125px}.notice{padding:13px;border-left:4px solid var(--gold);background:#fffaee;margin:12px 0}
+.section h2{margin:0 0 9px;font-size:20px}.question{padding:12px 0;border-top:1px solid #e3ece7}
+.question label{font-weight:400;display:block;margin:8px 0}
+.question input[type=text],textarea{padding:10px;border:1px solid #a9bdb3;border-radius:7px;width:100%;max-width:100%}
+textarea{min-height:160px;resize:vertical}.passage{background:#f1f7f3;padding:15px;border-radius:9px;white-space:pre-wrap}
+small,.muted{color:#5c7168}.hidden{display:none!important}.meta{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between}
+#clock{font-variant-numeric:tabular-nums;font-size:20px;font-weight:700}.score{font-size:20px}
+@media print{header,.controls,.notice,.no-print{display:none!important}body{background:white}.section{break-inside:avoid;border:none;padding:4px}}
+</style></head><body>
+<header><h1>My Exams · Grade 10</h1><p>Original Semester 1 English practice — student review pilot</p><a href="../index.html">Back to My Exams home</a></header>
+<main>
+<div class="notice"><strong>Teacher review / pilot version.</strong> Models A–D follow the bank's four unit themes; E/F are mixed comprehensive practice. This is not an official Ministry paper. Vocabulary, grammar, reading and writing still require final textbook and assessment-specification review.</div>
+<div class="panel"><div class="controls">
+<label>Model <select id="model"><option value="A">A · New Media</option><option value="B">B · Climate Change</option><option value="C">C · Renewable Energy</option><option value="D">D · Civilisation</option><option value="E">E · Mixed</option><option value="F">F · Mixed</option></select></label>
+<label>Mode <select id="mode"><option value="exam">Full exam · timed</option><option value="practice">Single skill · untimed</option></select></label>
+<label id="skillWrap" class="hidden">Skill <select id="skill"><option value="listening">Listening</option><option value="vocabulary">Vocabulary</option><option value="grammar">Grammar</option><option value="reading1">Reading 1</option><option value="reading2">Reading 2</option><option value="writing1">Writing 1</option><option value="writing2">Writing 2</option></select></label>
+<button id="start">Start</button><button id="random" class="alt">New random comprehensive</button><button id="offline" class="alt">Save selected model offline</button>
+</div><div class="meta"><span id="intro">Loading exam data…</span><span id="clock">150:00</span></div><div id="status" role="status"></div></div>
+<div id="exam"></div>
+<div id="actions" class="panel no-print hidden"><button id="submit">Check objective answers</button><span id="result" role="status"></span></div>
+</main><script>
+(function(){
+'use strict';
+var keys=['listening','vocabulary','grammar','reading1','reading2','writing1','writing2'];
+var $=id=>document.getElementById(id);
+var models=[],active=null,timer=null,end=0,choiceModel=null;
+var esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function status(text){$('status').textContent=text}
+function find(id){return models.find(m=>m.id===id)}
+function current(){return choiceModel&&$('model').value==='R'?choiceModel:find($('model').value)}
+function sourceOf(listening,all){return all.find(m=>m.listening.passage===listening.passage)?.id||null}
+function buildRandom(){
+ var base=models.filter(m=>'ABCD'.includes(m.id));if(base.length!==4)return;
+ var order=base.slice();for(var i=order.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]]}
+ var picks=[...order,...order.slice(0,3)];
+ var mixed=Object.assign({},order[0],{id:'R',unitTitle:'Random complete semester review',unit:null,status:'mixed sections, original passages and keys'});
+ keys.forEach((k,i)=>mixed[k]=picks[i][k]);mixed.audioLocal=null;
+ return mixed;
+}
+function modelChoices(){
+ var model=current();if(!model)return [];
+ return ($('mode').value==='practice'?[ $('skill').value ]:keys).map(k=>({skill:k,data:model[k]}));
+}
+function audioUrl(section){
+ var source=sourceOf(section,models);
+ return source?'audio/g10-'+source.toLowerCase()+'-listening.mp3':null;
+}
+function renderQuestion(q,i,prefix){
+ var name=prefix+'-'+i, label='<div class="question"><strong>'+(i+1)+'. '+esc(q.stem)+'</strong>';
+ if(Array.isArray(q.options)){
+  label+=q.options.map((option,j)=>'<label><input type="radio" name="'+esc(name)+'" value="'+j+'"> '+String.fromCharCode(65+j)+'. '+esc(option)+'</label>').join('');
+ }else{label+='<input type="text" name="'+esc(name)+'" placeholder="Short answer" />'}
+ return label+'</div>';
+}
+function renderSection(section,i){
+ var data=section.data,key=section.skill;
+ var h='<section class="section" data-skill="'+key+'"><h2>'+esc(key.replace(/(\d)/g,' $1').toUpperCase())+'</h2>';
+ if(key==='listening'){
+  var sound=audioUrl(data);
+  if(sound)h+='<audio controls preload="metadata" src="'+esc(sound)+'"></audio><p class="muted">Natural English MP3 · passage played twice, with pauses.</p>';
+  else h+='<p class="notice">Natural audio is being prepared for this model.</p>';
+  if($('mode').value==='practice')h+='<details><summary>Show practice transcript</summary><p class="passage">'+esc(data.passage)+'</p></details>';
+ }else if(data.passage){h+='<div class="passage">'+esc(data.passage)+'</div>'}
+ if(key.startsWith('writing')){
+  h+='<p>'+esc(data.prompt)+'</p><textarea name="'+key+'" aria-label="'+key+' writing draft"></textarea><p class="muted"><span class="words">0</span> words · teacher feedback and final writing score are not enabled in this pilot</p>';
+ }else{h+=(data.questions||[]).map((q,j)=>renderQuestion(q,j,key)).join('')}
+ return h+'</section>';
+}
+function stopTimer(){if(timer){clearInterval(timer);timer=null}}
+function tick(){var left=Math.max(0,Math.ceil((end-Date.now())/1000));$('clock').textContent=String(Math.floor(left/60)).padStart(2,'0')+':'+String(left%60).padStart(2,'0');if(!left){stopTimer();$('submit').click()}}
+function start(){
+ stopTimer();active=modelChoices();if(!active.length)return;
+ var m=current();$('intro').textContent='Grade 10 · '+m.unitTitle+' · '+(m.marks||'')+' marks · Original practice';
+ $('exam').innerHTML=active.map(renderSection).join('');
+ $('actions').classList.remove('hidden');$('result').textContent='';status('Exam started. Listening passages and associated questions stay together.');
+ $('exam').querySelectorAll('textarea').forEach(t=>t.addEventListener('input',()=>{t.closest('section').querySelector('.words').textContent=t.value.trim()?t.value.trim().split(/\s+/).length:0}));
+ if($('mode').value==='exam'){end=Date.now()+(m.timeMinutes||150)*60000;tick();timer=setInterval(tick,1000)}else{$('clock').textContent='Untimed'}
+}
+function normalize(text){return String(text??'').normalize('NFKC').trim().toLowerCase().replace(/[.,!?;:]/g,'').replace(/\s+/g,' ')}
+function evaluateAnswers(){
+ if(!active)return;
+ stopTimer();let total=0,correct=0;
+ active.forEach(part=>{
+  if(part.skill.startsWith('writing'))return;
+  (part.data.questions||[]).forEach((q,i)=>{
+   total++;
+   const name=part.skill+'-'+i;const input=[...document.querySelectorAll('#exam input')].find(n=>n.name===name&&(n.type==='text'||n.checked));
+   if(!input)return;
+   const actual=input.value;
+   const good=typeof q.answer==='number'?Number(actual)===q.answer:normalize(actual)===normalize(q.answer);
+   if(good)correct++;
+   const cell=input.closest('.question');
+   if(cell)cell.style.borderLeft='4px solid '+(good?'#3b8f67':'#bc7240');
+  });
+ });
+ $('result').textContent='Objective responses: '+correct+' / '+total+'. Writing is not automatically graded; short answers may require teacher review.';
+ status('Results are practice estimates, not a final Ministry score.');
+}
+async function prepareOffline(){
+ if(!('caches' in window)||!('serviceWorker' in navigator)){status('Offline caching unavailable. Open via HTTPS.');return}
+ try{
+  await navigator.serviceWorker.register('../sw.js',{scope:'../'});
+  var cache=await caches.open('my-exams-media-v4');
+  var model=current(),sound=audioUrl(model.listening);
+  var files=['./index.html','./data.json'];if(sound)files.push('./'+sound);
+  for(const file of files){var url=new URL(file,location.href).href;var response=await fetch(url,{cache:'reload'});if(!response.ok||response.status!==200)throw Error(file+' HTTP '+response.status);await cache.put(url,response)}
+  status('Saved selected model and its natural audio. Disconnect and open the exam again to test.');
+ }catch(e){status('Offline download failed: '+e.message)}
+}
+async function init(){
+ try{var res=await fetch('./data.json');if(!res.ok)throw Error('HTTP '+res.status);var all=await res.json();models=all.models;$('intro').textContent='Six review models · four unit themes · two comprehensive · final teacher audit pending';status('Choose a model or make a random comprehensive paper.')}catch(e){status('Unable to load exam data: '+e.message)}
+}
+$('mode').addEventListener('change',()=>{$('skillWrap').classList.toggle('hidden',$('mode').value!=='practice')});
+$('start').addEventListener('click',()=>{choiceModel=null;start()});
+$('random').addEventListener('click',()=>{choiceModel=buildRandom();if(!choiceModel)return;start()});
+$('submit').addEventListener('click',evaluateAnswers);
+$('offline').addEventListener('click',prepareOffline);
+init();
+})();
+</script></body></html>
