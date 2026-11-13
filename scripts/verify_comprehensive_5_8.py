@@ -43,6 +43,11 @@ for grade in (5,6):
  for m in 'ABCD':
   parts=[x for x in originals if x['model']==m]
   if len(parts)!=8 or sum(x['marks'] for x in parts)!=40:REPORT['errors'].append(f'G{grade} model {m} malformed')
+  for task in parts:
+   for pic in task.get('pictureOptions',[]):
+    if not (base/'images'/(pic+'.svg')).is_file():
+     REPORT['errors'].append(f'G{grade} model {m}: missing picture {pic}')
+
   for x in parts:
    if x['skill']=='listening':
     if not (base/x['audio']).exists():REPORT['errors'].append(f'Missing provisional MP3: {base/x["audio"]}')
@@ -63,6 +68,13 @@ for grade in (7,8):
   if len(m['sections'])!=7 or sum(x['marks'] for x in m['sections'])!=40:REPORT['errors'].append(f'G{grade} model {m["model"]} malformed')
   for section in m['sections']:
    if section['key']=='grammarvocabulary' and (len(section['items'])!=10 or section['marks']!=10):REPORT['errors'].append(f'G{grade} model {m["model"]} invalid cloze')
+   if section['key']=='listening1':
+    if len(section['items'])!=5:REPORT['errors'].append(f'G{grade} model {m["model"]}: expected five pictured listening questions')
+    for qi,item in enumerate(section['items']):
+     if len(item.get('images',[]))!=3:REPORT['errors'].append(f'G{grade} model {m["model"]}: question {qi+1} not three pictures')
+     for pic in item.get('images',[]):
+      if not (base/'assets/illustrations'/(pic+'.svg')).is_file():REPORT['errors'].append(f'G{grade} model {m["model"]}: missing {pic}.svg')
+
    if section['key'].startswith('listening'):
     if not (base/section['audio']).exists():REPORT['errors'].append(f'G{grade}: missing backup {section["audio"]}')
     if not (base/'assets/audio-natural'/(m['id']+'-'+section['key']+'.mp3')).exists():REPORT['errors'].append(f'G{grade} missing natural {m["id"]}/{section["key"]}')
