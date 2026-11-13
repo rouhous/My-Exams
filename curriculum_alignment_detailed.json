@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-13-v2",
+  "version": "2026-11-13-v3",
   "basis": "Grade 7/8 official teacher or pupil scope and sequence, Grade 9 source overview; classification of individual tasks is an editorial audit, not Ministry certification",
   "standards": {
     "7": {
@@ -377,7 +377,72 @@
         }
       },
       "verifiedVocabularyList": null,
-      "vocabularySource": "The linked unit summary confirms themes; exact official word list requires textbook verification."
+      "vocabularySource": "Gold Experience Oman Grade 9A Student Book content summary at https://www.omanedubooks.com/2026/08/gold-experience-oman-grade-9a.html ; full official wordlist not independently checked.",
+      "documentedVocabularyExamples": [
+        {
+          "personality": [
+            "calm",
+            "clever",
+            "confident",
+            "funny",
+            "lazy",
+            "noisy",
+            "rude",
+            "serious",
+            "shy",
+            "sociable",
+            "sporty",
+            "unpleasant"
+          ],
+          "collocations": [
+            "good at",
+            "brilliant at",
+            "interested in",
+            "keen on",
+            "afraid of",
+            "excited about",
+            "fed up with"
+          ]
+        },
+        {
+          "communication": [
+            "explain",
+            "hear",
+            "listen",
+            "mean",
+            "pronounce",
+            "repeat",
+            "say",
+            "speak",
+            "talk",
+            "tell",
+            "translate",
+            "understand"
+          ],
+          "collocations": [
+            "listen to",
+            "talk to",
+            "speak to",
+            "explain something to someone",
+            "talk about"
+          ]
+        },
+        {
+          "topic": [
+            "technology in the home",
+            "AI",
+            "digital entertainment"
+          ],
+          "phrasalVerbs": [
+            "Official exact list still requires textbook wordlist verification"
+          ]
+        }
+      ],
+      "unitWritingModes": [
+        "Personal profile/email",
+        "Story with past tenses",
+        "Advice email about technology"
+      ]
     }
   },
   "records": [
