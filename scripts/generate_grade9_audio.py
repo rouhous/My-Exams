@@ -48,10 +48,14 @@ def split_interview(transcript):
 
 async def build(model,task,tmp):
     clips=[]
+    spoken={}
     async def say(text,voice=0):
-        p=tmp/f'{len(clips):03d}.mp3'
-        await speech(text,p,VOICES[voice])
-        clips.append(p)
+        key=(text,voice)
+        if key not in spoken:
+            p=tmp/f'speech-{len(spoken):03d}.mp3'
+            await speech(text,p,VOICES[voice])
+            spoken[key]=p
+        clips.append(spoken[key])
     def pause(seconds):
         p=tmp/f'{len(clips):03d}.mp3';silence(p,seconds);clips.append(p)
     if task['group']==1:
