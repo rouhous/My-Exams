@@ -1,0 +1,51 @@
+name: Audit original Grade 7 and 8 rebuilt unit tests
+on:
+  push:
+    branches: [grade8-original-unit-rebuild]
+    paths:
+      - '.github/workflows/qa-original-g78.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate original lesson tasks, images, keys, passage length and regenerated audio
+        run: |
+          python3 - <<'PY'
+          import json,pathlib,subprocess
+          root=pathlib.Path('grades7-8')
+          models=json.load(open(root/'activities.json'))
+          assert len(models)==8
+          keys=['listening1','listening2','grammarvocabulary','reading1','reading2','writing1','writing2']
+          for m in models:
+              assert len(m['sections'])==7,(m['grade'],m['model'])
+              assert [x['key'] for x in m['sections']]==keys
+              assert sum(x['marks'] for x in m['sections'])==40
+              for sec in m['sections']:
+                  if sec['key']=='listening1':
+                      assert len(sec['items'])==5
+                      for t in sec['items']:
+                          assert len(t['images'])==3 and len(t['options'])==3
+                          assert 0<=t['answer']<3
+                          for p in t['images']:assert (root/'assets/illustrations'/f'{p}.svg').exists(),p
+                          if m['model'] in 'ABC':
+                              assert 35<=len(t['script'].split())<=55,(m['grade'],m['model'],len(t['script'].split()))
+                  if sec['key']=='listening2':
+                      assert len(sec['items'])==5
+                      if m['model'] in 'ABC':assert 145<=len(sec['script'].split())<=220
+                  if sec['key']=='grammarvocabulary':assert len(sec['items'])==10 and all(len(t['options'])==3 for t in sec['items'])
+                  if sec['key']=='reading1':assert len(sec['texts'])==5 and len(sec['continuations'])==6 and all(0<=v<6 for v in sec['answers'])
+                  if sec['key']=='reading2':
+                      assert len(sec['items'])==5
+                      if m['model'] in 'ABC':assert 200<=len(sec['passage'].split())<=260
+                  if sec['key'] in ('listening1','listening2'):
+                      f=root/'assets/audio-natural'/f"{m['id']}-{sec['key']}.mp3"
+                      assert f.is_file() and f.stat().st_size>10000,f
+          for g in (7,8):
+              for m in 'ABC':
+                  model=next(x for x in models if x['grade']==g and x['model']==m)
+                  assert model['theme'].lower() in {7:{'entertainment','awesome animals','travel'},8:{'our planet','adventure sports','spend or save?'}}[g]
+          print('PASS original eight Grade 7–8 models, 16 natural recordings, matching, images, length, cloze')
+          PY
