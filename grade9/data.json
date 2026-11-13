@@ -432,7 +432,8 @@
                 "images/illustration-extra-1-2.png",
                 "images/illustration-extra-1-3.png"
               ],
-              "answer": 2
+              "answer": 2,
+              "script": "Text one. My cousins and I are preparing for a long walk around our neighbourhood. I thought about wearing my school jacket, but the afternoon will be warm. My old backpack is still strong. Instead, I bought comfortable shoes because the route includes several steep streets and narrow paths."
             },
             {
               "stem": "Which sport did the speaker join?",
@@ -446,7 +447,8 @@
                 "images/illustration-extra-2-2.png",
                 "images/illustration-extra-2-3.png"
               ],
-              "answer": 0
+              "answer": 0,
+              "script": "Text two. Last term I tried running with my brother and cycling with my friends. I enjoyed both, but I wanted to learn something different. When the new sports centre opened an indoor pool, I joined the swimming club. Now I practise twice a week and feel much more confident in the water."
             },
             {
               "stem": "Where will the public event take place?",
@@ -460,7 +462,8 @@
                 "images/illustration-extra-3-2.png",
                 "images/illustration-extra-3-3.png"
               ],
-              "answer": 0
+              "answer": 0,
+              "script": "Text three. The youth festival needs a place for its final match. The school building is too small, and the public park has no seats for spectators. The organisers have booked the stadium instead. The match will begin there on Saturday afternoon, and families can enter through the main gate."
             },
             {
               "stem": "What weather does the latest forecast predict?",
@@ -474,7 +477,8 @@
                 "images/illustration-3-2.png",
                 "images/illustration-3-3.png"
               ],
-              "answer": 0
+              "answer": 0,
+              "script": "Text four. Yesterday the weather website predicted rain, and my sister even worried about snow in the mountains. This morning the forecast changed. According to the latest update, the sky will be clear and sunny throughout the day. Our class can hold its outdoor activities as planned, but we should bring water."
             },
             {
               "stem": "Where will the club meet?",
@@ -488,11 +492,12 @@
                 "images/illustration-1-2.png",
                 "images/illustration-1-3.png"
               ],
-              "answer": 0
+              "answer": 0,
+              "script": "Text five. Our school photography club cannot use the sports hall because it is booked for a tournament. We considered the public library, but we need to display our pictures near the entrance. Our head teacher has now offered us a room at school. That is where we will meet next Thursday."
             }
           ],
           "audio": "audio/g9-b-listening-1.mp3",
-          "transcript": "",
+          "transcript": "Text one. My cousins and I are preparing for a long walk around our neighbourhood. I thought about wearing my school jacket, but the afternoon will be warm. My old backpack is still strong. Instead, I bought comfortable shoes because the route includes several steep streets and narrow paths.\n\nText two. Last term I tried running with my brother and cycling with my friends. I enjoyed both, but I wanted to learn something different. When the new sports centre opened an indoor pool, I joined the swimming club. Now I practise twice a week and feel much more confident in the water.\n\nText three. The youth festival needs a place for its final match. The school building is too small, and the public park has no seats for spectators. The organisers have booked the stadium instead. The match will begin there on Saturday afternoon, and families can enter through the main gate.\n\nText four. Yesterday the weather website predicted rain, and my sister even worried about snow in the mountains. This morning the forecast changed. According to the latest update, the sky will be clear and sunny throughout the day. Our class can hold its outdoor activities as planned, but we should bring water.\n\nText five. Our school photography club cannot use the sports hall because it is booked for a tournament. We considered the public library, but we need to display our pictures near the entrance. Our head teacher has now offered us a room at school. That is where we will meet next Thursday.",
           "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C).",
           "naturalAudioAvailable": true
         },
@@ -1666,7 +1671,8 @@
                 "images/illustration-extra-1-2.png",
                 "images/illustration-extra-1-3.png"
               ],
-              "answer": 2
+              "answer": 2,
+              "script": "Text one. My cousins and I are preparing for a long walk around our neighbourhood. I thought about wearing my school jacket, but the afternoon will be warm. My old backpack is still strong. Instead, I bought comfortable shoes because the route includes several steep streets and narrow paths."
             },
             {
               "stem": "Which sport did the speaker join?",
@@ -1680,7 +1686,8 @@
                 "images/illustration-extra-2-2.png",
                 "images/illustration-extra-2-3.png"
               ],
-              "answer": 0
+              "answer": 0,
+              "script": "Text two. Last term I tried running with my brother and cycling with my friends. I enjoyed both, but I wanted to learn something different. When the new sports centre opened an indoor pool, I joined the swimming club. Now I practise twice a week and feel much more confident in the water."
             },
             {
               "stem": "Where will the public event take place?",
@@ -1694,7 +1701,8 @@
                 "images/illustration-extra-3-2.png",
                 "images/illustration-extra-3-3.png"
               ],
-              "answer": 0
+              "answer": 0,
+              "script": "Text three. The youth festival needs a place for its final match. The school building is too small, and the public park has no seats for spectators. The organisers have booked the stadium instead. The match will begin there on Saturday afternoon, and families can enter through the main gate."
             },
             {
               "stem": "What weather does the latest forecast predict?",
@@ -1708,7 +1716,8 @@
                 "images/illustration-3-2.png",
                 "images/illustration-3-3.png"
               ],
-              "answer": 0
+              "answer": 0,
+              "script": "Text four. Yesterday the weather website predicted rain, and my sister even worried about snow in the mountains. This morning the forecast changed. According to the latest update, the sky will be clear and sunny throughout the day. Our class can hold its outdoor activities as planned, but we should bring water."
             },
             {
               "stem": "Where will the club meet?",
@@ -1722,11 +1731,12 @@
                 "images/illustration-1-2.png",
                 "images/illustration-1-3.png"
               ],
-              "answer": 0
+              "answer": 0,
+              "script": "Text five. Our school photography club cannot use the sports hall because it is booked for a tournament. We considered the public library, but we need to display our pictures near the entrance. Our head teacher has now offered us a room at school. That is where we will meet next Thursday."
             }
           ],
           "audio": "audio/g9-b-listening-1.mp3",
-          "transcript": "",
+          "transcript": "Text one. My cousins and I are preparing for a long walk around our neighbourhood. I thought about wearing my school jacket, but the afternoon will be warm. My old backpack is still strong. Instead, I bought comfortable shoes because the route includes several steep streets and narrow paths.\n\nText two. Last term I tried running with my brother and cycling with my friends. I enjoyed both, but I wanted to learn something different. When the new sports centre opened an indoor pool, I joined the swimming club. Now I practise twice a week and feel much more confident in the water.\n\nText three. The youth festival needs a place for its final match. The school building is too small, and the public park has no seats for spectators. The organisers have booked the stadium instead. The match will begin there on Saturday afternoon, and families can enter through the main gate.\n\nText four. Yesterday the weather website predicted rain, and my sister even worried about snow in the mountains. This morning the forecast changed. According to the latest update, the sky will be clear and sunny throughout the day. Our class can hold its outdoor activities as planned, but we should bring water.\n\nText five. Our school photography club cannot use the sports hall because it is booked for a tournament. We considered the public library, but we need to display our pictures near the entrance. Our head teacher has now offered us a room at school. That is where we will meet next Thursday.",
           "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C).",
           "source_model": "B",
           "naturalAudioAvailable": true
