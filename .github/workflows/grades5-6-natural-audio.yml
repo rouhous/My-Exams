@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/grades5-6-natural-audio.yml'
+      - 'scripts/generate_grades5_6_audio.py'
+      - 'grades5-6/activities.json'
 permissions:
   contents: write
 jobs:
@@ -31,6 +33,13 @@ jobs:
           files=list(Path('grades5-6/audio-natural').glob('*.mp3'))
           assert len(files)==16, f'Expected 16 files, found {len(files)}'
           for f in files:assert f.stat().st_size>15000 and MP3(f).info.length>35,f
+          import json,hashlib
+          tasks=json.load(open('grades5-6/activities.json'))['activities']
+          manifest=json.load(open('grades5-6/audio-natural/script_audio_manifest.json'))
+          for t in tasks:
+            if t['skill']!='listening':continue
+            h=hashlib.sha256(json.dumps({'passages':t.get('passages'),'passage':t.get('passage'),'questions':t['questions'],'pictures':t.get('pictureOptions')},sort_keys=True,ensure_ascii=False).encode()).hexdigest()
+            assert manifest[t['id']]['sha256_of_script']==h,t['id']
           print('Validated',len(files),'MP3 files')
           PY
           git config user.name "github-actions[bot]"
