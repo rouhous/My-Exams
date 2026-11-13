@@ -1,0 +1,29 @@
+name: Browser QA Grade 5–8 comprehensive and offline exam
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/comprehensive-browser-qa.yml'
+      - 'tests/comprehensive_browser_smoke.cjs'
+permissions:
+  contents: read
+jobs:
+  browser-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Serve My Exams locally
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/myexams-serve.log 2>&1 &
+          sleep 3
+      - name: Test mixed models, listening images, offline audio
+        run: node tests/comprehensive_browser_smoke.cjs
