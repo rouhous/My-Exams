@@ -1,0 +1,118 @@
+{
+  "version": "2026-11-13",
+  "type": "curriculum_review_not_certification",
+  "sources": [
+    "https://ict.moe.gov.om/book/PDF/5/cls5_cb_5A/files/basic-html/page9.html",
+    "https://ict.moe.gov.om/book/PDF/5/cls5_cb_5A/files/basic-html/page11.html",
+    "https://ict.moe.gov.om/book/PDF/6/cls6_cb_6A/files/basic-html/page10.html",
+    "https://oman-school.com/كتاب-الإنجليزية-class-book-للصف-السادس-الفصل-ا/"
+  ],
+  "grades": {
+    "5": {
+      "units": [
+        "Talent show",
+        "Then and now",
+        "Let's explore!",
+        "Off to the shops"
+      ],
+      "intendedModels": {
+        "A": 1,
+        "B": 2,
+        "C": 3,
+        "D": 4,
+        "E": "mixed",
+        "F": "mixed"
+      },
+      "grammarSectionsPatched": true,
+      "review": {
+        "A": {
+          "grammar": "unit1_targeted",
+          "listening": "school_invention_fair_cross_unit",
+          "reading": "invention_theme_not_verified",
+          "writing": "invention_fair_not_unit1_profile",
+          "fullyApproved": false
+        },
+        "B": {
+          "grammar": "unit2_targeted",
+          "listening": "coastal_science_not_unit2",
+          "reading": "coastal_science_not_unit2",
+          "writing": "coastal_science_not_unit2",
+          "fullyApproved": false
+        },
+        "C": {
+          "grammar": "unit3_targeted",
+          "listening": "neighbourhood_market_more_unit4",
+          "reading": "market_more_unit4",
+          "writing": "market_more_unit4",
+          "fullyApproved": false
+        },
+        "D": {
+          "grammar": "unit4_targeted",
+          "listening": "art_event_more_unit1",
+          "reading": "art_event_more_unit1",
+          "writing": "art_event_more_unit1",
+          "fullyApproved": false
+        }
+      }
+    },
+    "6": {
+      "units": [
+        "Free-time fun",
+        "Technology",
+        "Places"
+      ],
+      "intendedModels": {
+        "A": 1,
+        "B": 2,
+        "C": 3,
+        "D": "mixed",
+        "E": "mixed",
+        "F": "mixed"
+      },
+      "grammarSectionsPatched": true,
+      "review": {
+        "A": {
+          "grammar": "unit1_targeted",
+          "listening": "invention_fair_more_unit2",
+          "reading": "technology_theme_partly",
+          "writing": "invention_fair_more_unit2",
+          "fullyApproved": false
+        },
+        "B": {
+          "grammar": "unit2_targeted",
+          "listening": "coastal_science_partial_places",
+          "reading": "places_theme_needs_review",
+          "writing": "coastal_science_not_unit2",
+          "fullyApproved": false
+        },
+        "C": {
+          "grammar": "unit3_targeted",
+          "listening": "market_and_places_partial",
+          "reading": "market_and_places_partial",
+          "writing": "market_and_places_partial",
+          "fullyApproved": false
+        },
+        "D": {
+          "grammar": "comprehensive_targeted",
+          "listening": "art_event_only",
+          "reading": "art_event_only",
+          "writing": "art_event_only",
+          "fullyApproved": false
+        }
+      }
+    }
+  },
+  "requiredNext": [
+    "Replace nonmatching reading, writing and listening activity content with genuinely unit-targeted original tasks.",
+    "Regenerate natural MP3 whenever listening text changes, verify picture answers and keep current audio as archived backups.",
+    "Grade 6 model D must become truly mixed, not a fourth isolated theme.",
+    "Unit 4 Grade 5 includes price/shop language; current model D art day does not fully fit.",
+    "Perform page-level textbook and teacher review for every question before saying Ministry specification aligned."
+  ],
+  "completedNow": [
+    "Corrected eight real Grammar tasks in Grade 5–6 live standalone exams",
+    "Added fixed mixed E/F and on-demand randomized complete 40-mark exams",
+    "Confirmed eight natural listening MP3 per grade in GitHub",
+    "Set automated exam/media/JS QA workflow"
+  ]
+}
