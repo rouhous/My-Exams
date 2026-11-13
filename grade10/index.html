@@ -40,7 +40,7 @@ var models=[],active=null,timer=null,end=0,choiceModel=null;
 var esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function status(text){$('status').textContent=text}
 function find(id){return models.find(m=>m.id===id)}
-function current(){return choiceModel&&$('model').value==='R'?choiceModel:find($('model').value)}
+function current(){return choiceModel||find($('model').value)}
 function sourceOf(listening,all){return all.find(m=>m.listening.passage===listening.passage)?.id||null}
 function buildRandom(){
  var base=models.filter(m=>'ABCD'.includes(m.id));if(base.length!==4)return;
@@ -123,6 +123,7 @@ async function prepareOffline(){
 async function init(){
  try{var res=await fetch('./data.json');if(!res.ok)throw Error('HTTP '+res.status);var all=await res.json();models=all.models;$('intro').textContent='Six review models · four unit themes · two comprehensive · final teacher audit pending';status('Choose a model or make a random comprehensive paper.')}catch(e){status('Unable to load exam data: '+e.message)}
 }
+$('model').addEventListener('change',()=>{choiceModel=null});
 $('mode').addEventListener('change',()=>{$('skillWrap').classList.toggle('hidden',$('mode').value!=='practice')});
 $('start').addEventListener('click',()=>{choiceModel=null;start()});
 $('random').addEventListener('click',()=>{choiceModel=buildRandom();if(!choiceModel)return;start()});
