@@ -68,6 +68,8 @@ function renderQuestion(q,i,prefix){
 function renderSection(section,i){
  var data=section.data,key=section.skill;
  var h='<section class="section" data-skill="'+key+'"><h2>'+esc(key.replace(/(\d)/g,' $1').toUpperCase())+'</h2>';
+ var origin=(current()?.unitSources||[]).find(x=>x.section===key||x.skill===key);
+ if(origin)h+='<p class="muted">Mixed revision source: Model '+esc(origin.model||origin.sourceModel)+' · '+esc(origin.unit||'original unit')+' (reused practice activity)</p>';
  if(key==='listening'){
   var sound=audioUrl(data);
   if(sound)h+='<audio controls preload="metadata" src="'+esc(sound)+'"></audio><p class="muted">Natural English MP3 · dialogue played twice, with pauses; check audio status before student release.</p>';
