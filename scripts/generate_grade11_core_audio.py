@@ -27,11 +27,11 @@ async def one(model):
             seq.append(p)
         await speak('You will hear a recording related to '+model['unitTitle']+'. Listen carefully and answer the questions. You will hear the recording twice.',0)
         pause(3)
-        chunks=re.split(r'(?=\b(?:Teacher|Maha|Presenter|Student|Engineer|Guide|Visitor|Interviewer|Speaker)\s*:)',passage)
+        chunks=re.split(r'(?=\b(?:Teacher|Maha|Presenter|Student|Engineer|Guide|Visitor|Interviewer|Speaker|Host|Amal|Mariam|Huda|Salim)\s*:)',passage)
         turns=[]
         for p in chunks:
             m=re.match(r'\s*([A-Za-z]+)\s*:\s*(.+)',p,flags=re.S)
-            if m:turns.append((m.group(2).strip(),0 if m.group(1) in ('Teacher','Presenter','Engineer','Guide','Interviewer') else 1))
+            if m:turns.append((m.group(2).strip(),0 if m.group(1) in ('Teacher','Presenter','Engineer','Guide','Interviewer','Host') else 1))
         if len(turns)<2:turns=[(passage,0)]
         for repeat in range(2):
             for text,voice in turns:
