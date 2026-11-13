@@ -1,0 +1,141 @@
+{
+  "version": "2026-11-13",
+  "status": "manual thematic screening; NOT textbook-certified",
+  "policy": "Do not label a complete exam as unit-specific unless every listening, reading, grammar/vocabulary and writing task has been reviewed against the unit's taught vocabulary, grammar and content.",
+  "grades": {
+    "7": {
+      "official_unit_titles": [
+        "Entertainment",
+        "Awesome animals",
+        "Travel"
+      ],
+      "models": [
+        {
+          "model": "A",
+          "theme": "a mobile library",
+          "suggested_unit": null,
+          "status": "mixed_or_unverified",
+          "reason": "Library and project theme does not directly establish Entertainment/Animals/Travel coverage"
+        },
+        {
+          "model": "B",
+          "theme": "a vegetable garden",
+          "suggested_unit": null,
+          "status": "mixed_or_unverified",
+          "reason": "Garden theme not direct evidence of one of the three semester units"
+        },
+        {
+          "model": "C",
+          "theme": "a small local museum",
+          "suggested_unit": 3,
+          "status": "partial_thematic_only",
+          "reason": "A museum visit can relate to Travel but sections require detailed review"
+        },
+        {
+          "model": "D",
+          "theme": "a safer walking route",
+          "suggested_unit": 3,
+          "status": "partial_thematic_only",
+          "reason": "Journey and transport topic can relate to Travel but all seven sections are not confirmed"
+        }
+      ]
+    },
+    "8": {
+      "official_unit_titles": [
+        "Our planet",
+        "Adventure sports",
+        "Spend or save?"
+      ],
+      "models": [
+        {
+          "model": "A",
+          "theme": "a repair café",
+          "suggested_unit": 3,
+          "status": "partial_thematic_only",
+          "reason": "Repair and reuse can involve saving money but listening and grammar may cover other topics"
+        },
+        {
+          "model": "B",
+          "theme": "a science podcast",
+          "suggested_unit": null,
+          "status": "mixed_or_unverified",
+          "reason": "Science podcast is not enough to assign a whole model to Our planet"
+        },
+        {
+          "model": "C",
+          "theme": "a wildlife monitoring project",
+          "suggested_unit": 1,
+          "status": "partial_thematic_only",
+          "reason": "Wildlife fits Our planet thematically but other sections must be checked"
+        },
+        {
+          "model": "D",
+          "theme": "a digital walking map",
+          "suggested_unit": null,
+          "status": "mixed_or_unverified",
+          "reason": "Map and nature walk do not certify Adventure sports or Our planet coverage"
+        }
+      ]
+    },
+    "9": {
+      "official_unit_titles": [
+        "Identity",
+        "Connections",
+        "The future is now"
+      ],
+      "models": [
+        {
+          "model": "A",
+          "theme": "Practical community skills",
+          "suggested_unit": 1,
+          "status": "partial_thematic_only",
+          "reason": "Grammar passage explicitly addresses identity, but listening/reading/writing are mixed community themes"
+        },
+        {
+          "model": "B",
+          "theme": "People and local heritage",
+          "suggested_unit": 1,
+          "status": "partial_thematic_only",
+          "reason": "Heritage can support identity, but grammar and reading also include other themes"
+        },
+        {
+          "model": "C",
+          "theme": "Wellbeing and responsible choices",
+          "suggested_unit": 3,
+          "status": "partial_thematic_only",
+          "reason": "Grammar discusses future technology; other sections discuss environment and wellbeing"
+        },
+        {
+          "model": "D",
+          "theme": "Mixed practice across three draft banks",
+          "suggested_unit": null,
+          "status": "mixed_reused",
+          "reason": "Recombines existing A/B/C tasks; not a unique unit exam"
+        },
+        {
+          "model": "E",
+          "theme": "Mixed practice across three draft banks",
+          "suggested_unit": null,
+          "status": "mixed_reused",
+          "reason": "Recombines existing A/B/C tasks; not a unique unit exam"
+        },
+        {
+          "model": "F",
+          "theme": "Mixed practice across three draft banks",
+          "suggested_unit": null,
+          "status": "mixed_reused",
+          "reason": "Recombines existing A/B/C tasks; not a unique unit exam"
+        },
+        {
+          "model": "G",
+          "theme": "Inventive ideas and local solutions",
+          "suggested_unit": 3,
+          "status": "partial_thematic_only",
+          "reason": "Inventions relate to The future is now, but other sections discuss community and school transport"
+        }
+      ]
+    }
+  },
+  "verified_full_unit_models": 0,
+  "remaining": "Textbook page-level vocabulary and grammar mapping, all seven sections per model, and student device offline tests."
+}
