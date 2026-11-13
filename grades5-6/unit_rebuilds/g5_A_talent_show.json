@@ -1,0 +1,190 @@
+{
+  "grade": 5,
+  "model": "A",
+  "unit": "Talent show",
+  "status": "original_unit_content_pending_voice_regeneration",
+  "listening1": {
+    "pictureOptions": [
+      "piano",
+      "football",
+      "cake",
+      "drum",
+      "camera",
+      "paintbrush"
+    ],
+    "passages": [
+      "A: What will you do at the talent show? B: I am playing the drum with two friends. A: Can you play the piano too? B: Yes, but I enjoy keeping the rhythm more. We practise after school every Wednesday.",
+      "A: What is your special talent, Sara? B: I love painting pictures of animals. A: Will you sing at the show? B: No, I will display my best painting. I have used a large paintbrush and many bright colours.",
+      "A: What are you preparing for tomorrow? B: I am baking a cake for the talent show. A: That sounds difficult. B: My older sister is helping me, but I am doing most of the work myself. I hope everyone likes it.",
+      "A: Which instrument will your cousin play? B: She will play the piano at the beginning. A: Is she nervous? B: A little, because she has never performed for so many people. She practises every evening and feels more confident now.",
+      "A: Are you taking part in the performance? B: Not on stage. I am using my camera to take photographs. A: Why? B: The school wants pictures of the singers and dancers for a special display in the hall."
+    ],
+    "questions": [
+      {
+        "stem": "Dialogue 1",
+        "answer": 3
+      },
+      {
+        "stem": "Dialogue 2",
+        "answer": 5
+      },
+      {
+        "stem": "Dialogue 3",
+        "answer": 2
+      },
+      {
+        "stem": "Dialogue 4",
+        "answer": 0
+      },
+      {
+        "stem": "Dialogue 5",
+        "answer": 4
+      }
+    ]
+  },
+  "listening2": {
+    "passage": "Interviewer: Welcome to School Radio, Noura. When will your school talent show take place?\nNoura: On Thursday afternoon, in the school hall. The doors will open at two thirty, and the first performance will begin at three.\nInterviewer: Who is organising the show?\nNoura: Our English teacher and the student council are working together. I am helping to welcome the visitors.\nInterviewer: What will pupils perform?\nNoura: There will be singing, dancing and a short comedy. One group is playing traditional music, too.\nInterviewer: Is there anything new this year?\nNoura: Yes. We have invited younger pupils to display paintings and handmade models. The visitors can talk to the artists after the performances.\nInterviewer: What should parents bring?\nNoura: They do not need tickets, but we have asked them to bring reusable water bottles because we want to reduce waste.\nInterviewer: What are you most excited about?\nNoura: Seeing my shy friend Huda perform. She has worked very hard and is much more confident now.",
+    "questions": [
+      {
+        "stem": "When will the first performance begin?",
+        "options": [
+          "2:30",
+          "3:00",
+          "4:00"
+        ],
+        "answer": 1
+      },
+      {
+        "stem": "Where is the talent show?",
+        "options": [
+          "school hall",
+          "sports centre",
+          "public library"
+        ],
+        "answer": 0
+      },
+      {
+        "stem": "Who is working with the student council?",
+        "options": [
+          "a doctor",
+          "a sports coach",
+          "the English teacher"
+        ],
+        "answer": 2
+      },
+      {
+        "stem": "What new activity can visitors enjoy?",
+        "options": [
+          "a football match",
+          "paintings and models",
+          "a boat trip"
+        ],
+        "answer": 1
+      },
+      {
+        "stem": "What should parents bring?",
+        "options": [
+          "tickets",
+          "cameras only",
+          "reusable water bottles"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "vocabulary": {
+    "pictureOptions": [
+      "piano",
+      "drum",
+      "cake",
+      "paintbrush",
+      "football"
+    ],
+    "wordOptions": [
+      "drum",
+      "football",
+      "piano",
+      "cake",
+      "paintbrush",
+      "computer"
+    ],
+    "questions": [
+      {
+        "stem": "Picture 1",
+        "answer": 2
+      },
+      {
+        "stem": "Picture 2",
+        "answer": 0
+      },
+      {
+        "stem": "Picture 3",
+        "answer": 3
+      },
+      {
+        "stem": "Picture 4",
+        "answer": 4
+      },
+      {
+        "stem": "Picture 5",
+        "answer": 1
+      }
+    ]
+  },
+  "reading1": {
+    "pictureOptions": [
+      "football",
+      "piano",
+      "camera",
+      "cake",
+      "paintbrush"
+    ],
+    "questions": [
+      {
+        "stem": "Yousuf practises kicking a football every day and will show his skills in the playground.",
+        "answer": 0
+      },
+      {
+        "stem": "Aisha plays a beautiful song on the piano while her friends listen quietly.",
+        "answer": 1
+      },
+      {
+        "stem": "The school photographer holds a camera and takes pictures of the young performers.",
+        "answer": 2
+      },
+      {
+        "stem": "Laila and her brother bake a cake to share with the visitors after the show.",
+        "answer": 3
+      },
+      {
+        "stem": "The young artist uses a paintbrush to create a colourful picture for the exhibition.",
+        "answer": 4
+      }
+    ]
+  },
+  "reading2": {
+    "passage": "Last Thursday, the pupils at Al Amal School held a talent show. Salma wanted to take part, but she was nervous because she had never performed on stage before. Her best friend Huda was more confident and offered to practise with her every afternoon.\n\nSalma enjoyed singing, but she was also good at telling funny stories. She decided to tell a short story about a very forgetful magician. On the morning of the show, she could not find her notes. Huda helped her look in her bag, under the desk and beside the piano. Finally, they found the notes inside a large storybook.\n\nWhen Salma walked onto the stage, she took a deep breath and smiled at the audience. Her story made everyone laugh. After the performance, her teacher said that Salma was one of the funniest pupils in the show. Salma felt proud and thanked Huda for her kindness.",
+    "questions": [
+      {
+        "stem": "The school show took place on a Thursday.",
+        "answer": "True"
+      },
+      {
+        "stem": "Salma had performed on stage many times before.",
+        "answer": "False"
+      },
+      {
+        "stem": "Huda helped Salma practise for the show.",
+        "answer": "True"
+      },
+      {
+        "stem": "The notes were found under the desk.",
+        "answer": "False"
+      },
+      {
+        "stem": "Salma told a funny story that made the audience laugh.",
+        "answer": "True"
+      }
+    ]
+  }
+}
