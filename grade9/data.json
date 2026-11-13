@@ -2745,21 +2745,21 @@
           "marks": 4,
           "passage": "Match each person (1–4) with a suitable activity (A–E). One activity is extra.",
           "people": [
-            "Mazin hopes to protect marine life near the coast.",
-            "Huda would like to learn how to write clear newspaper reports.",
-            "Ali wants to practise making simple computer programmes.",
-            "Layla enjoys preparing traditional food with her grandparents."
+            "Mazin regularly visits the coast with his family and worries when he sees plastic waste near the water. He wants to help protect sea animals and learn how young people can keep beaches cleaner.",
+            "Huda enjoys asking questions and writing about interesting events at school. She hopes to become a reporter and needs practice in presenting facts clearly without spreading rumours or leaving out important information.",
+            "Ali has started learning basic computer programming. He wants to create a small interactive game, but he needs guidance on choosing instructions, testing his code and finding simple mistakes.",
+            "Layla loves spending time in the kitchen with her grandparents. She wants to record traditional family recipes and understand why particular dishes are prepared for celebrations and important occasions."
           ],
           "options": [
-            "The coding club starts with simple animations and games.",
-            "The coastal volunteers monitor litter and protect sea animals.",
-            "The family cooking project records recipes from older relatives.",
-            "A student newsroom publishes factual reports about school life.",
-            "The cycling group explores safe routes around town."
+            "This beginners' coding club teaches students to create simple animations and interactive games. Members practise giving clear instructions to a computer and work together to discover and fix errors.",
+            "Coastal volunteers visit beaches to collect litter and monitor areas used by sea animals. They learn about marine ecosystems and encourage families to prevent plastic waste from reaching the water.",
+            "The family cooking project brings young people together with older relatives. Members prepare traditional dishes, discuss local ingredients and write recipe cards to preserve family knowledge.",
+            "At the student newsroom, young reporters interview members of the school community and check their facts. They learn how to write clear, balanced articles for a magazine and online noticeboard.",
+            "Members of the cycling group practise safe journeys on local roads. They learn about bicycle maintenance, plan routes and build confidence by completing supervised rides with other students."
           ],
           "items": [
             {
-              "stem": "Person 1: Mazin hopes to protect marine life near the coast.",
+              "stem": "Person 1: Mazin regularly visits the coast with his family and worries when he sees plastic waste near the water. He wants to help protect sea animals and learn how young people can keep beaches cleaner.",
               "choices": [
                 "A",
                 "B",
@@ -2770,7 +2770,7 @@
               "answer": 1
             },
             {
-              "stem": "Person 2: Huda would like to learn how to write clear newspaper reports.",
+              "stem": "Person 2: Huda enjoys asking questions and writing about interesting events at school. She hopes to become a reporter and needs practice in presenting facts clearly without spreading rumours or leaving out important information.",
               "choices": [
                 "A",
                 "B",
@@ -2781,7 +2781,7 @@
               "answer": 3
             },
             {
-              "stem": "Person 3: Ali wants to practise making simple computer programmes.",
+              "stem": "Person 3: Ali has started learning basic computer programming. He wants to create a small interactive game, but he needs guidance on choosing instructions, testing his code and finding simple mistakes.",
               "choices": [
                 "A",
                 "B",
@@ -2792,7 +2792,7 @@
               "answer": 0
             },
             {
-              "stem": "Person 4: Layla enjoys preparing traditional food with her grandparents.",
+              "stem": "Person 4: Layla loves spending time in the kitchen with her grandparents. She wants to record traditional family recipes and understand why particular dishes are prepared for celebrations and important occasions.",
               "choices": [
                 "A",
                 "B",
