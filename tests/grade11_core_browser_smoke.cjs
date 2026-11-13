@@ -4,7 +4,7 @@ const {chromium}=require('playwright');
  const page=await browser.newPage({viewport:{width:420,height:850}});
  page.on('pageerror',e=>console.error('PAGE ERROR',e.message));
  await page.goto('http://127.0.0.1:8765/grade11/core/index.html',{waitUntil:'domcontentloaded'});
- await page.waitForFunction(()=>document.querySelector('#intro').textContent.includes('Six review models'),null,{timeout:30000});
+ await page.waitForFunction(()=>document.querySelector('#intro').textContent.includes('Six Grade 11 Core pilot models'),null,{timeout:30000});
  for(const model of 'ABCDEF'){
   await page.selectOption('#model',model);
   await page.click('#start');
