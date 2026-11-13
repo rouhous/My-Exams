@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-12-grade9-unit-allocation-prototype",
+  "version": "2026-11-13-B-natural-scripts-align-answers",
   "models": [
     {
       "model": "A",
@@ -432,8 +432,7 @@
                 "images/illustration-extra-1-2.png",
                 "images/illustration-extra-1-3.png"
               ],
-              "answer": 2,
-              "script": "I needed one useful item for my school activities last week. We considered backpack and jacket, but neither matched our needs. After reviewing the options, we chose shoes. We have now shared the final decision and everyone knows what to prepare."
+              "answer": 2
             },
             {
               "stem": "Which sport did the speaker join?",
@@ -447,8 +446,7 @@
                 "images/illustration-extra-2-2.png",
                 "images/illustration-extra-2-3.png"
               ],
-              "answer": 0,
-              "script": "I compared different sports before joining a school club last week. We considered running and cycling, but neither matched our needs. After reviewing the options, we chose swimming. We have now shared the final decision and everyone knows what to prepare."
+              "answer": 0
             },
             {
               "stem": "Where will the public event take place?",
@@ -462,8 +460,7 @@
                 "images/illustration-extra-3-2.png",
                 "images/illustration-extra-3-3.png"
               ],
-              "answer": 0,
-              "script": "The organisers examined several locations for the public event last week. We considered school building and park, but neither matched our needs. After reviewing the options, we chose stadium. We have now shared the final decision and everyone knows what to prepare."
+              "answer": 0
             },
             {
               "stem": "What weather does the latest forecast predict?",
@@ -477,8 +474,7 @@
                 "images/illustration-3-2.png",
                 "images/illustration-3-3.png"
               ],
-              "answer": 0,
-              "script": "Our class looked carefully at the weather forecast last week. At first, we expected rainy weather, and some people predicted snowy conditions. However, the latest forecast says it will be sunny. We have now shared the final decision and everyone knows what to prepare."
+              "answer": 0
             },
             {
               "stem": "Where will the club meet?",
@@ -492,13 +488,13 @@
                 "images/illustration-1-2.png",
                 "images/illustration-1-3.png"
               ],
-              "answer": 0,
-              "script": "Our club considered several places for its next meeting last week. We considered library and sports hall, but neither matched our needs. After reviewing the options, we chose school. We have now shared the final decision and everyone knows what to prepare."
+              "answer": 0
             }
           ],
           "audio": "audio/g9-b-listening-1.mp3",
-          "transcript": "Text 1. I needed one useful item for my school activities last week. We considered backpack and jacket, but neither matched our needs. After reviewing the options, we chose shoes. We have now shared the final decision and everyone knows what to prepare.\n\nText 2. I compared different sports before joining a school club last week. We considered running and cycling, but neither matched our needs. After reviewing the options, we chose swimming. We have now shared the final decision and everyone knows what to prepare.\n\nText 3. The organisers examined several locations for the public event last week. We considered school building and park, but neither matched our needs. After reviewing the options, we chose stadium. We have now shared the final decision and everyone knows what to prepare.\n\nText 4. Our class looked carefully at the weather forecast last week. At first, we expected rainy weather, and some people predicted snowy conditions. However, the latest forecast says it will be sunny. We have now shared the final decision and everyone knows what to prepare.\n\nText 5. Our club considered several places for its next meeting last week. We considered library and sports hall, but neither matched our needs. After reviewing the options, we chose school. We have now shared the final decision and everyone knows what to prepare.",
-          "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C)."
+          "transcript": "",
+          "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C).",
+          "naturalAudioAvailable": true
         },
         {
           "id": "g9-B-L2",
@@ -554,8 +550,9 @@
             }
           ],
           "audio": "audio/g9-b-listening-2.mp3",
-          "transcript": "Interviewer: Welcome to our student voices programme. Today we are speaking with Salim about the heritage mapping team. Why was this project started? Salim: We wanted to help our school in a practical way, not just read about problems. Students suggested ideas, and our teachers helped us organise a small team. Interviewer: Tell us about your first activity. Salim: Their first map showed historic doors in their neighbourhood. We chose something manageable and listened to feedback from other students. Interviewer: When did everything begin? Salim: The project was launched in November. We prepared the materials together and agreed on simple responsibilities. Interviewer: Who can get involved? Salim: Families were invited to share old photographs. Everyone needs to show respect and take turns. Interviewer: When does the group meet? Salim: They meet on Thursday afternoons. We try to finish each session with a useful plan for the next one. Interviewer: What is the most important lesson? Salim: They now understand why photographs need clear sources. It has also helped us become more confident when explaining our ideas. Interviewer: Would you recommend joining? Salim: Yes. Try something small, listen to others, and keep improving. Thank you for inviting me. We are proud that young people can lead meaningful changes, even when resources are limited and progress takes time.",
-          "instructions": "Listen to the interview twice. Choose the correct answer (A, B or C)."
+          "transcript": "Interviewer: Welcome to Young Historians. Today Salim is joining us to explain his community heritage-mapping project. Salim, what did your team put on its first map? Salim: We chose the historic doors in our neighbourhood. Some have unusual wooden patterns, so we walked along the old streets and carefully recorded their locations. Interviewer: That sounds interesting. When did your project begin? Salim: We launched it in November, just after a local museum invited schools to share ideas for protecting our heritage. Interviewer: Where did the old photographs come from? Salim: Families shared them with us. Parents and grandparents brought photographs of streets and houses that have changed over the years. Interviewer: How often do you work on the project? Salim: Our group meets on Thursday afternoons. That gives everyone time to finish lessons before we compare notes and plan our next visit. Interviewer: What important lesson have you learned? Salim: We must check the source of every photograph before publishing it. A date or place written on the back can help us avoid mistakes. Interviewer: And what happens next? Salim: We hope to add recorded memories from older residents. Their stories will explain why these places matter to the community. Interviewer: Thank you, Salim. Your project shows how history can connect generations.",
+          "instructions": "Listen to the interview twice. Choose the correct answer (A, B or C).",
+          "naturalAudioAvailable": true
         },
         {
           "id": "g9-B-GV",
@@ -1374,9 +1371,10 @@
             }
           ],
           "audio": "audio/g9-b-listening-2.mp3",
-          "transcript": "Interviewer: Welcome to our student voices programme. Today we are speaking with Salim about the heritage mapping team. Why was this project started? Salim: We wanted to help our school in a practical way, not just read about problems. Students suggested ideas, and our teachers helped us organise a small team. Interviewer: Tell us about your first activity. Salim: Their first map showed historic doors in their neighbourhood. We chose something manageable and listened to feedback from other students. Interviewer: When did everything begin? Salim: The project was launched in November. We prepared the materials together and agreed on simple responsibilities. Interviewer: Who can get involved? Salim: Families were invited to share old photographs. Everyone needs to show respect and take turns. Interviewer: When does the group meet? Salim: They meet on Thursday afternoons. We try to finish each session with a useful plan for the next one. Interviewer: What is the most important lesson? Salim: They now understand why photographs need clear sources. It has also helped us become more confident when explaining our ideas. Interviewer: Would you recommend joining? Salim: Yes. Try something small, listen to others, and keep improving. Thank you for inviting me. We are proud that young people can lead meaningful changes, even when resources are limited and progress takes time.",
+          "transcript": "Interviewer: Welcome to Young Historians. Today Salim is joining us to explain his community heritage-mapping project. Salim, what did your team put on its first map? Salim: We chose the historic doors in our neighbourhood. Some have unusual wooden patterns, so we walked along the old streets and carefully recorded their locations. Interviewer: That sounds interesting. When did your project begin? Salim: We launched it in November, just after a local museum invited schools to share ideas for protecting our heritage. Interviewer: Where did the old photographs come from? Salim: Families shared them with us. Parents and grandparents brought photographs of streets and houses that have changed over the years. Interviewer: How often do you work on the project? Salim: Our group meets on Thursday afternoons. That gives everyone time to finish lessons before we compare notes and plan our next visit. Interviewer: What important lesson have you learned? Salim: We must check the source of every photograph before publishing it. A date or place written on the back can help us avoid mistakes. Interviewer: And what happens next? Salim: We hope to add recorded memories from older residents. Their stories will explain why these places matter to the community. Interviewer: Thank you, Salim. Your project shows how history can connect generations.",
           "instructions": "Listen to the interview twice. Choose the correct answer (A, B or C).",
-          "source_model": "B"
+          "source_model": "B",
+          "naturalAudioAvailable": true
         },
         {
           "id": "g9-C-GV",
@@ -1668,8 +1666,7 @@
                 "images/illustration-extra-1-2.png",
                 "images/illustration-extra-1-3.png"
               ],
-              "answer": 2,
-              "script": "I needed one useful item for my school activities last week. We considered backpack and jacket, but neither matched our needs. After reviewing the options, we chose shoes. We have now shared the final decision and everyone knows what to prepare."
+              "answer": 2
             },
             {
               "stem": "Which sport did the speaker join?",
@@ -1683,8 +1680,7 @@
                 "images/illustration-extra-2-2.png",
                 "images/illustration-extra-2-3.png"
               ],
-              "answer": 0,
-              "script": "I compared different sports before joining a school club last week. We considered running and cycling, but neither matched our needs. After reviewing the options, we chose swimming. We have now shared the final decision and everyone knows what to prepare."
+              "answer": 0
             },
             {
               "stem": "Where will the public event take place?",
@@ -1698,8 +1694,7 @@
                 "images/illustration-extra-3-2.png",
                 "images/illustration-extra-3-3.png"
               ],
-              "answer": 0,
-              "script": "The organisers examined several locations for the public event last week. We considered school building and park, but neither matched our needs. After reviewing the options, we chose stadium. We have now shared the final decision and everyone knows what to prepare."
+              "answer": 0
             },
             {
               "stem": "What weather does the latest forecast predict?",
@@ -1713,8 +1708,7 @@
                 "images/illustration-3-2.png",
                 "images/illustration-3-3.png"
               ],
-              "answer": 0,
-              "script": "Our class looked carefully at the weather forecast last week. At first, we expected rainy weather, and some people predicted snowy conditions. However, the latest forecast says it will be sunny. We have now shared the final decision and everyone knows what to prepare."
+              "answer": 0
             },
             {
               "stem": "Where will the club meet?",
@@ -1728,14 +1722,14 @@
                 "images/illustration-1-2.png",
                 "images/illustration-1-3.png"
               ],
-              "answer": 0,
-              "script": "Our club considered several places for its next meeting last week. We considered library and sports hall, but neither matched our needs. After reviewing the options, we chose school. We have now shared the final decision and everyone knows what to prepare."
+              "answer": 0
             }
           ],
           "audio": "audio/g9-b-listening-1.mp3",
-          "transcript": "Text 1. I needed one useful item for my school activities last week. We considered backpack and jacket, but neither matched our needs. After reviewing the options, we chose shoes. We have now shared the final decision and everyone knows what to prepare.\n\nText 2. I compared different sports before joining a school club last week. We considered running and cycling, but neither matched our needs. After reviewing the options, we chose swimming. We have now shared the final decision and everyone knows what to prepare.\n\nText 3. The organisers examined several locations for the public event last week. We considered school building and park, but neither matched our needs. After reviewing the options, we chose stadium. We have now shared the final decision and everyone knows what to prepare.\n\nText 4. Our class looked carefully at the weather forecast last week. At first, we expected rainy weather, and some people predicted snowy conditions. However, the latest forecast says it will be sunny. We have now shared the final decision and everyone knows what to prepare.\n\nText 5. Our club considered several places for its next meeting last week. We considered library and sports hall, but neither matched our needs. After reviewing the options, we chose school. We have now shared the final decision and everyone knows what to prepare.",
+          "transcript": "",
           "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C).",
-          "source_model": "B"
+          "source_model": "B",
+          "naturalAudioAvailable": true
         },
         {
           "id": "g9-C-L2",
