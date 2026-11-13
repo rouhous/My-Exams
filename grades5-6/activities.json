@@ -166,47 +166,47 @@
       "model": "A",
       "skill": "grammar",
       "part": 1,
-      "title": "Grammar · Choose the correct word",
+      "title": "Grammar · Talent show",
       "marks": 5,
       "format": "mc",
       "questions": [
         {
-          "stem": "The pupils ____ a robot yesterday.",
+          "stem": "Rana is ____ than her sister at telling stories.",
           "options": [
-            "made",
-            "make"
+            "more confident",
+            "most confident"
           ],
           "answer": 0
         },
         {
-          "stem": "She ____ her camera every Friday.",
+          "stem": "Of all the performers, Hamed was the ____.",
           "options": [
-            "use",
-            "uses"
+            "funnier",
+            "funniest"
           ],
           "answer": 1
         },
         {
-          "stem": "We ____ ready for the visitors now.",
+          "stem": "Maha is good at ____ a football.",
           "options": [
-            "are",
-            "is"
+            "throwing",
+            "throw"
           ],
           "answer": 0
         },
         {
-          "stem": "The plant is ____ the window.",
+          "stem": "The youngest singer was ____ than the older girls.",
           "options": [
-            "between",
-            "near"
+            "shortest",
+            "shorter"
           ],
           "answer": 1
         },
         {
-          "stem": "There ____ five tables in the hall.",
+          "stem": "Salim is the ____ student in our drama team.",
           "options": [
-            "are",
-            "is"
+            "most polite",
+            "more polite"
           ],
           "answer": 0
         }
@@ -469,49 +469,49 @@
       "model": "B",
       "skill": "grammar",
       "part": 1,
-      "title": "Grammar · Choose the correct word",
+      "title": "Grammar · Then and now",
       "marks": 5,
       "format": "mc",
       "questions": [
         {
-          "stem": "We ____ to the beach last week.",
+          "stem": "My grandad ____ letters when he was young.",
           "options": [
-            "go",
-            "went"
-          ],
-          "answer": 1
-        },
-        {
-          "stem": "My friend ____ a notebook with him.",
-          "options": [
-            "has",
-            "have"
+            "wrote",
+            "writes"
           ],
           "answer": 0
         },
         {
-          "stem": "The boat is ____ than the toy.",
+          "stem": "They ____ use tablets at school twenty years ago.",
           "options": [
-            "big",
-            "bigger"
+            "do not",
+            "did not"
           ],
           "answer": 1
         },
         {
-          "stem": "Please ____ your rubbish in the bin.",
+          "stem": "____ you call your cousin yesterday?",
           "options": [
-            "put",
-            "puts"
+            "Did",
+            "Do"
           ],
           "answer": 0
         },
         {
-          "stem": "They ____ studying fish now.",
+          "stem": "When I was four, I ____ read short words.",
           "options": [
-            "is",
-            "are"
+            "can",
+            "could"
           ],
           "answer": 1
+        },
+        {
+          "stem": "We ____ an email to our aunt last Friday.",
+          "options": [
+            "sent",
+            "send"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -772,47 +772,47 @@
       "model": "C",
       "skill": "grammar",
       "part": 1,
-      "title": "Grammar · Choose the correct word",
+      "title": "Grammar · Let’s explore!",
       "marks": 5,
       "format": "mc",
       "questions": [
         {
-          "stem": "The apples ____ fresh today.",
+          "stem": "I think scientists ____ discover more about Mars.",
           "options": [
-            "are",
-            "is"
+            "will",
+            "were"
           ],
           "answer": 0
         },
         {
-          "stem": "She ____ a gift for her mother yesterday.",
+          "stem": "We ____ travel to the Moon tomorrow. It is only a class project.",
           "options": [
-            "make",
-            "made"
+            "did not",
+            "will not"
           ],
           "answer": 1
         },
         {
-          "stem": "We ____ shopping bags every week.",
+          "stem": "____ far is the Moon from Earth?",
           "options": [
-            "reuse",
-            "reuses"
+            "How",
+            "What"
           ],
           "answer": 0
         },
         {
-          "stem": "He ____ eating cake now.",
+          "stem": "Our guide ____ show us the telescope next week.",
           "options": [
-            "are",
-            "is"
+            "was",
+            "will"
           ],
           "answer": 1
         },
         {
-          "stem": "There is ____ apple on the table.",
+          "stem": "____ large is the new space station?",
           "options": [
-            "an",
-            "a"
+            "How",
+            "Which"
           ],
           "answer": 0
         }
@@ -1075,49 +1075,49 @@
       "model": "D",
       "skill": "grammar",
       "part": 1,
-      "title": "Grammar · Choose the correct word",
+      "title": "Grammar · Off to the shops",
       "marks": 5,
       "format": "mc",
       "questions": [
         {
-          "stem": "Laila ____ a beautiful picture yesterday.",
+          "stem": "A fishmonger is a person ____ sells fish.",
           "options": [
-            "paint",
-            "painted"
-          ],
-          "answer": 1
-        },
-        {
-          "stem": "These flowers ____ colourful.",
-          "options": [
-            "are",
-            "is"
+            "who",
+            "where"
           ],
           "answer": 0
         },
         {
-          "stem": "I ____ to draw the boat tomorrow.",
+          "stem": "This is the shop ____ my aunt works.",
           "options": [
-            "going",
-            "am going"
+            "who",
+            "where"
           ],
           "answer": 1
         },
         {
-          "stem": "My brush is ____ the bag.",
+          "stem": "The jacket ____ I bought is blue.",
           "options": [
-            "in",
-            "between"
+            "which",
+            "where"
           ],
           "answer": 0
         },
         {
-          "stem": "We ____ our pictures to the teacher.",
+          "stem": "You ____ keep the receipt if you want to return the toy.",
           "options": [
-            "shows",
-            "showed"
+            "has to",
+            "have to"
           ],
           "answer": 1
+        },
+        {
+          "stem": "We ____ buy the notebook today; we already have one.",
+          "options": [
+            "do not have to",
+            "does not have to"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -1370,47 +1370,47 @@
       "model": "A",
       "skill": "grammar",
       "part": 1,
-      "title": "Grammar · Choose the correct word",
+      "title": "Grammar · Free-time fun",
       "marks": 5,
       "format": "mc",
       "questions": [
         {
-          "stem": "We ____ the robot before the fair.",
+          "stem": "Sara usually ____ volleyball on Thursdays.",
           "options": [
-            "tested",
-            "test"
+            "plays",
+            "is playing"
           ],
           "answer": 0
         },
         {
-          "stem": "Our teacher ____ us useful advice.",
+          "stem": "Listen! My friends ____ music in the garden.",
           "options": [
-            "give",
-            "gave"
-          ],
-          "answer": 1
-        },
-        {
-          "stem": "The photographs were ____ by the pupils.",
-          "options": [
-            "taken",
-            "take"
+            "are playing",
+            "play"
           ],
           "answer": 0
         },
         {
-          "stem": "You ____ work carefully in the laboratory.",
+          "stem": "We ____ board games every weekend.",
           "options": [
-            "musts",
-            "must"
+            "play",
+            "are playing"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "Look! The children ____ gymnastics now.",
+          "options": [
+            "do",
+            "are doing"
           ],
           "answer": 1
         },
         {
-          "stem": "This project is ____ than our first one.",
+          "stem": "He ____ his diary every evening.",
           "options": [
-            "better",
-            "good"
+            "writes",
+            "is writing"
           ],
           "answer": 0
         }
@@ -1673,49 +1673,49 @@
       "model": "B",
       "skill": "grammar",
       "part": 1,
-      "title": "Grammar · Choose the correct word",
+      "title": "Grammar · Technology",
       "marks": 5,
       "format": "mc",
       "questions": [
         {
-          "stem": "The pupils ____ their observations yesterday.",
+          "stem": "My grandfather ____ use a tablet when he was young.",
           "options": [
-            "write",
-            "wrote"
-          ],
-          "answer": 1
-        },
-        {
-          "stem": "We should ____ the beach clean.",
-          "options": [
-            "keep",
-            "keeps"
+            "could not",
+            "does not"
           ],
           "answer": 0
         },
         {
-          "stem": "The boat ____ near the shore now.",
+          "stem": "We ____ restart the computer yesterday.",
           "options": [
-            "are",
-            "is"
+            "have to",
+            "had to"
           ],
           "answer": 1
         },
         {
-          "stem": "If it rains, we ____ indoors.",
+          "stem": "This new laptop works ____ than our old one.",
           "options": [
-            "will stay",
-            "stayed"
+            "more quickly",
+            "most quickly"
           ],
           "answer": 0
         },
         {
-          "stem": "The guide asked us ____ the plants.",
+          "stem": "I ____ send the message because the internet was down.",
           "options": [
-            "not touch",
-            "not to touch"
+            "cannot",
+            "could not"
           ],
           "answer": 1
+        },
+        {
+          "stem": "The students ____ save their files before leaving yesterday.",
+          "options": [
+            "had to",
+            "has to"
+          ],
+          "answer": 0
         }
       ]
     },
@@ -1976,47 +1976,47 @@
       "model": "C",
       "skill": "grammar",
       "part": 1,
-      "title": "Grammar · Choose the correct word",
+      "title": "Grammar · Places",
       "marks": 5,
       "format": "mc",
       "questions": [
         {
-          "stem": "The market ____ at eight every morning.",
+          "stem": "We ____ towards the museum when it started to rain.",
           "options": [
-            "opens",
-            "open"
+            "were walking",
+            "walk"
           ],
           "answer": 0
         },
         {
-          "stem": "We used ____ bags at the stalls.",
+          "stem": "This is the building ____ my uncle works.",
           "options": [
-            "reuse",
-            "reusable"
+            "who",
+            "where"
           ],
           "answer": 1
         },
         {
-          "stem": "The cakes ____ prepared by the class.",
+          "stem": "A guide is a person ____ helps visitors.",
           "options": [
-            "were",
-            "was"
+            "who",
+            "where"
           ],
           "answer": 0
         },
         {
-          "stem": "If we plan well, we ____ more.",
+          "stem": "At four o’clock, the tourists ____ photos near the bridge.",
           "options": [
-            "achieved",
-            "can achieve"
+            "take",
+            "were taking"
           ],
           "answer": 1
         },
         {
-          "stem": "Visitors ____ their opinions on paper.",
+          "stem": "I met a woman ____ lives beside the old fort.",
           "options": [
-            "wrote",
-            "write"
+            "who",
+            "which"
           ],
           "answer": 0
         }
@@ -2279,49 +2279,49 @@
       "model": "D",
       "skill": "grammar",
       "part": 1,
-      "title": "Grammar · Choose the correct word",
+      "title": "Grammar · Comprehensive — Units 1–3",
       "marks": 5,
       "format": "mc",
       "questions": [
         {
-          "stem": "Our teacher ____ us to observe carefully.",
+          "stem": "She ____ badminton every Friday.",
           "options": [
-            "ask",
-            "asked"
-          ],
-          "answer": 1
-        },
-        {
-          "stem": "They have ____ their drawings.",
-          "options": [
-            "finished",
-            "finish"
+            "plays",
+            "is playing"
           ],
           "answer": 0
         },
         {
-          "stem": "The artist spoke ____ to the children.",
+          "stem": "Yesterday we ____ update the app before the lesson.",
           "options": [
-            "clear",
-            "clearly"
+            "have to",
+            "had to"
           ],
           "answer": 1
         },
         {
-          "stem": "We ____ share our work tomorrow.",
+          "stem": "I ____ my tablet when the teacher entered.",
           "options": [
-            "will",
-            "were"
+            "was using",
+            "used"
           ],
           "answer": 0
         },
         {
-          "stem": "The flowers are ____ than the leaves.",
+          "stem": "This is the place ____ our team practises.",
           "options": [
-            "bright",
-            "brighter"
+            "who",
+            "where"
           ],
           "answer": 1
+        },
+        {
+          "stem": "They ____ a model at the moment.",
+          "options": [
+            "are building",
+            "build"
+          ],
+          "answer": 0
         }
       ]
     },
