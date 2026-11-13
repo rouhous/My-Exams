@@ -22,7 +22,7 @@ for(const g of [5,6])for(const [name,seed] of [['E',1],['F',2]])
  bank.push(...buildG56Mixed(g,name,seed));
 function freshG56Random(){
  const g=Number(document.getElementById('grade').value);
- const srcOrder=['A','B','C','D'].sort(()=>Math.random()-.5);const pick=[...srcOrder,...srcOrder].slice(0,8);
+ const srcOrder=['A','B','C','D'];for(let i=srcOrder.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[srcOrder[i],srcOrder[j]]=[srcOrder[j],srcOrder[i]]}const pick=[...srcOrder,...srcOrder.slice(1),srcOrder[0]];
  const parts=G56_PARTS.map((key,i)=>{
   const [skill,n]=key.split(':');
   const candidates=bank.filter(x=>x.grade===g&&'ABCD'.includes(x.model)&&x.skill===skill&&x.part===+n);
