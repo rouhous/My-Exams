@@ -1,0 +1,190 @@
+{
+  "grade": 5,
+  "model": "D",
+  "unit": "Off to the shops",
+  "status": "original_unit_content_pending_voice_regeneration",
+  "listening1": {
+    "pictureOptions": [
+      "market",
+      "apple",
+      "gift",
+      "cake",
+      "backpack",
+      "computer"
+    ],
+    "passages": [
+      "A: What are you buying from the greengrocer? B: Some fresh apples. A: Why not buy cakes instead? B: We are making a fruit salad, so I need apples and oranges. The shop assistant says these apples arrived from the farm this morning.",
+      "A: What are you looking for in the gift shop? B: A birthday present for my sister. A: Does she need a new bag? B: No, she has one already. I will buy this small gift because she enjoys collecting handmade things.",
+      "A: Shall we visit the bakery? B: Yes, I want to buy a cake. A: Is it expensive? B: The large one costs four rials, but the small one is only two. I think the small cake is enough for our family.",
+      "A: What did you buy at the sports shop? B: A new backpack for my school books. A: Why not buy those trainers? B: They cost too much. The backpack is strong, and I can use it for our class trips too.",
+      "A: Where shall we meet after shopping? B: At the market entrance. A: Not at the phone shop? B: No, that shop closes early today. We will meet beside the big market sign at five o'clock and take the bus home."
+    ],
+    "questions": [
+      {
+        "stem": "Dialogue 1",
+        "answer": 1
+      },
+      {
+        "stem": "Dialogue 2",
+        "answer": 2
+      },
+      {
+        "stem": "Dialogue 3",
+        "answer": 3
+      },
+      {
+        "stem": "Dialogue 4",
+        "answer": 4
+      },
+      {
+        "stem": "Dialogue 5",
+        "answer": 0
+      }
+    ]
+  },
+  "listening2": {
+    "passage": "Interviewer: Welcome to Shopping Smart. Today we are talking to Aisha about buying a birthday present. Where did you go?\nAisha: I went to the shopping centre with my mother on Saturday morning.\nInterviewer: How much money did you have?\nAisha: Five Omani rials. I wanted to buy something useful and save a little money for next week.\nInterviewer: Which shops did you visit?\nAisha: We looked in the toy shop first, but the games were expensive. Then we went to a bookshop.\nInterviewer: What did you finally choose?\nAisha: A storybook for my brother. It cost three rials. I think he will enjoy reading it.\nInterviewer: Did you buy anything else?\nAisha: Just a small card for half a rial. My mother reminded me to keep the receipt.\nInterviewer: What have you learned?\nAisha: It is important to compare prices and not spend all your money immediately. Next time, I will make a list before I go shopping.",
+    "questions": [
+      {
+        "stem": "When did Aisha go shopping?",
+        "options": [
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "answer": 1
+      },
+      {
+        "stem": "How much money did she have?",
+        "options": [
+          "five rials",
+          "three rials",
+          "two rials"
+        ],
+        "answer": 0
+      },
+      {
+        "stem": "Which shop did she visit after the toy shop?",
+        "options": [
+          "shoe shop",
+          "pharmacy",
+          "bookshop"
+        ],
+        "answer": 2
+      },
+      {
+        "stem": "What present did Aisha buy?",
+        "options": [
+          "a toy robot",
+          "a storybook",
+          "a football"
+        ],
+        "answer": 1
+      },
+      {
+        "stem": "What did her mother tell her to keep?",
+        "options": [
+          "a receipt",
+          "a camera",
+          "a ticket"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "vocabulary": {
+    "pictureOptions": [
+      "apple",
+      "gift",
+      "cake",
+      "backpack",
+      "market"
+    ],
+    "wordOptions": [
+      "market",
+      "backpack",
+      "apple",
+      "gift",
+      "book",
+      "cake"
+    ],
+    "questions": [
+      {
+        "stem": "Picture 1",
+        "answer": 2
+      },
+      {
+        "stem": "Picture 2",
+        "answer": 3
+      },
+      {
+        "stem": "Picture 3",
+        "answer": 5
+      },
+      {
+        "stem": "Picture 4",
+        "answer": 1
+      },
+      {
+        "stem": "Picture 5",
+        "answer": 0
+      }
+    ]
+  },
+  "reading1": {
+    "pictureOptions": [
+      "market",
+      "apple",
+      "gift",
+      "cake",
+      "backpack"
+    ],
+    "questions": [
+      {
+        "stem": "The family bought fresh apples from the greengrocer at the corner of the street.",
+        "answer": 1
+      },
+      {
+        "stem": "Huda chose a handmade gift for her friend's birthday at the small shop.",
+        "answer": 2
+      },
+      {
+        "stem": "The baker placed a beautiful cake in a box for the customer to carry home.",
+        "answer": 3
+      },
+      {
+        "stem": "Rashid asked the shop assistant how much the blue backpack cost.",
+        "answer": 4
+      },
+      {
+        "stem": "The busy market opened early and was full of people buying food and clothes.",
+        "answer": 0
+      }
+    ]
+  },
+  "reading2": {
+    "passage": "Dear Ali,\n\nYesterday I went shopping with my aunt. We wanted to buy a present for my little brother, who will be six next week. First, we visited a toy shop, but the games cost more than I wanted to spend. Then we looked in a bookshop where a friendly assistant showed us some colourful storybooks.\n\nI chose a book about animals because my brother enjoys reading about nature. It cost two rials and five hundred baisa. My aunt bought a birthday card, and the assistant placed both things in a paper bag.\n\nBefore we left, we checked the receipt. It showed the correct prices, so we thanked the assistant. On the way home, we stopped at the greengrocer's and bought some apples for our family. I still had a little pocket money left, which I put in my money box.\n\nBest wishes,\nSaeed",
+    "questions": [
+      {
+        "stem": "Saeed went shopping with his uncle.",
+        "answer": "False"
+      },
+      {
+        "stem": "The first shop they visited was a toy shop.",
+        "answer": "True"
+      },
+      {
+        "stem": "Saeed chose a book about animals.",
+        "answer": "True"
+      },
+      {
+        "stem": "They forgot to check the receipt.",
+        "answer": "False"
+      },
+      {
+        "stem": "Saeed saved the money he had left.",
+        "answer": "True"
+      }
+    ]
+  }
+}
