@@ -1,0 +1,1162 @@
+{
+  "version": "2026-11-13",
+  "basis": "Grade 7/8 official teacher or pupil scope and sequence, Grade 9 source overview; classification of individual tasks is an editorial audit, not Ministry certification",
+  "standards": {
+    "7": {
+      "units": [
+        "Entertainment",
+        "Awesome animals",
+        "Travel"
+      ],
+      "refs": [
+        "https://ict.moe.gov.om/book/PDF/7/cls7_sb_7A/files/downloads/cls7_sb_7A.pdf"
+      ],
+      "objectives": [
+        {
+          "grammar": [
+            "present perfect with since / for",
+            "present continuous for planned arrangements"
+          ],
+          "vocabulary": [
+            "jobs in entertainment",
+            "places of entertainment"
+          ]
+        },
+        {
+          "grammar": [
+            "modals of deduction",
+            "first conditional"
+          ],
+          "vocabulary": [
+            "animal body parts",
+            "animal actions"
+          ]
+        },
+        {
+          "grammar": [
+            "going to vs will",
+            "present simple for timetables"
+          ],
+          "vocabulary": [
+            "holiday equipment",
+            "transport verbs"
+          ]
+        }
+      ],
+      "exceptions": {
+        "A": {
+          "listening1": "cross_unit",
+          "listening2": "needs_rewrite",
+          "reading2": "needs_rewrite",
+          "writing1": "needs_review"
+        },
+        "B": {
+          "listening1": "cross_unit",
+          "listening2": "needs_rewrite",
+          "reading2": "needs_rewrite",
+          "writing1": "needs_review"
+        },
+        "C": {
+          "listening1": "needs_rewrite",
+          "listening2": "needs_rewrite",
+          "reading2": "needs_rewrite",
+          "writing1": "needs_review"
+        }
+      }
+    },
+    "8": {
+      "units": [
+        "Our planet",
+        "Adventure sports",
+        "Spend or save?"
+      ],
+      "refs": [
+        "https://ict.moe.gov.om/book/PDF/8/cls8_cb_8A/files/basic-html/page11.html"
+      ],
+      "objectives": [
+        {
+          "grammar": [
+            "modals of obligation",
+            "reported questions and commands"
+          ],
+          "vocabulary": [
+            "environmental protection",
+            "extreme weather"
+          ]
+        },
+        {
+          "grammar": [
+            "reflexive pronouns",
+            "past perfect"
+          ],
+          "vocabulary": [
+            "adventure sports",
+            "geography"
+          ]
+        },
+        {
+          "grammar": [
+            "zero/first conditionals",
+            "second conditional"
+          ],
+          "vocabulary": [
+            "shopping",
+            "imaginary situations"
+          ]
+        }
+      ],
+      "exceptions": {
+        "A": {
+          "listening1": "unit_theme",
+          "listening2": "needs_review",
+          "reading2": "needs_rewrite",
+          "writing2": "needs_review"
+        },
+        "B": {
+          "listening1": "cross_unit",
+          "listening2": "needs_rewrite",
+          "reading2": "needs_rewrite",
+          "writing2": "needs_review"
+        },
+        "C": {
+          "listening1": "cross_unit",
+          "listening2": "cross_unit",
+          "reading2": "cross_unit",
+          "writing2": "needs_review"
+        }
+      }
+    },
+    "9": {
+      "units": [
+        "Identity",
+        "Connections",
+        "The future is now"
+      ],
+      "refs": [
+        "https://www.omanedubooks.com/2026/08/gold-experience-oman-grade-9a.html"
+      ],
+      "objectives": [
+        {
+          "grammar": [
+            "present simple vs continuous",
+            "stative verbs",
+            "adverbs of frequency"
+          ],
+          "vocabulary": [
+            "identity",
+            "personality",
+            "family",
+            "interests"
+          ]
+        },
+        {
+          "grammar": [
+            "past simple vs continuous",
+            "verb + ing"
+          ],
+          "vocabulary": [
+            "relationships",
+            "communication",
+            "local connections"
+          ]
+        },
+        {
+          "grammar": [
+            "future forms",
+            "advice and suggestions"
+          ],
+          "vocabulary": [
+            "technology",
+            "artificial intelligence",
+            "future plans"
+          ]
+        }
+      ],
+      "exceptions": {
+        "A": {
+          "listening1": "cross_unit",
+          "listening2": "needs_review",
+          "reading2": "cross_unit",
+          "writing1": "needs_review",
+          "writing2": "cross_unit"
+        },
+        "B": {
+          "listening1": "needs_review",
+          "listening2": "unit_theme",
+          "reading2": "needs_review",
+          "writing1": "unit_theme",
+          "writing2": "cross_unit"
+        },
+        "C": {
+          "listening1": "cross_unit",
+          "listening2": "cross_unit",
+          "reading2": "cross_unit",
+          "writing1": "cross_unit",
+          "writing2": "cross_unit"
+        }
+      }
+    }
+  },
+  "records": [
+    {
+      "grade": 7,
+      "model": "A",
+      "section": "listening1",
+      "targetUnit": 1,
+      "status": "cross_unit",
+      "approved": false,
+      "reason": "موضوع من وحدة أخرى أو متعدد الوحدات"
+    },
+    {
+      "grade": 7,
+      "model": "A",
+      "section": "listening2",
+      "targetUnit": 1,
+      "status": "needs_rewrite",
+      "approved": false,
+      "reason": "يتطلب إعادة صياغة للوحدة"
+    },
+    {
+      "grade": 7,
+      "model": "A",
+      "section": "grammarvocabulary",
+      "targetUnit": 1,
+      "status": "grammar_target",
+      "approved": false,
+      "reason": "توافق لغوي مبدئي يحتاج تدقيق مفاتيح ومفردات"
+    },
+    {
+      "grade": 7,
+      "model": "A",
+      "section": "reading1",
+      "targetUnit": 1,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 7,
+      "model": "A",
+      "section": "reading2",
+      "targetUnit": 1,
+      "status": "needs_rewrite",
+      "approved": false,
+      "reason": "يتطلب إعادة صياغة للوحدة"
+    },
+    {
+      "grade": 7,
+      "model": "A",
+      "section": "writing1",
+      "targetUnit": 1,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 7,
+      "model": "A",
+      "section": "writing2",
+      "targetUnit": 1,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 7,
+      "model": "B",
+      "section": "listening1",
+      "targetUnit": 2,
+      "status": "cross_unit",
+      "approved": false,
+      "reason": "موضوع من وحدة أخرى أو متعدد الوحدات"
+    },
+    {
+      "grade": 7,
+      "model": "B",
+      "section": "listening2",
+      "targetUnit": 2,
+      "status": "needs_rewrite",
+      "approved": false,
+      "reason": "يتطلب إعادة صياغة للوحدة"
+    },
+    {
+      "grade": 7,
+      "model": "B",
+      "section": "grammarvocabulary",
+      "targetUnit": 2,
+      "status": "grammar_target",
+      "approved": false,
+      "reason": "توافق لغوي مبدئي يحتاج تدقيق مفاتيح ومفردات"
+    },
+    {
+      "grade": 7,
+      "model": "B",
+      "section": "reading1",
+      "targetUnit": 2,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 7,
+      "model": "B",
+      "section": "reading2",
+      "targetUnit": 2,
+      "status": "needs_rewrite",
+      "approved": false,
+      "reason": "يتطلب إعادة صياغة للوحدة"
+    },
+    {
+      "grade": 7,
+      "model": "B",
+      "section": "writing1",
+      "targetUnit": 2,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 7,
+      "model": "B",
+      "section": "writing2",
+      "targetUnit": 2,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 7,
+      "model": "C",
+      "section": "listening1",
+      "targetUnit": 3,
+      "status": "needs_rewrite",
+      "approved": false,
+      "reason": "يتطلب إعادة صياغة للوحدة"
+    },
+    {
+      "grade": 7,
+      "model": "C",
+      "section": "listening2",
+      "targetUnit": 3,
+      "status": "needs_rewrite",
+      "approved": false,
+      "reason": "يتطلب إعادة صياغة للوحدة"
+    },
+    {
+      "grade": 7,
+      "model": "C",
+      "section": "grammarvocabulary",
+      "targetUnit": 3,
+      "status": "grammar_target",
+      "approved": false,
+      "reason": "توافق لغوي مبدئي يحتاج تدقيق مفاتيح ومفردات"
+    },
+    {
+      "grade": 7,
+      "model": "C",
+      "section": "reading1",
+      "targetUnit": 3,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 7,
+      "model": "C",
+      "section": "reading2",
+      "targetUnit": 3,
+      "status": "needs_rewrite",
+      "approved": false,
+      "reason": "يتطلب إعادة صياغة للوحدة"
+    },
+    {
+      "grade": 7,
+      "model": "C",
+      "section": "writing1",
+      "targetUnit": 3,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 7,
+      "model": "C",
+      "section": "writing2",
+      "targetUnit": 3,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 7,
+      "model": "D",
+      "section": "listening1",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 7,
+      "model": "D",
+      "section": "listening2",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 7,
+      "model": "D",
+      "section": "grammarvocabulary",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 7,
+      "model": "D",
+      "section": "reading1",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 7,
+      "model": "D",
+      "section": "reading2",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 7,
+      "model": "D",
+      "section": "writing1",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 7,
+      "model": "D",
+      "section": "writing2",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 8,
+      "model": "A",
+      "section": "listening1",
+      "targetUnit": 1,
+      "status": "unit_theme",
+      "approved": false,
+      "reason": "موضوع مناسب للوحدة (لم يُعتمد كليًا)"
+    },
+    {
+      "grade": 8,
+      "model": "A",
+      "section": "listening2",
+      "targetUnit": 1,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 8,
+      "model": "A",
+      "section": "grammarvocabulary",
+      "targetUnit": 1,
+      "status": "grammar_target",
+      "approved": false,
+      "reason": "توافق لغوي مبدئي يحتاج تدقيق مفاتيح ومفردات"
+    },
+    {
+      "grade": 8,
+      "model": "A",
+      "section": "reading1",
+      "targetUnit": 1,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 8,
+      "model": "A",
+      "section": "reading2",
+      "targetUnit": 1,
+      "status": "needs_rewrite",
+      "approved": false,
+      "reason": "يتطلب إعادة صياغة للوحدة"
+    },
+    {
+      "grade": 8,
+      "model": "A",
+      "section": "writing1",
+      "targetUnit": 1,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 8,
+      "model": "A",
+      "section": "writing2",
+      "targetUnit": 1,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 8,
+      "model": "B",
+      "section": "listening1",
+      "targetUnit": 2,
+      "status": "cross_unit",
+      "approved": false,
+      "reason": "موضوع من وحدة أخرى أو متعدد الوحدات"
+    },
+    {
+      "grade": 8,
+      "model": "B",
+      "section": "listening2",
+      "targetUnit": 2,
+      "status": "needs_rewrite",
+      "approved": false,
+      "reason": "يتطلب إعادة صياغة للوحدة"
+    },
+    {
+      "grade": 8,
+      "model": "B",
+      "section": "grammarvocabulary",
+      "targetUnit": 2,
+      "status": "grammar_target",
+      "approved": false,
+      "reason": "توافق لغوي مبدئي يحتاج تدقيق مفاتيح ومفردات"
+    },
+    {
+      "grade": 8,
+      "model": "B",
+      "section": "reading1",
+      "targetUnit": 2,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 8,
+      "model": "B",
+      "section": "reading2",
+      "targetUnit": 2,
+      "status": "needs_rewrite",
+      "approved": false,
+      "reason": "يتطلب إعادة صياغة للوحدة"
+    },
+    {
+      "grade": 8,
+      "model": "B",
+      "section": "writing1",
+      "targetUnit": 2,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 8,
+      "model": "B",
+      "section": "writing2",
+      "targetUnit": 2,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 8,
+      "model": "C",
+      "section": "listening1",
+      "targetUnit": 3,
+      "status": "cross_unit",
+      "approved": false,
+      "reason": "موضوع من وحدة أخرى أو متعدد الوحدات"
+    },
+    {
+      "grade": 8,
+      "model": "C",
+      "section": "listening2",
+      "targetUnit": 3,
+      "status": "cross_unit",
+      "approved": false,
+      "reason": "موضوع من وحدة أخرى أو متعدد الوحدات"
+    },
+    {
+      "grade": 8,
+      "model": "C",
+      "section": "grammarvocabulary",
+      "targetUnit": 3,
+      "status": "grammar_target",
+      "approved": false,
+      "reason": "توافق لغوي مبدئي يحتاج تدقيق مفاتيح ومفردات"
+    },
+    {
+      "grade": 8,
+      "model": "C",
+      "section": "reading1",
+      "targetUnit": 3,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 8,
+      "model": "C",
+      "section": "reading2",
+      "targetUnit": 3,
+      "status": "cross_unit",
+      "approved": false,
+      "reason": "موضوع من وحدة أخرى أو متعدد الوحدات"
+    },
+    {
+      "grade": 8,
+      "model": "C",
+      "section": "writing1",
+      "targetUnit": 3,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 8,
+      "model": "C",
+      "section": "writing2",
+      "targetUnit": 3,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 8,
+      "model": "D",
+      "section": "listening1",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 8,
+      "model": "D",
+      "section": "listening2",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 8,
+      "model": "D",
+      "section": "grammarvocabulary",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 8,
+      "model": "D",
+      "section": "reading1",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 8,
+      "model": "D",
+      "section": "reading2",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 8,
+      "model": "D",
+      "section": "writing1",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 8,
+      "model": "D",
+      "section": "writing2",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "A",
+      "section": "listening1",
+      "targetUnit": 1,
+      "status": "cross_unit",
+      "approved": false,
+      "reason": "موضوع من وحدة أخرى أو متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "A",
+      "section": "listening2",
+      "targetUnit": 1,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 9,
+      "model": "A",
+      "section": "grammarvocabulary",
+      "targetUnit": 1,
+      "status": "grammar_target",
+      "approved": false,
+      "reason": "توافق لغوي مبدئي يحتاج تدقيق مفاتيح ومفردات"
+    },
+    {
+      "grade": 9,
+      "model": "A",
+      "section": "reading1",
+      "targetUnit": 1,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 9,
+      "model": "A",
+      "section": "reading2",
+      "targetUnit": 1,
+      "status": "cross_unit",
+      "approved": false,
+      "reason": "موضوع من وحدة أخرى أو متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "A",
+      "section": "writing1",
+      "targetUnit": 1,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 9,
+      "model": "A",
+      "section": "writing2",
+      "targetUnit": 1,
+      "status": "cross_unit",
+      "approved": false,
+      "reason": "موضوع من وحدة أخرى أو متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "B",
+      "section": "listening1",
+      "targetUnit": 2,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 9,
+      "model": "B",
+      "section": "listening2",
+      "targetUnit": 2,
+      "status": "unit_theme",
+      "approved": false,
+      "reason": "موضوع مناسب للوحدة (لم يُعتمد كليًا)"
+    },
+    {
+      "grade": 9,
+      "model": "B",
+      "section": "grammarvocabulary",
+      "targetUnit": 2,
+      "status": "grammar_target",
+      "approved": false,
+      "reason": "توافق لغوي مبدئي يحتاج تدقيق مفاتيح ومفردات"
+    },
+    {
+      "grade": 9,
+      "model": "B",
+      "section": "reading1",
+      "targetUnit": 2,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 9,
+      "model": "B",
+      "section": "reading2",
+      "targetUnit": 2,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 9,
+      "model": "B",
+      "section": "writing1",
+      "targetUnit": 2,
+      "status": "unit_theme",
+      "approved": false,
+      "reason": "موضوع مناسب للوحدة (لم يُعتمد كليًا)"
+    },
+    {
+      "grade": 9,
+      "model": "B",
+      "section": "writing2",
+      "targetUnit": 2,
+      "status": "cross_unit",
+      "approved": false,
+      "reason": "موضوع من وحدة أخرى أو متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "C",
+      "section": "listening1",
+      "targetUnit": 3,
+      "status": "cross_unit",
+      "approved": false,
+      "reason": "موضوع من وحدة أخرى أو متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "C",
+      "section": "listening2",
+      "targetUnit": 3,
+      "status": "cross_unit",
+      "approved": false,
+      "reason": "موضوع من وحدة أخرى أو متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "C",
+      "section": "grammarvocabulary",
+      "targetUnit": 3,
+      "status": "grammar_target",
+      "approved": false,
+      "reason": "توافق لغوي مبدئي يحتاج تدقيق مفاتيح ومفردات"
+    },
+    {
+      "grade": 9,
+      "model": "C",
+      "section": "reading1",
+      "targetUnit": 3,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 9,
+      "model": "C",
+      "section": "reading2",
+      "targetUnit": 3,
+      "status": "cross_unit",
+      "approved": false,
+      "reason": "موضوع من وحدة أخرى أو متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "C",
+      "section": "writing1",
+      "targetUnit": 3,
+      "status": "cross_unit",
+      "approved": false,
+      "reason": "موضوع من وحدة أخرى أو متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "C",
+      "section": "writing2",
+      "targetUnit": 3,
+      "status": "cross_unit",
+      "approved": false,
+      "reason": "موضوع من وحدة أخرى أو متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "D",
+      "section": "listening1",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "D",
+      "section": "listening2",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "D",
+      "section": "grammarvocabulary",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "D",
+      "section": "reading1",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "D",
+      "section": "reading2",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "D",
+      "section": "writing1",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "D",
+      "section": "writing2",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "E",
+      "section": "listening1",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "E",
+      "section": "listening2",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "E",
+      "section": "grammarvocabulary",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "E",
+      "section": "reading1",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "E",
+      "section": "reading2",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "E",
+      "section": "writing1",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "E",
+      "section": "writing2",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "F",
+      "section": "listening1",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "F",
+      "section": "listening2",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "F",
+      "section": "grammarvocabulary",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "F",
+      "section": "reading1",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "F",
+      "section": "reading2",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "F",
+      "section": "writing1",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "F",
+      "section": "writing2",
+      "targetUnit": null,
+      "status": "comprehensive",
+      "approved": false,
+      "reason": "شامل متعدد الوحدات"
+    },
+    {
+      "grade": 9,
+      "model": "G",
+      "section": "listening1",
+      "targetUnit": null,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 9,
+      "model": "G",
+      "section": "listening2",
+      "targetUnit": null,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 9,
+      "model": "G",
+      "section": "grammarvocabulary",
+      "targetUnit": null,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 9,
+      "model": "G",
+      "section": "reading1",
+      "targetUnit": null,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 9,
+      "model": "G",
+      "section": "reading2",
+      "targetUnit": null,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 9,
+      "model": "G",
+      "section": "writing1",
+      "targetUnit": null,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    },
+    {
+      "grade": 9,
+      "model": "G",
+      "section": "writing2",
+      "targetUnit": null,
+      "status": "needs_review",
+      "approved": false,
+      "reason": "يتطلب تدقيقًا تربويًا"
+    }
+  ],
+  "totals": {
+    "7": {
+      "parts": 28,
+      "verifiedFullModels": 0
+    },
+    "8": {
+      "parts": 28,
+      "verifiedFullModels": 0
+    },
+    "9": {
+      "parts": 49,
+      "verifiedFullModels": 0
+    }
+  },
+  "note": "Unit-specific labels for whole exams are withheld until all 7 parts meet curriculum scope, including listening scripts and pictures; natural voice existing files are retained without silently editing transcripts."
+}
