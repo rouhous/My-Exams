@@ -30,5 +30,24 @@
   ],
   "grade9_all_models_listening_covered": true,
   "grade9_curriculum_unit_alignment_approved": false,
-  "grade9_offline_device_test_passed": false
+  "grade9_offline_device_test_passed": false,
+  "unit_alignment_audit_2026_11_13": {
+    "grades": [
+      7,
+      8,
+      9
+    ],
+    "full_unit_models_certified": 0,
+    "review_file": "UNIT_ALIGNMENT_G7_G8_G9_REVIEW_2026-11-13.json",
+    "curriculum_reference": "curriculum_alignment_detailed.json",
+    "status": "section-by-section review in progress; mixed practice remains available"
+  },
+  "grade7_8_natural_audio": {
+    "expected_tracks": 16,
+    "status": "GitHub Actions generation underway; not yet verified"
+  },
+  "grade5_6_natural_audio": {
+    "expected_tracks": 16,
+    "status": "GitHub Actions generation underway; not yet verified"
+  }
 }
