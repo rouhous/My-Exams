@@ -1,0 +1,37 @@
+{
+  "technical_status": "passed",
+  "grades": {
+    "5": {
+      "fixed_models": 4,
+      "mixed_models": 2,
+      "random_mode": true,
+      "base_activities": 32,
+      "natural_mp3": 8
+    },
+    "6": {
+      "fixed_models": 4,
+      "mixed_models": 2,
+      "random_mode": true,
+      "base_activities": 32,
+      "natural_mp3": 8
+    },
+    "7": {
+      "fixed_models": 4,
+      "mixed_models": 2,
+      "random_mode": true,
+      "base_activities": 28,
+      "natural_mp3": 8
+    },
+    "8": {
+      "fixed_models": 4,
+      "mixed_models": 2,
+      "random_mode": true,
+      "base_activities": 28,
+      "natural_mp3": 8
+    }
+  },
+  "errors": [],
+  "unit_alignment_approved": false,
+  "phone_offline_tested": false,
+  "note": "A complete technical audit does not certify conformity to every textbook unit or originality of mixed model items."
+}
