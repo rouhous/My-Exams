@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-13",
+  "version": "2026-11-13-v2",
   "type": "curriculum_review_not_certification",
   "sources": [
     "https://ict.moe.gov.om/book/PDF/5/cls5_cb_5A/files/basic-html/page9.html",
@@ -93,11 +93,19 @@
           "fullyApproved": false
         },
         "D": {
-          "grammar": "comprehensive_targeted",
-          "listening": "art_event_only",
-          "reading": "art_event_only",
-          "writing": "art_event_only",
-          "fullyApproved": false
+          "status": "comprehensive_mixed_from_A_B_C",
+          "sourceBySection": [
+            "A",
+            "B",
+            "C",
+            "D-grammar",
+            "A",
+            "B",
+            "C",
+            "A"
+          ],
+          "fullyApproved": false,
+          "reason": "Mixed source content is correctly composed; individual source unit alignment remains under review"
         }
       }
     }
@@ -113,6 +121,7 @@
     "Corrected eight real Grammar tasks in Grade 5–6 live standalone exams",
     "Added fixed mixed E/F and on-demand randomized complete 40-mark exams",
     "Confirmed eight natural listening MP3 per grade in GitHub",
-    "Set automated exam/media/JS QA workflow"
+    "Set automated exam/media/JS QA workflow",
+    "Rebuilt Grade 6 model D as mixed full-semester paper and archived former D"
   ]
 }
