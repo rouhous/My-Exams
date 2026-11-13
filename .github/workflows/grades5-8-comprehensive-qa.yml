@@ -5,6 +5,12 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/grades5-8-comprehensive-qa.yml'
+      - 'scripts/audit_grades5_8_complete.py'
+      - 'grades5-6/audio-natural/**'
+      - 'grades5-6/activities.json'
+      - 'grades5-6/index.html'
+      - 'grades7-8/activities.json'
+      - 'grades7-8/index.html'
 permissions:
   contents: write
 jobs:
