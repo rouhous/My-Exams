@@ -51,7 +51,7 @@ const { chromium, devices } = require('playwright');
  await page.selectOption('#grade','5');
  await page.selectOption('#model','E');
  await page.click('#packDownload');
- await page.waitForFunction(()=>document.querySelector('#packProgress').textContent.includes('اكتمل التنزيل'),{timeout:90000});
+ await page.waitForFunction(()=>document.querySelector('#packProgress').textContent.includes('اكتمل التنزيل'),null,{timeout:120000});
  const m=await page.locator('#packProgress').textContent();
  console.log('Offline cache progress',m);
  await context.setOffline(true);
