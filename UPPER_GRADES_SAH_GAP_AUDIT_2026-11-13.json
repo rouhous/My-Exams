@@ -144,117 +144,39 @@
       "models": [
         {
           "model": "A",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "stem": "When did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "stem": "On which day was the main session arranged?"
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 2
+          "editorialFindings": 0
         },
         {
           "model": "B",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "stem": "When did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "stem": "On which day was the main session arranged?"
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 2
+          "editorialFindings": 0
         },
         {
           "model": "C",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "stem": "When did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "stem": "On which day was the main session arranged?"
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 2
+          "editorialFindings": 0
         },
         {
           "model": "D",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "stem": "When did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "stem": "On which day was the main session arranged?"
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 2
+          "editorialFindings": 0
         },
         {
           "model": "E",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "stem": "When did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "stem": "On which day was the main session arranged?"
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 2
+          "editorialFindings": 0
         },
         {
           "model": "F",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "stem": "When did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "stem": "On which day was the main session arranged?"
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 2
+          "editorialFindings": 0
         }
       ]
     },
@@ -307,10 +229,10 @@
   "summary": {
     "modelsAudited": 24,
     "releaseBlockers": 6,
-    "nonBlockingFindings": 12,
+    "nonBlockingFindings": 0,
     "allUpperGradesReady": false,
     "grade11CorePilotOfficiallyCompliant": false,
     "repeatedCrossTrackTextNeedsRevision": true
   },
-  "revisionNote": "Resolved repeated within-section questions, unsupported Grade 11 Elective budget/day answers, and Grade 12 Core vocabulary and first listening word counts. Remaining cross-track reuse and source-to-unit mapping still need editorial review."
+  "revisionNote": "Resolved local repeated objective stems and unsupported literal short-answer keys across 11 elective / 12 core / 12 elective. Remaining issues: 11 Core pilot has 5 sections not 9; cross-track passage reuse, literary variety, official unit mapping, and natural MP3 are not approved."
 }
