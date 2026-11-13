@@ -1,0 +1,45 @@
+name: Audit original Grade 5 and 6 unit practice
+on:
+  push:
+    branches: [grades5-6-original-unit-rebuild]
+    paths:
+      - '.github/workflows/qa-original-g56.yml'
+      - 'grades5-6/audio-natural/**'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate curriculum model sections, original audio, matching images and answer keys
+        run: |
+          python3 - <<'PY'
+          import json,pathlib
+          root=pathlib.Path('grades5-6')
+          db=json.load(open(root/'activities.json'))['activities']
+          assert len(db)==64,len(db)
+          for grade in (5,6):
+              for model in 'ABCD':
+                  tasks=[t for t in db if t['grade']==grade and t['model']==model]
+                  assert len(tasks)==8,(grade,model,len(tasks))
+                  assert sum(t['marks'] for t in tasks)==40
+                  assert sum(t['skill']=='listening' for t in tasks)==2
+                  for x in tasks:
+                      if x['skill']=='listening':
+                          if x['part']==1:
+                              assert len(x['passages'])==5 and len(x['pictureOptions'])==6
+                              for q in x['questions']: assert 0<=q['answer']<6
+                          else: assert len(x['questions'])==5
+                          assert (root/x['audio']).is_file(),x['id']
+                          media=x.get('mediaId',x['id'])
+                          f=root/'audio-natural'/f'{media}.mp3'
+                          assert f.is_file() and f.stat().st_size>10000,f
+                      for pic in x.get('pictureOptions',[]):
+                          assert (root/'images'/f'{pic}.svg').is_file(),(grade,model,pic)
+                      if x['skill']=='grammar':assert len(x['questions'])==5
+                      if x['skill']=='writing':assert x['prompt'] and x['minWords'] in (40,50)
+                  if grade==6 and model=='D':
+                      assert len({t.get('sourceModel','D') for t in tasks})>=3
+          print('PASS Grades 5–6 complete 8 source papers, 16 natural audio tracks, 40 marks each')
+          PY
