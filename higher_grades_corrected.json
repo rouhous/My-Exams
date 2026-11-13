@@ -7709,6 +7709,16 @@
               "type": "short"
             },
             {
+              "type": "short",
+              "stem": "What aspect of the programme changed after community members made suggestions?",
+              "answer": "the timetable"
+            },
+            {
+              "type": "short",
+              "stem": "Which three practical issues did the group discuss with the supervisor?",
+              "answer": "safety, cost and accessibility"
+            },
+            {
               "type": "mc",
               "stem": "Why did organisers ask local people for their opinions?",
               "options": [
@@ -7747,26 +7757,6 @@
                 "A sports competition schedule"
               ],
               "answer": 0
-            },
-            {
-              "stem": "When did the project begin?",
-              "options": [
-                "March",
-                "October",
-                "January"
-              ],
-              "answer": 1,
-              "type": "mc"
-            },
-            {
-              "stem": "On which day was the main session arranged?",
-              "options": [
-                "Tuesday",
-                "Monday",
-                "Friday"
-              ],
-              "answer": 0,
-              "type": "mc"
             }
           ],
           "script": false,
@@ -8386,6 +8376,16 @@
               "type": "short"
             },
             {
+              "type": "short",
+              "stem": "What aspect of the programme changed after community members made suggestions?",
+              "answer": "the timetable"
+            },
+            {
+              "type": "short",
+              "stem": "Which three practical issues did the group discuss with the supervisor?",
+              "answer": "safety, cost and accessibility"
+            },
+            {
               "type": "mc",
               "stem": "Why did organisers ask local people for their opinions?",
               "options": [
@@ -8424,26 +8424,6 @@
                 "A sports competition schedule"
               ],
               "answer": 0
-            },
-            {
-              "stem": "When did the project begin?",
-              "options": [
-                "November",
-                "January",
-                "March"
-              ],
-              "answer": 0,
-              "type": "mc"
-            },
-            {
-              "stem": "On which day was the main session arranged?",
-              "options": [
-                "Monday",
-                "Friday",
-                "Wednesday"
-              ],
-              "answer": 2,
-              "type": "mc"
             }
           ],
           "script": false,
@@ -9063,6 +9043,16 @@
               "type": "short"
             },
             {
+              "type": "short",
+              "stem": "What aspect of the programme changed after community members made suggestions?",
+              "answer": "the timetable"
+            },
+            {
+              "type": "short",
+              "stem": "Which three practical issues did the group discuss with the supervisor?",
+              "answer": "safety, cost and accessibility"
+            },
+            {
               "type": "mc",
               "stem": "Why did organisers ask local people for their opinions?",
               "options": [
@@ -9101,26 +9091,6 @@
                 "A sports competition schedule"
               ],
               "answer": 0
-            },
-            {
-              "stem": "When did the project begin?",
-              "options": [
-                "January",
-                "March",
-                "September"
-              ],
-              "answer": 2,
-              "type": "mc"
-            },
-            {
-              "stem": "On which day was the main session arranged?",
-              "options": [
-                "Friday",
-                "Thursday",
-                "Monday"
-              ],
-              "answer": 1,
-              "type": "mc"
             }
           ],
           "script": false,
@@ -9740,6 +9710,16 @@
               "type": "short"
             },
             {
+              "type": "short",
+              "stem": "What aspect of the programme changed after community members made suggestions?",
+              "answer": "the timetable"
+            },
+            {
+              "type": "short",
+              "stem": "Which three practical issues did the group discuss with the supervisor?",
+              "answer": "safety, cost and accessibility"
+            },
+            {
               "type": "mc",
               "stem": "Why did organisers ask local people for their opinions?",
               "options": [
@@ -9778,26 +9758,6 @@
                 "A sports competition schedule"
               ],
               "answer": 0
-            },
-            {
-              "stem": "When did the project begin?",
-              "options": [
-                "March",
-                "December",
-                "January"
-              ],
-              "answer": 1,
-              "type": "mc"
-            },
-            {
-              "stem": "On which day was the main session arranged?",
-              "options": [
-                "Saturday",
-                "Monday",
-                "Friday"
-              ],
-              "answer": 0,
-              "type": "mc"
             }
           ],
           "script": false,
@@ -10407,6 +10367,16 @@
               "type": "short"
             },
             {
+              "type": "short",
+              "stem": "What aspect of the programme changed after community members made suggestions?",
+              "answer": "the timetable"
+            },
+            {
+              "type": "short",
+              "stem": "Which three practical issues did the group discuss with the supervisor?",
+              "answer": "safety, cost and accessibility"
+            },
+            {
               "type": "mc",
               "stem": "Why did organisers ask local people for their opinions?",
               "options": [
@@ -10445,26 +10415,6 @@
                 "A sports competition schedule"
               ],
               "answer": 0
-            },
-            {
-              "stem": "When did the project begin?",
-              "options": [
-                "October",
-                "January",
-                "March"
-              ],
-              "answer": 0,
-              "type": "mc"
-            },
-            {
-              "stem": "On which day was the main session arranged?",
-              "options": [
-                "Monday",
-                "Friday",
-                "Tuesday"
-              ],
-              "answer": 2,
-              "type": "mc"
             }
           ],
           "script": false,
@@ -10968,6 +10918,16 @@
               "type": "short"
             },
             {
+              "type": "short",
+              "stem": "What aspect of the programme changed after community members made suggestions?",
+              "answer": "the timetable"
+            },
+            {
+              "type": "short",
+              "stem": "Which three practical issues did the group discuss with the supervisor?",
+              "answer": "safety, cost and accessibility"
+            },
+            {
               "type": "mc",
               "stem": "Why did organisers ask local people for their opinions?",
               "options": [
@@ -11006,26 +10966,6 @@
                 "A sports competition schedule"
               ],
               "answer": 0
-            },
-            {
-              "stem": "When did the project begin?",
-              "options": [
-                "January",
-                "March",
-                "November"
-              ],
-              "answer": 2,
-              "type": "mc"
-            },
-            {
-              "stem": "On which day was the main session arranged?",
-              "options": [
-                "Friday",
-                "Wednesday",
-                "Monday"
-              ],
-              "answer": 1,
-              "type": "mc"
             }
           ],
           "script": false,
