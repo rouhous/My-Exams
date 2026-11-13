@@ -41,9 +41,20 @@ jobs:
                       if isinstance(q['answer'],int):
                           assert 0<=q['answer']<len(q['options'])
               assert x['writing1']['prompt'] and x['writing2']['prompt']
-          assert m[4]['listening']['passage']==m[1]['listening']['passage']
-          assert m[5]['listening']['passage']==m[1]['listening']['passage']
-          print('All six provisional Grade 10 models structurally valid.')
+          expected={'A':('new media','social'), 'B':('climate change','greenhouse'), 'C':('renewable energy','solar'), 'D':('archaeological','history')}
+          for model in m[:4]:
+              theme,token=expected[model['id']]
+              assert theme in model['reading2']['passage'].lower() or token in model['reading2']['passage'].lower(), ('wrong reading2 unit',model['id'])
+              keys=[q['answer'] for q in model['reading1']['questions'] if isinstance(q['answer'],int)]
+              assert len(set(keys))>=3, ('all reading1 keys clustered',model['id'])
+          pools={x['id']:x for x in m[:4]}
+          sources=d['metadata']['comprehensiveSourceMap']
+          assert len(sources)==2
+          for mixed in m[4:]:
+              assert set(sources[mixed['id']].values())==set('ABCD')
+              for skill,source in sources[mixed['id']].items():
+                  assert mixed[skill]==pools[source][skill], ('mixed passage/key mismatch',mixed['id'],skill)
+          print('All six Grade 10 models structurally valid; Reading 2 aligned and E/F provenance checked.')
           PY
       - name: Run actual mobile-width browser checks
         run: |
