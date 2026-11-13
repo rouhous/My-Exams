@@ -1,0 +1,61 @@
+name: Grade 11 Core natural listening pilot
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/grade11-core-natural-audio.yml'
+      - 'grade11/core/data.json'
+      - 'scripts/generate_grade11_core_audio.py'
+concurrency:
+  group: grade11-core-audio-latest
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install voices and audio validation tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          pip install edge-tts mutagen
+      - name: Generate natural listening for four unique unit themes and two mixed models
+        run: python scripts/generate_grade11_core_audio.py
+      - name: Validate and safely publish audio against the latest bank
+        run: |
+          python - <<'PY'
+          import json,pathlib,hashlib
+          from mutagen.mp3 import MP3
+          root=pathlib.Path('grade11/core/audio')
+          manifest=json.loads((root/'manifest.json').read_text())
+          models=json.loads(pathlib.Path('grade11/core/data.json').read_text())['models']
+          assert len(manifest)==6
+          for model in models:
+              entry=manifest[model['id']]
+              f=root/entry['mp3']
+              assert f.is_file() and f.stat().st_size>20000 and MP3(f).info.length>60
+              assert entry['passage_sha256']==hashlib.sha256(model['listening']['passage'].encode()).hexdigest()
+          print('All six Grade 11 Core model audio sources validated; E/F reuse their matching source where applicable.')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            local_data=$(sha256sum grade11/core/data.json | cut -d' ' -f1)
+            remote_data=$(git show origin/main:grade11/core/data.json | sha256sum | cut -d' ' -f1)
+            if [ "$local_data" != "$remote_data" ]; then echo "Grade 11 Core text changed: abort stale audio" >&2;exit 1;fi
+            git reset --mixed origin/main
+            git add grade11/core/audio/
+            if git diff --cached --quiet;then exit 0;fi
+            git commit -m "Archive script-verified natural Grade 11 Core listening MP3"
+            if git push origin HEAD:main;then exit 0;fi
+            sleep 4
+          done
+          exit 1
