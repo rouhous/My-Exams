@@ -1,0 +1,56 @@
+name: Generate Grade 9 C and G neural listening MP3
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/generate_kokoro_g9.py'
+      - '.github/workflows/neural-grade9.yml'
+      - 'grade9/teacher/natural_scripts_BCD_v2.json'
+permissions:
+  contents: write
+concurrency:
+  group: kokoro-g9
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install offline neural speech and audio encoder
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq espeak-ng ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install 'kokoro>=0.9.2' soundfile numpy
+      - name: Generate every distinct Grade 9 C and G passage
+        env:
+          HF_HUB_DISABLE_TELEMETRY: "1"
+        run: python scripts/generate_kokoro_g9.py
+      - name: Verify MP3 count, decoder and duration
+        run: |
+          python - <<'PY'
+          import json,pathlib,subprocess
+          src=json.load(open('grade9/teacher/natural_scripts_BCD_v2.json'))['segments']
+          tasks=[s for s in src if s['model'] in ('C','D')]
+          for s in tasks:
+              f=pathlib.Path(f"audio-natural/g9/{s['model'].lower()}/{s['section']}/{s['segment']}.mp3")
+              assert f.exists() and f.stat().st_size>1024,str(f)
+              r=subprocess.run(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nokey=1:noprint_wrappers=1',str(f)],capture_output=True,text=True,check=True)
+              assert float(r.stdout.strip())>0.6,str(f)
+          print('Validated',len(tasks),'neural MP3 files')
+          PY
+      - name: Commit complete audio library into My Exams repository
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add audio-natural/g9/c audio-natural/g9/d
+          if ! git diff --cached --quiet; then
+            git commit -m 'Archive 40 natural neural Grade 9 C and G listening segments'
+            git push origin HEAD:main
+          fi
