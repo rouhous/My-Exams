@@ -3,8 +3,8 @@
     "id": "g7-a",
     "grade": 7,
     "model": "A",
-    "title": "A Library on Wheels",
-    "theme": "a mobile library",
+    "title": "Entertainment — Original practice",
+    "theme": "Entertainment",
     "durationMinutes": 120,
     "totalMarks": 40,
     "semester": 1,
@@ -15,85 +15,85 @@
         "marks": 5,
         "items": [
           {
-            "stem": "Which place will the students visit?",
+            "stem": "Which instrument will the pupil play in the show?",
             "options": [
-              "library",
-              "park",
-              "museum"
-            ],
-            "answer": 2,
-            "script": "Our class is planning a visit next week. Some classmates wanted to spend the morning in a park, and others suggested the library. The teacher has booked a guided tour of the museum instead. We will learn about old objects and take notes for a project.",
-            "images": [
-              "book-open",
-              "trees",
-              "landmark"
-            ]
-          },
-          {
-            "stem": "What will the speaker bring?",
-            "options": [
-              "camera",
-              "umbrella",
-              "bottle"
-            ],
-            "answer": 2,
-            "script": "I am getting ready for a long walk with my friends on Saturday. I have packed comfortable shoes and a small snack. My mother suggested taking a camera, but I already have my phone. The most important thing in my bag is my water bottle.",
-            "images": [
-              "camera",
-              "umbrella",
-              "glass-water"
-            ]
-          },
-          {
-            "stem": "Which activity did the girl choose?",
-            "options": [
-              "cycling",
-              "painting",
-              "reading"
+              "guitar",
+              "drum",
+              "piano"
             ],
             "answer": 1,
-            "script": "Our school is offering several clubs this term. I enjoy books, but I already read every evening. I also considered the cycling group, although I do not own a bicycle. I finally chose the painting club because I want to learn to use watercolours.",
             "images": [
-              "bike",
-              "palette",
+              "guitar",
+              "drum",
+              "piano"
+            ],
+            "script": "Our school is organising a music show next Friday. I practised the guitar last year, and I can play a little piano, but neither instrument is part of my performance this time. I have joined the percussion group, so I will play the drum on stage."
+          },
+          {
+            "stem": "What item did the stage manager forget?",
+            "options": [
+              "microphone",
+              "camera",
               "book"
-            ]
-          },
-          {
-            "stem": "Where will the group meet?",
-            "options": [
-              "hall",
-              "garden",
-              "classroom"
-            ],
-            "answer": 1,
-            "script": "Please listen carefully to the announcement. Our science group usually meets in the classroom, and last week we used the school hall. Tomorrow we need to collect leaves and examine plants, so everyone should meet in the garden behind the main building at nine.",
-            "images": [
-              "warehouse",
-              "flower-2",
-              "school"
-            ]
-          },
-          {
-            "stem": "Which item has the boy repaired?",
-            "options": [
-              "lamp",
-              "clock",
-              "radio"
             ],
             "answer": 0,
-            "script": "My grandfather taught me to check simple problems before throwing things away. Yesterday I found an old radio and a broken clock in the cupboard. I could not repair either one. However, I changed a wire in our desk lamp, and now it works perfectly.",
             "images": [
-              "lamp-desk",
-              "clock-3",
-              "radio"
-            ]
+              "mic",
+              "camera",
+              "book"
+            ],
+            "script": "The drama club arrived early for its rehearsal. Everyone had brought their scripts, and a parent had already prepared a camera for the photographs. However, the stage manager discovered that the microphone was still in the classroom, so she asked someone to collect it."
+          },
+          {
+            "stem": "Where will the final performance take place?",
+            "options": [
+              "school",
+              "library",
+              "museum"
+            ],
+            "answer": 0,
+            "images": [
+              "school",
+              "library",
+              "landmark"
+            ],
+            "script": "The young performers first wanted to use the public library, but the room was too small for their audience. The museum offered an outdoor space, although the weather might change. In the end, the head teacher agreed to let them perform in the school hall."
+          },
+          {
+            "stem": "Which activity did the student choose after school?",
+            "options": [
+              "painting",
+              "football",
+              "playing guitar"
+            ],
+            "answer": 2,
+            "images": [
+              "palette",
+              "football",
+              "guitar"
+            ],
+            "script": "I tried painting in the art club and watched my friends play football, but I wanted an activity that involved music. My cousin showed me how to play a few chords, and I have now joined the guitar club, where we rehearse twice a week."
+          },
+          {
+            "stem": "How will the pupils travel to the music festival?",
+            "options": [
+              "bus",
+              "train",
+              "plane"
+            ],
+            "answer": 0,
+            "images": [
+              "bus",
+              "train-front",
+              "plane"
+            ],
+            "script": "Our class will attend a music festival in another town. Some students asked whether we would fly, while others suggested going by train. Our teacher explained that the journey was short and the school had already booked a bus for everyone to travel together."
           }
         ],
         "type": "picture-choice",
         "instructions": "You will hear five short texts twice. For each text choose the correct picture A, B or C.",
         "audio": "assets/audio/g7-a-listening1.mp3",
-        "transcript": "Listening one. You will hear five short texts. Text 1. Our class is planning a visit next week. Some classmates wanted to spend the morning in a park, and others suggested the library. The teacher has booked a guided tour of the museum instead. We will learn about old objects and take notes for a project.  Text 2. I am getting ready for a long walk with my friends on Saturday. I have packed comfortable shoes and a small snack. My mother suggested taking a camera, but I already have my phone. The most important thing in my bag is my water bottle.  Text 3. Our school is offering several clubs this term. I enjoy books, but I already read every evening. I also considered the cycling group, although I do not own a bicycle. I finally chose the painting club because I want to learn to use watercolours.  Text 4. Please listen carefully to the announcement. Our science group usually meets in the classroom, and last week we used the school hall. Tomorrow we need to collect leaves and examine plants, so everyone should meet in the garden behind the main building at nine.  Text 5. My grandfather taught me to check simple problems before throwing things away. Yesterday I found an old radio and a broken clock in the cupboard. I could not repair either one. However, I changed a wire in our desk lamp, and now it works perfectly. "
+        "transcript": "Listening one. You will hear five short texts twice. Text 1. Our school is organising a music show next Friday. I practised the guitar last year, and I can play a little piano, but neither instrument is part of my performance this time. I have joined the percussion group, so I will play the drum on stage. Text 2. The drama club arrived early for its rehearsal. Everyone had brought their scripts, and a parent had already prepared a camera for the photographs. However, the stage manager discovered that the microphone was still in the classroom, so she asked someone to collect it. Text 3. The young performers first wanted to use the public library, but the room was too small for their audience. The museum offered an outdoor space, although the weather might change. In the end, the head teacher agreed to let them perform in the school hall. Text 4. I tried painting in the art club and watched my friends play football, but I wanted an activity that involved music. My cousin showed me how to play a few chords, and I have now joined the guitar club, where we rehearse twice a week. Text 5. Our class will attend a music festival in another town. Some students asked whether we would fly, while others suggested going by train. Our teacher explained that the journey was short and the school had already booked a bus for everyone to travel together."
       },
       {
         "key": "listening2",
@@ -101,31 +101,31 @@
         "marks": 5,
         "items": [
           {
-            "stem": "The project started in October.",
+            "stem": "Alya has worked with the drama club for two years.",
             "answer": true
           },
           {
-            "stem": "Only experienced adults were allowed to join a mobile library.",
+            "stem": "The club is performing a tragedy next Thursday.",
             "answer": false
           },
           {
-            "stem": "The group received help from the village librarian.",
+            "stem": "The English teacher helps the club write scripts.",
             "answer": true
           },
           {
-            "stem": "The group solved its difficulty by buying expensive new equipment.",
+            "stem": "The group cancelled rehearsal when a microphone broke.",
             "answer": false
           },
           {
-            "stem": "Nearly forty people became interested in the project.",
+            "stem": "Around 150 people can watch the school performance.",
             "answer": true
           }
         ],
-        "script": "Interviewer: Welcome to Young Voices. Today we are speaking with Maha about a mobile library. When did the project begin?\nMaha: It began in October, when people in a mountain village asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before.\nInterviewer: What was the first thing you did?\nMaha: We started with arranging books by topic. We were supported by the village librarian, who showed us how to work safely and plan our time.\nInterviewer: Was everything easy?\nMaha: Not really. At one point, rain damaged some book covers. We listened to different suggestions before agreeing on using waterproof boxes. That helped us continue.\nInterviewer: What was the most encouraging result?\nMaha: I was happy when more families borrowed books. Nearly forty people became interested in what we were doing.\nInterviewer: What is your advice to other students?\nMaha: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment.\nInterviewer: Thank you for sharing your experience.\nMaha: Thank you. I hope more schools try similar projects next term.",
+        "script": "Interviewer: Welcome to School Stage. Alya, how long have you been working with the drama club?\nAlya: I joined two years ago, but I have helped manage performances only since September. At first, I was nervous about speaking to the actors.\nInterviewer: What are you preparing now?\nAlya: We are putting on a short comedy next Thursday. Twelve pupils are acting, and another five are working behind the stage.\nInterviewer: Do you write all the scripts yourself?\nAlya: No. Our English teacher helps us write them. I organise rehearsals and check that the microphones and lights are ready.\nInterviewer: Has anything gone wrong?\nAlya: Last week one microphone stopped working. Instead of cancelling rehearsal, we practised the scene without it until a replacement arrived.\nInterviewer: How many people can watch the performance?\nAlya: The school hall has room for about one hundred and fifty people. We have invited parents and younger students.\nInterviewer: What do you enjoy most?\nAlya: Watching everyone cooperate. We have learned that a successful show depends on the whole team, not just the actors.",
         "type": "true-false",
         "instructions": "Listen to the dialogue twice. Decide whether each statement is True or False.",
         "audio": "assets/audio/g7-a-listening2.mp3",
-        "transcript": "Listening two. Listen to the dialogue carefully. Interviewer: Welcome to Young Voices. Today we are speaking with Maha about a mobile library. When did the project begin? Maha: It began in October, when people in a mountain village asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before. Interviewer: What was the first thing you did? Maha: We started with arranging books by topic. We were supported by the village librarian, who showed us how to work safely and plan our time. Interviewer: Was everything easy? Maha: Not really. At one point, rain damaged some book covers. We listened to different suggestions before agreeing on using waterproof boxes. That helped us continue. Interviewer: What was the most encouraging result? Maha: I was happy when more families borrowed books. Nearly forty people became interested in what we were doing. Interviewer: What is your advice to other students? Maha: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment. Interviewer: Thank you for sharing your experience. Maha: Thank you. I hope more schools try similar projects next term."
+        "transcript": "Listening two. Listen to the dialogue carefully. Interviewer: Welcome to School Stage. Alya, how long have you been working with the drama club? Alya: I joined two years ago, but I have helped manage performances only since September. At first, I was nervous about speaking to the actors. Interviewer: What are you preparing now? Alya: We are putting on a short comedy next Thursday. Twelve pupils are acting, and another five are working behind the stage. Interviewer: Do you write all the scripts yourself? Alya: No. Our English teacher helps us write them. I organise rehearsals and check that the microphones and lights are ready. Interviewer: Has anything gone wrong? Alya: Last week one microphone stopped working. Instead of cancelling rehearsal, we practised the scene without it until a replacement arrived. Interviewer: How many people can watch the performance? Alya: The school hall has room for about one hundred and fifty people. We have invited parents and younger students. Interviewer: What do you enjoy most? Alya: Watching everyone cooperate. We have learned that a successful show depends on the whole team, not just the actors."
       },
       {
         "key": "grammarvocabulary",
@@ -223,26 +223,26 @@
         "marks": 5,
         "type": "matching",
         "texts": [
-          "The first meeting for a mobile library took place in a mountain village. Maha came early to discover what volunteers would do.",
-          "Our group brought simple supplies for arranging books by topic. Nobody wanted to waste materials or spend money before planning the activity properly.",
-          "A local visitor asked why students had chosen a mobile library. We explained how the idea could make a difference to people nearby.",
-          "During the second week, a problem appeared: rain damaged some book covers. Some students felt worried that the whole activity might have to stop.",
-          "On the final day, Maha presented the group’s results. Teachers and families listened carefully and asked what the students had learned."
+          "Before the curtain opened, the school actors checked their costumes and repeated their first lines. One pupil was worried because it would be her first appearance in front of a large audience.",
+          "The student music group had practised for several weeks. During the final rehearsal, the guitar sounded strange, and the musicians decided to examine it carefully.",
+          "A visiting storyteller arrived at the theatre early. She wanted to learn the names of the children who would introduce her and to understand how the programme was organised.",
+          "The school newspaper photographer stood beside the stage. He knew that using a flash could distract the actors and asked where he could take pictures without causing a problem.",
+          "At the end of the performance, the audience applauded loudly. The drama teacher thanked the actors, the technicians and the students who had designed the posters."
         ],
         "continuations": [
-          "The visitor understood our explanation and asked how other classes could take part. We invited them to the next meeting.",
-          "Everyone was pleased to hear that more families borrowed books. The group promised to share its ideas with other schools soon.",
-          "The organisers explained the main goal and gave everyone a small job. Maha decided to help again the following week.",
-          "The local aquarium displayed rare fish from deep water, and visitors learnt about underwater photography during the guided tour.",
-          "We checked everything first and worked in teams. This saved time and made the practical work much easier for the younger students.",
-          "After listening to suggestions, the team tried using waterproof boxes. The new approach allowed the students to continue with their plans."
+          "The organiser showed her the programme and introduced the two presenters before the audience arrived.",
+          "They discovered a loose string and replaced it before the concert began.",
+          "The teacher reminded everyone that the performance would not have succeeded without teamwork.",
+          "The pupil took a deep breath, listened for her cue and walked confidently into the light.",
+          "A visitor asked how to buy a ticket for the train, even though the play had already begun.",
+          "The stage manager suggested a quiet corner with a clear view where the flash would not be needed."
         ],
         "answers": [
-          2,
-          4,
+          3,
+          1,
           0,
           5,
-          1
+          2
         ],
         "instructions": "Read the five numbered excerpts and six endings A–F. Match each excerpt with its correct ending. One ending is extra."
       },
@@ -251,40 +251,44 @@
         "label": "Reading 2",
         "marks": 5,
         "type": "short-answer",
-        "passage": "When Maha heard about a mobile library in a mountain village, the idea sounded interesting but difficult. The project had started in October, and nobody was sure how many students would join. Maha decided to attend the first meeting anyway. At the beginning, the organisers explained why the project mattered to local people. They asked everyone to listen carefully before suggesting changes.\n\nThe group began by arranging books by topic. Maha was worried about making mistakes, but the village librarian explained that learning through practice was an important part of the experience. After a few days, everyone had a specific responsibility. Some students recorded information, while others spoke to families who visited the area.\n\nA difficulty appeared when rain damaged some book covers. The group could have stopped, but the students discussed several possibilities and chose a practical solution: using waterproof boxes. They tested the idea, checked the results and made small changes where necessary. Instead of blaming anyone for the delay, they shared the work fairly.\n\nAt the end of the month, more families borrowed books. Maha felt proud and realised that a useful project does not need to be perfect on the first day. The students presented their work to the school council and suggested that another class could continue it next term. Maha kept a notebook with photographs and reflections, hoping it would encourage younger pupils to try something similar.",
+        "passage": "Nasser had enjoyed listening to the school radio since he was young, but he had never imagined presenting a programme himself. One afternoon, his English teacher invited students to create a weekly show about local talents. Nasser volunteered to interview a young musician who played traditional Omani instruments.\n\nThe team had been preparing for two weeks when their guest became ill. Some pupils suggested cancelling the first episode, but Nasser thought they could interview the school's music teacher instead. She agreed, and the group wrote new questions about practising, performing and working with other musicians.\n\nOn the recording day, the microphone suddenly stopped working. Nasser felt disappointed because he had already spent the morning checking the script. His friend Mariam remembered a spare recorder kept in the library. They tested it and began again, although the sound was slightly different from what they had planned.\n\nThe finished programme included a short interview, a report about the upcoming school concert and a message inviting younger pupils to join the drama club. When the show was played at assembly, Nasser heard students discussing their favourite parts.\n\nHe realised that entertainment was not only about famous performers. It also gave ordinary people a chance to share their skills, listen to one another and feel part of a community. The team decided to produce another episode the following week.",
         "items": [
           {
-            "stem": "When did the project begin?",
+            "stem": "Who invited students to create a weekly radio show?",
             "answers": [
-              "October"
+              "their English teacher",
+              "English teacher",
+              "his English teacher"
             ]
           },
           {
-            "stem": "Who helped the students learn through practice?",
+            "stem": "Who was the first guest supposed to be?",
             "answers": [
-              "the village librarian"
+              "a young musician",
+              "young musician"
             ]
           },
           {
-            "stem": "What did the students do when a difficulty appeared?",
+            "stem": "Why did the team change their interview plan?",
             "answers": [
-              "discussed several possibilities",
-              "discussed solutions",
-              "chose a practical solution"
+              "the guest became ill",
+              "their guest was ill",
+              "the musician was ill"
             ]
           },
           {
-            "stem": "How did the students share the work?",
+            "stem": "Where was the spare recorder kept?",
             "answers": [
-              "fairly",
-              "they shared the work fairly"
+              "in the library",
+              "library"
             ]
           },
           {
-            "stem": "Who listened to their final presentation?",
+            "stem": "What did the team decide to produce the following week?",
             "answers": [
-              "the school council",
-              "school council"
+              "another episode",
+              "a second episode",
+              "another radio episode"
             ]
           }
         ],
@@ -316,14 +320,14 @@
         "topic": "Write an email to a cousin about a theatre performance or concert you attended. Say what you saw, which performers impressed you and why. Write at least 80 words."
       }
     ],
-    "status": "original-practice-review"
+    "status": "original-unit-focused-educator-review"
   },
   {
     "id": "g7-b",
     "grade": 7,
     "model": "B",
-    "title": "The Garden Behind the School",
-    "theme": "a vegetable garden",
+    "title": "Awesome animals — Original practice",
+    "theme": "Awesome animals",
     "durationMinutes": 120,
     "totalMarks": 40,
     "semester": 1,
@@ -334,85 +338,85 @@
         "marks": 5,
         "items": [
           {
-            "stem": "Which transport will they use?",
+            "stem": "Which animal did the ranger see near the water?",
             "options": [
-              "bus",
-              "train",
-              "bicycle"
-            ],
-            "answer": 0,
-            "script": "Our class is visiting a sports centre outside the city. A few students suggested going by train, and my friend wanted to ride his bicycle. The teacher explained that the journey was too long. We will all travel together on the school bus.",
-            "images": [
-              "bus",
-              "train-front",
-              "bike"
-            ]
-          },
-          {
-            "stem": "What is the student going to photograph?",
-            "options": [
-              "flowers",
-              "bridge",
-              "building"
+              "bird",
+              "turtle",
+              "fish"
             ],
             "answer": 1,
-            "script": "I am entering a local photography competition. At first, I planned to photograph the new school building, and my sister suggested the flowers in our garden. Yesterday I saw an old stone bridge at sunset. I decided to take my photograph there tomorrow.",
             "images": [
-              "flower",
-              "construction",
-              "building-2"
-            ]
+              "bird",
+              "turtle",
+              "fish"
+            ],
+            "script": "During our walk, the ranger pointed out birds on the rocks and small fish in a shallow pool. Then she noticed a turtle moving slowly towards the water. We watched it from a distance because visitors must not touch or disturb wild animals."
           },
           {
-            "stem": "Which object did the visitor buy?",
+            "stem": "What did the wildlife team use to record animal movements?",
             "options": [
+              "camera",
               "book",
-              "hat",
-              "bag"
+              "radio"
             ],
             "answer": 0,
-            "script": "The small gift shop at the museum sold many interesting things. I looked at a colourful hat and a canvas bag, but they were too expensive. I finally bought a short book about traditional boats, because I wanted to learn more at home.",
             "images": [
-              "book-open",
-              "graduation-cap",
-              "backpack"
-            ]
+              "camera",
+              "book",
+              "radio"
+            ],
+            "script": "The nature club wanted to study birds without approaching their nests. Some pupils suggested drawing what they saw in a notebook, while others preferred recording a spoken report. The ranger recommended using a camera with a long lens, so the animals would remain undisturbed."
           },
           {
-            "stem": "Which sport is planned?",
+            "stem": "Where did the rescued bird finally fly?",
             "options": [
-              "football",
-              "swimming",
-              "running"
+              "towards trees",
+              "towards the sea",
+              "towards school"
+            ],
+            "answer": 0,
+            "images": [
+              "trees",
+              "waves",
+              "school"
+            ],
+            "script": "A young bird had fallen into a garden and could not fly properly. After a veterinarian checked its wing, it rested safely for several days. When it was strong again, the ranger released it near the forest, and it immediately flew towards the trees."
+          },
+          {
+            "stem": "What caused the animals to hide?",
+            "options": [
+              "sunshine",
+              "rain",
+              "wind"
             ],
             "answer": 1,
-            "script": "Our sports club changed its timetable this week. We usually play football on Mondays, and we go running at the end of the month. Because the weather is becoming hot, the coach arranged a swimming lesson at the indoor pool for our next meeting.",
             "images": [
-              "football",
-              "waves",
-              "person-standing"
-            ]
+              "sun",
+              "cloud-rain",
+              "wind"
+            ],
+            "script": "The school group visited a protected area to look for small desert animals. At first, the sun was bright, and the weather was calm. Suddenly, heavy rain began, so the animals disappeared under rocks and plants. The students returned to the visitor centre."
           },
           {
-            "stem": "Which food will they prepare?",
+            "stem": "What should visitors take on a long nature walk?",
             "options": [
-              "salad",
-              "cake",
-              "soup"
+              "football",
+              "backpack",
+              "piano"
             ],
-            "answer": 2,
-            "script": "We are organising a healthy-food demonstration for younger students. My friend offered to make a cake, and I suggested a fruit salad. Our teacher wanted something warm that could include vegetables. We agreed to prepare a simple soup and explain every ingredient.",
+            "answer": 1,
             "images": [
-              "salad",
-              "cake-slice",
-              "soup"
-            ]
+              "football",
+              "backpack",
+              "piano"
+            ],
+            "script": "Our guide explained that wildlife walks can take several hours. Playing football would frighten animals, and musical instruments would make too much noise. Everyone should bring a small backpack containing water, sunscreen and a notebook, and remember to leave the area clean."
           }
         ],
         "type": "picture-choice",
         "instructions": "You will hear five short texts twice. For each text choose the correct picture A, B or C.",
         "audio": "assets/audio/g7-b-listening1.mp3",
-        "transcript": "Listening one. You will hear five short texts. Text 1. Our class is visiting a sports centre outside the city. A few students suggested going by train, and my friend wanted to ride his bicycle. The teacher explained that the journey was too long. We will all travel together on the school bus.  Text 2. I am entering a local photography competition. At first, I planned to photograph the new school building, and my sister suggested the flowers in our garden. Yesterday I saw an old stone bridge at sunset. I decided to take my photograph there tomorrow.  Text 3. The small gift shop at the museum sold many interesting things. I looked at a colourful hat and a canvas bag, but they were too expensive. I finally bought a short book about traditional boats, because I wanted to learn more at home.  Text 4. Our sports club changed its timetable this week. We usually play football on Mondays, and we go running at the end of the month. Because the weather is becoming hot, the coach arranged a swimming lesson at the indoor pool for our next meeting.  Text 5. We are organising a healthy-food demonstration for younger students. My friend offered to make a cake, and I suggested a fruit salad. Our teacher wanted something warm that could include vegetables. We agreed to prepare a simple soup and explain every ingredient. "
+        "transcript": "Listening one. You will hear five short texts twice. Text 1. During our walk, the ranger pointed out birds on the rocks and small fish in a shallow pool. Then she noticed a turtle moving slowly towards the water. We watched it from a distance because visitors must not touch or disturb wild animals. Text 2. The nature club wanted to study birds without approaching their nests. Some pupils suggested drawing what they saw in a notebook, while others preferred recording a spoken report. The ranger recommended using a camera with a long lens, so the animals would remain undisturbed. Text 3. A young bird had fallen into a garden and could not fly properly. After a veterinarian checked its wing, it rested safely for several days. When it was strong again, the ranger released it near the forest, and it immediately flew towards the trees. Text 4. The school group visited a protected area to look for small desert animals. At first, the sun was bright, and the weather was calm. Suddenly, heavy rain began, so the animals disappeared under rocks and plants. The students returned to the visitor centre. Text 5. Our guide explained that wildlife walks can take several hours. Playing football would frighten animals, and musical instruments would make too much noise. Everyone should bring a small backpack containing water, sunscreen and a notebook, and remember to leave the area clean."
       },
       {
         "key": "listening2",
@@ -420,31 +424,31 @@
         "marks": 5,
         "items": [
           {
-            "stem": "The project started in September.",
+            "stem": "Salim's class visited a place where turtles are protected.",
             "answer": true
           },
           {
-            "stem": "Only experienced adults were allowed to join a vegetable garden.",
+            "stem": "The ranger said plastic waste cannot harm young turtles.",
             "answer": false
           },
           {
-            "stem": "The group received help from his science teacher.",
+            "stem": "Students watched turtles without touching them.",
             "answer": true
           },
           {
-            "stem": "The group solved its difficulty by buying expensive new equipment.",
+            "stem": "Salim's group used camera flashes close to the turtles.",
             "answer": false
           },
           {
-            "stem": "Nearly thirty people became interested in the project.",
+            "stem": "Salim recommends following reserve rules and staying quiet.",
             "answer": true
           }
         ],
-        "script": "Interviewer: Welcome to Young Voices. Today we are speaking with Salim about a vegetable garden. When did the project begin?\nSalim: It began in September, when people in the school courtyard asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before.\nInterviewer: What was the first thing you did?\nSalim: We started with planting seeds and checking soil. We were supported by his science teacher, who showed us how to work safely and plan our time.\nInterviewer: Was everything easy?\nSalim: Not really. At one point, the ground dried very quickly. We listened to different suggestions before agreeing on collecting rainwater in tanks. That helped us continue.\nInterviewer: What was the most encouraging result?\nSalim: I was happy when the first vegetables were shared. Nearly thirty people became interested in what we were doing.\nInterviewer: What is your advice to other students?\nSalim: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment.\nInterviewer: Thank you for sharing your experience.\nSalim: Thank you. I hope more schools try similar projects next term.",
+        "script": "Interviewer: Welcome to Nature Watch. Salim, why did your class visit the turtle reserve?\nSalim: We wanted to understand how sea turtles are protected. Our teacher reminded us that bright lights and noise can disturb them.\nInterviewer: What did you learn from the ranger?\nSalim: She explained that turtles return to beaches to lay their eggs. If people leave plastic on the sand, young turtles may become trapped.\nInterviewer: Did you see any turtles?\nSalim: Yes, we watched two from a safe distance. We did not touch them or use a camera flash.\nInterviewer: Was there a problem during the visit?\nSalim: Some visitors had left empty bottles near a path. The ranger asked us to collect them while wearing gloves.\nInterviewer: How can young people help after the trip?\nSalim: We can use reusable bottles, tell others not to litter and support beach clean-ups. If we protect nesting areas, more turtles may reach the sea safely.\nInterviewer: What would you tell someone planning a visit?\nSalim: Follow the rules and stay quiet. Seeing animals in their natural habitat is exciting, but their safety is more important than our photographs.",
         "type": "true-false",
         "instructions": "Listen to the dialogue twice. Decide whether each statement is True or False.",
         "audio": "assets/audio/g7-b-listening2.mp3",
-        "transcript": "Listening two. Listen to the dialogue carefully. Interviewer: Welcome to Young Voices. Today we are speaking with Salim about a vegetable garden. When did the project begin? Salim: It began in September, when people in the school courtyard asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before. Interviewer: What was the first thing you did? Salim: We started with planting seeds and checking soil. We were supported by his science teacher, who showed us how to work safely and plan our time. Interviewer: Was everything easy? Salim: Not really. At one point, the ground dried very quickly. We listened to different suggestions before agreeing on collecting rainwater in tanks. That helped us continue. Interviewer: What was the most encouraging result? Salim: I was happy when the first vegetables were shared. Nearly thirty people became interested in what we were doing. Interviewer: What is your advice to other students? Salim: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment. Interviewer: Thank you for sharing your experience. Salim: Thank you. I hope more schools try similar projects next term."
+        "transcript": "Listening two. Listen to the dialogue carefully. Interviewer: Welcome to Nature Watch. Salim, why did your class visit the turtle reserve? Salim: We wanted to understand how sea turtles are protected. Our teacher reminded us that bright lights and noise can disturb them. Interviewer: What did you learn from the ranger? Salim: She explained that turtles return to beaches to lay their eggs. If people leave plastic on the sand, young turtles may become trapped. Interviewer: Did you see any turtles? Salim: Yes, we watched two from a safe distance. We did not touch them or use a camera flash. Interviewer: Was there a problem during the visit? Salim: Some visitors had left empty bottles near a path. The ranger asked us to collect them while wearing gloves. Interviewer: How can young people help after the trip? Salim: We can use reusable bottles, tell others not to litter and support beach clean-ups. If we protect nesting areas, more turtles may reach the sea safely. Interviewer: What would you tell someone planning a visit? Salim: Follow the rules and stay quiet. Seeing animals in their natural habitat is exciting, but their safety is more important than our photographs."
       },
       {
         "key": "grammarvocabulary",
@@ -542,26 +546,26 @@
         "marks": 5,
         "type": "matching",
         "texts": [
-          "The first meeting for a vegetable garden took place in the school courtyard. Salim came early to discover what volunteers would do.",
-          "Our group brought simple supplies for planting seeds and checking soil. Nobody wanted to waste materials or spend money before planning the activity properly.",
-          "A local visitor asked why students had chosen a vegetable garden. We explained how the idea could make a difference to people nearby.",
-          "During the second week, a problem appeared: the ground dried very quickly. Some students felt worried that the whole activity might have to stop.",
-          "On the final day, Salim presented the group’s results. Teachers and families listened carefully and asked what the students had learned."
+          "A birdwatching group reached the wetland at sunrise. Before they entered, the guide asked them to lower their voices and keep their distance from the nests.",
+          "A young turtle was found beside a road after heavy rain. The pupils could not decide whether to move it themselves and contacted a wildlife specialist.",
+          "A small fish became trapped in a shallow pool as the water level fell. The ranger examined the situation and warned the children not to step into the protected area.",
+          "During a school visit, a pupil noticed feathers and broken branches near a tree. He wondered whether an animal had made a nest there and began taking notes.",
+          "At the end of a nature survey, pupils compared the number of animals they had seen. They were surprised that different groups had observed different species along the same route."
         ],
         "continuations": [
-          "After listening to suggestions, the team tried collecting rainwater in tanks. The new approach allowed the students to continue with their plans.",
-          "We checked everything first and worked in teams. This saved time and made the practical work much easier for the younger students.",
-          "The local aquarium displayed rare fish from deep water, and visitors learnt about underwater photography during the guided tour.",
-          "The organisers explained the main goal and gave everyone a small job. Salim decided to help again the following week.",
-          "Everyone was pleased to hear that the first vegetables were shared. The group promised to share its ideas with other schools soon.",
-          "The visitor understood our explanation and asked how other classes could take part. We invited them to the next meeting."
+          "The expert explained how to help safely and collected the animal for a health check.",
+          "The ranger reminded them to observe from the path while she checked whether the fish could return to deeper water.",
+          "Everyone agreed that repeating the survey on another day would provide a more reliable picture.",
+          "The class bought tickets for a music festival, even though no wildlife survey was planned.",
+          "The students used binoculars quietly so the birds would continue feeding without becoming frightened.",
+          "He described the possible nesting place instead of climbing the tree and disturbing whatever lived there."
         ],
         "answers": [
-          3,
+          4,
+          0,
           1,
           5,
-          0,
-          4
+          2
         ],
         "instructions": "Read the five numbered excerpts and six endings A–F. Match each excerpt with its correct ending. One ending is extra."
       },
@@ -570,40 +574,43 @@
         "label": "Reading 2",
         "marks": 5,
         "type": "short-answer",
-        "passage": "When Salim heard about a vegetable garden in the school courtyard, the idea sounded interesting but difficult. The project had started in September, and nobody was sure how many students would join. Salim decided to attend the first meeting anyway. At the beginning, the organisers explained why the project mattered to local people. They asked everyone to listen carefully before suggesting changes.\n\nThe group began by planting seeds and checking soil. Salim was worried about making mistakes, but his science teacher explained that learning through practice was an important part of the experience. After a few days, everyone had a specific responsibility. Some students recorded information, while others spoke to families who visited the area.\n\nA difficulty appeared when the ground dried very quickly. The group could have stopped, but the students discussed several possibilities and chose a practical solution: collecting rainwater in tanks. They tested the idea, checked the results and made small changes where necessary. Instead of blaming anyone for the delay, they shared the work fairly.\n\nAt the end of the month, the first vegetables were shared. Salim felt surprised and realised that a useful project does not need to be perfect on the first day. The students presented their work to the school council and suggested that another class could continue it next term. Salim kept a notebook with photographs and reflections, hoping it would encourage younger pupils to try something similar.",
+        "passage": "During a school visit to a nature reserve, Huda noticed that the guides spent more time looking for signs of animals than trying to see the animals themselves. She had expected to photograph every creature, but the ranger explained that wildlife often hides when people approach too closely.\n\nThe group followed a marked path beside a shallow lake. Huda saw tracks in the soft sand and guessed that they belonged to a turtle. Her friend Rashid thought they might have been made by a bird. The ranger asked both pupils to examine the marks carefully. The tracks were wide and ended near a small pool, so they were probably left by a turtle.\n\nLater, the pupils found a plastic bag tangled among the plants. They wanted to remove it immediately, but the ranger told them to check whether an animal was nearby first. After she made sure the area was safe, they collected the rubbish using gloves.\n\nAs the sun became hotter, the students moved to a shaded observation point. They watched several birds drinking without disturbing them. Huda realised that careful observation could teach them more than a hurried photograph.\n\nBefore leaving, the class discussed ways to protect the reserve. They agreed to bring reusable bottles on future visits and to remind visitors to stay on marked paths. Huda wrote in her notebook that if everyone followed the rules, the animals would have a better chance of living safely in their natural habitat.",
         "items": [
           {
-            "stem": "When did the project begin?",
+            "stem": "Why does wildlife often hide from visitors?",
             "answers": [
-              "September"
+              "people approach too closely",
+              "visitors approach too closely",
+              "because people get too close"
             ]
           },
           {
-            "stem": "Who helped the students learn through practice?",
+            "stem": "What did the pupils find in the soft sand?",
             "answers": [
-              "his science teacher"
+              "tracks",
+              "animal tracks",
+              "tracks in the sand"
             ]
           },
           {
-            "stem": "What did the students do when a difficulty appeared?",
+            "stem": "What material was tangled among the plants?",
             "answers": [
-              "discussed several possibilities",
-              "discussed solutions",
-              "chose a practical solution"
+              "a plastic bag",
+              "plastic bag"
             ]
           },
           {
-            "stem": "How did the students share the work?",
+            "stem": "Where did the group watch birds drinking?",
             "answers": [
-              "fairly",
-              "they shared the work fairly"
+              "a shaded observation point",
+              "shaded observation point"
             ]
           },
           {
-            "stem": "Who listened to their final presentation?",
+            "stem": "What did the class agree to bring on future visits?",
             "answers": [
-              "the school council",
-              "school council"
+              "reusable bottles",
+              "reusable water bottles"
             ]
           }
         ],
@@ -635,14 +642,14 @@
         "topic": "Write an email telling a friend about a wildlife centre you visited. Explain how the animals are protected and what visitors should do to help. Write at least 80 words."
       }
     ],
-    "status": "original-practice-review"
+    "status": "original-unit-focused-educator-review"
   },
   {
     "id": "g7-c",
     "grade": 7,
     "model": "C",
-    "title": "The Museum of Everyday Life",
-    "theme": "a small local museum",
+    "title": "Travel — Original practice",
+    "theme": "Travel",
     "durationMinutes": 120,
     "totalMarks": 40,
     "semester": 1,
@@ -653,85 +660,85 @@
         "marks": 5,
         "items": [
           {
-            "stem": "What did the student find?",
+            "stem": "How will the class travel to Nizwa?",
             "options": [
-              "key",
-              "phone",
-              "wallet"
+              "by bus",
+              "by train",
+              "by plane"
             ],
             "answer": 0,
-            "script": "When I entered the school courtyard, I noticed something small on the ground. It was not a phone or a wallet. I picked it up and saw that it was a silver key. I took it to the school office so its owner could collect it.",
             "images": [
-              "key-round",
-              "smartphone",
-              "wallet"
-            ]
-          },
-          {
-            "stem": "Which tool does the team need?",
-            "options": [
-              "brush",
-              "hammer",
-              "scissors"
-            ],
-            "answer": 0,
-            "script": "Our art team is making a welcome sign for the school entrance. We have scissors and a small hammer already, but neither is useful for painting the large letters. The teacher asked me to bring a wide paintbrush from home so we can finish the sign.",
-            "images": [
-              "paintbrush",
-              "hammer",
-              "scissors"
-            ]
-          },
-          {
-            "stem": "Which weather is expected?",
-            "options": [
-              "sun",
-              "rain",
-              "wind"
-            ],
-            "answer": 1,
-            "script": "We wanted to organise a picnic near the coast tomorrow. I checked the weather report because it has been sunny for several days. The forecast now says there will be heavy rain in the afternoon. We will move the picnic indoors and choose another date.",
-            "images": [
-              "sun",
-              "cloud-rain",
-              "wind"
-            ]
-          },
-          {
-            "stem": "Where was the notebook left?",
-            "options": [
-              "desk",
-              "shelf",
-              "chair"
-            ],
-            "answer": 1,
-            "script": "I searched everywhere for my history notebook this morning. It was not under my chair or on the teacher’s desk. Then I remembered using it in the library yesterday. The librarian found it on a high shelf and kept it safely for me.",
-            "images": [
-              "briefcase-business",
-              "library",
-              "armchair"
-            ]
-          },
-          {
-            "stem": "What will the visitors see?",
-            "options": [
-              "boat",
-              "castle",
+              "bus",
+              "train-front",
               "plane"
             ],
+            "script": "Our class is planning a history trip to Nizwa. A few pupils asked about going by plane, while others were interested in trains. The teacher explained that neither would suit this journey. We will travel together on a school bus and return in the evening."
+          },
+          {
+            "stem": "Which place will the family visit first?",
+            "options": [
+              "an old fort",
+              "a library",
+              "a beach"
+            ],
+            "answer": 0,
+            "images": [
+              "castle",
+              "library",
+              "waves"
+            ],
+            "script": "We have planned a busy day in the town. My sister hopes to swim at the beach, and my brother wants to read in the public library. However, our first stop will be the old fort, where a guide is waiting to show us the towers."
+          },
+          {
+            "stem": "What did Sara remember to pack?",
+            "options": [
+              "umbrella",
+              "football",
+              "camera"
+            ],
+            "answer": 2,
+            "images": [
+              "umbrella",
+              "football",
+              "camera"
+            ],
+            "script": "Sara checked her bag before leaving for the mountains. She had already packed a hat and a bottle of water, and no rain was expected, so she did not need an umbrella. She left her football at home but remembered her camera for the scenery."
+          },
+          {
+            "stem": "What weather will affect the journey?",
+            "options": [
+              "sunshine",
+              "strong wind",
+              "rain"
+            ],
             "answer": 1,
-            "script": "My cousins are coming to Oman for the first time. They have already visited an airport museum and travelled on a traditional boat. Tomorrow we are taking them to an old castle, where a guide will explain how people lived there many years ago.",
+            "images": [
+              "sun",
+              "wind",
+              "cloud-rain"
+            ],
+            "script": "The weather forecast shows a dry morning, with plenty of sunshine and almost no chance of rain. Strong winds are expected after lunch, however. The guide has decided to visit the exposed viewpoint early and move to the sheltered museum in the afternoon."
+          },
+          {
+            "stem": "How will the tourists reach the small island?",
+            "options": [
+              "by boat",
+              "by train",
+              "by bus"
+            ],
+            "answer": 0,
             "images": [
               "sailboat",
-              "castle",
-              "plane"
-            ]
+              "train-front",
+              "bus"
+            ],
+            "script": "The visitors will explore a small island near the coast. Their bus will take them to the harbour, but it cannot continue across the water. There is no railway nearby, so they will board a small boat and travel with a local guide."
           }
         ],
         "type": "picture-choice",
         "instructions": "You will hear five short texts twice. For each text choose the correct picture A, B or C.",
         "audio": "assets/audio/g7-c-listening1.mp3",
-        "transcript": "Listening one. You will hear five short texts. Text 1. When I entered the school courtyard, I noticed something small on the ground. It was not a phone or a wallet. I picked it up and saw that it was a silver key. I took it to the school office so its owner could collect it.  Text 2. Our art team is making a welcome sign for the school entrance. We have scissors and a small hammer already, but neither is useful for painting the large letters. The teacher asked me to bring a wide paintbrush from home so we can finish the sign.  Text 3. We wanted to organise a picnic near the coast tomorrow. I checked the weather report because it has been sunny for several days. The forecast now says there will be heavy rain in the afternoon. We will move the picnic indoors and choose another date.  Text 4. I searched everywhere for my history notebook this morning. It was not under my chair or on the teacher’s desk. Then I remembered using it in the library yesterday. The librarian found it on a high shelf and kept it safely for me.  Text 5. My cousins are coming to Oman for the first time. They have already visited an airport museum and travelled on a traditional boat. Tomorrow we are taking them to an old castle, where a guide will explain how people lived there many years ago. "
+        "transcript": "Listening one. You will hear five short texts twice. Text 1. Our class is planning a history trip to Nizwa. A few pupils asked about going by plane, while others were interested in trains. The teacher explained that neither would suit this journey. We will travel together on a school bus and return in the evening. Text 2. We have planned a busy day in the town. My sister hopes to swim at the beach, and my brother wants to read in the public library. However, our first stop will be the old fort, where a guide is waiting to show us the towers. Text 3. Sara checked her bag before leaving for the mountains. She had already packed a hat and a bottle of water, and no rain was expected, so she did not need an umbrella. She left her football at home but remembered her camera for the scenery. Text 4. The weather forecast shows a dry morning, with plenty of sunshine and almost no chance of rain. Strong winds are expected after lunch, however. The guide has decided to visit the exposed viewpoint early and move to the sheltered museum in the afternoon. Text 5. The visitors will explore a small island near the coast. Their bus will take them to the harbour, but it cannot continue across the water. There is no railway nearby, so they will board a small boat and travel with a local guide."
       },
       {
         "key": "listening2",
@@ -739,31 +746,31 @@
         "marks": 5,
         "items": [
           {
-            "stem": "The project started in November.",
+            "stem": "The group travelled to Nizwa by bus.",
             "answer": true
           },
           {
-            "stem": "Only experienced adults were allowed to join a small local museum.",
+            "stem": "They visited the market before the craft workshop.",
             "answer": false
           },
           {
-            "stem": "The group received help from her grandfather.",
+            "stem": "Maha enjoyed learning how to make a small basket.",
             "answer": true
           },
           {
-            "stem": "The group solved its difficulty by buying expensive new equipment.",
+            "stem": "Maha remembered to bring her camera.",
             "answer": false
           },
           {
-            "stem": "Nearly fifty people became interested in the project.",
+            "stem": "Maha advises travellers to allow time for changes.",
             "answer": true
           }
         ],
-        "script": "Interviewer: Welcome to Young Voices. Today we are speaking with Alya about a small local museum. When did the project begin?\nAlya: It began in November, when people in an old neighbourhood asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before.\nInterviewer: What was the first thing you did?\nAlya: We started with recording stories from older residents. We were supported by her grandfather, who showed us how to work safely and plan our time.\nInterviewer: Was everything easy?\nAlya: Not really. At one point, several labels were hard to read. We listened to different suggestions before agreeing on writing new labels in two languages. That helped us continue.\nInterviewer: What was the most encouraging result?\nAlya: I was happy when visitors understood more exhibits. Nearly fifty people became interested in what we were doing.\nInterviewer: What is your advice to other students?\nAlya: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment.\nInterviewer: Thank you for sharing your experience.\nAlya: Thank you. I hope more schools try similar projects next term.",
+        "script": "Interviewer: Welcome to Travel Talk. Maha, where did your school group travel last month?\nMaha: We went to Nizwa for a day trip. Our bus left the school at half past seven, and the journey was comfortable.\nInterviewer: What had you planned to see?\nMaha: We were going to visit the fort first, then walk around the traditional market. We also wanted to meet a local craftsperson.\nInterviewer: Did everything happen as planned?\nMaha: Not quite. The market was unusually crowded, so our guide suggested visiting the craft workshop before lunch instead.\nInterviewer: Was that a disappointment?\nMaha: No, because the craftsperson showed us how to make a small basket, and we asked lots of questions. We visited the market later when it was quieter.\nInterviewer: What did you take with you?\nMaha: Water, comfortable shoes and a notebook. I had forgotten my camera, but my friend shared her photographs with me.\nInterviewer: What advice would you give to another school group?\nMaha: Check opening times, leave enough time between activities and be ready to change your plans. You can still have an interesting journey even when something unexpected happens.",
         "type": "true-false",
         "instructions": "Listen to the dialogue twice. Decide whether each statement is True or False.",
         "audio": "assets/audio/g7-c-listening2.mp3",
-        "transcript": "Listening two. Listen to the dialogue carefully. Interviewer: Welcome to Young Voices. Today we are speaking with Alya about a small local museum. When did the project begin? Alya: It began in November, when people in an old neighbourhood asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before. Interviewer: What was the first thing you did? Alya: We started with recording stories from older residents. We were supported by her grandfather, who showed us how to work safely and plan our time. Interviewer: Was everything easy? Alya: Not really. At one point, several labels were hard to read. We listened to different suggestions before agreeing on writing new labels in two languages. That helped us continue. Interviewer: What was the most encouraging result? Alya: I was happy when visitors understood more exhibits. Nearly fifty people became interested in what we were doing. Interviewer: What is your advice to other students? Alya: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment. Interviewer: Thank you for sharing your experience. Alya: Thank you. I hope more schools try similar projects next term."
+        "transcript": "Listening two. Listen to the dialogue carefully. Interviewer: Welcome to Travel Talk. Maha, where did your school group travel last month? Maha: We went to Nizwa for a day trip. Our bus left the school at half past seven, and the journey was comfortable. Interviewer: What had you planned to see? Maha: We were going to visit the fort first, then walk around the traditional market. We also wanted to meet a local craftsperson. Interviewer: Did everything happen as planned? Maha: Not quite. The market was unusually crowded, so our guide suggested visiting the craft workshop before lunch instead. Interviewer: Was that a disappointment? Maha: No, because the craftsperson showed us how to make a small basket, and we asked lots of questions. We visited the market later when it was quieter. Interviewer: What did you take with you? Maha: Water, comfortable shoes and a notebook. I had forgotten my camera, but my friend shared her photographs with me. Interviewer: What advice would you give to another school group? Maha: Check opening times, leave enough time between activities and be ready to change your plans. You can still have an interesting journey even when something unexpected happens."
       },
       {
         "key": "grammarvocabulary",
@@ -861,25 +868,25 @@
         "marks": 5,
         "type": "matching",
         "texts": [
-          "The first meeting for a small local museum took place in an old neighbourhood. Alya came early to discover what volunteers would do.",
-          "Our group brought simple supplies for recording stories from older residents. Nobody wanted to waste materials or spend money before planning the activity properly.",
-          "A local visitor asked why students had chosen a small local museum. We explained how the idea could make a difference to people nearby.",
-          "During the second week, a problem appeared: several labels were hard to read. Some students felt worried that the whole activity might have to stop.",
-          "On the final day, Alya presented the group’s results. Teachers and families listened carefully and asked what the students had learned."
+          "Before leaving for the mountains, the family checked the forecast and placed warm clothes in their bags. The father also downloaded a map because mobile signals might be weak.",
+          "The school bus was scheduled to leave at seven thirty. Several pupils arrived early, but one student was still buying breakfast at the nearby shop.",
+          "At the museum entrance, the visitors noticed that the first guided tour had already started. They asked the receptionist whether another tour would begin later.",
+          "Aisha wanted to take photographs from the top of the fort. The guide pointed out a narrow staircase and reminded visitors to hold the handrail.",
+          "During the journey home, the students discussed the best part of their visit. Some enjoyed the old buildings, while others preferred meeting the local craftspeople."
         ],
         "continuations": [
-          "The visitor understood our explanation and asked how other classes could take part. We invited them to the next meeting.",
-          "Everyone was pleased to hear that visitors understood more exhibits. The group promised to share its ideas with other schools soon.",
-          "The organisers explained the main goal and gave everyone a small job. Alya decided to help again the following week.",
-          "The local aquarium displayed rare fish from deep water, and visitors learnt about underwater photography during the guided tour.",
-          "We checked everything first and worked in teams. This saved time and made the practical work much easier for the younger students.",
-          "After listening to suggestions, the team tried writing new labels in two languages. The new approach allowed the students to continue with their plans."
+          "The receptionist explained that the next group would begin at eleven and invited them to wait in the exhibition room.",
+          "Everyone agreed that speaking to people and seeing how they worked had made the trip memorable.",
+          "The guide advised her to climb carefully and avoid leaning over the walls for a picture.",
+          "The driver told the group to be at the departure point on time so the journey could begin safely.",
+          "A family member decided to cancel the trip because they had forgotten their swimming goggles.",
+          "These preparations helped everyone stay comfortable when the temperature changed during the climb."
         ],
         "answers": [
-          2,
-          4,
-          0,
           5,
+          3,
+          0,
+          2,
           1
         ],
         "instructions": "Read the five numbered excerpts and six endings A–F. Match each excerpt with its correct ending. One ending is extra."
@@ -889,40 +896,45 @@
         "label": "Reading 2",
         "marks": 5,
         "type": "short-answer",
-        "passage": "When Alya heard about a small local museum in an old neighbourhood, the idea sounded interesting but difficult. The project had started in November, and nobody was sure how many students would join. Alya decided to attend the first meeting anyway. At the beginning, the organisers explained why the project mattered to local people. They asked everyone to listen carefully before suggesting changes.\n\nThe group began by recording stories from older residents. Alya was worried about making mistakes, but her grandfather explained that learning through practice was an important part of the experience. After a few days, everyone had a specific responsibility. Some students recorded information, while others spoke to families who visited the area.\n\nA difficulty appeared when several labels were hard to read. The group could have stopped, but the students discussed several possibilities and chose a practical solution: writing new labels in two languages. They tested the idea, checked the results and made small changes where necessary. Instead of blaming anyone for the delay, they shared the work fairly.\n\nAt the end of the month, visitors understood more exhibits. Alya felt delighted and realised that a useful project does not need to be perfect on the first day. The students presented their work to the school council and suggested that another class could continue it next term. Alya kept a notebook with photographs and reflections, hoping it would encourage younger pupils to try something similar.",
+        "passage": "Last month, Rania and her family planned a weekend visit to a mountain village. Rania wanted to explore an old fort, while her younger brother hoped to see a waterfall. Their father checked the weather forecast and the opening times before they left home. He also made sure the car had enough fuel for the journey.\n\nThey set off early on Friday morning. After an hour, the family reached a village where they stopped to ask a local shopkeeper about the best route. The shopkeeper explained that one road had been closed for repairs and suggested a safer road through a nearby valley. He also reminded them to drive slowly because the bends were narrow.\n\nBy midday, they had reached the fort. Rania was disappointed to learn that the guided tour would not begin for another forty minutes. Instead of waiting outside in the sun, the family visited a small craft exhibition nearby. Rania watched an artist making colourful baskets and bought a postcard for her friend.\n\nLater, the guide explained how people had used the fort to protect the village. From the upper courtyard, Rania could see the mountains and the winding road they had followed. Her brother took several photographs but decided not to visit the waterfall because it was getting late.\n\nOn their way home, Rania wrote a short travel diary. She realised that checking information and being flexible had helped her family enjoy the trip despite the unexpected road closure.",
         "items": [
           {
-            "stem": "When did the project begin?",
+            "stem": "What did Rania want to explore?",
             "answers": [
-              "November"
+              "an old fort",
+              "old fort",
+              "the fort"
             ]
           },
           {
-            "stem": "Who helped the students learn through practice?",
+            "stem": "Why did the family change their route?",
             "answers": [
-              "her grandfather"
+              "one road was closed for repairs",
+              "the road was closed",
+              "road repairs"
             ]
           },
           {
-            "stem": "What did the students do when a difficulty appeared?",
+            "stem": "Who suggested a safer road?",
             "answers": [
-              "discussed several possibilities",
-              "discussed solutions",
-              "chose a practical solution"
+              "a local shopkeeper",
+              "shopkeeper",
+              "the shopkeeper"
             ]
           },
           {
-            "stem": "How did the students share the work?",
+            "stem": "What did Rania buy at the craft exhibition?",
             "answers": [
-              "fairly",
-              "they shared the work fairly"
+              "a postcard",
+              "postcard"
             ]
           },
           {
-            "stem": "Who listened to their final presentation?",
+            "stem": "Why did her brother decide not to visit the waterfall?",
             "answers": [
-              "the school council",
-              "school council"
+              "it was getting late",
+              "because it was late",
+              "getting late"
             ]
           }
         ],
@@ -954,7 +966,7 @@
         "topic": "Write an email to a friend about a journey to an Omani town. Explain how you travelled, what you planned and what surprised you. Write at least 80 words."
       }
     ],
-    "status": "original-practice-review"
+    "status": "original-unit-focused-educator-review"
   },
   {
     "id": "g7-d",
@@ -972,85 +984,85 @@
         "marks": 5,
         "items": [
           {
-            "stem": "Which place will the students visit?",
+            "stem": "Which instrument will the pupil play in the show?",
             "options": [
-              "library",
-              "park",
-              "museum"
-            ],
-            "answer": 2,
-            "script": "Our class is planning a visit next week. Some classmates wanted to spend the morning in a park, and others suggested the library. The teacher has booked a guided tour of the museum instead. We will learn about old objects and take notes for a project.",
-            "images": [
-              "book-open",
-              "trees",
-              "landmark"
-            ]
-          },
-          {
-            "stem": "What will the speaker bring?",
-            "options": [
-              "camera",
-              "umbrella",
-              "bottle"
-            ],
-            "answer": 2,
-            "script": "I am getting ready for a long walk with my friends on Saturday. I have packed comfortable shoes and a small snack. My mother suggested taking a camera, but I already have my phone. The most important thing in my bag is my water bottle.",
-            "images": [
-              "camera",
-              "umbrella",
-              "glass-water"
-            ]
-          },
-          {
-            "stem": "Which activity did the girl choose?",
-            "options": [
-              "cycling",
-              "painting",
-              "reading"
+              "guitar",
+              "drum",
+              "piano"
             ],
             "answer": 1,
-            "script": "Our school is offering several clubs this term. I enjoy books, but I already read every evening. I also considered the cycling group, although I do not own a bicycle. I finally chose the painting club because I want to learn to use watercolours.",
             "images": [
-              "bike",
-              "palette",
+              "guitar",
+              "drum",
+              "piano"
+            ],
+            "script": "Our school is organising a music show next Friday. I practised the guitar last year, and I can play a little piano, but neither instrument is part of my performance this time. I have joined the percussion group, so I will play the drum on stage."
+          },
+          {
+            "stem": "What item did the stage manager forget?",
+            "options": [
+              "microphone",
+              "camera",
               "book"
-            ]
-          },
-          {
-            "stem": "Where will the group meet?",
-            "options": [
-              "hall",
-              "garden",
-              "classroom"
-            ],
-            "answer": 1,
-            "script": "Please listen carefully to the announcement. Our science group usually meets in the classroom, and last week we used the school hall. Tomorrow we need to collect leaves and examine plants, so everyone should meet in the garden behind the main building at nine.",
-            "images": [
-              "warehouse",
-              "flower-2",
-              "school"
-            ]
-          },
-          {
-            "stem": "Which item has the boy repaired?",
-            "options": [
-              "lamp",
-              "clock",
-              "radio"
             ],
             "answer": 0,
-            "script": "My grandfather taught me to check simple problems before throwing things away. Yesterday I found an old radio and a broken clock in the cupboard. I could not repair either one. However, I changed a wire in our desk lamp, and now it works perfectly.",
             "images": [
-              "lamp-desk",
-              "clock-3",
-              "radio"
-            ]
+              "mic",
+              "camera",
+              "book"
+            ],
+            "script": "The drama club arrived early for its rehearsal. Everyone had brought their scripts, and a parent had already prepared a camera for the photographs. However, the stage manager discovered that the microphone was still in the classroom, so she asked someone to collect it."
+          },
+          {
+            "stem": "Where will the final performance take place?",
+            "options": [
+              "school",
+              "library",
+              "museum"
+            ],
+            "answer": 0,
+            "images": [
+              "school",
+              "library",
+              "landmark"
+            ],
+            "script": "The young performers first wanted to use the public library, but the room was too small for their audience. The museum offered an outdoor space, although the weather might change. In the end, the head teacher agreed to let them perform in the school hall."
+          },
+          {
+            "stem": "Which activity did the student choose after school?",
+            "options": [
+              "painting",
+              "football",
+              "playing guitar"
+            ],
+            "answer": 2,
+            "images": [
+              "palette",
+              "football",
+              "guitar"
+            ],
+            "script": "I tried painting in the art club and watched my friends play football, but I wanted an activity that involved music. My cousin showed me how to play a few chords, and I have now joined the guitar club, where we rehearse twice a week."
+          },
+          {
+            "stem": "How will the pupils travel to the music festival?",
+            "options": [
+              "bus",
+              "train",
+              "plane"
+            ],
+            "answer": 0,
+            "images": [
+              "bus",
+              "train-front",
+              "plane"
+            ],
+            "script": "Our class will attend a music festival in another town. Some students asked whether we would fly, while others suggested going by train. Our teacher explained that the journey was short and the school had already booked a bus for everyone to travel together."
           }
         ],
         "type": "picture-choice",
         "instructions": "You will hear five short texts twice. For each text choose the correct picture A, B or C.",
         "audio": "assets/audio/g7-a-listening1.mp3",
-        "transcript": "Listening one. You will hear five short texts. Text 1. Our class is planning a visit next week. Some classmates wanted to spend the morning in a park, and others suggested the library. The teacher has booked a guided tour of the museum instead. We will learn about old objects and take notes for a project.  Text 2. I am getting ready for a long walk with my friends on Saturday. I have packed comfortable shoes and a small snack. My mother suggested taking a camera, but I already have my phone. The most important thing in my bag is my water bottle.  Text 3. Our school is offering several clubs this term. I enjoy books, but I already read every evening. I also considered the cycling group, although I do not own a bicycle. I finally chose the painting club because I want to learn to use watercolours.  Text 4. Please listen carefully to the announcement. Our science group usually meets in the classroom, and last week we used the school hall. Tomorrow we need to collect leaves and examine plants, so everyone should meet in the garden behind the main building at nine.  Text 5. My grandfather taught me to check simple problems before throwing things away. Yesterday I found an old radio and a broken clock in the cupboard. I could not repair either one. However, I changed a wire in our desk lamp, and now it works perfectly. ",
+        "transcript": "Listening one. You will hear five short texts twice. Text 1. Our school is organising a music show next Friday. I practised the guitar last year, and I can play a little piano, but neither instrument is part of my performance this time. I have joined the percussion group, so I will play the drum on stage. Text 2. The drama club arrived early for its rehearsal. Everyone had brought their scripts, and a parent had already prepared a camera for the photographs. However, the stage manager discovered that the microphone was still in the classroom, so she asked someone to collect it. Text 3. The young performers first wanted to use the public library, but the room was too small for their audience. The museum offered an outdoor space, although the weather might change. In the end, the head teacher agreed to let them perform in the school hall. Text 4. I tried painting in the art club and watched my friends play football, but I wanted an activity that involved music. My cousin showed me how to play a few chords, and I have now joined the guitar club, where we rehearse twice a week. Text 5. Our class will attend a music festival in another town. Some students asked whether we would fly, while others suggested going by train. Our teacher explained that the journey was short and the school had already booked a bus for everyone to travel together.",
         "sourceModel": "A",
         "sourceExamId": "g7-a"
       },
@@ -1060,31 +1072,31 @@
         "marks": 5,
         "items": [
           {
-            "stem": "The project started in September.",
+            "stem": "Salim's class visited a place where turtles are protected.",
             "answer": true
           },
           {
-            "stem": "Only experienced adults were allowed to join a vegetable garden.",
+            "stem": "The ranger said plastic waste cannot harm young turtles.",
             "answer": false
           },
           {
-            "stem": "The group received help from his science teacher.",
+            "stem": "Students watched turtles without touching them.",
             "answer": true
           },
           {
-            "stem": "The group solved its difficulty by buying expensive new equipment.",
+            "stem": "Salim's group used camera flashes close to the turtles.",
             "answer": false
           },
           {
-            "stem": "Nearly thirty people became interested in the project.",
+            "stem": "Salim recommends following reserve rules and staying quiet.",
             "answer": true
           }
         ],
-        "script": "Interviewer: Welcome to Young Voices. Today we are speaking with Salim about a vegetable garden. When did the project begin?\nSalim: It began in September, when people in the school courtyard asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before.\nInterviewer: What was the first thing you did?\nSalim: We started with planting seeds and checking soil. We were supported by his science teacher, who showed us how to work safely and plan our time.\nInterviewer: Was everything easy?\nSalim: Not really. At one point, the ground dried very quickly. We listened to different suggestions before agreeing on collecting rainwater in tanks. That helped us continue.\nInterviewer: What was the most encouraging result?\nSalim: I was happy when the first vegetables were shared. Nearly thirty people became interested in what we were doing.\nInterviewer: What is your advice to other students?\nSalim: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment.\nInterviewer: Thank you for sharing your experience.\nSalim: Thank you. I hope more schools try similar projects next term.",
+        "script": "Interviewer: Welcome to Nature Watch. Salim, why did your class visit the turtle reserve?\nSalim: We wanted to understand how sea turtles are protected. Our teacher reminded us that bright lights and noise can disturb them.\nInterviewer: What did you learn from the ranger?\nSalim: She explained that turtles return to beaches to lay their eggs. If people leave plastic on the sand, young turtles may become trapped.\nInterviewer: Did you see any turtles?\nSalim: Yes, we watched two from a safe distance. We did not touch them or use a camera flash.\nInterviewer: Was there a problem during the visit?\nSalim: Some visitors had left empty bottles near a path. The ranger asked us to collect them while wearing gloves.\nInterviewer: How can young people help after the trip?\nSalim: We can use reusable bottles, tell others not to litter and support beach clean-ups. If we protect nesting areas, more turtles may reach the sea safely.\nInterviewer: What would you tell someone planning a visit?\nSalim: Follow the rules and stay quiet. Seeing animals in their natural habitat is exciting, but their safety is more important than our photographs.",
         "type": "true-false",
         "instructions": "Listen to the dialogue twice. Decide whether each statement is True or False.",
         "audio": "assets/audio/g7-b-listening2.mp3",
-        "transcript": "Listening two. Listen to the dialogue carefully. Interviewer: Welcome to Young Voices. Today we are speaking with Salim about a vegetable garden. When did the project begin? Salim: It began in September, when people in the school courtyard asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before. Interviewer: What was the first thing you did? Salim: We started with planting seeds and checking soil. We were supported by his science teacher, who showed us how to work safely and plan our time. Interviewer: Was everything easy? Salim: Not really. At one point, the ground dried very quickly. We listened to different suggestions before agreeing on collecting rainwater in tanks. That helped us continue. Interviewer: What was the most encouraging result? Salim: I was happy when the first vegetables were shared. Nearly thirty people became interested in what we were doing. Interviewer: What is your advice to other students? Salim: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment. Interviewer: Thank you for sharing your experience. Salim: Thank you. I hope more schools try similar projects next term.",
+        "transcript": "Listening two. Listen to the dialogue carefully. Interviewer: Welcome to Nature Watch. Salim, why did your class visit the turtle reserve? Salim: We wanted to understand how sea turtles are protected. Our teacher reminded us that bright lights and noise can disturb them. Interviewer: What did you learn from the ranger? Salim: She explained that turtles return to beaches to lay their eggs. If people leave plastic on the sand, young turtles may become trapped. Interviewer: Did you see any turtles? Salim: Yes, we watched two from a safe distance. We did not touch them or use a camera flash. Interviewer: Was there a problem during the visit? Salim: Some visitors had left empty bottles near a path. The ranger asked us to collect them while wearing gloves. Interviewer: How can young people help after the trip? Salim: We can use reusable bottles, tell others not to litter and support beach clean-ups. If we protect nesting areas, more turtles may reach the sea safely. Interviewer: What would you tell someone planning a visit? Salim: Follow the rules and stay quiet. Seeing animals in their natural habitat is exciting, but their safety is more important than our photographs.",
         "sourceModel": "B",
         "sourceExamId": "g7-b"
       },
@@ -1186,26 +1198,26 @@
         "marks": 5,
         "type": "matching",
         "texts": [
-          "The first meeting for a mobile library took place in a mountain village. Maha came early to discover what volunteers would do.",
-          "Our group brought simple supplies for arranging books by topic. Nobody wanted to waste materials or spend money before planning the activity properly.",
-          "A local visitor asked why students had chosen a mobile library. We explained how the idea could make a difference to people nearby.",
-          "During the second week, a problem appeared: rain damaged some book covers. Some students felt worried that the whole activity might have to stop.",
-          "On the final day, Maha presented the group’s results. Teachers and families listened carefully and asked what the students had learned."
+          "Before the curtain opened, the school actors checked their costumes and repeated their first lines. One pupil was worried because it would be her first appearance in front of a large audience.",
+          "The student music group had practised for several weeks. During the final rehearsal, the guitar sounded strange, and the musicians decided to examine it carefully.",
+          "A visiting storyteller arrived at the theatre early. She wanted to learn the names of the children who would introduce her and to understand how the programme was organised.",
+          "The school newspaper photographer stood beside the stage. He knew that using a flash could distract the actors and asked where he could take pictures without causing a problem.",
+          "At the end of the performance, the audience applauded loudly. The drama teacher thanked the actors, the technicians and the students who had designed the posters."
         ],
         "continuations": [
-          "The visitor understood our explanation and asked how other classes could take part. We invited them to the next meeting.",
-          "Everyone was pleased to hear that more families borrowed books. The group promised to share its ideas with other schools soon.",
-          "The organisers explained the main goal and gave everyone a small job. Maha decided to help again the following week.",
-          "The local aquarium displayed rare fish from deep water, and visitors learnt about underwater photography during the guided tour.",
-          "We checked everything first and worked in teams. This saved time and made the practical work much easier for the younger students.",
-          "After listening to suggestions, the team tried using waterproof boxes. The new approach allowed the students to continue with their plans."
+          "The organiser showed her the programme and introduced the two presenters before the audience arrived.",
+          "They discovered a loose string and replaced it before the concert began.",
+          "The teacher reminded everyone that the performance would not have succeeded without teamwork.",
+          "The pupil took a deep breath, listened for her cue and walked confidently into the light.",
+          "A visitor asked how to buy a ticket for the train, even though the play had already begun.",
+          "The stage manager suggested a quiet corner with a clear view where the flash would not be needed."
         ],
         "answers": [
-          2,
-          4,
+          3,
+          1,
           0,
           5,
-          1
+          2
         ],
         "instructions": "Read the five numbered excerpts and six endings A–F. Match each excerpt with its correct ending. One ending is extra.",
         "sourceModel": "A",
@@ -1216,40 +1228,43 @@
         "label": "Reading 2",
         "marks": 5,
         "type": "short-answer",
-        "passage": "When Salim heard about a vegetable garden in the school courtyard, the idea sounded interesting but difficult. The project had started in September, and nobody was sure how many students would join. Salim decided to attend the first meeting anyway. At the beginning, the organisers explained why the project mattered to local people. They asked everyone to listen carefully before suggesting changes.\n\nThe group began by planting seeds and checking soil. Salim was worried about making mistakes, but his science teacher explained that learning through practice was an important part of the experience. After a few days, everyone had a specific responsibility. Some students recorded information, while others spoke to families who visited the area.\n\nA difficulty appeared when the ground dried very quickly. The group could have stopped, but the students discussed several possibilities and chose a practical solution: collecting rainwater in tanks. They tested the idea, checked the results and made small changes where necessary. Instead of blaming anyone for the delay, they shared the work fairly.\n\nAt the end of the month, the first vegetables were shared. Salim felt surprised and realised that a useful project does not need to be perfect on the first day. The students presented their work to the school council and suggested that another class could continue it next term. Salim kept a notebook with photographs and reflections, hoping it would encourage younger pupils to try something similar.",
+        "passage": "During a school visit to a nature reserve, Huda noticed that the guides spent more time looking for signs of animals than trying to see the animals themselves. She had expected to photograph every creature, but the ranger explained that wildlife often hides when people approach too closely.\n\nThe group followed a marked path beside a shallow lake. Huda saw tracks in the soft sand and guessed that they belonged to a turtle. Her friend Rashid thought they might have been made by a bird. The ranger asked both pupils to examine the marks carefully. The tracks were wide and ended near a small pool, so they were probably left by a turtle.\n\nLater, the pupils found a plastic bag tangled among the plants. They wanted to remove it immediately, but the ranger told them to check whether an animal was nearby first. After she made sure the area was safe, they collected the rubbish using gloves.\n\nAs the sun became hotter, the students moved to a shaded observation point. They watched several birds drinking without disturbing them. Huda realised that careful observation could teach them more than a hurried photograph.\n\nBefore leaving, the class discussed ways to protect the reserve. They agreed to bring reusable bottles on future visits and to remind visitors to stay on marked paths. Huda wrote in her notebook that if everyone followed the rules, the animals would have a better chance of living safely in their natural habitat.",
         "items": [
           {
-            "stem": "When did the project begin?",
+            "stem": "Why does wildlife often hide from visitors?",
             "answers": [
-              "September"
+              "people approach too closely",
+              "visitors approach too closely",
+              "because people get too close"
             ]
           },
           {
-            "stem": "Who helped the students learn through practice?",
+            "stem": "What did the pupils find in the soft sand?",
             "answers": [
-              "his science teacher"
+              "tracks",
+              "animal tracks",
+              "tracks in the sand"
             ]
           },
           {
-            "stem": "What did the students do when a difficulty appeared?",
+            "stem": "What material was tangled among the plants?",
             "answers": [
-              "discussed several possibilities",
-              "discussed solutions",
-              "chose a practical solution"
+              "a plastic bag",
+              "plastic bag"
             ]
           },
           {
-            "stem": "How did the students share the work?",
+            "stem": "Where did the group watch birds drinking?",
             "answers": [
-              "fairly",
-              "they shared the work fairly"
+              "a shaded observation point",
+              "shaded observation point"
             ]
           },
           {
-            "stem": "Who listened to their final presentation?",
+            "stem": "What did the class agree to bring on future visits?",
             "answers": [
-              "the school council",
-              "school council"
+              "reusable bottles",
+              "reusable water bottles"
             ]
           }
         ],
