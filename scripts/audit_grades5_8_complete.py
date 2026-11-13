@@ -3,7 +3,7 @@
 Tests files, section totals, task types, image references, and real natural MP3.
 Unit alignment is explicitly NOT certified by this technical gate.
 """
-import json,pathlib,subprocess,sys,collections
+import json,pathlib,subprocess,sys,collections,hashlib
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 errors=[];stats={}
 def check(condition,msg):
@@ -32,7 +32,51 @@ for g in [5,6]:
                 check(len(x.get('pictureOptions',[]))>=5,f'{x["id"]}: picture options absent')
                 for img in x.get('pictureOptions',[]):
                     check((ROOT/'grades5-6/images'/f'{img}.svg').exists(),f'{x["id"]}: missing picture {img}')
+    if g==5:
+        source={'A':'Talent Show','B':'Then and Now','C':"Let's Explore",'D':'Off to the Shops'}
+    else:
+        source={'A':'Free-time Fun','B':'Technology','C':'Places','D':'Comprehensive'}
+    for item in tasks:
+        if item['skill']=='vocabulary' and item['format']=='picture-word-match':
+            pics=item['pictureOptions'];words=item['wordOptions']
+            check(len(item['questions'])==5,f'{item["id"]}: expected 5 vocabulary items')
+            for i,q in enumerate(item['questions']):
+                idx=q['answer']
+                check(isinstance(idx,int) and 0<=idx<len(words) and pics[i]==words[idx],f'{item["id"]}: picture/word mismatch {i+1}')
+        if item['skill']=='vocabulary' and item['format']=='picture-spelling':
+            check(len(item['questions'])==5 and all(q['answer']==item['pictureOptions'][i] for i,q in enumerate(item['questions'])),f'{item["id"]}: picture spelling mismatch')
+        if item['skill']=='reading' and item['part']==2:
+            check(len(item['questions'])==5 and len(item['passage'].split())>=75,f'{item["id"]}: incomplete reading passage')
+            check(set(q['answer'] for q in item['questions'])=={'True','False'},f'{item["id"]}: True/False answer diversity missing')
+        if item['skill']=='listening':
+            check(len(item['questions'])==5,f'{item["id"]}: listening questions not five')
+            if item['part']==1:
+                check(len(set(q['answer'] for q in item['questions']))==5,f'{item["id"]}: repeated listening picture key')
+                check(all(0<=q['answer']<len(item['pictureOptions']) for q in item['questions']),f'{item["id"]}: listening picture key out of range')
+            if item['part']==2:
+                check(all(0<=q['answer']<len(q['options']) for q in item['questions']),f'{item["id"]}: listening MC key out of range')
+            if item['model']!='D' or g==5:
+                check(bool(item.get('unitTheme')),f'{item["id"]}: no unit-theme label')
+    if g==6:
+        for part,model in ((1,'A'),(2,'B')):
+            orig=next(x for x in tasks if x['model']==model and x['skill']=='listening' and x['part']==part)
+            mixed=next(x for x in tasks if x['model']=='D' and x['skill']=='listening' and x['part']==part)
+            check(mixed.get('mediaId')==orig['id'] and mixed['questions']==orig['questions'],f'G6 D L{part}: source audio/keys not preserved')
     stats[str(g)]={'fixed_models':4,'mixed_models':2,'random_mode':True,'base_activities':len(tasks),'natural_mp3':8}
+# Grade 5–6 generated audio is valid only when the precise version of its
+# transcript AND answer keys matches the archived MP3 manifest.
+manifest_path=ROOT/'grades5-6/audio-natural/script_audio_manifest.json'
+if not manifest_path.exists():
+    errors.append('Grade 5–6 natural audio script hash manifest missing; regenerate the recordings')
+else:
+    manifest=json.loads(manifest_path.read_text())
+    for item in a:
+        if item['skill']!='listening':continue
+        payload={'passages':item.get('passages'),'passage':item.get('passage'),
+                 'questions':item['questions'],'pictures':item.get('pictureOptions')}
+        actual=hashlib.sha256(json.dumps(payload,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
+        stored=manifest.get(item['id'],{}).get('sha256_of_script')
+        check(stored==actual,f'{item["id"]}: MP3 audio does not match the current question script')
 for g in [7,8]:
     models=[x for x in b if x['grade']==g]
     check(len(models)==4,f'G{g}: expected 4 base models')
