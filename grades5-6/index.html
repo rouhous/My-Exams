@@ -12,7 +12,7 @@ function buildG56Mixed(g,label,seed){
  const pools=['A','B','C','D'];
  return G56_PARTS.map((key,i)=>{
    const [skill,n]=key.split(':');
-   const from=pools[(i*3+seed+i%2)%pools.length];
+   const from=pools[([0,1,2,3,2,3,0,1][i]+seed)%pools.length];
    const orig=bank.find(x=>x.grade===g&&x.model===from&&x.skill===skill&&x.part===+n);
    if(!orig)throw Error('Missing mixed practice part '+g+' '+from+' '+key);
    return {...orig,id:orig.id+'-mixed-'+label,model:label,sourceModel:from,sourceActivityId:orig.id};
@@ -22,10 +22,11 @@ for(const g of [5,6])for(const [name,seed] of [['E',1],['F',2]])
  bank.push(...buildG56Mixed(g,name,seed));
 function freshG56Random(){
  const g=Number(document.getElementById('grade').value);
+ const srcOrder=['A','B','C','D'].sort(()=>Math.random()-.5);const pick=[...srcOrder,...srcOrder].slice(0,8);
  const parts=G56_PARTS.map((key,i)=>{
   const [skill,n]=key.split(':');
   const candidates=bank.filter(x=>x.grade===g&&'ABCD'.includes(x.model)&&x.skill===skill&&x.part===+n);
-  const orig=candidates[Math.floor(Math.random()*candidates.length)];
+  const orig=candidates.find(x=>x.model===pick[i]);
   return {...orig,sourceModel:orig.model,sourceActivityId:orig.id};
  });
  if(parts.length!==8||parts.reduce((a,x)=>a+x.marks,0)!==40)throw Error('Random test incomplete');
