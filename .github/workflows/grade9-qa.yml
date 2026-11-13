@@ -21,6 +21,28 @@ jobs:
           python-version: '3.12'
       - name: Validate all Grade 9 paper models and media
         run: python scripts/validate_grade9.py
+      - name: Validate Grade 9 browser JavaScript syntax
+        shell: bash
+        run: |
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          import subprocess,tempfile
+          class P(HTMLParser):
+              def __init__(self):super().__init__();self.inside=False;self.scripts=[]
+              def handle_starttag(self,t,a):
+                  if t=='script':self.inside=not dict(a).get('src')
+              def handle_endtag(self,t):
+                  if t=='script':self.inside=False
+              def handle_data(self,d):
+                  if self.inside and d.strip():self.scripts.append(d)
+          p=P();p.feed(Path('grade9/index.html').read_text())
+          for i,script in enumerate(p.scripts):
+              with tempfile.NamedTemporaryFile(suffix='.js',mode='w') as tmp:
+                  tmp.write(script);tmp.flush()
+                  subprocess.run(['node','--check',tmp.name],check=True)
+          print('Checked',len(p.scripts),'inline scripts')
+          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
