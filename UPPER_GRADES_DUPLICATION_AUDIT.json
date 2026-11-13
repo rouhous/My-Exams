@@ -1,0 +1,811 @@
+{
+  "updated": "2026-11-13",
+  "scope": "Current My Exams higher_grades_corrected.json, not external papers",
+  "examPaths": {
+    "10-core": {
+      "models": 6,
+      "officialUnitTitles": [
+        "New Media",
+        "Climate Change",
+        "Renewable Energy",
+        "Civilisation"
+      ],
+      "curriculumMapped": false
+    },
+    "11-core": {
+      "models": 6,
+      "officialUnitTitles": [
+        "Communication",
+        "Those Teenage Things",
+        "Travellers and Tourists",
+        "Innovation"
+      ],
+      "curriculumMapped": false
+    },
+    "11-elective": {
+      "models": 6,
+      "officialUnitTitles": [
+        "Fame",
+        "The mind",
+        "In the past",
+        "Careers"
+      ],
+      "curriculumMapped": false
+    },
+    "12-core": {
+      "models": 6,
+      "officialUnitTitles": [
+        "Retail Therapy",
+        "Starting University",
+        "Tourism and Hospitality",
+        "Travel and Transport"
+      ],
+      "curriculumMapped": false
+    },
+    "12-elective": {
+      "models": 6,
+      "officialUnitTitles": [
+        "The arts",
+        "Doing the right thing",
+        "Living in a Changing World",
+        "Higher Education"
+      ],
+      "curriculumMapped": false
+    }
+  },
+  "uniqueRepeatedTextStarts": 23,
+  "crossTrackDuplications": 16,
+  "repeated": [
+    {
+      "preview": "My name is Khalid, and I want to describe an experience connected with community reading. It started in November when the student reading committee agreed to or",
+      "repetitions": 6,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "11-elective",
+          "model": "B",
+          "section": "Listening 2 · 6 short answers + 4 gaps",
+          "preview": "My name is Khalid, and I want to describe an experience connected with community reading. It started in November when the student reading committee agreed to or",
+          "length": 2713
+        },
+        {
+          "track": "11-elective",
+          "model": "E",
+          "section": "Listening 2 · 6 short answers + 4 gaps",
+          "preview": "My name is Khalid, and I want to describe an experience connected with community reading. It started in November when the student reading committee agreed to or",
+          "length": 2713
+        },
+        {
+          "track": "11-elective",
+          "model": "F",
+          "section": "Listening 2 · 6 short answers + 4 gaps",
+          "preview": "My name is Khalid, and I want to describe an experience connected with community reading. It started in November when the student reading committee agreed to or",
+          "length": 2713
+        },
+        {
+          "track": "12-core",
+          "model": "B",
+          "section": "Listening 2 · 4 short answers + 4 MCQ",
+          "preview": "My name is Khalid, and I want to describe an experience connected with community reading. It started in November when the student reading committee agreed to or",
+          "length": 2549
+        },
+        {
+          "track": "12-core",
+          "model": "E",
+          "section": "Listening 2 · 4 short answers + 4 MCQ",
+          "preview": "My name is Khalid, and I want to describe an experience connected with community reading. It started in November when the student reading committee agreed to or",
+          "length": 2549
+        },
+        {
+          "track": "12-elective",
+          "model": "B",
+          "section": "Reading 2 · 8 MCQ + 5 matching",
+          "preview": "My name is Khalid, and I want to describe an experience connected with community reading. It started in November when the student reading committee agreed to or",
+          "length": 3059
+        }
+      ]
+    },
+    {
+      "preview": "Introduction. This report describes how a student initiative concerning local heritage was organised at an old neighbourhood in Bahla. The project was coordinat",
+      "repetitions": 6,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "11-elective",
+          "model": "D",
+          "section": "Reading 2 · 6 MCQ + 4 matching",
+          "preview": "Introduction. This report describes how a student initiative concerning local heritage was organised at an old neighbourhood in Bahla. The project was coordinat",
+          "length": 2848
+        },
+        {
+          "track": "11-elective",
+          "model": "E",
+          "section": "Reading 2 · 6 MCQ + 4 matching",
+          "preview": "Introduction. This report describes how a student initiative concerning local heritage was organised at an old neighbourhood in Bahla. The project was coordinat",
+          "length": 2848
+        },
+        {
+          "track": "11-elective",
+          "model": "F",
+          "section": "Reading 2 · 6 MCQ + 4 matching",
+          "preview": "Introduction. This report describes how a student initiative concerning local heritage was organised at an old neighbourhood in Bahla. The project was coordinat",
+          "length": 2848
+        },
+        {
+          "track": "12-core",
+          "model": "D",
+          "section": "Reading 3 · 6 short answers + 4 MCQ",
+          "preview": "Introduction. This report describes how a student initiative concerning local heritage was organised at an old neighbourhood in Bahla. The project was coordinat",
+          "length": 2848
+        },
+        {
+          "track": "12-elective",
+          "model": "D",
+          "section": "Listening 2 · 5 note headings + 5 short answers",
+          "preview": "Introduction. This report describes how a student initiative concerning local heritage was organised at an old neighbourhood in Bahla. The project was coordinat",
+          "length": 3222
+        },
+        {
+          "track": "12-elective",
+          "model": "F",
+          "section": "Listening 2 · 5 note headings + 5 short answers",
+          "preview": "Introduction. This report describes how a student initiative concerning local heritage was organised at an old neighbourhood in Bahla. The project was coordinat",
+          "length": 3222
+        }
+      ]
+    },
+    {
+      "preview": "Presenter: Welcome to our school podcast. Today Salma will explain a project about coastal research. What was the original idea?\nGuest: We hoped to help younger",
+      "repetitions": 5,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "11-elective",
+          "model": "A",
+          "section": "Listening 1 · 6 MCQ + 4 True/False",
+          "preview": "Presenter: Welcome to our school podcast. Today Salma will explain a project about coastal research. What was the original idea?\nGuest: We hoped to help younger",
+          "length": 2793
+        },
+        {
+          "track": "11-elective",
+          "model": "E",
+          "section": "Listening 1 · 6 MCQ + 4 True/False",
+          "preview": "Presenter: Welcome to our school podcast. Today Salma will explain a project about coastal research. What was the original idea?\nGuest: We hoped to help younger",
+          "length": 2793
+        },
+        {
+          "track": "11-elective",
+          "model": "F",
+          "section": "Listening 1 · 6 MCQ + 4 True/False",
+          "preview": "Presenter: Welcome to our school podcast. Today Salma will explain a project about coastal research. What was the original idea?\nGuest: We hoped to help younger",
+          "length": 2793
+        },
+        {
+          "track": "12-core",
+          "model": "A",
+          "section": "Listening 1 · 7 MCQ",
+          "preview": "Presenter: Welcome to our school podcast. Today Salma will explain a project about coastal research. What was the original idea?\nGuest: We hoped to help younger",
+          "length": 2701
+        },
+        {
+          "track": "12-elective",
+          "model": "A",
+          "section": "Listening 1 · 6 MCQ + 4 True/False",
+          "preview": "Presenter: Welcome to our school podcast. Today Salma will explain a project about coastal research. What was the original idea?\nGuest: We hoped to help younger",
+          "length": 2793
+        }
+      ]
+    },
+    {
+      "preview": "Introduction. This report describes how a student initiative concerning coastal research was organised at a marine research station near Sur. The project was co",
+      "repetitions": 5,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "11-elective",
+          "model": "A",
+          "section": "Reading 2 · 6 MCQ + 4 matching",
+          "preview": "Introduction. This report describes how a student initiative concerning coastal research was organised at a marine research station near Sur. The project was co",
+          "length": 2802
+        },
+        {
+          "track": "12-core",
+          "model": "A",
+          "section": "Reading 3 · 6 short answers + 4 MCQ",
+          "preview": "Introduction. This report describes how a student initiative concerning coastal research was organised at a marine research station near Sur. The project was co",
+          "length": 2802
+        },
+        {
+          "track": "12-core",
+          "model": "E",
+          "section": "Reading 3 · 6 short answers + 4 MCQ",
+          "preview": "Introduction. This report describes how a student initiative concerning coastal research was organised at a marine research station near Sur. The project was co",
+          "length": 2802
+        },
+        {
+          "track": "12-elective",
+          "model": "A",
+          "section": "Listening 2 · 5 note headings + 5 short answers",
+          "preview": "Introduction. This report describes how a student initiative concerning coastal research was organised at a marine research station near Sur. The project was co",
+          "length": 3170
+        },
+        {
+          "track": "12-elective",
+          "model": "E",
+          "section": "Listening 2 · 5 note headings + 5 short answers",
+          "preview": "Introduction. This report describes how a student initiative concerning coastal research was organised at a marine research station near Sur. The project was co",
+          "length": 3170
+        }
+      ]
+    },
+    {
+      "preview": "Presenter: Welcome to our school podcast. Today Khalid will explain a project about community reading. What was the original idea?\nGuest: We hoped to make readi",
+      "repetitions": 5,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "11-elective",
+          "model": "B",
+          "section": "Listening 1 · 6 MCQ + 4 True/False",
+          "preview": "Presenter: Welcome to our school podcast. Today Khalid will explain a project about community reading. What was the original idea?\nGuest: We hoped to make readi",
+          "length": 2788
+        },
+        {
+          "track": "12-core",
+          "model": "B",
+          "section": "Listening 1 · 7 MCQ",
+          "preview": "Presenter: Welcome to our school podcast. Today Khalid will explain a project about community reading. What was the original idea?\nGuest: We hoped to make readi",
+          "length": 2696
+        },
+        {
+          "track": "12-elective",
+          "model": "B",
+          "section": "Listening 1 · 6 MCQ + 4 True/False",
+          "preview": "Presenter: Welcome to our school podcast. Today Khalid will explain a project about community reading. What was the original idea?\nGuest: We hoped to make readi",
+          "length": 2788
+        },
+        {
+          "track": "12-elective",
+          "model": "E",
+          "section": "Listening 1 · 6 MCQ + 4 True/False",
+          "preview": "Presenter: Welcome to our school podcast. Today Khalid will explain a project about community reading. What was the original idea?\nGuest: We hoped to make readi",
+          "length": 2788
+        },
+        {
+          "track": "12-elective",
+          "model": "F",
+          "section": "Listening 1 · 6 MCQ + 4 True/False",
+          "preview": "Presenter: Welcome to our school podcast. Today Khalid will explain a project about community reading. What was the original idea?\nGuest: We hoped to make readi",
+          "length": 2788
+        }
+      ]
+    },
+    {
+      "preview": "My name is Nasser, and I want to describe an experience connected with renewable energy. It started in September when the energy innovation group agreed to orga",
+      "repetitions": 5,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "11-elective",
+          "model": "C",
+          "section": "Listening 2 · 6 short answers + 4 gaps",
+          "preview": "My name is Nasser, and I want to describe an experience connected with renewable energy. It started in September when the energy innovation group agreed to orga",
+          "length": 2734
+        },
+        {
+          "track": "12-core",
+          "model": "C",
+          "section": "Listening 2 · 4 short answers + 4 MCQ",
+          "preview": "My name is Nasser, and I want to describe an experience connected with renewable energy. It started in September when the energy innovation group agreed to orga",
+          "length": 2586
+        },
+        {
+          "track": "12-elective",
+          "model": "C",
+          "section": "Reading 2 · 8 MCQ + 5 matching",
+          "preview": "My name is Nasser, and I want to describe an experience connected with renewable energy. It started in September when the energy innovation group agreed to orga",
+          "length": 3126
+        },
+        {
+          "track": "12-elective",
+          "model": "E",
+          "section": "Reading 2 · 8 MCQ + 5 matching",
+          "preview": "My name is Nasser, and I want to describe an experience connected with renewable energy. It started in September when the energy innovation group agreed to orga",
+          "length": 3126
+        },
+        {
+          "track": "12-elective",
+          "model": "F",
+          "section": "Reading 2 · 8 MCQ + 5 matching",
+          "preview": "My name is Nasser, and I want to describe an experience connected with renewable energy. It started in September when the energy innovation group agreed to orga",
+          "length": 3126
+        }
+      ]
+    },
+    {
+      "preview": "Introduction. This report describes how a student initiative concerning community reading was organised at a new neighbourhood reading room in Nizwa. The projec",
+      "repetitions": 4,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "11-elective",
+          "model": "B",
+          "section": "Reading 2 · 6 MCQ + 4 matching",
+          "preview": "Introduction. This report describes how a student initiative concerning community reading was organised at a new neighbourhood reading room in Nizwa. The projec",
+          "length": 2815
+        },
+        {
+          "track": "12-core",
+          "model": "B",
+          "section": "Reading 3 · 6 short answers + 4 MCQ",
+          "preview": "Introduction. This report describes how a student initiative concerning community reading was organised at a new neighbourhood reading room in Nizwa. The projec",
+          "length": 2815
+        },
+        {
+          "track": "12-core",
+          "model": "F",
+          "section": "Reading 3 · 6 short answers + 4 MCQ",
+          "preview": "Introduction. This report describes how a student initiative concerning community reading was organised at a new neighbourhood reading room in Nizwa. The projec",
+          "length": 2815
+        },
+        {
+          "track": "12-elective",
+          "model": "B",
+          "section": "Listening 2 · 5 note headings + 5 short answers",
+          "preview": "Introduction. This report describes how a student initiative concerning community reading was organised at a new neighbourhood reading room in Nizwa. The projec",
+          "length": 3196
+        }
+      ]
+    },
+    {
+      "preview": "Presenter: Welcome to our school podcast. Today Nasser will explain a project about renewable energy. What was the original idea?\nGuest: We hoped to reduce elec",
+      "repetitions": 4,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "11-elective",
+          "model": "C",
+          "section": "Listening 1 · 6 MCQ + 4 True/False",
+          "preview": "Presenter: Welcome to our school podcast. Today Nasser will explain a project about renewable energy. What was the original idea?\nGuest: We hoped to reduce elec",
+          "length": 2818
+        },
+        {
+          "track": "12-core",
+          "model": "C",
+          "section": "Listening 1 · 7 MCQ",
+          "preview": "Presenter: Welcome to our school podcast. Today Nasser will explain a project about renewable energy. What was the original idea?\nGuest: We hoped to reduce elec",
+          "length": 2726
+        },
+        {
+          "track": "12-core",
+          "model": "E",
+          "section": "Listening 1 · 7 MCQ",
+          "preview": "Presenter: Welcome to our school podcast. Today Nasser will explain a project about renewable energy. What was the original idea?\nGuest: We hoped to reduce elec",
+          "length": 2726
+        },
+        {
+          "track": "12-elective",
+          "model": "C",
+          "section": "Listening 1 · 6 MCQ + 4 True/False",
+          "preview": "Presenter: Welcome to our school podcast. Today Nasser will explain a project about renewable energy. What was the original idea?\nGuest: We hoped to reduce elec",
+          "length": 2818
+        }
+      ]
+    },
+    {
+      "preview": "Presenter: Welcome to our school podcast. Today Mariam will explain a project about local heritage. What was the original idea?\nGuest: We hoped to help families",
+      "repetitions": 4,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "11-elective",
+          "model": "D",
+          "section": "Listening 1 · 6 MCQ + 4 True/False",
+          "preview": "Presenter: Welcome to our school podcast. Today Mariam will explain a project about local heritage. What was the original idea?\nGuest: We hoped to help families",
+          "length": 2861
+        },
+        {
+          "track": "12-core",
+          "model": "D",
+          "section": "Listening 1 · 7 MCQ",
+          "preview": "Presenter: Welcome to our school podcast. Today Mariam will explain a project about local heritage. What was the original idea?\nGuest: We hoped to help families",
+          "length": 2723
+        },
+        {
+          "track": "12-core",
+          "model": "F",
+          "section": "Listening 1 · 7 MCQ",
+          "preview": "Presenter: Welcome to our school podcast. Today Mariam will explain a project about local heritage. What was the original idea?\nGuest: We hoped to help families",
+          "length": 2723
+        },
+        {
+          "track": "12-elective",
+          "model": "D",
+          "section": "Listening 1 · 6 MCQ + 4 True/False",
+          "preview": "Presenter: Welcome to our school podcast. Today Mariam will explain a project about local heritage. What was the original idea?\nGuest: We hoped to help families",
+          "length": 2861
+        }
+      ]
+    },
+    {
+      "preview": "My name is Mariam, and I want to describe an experience connected with local heritage. It started in December when the school history society agreed to organise",
+      "repetitions": 4,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "11-elective",
+          "model": "D",
+          "section": "Listening 2 · 6 short answers + 4 gaps",
+          "preview": "My name is Mariam, and I want to describe an experience connected with local heritage. It started in December when the school history society agreed to organise",
+          "length": 2777
+        },
+        {
+          "track": "12-core",
+          "model": "D",
+          "section": "Listening 2 · 4 short answers + 4 MCQ",
+          "preview": "My name is Mariam, and I want to describe an experience connected with local heritage. It started in December when the school history society agreed to organise",
+          "length": 2571
+        },
+        {
+          "track": "12-core",
+          "model": "F",
+          "section": "Listening 2 · 4 short answers + 4 MCQ",
+          "preview": "My name is Mariam, and I want to describe an experience connected with local heritage. It started in December when the school history society agreed to organise",
+          "length": 2571
+        },
+        {
+          "track": "12-elective",
+          "model": "D",
+          "section": "Reading 2 · 8 MCQ + 5 matching",
+          "preview": "My name is Mariam, and I want to describe an experience connected with local heritage. It started in December when the school history society agreed to organise",
+          "length": 3109
+        }
+      ]
+    },
+    {
+      "preview": "During a class project, students reviewed these examples. Read the complete passage carefully and select the correct form for each numbered gap. The shop [1] a ",
+      "repetitions": 4,
+      "crossTrack": false,
+      "uses": [
+        {
+          "track": "12-core",
+          "model": "A",
+          "section": "Grammar · 5 two-choice gaps",
+          "preview": "During a class project, students reviewed these examples. Read the complete passage carefully and select the correct form for each numbered gap. The shop [1] a ",
+          "length": 362
+        },
+        {
+          "track": "12-core",
+          "model": "B",
+          "section": "Grammar · 5 two-choice gaps",
+          "preview": "During a class project, students reviewed these examples. Read the complete passage carefully and select the correct form for each numbered gap. By the time the",
+          "length": 393
+        },
+        {
+          "track": "12-core",
+          "model": "C",
+          "section": "Grammar · 5 two-choice gaps",
+          "preview": "During a class project, students reviewed these examples. Read the complete passage carefully and select the correct form for each numbered gap. If the hotel is",
+          "length": 406
+        },
+        {
+          "track": "12-core",
+          "model": "D",
+          "section": "Grammar · 5 two-choice gaps",
+          "preview": "During a class project, students reviewed these examples. Read the complete passage carefully and select the correct form for each numbered gap. The airport [1]",
+          "length": 380
+        }
+      ]
+    },
+    {
+      "preview": "The class prepared a short information guide for this theme. Read each sentence in context and select the correct word for every numbered gap. A company name th",
+      "repetitions": 4,
+      "crossTrack": false,
+      "uses": [
+        {
+          "track": "12-core",
+          "model": "A",
+          "section": "Vocabulary · 5 three-choice gaps",
+          "preview": "The class prepared a short information guide for this theme. Read each sentence in context and select the correct word for every numbered gap. A company name th",
+          "length": 393
+        },
+        {
+          "track": "12-core",
+          "model": "B",
+          "section": "Vocabulary · 5 three-choice gaps",
+          "preview": "The class prepared a short information guide for this theme. Read each sentence in context and select the correct word for every numbered gap. Financial support",
+          "length": 377
+        },
+        {
+          "track": "12-core",
+          "model": "C",
+          "section": "Vocabulary · 5 three-choice gaps",
+          "preview": "The class prepared a short information guide for this theme. Read each sentence in context and select the correct word for every numbered gap. A confirmed reque",
+          "length": 364
+        },
+        {
+          "track": "12-core",
+          "model": "D",
+          "section": "Vocabulary · 5 three-choice gaps",
+          "preview": "The class prepared a short information guide for this theme. Read each sentence in context and select the correct word for every numbered gap. Crowded traffic o",
+          "length": 362
+        }
+      ]
+    },
+    {
+      "preview": "My name is Salma, and I want to describe an experience connected with coastal research. It started in October when the school environment club agreed to organis",
+      "repetitions": 3,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "11-elective",
+          "model": "A",
+          "section": "Listening 2 · 6 short answers + 4 gaps",
+          "preview": "My name is Salma, and I want to describe an experience connected with coastal research. It started in October when the school environment club agreed to organis",
+          "length": 2731
+        },
+        {
+          "track": "12-core",
+          "model": "A",
+          "section": "Listening 2 · 4 short answers + 4 MCQ",
+          "preview": "My name is Salma, and I want to describe an experience connected with coastal research. It started in October when the school environment club agreed to organis",
+          "length": 2525
+        },
+        {
+          "track": "12-elective",
+          "model": "A",
+          "section": "Reading 2 · 8 MCQ + 5 matching",
+          "preview": "My name is Salma, and I want to describe an experience connected with coastal research. It started in October when the school environment club agreed to organis",
+          "length": 3065
+        }
+      ]
+    },
+    {
+      "preview": "Introduction. This report describes how a student initiative concerning renewable energy was organised at a secondary school in Sohar. The project was coordinat",
+      "repetitions": 3,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "11-elective",
+          "model": "C",
+          "section": "Reading 2 · 6 MCQ + 4 matching",
+          "preview": "Introduction. This report describes how a student initiative concerning renewable energy was organised at a secondary school in Sohar. The project was coordinat",
+          "length": 2855
+        },
+        {
+          "track": "12-core",
+          "model": "C",
+          "section": "Reading 3 · 6 short answers + 4 MCQ",
+          "preview": "Introduction. This report describes how a student initiative concerning renewable energy was organised at a secondary school in Sohar. The project was coordinat",
+          "length": 2855
+        },
+        {
+          "track": "12-elective",
+          "model": "C",
+          "section": "Listening 2 · 5 note headings + 5 short answers",
+          "preview": "Introduction. This report describes how a student initiative concerning renewable energy was organised at a secondary school in Sohar. The project was coordinat",
+          "length": 3189
+        }
+      ]
+    },
+    {
+      "preview": "Email from Salma to the school committee. Dear Committee, I would like to explain why our project about coastal research needs support. We plan to meet at a mar",
+      "repetitions": 3,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "12-core",
+          "model": "A",
+          "section": "Reading 2 · 8 MCQ",
+          "preview": "Email from Salma to the school committee. Dear Committee, I would like to explain why our project about coastal research needs support. We plan to meet at a mar",
+          "length": 2333
+        },
+        {
+          "track": "12-elective",
+          "model": "A",
+          "section": "Reading 1 · 7 short answers + 5 gaps",
+          "preview": "Email from Salma to the school committee. Dear Committee, I would like to explain why our project about coastal research needs support. We plan to meet at a mar",
+          "length": 2982
+        },
+        {
+          "track": "12-elective",
+          "model": "E",
+          "section": "Reading 1 · 7 short answers + 5 gaps",
+          "preview": "Email from Salma to the school committee. Dear Committee, I would like to explain why our project about coastal research needs support. We plan to meet at a mar",
+          "length": 2982
+        }
+      ]
+    },
+    {
+      "preview": "Email from Khalid to the school committee. Dear Committee, I would like to explain why our project about community reading needs support. We plan to meet at a n",
+      "repetitions": 3,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "12-core",
+          "model": "B",
+          "section": "Reading 2 · 8 MCQ",
+          "preview": "Email from Khalid to the school committee. Dear Committee, I would like to explain why our project about community reading needs support. We plan to meet at a n",
+          "length": 2385
+        },
+        {
+          "track": "12-elective",
+          "model": "B",
+          "section": "Reading 1 · 7 short answers + 5 gaps",
+          "preview": "Email from Khalid to the school committee. Dear Committee, I would like to explain why our project about community reading needs support. We plan to meet at a n",
+          "length": 2993
+        },
+        {
+          "track": "12-elective",
+          "model": "F",
+          "section": "Reading 1 · 7 short answers + 5 gaps",
+          "preview": "Email from Khalid to the school committee. Dear Committee, I would like to explain why our project about community reading needs support. We plan to meet at a n",
+          "length": 2993
+        }
+      ]
+    },
+    {
+      "preview": "Email from Nasser to the school committee. Dear Committee, I would like to explain why our project about renewable energy needs support. We plan to meet at a se",
+      "repetitions": 3,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "12-core",
+          "model": "C",
+          "section": "Reading 2 · 8 MCQ",
+          "preview": "Email from Nasser to the school committee. Dear Committee, I would like to explain why our project about renewable energy needs support. We plan to meet at a se",
+          "length": 2376
+        },
+        {
+          "track": "12-core",
+          "model": "F",
+          "section": "Reading 2 · 8 MCQ",
+          "preview": "Email from Nasser to the school committee. Dear Committee, I would like to explain why our project about renewable energy needs support. We plan to meet at a se",
+          "length": 2376
+        },
+        {
+          "track": "12-elective",
+          "model": "C",
+          "section": "Reading 1 · 7 short answers + 5 gaps",
+          "preview": "Email from Nasser to the school committee. Dear Committee, I would like to explain why our project about renewable energy needs support. We plan to meet at a se",
+          "length": 3027
+        }
+      ]
+    },
+    {
+      "preview": "Email from Mariam to the school committee. Dear Committee, I would like to explain why our project about local heritage needs support. We plan to meet at an old",
+      "repetitions": 3,
+      "crossTrack": true,
+      "uses": [
+        {
+          "track": "12-core",
+          "model": "D",
+          "section": "Reading 2 · 8 MCQ",
+          "preview": "Email from Mariam to the school committee. Dear Committee, I would like to explain why our project about local heritage needs support. We plan to meet at an old",
+          "length": 2389
+        },
+        {
+          "track": "12-core",
+          "model": "E",
+          "section": "Reading 2 · 8 MCQ",
+          "preview": "Email from Mariam to the school committee. Dear Committee, I would like to explain why our project about local heritage needs support. We plan to meet at an old",
+          "length": 2389
+        },
+        {
+          "track": "12-elective",
+          "model": "D",
+          "section": "Reading 1 · 7 short answers + 5 gaps",
+          "preview": "Email from Mariam to the school committee. Dear Committee, I would like to explain why our project about local heritage needs support. We plan to meet at an old",
+          "length": 3037
+        }
+      ]
+    },
+    {
+      "preview": "Should schools invest time in projects about coastal research? This question has attracted different views in our community. A recent activity at a marine resea",
+      "repetitions": 2,
+      "crossTrack": false,
+      "uses": [
+        {
+          "track": "11-elective",
+          "model": "A",
+          "section": "Reading 1 · 6 short answers + 4 True/False",
+          "preview": "Should schools invest time in projects about coastal research? This question has attracted different views in our community. A recent activity at a marine resea",
+          "length": 2845
+        },
+        {
+          "track": "11-elective",
+          "model": "F",
+          "section": "Reading 1 · 6 short answers + 4 True/False",
+          "preview": "Should schools invest time in projects about coastal research? This question has attracted different views in our community. A recent activity at a marine resea",
+          "length": 2845
+        }
+      ]
+    },
+    {
+      "preview": "Should schools invest time in projects about community reading? This question has attracted different views in our community. A recent activity at a new neighbo",
+      "repetitions": 2,
+      "crossTrack": false,
+      "uses": [
+        {
+          "track": "11-elective",
+          "model": "B",
+          "section": "Reading 1 · 6 short answers + 4 True/False",
+          "preview": "Should schools invest time in projects about community reading? This question has attracted different views in our community. A recent activity at a new neighbo",
+          "length": 2827
+        },
+        {
+          "track": "11-elective",
+          "model": "E",
+          "section": "Reading 1 · 6 short answers + 4 True/False",
+          "preview": "Should schools invest time in projects about community reading? This question has attracted different views in our community. A recent activity at a new neighbo",
+          "length": 2827
+        }
+      ]
+    },
+    {
+      "preview": "Text 1. Nasser visited a secondary school in Sohar to discuss renewable energy. The group hoped to reduce electricity waste at school. They wrote down several q",
+      "repetitions": 2,
+      "crossTrack": false,
+      "uses": [
+        {
+          "track": "12-core",
+          "model": "C",
+          "section": "Reading 1 · 7 True/False",
+          "preview": "Text 1. Nasser visited a secondary school in Sohar to discuss renewable energy. The group hoped to reduce electricity waste at school. They wrote down several q",
+          "length": 1863
+        },
+        {
+          "track": "12-core",
+          "model": "F",
+          "section": "Reading 1 · 7 True/False",
+          "preview": "Text 1. Nasser visited a secondary school in Sohar to discuss renewable energy. The group hoped to reduce electricity waste at school. They wrote down several q",
+          "length": 1863
+        }
+      ]
+    },
+    {
+      "preview": "Text 1. Mariam visited an old neighbourhood in Bahla to discuss local heritage. The group hoped to help families understand local history. They wrote down sever",
+      "repetitions": 2,
+      "crossTrack": false,
+      "uses": [
+        {
+          "track": "12-core",
+          "model": "D",
+          "section": "Reading 1 · 7 True/False",
+          "preview": "Text 1. Mariam visited an old neighbourhood in Bahla to discuss local heritage. The group hoped to help families understand local history. They wrote down sever",
+          "length": 1844
+        },
+        {
+          "track": "12-core",
+          "model": "E",
+          "section": "Reading 1 · 7 True/False",
+          "preview": "Text 1. Mariam visited an old neighbourhood in Bahla to discuss local heritage. The group hoped to help families understand local history. They wrote down sever",
+          "length": 1844
+        }
+      ]
+    },
+    {
+      "preview": "Teacher: Have you prepared the notes for our project? Student: Yes, I [1] finished them yesterday. Teacher: I think we [2] review the safety rules again. Studen",
+      "repetitions": 2,
+      "crossTrack": false,
+      "uses": [
+        {
+          "track": "12-core",
+          "model": "E",
+          "section": "Grammar · 5 two-choice gaps",
+          "preview": "Teacher: Have you prepared the notes for our project? Student: Yes, I [1] finished them yesterday. Teacher: I think we [2] review the safety rules again. Studen",
+          "length": 410
+        },
+        {
+          "track": "12-core",
+          "model": "F",
+          "section": "Grammar · 5 two-choice gaps",
+          "preview": "Teacher: Have you prepared the notes for our project? Student: Yes, I [1] finished them yesterday. Teacher: I think we [2] review the safety rules again. Studen",
+          "length": 410
+        }
+      ]
+    }
+  ],
+  "policy": "Do not reuse the same passage in different upper-grade elective/core tracks or unrelated listening/reading skills; E/F comprehensive models may reuse their own grade's validated unit material, but must not be presented as newly written.",
+  "priority": "Rebuild and remap 11-elective, 12-core and 12-elective base model content before generating natural voice MP3; do not discard original packages."
+}
