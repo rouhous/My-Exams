@@ -1,0 +1,175 @@
+{
+  "grade": 8,
+  "model": "A",
+  "unit": "Our planet",
+  "status": "original_unit_texts_pending_audio_regeneration",
+  "listening1": [
+    {
+      "stem": "Which weather is expected tomorrow?",
+      "options": [
+        "sunshine",
+        "rain",
+        "strong wind"
+      ],
+      "answer": 1,
+      "images": [
+        "sun",
+        "cloud-rain",
+        "wind"
+      ],
+      "script": "Our class is visiting the nature reserve tomorrow, so I checked the forecast again. Yesterday it showed sunshine, and this morning someone mentioned strong winds. However, the latest forecast now predicts heavy rain in the afternoon. We should take waterproof jackets and follow our teacher's advice."
+    },
+    {
+      "stem": "What does the school's new campaign aim to save?",
+      "options": [
+        "water",
+        "electricity",
+        "trees"
+      ],
+      "answer": 0,
+      "images": [
+        "glass-water",
+        "lamp-desk",
+        "trees"
+      ],
+      "script": "Our school already switches off lights and takes care of the garden. This month, the science team has decided to focus on the water we use. Every class will measure how much water it saves by turning off taps and reporting leaks immediately."
+    },
+    {
+      "stem": "Which animal was rescued on the beach?",
+      "options": [
+        "fish",
+        "bird",
+        "turtle"
+      ],
+      "answer": 2,
+      "images": [
+        "fish",
+        "bird",
+        "turtle"
+      ],
+      "script": "On Friday, we saw birds flying above the beach and small fish swimming close to the rocks. Suddenly, my sister noticed a young turtle trapped in plastic. We called the rescue team, who carefully freed it and checked that it could swim safely again."
+    },
+    {
+      "stem": "What will the eco-club do on Saturday?",
+      "options": [
+        "plant trees",
+        "read in a library",
+        "take photographs"
+      ],
+      "answer": 0,
+      "images": [
+        "trees",
+        "library",
+        "camera"
+      ],
+      "script": "Some members of the eco-club wanted to take wildlife photographs, and others suggested visiting the library. The club leader said both ideas could wait. On Saturday, everyone will plant new trees beside the playground, where they can provide shade for younger children."
+    },
+    {
+      "stem": "What must students bring to the beach clean-up?",
+      "options": [
+        "umbrella",
+        "backpack",
+        "water bottle"
+      ],
+      "answer": 2,
+      "images": [
+        "umbrella",
+        "backpack",
+        "glass-water"
+      ],
+      "script": "We are collecting rubbish from the beach on Thursday. Gloves and bags will be provided, and there is no need to bring an umbrella because the forecast is dry. You may bring a small backpack, but everyone must carry a reusable bottle of drinking water."
+    }
+  ],
+  "listening2": {
+    "script": "Interviewer: Today we are speaking to Hind, a young weather scientist, about staying safe during floods. Why do wadis sometimes become dangerous?\nHind: Heavy rain can fill a dry wadi very quickly. The water may look shallow, but it can be strong enough to move a car.\nInterviewer: What should families do when an alert arrives?\nHind: They should check official information, keep away from flooded roads and move to a safe place if advised. Nobody should try to cross flowing water.\nInterviewer: How can students prepare?\nHind: At our school, pupils helped make an emergency plan. We practised moving calmly to the upper floor and learned where the first-aid supplies were stored.\nInterviewer: Is safety only the responsibility of adults?\nHind: No. Young people can remind others to avoid danger, save water at home and take weather warnings seriously. Even small actions matter.\nInterviewer: What did you learn from the last exercise?\nHind: The most useful lesson was to prepare before a storm, not while the water is rising. Clear instructions helped everyone feel confident.",
+    "items": [
+      {
+        "stem": "Hind explains why wadis can become dangerous during heavy rain.",
+        "answer": true
+      },
+      {
+        "stem": "Hind recommends driving through moving floodwater.",
+        "answer": false
+      },
+      {
+        "stem": "Weather alerts can help families choose safe actions.",
+        "answer": true
+      },
+      {
+        "stem": "Only adults are allowed to help prepare a school safety plan.",
+        "answer": false
+      },
+      {
+        "stem": "Students practised moving calmly to a safer place at school.",
+        "answer": true
+      }
+    ]
+  },
+  "reading1": {
+    "texts": [
+      "The school eco-club inspected classrooms after lessons. Several lights and fans were still running even though nobody was inside. The pupils agreed to prepare a simple reminder for each classroom.",
+      "During a coastal walk, Salma noticed small pieces of plastic near a turtle nesting area. She did not touch the animals, but she informed the ranger and helped collect rubbish from the marked path.",
+      "A farmer explained that the village had received very little rain that summer. He showed pupils a new system that delivered small amounts of water directly to the roots of each plant.",
+      "At the science exhibition, volunteers compared paper, metal and plastic packaging. Visitors were invited to sort each item into the correct container before answering a short quiz.",
+      "A local weather expert spoke to the school about sudden storms. She explained that warnings were useful only when people understood them and followed the recommended safety instructions."
+    ],
+    "continuations": [
+      "The ranger thanked her for keeping a safe distance and said the clean-up would help protect the nesting beach.",
+      "The expert advised families to listen to official updates rather than rumours spread on social media.",
+      "They designed posters asking the last student to switch off electrical equipment before leaving.",
+      "One speaker suggested replacing every school book with a computer, although the discussion was about saving water.",
+      "The farmer said the new method reduced waste and allowed more vegetables to grow in the dry season.",
+      "Students became more confident about recycling when they had practised sorting different materials."
+    ],
+    "answers": [
+      2,
+      0,
+      4,
+      5,
+      1
+    ]
+  },
+  "reading2": {
+    "passage": "After a storm damaged part of the beach near her village, Mariam joined a student team that wanted to protect the coast. At first, the volunteers thought the problem was simply the plastic bottles left by visitors. However, a marine researcher showed them small pieces of fishing line hidden between the rocks. These could be even more dangerous because birds and turtles might become trapped in them.\n\nThe team divided the beach into four sections. Each group recorded the types of rubbish it found, using gloves and reusable collection bags. Mariam's group counted thirty-six plastic items on the first morning, but the researcher reminded them that a single day's figures could be misleading. They returned twice more before drawing conclusions.\n\nThe pupils then interviewed visitors. Most people said they wanted a cleaner beach, but many could not find a rubbish bin nearby. Instead of blaming visitors, the students suggested adding labelled recycling points at the entrance. The local council agreed to try the idea for one month.\n\nFour weeks later, the number of plastic items had fallen noticeably. Mariam was pleased, although she understood that one improvement would not solve every environmental problem. She presented the results at school and asked younger pupils to continue collecting data. The project taught her that protecting nature needs careful observation, cooperation and long-term effort.",
+    "items": [
+      {
+        "stem": "What dangerous material did the researcher find among the rocks?",
+        "answers": [
+          "fishing line",
+          "pieces of fishing line"
+        ]
+      },
+      {
+        "stem": "How many plastic items did Mariam's group count on the first morning?",
+        "answers": [
+          "36",
+          "thirty-six",
+          "thirty six"
+        ]
+      },
+      {
+        "stem": "Why did the team return to the beach more than once?",
+        "answers": [
+          "to collect more reliable data",
+          "to compare results",
+          "one day's figures could be misleading"
+        ]
+      },
+      {
+        "stem": "What change did the council agree to try?",
+        "answers": [
+          "labelled recycling points",
+          "recycling bins at the entrance",
+          "adding recycling points"
+        ]
+      },
+      {
+        "stem": "What did Mariam ask younger pupils to continue doing?",
+        "answers": [
+          "collecting data",
+          "collect data"
+        ]
+      }
+    ]
+  }
+}
