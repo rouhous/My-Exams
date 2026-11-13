@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-13-grade9-curriculum-grammar-verified-structure",
+  "version": "2026-11-13-g9-grammar-original-unit-patch-v2",
   "models": [
     {
       "model": "A",
@@ -160,17 +160,17 @@
           "group": 1,
           "title": "Grammar & Vocabulary — One cloze",
           "marks": 10,
-          "passage": "Everyone (1) ____ a different identity. My friend Huda usually (2) ____ traditional stories with her grandmother, but today she (3) ____ a video about her family. We (4) ____ proud of our languages and customs. Huda is very (5) ____ when she speaks to visitors. She (6) ____ her ideas clearly and never (7) ____ anyone unfairly. At the moment, her classmates (8) ____ questions about the video. They want to know how traditions (9) ____ people together. Huda believes that everyone should (10) ____ their own interests while respecting others.",
+          "passage": "Everyone (1) ____ an identity. My friend Huda usually (2) ____ stories with her grandmother, but today she (3) ____ a video about her family. We (4) ____ proud of our languages and customs. Huda is very (5) ____ when she speaks to visitors. She (6) ____ her ideas and never (7) ____ anyone unfairly. At the moment, her classmates (8) ____ questions about the video. They want to know how traditions (9) ____ people together. Huda believes that everyone should (10) ____ their own interests while respecting others.",
           "items": [
             {
               "stem": "Gap 1",
               "choices": [
+                "had",
                 "has",
                 "have",
-                "having",
-                "had"
+                "having"
               ],
-              "answer": 0
+              "answer": 1
             },
             {
               "stem": "Gap 2",
@@ -185,32 +185,32 @@
             {
               "stem": "Gap 3",
               "choices": [
-                "makes",
                 "is making",
                 "made",
-                "make"
+                "make",
+                "makes"
               ],
-              "answer": 1
+              "answer": 0
             },
             {
               "stem": "Gap 4",
               "choices": [
-                "are",
-                "is",
                 "was",
-                "be"
+                "be",
+                "are",
+                "is"
               ],
-              "answer": 0
+              "answer": 2
             },
             {
               "stem": "Gap 5",
               "choices": [
+                "confide",
                 "confident",
                 "confidence",
-                "confidently",
-                "confide"
+                "confidently"
               ],
-              "answer": 0
+              "answer": 1
             },
             {
               "stem": "Gap 6",
@@ -225,32 +225,32 @@
             {
               "stem": "Gap 7",
               "choices": [
-                "judges",
                 "judge",
                 "judged",
-                "judging"
+                "judging",
+                "judges"
               ],
-              "answer": 0
+              "answer": 3
             },
             {
               "stem": "Gap 8",
               "choices": [
-                "ask",
-                "are asking",
                 "asked",
-                "asks"
+                "asks",
+                "ask",
+                "are asking"
               ],
-              "answer": 1
+              "answer": 3
             },
             {
               "stem": "Gap 9",
               "choices": [
+                "bringing",
                 "bring",
                 "brings",
-                "brought",
-                "bringing"
+                "brought"
               ],
-              "answer": 0
+              "answer": 1
             },
             {
               "stem": "Gap 10",
@@ -566,27 +566,27 @@
           "group": 1,
           "title": "Grammar & Vocabulary — One cloze",
           "marks": 10,
-          "passage": "Last month, our class (1) ____ a digital history project. While we (2) ____ old photographs, one student (3) ____ a surprising story about the town market. Her grandfather (4) ____ there when he was young. We (5) ____ him to describe his memories, and he happily agreed. The team (6) ____ the interview when the school bell rang. Afterwards, we (7) ____ the recording and carefully (8) ____ the dates. By the end of the week, our project (9) ____ several generations together. We learned that shared memories can (10) ____ strong community connections.",
+          "passage": "Last month, our class (1) ____ a history project. While we (2) ____ old photographs, one student (3) ____ a story about the town market. Her grandfather (4) ____ there when he was young. We (5) ____ him to describe his memories, and he agreed. The team (6) ____ the interview when the school bell rang. Afterwards, we (7) ____ the recording and (8) ____ the dates. By the end of the week, our project (9) ____ generations together. We learned that shared memories can (10) ____ strong community connections.",
           "items": [
             {
               "stem": "Gap 1",
               "choices": [
-                "started",
-                "start",
                 "starting",
-                "starts"
+                "starts",
+                "started",
+                "start"
               ],
-              "answer": 0
+              "answer": 2
             },
             {
               "stem": "Gap 2",
               "choices": [
+                "examines",
                 "were examining",
                 "examine",
-                "have examined",
-                "examines"
+                "have examined"
               ],
-              "answer": 0
+              "answer": 1
             },
             {
               "stem": "Gap 3",
@@ -601,32 +601,32 @@
             {
               "stem": "Gap 4",
               "choices": [
-                "worked",
                 "works",
                 "working",
-                "work"
+                "work",
+                "worked"
               ],
-              "answer": 0
+              "answer": 3
             },
             {
               "stem": "Gap 5",
               "choices": [
-                "asked",
-                "ask",
                 "asking",
-                "asks"
+                "asks",
+                "asked",
+                "ask"
               ],
-              "answer": 0
+              "answer": 2
             },
             {
               "stem": "Gap 6",
               "choices": [
+                "recorded",
                 "was recording",
                 "record",
-                "records",
-                "recorded"
+                "records"
               ],
-              "answer": 0
+              "answer": 1
             },
             {
               "stem": "Gap 7",
@@ -641,32 +641,32 @@
             {
               "stem": "Gap 8",
               "choices": [
-                "checked",
                 "checking",
                 "checks",
-                "check"
+                "check",
+                "checked"
               ],
-              "answer": 0
+              "answer": 3
             },
             {
               "stem": "Gap 9",
               "choices": [
-                "brought",
-                "brings",
                 "bring",
-                "bringing"
+                "bringing",
+                "brought",
+                "brings"
               ],
-              "answer": 0
+              "answer": 2
             },
             {
               "stem": "Gap 10",
               "choices": [
+                "builds",
                 "build",
                 "built",
-                "building",
-                "builds"
+                "building"
               ],
-              "answer": 0
+              "answer": 1
             }
           ],
           "instructions": "Read the text. For each gap (1–10), choose the correct option (A, B, C or D).",
@@ -970,37 +970,37 @@
           "group": 1,
           "title": "Grammar & Vocabulary — One cloze",
           "marks": 10,
-          "passage": "Next year, our school (1) ____ a new technology club. Students (2) ____ robots to help save water in the garden. One team (3) ____ a clever sensor that can detect dry soil. The teacher thinks the invention (4) ____ useful in many homes. Before the exhibition, students (5) ____ test their designs carefully. If a machine (6) ____ correctly, they will repair it. They (7) ____ need expensive equipment because many materials can be reused. We (8) ____ more renewable energy in the future, and young inventors (9) ____ make a difference. Everyone should (10) ____ new ideas responsibly.",
+          "passage": "Next year, our school (1) ____ a technology club. Students (2) ____ robots to help save water in the garden. One team is designing a (3) ____ that detects dry soil. The teacher thinks the invention (4) ____ useful. Before the exhibition, students (5) ____ test their designs. If a machine (6) ____ correctly, they will repair it. They (7) ____ need expensive equipment because many materials can be reused. We will use more (8) ____ energy, and inventors (9) ____ make a difference. Everyone should (10) ____ new ideas responsibly.",
           "items": [
             {
               "stem": "Gap 1",
               "choices": [
-                "will open",
                 "opened",
                 "opens yesterday",
-                "opening"
+                "opening",
+                "will open"
               ],
-              "answer": 0
+              "answer": 3
             },
             {
               "stem": "Gap 2",
               "choices": [
-                "are going to build",
-                "built last year",
                 "build yesterday",
-                "building now always"
+                "building now always",
+                "are going to build",
+                "built last year"
               ],
-              "answer": 0
+              "answer": 2
             },
             {
               "stem": "Gap 3",
               "choices": [
-                "is developing",
-                "developed yesterday",
-                "develop",
-                "developed last month"
+                "suitcase",
+                "sensor",
+                "costume",
+                "invitation"
               ],
-              "answer": 0
+              "answer": 1
             },
             {
               "stem": "Gap 4",
@@ -1015,62 +1015,62 @@
             {
               "stem": "Gap 5",
               "choices": [
-                "must",
                 "must to",
                 "mustn't to",
-                "should to"
+                "should to",
+                "must"
               ],
-              "answer": 0
+              "answer": 3
             },
             {
               "stem": "Gap 6",
               "choices": [
-                "doesn't work",
-                "don't work",
                 "didn't working",
-                "not works"
+                "not works",
+                "doesn't work",
+                "don't work"
               ],
-              "answer": 0
+              "answer": 2
             },
             {
               "stem": "Gap 7",
               "choices": [
+                "haven't",
                 "won't",
                 "didn't",
-                "wasn't",
-                "haven't"
+                "wasn't"
               ],
-              "answer": 0
+              "answer": 1
             },
             {
               "stem": "Gap 8",
               "choices": [
-                "will use",
-                "used last week",
-                "uses yesterday",
-                "using"
+                "renewable",
+                "crowded",
+                "historic",
+                "noisy"
               ],
               "answer": 0
             },
             {
               "stem": "Gap 9",
               "choices": [
-                "can",
                 "can to",
                 "must to",
-                "can be to"
+                "can be to",
+                "can"
               ],
-              "answer": 0
+              "answer": 3
             },
             {
               "stem": "Gap 10",
               "choices": [
-                "explore",
-                "explored yesterday",
                 "exploring to",
-                "explores to"
+                "explores to",
+                "explore",
+                "explored yesterday"
               ],
-              "answer": 0
+              "answer": 2
             }
           ],
           "instructions": "Read the text. For each gap (1–10), choose the correct option (A, B, C or D).",
@@ -1390,37 +1390,37 @@
           "group": 1,
           "title": "Grammar & Vocabulary — One cloze",
           "marks": 10,
-          "passage": "Next year, our school (1) ____ a new technology club. Students (2) ____ robots to help save water in the garden. One team (3) ____ a clever sensor that can detect dry soil. The teacher thinks the invention (4) ____ useful in many homes. Before the exhibition, students (5) ____ test their designs carefully. If a machine (6) ____ correctly, they will repair it. They (7) ____ need expensive equipment because many materials can be reused. We (8) ____ more renewable energy in the future, and young inventors (9) ____ make a difference. Everyone should (10) ____ new ideas responsibly.",
+          "passage": "Next year, our school (1) ____ a technology club. Students (2) ____ robots to help save water in the garden. One team is designing a (3) ____ that detects dry soil. The teacher thinks the invention (4) ____ useful. Before the exhibition, students (5) ____ test their designs. If a machine (6) ____ correctly, they will repair it. They (7) ____ need expensive equipment because many materials can be reused. We will use more (8) ____ energy, and inventors (9) ____ make a difference. Everyone should (10) ____ new ideas responsibly.",
           "items": [
             {
               "stem": "Gap 1",
               "choices": [
-                "will open",
                 "opened",
                 "opens yesterday",
-                "opening"
+                "opening",
+                "will open"
               ],
-              "answer": 0
+              "answer": 3
             },
             {
               "stem": "Gap 2",
               "choices": [
-                "are going to build",
-                "built last year",
                 "build yesterday",
-                "building now always"
+                "building now always",
+                "are going to build",
+                "built last year"
               ],
-              "answer": 0
+              "answer": 2
             },
             {
               "stem": "Gap 3",
               "choices": [
-                "is developing",
-                "developed yesterday",
-                "develop",
-                "developed last month"
+                "suitcase",
+                "sensor",
+                "costume",
+                "invitation"
               ],
-              "answer": 0
+              "answer": 1
             },
             {
               "stem": "Gap 4",
@@ -1435,62 +1435,62 @@
             {
               "stem": "Gap 5",
               "choices": [
-                "must",
                 "must to",
                 "mustn't to",
-                "should to"
+                "should to",
+                "must"
               ],
-              "answer": 0
+              "answer": 3
             },
             {
               "stem": "Gap 6",
               "choices": [
-                "doesn't work",
-                "don't work",
                 "didn't working",
-                "not works"
+                "not works",
+                "doesn't work",
+                "don't work"
               ],
-              "answer": 0
+              "answer": 2
             },
             {
               "stem": "Gap 7",
               "choices": [
+                "haven't",
                 "won't",
                 "didn't",
-                "wasn't",
-                "haven't"
+                "wasn't"
               ],
-              "answer": 0
+              "answer": 1
             },
             {
               "stem": "Gap 8",
               "choices": [
-                "will use",
-                "used last week",
-                "uses yesterday",
-                "using"
+                "renewable",
+                "crowded",
+                "historic",
+                "noisy"
               ],
               "answer": 0
             },
             {
               "stem": "Gap 9",
               "choices": [
-                "can",
                 "can to",
                 "must to",
-                "can be to"
+                "can be to",
+                "can"
               ],
-              "answer": 0
+              "answer": 3
             },
             {
               "stem": "Gap 10",
               "choices": [
-                "explore",
-                "explored yesterday",
                 "exploring to",
-                "explores to"
+                "explores to",
+                "explore",
+                "explored yesterday"
               ],
-              "answer": 0
+              "answer": 2
             }
           ],
           "instructions": "Read the text. For each gap (1–10), choose the correct option (A, B, C or D).",
@@ -1809,17 +1809,17 @@
           "group": 1,
           "title": "Grammar & Vocabulary — One cloze",
           "marks": 10,
-          "passage": "Everyone (1) ____ a different identity. My friend Huda usually (2) ____ traditional stories with her grandmother, but today she (3) ____ a video about her family. We (4) ____ proud of our languages and customs. Huda is very (5) ____ when she speaks to visitors. She (6) ____ her ideas clearly and never (7) ____ anyone unfairly. At the moment, her classmates (8) ____ questions about the video. They want to know how traditions (9) ____ people together. Huda believes that everyone should (10) ____ their own interests while respecting others.",
+          "passage": "Everyone (1) ____ an identity. My friend Huda usually (2) ____ stories with her grandmother, but today she (3) ____ a video about her family. We (4) ____ proud of our languages and customs. Huda is very (5) ____ when she speaks to visitors. She (6) ____ her ideas and never (7) ____ anyone unfairly. At the moment, her classmates (8) ____ questions about the video. They want to know how traditions (9) ____ people together. Huda believes that everyone should (10) ____ their own interests while respecting others.",
           "items": [
             {
               "stem": "Gap 1",
               "choices": [
+                "had",
                 "has",
                 "have",
-                "having",
-                "had"
+                "having"
               ],
-              "answer": 0
+              "answer": 1
             },
             {
               "stem": "Gap 2",
@@ -1834,32 +1834,32 @@
             {
               "stem": "Gap 3",
               "choices": [
-                "makes",
                 "is making",
                 "made",
-                "make"
+                "make",
+                "makes"
               ],
-              "answer": 1
+              "answer": 0
             },
             {
               "stem": "Gap 4",
               "choices": [
-                "are",
-                "is",
                 "was",
-                "be"
+                "be",
+                "are",
+                "is"
               ],
-              "answer": 0
+              "answer": 2
             },
             {
               "stem": "Gap 5",
               "choices": [
+                "confide",
                 "confident",
                 "confidence",
-                "confidently",
-                "confide"
+                "confidently"
               ],
-              "answer": 0
+              "answer": 1
             },
             {
               "stem": "Gap 6",
@@ -1874,32 +1874,32 @@
             {
               "stem": "Gap 7",
               "choices": [
-                "judges",
                 "judge",
                 "judged",
-                "judging"
+                "judging",
+                "judges"
               ],
-              "answer": 0
+              "answer": 3
             },
             {
               "stem": "Gap 8",
               "choices": [
-                "ask",
-                "are asking",
                 "asked",
-                "asks"
+                "asks",
+                "ask",
+                "are asking"
               ],
-              "answer": 1
+              "answer": 3
             },
             {
               "stem": "Gap 9",
               "choices": [
+                "bringing",
                 "bring",
                 "brings",
-                "brought",
-                "bringing"
+                "brought"
               ],
-              "answer": 0
+              "answer": 1
             },
             {
               "stem": "Gap 10",
@@ -2228,27 +2228,27 @@
           "group": 1,
           "title": "Grammar & Vocabulary — One cloze",
           "marks": 10,
-          "passage": "Last month, our class (1) ____ a digital history project. While we (2) ____ old photographs, one student (3) ____ a surprising story about the town market. Her grandfather (4) ____ there when he was young. We (5) ____ him to describe his memories, and he happily agreed. The team (6) ____ the interview when the school bell rang. Afterwards, we (7) ____ the recording and carefully (8) ____ the dates. By the end of the week, our project (9) ____ several generations together. We learned that shared memories can (10) ____ strong community connections.",
+          "passage": "Last month, our class (1) ____ a history project. While we (2) ____ old photographs, one student (3) ____ a story about the town market. Her grandfather (4) ____ there when he was young. We (5) ____ him to describe his memories, and he agreed. The team (6) ____ the interview when the school bell rang. Afterwards, we (7) ____ the recording and (8) ____ the dates. By the end of the week, our project (9) ____ generations together. We learned that shared memories can (10) ____ strong community connections.",
           "items": [
             {
               "stem": "Gap 1",
               "choices": [
-                "started",
-                "start",
                 "starting",
-                "starts"
+                "starts",
+                "started",
+                "start"
               ],
-              "answer": 0
+              "answer": 2
             },
             {
               "stem": "Gap 2",
               "choices": [
+                "examines",
                 "were examining",
                 "examine",
-                "have examined",
-                "examines"
+                "have examined"
               ],
-              "answer": 0
+              "answer": 1
             },
             {
               "stem": "Gap 3",
@@ -2263,32 +2263,32 @@
             {
               "stem": "Gap 4",
               "choices": [
-                "worked",
                 "works",
                 "working",
-                "work"
+                "work",
+                "worked"
               ],
-              "answer": 0
+              "answer": 3
             },
             {
               "stem": "Gap 5",
               "choices": [
-                "asked",
-                "ask",
                 "asking",
-                "asks"
+                "asks",
+                "asked",
+                "ask"
               ],
-              "answer": 0
+              "answer": 2
             },
             {
               "stem": "Gap 6",
               "choices": [
+                "recorded",
                 "was recording",
                 "record",
-                "records",
-                "recorded"
+                "records"
               ],
-              "answer": 0
+              "answer": 1
             },
             {
               "stem": "Gap 7",
@@ -2303,32 +2303,32 @@
             {
               "stem": "Gap 8",
               "choices": [
-                "checked",
                 "checking",
                 "checks",
-                "check"
+                "check",
+                "checked"
               ],
-              "answer": 0
+              "answer": 3
             },
             {
               "stem": "Gap 9",
               "choices": [
-                "brought",
-                "brings",
                 "bring",
-                "bringing"
+                "bringing",
+                "brought",
+                "brings"
               ],
-              "answer": 0
+              "answer": 2
             },
             {
               "stem": "Gap 10",
               "choices": [
+                "builds",
                 "build",
                 "built",
-                "building",
-                "builds"
+                "building"
               ],
-              "answer": 0
+              "answer": 1
             }
           ],
           "instructions": "Read the text. For each gap (1–10), choose the correct option (A, B, C or D).",
