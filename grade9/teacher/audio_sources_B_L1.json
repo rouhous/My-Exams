@@ -1,0 +1,56 @@
+[
+  {
+    "model": "B",
+    "section": "listening1",
+    "segment": "intro",
+    "role": "narrator",
+    "text": "You are going to hear five short texts. For each text, choose the correct picture, A, B or C. You will hear the texts twice.",
+    "file": "audio-natural/g9/b/listening1/intro.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=d19b246de07141de806fac170523dbe6.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening1",
+    "segment": "text1",
+    "role": "narrator",
+    "text": "Text one. My cousins and I are preparing for a long walk around our neighbourhood. I thought about wearing my school jacket, but the afternoon will be warm. My old backpack is still strong. Instead, I bought comfortable shoes because the route includes several steep streets and narrow paths.",
+    "file": "audio-natural/g9/b/listening1/text1.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=919622e0af194d44b9eab1561d985bcd.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening1",
+    "segment": "text2",
+    "role": "narrator",
+    "text": "Text two. Last term I tried running with my brother and cycling with my friends. I enjoyed both, but I wanted to learn something different. When the new sports centre opened an indoor pool, I joined the swimming club. Now I practise twice a week and feel much more confident in the water.",
+    "file": "audio-natural/g9/b/listening1/text2.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=6e1a71b476634dbd822c4d8ef3832e38.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening1",
+    "segment": "text3",
+    "role": "narrator",
+    "text": "Text three. The youth festival needs a place for its final match. The school building is too small, and the public park has no seats for spectators. The organisers have booked the stadium instead. The match will begin there on Saturday afternoon, and families can enter through the main gate.",
+    "file": "audio-natural/g9/b/listening1/text3.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=729a6b202a7b44f8b7271f795f1d74ae.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening1",
+    "segment": "text4",
+    "role": "narrator",
+    "text": "Text four. Yesterday the weather website predicted rain, and my sister even worried about snow in the mountains. This morning the forecast changed. According to the latest update, the sky will be clear and sunny throughout the day. Our class can hold its outdoor activities as planned, but we should bring water.",
+    "file": "audio-natural/g9/b/listening1/text4.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=594b47b0cca14d17b7b3066f1c52ad79.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening1",
+    "segment": "text5",
+    "role": "narrator",
+    "text": "Text five. Our school photography club cannot use the sports hall because it is booked for a tournament. We considered the public library, but we need to display our pictures near the entrance. Our head teacher has now offered us a room at school. That is where we will meet next Thursday.",
+    "file": "audio-natural/g9/b/listening1/text5.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=88952507f5804d48a25e3dc20ee059cc.mp3"
+  }
+]
