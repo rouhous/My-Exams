@@ -1,0 +1,53 @@
+name: Grade 11 Core pilot structure and browser QA
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/grade11-core-qa.yml'
+      - 'grade11/core/data.json'
+      - 'grade11/core/index.html'
+      - 'tests/grade11_core_browser_smoke.cjs'
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate Grade 11 Core model content structure and answer keys
+        run: |
+          python3 - <<'PY'
+          import json
+          d=json.load(open('grade11/core/data.json'))
+          m=d['models']
+          assert len(m)==6 and [x['id'] for x in m]==list('ABCDEF')
+          expected={'listening':8,'grammarvocabulary':10,'reading':20}
+          for x in m:
+              assert x['marks']==60 and x['timeMinutes']==150,x['id']
+              for k,n in expected.items():
+                  assert len(x[k]['questions'])==n,(x['id'],k)
+                  for q in x[k]['questions']:
+                      assert q.get('stem') and q.get('options')
+                      assert isinstance(q['answer'],int) and 0<=q['answer']<len(q['options']),(x['id'],k,q)
+              assert x['writing1']['prompt'] and x['writing2']['prompt']
+          b={x['id']:x for x in m[:4]}
+          for mixed in m[4:]:
+              source=d['metadata']['sourceMap'][mixed['id']]
+              assert set(source.values())==set('ABCD'),mixed['id']
+              for skill,sourceId in source.items():
+                  assert mixed[skill]==b[sourceId][skill],(mixed['id'],skill)
+          print('All Grade 11 Core model sections and objective keys valid.')
+          PY
+      - name: Test mobile Grade 11 Core pages and randomized exam
+        run: |
+          npm install --no-save playwright@1.56.1
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/g11.log 2>&1 &
+          sleep 3
+          node tests/grade11_core_browser_smoke.cjs
