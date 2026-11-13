@@ -1,0 +1,44 @@
+{
+  "A": {
+    "mp3": "g10-a-listening.mp3",
+    "sourceModel": "A",
+    "passage_sha256": "631c5c331f55b64e31b7b46eccc7588de895e1f847b8945ee11f1dbab6d9cd14",
+    "seconds": 146.2,
+    "size": 1754218
+  },
+  "B": {
+    "mp3": "g10-b-listening.mp3",
+    "sourceModel": "B",
+    "passage_sha256": "14fbf5bfc3b67bdb0bb8bf0345dbea9796094ad29bbd7b15cda2334cba57be34",
+    "seconds": 178.2,
+    "size": 2139159
+  },
+  "C": {
+    "mp3": "g10-c-listening.mp3",
+    "sourceModel": "C",
+    "passage_sha256": "21dba6cf934599f6ffd057bc774c71816ae68004868322ff67973a84fc0cd3a6",
+    "seconds": 179.1,
+    "size": 2149503
+  },
+  "D": {
+    "mp3": "g10-d-listening.mp3",
+    "sourceModel": "D",
+    "passage_sha256": "a58664e491c7562947af150c5950ca8dbb8e5e77bd113371a6b7596e2443a11e",
+    "seconds": 187.4,
+    "size": 2249186
+  },
+  "E": {
+    "mp3": "g10-e-listening.mp3",
+    "sourceModel": "B",
+    "passage_sha256": "14fbf5bfc3b67bdb0bb8bf0345dbea9796094ad29bbd7b15cda2334cba57be34",
+    "seconds": 178.2,
+    "size": 2139159
+  },
+  "F": {
+    "mp3": "g10-f-listening.mp3",
+    "sourceModel": "B",
+    "passage_sha256": "14fbf5bfc3b67bdb0bb8bf0345dbea9796094ad29bbd7b15cda2334cba57be34",
+    "seconds": 178.2,
+    "size": 2139159
+  }
+}
