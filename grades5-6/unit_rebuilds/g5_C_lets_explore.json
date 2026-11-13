@@ -1,0 +1,190 @@
+{
+  "grade": 5,
+  "model": "C",
+  "unit": "Let's explore!",
+  "status": "original_unit_content_pending_voice_regeneration",
+  "listening1": {
+    "pictureOptions": [
+      "rocket",
+      "moon",
+      "planet",
+      "telescope",
+      "star",
+      "spacesuit"
+    ],
+    "passages": [
+      "A: What are you using in the science club? B: A telescope. A: Can you see the Moon through it? B: Yes, but first we are practising how to point it safely. Tomorrow evening, we will look for bright planets in the sky.",
+      "A: What did the class make for the exhibition? B: A model rocket. A: Does it really fly? B: Not into space, but it can move a short distance using air pressure. We will show the younger pupils how it works on Thursday.",
+      "A: Why is that astronaut wearing such a large suit? B: It is a spacesuit. A: Can people breathe without one in space? B: No. The suit helps astronauts stay safe and provides air when they work outside a space station.",
+      "A: What did you learn about last night? B: The Moon. A: Does it make its own light? B: No, it reflects light from the Sun. I will draw its different shapes in my notebook and show the pictures to my teacher tomorrow.",
+      "A: Which object is your group studying? B: A planet that has rings. A: Is it Earth? B: No, we are learning about Saturn. We will compare it with the other planets and explain why the rings are interesting."
+    ],
+    "questions": [
+      {
+        "stem": "Dialogue 1",
+        "answer": 3
+      },
+      {
+        "stem": "Dialogue 2",
+        "answer": 0
+      },
+      {
+        "stem": "Dialogue 3",
+        "answer": 5
+      },
+      {
+        "stem": "Dialogue 4",
+        "answer": 1
+      },
+      {
+        "stem": "Dialogue 5",
+        "answer": 2
+      }
+    ]
+  },
+  "listening2": {
+    "passage": "Interviewer: Welcome to Space Explorers. Today we are speaking with Omar about his school's astronomy club. When do you meet?\nOmar: Every Wednesday afternoon in the science room. We started meeting in September.\nInterviewer: What are you learning this month?\nOmar: We are studying the solar system. My group is building a model of Mars, but another group is making a rocket.\nInterviewer: Will you use a telescope?\nOmar: Yes. A visitor from the science centre will bring one next Friday. We will watch the Moon after sunset, if the sky is clear.\nInterviewer: What is the most surprising fact you have learned?\nOmar: The Sun is a star, and Earth goes around it. I did not know how large some planets were.\nInterviewer: What do you hope to do in the future?\nOmar: I hope to become a scientist. First, I will keep learning and asking questions. Maybe one day I will help design a space station.\nInterviewer: Thank you, Omar.\nOmar: Thank you.",
+    "questions": [
+      {
+        "stem": "When does the club meet?",
+        "options": [
+          "Monday",
+          "Wednesday",
+          "Saturday"
+        ],
+        "answer": 1
+      },
+      {
+        "stem": "Which planet is Omar's group making?",
+        "options": [
+          "Mars",
+          "Earth",
+          "Venus"
+        ],
+        "answer": 0
+      },
+      {
+        "stem": "What will the visitor bring?",
+        "options": [
+          "a rocket",
+          "a spacesuit",
+          "a telescope"
+        ],
+        "answer": 2
+      },
+      {
+        "stem": "What is the Sun?",
+        "options": [
+          "a planet",
+          "a star",
+          "a moon"
+        ],
+        "answer": 1
+      },
+      {
+        "stem": "What does Omar want to become?",
+        "options": [
+          "a pilot",
+          "an artist",
+          "a scientist"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  "vocabulary": {
+    "pictureOptions": [
+      "rocket",
+      "moon",
+      "planet",
+      "telescope",
+      "spacesuit"
+    ],
+    "wordOptions": [
+      "planet",
+      "rocket",
+      "spacesuit",
+      "star",
+      "telescope",
+      "moon"
+    ],
+    "questions": [
+      {
+        "stem": "Picture 1",
+        "answer": 1
+      },
+      {
+        "stem": "Picture 2",
+        "answer": 5
+      },
+      {
+        "stem": "Picture 3",
+        "answer": 0
+      },
+      {
+        "stem": "Picture 4",
+        "answer": 4
+      },
+      {
+        "stem": "Picture 5",
+        "answer": 2
+      }
+    ]
+  },
+  "reading1": {
+    "pictureOptions": [
+      "rocket",
+      "moon",
+      "planet",
+      "telescope",
+      "spacesuit"
+    ],
+    "questions": [
+      {
+        "stem": "The class built a rocket model that could rise into the air using water pressure.",
+        "answer": 0
+      },
+      {
+        "stem": "The Moon looked bright above the school, although it did not make its own light.",
+        "answer": 1
+      },
+      {
+        "stem": "The pupils studied a planet with beautiful rings around it.",
+        "answer": 2
+      },
+      {
+        "stem": "The science teacher showed students how to look through a telescope safely.",
+        "answer": 3
+      },
+      {
+        "stem": "An astronaut needs a spacesuit to stay safe outside a space station.",
+        "answer": 4
+      }
+    ]
+  },
+  "reading2": {
+    "passage": "Dear Space Club,\n\nLast week I visited a science exhibition about life on a space station. First, I learned that astronauts do not walk normally when they are far from Earth. They float, so they have to keep their equipment in special places. The guide showed us a model sleeping area and explained how astronauts exercise every day.\n\nMy favourite display was a telescope. I looked at photographs of the Moon and several planets. The guide asked us how deep the Sea of Oman is, and then he compared large distances on Earth with distances in space. I was surprised by the numbers.\n\nAt the end, we designed a small rocket on a computer. My friend wanted to draw a spaceship, but I chose a scientific model. Next month our class will visit the exhibition again. I hope we will learn about comets and satellites.\n\nBest wishes,\nSalma",
+    "questions": [
+      {
+        "stem": "Salma visited an exhibition about life on a space station.",
+        "answer": "True"
+      },
+      {
+        "stem": "The guide said astronauts walk normally in space.",
+        "answer": "False"
+      },
+      {
+        "stem": "Salma saw photographs of the Moon and planets.",
+        "answer": "True"
+      },
+      {
+        "stem": "Salma chose to draw a spaceship instead of a model.",
+        "answer": "False"
+      },
+      {
+        "stem": "The class plans to visit the exhibition again next month.",
+        "answer": "True"
+      }
+    ]
+  }
+}
