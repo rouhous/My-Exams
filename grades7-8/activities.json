@@ -129,90 +129,90 @@
       },
       {
         "key": "grammarvocabulary",
-        "label": "Grammar & Vocabulary",
+        "label": "Grammar & Vocabulary · Entertainment",
         "marks": 10,
         "type": "cloze",
-        "passage": "(1) ____ term, our class (2) ____ a special project about a mobile library. We chose this activity (3) ____ it could improve life in our area. Our teacher (4) ____ our meeting, and everyone listened (5) ____. A volunteer showed us some (6) ____ ways to organise the work. Although we (7) ____ nervous, we (8) ____ that teamwork made jobs easier. The second meeting was even (9) ____ than the first, and we decided to (10) ____ our ideas with other classes next month.",
+        "passage": "Our drama club (1) ____ active for two years. We have practised in the theatre (2) ____ September. This week, our (3) ____ is preparing a new show. Some pupils are (4) ____ and others make costumes. We (5) ____ next Friday because the tickets are ready. My friend says she (6) ____ never performed before. A famous singer is (7) ____ a concert that evening, so she cannot join us. We feel more (8) ____ after every rehearsal. Our parents are (9) ____ to watch, and we are looking (10) ____ to the performance.",
         "items": [
           {
             "options": [
-              "Last",
-              "Next",
-              "Never"
+              "has been",
+              "have been",
+              "is being"
             ],
             "answer": 0
           },
           {
             "options": [
-              "joining",
-              "joined",
-              "joins"
-            ],
-            "answer": 1
-          },
-          {
-            "options": [
-              "although",
-              "because",
-              "until"
-            ],
-            "answer": 1
-          },
-          {
-            "options": [
-              "plan",
-              "planning",
-              "planned"
+              "for",
+              "during",
+              "since"
             ],
             "answer": 2
           },
           {
             "options": [
-              "careful",
-              "carefully",
-              "care"
+              "passenger",
+              "director",
+              "destination"
             ],
             "answer": 1
           },
           {
             "options": [
-              "helpful",
-              "help",
-              "helpfully"
+              "actors",
+              "pilots",
+              "climbers"
             ],
             "answer": 0
           },
           {
             "options": [
-              "was",
-              "are",
-              "were"
+              "perform every",
+              "performed yesterday",
+              "are performing"
             ],
             "answer": 2
           },
           {
             "options": [
-              "notice",
-              "noticed",
-              "noticing"
+              "had",
+              "has",
+              "have"
             ],
             "answer": 1
           },
           {
             "options": [
-              "better",
-              "good",
-              "best"
+              "giving",
+              "given",
+              "give"
             ],
             "answer": 0
           },
           {
             "options": [
-              "shared",
-              "sharing",
-              "share"
+              "confidence",
+              "confidently",
+              "confident"
             ],
             "answer": 2
+          },
+          {
+            "options": [
+              "came",
+              "coming",
+              "come"
+            ],
+            "answer": 1
+          },
+          {
+            "options": [
+              "forward",
+              "after",
+              "away"
+            ],
+            "answer": 0
           }
         ],
         "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
@@ -448,90 +448,90 @@
       },
       {
         "key": "grammarvocabulary",
-        "label": "Grammar & Vocabulary",
+        "label": "Grammar & Vocabulary · Awesome animals",
         "marks": 10,
         "type": "cloze",
-        "passage": "During (1) ____ week at school, our class (2) ____ a project linked to a vegetable garden. We (3) ____ ideas before selecting one. Students (4) ____ in small teams. Everyone (5) ____ a specific job before work began. We had to be (6) ____ with our time, because some tasks were difficult. Later, we (7) ____ advice from a local volunteer. The activity became (8) ____ organised, and we were (9) ____ with the results. Next month we hope to (10) ____ more people.",
+        "passage": "During our wildlife visit, we saw tracks beside a pond. Our guide said they (1) ____ belong to a fox. A bird had a long (2) ____ for reaching food. A lizard hid beneath a (3) ____. If visitors (4) ____ quiet, more animals will appear. We must not (5) ____ wild creatures. A feather (6) ____ be from an eagle, but nobody was certain. If the weather (7) ____ hotter, we will leave early. Animals (8) ____ themselves in different ways. Each (9) ____ needs food and shelter, so we should (10) ____ its habitat.",
         "items": [
           {
             "options": [
-              "an",
-              "the",
-              "a"
-            ],
-            "answer": 1
-          },
-          {
-            "options": [
-              "starts",
-              "start",
-              "started"
-            ],
-            "answer": 2
-          },
-          {
-            "options": [
-              "discussed",
-              "discussing",
-              "discuss"
+              "might",
+              "must to",
+              "can to"
             ],
             "answer": 0
           },
           {
             "options": [
-              "work",
-              "worked",
-              "working"
-            ],
-            "answer": 1
-          },
-          {
-            "options": [
-              "has",
-              "having",
-              "had"
+              "wingtip",
+              "claw",
+              "beak"
             ],
             "answer": 2
           },
           {
             "options": [
-              "care",
-              "careful",
-              "carefully"
+              "ticket",
+              "rock",
+              "screen"
             ],
             "answer": 1
           },
           {
             "options": [
-              "receives",
-              "receiving",
-              "received"
+              "stay",
+              "stays",
+              "stayed"
+            ],
+            "answer": 0
+          },
+          {
+            "options": [
+              "feeding",
+              "fed",
+              "feed"
             ],
             "answer": 2
           },
           {
             "options": [
-              "good",
-              "best",
-              "better"
+              "have",
+              "could",
+              "does"
+            ],
+            "answer": 1
+          },
+          {
+            "options": [
+              "gets",
+              "get",
+              "got"
+            ],
+            "answer": 0
+          },
+          {
+            "options": [
+              "protects",
+              "protecting",
+              "protect"
             ],
             "answer": 2
           },
           {
             "options": [
-              "pleasing",
-              "pleased",
-              "please"
+              "passenger",
+              "species",
+              "receipt"
             ],
             "answer": 1
           },
           {
             "options": [
-              "inviting",
-              "invite",
-              "invited"
+              "protect",
+              "ignore",
+              "remove"
             ],
-            "answer": 1
+            "answer": 0
           }
         ],
         "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
@@ -767,90 +767,90 @@
       },
       {
         "key": "grammarvocabulary",
-        "label": "Grammar & Vocabulary",
+        "label": "Grammar & Vocabulary · Travel",
         "marks": 10,
         "type": "cloze",
-        "passage": "Our class (1) ____ an educational visit connected with a small local museum last month. Students were (2) ____ to ask questions. We (3) ____ early for instructions. The organiser showed us (4) ____ to work safely and explained why teamwork was (5) ____. Each group (6) ____ a task. We (7) ____ our findings at the end of the visit. The presentation was (8) ____ than expected, and our teacher (9) ____ everyone for taking part. We want to (10) ____ again next term.",
+        "passage": "Our class is planning a trip to a nearby city. The train (1) ____ at seven thirty on Saturday. I am (2) ____ to bring a backpack. The museum (3) ____ at nine, so we have time for breakfast. We checked the (4) ____ before leaving. If it rains, we (5) ____ take umbrellas. My friend thinks the trip (6) ____ be exciting. We are meeting at the (7) ____ before sunrise. Our guide will find the correct (8) ____. After lunch, we (9) ____ going to visit a fort. We hope the journey (10) ____ on time.",
         "items": [
           {
             "options": [
-              "organised",
-              "organising",
-              "organise"
+              "leaves",
+              "is leaving yesterday",
+              "leave"
             ],
             "answer": 0
           },
           {
             "options": [
-              "encourage",
-              "encouraged",
-              "encouraging"
-            ],
-            "answer": 1
-          },
-          {
-            "options": [
-              "arrive",
-              "arriving",
-              "arrived"
+              "go",
+              "gone",
+              "going"
             ],
             "answer": 2
           },
           {
             "options": [
-              "why",
-              "what",
-              "how"
+              "opening",
+              "opens",
+              "open"
+            ],
+            "answer": 1
+          },
+          {
+            "options": [
+              "timetable",
+              "costume",
+              "beak"
+            ],
+            "answer": 0
+          },
+          {
+            "options": [
+              "would",
+              "did",
+              "will"
             ],
             "answer": 2
           },
           {
             "options": [
-              "importance",
-              "important",
-              "importantly"
+              "has",
+              "will",
+              "was"
             ],
             "answer": 1
           },
           {
             "options": [
-              "choose",
-              "chose",
-              "chosen"
+              "station",
+              "stage",
+              "habitat"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "options": [
-              "sharing",
-              "shares",
-              "shared"
+              "claw",
+              "director",
+              "platform"
             ],
             "answer": 2
           },
           {
             "options": [
-              "clearest",
-              "clearer",
-              "clear"
+              "be",
+              "are",
+              "is"
             ],
             "answer": 1
           },
           {
             "options": [
-              "thanks",
-              "thanked",
-              "thanking"
+              "will finish",
+              "finished",
+              "finishing"
             ],
-            "answer": 1
-          },
-          {
-            "options": [
-              "participating",
-              "participated",
-              "participate"
-            ],
-            "answer": 2
+            "answer": 0
           }
         ],
         "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
@@ -1405,90 +1405,90 @@
       },
       {
         "key": "grammarvocabulary",
-        "label": "Grammar & Vocabulary",
+        "label": "Grammar & Vocabulary — Our planet",
         "marks": 10,
         "type": "cloze",
-        "passage": "(1) ____ term, our class (2) ____ a special project about a repair café. We chose this activity (3) ____ it could improve life in our area. Our teacher (4) ____ our meeting, and everyone listened (5) ____. A volunteer showed us some (6) ____ ways to organise the work. Although we (7) ____ nervous, we (8) ____ that teamwork made jobs easier. The second meeting was even (9) ____ than the first, and we decided to (10) ____ our ideas with other classes next month.",
+        "passage": "Our eco-team (1) ____ a small exhibition about plastic waste last week. The science teacher said we (2) ____ protect the sea. She told us (3) ____ throw rubbish into rivers. My friend asked (4) ____ plastic could harm turtles. We showed visitors some useful (5) ____ materials and explained how to (6) ____ bottles safely. During the talk, one pupil asked if a (7) ____ could cause water shortages. Another group displayed photographs of a recent (8) ____. Everyone agreed that families (9) ____ switch off unnecessary lights and use (10) ____ energy whenever possible.",
         "items": [
           {
             "options": [
-              "Last",
-              "Next",
-              "Never"
+              "organised",
+              "organise",
+              "organising"
             ],
             "answer": 0
           },
           {
             "options": [
-              "joining",
-              "joined",
-              "joins"
+              "can to",
+              "must to",
+              "must"
+            ],
+            "answer": 2
+          },
+          {
+            "options": [
+              "not",
+              "not to",
+              "do not"
             ],
             "answer": 1
           },
           {
             "options": [
-              "although",
+              "why",
               "because",
-              "until"
-            ],
-            "answer": 1
-          },
-          {
-            "options": [
-              "plan",
-              "planning",
-              "planned"
-            ],
-            "answer": 2
-          },
-          {
-            "options": [
-              "careful",
-              "carefully",
-              "care"
-            ],
-            "answer": 1
-          },
-          {
-            "options": [
-              "helpful",
-              "help",
-              "helpfully"
+              "which"
             ],
             "answer": 0
           },
           {
             "options": [
-              "was",
-              "are",
-              "were"
+              "recycling",
+              "recycles",
+              "recycled"
             ],
             "answer": 2
           },
           {
             "options": [
-              "notice",
-              "noticed",
-              "noticing"
+              "reusing",
+              "reuse",
+              "reused"
             ],
             "answer": 1
           },
           {
             "options": [
-              "better",
-              "good",
-              "best"
+              "drought",
+              "flooding",
+              "tornadoes"
             ],
             "answer": 0
           },
           {
             "options": [
-              "shared",
-              "sharing",
-              "share"
+              "dry",
+              "heat",
+              "flood"
             ],
             "answer": 2
+          },
+          {
+            "options": [
+              "musts",
+              "should",
+              "should to"
+            ],
+            "answer": 1
+          },
+          {
+            "options": [
+              "renewable",
+              "renewing",
+              "renew"
+            ],
+            "answer": 0
           }
         ],
         "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
@@ -1731,90 +1731,90 @@
       },
       {
         "key": "grammarvocabulary",
-        "label": "Grammar & Vocabulary",
+        "label": "Grammar & Vocabulary — Adventure sports",
         "marks": 10,
         "type": "cloze",
-        "passage": "During (1) ____ week at school, our class (2) ____ a project linked to a science podcast. We (3) ____ ideas before selecting one. Students (4) ____ in small teams. Everyone (5) ____ a specific job before work began. We had to be (6) ____ with our time, because some tasks were difficult. Later, we (7) ____ advice from a local volunteer. The activity became (8) ____ organised, and we were (9) ____ with the results. Next month we hope to (10) ____ more people.",
+        "passage": "Before our trip, the guide (1) ____ checked the forecast. We (2) ____ packed our helmets before the bus arrived. My brother wanted to try (3) ____ near the cliffs, but we chose a route through the (4) ____. The instructor reminded us to protect (5) ____. One student hurt (6) ____ while cycling. By lunchtime, we (7) ____ reached the campsite. At the beach, the (8) ____ was unusually high. We enjoyed the scenery, (9) ____ followed safety instructions. Everyone was proud because we had completed the journey (10) ____.",
         "items": [
           {
             "options": [
-              "an",
-              "the",
-              "a"
-            ],
-            "answer": 1
-          },
-          {
-            "options": [
-              "starts",
-              "start",
-              "started"
-            ],
-            "answer": 2
-          },
-          {
-            "options": [
-              "discussed",
-              "discussing",
-              "discuss"
+              "had",
+              "has",
+              "have"
             ],
             "answer": 0
           },
           {
             "options": [
-              "work",
-              "worked",
-              "working"
-            ],
-            "answer": 1
-          },
-          {
-            "options": [
-              "has",
-              "having",
+              "have",
+              "are",
               "had"
             ],
             "answer": 2
           },
           {
             "options": [
-              "care",
-              "careful",
-              "carefully"
+              "rocks climbing",
+              "rock climbing",
+              "rock climb"
             ],
             "answer": 1
           },
           {
             "options": [
-              "receives",
-              "receiving",
-              "received"
+              "valley",
+              "receipt",
+              "customer"
+            ],
+            "answer": 0
+          },
+          {
+            "options": [
+              "themselves",
+              "yourself",
+              "ourselves"
             ],
             "answer": 2
           },
           {
             "options": [
-              "good",
-              "best",
-              "better"
+              "ourselves",
+              "himself",
+              "herself"
+            ],
+            "answer": 1
+          },
+          {
+            "options": [
+              "had",
+              "have",
+              "were"
+            ],
+            "answer": 0
+          },
+          {
+            "options": [
+              "receipt",
+              "bank",
+              "tide"
             ],
             "answer": 2
           },
           {
             "options": [
-              "pleasing",
-              "pleased",
-              "please"
+              "because of",
+              "but",
+              "so that"
             ],
             "answer": 1
           },
           {
             "options": [
-              "inviting",
-              "invite",
-              "invited"
+              "ourselves",
+              "us",
+              "our"
             ],
-            "answer": 1
+            "answer": 0
           }
         ],
         "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
@@ -2057,90 +2057,90 @@
       },
       {
         "key": "grammarvocabulary",
-        "label": "Grammar & Vocabulary",
+        "label": "Grammar & Vocabulary — Spend or save?",
         "marks": 10,
         "type": "cloze",
-        "passage": "Our class (1) ____ an educational visit connected with a wildlife monitoring project last month. Students were (2) ____ to ask questions. We (3) ____ early for instructions. The organiser showed us (4) ____ to work safely and explained why teamwork was (5) ____. Each group (6) ____ a task. We (7) ____ our findings at the end of the visit. The presentation was (8) ____ than expected, and our teacher (9) ____ everyone for taking part. We want to (10) ____ again next term.",
+        "passage": "Our class created a shopping guide. If a product is broken, a (1) ____ may ask for a (2) ____. We should keep the (3) ____ after buying something. If people (4) ____ money carefully, they will avoid unnecessary spending. My friend buys (5) ____ books. He says that if he (6) ____ more pocket money, he would donate some. Another student asked what she (7) ____ if she won a prize. A bank (8) ____ helps people pay online. When shops offer discounts, prices usually (9) ____. If I found a wallet, I (10) ____ return it.",
         "items": [
           {
             "options": [
-              "organised",
-              "organising",
-              "organise"
+              "customer",
+              "tornado",
+              "cyclone"
             ],
             "answer": 0
           },
           {
             "options": [
-              "encourage",
-              "encouraged",
-              "encouraging"
-            ],
-            "answer": 1
-          },
-          {
-            "options": [
-              "arrive",
-              "arriving",
-              "arrived"
+              "valley",
+              "sunrise",
+              "refund"
             ],
             "answer": 2
           },
           {
             "options": [
-              "why",
-              "what",
-              "how"
+              "receive",
+              "receipt",
+              "recite"
+            ],
+            "answer": 1
+          },
+          {
+            "options": [
+              "manage",
+              "manages",
+              "managed"
+            ],
+            "answer": 0
+          },
+          {
+            "options": [
+              "secondly",
+              "second",
+              "second-hand"
             ],
             "answer": 2
           },
           {
             "options": [
-              "importance",
-              "important",
-              "importantly"
+              "will have",
+              "had",
+              "has"
             ],
             "answer": 1
           },
           {
             "options": [
-              "choose",
-              "chose",
-              "chosen"
+              "would do",
+              "will do",
+              "does"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "options": [
-              "sharing",
-              "shares",
-              "shared"
+              "receipt",
+              "cliff",
+              "card"
             ],
             "answer": 2
           },
           {
             "options": [
-              "clearest",
-              "clearer",
-              "clear"
+              "fell",
+              "fall",
+              "falls"
             ],
             "answer": 1
           },
           {
             "options": [
-              "thanks",
-              "thanked",
-              "thanking"
+              "would",
+              "will",
+              "am"
             ],
-            "answer": 1
-          },
-          {
-            "options": [
-              "participating",
-              "participated",
-              "participate"
-            ],
-            "answer": 2
+            "answer": 0
           }
         ],
         "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
