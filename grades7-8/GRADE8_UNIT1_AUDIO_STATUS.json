@@ -1,0 +1,29 @@
+{
+  "version": "2026-11-13",
+  "grade": 8,
+  "model": "A",
+  "unit": "Our planet",
+  "audio": {
+    "listening1": {
+      "path": "grades7-8/assets/audio/natural-g8-a-listening1.mp3",
+      "sizeBytes": 2761709,
+      "readInstructions": true,
+      "twice": true,
+      "pauseBetweenTextsSeconds": 3
+    },
+    "listening2": {
+      "path": "grades7-8/assets/audio/natural-g8-a-listening2.mp3",
+      "sizeBytes": 2343227,
+      "twoVoices": true,
+      "twice": true
+    }
+  },
+  "generatedAndValidated": true,
+  "githubHosted": true,
+  "offlineCacheIncluded": true,
+  "phoneOfflineTested": false,
+  "fullUnitCurriculumAlignmentApproved": false,
+  "otherGrade8ModelsNaturalAudioComplete": false,
+  "reference": "https://ict.moe.gov.om/book/PDF/8/cls8_cb_8A/files/basic-html/page11.html",
+  "note": "Audio of existing model was improved; listening contents and remaining reading/writing still require unit-by-unit curriculum revision. Not a final Ministry-approved exam."
+}
