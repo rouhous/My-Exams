@@ -1,0 +1,186 @@
+{
+  "grade": 6,
+  "model": "C",
+  "unit": "Places",
+  "status": "original_unit_content_pending_audio",
+  "listening1": {
+    "pictureOptions": [
+      "bridge",
+      "museum",
+      "library",
+      "market",
+      "mountain",
+      "bus"
+    ],
+    "passages": [
+      "A: Where did your family go last weekend? B: We visited a museum in Nizwa. A: What did you see? B: Traditional clothes and old tools. While we were walking around, a guide explained how people had lived many years ago.",
+      "A: How did you cross the river? B: We used the new bridge. A: Was the old road open? B: No, the rain had damaged it. The bridge was safe, and our driver followed the signs very carefully.",
+      "A: Where can I borrow a book about Omani forts? B: At the public library. A: Is it near the market? B: Yes. Walk past the bus stop and turn left. You will see the library opposite a small park.",
+      "A: Why are you going to the market? B: I want to buy local dates for my grandmother. A: Did you find the shop yesterday? B: No, it was closed while we were visiting the old fort. I will try again today.",
+      "A: What did you enjoy most about the trip? B: Walking in the mountains. A: Was the weather comfortable? B: It was cool when we arrived, but the sun was getting stronger as we climbed. We stopped for water near a large rock."
+    ],
+    "questions": [
+      {
+        "stem": "Dialogue 1",
+        "answer": 1
+      },
+      {
+        "stem": "Dialogue 2",
+        "answer": 0
+      },
+      {
+        "stem": "Dialogue 3",
+        "answer": 2
+      },
+      {
+        "stem": "Dialogue 4",
+        "answer": 3
+      },
+      {
+        "stem": "Dialogue 5",
+        "answer": 4
+      }
+    ]
+  },
+  "listening2": {
+    "passage": "Interviewer: Welcome to Places Around Us. Today we are talking to Nasser about a school trip. Where did your class go?\nNasser: We travelled by bus to a town near the mountains last Tuesday. Our first stop was a small museum.\nInterviewer: What did you learn there?\nNasser: A guide showed us photographs of the town in the past. There used to be fewer buildings, and most people travelled on foot.\nInterviewer: What happened after the museum visit?\nNasser: We walked across an old bridge and then visited the market. While we were crossing the bridge, our teacher pointed out a beautiful view of the valley.\nInterviewer: Did you have lunch at the market?\nNasser: No. We ate in a quiet park nearby because the market was very busy.\nInterviewer: What was your favourite place?\nNasser: The museum, because I enjoy discovering how towns change. I would like to return with my family next month.\nInterviewer: What should students take on a trip like this?\nNasser: Comfortable shoes, a notebook and enough drinking water.",
+    "questions": [
+      {
+        "stem": "How did the class travel?",
+        "options": [
+          "by plane",
+          "by bus",
+          "by boat"
+        ],
+        "answer": 1
+      },
+      {
+        "stem": "Where did they stop first?",
+        "options": [
+          "a museum",
+          "a market",
+          "a park"
+        ],
+        "answer": 0
+      },
+      {
+        "stem": "What did the teacher point out from the bridge?",
+        "options": [
+          "a football field",
+          "a hospital",
+          "the valley"
+        ],
+        "answer": 2
+      },
+      {
+        "stem": "Where did pupils eat lunch?",
+        "options": [
+          "in the market",
+          "in a park",
+          "at the museum"
+        ],
+        "answer": 1
+      },
+      {
+        "stem": "What does Nasser enjoy discovering?",
+        "options": [
+          "how towns change",
+          "how to cook",
+          "how computers work"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  "vocabulary": {
+    "pictureOptions": [
+      "bridge",
+      "museum",
+      "library",
+      "market",
+      "mountain"
+    ],
+    "questions": [
+      {
+        "stem": "Picture 1",
+        "answer": "bridge"
+      },
+      {
+        "stem": "Picture 2",
+        "answer": "museum"
+      },
+      {
+        "stem": "Picture 3",
+        "answer": "library"
+      },
+      {
+        "stem": "Picture 4",
+        "answer": "market"
+      },
+      {
+        "stem": "Picture 5",
+        "answer": "mountain"
+      }
+    ]
+  },
+  "reading1": {
+    "passages": [
+      {
+        "stem": "The public library is opposite the park and next to a small bookshop. Visitors can borrow books, read newspapers or use a computer to find information. On Tuesdays, volunteers tell stories to younger children. The library is usually quiet, and everyone must return borrowed books on time."
+      },
+      {
+        "stem": "Nizwa Fort stands near a traditional market. Visitors can climb the steps to see the towers and learn how the building was used in the past. During school trips, guides explain the history of the fort and remind children to walk carefully on the narrow stairs."
+      },
+      {
+        "stem": "The mountain village has a small bridge over a seasonal stream. While tourists were crossing it last Friday, they noticed beautiful farms and houses on both sides. The road becomes busy during holidays, so visitors are advised to arrive early and follow local traffic signs."
+      }
+    ],
+    "questions": [
+      {
+        "stem": "Which text describes borrowing books?",
+        "answer": 0
+      },
+      {
+        "stem": "Which text mentions a historic fort?",
+        "answer": 1
+      },
+      {
+        "stem": "Which text describes a bridge over a stream?",
+        "answer": 2
+      },
+      {
+        "stem": "Which text says visitors must walk carefully on stairs?",
+        "answer": 1
+      },
+      {
+        "stem": "Which text describes a place near a bookshop?",
+        "answer": 0
+      }
+    ]
+  },
+  "reading2": {
+    "passage": "From: nasser@school.example\nTo: hamad@school.example\nSubject: Visiting our old town\n\nDear Hamad,\n\nI hope you are well. Last Friday, my family and I visited an old town near the mountains. We arrived by bus at nine in the morning. While my parents were buying tickets for the museum, my sister and I were looking at a map of the town.\n\nFirst, we visited the museum, where a guide explained how families used to live. After that, we crossed a stone bridge and walked towards the market. We saw local artists selling handmade baskets, and my mother bought a small gift.\n\nIn the afternoon, dark clouds appeared, so we decided not to climb the nearby mountain. Instead, we ate lunch at a quiet restaurant beside the library. The bus left at five, and we returned home safely.\n\nI would like to visit again when the weather is clear. Perhaps we could go together during the next holiday.\n\nBest wishes,\nNasser",
+    "questions": [
+      {
+        "stem": "Nasser visited the town with his school class.",
+        "answer": "False"
+      },
+      {
+        "stem": "The family arrived by bus in the morning.",
+        "answer": "True"
+      },
+      {
+        "stem": "They crossed a stone bridge.",
+        "answer": "True"
+      },
+      {
+        "stem": "They climbed the mountain during the afternoon.",
+        "answer": "False"
+      },
+      {
+        "stem": "Nasser hopes to visit again in better weather.",
+        "answer": "True"
+      }
+    ]
+  }
+}
