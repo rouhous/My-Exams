@@ -1,0 +1,175 @@
+{
+  "grade": 7,
+  "model": "A",
+  "unit": "Entertainment",
+  "status": "original_unit_texts_pending_audio_regeneration",
+  "listening1": [
+    {
+      "stem": "Which instrument will the pupil play in the show?",
+      "options": [
+        "guitar",
+        "drum",
+        "piano"
+      ],
+      "answer": 1,
+      "images": [
+        "guitar",
+        "drum",
+        "piano"
+      ],
+      "script": "Our school is organising a music show next Friday. I practised the guitar last year, and I can play a little piano, but neither instrument is part of my performance this time. I have joined the percussion group, so I will play the drum on stage."
+    },
+    {
+      "stem": "What item did the stage manager forget?",
+      "options": [
+        "microphone",
+        "camera",
+        "book"
+      ],
+      "answer": 0,
+      "images": [
+        "mic",
+        "camera",
+        "book"
+      ],
+      "script": "The drama club arrived early for its rehearsal. Everyone had brought their scripts, and a parent had already prepared a camera for the photographs. However, the stage manager discovered that the microphone was still in the classroom, so she asked someone to collect it."
+    },
+    {
+      "stem": "Where will the final performance take place?",
+      "options": [
+        "school",
+        "library",
+        "museum"
+      ],
+      "answer": 0,
+      "images": [
+        "school",
+        "library",
+        "landmark"
+      ],
+      "script": "The young performers first wanted to use the public library, but the room was too small for their audience. The museum offered an outdoor space, although the weather might change. In the end, the head teacher agreed to let them perform in the school hall."
+    },
+    {
+      "stem": "Which activity did the student choose after school?",
+      "options": [
+        "painting",
+        "football",
+        "playing guitar"
+      ],
+      "answer": 2,
+      "images": [
+        "palette",
+        "football",
+        "guitar"
+      ],
+      "script": "I tried painting in the art club and watched my friends play football, but I wanted an activity that involved music. My cousin showed me how to play a few chords, and I have now joined the guitar club, where we rehearse twice a week."
+    },
+    {
+      "stem": "How will the pupils travel to the music festival?",
+      "options": [
+        "bus",
+        "train",
+        "plane"
+      ],
+      "answer": 0,
+      "images": [
+        "bus",
+        "train-front",
+        "plane"
+      ],
+      "script": "Our class will attend a music festival in another town. Some students asked whether we would fly, while others suggested going by train. Our teacher explained that the journey was short and the school had already booked a bus for everyone to travel together."
+    }
+  ],
+  "listening2": {
+    "script": "Interviewer: Welcome to School Stage. Alya, how long have you been working with the drama club?\nAlya: I joined two years ago, but I have helped manage performances only since September. At first, I was nervous about speaking to the actors.\nInterviewer: What are you preparing now?\nAlya: We are putting on a short comedy next Thursday. Twelve pupils are acting, and another five are working behind the stage.\nInterviewer: Do you write all the scripts yourself?\nAlya: No. Our English teacher helps us write them. I organise rehearsals and check that the microphones and lights are ready.\nInterviewer: Has anything gone wrong?\nAlya: Last week one microphone stopped working. Instead of cancelling rehearsal, we practised the scene without it until a replacement arrived.\nInterviewer: How many people can watch the performance?\nAlya: The school hall has room for about one hundred and fifty people. We have invited parents and younger students.\nInterviewer: What do you enjoy most?\nAlya: Watching everyone cooperate. We have learned that a successful show depends on the whole team, not just the actors.",
+    "items": [
+      {
+        "stem": "Alya has worked with the drama club for two years.",
+        "answer": true
+      },
+      {
+        "stem": "The club is performing a tragedy next Thursday.",
+        "answer": false
+      },
+      {
+        "stem": "The English teacher helps the club write scripts.",
+        "answer": true
+      },
+      {
+        "stem": "The group cancelled rehearsal when a microphone broke.",
+        "answer": false
+      },
+      {
+        "stem": "Around 150 people can watch the school performance.",
+        "answer": true
+      }
+    ]
+  },
+  "reading1": {
+    "texts": [
+      "Before the curtain opened, the school actors checked their costumes and repeated their first lines. One pupil was worried because it would be her first appearance in front of a large audience.",
+      "The student music group had practised for several weeks. During the final rehearsal, the guitar sounded strange, and the musicians decided to examine it carefully.",
+      "A visiting storyteller arrived at the theatre early. She wanted to learn the names of the children who would introduce her and to understand how the programme was organised.",
+      "The school newspaper photographer stood beside the stage. He knew that using a flash could distract the actors and asked where he could take pictures without causing a problem.",
+      "At the end of the performance, the audience applauded loudly. The drama teacher thanked the actors, the technicians and the students who had designed the posters."
+    ],
+    "continuations": [
+      "The organiser showed her the programme and introduced the two presenters before the audience arrived.",
+      "They discovered a loose string and replaced it before the concert began.",
+      "The teacher reminded everyone that the performance would not have succeeded without teamwork.",
+      "The pupil took a deep breath, listened for her cue and walked confidently into the light.",
+      "A visitor asked how to buy a ticket for the train, even though the play had already begun.",
+      "The stage manager suggested a quiet corner with a clear view where the flash would not be needed."
+    ],
+    "answers": [
+      3,
+      1,
+      0,
+      5,
+      2
+    ]
+  },
+  "reading2": {
+    "passage": "Nasser had enjoyed listening to the school radio since he was young, but he had never imagined presenting a programme himself. One afternoon, his English teacher invited students to create a weekly show about local talents. Nasser volunteered to interview a young musician who played traditional Omani instruments.\n\nThe team had been preparing for two weeks when their guest became ill. Some pupils suggested cancelling the first episode, but Nasser thought they could interview the school's music teacher instead. She agreed, and the group wrote new questions about practising, performing and working with other musicians.\n\nOn the recording day, the microphone suddenly stopped working. Nasser felt disappointed because he had already spent the morning checking the script. His friend Mariam remembered a spare recorder kept in the library. They tested it and began again, although the sound was slightly different from what they had planned.\n\nThe finished programme included a short interview, a report about the upcoming school concert and a message inviting younger pupils to join the drama club. When the show was played at assembly, Nasser heard students discussing their favourite parts.\n\nHe realised that entertainment was not only about famous performers. It also gave ordinary people a chance to share their skills, listen to one another and feel part of a community. The team decided to produce another episode the following week.",
+    "items": [
+      {
+        "stem": "Who invited students to create a weekly radio show?",
+        "answers": [
+          "their English teacher",
+          "English teacher",
+          "his English teacher"
+        ]
+      },
+      {
+        "stem": "Who was the first guest supposed to be?",
+        "answers": [
+          "a young musician",
+          "young musician"
+        ]
+      },
+      {
+        "stem": "Why did the team change their interview plan?",
+        "answers": [
+          "the guest became ill",
+          "their guest was ill",
+          "the musician was ill"
+        ]
+      },
+      {
+        "stem": "Where was the spare recorder kept?",
+        "answers": [
+          "in the library",
+          "library"
+        ]
+      },
+      {
+        "stem": "What did the team decide to produce the following week?",
+        "answers": [
+          "another episode",
+          "a second episode",
+          "another radio episode"
+        ]
+      }
+    ]
+  }
+}
