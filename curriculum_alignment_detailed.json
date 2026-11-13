@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-13",
+  "version": "2026-11-13-v2",
   "basis": "Grade 7/8 official teacher or pupil scope and sequence, Grade 9 source overview; classification of individual tasks is an editorial audit, not Ministry certification",
   "standards": {
     "7": {
@@ -62,7 +62,98 @@
           "reading2": "needs_rewrite",
           "writing1": "needs_review"
         }
-      }
+      },
+      "verifiedVocabularyList": [
+        {
+          "jobs": [
+            "animator",
+            "camera operator",
+            "clown",
+            "comedian",
+            "costume designer",
+            "make-up artist",
+            "performer",
+            "presenter",
+            "puppeteer",
+            "sound editor",
+            "stunt performer",
+            "writer"
+          ],
+          "places": [
+            "3D cinema",
+            "adventure playground",
+            "aquarium",
+            "art gallery",
+            "bowling alley",
+            "circus",
+            "ice rink",
+            "planetarium",
+            "safari park",
+            "science museum",
+            "theme park"
+          ]
+        },
+        {
+          "animalBody": [
+            "antennae",
+            "beak",
+            "claws",
+            "fin",
+            "flippers",
+            "horns",
+            "hump",
+            "paws",
+            "scales",
+            "spines",
+            "tongue",
+            "whiskers"
+          ],
+          "actions": [
+            "bite",
+            "curl up",
+            "dig",
+            "dive",
+            "fight",
+            "fly away",
+            "hide",
+            "lay eggs",
+            "roar",
+            "run away",
+            "sting"
+          ]
+        },
+        {
+          "holidayEquipment": [
+            "charger",
+            "flip-flops",
+            "guidebook",
+            "medicine",
+            "passport",
+            "pillow",
+            "raincoat",
+            "soap",
+            "suitcase",
+            "toothbrush",
+            "umbrella",
+            "washbag"
+          ],
+          "transportVerbs": [
+            "arrive",
+            "catch a bus",
+            "explore",
+            "get off",
+            "get on",
+            "go on a journey",
+            "land",
+            "leave",
+            "pack your suitcase",
+            "take a seat",
+            "take off",
+            "travel by train"
+          ]
+        }
+      ],
+      "vocabularySource": "https://ict.moe.gov.om/book/PDF/7/cls7_sb_7A/files/downloads/cls7_sb_7A.pdf (Word list pp.63–64)"
     },
     "8": {
       "units": [
@@ -124,7 +215,97 @@
           "reading2": "cross_unit",
           "writing2": "needs_review"
         }
-      }
+      },
+      "verifiedVocabularyList": [
+        {
+          "environment": [
+            "protect the environment",
+            "climate change",
+            "save water",
+            "plant trees",
+            "switch off lights",
+            "waste energy",
+            "recycle",
+            "pollution",
+            "destroy the rainforests",
+            "pick up rubbish",
+            "use renewable energy",
+            "global warming"
+          ],
+          "weather": [
+            "cyclone",
+            "tornado",
+            "thunder and lightning",
+            "sandstorm",
+            "heatwave",
+            "drought",
+            "forest fire",
+            "volcano",
+            "tsunami",
+            "flood",
+            "hailstorm",
+            "snowstorm"
+          ]
+        },
+        {
+          "sports": [
+            "rock climbing",
+            "horse riding",
+            "motor racing",
+            "go-karting",
+            "surfboarding",
+            "diving",
+            "sandboarding",
+            "mountain biking",
+            "caving",
+            "abseiling",
+            "water skiing",
+            "paragliding"
+          ],
+          "geography": [
+            "north",
+            "south",
+            "east",
+            "west",
+            "sunrise",
+            "sunset",
+            "wood",
+            "field",
+            "valley",
+            "scenery",
+            "tide",
+            "bay"
+          ]
+        },
+        {
+          "shopping": [
+            "on sale",
+            "queue",
+            "till",
+            "pay with contactless",
+            "get a refund",
+            "exchange",
+            "shop assistant",
+            "bank card",
+            "customer",
+            "second-hand",
+            "receipt",
+            "online shopping"
+          ],
+          "imaginarySituations": [
+            "go into space",
+            "become a school principal",
+            "travel the world",
+            "donate to a charity",
+            "travel back in time",
+            "pass exams",
+            "be an inventor",
+            "be invisible",
+            "win a cup"
+          ]
+        }
+      ],
+      "vocabularySource": "https://ict.moe.gov.om/book/PDF/8/cls8_cb_8A/files/basic-html/page11.html (Scope and sequence)"
     },
     "9": {
       "units": [
@@ -194,7 +375,9 @@
           "writing1": "cross_unit",
           "writing2": "cross_unit"
         }
-      }
+      },
+      "verifiedVocabularyList": null,
+      "vocabularySource": "The linked unit summary confirms themes; exact official word list requires textbook verification."
     }
   },
   "records": [
