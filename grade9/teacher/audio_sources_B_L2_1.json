@@ -1,0 +1,65 @@
+[
+  {
+    "model": "B",
+    "section": "listening2",
+    "segment": "intro",
+    "role": "narrator",
+    "text": "You are going to hear an interview. For each question, choose the correct answer, A, B or C. You will hear the interview twice.",
+    "file": "audio-natural/g9/b/listening2/intro.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=58fd102225d7497f8ededdd4e53ea831.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening2",
+    "segment": "q0",
+    "role": "interviewer",
+    "text": "Welcome to Young Historians. Today Salim is joining us to explain his community heritage-mapping project. Salim, what did your team put on its first map?",
+    "file": "audio-natural/g9/b/listening2/q0.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=edad68a6481f4a5ab17b43e36086e35c.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening2",
+    "segment": "a0",
+    "role": "guest",
+    "text": "We chose the historic doors in our neighbourhood. Some have unusual wooden patterns, so we walked along the old streets and carefully recorded their locations.",
+    "file": "audio-natural/g9/b/listening2/a0.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=04d3b77d1d5443a983389eac586ad734.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening2",
+    "segment": "q1",
+    "role": "interviewer",
+    "text": "That sounds interesting. When did your project begin?",
+    "file": "audio-natural/g9/b/listening2/q1.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=4a651cc64ff84c74b05e967ce2f671e0.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening2",
+    "segment": "a1",
+    "role": "guest",
+    "text": "We launched it in November, just after a local museum invited schools to share ideas for protecting our heritage.",
+    "file": "audio-natural/g9/b/listening2/a1.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=4f8ffa1c25d14b99b2fe0a1c88c4d58d.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening2",
+    "segment": "q2",
+    "role": "interviewer",
+    "text": "Where did the old photographs come from?",
+    "file": "audio-natural/g9/b/listening2/q2.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=a018647d9c734ed2be776e96257e540a.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening2",
+    "segment": "a2",
+    "role": "guest",
+    "text": "Families shared them with us. Parents and grandparents brought photographs of streets and houses that have changed over the years.",
+    "file": "audio-natural/g9/b/listening2/a2.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=aeeb219678b34946bcdc607c0bf3b65a.mp3"
+  }
+]
