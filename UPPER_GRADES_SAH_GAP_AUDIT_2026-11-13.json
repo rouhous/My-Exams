@@ -16,7 +16,8 @@
             {
               "severity": "release_blocker",
               "kind": "section_structure",
-              "message": "5 broad sections present; SAH requires 9 distinct sections"
+              "actual": 5,
+              "expected": 9
             }
           ],
           "releaseBlockers": 1,
@@ -28,7 +29,8 @@
             {
               "severity": "release_blocker",
               "kind": "section_structure",
-              "message": "5 broad sections present; SAH requires 9 distinct sections"
+              "actual": 5,
+              "expected": 9
             }
           ],
           "releaseBlockers": 1,
@@ -40,7 +42,8 @@
             {
               "severity": "release_blocker",
               "kind": "section_structure",
-              "message": "5 broad sections present; SAH requires 9 distinct sections"
+              "actual": 5,
+              "expected": 9
             }
           ],
           "releaseBlockers": 1,
@@ -52,7 +55,8 @@
             {
               "severity": "release_blocker",
               "kind": "section_structure",
-              "message": "5 broad sections present; SAH requires 9 distinct sections"
+              "actual": 5,
+              "expected": 9
             }
           ],
           "releaseBlockers": 1,
@@ -64,7 +68,8 @@
             {
               "severity": "release_blocker",
               "kind": "section_structure",
-              "message": "5 broad sections present; SAH requires 9 distinct sections"
+              "actual": 5,
+              "expected": 9
             }
           ],
           "releaseBlockers": 1,
@@ -76,7 +81,8 @@
             {
               "severity": "release_blocker",
               "kind": "section_structure",
-              "message": "5 broad sections present; SAH requires 9 distinct sections"
+              "actual": 5,
+              "expected": 9
             }
           ],
           "releaseBlockers": 1,
@@ -93,315 +99,39 @@
       "models": [
         {
           "model": "A",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "passage_length",
-              "section": "lst1",
-              "expected": [
-                400,
-                450
-              ],
-              "actual": 339
-            },
-            {
-              "severity": "needs_human_review",
-              "kind": "short_answer_not_literal_in_passage",
-              "section": "lst2",
-              "question": 9,
-              "answer": "two hundred rials"
-            },
-            {
-              "severity": "needs_human_review",
-              "kind": "short_answer_not_literal_in_passage",
-              "section": "rdg1",
-              "question": 4,
-              "answer": "Tuesday"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in october."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 5
+          "editorialFindings": 0
         },
         {
           "model": "B",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in november."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            },
-            {
-              "severity": "needs_human_review",
-              "kind": "short_answer_not_literal_in_passage",
-              "section": "lst2",
-              "question": 9,
-              "answer": "one hundred and fifty rials"
-            },
-            {
-              "severity": "needs_human_review",
-              "kind": "short_answer_not_literal_in_passage",
-              "section": "rdg1",
-              "question": 4,
-              "answer": "Wednesday"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in november."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 6
+          "editorialFindings": 0
         },
         {
           "model": "C",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in september."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            },
-            {
-              "severity": "needs_human_review",
-              "kind": "short_answer_not_literal_in_passage",
-              "section": "lst2",
-              "question": 9,
-              "answer": "ninety rials"
-            },
-            {
-              "severity": "needs_human_review",
-              "kind": "short_answer_not_literal_in_passage",
-              "section": "rdg1",
-              "question": 4,
-              "answer": "Thursday"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in september."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 6
+          "editorialFindings": 0
         },
         {
           "model": "D",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in december."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            },
-            {
-              "severity": "needs_human_review",
-              "kind": "short_answer_not_literal_in_passage",
-              "section": "lst2",
-              "question": 9,
-              "answer": "one hundred and twenty rials"
-            },
-            {
-              "severity": "needs_human_review",
-              "kind": "short_answer_not_literal_in_passage",
-              "section": "rdg1",
-              "question": 4,
-              "answer": "Saturday"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in december."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 6
+          "editorialFindings": 0
         },
         {
           "model": "E",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in october."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            },
-            {
-              "severity": "needs_human_review",
-              "kind": "short_answer_not_literal_in_passage",
-              "section": "lst2",
-              "question": 9,
-              "answer": "one hundred and fifty rials"
-            },
-            {
-              "severity": "needs_human_review",
-              "kind": "short_answer_not_literal_in_passage",
-              "section": "rdg1",
-              "question": 4,
-              "answer": "Wednesday"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in november."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 6
+          "editorialFindings": 0
         },
         {
           "model": "F",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in october."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            },
-            {
-              "severity": "needs_human_review",
-              "kind": "short_answer_not_literal_in_passage",
-              "section": "lst2",
-              "question": 9,
-              "answer": "one hundred and fifty rials"
-            },
-            {
-              "severity": "needs_human_review",
-              "kind": "short_answer_not_literal_in_passage",
-              "section": "rdg1",
-              "question": 4,
-              "answer": "Tuesday"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in october."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 6
+          "editorialFindings": 0
         }
       ]
     },
@@ -417,91 +147,19 @@
           "issues": [
             {
               "severity": "editorial_revision",
-              "kind": "passage_length",
-              "section": "lst1",
-              "expected": [
-                350,
-                450
-              ],
-              "actual": 342
-            },
-            {
-              "severity": "editorial_revision",
               "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 1,
-              "again": 5,
-              "stem": "where did the project take place?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 2,
-              "again": 6,
-              "stem": "who helped the students check safety?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 3,
-              "again": 7,
-              "stem": "when did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 4,
-              "again": 8,
-              "stem": "on which day was the main session arranged?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "passage_length",
-              "section": "vcb",
-              "expected": [
-                80,
-                90
-              ],
-              "actual": 73
+              "section": "rdg3",
+              "stem": "When did the project begin?"
             },
             {
               "severity": "editorial_revision",
               "kind": "duplicate_question",
               "section": "rdg3",
-              "first": 1,
-              "again": 7,
-              "stem": "where did the project take place?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 2,
-              "again": 8,
-              "stem": "who helped the students check safety?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 3,
-              "again": 9,
-              "stem": "when did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 4,
-              "again": 10,
-              "stem": "on which day was the main session arranged?"
+              "stem": "On which day was the main session arranged?"
             }
           ],
           "releaseBlockers": 0,
-          "editorialFindings": 10
+          "editorialFindings": 2
         },
         {
           "model": "B",
@@ -509,80 +167,18 @@
             {
               "severity": "editorial_revision",
               "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 1,
-              "again": 5,
-              "stem": "where did the project take place?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 2,
-              "again": 6,
-              "stem": "who helped the students check safety?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 3,
-              "again": 7,
-              "stem": "when did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 4,
-              "again": 8,
-              "stem": "on which day was the main session arranged?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "passage_length",
-              "section": "vcb",
-              "expected": [
-                80,
-                90
-              ],
-              "actual": 64
+              "section": "rdg3",
+              "stem": "When did the project begin?"
             },
             {
               "severity": "editorial_revision",
               "kind": "duplicate_question",
               "section": "rdg3",
-              "first": 1,
-              "again": 7,
-              "stem": "where did the project take place?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 2,
-              "again": 8,
-              "stem": "who helped the students check safety?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 3,
-              "again": 9,
-              "stem": "when did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 4,
-              "again": 10,
-              "stem": "on which day was the main session arranged?"
+              "stem": "On which day was the main session arranged?"
             }
           ],
           "releaseBlockers": 0,
-          "editorialFindings": 9
+          "editorialFindings": 2
         },
         {
           "model": "C",
@@ -590,80 +186,18 @@
             {
               "severity": "editorial_revision",
               "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 1,
-              "again": 5,
-              "stem": "where did the project take place?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 2,
-              "again": 6,
-              "stem": "who helped the students check safety?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 3,
-              "again": 7,
-              "stem": "when did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 4,
-              "again": 8,
-              "stem": "on which day was the main session arranged?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "passage_length",
-              "section": "vcb",
-              "expected": [
-                80,
-                90
-              ],
-              "actual": 68
+              "section": "rdg3",
+              "stem": "When did the project begin?"
             },
             {
               "severity": "editorial_revision",
               "kind": "duplicate_question",
               "section": "rdg3",
-              "first": 1,
-              "again": 7,
-              "stem": "where did the project take place?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 2,
-              "again": 8,
-              "stem": "who helped the students check safety?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 3,
-              "again": 9,
-              "stem": "when did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 4,
-              "again": 10,
-              "stem": "on which day was the main session arranged?"
+              "stem": "On which day was the main session arranged?"
             }
           ],
           "releaseBlockers": 0,
-          "editorialFindings": 9
+          "editorialFindings": 2
         },
         {
           "model": "D",
@@ -671,80 +205,18 @@
             {
               "severity": "editorial_revision",
               "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 1,
-              "again": 5,
-              "stem": "where did the project take place?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 2,
-              "again": 6,
-              "stem": "who helped the students check safety?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 3,
-              "again": 7,
-              "stem": "when did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 4,
-              "again": 8,
-              "stem": "on which day was the main session arranged?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "passage_length",
-              "section": "vcb",
-              "expected": [
-                80,
-                90
-              ],
-              "actual": 67
+              "section": "rdg3",
+              "stem": "When did the project begin?"
             },
             {
               "severity": "editorial_revision",
               "kind": "duplicate_question",
               "section": "rdg3",
-              "first": 1,
-              "again": 7,
-              "stem": "where did the project take place?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 2,
-              "again": 8,
-              "stem": "who helped the students check safety?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 3,
-              "again": 9,
-              "stem": "when did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 4,
-              "again": 10,
-              "stem": "on which day was the main session arranged?"
+              "stem": "On which day was the main session arranged?"
             }
           ],
           "releaseBlockers": 0,
-          "editorialFindings": 9
+          "editorialFindings": 2
         },
         {
           "model": "E",
@@ -752,70 +224,18 @@
             {
               "severity": "editorial_revision",
               "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 1,
-              "again": 5,
-              "stem": "where did the project take place?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 2,
-              "again": 6,
-              "stem": "who helped the students check safety?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 3,
-              "again": 7,
-              "stem": "when did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 4,
-              "again": 8,
-              "stem": "on which day was the main session arranged?"
+              "section": "rdg3",
+              "stem": "When did the project begin?"
             },
             {
               "severity": "editorial_revision",
               "kind": "duplicate_question",
               "section": "rdg3",
-              "first": 1,
-              "again": 7,
-              "stem": "where did the project take place?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 2,
-              "again": 8,
-              "stem": "who helped the students check safety?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 3,
-              "again": 9,
-              "stem": "when did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 4,
-              "again": 10,
-              "stem": "on which day was the main session arranged?"
+              "stem": "On which day was the main session arranged?"
             }
           ],
           "releaseBlockers": 0,
-          "editorialFindings": 8
+          "editorialFindings": 2
         },
         {
           "model": "F",
@@ -823,70 +243,18 @@
             {
               "severity": "editorial_revision",
               "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 1,
-              "again": 5,
-              "stem": "where did the project take place?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 2,
-              "again": 6,
-              "stem": "who helped the students check safety?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 3,
-              "again": 7,
-              "stem": "when did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst2",
-              "first": 4,
-              "again": 8,
-              "stem": "on which day was the main session arranged?"
+              "section": "rdg3",
+              "stem": "When did the project begin?"
             },
             {
               "severity": "editorial_revision",
               "kind": "duplicate_question",
               "section": "rdg3",
-              "first": 1,
-              "again": 7,
-              "stem": "where did the project take place?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 2,
-              "again": 8,
-              "stem": "who helped the students check safety?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 3,
-              "again": 9,
-              "stem": "when did the project begin?"
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "rdg3",
-              "first": 4,
-              "again": 10,
-              "stem": "on which day was the main session arranged?"
+              "stem": "On which day was the main session arranged?"
             }
           ],
           "releaseBlockers": 0,
-          "editorialFindings": 8
+          "editorialFindings": 2
         }
       ]
     },
@@ -899,141 +267,39 @@
       "models": [
         {
           "model": "A",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in october."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 2
+          "editorialFindings": 0
         },
         {
           "model": "B",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in november."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 2
+          "editorialFindings": 0
         },
         {
           "model": "C",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in september."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 2
+          "editorialFindings": 0
         },
         {
           "model": "D",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in december."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 2
+          "editorialFindings": 0
         },
         {
           "model": "E",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in november."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 2
+          "editorialFindings": 0
         },
         {
           "model": "F",
-          "issues": [
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 7,
-              "again": 9,
-              "stem": "the activity began in november."
-            },
-            {
-              "severity": "editorial_revision",
-              "kind": "duplicate_question",
-              "section": "lst1",
-              "first": 8,
-              "again": 10,
-              "stem": "the project was held in a shopping centre."
-            }
-          ],
+          "issues": [],
           "releaseBlockers": 0,
-          "editorialFindings": 2
+          "editorialFindings": 0
         }
       ]
     }
@@ -1041,9 +307,10 @@
   "summary": {
     "modelsAudited": 24,
     "releaseBlockers": 6,
-    "nonBlockingFindings": 100,
+    "nonBlockingFindings": 12,
     "allUpperGradesReady": false,
     "grade11CorePilotOfficiallyCompliant": false,
     "repeatedCrossTrackTextNeedsRevision": true
-  }
+  },
+  "revisionNote": "Resolved repeated within-section questions, unsupported Grade 11 Elective budget/day answers, and Grade 12 Core vocabulary and first listening word counts. Remaining cross-track reuse and source-to-unit mapping still need editorial review."
 }
