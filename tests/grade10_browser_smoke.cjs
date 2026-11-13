@@ -16,7 +16,8 @@ const {chromium}=require('playwright');
   if(audio!==1)throw Error('Grade 10 model '+model+' missing audio player');
   const src=await page.locator('#exam audio').first().getAttribute('src');
   if(model==='E'||model==='F'){
-   if(!src.includes('g10-b-listening.mp3'))throw Error('Comprehensive source listening not preserved: '+src);
+   const expected=model==='E'?'g10-a-listening.mp3':'g10-d-listening.mp3';
+   if(!src.includes(expected))throw Error('Comprehensive source listening mismatch: '+src+' != '+expected);
   }
  }
  await page.click('#random');
@@ -28,5 +29,5 @@ const {chromium}=require('playwright');
  await page.click('#start');
  if(await page.locator('#exam section.section').count()!==1)throw Error('Single-skill practice failed');
  if((await page.locator('#clock').textContent())!=='Untimed')throw Error('Practice should not be timed');
- await browser.close();console.log('PASS Grade 10 A-F (45 objective+2 writing), complete mixed audio provenance, random and untimed skills');
+ await browser.close();console.log('PASS Grade 10 A-F (45 objective+2 writing), corrected four-unit reading, mixed audio provenance, random and untimed skills');
 })().catch(e=>{console.error(e);process.exit(1)});
