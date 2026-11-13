@@ -1,0 +1,46 @@
+name: Complete Grade 9 natural listening recordings
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/grade9-natural-audio.yml'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install audio synthesis and validation tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m pip install edge-tts gTTS mutagen
+      - name: Create natural recordings for remaining original Grade 9 listening tasks
+        run: python scripts/generate_grade9_audio.py
+      - name: Verify all six recordings
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from mutagen.mp3 import MP3
+          for m in ('b','c','g'):
+              for n in (1,2):
+                  f=Path(f'grade9/audio-natural/g9-{m}-listening-{n}.mp3')
+                  assert f.exists() and f.stat().st_size>15000,f
+                  assert MP3(f).info.length>40,f
+                  print(f,round(MP3(f).info.length),'sec')
+          PY
+      - name: Commit natural audio files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add grade9/audio-natural/
+          if ! git diff --cached --quiet; then
+            git commit -m "Add six natural Grade 9 listening MP3 for B C G"
+            git push origin HEAD:main
+          fi
