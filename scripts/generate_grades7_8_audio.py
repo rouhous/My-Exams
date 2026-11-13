@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Create full Grade 7–8 original listening MP3 with instructions, repeats and pauses."""
-import asyncio,json,pathlib,re,subprocess,tempfile
+import asyncio,json,pathlib,re,subprocess,tempfile,os
 import edge_tts
 from mutagen.mp3 import MP3
 ROOT=pathlib.Path(__file__).resolve().parents[1]
@@ -55,6 +55,7 @@ async def make(m,s):
     print('VALID',out.relative_to(ROOT),round(MP3(out).info.length),'sec',flush=True)
 async def main():
   for m in MODELS:
+    if os.environ.get('ONLY_GRADE') and str(m['grade'])!=os.environ['ONLY_GRADE']: continue
     for s in m['sections']:
       if s['key'] in ('listening1','listening2'):
         await make(m,s)
