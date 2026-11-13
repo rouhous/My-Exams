@@ -1,0 +1,29 @@
+{
+  "grade": 9,
+  "models": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G"
+  ],
+  "models_count": 7,
+  "task_count": 49,
+  "total_marks_per_model": 40,
+  "minutes_per_model": 120,
+  "image_reference_errors": [],
+  "errors": [],
+  "warnings": [
+    "A: exact curriculum unit alignment not independently certified",
+    "B: exact curriculum unit alignment not independently certified",
+    "C: exact curriculum unit alignment not independently certified",
+    "D: mixed model intentionally reuses items from unit banks A/B/C",
+    "E: mixed model intentionally reuses items from unit banks A/B/C",
+    "F: mixed model intentionally reuses items from unit banks A/B/C",
+    "G: exact curriculum unit alignment not independently certified"
+  ],
+  "natural_audio_status": "A uses 21 verified natural segments; B/C/G neural MP3 generation requires verified action success",
+  "final_curriculum_approval": false
+}
