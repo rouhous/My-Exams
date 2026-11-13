@@ -1,4 +1,4 @@
-name: Deploy My Exams review application
+name: Deploy My Exams current repository
 on:
   push:
     branches: [main]
@@ -18,39 +18,37 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Extract verified exam release ZIP for deployment
+      - name: Stage latest validated HTML, exams, illustrations and audio
         shell: bash
         run: |
           set -euo pipefail
           python3 - <<'PY'
-          import zipfile, pathlib, shutil
-          archive=pathlib.Path('My-Exams_GitHub_Ready_2026-11-12.zip')
-          target=pathlib.Path('_site')
-          target.mkdir(exist_ok=True)
-          if not archive.is_file():
-              raise SystemExit('Release ZIP missing. Cannot deploy a misleading placeholder.')
-          with zipfile.ZipFile(archive) as z:
-              bad=z.testzip()
-              if bad: raise SystemExit(f'Corrupt archive entry: {bad}')
-              for m in z.infolist():
-                  p=pathlib.PurePosixPath(m.filename)
-                  if p.is_absolute() or '..' in p.parts or p.parts[0] in {'_site','.git'}:
-                      raise SystemExit(f'Unsafe ZIP path: {m.filename}')
-                  # Do not deploy action workflows, private tooling, or bytecode.
-                  if '.github' in p.parts or '__pycache__' in p.parts or p.suffix in {'.pyc'}:
-                      continue
-                  dst=target.joinpath(*p.parts)
-                  if m.is_dir():
-                      dst.mkdir(parents=True,exist_ok=True)
-                  else:
-                      dst.parent.mkdir(parents=True,exist_ok=True)
-                      with z.open(m) as src, dst.open('wb') as out: shutil.copyfileobj(src,out)
-          assert (target/'index.html').is_file(), 'Missing student/review landing page'
-          print('Extracted preview files:', len(list(target.rglob('*'))))
+          import pathlib, shutil, subprocess
+          site=pathlib.Path('_site')
+          site.mkdir(exist_ok=True)
+          names=subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
+          n=0
+          for filename in names:
+              if not filename: continue
+              p=pathlib.PurePosixPath(filename)
+              if p.parts[0] in {'.github','.git','_site','scripts','docs'}: continue
+              if filename.endswith(('.zip','.csv','.md','.py')): continue
+              if not (p.parts[0] in {'grade9','grades5-6','grades7-8','audio-natural'} or len(p.parts)==1):continue
+              src=pathlib.Path(filename)
+              if not src.is_file():continue
+              dst=site.joinpath(*p.parts)
+              dst.parent.mkdir(parents=True,exist_ok=True)
+              shutil.copyfile(src,dst)
+              n+=1
+          for need in ['index.html','sw.js','grade9/index.html','grades5-6/index.html','grades7-8/index.html','grade9/natural_audio.js']:
+              if not (site/need).is_file():raise SystemExit('Missing required page: '+need)
+          count=len(list((site/'audio-natural'/'g9'/'a').rglob('*.mp3')))
+          if count!=21:raise SystemExit(f'Expected 21 natural Grade 9 MP3, got {count}')
+          for f in (site/'audio-natural').rglob('*.mp3'):
+              if f.stat().st_size<1024:raise SystemExit('Invalid tiny MP3: '+str(f))
+          print(f'Staged {n} current GitHub files including {count} natural MP3; ZIP not used for deployment.')
           PY
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
