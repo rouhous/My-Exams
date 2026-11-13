@@ -14,7 +14,7 @@
   "natural_audio_other_models_pending": true,
   "unit_alignment_fully_approved": false,
   "audio_image_technical_inventory_verified": true,
-  "caveat": "Offline files require initial online download and browser storage permission. Higher grades and natural voices for other models remain under review.",
+  "caveat": "Grades 5-8 now pass reproducible structural, media, script hash and browser offline smoke tests. Exact page-level Ministry curriculum certification and a physical phone offline test are still pending. Grades 10-12 are not finished.",
   "natural_grade9_mp3_segments_A": 21,
   "natural_grade9_complete_mp3_tracks_B_C_G": 6,
   "natural_grade9_models_with_recordings": [
@@ -45,16 +45,17 @@
   "grade7_8_natural_audio": {
     "expected_tracks": 16,
     "hosted_tracks": 16,
-    "status": "validated and GitHub-hosted; eight for each grade",
+    "status": "validated and GitHub-hosted; eight per grade",
     "online": true,
     "available_for_exam_pack_download": true
   },
   "grade5_6_natural_audio": {
     "expected_tracks": 16,
     "hosted_tracks": 16,
-    "status": "validated and GitHub-hosted; eight for each grade",
+    "status": "re-generated from latest curriculum-aligned question scripts; audio hashes verified for all sixteen",
     "online": true,
-    "available_for_exam_pack_download": true
+    "available_for_exam_pack_download": true,
+    "manifest": "grades5-6/audio-natural/script_audio_manifest.json"
   },
   "comprehensive_grades5_8": {
     "sourceModelsPerGrade": 4,
@@ -94,6 +95,17 @@
       "fullyUnitCertified": false,
       "remarks": "Writing and Grammar/Vocabulary targets improved. Listening and Reading text themes still require full page-level unit matching."
     },
-    "phoneOfflineTested": false
-  }
+    "phoneOfflineTested": false,
+    "studentPilotTechnicallyReady": true,
+    "technicalAuditStatus": "passed",
+    "technicalAuditFile": "GRADES5_8_COMPREHENSIVE_TECHNICAL_AUDIT.json",
+    "technicalAuditGithubAction": "https://github.com/rouhous/My-Exams/actions/runs/43440794488",
+    "browserOfflineGithubAction": "https://github.com/rouhous/My-Exams/actions/runs/43440182588",
+    "latestUnitCoverage": "GRADES5_8_UNIT_COVERAGE_RELEASE_REVIEW.json",
+    "grade5_6ContentUpdates": "Listening, reading and vocabulary rewritten against their designated semester-unit themes; Grade 5 Unit 3 corrected to Space.",
+    "naturalMP3AllGrades": 32,
+    "fullyUnitCertified": false,
+    "feedback": "Ready for supervised trial; not officially certified."
+  },
+  "natural_audio_5_8_hosted": 32
 }
