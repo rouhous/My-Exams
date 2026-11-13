@@ -1,0 +1,176 @@
+{
+  "grade": 7,
+  "model": "C",
+  "unit": "Travel",
+  "status": "original_unit_texts_pending_audio_regeneration",
+  "listening1": [
+    {
+      "stem": "How will the class travel to Nizwa?",
+      "options": [
+        "by bus",
+        "by train",
+        "by plane"
+      ],
+      "answer": 0,
+      "images": [
+        "bus",
+        "train-front",
+        "plane"
+      ],
+      "script": "Our class is planning a history trip to Nizwa. A few pupils asked about going by plane, while others were interested in trains. The teacher explained that neither would suit this journey. We will travel together on a school bus and return in the evening."
+    },
+    {
+      "stem": "Which place will the family visit first?",
+      "options": [
+        "an old fort",
+        "a library",
+        "a beach"
+      ],
+      "answer": 0,
+      "images": [
+        "castle",
+        "library",
+        "waves"
+      ],
+      "script": "We have planned a busy day in the town. My sister hopes to swim at the beach, and my brother wants to read in the public library. However, our first stop will be the old fort, where a guide is waiting to show us the towers."
+    },
+    {
+      "stem": "What did Sara remember to pack?",
+      "options": [
+        "umbrella",
+        "football",
+        "camera"
+      ],
+      "answer": 2,
+      "images": [
+        "umbrella",
+        "football",
+        "camera"
+      ],
+      "script": "Sara checked her bag before leaving for the mountains. She had already packed a hat and a bottle of water, and no rain was expected, so she did not need an umbrella. She left her football at home but remembered her camera for the scenery."
+    },
+    {
+      "stem": "What weather will affect the journey?",
+      "options": [
+        "sunshine",
+        "strong wind",
+        "rain"
+      ],
+      "answer": 1,
+      "images": [
+        "sun",
+        "wind",
+        "cloud-rain"
+      ],
+      "script": "The weather forecast shows a dry morning, with plenty of sunshine and almost no chance of rain. Strong winds are expected after lunch, however. The guide has decided to visit the exposed viewpoint early and move to the sheltered museum in the afternoon."
+    },
+    {
+      "stem": "How will the tourists reach the small island?",
+      "options": [
+        "by boat",
+        "by train",
+        "by bus"
+      ],
+      "answer": 0,
+      "images": [
+        "sailboat",
+        "train-front",
+        "bus"
+      ],
+      "script": "The visitors will explore a small island near the coast. Their bus will take them to the harbour, but it cannot continue across the water. There is no railway nearby, so they will board a small boat and travel with a local guide."
+    }
+  ],
+  "listening2": {
+    "script": "Interviewer: Welcome to Travel Talk. Maha, where did your school group travel last month?\nMaha: We went to Nizwa for a day trip. Our bus left the school at half past seven, and the journey was comfortable.\nInterviewer: What had you planned to see?\nMaha: We were going to visit the fort first, then walk around the traditional market. We also wanted to meet a local craftsperson.\nInterviewer: Did everything happen as planned?\nMaha: Not quite. The market was unusually crowded, so our guide suggested visiting the craft workshop before lunch instead.\nInterviewer: Was that a disappointment?\nMaha: No, because the craftsperson showed us how to make a small basket, and we asked lots of questions. We visited the market later when it was quieter.\nInterviewer: What did you take with you?\nMaha: Water, comfortable shoes and a notebook. I had forgotten my camera, but my friend shared her photographs with me.\nInterviewer: What advice would you give to another school group?\nMaha: Check opening times, leave enough time between activities and be ready to change your plans. You can still have an interesting journey even when something unexpected happens.",
+    "items": [
+      {
+        "stem": "The group travelled to Nizwa by bus.",
+        "answer": true
+      },
+      {
+        "stem": "They visited the market before the craft workshop.",
+        "answer": false
+      },
+      {
+        "stem": "Maha enjoyed learning how to make a small basket.",
+        "answer": true
+      },
+      {
+        "stem": "Maha remembered to bring her camera.",
+        "answer": false
+      },
+      {
+        "stem": "Maha advises travellers to allow time for changes.",
+        "answer": true
+      }
+    ]
+  },
+  "reading1": {
+    "texts": [
+      "Before leaving for the mountains, the family checked the forecast and placed warm clothes in their bags. The father also downloaded a map because mobile signals might be weak.",
+      "The school bus was scheduled to leave at seven thirty. Several pupils arrived early, but one student was still buying breakfast at the nearby shop.",
+      "At the museum entrance, the visitors noticed that the first guided tour had already started. They asked the receptionist whether another tour would begin later.",
+      "Aisha wanted to take photographs from the top of the fort. The guide pointed out a narrow staircase and reminded visitors to hold the handrail.",
+      "During the journey home, the students discussed the best part of their visit. Some enjoyed the old buildings, while others preferred meeting the local craftspeople."
+    ],
+    "continuations": [
+      "The receptionist explained that the next group would begin at eleven and invited them to wait in the exhibition room.",
+      "Everyone agreed that speaking to people and seeing how they worked had made the trip memorable.",
+      "The guide advised her to climb carefully and avoid leaning over the walls for a picture.",
+      "The driver told the group to be at the departure point on time so the journey could begin safely.",
+      "A family member decided to cancel the trip because they had forgotten their swimming goggles.",
+      "These preparations helped everyone stay comfortable when the temperature changed during the climb."
+    ],
+    "answers": [
+      5,
+      3,
+      0,
+      2,
+      1
+    ]
+  },
+  "reading2": {
+    "passage": "Last month, Rania and her family planned a weekend visit to a mountain village. Rania wanted to explore an old fort, while her younger brother hoped to see a waterfall. Their father checked the weather forecast and the opening times before they left home. He also made sure the car had enough fuel for the journey.\n\nThey set off early on Friday morning. After an hour, the family reached a village where they stopped to ask a local shopkeeper about the best route. The shopkeeper explained that one road had been closed for repairs and suggested a safer road through a nearby valley. He also reminded them to drive slowly because the bends were narrow.\n\nBy midday, they had reached the fort. Rania was disappointed to learn that the guided tour would not begin for another forty minutes. Instead of waiting outside in the sun, the family visited a small craft exhibition nearby. Rania watched an artist making colourful baskets and bought a postcard for her friend.\n\nLater, the guide explained how people had used the fort to protect the village. From the upper courtyard, Rania could see the mountains and the winding road they had followed. Her brother took several photographs but decided not to visit the waterfall because it was getting late.\n\nOn their way home, Rania wrote a short travel diary. She realised that checking information and being flexible had helped her family enjoy the trip despite the unexpected road closure.",
+    "items": [
+      {
+        "stem": "What did Rania want to explore?",
+        "answers": [
+          "an old fort",
+          "old fort",
+          "the fort"
+        ]
+      },
+      {
+        "stem": "Why did the family change their route?",
+        "answers": [
+          "one road was closed for repairs",
+          "the road was closed",
+          "road repairs"
+        ]
+      },
+      {
+        "stem": "Who suggested a safer road?",
+        "answers": [
+          "a local shopkeeper",
+          "shopkeeper",
+          "the shopkeeper"
+        ]
+      },
+      {
+        "stem": "What did Rania buy at the craft exhibition?",
+        "answers": [
+          "a postcard",
+          "postcard"
+        ]
+      },
+      {
+        "stem": "Why did her brother decide not to visit the waterfall?",
+        "answers": [
+          "it was getting late",
+          "because it was late",
+          "getting late"
+        ]
+      }
+    ]
+  }
+}
