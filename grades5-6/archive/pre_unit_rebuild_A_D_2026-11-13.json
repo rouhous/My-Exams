@@ -1,0 +1,2451 @@
+{
+  "status": "archive",
+  "reason": "Preserve original listening/reading/vocabulary before rewriting unit-specific tasks and regenerating audio",
+  "activities": [
+    {
+      "id": "g5-a-listening-1",
+      "grade": 5,
+      "model": "A",
+      "skill": "listening",
+      "part": 1,
+      "title": "Listening 1 · Match dialogues to pictures",
+      "marks": 5,
+      "format": "picture-match",
+      "pictureOptions": [
+        "robot",
+        "kite",
+        "bus",
+        "plant",
+        "book",
+        "camera"
+      ],
+      "passages": [
+        "A: What is your project today? B: A small robot can move coloured blocks. A: Why is it interesting? B: It helps our team show how simple machines work. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: We use a camera to take clear pictures. A: Why is it interesting? B: The visitors can see our progress in a photo album. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: I made a short book about my idea. A: Why is it interesting? B: I will read the first page to younger children. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: Our group grew a young plant in a jar. A: Why is it interesting? B: We check its water every morning. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: The visitors arrive by school bus. A: Why is it interesting? B: The driver stops beside the main hall. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display."
+      ],
+      "questions": [
+        {
+          "stem": "Text 1",
+          "answer": 0
+        },
+        {
+          "stem": "Text 2",
+          "answer": 5
+        },
+        {
+          "stem": "Text 3",
+          "answer": 4
+        },
+        {
+          "stem": "Text 4",
+          "answer": 3
+        },
+        {
+          "stem": "Text 5",
+          "answer": 2
+        }
+      ],
+      "audio": "audio/g5-a-listening-1.mp3"
+    },
+    {
+      "id": "g5-a-listening-2",
+      "grade": 5,
+      "model": "A",
+      "skill": "listening",
+      "part": 2,
+      "title": "Listening 2 · Dialogue / interview",
+      "marks": 5,
+      "format": "mc",
+      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Noura about the invention fair. Where will the event happen? Noura: It will take place at the school hall on Monday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Noura: My friend Rashid is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Noura: They will see a display about a robot. We made it in class. Interviewer: What should visitors bring? Noura: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Noura: You are welcome.",
+      "questions": [
+        {
+          "stem": "Where will the event take place?",
+          "options": [
+            "the school hall",
+            "at the library",
+            "at the airport"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "When is the event planned?",
+          "options": [
+            "Friday",
+            "Sunday",
+            "Monday"
+          ],
+          "answer": 2
+        },
+        {
+          "stem": "Who is helping organise the event?",
+          "options": [
+            "the bus driver",
+            "Rashid",
+            "a doctor"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "What is the first display about?",
+          "options": [
+            "a robot",
+            "a football",
+            "a bicycle"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "What should people bring?",
+          "options": [
+            "a large suitcase",
+            "a new computer",
+            "a reusable water bottle"
+          ],
+          "answer": 2
+        }
+      ],
+      "audio": "audio/g5-a-listening-2.mp3"
+    },
+    {
+      "id": "g5-a-vocabulary",
+      "grade": 5,
+      "model": "A",
+      "skill": "vocabulary",
+      "part": 1,
+      "title": "Vocabulary · Match pictures to words",
+      "marks": 5,
+      "format": "picture-word-match",
+      "pictureOptions": [
+        "robot",
+        "camera",
+        "book",
+        "plant",
+        "bus"
+      ],
+      "wordOptions": [
+        "camera",
+        "robot",
+        "kite",
+        "bus",
+        "book",
+        "plant"
+      ],
+      "questions": [
+        {
+          "stem": "Picture 1",
+          "answer": 1
+        },
+        {
+          "stem": "Picture 2",
+          "answer": 0
+        },
+        {
+          "stem": "Picture 3",
+          "answer": 4
+        },
+        {
+          "stem": "Picture 4",
+          "answer": 5
+        },
+        {
+          "stem": "Picture 5",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "g5-a-grammar",
+      "grade": 5,
+      "model": "A",
+      "skill": "grammar",
+      "part": 1,
+      "title": "Grammar · Talent show",
+      "marks": 5,
+      "format": "mc",
+      "questions": [
+        {
+          "stem": "Rana is ____ than her sister at telling stories.",
+          "options": [
+            "more confident",
+            "most confident"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "Of all the performers, Hamed was the ____.",
+          "options": [
+            "funnier",
+            "funniest"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "Maha is good at ____ a football.",
+          "options": [
+            "throwing",
+            "throw"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "The youngest singer was ____ than the older girls.",
+          "options": [
+            "shortest",
+            "shorter"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "Salim is the ____ student in our drama team.",
+          "options": [
+            "most polite",
+            "more polite"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "g5-a-reading-1",
+      "grade": 5,
+      "model": "A",
+      "skill": "reading",
+      "part": 1,
+      "title": "Reading 1 · Match short texts with pictures",
+      "marks": 5,
+      "format": "picture-match",
+      "pictureOptions": [
+        "bus",
+        "book",
+        "plant",
+        "camera",
+        "robot"
+      ],
+      "questions": [
+        {
+          "stem": "At the school fair, a small robot carried a box across the table while students explained how it worked.",
+          "answer": 4
+        },
+        {
+          "stem": "A photographer used a camera to record the children explaining their creative inventions to visitors.",
+          "answer": 3
+        },
+        {
+          "stem": "The class placed a young plant near the window and checked the leaves every morning.",
+          "answer": 1
+        },
+        {
+          "stem": "A pupil opened her book and read a story about an inventor who helped neighbours.",
+          "answer": 2
+        },
+        {
+          "stem": "A blue bus stopped outside the school hall and the visiting families stepped out carefully.",
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "g5-a-reading-2",
+      "grade": 5,
+      "model": "A",
+      "skill": "reading",
+      "part": 2,
+      "title": "Reading 2 · True or False",
+      "marks": 5,
+      "format": "tf",
+      "passage": "Last Monday, Noura and Rashid went to the school hall for a invention fair. They arrived early and helped their teacher set up a small table. Noura brought a robot, while Rashid carried a notebook and some water. At first, they could not find the box with their materials. They looked beside the door and behind the chairs, but the box was not there. Then a younger student pointed towards a shelf near the window. The box was waiting there. Everyone felt happy, and the activity began on time. In the afternoon, the two friends cleaned their table and thanked the visitors. They decided to prepare their things the evening before their next event.",
+      "questions": [
+        {
+          "stem": "Noura and Rashid arrived late.",
+          "answer": "False"
+        },
+        {
+          "stem": "They could not find the box with the materials.",
+          "answer": "True"
+        },
+        {
+          "stem": "A younger student showed them where the box was.",
+          "answer": "True"
+        },
+        {
+          "stem": "The event was cancelled because the box was missing.",
+          "answer": "False"
+        },
+        {
+          "stem": "The friends decided to prepare earlier next time.",
+          "answer": "True"
+        }
+      ]
+    },
+    {
+      "id": "g5-a-writing-1",
+      "grade": 5,
+      "model": "A",
+      "skill": "writing",
+      "part": 1,
+      "title": "Writing 1 · Descriptive text",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 40,
+      "prompt": "Write at least 40 words describing a friend who wants to take part in a talent show. Describe the friend's appearance, personality, hobbies and strongest talent.",
+      "pictureOptions": []
+    },
+    {
+      "id": "g5-a-writing-2",
+      "grade": 5,
+      "model": "A",
+      "skill": "writing",
+      "part": 2,
+      "title": "Writing 2 · Email",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 40,
+      "prompt": "Write an email to a friend inviting them to a school talent show. Say where and when it is, what talents pupils will show, and why your friend should come. Write at least 40 words."
+    },
+    {
+      "id": "g5-b-listening-1",
+      "grade": 5,
+      "model": "B",
+      "skill": "listening",
+      "part": 1,
+      "title": "Listening 1 · Match dialogues to pictures",
+      "marks": 5,
+      "format": "picture-match",
+      "pictureOptions": [
+        "boat",
+        "fish",
+        "clock",
+        "plant",
+        "backpack",
+        "camera"
+      ],
+      "passages": [
+        "A: What is your project today? B: I am drawing a fish from a picture. A: Why is it interesting? B: I want to learn how it moves under water. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: The small boat stays near the shore. A: Why is it interesting? B: We can watch the sea safely from the beach. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: I brought a camera for the trip. A: Why is it interesting? B: I will take pictures of the coast. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: My backpack has water and a notebook. A: Why is it interesting? B: I keep everything together on the trip. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: We saw a plant growing by the sand. A: Why is it interesting? B: Our guide told us not to damage it. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display."
+      ],
+      "questions": [
+        {
+          "stem": "Text 1",
+          "answer": 1
+        },
+        {
+          "stem": "Text 2",
+          "answer": 0
+        },
+        {
+          "stem": "Text 3",
+          "answer": 5
+        },
+        {
+          "stem": "Text 4",
+          "answer": 4
+        },
+        {
+          "stem": "Text 5",
+          "answer": 3
+        }
+      ],
+      "audio": "audio/g5-b-listening-1.mp3"
+    },
+    {
+      "id": "g5-b-listening-2",
+      "grade": 5,
+      "model": "B",
+      "skill": "listening",
+      "part": 2,
+      "title": "Listening 2 · Dialogue / interview",
+      "marks": 5,
+      "format": "mc",
+      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Maha about the coastal science day. Where will the event happen? Maha: It will take place at the beach on Tuesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Maha: My friend Salim is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Maha: They will see a display about a fish. We made it in class. Interviewer: What should visitors bring? Maha: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Maha: You are welcome.",
+      "questions": [
+        {
+          "stem": "Where will the event take place?",
+          "options": [
+            "at the library",
+            "at the airport",
+            "the beach"
+          ],
+          "answer": 2
+        },
+        {
+          "stem": "When is the event planned?",
+          "options": [
+            "Sunday",
+            "Tuesday",
+            "Friday"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "Who is helping organise the event?",
+          "options": [
+            "Salim",
+            "a doctor",
+            "the bus driver"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "What is the first display about?",
+          "options": [
+            "a football",
+            "a bicycle",
+            "a fish"
+          ],
+          "answer": 2
+        },
+        {
+          "stem": "What should people bring?",
+          "options": [
+            "a new computer",
+            "a reusable water bottle",
+            "a large suitcase"
+          ],
+          "answer": 1
+        }
+      ],
+      "audio": "audio/g5-b-listening-2.mp3"
+    },
+    {
+      "id": "g5-b-vocabulary",
+      "grade": 5,
+      "model": "B",
+      "skill": "vocabulary",
+      "part": 1,
+      "title": "Vocabulary · Match pictures to words",
+      "marks": 5,
+      "format": "picture-word-match",
+      "pictureOptions": [
+        "fish",
+        "boat",
+        "camera",
+        "backpack",
+        "plant"
+      ],
+      "wordOptions": [
+        "backpack",
+        "camera",
+        "fish",
+        "clock",
+        "plant",
+        "boat"
+      ],
+      "questions": [
+        {
+          "stem": "Picture 1",
+          "answer": 2
+        },
+        {
+          "stem": "Picture 2",
+          "answer": 5
+        },
+        {
+          "stem": "Picture 3",
+          "answer": 1
+        },
+        {
+          "stem": "Picture 4",
+          "answer": 0
+        },
+        {
+          "stem": "Picture 5",
+          "answer": 4
+        }
+      ]
+    },
+    {
+      "id": "g5-b-grammar",
+      "grade": 5,
+      "model": "B",
+      "skill": "grammar",
+      "part": 1,
+      "title": "Grammar · Then and now",
+      "marks": 5,
+      "format": "mc",
+      "questions": [
+        {
+          "stem": "My grandad ____ letters when he was young.",
+          "options": [
+            "wrote",
+            "writes"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "They ____ use tablets at school twenty years ago.",
+          "options": [
+            "do not",
+            "did not"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "____ you call your cousin yesterday?",
+          "options": [
+            "Did",
+            "Do"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "When I was four, I ____ read short words.",
+          "options": [
+            "can",
+            "could"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "We ____ an email to our aunt last Friday.",
+          "options": [
+            "sent",
+            "send"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "g5-b-reading-1",
+      "grade": 5,
+      "model": "B",
+      "skill": "reading",
+      "part": 1,
+      "title": "Reading 1 · Match short texts with pictures",
+      "marks": 5,
+      "format": "picture-match",
+      "pictureOptions": [
+        "backpack",
+        "fish",
+        "boat",
+        "plant",
+        "camera"
+      ],
+      "questions": [
+        {
+          "stem": "A fisherman showed the students a picture of a fish that lives in the shallow water.",
+          "answer": 1
+        },
+        {
+          "stem": "The children stood on the beach and watched the gentle waves reach the soft sand.",
+          "answer": 2
+        },
+        {
+          "stem": "Maha put her camera in a safe bag before she walked beside the sea. They enjoyed the experience.",
+          "answer": 4
+        },
+        {
+          "stem": "A sailor tied a small boat to the wooden post so it would not move away.",
+          "answer": 0
+        },
+        {
+          "stem": "Salim carried his backpack with water, paper and pencils for the science trip. They enjoyed the experience.",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "g5-b-reading-2",
+      "grade": 5,
+      "model": "B",
+      "skill": "reading",
+      "part": 2,
+      "title": "Reading 2 · True or False",
+      "marks": 5,
+      "format": "tf",
+      "passage": "Last Tuesday, Maha and Salim went to the beach for a coastal science day. They arrived early and helped their teacher set up a small table. Maha brought a fish, while Salim carried a notebook and some water. At first, they could not find the box with their materials. They looked beside the door and behind the chairs, but the box was not there. Then a younger student pointed towards a shelf near the window. The box was waiting there. Everyone felt happy, and the activity began on time. In the afternoon, the two friends cleaned their table and thanked the visitors. They decided to prepare their things the evening before their next event.",
+      "questions": [
+        {
+          "stem": "Maha and Salim arrived late.",
+          "answer": "False"
+        },
+        {
+          "stem": "They could not find the box with the materials.",
+          "answer": "True"
+        },
+        {
+          "stem": "A younger student showed them where the box was.",
+          "answer": "True"
+        },
+        {
+          "stem": "The event was cancelled because the box was missing.",
+          "answer": "False"
+        },
+        {
+          "stem": "The friends decided to prepare earlier next time.",
+          "answer": "True"
+        }
+      ]
+    },
+    {
+      "id": "g5-b-writing-1",
+      "grade": 5,
+      "model": "B",
+      "skill": "writing",
+      "part": 1,
+      "title": "Writing 1 · Descriptive text",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 40,
+      "prompt": "Write at least 40 words describing how people communicated in Oman long ago and how they communicate today. Compare letters, telephones and mobile devices.",
+      "pictureOptions": []
+    },
+    {
+      "id": "g5-b-writing-2",
+      "grade": 5,
+      "model": "B",
+      "skill": "writing",
+      "part": 2,
+      "title": "Writing 2 · Email",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 40,
+      "prompt": "Write an email to a cousin comparing school life in the past and today. Mention two things children could or could not do before and explain which time you prefer. Write at least 40 words."
+    },
+    {
+      "id": "g5-c-listening-1",
+      "grade": 5,
+      "model": "C",
+      "skill": "listening",
+      "part": 1,
+      "title": "Listening 1 · Match dialogues to pictures",
+      "marks": 5,
+      "format": "picture-match",
+      "pictureOptions": [
+        "cup",
+        "gift",
+        "apple",
+        "bicycle",
+        "book",
+        "cake"
+      ],
+      "passages": [
+        "A: What is your project today? B: This apple came from a local farm. A: Why is it interesting? B: We can buy fresh fruit at this stall. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: I made a gift for my grandmother. A: Why is it interesting? B: It is wrapped carefully in recycled paper. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: The shopkeeper gave me a reusable cup. A: Why is it interesting? B: I will use it again tomorrow. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: Our family baked a small cake. A: Why is it interesting? B: We brought it to share with neighbours. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: There is a book stall next to the bakery. A: Why is it interesting? B: I want a story about adventure. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display."
+      ],
+      "questions": [
+        {
+          "stem": "Text 1",
+          "answer": 2
+        },
+        {
+          "stem": "Text 2",
+          "answer": 1
+        },
+        {
+          "stem": "Text 3",
+          "answer": 0
+        },
+        {
+          "stem": "Text 4",
+          "answer": 5
+        },
+        {
+          "stem": "Text 5",
+          "answer": 4
+        }
+      ],
+      "audio": "audio/g5-c-listening-1.mp3"
+    },
+    {
+      "id": "g5-c-listening-2",
+      "grade": 5,
+      "model": "C",
+      "skill": "listening",
+      "part": 2,
+      "title": "Listening 2 · Dialogue / interview",
+      "marks": 5,
+      "format": "mc",
+      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Asma about the neighbourhood market. Where will the event happen? Asma: It will take place at the market on Wednesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Asma: My friend Huda is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Asma: They will see a display about a apple. We made it in class. Interviewer: What should visitors bring? Asma: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Asma: You are welcome.",
+      "questions": [
+        {
+          "stem": "Where will the event take place?",
+          "options": [
+            "at the airport",
+            "the market",
+            "at the library"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "When is the event planned?",
+          "options": [
+            "Wednesday",
+            "Friday",
+            "Sunday"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "Who is helping organise the event?",
+          "options": [
+            "a doctor",
+            "the bus driver",
+            "Huda"
+          ],
+          "answer": 2
+        },
+        {
+          "stem": "What is the first display about?",
+          "options": [
+            "a bicycle",
+            "a apple",
+            "a football"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "What should people bring?",
+          "options": [
+            "a reusable water bottle",
+            "a large suitcase",
+            "a new computer"
+          ],
+          "answer": 0
+        }
+      ],
+      "audio": "audio/g5-c-listening-2.mp3"
+    },
+    {
+      "id": "g5-c-vocabulary",
+      "grade": 5,
+      "model": "C",
+      "skill": "vocabulary",
+      "part": 1,
+      "title": "Vocabulary · Match pictures to words",
+      "marks": 5,
+      "format": "picture-word-match",
+      "pictureOptions": [
+        "apple",
+        "gift",
+        "cup",
+        "cake",
+        "book"
+      ],
+      "wordOptions": [
+        "book",
+        "bicycle",
+        "gift",
+        "cake",
+        "apple",
+        "cup"
+      ],
+      "questions": [
+        {
+          "stem": "Picture 1",
+          "answer": 4
+        },
+        {
+          "stem": "Picture 2",
+          "answer": 2
+        },
+        {
+          "stem": "Picture 3",
+          "answer": 5
+        },
+        {
+          "stem": "Picture 4",
+          "answer": 3
+        },
+        {
+          "stem": "Picture 5",
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "g5-c-grammar",
+      "grade": 5,
+      "model": "C",
+      "skill": "grammar",
+      "part": 1,
+      "title": "Grammar · Let’s explore!",
+      "marks": 5,
+      "format": "mc",
+      "questions": [
+        {
+          "stem": "I think scientists ____ discover more about Mars.",
+          "options": [
+            "will",
+            "were"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "We ____ travel to the Moon tomorrow. It is only a class project.",
+          "options": [
+            "did not",
+            "will not"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "____ far is the Moon from Earth?",
+          "options": [
+            "How",
+            "What"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "Our guide ____ show us the telescope next week.",
+          "options": [
+            "was",
+            "will"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "____ large is the new space station?",
+          "options": [
+            "How",
+            "Which"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "g5-c-reading-1",
+      "grade": 5,
+      "model": "C",
+      "skill": "reading",
+      "part": 1,
+      "title": "Reading 1 · Match short texts with pictures",
+      "marks": 5,
+      "format": "picture-match",
+      "pictureOptions": [
+        "cup",
+        "book",
+        "cake",
+        "gift",
+        "apple"
+      ],
+      "questions": [
+        {
+          "stem": "The seller placed a fresh apple on the table for the customer to examine. They enjoyed the experience.",
+          "answer": 4
+        },
+        {
+          "stem": "A girl wrapped a gift in reused paper and wrote a message for her grandmother.",
+          "answer": 3
+        },
+        {
+          "stem": "The little bakery made a cake for the families visiting the neighbourhood market. They enjoyed the experience.",
+          "answer": 0
+        },
+        {
+          "stem": "A visitor asked for a cup so she could drink water after walking around. They enjoyed the experience.",
+          "answer": 2
+        },
+        {
+          "stem": "The children found a book about Oman at the stall beside the vegetables. They enjoyed the experience.",
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "g5-c-reading-2",
+      "grade": 5,
+      "model": "C",
+      "skill": "reading",
+      "part": 2,
+      "title": "Reading 2 · True or False",
+      "marks": 5,
+      "format": "tf",
+      "passage": "Last Wednesday, Asma and Huda went to the market for a neighbourhood market. They arrived early and helped their teacher set up a small table. Asma brought a apple, while Huda carried a notebook and some water. At first, they could not find the box with their materials. They looked beside the door and behind the chairs, but the box was not there. Then a younger student pointed towards a shelf near the window. The box was waiting there. Everyone felt happy, and the activity began on time. In the afternoon, the two friends cleaned their table and thanked the visitors. They decided to prepare their things the evening before their next event.",
+      "questions": [
+        {
+          "stem": "Asma and Huda arrived late.",
+          "answer": "False"
+        },
+        {
+          "stem": "They could not find the box with the materials.",
+          "answer": "True"
+        },
+        {
+          "stem": "A younger student showed them where the box was.",
+          "answer": "True"
+        },
+        {
+          "stem": "The event was cancelled because the box was missing.",
+          "answer": "False"
+        },
+        {
+          "stem": "The friends decided to prepare earlier next time.",
+          "answer": "True"
+        }
+      ]
+    },
+    {
+      "id": "g5-c-writing-1",
+      "grade": 5,
+      "model": "C",
+      "skill": "writing",
+      "part": 1,
+      "title": "Writing 1 · Descriptive text",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 40,
+      "prompt": "Write at least 40 words describing a visit to a space exhibition. Mention the Moon, a rocket or a telescope, and what you hope to explore in the future.",
+      "pictureOptions": []
+    },
+    {
+      "id": "g5-c-writing-2",
+      "grade": 5,
+      "model": "C",
+      "skill": "writing",
+      "part": 2,
+      "title": "Writing 2 · Email",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 40,
+      "prompt": "Write an email inviting your friend to a space discovery day. Explain what you will see, what you will learn about planets and one question you want to ask. Write at least 40 words."
+    },
+    {
+      "id": "g5-d-listening-1",
+      "grade": 5,
+      "model": "D",
+      "skill": "listening",
+      "part": 1,
+      "title": "Listening 1 · Match dialogues to pictures",
+      "marks": 5,
+      "format": "picture-match",
+      "pictureOptions": [
+        "camera",
+        "kite",
+        "flower",
+        "paintbrush",
+        "drum",
+        "boat"
+      ],
+      "passages": [
+        "A: What is your project today? B: I need a paintbrush for my picture. A: Why is it interesting? B: A thick brush is best for the blue sky. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: I drew a flower in the garden. A: Why is it interesting? B: Its petals have a beautiful shape. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: My kite flew above the trees. A: Why is it interesting? B: I chose bright paper and a long string. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: I used my camera to record our work. A: Why is it interesting? B: The class can view the photographs tomorrow. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
+        "A: What is your project today? B: I painted a boat beside the mountains. A: Why is it interesting? B: My grandfather told me stories about sailing. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display."
+      ],
+      "questions": [
+        {
+          "stem": "Text 1",
+          "answer": 3
+        },
+        {
+          "stem": "Text 2",
+          "answer": 2
+        },
+        {
+          "stem": "Text 3",
+          "answer": 1
+        },
+        {
+          "stem": "Text 4",
+          "answer": 0
+        },
+        {
+          "stem": "Text 5",
+          "answer": 5
+        }
+      ],
+      "audio": "audio/g5-d-listening-1.mp3"
+    },
+    {
+      "id": "g5-d-listening-2",
+      "grade": 5,
+      "model": "D",
+      "skill": "listening",
+      "part": 2,
+      "title": "Listening 2 · Dialogue / interview",
+      "marks": 5,
+      "format": "mc",
+      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Laila about the outdoor art day. Where will the event happen? Laila: It will take place at the park on Thursday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Laila: My friend Yousuf is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Laila: They will see a display about a paintbrush. We made it in class. Interviewer: What should visitors bring? Laila: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Laila: You are welcome.",
+      "questions": [
+        {
+          "stem": "Where will the event take place?",
+          "options": [
+            "the park",
+            "at the library",
+            "at the airport"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "When is the event planned?",
+          "options": [
+            "Friday",
+            "Sunday",
+            "Thursday"
+          ],
+          "answer": 2
+        },
+        {
+          "stem": "Who is helping organise the event?",
+          "options": [
+            "the bus driver",
+            "Yousuf",
+            "a doctor"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "What is the first display about?",
+          "options": [
+            "a paintbrush",
+            "a football",
+            "a bicycle"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "What should people bring?",
+          "options": [
+            "a large suitcase",
+            "a new computer",
+            "a reusable water bottle"
+          ],
+          "answer": 2
+        }
+      ],
+      "audio": "audio/g5-d-listening-2.mp3"
+    },
+    {
+      "id": "g5-d-vocabulary",
+      "grade": 5,
+      "model": "D",
+      "skill": "vocabulary",
+      "part": 1,
+      "title": "Vocabulary · Match pictures to words",
+      "marks": 5,
+      "format": "picture-word-match",
+      "pictureOptions": [
+        "paintbrush",
+        "flower",
+        "kite",
+        "camera",
+        "boat"
+      ],
+      "wordOptions": [
+        "paintbrush",
+        "drum",
+        "kite",
+        "camera",
+        "flower",
+        "boat"
+      ],
+      "questions": [
+        {
+          "stem": "Picture 1",
+          "answer": 0
+        },
+        {
+          "stem": "Picture 2",
+          "answer": 4
+        },
+        {
+          "stem": "Picture 3",
+          "answer": 2
+        },
+        {
+          "stem": "Picture 4",
+          "answer": 3
+        },
+        {
+          "stem": "Picture 5",
+          "answer": 5
+        }
+      ]
+    },
+    {
+      "id": "g5-d-grammar",
+      "grade": 5,
+      "model": "D",
+      "skill": "grammar",
+      "part": 1,
+      "title": "Grammar · Off to the shops",
+      "marks": 5,
+      "format": "mc",
+      "questions": [
+        {
+          "stem": "A fishmonger is a person ____ sells fish.",
+          "options": [
+            "who",
+            "where"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "This is the shop ____ my aunt works.",
+          "options": [
+            "who",
+            "where"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "The jacket ____ I bought is blue.",
+          "options": [
+            "which",
+            "where"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "You ____ keep the receipt if you want to return the toy.",
+          "options": [
+            "has to",
+            "have to"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "We ____ buy the notebook today; we already have one.",
+          "options": [
+            "do not have to",
+            "does not have to"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "g5-d-reading-1",
+      "grade": 5,
+      "model": "D",
+      "skill": "reading",
+      "part": 1,
+      "title": "Reading 1 · Match short texts with pictures",
+      "marks": 5,
+      "format": "picture-match",
+      "pictureOptions": [
+        "camera",
+        "paintbrush",
+        "kite",
+        "boat",
+        "flower"
+      ],
+      "questions": [
+        {
+          "stem": "A painter chose a wide paintbrush to cover the large page with soft lines. They enjoyed the experience.",
+          "answer": 1
+        },
+        {
+          "stem": "A young girl carefully drew a flower she found beside the park pathway. They enjoyed the experience.",
+          "answer": 4
+        },
+        {
+          "stem": "A boy flew a kite above the open grass when the wind became stronger. They enjoyed the experience.",
+          "answer": 2
+        },
+        {
+          "stem": "The teacher took a camera to photograph the finished art from every group. They enjoyed the experience.",
+          "answer": 0
+        },
+        {
+          "stem": "One student painted a small boat floating beside the hills in the morning. They enjoyed the experience.",
+          "answer": 3
+        }
+      ]
+    },
+    {
+      "id": "g5-d-reading-2",
+      "grade": 5,
+      "model": "D",
+      "skill": "reading",
+      "part": 2,
+      "title": "Reading 2 · True or False",
+      "marks": 5,
+      "format": "tf",
+      "passage": "Last Thursday, Laila and Yousuf went to the park for a outdoor art day. They arrived early and helped their teacher set up a small table. Laila brought a paintbrush, while Yousuf carried a notebook and some water. At first, they could not find the box with their materials. They looked beside the door and behind the chairs, but the box was not there. Then a younger student pointed towards a shelf near the window. The box was waiting there. Everyone felt happy, and the activity began on time. In the afternoon, the two friends cleaned their table and thanked the visitors. They decided to prepare their things the evening before their next event.",
+      "questions": [
+        {
+          "stem": "Laila and Yousuf arrived late.",
+          "answer": "False"
+        },
+        {
+          "stem": "They could not find the box with the materials.",
+          "answer": "True"
+        },
+        {
+          "stem": "A younger student showed them where the box was.",
+          "answer": "True"
+        },
+        {
+          "stem": "The event was cancelled because the box was missing.",
+          "answer": "False"
+        },
+        {
+          "stem": "The friends decided to prepare earlier next time.",
+          "answer": "True"
+        }
+      ]
+    },
+    {
+      "id": "g5-d-writing-1",
+      "grade": 5,
+      "model": "D",
+      "skill": "writing",
+      "part": 1,
+      "title": "Writing 1 · Descriptive text",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 40,
+      "prompt": "Write at least 40 words describing a small shop near your home. Mention the items it sells, their prices, and how customers ask for help.",
+      "pictureOptions": []
+    },
+    {
+      "id": "g5-d-writing-2",
+      "grade": 5,
+      "model": "D",
+      "skill": "writing",
+      "part": 2,
+      "title": "Writing 2 · Email",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 40,
+      "prompt": "Write an email to a friend about your shopping trip. Explain what you wanted to buy, how much it cost, what you chose and why. Write at least 40 words."
+    },
+    {
+      "id": "g6-a-listening-1",
+      "grade": 6,
+      "model": "A",
+      "skill": "listening",
+      "part": 1,
+      "title": "Listening 1 · Match dialogues to pictures",
+      "marks": 5,
+      "format": "picture-match",
+      "pictureOptions": [
+        "robot",
+        "kite",
+        "bus",
+        "plant",
+        "book",
+        "camera"
+      ],
+      "passages": [
+        "A: What is your group doing today? B: A small robot can move coloured blocks. A: What did you learn? B: It helps our team show how simple machines work. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: We use a camera to take clear pictures. A: What did you learn? B: The visitors can see our progress in a photo album. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: I made a short book about my idea. A: What did you learn? B: I will read the first page to younger children. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: Our group grew a young plant in a jar. A: What did you learn? B: We check its water every morning. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: The visitors arrive by school bus. A: What did you learn? B: The driver stops beside the main hall. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions."
+      ],
+      "questions": [
+        {
+          "stem": "Text 1",
+          "answer": 0
+        },
+        {
+          "stem": "Text 2",
+          "answer": 5
+        },
+        {
+          "stem": "Text 3",
+          "answer": 4
+        },
+        {
+          "stem": "Text 4",
+          "answer": 3
+        },
+        {
+          "stem": "Text 5",
+          "answer": 2
+        }
+      ],
+      "audio": "audio/g6-a-listening-1.mp3"
+    },
+    {
+      "id": "g6-a-listening-2",
+      "grade": 6,
+      "model": "A",
+      "skill": "listening",
+      "part": 2,
+      "title": "Listening 2 · Dialogue / interview",
+      "marks": 5,
+      "format": "mc",
+      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Noura about the invention fair. Where will the event happen? Noura: It will take place at the school hall on Monday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Noura: My friend Rashid is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Noura: They will see a display about a robot. We made it in class. Interviewer: What should visitors bring? Noura: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Noura: You are welcome. Interviewer: What did you learn from this experience? Noura: I learned to listen to others, check my work and make better plans. Working together is important because each person has a useful idea.",
+      "questions": [
+        {
+          "stem": "Where will the event take place?",
+          "options": [
+            "the school hall",
+            "at the library",
+            "at the airport"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "When is the event planned?",
+          "options": [
+            "Friday",
+            "Sunday",
+            "Monday"
+          ],
+          "answer": 2
+        },
+        {
+          "stem": "Who is helping organise the event?",
+          "options": [
+            "the bus driver",
+            "Rashid",
+            "a doctor"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "What is the first display about?",
+          "options": [
+            "a robot",
+            "a football",
+            "a bicycle"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "What should people bring?",
+          "options": [
+            "a large suitcase",
+            "a new computer",
+            "a reusable water bottle"
+          ],
+          "answer": 2
+        }
+      ],
+      "audio": "audio/g6-a-listening-2.mp3"
+    },
+    {
+      "id": "g6-a-vocabulary",
+      "grade": 6,
+      "model": "A",
+      "skill": "vocabulary",
+      "part": 1,
+      "title": "Vocabulary · Write the word",
+      "marks": 5,
+      "format": "picture-spelling",
+      "pictureOptions": [
+        "robot",
+        "camera",
+        "book",
+        "plant",
+        "bus"
+      ],
+      "questions": [
+        {
+          "stem": "Picture 1",
+          "answer": "robot"
+        },
+        {
+          "stem": "Picture 2",
+          "answer": "camera"
+        },
+        {
+          "stem": "Picture 3",
+          "answer": "book"
+        },
+        {
+          "stem": "Picture 4",
+          "answer": "plant"
+        },
+        {
+          "stem": "Picture 5",
+          "answer": "bus"
+        }
+      ]
+    },
+    {
+      "id": "g6-a-grammar",
+      "grade": 6,
+      "model": "A",
+      "skill": "grammar",
+      "part": 1,
+      "title": "Grammar · Free-time fun",
+      "marks": 5,
+      "format": "mc",
+      "questions": [
+        {
+          "stem": "Sara usually ____ volleyball on Thursdays.",
+          "options": [
+            "plays",
+            "is playing"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "Listen! My friends ____ music in the garden.",
+          "options": [
+            "are playing",
+            "play"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "We ____ board games every weekend.",
+          "options": [
+            "play",
+            "are playing"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "Look! The children ____ gymnastics now.",
+          "options": [
+            "do",
+            "are doing"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "He ____ his diary every evening.",
+          "options": [
+            "writes",
+            "is writing"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "g6-a-reading-1",
+      "grade": 6,
+      "model": "A",
+      "skill": "reading",
+      "part": 1,
+      "title": "Reading 1 · Match statements with texts",
+      "marks": 5,
+      "format": "text-match",
+      "passages": [
+        {
+          "stem": "The school invention fair opened at nine. A group of pupils made a robot that could move small blocks. They tested it carefully and changed two parts before the visitors arrived. Their teacher praised the teamwork and asked everyone to explain their work clearly. This was important for their project."
+        },
+        {
+          "stem": "A second group prepared a photo exhibition about the invention fair. They used a camera to record the stages of each project. The photographs showed first attempts, mistakes and final improvements. Visitors liked seeing how an idea could become better with patient work. This was important for their project."
+        },
+        {
+          "stem": "At the end of the fair, the pupils wrote short reflections in a shared notebook. They described what they learned and how they would improve next time. Their teacher collected the notes and promised to display the best advice on a classroom wall. This was important for their project."
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Which text describes a moving model?",
+          "answer": 0
+        },
+        {
+          "stem": "Which text mentions photographs of mistakes?",
+          "answer": 1
+        },
+        {
+          "stem": "Which text mentions advice written in a notebook?",
+          "answer": 2
+        },
+        {
+          "stem": "Which text says pupils tested and changed parts?",
+          "answer": 0
+        },
+        {
+          "stem": "Which text mentions visitors learning from pictures?",
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "g6-a-reading-2",
+      "grade": 6,
+      "model": "A",
+      "skill": "reading",
+      "part": 2,
+      "title": "Reading 2 · True or False",
+      "marks": 5,
+      "format": "tf",
+      "passage": "From: noura@school.example\nTo: rashid@school.example\nSubject: Plans for our class project\nDear Rashid,\nI hope you are enjoying your week. Our class is organising a invention fair at the school hall next Monday. We will meet at nine in the morning near the main entrance. Our teacher asked each group to prepare one small display and explain it to visiting parents. My group will bring a robot and a poster showing how we made our project. Please bring your notebook, some drinking water and a reusable bag. We do not need to buy new decorations because the school has plenty of materials we can use again. The event finishes at one o'clock. After that, we will tidy the area and return our equipment to the classroom. I hope you can come and help us. Please reply before Sunday.\nBest wishes,\nNoura",
+      "questions": [
+        {
+          "stem": "The event will take place on Monday.",
+          "answer": "True"
+        },
+        {
+          "stem": "All groups need to buy brand-new decorations.",
+          "answer": "False"
+        },
+        {
+          "stem": "Parents are invited to see the class displays.",
+          "answer": "True"
+        },
+        {
+          "stem": "The event will finish at six in the evening.",
+          "answer": "False"
+        },
+        {
+          "stem": "Noura asks for a reply before Sunday.",
+          "answer": "True"
+        }
+      ]
+    },
+    {
+      "id": "g6-a-writing-1",
+      "grade": 6,
+      "model": "A",
+      "skill": "writing",
+      "part": 1,
+      "title": "Writing 1 · Picture story",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 50,
+      "prompt": "Look at the three pictures. Write a story of at least 50 words about joining a new free-time sports club. Explain what happened first, next and finally. Use past-time expressions.",
+      "pictureOptions": [
+        "football",
+        "park",
+        "bicycle"
+      ]
+    },
+    {
+      "id": "g6-a-writing-2",
+      "grade": 6,
+      "model": "A",
+      "skill": "writing",
+      "part": 2,
+      "title": "Writing 2 · Short review",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 50,
+      "prompt": "Write a short review of a sports club you visited. Describe the activities, facilities, people and one improvement you would suggest. Write at least 50 words."
+    },
+    {
+      "id": "g6-b-listening-1",
+      "grade": 6,
+      "model": "B",
+      "skill": "listening",
+      "part": 1,
+      "title": "Listening 1 · Match dialogues to pictures",
+      "marks": 5,
+      "format": "picture-match",
+      "pictureOptions": [
+        "boat",
+        "fish",
+        "clock",
+        "plant",
+        "backpack",
+        "camera"
+      ],
+      "passages": [
+        "A: What is your group doing today? B: I am drawing a fish from a picture. A: What did you learn? B: I want to learn how it moves under water. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: The small boat stays near the shore. A: What did you learn? B: We can watch the sea safely from the beach. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: I brought a camera for the trip. A: What did you learn? B: I will take pictures of the coast. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: My backpack has water and a notebook. A: What did you learn? B: I keep everything together on the trip. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: We saw a plant growing by the sand. A: What did you learn? B: Our guide told us not to damage it. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions."
+      ],
+      "questions": [
+        {
+          "stem": "Text 1",
+          "answer": 1
+        },
+        {
+          "stem": "Text 2",
+          "answer": 0
+        },
+        {
+          "stem": "Text 3",
+          "answer": 5
+        },
+        {
+          "stem": "Text 4",
+          "answer": 4
+        },
+        {
+          "stem": "Text 5",
+          "answer": 3
+        }
+      ],
+      "audio": "audio/g6-b-listening-1.mp3"
+    },
+    {
+      "id": "g6-b-listening-2",
+      "grade": 6,
+      "model": "B",
+      "skill": "listening",
+      "part": 2,
+      "title": "Listening 2 · Dialogue / interview",
+      "marks": 5,
+      "format": "mc",
+      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Maha about the coastal science day. Where will the event happen? Maha: It will take place at the beach on Tuesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Maha: My friend Salim is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Maha: They will see a display about a fish. We made it in class. Interviewer: What should visitors bring? Maha: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Maha: You are welcome. Interviewer: What did you learn from this experience? Maha: I learned to listen to others, check my work and make better plans. Working together is important because each person has a useful idea.",
+      "questions": [
+        {
+          "stem": "Where will the event take place?",
+          "options": [
+            "at the library",
+            "at the airport",
+            "the beach"
+          ],
+          "answer": 2
+        },
+        {
+          "stem": "When is the event planned?",
+          "options": [
+            "Sunday",
+            "Tuesday",
+            "Friday"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "Who is helping organise the event?",
+          "options": [
+            "Salim",
+            "a doctor",
+            "the bus driver"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "What is the first display about?",
+          "options": [
+            "a football",
+            "a bicycle",
+            "a fish"
+          ],
+          "answer": 2
+        },
+        {
+          "stem": "What should people bring?",
+          "options": [
+            "a new computer",
+            "a reusable water bottle",
+            "a large suitcase"
+          ],
+          "answer": 1
+        }
+      ],
+      "audio": "audio/g6-b-listening-2.mp3"
+    },
+    {
+      "id": "g6-b-vocabulary",
+      "grade": 6,
+      "model": "B",
+      "skill": "vocabulary",
+      "part": 1,
+      "title": "Vocabulary · Write the word",
+      "marks": 5,
+      "format": "picture-spelling",
+      "pictureOptions": [
+        "fish",
+        "boat",
+        "camera",
+        "backpack",
+        "plant"
+      ],
+      "questions": [
+        {
+          "stem": "Picture 1",
+          "answer": "fish"
+        },
+        {
+          "stem": "Picture 2",
+          "answer": "boat"
+        },
+        {
+          "stem": "Picture 3",
+          "answer": "camera"
+        },
+        {
+          "stem": "Picture 4",
+          "answer": "backpack"
+        },
+        {
+          "stem": "Picture 5",
+          "answer": "plant"
+        }
+      ]
+    },
+    {
+      "id": "g6-b-grammar",
+      "grade": 6,
+      "model": "B",
+      "skill": "grammar",
+      "part": 1,
+      "title": "Grammar · Technology",
+      "marks": 5,
+      "format": "mc",
+      "questions": [
+        {
+          "stem": "My grandfather ____ use a tablet when he was young.",
+          "options": [
+            "could not",
+            "does not"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "We ____ restart the computer yesterday.",
+          "options": [
+            "have to",
+            "had to"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "This new laptop works ____ than our old one.",
+          "options": [
+            "more quickly",
+            "most quickly"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "I ____ send the message because the internet was down.",
+          "options": [
+            "cannot",
+            "could not"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "The students ____ save their files before leaving yesterday.",
+          "options": [
+            "had to",
+            "has to"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "g6-b-reading-1",
+      "grade": 6,
+      "model": "B",
+      "skill": "reading",
+      "part": 1,
+      "title": "Reading 1 · Match statements with texts",
+      "marks": 5,
+      "format": "text-match",
+      "passages": [
+        {
+          "stem": "Students visited the coast to learn about marine life. They carried notebooks and drew animals they saw in the water. Their guide explained that shells should stay on the beach because small creatures sometimes need them. Everyone followed the rules and kept the area clean."
+        },
+        {
+          "stem": "A second team observed boats near the shore. They noted the shapes and counted how many people were on each boat. The teacher reminded pupils to stay away from the edge of the water. Later, the group discussed how to make safe choices outdoors. This was important for their project."
+        },
+        {
+          "stem": "After lunch, the children shared their photographs and notes. Some pupils had pictures of fish, while others had drawings of plants that grew near the sand. Each group made a small poster explaining one new fact about the coast. They were proud of their discoveries."
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Which text describes protecting shells?",
+          "answer": 0
+        },
+        {
+          "stem": "Which text talks about boats near the water?",
+          "answer": 1
+        },
+        {
+          "stem": "Which text mentions making a poster?",
+          "answer": 2
+        },
+        {
+          "stem": "Which text warns pupils about water safety?",
+          "answer": 1
+        },
+        {
+          "stem": "Which text describes studying marine animals?",
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "g6-b-reading-2",
+      "grade": 6,
+      "model": "B",
+      "skill": "reading",
+      "part": 2,
+      "title": "Reading 2 · True or False",
+      "marks": 5,
+      "format": "tf",
+      "passage": "From: maha@school.example\nTo: salim@school.example\nSubject: Plans for our class project\nDear Salim,\nI hope you are enjoying your week. Our class is organising a coastal science day at the beach next Tuesday. We will meet at nine in the morning near the main entrance. Our teacher asked each group to prepare one small display and explain it to visiting parents. My group will bring a fish and a poster showing how we made our project. Please bring your notebook, some drinking water and a reusable bag. We do not need to buy new decorations because the school has plenty of materials we can use again. The event finishes at one o'clock. After that, we will tidy the area and return our equipment to the classroom. I hope you can come and help us. Please reply before Sunday.\nBest wishes,\nMaha",
+      "questions": [
+        {
+          "stem": "The event will take place on Tuesday.",
+          "answer": "True"
+        },
+        {
+          "stem": "All groups need to buy brand-new decorations.",
+          "answer": "False"
+        },
+        {
+          "stem": "Parents are invited to see the class displays.",
+          "answer": "True"
+        },
+        {
+          "stem": "The event will finish at six in the evening.",
+          "answer": "False"
+        },
+        {
+          "stem": "Maha asks for a reply before Sunday.",
+          "answer": "True"
+        }
+      ]
+    },
+    {
+      "id": "g6-b-writing-1",
+      "grade": 6,
+      "model": "B",
+      "skill": "writing",
+      "part": 1,
+      "title": "Writing 1 · Picture story",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 50,
+      "prompt": "Look at the three pictures. Write a story of at least 50 words about preparing a simple technology project for school. Explain how you used the devices and what happened.",
+      "pictureOptions": [
+        "computer",
+        "robot",
+        "camera"
+      ]
+    },
+    {
+      "id": "g6-b-writing-2",
+      "grade": 6,
+      "model": "B",
+      "skill": "writing",
+      "part": 2,
+      "title": "Writing 2 · Short review",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 50,
+      "prompt": "Write a review of a school technology demonstration. Explain what the invention does, why it is useful, and how it could improve. Write at least 50 words."
+    },
+    {
+      "id": "g6-c-listening-1",
+      "grade": 6,
+      "model": "C",
+      "skill": "listening",
+      "part": 1,
+      "title": "Listening 1 · Match dialogues to pictures",
+      "marks": 5,
+      "format": "picture-match",
+      "pictureOptions": [
+        "cup",
+        "gift",
+        "apple",
+        "bicycle",
+        "book",
+        "cake"
+      ],
+      "passages": [
+        "A: What is your group doing today? B: This apple came from a local farm. A: What did you learn? B: We can buy fresh fruit at this stall. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: I made a gift for my grandmother. A: What did you learn? B: It is wrapped carefully in recycled paper. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: The shopkeeper gave me a reusable cup. A: What did you learn? B: I will use it again tomorrow. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: Our family baked a small cake. A: What did you learn? B: We brought it to share with neighbours. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: There is a book stall next to the bakery. A: What did you learn? B: I want a story about adventure. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions."
+      ],
+      "questions": [
+        {
+          "stem": "Text 1",
+          "answer": 2
+        },
+        {
+          "stem": "Text 2",
+          "answer": 1
+        },
+        {
+          "stem": "Text 3",
+          "answer": 0
+        },
+        {
+          "stem": "Text 4",
+          "answer": 5
+        },
+        {
+          "stem": "Text 5",
+          "answer": 4
+        }
+      ],
+      "audio": "audio/g6-c-listening-1.mp3"
+    },
+    {
+      "id": "g6-c-listening-2",
+      "grade": 6,
+      "model": "C",
+      "skill": "listening",
+      "part": 2,
+      "title": "Listening 2 · Dialogue / interview",
+      "marks": 5,
+      "format": "mc",
+      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Asma about the neighbourhood market. Where will the event happen? Asma: It will take place at the market on Wednesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Asma: My friend Huda is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Asma: They will see a display about a apple. We made it in class. Interviewer: What should visitors bring? Asma: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Asma: You are welcome. Interviewer: What did you learn from this experience? Asma: I learned to listen to others, check my work and make better plans. Working together is important because each person has a useful idea.",
+      "questions": [
+        {
+          "stem": "Where will the event take place?",
+          "options": [
+            "at the airport",
+            "the market",
+            "at the library"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "When is the event planned?",
+          "options": [
+            "Wednesday",
+            "Friday",
+            "Sunday"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "Who is helping organise the event?",
+          "options": [
+            "a doctor",
+            "the bus driver",
+            "Huda"
+          ],
+          "answer": 2
+        },
+        {
+          "stem": "What is the first display about?",
+          "options": [
+            "a bicycle",
+            "a apple",
+            "a football"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "What should people bring?",
+          "options": [
+            "a reusable water bottle",
+            "a large suitcase",
+            "a new computer"
+          ],
+          "answer": 0
+        }
+      ],
+      "audio": "audio/g6-c-listening-2.mp3"
+    },
+    {
+      "id": "g6-c-vocabulary",
+      "grade": 6,
+      "model": "C",
+      "skill": "vocabulary",
+      "part": 1,
+      "title": "Vocabulary · Write the word",
+      "marks": 5,
+      "format": "picture-spelling",
+      "pictureOptions": [
+        "apple",
+        "gift",
+        "cup",
+        "cake",
+        "book"
+      ],
+      "questions": [
+        {
+          "stem": "Picture 1",
+          "answer": "apple"
+        },
+        {
+          "stem": "Picture 2",
+          "answer": "gift"
+        },
+        {
+          "stem": "Picture 3",
+          "answer": "cup"
+        },
+        {
+          "stem": "Picture 4",
+          "answer": "cake"
+        },
+        {
+          "stem": "Picture 5",
+          "answer": "book"
+        }
+      ]
+    },
+    {
+      "id": "g6-c-grammar",
+      "grade": 6,
+      "model": "C",
+      "skill": "grammar",
+      "part": 1,
+      "title": "Grammar · Places",
+      "marks": 5,
+      "format": "mc",
+      "questions": [
+        {
+          "stem": "We ____ towards the museum when it started to rain.",
+          "options": [
+            "were walking",
+            "walk"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "This is the building ____ my uncle works.",
+          "options": [
+            "who",
+            "where"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "A guide is a person ____ helps visitors.",
+          "options": [
+            "who",
+            "where"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "At four o’clock, the tourists ____ photos near the bridge.",
+          "options": [
+            "take",
+            "were taking"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "I met a woman ____ lives beside the old fort.",
+          "options": [
+            "who",
+            "which"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "g6-c-reading-1",
+      "grade": 6,
+      "model": "C",
+      "skill": "reading",
+      "part": 1,
+      "title": "Reading 1 · Match statements with texts",
+      "marks": 5,
+      "format": "text-match",
+      "passages": [
+        {
+          "stem": "At the neighbourhood market, volunteers prepared a stall for fresh local fruit. They arranged apples carefully and put prices on the table. They asked customers to use reusable bags. Most families agreed because they wanted to create less rubbish in the area. This was important for their project."
+        },
+        {
+          "stem": "Near the bakery, a group of pupils sold small cakes for a charity project. They wrote the ingredients beside each cake to help visitors choose. A teacher checked their calculations and helped them count the money. The students learned how careful planning supports good teamwork."
+        },
+        {
+          "stem": "In the afternoon, visitors shared ideas about improving the market. Some wanted more shade and others suggested drinking-water stations. The pupils collected the suggestions in a notebook and promised to discuss them in class. They also thanked the shopkeepers for their friendly help. This was important for their project."
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Which text describes fruit and reusable bags?",
+          "answer": 0
+        },
+        {
+          "stem": "Which text talks about a charity cake stall?",
+          "answer": 1
+        },
+        {
+          "stem": "Which text mentions suggestions for more shade?",
+          "answer": 2
+        },
+        {
+          "stem": "Which text describes checking money calculations?",
+          "answer": 1
+        },
+        {
+          "stem": "Which text asks customers to make less rubbish?",
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "g6-c-reading-2",
+      "grade": 6,
+      "model": "C",
+      "skill": "reading",
+      "part": 2,
+      "title": "Reading 2 · True or False",
+      "marks": 5,
+      "format": "tf",
+      "passage": "From: asma@school.example\nTo: huda@school.example\nSubject: Plans for our class project\nDear Huda,\nI hope you are enjoying your week. Our class is organising a neighbourhood market at the market next Wednesday. We will meet at nine in the morning near the main entrance. Our teacher asked each group to prepare one small display and explain it to visiting parents. My group will bring a apple and a poster showing how we made our project. Please bring your notebook, some drinking water and a reusable bag. We do not need to buy new decorations because the school has plenty of materials we can use again. The event finishes at one o'clock. After that, we will tidy the area and return our equipment to the classroom. I hope you can come and help us. Please reply before Sunday.\nBest wishes,\nAsma",
+      "questions": [
+        {
+          "stem": "The event will take place on Wednesday.",
+          "answer": "True"
+        },
+        {
+          "stem": "All groups need to buy brand-new decorations.",
+          "answer": "False"
+        },
+        {
+          "stem": "Parents are invited to see the class displays.",
+          "answer": "True"
+        },
+        {
+          "stem": "The event will finish at six in the evening.",
+          "answer": "False"
+        },
+        {
+          "stem": "Asma asks for a reply before Sunday.",
+          "answer": "True"
+        }
+      ]
+    },
+    {
+      "id": "g6-c-writing-1",
+      "grade": 6,
+      "model": "C",
+      "skill": "writing",
+      "part": 1,
+      "title": "Writing 1 · Picture story",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 50,
+      "prompt": "Look at the three pictures. Write a story of at least 50 words about exploring an unfamiliar place in Oman. Include your journey, something you discovered and how you returned home.",
+      "pictureOptions": [
+        "bridge",
+        "museum",
+        "boat"
+      ]
+    },
+    {
+      "id": "g6-c-writing-2",
+      "grade": 6,
+      "model": "C",
+      "skill": "writing",
+      "part": 2,
+      "title": "Writing 2 · Short review",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 50,
+      "prompt": "Write a review of a place you visited, such as a museum, fort or town. Explain how you travelled, what you saw, and whether you recommend it. Write at least 50 words."
+    },
+    {
+      "id": "g6-d-listening-1",
+      "grade": 6,
+      "model": "D",
+      "skill": "listening",
+      "part": 1,
+      "title": "Listening 1 · Match dialogues to pictures",
+      "marks": 5,
+      "format": "picture-match",
+      "pictureOptions": [
+        "robot",
+        "kite",
+        "bus",
+        "plant",
+        "book",
+        "camera"
+      ],
+      "passages": [
+        "A: What is your group doing today? B: A small robot can move coloured blocks. A: What did you learn? B: It helps our team show how simple machines work. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: We use a camera to take clear pictures. A: What did you learn? B: The visitors can see our progress in a photo album. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: I made a short book about my idea. A: What did you learn? B: I will read the first page to younger children. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: Our group grew a young plant in a jar. A: What did you learn? B: We check its water every morning. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
+        "A: What is your group doing today? B: The visitors arrive by school bus. A: What did you learn? B: The driver stops beside the main hall. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions."
+      ],
+      "questions": [
+        {
+          "stem": "Text 1",
+          "answer": 0
+        },
+        {
+          "stem": "Text 2",
+          "answer": 5
+        },
+        {
+          "stem": "Text 3",
+          "answer": 4
+        },
+        {
+          "stem": "Text 4",
+          "answer": 3
+        },
+        {
+          "stem": "Text 5",
+          "answer": 2
+        }
+      ],
+      "audio": "audio/g6-a-listening-1.mp3",
+      "sourceModel": "A",
+      "sourceActivityId": "g6-a-listening-1",
+      "mediaId": "g6-a-listening-1"
+    },
+    {
+      "id": "g6-d-listening-2",
+      "grade": 6,
+      "model": "D",
+      "skill": "listening",
+      "part": 2,
+      "title": "Listening 2 · Dialogue / interview",
+      "marks": 5,
+      "format": "mc",
+      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Maha about the coastal science day. Where will the event happen? Maha: It will take place at the beach on Tuesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Maha: My friend Salim is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Maha: They will see a display about a fish. We made it in class. Interviewer: What should visitors bring? Maha: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Maha: You are welcome. Interviewer: What did you learn from this experience? Maha: I learned to listen to others, check my work and make better plans. Working together is important because each person has a useful idea.",
+      "questions": [
+        {
+          "stem": "Where will the event take place?",
+          "options": [
+            "at the library",
+            "at the airport",
+            "the beach"
+          ],
+          "answer": 2
+        },
+        {
+          "stem": "When is the event planned?",
+          "options": [
+            "Sunday",
+            "Tuesday",
+            "Friday"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "Who is helping organise the event?",
+          "options": [
+            "Salim",
+            "a doctor",
+            "the bus driver"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "What is the first display about?",
+          "options": [
+            "a football",
+            "a bicycle",
+            "a fish"
+          ],
+          "answer": 2
+        },
+        {
+          "stem": "What should people bring?",
+          "options": [
+            "a new computer",
+            "a reusable water bottle",
+            "a large suitcase"
+          ],
+          "answer": 1
+        }
+      ],
+      "audio": "audio/g6-b-listening-2.mp3",
+      "sourceModel": "B",
+      "sourceActivityId": "g6-b-listening-2",
+      "mediaId": "g6-b-listening-2"
+    },
+    {
+      "id": "g6-d-vocabulary",
+      "grade": 6,
+      "model": "D",
+      "skill": "vocabulary",
+      "part": 1,
+      "title": "Vocabulary · Write the word",
+      "marks": 5,
+      "format": "picture-spelling",
+      "pictureOptions": [
+        "apple",
+        "gift",
+        "cup",
+        "cake",
+        "book"
+      ],
+      "questions": [
+        {
+          "stem": "Picture 1",
+          "answer": "apple"
+        },
+        {
+          "stem": "Picture 2",
+          "answer": "gift"
+        },
+        {
+          "stem": "Picture 3",
+          "answer": "cup"
+        },
+        {
+          "stem": "Picture 4",
+          "answer": "cake"
+        },
+        {
+          "stem": "Picture 5",
+          "answer": "book"
+        }
+      ],
+      "sourceModel": "C",
+      "sourceActivityId": "g6-c-vocabulary",
+      "mediaId": "g6-c-vocabulary"
+    },
+    {
+      "id": "g6-d-grammar",
+      "grade": 6,
+      "model": "D",
+      "skill": "grammar",
+      "part": 1,
+      "title": "Grammar · Comprehensive — Units 1–3",
+      "marks": 5,
+      "format": "mc",
+      "questions": [
+        {
+          "stem": "She ____ badminton every Friday.",
+          "options": [
+            "plays",
+            "is playing"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "Yesterday we ____ update the app before the lesson.",
+          "options": [
+            "have to",
+            "had to"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "I ____ my tablet when the teacher entered.",
+          "options": [
+            "was using",
+            "used"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "This is the place ____ our team practises.",
+          "options": [
+            "who",
+            "where"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "They ____ a model at the moment.",
+          "options": [
+            "are building",
+            "build"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "g6-d-reading-1",
+      "grade": 6,
+      "model": "D",
+      "skill": "reading",
+      "part": 1,
+      "title": "Reading 1 · Match statements with texts",
+      "marks": 5,
+      "format": "text-match",
+      "passages": [
+        {
+          "stem": "The school invention fair opened at nine. A group of pupils made a robot that could move small blocks. They tested it carefully and changed two parts before the visitors arrived. Their teacher praised the teamwork and asked everyone to explain their work clearly. This was important for their project."
+        },
+        {
+          "stem": "A second group prepared a photo exhibition about the invention fair. They used a camera to record the stages of each project. The photographs showed first attempts, mistakes and final improvements. Visitors liked seeing how an idea could become better with patient work. This was important for their project."
+        },
+        {
+          "stem": "At the end of the fair, the pupils wrote short reflections in a shared notebook. They described what they learned and how they would improve next time. Their teacher collected the notes and promised to display the best advice on a classroom wall. This was important for their project."
+        }
+      ],
+      "questions": [
+        {
+          "stem": "Which text describes a moving model?",
+          "answer": 0
+        },
+        {
+          "stem": "Which text mentions photographs of mistakes?",
+          "answer": 1
+        },
+        {
+          "stem": "Which text mentions advice written in a notebook?",
+          "answer": 2
+        },
+        {
+          "stem": "Which text says pupils tested and changed parts?",
+          "answer": 0
+        },
+        {
+          "stem": "Which text mentions visitors learning from pictures?",
+          "answer": 1
+        }
+      ],
+      "sourceModel": "A",
+      "sourceActivityId": "g6-a-reading-1",
+      "mediaId": "g6-a-reading-1"
+    },
+    {
+      "id": "g6-d-reading-2",
+      "grade": 6,
+      "model": "D",
+      "skill": "reading",
+      "part": 2,
+      "title": "Reading 2 · True or False",
+      "marks": 5,
+      "format": "tf",
+      "passage": "From: maha@school.example\nTo: salim@school.example\nSubject: Plans for our class project\nDear Salim,\nI hope you are enjoying your week. Our class is organising a coastal science day at the beach next Tuesday. We will meet at nine in the morning near the main entrance. Our teacher asked each group to prepare one small display and explain it to visiting parents. My group will bring a fish and a poster showing how we made our project. Please bring your notebook, some drinking water and a reusable bag. We do not need to buy new decorations because the school has plenty of materials we can use again. The event finishes at one o'clock. After that, we will tidy the area and return our equipment to the classroom. I hope you can come and help us. Please reply before Sunday.\nBest wishes,\nMaha",
+      "questions": [
+        {
+          "stem": "The event will take place on Tuesday.",
+          "answer": "True"
+        },
+        {
+          "stem": "All groups need to buy brand-new decorations.",
+          "answer": "False"
+        },
+        {
+          "stem": "Parents are invited to see the class displays.",
+          "answer": "True"
+        },
+        {
+          "stem": "The event will finish at six in the evening.",
+          "answer": "False"
+        },
+        {
+          "stem": "Maha asks for a reply before Sunday.",
+          "answer": "True"
+        }
+      ],
+      "sourceModel": "B",
+      "sourceActivityId": "g6-b-reading-2",
+      "mediaId": "g6-b-reading-2"
+    },
+    {
+      "id": "g6-d-writing-1",
+      "grade": 6,
+      "model": "D",
+      "skill": "writing",
+      "part": 1,
+      "title": "Writing 1 · Picture story",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 50,
+      "prompt": "Look at the three pictures. Write a story of at least 50 words about exploring an unfamiliar place in Oman. Include your journey, something you discovered and how you returned home.",
+      "pictureOptions": [
+        "bridge",
+        "museum",
+        "boat"
+      ],
+      "sourceModel": "C",
+      "sourceActivityId": "g6-c-writing-1",
+      "mediaId": "g6-c-writing-1"
+    },
+    {
+      "id": "g6-d-writing-2",
+      "grade": 6,
+      "model": "D",
+      "skill": "writing",
+      "part": 2,
+      "title": "Writing 2 · Short review",
+      "marks": 5,
+      "format": "writing",
+      "minWords": 50,
+      "prompt": "Write a short review of a sports club you visited. Describe the activities, facilities, people and one improvement you would suggest. Write at least 50 words.",
+      "sourceModel": "A",
+      "sourceActivityId": "g6-a-writing-2",
+      "mediaId": "g6-a-writing-2"
+    }
+  ]
+}

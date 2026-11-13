@@ -45,10 +45,10 @@ async def make(task):
       await speak('You are going to hear a dialogue or interview. Listen carefully and choose the correct answers. You will hear it twice.')
       pause(3)
       passage=task.get('passage') or ''
-      segments=re.split(r'(?=\b(?:Interviewer|Host|Student|Teacher|A|B)\s*:)',passage)
+      segments=re.split(r'(?=(?:^|\n)\s*(?:Interviewer|Host|Student|Teacher|Noura|Omar|Fatma|Aisha|Yousuf|Sara|Nasser|A|B)\s*:)',passage)
       turns=[]
       for seg in segments:
-        m=re.match(r'\s*(Interviewer|Host|Student|Teacher|A|B)\s*:\s*(.+)',seg,flags=re.S)
+        m=re.match(r'\s*(Interviewer|Host|Student|Teacher|Noura|Omar|Fatma|Aisha|Yousuf|Sara|Nasser|A|B)\s*:\s*(.+)',seg,flags=re.S)
         if m:turns.append((m.group(2).strip(),0 if m.group(1) in ('Interviewer','Host','Teacher','A') else 1))
       if not turns:turns=[(passage,0)]
       for repeat in range(2):
