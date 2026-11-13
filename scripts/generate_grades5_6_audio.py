@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Grade 5 and 6: natural MP3 with Ministry-style instructions and pauses."""
-import asyncio,json,pathlib,re,subprocess,tempfile
+import asyncio,json,pathlib,re,subprocess,tempfile,hashlib
 import edge_tts
 from mutagen.mp3 import MP3
 ROOT=pathlib.Path(__file__).resolve().parents[1]
@@ -8,6 +8,7 @@ TASKS=json.loads((ROOT/'grades5-6/activities.json').read_text(encoding='utf-8'))
 OUT=ROOT/'grades5-6/audio-natural'
 OUT.mkdir(parents=True,exist_ok=True)
 VOICES=('en-GB-SoniaNeural','en-GB-RyanNeural')
+MANIFEST={}
 def ff(*args):subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y',*map(str,args)],check=True)
 async def make(task):
   with tempfile.TemporaryDirectory() as d:
@@ -45,11 +46,12 @@ async def make(task):
       await speak('You are going to hear a dialogue or interview. Listen carefully and choose the correct answers. You will hear it twice.')
       pause(3)
       passage=task.get('passage') or ''
-      segments=re.split(r'(?=\b(?:Interviewer|Host|Student|Teacher|A|B)\s*:)',passage)
+      segments=re.split(r'(?=\b(?:Interviewer|Host|Student|Teacher|Salma|Hamad|Mariam|Ahmed|Yousuf|Fatma|Dana|A|B)\s*:)',passage)
       turns=[]
       for seg in segments:
-        m=re.match(r'\s*(Interviewer|Host|Student|Teacher|A|B)\s*:\s*(.+)',seg,flags=re.S)
+        m=re.match(r'\s*(Interviewer|Host|Student|Teacher|Salma|Hamad|Mariam|Ahmed|Yousuf|Fatma|Dana|A|B)\s*:\s*(.+)',seg,flags=re.S)
         if m:turns.append((m.group(2).strip(),0 if m.group(1) in ('Interviewer','Host','Teacher','A') else 1))
+      if len(turns)<5:raise ValueError('Interviewer and student must alternate: '+task['id'])
       if not turns:turns=[(passage,0)]
       for repeat in range(2):
         for text,voice in turns:
@@ -60,8 +62,10 @@ async def make(task):
     out=OUT/f'{task["id"]}.mp3'
     ff('-f','concat','-safe','0','-i',concat,'-ac','1','-ar','44100','-c:a','libmp3lame','-b:a','96k',out)
     assert out.stat().st_size>15000 and MP3(out).info.length>35,out
+    MANIFEST[task['id']]={'sha256_of_script':hashlib.sha256(json.dumps({'passages':task.get('passages'),'passage':task.get('passage'),'questions':task['questions'],'pictures':task.get('pictureOptions')},sort_keys=True,ensure_ascii=False).encode()).hexdigest(),'mp3':out.name,'size':out.stat().st_size,'seconds':round(MP3(out).info.length,2),'voices':list(VOICES)}
     print('VALID',out.relative_to(ROOT),round(MP3(out).info.length),'sec',flush=True)
 async def main():
   for task in TASKS:
     if task.get('skill')=='listening':await make(task)
+  (OUT/'script_audio_manifest.json').write_text(json.dumps(MANIFEST,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 if __name__=='__main__':asyncio.run(main())
