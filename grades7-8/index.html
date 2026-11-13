@@ -36,4 +36,22 @@ window.addEventListener('DOMContentLoaded',()=>{
    model.dispatchEvent(new Event('change',{bubbles:true}));
  }
 });
+</script><script>
+/* Curriculum audit notice: do not imply a whole model is a verified unit paper. */
+window.addEventListener('DOMContentLoaded',()=>{
+ const model=document.getElementById('model'),grade=document.getElementById('grade');
+ if(!model)return;
+ const note=document.createElement('aside');
+ note.setAttribute('role','status');
+ note.style.cssText='margin:12px auto;max-width:1100px;padding:12px 16px;border:1px solid #d8bf83;background:#fff9e9;color:#5a441e;border-radius:10px;font:14px/1.6 system-ui';
+ const update=()=>{
+   const g=grade?grade.value:'9',m=model.value;
+   const units=g==='7'?'Entertainment / Awesome animals / Travel':g==='8'?'Our planet / Adventure sports / Spend or save?':'Identity / Connections / The future is now';
+   note.textContent=(g==='9'&&'DEF'.includes(m)?'Comprehensive mixed practice; some activities are reused from A–C. ':'Independent practice model; full unit-by-unit textbook alignment is still under review. ')+
+    'Semester units: '+units+'. This model is not yet certified as a unit-specific exam.';
+ };
+ model.addEventListener('change',update);if(grade)grade.addEventListener('change',update);
+ (document.querySelector('nav')||document.querySelector('main')||document.body).insertAdjacentElement('afterend',note);
+ update();
+});
 </script></body></html>
