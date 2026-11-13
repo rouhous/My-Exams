@@ -2,7 +2,7 @@
   "metadata": {
     "source": "original practice written for this project",
     "structure": "SAH English Grades 5-10 September 2026, semester one",
-    "note": "not an official ministry exam",
+    "note": "Grade 5 A-D and Grade 6 A-C listening revised by unit theme with picture-answer consistency; Grade 6 D is a mixed paper; further curriculum page-level review is required.",
     "audio": "local synthetic draft audio"
   },
   "activities": [
@@ -16,19 +16,19 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "robot",
-        "kite",
-        "bus",
-        "plant",
+        "drum",
+        "piano",
+        "paintbrush",
+        "camera",
         "book",
-        "camera"
+        "football"
       ],
       "passages": [
-        "A: What is your project today? B: A small robot can move coloured blocks. A: Why is it interesting? B: It helps our team show how simple machines work. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: We use a camera to take clear pictures. A: Why is it interesting? B: The visitors can see our progress in a photo album. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: I made a short book about my idea. A: Why is it interesting? B: I will read the first page to younger children. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: Our group grew a young plant in a jar. A: Why is it interesting? B: We check its water every morning. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: The visitors arrive by school bus. A: Why is it interesting? B: The driver stops beside the main hall. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display."
+        "At the talent show I will play the drum with my classmates. We have practised the rhythm every afternoon, and the music teacher will help us on stage.",
+        "My older sister will play the piano in front of the audience. She has learned a new song and practises it after school.",
+        "My uncle is bringing a camera to take photographs of the performers. He will ask permission before sharing the pictures.",
+        "Salma will read a poem from her own book while the other students listen quietly. She wrote the poem last weekend.",
+        "Huda will use a paintbrush to make a picture as the orchestra plays. She chose bright colours for the final performance."
       ],
       "questions": [
         {
@@ -37,22 +37,23 @@
         },
         {
           "stem": "Text 2",
-          "answer": 5
+          "answer": 1
         },
         {
           "stem": "Text 3",
-          "answer": 4
+          "answer": 3
         },
         {
           "stem": "Text 4",
-          "answer": 3
+          "answer": 4
         },
         {
           "stem": "Text 5",
           "answer": 2
         }
       ],
-      "audio": "audio/g5-a-listening-1.mp3"
+      "audio": "audio/g5-a-listening-1.mp3",
+      "unitTheme": "Talent Show"
     },
     {
       "id": "g5-a-listening-2",
@@ -63,55 +64,56 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Noura about the invention fair. Where will the event happen? Noura: It will take place at the school hall on Monday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Noura: My friend Rashid is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Noura: They will see a display about a robot. We made it in class. Interviewer: What should visitors bring? Noura: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Noura: You are welcome.",
+      "passage": "Interviewer: Welcome to School Stage. When will the talent show start, Salma? Salma: On Thursday afternoon. Interviewer: Where will students perform? Salma: In the school hall. Interviewer: What will you do? Salma: Play the piano with my brother. Interviewer: Who will introduce the groups? Salma: Our English teacher, Ms Aisha. Interviewer: What should families do? Salma: Arrive ten minutes early and stay quiet during performances.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
+          "stem": "When is the talent show?",
           "options": [
-            "the school hall",
-            "at the library",
-            "at the airport"
+            "Thursday afternoon",
+            "Sunday morning",
+            "Tuesday evening"
           ],
           "answer": 0
         },
         {
-          "stem": "When is the event planned?",
+          "stem": "Where is the stage?",
           "options": [
-            "Friday",
-            "Sunday",
-            "Monday"
-          ],
-          "answer": 2
-        },
-        {
-          "stem": "Who is helping organise the event?",
-          "options": [
-            "the bus driver",
-            "Rashid",
-            "a doctor"
+            "In the library",
+            "In the school hall",
+            "At the beach"
           ],
           "answer": 1
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "What is Salma's talent?",
           "options": [
-            "a robot",
-            "a football",
-            "a bicycle"
+            "Football",
+            "Painting",
+            "Playing the piano"
+          ],
+          "answer": 2
+        },
+        {
+          "stem": "Who introduces the groups?",
+          "options": [
+            "Ms Aisha",
+            "The driver",
+            "A shopkeeper"
           ],
           "answer": 0
         },
         {
-          "stem": "What should people bring?",
+          "stem": "What should families do?",
           "options": [
-            "a large suitcase",
-            "a new computer",
-            "a reusable water bottle"
+            "Bring footballs",
+            "Arrive early",
+            "Leave before the end"
           ],
-          "answer": 2
+          "answer": 1
         }
       ],
-      "audio": "audio/g5-a-listening-2.mp3"
+      "audio": "audio/g5-a-listening-2.mp3",
+      "unitTheme": "Talent Show"
     },
     {
       "id": "g5-a-vocabulary",
@@ -320,42 +322,43 @@
       "format": "picture-match",
       "pictureOptions": [
         "boat",
-        "fish",
+        "camera",
         "clock",
-        "plant",
-        "backpack",
-        "camera"
+        "bus",
+        "bicycle",
+        "book"
       ],
       "passages": [
-        "A: What is your project today? B: I am drawing a fish from a picture. A: Why is it interesting? B: I want to learn how it moves under water. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: The small boat stays near the shore. A: Why is it interesting? B: We can watch the sea safely from the beach. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: I brought a camera for the trip. A: Why is it interesting? B: I will take pictures of the coast. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: My backpack has water and a notebook. A: Why is it interesting? B: I keep everything together on the trip. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: We saw a plant growing by the sand. A: Why is it interesting? B: Our guide told us not to damage it. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display."
+        "My grandfather crossed the bay in a small wooden boat when he was young. Now we travel along the new road instead.",
+        "My grandmother rode a bicycle to school every morning. Today, many children take the school bus.",
+        "The old classroom had a large clock above the board. There were no computers in the room.",
+        "My father walked to school when he was little, but I take a bus because our home is much farther away.",
+        "My mother took family photographs using a camera with film. Today we can see pictures immediately on our phones."
       ],
       "questions": [
         {
           "stem": "Text 1",
-          "answer": 1
-        },
-        {
-          "stem": "Text 2",
           "answer": 0
         },
         {
-          "stem": "Text 3",
-          "answer": 5
-        },
-        {
-          "stem": "Text 4",
+          "stem": "Text 2",
           "answer": 4
         },
         {
-          "stem": "Text 5",
+          "stem": "Text 3",
+          "answer": 2
+        },
+        {
+          "stem": "Text 4",
           "answer": 3
+        },
+        {
+          "stem": "Text 5",
+          "answer": 1
         }
       ],
-      "audio": "audio/g5-b-listening-1.mp3"
+      "audio": "audio/g5-b-listening-1.mp3",
+      "unitTheme": "Then and Now"
     },
     {
       "id": "g5-b-listening-2",
@@ -366,55 +369,56 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Maha about the coastal science day. Where will the event happen? Maha: It will take place at the beach on Tuesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Maha: My friend Salim is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Maha: They will see a display about a fish. We made it in class. Interviewer: What should visitors bring? Maha: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Maha: You are welcome.",
+      "passage": "Interviewer: Tell us about your grandfather's school, Hamad. Hamad: He walked there every day. Interviewer: What did he write with? Hamad: A pencil and a paper exercise book. Interviewer: How many classrooms were there? Hamad: Three. Interviewer: What did children play after school? Hamad: Football in an open field. Interviewer: What does he like about schools today? Hamad: The library and computers.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
+          "stem": "How did his grandfather get to school?",
           "options": [
-            "at the library",
-            "at the airport",
-            "the beach"
-          ],
-          "answer": 2
-        },
-        {
-          "stem": "When is the event planned?",
-          "options": [
-            "Sunday",
-            "Tuesday",
-            "Friday"
+            "By car",
+            "On foot",
+            "By boat"
           ],
           "answer": 1
         },
         {
-          "stem": "Who is helping organise the event?",
+          "stem": "What did he use to write?",
           "options": [
-            "Salim",
-            "a doctor",
-            "the bus driver"
+            "A tablet",
+            "A phone",
+            "A pencil"
+          ],
+          "answer": 2
+        },
+        {
+          "stem": "How many classrooms?",
+          "options": [
+            "Three",
+            "Four",
+            "Six"
           ],
           "answer": 0
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "What did children play?",
           "options": [
-            "a football",
-            "a bicycle",
-            "a fish"
-          ],
-          "answer": 2
-        },
-        {
-          "stem": "What should people bring?",
-          "options": [
-            "a new computer",
-            "a reusable water bottle",
-            "a large suitcase"
+            "Basketball",
+            "Football",
+            "Tennis"
           ],
           "answer": 1
+        },
+        {
+          "stem": "What modern facilities does he like?",
+          "options": [
+            "The car park",
+            "The canteen",
+            "Library and computers"
+          ],
+          "answer": 2
         }
       ],
-      "audio": "audio/g5-b-listening-2.mp3"
+      "audio": "audio/g5-b-listening-2.mp3",
+      "unitTheme": "Then and Now"
     },
     {
       "id": "g5-b-vocabulary",
@@ -622,43 +626,44 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "cup",
-        "gift",
-        "apple",
-        "bicycle",
-        "book",
-        "cake"
+        "mountain",
+        "beach",
+        "bridge",
+        "boat",
+        "backpack",
+        "camera"
       ],
       "passages": [
-        "A: What is your project today? B: This apple came from a local farm. A: Why is it interesting? B: We can buy fresh fruit at this stall. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: I made a gift for my grandmother. A: Why is it interesting? B: It is wrapped carefully in recycled paper. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: The shopkeeper gave me a reusable cup. A: Why is it interesting? B: I will use it again tomorrow. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: Our family baked a small cake. A: Why is it interesting? B: We brought it to share with neighbours. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: There is a book stall next to the bakery. A: Why is it interesting? B: I want a story about adventure. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display."
+        "Our class is exploring a mountain path with a guide. We will stop to look at the valley and never leave the marked trail.",
+        "I packed my backpack with drinking water, fruit, a notebook and a light jacket for tomorrow's nature walk.",
+        "We will reach the small island by boat. The guide reminded everyone to wear a life jacket and stay seated.",
+        "We are visiting the beach at low tide to look for shells and crab tracks. We must not disturb living animals.",
+        "I will take my camera on the birdwatching trip so I can record what we see without getting too close to nests."
       ],
       "questions": [
         {
           "stem": "Text 1",
-          "answer": 2
-        },
-        {
-          "stem": "Text 2",
-          "answer": 1
-        },
-        {
-          "stem": "Text 3",
           "answer": 0
         },
         {
+          "stem": "Text 2",
+          "answer": 4
+        },
+        {
+          "stem": "Text 3",
+          "answer": 3
+        },
+        {
           "stem": "Text 4",
-          "answer": 5
+          "answer": 1
         },
         {
           "stem": "Text 5",
-          "answer": 4
+          "answer": 5
         }
       ],
-      "audio": "audio/g5-c-listening-1.mp3"
+      "audio": "audio/g5-c-listening-1.mp3",
+      "unitTheme": "Let's Explore!"
     },
     {
       "id": "g5-c-listening-2",
@@ -669,55 +674,56 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Asma about the neighbourhood market. Where will the event happen? Asma: It will take place at the market on Wednesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Asma: My friend Huda is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Asma: They will see a display about a apple. We made it in class. Interviewer: What should visitors bring? Asma: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Asma: You are welcome.",
+      "passage": "Interviewer: Where did your class go last Friday, Mariam? Mariam: To a mountain nature trail. Interviewer: Who went with the class? Mariam: A local guide and our science teacher. Interviewer: What did you carry? Mariam: Water, a notebook and a first-aid kit. Interviewer: What did you see? Mariam: An eagle flying over the valley. Interviewer: What safety rule did you learn? Mariam: Stay on the marked path.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
+          "stem": "Where did the class go?",
           "options": [
-            "at the airport",
-            "the market",
-            "at the library"
-          ],
-          "answer": 1
-        },
-        {
-          "stem": "When is the event planned?",
-          "options": [
-            "Wednesday",
-            "Friday",
-            "Sunday"
+            "Mountain trail",
+            "Shopping centre",
+            "Airport"
           ],
           "answer": 0
         },
         {
-          "stem": "Who is helping organise the event?",
+          "stem": "Who helped the class?",
           "options": [
-            "a doctor",
-            "the bus driver",
-            "Huda"
+            "A bus driver",
+            "A shopkeeper",
+            "A local guide"
           ],
           "answer": 2
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "What was in Mariam's bag?",
           "options": [
-            "a bicycle",
-            "a apple",
-            "a football"
+            "Toys",
+            "Water and a notebook",
+            "A television"
           ],
           "answer": 1
         },
         {
-          "stem": "What should people bring?",
+          "stem": "Which bird did she see?",
           "options": [
-            "a reusable water bottle",
-            "a large suitcase",
-            "a new computer"
+            "An eagle",
+            "A duck",
+            "A parrot"
           ],
           "answer": 0
+        },
+        {
+          "stem": "What rule did she learn?",
+          "options": [
+            "Pick flowers",
+            "Walk alone",
+            "Stay on the path"
+          ],
+          "answer": 2
         }
       ],
-      "audio": "audio/g5-c-listening-2.mp3"
+      "audio": "audio/g5-c-listening-2.mp3",
+      "unitTheme": "Let's Explore!"
     },
     {
       "id": "g5-c-vocabulary",
@@ -925,43 +931,44 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "camera",
-        "kite",
-        "flower",
-        "paintbrush",
-        "drum",
-        "boat"
+        "market",
+        "apple",
+        "cake",
+        "gift",
+        "book",
+        "cup"
       ],
       "passages": [
-        "A: What is your project today? B: I need a paintbrush for my picture. A: Why is it interesting? B: A thick brush is best for the blue sky. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: I drew a flower in the garden. A: Why is it interesting? B: Its petals have a beautiful shape. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: My kite flew above the trees. A: Why is it interesting? B: I chose bright paper and a long string. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: I used my camera to record our work. A: Why is it interesting? B: The class can view the photographs tomorrow. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: I painted a boat beside the mountains. A: Why is it interesting? B: My grandfather told me stories about sailing. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display."
+        "I am buying a fresh apple from the fruit stall. The oranges are nice, but I only have enough money for one piece of fruit.",
+        "I saved three rials to buy my cousin a birthday gift. I will compare prices before choosing something useful.",
+        "I found a book about sea animals at the bookshop. It costs two rials, and I have saved exactly that amount.",
+        "The larger cup was too expensive, so I chose this blue cup for my grandmother. I brought my own shopping bag.",
+        "My father and I visit the local market on Friday mornings. We buy vegetables from several different stalls."
       ],
       "questions": [
         {
           "stem": "Text 1",
-          "answer": 3
-        },
-        {
-          "stem": "Text 2",
-          "answer": 2
-        },
-        {
-          "stem": "Text 3",
           "answer": 1
         },
         {
+          "stem": "Text 2",
+          "answer": 3
+        },
+        {
+          "stem": "Text 3",
+          "answer": 4
+        },
+        {
           "stem": "Text 4",
-          "answer": 0
+          "answer": 5
         },
         {
           "stem": "Text 5",
-          "answer": 5
+          "answer": 0
         }
       ],
-      "audio": "audio/g5-d-listening-1.mp3"
+      "audio": "audio/g5-d-listening-1.mp3",
+      "unitTheme": "Off to the Shops"
     },
     {
       "id": "g5-d-listening-2",
@@ -972,55 +979,56 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Laila about the outdoor art day. Where will the event happen? Laila: It will take place at the park on Thursday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Laila: My friend Yousuf is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Laila: They will see a display about a paintbrush. We made it in class. Interviewer: What should visitors bring? Laila: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Laila: You are welcome.",
+      "passage": "Interviewer: Who are you shopping for today, Ahmed? Ahmed: My sister. It is her birthday. Interviewer: How much money did you save? Ahmed: Five rials. Interviewer: Where will you go first? Ahmed: To the bookshop, because she loves stories. Interviewer: How much is the adventure book? Ahmed: Three rials. Interviewer: Will you buy a plastic bag? Ahmed: No, I have a cloth bag. Interviewer: What about the remaining money? Ahmed: I will save the two rials.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
+          "stem": "Who will receive the present?",
           "options": [
-            "the park",
-            "at the library",
-            "at the airport"
-          ],
-          "answer": 0
-        },
-        {
-          "stem": "When is the event planned?",
-          "options": [
-            "Friday",
-            "Sunday",
-            "Thursday"
-          ],
-          "answer": 2
-        },
-        {
-          "stem": "Who is helping organise the event?",
-          "options": [
-            "the bus driver",
-            "Yousuf",
-            "a doctor"
+            "His cousin",
+            "His sister",
+            "His teacher"
           ],
           "answer": 1
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "How much has Ahmed saved?",
           "options": [
-            "a paintbrush",
-            "a football",
-            "a bicycle"
+            "Five rials",
+            "Three rials",
+            "Eight rials"
           ],
           "answer": 0
         },
         {
-          "stem": "What should people bring?",
+          "stem": "Which shop will he visit?",
           "options": [
-            "a large suitcase",
-            "a new computer",
-            "a reusable water bottle"
+            "Bakery",
+            "Sports shop",
+            "Bookshop"
           ],
           "answer": 2
+        },
+        {
+          "stem": "How much is the book?",
+          "options": [
+            "Two rials",
+            "Three rials",
+            "Five rials"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "What will he do with the money left?",
+          "options": [
+            "Save it",
+            "Buy sweets",
+            "Give it away"
+          ],
+          "answer": 0
         }
       ],
-      "audio": "audio/g5-d-listening-2.mp3"
+      "audio": "audio/g5-d-listening-2.mp3",
+      "unitTheme": "Off to the Shops"
     },
     {
       "id": "g5-d-vocabulary",
@@ -1228,19 +1236,19 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "robot",
+        "football",
+        "bicycle",
+        "drum",
+        "piano",
         "kite",
-        "bus",
-        "plant",
-        "book",
-        "camera"
+        "paintbrush"
       ],
       "passages": [
-        "A: What is your group doing today? B: A small robot can move coloured blocks. A: What did you learn? B: It helps our team show how simple machines work. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: We use a camera to take clear pictures. A: What did you learn? B: The visitors can see our progress in a photo album. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: I made a short book about my idea. A: What did you learn? B: I will read the first page to younger children. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: Our group grew a young plant in a jar. A: What did you learn? B: We check its water every morning. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: The visitors arrive by school bus. A: What did you learn? B: The driver stops beside the main hall. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions."
+        "After finishing my homework I play football with my neighbours at the small field. We meet there three evenings a week.",
+        "I joined the school music club to learn the drum. We practise rhythms every Monday with our teacher.",
+        "I love riding my bicycle on quiet paths. My father checks my helmet before we leave the house.",
+        "The wind is strong today, so we will fly our kite in the open park away from roads and power lines.",
+        "During the holiday I started painting. My aunt lent me a paintbrush and I made a picture of our garden."
       ],
       "questions": [
         {
@@ -1249,22 +1257,23 @@
         },
         {
           "stem": "Text 2",
-          "answer": 5
+          "answer": 2
         },
         {
           "stem": "Text 3",
-          "answer": 4
+          "answer": 1
         },
         {
           "stem": "Text 4",
-          "answer": 3
+          "answer": 4
         },
         {
           "stem": "Text 5",
-          "answer": 2
+          "answer": 5
         }
       ],
-      "audio": "audio/g6-a-listening-1.mp3"
+      "audio": "audio/g6-a-listening-1.mp3",
+      "unitTheme": "Free-time Fun"
     },
     {
       "id": "g6-a-listening-2",
@@ -1275,55 +1284,56 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Noura about the invention fair. Where will the event happen? Noura: It will take place at the school hall on Monday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Noura: My friend Rashid is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Noura: They will see a display about a robot. We made it in class. Interviewer: What should visitors bring? Noura: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Noura: You are welcome. Interviewer: What did you learn from this experience? Noura: I learned to listen to others, check my work and make better plans. Working together is important because each person has a useful idea.",
+      "passage": "Interviewer: When does the free-time club meet, Yousuf? Yousuf: Every Saturday. Interviewer: Where do members meet? Yousuf: At the community sports centre. Interviewer: Which activity was popular last month? Yousuf: Cycling. Interviewer: Do children bring their own bicycles? Yousuf: No, the centre lends bicycles and helmets. Interviewer: What will you try next Saturday? Yousuf: Table tennis indoors.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
+          "stem": "When is the club?",
           "options": [
-            "the school hall",
-            "at the library",
-            "at the airport"
-          ],
-          "answer": 0
-        },
-        {
-          "stem": "When is the event planned?",
-          "options": [
-            "Friday",
-            "Sunday",
-            "Monday"
-          ],
-          "answer": 2
-        },
-        {
-          "stem": "Who is helping organise the event?",
-          "options": [
-            "the bus driver",
-            "Rashid",
-            "a doctor"
+            "Monday",
+            "Saturday",
+            "Friday"
           ],
           "answer": 1
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "Where is the club?",
           "options": [
-            "a robot",
-            "a football",
-            "a bicycle"
+            "At the sports centre",
+            "In the library",
+            "At the beach"
           ],
           "answer": 0
         },
         {
-          "stem": "What should people bring?",
+          "stem": "What was most popular?",
           "options": [
-            "a large suitcase",
-            "a new computer",
-            "a reusable water bottle"
+            "Chess",
+            "Swimming",
+            "Cycling"
           ],
           "answer": 2
+        },
+        {
+          "stem": "What does the club lend?",
+          "options": [
+            "Books",
+            "Helmets and bicycles",
+            "Cameras"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "What is next week's activity?",
+          "options": [
+            "Table tennis",
+            "Horse riding",
+            "Painting"
+          ],
+          "answer": 0
         }
       ],
-      "audio": "audio/g6-a-listening-2.mp3"
+      "audio": "audio/g6-a-listening-2.mp3",
+      "unitTheme": "Free-time Fun"
     },
     {
       "id": "g6-a-vocabulary",
@@ -1531,19 +1541,19 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "boat",
-        "fish",
+        "robot",
+        "computer",
+        "camera",
         "clock",
-        "plant",
-        "backpack",
-        "camera"
+        "bus",
+        "book"
       ],
       "passages": [
-        "A: What is your group doing today? B: I am drawing a fish from a picture. A: What did you learn? B: I want to learn how it moves under water. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: The small boat stays near the shore. A: What did you learn? B: We can watch the sea safely from the beach. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: I brought a camera for the trip. A: What did you learn? B: I will take pictures of the coast. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: My backpack has water and a notebook. A: What did you learn? B: I keep everything together on the trip. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: We saw a plant growing by the sand. A: What did you learn? B: Our guide told us not to damage it. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions."
+        "I am using a computer to design our class poster. It is easier to correct the headings on the screen.",
+        "Our science team built a small robot that follows a black line. It moves because of the program we wrote.",
+        "We will use a camera to record the experiment. We can compare the results before and after adding water.",
+        "The classroom has a digital clock that shows the lesson time clearly. We use it during short group challenges.",
+        "I borrowed a book about inventions from the library. It explains how technology changed life in the past."
       ],
       "questions": [
         {
@@ -1556,18 +1566,19 @@
         },
         {
           "stem": "Text 3",
-          "answer": 5
+          "answer": 2
         },
         {
           "stem": "Text 4",
-          "answer": 4
+          "answer": 3
         },
         {
           "stem": "Text 5",
-          "answer": 3
+          "answer": 5
         }
       ],
-      "audio": "audio/g6-b-listening-1.mp3"
+      "audio": "audio/g6-b-listening-1.mp3",
+      "unitTheme": "Technology"
     },
     {
       "id": "g6-b-listening-2",
@@ -1578,55 +1589,56 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Maha about the coastal science day. Where will the event happen? Maha: It will take place at the beach on Tuesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Maha: My friend Salim is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Maha: They will see a display about a fish. We made it in class. Interviewer: What should visitors bring? Maha: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Maha: You are welcome. Interviewer: What did you learn from this experience? Maha: I learned to listen to others, check my work and make better plans. Working together is important because each person has a useful idea.",
+      "passage": "Interviewer: What did you build for the technology exhibition, Fatma? Fatma: A robot that waters plants. Interviewer: How does it check dry soil? Fatma: With a sensor connected to a computer program. Interviewer: Who helped you with the wires? Fatma: My older sister. Interviewer: Where did you demonstrate it? Fatma: At our school science exhibition. Interviewer: What will you add next? Fatma: A warning light for an empty water tank.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
+          "stem": "What does Fatma's robot do?",
           "options": [
-            "at the library",
-            "at the airport",
-            "the beach"
-          ],
-          "answer": 2
-        },
-        {
-          "stem": "When is the event planned?",
-          "options": [
-            "Sunday",
-            "Tuesday",
-            "Friday"
+            "Washes clothes",
+            "Waters plants",
+            "Carries bags"
           ],
           "answer": 1
         },
         {
-          "stem": "Who is helping organise the event?",
+          "stem": "How does it check the soil?",
           "options": [
-            "Salim",
-            "a doctor",
-            "the bus driver"
+            "With a sensor",
+            "With a camera",
+            "With a clock"
           ],
           "answer": 0
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "Who helped Fatma?",
           "options": [
-            "a football",
-            "a bicycle",
-            "a fish"
+            "Her teacher",
+            "Her cousin",
+            "Her sister"
           ],
           "answer": 2
         },
         {
-          "stem": "What should people bring?",
+          "stem": "Where did she show the robot?",
           "options": [
-            "a new computer",
-            "a reusable water bottle",
-            "a large suitcase"
+            "At a market",
+            "At school",
+            "At a clinic"
           ],
           "answer": 1
+        },
+        {
+          "stem": "What will she add?",
+          "options": [
+            "A warning light",
+            "A bigger wheel",
+            "A keyboard"
+          ],
+          "answer": 0
         }
       ],
-      "audio": "audio/g6-b-listening-2.mp3"
+      "audio": "audio/g6-b-listening-2.mp3",
+      "unitTheme": "Technology"
     },
     {
       "id": "g6-b-vocabulary",
@@ -1834,43 +1846,44 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "cup",
-        "gift",
-        "apple",
-        "bicycle",
-        "book",
-        "cake"
+        "market",
+        "library",
+        "museum",
+        "park",
+        "clinic",
+        "beach"
       ],
       "passages": [
-        "A: What is your group doing today? B: This apple came from a local farm. A: What did you learn? B: We can buy fresh fruit at this stall. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: I made a gift for my grandmother. A: What did you learn? B: It is wrapped carefully in recycled paper. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: The shopkeeper gave me a reusable cup. A: What did you learn? B: I will use it again tomorrow. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: Our family baked a small cake. A: What did you learn? B: We brought it to share with neighbours. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: There is a book stall next to the bakery. A: What did you learn? B: I want a story about adventure. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions."
+        "I need a book about Omani history, so I am visiting the public library near the roundabout. It closes at six.",
+        "The old wooden boats are displayed inside the museum beside the fort. A guide tells visitors about sea trade.",
+        "My brother hurt his ankle, so we will visit the clinic opposite the supermarket this afternoon.",
+        "We buy vegetables and fresh fish at the market behind the bus station. It is busiest in the morning.",
+        "Our family walked along the beach at the weekend. We collected litter, but did not swim because the waves were strong."
       ],
       "questions": [
         {
           "stem": "Text 1",
-          "answer": 2
-        },
-        {
-          "stem": "Text 2",
           "answer": 1
         },
         {
+          "stem": "Text 2",
+          "answer": 2
+        },
+        {
           "stem": "Text 3",
-          "answer": 0
+          "answer": 4
         },
         {
           "stem": "Text 4",
-          "answer": 5
+          "answer": 0
         },
         {
           "stem": "Text 5",
-          "answer": 4
+          "answer": 5
         }
       ],
-      "audio": "audio/g6-c-listening-1.mp3"
+      "audio": "audio/g6-c-listening-1.mp3",
+      "unitTheme": "Places"
     },
     {
       "id": "g6-c-listening-2",
@@ -1881,55 +1894,56 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Asma about the neighbourhood market. Where will the event happen? Asma: It will take place at the market on Wednesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Asma: My friend Huda is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Asma: They will see a display about a apple. We made it in class. Interviewer: What should visitors bring? Asma: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Asma: You are welcome. Interviewer: What did you learn from this experience? Asma: I learned to listen to others, check my work and make better plans. Working together is important because each person has a useful idea.",
+      "passage": "Interviewer: What is your favourite place in town, Dana? Dana: The public library. Interviewer: Where can we find it? Dana: Opposite the main park, beside the post office. Interviewer: When does it open on weekdays? Dana: At nine in the morning. Interviewer: What can children do there? Dana: Read and join story club. Interviewer: What happens every Wednesday? Dana: A librarian runs a reading activity. Interviewer: How do you get there? Dana: I walk with my father.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
+          "stem": "What is Dana's favourite place?",
           "options": [
-            "at the airport",
-            "the market",
-            "at the library"
-          ],
-          "answer": 1
-        },
-        {
-          "stem": "When is the event planned?",
-          "options": [
-            "Wednesday",
-            "Friday",
-            "Sunday"
+            "Library",
+            "Museum",
+            "Beach"
           ],
           "answer": 0
         },
         {
-          "stem": "Who is helping organise the event?",
+          "stem": "Where is it?",
           "options": [
-            "a doctor",
-            "the bus driver",
-            "Huda"
+            "Near the clinic",
+            "Opposite the main park",
+            "Inside the school"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "When does it open?",
+          "options": [
+            "At seven",
+            "At eight",
+            "At nine"
           ],
           "answer": 2
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "What happens on Wednesday?",
           "options": [
-            "a bicycle",
-            "a apple",
-            "a football"
-          ],
-          "answer": 1
-        },
-        {
-          "stem": "What should people bring?",
-          "options": [
-            "a reusable water bottle",
-            "a large suitcase",
-            "a new computer"
+            "A reading activity",
+            "A football match",
+            "A science test"
           ],
           "answer": 0
+        },
+        {
+          "stem": "How does Dana travel there?",
+          "options": [
+            "By bus",
+            "On foot",
+            "By boat"
+          ],
+          "answer": 1
         }
       ],
-      "audio": "audio/g6-c-listening-2.mp3"
+      "audio": "audio/g6-c-listening-2.mp3",
+      "unitTheme": "Places"
     },
     {
       "id": "g6-c-vocabulary",
@@ -2137,19 +2151,19 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "robot",
+        "football",
+        "bicycle",
+        "drum",
+        "piano",
         "kite",
-        "bus",
-        "plant",
-        "book",
-        "camera"
+        "paintbrush"
       ],
       "passages": [
-        "A: What is your group doing today? B: A small robot can move coloured blocks. A: What did you learn? B: It helps our team show how simple machines work. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: We use a camera to take clear pictures. A: What did you learn? B: The visitors can see our progress in a photo album. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: I made a short book about my idea. A: What did you learn? B: I will read the first page to younger children. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: Our group grew a young plant in a jar. A: What did you learn? B: We check its water every morning. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: The visitors arrive by school bus. A: What did you learn? B: The driver stops beside the main hall. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions."
+        "After finishing my homework I play football with my neighbours at the small field. We meet there three evenings a week.",
+        "I joined the school music club to learn the drum. We practise rhythms every Monday with our teacher.",
+        "I love riding my bicycle on quiet paths. My father checks my helmet before we leave the house.",
+        "The wind is strong today, so we will fly our kite in the open park away from roads and power lines.",
+        "During the holiday I started painting. My aunt lent me a paintbrush and I made a picture of our garden."
       ],
       "questions": [
         {
@@ -2158,25 +2172,26 @@
         },
         {
           "stem": "Text 2",
-          "answer": 5
+          "answer": 2
         },
         {
           "stem": "Text 3",
-          "answer": 4
+          "answer": 1
         },
         {
           "stem": "Text 4",
-          "answer": 3
+          "answer": 4
         },
         {
           "stem": "Text 5",
-          "answer": 2
+          "answer": 5
         }
       ],
       "audio": "audio/g6-a-listening-1.mp3",
       "sourceModel": "A",
       "sourceActivityId": "g6-a-listening-1",
-      "mediaId": "g6-a-listening-1"
+      "mediaId": "g6-a-listening-1",
+      "unitTheme": "Comprehensive semester review"
     },
     {
       "id": "g6-d-listening-2",
@@ -2187,58 +2202,59 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Maha about the coastal science day. Where will the event happen? Maha: It will take place at the beach on Tuesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Maha: My friend Salim is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Maha: They will see a display about a fish. We made it in class. Interviewer: What should visitors bring? Maha: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Maha: You are welcome. Interviewer: What did you learn from this experience? Maha: I learned to listen to others, check my work and make better plans. Working together is important because each person has a useful idea.",
+      "passage": "Interviewer: What did you build for the technology exhibition, Fatma? Fatma: A robot that waters plants. Interviewer: How does it check dry soil? Fatma: With a sensor connected to a computer program. Interviewer: Who helped you with the wires? Fatma: My older sister. Interviewer: Where did you demonstrate it? Fatma: At our school science exhibition. Interviewer: What will you add next? Fatma: A warning light for an empty water tank.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
+          "stem": "What does Fatma's robot do?",
           "options": [
-            "at the library",
-            "at the airport",
-            "the beach"
-          ],
-          "answer": 2
-        },
-        {
-          "stem": "When is the event planned?",
-          "options": [
-            "Sunday",
-            "Tuesday",
-            "Friday"
+            "Washes clothes",
+            "Waters plants",
+            "Carries bags"
           ],
           "answer": 1
         },
         {
-          "stem": "Who is helping organise the event?",
+          "stem": "How does it check the soil?",
           "options": [
-            "Salim",
-            "a doctor",
-            "the bus driver"
+            "With a sensor",
+            "With a camera",
+            "With a clock"
           ],
           "answer": 0
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "Who helped Fatma?",
           "options": [
-            "a football",
-            "a bicycle",
-            "a fish"
+            "Her teacher",
+            "Her cousin",
+            "Her sister"
           ],
           "answer": 2
         },
         {
-          "stem": "What should people bring?",
+          "stem": "Where did she show the robot?",
           "options": [
-            "a new computer",
-            "a reusable water bottle",
-            "a large suitcase"
+            "At a market",
+            "At school",
+            "At a clinic"
           ],
           "answer": 1
+        },
+        {
+          "stem": "What will she add?",
+          "options": [
+            "A warning light",
+            "A bigger wheel",
+            "A keyboard"
+          ],
+          "answer": 0
         }
       ],
       "audio": "audio/g6-b-listening-2.mp3",
       "sourceModel": "B",
       "sourceActivityId": "g6-b-listening-2",
-      "mediaId": "g6-b-listening-2"
+      "mediaId": "g6-b-listening-2",
+      "unitTheme": "Comprehensive semester review"
     },
     {
       "id": "g6-d-vocabulary",
