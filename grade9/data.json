@@ -274,21 +274,21 @@
           "marks": 4,
           "passage": "Match each person (1–4) with a suitable activity (A–E). One activity is extra.",
           "people": [
-            "Hamad has a bicycle with a damaged light and wants to learn how to fix it.",
-            "Rana enjoys telling stories and hopes to record interviews with older relatives.",
-            "Bilal is interested in helping younger children improve their reading.",
-            "Maryam would like to grow plants in a small space at home."
+            "Hamad cycles to school most mornings, but the front light on his bicycle stopped working last week. He wants to understand the problem and repair the light himself rather than buy another bicycle.",
+            "Rana enjoys listening to her grandparents tell stories about family celebrations. She would like to interview older relatives, record their memories and make a collection that younger family members can enjoy.",
+            "Bilal volunteers with younger pupils after school. He notices that some children are nervous about reading aloud and wants to support them patiently while helping them discover books they find interesting.",
+            "Maryam lives in a flat without a garden. She hopes to grow herbs and flowers on a small balcony, but she needs advice about containers, sunlight and the right amount of water."
           ],
           "options": [
-            "A free weekly book club pairs older readers with younger pupils.",
-            "The rooftop garden workshop teaches container planting and careful watering.",
-            "The community repair hub shows visitors how to maintain bicycles safely.",
-            "A weekend recording club teaches audio interviews and oral history.",
-            "The athletics centre offers team games on Friday mornings."
+            "This reading club welcomes patient teenagers who want to help younger children. Members choose enjoyable books, listen as pupils practise reading and encourage them to talk about their favourite characters.",
+            "At the rooftop garden workshop, visitors learn how to grow vegetables and flowers in pots. A gardener demonstrates how to prepare soil, choose suitable plants and water them without wasting water.",
+            "The community repair hub offers practical demonstrations on looking after bicycles. Volunteers explain how lights and brakes work and help beginners carry out small repairs while following safety rules.",
+            "Members of this recording club use microphones to interview family members and neighbours. They learn how to ask respectful questions, save their audio files and organise personal stories into an archive.",
+            "At this sports centre, teams practise football and basketball with qualified coaches. The club welcomes confident athletes who want to improve fitness and prepare for competitions on Friday mornings."
           ],
           "items": [
             {
-              "stem": "Person 1: Hamad has a bicycle with a damaged light and wants to learn how to fix it.",
+              "stem": "Person 1: Hamad cycles to school most mornings, but the front light on his bicycle stopped working last week. He wants to understand the problem and repair the light himself rather than buy another bicycle.",
               "choices": [
                 "A",
                 "B",
@@ -299,7 +299,7 @@
               "answer": 2
             },
             {
-              "stem": "Person 2: Rana enjoys telling stories and hopes to record interviews with older relatives.",
+              "stem": "Person 2: Rana enjoys listening to her grandparents tell stories about family celebrations. She would like to interview older relatives, record their memories and make a collection that younger family members can enjoy.",
               "choices": [
                 "A",
                 "B",
@@ -310,7 +310,7 @@
               "answer": 3
             },
             {
-              "stem": "Person 3: Bilal is interested in helping younger children improve their reading.",
+              "stem": "Person 3: Bilal volunteers with younger pupils after school. He notices that some children are nervous about reading aloud and wants to support them patiently while helping them discover books they find interesting.",
               "choices": [
                 "A",
                 "B",
@@ -321,7 +321,7 @@
               "answer": 0
             },
             {
-              "stem": "Person 4: Maryam would like to grow plants in a small space at home.",
+              "stem": "Person 4: Maryam lives in a flat without a garden. She hopes to grow herbs and flowers on a small balcony, but she needs advice about containers, sunlight and the right amount of water.",
               "choices": [
                 "A",
                 "B",
@@ -680,21 +680,21 @@
           "marks": 4,
           "passage": "Match each person (1–4) with a suitable activity (A–E). One activity is extra.",
           "people": [
-            "Saeed wants to learn to check whether online stories are trustworthy.",
-            "Amal enjoys designing objects from materials that would otherwise be wasted.",
-            "Yusuf hopes to become more confident speaking to groups.",
-            "Noura likes studying the movement of stars through the night."
+            "Saeed often reads news on social media, but he has noticed that some stories give misleading information. He wants to learn how to identify trustworthy sources before forwarding messages to his friends.",
+            "Amal likes designing useful objects rather than throwing materials away. She keeps cardboard, fabric and plastic containers at home and hopes to turn them into creative products with practical purposes.",
+            "Yusuf has interesting ideas, but he becomes nervous when speaking in front of a group. He wants a friendly environment where he can practise short presentations and become a more confident communicator.",
+            "Noura enjoys looking at the night sky with her family. She wants to understand the movement of the planets and keep a record of what she can observe during different months of the year."
           ],
           "options": [
-            "Public speaking circles help learners practise short talks.",
-            "The astronomy group observes the sky and keeps nightly records.",
-            "A media workshop investigates sources and misleading headlines.",
-            "A reuse studio designs practical objects from discarded materials.",
-            "The swimming club offers beginners short water-safety lessons."
+            "In these public-speaking circles, students prepare short talks, practise using clear voices and receive supportive feedback. The atmosphere is relaxed, so even shy participants can develop confidence through regular practice.",
+            "Members of the astronomy society observe stars and planets from a safe outdoor location. They record changes in the sky, use simple maps and compare observations with information from science books.",
+            "The media literacy workshop teaches students to check photographs and compare information from different sources. Participants investigate misleading headlines and learn when they should question a story they find online.",
+            "At the reuse design studio, members collect unwanted objects and give them a new purpose. They plan products, select suitable materials and explain how creative recycling can protect the environment.",
+            "The beginners' swimming programme includes water-safety demonstrations and short supervised lessons in an indoor pool. Participants work on basic swimming movements and learn how to stay safe near water."
           ],
           "items": [
             {
-              "stem": "Person 1: Saeed wants to learn to check whether online stories are trustworthy.",
+              "stem": "Person 1: Saeed often reads news on social media, but he has noticed that some stories give misleading information. He wants to learn how to identify trustworthy sources before forwarding messages to his friends.",
               "choices": [
                 "A",
                 "B",
@@ -705,7 +705,7 @@
               "answer": 2
             },
             {
-              "stem": "Person 2: Amal enjoys designing objects from materials that would otherwise be wasted.",
+              "stem": "Person 2: Amal likes designing useful objects rather than throwing materials away. She keeps cardboard, fabric and plastic containers at home and hopes to turn them into creative products with practical purposes.",
               "choices": [
                 "A",
                 "B",
@@ -716,7 +716,7 @@
               "answer": 3
             },
             {
-              "stem": "Person 3: Yusuf hopes to become more confident speaking to groups.",
+              "stem": "Person 3: Yusuf has interesting ideas, but he becomes nervous when speaking in front of a group. He wants a friendly environment where he can practise short presentations and become a more confident communicator.",
               "choices": [
                 "A",
                 "B",
@@ -727,7 +727,7 @@
               "answer": 0
             },
             {
-              "stem": "Person 4: Noura likes studying the movement of stars through the night.",
+              "stem": "Person 4: Noura enjoys looking at the night sky with her family. She wants to understand the movement of the planets and keep a record of what she can observe during different months of the year.",
               "choices": [
                 "A",
                 "B",
@@ -1084,21 +1084,21 @@
           "marks": 4,
           "passage": "Match each person (1–4) with a suitable activity (A–E). One activity is extra.",
           "people": [
-            "Fatma would like to help families reduce their electricity use.",
-            "Omar wants a safe place to practise drawing different buildings.",
-            "Khalid enjoys solving logical puzzles with friends.",
-            "Sara wants to learn how people lived in the past."
+            "Fatma has noticed that her family's electricity bill increases during the hottest months. She is interested in practical technology that could help homes use less power without making daily life uncomfortable.",
+            "Omar enjoys drawing modern buildings and traditional Omani houses. He hopes to improve his understanding of shape, distance and perspective so that his sketches look more realistic and detailed.",
+            "Khalid loves solving difficult problems with his classmates. He would enjoy activities that require careful thinking, teamwork and different strategies rather than simply memorising facts from a textbook.",
+            "Sara is curious about how people lived before electricity and modern transport. She wants to hear memories from older residents and visit places that show how daily life has changed."
           ],
           "options": [
-            "The heritage circle collects local memories and visits old houses.",
-            "An energy team explains how to save power at home.",
-            "The puzzle laboratory runs collaborative reasoning challenges.",
-            "The sketching workshop teaches buildings and perspective.",
-            "The music room offers lessons in rhythm and melody."
+            "The local heritage circle explores traditional homes and interviews older residents. Members compare old photographs with the present day and learn how daily routines, buildings and transport have changed.",
+            "This energy-saving team tests simple ways to reduce electricity use in homes and schools. Volunteers measure power consumption, explain efficient lighting and suggest changes that families can try.",
+            "In the puzzle laboratory, small groups work together on logic challenges and games. Members discuss possible solutions, test different approaches and learn that a difficult problem may have more than one method.",
+            "The sketching workshop teaches students how to draw streets and buildings using perspective. Participants practise with pencil and paper, compare architectural features and improve their drawings through feedback.",
+            "At the community music room, learners explore rhythms using drums and simple instruments. The programme focuses on keeping time, performing together and preparing short musical pieces for local events."
           ],
           "items": [
             {
-              "stem": "Person 1: Fatma would like to help families reduce their electricity use.",
+              "stem": "Person 1: Fatma has noticed that her family's electricity bill increases during the hottest months. She is interested in practical technology that could help homes use less power without making daily life uncomfortable.",
               "choices": [
                 "A",
                 "B",
@@ -1109,7 +1109,7 @@
               "answer": 1
             },
             {
-              "stem": "Person 2: Omar wants a safe place to practise drawing different buildings.",
+              "stem": "Person 2: Omar enjoys drawing modern buildings and traditional Omani houses. He hopes to improve his understanding of shape, distance and perspective so that his sketches look more realistic and detailed.",
               "choices": [
                 "A",
                 "B",
@@ -1120,7 +1120,7 @@
               "answer": 3
             },
             {
-              "stem": "Person 3: Khalid enjoys solving logical puzzles with friends.",
+              "stem": "Person 3: Khalid loves solving difficult problems with his classmates. He would enjoy activities that require careful thinking, teamwork and different strategies rather than simply memorising facts from a textbook.",
               "choices": [
                 "A",
                 "B",
@@ -1131,7 +1131,7 @@
               "answer": 2
             },
             {
-              "stem": "Person 4: Sara wants to learn how people lived in the past.",
+              "stem": "Person 4: Sara is curious about how people lived before electricity and modern transport. She wants to hear memories from older residents and visit places that show how daily life has changed.",
               "choices": [
                 "A",
                 "B",
@@ -1505,21 +1505,21 @@
           "marks": 4,
           "passage": "Match each person (1–4) with a suitable activity (A–E). One activity is extra.",
           "people": [
-            "Saeed wants to learn to check whether online stories are trustworthy.",
-            "Amal enjoys designing objects from materials that would otherwise be wasted.",
-            "Yusuf hopes to become more confident speaking to groups.",
-            "Noura likes studying the movement of stars through the night."
+            "Saeed often reads news on social media, but he has noticed that some stories give misleading information. He wants to learn how to identify trustworthy sources before forwarding messages to his friends.",
+            "Amal likes designing useful objects rather than throwing materials away. She keeps cardboard, fabric and plastic containers at home and hopes to turn them into creative products with practical purposes.",
+            "Yusuf has interesting ideas, but he becomes nervous when speaking in front of a group. He wants a friendly environment where he can practise short presentations and become a more confident communicator.",
+            "Noura enjoys looking at the night sky with her family. She wants to understand the movement of the planets and keep a record of what she can observe during different months of the year."
           ],
           "options": [
-            "Public speaking circles help learners practise short talks.",
-            "The astronomy group observes the sky and keeps nightly records.",
-            "A media workshop investigates sources and misleading headlines.",
-            "A reuse studio designs practical objects from discarded materials.",
-            "The swimming club offers beginners short water-safety lessons."
+            "In these public-speaking circles, students prepare short talks, practise using clear voices and receive supportive feedback. The atmosphere is relaxed, so even shy participants can develop confidence through regular practice.",
+            "Members of the astronomy society observe stars and planets from a safe outdoor location. They record changes in the sky, use simple maps and compare observations with information from science books.",
+            "The media literacy workshop teaches students to check photographs and compare information from different sources. Participants investigate misleading headlines and learn when they should question a story they find online.",
+            "At the reuse design studio, members collect unwanted objects and give them a new purpose. They plan products, select suitable materials and explain how creative recycling can protect the environment.",
+            "The beginners' swimming programme includes water-safety demonstrations and short supervised lessons in an indoor pool. Participants work on basic swimming movements and learn how to stay safe near water."
           ],
           "items": [
             {
-              "stem": "Person 1: Saeed wants to learn to check whether online stories are trustworthy.",
+              "stem": "Person 1: Saeed often reads news on social media, but he has noticed that some stories give misleading information. He wants to learn how to identify trustworthy sources before forwarding messages to his friends.",
               "choices": [
                 "A",
                 "B",
@@ -1530,7 +1530,7 @@
               "answer": 2
             },
             {
-              "stem": "Person 2: Amal enjoys designing objects from materials that would otherwise be wasted.",
+              "stem": "Person 2: Amal likes designing useful objects rather than throwing materials away. She keeps cardboard, fabric and plastic containers at home and hopes to turn them into creative products with practical purposes.",
               "choices": [
                 "A",
                 "B",
@@ -1541,7 +1541,7 @@
               "answer": 3
             },
             {
-              "stem": "Person 3: Yusuf hopes to become more confident speaking to groups.",
+              "stem": "Person 3: Yusuf has interesting ideas, but he becomes nervous when speaking in front of a group. He wants a friendly environment where he can practise short presentations and become a more confident communicator.",
               "choices": [
                 "A",
                 "B",
@@ -1552,7 +1552,7 @@
               "answer": 0
             },
             {
-              "stem": "Person 4: Noura likes studying the movement of stars through the night.",
+              "stem": "Person 4: Noura enjoys looking at the night sky with her family. She wants to understand the movement of the planets and keep a record of what she can observe during different months of the year.",
               "choices": [
                 "A",
                 "B",
@@ -1924,21 +1924,21 @@
           "marks": 4,
           "passage": "Match each person (1–4) with a suitable activity (A–E). One activity is extra.",
           "people": [
-            "Fatma would like to help families reduce their electricity use.",
-            "Omar wants a safe place to practise drawing different buildings.",
-            "Khalid enjoys solving logical puzzles with friends.",
-            "Sara wants to learn how people lived in the past."
+            "Fatma has noticed that her family's electricity bill increases during the hottest months. She is interested in practical technology that could help homes use less power without making daily life uncomfortable.",
+            "Omar enjoys drawing modern buildings and traditional Omani houses. He hopes to improve his understanding of shape, distance and perspective so that his sketches look more realistic and detailed.",
+            "Khalid loves solving difficult problems with his classmates. He would enjoy activities that require careful thinking, teamwork and different strategies rather than simply memorising facts from a textbook.",
+            "Sara is curious about how people lived before electricity and modern transport. She wants to hear memories from older residents and visit places that show how daily life has changed."
           ],
           "options": [
-            "The heritage circle collects local memories and visits old houses.",
-            "An energy team explains how to save power at home.",
-            "The puzzle laboratory runs collaborative reasoning challenges.",
-            "The sketching workshop teaches buildings and perspective.",
-            "The music room offers lessons in rhythm and melody."
+            "The local heritage circle explores traditional homes and interviews older residents. Members compare old photographs with the present day and learn how daily routines, buildings and transport have changed.",
+            "This energy-saving team tests simple ways to reduce electricity use in homes and schools. Volunteers measure power consumption, explain efficient lighting and suggest changes that families can try.",
+            "In the puzzle laboratory, small groups work together on logic challenges and games. Members discuss possible solutions, test different approaches and learn that a difficult problem may have more than one method.",
+            "The sketching workshop teaches students how to draw streets and buildings using perspective. Participants practise with pencil and paper, compare architectural features and improve their drawings through feedback.",
+            "At the community music room, learners explore rhythms using drums and simple instruments. The programme focuses on keeping time, performing together and preparing short musical pieces for local events."
           ],
           "items": [
             {
-              "stem": "Person 1: Fatma would like to help families reduce their electricity use.",
+              "stem": "Person 1: Fatma has noticed that her family's electricity bill increases during the hottest months. She is interested in practical technology that could help homes use less power without making daily life uncomfortable.",
               "choices": [
                 "A",
                 "B",
@@ -1949,7 +1949,7 @@
               "answer": 1
             },
             {
-              "stem": "Person 2: Omar wants a safe place to practise drawing different buildings.",
+              "stem": "Person 2: Omar enjoys drawing modern buildings and traditional Omani houses. He hopes to improve his understanding of shape, distance and perspective so that his sketches look more realistic and detailed.",
               "choices": [
                 "A",
                 "B",
@@ -1960,7 +1960,7 @@
               "answer": 3
             },
             {
-              "stem": "Person 3: Khalid enjoys solving logical puzzles with friends.",
+              "stem": "Person 3: Khalid loves solving difficult problems with his classmates. He would enjoy activities that require careful thinking, teamwork and different strategies rather than simply memorising facts from a textbook.",
               "choices": [
                 "A",
                 "B",
@@ -1971,7 +1971,7 @@
               "answer": 2
             },
             {
-              "stem": "Person 4: Sara wants to learn how people lived in the past.",
+              "stem": "Person 4: Sara is curious about how people lived before electricity and modern transport. She wants to hear memories from older residents and visit places that show how daily life has changed.",
               "choices": [
                 "A",
                 "B",
@@ -2343,21 +2343,21 @@
           "marks": 4,
           "passage": "Match each person (1–4) with a suitable activity (A–E). One activity is extra.",
           "people": [
-            "Hamad has a bicycle with a damaged light and wants to learn how to fix it.",
-            "Rana enjoys telling stories and hopes to record interviews with older relatives.",
-            "Bilal is interested in helping younger children improve their reading.",
-            "Maryam would like to grow plants in a small space at home."
+            "Hamad cycles to school most mornings, but the front light on his bicycle stopped working last week. He wants to understand the problem and repair the light himself rather than buy another bicycle.",
+            "Rana enjoys listening to her grandparents tell stories about family celebrations. She would like to interview older relatives, record their memories and make a collection that younger family members can enjoy.",
+            "Bilal volunteers with younger pupils after school. He notices that some children are nervous about reading aloud and wants to support them patiently while helping them discover books they find interesting.",
+            "Maryam lives in a flat without a garden. She hopes to grow herbs and flowers on a small balcony, but she needs advice about containers, sunlight and the right amount of water."
           ],
           "options": [
-            "A free weekly book club pairs older readers with younger pupils.",
-            "The rooftop garden workshop teaches container planting and careful watering.",
-            "The community repair hub shows visitors how to maintain bicycles safely.",
-            "A weekend recording club teaches audio interviews and oral history.",
-            "The athletics centre offers team games on Friday mornings."
+            "This reading club welcomes patient teenagers who want to help younger children. Members choose enjoyable books, listen as pupils practise reading and encourage them to talk about their favourite characters.",
+            "At the rooftop garden workshop, visitors learn how to grow vegetables and flowers in pots. A gardener demonstrates how to prepare soil, choose suitable plants and water them without wasting water.",
+            "The community repair hub offers practical demonstrations on looking after bicycles. Volunteers explain how lights and brakes work and help beginners carry out small repairs while following safety rules.",
+            "Members of this recording club use microphones to interview family members and neighbours. They learn how to ask respectful questions, save their audio files and organise personal stories into an archive.",
+            "At this sports centre, teams practise football and basketball with qualified coaches. The club welcomes confident athletes who want to improve fitness and prepare for competitions on Friday mornings."
           ],
           "items": [
             {
-              "stem": "Person 1: Hamad has a bicycle with a damaged light and wants to learn how to fix it.",
+              "stem": "Person 1: Hamad cycles to school most mornings, but the front light on his bicycle stopped working last week. He wants to understand the problem and repair the light himself rather than buy another bicycle.",
               "choices": [
                 "A",
                 "B",
@@ -2368,7 +2368,7 @@
               "answer": 2
             },
             {
-              "stem": "Person 2: Rana enjoys telling stories and hopes to record interviews with older relatives.",
+              "stem": "Person 2: Rana enjoys listening to her grandparents tell stories about family celebrations. She would like to interview older relatives, record their memories and make a collection that younger family members can enjoy.",
               "choices": [
                 "A",
                 "B",
@@ -2379,7 +2379,7 @@
               "answer": 3
             },
             {
-              "stem": "Person 3: Bilal is interested in helping younger children improve their reading.",
+              "stem": "Person 3: Bilal volunteers with younger pupils after school. He notices that some children are nervous about reading aloud and wants to support them patiently while helping them discover books they find interesting.",
               "choices": [
                 "A",
                 "B",
@@ -2390,7 +2390,7 @@
               "answer": 0
             },
             {
-              "stem": "Person 4: Maryam would like to grow plants in a small space at home.",
+              "stem": "Person 4: Maryam lives in a flat without a garden. She hopes to grow herbs and flowers on a small balcony, but she needs advice about containers, sunlight and the right amount of water.",
               "choices": [
                 "A",
                 "B",
