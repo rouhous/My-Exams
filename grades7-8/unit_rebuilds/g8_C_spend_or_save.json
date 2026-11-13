@@ -1,0 +1,177 @@
+{
+  "grade": 8,
+  "model": "C",
+  "unit": "Spend or save?",
+  "status": "original_unit_texts_pending_audio_regeneration",
+  "listening1": [
+    {
+      "stem": "What did the student decide to buy?",
+      "options": [
+        "a book",
+        "a smartphone",
+        "a camera"
+      ],
+      "answer": 0,
+      "images": [
+        "book",
+        "smartphone",
+        "camera"
+      ],
+      "script": "I had saved enough money for a new phone case, but then I found a useful book about photography. My friend suggested buying a camera instead, although it was far too expensive. In the end, I chose the book and kept the rest of my money."
+    },
+    {
+      "stem": "What is Amal saving money for?",
+      "options": [
+        "a bicycle",
+        "a phone",
+        "a guitar"
+      ],
+      "answer": 0,
+      "images": [
+        "bike",
+        "smartphone",
+        "guitar"
+      ],
+      "script": "Amal really enjoys music, but she can borrow a guitar from her sister. Her phone still works well, so she does not need another one. She has decided to save her pocket money for a bicycle because she wants to ride to the sports centre."
+    },
+    {
+      "stem": "How did the family travel to the shops?",
+      "options": [
+        "by train",
+        "by bus",
+        "by plane"
+      ],
+      "answer": 1,
+      "images": [
+        "train-front",
+        "bus",
+        "plane"
+      ],
+      "script": "My parents planned a shopping trip to the city. We checked the train times first, but the station was too far from home. Flying was clearly unnecessary. We travelled by bus and used the money we saved to buy lunch together."
+    },
+    {
+      "stem": "What did the shop assistant suggest?",
+      "options": [
+        "return the wallet",
+        "repair the bag",
+        "exchange the book"
+      ],
+      "answer": 2,
+      "images": [
+        "wallet",
+        "backpack",
+        "book"
+      ],
+      "script": "I took a damaged book back to the shop with my receipt. I first asked for my money, but the shop assistant explained that another copy was available. She suggested exchanging the book instead of asking for a refund, and I agreed."
+    },
+    {
+      "stem": "Which item was on sale?",
+      "options": [
+        "a lamp",
+        "a backpack",
+        "a piano"
+      ],
+      "answer": 1,
+      "images": [
+        "lamp-desk",
+        "backpack",
+        "piano"
+      ],
+      "script": "There were many special offers in the shop window. The desk lamp looked attractive, and my brother liked the small piano, but neither had a lower price. The blue backpack was on sale for half its usual cost, so we bought it."
+    }
+  ],
+  "listening2": {
+    "script": "Interviewer: Welcome to Money Matters. Dana, your class recently tried a saving challenge. How did it work?\nDana: Each pupil chose a personal goal and recorded spending for four weeks. I wanted to save for a second-hand bicycle, while my friend hoped to buy a tablet.\nInterviewer: Was saving easy at first?\nDana: No. I often bought snacks without checking how much I had left. Our teacher suggested writing down every purchase before deciding whether it was necessary.\nInterviewer: Did the class learn anything about shopping?\nDana: We compared prices at several shops and learned to keep receipts. One student exchanged a damaged item rather than throwing it away. We also discovered that buying something on sale does not always mean saving money.\nInterviewer: What happened at the end?\nDana: I had saved enough for the bicycle, but I decided to wait until I could check its condition carefully. Some students donated part of their savings to a local charity.\nInterviewer: What advice would you give younger pupils?\nDana: Choose a realistic goal, compare prices and think before you buy. A little patience can make your money go much further.",
+    "items": [
+      {
+        "stem": "Dana wanted to save money for a second-hand bicycle.",
+        "answer": true
+      },
+      {
+        "stem": "The teacher told pupils not to record small purchases.",
+        "answer": false
+      },
+      {
+        "stem": "The class learned why receipts can be useful.",
+        "answer": true
+      },
+      {
+        "stem": "Dana immediately bought a bicycle without checking it.",
+        "answer": false
+      },
+      {
+        "stem": "Some pupils donated money to a local charity.",
+        "answer": true
+      }
+    ]
+  },
+  "reading1": {
+    "texts": [
+      "Rashid saw a second-hand bicycle advertised online. The price was attractive, but he wanted to inspect the brakes and tyres before paying. His father offered to go with him.",
+      "Mariam bought a jacket during a sale. At home, she discovered that it was too small, although she had kept the receipt and the label was still attached.",
+      "Salma received pocket money each week and spent most of it on small snacks. She decided to start recording every purchase and set a realistic target for saving.",
+      "At the shopping centre, a customer noticed that the price shown on the shelf was lower than the amount on the receipt. She politely asked the assistant to check it.",
+      "A class organised a charity market for books and toys. Pupils brought good-quality items that they no longer needed, and everyone agreed that the money would support a local project."
+    ],
+    "continuations": [
+      "The assistant apologised for the mistake and corrected the amount before the customer left.",
+      "The group collected enough money to buy materials for the community library.",
+      "Together they tested the bicycle and decided whether it was a safe purchase.",
+      "A visitor to the science museum asked the guide why the Moon changes shape.",
+      "She planned to compare prices and avoid buying food simply because she was bored.",
+      "The shop agreed to exchange it for a larger size because she could show proof of purchase."
+    ],
+    "answers": [
+      2,
+      5,
+      4,
+      0,
+      1
+    ]
+  },
+  "reading2": {
+    "passage": "For several months, Reem had wanted to buy a camera. She enjoyed taking photographs with her phone, but her cousin owned a camera that could produce clearer pictures. Reem saved some of her weekly pocket money and searched online for a suitable model. At first, she was attracted by an expensive advertisement offering several extra accessories.\n\nHer older brother suggested comparing prices before making a decision. They visited two shops and discovered that the same camera cost considerably less in the second one. Reem almost bought it immediately, but then she remembered that she had planned to help pay for a school trip as well.\n\nA week later, a neighbour offered to sell Reem a used camera. The price was reasonable, and the neighbour allowed her to test it in daylight and indoors. One button was loose, so Reem asked how much a repair would cost. The shop assistant explained that the camera could be repaired cheaply, but she advised Reem to keep the receipt for any new parts.\n\nReem discussed the choices with her family. She decided not to buy the camera that week. Instead, she borrowed her cousin's camera for the school photography exhibition and continued saving. By the end of term, she had enough money for both the school trip and a reliable camera. She realised that waiting and asking questions had helped her make a better decision.",
+    "items": [
+      {
+        "stem": "What did Reem initially want to buy?",
+        "answers": [
+          "a camera",
+          "camera"
+        ]
+      },
+      {
+        "stem": "Who suggested comparing prices?",
+        "answers": [
+          "her older brother",
+          "older brother",
+          "her brother"
+        ]
+      },
+      {
+        "stem": "What problem did the second-hand camera have?",
+        "answers": [
+          "a loose button",
+          "one button was loose",
+          "loose button"
+        ]
+      },
+      {
+        "stem": "Whose camera did Reem borrow for the exhibition?",
+        "answers": [
+          "her cousin's camera",
+          "her cousin",
+          "cousin's camera"
+        ]
+      },
+      {
+        "stem": "What did Reem learn from the experience?",
+        "answers": [
+          "waiting helped her decide",
+          "be patient and compare prices",
+          "not to rush a purchase",
+          "waiting and asking questions helped"
+        ]
+      }
+    ]
+  }
+}
