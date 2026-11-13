@@ -42,5 +42,12 @@ jobs:
           git add grade9/audio-natural/
           if ! git diff --cached --quiet; then
             git commit -m "Add six natural Grade 9 listening MP3 for B C G"
-            git push origin HEAD:main
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then exit 0; fi
+              sleep 4
+            done
+            echo "Failed to push audio after retries" >&2
+            exit 1
           fi
