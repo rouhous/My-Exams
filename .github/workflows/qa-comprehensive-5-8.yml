@@ -1,0 +1,29 @@
+name: Verify Grades 5–8 comprehensive exams and audio
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/qa-comprehensive-5-8.yml'
+      - 'scripts/verify_comprehensive_5_8.py'
+      - 'grades5-6/index.html'
+      - 'grades5-6/activities.json'
+      - 'grades7-8/index.html'
+      - 'grades7-8/activities.json'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit exam marks, task grouping, audio, media and JS syntax
+        run: python scripts/verify_comprehensive_5_8.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: my-exams-grades5-8-qa
+          path: docs/QA_G5_G8_COMPREHENSIVE.json
