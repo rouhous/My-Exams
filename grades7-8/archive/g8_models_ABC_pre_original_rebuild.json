@@ -1,0 +1,983 @@
+{
+  "savedBefore": "Grade 8 original textbook-specific listening and reading rebuild",
+  "models": [
+    {
+      "id": "g8-a",
+      "grade": 8,
+      "model": "A",
+      "title": "The Repair Café",
+      "theme": "a repair café",
+      "durationMinutes": 120,
+      "totalMarks": 40,
+      "semester": 1,
+      "sections": [
+        {
+          "key": "listening1",
+          "label": "Listening 1",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "Which tool will the scientists use?",
+              "options": [
+                "camera",
+                "tablet",
+                "microphone"
+              ],
+              "answer": 1,
+              "script": "Our science team will record the temperature around the school. We discussed taking photographs and recording short interviews, but neither would help us organise the numbers. Our teacher has prepared a tablet with a special measuring app, so that is the device we will use.",
+              "images": [
+                "camera",
+                "tablet",
+                "mic"
+              ]
+            },
+            {
+              "stem": "Where will the public workshop happen?",
+              "options": [
+                "museum",
+                "library",
+                "hall"
+              ],
+              "answer": 2,
+              "script": "The museum is hosting an exhibition, and the library is busy with a reading competition. Because both buildings are full, the art workshop has moved to the community hall. A notice near the entrance gives directions and asks everyone to arrive ten minutes early.",
+              "images": [
+                "landmark",
+                "book-open",
+                "warehouse"
+              ]
+            },
+            {
+              "stem": "What transport did the visitors select?",
+              "options": [
+                "train",
+                "boat",
+                "bus"
+              ],
+              "answer": 1,
+              "script": "Our visitors wanted to explore the old harbour. Taking a bus would have been cheap, while the train offered a quicker journey. However, the guide suggested travelling by traditional boat to see the coast from the water. Everyone agreed that this would be more memorable.",
+              "images": [
+                "train-front",
+                "sailboat",
+                "bus"
+              ]
+            },
+            {
+              "stem": "Which object is going to be recycled?",
+              "options": [
+                "lamp",
+                "radio",
+                "phone"
+              ],
+              "answer": 2,
+              "script": "In our technology lesson, we learned why electronic waste can harm the environment. My family still uses our old radio and desk lamp, but my damaged mobile phone cannot be repaired. I will take that phone to the school collection point tomorrow morning.",
+              "images": [
+                "lamp-desk",
+                "radio",
+                "smartphone"
+              ]
+            },
+            {
+              "stem": "Which plant did the group choose?",
+              "options": [
+                "tree",
+                "flower",
+                "vegetable"
+              ],
+              "answer": 0,
+              "script": "Students were asked to improve a sunny corner of the playground. A few suggested colourful flowers, and others wanted vegetables for the school kitchen. After speaking to the gardener, we chose a young tree because it could provide shade for future students.",
+              "images": [
+                "tree-pine",
+                "flower",
+                "carrot"
+              ]
+            }
+          ],
+          "type": "picture-choice",
+          "instructions": "You will hear five short texts twice. For each text choose the correct picture A, B or C.",
+          "audio": "assets/audio/g8-a-listening1.mp3",
+          "transcript": "Listening one. You will hear five short texts. Text 1. Our science team will record the temperature around the school. We discussed taking photographs and recording short interviews, but neither would help us organise the numbers. Our teacher has prepared a tablet with a special measuring app, so that is the device we will use.  Text 2. The museum is hosting an exhibition, and the library is busy with a reading competition. Because both buildings are full, the art workshop has moved to the community hall. A notice near the entrance gives directions and asks everyone to arrive ten minutes early.  Text 3. Our visitors wanted to explore the old harbour. Taking a bus would have been cheap, while the train offered a quicker journey. However, the guide suggested travelling by traditional boat to see the coast from the water. Everyone agreed that this would be more memorable.  Text 4. In our technology lesson, we learned why electronic waste can harm the environment. My family still uses our old radio and desk lamp, but my damaged mobile phone cannot be repaired. I will take that phone to the school collection point tomorrow morning.  Text 5. Students were asked to improve a sunny corner of the playground. A few suggested colourful flowers, and others wanted vegetables for the school kitchen. After speaking to the gardener, we chose a young tree because it could provide shade for future students. "
+        },
+        {
+          "key": "listening2",
+          "label": "Listening 2",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "The project started in October.",
+              "answer": true
+            },
+            {
+              "stem": "Only experienced adults were allowed to join a repair café.",
+              "answer": false
+            },
+            {
+              "stem": "The group received help from a local engineer.",
+              "answer": true
+            },
+            {
+              "stem": "The group solved its difficulty by buying expensive new equipment.",
+              "answer": false
+            },
+            {
+              "stem": "Nearly sixty people became interested in the project.",
+              "answer": true
+            }
+          ],
+          "script": "Interviewer: Welcome to Young Voices. Today we are speaking with Hind about a repair café. When did the project begin?\nHind: It began in October, when people in a community centre asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before.\nInterviewer: What was the first thing you did?\nHind: We started with testing electrical equipment. We were supported by a local engineer, who showed us how to work safely and plan our time.\nInterviewer: Was everything easy?\nHind: Not really. At one point, some parts could not be repaired. We listened to different suggestions before agreeing on collecting spare parts for reuse. That helped us continue.\nInterviewer: What was the most encouraging result?\nHind: I was happy when families saved money and materials. Nearly sixty people became interested in what we were doing.\nInterviewer: What is your advice to other students?\nHind: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment.\nInterviewer: Thank you for sharing your experience.\nHind: Thank you. I hope more schools try similar projects next term.",
+          "type": "true-false",
+          "instructions": "Listen to the dialogue twice. Decide whether each statement is True or False.",
+          "audio": "assets/audio/g8-a-listening2.mp3",
+          "transcript": "Listening two. Listen to the dialogue carefully. Interviewer: Welcome to Young Voices. Today we are speaking with Hind about a repair café. When did the project begin? Hind: It began in October, when people in a community centre asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before. Interviewer: What was the first thing you did? Hind: We started with testing electrical equipment. We were supported by a local engineer, who showed us how to work safely and plan our time. Interviewer: Was everything easy? Hind: Not really. At one point, some parts could not be repaired. We listened to different suggestions before agreeing on collecting spare parts for reuse. That helped us continue. Interviewer: What was the most encouraging result? Hind: I was happy when families saved money and materials. Nearly sixty people became interested in what we were doing. Interviewer: What is your advice to other students? Hind: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment. Interviewer: Thank you for sharing your experience. Hind: Thank you. I hope more schools try similar projects next term."
+        },
+        {
+          "key": "grammarvocabulary",
+          "label": "Grammar & Vocabulary — Our planet",
+          "marks": 10,
+          "type": "cloze",
+          "passage": "Our eco-team (1) ____ a small exhibition about plastic waste last week. The science teacher said we (2) ____ protect the sea. She told us (3) ____ throw rubbish into rivers. My friend asked (4) ____ plastic could harm turtles. We showed visitors some useful (5) ____ materials and explained how to (6) ____ bottles safely. During the talk, one pupil asked if a (7) ____ could cause water shortages. Another group displayed photographs of a recent (8) ____. Everyone agreed that families (9) ____ switch off unnecessary lights and use (10) ____ energy whenever possible.",
+          "items": [
+            {
+              "options": [
+                "organised",
+                "organise",
+                "organising"
+              ],
+              "answer": 0
+            },
+            {
+              "options": [
+                "can to",
+                "must to",
+                "must"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "not",
+                "not to",
+                "do not"
+              ],
+              "answer": 1
+            },
+            {
+              "options": [
+                "why",
+                "because",
+                "which"
+              ],
+              "answer": 0
+            },
+            {
+              "options": [
+                "recycling",
+                "recycles",
+                "recycled"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "reusing",
+                "reuse",
+                "reused"
+              ],
+              "answer": 1
+            },
+            {
+              "options": [
+                "drought",
+                "flooding",
+                "tornadoes"
+              ],
+              "answer": 0
+            },
+            {
+              "options": [
+                "dry",
+                "heat",
+                "flood"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "musts",
+                "should",
+                "should to"
+              ],
+              "answer": 1
+            },
+            {
+              "options": [
+                "renewable",
+                "renewing",
+                "renew"
+              ],
+              "answer": 0
+            }
+          ],
+          "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
+        },
+        {
+          "key": "reading1",
+          "label": "Reading 1",
+          "marks": 5,
+          "type": "matching",
+          "texts": [
+            "The first meeting for a repair café took place in a community centre. Hind came early to discover what volunteers would do.",
+            "Our group brought simple supplies for testing electrical equipment. Nobody wanted to waste materials or spend money before planning the activity properly.",
+            "A local visitor asked why students had chosen a repair café. We explained how the idea could make a difference to people nearby.",
+            "During the second week, a problem appeared: some parts could not be repaired. Some students felt worried that the whole activity might have to stop.",
+            "On the final day, Hind presented the group’s results. Teachers and families listened carefully and asked what the students had learned."
+          ],
+          "continuations": [
+            "The visitor understood our explanation and asked how other classes could take part. We invited them to the next meeting.",
+            "Everyone was pleased to hear that families saved money and materials. The group promised to share its ideas with other schools soon.",
+            "The organisers explained the main goal and gave everyone a small job. Hind decided to help again the following week.",
+            "The local aquarium displayed rare fish from deep water, and visitors learnt about underwater photography during the guided tour.",
+            "We checked everything first and worked in teams. This saved time and made the practical work much easier for the younger students.",
+            "After listening to suggestions, the team tried collecting spare parts for reuse. The new approach allowed the students to continue with their plans."
+          ],
+          "answers": [
+            2,
+            4,
+            0,
+            5,
+            1
+          ],
+          "instructions": "Read the five numbered excerpts and six endings A–F. Match each excerpt with its correct ending. One ending is extra."
+        },
+        {
+          "key": "reading2",
+          "label": "Reading 2",
+          "marks": 5,
+          "type": "short-answer",
+          "passage": "When Hind heard about a repair café in a community centre, the idea sounded interesting but difficult. The project had started in October, and nobody was sure how many students would join. Hind decided to attend the first meeting anyway. At the beginning, the organisers explained why the project mattered to local people. They asked everyone to listen carefully before suggesting changes.\n\nThe group began by testing electrical equipment. Hind was worried about making mistakes, but a local engineer explained that learning through practice was an important part of the experience. After a few days, everyone had a specific responsibility. Some students recorded information, while others spoke to families who visited the area.\n\nA difficulty appeared when some parts could not be repaired. The group could have stopped, but the students discussed several possibilities and chose a practical solution: collecting spare parts for reuse. They tested the idea, checked the results and made small changes where necessary. Instead of blaming anyone for the delay, they shared the work fairly.\n\nAt the end of the month, families saved money and materials. Hind felt confident and realised that a useful project does not need to be perfect on the first day. The students presented their work to the school council and suggested that another class could continue it next term. Hind kept a notebook with photographs and reflections, hoping it would encourage younger pupils to try something similar.",
+          "items": [
+            {
+              "stem": "When did the project begin?",
+              "answers": [
+                "October"
+              ]
+            },
+            {
+              "stem": "Who helped the students learn through practice?",
+              "answers": [
+                "a local engineer"
+              ]
+            },
+            {
+              "stem": "What did the students do when a difficulty appeared?",
+              "answers": [
+                "discussed several possibilities",
+                "discussed solutions",
+                "chose a practical solution"
+              ]
+            },
+            {
+              "stem": "How did the students share the work?",
+              "answers": [
+                "fairly",
+                "they shared the work fairly"
+              ]
+            },
+            {
+              "stem": "Who listened to their final presentation?",
+              "answers": [
+                "the school council",
+                "school council"
+              ]
+            }
+          ],
+          "instructions": "Read the narrative. Answer questions 1–5 in SHORT answers."
+        },
+        {
+          "key": "writing1",
+          "label": "Writing 1",
+          "marks": 5,
+          "type": "writing",
+          "kind": "chart",
+          "chart": {
+            "title": "How 100 students help protect our planet",
+            "labels": [
+              "Save water",
+              "Reduce plastic",
+              "Plant trees",
+              "Walk to school"
+            ],
+            "values": [
+              38,
+              29,
+              21,
+              12
+            ],
+            "unit": "students (out of 100)"
+          },
+          "topic": "Study the bar chart carefully. Write a survey report comparing the four categories, using figures and an overall conclusion. Write at least 80 words."
+        },
+        {
+          "key": "writing2",
+          "label": "Writing 2",
+          "marks": 5,
+          "type": "writing",
+          "kind": "email",
+          "topic": "Write an email suggesting three practical actions your school can take to protect the environment. Explain why each action matters. Write at least 80 words."
+        }
+      ],
+      "status": "original-practice-review"
+    },
+    {
+      "id": "g8-b",
+      "grade": 8,
+      "model": "B",
+      "title": "A School Science Podcast",
+      "theme": "a science podcast",
+      "durationMinutes": 120,
+      "totalMarks": 40,
+      "semester": 1,
+      "sections": [
+        {
+          "key": "listening1",
+          "label": "Listening 1",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "What was the missing item?",
+              "options": [
+                "wallet",
+                "key",
+                "bag"
+              ],
+              "answer": 0,
+              "script": "During our visit to the science centre, one of the students realised that something had disappeared from his pocket. His bag and keys were still with him. A staff member later found his wallet beside an information screen and returned it to him.",
+              "images": [
+                "wallet",
+                "key-round",
+                "backpack"
+              ]
+            },
+            {
+              "stem": "Where is the interview taking place?",
+              "options": [
+                "classroom",
+                "garden",
+                "library"
+              ],
+              "answer": 2,
+              "script": "Our team has permission to interview a visiting writer this afternoon. We first considered the classroom, but another lesson will be held there. The garden might be noisy because of construction work nearby. We have booked a quiet corner of the library instead.",
+              "images": [
+                "school",
+                "flower-2",
+                "book-open"
+              ]
+            },
+            {
+              "stem": "What is the planned activity?",
+              "options": [
+                "reading",
+                "cycling",
+                "painting"
+              ],
+              "answer": 1,
+              "script": "The student council wants an activity that encourages families to spend time outdoors. We thought about reading together and decorating classroom walls, but those could take place inside. We decided on a cycling event along the safe path near the sports centre.",
+              "images": [
+                "book",
+                "bike",
+                "palette"
+              ]
+            },
+            {
+              "stem": "Which item should the visitor photograph?",
+              "options": [
+                "bridge",
+                "castle",
+                "building"
+              ],
+              "answer": 1,
+              "script": "For a local-history project, I must take a photograph of a place built many years ago. The modern office building is unsuitable, and the nearby bridge was completed only recently. The guide recommended the old castle, which has an interesting history and stone towers.",
+              "images": [
+                "construction",
+                "castle",
+                "building-2"
+              ]
+            },
+            {
+              "stem": "What did the club order?",
+              "options": [
+                "book",
+                "tablet",
+                "camera"
+              ],
+              "answer": 2,
+              "script": "The student media club received money for one useful item. We already have a set of books and a shared tablet for writing articles. The members voted to purchase a camera so we could take clearer photographs during school events and exhibitions.",
+              "images": [
+                "book-open",
+                "tablet",
+                "camera"
+              ]
+            }
+          ],
+          "type": "picture-choice",
+          "instructions": "You will hear five short texts twice. For each text choose the correct picture A, B or C.",
+          "audio": "assets/audio/g8-b-listening1.mp3",
+          "transcript": "Listening one. You will hear five short texts. Text 1. During our visit to the science centre, one of the students realised that something had disappeared from his pocket. His bag and keys were still with him. A staff member later found his wallet beside an information screen and returned it to him.  Text 2. Our team has permission to interview a visiting writer this afternoon. We first considered the classroom, but another lesson will be held there. The garden might be noisy because of construction work nearby. We have booked a quiet corner of the library instead.  Text 3. The student council wants an activity that encourages families to spend time outdoors. We thought about reading together and decorating classroom walls, but those could take place inside. We decided on a cycling event along the safe path near the sports centre.  Text 4. For a local-history project, I must take a photograph of a place built many years ago. The modern office building is unsuitable, and the nearby bridge was completed only recently. The guide recommended the old castle, which has an interesting history and stone towers.  Text 5. The student media club received money for one useful item. We already have a set of books and a shared tablet for writing articles. The members voted to purchase a camera so we could take clearer photographs during school events and exhibitions. "
+        },
+        {
+          "key": "listening2",
+          "label": "Listening 2",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "The project started in September.",
+              "answer": true
+            },
+            {
+              "stem": "Only experienced adults were allowed to join a science podcast.",
+              "answer": false
+            },
+            {
+              "stem": "The group received help from his English teacher.",
+              "answer": true
+            },
+            {
+              "stem": "The group solved its difficulty by buying expensive new equipment.",
+              "answer": false
+            },
+            {
+              "stem": "Nearly eighty people became interested in the project.",
+              "answer": true
+            }
+          ],
+          "script": "Interviewer: Welcome to Young Voices. Today we are speaking with Faris about a science podcast. When did the project begin?\nFaris: It began in September, when people in a school media room asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before.\nInterviewer: What was the first thing you did?\nFaris: We started with interviewing a weather researcher. We were supported by his English teacher, who showed us how to work safely and plan our time.\nInterviewer: Was everything easy?\nFaris: Not really. At one point, background noise spoiled the recording. We listened to different suggestions before agreeing on moving to a quieter room. That helped us continue.\nInterviewer: What was the most encouraging result?\nFaris: I was happy when the episode reached many listeners. Nearly eighty people became interested in what we were doing.\nInterviewer: What is your advice to other students?\nFaris: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment.\nInterviewer: Thank you for sharing your experience.\nFaris: Thank you. I hope more schools try similar projects next term.",
+          "type": "true-false",
+          "instructions": "Listen to the dialogue twice. Decide whether each statement is True or False.",
+          "audio": "assets/audio/g8-b-listening2.mp3",
+          "transcript": "Listening two. Listen to the dialogue carefully. Interviewer: Welcome to Young Voices. Today we are speaking with Faris about a science podcast. When did the project begin? Faris: It began in September, when people in a school media room asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before. Interviewer: What was the first thing you did? Faris: We started with interviewing a weather researcher. We were supported by his English teacher, who showed us how to work safely and plan our time. Interviewer: Was everything easy? Faris: Not really. At one point, background noise spoiled the recording. We listened to different suggestions before agreeing on moving to a quieter room. That helped us continue. Interviewer: What was the most encouraging result? Faris: I was happy when the episode reached many listeners. Nearly eighty people became interested in what we were doing. Interviewer: What is your advice to other students? Faris: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment. Interviewer: Thank you for sharing your experience. Faris: Thank you. I hope more schools try similar projects next term."
+        },
+        {
+          "key": "grammarvocabulary",
+          "label": "Grammar & Vocabulary — Adventure sports",
+          "marks": 10,
+          "type": "cloze",
+          "passage": "Before our trip, the guide (1) ____ checked the forecast. We (2) ____ packed our helmets before the bus arrived. My brother wanted to try (3) ____ near the cliffs, but we chose a route through the (4) ____. The instructor reminded us to protect (5) ____. One student hurt (6) ____ while cycling. By lunchtime, we (7) ____ reached the campsite. At the beach, the (8) ____ was unusually high. We enjoyed the scenery, (9) ____ followed safety instructions. Everyone was proud because we had completed the journey (10) ____.",
+          "items": [
+            {
+              "options": [
+                "had",
+                "has",
+                "have"
+              ],
+              "answer": 0
+            },
+            {
+              "options": [
+                "have",
+                "are",
+                "had"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "rocks climbing",
+                "rock climbing",
+                "rock climb"
+              ],
+              "answer": 1
+            },
+            {
+              "options": [
+                "valley",
+                "receipt",
+                "customer"
+              ],
+              "answer": 0
+            },
+            {
+              "options": [
+                "themselves",
+                "yourself",
+                "ourselves"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "ourselves",
+                "himself",
+                "herself"
+              ],
+              "answer": 1
+            },
+            {
+              "options": [
+                "had",
+                "have",
+                "were"
+              ],
+              "answer": 0
+            },
+            {
+              "options": [
+                "receipt",
+                "bank",
+                "tide"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "because of",
+                "but",
+                "so that"
+              ],
+              "answer": 1
+            },
+            {
+              "options": [
+                "ourselves",
+                "us",
+                "our"
+              ],
+              "answer": 0
+            }
+          ],
+          "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
+        },
+        {
+          "key": "reading1",
+          "label": "Reading 1",
+          "marks": 5,
+          "type": "matching",
+          "texts": [
+            "The first meeting for a science podcast took place in a school media room. Faris came early to discover what volunteers would do.",
+            "Our group brought simple supplies for interviewing a weather researcher. Nobody wanted to waste materials or spend money before planning the activity properly.",
+            "A local visitor asked why students had chosen a science podcast. We explained how the idea could make a difference to people nearby.",
+            "During the second week, a problem appeared: background noise spoiled the recording. Some students felt worried that the whole activity might have to stop.",
+            "On the final day, Faris presented the group’s results. Teachers and families listened carefully and asked what the students had learned."
+          ],
+          "continuations": [
+            "After listening to suggestions, the team tried moving to a quieter room. The new approach allowed the students to continue with their plans.",
+            "We checked everything first and worked in teams. This saved time and made the practical work much easier for the younger students.",
+            "The local aquarium displayed rare fish from deep water, and visitors learnt about underwater photography during the guided tour.",
+            "The organisers explained the main goal and gave everyone a small job. Faris decided to help again the following week.",
+            "Everyone was pleased to hear that the episode reached many listeners. The group promised to share its ideas with other schools soon.",
+            "The visitor understood our explanation and asked how other classes could take part. We invited them to the next meeting."
+          ],
+          "answers": [
+            3,
+            1,
+            5,
+            0,
+            4
+          ],
+          "instructions": "Read the five numbered excerpts and six endings A–F. Match each excerpt with its correct ending. One ending is extra."
+        },
+        {
+          "key": "reading2",
+          "label": "Reading 2",
+          "marks": 5,
+          "type": "short-answer",
+          "passage": "When Faris heard about a science podcast in a school media room, the idea sounded interesting but difficult. The project had started in September, and nobody was sure how many students would join. Faris decided to attend the first meeting anyway. At the beginning, the organisers explained why the project mattered to local people. They asked everyone to listen carefully before suggesting changes.\n\nThe group began by interviewing a weather researcher. Faris was worried about making mistakes, but his English teacher explained that learning through practice was an important part of the experience. After a few days, everyone had a specific responsibility. Some students recorded information, while others spoke to families who visited the area.\n\nA difficulty appeared when background noise spoiled the recording. The group could have stopped, but the students discussed several possibilities and chose a practical solution: moving to a quieter room. They tested the idea, checked the results and made small changes where necessary. Instead of blaming anyone for the delay, they shared the work fairly.\n\nAt the end of the month, the episode reached many listeners. Faris felt excited and realised that a useful project does not need to be perfect on the first day. The students presented their work to the school council and suggested that another class could continue it next term. Faris kept a notebook with photographs and reflections, hoping it would encourage younger pupils to try something similar.",
+          "items": [
+            {
+              "stem": "When did the project begin?",
+              "answers": [
+                "September"
+              ]
+            },
+            {
+              "stem": "Who helped the students learn through practice?",
+              "answers": [
+                "his English teacher"
+              ]
+            },
+            {
+              "stem": "What did the students do when a difficulty appeared?",
+              "answers": [
+                "discussed several possibilities",
+                "discussed solutions",
+                "chose a practical solution"
+              ]
+            },
+            {
+              "stem": "How did the students share the work?",
+              "answers": [
+                "fairly",
+                "they shared the work fairly"
+              ]
+            },
+            {
+              "stem": "Who listened to their final presentation?",
+              "answers": [
+                "the school council",
+                "school council"
+              ]
+            }
+          ],
+          "instructions": "Read the narrative. Answer questions 1–5 in SHORT answers."
+        },
+        {
+          "key": "writing1",
+          "label": "Writing 1",
+          "marks": 5,
+          "type": "writing",
+          "kind": "chart",
+          "chart": {
+            "title": "Adventure sports 100 students want to try",
+            "labels": [
+              "Kayaking",
+              "Climbing",
+              "Cycling",
+              "Hiking"
+            ],
+            "values": [
+              34,
+              27,
+              24,
+              15
+            ],
+            "unit": "students (out of 100)"
+          },
+          "topic": "Study the bar chart carefully. Write a survey report comparing the four categories, using figures and an overall conclusion. Write at least 80 words."
+        },
+        {
+          "key": "writing2",
+          "label": "Writing 2",
+          "marks": 5,
+          "type": "writing",
+          "kind": "email",
+          "topic": "Write an email to a friend about an adventure sport you would like to try. Explain the equipment, safety rules and reasons for your choice. Write at least 80 words."
+        }
+      ],
+      "status": "original-practice-review"
+    },
+    {
+      "id": "g8-c",
+      "grade": 8,
+      "model": "C",
+      "title": "The Coastal Wildlife Project",
+      "theme": "a wildlife monitoring project",
+      "durationMinutes": 120,
+      "totalMarks": 40,
+      "semester": 1,
+      "sections": [
+        {
+          "key": "listening1",
+          "label": "Listening 1",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "Which activity will visitors try?",
+              "options": [
+                "swimming",
+                "running",
+                "football"
+              ],
+              "answer": 1,
+              "script": "At the school sports festival, the swimming pool will be closed for repairs and the football field is being prepared for next week. Visitors can still join a short running challenge around the track. Volunteers will give water to everyone who finishes.",
+              "images": [
+                "waves",
+                "person-standing",
+                "football"
+              ]
+            },
+            {
+              "stem": "Which food is suitable for the demonstration?",
+              "options": [
+                "cake",
+                "soup",
+                "salad"
+              ],
+              "answer": 2,
+              "script": "Our nutrition group needs to prepare a meal without using electricity or a cooker. Baking a cake is not possible, and making soup would require heating water. We will prepare a fresh salad using vegetables from the school garden and explain its nutritional value.",
+              "images": [
+                "cake-slice",
+                "soup",
+                "salad"
+              ]
+            },
+            {
+              "stem": "Which place will the researcher observe?",
+              "options": [
+                "park",
+                "hospital",
+                "museum"
+              ],
+              "answer": 0,
+              "script": "A university researcher wants to understand how people use open spaces. The museum has invited her to give a talk, and the hospital offered an interview. However, she will spend the morning observing visitors in the public park and recording their activities.",
+              "images": [
+                "trees",
+                "hospital",
+                "landmark"
+              ]
+            },
+            {
+              "stem": "Which weather problem delayed the trip?",
+              "options": [
+                "rain",
+                "wind",
+                "sun"
+              ],
+              "answer": 1,
+              "script": "Our environmental trip was postponed yesterday. It was sunny and there was no rain, so everyone was surprised. The organiser explained that strong wind made the boat journey unsafe. We will try again next weekend when the weather becomes calmer.",
+              "images": [
+                "cloud-rain",
+                "wind",
+                "sun"
+              ]
+            },
+            {
+              "stem": "Which instrument will be used?",
+              "options": [
+                "piano",
+                "drum",
+                "guitar"
+              ],
+              "answer": 1,
+              "script": "The school concert will include several performers. The piano has already been booked for the opening song, and a group will play guitars later. For the final performance, our class needs a steady beat, so our music teacher has chosen a drum.",
+              "images": [
+                "piano",
+                "drum",
+                "guitar"
+              ]
+            }
+          ],
+          "type": "picture-choice",
+          "instructions": "You will hear five short texts twice. For each text choose the correct picture A, B or C.",
+          "audio": "assets/audio/g8-c-listening1.mp3",
+          "transcript": "Listening one. You will hear five short texts. Text 1. At the school sports festival, the swimming pool will be closed for repairs and the football field is being prepared for next week. Visitors can still join a short running challenge around the track. Volunteers will give water to everyone who finishes.  Text 2. Our nutrition group needs to prepare a meal without using electricity or a cooker. Baking a cake is not possible, and making soup would require heating water. We will prepare a fresh salad using vegetables from the school garden and explain its nutritional value.  Text 3. A university researcher wants to understand how people use open spaces. The museum has invited her to give a talk, and the hospital offered an interview. However, she will spend the morning observing visitors in the public park and recording their activities.  Text 4. Our environmental trip was postponed yesterday. It was sunny and there was no rain, so everyone was surprised. The organiser explained that strong wind made the boat journey unsafe. We will try again next weekend when the weather becomes calmer.  Text 5. The school concert will include several performers. The piano has already been booked for the opening song, and a group will play guitars later. For the final performance, our class needs a steady beat, so our music teacher has chosen a drum. "
+        },
+        {
+          "key": "listening2",
+          "label": "Listening 2",
+          "marks": 5,
+          "items": [
+            {
+              "stem": "The project started in November.",
+              "answer": true
+            },
+            {
+              "stem": "Only experienced adults were allowed to join a wildlife monitoring project.",
+              "answer": false
+            },
+            {
+              "stem": "The group received help from a wildlife ranger.",
+              "answer": true
+            },
+            {
+              "stem": "The group solved its difficulty by buying expensive new equipment.",
+              "answer": false
+            },
+            {
+              "stem": "Nearly ninety people became interested in the project.",
+              "answer": true
+            }
+          ],
+          "script": "Interviewer: Welcome to Young Voices. Today we are speaking with Dana about a wildlife monitoring project. When did the project begin?\nDana: It began in November, when people in a coastal nature reserve asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before.\nInterviewer: What was the first thing you did?\nDana: We started with counting birds without disturbing them. We were supported by a wildlife ranger, who showed us how to work safely and plan our time.\nInterviewer: Was everything easy?\nDana: Not really. At one point, visitors sometimes left plastic waste. We listened to different suggestions before agreeing on placing recycling bins near paths. That helped us continue.\nInterviewer: What was the most encouraging result?\nDana: I was happy when the beach became cleaner. Nearly ninety people became interested in what we were doing.\nInterviewer: What is your advice to other students?\nDana: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment.\nInterviewer: Thank you for sharing your experience.\nDana: Thank you. I hope more schools try similar projects next term.",
+          "type": "true-false",
+          "instructions": "Listen to the dialogue twice. Decide whether each statement is True or False.",
+          "audio": "assets/audio/g8-c-listening2.mp3",
+          "transcript": "Listening two. Listen to the dialogue carefully. Interviewer: Welcome to Young Voices. Today we are speaking with Dana about a wildlife monitoring project. When did the project begin? Dana: It began in November, when people in a coastal nature reserve asked for something useful. Our group wanted everyone to take part, including students who had never volunteered before. Interviewer: What was the first thing you did? Dana: We started with counting birds without disturbing them. We were supported by a wildlife ranger, who showed us how to work safely and plan our time. Interviewer: Was everything easy? Dana: Not really. At one point, visitors sometimes left plastic waste. We listened to different suggestions before agreeing on placing recycling bins near paths. That helped us continue. Interviewer: What was the most encouraging result? Dana: I was happy when the beach became cleaner. Nearly ninety people became interested in what we were doing. Interviewer: What is your advice to other students? Dana: Start with a small idea. Ask questions, share responsibility and check whether your work is helping others. You do not need expensive equipment. Interviewer: Thank you for sharing your experience. Dana: Thank you. I hope more schools try similar projects next term."
+        },
+        {
+          "key": "grammarvocabulary",
+          "label": "Grammar & Vocabulary — Spend or save?",
+          "marks": 10,
+          "type": "cloze",
+          "passage": "Our class created a shopping guide. If a product is broken, a (1) ____ may ask for a (2) ____. We should keep the (3) ____ after buying something. If people (4) ____ money carefully, they will avoid unnecessary spending. My friend buys (5) ____ books. He says that if he (6) ____ more pocket money, he would donate some. Another student asked what she (7) ____ if she won a prize. A bank (8) ____ helps people pay online. When shops offer discounts, prices usually (9) ____. If I found a wallet, I (10) ____ return it.",
+          "items": [
+            {
+              "options": [
+                "customer",
+                "tornado",
+                "cyclone"
+              ],
+              "answer": 0
+            },
+            {
+              "options": [
+                "valley",
+                "sunrise",
+                "refund"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "receive",
+                "receipt",
+                "recite"
+              ],
+              "answer": 1
+            },
+            {
+              "options": [
+                "manage",
+                "manages",
+                "managed"
+              ],
+              "answer": 0
+            },
+            {
+              "options": [
+                "secondly",
+                "second",
+                "second-hand"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "will have",
+                "had",
+                "has"
+              ],
+              "answer": 1
+            },
+            {
+              "options": [
+                "would do",
+                "will do",
+                "does"
+              ],
+              "answer": 0
+            },
+            {
+              "options": [
+                "receipt",
+                "cliff",
+                "card"
+              ],
+              "answer": 2
+            },
+            {
+              "options": [
+                "fell",
+                "fall",
+                "falls"
+              ],
+              "answer": 1
+            },
+            {
+              "options": [
+                "would",
+                "will",
+                "am"
+              ],
+              "answer": 0
+            }
+          ],
+          "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
+        },
+        {
+          "key": "reading1",
+          "label": "Reading 1",
+          "marks": 5,
+          "type": "matching",
+          "texts": [
+            "The first meeting for a wildlife monitoring project took place in a coastal nature reserve. Dana came early to discover what volunteers would do.",
+            "Our group brought simple supplies for counting birds without disturbing them. Nobody wanted to waste materials or spend money before planning the activity properly.",
+            "A local visitor asked why students had chosen a wildlife monitoring project. We explained how the idea could make a difference to people nearby.",
+            "During the second week, a problem appeared: visitors sometimes left plastic waste. Some students felt worried that the whole activity might have to stop.",
+            "On the final day, Dana presented the group’s results. Teachers and families listened carefully and asked what the students had learned."
+          ],
+          "continuations": [
+            "The visitor understood our explanation and asked how other classes could take part. We invited them to the next meeting.",
+            "Everyone was pleased to hear that the beach became cleaner. The group promised to share its ideas with other schools soon.",
+            "The organisers explained the main goal and gave everyone a small job. Dana decided to help again the following week.",
+            "The local aquarium displayed rare fish from deep water, and visitors learnt about underwater photography during the guided tour.",
+            "We checked everything first and worked in teams. This saved time and made the practical work much easier for the younger students.",
+            "After listening to suggestions, the team tried placing recycling bins near paths. The new approach allowed the students to continue with their plans."
+          ],
+          "answers": [
+            2,
+            4,
+            0,
+            5,
+            1
+          ],
+          "instructions": "Read the five numbered excerpts and six endings A–F. Match each excerpt with its correct ending. One ending is extra."
+        },
+        {
+          "key": "reading2",
+          "label": "Reading 2",
+          "marks": 5,
+          "type": "short-answer",
+          "passage": "When Dana heard about a wildlife monitoring project in a coastal nature reserve, the idea sounded interesting but difficult. The project had started in November, and nobody was sure how many students would join. Dana decided to attend the first meeting anyway. At the beginning, the organisers explained why the project mattered to local people. They asked everyone to listen carefully before suggesting changes.\n\nThe group began by counting birds without disturbing them. Dana was worried about making mistakes, but a wildlife ranger explained that learning through practice was an important part of the experience. After a few days, everyone had a specific responsibility. Some students recorded information, while others spoke to families who visited the area.\n\nA difficulty appeared when visitors sometimes left plastic waste. The group could have stopped, but the students discussed several possibilities and chose a practical solution: placing recycling bins near paths. They tested the idea, checked the results and made small changes where necessary. Instead of blaming anyone for the delay, they shared the work fairly.\n\nAt the end of the month, the beach became cleaner. Dana felt hopeful and realised that a useful project does not need to be perfect on the first day. The students presented their work to the school council and suggested that another class could continue it next term. Dana kept a notebook with photographs and reflections, hoping it would encourage younger pupils to try something similar.",
+          "items": [
+            {
+              "stem": "When did the project begin?",
+              "answers": [
+                "November"
+              ]
+            },
+            {
+              "stem": "Who helped the students learn through practice?",
+              "answers": [
+                "a wildlife ranger"
+              ]
+            },
+            {
+              "stem": "What did the students do when a difficulty appeared?",
+              "answers": [
+                "discussed several possibilities",
+                "discussed solutions",
+                "chose a practical solution"
+              ]
+            },
+            {
+              "stem": "How did the students share the work?",
+              "answers": [
+                "fairly",
+                "they shared the work fairly"
+              ]
+            },
+            {
+              "stem": "Who listened to their final presentation?",
+              "answers": [
+                "the school council",
+                "school council"
+              ]
+            }
+          ],
+          "instructions": "Read the narrative. Answer questions 1–5 in SHORT answers."
+        },
+        {
+          "key": "writing1",
+          "label": "Writing 1",
+          "marks": 5,
+          "type": "writing",
+          "kind": "chart",
+          "chart": {
+            "title": "How 100 pupils use their weekly pocket money",
+            "labels": [
+              "Save",
+              "Food",
+              "Transport",
+              "Entertainment"
+            ],
+            "values": [
+              41,
+              28,
+              17,
+              14
+            ],
+            "unit": "pupils (out of 100)"
+          },
+          "topic": "Study the bar chart carefully. Write a survey report comparing the four categories, using figures and an overall conclusion. Write at least 80 words."
+        },
+        {
+          "key": "writing2",
+          "label": "Writing 2",
+          "marks": 5,
+          "type": "writing",
+          "kind": "email",
+          "topic": "Write an email to a friend giving advice about managing pocket money. Describe how to compare prices, avoid unnecessary spending and save for a goal. Write at least 80 words."
+        }
+      ],
+      "status": "original-practice-review"
+    }
+  ]
+}
