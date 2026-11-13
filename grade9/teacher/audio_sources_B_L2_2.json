@@ -1,0 +1,65 @@
+[
+  {
+    "model": "B",
+    "section": "listening2",
+    "segment": "q3",
+    "role": "interviewer",
+    "text": "How often do you work on the project?",
+    "file": "audio-natural/g9/b/listening2/q3.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=c52c6628377b42479f70f02a53d110ee.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening2",
+    "segment": "a3",
+    "role": "guest",
+    "text": "Our group meets on Thursday afternoons. That gives everyone time to finish lessons before we compare notes and plan our next visit.",
+    "file": "audio-natural/g9/b/listening2/a3.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=17a8d040b19045dbaf5b92331f237575.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening2",
+    "segment": "q4",
+    "role": "interviewer",
+    "text": "What important lesson have you learned?",
+    "file": "audio-natural/g9/b/listening2/q4.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=1d04506e11f74d6da1ba1e7edcb4b635.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening2",
+    "segment": "a4",
+    "role": "guest",
+    "text": "We must check the source of every photograph before publishing it. A date or place written on the back can help us avoid mistakes.",
+    "file": "audio-natural/g9/b/listening2/a4.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=4bda53ce45734b56a4b924c7eb096e64.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening2",
+    "segment": "q5",
+    "role": "interviewer",
+    "text": "And what happens next?",
+    "file": "audio-natural/g9/b/listening2/q5.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=7ab2fceb0e424369bbfcc69a6d4b22e6.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening2",
+    "segment": "a5",
+    "role": "guest",
+    "text": "We hope to add recorded memories from older residents. Their stories will explain why these places matter to the community.",
+    "file": "audio-natural/g9/b/listening2/a5.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=1aafca2ec06a44f3ae4539448ba45c65.mp3"
+  },
+  {
+    "model": "B",
+    "section": "listening2",
+    "segment": "q6-end",
+    "role": "interviewer",
+    "text": "Thank you, Salim. Your project shows how history can connect generations.",
+    "file": "audio-natural/g9/b/listening2/q6-end.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=720c069bf06d482995e53f4025c55af6.mp3"
+  }
+]
