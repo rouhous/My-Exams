@@ -14,5 +14,21 @@
   "natural_audio_other_models_pending": true,
   "unit_alignment_fully_approved": false,
   "audio_image_technical_inventory_verified": true,
-  "caveat": "Offline files require initial online download and browser storage permission. Higher grades and natural voices for other models remain under review."
+  "caveat": "Offline files require initial online download and browser storage permission. Higher grades and natural voices for other models remain under review.",
+  "natural_grade9_mp3_segments_A": 21,
+  "natural_grade9_complete_mp3_tracks_B_C_G": 6,
+  "natural_grade9_models_with_recordings": [
+    "A",
+    "B",
+    "C",
+    "G"
+  ],
+  "natural_grade9_mixed_models_reuse": [
+    "D",
+    "E",
+    "F"
+  ],
+  "grade9_all_models_listening_covered": true,
+  "grade9_curriculum_unit_alignment_approved": false,
+  "grade9_offline_device_test_passed": false
 }
