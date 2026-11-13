@@ -1,0 +1,998 @@
+{
+  "version": "2026-11-13",
+  "purpose": "Teacher editorial mapping of unit practice and comprehensive exam tasks; no claim of Ministry approval",
+  "unitTitles": {
+    "5": [
+      "Talent Show",
+      "Then and Now",
+      "Let's Explore!",
+      "Off to the Shops"
+    ],
+    "6": [
+      "Free-time Fun",
+      "Technology",
+      "Places"
+    ],
+    "7": [
+      "Entertainment",
+      "Awesome Animals",
+      "Travel"
+    ],
+    "8": [
+      "Our Planet",
+      "Adventure Sports",
+      "Spend or Save?"
+    ]
+  },
+  "models": [
+    {
+      "grade": 5,
+      "model": "A",
+      "kind": "unit_practice",
+      "targetUnit": "Talent Show",
+      "taskCount": 8,
+      "marks": 40,
+      "skills": [
+        {
+          "id": "g5-a-listening-1",
+          "skill": "listening",
+          "part": 1,
+          "unitTheme": "Talent Show",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-a-listening-2",
+          "skill": "listening",
+          "part": 2,
+          "unitTheme": "Talent Show",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-a-vocabulary",
+          "skill": "vocabulary",
+          "part": 1,
+          "unitTheme": "Talent show",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-a-grammar",
+          "skill": "grammar",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-a-reading-1",
+          "skill": "reading",
+          "part": 1,
+          "unitTheme": "Talent show",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-a-reading-2",
+          "skill": "reading",
+          "part": 2,
+          "unitTheme": "Talent show",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-a-writing-1",
+          "skill": "writing",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-a-writing-2",
+          "skill": "writing",
+          "part": 2,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "model": "B",
+      "kind": "unit_practice",
+      "targetUnit": "Then and Now",
+      "taskCount": 8,
+      "marks": 40,
+      "skills": [
+        {
+          "id": "g5-b-listening-1",
+          "skill": "listening",
+          "part": 1,
+          "unitTheme": "Then and Now",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-b-listening-2",
+          "skill": "listening",
+          "part": 2,
+          "unitTheme": "Then and Now",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-b-vocabulary",
+          "skill": "vocabulary",
+          "part": 1,
+          "unitTheme": "Then and now",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-b-grammar",
+          "skill": "grammar",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-b-reading-1",
+          "skill": "reading",
+          "part": 1,
+          "unitTheme": "Then and now",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-b-reading-2",
+          "skill": "reading",
+          "part": 2,
+          "unitTheme": "Then and now",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-b-writing-1",
+          "skill": "writing",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-b-writing-2",
+          "skill": "writing",
+          "part": 2,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "model": "C",
+      "kind": "unit_practice",
+      "targetUnit": "Let's Explore!",
+      "taskCount": 8,
+      "marks": 40,
+      "skills": [
+        {
+          "id": "g5-c-listening-1",
+          "skill": "listening",
+          "part": 1,
+          "unitTheme": "Let's Explore! — Space",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-c-listening-2",
+          "skill": "listening",
+          "part": 2,
+          "unitTheme": "Let's Explore! — Space",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-c-vocabulary",
+          "skill": "vocabulary",
+          "part": 1,
+          "unitTheme": "Let’s explore!",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-c-grammar",
+          "skill": "grammar",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-c-reading-1",
+          "skill": "reading",
+          "part": 1,
+          "unitTheme": "Let’s explore!",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-c-reading-2",
+          "skill": "reading",
+          "part": 2,
+          "unitTheme": "Let’s explore!",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-c-writing-1",
+          "skill": "writing",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-c-writing-2",
+          "skill": "writing",
+          "part": 2,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "model": "D",
+      "kind": "unit_practice",
+      "targetUnit": "Off to the Shops",
+      "taskCount": 8,
+      "marks": 40,
+      "skills": [
+        {
+          "id": "g5-d-listening-1",
+          "skill": "listening",
+          "part": 1,
+          "unitTheme": "Off to the Shops",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-d-listening-2",
+          "skill": "listening",
+          "part": 2,
+          "unitTheme": "Off to the Shops",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-d-vocabulary",
+          "skill": "vocabulary",
+          "part": 1,
+          "unitTheme": "Off to the shops",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-d-grammar",
+          "skill": "grammar",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-d-reading-1",
+          "skill": "reading",
+          "part": 1,
+          "unitTheme": "Off to the shops",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-d-reading-2",
+          "skill": "reading",
+          "part": 2,
+          "unitTheme": "Off to the shops",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-d-writing-1",
+          "skill": "writing",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g5-d-writing-2",
+          "skill": "writing",
+          "part": 2,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "model": "A",
+      "kind": "unit_practice",
+      "targetUnit": "Free-time Fun",
+      "taskCount": 8,
+      "marks": 40,
+      "skills": [
+        {
+          "id": "g6-a-listening-1",
+          "skill": "listening",
+          "part": 1,
+          "unitTheme": "Free-time Fun",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-a-listening-2",
+          "skill": "listening",
+          "part": 2,
+          "unitTheme": "Free-time Fun",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-a-vocabulary",
+          "skill": "vocabulary",
+          "part": 1,
+          "unitTheme": "Free-time fun",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-a-grammar",
+          "skill": "grammar",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-a-reading-1",
+          "skill": "reading",
+          "part": 1,
+          "unitTheme": "Free-time fun",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-a-reading-2",
+          "skill": "reading",
+          "part": 2,
+          "unitTheme": "Free-time fun",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-a-writing-1",
+          "skill": "writing",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-a-writing-2",
+          "skill": "writing",
+          "part": 2,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "model": "B",
+      "kind": "unit_practice",
+      "targetUnit": "Technology",
+      "taskCount": 8,
+      "marks": 40,
+      "skills": [
+        {
+          "id": "g6-b-listening-1",
+          "skill": "listening",
+          "part": 1,
+          "unitTheme": "Technology",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-b-listening-2",
+          "skill": "listening",
+          "part": 2,
+          "unitTheme": "Technology",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-b-vocabulary",
+          "skill": "vocabulary",
+          "part": 1,
+          "unitTheme": "Technology",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-b-grammar",
+          "skill": "grammar",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-b-reading-1",
+          "skill": "reading",
+          "part": 1,
+          "unitTheme": "Technology",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-b-reading-2",
+          "skill": "reading",
+          "part": 2,
+          "unitTheme": "Technology",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-b-writing-1",
+          "skill": "writing",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-b-writing-2",
+          "skill": "writing",
+          "part": 2,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "model": "C",
+      "kind": "unit_practice",
+      "targetUnit": "Places",
+      "taskCount": 8,
+      "marks": 40,
+      "skills": [
+        {
+          "id": "g6-c-listening-1",
+          "skill": "listening",
+          "part": 1,
+          "unitTheme": "Places",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-c-listening-2",
+          "skill": "listening",
+          "part": 2,
+          "unitTheme": "Places",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-c-vocabulary",
+          "skill": "vocabulary",
+          "part": 1,
+          "unitTheme": "Places",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-c-grammar",
+          "skill": "grammar",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-c-reading-1",
+          "skill": "reading",
+          "part": 1,
+          "unitTheme": "Places",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-c-reading-2",
+          "skill": "reading",
+          "part": 2,
+          "unitTheme": "Places",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-c-writing-1",
+          "skill": "writing",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-c-writing-2",
+          "skill": "writing",
+          "part": 2,
+          "unitTheme": null,
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "model": "D",
+      "kind": "comprehensive_mixed",
+      "targetUnit": "Semester 1 — all units",
+      "taskCount": 8,
+      "marks": 40,
+      "skills": [
+        {
+          "id": "g6-d-listening-1",
+          "skill": "listening",
+          "part": 1,
+          "unitTheme": "Comprehensive semester review",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-d-listening-2",
+          "skill": "listening",
+          "part": 2,
+          "unitTheme": "Comprehensive semester review",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-d-vocabulary",
+          "skill": "vocabulary",
+          "part": 1,
+          "unitTheme": "Comprehensive semester review",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-d-grammar",
+          "skill": "grammar",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-d-reading-1",
+          "skill": "reading",
+          "part": 1,
+          "unitTheme": "Comprehensive semester review",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-d-reading-2",
+          "skill": "reading",
+          "part": 2,
+          "unitTheme": "Comprehensive semester review",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-d-writing-1",
+          "skill": "writing",
+          "part": 1,
+          "unitTheme": null,
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "id": "g6-d-writing-2",
+          "skill": "writing",
+          "part": 2,
+          "unitTheme": null,
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "model": "A",
+      "kind": "unit_practice",
+      "targetUnit": "Entertainment",
+      "taskCount": 7,
+      "marks": 40,
+      "skills": [
+        {
+          "skill": "listening1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "listening2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "grammarvocabulary",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "model": "B",
+      "kind": "unit_practice",
+      "targetUnit": "Awesome Animals",
+      "taskCount": 7,
+      "marks": 40,
+      "skills": [
+        {
+          "skill": "listening1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "listening2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "grammarvocabulary",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "model": "C",
+      "kind": "unit_practice",
+      "targetUnit": "Travel",
+      "taskCount": 7,
+      "marks": 40,
+      "skills": [
+        {
+          "skill": "listening1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "listening2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "grammarvocabulary",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "model": "D",
+      "kind": "comprehensive_mixed",
+      "targetUnit": "Semester 1 — all units",
+      "taskCount": 7,
+      "marks": 40,
+      "skills": [
+        {
+          "skill": "listening1",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "listening2",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "grammarvocabulary",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading1",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading2",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing1",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing2",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "model": "A",
+      "kind": "unit_practice",
+      "targetUnit": "Our Planet",
+      "taskCount": 7,
+      "marks": 40,
+      "skills": [
+        {
+          "skill": "listening1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "listening2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "grammarvocabulary",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "model": "B",
+      "kind": "unit_practice",
+      "targetUnit": "Adventure Sports",
+      "taskCount": 7,
+      "marks": 40,
+      "skills": [
+        {
+          "skill": "listening1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "listening2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "grammarvocabulary",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "model": "C",
+      "kind": "unit_practice",
+      "targetUnit": "Spend or Save?",
+      "taskCount": 7,
+      "marks": 40,
+      "skills": [
+        {
+          "skill": "listening1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "listening2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "grammarvocabulary",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing1",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing2",
+          "editorialStatus": "thematic_alignment_reviewed",
+          "officialPageLevelCertified": false
+        }
+      ]
+    },
+    {
+      "grade": 8,
+      "model": "D",
+      "kind": "comprehensive_mixed",
+      "targetUnit": "Semester 1 — all units",
+      "taskCount": 7,
+      "marks": 40,
+      "skills": [
+        {
+          "skill": "listening1",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "listening2",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "grammarvocabulary",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading1",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "reading2",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing1",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        },
+        {
+          "skill": "writing2",
+          "editorialStatus": "mixed_reuses_original_tasks",
+          "officialPageLevelCertified": false
+        }
+      ]
+    }
+  ],
+  "fixedMixedModelsPerGrade": [
+    "E",
+    "F"
+  ],
+  "randomMixedGeneration": true,
+  "notes": [
+    "Grades 5–6 source listening scripts and Grades 5–6 vocabulary/reading were rewritten to better follow the unit themes.",
+    "Grade 5 Unit 3 Let's Explore! requires space vocabulary: planet, telescope, rocket, Moon, spacesuit, satellite.",
+    "Grade 6 D and Grades 7–8 D intentionally combine source unit sections.",
+    "E/F and randomized exams reuse complete source sections with audio, pictures, scripts and answer keys.",
+    "Final official textbook page-by-page language target certification and an actual phone offline test remain outstanding."
+  ],
+  "authoritativeReferences": {
+    "grade5Unit3": "https://ict.moe.gov.om/book/PDF/5/cls5_cb_5A/files/basic-html/page9.html",
+    "grade7": "https://ict.moe.gov.om/book/PDF/7/cls7_sb_7A/files/downloads/cls7_sb_7A.pdf",
+    "grade8": "https://ict.moe.gov.om/book/PDF/8/cls8_cb_8A/files/basic-html/page11.html"
+  }
+}
