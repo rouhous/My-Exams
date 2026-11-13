@@ -297,13 +297,13 @@
         "type": "writing",
         "kind": "factfile",
         "facts": [
-          "Name: Al Noor Reading Bus",
-          "Purpose: bring books to distant villages",
-          "Visits: every Thursday",
-          "Volunteers: six students",
-          "Books: 450",
-          "Special feature: audio stories",
-          "Benefit: easier access to reading"
+          "Event: Young Performers Festival",
+          "Venue: Sohar Community Theatre",
+          "Date: Thursday, 3 December",
+          "Performances: drama, music and traditional dance",
+          "Participants: 18 student performers",
+          "Special guest: local storyteller",
+          "Purpose: celebrate young people's talents"
         ],
         "topic": "Write an informative paragraph using ALL seven points in the fact file. Write at least 80 words."
       },
@@ -313,7 +313,7 @@
         "marks": 5,
         "type": "writing",
         "kind": "email",
-        "topic": "Tell a friend about a new school reading project and explain how students can help. Write at least 80 words."
+        "topic": "Write an email to a cousin about a theatre performance or concert you attended. Say what you saw, which performers impressed you and why. Write at least 80 words."
       }
     ],
     "status": "original-practice-review"
@@ -616,13 +616,13 @@
         "type": "writing",
         "kind": "factfile",
         "facts": [
-          "Place: Wadi Garden",
-          "Location: near the school",
-          "Started: September",
-          "Plants: tomatoes and mint",
-          "Water: collected rainwater",
-          "Team: 12 volunteers",
-          "Benefit: fresh vegetables for families"
+          "Centre: Wadi Wildlife Rescue",
+          "Location: near a protected nature reserve",
+          "Animals cared for: birds and small mammals",
+          "Main aim: return healthy animals to the wild",
+          "Opening: Fridays, 9 a.m. to noon",
+          "Volunteers: 14 students and adults",
+          "Visitor rule: do not feed the animals"
         ],
         "topic": "Write an informative paragraph using ALL seven points in the fact file. Write at least 80 words."
       },
@@ -632,7 +632,7 @@
         "marks": 5,
         "type": "writing",
         "kind": "email",
-        "topic": "Write to a cousin about a school gardening project and say what you learned. Write at least 80 words."
+        "topic": "Write an email telling a friend about a wildlife centre you visited. Explain how the animals are protected and what visitors should do to help. Write at least 80 words."
       }
     ],
     "status": "original-practice-review"
@@ -935,13 +935,13 @@
         "type": "writing",
         "kind": "factfile",
         "facts": [
-          "Museum: Living Memories Centre",
-          "Location: old town",
-          "Opened: 2021",
-          "Main display: traditional boats",
-          "Guide: local volunteers",
-          "Workshop: Wednesday afternoon",
-          "Purpose: protect family stories"
+          "Trip: Mountain Heritage Visit",
+          "Destination: Nizwa",
+          "Departure: school gate at 7:30 a.m.",
+          "Transport: coach",
+          "Important items: water, hat and notebook",
+          "Planned stops: fort and traditional market",
+          "Return: 5 p.m."
         ],
         "topic": "Write an informative paragraph using ALL seven points in the fact file. Write at least 80 words."
       },
@@ -951,7 +951,7 @@
         "marks": 5,
         "type": "writing",
         "kind": "email",
-        "topic": "Email a friend about a museum you visited and recommend one activity there. Write at least 80 words."
+        "topic": "Write an email to a friend about a journey to an Omani town. Explain how you travelled, what you planned and what surprised you. Write at least 80 words."
       }
     ],
     "status": "original-practice-review"
@@ -1262,7 +1262,7 @@
           "Partners: traffic officers",
           "Goal: safer routes for pupils"
         ],
-        "topic": "Write an informative paragraph using ALL seven points in the fact file. Write at least 80 words."
+        "topic": "Write a factual report using the seven points in the information card. Write at least 80 words."
       },
       {
         "key": "writing2",
@@ -1270,7 +1270,7 @@
         "marks": 5,
         "type": "writing",
         "kind": "email",
-        "topic": "Email a friend about a road-safety campaign at your school and explain its message. Write at least 80 words."
+        "topic": "Write an email to your friend describing a school activity that involved entertainment, animals or travel. Explain what you learned and why it was memorable. Write at least 80 words."
       }
     ],
     "status": "original-practice-review"
@@ -1573,22 +1573,22 @@
         "type": "writing",
         "kind": "chart",
         "chart": {
-          "title": "Preferred ways to reuse old items",
+          "title": "How 100 students help protect our planet",
           "labels": [
-            "Repair",
-            "Donate",
-            "Recycle",
-            "Sell"
+            "Save water",
+            "Reduce plastic",
+            "Plant trees",
+            "Walk to school"
           ],
           "values": [
-            36,
-            28,
-            22,
-            14
+            38,
+            29,
+            21,
+            12
           ],
           "unit": "students (out of 100)"
         },
-        "topic": "Study the bar chart. Write a survey report describing the data, including comparisons and an overall statement. Write at least 80 words."
+        "topic": "Study the bar chart carefully. Write a survey report comparing the four categories, using figures and an overall conclusion. Write at least 80 words."
       },
       {
         "key": "writing2",
@@ -1596,7 +1596,7 @@
         "marks": 5,
         "type": "writing",
         "kind": "email",
-        "topic": "Write an email to a friend about a repair event and explain what people can learn. Write at least 80 words."
+        "topic": "Write an email suggesting three practical actions your school can take to protect the environment. Explain why each action matters. Write at least 80 words."
       }
     ],
     "status": "original-practice-review"
@@ -1899,22 +1899,22 @@
         "type": "writing",
         "kind": "chart",
         "chart": {
-          "title": "Ways students learn science",
+          "title": "Adventure sports 100 students want to try",
           "labels": [
-            "Videos",
-            "Experiments",
-            "Books",
-            "Talks"
+            "Kayaking",
+            "Climbing",
+            "Cycling",
+            "Hiking"
           ],
           "values": [
-            32,
-            30,
-            23,
+            34,
+            27,
+            24,
             15
           ],
           "unit": "students (out of 100)"
         },
-        "topic": "Study the bar chart. Write a survey report describing the data, including comparisons and an overall statement. Write at least 80 words."
+        "topic": "Study the bar chart carefully. Write a survey report comparing the four categories, using figures and an overall conclusion. Write at least 80 words."
       },
       {
         "key": "writing2",
@@ -1922,7 +1922,7 @@
         "marks": 5,
         "type": "writing",
         "kind": "email",
-        "topic": "Email your friend about a student podcast you enjoyed and suggest a future topic. Write at least 80 words."
+        "topic": "Write an email to a friend about an adventure sport you would like to try. Explain the equipment, safety rules and reasons for your choice. Write at least 80 words."
       }
     ],
     "status": "original-practice-review"
@@ -2225,22 +2225,22 @@
         "type": "writing",
         "kind": "chart",
         "chart": {
-          "title": "Wildlife club activities",
+          "title": "How 100 pupils use their weekly pocket money",
           "labels": [
-            "Birdwatching",
-            "Beach clean-up",
-            "Photography",
-            "Research"
+            "Save",
+            "Food",
+            "Transport",
+            "Entertainment"
           ],
           "values": [
-            40,
-            27,
-            20,
-            13
+            41,
+            28,
+            17,
+            14
           ],
-          "unit": "students (out of 100)"
+          "unit": "pupils (out of 100)"
         },
-        "topic": "Study the bar chart. Write a survey report describing the data, including comparisons and an overall statement. Write at least 80 words."
+        "topic": "Study the bar chart carefully. Write a survey report comparing the four categories, using figures and an overall conclusion. Write at least 80 words."
       },
       {
         "key": "writing2",
@@ -2248,7 +2248,7 @@
         "marks": 5,
         "type": "writing",
         "kind": "email",
-        "topic": "Tell your friend about a nature project and explain why visitors should protect animals. Write at least 80 words."
+        "topic": "Write an email to a friend giving advice about managing pocket money. Describe how to compare prices, avoid unnecessary spending and save for a goal. Write at least 80 words."
       }
     ],
     "status": "original-practice-review"
@@ -2551,22 +2551,22 @@
         "type": "writing",
         "kind": "chart",
         "chart": {
-          "title": "Visitor information choices",
+          "title": "How 100 students prepare for a school outing",
           "labels": [
-            "Digital maps",
-            "Guided tours",
-            "Signs",
-            "Leaflets"
+            "Save money",
+            "Plan route",
+            "Check weather",
+            "Pack equipment"
           ],
           "values": [
-            38,
+            35,
             26,
-            21,
-            15
+            22,
+            17
           ],
           "unit": "students (out of 100)"
         },
-        "topic": "Study the bar chart. Write a survey report describing the data, including comparisons and an overall statement. Write at least 80 words."
+        "topic": "Study the bar chart carefully. Write a survey report comparing the four categories, using figures and an overall conclusion. Write at least 80 words."
       },
       {
         "key": "writing2",
@@ -2574,7 +2574,7 @@
         "marks": 5,
         "type": "writing",
         "kind": "email",
-        "topic": "Write an email suggesting how technology can help visitors explore your town. Write at least 80 words."
+        "topic": "Write an email about planning a class outing. Explain where you would go, what it might cost, the equipment needed and how to travel safely. Write at least 80 words."
       }
     ],
     "status": "original-practice-review"
