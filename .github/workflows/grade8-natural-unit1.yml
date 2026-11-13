@@ -1,0 +1,39 @@
+name: Grade 8 Unit 1 natural listening
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/grade8-natural-unit1.yml'
+permissions:
+  contents: write
+jobs:
+  synth:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m pip install edge-tts mutagen
+      - name: Generate natural voices, spoken instructions, pauses, repetition
+        run: python scripts/generate_grade8_unit1_audio.py
+      - name: Publish validated MP3 to My Exams
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add grades7-8/assets/audio/natural-g8-a-listening1.mp3 grades7-8/assets/audio/natural-g8-a-listening2.mp3
+          git diff --cached --quiet && exit 0
+          git commit -m 'Save Grade 8 Our Planet natural listening offline MP3'
+          for n in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 3
+          done
+          exit 1
