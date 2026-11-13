@@ -16,40 +16,40 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "robot",
-        "kite",
-        "bus",
-        "plant",
-        "book",
-        "camera"
+        "piano",
+        "football",
+        "cake",
+        "drum",
+        "camera",
+        "paintbrush"
       ],
       "passages": [
-        "A: What is your project today? B: A small robot can move coloured blocks. A: Why is it interesting? B: It helps our team show how simple machines work. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: We use a camera to take clear pictures. A: Why is it interesting? B: The visitors can see our progress in a photo album. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: I made a short book about my idea. A: Why is it interesting? B: I will read the first page to younger children. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: Our group grew a young plant in a jar. A: Why is it interesting? B: We check its water every morning. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: The visitors arrive by school bus. A: Why is it interesting? B: The driver stops beside the main hall. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display."
+        "A: What will you do at the talent show? B: I am playing the drum with two friends. A: Can you play the piano too? B: Yes, but I enjoy keeping the rhythm more. We practise after school every Wednesday.",
+        "A: What is your special talent, Sara? B: I love painting pictures of animals. A: Will you sing at the show? B: No, I will display my best painting. I have used a large paintbrush and many bright colours.",
+        "A: What are you preparing for tomorrow? B: I am baking a cake for the talent show. A: That sounds difficult. B: My older sister is helping me, but I am doing most of the work myself. I hope everyone likes it.",
+        "A: Which instrument will your cousin play? B: She will play the piano at the beginning. A: Is she nervous? B: A little, because she has never performed for so many people. She practises every evening and feels more confident now.",
+        "A: Are you taking part in the performance? B: Not on stage. I am using my camera to take photographs. A: Why? B: The school wants pictures of the singers and dancers for a special display in the hall."
       ],
       "questions": [
         {
-          "stem": "Text 1",
-          "answer": 0
-        },
-        {
-          "stem": "Text 2",
-          "answer": 5
-        },
-        {
-          "stem": "Text 3",
-          "answer": 4
-        },
-        {
-          "stem": "Text 4",
+          "stem": "Dialogue 1",
           "answer": 3
         },
         {
-          "stem": "Text 5",
+          "stem": "Dialogue 2",
+          "answer": 5
+        },
+        {
+          "stem": "Dialogue 3",
           "answer": 2
+        },
+        {
+          "stem": "Dialogue 4",
+          "answer": 0
+        },
+        {
+          "stem": "Dialogue 5",
+          "answer": 4
         }
       ],
       "audio": "audio/g5-a-listening-1.mp3"
@@ -63,50 +63,50 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Noura about the invention fair. Where will the event happen? Noura: It will take place at the school hall on Monday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Noura: My friend Rashid is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Noura: They will see a display about a robot. We made it in class. Interviewer: What should visitors bring? Noura: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Noura: You are welcome.",
+      "passage": "Interviewer: Welcome to School Radio, Noura. When will your school talent show take place?\nNoura: On Thursday afternoon, in the school hall. The doors will open at two thirty, and the first performance will begin at three.\nInterviewer: Who is organising the show?\nNoura: Our English teacher and the student council are working together. I am helping to welcome the visitors.\nInterviewer: What will pupils perform?\nNoura: There will be singing, dancing and a short comedy. One group is playing traditional music, too.\nInterviewer: Is there anything new this year?\nNoura: Yes. We have invited younger pupils to display paintings and handmade models. The visitors can talk to the artists after the performances.\nInterviewer: What should parents bring?\nNoura: They do not need tickets, but we have asked them to bring reusable water bottles because we want to reduce waste.\nInterviewer: What are you most excited about?\nNoura: Seeing my shy friend Huda perform. She has worked very hard and is much more confident now.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
+          "stem": "When will the first performance begin?",
           "options": [
-            "the school hall",
-            "at the library",
-            "at the airport"
-          ],
-          "answer": 0
-        },
-        {
-          "stem": "When is the event planned?",
-          "options": [
-            "Friday",
-            "Sunday",
-            "Monday"
-          ],
-          "answer": 2
-        },
-        {
-          "stem": "Who is helping organise the event?",
-          "options": [
-            "the bus driver",
-            "Rashid",
-            "a doctor"
+            "2:30",
+            "3:00",
+            "4:00"
           ],
           "answer": 1
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "Where is the talent show?",
           "options": [
-            "a robot",
-            "a football",
-            "a bicycle"
+            "school hall",
+            "sports centre",
+            "public library"
           ],
           "answer": 0
         },
         {
-          "stem": "What should people bring?",
+          "stem": "Who is working with the student council?",
           "options": [
-            "a large suitcase",
-            "a new computer",
-            "a reusable water bottle"
+            "a doctor",
+            "a sports coach",
+            "the English teacher"
+          ],
+          "answer": 2
+        },
+        {
+          "stem": "What new activity can visitors enjoy?",
+          "options": [
+            "a football match",
+            "paintings and models",
+            "a boat trip"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "What should parents bring?",
+          "options": [
+            "tickets",
+            "cameras only",
+            "reusable water bottles"
           ],
           "answer": 2
         }
@@ -123,24 +123,24 @@
       "marks": 5,
       "format": "picture-word-match",
       "pictureOptions": [
-        "robot",
-        "camera",
-        "book",
-        "plant",
-        "bus"
+        "piano",
+        "drum",
+        "cake",
+        "paintbrush",
+        "football"
       ],
       "wordOptions": [
-        "camera",
-        "robot",
-        "kite",
-        "bus",
-        "book",
-        "plant"
+        "drum",
+        "football",
+        "piano",
+        "cake",
+        "paintbrush",
+        "computer"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 1
+          "answer": 2
         },
         {
           "stem": "Picture 2",
@@ -148,15 +148,15 @@
         },
         {
           "stem": "Picture 3",
-          "answer": 4
+          "answer": 3
         },
         {
           "stem": "Picture 4",
-          "answer": 5
+          "answer": 4
         },
         {
           "stem": "Picture 5",
-          "answer": 3
+          "answer": 1
         }
       ]
     },
@@ -222,32 +222,32 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "bus",
-        "book",
-        "plant",
+        "football",
+        "piano",
         "camera",
-        "robot"
+        "cake",
+        "paintbrush"
       ],
       "questions": [
         {
-          "stem": "At the school fair, a small robot carried a box across the table while students explained how it worked.",
-          "answer": 4
+          "stem": "Yousuf practises kicking a football every day and will show his skills in the playground.",
+          "answer": 0
         },
         {
-          "stem": "A photographer used a camera to record the children explaining their creative inventions to visitors.",
-          "answer": 3
-        },
-        {
-          "stem": "The class placed a young plant near the window and checked the leaves every morning.",
+          "stem": "Aisha plays a beautiful song on the piano while her friends listen quietly.",
           "answer": 1
         },
         {
-          "stem": "A pupil opened her book and read a story about an inventor who helped neighbours.",
+          "stem": "The school photographer holds a camera and takes pictures of the young performers.",
           "answer": 2
         },
         {
-          "stem": "A blue bus stopped outside the school hall and the visiting families stepped out carefully.",
-          "answer": 0
+          "stem": "Laila and her brother bake a cake to share with the visitors after the show.",
+          "answer": 3
+        },
+        {
+          "stem": "The young artist uses a paintbrush to create a colourful picture for the exhibition.",
+          "answer": 4
         }
       ]
     },
@@ -260,26 +260,26 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "Last Monday, Noura and Rashid went to the school hall for a invention fair. They arrived early and helped their teacher set up a small table. Noura brought a robot, while Rashid carried a notebook and some water. At first, they could not find the box with their materials. They looked beside the door and behind the chairs, but the box was not there. Then a younger student pointed towards a shelf near the window. The box was waiting there. Everyone felt happy, and the activity began on time. In the afternoon, the two friends cleaned their table and thanked the visitors. They decided to prepare their things the evening before their next event.",
+      "passage": "Last Thursday, the pupils at Al Amal School held a talent show. Salma wanted to take part, but she was nervous because she had never performed on stage before. Her best friend Huda was more confident and offered to practise with her every afternoon.\n\nSalma enjoyed singing, but she was also good at telling funny stories. She decided to tell a short story about a very forgetful magician. On the morning of the show, she could not find her notes. Huda helped her look in her bag, under the desk and beside the piano. Finally, they found the notes inside a large storybook.\n\nWhen Salma walked onto the stage, she took a deep breath and smiled at the audience. Her story made everyone laugh. After the performance, her teacher said that Salma was one of the funniest pupils in the show. Salma felt proud and thanked Huda for her kindness.",
       "questions": [
         {
-          "stem": "Noura and Rashid arrived late.",
-          "answer": "False"
-        },
-        {
-          "stem": "They could not find the box with the materials.",
+          "stem": "The school show took place on a Thursday.",
           "answer": "True"
         },
         {
-          "stem": "A younger student showed them where the box was.",
-          "answer": "True"
-        },
-        {
-          "stem": "The event was cancelled because the box was missing.",
+          "stem": "Salma had performed on stage many times before.",
           "answer": "False"
         },
         {
-          "stem": "The friends decided to prepare earlier next time.",
+          "stem": "Huda helped Salma practise for the show.",
+          "answer": "True"
+        },
+        {
+          "stem": "The notes were found under the desk.",
+          "answer": "False"
+        },
+        {
+          "stem": "Salma told a funny story that made the audience laugh.",
           "answer": "True"
         }
       ]
@@ -319,40 +319,40 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "boat",
-        "fish",
+        "computer",
+        "camera",
+        "bus",
         "clock",
-        "plant",
-        "backpack",
-        "camera"
+        "book",
+        "lantern"
       ],
       "passages": [
-        "A: What is your project today? B: I am drawing a fish from a picture. A: Why is it interesting? B: I want to learn how it moves under water. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: The small boat stays near the shore. A: Why is it interesting? B: We can watch the sea safely from the beach. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: I brought a camera for the trip. A: Why is it interesting? B: I will take pictures of the coast. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: My backpack has water and a notebook. A: Why is it interesting? B: I keep everything together on the trip. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: We saw a plant growing by the sand. A: Why is it interesting? B: Our guide told us not to damage it. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display."
+        "A: Did your grandmother use a computer at school? B: No, she wrote letters by hand. A: What do students use now? B: We use computers to search for information and send messages. She thinks learning is very different today.",
+        "A: How did your father take pictures as a child? B: He used a camera with film. A: Could he see the pictures immediately? B: No, he had to wait for them to be printed. Now we can look at photographs on our phones.",
+        "A: What did you find in the museum? B: An old clock that belonged to my grandfather. A: Does it still work? B: Yes, but it is very noisy. Our family uses digital clocks now, while he still enjoys winding the old one.",
+        "A: Why did people need a lantern in the past? B: Some homes did not have electric lights. A: Do you still use one? B: Only when we go camping. My grandfather says he used to carry one outside after sunset.",
+        "A: How did your aunt travel to school when she was young? B: She usually walked because there was no school bus. A: What about your cousin today? B: He takes a bus every morning. It stops beside his house at seven."
       ],
       "questions": [
         {
-          "stem": "Text 1",
-          "answer": 1
-        },
-        {
-          "stem": "Text 2",
+          "stem": "Dialogue 1",
           "answer": 0
         },
         {
-          "stem": "Text 3",
+          "stem": "Dialogue 2",
+          "answer": 1
+        },
+        {
+          "stem": "Dialogue 3",
+          "answer": 3
+        },
+        {
+          "stem": "Dialogue 4",
           "answer": 5
         },
         {
-          "stem": "Text 4",
-          "answer": 4
-        },
-        {
-          "stem": "Text 5",
-          "answer": 3
+          "stem": "Dialogue 5",
+          "answer": 2
         }
       ],
       "audio": "audio/g5-b-listening-1.mp3"
@@ -366,50 +366,50 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Maha about the coastal science day. Where will the event happen? Maha: It will take place at the beach on Tuesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Maha: My friend Salim is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Maha: They will see a display about a fish. We made it in class. Interviewer: What should visitors bring? Maha: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Maha: You are welcome.",
+      "passage": "Interviewer: Welcome to History at Home. Today we are talking to Grandmother Fatma. How did you keep in touch with friends when you were young?\nFatma: I wrote letters, and sometimes we used the telephone at the post office. We did not have mobile phones.\nInterviewer: Did you have a computer at school?\nFatma: No. Our teachers wrote on the board, and we used notebooks. We learned a lot, but finding information took longer.\nInterviewer: What did you do for entertainment?\nFatma: We visited neighbours, told stories and played outside. My brothers made toys from simple materials.\nInterviewer: Could you take photographs easily?\nFatma: My father had an old camera, but we saved film for special days. We could not see a photograph straight away.\nInterviewer: What is better today?\nFatma: We can communicate quickly and learn about the world. However, I think families should still spend time speaking together.\nInterviewer: Thank you for sharing your memories.\nFatma: It was a pleasure.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
+          "stem": "How did Fatma often contact friends?",
           "options": [
-            "at the library",
-            "at the airport",
-            "the beach"
-          ],
-          "answer": 2
-        },
-        {
-          "stem": "When is the event planned?",
-          "options": [
-            "Sunday",
-            "Tuesday",
-            "Friday"
-          ],
-          "answer": 1
-        },
-        {
-          "stem": "Who is helping organise the event?",
-          "options": [
-            "Salim",
-            "a doctor",
-            "the bus driver"
+            "by letters",
+            "by video calls",
+            "by email"
           ],
           "answer": 0
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "Where did she sometimes use a telephone?",
           "options": [
-            "a football",
-            "a bicycle",
-            "a fish"
+            "at school",
+            "at the post office",
+            "at the airport"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "What did her teachers use in class?",
+          "options": [
+            "tablets",
+            "laptops",
+            "the board"
           ],
           "answer": 2
         },
         {
-          "stem": "What should people bring?",
+          "stem": "What did her brothers make?",
           "options": [
-            "a new computer",
-            "a reusable water bottle",
-            "a large suitcase"
+            "simple toys",
+            "mobile phones",
+            "computer games"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "What does Fatma still think is important?",
+          "options": [
+            "buying new cameras",
+            "speaking together",
+            "travelling by plane"
           ],
           "answer": 1
         }
@@ -426,19 +426,19 @@
       "marks": 5,
       "format": "picture-word-match",
       "pictureOptions": [
-        "fish",
-        "boat",
+        "computer",
         "camera",
-        "backpack",
-        "plant"
+        "bus",
+        "clock",
+        "book"
       ],
       "wordOptions": [
-        "backpack",
         "camera",
-        "fish",
         "clock",
-        "plant",
-        "boat"
+        "computer",
+        "book",
+        "bus",
+        "football"
       ],
       "questions": [
         {
@@ -447,19 +447,19 @@
         },
         {
           "stem": "Picture 2",
-          "answer": 5
-        },
-        {
-          "stem": "Picture 3",
-          "answer": 1
-        },
-        {
-          "stem": "Picture 4",
           "answer": 0
         },
         {
-          "stem": "Picture 5",
+          "stem": "Picture 3",
           "answer": 4
+        },
+        {
+          "stem": "Picture 4",
+          "answer": 1
+        },
+        {
+          "stem": "Picture 5",
+          "answer": 3
         }
       ]
     },
@@ -525,32 +525,32 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "backpack",
-        "fish",
-        "boat",
-        "plant",
-        "camera"
+        "computer",
+        "camera",
+        "bus",
+        "clock",
+        "book"
       ],
       "questions": [
         {
-          "stem": "A fisherman showed the students a picture of a fish that lives in the shallow water.",
-          "answer": 1
-        },
-        {
-          "stem": "The children stood on the beach and watched the gentle waves reach the soft sand.",
-          "answer": 2
-        },
-        {
-          "stem": "Maha put her camera in a safe bag before she walked beside the sea. They enjoyed the experience.",
-          "answer": 4
-        },
-        {
-          "stem": "A sailor tied a small boat to the wooden post so it would not move away.",
+          "stem": "Today, Salim types his school report on a computer instead of writing every page by hand.",
           "answer": 0
         },
         {
-          "stem": "Salim carried his backpack with water, paper and pencils for the science trip. They enjoyed the experience.",
+          "stem": "His grandfather used a camera with film and waited several days to see the photographs.",
+          "answer": 1
+        },
+        {
+          "stem": "In the past, children walked to the school, but now many travel on a yellow bus.",
+          "answer": 2
+        },
+        {
+          "stem": "The family keeps an old clock from their grandmother in the living room.",
           "answer": 3
+        },
+        {
+          "stem": "Aisha reads a book about life in Oman fifty years ago.",
+          "answer": 4
         }
       ]
     },
@@ -563,26 +563,26 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "Last Tuesday, Maha and Salim went to the beach for a coastal science day. They arrived early and helped their teacher set up a small table. Maha brought a fish, while Salim carried a notebook and some water. At first, they could not find the box with their materials. They looked beside the door and behind the chairs, but the box was not there. Then a younger student pointed towards a shelf near the window. The box was waiting there. Everyone felt happy, and the activity began on time. In the afternoon, the two friends cleaned their table and thanked the visitors. They decided to prepare their things the evening before their next event.",
+      "passage": "When Yaqoub visited his grandfather's house, he found an old box full of letters and photographs. His grandfather explained that people had kept important memories in boxes before computers became common. One letter was from a friend who had moved to another town many years earlier.\n\nYaqoub was surprised that the letter had taken several days to arrive. He could send a message on his tablet in only a few seconds. His grandfather smiled and said that writing a letter could still be special because people chose their words carefully.\n\nLater, they looked at a photograph of Yaqoub's father as a child. He was standing beside a small bicycle. At that time, he could not ride it without help, but now he often cycled with his children. Yaqoub decided to scan the photograph so the family could keep another copy. His grandfather was pleased that old memories could be shared using new technology.",
       "questions": [
         {
-          "stem": "Maha and Salim arrived late.",
-          "answer": "False"
-        },
-        {
-          "stem": "They could not find the box with the materials.",
+          "stem": "Yaqoub found letters and photographs in an old box.",
           "answer": "True"
         },
         {
-          "stem": "A younger student showed them where the box was.",
-          "answer": "True"
-        },
-        {
-          "stem": "The event was cancelled because the box was missing.",
+          "stem": "The old letter arrived in just a few seconds.",
           "answer": "False"
         },
         {
-          "stem": "The friends decided to prepare earlier next time.",
+          "stem": "Yaqoub can send messages quickly using a tablet.",
+          "answer": "True"
+        },
+        {
+          "stem": "His father could ride his bicycle without help as a child.",
+          "answer": "False"
+        },
+        {
+          "stem": "Yaqoub wanted to make a digital copy of the photograph.",
           "answer": "True"
         }
       ]
@@ -622,40 +622,40 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "cup",
-        "gift",
-        "apple",
-        "bicycle",
-        "book",
-        "cake"
+        "rocket",
+        "moon",
+        "planet",
+        "telescope",
+        "star",
+        "spacesuit"
       ],
       "passages": [
-        "A: What is your project today? B: This apple came from a local farm. A: Why is it interesting? B: We can buy fresh fruit at this stall. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: I made a gift for my grandmother. A: Why is it interesting? B: It is wrapped carefully in recycled paper. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: The shopkeeper gave me a reusable cup. A: Why is it interesting? B: I will use it again tomorrow. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: Our family baked a small cake. A: Why is it interesting? B: We brought it to share with neighbours. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: There is a book stall next to the bakery. A: Why is it interesting? B: I want a story about adventure. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display."
+        "A: What are you using in the science club? B: A telescope. A: Can you see the Moon through it? B: Yes, but first we are practising how to point it safely. Tomorrow evening, we will look for bright planets in the sky.",
+        "A: What did the class make for the exhibition? B: A model rocket. A: Does it really fly? B: Not into space, but it can move a short distance using air pressure. We will show the younger pupils how it works on Thursday.",
+        "A: Why is that astronaut wearing such a large suit? B: It is a spacesuit. A: Can people breathe without one in space? B: No. The suit helps astronauts stay safe and provides air when they work outside a space station.",
+        "A: What did you learn about last night? B: The Moon. A: Does it make its own light? B: No, it reflects light from the Sun. I will draw its different shapes in my notebook and show the pictures to my teacher tomorrow.",
+        "A: Which object is your group studying? B: A planet that has rings. A: Is it Earth? B: No, we are learning about Saturn. We will compare it with the other planets and explain why the rings are interesting."
       ],
       "questions": [
         {
-          "stem": "Text 1",
-          "answer": 2
+          "stem": "Dialogue 1",
+          "answer": 3
         },
         {
-          "stem": "Text 2",
-          "answer": 1
-        },
-        {
-          "stem": "Text 3",
+          "stem": "Dialogue 2",
           "answer": 0
         },
         {
-          "stem": "Text 4",
+          "stem": "Dialogue 3",
           "answer": 5
         },
         {
-          "stem": "Text 5",
-          "answer": 4
+          "stem": "Dialogue 4",
+          "answer": 1
+        },
+        {
+          "stem": "Dialogue 5",
+          "answer": 2
         }
       ],
       "audio": "audio/g5-c-listening-1.mp3"
@@ -669,52 +669,52 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Asma about the neighbourhood market. Where will the event happen? Asma: It will take place at the market on Wednesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Asma: My friend Huda is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Asma: They will see a display about a apple. We made it in class. Interviewer: What should visitors bring? Asma: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Asma: You are welcome.",
+      "passage": "Interviewer: Welcome to Space Explorers. Today we are speaking with Omar about his school's astronomy club. When do you meet?\nOmar: Every Wednesday afternoon in the science room. We started meeting in September.\nInterviewer: What are you learning this month?\nOmar: We are studying the solar system. My group is building a model of Mars, but another group is making a rocket.\nInterviewer: Will you use a telescope?\nOmar: Yes. A visitor from the science centre will bring one next Friday. We will watch the Moon after sunset, if the sky is clear.\nInterviewer: What is the most surprising fact you have learned?\nOmar: The Sun is a star, and Earth goes around it. I did not know how large some planets were.\nInterviewer: What do you hope to do in the future?\nOmar: I hope to become a scientist. First, I will keep learning and asking questions. Maybe one day I will help design a space station.\nInterviewer: Thank you, Omar.\nOmar: Thank you.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
+          "stem": "When does the club meet?",
           "options": [
-            "at the airport",
-            "the market",
-            "at the library"
+            "Monday",
+            "Wednesday",
+            "Saturday"
           ],
           "answer": 1
         },
         {
-          "stem": "When is the event planned?",
+          "stem": "Which planet is Omar's group making?",
           "options": [
-            "Wednesday",
-            "Friday",
-            "Sunday"
+            "Mars",
+            "Earth",
+            "Venus"
           ],
           "answer": 0
         },
         {
-          "stem": "Who is helping organise the event?",
+          "stem": "What will the visitor bring?",
           "options": [
-            "a doctor",
-            "the bus driver",
-            "Huda"
+            "a rocket",
+            "a spacesuit",
+            "a telescope"
           ],
           "answer": 2
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "What is the Sun?",
           "options": [
-            "a bicycle",
-            "a apple",
-            "a football"
+            "a planet",
+            "a star",
+            "a moon"
           ],
           "answer": 1
         },
         {
-          "stem": "What should people bring?",
+          "stem": "What does Omar want to become?",
           "options": [
-            "a reusable water bottle",
-            "a large suitcase",
-            "a new computer"
+            "a pilot",
+            "an artist",
+            "a scientist"
           ],
-          "answer": 0
+          "answer": 2
         }
       ],
       "audio": "audio/g5-c-listening-2.mp3"
@@ -729,40 +729,40 @@
       "marks": 5,
       "format": "picture-word-match",
       "pictureOptions": [
-        "apple",
-        "gift",
-        "cup",
-        "cake",
-        "book"
+        "rocket",
+        "moon",
+        "planet",
+        "telescope",
+        "spacesuit"
       ],
       "wordOptions": [
-        "book",
-        "bicycle",
-        "gift",
-        "cake",
-        "apple",
-        "cup"
+        "planet",
+        "rocket",
+        "spacesuit",
+        "star",
+        "telescope",
+        "moon"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 4
+          "answer": 1
         },
         {
           "stem": "Picture 2",
-          "answer": 2
-        },
-        {
-          "stem": "Picture 3",
           "answer": 5
         },
         {
+          "stem": "Picture 3",
+          "answer": 0
+        },
+        {
           "stem": "Picture 4",
-          "answer": 3
+          "answer": 4
         },
         {
           "stem": "Picture 5",
-          "answer": 0
+          "answer": 2
         }
       ]
     },
@@ -828,32 +828,32 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "cup",
-        "book",
-        "cake",
-        "gift",
-        "apple"
+        "rocket",
+        "moon",
+        "planet",
+        "telescope",
+        "spacesuit"
       ],
       "questions": [
         {
-          "stem": "The seller placed a fresh apple on the table for the customer to examine. They enjoyed the experience.",
-          "answer": 4
-        },
-        {
-          "stem": "A girl wrapped a gift in reused paper and wrote a message for her grandmother.",
-          "answer": 3
-        },
-        {
-          "stem": "The little bakery made a cake for the families visiting the neighbourhood market. They enjoyed the experience.",
+          "stem": "The class built a rocket model that could rise into the air using water pressure.",
           "answer": 0
         },
         {
-          "stem": "A visitor asked for a cup so she could drink water after walking around. They enjoyed the experience.",
+          "stem": "The Moon looked bright above the school, although it did not make its own light.",
+          "answer": 1
+        },
+        {
+          "stem": "The pupils studied a planet with beautiful rings around it.",
           "answer": 2
         },
         {
-          "stem": "The children found a book about Oman at the stall beside the vegetables. They enjoyed the experience.",
-          "answer": 1
+          "stem": "The science teacher showed students how to look through a telescope safely.",
+          "answer": 3
+        },
+        {
+          "stem": "An astronaut needs a spacesuit to stay safe outside a space station.",
+          "answer": 4
         }
       ]
     },
@@ -866,26 +866,26 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "Last Wednesday, Asma and Huda went to the market for a neighbourhood market. They arrived early and helped their teacher set up a small table. Asma brought a apple, while Huda carried a notebook and some water. At first, they could not find the box with their materials. They looked beside the door and behind the chairs, but the box was not there. Then a younger student pointed towards a shelf near the window. The box was waiting there. Everyone felt happy, and the activity began on time. In the afternoon, the two friends cleaned their table and thanked the visitors. They decided to prepare their things the evening before their next event.",
+      "passage": "Dear Space Club,\n\nLast week I visited a science exhibition about life on a space station. First, I learned that astronauts do not walk normally when they are far from Earth. They float, so they have to keep their equipment in special places. The guide showed us a model sleeping area and explained how astronauts exercise every day.\n\nMy favourite display was a telescope. I looked at photographs of the Moon and several planets. The guide asked us how deep the Sea of Oman is, and then he compared large distances on Earth with distances in space. I was surprised by the numbers.\n\nAt the end, we designed a small rocket on a computer. My friend wanted to draw a spaceship, but I chose a scientific model. Next month our class will visit the exhibition again. I hope we will learn about comets and satellites.\n\nBest wishes,\nSalma",
       "questions": [
         {
-          "stem": "Asma and Huda arrived late.",
-          "answer": "False"
-        },
-        {
-          "stem": "They could not find the box with the materials.",
+          "stem": "Salma visited an exhibition about life on a space station.",
           "answer": "True"
         },
         {
-          "stem": "A younger student showed them where the box was.",
-          "answer": "True"
-        },
-        {
-          "stem": "The event was cancelled because the box was missing.",
+          "stem": "The guide said astronauts walk normally in space.",
           "answer": "False"
         },
         {
-          "stem": "The friends decided to prepare earlier next time.",
+          "stem": "Salma saw photographs of the Moon and planets.",
+          "answer": "True"
+        },
+        {
+          "stem": "Salma chose to draw a spaceship instead of a model.",
+          "answer": "False"
+        },
+        {
+          "stem": "The class plans to visit the exhibition again next month.",
           "answer": "True"
         }
       ]
@@ -925,40 +925,40 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "camera",
-        "kite",
-        "flower",
-        "paintbrush",
-        "drum",
-        "boat"
+        "market",
+        "apple",
+        "gift",
+        "cake",
+        "backpack",
+        "computer"
       ],
       "passages": [
-        "A: What is your project today? B: I need a paintbrush for my picture. A: Why is it interesting? B: A thick brush is best for the blue sky. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: I drew a flower in the garden. A: Why is it interesting? B: Its petals have a beautiful shape. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: My kite flew above the trees. A: Why is it interesting? B: I chose bright paper and a long string. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: I used my camera to record our work. A: Why is it interesting? B: The class can view the photographs tomorrow. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display.",
-        "A: What is your project today? B: I painted a boat beside the mountains. A: Why is it interesting? B: My grandfather told me stories about sailing. A: Please show the visitors and answer their questions. B: Yes, I will. I hope everyone enjoys our display."
+        "A: What are you buying from the greengrocer? B: Some fresh apples. A: Why not buy cakes instead? B: We are making a fruit salad, so I need apples and oranges. The shop assistant says these apples arrived from the farm this morning.",
+        "A: What are you looking for in the gift shop? B: A birthday present for my sister. A: Does she need a new bag? B: No, she has one already. I will buy this small gift because she enjoys collecting handmade things.",
+        "A: Shall we visit the bakery? B: Yes, I want to buy a cake. A: Is it expensive? B: The large one costs four rials, but the small one is only two. I think the small cake is enough for our family.",
+        "A: What did you buy at the sports shop? B: A new backpack for my school books. A: Why not buy those trainers? B: They cost too much. The backpack is strong, and I can use it for our class trips too.",
+        "A: Where shall we meet after shopping? B: At the market entrance. A: Not at the phone shop? B: No, that shop closes early today. We will meet beside the big market sign at five o'clock and take the bus home."
       ],
       "questions": [
         {
-          "stem": "Text 1",
-          "answer": 3
-        },
-        {
-          "stem": "Text 2",
-          "answer": 2
-        },
-        {
-          "stem": "Text 3",
+          "stem": "Dialogue 1",
           "answer": 1
         },
         {
-          "stem": "Text 4",
-          "answer": 0
+          "stem": "Dialogue 2",
+          "answer": 2
         },
         {
-          "stem": "Text 5",
-          "answer": 5
+          "stem": "Dialogue 3",
+          "answer": 3
+        },
+        {
+          "stem": "Dialogue 4",
+          "answer": 4
+        },
+        {
+          "stem": "Dialogue 5",
+          "answer": 0
         }
       ],
       "audio": "audio/g5-d-listening-1.mp3"
@@ -972,52 +972,52 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Laila about the outdoor art day. Where will the event happen? Laila: It will take place at the park on Thursday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Laila: My friend Yousuf is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Laila: They will see a display about a paintbrush. We made it in class. Interviewer: What should visitors bring? Laila: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Laila: You are welcome.",
+      "passage": "Interviewer: Welcome to Shopping Smart. Today we are talking to Aisha about buying a birthday present. Where did you go?\nAisha: I went to the shopping centre with my mother on Saturday morning.\nInterviewer: How much money did you have?\nAisha: Five Omani rials. I wanted to buy something useful and save a little money for next week.\nInterviewer: Which shops did you visit?\nAisha: We looked in the toy shop first, but the games were expensive. Then we went to a bookshop.\nInterviewer: What did you finally choose?\nAisha: A storybook for my brother. It cost three rials. I think he will enjoy reading it.\nInterviewer: Did you buy anything else?\nAisha: Just a small card for half a rial. My mother reminded me to keep the receipt.\nInterviewer: What have you learned?\nAisha: It is important to compare prices and not spend all your money immediately. Next time, I will make a list before I go shopping.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
-          "options": [
-            "the park",
-            "at the library",
-            "at the airport"
-          ],
-          "answer": 0
-        },
-        {
-          "stem": "When is the event planned?",
+          "stem": "When did Aisha go shopping?",
           "options": [
             "Friday",
-            "Sunday",
-            "Thursday"
-          ],
-          "answer": 2
-        },
-        {
-          "stem": "Who is helping organise the event?",
-          "options": [
-            "the bus driver",
-            "Yousuf",
-            "a doctor"
+            "Saturday",
+            "Sunday"
           ],
           "answer": 1
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "How much money did she have?",
           "options": [
-            "a paintbrush",
-            "a football",
-            "a bicycle"
+            "five rials",
+            "three rials",
+            "two rials"
           ],
           "answer": 0
         },
         {
-          "stem": "What should people bring?",
+          "stem": "Which shop did she visit after the toy shop?",
           "options": [
-            "a large suitcase",
-            "a new computer",
-            "a reusable water bottle"
+            "shoe shop",
+            "pharmacy",
+            "bookshop"
           ],
           "answer": 2
+        },
+        {
+          "stem": "What present did Aisha buy?",
+          "options": [
+            "a toy robot",
+            "a storybook",
+            "a football"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "What did her mother tell her to keep?",
+          "options": [
+            "a receipt",
+            "a camera",
+            "a ticket"
+          ],
+          "answer": 0
         }
       ],
       "audio": "audio/g5-d-listening-2.mp3"
@@ -1032,40 +1032,40 @@
       "marks": 5,
       "format": "picture-word-match",
       "pictureOptions": [
-        "paintbrush",
-        "flower",
-        "kite",
-        "camera",
-        "boat"
+        "apple",
+        "gift",
+        "cake",
+        "backpack",
+        "market"
       ],
       "wordOptions": [
-        "paintbrush",
-        "drum",
-        "kite",
-        "camera",
-        "flower",
-        "boat"
+        "market",
+        "backpack",
+        "apple",
+        "gift",
+        "book",
+        "cake"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 0
-        },
-        {
-          "stem": "Picture 2",
-          "answer": 4
-        },
-        {
-          "stem": "Picture 3",
           "answer": 2
         },
         {
-          "stem": "Picture 4",
+          "stem": "Picture 2",
           "answer": 3
         },
         {
-          "stem": "Picture 5",
+          "stem": "Picture 3",
           "answer": 5
+        },
+        {
+          "stem": "Picture 4",
+          "answer": 1
+        },
+        {
+          "stem": "Picture 5",
+          "answer": 0
         }
       ]
     },
@@ -1131,32 +1131,32 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "camera",
-        "paintbrush",
-        "kite",
-        "boat",
-        "flower"
+        "market",
+        "apple",
+        "gift",
+        "cake",
+        "backpack"
       ],
       "questions": [
         {
-          "stem": "A painter chose a wide paintbrush to cover the large page with soft lines. They enjoyed the experience.",
+          "stem": "The family bought fresh apples from the greengrocer at the corner of the street.",
           "answer": 1
         },
         {
-          "stem": "A young girl carefully drew a flower she found beside the park pathway. They enjoyed the experience.",
-          "answer": 4
-        },
-        {
-          "stem": "A boy flew a kite above the open grass when the wind became stronger. They enjoyed the experience.",
+          "stem": "Huda chose a handmade gift for her friend's birthday at the small shop.",
           "answer": 2
         },
         {
-          "stem": "The teacher took a camera to photograph the finished art from every group. They enjoyed the experience.",
-          "answer": 0
+          "stem": "The baker placed a beautiful cake in a box for the customer to carry home.",
+          "answer": 3
         },
         {
-          "stem": "One student painted a small boat floating beside the hills in the morning. They enjoyed the experience.",
-          "answer": 3
+          "stem": "Rashid asked the shop assistant how much the blue backpack cost.",
+          "answer": 4
+        },
+        {
+          "stem": "The busy market opened early and was full of people buying food and clothes.",
+          "answer": 0
         }
       ]
     },
@@ -1169,26 +1169,26 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "Last Thursday, Laila and Yousuf went to the park for a outdoor art day. They arrived early and helped their teacher set up a small table. Laila brought a paintbrush, while Yousuf carried a notebook and some water. At first, they could not find the box with their materials. They looked beside the door and behind the chairs, but the box was not there. Then a younger student pointed towards a shelf near the window. The box was waiting there. Everyone felt happy, and the activity began on time. In the afternoon, the two friends cleaned their table and thanked the visitors. They decided to prepare their things the evening before their next event.",
+      "passage": "Dear Ali,\n\nYesterday I went shopping with my aunt. We wanted to buy a present for my little brother, who will be six next week. First, we visited a toy shop, but the games cost more than I wanted to spend. Then we looked in a bookshop where a friendly assistant showed us some colourful storybooks.\n\nI chose a book about animals because my brother enjoys reading about nature. It cost two rials and five hundred baisa. My aunt bought a birthday card, and the assistant placed both things in a paper bag.\n\nBefore we left, we checked the receipt. It showed the correct prices, so we thanked the assistant. On the way home, we stopped at the greengrocer's and bought some apples for our family. I still had a little pocket money left, which I put in my money box.\n\nBest wishes,\nSaeed",
       "questions": [
         {
-          "stem": "Laila and Yousuf arrived late.",
+          "stem": "Saeed went shopping with his uncle.",
           "answer": "False"
         },
         {
-          "stem": "They could not find the box with the materials.",
+          "stem": "The first shop they visited was a toy shop.",
           "answer": "True"
         },
         {
-          "stem": "A younger student showed them where the box was.",
+          "stem": "Saeed chose a book about animals.",
           "answer": "True"
         },
         {
-          "stem": "The event was cancelled because the box was missing.",
+          "stem": "They forgot to check the receipt.",
           "answer": "False"
         },
         {
-          "stem": "The friends decided to prepare earlier next time.",
+          "stem": "Saeed saved the money he had left.",
           "answer": "True"
         }
       ]
@@ -1228,39 +1228,39 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "robot",
-        "kite",
-        "bus",
-        "plant",
+        "football",
+        "bicycle",
+        "boat",
+        "piano",
         "book",
-        "camera"
+        "paintbrush"
       ],
       "passages": [
-        "A: What is your group doing today? B: A small robot can move coloured blocks. A: What did you learn? B: It helps our team show how simple machines work. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: We use a camera to take clear pictures. A: What did you learn? B: The visitors can see our progress in a photo album. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: I made a short book about my idea. A: What did you learn? B: I will read the first page to younger children. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: Our group grew a young plant in a jar. A: What did you learn? B: We check its water every morning. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: The visitors arrive by school bus. A: What did you learn? B: The driver stops beside the main hall. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions."
+        "A: What do you usually do after school? B: I play football with my friends. A: Are you playing today? B: Not now, because I am doing my homework. We normally meet on Mondays and Thursdays, and our coach helps us practise passing the ball.",
+        "A: Where are you going on Saturday? B: I am going cycling with my sister. A: Do you usually ride bicycles together? B: Yes, but we are trying a different route this time. We will take water and stop beside the park.",
+        "A: What is your hobby, Laila? B: I play the piano. A: Are you learning a new song? B: Yes, I am practising it for a family celebration. I usually play in the evening, but today I am practising before lunch.",
+        "A: What do you enjoy doing when it rains? B: Reading books and solving puzzles. A: Are you reading a new book now? B: Yes, it is a story about a clever girl who enjoys solving problems with her friends.",
+        "A: Which activity is your brother learning? B: He is learning to sail a small boat. A: Does he go every weekend? B: Usually, but the sailing club is closed today because of strong winds. He will practise again when the weather is calm."
       ],
       "questions": [
         {
-          "stem": "Text 1",
+          "stem": "Dialogue 1",
           "answer": 0
         },
         {
-          "stem": "Text 2",
-          "answer": 5
+          "stem": "Dialogue 2",
+          "answer": 1
         },
         {
-          "stem": "Text 3",
-          "answer": 4
-        },
-        {
-          "stem": "Text 4",
+          "stem": "Dialogue 3",
           "answer": 3
         },
         {
-          "stem": "Text 5",
+          "stem": "Dialogue 4",
+          "answer": 4
+        },
+        {
+          "stem": "Dialogue 5",
           "answer": 2
         }
       ],
@@ -1275,50 +1275,50 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Noura about the invention fair. Where will the event happen? Noura: It will take place at the school hall on Monday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Noura: My friend Rashid is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Noura: They will see a display about a robot. We made it in class. Interviewer: What should visitors bring? Noura: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Noura: You are welcome. Interviewer: What did you learn from this experience? Noura: I learned to listen to others, check my work and make better plans. Working together is important because each person has a useful idea.",
+      "passage": "Interviewer: Welcome to Sport and Hobbies. Today we are meeting Yousuf, a pupil who enjoys several activities. What do you usually do on Mondays?\nYousuf: I play volleyball after school. Our team meets in the sports hall at four o'clock.\nInterviewer: Do you enjoy cycling as well?\nYousuf: Yes, I do. My cousin and I go cycling on Saturday mornings, but we do not ride when it is too hot.\nInterviewer: What are you learning this term?\nYousuf: I am learning photography. My father has lent me a camera, and I am taking pictures of plants and birds.\nInterviewer: Are you good at taking photographs already?\nYousuf: Not yet. I know some useful tricks, but I still make mistakes. Our teacher says practice is important.\nInterviewer: Do you ever play computer games?\nYousuf: Sometimes, after I have finished my homework. I also enjoy board games with my family.\nInterviewer: What advice would you give other pupils?\nYousuf: Try different hobbies, choose the ones you enjoy and remember to make time for your studies.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
+          "stem": "Which sport does Yousuf play on Mondays?",
           "options": [
-            "the school hall",
-            "at the library",
-            "at the airport"
+            "volleyball",
+            "football",
+            "tennis"
           ],
           "answer": 0
         },
         {
-          "stem": "When is the event planned?",
+          "stem": "When does he usually go cycling?",
           "options": [
-            "Friday",
-            "Sunday",
-            "Monday"
-          ],
-          "answer": 2
-        },
-        {
-          "stem": "Who is helping organise the event?",
-          "options": [
-            "the bus driver",
-            "Rashid",
-            "a doctor"
+            "Sunday afternoon",
+            "Saturday morning",
+            "Friday evening"
           ],
           "answer": 1
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "What is he learning this term?",
           "options": [
-            "a robot",
-            "a football",
-            "a bicycle"
+            "sailing",
+            "painting",
+            "photography"
           ],
-          "answer": 0
+          "answer": 2
         },
         {
-          "stem": "What should people bring?",
+          "stem": "Who lent him a camera?",
           "options": [
-            "a large suitcase",
-            "a new computer",
-            "a reusable water bottle"
+            "his uncle",
+            "his father",
+            "his teacher"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "When does he sometimes play computer games?",
+          "options": [
+            "before school",
+            "during class",
+            "after homework"
           ],
           "answer": 2
         }
@@ -1335,32 +1335,32 @@
       "marks": 5,
       "format": "picture-spelling",
       "pictureOptions": [
-        "robot",
-        "camera",
+        "football",
+        "bicycle",
+        "piano",
         "book",
-        "plant",
-        "bus"
+        "boat"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "robot"
+          "answer": "football"
         },
         {
           "stem": "Picture 2",
-          "answer": "camera"
+          "answer": "bicycle"
         },
         {
           "stem": "Picture 3",
-          "answer": "book"
+          "answer": "piano"
         },
         {
           "stem": "Picture 4",
-          "answer": "plant"
+          "answer": "book"
         },
         {
           "stem": "Picture 5",
-          "answer": "bus"
+          "answer": "boat"
         }
       ]
     },
@@ -1427,34 +1427,34 @@
       "format": "text-match",
       "passages": [
         {
-          "stem": "The school invention fair opened at nine. A group of pupils made a robot that could move small blocks. They tested it carefully and changed two parts before the visitors arrived. Their teacher praised the teamwork and asked everyone to explain their work clearly. This was important for their project."
+          "stem": "Sara enjoys playing volleyball with her school team. They practise twice a week in the sports hall. She likes working with other pupils and hopes to take part in a local competition. This week, she is helping a new player learn how to serve the ball. She thinks teamwork is more important than winning every match."
         },
         {
-          "stem": "A second group prepared a photo exhibition about the invention fair. They used a camera to record the stages of each project. The photographs showed first attempts, mistakes and final improvements. Visitors liked seeing how an idea could become better with patient work. This was important for their project."
+          "stem": "Hassan loves photography. On weekends, he takes his camera to the park and looks for interesting colours and shapes. He usually photographs flowers, but today he is taking pictures of birds. He keeps his best photographs in an album and writes a short note about each one. His parents enjoy seeing what he has learned."
         },
         {
-          "stem": "At the end of the fair, the pupils wrote short reflections in a shared notebook. They described what they learned and how they would improve next time. Their teacher collected the notes and promised to display the best advice on a classroom wall. This was important for their project."
+          "stem": "Mariam likes music and reading. She plays the piano after dinner and often practises with her younger brother. At the moment, they are learning a song for a family celebration. When they finish practising, Mariam reads a few pages of an adventure story. She says these hobbies help her relax after a busy day."
         }
       ],
       "questions": [
         {
-          "stem": "Which text describes a moving model?",
+          "stem": "Which text mentions a school sports competition?",
           "answer": 0
         },
         {
-          "stem": "Which text mentions photographs of mistakes?",
+          "stem": "Which text describes taking pictures of birds?",
           "answer": 1
         },
         {
-          "stem": "Which text mentions advice written in a notebook?",
+          "stem": "Which text mentions learning music with a sibling?",
           "answer": 2
         },
         {
-          "stem": "Which text says pupils tested and changed parts?",
+          "stem": "Which text says teamwork matters more than winning?",
           "answer": 0
         },
         {
-          "stem": "Which text mentions visitors learning from pictures?",
+          "stem": "Which text describes keeping photographs in an album?",
           "answer": 1
         }
       ]
@@ -1468,26 +1468,26 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "From: noura@school.example\nTo: rashid@school.example\nSubject: Plans for our class project\nDear Rashid,\nI hope you are enjoying your week. Our class is organising a invention fair at the school hall next Monday. We will meet at nine in the morning near the main entrance. Our teacher asked each group to prepare one small display and explain it to visiting parents. My group will bring a robot and a poster showing how we made our project. Please bring your notebook, some drinking water and a reusable bag. We do not need to buy new decorations because the school has plenty of materials we can use again. The event finishes at one o'clock. After that, we will tidy the area and return our equipment to the classroom. I hope you can come and help us. Please reply before Sunday.\nBest wishes,\nNoura",
+      "passage": "From: salim@school.example\nTo: rashid@school.example\nSubject: Our new free-time club\n\nDear Rashid,\n\nI hope you are well. I have joined a new club at school. We meet every Tuesday afternoon in the sports hall. Some pupils play badminton, while others enjoy table tennis. I usually play badminton with my friend Ali, but this week I am learning to play table tennis.\n\nOur coach is very friendly and reminds us to warm up before we start. Last Tuesday, we tried a short team challenge. My team did not win, but we had a lot of fun and learned how to support one another.\n\nNext month the club is organising a sports day for younger pupils. I am helping to prepare the equipment and posters. Would you like to visit and watch the games?\n\nBest wishes,\nSalim",
       "questions": [
         {
-          "stem": "The event will take place on Monday.",
+          "stem": "The new club meets on Tuesdays.",
           "answer": "True"
         },
         {
-          "stem": "All groups need to buy brand-new decorations.",
+          "stem": "Salim always plays football at the club.",
           "answer": "False"
         },
         {
-          "stem": "Parents are invited to see the class displays.",
+          "stem": "The coach asks pupils to warm up.",
           "answer": "True"
         },
         {
-          "stem": "The event will finish at six in the evening.",
+          "stem": "Salim's team won the challenge last week.",
           "answer": "False"
         },
         {
-          "stem": "Noura asks for a reply before Sunday.",
+          "stem": "The club plans an event for younger pupils.",
           "answer": "True"
         }
       ]
@@ -1531,39 +1531,39 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "boat",
-        "fish",
+        "computer",
+        "robot",
+        "camera",
         "clock",
-        "plant",
-        "backpack",
-        "camera"
+        "book",
+        "radio"
       ],
       "passages": [
-        "A: What is your group doing today? B: I am drawing a fish from a picture. A: What did you learn? B: I want to learn how it moves under water. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: The small boat stays near the shore. A: What did you learn? B: We can watch the sea safely from the beach. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: I brought a camera for the trip. A: What did you learn? B: I will take pictures of the coast. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: My backpack has water and a notebook. A: What did you learn? B: I keep everything together on the trip. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: We saw a plant growing by the sand. A: What did you learn? B: Our guide told us not to damage it. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions."
+        "A: What are you using to finish your homework? B: My computer. A: Did you use it when you were younger? B: No, I wrote everything in a notebook. Now I can type faster and check new words in an online dictionary.",
+        "A: What is your group presenting at the exhibition? B: A small robot. A: Can it carry heavy books? B: Not yet, but it can move light objects across a table. We had to repair one wheel before it worked correctly.",
+        "A: How did you take these pictures? B: I used a digital camera. A: Did your parents use the same device? B: My mother used a camera with film when she was young. She had to wait to see the photographs.",
+        "A: What does your grandfather listen to every morning? B: His old radio. A: Why doesn't he use a phone? B: He likes turning the radio on while he makes breakfast. I sometimes listen with him before school.",
+        "A: Why is your clock making a sound? B: It is a reminder to take a break from the screen. A: Is that necessary? B: Yes, I set the clock for thirty minutes because my teacher says we should rest our eyes."
       ],
       "questions": [
         {
-          "stem": "Text 1",
-          "answer": 1
-        },
-        {
-          "stem": "Text 2",
+          "stem": "Dialogue 1",
           "answer": 0
         },
         {
-          "stem": "Text 3",
+          "stem": "Dialogue 2",
+          "answer": 1
+        },
+        {
+          "stem": "Dialogue 3",
+          "answer": 2
+        },
+        {
+          "stem": "Dialogue 4",
           "answer": 5
         },
         {
-          "stem": "Text 4",
-          "answer": 4
-        },
-        {
-          "stem": "Text 5",
+          "stem": "Dialogue 5",
           "answer": 3
         }
       ],
@@ -1578,50 +1578,50 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Maha about the coastal science day. Where will the event happen? Maha: It will take place at the beach on Tuesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Maha: My friend Salim is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Maha: They will see a display about a fish. We made it in class. Interviewer: What should visitors bring? Maha: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Maha: You are welcome. Interviewer: What did you learn from this experience? Maha: I learned to listen to others, check my work and make better plans. Working together is important because each person has a useful idea.",
+      "passage": "Interviewer: Welcome to Technology Today. Sara, tell us about your school's digital club.\nSara: We meet every Monday in the computer room. Last term, we built a simple robot that could move small boxes.\nInterviewer: Did the first design work?\nSara: No. One wheel was loose, and we had to change it. We tested the robot several times before the school exhibition.\nInterviewer: What can pupils do in the club now?\nSara: Some create presentations, others learn photography, and a few are designing a website about local plants.\nInterviewer: Do you use technology all day?\nSara: No. We need to balance screen time with other activities. Our teacher reminds us to rest our eyes and exercise.\nInterviewer: How has technology changed learning?\nSara: My father had to search through many books at school. Today, we can find information quickly, although we must check that it is reliable.\nInterviewer: What would you like to invent next?\nSara: A small device that reminds people to save electricity at home.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
+          "stem": "When does the digital club meet?",
           "options": [
-            "at the library",
-            "at the airport",
-            "the beach"
-          ],
-          "answer": 2
-        },
-        {
-          "stem": "When is the event planned?",
-          "options": [
-            "Sunday",
-            "Tuesday",
+            "Monday",
+            "Wednesday",
             "Friday"
-          ],
-          "answer": 1
-        },
-        {
-          "stem": "Who is helping organise the event?",
-          "options": [
-            "Salim",
-            "a doctor",
-            "the bus driver"
           ],
           "answer": 0
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "What did the team repair?",
           "options": [
-            "a football",
-            "a bicycle",
-            "a fish"
+            "a screen",
+            "a wheel",
+            "a camera"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "What are some pupils designing?",
+          "options": [
+            "a bridge",
+            "a football game",
+            "a website about plants"
           ],
           "answer": 2
         },
         {
-          "stem": "What should people bring?",
+          "stem": "What should children do during screen breaks?",
           "options": [
-            "a new computer",
-            "a reusable water bottle",
-            "a large suitcase"
+            "exercise",
+            "buy phones",
+            "sleep at school"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "What does Sara want her next device to save?",
+          "options": [
+            "money",
+            "electricity",
+            "water"
           ],
           "answer": 1
         }
@@ -1638,20 +1638,20 @@
       "marks": 5,
       "format": "picture-spelling",
       "pictureOptions": [
-        "fish",
-        "boat",
+        "computer",
+        "robot",
         "camera",
-        "backpack",
-        "plant"
+        "radio",
+        "clock"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "fish"
+          "answer": "computer"
         },
         {
           "stem": "Picture 2",
-          "answer": "boat"
+          "answer": "robot"
         },
         {
           "stem": "Picture 3",
@@ -1659,11 +1659,11 @@
         },
         {
           "stem": "Picture 4",
-          "answer": "backpack"
+          "answer": "radio"
         },
         {
           "stem": "Picture 5",
-          "answer": "plant"
+          "answer": "clock"
         }
       ]
     },
@@ -1730,35 +1730,35 @@
       "format": "text-match",
       "passages": [
         {
-          "stem": "Students visited the coast to learn about marine life. They carried notebooks and drew animals they saw in the water. Their guide explained that shells should stay on the beach because small creatures sometimes need them. Everyone followed the rules and kept the area clean."
+          "stem": "Maha uses a tablet to read and organise her schoolwork. She does not copy information without checking it. When she finds something interesting online, she compares it with her schoolbook. Her teacher says technology can be useful when pupils ask questions and think carefully. Maha also takes regular breaks from the screen."
         },
         {
-          "stem": "A second team observed boats near the shore. They noted the shapes and counted how many people were on each boat. The teacher reminded pupils to stay away from the edge of the water. Later, the group discussed how to make safe choices outdoors. This was important for their project."
+          "stem": "Rashid's team built a robot to move small boxes around a table. At first, the robot turned in the wrong direction. The pupils checked the instructions and repaired one wheel. After several attempts, the robot completed the task. The team learned that mistakes can help people improve an invention."
         },
         {
-          "stem": "After lunch, the children shared their photographs and notes. Some pupils had pictures of fish, while others had drawings of plants that grew near the sand. Each group made a small poster explaining one new fact about the coast. They were proud of their discoveries."
+          "stem": "Alya enjoys taking photographs of flowers and birds. Her grandfather used a film camera years ago, but Alya uses a digital one. She can see her photographs immediately, delete unclear pictures and send her best work to the school magazine. She always asks permission before photographing other people."
         }
       ],
       "questions": [
         {
-          "stem": "Which text describes protecting shells?",
+          "stem": "Which text mentions checking information from the internet?",
           "answer": 0
         },
         {
-          "stem": "Which text talks about boats near the water?",
+          "stem": "Which text describes repairing a moving machine?",
           "answer": 1
         },
         {
-          "stem": "Which text mentions making a poster?",
+          "stem": "Which text compares old and modern cameras?",
           "answer": 2
         },
         {
-          "stem": "Which text warns pupils about water safety?",
-          "answer": 1
+          "stem": "Which text recommends taking breaks from a screen?",
+          "answer": 0
         },
         {
-          "stem": "Which text describes studying marine animals?",
-          "answer": 0
+          "stem": "Which text says mistakes helped improve an invention?",
+          "answer": 1
         }
       ]
     },
@@ -1771,26 +1771,26 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "From: maha@school.example\nTo: salim@school.example\nSubject: Plans for our class project\nDear Salim,\nI hope you are enjoying your week. Our class is organising a coastal science day at the beach next Tuesday. We will meet at nine in the morning near the main entrance. Our teacher asked each group to prepare one small display and explain it to visiting parents. My group will bring a fish and a poster showing how we made our project. Please bring your notebook, some drinking water and a reusable bag. We do not need to buy new decorations because the school has plenty of materials we can use again. The event finishes at one o'clock. After that, we will tidy the area and return our equipment to the classroom. I hope you can come and help us. Please reply before Sunday.\nBest wishes,\nMaha",
+      "passage": "From: sara@school.example\nTo: maha@school.example\nSubject: A useful technology project\n\nDear Maha,\n\nOur class has started an exciting project in the computer room. We are making a digital guide to places near our school. First, we took photographs of the library, park and health centre. Then we used a computer programme to put the pictures on a simple map.\n\nYesterday, the internet stopped working while we were editing the guide. We had to save our work and wait until the connection returned. Our teacher showed us how to keep a copy of important files, so the problem did not happen again.\n\nNext week we will present the guide to younger pupils. We want them to find useful places more easily. My group is also checking the information to make sure every address is correct.\n\nBest wishes,\nSara",
       "questions": [
         {
-          "stem": "The event will take place on Tuesday.",
+          "stem": "The class is making a digital guide.",
           "answer": "True"
         },
         {
-          "stem": "All groups need to buy brand-new decorations.",
+          "stem": "They photographed only the sports centre.",
           "answer": "False"
         },
         {
-          "stem": "Parents are invited to see the class displays.",
+          "stem": "The internet stopped working during the project.",
           "answer": "True"
         },
         {
-          "stem": "The event will finish at six in the evening.",
+          "stem": "The teacher advised pupils never to save files.",
           "answer": "False"
         },
         {
-          "stem": "Maha asks for a reply before Sunday.",
+          "stem": "The class plans to present the guide next week.",
           "answer": "True"
         }
       ]
@@ -1834,39 +1834,39 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "cup",
-        "gift",
-        "apple",
-        "bicycle",
-        "book",
-        "cake"
+        "bridge",
+        "museum",
+        "library",
+        "market",
+        "mountain",
+        "bus"
       ],
       "passages": [
-        "A: What is your group doing today? B: This apple came from a local farm. A: What did you learn? B: We can buy fresh fruit at this stall. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: I made a gift for my grandmother. A: What did you learn? B: It is wrapped carefully in recycled paper. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: The shopkeeper gave me a reusable cup. A: What did you learn? B: I will use it again tomorrow. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: Our family baked a small cake. A: What did you learn? B: We brought it to share with neighbours. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: There is a book stall next to the bakery. A: What did you learn? B: I want a story about adventure. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions."
+        "A: Where did your family go last weekend? B: We visited a museum in Nizwa. A: What did you see? B: Traditional clothes and old tools. While we were walking around, a guide explained how people had lived many years ago.",
+        "A: How did you cross the river? B: We used the new bridge. A: Was the old road open? B: No, the rain had damaged it. The bridge was safe, and our driver followed the signs very carefully.",
+        "A: Where can I borrow a book about Omani forts? B: At the public library. A: Is it near the market? B: Yes. Walk past the bus stop and turn left. You will see the library opposite a small park.",
+        "A: Why are you going to the market? B: I want to buy local dates for my grandmother. A: Did you find the shop yesterday? B: No, it was closed while we were visiting the old fort. I will try again today.",
+        "A: What did you enjoy most about the trip? B: Walking in the mountains. A: Was the weather comfortable? B: It was cool when we arrived, but the sun was getting stronger as we climbed. We stopped for water near a large rock."
       ],
       "questions": [
         {
-          "stem": "Text 1",
-          "answer": 2
-        },
-        {
-          "stem": "Text 2",
+          "stem": "Dialogue 1",
           "answer": 1
         },
         {
-          "stem": "Text 3",
+          "stem": "Dialogue 2",
           "answer": 0
         },
         {
-          "stem": "Text 4",
-          "answer": 5
+          "stem": "Dialogue 3",
+          "answer": 2
         },
         {
-          "stem": "Text 5",
+          "stem": "Dialogue 4",
+          "answer": 3
+        },
+        {
+          "stem": "Dialogue 5",
           "answer": 4
         }
       ],
@@ -1881,50 +1881,50 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Asma about the neighbourhood market. Where will the event happen? Asma: It will take place at the market on Wednesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Asma: My friend Huda is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Asma: They will see a display about a apple. We made it in class. Interviewer: What should visitors bring? Asma: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Asma: You are welcome. Interviewer: What did you learn from this experience? Asma: I learned to listen to others, check my work and make better plans. Working together is important because each person has a useful idea.",
+      "passage": "Interviewer: Welcome to Places Around Us. Today we are talking to Nasser about a school trip. Where did your class go?\nNasser: We travelled by bus to a town near the mountains last Tuesday. Our first stop was a small museum.\nInterviewer: What did you learn there?\nNasser: A guide showed us photographs of the town in the past. There used to be fewer buildings, and most people travelled on foot.\nInterviewer: What happened after the museum visit?\nNasser: We walked across an old bridge and then visited the market. While we were crossing the bridge, our teacher pointed out a beautiful view of the valley.\nInterviewer: Did you have lunch at the market?\nNasser: No. We ate in a quiet park nearby because the market was very busy.\nInterviewer: What was your favourite place?\nNasser: The museum, because I enjoy discovering how towns change. I would like to return with my family next month.\nInterviewer: What should students take on a trip like this?\nNasser: Comfortable shoes, a notebook and enough drinking water.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
+          "stem": "How did the class travel?",
           "options": [
-            "at the airport",
-            "the market",
-            "at the library"
+            "by plane",
+            "by bus",
+            "by boat"
           ],
           "answer": 1
         },
         {
-          "stem": "When is the event planned?",
+          "stem": "Where did they stop first?",
           "options": [
-            "Wednesday",
-            "Friday",
-            "Sunday"
+            "a museum",
+            "a market",
+            "a park"
           ],
           "answer": 0
         },
         {
-          "stem": "Who is helping organise the event?",
+          "stem": "What did the teacher point out from the bridge?",
           "options": [
-            "a doctor",
-            "the bus driver",
-            "Huda"
+            "a football field",
+            "a hospital",
+            "the valley"
           ],
           "answer": 2
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "Where did pupils eat lunch?",
           "options": [
-            "a bicycle",
-            "a apple",
-            "a football"
+            "in the market",
+            "in a park",
+            "at the museum"
           ],
           "answer": 1
         },
         {
-          "stem": "What should people bring?",
+          "stem": "What does Nasser enjoy discovering?",
           "options": [
-            "a reusable water bottle",
-            "a large suitcase",
-            "a new computer"
+            "how towns change",
+            "how to cook",
+            "how computers work"
           ],
           "answer": 0
         }
@@ -1941,32 +1941,32 @@
       "marks": 5,
       "format": "picture-spelling",
       "pictureOptions": [
-        "apple",
-        "gift",
-        "cup",
-        "cake",
-        "book"
+        "bridge",
+        "museum",
+        "library",
+        "market",
+        "mountain"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "apple"
+          "answer": "bridge"
         },
         {
           "stem": "Picture 2",
-          "answer": "gift"
+          "answer": "museum"
         },
         {
           "stem": "Picture 3",
-          "answer": "cup"
+          "answer": "library"
         },
         {
           "stem": "Picture 4",
-          "answer": "cake"
+          "answer": "market"
         },
         {
           "stem": "Picture 5",
-          "answer": "book"
+          "answer": "mountain"
         }
       ]
     },
@@ -2033,34 +2033,34 @@
       "format": "text-match",
       "passages": [
         {
-          "stem": "At the neighbourhood market, volunteers prepared a stall for fresh local fruit. They arranged apples carefully and put prices on the table. They asked customers to use reusable bags. Most families agreed because they wanted to create less rubbish in the area. This was important for their project."
+          "stem": "The public library is opposite the park and next to a small bookshop. Visitors can borrow books, read newspapers or use a computer to find information. On Tuesdays, volunteers tell stories to younger children. The library is usually quiet, and everyone must return borrowed books on time."
         },
         {
-          "stem": "Near the bakery, a group of pupils sold small cakes for a charity project. They wrote the ingredients beside each cake to help visitors choose. A teacher checked their calculations and helped them count the money. The students learned how careful planning supports good teamwork."
+          "stem": "Nizwa Fort stands near a traditional market. Visitors can climb the steps to see the towers and learn how the building was used in the past. During school trips, guides explain the history of the fort and remind children to walk carefully on the narrow stairs."
         },
         {
-          "stem": "In the afternoon, visitors shared ideas about improving the market. Some wanted more shade and others suggested drinking-water stations. The pupils collected the suggestions in a notebook and promised to discuss them in class. They also thanked the shopkeepers for their friendly help. This was important for their project."
+          "stem": "The mountain village has a small bridge over a seasonal stream. While tourists were crossing it last Friday, they noticed beautiful farms and houses on both sides. The road becomes busy during holidays, so visitors are advised to arrive early and follow local traffic signs."
         }
       ],
       "questions": [
         {
-          "stem": "Which text describes fruit and reusable bags?",
+          "stem": "Which text describes borrowing books?",
           "answer": 0
         },
         {
-          "stem": "Which text talks about a charity cake stall?",
+          "stem": "Which text mentions a historic fort?",
           "answer": 1
         },
         {
-          "stem": "Which text mentions suggestions for more shade?",
+          "stem": "Which text describes a bridge over a stream?",
           "answer": 2
         },
         {
-          "stem": "Which text describes checking money calculations?",
+          "stem": "Which text says visitors must walk carefully on stairs?",
           "answer": 1
         },
         {
-          "stem": "Which text asks customers to make less rubbish?",
+          "stem": "Which text describes a place near a bookshop?",
           "answer": 0
         }
       ]
@@ -2074,26 +2074,26 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "From: asma@school.example\nTo: huda@school.example\nSubject: Plans for our class project\nDear Huda,\nI hope you are enjoying your week. Our class is organising a neighbourhood market at the market next Wednesday. We will meet at nine in the morning near the main entrance. Our teacher asked each group to prepare one small display and explain it to visiting parents. My group will bring a apple and a poster showing how we made our project. Please bring your notebook, some drinking water and a reusable bag. We do not need to buy new decorations because the school has plenty of materials we can use again. The event finishes at one o'clock. After that, we will tidy the area and return our equipment to the classroom. I hope you can come and help us. Please reply before Sunday.\nBest wishes,\nAsma",
+      "passage": "From: nasser@school.example\nTo: hamad@school.example\nSubject: Visiting our old town\n\nDear Hamad,\n\nI hope you are well. Last Friday, my family and I visited an old town near the mountains. We arrived by bus at nine in the morning. While my parents were buying tickets for the museum, my sister and I were looking at a map of the town.\n\nFirst, we visited the museum, where a guide explained how families used to live. After that, we crossed a stone bridge and walked towards the market. We saw local artists selling handmade baskets, and my mother bought a small gift.\n\nIn the afternoon, dark clouds appeared, so we decided not to climb the nearby mountain. Instead, we ate lunch at a quiet restaurant beside the library. The bus left at five, and we returned home safely.\n\nI would like to visit again when the weather is clear. Perhaps we could go together during the next holiday.\n\nBest wishes,\nNasser",
       "questions": [
         {
-          "stem": "The event will take place on Wednesday.",
-          "answer": "True"
-        },
-        {
-          "stem": "All groups need to buy brand-new decorations.",
+          "stem": "Nasser visited the town with his school class.",
           "answer": "False"
         },
         {
-          "stem": "Parents are invited to see the class displays.",
+          "stem": "The family arrived by bus in the morning.",
           "answer": "True"
         },
         {
-          "stem": "The event will finish at six in the evening.",
+          "stem": "They crossed a stone bridge.",
+          "answer": "True"
+        },
+        {
+          "stem": "They climbed the mountain during the afternoon.",
           "answer": "False"
         },
         {
-          "stem": "Asma asks for a reply before Sunday.",
+          "stem": "Nasser hopes to visit again in better weather.",
           "answer": "True"
         }
       ]
@@ -2137,39 +2137,39 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "robot",
-        "kite",
-        "bus",
-        "plant",
+        "football",
+        "bicycle",
+        "boat",
+        "piano",
         "book",
-        "camera"
+        "paintbrush"
       ],
       "passages": [
-        "A: What is your group doing today? B: A small robot can move coloured blocks. A: What did you learn? B: It helps our team show how simple machines work. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: We use a camera to take clear pictures. A: What did you learn? B: The visitors can see our progress in a photo album. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: I made a short book about my idea. A: What did you learn? B: I will read the first page to younger children. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: Our group grew a young plant in a jar. A: What did you learn? B: We check its water every morning. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions.",
-        "A: What is your group doing today? B: The visitors arrive by school bus. A: What did you learn? B: The driver stops beside the main hall. A: Can you explain it to visitors? B: Yes, I will show the steps and answer questions."
+        "A: What do you usually do after school? B: I play football with my friends. A: Are you playing today? B: Not now, because I am doing my homework. We normally meet on Mondays and Thursdays, and our coach helps us practise passing the ball.",
+        "A: Where are you going on Saturday? B: I am going cycling with my sister. A: Do you usually ride bicycles together? B: Yes, but we are trying a different route this time. We will take water and stop beside the park.",
+        "A: What is your hobby, Laila? B: I play the piano. A: Are you learning a new song? B: Yes, I am practising it for a family celebration. I usually play in the evening, but today I am practising before lunch.",
+        "A: What do you enjoy doing when it rains? B: Reading books and solving puzzles. A: Are you reading a new book now? B: Yes, it is a story about a clever girl who enjoys solving problems with her friends.",
+        "A: Which activity is your brother learning? B: He is learning to sail a small boat. A: Does he go every weekend? B: Usually, but the sailing club is closed today because of strong winds. He will practise again when the weather is calm."
       ],
       "questions": [
         {
-          "stem": "Text 1",
+          "stem": "Dialogue 1",
           "answer": 0
         },
         {
-          "stem": "Text 2",
-          "answer": 5
+          "stem": "Dialogue 2",
+          "answer": 1
         },
         {
-          "stem": "Text 3",
-          "answer": 4
-        },
-        {
-          "stem": "Text 4",
+          "stem": "Dialogue 3",
           "answer": 3
         },
         {
-          "stem": "Text 5",
+          "stem": "Dialogue 4",
+          "answer": 4
+        },
+        {
+          "stem": "Dialogue 5",
           "answer": 2
         }
       ],
@@ -2187,50 +2187,50 @@
       "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: Welcome to our school radio programme. Today we are talking to Maha about the coastal science day. Where will the event happen? Maha: It will take place at the beach on Tuesday. Our teachers prepared activities for families. Interviewer: Who is helping you organise the event? Maha: My friend Salim is helping me, and classmates are arranging tables. Interviewer: What will visitors see first? Maha: They will see a display about a fish. We made it in class. Interviewer: What should visitors bring? Maha: They should bring a reusable water bottle and a notebook. We want to avoid waste. Interviewer: Thank you for sharing your plan. Maha: You are welcome. Interviewer: What did you learn from this experience? Maha: I learned to listen to others, check my work and make better plans. Working together is important because each person has a useful idea.",
+      "passage": "Interviewer: Welcome to Technology Today. Sara, tell us about your school's digital club.\nSara: We meet every Monday in the computer room. Last term, we built a simple robot that could move small boxes.\nInterviewer: Did the first design work?\nSara: No. One wheel was loose, and we had to change it. We tested the robot several times before the school exhibition.\nInterviewer: What can pupils do in the club now?\nSara: Some create presentations, others learn photography, and a few are designing a website about local plants.\nInterviewer: Do you use technology all day?\nSara: No. We need to balance screen time with other activities. Our teacher reminds us to rest our eyes and exercise.\nInterviewer: How has technology changed learning?\nSara: My father had to search through many books at school. Today, we can find information quickly, although we must check that it is reliable.\nInterviewer: What would you like to invent next?\nSara: A small device that reminds people to save electricity at home.",
       "questions": [
         {
-          "stem": "Where will the event take place?",
+          "stem": "When does the digital club meet?",
           "options": [
-            "at the library",
-            "at the airport",
-            "the beach"
-          ],
-          "answer": 2
-        },
-        {
-          "stem": "When is the event planned?",
-          "options": [
-            "Sunday",
-            "Tuesday",
+            "Monday",
+            "Wednesday",
             "Friday"
-          ],
-          "answer": 1
-        },
-        {
-          "stem": "Who is helping organise the event?",
-          "options": [
-            "Salim",
-            "a doctor",
-            "the bus driver"
           ],
           "answer": 0
         },
         {
-          "stem": "What is the first display about?",
+          "stem": "What did the team repair?",
           "options": [
-            "a football",
-            "a bicycle",
-            "a fish"
+            "a screen",
+            "a wheel",
+            "a camera"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "What are some pupils designing?",
+          "options": [
+            "a bridge",
+            "a football game",
+            "a website about plants"
           ],
           "answer": 2
         },
         {
-          "stem": "What should people bring?",
+          "stem": "What should children do during screen breaks?",
           "options": [
-            "a new computer",
-            "a reusable water bottle",
-            "a large suitcase"
+            "exercise",
+            "buy phones",
+            "sleep at school"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "What does Sara want her next device to save?",
+          "options": [
+            "money",
+            "electricity",
+            "water"
           ],
           "answer": 1
         }
@@ -2250,32 +2250,32 @@
       "marks": 5,
       "format": "picture-spelling",
       "pictureOptions": [
-        "apple",
-        "gift",
-        "cup",
-        "cake",
-        "book"
+        "bridge",
+        "museum",
+        "library",
+        "market",
+        "mountain"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "apple"
+          "answer": "bridge"
         },
         {
           "stem": "Picture 2",
-          "answer": "gift"
+          "answer": "museum"
         },
         {
           "stem": "Picture 3",
-          "answer": "cup"
+          "answer": "library"
         },
         {
           "stem": "Picture 4",
-          "answer": "cake"
+          "answer": "market"
         },
         {
           "stem": "Picture 5",
-          "answer": "book"
+          "answer": "mountain"
         }
       ],
       "sourceModel": "C",
@@ -2345,34 +2345,34 @@
       "format": "text-match",
       "passages": [
         {
-          "stem": "The school invention fair opened at nine. A group of pupils made a robot that could move small blocks. They tested it carefully and changed two parts before the visitors arrived. Their teacher praised the teamwork and asked everyone to explain their work clearly. This was important for their project."
+          "stem": "Sara enjoys playing volleyball with her school team. They practise twice a week in the sports hall. She likes working with other pupils and hopes to take part in a local competition. This week, she is helping a new player learn how to serve the ball. She thinks teamwork is more important than winning every match."
         },
         {
-          "stem": "A second group prepared a photo exhibition about the invention fair. They used a camera to record the stages of each project. The photographs showed first attempts, mistakes and final improvements. Visitors liked seeing how an idea could become better with patient work. This was important for their project."
+          "stem": "Hassan loves photography. On weekends, he takes his camera to the park and looks for interesting colours and shapes. He usually photographs flowers, but today he is taking pictures of birds. He keeps his best photographs in an album and writes a short note about each one. His parents enjoy seeing what he has learned."
         },
         {
-          "stem": "At the end of the fair, the pupils wrote short reflections in a shared notebook. They described what they learned and how they would improve next time. Their teacher collected the notes and promised to display the best advice on a classroom wall. This was important for their project."
+          "stem": "Mariam likes music and reading. She plays the piano after dinner and often practises with her younger brother. At the moment, they are learning a song for a family celebration. When they finish practising, Mariam reads a few pages of an adventure story. She says these hobbies help her relax after a busy day."
         }
       ],
       "questions": [
         {
-          "stem": "Which text describes a moving model?",
+          "stem": "Which text mentions a school sports competition?",
           "answer": 0
         },
         {
-          "stem": "Which text mentions photographs of mistakes?",
+          "stem": "Which text describes taking pictures of birds?",
           "answer": 1
         },
         {
-          "stem": "Which text mentions advice written in a notebook?",
+          "stem": "Which text mentions learning music with a sibling?",
           "answer": 2
         },
         {
-          "stem": "Which text says pupils tested and changed parts?",
+          "stem": "Which text says teamwork matters more than winning?",
           "answer": 0
         },
         {
-          "stem": "Which text mentions visitors learning from pictures?",
+          "stem": "Which text describes keeping photographs in an album?",
           "answer": 1
         }
       ],
@@ -2389,26 +2389,26 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "From: maha@school.example\nTo: salim@school.example\nSubject: Plans for our class project\nDear Salim,\nI hope you are enjoying your week. Our class is organising a coastal science day at the beach next Tuesday. We will meet at nine in the morning near the main entrance. Our teacher asked each group to prepare one small display and explain it to visiting parents. My group will bring a fish and a poster showing how we made our project. Please bring your notebook, some drinking water and a reusable bag. We do not need to buy new decorations because the school has plenty of materials we can use again. The event finishes at one o'clock. After that, we will tidy the area and return our equipment to the classroom. I hope you can come and help us. Please reply before Sunday.\nBest wishes,\nMaha",
+      "passage": "From: sara@school.example\nTo: maha@school.example\nSubject: A useful technology project\n\nDear Maha,\n\nOur class has started an exciting project in the computer room. We are making a digital guide to places near our school. First, we took photographs of the library, park and health centre. Then we used a computer programme to put the pictures on a simple map.\n\nYesterday, the internet stopped working while we were editing the guide. We had to save our work and wait until the connection returned. Our teacher showed us how to keep a copy of important files, so the problem did not happen again.\n\nNext week we will present the guide to younger pupils. We want them to find useful places more easily. My group is also checking the information to make sure every address is correct.\n\nBest wishes,\nSara",
       "questions": [
         {
-          "stem": "The event will take place on Tuesday.",
+          "stem": "The class is making a digital guide.",
           "answer": "True"
         },
         {
-          "stem": "All groups need to buy brand-new decorations.",
+          "stem": "They photographed only the sports centre.",
           "answer": "False"
         },
         {
-          "stem": "Parents are invited to see the class displays.",
+          "stem": "The internet stopped working during the project.",
           "answer": "True"
         },
         {
-          "stem": "The event will finish at six in the evening.",
+          "stem": "The teacher advised pupils never to save files.",
           "answer": "False"
         },
         {
-          "stem": "Maha asks for a reply before Sunday.",
+          "stem": "The class plans to present the guide next week.",
           "answer": "True"
         }
       ],
