@@ -40,20 +40,20 @@
     ]
   },
   "g5-c-listening-1": {
-    "sha256_of_script": "7b26600fce5a9f6d131957b564718b7456bbad9e5048c4c0a95b3de4795c726e",
+    "sha256_of_script": "bdf7b3b8d2d3bbada589772f880359eb2cecf8bcc6ef7bb6fda05083c2e6f024",
     "mp3": "g5-c-listening-1.mp3",
-    "size": 1724125,
-    "seconds": 143.65,
+    "size": 2890545,
+    "seconds": 240.85,
     "voices": [
       "en-GB-SoniaNeural",
       "en-GB-RyanNeural"
     ]
   },
   "g5-c-listening-2": {
-    "sha256_of_script": "73926db66dab21371a411f2b9ed2d192e4933ecf655cfcd2f3d6bef7b697c682",
+    "sha256_of_script": "2192cdd97a81a2f932cc5be4bcc75d5efb23591ff0b390a2b3c6538f2ef9e950",
     "mp3": "g5-c-listening-2.mp3",
-    "size": 1016938,
-    "seconds": 84.72,
+    "size": 1273356,
+    "seconds": 106.08,
     "voices": [
       "en-GB-SoniaNeural",
       "en-GB-RyanNeural"
