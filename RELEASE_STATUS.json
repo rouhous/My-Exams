@@ -44,10 +44,56 @@
   },
   "grade7_8_natural_audio": {
     "expected_tracks": 16,
-    "status": "GitHub Actions generation underway; not yet verified"
+    "hosted_tracks": 16,
+    "status": "validated and GitHub-hosted; eight for each grade",
+    "online": true,
+    "available_for_exam_pack_download": true
   },
   "grade5_6_natural_audio": {
     "expected_tracks": 16,
-    "status": "GitHub Actions generation underway; not yet verified"
+    "hosted_tracks": 16,
+    "status": "validated and GitHub-hosted; eight for each grade",
+    "online": true,
+    "available_for_exam_pack_download": true
+  },
+  "comprehensive_grades5_8": {
+    "sourceModelsPerGrade": 4,
+    "fixedMixedModels": [
+      "E",
+      "F"
+    ],
+    "unlimitedRandomizedExam": true,
+    "threeUnitGradesMixedD": [
+      6,
+      7,
+      8
+    ],
+    "preservingWholeSkillTask": true,
+    "paperMarks": 40,
+    "paperDurations": {
+      "5": 90,
+      "6": 90,
+      "7": 120,
+      "8": 120
+    },
+    "writingUnitThemeUpdates": 32,
+    "combinedGrammarVocabUpdates_G7_G8": 6,
+    "correctedGrammarUpdates_G5_G6": 8,
+    "browserTest": {
+      "status": "passed",
+      "githubAction": "https://github.com/rouhous/My-Exams/actions/runs/43398232690",
+      "checks": [
+        "comprehensive E/F grades 5-8",
+        "random Grade 7-8",
+        "15 listening image options per Grade 7/8 model",
+        "offline cached Grade 5 E reopens without network",
+        "offline MP3 byte-range 206 returned"
+      ]
+    },
+    "contentVerification": {
+      "fullyUnitCertified": false,
+      "remarks": "Writing and Grammar/Vocabulary targets improved. Listening and Reading text themes still require full page-level unit matching."
+    },
+    "phoneOfflineTested": false
   }
 }
