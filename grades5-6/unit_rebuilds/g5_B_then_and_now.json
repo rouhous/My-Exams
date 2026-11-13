@@ -1,0 +1,190 @@
+{
+  "grade": 5,
+  "model": "B",
+  "unit": "Then and now",
+  "status": "original_unit_content_pending_voice_regeneration",
+  "listening1": {
+    "pictureOptions": [
+      "computer",
+      "camera",
+      "bus",
+      "clock",
+      "book",
+      "lantern"
+    ],
+    "passages": [
+      "A: Did your grandmother use a computer at school? B: No, she wrote letters by hand. A: What do students use now? B: We use computers to search for information and send messages. She thinks learning is very different today.",
+      "A: How did your father take pictures as a child? B: He used a camera with film. A: Could he see the pictures immediately? B: No, he had to wait for them to be printed. Now we can look at photographs on our phones.",
+      "A: What did you find in the museum? B: An old clock that belonged to my grandfather. A: Does it still work? B: Yes, but it is very noisy. Our family uses digital clocks now, while he still enjoys winding the old one.",
+      "A: Why did people need a lantern in the past? B: Some homes did not have electric lights. A: Do you still use one? B: Only when we go camping. My grandfather says he used to carry one outside after sunset.",
+      "A: How did your aunt travel to school when she was young? B: She usually walked because there was no school bus. A: What about your cousin today? B: He takes a bus every morning. It stops beside his house at seven."
+    ],
+    "questions": [
+      {
+        "stem": "Dialogue 1",
+        "answer": 0
+      },
+      {
+        "stem": "Dialogue 2",
+        "answer": 1
+      },
+      {
+        "stem": "Dialogue 3",
+        "answer": 3
+      },
+      {
+        "stem": "Dialogue 4",
+        "answer": 5
+      },
+      {
+        "stem": "Dialogue 5",
+        "answer": 2
+      }
+    ]
+  },
+  "listening2": {
+    "passage": "Interviewer: Welcome to History at Home. Today we are talking to Grandmother Fatma. How did you keep in touch with friends when you were young?\nFatma: I wrote letters, and sometimes we used the telephone at the post office. We did not have mobile phones.\nInterviewer: Did you have a computer at school?\nFatma: No. Our teachers wrote on the board, and we used notebooks. We learned a lot, but finding information took longer.\nInterviewer: What did you do for entertainment?\nFatma: We visited neighbours, told stories and played outside. My brothers made toys from simple materials.\nInterviewer: Could you take photographs easily?\nFatma: My father had an old camera, but we saved film for special days. We could not see a photograph straight away.\nInterviewer: What is better today?\nFatma: We can communicate quickly and learn about the world. However, I think families should still spend time speaking together.\nInterviewer: Thank you for sharing your memories.\nFatma: It was a pleasure.",
+    "questions": [
+      {
+        "stem": "How did Fatma often contact friends?",
+        "options": [
+          "by letters",
+          "by video calls",
+          "by email"
+        ],
+        "answer": 0
+      },
+      {
+        "stem": "Where did she sometimes use a telephone?",
+        "options": [
+          "at school",
+          "at the post office",
+          "at the airport"
+        ],
+        "answer": 1
+      },
+      {
+        "stem": "What did her teachers use in class?",
+        "options": [
+          "tablets",
+          "laptops",
+          "the board"
+        ],
+        "answer": 2
+      },
+      {
+        "stem": "What did her brothers make?",
+        "options": [
+          "simple toys",
+          "mobile phones",
+          "computer games"
+        ],
+        "answer": 0
+      },
+      {
+        "stem": "What does Fatma still think is important?",
+        "options": [
+          "buying new cameras",
+          "speaking together",
+          "travelling by plane"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "vocabulary": {
+    "pictureOptions": [
+      "computer",
+      "camera",
+      "bus",
+      "clock",
+      "book"
+    ],
+    "wordOptions": [
+      "camera",
+      "clock",
+      "computer",
+      "book",
+      "bus",
+      "football"
+    ],
+    "questions": [
+      {
+        "stem": "Picture 1",
+        "answer": 2
+      },
+      {
+        "stem": "Picture 2",
+        "answer": 0
+      },
+      {
+        "stem": "Picture 3",
+        "answer": 4
+      },
+      {
+        "stem": "Picture 4",
+        "answer": 1
+      },
+      {
+        "stem": "Picture 5",
+        "answer": 3
+      }
+    ]
+  },
+  "reading1": {
+    "pictureOptions": [
+      "computer",
+      "camera",
+      "bus",
+      "clock",
+      "book"
+    ],
+    "questions": [
+      {
+        "stem": "Today, Salim types his school report on a computer instead of writing every page by hand.",
+        "answer": 0
+      },
+      {
+        "stem": "His grandfather used a camera with film and waited several days to see the photographs.",
+        "answer": 1
+      },
+      {
+        "stem": "In the past, children walked to the school, but now many travel on a yellow bus.",
+        "answer": 2
+      },
+      {
+        "stem": "The family keeps an old clock from their grandmother in the living room.",
+        "answer": 3
+      },
+      {
+        "stem": "Aisha reads a book about life in Oman fifty years ago.",
+        "answer": 4
+      }
+    ]
+  },
+  "reading2": {
+    "passage": "When Yaqoub visited his grandfather's house, he found an old box full of letters and photographs. His grandfather explained that people had kept important memories in boxes before computers became common. One letter was from a friend who had moved to another town many years earlier.\n\nYaqoub was surprised that the letter had taken several days to arrive. He could send a message on his tablet in only a few seconds. His grandfather smiled and said that writing a letter could still be special because people chose their words carefully.\n\nLater, they looked at a photograph of Yaqoub's father as a child. He was standing beside a small bicycle. At that time, he could not ride it without help, but now he often cycled with his children. Yaqoub decided to scan the photograph so the family could keep another copy. His grandfather was pleased that old memories could be shared using new technology.",
+    "questions": [
+      {
+        "stem": "Yaqoub found letters and photographs in an old box.",
+        "answer": "True"
+      },
+      {
+        "stem": "The old letter arrived in just a few seconds.",
+        "answer": "False"
+      },
+      {
+        "stem": "Yaqoub can send messages quickly using a tablet.",
+        "answer": "True"
+      },
+      {
+        "stem": "His father could ride his bicycle without help as a child.",
+        "answer": "False"
+      },
+      {
+        "stem": "Yaqoub wanted to make a digital copy of the photograph.",
+        "answer": "True"
+      }
+    ]
+  }
+}
