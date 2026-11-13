@@ -1,0 +1,186 @@
+{
+  "grade": 6,
+  "model": "B",
+  "unit": "Technology",
+  "status": "original_unit_content_pending_audio",
+  "listening1": {
+    "pictureOptions": [
+      "computer",
+      "robot",
+      "camera",
+      "clock",
+      "book",
+      "radio"
+    ],
+    "passages": [
+      "A: What are you using to finish your homework? B: My computer. A: Did you use it when you were younger? B: No, I wrote everything in a notebook. Now I can type faster and check new words in an online dictionary.",
+      "A: What is your group presenting at the exhibition? B: A small robot. A: Can it carry heavy books? B: Not yet, but it can move light objects across a table. We had to repair one wheel before it worked correctly.",
+      "A: How did you take these pictures? B: I used a digital camera. A: Did your parents use the same device? B: My mother used a camera with film when she was young. She had to wait to see the photographs.",
+      "A: What does your grandfather listen to every morning? B: His old radio. A: Why doesn't he use a phone? B: He likes turning the radio on while he makes breakfast. I sometimes listen with him before school.",
+      "A: Why is your clock making a sound? B: It is a reminder to take a break from the screen. A: Is that necessary? B: Yes, I set the clock for thirty minutes because my teacher says we should rest our eyes."
+    ],
+    "questions": [
+      {
+        "stem": "Dialogue 1",
+        "answer": 0
+      },
+      {
+        "stem": "Dialogue 2",
+        "answer": 1
+      },
+      {
+        "stem": "Dialogue 3",
+        "answer": 2
+      },
+      {
+        "stem": "Dialogue 4",
+        "answer": 5
+      },
+      {
+        "stem": "Dialogue 5",
+        "answer": 3
+      }
+    ]
+  },
+  "listening2": {
+    "passage": "Interviewer: Welcome to Technology Today. Sara, tell us about your school's digital club.\nSara: We meet every Monday in the computer room. Last term, we built a simple robot that could move small boxes.\nInterviewer: Did the first design work?\nSara: No. One wheel was loose, and we had to change it. We tested the robot several times before the school exhibition.\nInterviewer: What can pupils do in the club now?\nSara: Some create presentations, others learn photography, and a few are designing a website about local plants.\nInterviewer: Do you use technology all day?\nSara: No. We need to balance screen time with other activities. Our teacher reminds us to rest our eyes and exercise.\nInterviewer: How has technology changed learning?\nSara: My father had to search through many books at school. Today, we can find information quickly, although we must check that it is reliable.\nInterviewer: What would you like to invent next?\nSara: A small device that reminds people to save electricity at home.",
+    "questions": [
+      {
+        "stem": "When does the digital club meet?",
+        "options": [
+          "Monday",
+          "Wednesday",
+          "Friday"
+        ],
+        "answer": 0
+      },
+      {
+        "stem": "What did the team repair?",
+        "options": [
+          "a screen",
+          "a wheel",
+          "a camera"
+        ],
+        "answer": 1
+      },
+      {
+        "stem": "What are some pupils designing?",
+        "options": [
+          "a bridge",
+          "a football game",
+          "a website about plants"
+        ],
+        "answer": 2
+      },
+      {
+        "stem": "What should children do during screen breaks?",
+        "options": [
+          "exercise",
+          "buy phones",
+          "sleep at school"
+        ],
+        "answer": 0
+      },
+      {
+        "stem": "What does Sara want her next device to save?",
+        "options": [
+          "money",
+          "electricity",
+          "water"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "vocabulary": {
+    "pictureOptions": [
+      "computer",
+      "robot",
+      "camera",
+      "radio",
+      "clock"
+    ],
+    "questions": [
+      {
+        "stem": "Picture 1",
+        "answer": "computer"
+      },
+      {
+        "stem": "Picture 2",
+        "answer": "robot"
+      },
+      {
+        "stem": "Picture 3",
+        "answer": "camera"
+      },
+      {
+        "stem": "Picture 4",
+        "answer": "radio"
+      },
+      {
+        "stem": "Picture 5",
+        "answer": "clock"
+      }
+    ]
+  },
+  "reading1": {
+    "passages": [
+      {
+        "stem": "Maha uses a tablet to read and organise her schoolwork. She does not copy information without checking it. When she finds something interesting online, she compares it with her schoolbook. Her teacher says technology can be useful when pupils ask questions and think carefully. Maha also takes regular breaks from the screen."
+      },
+      {
+        "stem": "Rashid's team built a robot to move small boxes around a table. At first, the robot turned in the wrong direction. The pupils checked the instructions and repaired one wheel. After several attempts, the robot completed the task. The team learned that mistakes can help people improve an invention."
+      },
+      {
+        "stem": "Alya enjoys taking photographs of flowers and birds. Her grandfather used a film camera years ago, but Alya uses a digital one. She can see her photographs immediately, delete unclear pictures and send her best work to the school magazine. She always asks permission before photographing other people."
+      }
+    ],
+    "questions": [
+      {
+        "stem": "Which text mentions checking information from the internet?",
+        "answer": 0
+      },
+      {
+        "stem": "Which text describes repairing a moving machine?",
+        "answer": 1
+      },
+      {
+        "stem": "Which text compares old and modern cameras?",
+        "answer": 2
+      },
+      {
+        "stem": "Which text recommends taking breaks from a screen?",
+        "answer": 0
+      },
+      {
+        "stem": "Which text says mistakes helped improve an invention?",
+        "answer": 1
+      }
+    ]
+  },
+  "reading2": {
+    "passage": "From: sara@school.example\nTo: maha@school.example\nSubject: A useful technology project\n\nDear Maha,\n\nOur class has started an exciting project in the computer room. We are making a digital guide to places near our school. First, we took photographs of the library, park and health centre. Then we used a computer programme to put the pictures on a simple map.\n\nYesterday, the internet stopped working while we were editing the guide. We had to save our work and wait until the connection returned. Our teacher showed us how to keep a copy of important files, so the problem did not happen again.\n\nNext week we will present the guide to younger pupils. We want them to find useful places more easily. My group is also checking the information to make sure every address is correct.\n\nBest wishes,\nSara",
+    "questions": [
+      {
+        "stem": "The class is making a digital guide.",
+        "answer": "True"
+      },
+      {
+        "stem": "They photographed only the sports centre.",
+        "answer": "False"
+      },
+      {
+        "stem": "The internet stopped working during the project.",
+        "answer": "True"
+      },
+      {
+        "stem": "The teacher advised pupils never to save files.",
+        "answer": "False"
+      },
+      {
+        "stem": "The class plans to present the guide next week.",
+        "answer": "True"
+      }
+    ]
+  }
+}
