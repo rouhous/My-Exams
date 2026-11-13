@@ -294,7 +294,7 @@
       "marks": 5,
       "format": "writing",
       "minWords": 40,
-      "prompt": "Write at least 40 words describing the school hall during invention fair. Describe what people can see, what they can do and why you would like to visit.",
+      "prompt": "Write at least 40 words describing a friend who wants to take part in a talent show. Describe the friend's appearance, personality, hobbies and strongest talent.",
       "pictureOptions": []
     },
     {
@@ -307,7 +307,7 @@
       "marks": 5,
       "format": "writing",
       "minWords": 40,
-      "prompt": "Write an email to your friend about the invention fair. Say when and where it happens, describe two activities and invite your friend to come. Write at least 40 words."
+      "prompt": "Write an email to a friend inviting them to a school talent show. Say where and when it is, what talents pupils will show, and why your friend should come. Write at least 40 words."
     },
     {
       "id": "g5-b-listening-1",
@@ -597,7 +597,7 @@
       "marks": 5,
       "format": "writing",
       "minWords": 40,
-      "prompt": "Write at least 40 words describing the beach during coastal science day. Describe what people can see, what they can do and why you would like to visit.",
+      "prompt": "Write at least 40 words describing how people communicated in Oman long ago and how they communicate today. Compare letters, telephones and mobile devices.",
       "pictureOptions": []
     },
     {
@@ -610,7 +610,7 @@
       "marks": 5,
       "format": "writing",
       "minWords": 40,
-      "prompt": "Write an email to your friend about the coastal science day. Say when and where it happens, describe two activities and invite your friend to come. Write at least 40 words."
+      "prompt": "Write an email to a cousin comparing school life in the past and today. Mention two things children could or could not do before and explain which time you prefer. Write at least 40 words."
     },
     {
       "id": "g5-c-listening-1",
@@ -900,7 +900,7 @@
       "marks": 5,
       "format": "writing",
       "minWords": 40,
-      "prompt": "Write at least 40 words describing the market during neighbourhood market. Describe what people can see, what they can do and why you would like to visit.",
+      "prompt": "Write at least 40 words describing a visit to a space exhibition. Mention the Moon, a rocket or a telescope, and what you hope to explore in the future.",
       "pictureOptions": []
     },
     {
@@ -913,7 +913,7 @@
       "marks": 5,
       "format": "writing",
       "minWords": 40,
-      "prompt": "Write an email to your friend about the neighbourhood market. Say when and where it happens, describe two activities and invite your friend to come. Write at least 40 words."
+      "prompt": "Write an email inviting your friend to a space discovery day. Explain what you will see, what you will learn about planets and one question you want to ask. Write at least 40 words."
     },
     {
       "id": "g5-d-listening-1",
@@ -1203,7 +1203,7 @@
       "marks": 5,
       "format": "writing",
       "minWords": 40,
-      "prompt": "Write at least 40 words describing the park during outdoor art day. Describe what people can see, what they can do and why you would like to visit.",
+      "prompt": "Write at least 40 words describing a small shop near your home. Mention the items it sells, their prices, and how customers ask for help.",
       "pictureOptions": []
     },
     {
@@ -1216,7 +1216,7 @@
       "marks": 5,
       "format": "writing",
       "minWords": 40,
-      "prompt": "Write an email to your friend about the outdoor art day. Say when and where it happens, describe two activities and invite your friend to come. Write at least 40 words."
+      "prompt": "Write an email to a friend about your shopping trip. Explain what you wanted to buy, how much it cost, what you chose and why. Write at least 40 words."
     },
     {
       "id": "g6-a-listening-1",
@@ -1502,11 +1502,11 @@
       "marks": 5,
       "format": "writing",
       "minWords": 50,
-      "prompt": "Look at the three pictures. Write a story of at least 50 words about preparing for a invention fair. Explain what happened first, next and finally. Use past tense.",
+      "prompt": "Look at the three pictures. Write a story of at least 50 words about joining a new free-time sports club. Explain what happened first, next and finally. Use past-time expressions.",
       "pictureOptions": [
-        "robot",
-        "museum",
-        "camera"
+        "football",
+        "park",
+        "bicycle"
       ]
     },
     {
@@ -1519,7 +1519,7 @@
       "marks": 5,
       "format": "writing",
       "minWords": 50,
-      "prompt": "Write a short review (at least 50 words) of a invention fair you visited. Say where it was, what you liked, one thing that could improve and whether you recommend it."
+      "prompt": "Write a short review of a sports club you visited. Describe the activities, facilities, people and one improvement you would suggest. Write at least 50 words."
     },
     {
       "id": "g6-b-listening-1",
@@ -1805,11 +1805,11 @@
       "marks": 5,
       "format": "writing",
       "minWords": 50,
-      "prompt": "Look at the three pictures. Write a story of at least 50 words about preparing for a coastal science day. Explain what happened first, next and finally. Use past tense.",
+      "prompt": "Look at the three pictures. Write a story of at least 50 words about preparing a simple technology project for school. Explain how you used the devices and what happened.",
       "pictureOptions": [
-        "fish",
-        "beach",
-        "boat"
+        "computer",
+        "robot",
+        "camera"
       ]
     },
     {
@@ -1822,7 +1822,7 @@
       "marks": 5,
       "format": "writing",
       "minWords": 50,
-      "prompt": "Write a short review (at least 50 words) of a coastal science day you visited. Say where it was, what you liked, one thing that could improve and whether you recommend it."
+      "prompt": "Write a review of a school technology demonstration. Explain what the invention does, why it is useful, and how it could improve. Write at least 50 words."
     },
     {
       "id": "g6-c-listening-1",
@@ -2108,11 +2108,11 @@
       "marks": 5,
       "format": "writing",
       "minWords": 50,
-      "prompt": "Look at the three pictures. Write a story of at least 50 words about preparing for a neighbourhood market. Explain what happened first, next and finally. Use past tense.",
+      "prompt": "Look at the three pictures. Write a story of at least 50 words about exploring an unfamiliar place in Oman. Include your journey, something you discovered and how you returned home.",
       "pictureOptions": [
-        "apple",
-        "market",
-        "gift"
+        "bridge",
+        "museum",
+        "boat"
       ]
     },
     {
@@ -2125,7 +2125,7 @@
       "marks": 5,
       "format": "writing",
       "minWords": 50,
-      "prompt": "Write a short review (at least 50 words) of a neighbourhood market you visited. Say where it was, what you liked, one thing that could improve and whether you recommend it."
+      "prompt": "Write a review of a place you visited, such as a museum, fort or town. Explain how you travelled, what you saw, and whether you recommend it. Write at least 50 words."
     },
     {
       "id": "g6-d-listening-1",
@@ -2411,11 +2411,11 @@
       "marks": 5,
       "format": "writing",
       "minWords": 50,
-      "prompt": "Look at the three pictures. Write a story of at least 50 words about preparing for a outdoor art day. Explain what happened first, next and finally. Use past tense.",
+      "prompt": "Look at the three pictures. Write a story of at least 50 words about a class trip where pupils used technology to plan an enjoyable free-time activity.",
       "pictureOptions": [
-        "paintbrush",
+        "camera",
         "park",
-        "flower"
+        "boat"
       ]
     },
     {
@@ -2428,7 +2428,7 @@
       "marks": 5,
       "format": "writing",
       "minWords": 50,
-      "prompt": "Write a short review (at least 50 words) of a outdoor art day you visited. Say where it was, what you liked, one thing that could improve and whether you recommend it."
+      "prompt": "Write a review of a trip or activity that combined travel, technology and sport. Mention at least two of these themes and give your opinion. Write at least 50 words."
     }
   ]
 }
