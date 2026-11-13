@@ -14,7 +14,7 @@
   "natural_audio_other_models_pending": true,
   "unit_alignment_fully_approved": false,
   "audio_image_technical_inventory_verified": true,
-  "caveat": "Grades 5–8 pass technical and media QA but remain teacher review pending page-level unit confirmation and real-phone offline test. Grade 9 under curriculum review. Grade 10 has six interactive pilots and verified audio. Grade 11 Core has six interactive pilot papers with audio but is NOT yet the official nine-section SAH exam format. Grade 11 Elective and Grade 12 are not student-ready.",
+  "caveat": "Grades5–8 pass technical/audio QA; final unit-page signoff and real-phone offline tests pending. Grade10 six interactive previews plus natural audio validated. Grade11 Core six interactive previews plus natural audio validated, but NOT the 9-section SAH semester format. Grade11 Elective/Grade12 original draft sections were corrected for repeated local questions, factual key support and official word lengths; unique thematic content, voices, and final UI remain incomplete.",
   "natural_grade9_mp3_segments_A": 21,
   "natural_grade9_complete_mp3_tracks_B_C_G": 6,
   "natural_grade9_models_with_recordings": [
@@ -162,5 +162,22 @@
     "status": "five-broad-section pilot, NOT official nine-section SAH semester paper"
   },
   "official_upper_grade_spec": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json",
-  "upper_grades_sah_alignment_approved": false
+  "upper_grades_sah_alignment_approved": false,
+  "upper_grade_content_revision_2026_11_13": {
+    "sourceBank": "higher_grades_corrected.json",
+    "tracks": [
+      "11-elective",
+      "12-core",
+      "12-elective"
+    ],
+    "models": 18,
+    "saHStructureReference": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json",
+    "saHGapReport": "UPPER_GRADES_SAH_GAP_AUDIT_2026-11-13.json",
+    "questionTypesAndCountsAudited": true,
+    "duplicateObjectiveStemsWithinSectionsFixed": true,
+    "documentedAnswerContradictionsFixed": true,
+    "wordLengthReviewPass": true,
+    "remainingReleaseBlocker": "Grade 11 Core six-model pilot has only five broad sections; official specification requires nine",
+    "remaining": "cross-track repeated source scripts, exact unit-page alignment, natural voices for elective and Grade12, teacher approval"
+  }
 }
