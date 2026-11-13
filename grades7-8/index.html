@@ -28,7 +28,9 @@ let randomG78Model=null;
 function generateG78Random(){
  const grade=Number(by('grade').value);
  const choices=['A','B','C','D'];
- randomG78Model=newG78Mixed(grade,'R',G78_KEYS.map(()=>choices[Math.floor(Math.random()*4)]));
+ const shuffled=[...choices];for(let i=shuffled.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[shuffled[i],shuffled[j]]=[shuffled[j],shuffled[i]]}
+ const mix=[...shuffled,...G78_KEYS.slice(4).map(()=>choices[Math.floor(Math.random()*4)])];
+ randomG78Model=newG78Mixed(grade,'R',mix);
  by('model').value='R';picker();start();
 }
 
