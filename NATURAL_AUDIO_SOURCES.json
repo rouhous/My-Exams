@@ -145,5 +145,185 @@
     "file": "audio-natural/g9/a/listening2/intro.mp3",
     "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=085f6b8c528346cfb3608a96f9da528e.mp3",
     "status": "source only, not locally downloaded"
+  },
+  {
+    "section": "listening1",
+    "segment": "intro",
+    "file": "audio-natural/g9/b/listening1/intro.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=d19b246de07141de806fac170523dbe6.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "narrator"
+  },
+  {
+    "section": "listening1",
+    "segment": "text1",
+    "file": "audio-natural/g9/b/listening1/text1.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=919622e0af194d44b9eab1561d985bcd.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "narrator"
+  },
+  {
+    "section": "listening1",
+    "segment": "text2",
+    "file": "audio-natural/g9/b/listening1/text2.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=6e1a71b476634dbd822c4d8ef3832e38.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "narrator"
+  },
+  {
+    "section": "listening1",
+    "segment": "text3",
+    "file": "audio-natural/g9/b/listening1/text3.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=729a6b202a7b44f8b7271f795f1d74ae.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "narrator"
+  },
+  {
+    "section": "listening1",
+    "segment": "text4",
+    "file": "audio-natural/g9/b/listening1/text4.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=594b47b0cca14d17b7b3066f1c52ad79.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "narrator"
+  },
+  {
+    "section": "listening1",
+    "segment": "text5",
+    "file": "audio-natural/g9/b/listening1/text5.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=88952507f5804d48a25e3dc20ee059cc.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "narrator"
+  },
+  {
+    "section": "listening2",
+    "segment": "intro",
+    "file": "audio-natural/g9/b/listening2/intro.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=58fd102225d7497f8ededdd4e53ea831.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "narrator"
+  },
+  {
+    "section": "listening2",
+    "segment": "q0",
+    "file": "audio-natural/g9/b/listening2/q0.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=edad68a6481f4a5ab17b43e36086e35c.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "interviewer"
+  },
+  {
+    "section": "listening2",
+    "segment": "a0",
+    "file": "audio-natural/g9/b/listening2/a0.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=04d3b77d1d5443a983389eac586ad734.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "guest"
+  },
+  {
+    "section": "listening2",
+    "segment": "q1",
+    "file": "audio-natural/g9/b/listening2/q1.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=4a651cc64ff84c74b05e967ce2f671e0.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "interviewer"
+  },
+  {
+    "section": "listening2",
+    "segment": "a1",
+    "file": "audio-natural/g9/b/listening2/a1.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=4f8ffa1c25d14b99b2fe0a1c88c4d58d.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "guest"
+  },
+  {
+    "section": "listening2",
+    "segment": "q2",
+    "file": "audio-natural/g9/b/listening2/q2.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=a018647d9c734ed2be776e96257e540a.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "interviewer"
+  },
+  {
+    "section": "listening2",
+    "segment": "a2",
+    "file": "audio-natural/g9/b/listening2/a2.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=aeeb219678b34946bcdc607c0bf3b65a.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "guest"
+  },
+  {
+    "section": "listening2",
+    "segment": "q3",
+    "file": "audio-natural/g9/b/listening2/q3.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=c52c6628377b42479f70f02a53d110ee.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "interviewer"
+  },
+  {
+    "section": "listening2",
+    "segment": "a3",
+    "file": "audio-natural/g9/b/listening2/a3.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=17a8d040b19045dbaf5b92331f237575.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "guest"
+  },
+  {
+    "section": "listening2",
+    "segment": "q4",
+    "file": "audio-natural/g9/b/listening2/q4.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=1d04506e11f74d6da1ba1e7edcb4b635.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "interviewer"
+  },
+  {
+    "section": "listening2",
+    "segment": "a4",
+    "file": "audio-natural/g9/b/listening2/a4.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=4bda53ce45734b56a4b924c7eb096e64.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "guest"
+  },
+  {
+    "section": "listening2",
+    "segment": "q5",
+    "file": "audio-natural/g9/b/listening2/q5.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=7ab2fceb0e424369bbfcc69a6d4b22e6.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "interviewer"
+  },
+  {
+    "section": "listening2",
+    "segment": "a5",
+    "file": "audio-natural/g9/b/listening2/a5.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/80b17a1be1594e578b92c0ddf4a37fc8/id=1aafca2ec06a44f3ae4539448ba45c65.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "guest"
+  },
+  {
+    "section": "listening2",
+    "segment": "q6-end",
+    "file": "audio-natural/g9/b/listening2/q6-end.mp3",
+    "source_url": "https://resource2.heygen.ai/text_to_speech/6232dc3a7721486a929c078fee5ee0b2/f264d09b4320461b9873abbe9283b505/id=720c069bf06d482995e53f4025c55af6.mp3",
+    "grade": 9,
+    "model": "B",
+    "voice": "interviewer"
   }
 ]
