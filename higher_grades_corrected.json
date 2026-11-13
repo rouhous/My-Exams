@@ -4930,22 +4930,22 @@
               "type": "tf"
             },
             {
-              "stem": "The activity began in October.",
+              "type": "tf",
+              "stem": "The organiser kept a record of dates, decisions and questions.",
               "options": [
                 "True",
                 "False"
               ],
-              "answer": 0,
-              "type": "tf"
+              "answer": 0
             },
             {
-              "stem": "The project was held in a shopping centre.",
+              "type": "tf",
+              "stem": "The suggestions from local people made no difference to the timetable.",
               "options": [
                 "True",
                 "False"
               ],
-              "answer": 1,
-              "type": "tf"
+              "answer": 1
             }
           ],
           "script": false,
@@ -5349,22 +5349,22 @@
               "type": "tf"
             },
             {
-              "stem": "The activity began in November.",
+              "type": "tf",
+              "stem": "The organiser kept a record of dates, decisions and questions.",
               "options": [
                 "True",
                 "False"
               ],
-              "answer": 0,
-              "type": "tf"
+              "answer": 0
             },
             {
-              "stem": "The project was held in a shopping centre.",
+              "type": "tf",
+              "stem": "The suggestions from local people made no difference to the timetable.",
               "options": [
                 "True",
                 "False"
               ],
-              "answer": 1,
-              "type": "tf"
+              "answer": 1
             }
           ],
           "script": false,
@@ -5768,22 +5768,22 @@
               "type": "tf"
             },
             {
-              "stem": "The activity began in September.",
+              "type": "tf",
+              "stem": "The organiser kept a record of dates, decisions and questions.",
               "options": [
                 "True",
                 "False"
               ],
-              "answer": 0,
-              "type": "tf"
+              "answer": 0
             },
             {
-              "stem": "The project was held in a shopping centre.",
+              "type": "tf",
+              "stem": "The suggestions from local people made no difference to the timetable.",
               "options": [
                 "True",
                 "False"
               ],
-              "answer": 1,
-              "type": "tf"
+              "answer": 1
             }
           ],
           "script": false,
@@ -6187,22 +6187,22 @@
               "type": "tf"
             },
             {
-              "stem": "The activity began in December.",
+              "type": "tf",
+              "stem": "The organiser kept a record of dates, decisions and questions.",
               "options": [
                 "True",
                 "False"
               ],
-              "answer": 0,
-              "type": "tf"
+              "answer": 0
             },
             {
-              "stem": "The project was held in a shopping centre.",
+              "type": "tf",
+              "stem": "The suggestions from local people made no difference to the timetable.",
               "options": [
                 "True",
                 "False"
               ],
-              "answer": 1,
-              "type": "tf"
+              "answer": 1
             }
           ],
           "script": false,
@@ -6606,22 +6606,22 @@
               "type": "tf"
             },
             {
-              "stem": "The activity began in November.",
+              "type": "tf",
+              "stem": "The organiser kept a record of dates, decisions and questions.",
               "options": [
                 "True",
                 "False"
               ],
-              "answer": 0,
-              "type": "tf"
+              "answer": 0
             },
             {
-              "stem": "The project was held in a shopping centre.",
+              "type": "tf",
+              "stem": "The suggestions from local people made no difference to the timetable.",
               "options": [
                 "True",
                 "False"
               ],
-              "answer": 1,
-              "type": "tf"
+              "answer": 1
             }
           ],
           "script": false,
@@ -7033,22 +7033,22 @@
               "type": "tf"
             },
             {
-              "stem": "The activity began in October.",
+              "type": "tf",
+              "stem": "The organiser kept a record of dates, decisions and questions.",
               "options": [
                 "True",
                 "False"
               ],
-              "answer": 0,
-              "type": "tf"
+              "answer": 0
             },
             {
-              "stem": "The project was held in a shopping centre.",
+              "type": "tf",
+              "stem": "The suggestions from local people made no difference to the timetable.",
               "options": [
                 "True",
                 "False"
               ],
-              "answer": 1,
-              "type": "tf"
+              "answer": 1
             }
           ],
           "script": false,
@@ -7245,7 +7245,7 @@
           "key": "lst1",
           "title": "Listening 1 · 7 MCQ",
           "marks": 7,
-          "passage": "Presenter: Welcome to Community Choices. Today's guest is Layla, who manages a small advice desk for customers at the Al Batinah shopping centre. Your project is called Buy Wisely. How did it begin?\nLayla: We noticed that many families were buying things they did not need. We wanted to help teenagers compare prices, understand receipts and make sensible decisions before spending money.\nPresenter: How did you collect information?\nLayla: We asked one hundred and twenty shoppers to complete a short survey. Sixty-two per cent said they compared prices online before visiting a shop, but fewer than half kept their receipts carefully.\nPresenter: What advice did you offer?\nLayla: We asked customers to make a list and decide on a budget before entering the shops. A discounted item is not a bargain if it will never be used.\nPresenter: Did you discuss returns?\nLayla: Yes. Each shop has its own rules, so customers should check the policy. Our participating clothes shop accepts an exchange within fourteen days when the item is unused and the customer has the receipt.\nPresenter: What about digital payments?\nLayla: We demonstrated contactless payments and explained why students should never share their card details or security codes. Paying quickly is convenient, but it does not mean spending without thinking.\nPresenter: What was the biggest difficulty at the advice desk?\nLayla: At first there was a long queue. People wanted individual help, so we added two trained assistants and displayed the most common questions on a noticeboard.\nPresenter: Did anything surprise you?\nLayla: Many visitors were interested in second-hand products. Some families bought good-quality used books and sports equipment rather than new ones. That saved money and reduced waste.\nPresenter: What happened after the event?\nLayla: A local youth group asked for a similar workshop about online shopping. We are preparing one with examples of misleading advertisements and safe payment methods.\nPresenter: What is the most important lesson?\nLayla: Good shopping is about needs, value and responsibility, not simply about finding the lowest price.\nPresenter: Thank you for joining us.",
+          "passage": "Presenter: Welcome to Community Choices. Today's guest is Layla, who manages a small advice desk for customers at the Al Batinah shopping centre. Your project is called Buy Wisely. How did it begin?\nLayla: We noticed that many families were buying things they did not need. We wanted to help teenagers compare prices, understand receipts and make sensible decisions before spending money.\nPresenter: How did you collect information?\nLayla: We asked one hundred and twenty shoppers to complete a short survey. Sixty-two per cent said they compared prices online before visiting a shop, but fewer than half kept their receipts carefully.\nPresenter: What advice did you offer?\nLayla: We asked customers to make a list and decide on a budget before entering the shops. A discounted item is not a bargain if it will never be used.\nPresenter: Did you discuss returns?\nLayla: Yes. Each shop has its own rules, so customers should check the policy. Our participating clothes shop accepts an exchange within fourteen days when the item is unused and the customer has the receipt.\nPresenter: What about digital payments?\nLayla: We demonstrated contactless payments and explained why students should never share their card details or security codes. Paying quickly is convenient, but it does not mean spending without thinking.\nPresenter: What was the biggest difficulty at the advice desk?\nLayla: At first there was a long queue. People wanted individual help, so we added two trained assistants and displayed the most common questions on a noticeboard.\nPresenter: Did anything surprise you?\nLayla: Many visitors were interested in second-hand products. Some families bought good-quality used books and sports equipment rather than new ones. That saved money and reduced waste.\nPresenter: What happened after the event?\nLayla: A local youth group asked for a similar workshop about online shopping. We are preparing one with examples of misleading advertisements and safe payment methods.\nPresenter: What is the most important lesson?\nLayla: Good shopping is about needs, value and responsibility, not simply about finding the lowest price.\nPresenter: What should shoppers do before choosing a product?\nLayla: They should compare prices, check the return policy and think carefully about whether they actually need it.\nPresenter: Thank you for joining us.",
           "questions": [
             {
               "type": "mc",
@@ -7455,7 +7455,7 @@
           "key": "vocabulary",
           "title": "Vocabulary · 5 three-choice gaps",
           "marks": 5,
-          "passage": "The class prepared a short information guide for this theme. Read each sentence in context and select the correct word for every numbered gap. A company name that identifies its products is a [1]. A person who buys or uses goods is a [2]. Money returned after a cancelled purchase is a [3]. A public message promoting a product is an [4]. The act of swapping one product for another is an [5].",
+          "passage": "The class prepared a short information guide for this theme. Read each sentence in context and select the correct word for every numbered gap. A company name that identifies its products is a [1]. A person who buys or uses goods is a [2]. Money returned after a cancelled purchase is a [3]. A public message promoting a product is an [4]. The act of swapping one product for another is an [5]. Careful shoppers should compare prices and keep receipts in case an item needs to be returned.",
           "questions": [
             {
               "type": "mc",
@@ -7709,34 +7709,44 @@
               "type": "short"
             },
             {
-              "stem": "Which item did the group prepare?",
-              "answer": "a portable water-testing kit",
-              "type": "short"
-            },
-            {
-              "stem": "What difficulty affected the project?",
-              "answer": "high waves prevented the boat trip",
-              "type": "short"
-            },
-            {
-              "stem": "Where did the project take place?",
+              "type": "mc",
+              "stem": "Why did organisers ask local people for their opinions?",
               "options": [
-                "a marine research station near Sur",
-                "a shopping centre",
-                "a sports stadium"
+                "To identify practical needs that had been overlooked",
+                "To replace the entire teaching team",
+                "To avoid planning any activities"
               ],
-              "answer": 0,
-              "type": "mc"
+              "answer": 0
             },
             {
-              "stem": "Who helped the students check safety?",
+              "type": "mc",
+              "stem": "What helped the organisers explain the results to visitors?",
               "options": [
-                "a television reporter",
-                "a shopkeeper",
-                "Dr Huda"
+                "A public advertisement",
+                "A record of dates, decisions and questions",
+                "A list of school holidays"
               ],
-              "answer": 2,
-              "type": "mc"
+              "answer": 1
+            },
+            {
+              "type": "mc",
+              "stem": "How were different opinions about preparation resolved?",
+              "options": [
+                "The volunteers stopped meeting",
+                "The organisers ignored the disagreements",
+                "The tasks were divided into smaller stages"
+              ],
+              "answer": 2
+            },
+            {
+              "type": "mc",
+              "stem": "Which practical issues were discussed with the supervisor?",
+              "options": [
+                "Safety, cost and accessibility",
+                "Only the prize ceremony",
+                "A sports competition schedule"
+              ],
+              "answer": 0
             },
             {
               "stem": "When did the project begin?",
@@ -8122,7 +8132,7 @@
           "key": "vocabulary",
           "title": "Vocabulary · 5 three-choice gaps",
           "marks": 5,
-          "passage": "The class prepared a short information guide for this theme. Read each sentence in context and select the correct word for every numbered gap. Financial support awarded for study is a [1]. A talk delivered to university students is a [2]. The university grounds are called the [3]. The first programme explaining university life is [4]. One period of university study is a [5].",
+          "passage": "The class prepared a short information guide for this theme. Read each sentence in context and select the correct word for every numbered gap. Financial support awarded for study is a [1]. A talk delivered to university students is a [2]. The university grounds are called the [3]. The first programme explaining university life is [4]. One period of university study is a [5]. Before arriving on campus, new students should read course information, prepare their documents, and ask the admissions office about important registration deadlines.",
           "questions": [
             {
               "type": "mc",
@@ -8376,34 +8386,44 @@
               "type": "short"
             },
             {
-              "stem": "Which item did the group prepare?",
-              "answer": "a box of donated bilingual books",
-              "type": "short"
-            },
-            {
-              "stem": "What difficulty affected the project?",
-              "answer": "the first room was too small for the visitors",
-              "type": "short"
-            },
-            {
-              "stem": "Where did the project take place?",
+              "type": "mc",
+              "stem": "Why did organisers ask local people for their opinions?",
               "options": [
-                "a shopping centre",
-                "a sports stadium",
-                "a new neighbourhood reading room in Nizwa"
+                "To identify practical needs that had been overlooked",
+                "To replace the entire teaching team",
+                "To avoid planning any activities"
               ],
-              "answer": 2,
-              "type": "mc"
+              "answer": 0
             },
             {
-              "stem": "Who helped the students check safety?",
+              "type": "mc",
+              "stem": "What helped the organisers explain the results to visitors?",
               "options": [
-                "a shopkeeper",
-                "Ms Aisha",
-                "a television reporter"
+                "A public advertisement",
+                "A record of dates, decisions and questions",
+                "A list of school holidays"
               ],
-              "answer": 1,
-              "type": "mc"
+              "answer": 1
+            },
+            {
+              "type": "mc",
+              "stem": "How were different opinions about preparation resolved?",
+              "options": [
+                "The volunteers stopped meeting",
+                "The organisers ignored the disagreements",
+                "The tasks were divided into smaller stages"
+              ],
+              "answer": 2
+            },
+            {
+              "type": "mc",
+              "stem": "Which practical issues were discussed with the supervisor?",
+              "options": [
+                "Safety, cost and accessibility",
+                "Only the prize ceremony",
+                "A sports competition schedule"
+              ],
+              "answer": 0
             },
             {
               "stem": "When did the project begin?",
@@ -8789,7 +8809,7 @@
           "key": "vocabulary",
           "title": "Vocabulary · 5 three-choice gaps",
           "marks": 5,
-          "passage": "The class prepared a short information guide for this theme. Read each sentence in context and select the correct word for every numbered gap. A confirmed request for a hotel room is a [1]. The hotel desk that welcomes visitors is [2]. Friendly service given to guests is [3]. The place a traveller plans to reach is a [4]. A detailed schedule of a trip is an [5].",
+          "passage": "The class prepared a short information guide for this theme. Read each sentence in context and select the correct word for every numbered gap. A confirmed request for a hotel room is a [1]. The hotel desk that welcomes visitors is [2]. Friendly service given to guests is [3]. The place a traveller plans to reach is a [4]. A detailed schedule of a trip is an [5]. Hotel staff should greet visitors politely, answer questions clearly, check bookings carefully and explain useful facilities to guests before their arrival.",
           "questions": [
             {
               "type": "mc",
@@ -9043,34 +9063,44 @@
               "type": "short"
             },
             {
-              "stem": "Which item did the group prepare?",
-              "answer": "a small solar-powered lamp",
-              "type": "short"
-            },
-            {
-              "stem": "What difficulty affected the project?",
-              "answer": "cloudy weather interrupted the first outdoor test",
-              "type": "short"
-            },
-            {
-              "stem": "Where did the project take place?",
+              "type": "mc",
+              "stem": "Why did organisers ask local people for their opinions?",
               "options": [
-                "a sports stadium",
-                "a secondary school in Sohar",
-                "a shopping centre"
+                "To identify practical needs that had been overlooked",
+                "To replace the entire teaching team",
+                "To avoid planning any activities"
               ],
-              "answer": 1,
-              "type": "mc"
+              "answer": 0
             },
             {
-              "stem": "Who helped the students check safety?",
+              "type": "mc",
+              "stem": "What helped the organisers explain the results to visitors?",
               "options": [
-                "Engineer Rashid",
-                "a television reporter",
-                "a shopkeeper"
+                "A public advertisement",
+                "A record of dates, decisions and questions",
+                "A list of school holidays"
               ],
-              "answer": 0,
-              "type": "mc"
+              "answer": 1
+            },
+            {
+              "type": "mc",
+              "stem": "How were different opinions about preparation resolved?",
+              "options": [
+                "The volunteers stopped meeting",
+                "The organisers ignored the disagreements",
+                "The tasks were divided into smaller stages"
+              ],
+              "answer": 2
+            },
+            {
+              "type": "mc",
+              "stem": "Which practical issues were discussed with the supervisor?",
+              "options": [
+                "Safety, cost and accessibility",
+                "Only the prize ceremony",
+                "A sports competition schedule"
+              ],
+              "answer": 0
             },
             {
               "stem": "When did the project begin?",
@@ -9456,7 +9486,7 @@
           "key": "vocabulary",
           "title": "Vocabulary · 5 three-choice gaps",
           "marks": 5,
-          "passage": "The class prepared a short information guide for this theme. Read each sentence in context and select the correct word for every numbered gap. Crowded traffic on roads is called [1]. The industry of flying aircraft is [2]. The time a vehicle leaves is its [3]. A person who travels regularly to work is a [4]. The long strip where an aircraft takes off is a [5].",
+          "passage": "The class prepared a short information guide for this theme. Read each sentence in context and select the correct word for every numbered gap. Crowded traffic on roads is called [1]. The industry of flying aircraft is [2]. The time a vehicle leaves is its [3]. A person who travels regularly to work is a [4]. The long strip where an aircraft takes off is a [5]. Passengers should check departure boards, prepare travel documents, follow safety advice and contact transport staff whenever a journey is unexpectedly delayed.",
           "questions": [
             {
               "type": "mc",
@@ -9710,34 +9740,44 @@
               "type": "short"
             },
             {
-              "stem": "Which item did the group prepare?",
-              "answer": "a collection of old photographs",
-              "type": "short"
-            },
-            {
-              "stem": "What difficulty affected the project?",
-              "answer": "several signs were difficult for visitors to read",
-              "type": "short"
-            },
-            {
-              "stem": "Where did the project take place?",
+              "type": "mc",
+              "stem": "Why did organisers ask local people for their opinions?",
               "options": [
-                "an old neighbourhood in Bahla",
-                "a shopping centre",
-                "a sports stadium"
+                "To identify practical needs that had been overlooked",
+                "To replace the entire teaching team",
+                "To avoid planning any activities"
               ],
-              "answer": 0,
-              "type": "mc"
+              "answer": 0
             },
             {
-              "stem": "Who helped the students check safety?",
+              "type": "mc",
+              "stem": "What helped the organisers explain the results to visitors?",
               "options": [
-                "a television reporter",
-                "a shopkeeper",
-                "Mr Hamad"
+                "A public advertisement",
+                "A record of dates, decisions and questions",
+                "A list of school holidays"
               ],
-              "answer": 2,
-              "type": "mc"
+              "answer": 1
+            },
+            {
+              "type": "mc",
+              "stem": "How were different opinions about preparation resolved?",
+              "options": [
+                "The volunteers stopped meeting",
+                "The organisers ignored the disagreements",
+                "The tasks were divided into smaller stages"
+              ],
+              "answer": 2
+            },
+            {
+              "type": "mc",
+              "stem": "Which practical issues were discussed with the supervisor?",
+              "options": [
+                "Safety, cost and accessibility",
+                "Only the prize ceremony",
+                "A sports competition schedule"
+              ],
+              "answer": 0
             },
             {
               "stem": "When did the project begin?",
@@ -10367,34 +10407,44 @@
               "type": "short"
             },
             {
-              "stem": "Which item did the group prepare?",
-              "answer": "a portable water-testing kit",
-              "type": "short"
-            },
-            {
-              "stem": "What difficulty affected the project?",
-              "answer": "high waves prevented the boat trip",
-              "type": "short"
-            },
-            {
-              "stem": "Where did the project take place?",
+              "type": "mc",
+              "stem": "Why did organisers ask local people for their opinions?",
               "options": [
-                "a shopping centre",
-                "a sports stadium",
-                "a marine research station near Sur"
+                "To identify practical needs that had been overlooked",
+                "To replace the entire teaching team",
+                "To avoid planning any activities"
               ],
-              "answer": 2,
-              "type": "mc"
+              "answer": 0
             },
             {
-              "stem": "Who helped the students check safety?",
+              "type": "mc",
+              "stem": "What helped the organisers explain the results to visitors?",
               "options": [
-                "a shopkeeper",
-                "Dr Huda",
-                "a television reporter"
+                "A public advertisement",
+                "A record of dates, decisions and questions",
+                "A list of school holidays"
               ],
-              "answer": 1,
-              "type": "mc"
+              "answer": 1
+            },
+            {
+              "type": "mc",
+              "stem": "How were different opinions about preparation resolved?",
+              "options": [
+                "The volunteers stopped meeting",
+                "The organisers ignored the disagreements",
+                "The tasks were divided into smaller stages"
+              ],
+              "answer": 2
+            },
+            {
+              "type": "mc",
+              "stem": "Which practical issues were discussed with the supervisor?",
+              "options": [
+                "Safety, cost and accessibility",
+                "Only the prize ceremony",
+                "A sports competition schedule"
+              ],
+              "answer": 0
             },
             {
               "stem": "When did the project begin?",
@@ -10918,34 +10968,44 @@
               "type": "short"
             },
             {
-              "stem": "Which item did the group prepare?",
-              "answer": "a box of donated bilingual books",
-              "type": "short"
-            },
-            {
-              "stem": "What difficulty affected the project?",
-              "answer": "the first room was too small for the visitors",
-              "type": "short"
-            },
-            {
-              "stem": "Where did the project take place?",
+              "type": "mc",
+              "stem": "Why did organisers ask local people for their opinions?",
               "options": [
-                "a sports stadium",
-                "a new neighbourhood reading room in Nizwa",
-                "a shopping centre"
+                "To identify practical needs that had been overlooked",
+                "To replace the entire teaching team",
+                "To avoid planning any activities"
               ],
-              "answer": 1,
-              "type": "mc"
+              "answer": 0
             },
             {
-              "stem": "Who helped the students check safety?",
+              "type": "mc",
+              "stem": "What helped the organisers explain the results to visitors?",
               "options": [
-                "Ms Aisha",
-                "a television reporter",
-                "a shopkeeper"
+                "A public advertisement",
+                "A record of dates, decisions and questions",
+                "A list of school holidays"
               ],
-              "answer": 0,
-              "type": "mc"
+              "answer": 1
+            },
+            {
+              "type": "mc",
+              "stem": "How were different opinions about preparation resolved?",
+              "options": [
+                "The volunteers stopped meeting",
+                "The organisers ignored the disagreements",
+                "The tasks were divided into smaller stages"
+              ],
+              "answer": 2
+            },
+            {
+              "type": "mc",
+              "stem": "Which practical issues were discussed with the supervisor?",
+              "options": [
+                "Safety, cost and accessibility",
+                "Only the prize ceremony",
+                "A sports competition schedule"
+              ],
+              "answer": 0
             },
             {
               "stem": "When did the project begin?",
