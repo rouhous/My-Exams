@@ -37,7 +37,10 @@
         "writing1": "C",
         "writing2": "B"
       }
-    }
+    },
+    "curriculumQA": "Grade 10 A-D now have internally matching Listening, Vocabulary, Grammar, Reading 1, Reading 2 and Writing themes. Textbook page-level and official assessment detail still require manual confirmation.",
+    "reading2Correction": "Formerly rotated to next unit, now aligned to model's unit. Comprehensive E/F rebuilt from corrected bases.",
+    "answerOptionOrder": "Rotated choice positions with answer keys preserved; original answer texts retained."
   },
   "models": [
     {
@@ -46,7 +49,7 @@
       "track": "General",
       "unit": 1,
       "unitTitle": "New Media",
-      "status": "unit-origin-from-existing-app-needs-textbook-audit",
+      "status": "unit_theme_aligned_editorial_review; textbook page level and ministry scoring not certified",
       "listening": {
         "title": "Listening 1 — New Media at School",
         "passage": "Teacher: How does your class use new media for school projects?\nMaha: We use a class platform to share ideas and documents. We also use video calls when a group member is absent.\nTeacher: How do you decide whether online information is reliable?\nMaha: First, I check the source. I look for the author and the date, and I compare important information with another reliable website.\nTeacher: What about screen time?\nMaha: I try not to use my phone late at night because it can affect my sleep. During study time, I turn off unnecessary notifications.\nTeacher: Do you think social media is useful?\nMaha: Yes, if we use it responsibly. It helps us communicate quickly, but we should protect our privacy and think before posting.\nTeacher: What is your most important rule?\nMaha: I never share private information or a photograph of someone without permission.",
@@ -63,20 +66,20 @@
           {
             "stem": "What does Maha check first?",
             "options": [
-              "The source",
               "The price",
-              "The weather"
+              "The weather",
+              "The source"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "What can late phone use affect?",
             "options": [
+              "Transport",
               "Sleep",
-              "Rainfall",
-              "Transport"
+              "Rainfall"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What does Maha turn off during study time?",
@@ -90,20 +93,20 @@
           {
             "stem": "Why does she compare information?",
             "options": [
-              "To check reliability",
               "To increase screen time",
-              "To change the author"
+              "To change the author",
+              "To check reliability"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "What should students protect?",
             "options": [
+              "Their uniforms",
               "Their privacy",
-              "Their homework books",
-              "Their uniforms"
+              "Their homework books"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What is Maha’s most important rule?",
@@ -133,34 +136,34 @@
           {
             "stem": "Maha uses video calls when a group member is absent.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "Maha shares private information with everyone.",
             "options": [
-              "True",
-              "False"
-            ],
-            "answer": 1
-          },
-          {
-            "stem": "She compares important information with another reliable website.",
-            "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
             "answer": 0
           },
           {
-            "stem": "She says social media is always harmful.",
+            "stem": "She compares important information with another reliable website.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
             "answer": 1
+          },
+          {
+            "stem": "She says social media is always harmful.",
+            "options": [
+              "False",
+              "True"
+            ],
+            "answer": 0
           }
         ]
       },
@@ -180,12 +183,12 @@
           {
             "stem": "The place where students share work online is a ____.",
             "options": [
-              "monument",
-              "tide",
               "platform",
-              "valley"
+              "valley",
+              "monument",
+              "tide"
             ],
-            "answer": 2
+            "answer": 0
           },
           {
             "stem": "To put a video onto a website is to ____.",
@@ -200,12 +203,12 @@
           {
             "stem": "Personal information should be kept ____.",
             "options": [
-              "private",
-              "ancient",
               "renewable",
-              "fossil"
+              "fossil",
+              "private",
+              "ancient"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "A trustworthy article identifies its ____.",
@@ -225,52 +228,52 @@
           {
             "stem": "This news platform is ____ than the old one.",
             "options": [
+              "reliable than",
               "more reliable",
               "reliabler",
-              "most reliable",
-              "reliable than"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Please ____ the information before forwarding it.",
-            "options": [
-              "check in",
-              "give away",
-              "look up to",
-              "check out"
-            ],
-            "answer": 3
-          },
-          {
-            "stem": "A short video loads ____ than a very large one.",
-            "options": [
-              "most quickly",
-              "quickliest",
-              "more quickly",
-              "more quick"
-            ],
-            "answer": 2
-          },
-          {
-            "stem": "We should ____ suspicious links rather than open them.",
-            "options": [
-              "get along with",
-              "stay away from",
-              "look forward to",
-              "run out of"
+              "most reliable"
             ],
             "answer": 1
           },
           {
-            "stem": "The latest blog is ____ to read on a phone than the older version.",
+            "stem": "Please ____ the information before forwarding it.",
             "options": [
-              "easier",
-              "easy",
-              "easiest",
-              "more easy"
+              "give away",
+              "look up to",
+              "check out",
+              "check in"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "A short video loads ____ than a very large one.",
+            "options": [
+              "more quick",
+              "most quickly",
+              "quickliest",
+              "more quickly"
+            ],
+            "answer": 3
+          },
+          {
+            "stem": "We should ____ suspicious links rather than open them.",
+            "options": [
+              "stay away from",
+              "look forward to",
+              "run out of",
+              "get along with"
             ],
             "answer": 0
+          },
+          {
+            "stem": "The latest blog is ____ to read on a phone than the older version.",
+            "options": [
+              "more easy",
+              "easier",
+              "easy",
+              "easiest"
+            ],
+            "answer": 1
           }
         ]
       },
@@ -289,20 +292,20 @@
           {
             "stem": "What can teenagers use to find information?",
             "options": [
-              "Websites and platforms",
               "Only museums",
-              "Only books"
+              "Only books",
+              "Websites and platforms"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "What may too much time online affect?",
             "options": [
+              "Trade",
               "Study and sleep",
-              "Sea levels",
-              "Trade"
+              "Sea levels"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What should students protect online?",
@@ -316,20 +319,20 @@
           {
             "stem": "What should students do before posting?",
             "options": [
-              "Think carefully",
               "Burn fuel",
-              "Build turbines"
+              "Build turbines",
+              "Think carefully"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "What kind of source should students check?",
             "options": [
+              "Expensive",
               "Reliable",
-              "Ancient only",
-              "Expensive"
+              "Ancient only"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "Which device is mentioned?",
@@ -343,20 +346,20 @@
           {
             "stem": "What can social media help people do?",
             "options": [
-              "Share ideas quickly",
               "Generate electricity",
-              "Preserve ruins"
+              "Preserve ruins",
+              "Share ideas quickly"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "What is one disadvantage of too much screen time?",
             "options": [
+              "It lowers sea level",
               "It can affect sleep",
-              "It creates wind",
-              "It lowers sea level"
+              "It creates wind"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What is the main advice in the passage?",
@@ -366,6 +369,424 @@
               "Use only paper"
             ],
             "answer": 0
+          }
+        ]
+      },
+      "reading2": {
+        "passage": "New media has changed the way young people communicate and find information. Teenagers can use phones, websites and social-media platforms to share ideas quickly. However, spending too much time online can affect study and sleep. Students should check reliable sources, protect their privacy and think carefully before posting.",
+        "questions": [
+          {
+            "stem": "What can teenagers use to share ideas?",
+            "answer": "phones"
+          },
+          {
+            "stem": "What can too much time online affect?",
+            "answer": "study and sleep"
+          },
+          {
+            "stem": "What sort of information sources should students check?",
+            "answer": "reliable sources"
+          },
+          {
+            "stem": "What should students protect on the internet?",
+            "answer": "privacy"
+          },
+          {
+            "stem": "What should students do before posting?",
+            "answer": "think carefully"
+          },
+          {
+            "stem": "New media can help people communicate quickly.",
+            "options": [
+              "False",
+              "True"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "Too much screen time can never affect sleep.",
+            "options": [
+              "False",
+              "True"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "Students should check reliable sources.",
+            "options": [
+              "False",
+              "True"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "The passage says privacy is unimportant.",
+            "options": [
+              "False",
+              "True"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "Students should think before posting.",
+            "options": [
+              "False",
+              "True"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      "writing1": {
+        "prompt": "Write a blog post about new media. Give two advantages, one disadvantage and two safe-use tips. (80–100 words) Write at least 80 words."
+      },
+      "writing2": {
+        "prompt": "Write at least 100 words. Write a short discussion text about climate change. Explain two causes and two effects, then suggest two solutions. (80–100 words)"
+      },
+      "audioLocal": null,
+      "timeMinutes": 150,
+      "marks": 60,
+      "curriculumLanguageTargets": {
+        "grammar": [
+          "comparative structures",
+          "phrasal verbs"
+        ],
+        "vocabulary": [
+          "blog",
+          "platform",
+          "source",
+          "privacy",
+          "upload"
+        ]
+      },
+      "curriculumPageReviewed": false
+    },
+    {
+      "id": "B",
+      "grade": 10,
+      "track": "General",
+      "unit": 2,
+      "unitTitle": "Climate Change",
+      "status": "unit_theme_aligned_editorial_review; textbook page level and ministry scoring not certified",
+      "listening": {
+        "title": "Listening 1 — Climate Change",
+        "passage": "Presenter: Today we are talking about climate change and what students can do to help.\nSalim: What is one major cause of climate change?\nPresenter: Burning fossil fuels such as coal, oil and gas produces greenhouse gases. These gases trap heat in the atmosphere.\nSalim: What effects can climate change have?\nPresenter: It can increase temperatures and contribute to droughts, floods and rising sea levels. Some communities may also face problems with water and food supplies.\nSalim: Can students make a difference?\nPresenter: Yes. They can save electricity, reduce waste, reuse items and recycle materials. Walking or using public transport when possible can also reduce emissions.\nSalim: Is one action enough?\nPresenter: One small action may seem limited, but millions of responsible actions can make a difference. Schools can also plant trees and teach students about sustainable choices.\nSalim: What is the main message?\nPresenter: We cannot solve climate change through one person or one day. We need long-term action from individuals, communities and governments.",
+        "questions": [
+          {
+            "stem": "What produces greenhouse gases?",
+            "options": [
+              "Recycling paper",
+              "Burning fossil fuels",
+              "Planting trees"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What do greenhouse gases trap?",
+            "options": [
+              "Oxygen",
+              "Heat",
+              "Rainwater"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "Which is an effect mentioned?",
+            "options": [
+              "Lower school costs",
+              "Rising sea levels",
+              "More smartphones"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What can students recycle?",
+            "options": [
+              "Emissions",
+              "Materials",
+              "Weather"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "Which action can reduce emissions?",
+            "options": [
+              "Wasting water",
+              "Using public transport",
+              "Leaving lights on"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "Who can take long-term action?",
+            "options": [
+              "Only companies",
+              "Individuals, communities and governments",
+              "Only students"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What is the main message?",
+            "options": [
+              "Only schools can solve it",
+              "Long-term responsible action is needed",
+              "Climate change can be solved in one day"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "Name one fossil fuel.",
+            "answer": "coal"
+          },
+          {
+            "stem": "What do greenhouse gases trap?",
+            "answer": "heat"
+          },
+          {
+            "stem": "Name one possible climate effect.",
+            "answer": "droughts"
+          },
+          {
+            "stem": "What can schools plant?",
+            "answer": "trees"
+          },
+          {
+            "stem": "Climate change can increase temperatures.",
+            "options": [
+              "False",
+              "True"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "The speaker says one person can solve climate change alone.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "Students can reduce waste.",
+            "options": [
+              "False",
+              "True"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "Public transport always increases emissions.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      "vocabulary": {
+        "title": "Vocabulary · Climate Change",
+        "questions": [
+          {
+            "stem": "A long period without enough rainfall is a ____.",
+            "options": [
+              "drought",
+              "turbine",
+              "excavation",
+              "monument"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "An extremely hot period is a ____.",
+            "options": [
+              "archive",
+              "profile",
+              "heatwave",
+              "trade route"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "A gas that traps heat in the atmosphere is a ____.",
+            "options": [
+              "greenhouse gas",
+              "photovoltaic cell",
+              "artifact",
+              "microphone"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "The amount of carbon released by an activity is its ____.",
+            "options": [
+              "data cable",
+              "headline",
+              "carbon footprint",
+              "river bank"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "Rising water along coasts is related to a higher ____.",
+            "options": [
+              "sea level",
+              "signal strength",
+              "screen time",
+              "heritage site"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      "grammar": {
+        "title": "Grammar · Climate Change",
+        "questions": [
+          {
+            "stem": "Many regions are becoming drier ____ average temperatures are rising.",
+            "options": [
+              "unless",
+              "in spite",
+              "because",
+              "although"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "Select the correct compound noun.",
+            "options": [
+              "carbon footprint",
+              "carbonly footprint",
+              "footprinty carbon",
+              "carboning foot"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "If emissions continue to grow, the sea level ____ rise.",
+            "options": [
+              "were",
+              "has",
+              "will",
+              "had"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "The reservoir was low; ____, the town reduced water use.",
+            "options": [
+              "therefore",
+              "although",
+              "despite",
+              "unless"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "Our class will plant trees ____ reduce its carbon footprint.",
+            "options": [
+              "helping for",
+              "so to",
+              "to help",
+              "for helping to"
+            ],
+            "answer": 2
+          }
+        ]
+      },
+      "reading1": {
+        "passage": "Climate change is linked to rising temperatures and changes in weather patterns. Burning fossil fuels produces greenhouse gases. These gases contribute to global warming, which can lead to droughts, floods and rising sea levels. People can help by saving energy, reducing waste, recycling and supporting cleaner sources of energy.",
+        "questions": [
+          {
+            "stem": "What is linked to rising temperatures?",
+            "options": [
+              "Civilisation",
+              "Climate change",
+              "Social media"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What produces greenhouse gases?",
+            "options": [
+              "Walking",
+              "Burning fossil fuels",
+              "Recycling"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What can global warming contribute to?",
+            "options": [
+              "Ancient trade",
+              "Droughts and floods",
+              "More websites"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What can people do to help?",
+            "options": [
+              "Increase pollution",
+              "Save energy",
+              "Waste electricity"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What can recycling reduce?",
+            "options": [
+              "History",
+              "Waste",
+              "Heritage"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What can rising sea levels affect?",
+            "options": [
+              "Blogs",
+              "Communities",
+              "Passwords"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What can students use less of?",
+            "options": [
+              "History",
+              "Energy",
+              "Information"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What can public transport help reduce?",
+            "options": [
+              "Vocabulary",
+              "Emissions",
+              "Archaeological sites"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What can schools plant?",
+            "options": [
+              "Glaciers",
+              "Trees",
+              "Turbines"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What does the speaker say is needed?",
+            "options": [
+              "No action",
+              "Long-term action",
+              "One action by one person"
+            ],
+            "answer": 1
           }
         ]
       },
@@ -395,10 +816,10 @@
           {
             "stem": "Climate change can increase temperatures.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "Greenhouse gases have no effect on heat.",
@@ -411,10 +832,10 @@
           {
             "stem": "Floods can be an effect of climate change.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "Students can save electricity.",
@@ -427,362 +848,364 @@
           {
             "stem": "The speaker says climate change can be solved in one day.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           }
         ]
       },
       "writing1": {
-        "prompt": "Write a blog post about new media. Give two advantages, one disadvantage and two safe-use tips. (80–100 words) Write at least 80 words."
+        "prompt": "Write a short discussion text about climate change. Explain two causes and two effects, then suggest two solutions. (80–100 words) Write at least 80 words."
       },
       "writing2": {
-        "prompt": "Write at least 100 words. Write a short discussion text about climate change. Explain two causes and two effects, then suggest two solutions. (80–100 words)"
+        "prompt": "Write at least 100 words. Write a formal email suggesting a renewable-energy project for your school or community. Explain its benefits. (80–100 words)"
       },
       "audioLocal": null,
       "timeMinutes": 150,
       "marks": 60,
       "curriculumLanguageTargets": {
         "grammar": [
-          "comparative structures",
-          "phrasal verbs"
+          "cause-and-effect connectors",
+          "compound nouns",
+          "future predictions"
         ],
         "vocabulary": [
-          "blog",
-          "platform",
-          "source",
-          "privacy",
-          "upload"
+          "greenhouse gas",
+          "carbon footprint",
+          "sea level",
+          "drought",
+          "heatwave"
         ]
-      }
+      },
+      "curriculumPageReviewed": false
     },
     {
-      "id": "B",
+      "id": "C",
       "grade": 10,
       "track": "General",
-      "unit": 2,
-      "unitTitle": "Climate Change",
-      "status": "unit-origin-from-existing-app-needs-textbook-audit",
+      "unit": 3,
+      "unitTitle": "Renewable Energy",
+      "status": "unit_theme_aligned_editorial_review; textbook page level and ministry scoring not certified",
       "listening": {
-        "title": "Listening 1 — Climate Change",
-        "passage": "Presenter: Today we are talking about climate change and what students can do to help.\nSalim: What is one major cause of climate change?\nPresenter: Burning fossil fuels such as coal, oil and gas produces greenhouse gases. These gases trap heat in the atmosphere.\nSalim: What effects can climate change have?\nPresenter: It can increase temperatures and contribute to droughts, floods and rising sea levels. Some communities may also face problems with water and food supplies.\nSalim: Can students make a difference?\nPresenter: Yes. They can save electricity, reduce waste, reuse items and recycle materials. Walking or using public transport when possible can also reduce emissions.\nSalim: Is one action enough?\nPresenter: One small action may seem limited, but millions of responsible actions can make a difference. Schools can also plant trees and teach students about sustainable choices.\nSalim: What is the main message?\nPresenter: We cannot solve climate change through one person or one day. We need long-term action from individuals, communities and governments.",
+        "title": "Listening 1 — Renewable Energy in Oman",
+        "passage": "Engineer: Why is renewable energy important for Oman?\nStudent: Oman has many sunny days, so solar power has strong potential. Some areas are also suitable for wind power.\nEngineer: How do solar panels help?\nStudent: They use sunlight to generate electricity. Wind turbines use moving air to generate electricity.\nEngineer: Are renewable sources completely without challenges?\nStudent: No. Large projects need investment, suitable technology and careful planning. Engineers also have to consider the location and how electricity will be supplied to people.\nEngineer: What are the main advantages?\nStudent: Renewable energy can reduce the use of fossil fuels and lower some emissions. It can also support a more sustainable future.\nEngineer: What should students remember?\nStudent: Renewable energy is not only about solar panels. It is about choosing cleaner energy sources and using energy efficiently.\nEngineer: Can Oman benefit from these projects?\nStudent: Yes. With good planning and investment, renewable energy can support Oman’s future energy needs.",
         "questions": [
           {
-            "stem": "What produces greenhouse gases?",
+            "stem": "Why does solar power have strong potential in Oman?",
             "options": [
-              "Burning fossil fuels",
-              "Planting trees",
-              "Recycling paper"
+              "There are many glaciers",
+              "There is heavy snowfall",
+              "There are many sunny days"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "What do solar panels use?",
+            "options": [
+              "Sunlight",
+              "Coal",
+              "Sea water"
             ],
             "answer": 0
           },
           {
-            "stem": "What do greenhouse gases trap?",
+            "stem": "What do wind turbines use?",
             "options": [
-              "Heat",
-              "Rainwater",
-              "Oxygen"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Which is an effect mentioned?",
-            "options": [
-              "Rising sea levels",
-              "More smartphones",
-              "Lower school costs"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What can students recycle?",
-            "options": [
-              "Materials",
-              "Weather",
-              "Emissions"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Which action can reduce emissions?",
-            "options": [
-              "Using public transport",
-              "Leaving lights on",
-              "Wasting water"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Who can take long-term action?",
-            "options": [
-              "Individuals, communities and governments",
-              "Only students",
-              "Only companies"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What is the main message?",
-            "options": [
-              "Long-term responsible action is needed",
-              "Climate change can be solved in one day",
-              "Only schools can solve it"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Name one fossil fuel.",
-            "answer": "coal"
-          },
-          {
-            "stem": "What do greenhouse gases trap?",
-            "answer": "heat"
-          },
-          {
-            "stem": "Name one possible climate effect.",
-            "answer": "droughts"
-          },
-          {
-            "stem": "What can schools plant?",
-            "answer": "trees"
-          },
-          {
-            "stem": "Climate change can increase temperatures.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "The speaker says one person can solve climate change alone.",
-            "options": [
-              "True",
-              "False"
+              "Plastic",
+              "Moving air",
+              "Fossil fuels"
             ],
             "answer": 1
           },
           {
-            "stem": "Students can reduce waste.",
+            "stem": "What do large projects need?",
             "options": [
-              "True",
-              "False"
+              "No technology",
+              "No money",
+              "Investment and planning"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "What can renewable energy reduce?",
+            "options": [
+              "Use of fossil fuels",
+              "School attendance",
+              "Historical evidence"
             ],
             "answer": 0
           },
           {
-            "stem": "Public transport always increases emissions.",
+            "stem": "What can renewable energy support?",
             "options": [
-              "True",
-              "False"
+              "More waste",
+              "A sustainable future",
+              "More pollution"
             ],
             "answer": 1
+          },
+          {
+            "stem": "What must engineers consider?",
+            "options": [
+              "Only the colour of panels",
+              "Only the weather in winter",
+              "Location and electricity supply"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "What generates electricity from sunlight?",
+            "answer": "solar panels"
+          },
+          {
+            "stem": "What uses moving air?",
+            "answer": "wind turbines"
+          },
+          {
+            "stem": "Name one requirement for large projects.",
+            "answer": "investment"
+          },
+          {
+            "stem": "What can renewable energy lower?",
+            "answer": "emissions"
+          },
+          {
+            "stem": "Oman has many sunny days.",
+            "options": [
+              "False",
+              "True"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "Wind turbines use sunlight directly.",
+            "options": [
+              "False",
+              "True"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "Large renewable projects need planning.",
+            "options": [
+              "False",
+              "True"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "Renewable energy always needs more fossil fuels.",
+            "options": [
+              "False",
+              "True"
+            ],
+            "answer": 0
           }
         ]
       },
       "vocabulary": {
-        "title": "Vocabulary · Climate Change",
+        "title": "Vocabulary · Renewable Energy",
         "questions": [
           {
-            "stem": "A long period without enough rainfall is a ____.",
+            "stem": "A device that changes sunlight into electricity is a ____.",
             "options": [
-              "turbine",
-              "excavation",
-              "monument",
-              "drought"
-            ],
-            "answer": 3
-          },
-          {
-            "stem": "An extremely hot period is a ____.",
-            "options": [
-              "archive",
-              "profile",
-              "heatwave",
-              "trade route"
-            ],
-            "answer": 2
-          },
-          {
-            "stem": "A gas that traps heat in the atmosphere is a ____.",
-            "options": [
-              "microphone",
-              "greenhouse gas",
-              "photovoltaic cell",
-              "artifact"
+              "heritage site",
+              "solar panel",
+              "fossil record",
+              "media blog"
             ],
             "answer": 1
           },
           {
-            "stem": "The amount of carbon released by an activity is its ____.",
+            "stem": "A tall machine that generates power from wind is a ____.",
             "options": [
-              "carbon footprint",
-              "river bank",
-              "data cable",
-              "headline"
+              "wind turbine",
+              "rain gauge",
+              "bridge arch",
+              "camera tripod"
             ],
             "answer": 0
           },
           {
-            "stem": "Rising water along coasts is related to a higher ____.",
+            "stem": "Electricity made from moving water is ____.",
             "options": [
-              "signal strength",
-              "screen time",
-              "heritage site",
-              "sea level"
+              "coal power",
+              "seawater salt",
+              "sound energy",
+              "hydropower"
             ],
             "answer": 3
+          },
+          {
+            "stem": "A device that stores electrical energy is a ____.",
+            "options": [
+              "ruin",
+              "paragraph",
+              "battery",
+              "headline"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "A network distributing electricity is the power ____.",
+            "options": [
+              "cliff",
+              "grid",
+              "stage",
+              "screen"
+            ],
+            "answer": 1
           }
         ]
       },
       "grammar": {
-        "title": "Grammar · Climate Change",
+        "title": "Grammar · Renewable Energy",
         "questions": [
           {
-            "stem": "Many regions are becoming drier ____ average temperatures are rising.",
+            "stem": "Solar energy is clean, ____ it depends on sunlight.",
             "options": [
-              "because",
-              "although",
-              "unless",
-              "in spite"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Select the correct compound noun.",
-            "options": [
-              "carbonly footprint",
-              "footprinty carbon",
-              "carboning foot",
-              "carbon footprint"
+              "because of",
+              "although of",
+              "so that it",
+              "but"
             ],
             "answer": 3
           },
           {
-            "stem": "If emissions continue to grow, the sea level ____ rise.",
+            "stem": "The adjective from \"sustain\" is ____.",
             "options": [
-              "were",
-              "has",
-              "will",
-              "had"
+              "sustainingly",
+              "sustainment",
+              "sustainable",
+              "sustainful"
             ],
             "answer": 2
           },
           {
-            "stem": "The reservoir was low; ____, the town reduced water use.",
+            "stem": "Wind turbines are useful ____ the wind is strong.",
             "options": [
-              "unless",
-              "therefore",
-              "although",
-              "despite"
+              "although of",
+              "when",
+              "despite",
+              "unless of"
             ],
             "answer": 1
           },
           {
-            "stem": "Our class will plant trees ____ reduce its carbon footprint.",
+            "stem": "The adjective from \"economy\" is ____.",
             "options": [
-              "to help",
-              "for helping to",
-              "helping for",
-              "so to"
+              "economic",
+              "economize",
+              "economically",
+              "economics"
             ],
             "answer": 0
+          },
+          {
+            "stem": "The battery stores energy ____ it can be used at night.",
+            "options": [
+              "because of",
+              "although of",
+              "despite of",
+              "so that"
+            ],
+            "answer": 3
           }
         ]
       },
       "reading1": {
-        "passage": "Climate change is linked to rising temperatures and changes in weather patterns. Burning fossil fuels produces greenhouse gases. These gases contribute to global warming, which can lead to droughts, floods and rising sea levels. People can help by saving energy, reducing waste, recycling and supporting cleaner sources of energy.",
+        "passage": "Oman has strong potential for renewable energy because of its sunny climate and suitable areas for wind power. Solar and wind projects can generate electricity without burning fossil fuels. Renewable energy can reduce emissions and support a more sustainable future. Large projects require investment, technology and careful planning.",
         "questions": [
           {
-            "stem": "What is linked to rising temperatures?",
+            "stem": "Why is Oman suitable for solar power?",
             "options": [
-              "Climate change",
-              "Social media",
-              "Civilisation"
+              "It has many glaciers",
+              "It has heavy snow",
+              "It has many sunny days"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "What do solar panels use?",
+            "options": [
+              "Sunlight",
+              "Coal",
+              "Books"
             ],
             "answer": 0
           },
           {
-            "stem": "What produces greenhouse gases?",
+            "stem": "What do wind turbines use?",
             "options": [
-              "Burning fossil fuels",
-              "Recycling",
-              "Walking"
+              "Rain",
+              "Moving air",
+              "Plastic"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
-            "stem": "What can global warming contribute to?",
+            "stem": "What can renewable energy generate?",
             "options": [
-              "Droughts and floods",
-              "More websites",
-              "Ancient trade"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What can people do to help?",
-            "options": [
-              "Save energy",
-              "Waste electricity",
-              "Increase pollution"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What can recycling reduce?",
-            "options": [
-              "Waste",
-              "Heritage",
-              "History"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What can rising sea levels affect?",
-            "options": [
-              "Communities",
+              "Historical evidence",
               "Passwords",
-              "Blogs"
+              "Electricity"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "What do large projects require?",
+            "options": [
+              "Investment and planning",
+              "No technology",
+              "No money"
             ],
             "answer": 0
           },
           {
-            "stem": "What can students use less of?",
+            "stem": "What can renewable energy reduce?",
             "options": [
+              "Heritage",
+              "Fossil-fuel use and emissions",
+              "School work"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What can renewable energy support?",
+            "options": [
+              "More pollution",
+              "More waste",
+              "A sustainable future"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "What must engineers consider?",
+            "options": [
+              "Location and supply",
+              "Only colour",
+              "Only winter"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "What should people use efficiently?",
+            "options": [
+              "Social media posts",
               "Energy",
-              "Information",
-              "History"
+              "Archaeological objects"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
-            "stem": "What can public transport help reduce?",
+            "stem": "What can support Oman’s future energy needs?",
             "options": [
-              "Emissions",
-              "Archaeological sites",
-              "Vocabulary"
+              "More fossil fuels only",
+              "Less investment",
+              "Well-planned renewable projects"
             ],
-            "answer": 0
-          },
-          {
-            "stem": "What can schools plant?",
-            "options": [
-              "Trees",
-              "Turbines",
-              "Glaciers"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What does the speaker say is needed?",
-            "options": [
-              "Long-term action",
-              "One action by one person",
-              "No action"
-            ],
-            "answer": 0
+            "answer": 2
           }
         ]
       },
@@ -812,169 +1235,169 @@
           {
             "stem": "Oman has strong solar potential.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "Wind turbines use sunlight.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Large projects need planning.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "Renewable energy can reduce fossil-fuel use.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "Renewable energy has no challenges at all.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           }
         ]
       },
       "writing1": {
-        "prompt": "Write a short discussion text about climate change. Explain two causes and two effects, then suggest two solutions. (80–100 words) Write at least 80 words."
+        "prompt": "Write a formal email suggesting a renewable-energy project for your school or community. Explain its benefits. (80–100 words) Write at least 80 words."
       },
       "writing2": {
-        "prompt": "Write at least 100 words. Write a formal email suggesting a renewable-energy project for your school or community. Explain its benefits. (80–100 words)"
+        "prompt": "Write at least 100 words. Write a short paragraph about an archaeological site or famous Omani person. Use clear sequence words and relevant historical facts. (80–100 words)"
       },
       "audioLocal": null,
       "timeMinutes": 150,
       "marks": 60,
       "curriculumLanguageTargets": {
         "grammar": [
-          "cause-and-effect connectors",
-          "compound nouns",
-          "future predictions"
+          "conjunctions",
+          "adjective suffixes"
         ],
         "vocabulary": [
-          "greenhouse gas",
-          "carbon footprint",
-          "sea level",
-          "drought",
-          "heatwave"
+          "solar panel",
+          "wind turbine",
+          "hydropower",
+          "battery",
+          "grid"
         ]
-      }
+      },
+      "curriculumPageReviewed": false
     },
     {
-      "id": "C",
+      "id": "D",
       "grade": 10,
       "track": "General",
-      "unit": 3,
-      "unitTitle": "Renewable Energy",
-      "status": "unit-origin-from-existing-app-needs-textbook-audit",
+      "unit": 4,
+      "unitTitle": "Civilisation",
+      "status": "unit_theme_aligned_editorial_review; textbook page level and ministry scoring not certified",
       "listening": {
-        "title": "Listening 1 — Renewable Energy in Oman",
-        "passage": "Engineer: Why is renewable energy important for Oman?\nStudent: Oman has many sunny days, so solar power has strong potential. Some areas are also suitable for wind power.\nEngineer: How do solar panels help?\nStudent: They use sunlight to generate electricity. Wind turbines use moving air to generate electricity.\nEngineer: Are renewable sources completely without challenges?\nStudent: No. Large projects need investment, suitable technology and careful planning. Engineers also have to consider the location and how electricity will be supplied to people.\nEngineer: What are the main advantages?\nStudent: Renewable energy can reduce the use of fossil fuels and lower some emissions. It can also support a more sustainable future.\nEngineer: What should students remember?\nStudent: Renewable energy is not only about solar panels. It is about choosing cleaner energy sources and using energy efficiently.\nEngineer: Can Oman benefit from these projects?\nStudent: Yes. With good planning and investment, renewable energy can support Oman’s future energy needs.",
+        "title": "Listening 1 — Oman and Civilisation",
+        "passage": "Guide: Today we are visiting a site that helps us understand Oman’s history.\nStudent: What kind of evidence do historians use?\nGuide: They study archaeological sites, buildings, objects and written records. These sources help them understand how people lived in the past.\nStudent: Why were trade and seafaring important?\nGuide: Oman had connections with different regions through trade and the sea. Merchants travelled and exchanged goods and ideas.\nStudent: What is heritage?\nGuide: Heritage includes important cultural and historical traditions, places and objects that communities want to preserve.\nStudent: Why should young people care about it?\nGuide: Heritage helps people understand their identity and history. It also allows future generations to learn from the past.\nStudent: How can students help?\nGuide: They can respect historical places, learn about local history and share accurate information. They should never damage archaeological sites or remove objects.\nStudent: So preserving heritage is also a responsibility?\nGuide: Exactly. Protecting the past helps communities build a better understanding of the future.",
         "questions": [
           {
-            "stem": "Why does solar power have strong potential in Oman?",
+            "stem": "What do historians study?",
             "options": [
-              "There are many sunny days",
-              "There are many glaciers",
-              "There is heavy snowfall"
+              "Archaeological evidence",
+              "Only social media",
+              "Only modern advertisements"
             ],
             "answer": 0
           },
           {
-            "stem": "What do solar panels use?",
+            "stem": "What was important to Oman’s connections?",
             "options": [
-              "Sunlight",
-              "Coal",
-              "Sea water"
+              "Space travel",
+              "Online shopping",
+              "Trade and seafaring"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "What can merchants exchange?",
+            "options": [
+              "Only photographs",
+              "Goods and ideas",
+              "Only passwords"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What does heritage include?",
+            "options": [
+              "Cultural and historical traditions, places and objects",
+              "Only new buildings",
+              "Only computers"
             ],
             "answer": 0
           },
           {
-            "stem": "What do wind turbines use?",
+            "stem": "Why is heritage important?",
             "options": [
-              "Moving air",
-              "Fossil fuels",
-              "Plastic"
+              "It increases pollution",
+              "It removes local culture",
+              "It helps people understand identity and history"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "How can students help?",
+            "options": [
+              "Remove objects",
+              "Respect historical places",
+              "Damage archaeological sites"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What should students share?",
+            "options": [
+              "Accurate information",
+              "Rumours",
+              "Private passwords"
             ],
             "answer": 0
           },
           {
-            "stem": "What do large projects need?",
+            "stem": "Name one type of evidence historians study.",
+            "answer": "archaeological sites"
+          },
+          {
+            "stem": "What two activities connected Oman with other regions?",
+            "answer": "trade and seafaring"
+          },
+          {
+            "stem": "What does heritage help people understand?",
+            "answer": "identity and history"
+          },
+          {
+            "stem": "What should students respect?",
+            "answer": "historical places"
+          },
+          {
+            "stem": "Historians can study written records.",
             "options": [
-              "Investment and planning",
-              "No technology",
-              "No money"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
-            "stem": "What can renewable energy reduce?",
-            "options": [
-              "Use of fossil fuels",
-              "School attendance",
-              "Historical evidence"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What can renewable energy support?",
-            "options": [
-              "A sustainable future",
-              "More pollution",
-              "More waste"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What must engineers consider?",
-            "options": [
-              "Location and electricity supply",
-              "Only the colour of panels",
-              "Only the weather in winter"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What generates electricity from sunlight?",
-            "answer": "solar panels"
-          },
-          {
-            "stem": "What uses moving air?",
-            "answer": "wind turbines"
-          },
-          {
-            "stem": "Name one requirement for large projects.",
-            "answer": "investment"
-          },
-          {
-            "stem": "What can renewable energy lower?",
-            "answer": "emissions"
-          },
-          {
-            "stem": "Oman has many sunny days.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Wind turbines use sunlight directly.",
+            "stem": "Oman had no connections with other regions.",
             "options": [
               "True",
               "False"
@@ -982,223 +1405,223 @@
             "answer": 1
           },
           {
-            "stem": "Large renewable projects need planning.",
+            "stem": "Students should remove objects from archaeological sites.",
+            "options": [
+              "False",
+              "True"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "Protecting the past can help communities understand the future.",
             "options": [
               "True",
               "False"
             ],
             "answer": 0
-          },
-          {
-            "stem": "Renewable energy always needs more fossil fuels.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 1
           }
         ]
       },
       "vocabulary": {
-        "title": "Vocabulary · Renewable Energy",
+        "title": "Vocabulary · Civilisation",
         "questions": [
           {
-            "stem": "A device that changes sunlight into electricity is a ____.",
+            "stem": "A specialist who studies ancient remains is an ____.",
             "options": [
-              "fossil record",
-              "media blog",
-              "heritage site",
-              "solar panel"
-            ],
-            "answer": 3
-          },
-          {
-            "stem": "A tall machine that generates power from wind is a ____.",
-            "options": [
-              "bridge arch",
-              "camera tripod",
-              "wind turbine",
-              "rain gauge"
+              "meteorologist",
+              "web designer",
+              "archaeologist",
+              "engineer of turbines"
             ],
             "answer": 2
           },
           {
-            "stem": "Electricity made from moving water is ____.",
+            "stem": "The careful digging of a historic site is an ____.",
             "options": [
-              "sound energy",
-              "hydropower",
-              "coal power",
-              "seawater salt"
+              "evaporation",
+              "emission",
+              "excavation",
+              "upload"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
-            "stem": "A device that stores electrical energy is a ____.",
+            "stem": "An object made or used by people long ago is an ____.",
             "options": [
-              "battery",
-              "headline",
-              "ruin",
-              "paragraph"
+              "attachment",
+              "app",
+              "artefact",
+              "advert"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
-            "stem": "A network distributing electricity is the power ____.",
+            "stem": "A path used historically to exchange goods is a ____.",
             "options": [
-              "stage",
-              "screen",
-              "cliff",
-              "grid"
+              "power grid",
+              "weather map",
+              "trade route",
+              "video call"
             ],
-            "answer": 3
+            "answer": 2
+          },
+          {
+            "stem": "The culture and historic places we inherit are our ____.",
+            "options": [
+              "bandwidth",
+              "temperature",
+              "heritage",
+              "privacy"
+            ],
+            "answer": 2
           }
         ]
       },
       "grammar": {
-        "title": "Grammar · Renewable Energy",
+        "title": "Grammar · Civilisation",
         "questions": [
           {
-            "stem": "Solar energy is clean, ____ it depends on sunlight.",
+            "stem": "The ancient harbour ____ by traders centuries ago.",
             "options": [
-              "but",
-              "because of",
-              "although of",
-              "so that it"
+              "was used",
+              "is use",
+              "were using",
+              "used is"
             ],
             "answer": 0
           },
           {
-            "stem": "The adjective from \"sustain\" is ____.",
+            "stem": "The ruins were ____ preserved.",
             "options": [
-              "sustainful",
-              "sustainingly",
-              "sustainment",
-              "sustainable"
+              "extremely well",
+              "extreme good",
+              "extremity well",
+              "extremely goodly"
             ],
-            "answer": 3
+            "answer": 0
           },
           {
-            "stem": "Wind turbines are useful ____ the wind is strong.",
+            "stem": "The inscription ____ during an excavation in 2019.",
             "options": [
-              "unless of",
-              "although of",
-              "when",
-              "despite"
+              "was discovered",
+              "discovered was",
+              "was discover",
+              "is discovering"
             ],
-            "answer": 2
+            "answer": 0
           },
           {
-            "stem": "The adjective from \"economy\" is ____.",
+            "stem": "The site is ____ important to local history.",
             "options": [
-              "economics",
-              "economic",
-              "economize",
-              "economically"
+              "particularly",
+              "particular",
+              "particularity",
+              "particulars"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
-            "stem": "The battery stores energy ____ it can be used at night.",
+            "stem": "The stone tools ____ in a museum last year.",
             "options": [
-              "so that",
-              "because of",
-              "although of",
-              "despite of"
+              "were displayed",
+              "was display",
+              "are displaying yesterday",
+              "displaying were"
             ],
             "answer": 0
           }
         ]
       },
       "reading1": {
-        "passage": "Oman has strong potential for renewable energy because of its sunny climate and suitable areas for wind power. Solar and wind projects can generate electricity without burning fossil fuels. Renewable energy can reduce emissions and support a more sustainable future. Large projects require investment, technology and careful planning.",
+        "passage": "Oman has a long history connected with trade, seafaring and important settlements. Archaeological sites provide evidence about earlier communities. Historians study buildings, objects and written records to understand the past. Preserving heritage is important because it helps people understand their identity and share their history with future generations.",
         "questions": [
           {
-            "stem": "Why is Oman suitable for solar power?",
+            "stem": "What can archaeological sites provide?",
             "options": [
-              "It has many sunny days",
-              "It has many glaciers",
-              "It has heavy snow"
+              "Evidence about the past",
+              "Weather forecasts",
+              "Mobile phones"
             ],
             "answer": 0
           },
           {
-            "stem": "What do solar panels use?",
+            "stem": "What do historians study?",
             "options": [
-              "Sunlight",
-              "Coal",
-              "Books"
+              "Only advertisements",
+              "Only games",
+              "Buildings and records"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "What was important to Oman’s history?",
+            "options": [
+              "Online shopping",
+              "Trade and seafaring",
+              "Space travel"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What did merchants exchange?",
+            "options": [
+              "Goods and ideas",
+              "Passwords",
+              "Apps"
             ],
             "answer": 0
           },
           {
-            "stem": "What do wind turbines use?",
+            "stem": "What does heritage include?",
             "options": [
-              "Moving air",
-              "Plastic",
-              "Rain"
+              "Only new buildings",
+              "Only phones",
+              "Cultural and historical traditions"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "Why should heritage be preserved?",
+            "options": [
+              "To remove culture",
+              "To understand identity and history",
+              "To increase pollution"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "How can students help?",
+            "options": [
+              "Respect historical places",
+              "Damage sites",
+              "Remove objects"
             ],
             "answer": 0
           },
           {
-            "stem": "What can renewable energy generate?",
+            "stem": "What should students share?",
             "options": [
-              "Electricity",
-              "Historical evidence",
-              "Passwords"
+              "Rumours",
+              "Private passwords",
+              "Accurate information"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
-            "stem": "What do large projects require?",
+            "stem": "Who can learn from heritage?",
             "options": [
-              "Investment and planning",
-              "No technology",
-              "No money"
+              "Only archaeologists",
+              "Future generations",
+              "Only merchants"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
-            "stem": "What can renewable energy reduce?",
+            "stem": "What does protecting the past help communities do?",
             "options": [
-              "Fossil-fuel use and emissions",
-              "School work",
-              "Heritage"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What can renewable energy support?",
-            "options": [
-              "A sustainable future",
-              "More pollution",
-              "More waste"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What must engineers consider?",
-            "options": [
-              "Location and supply",
-              "Only colour",
-              "Only winter"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What should people use efficiently?",
-            "options": [
-              "Energy",
-              "Archaeological objects",
-              "Social media posts"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What can support Oman’s future energy needs?",
-            "options": [
-              "Well-planned renewable projects",
-              "More fossil fuels only",
-              "Less investment"
+              "Understand the future better",
+              "Forget history",
+              "Avoid learning"
             ],
             "answer": 0
           }
@@ -1230,10 +1653,10 @@
           {
             "stem": "Historians can study written records.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "Oman had no trade connections.",
@@ -1246,10 +1669,10 @@
           {
             "stem": "Heritage can include places and objects.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "Students should damage archaeological sites.",
@@ -1262,427 +1685,10 @@
           {
             "stem": "Protecting the past can help future understanding.",
             "options": [
-              "True",
-              "False"
-            ],
-            "answer": 0
-          }
-        ]
-      },
-      "writing1": {
-        "prompt": "Write a formal email suggesting a renewable-energy project for your school or community. Explain its benefits. (80–100 words) Write at least 80 words."
-      },
-      "writing2": {
-        "prompt": "Write at least 100 words. Write a short paragraph about an archaeological site or famous Omani person. Use clear sequence words and relevant historical facts. (80–100 words)"
-      },
-      "audioLocal": null,
-      "timeMinutes": 150,
-      "marks": 60,
-      "curriculumLanguageTargets": {
-        "grammar": [
-          "conjunctions",
-          "adjective suffixes"
-        ],
-        "vocabulary": [
-          "solar panel",
-          "wind turbine",
-          "hydropower",
-          "battery",
-          "grid"
-        ]
-      }
-    },
-    {
-      "id": "D",
-      "grade": 10,
-      "track": "General",
-      "unit": 4,
-      "unitTitle": "Civilisation",
-      "status": "unit-origin-from-existing-app-needs-textbook-audit",
-      "listening": {
-        "title": "Listening 1 — Oman and Civilisation",
-        "passage": "Guide: Today we are visiting a site that helps us understand Oman’s history.\nStudent: What kind of evidence do historians use?\nGuide: They study archaeological sites, buildings, objects and written records. These sources help them understand how people lived in the past.\nStudent: Why were trade and seafaring important?\nGuide: Oman had connections with different regions through trade and the sea. Merchants travelled and exchanged goods and ideas.\nStudent: What is heritage?\nGuide: Heritage includes important cultural and historical traditions, places and objects that communities want to preserve.\nStudent: Why should young people care about it?\nGuide: Heritage helps people understand their identity and history. It also allows future generations to learn from the past.\nStudent: How can students help?\nGuide: They can respect historical places, learn about local history and share accurate information. They should never damage archaeological sites or remove objects.\nStudent: So preserving heritage is also a responsibility?\nGuide: Exactly. Protecting the past helps communities build a better understanding of the future.",
-        "questions": [
-          {
-            "stem": "What do historians study?",
-            "options": [
-              "Archaeological evidence",
-              "Only social media",
-              "Only modern advertisements"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What was important to Oman’s connections?",
-            "options": [
-              "Trade and seafaring",
-              "Space travel",
-              "Online shopping"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What can merchants exchange?",
-            "options": [
-              "Goods and ideas",
-              "Only passwords",
-              "Only photographs"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What does heritage include?",
-            "options": [
-              "Cultural and historical traditions, places and objects",
-              "Only new buildings",
-              "Only computers"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Why is heritage important?",
-            "options": [
-              "It helps people understand identity and history",
-              "It increases pollution",
-              "It removes local culture"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "How can students help?",
-            "options": [
-              "Respect historical places",
-              "Damage archaeological sites",
-              "Remove objects"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What should students share?",
-            "options": [
-              "Accurate information",
-              "Rumours",
-              "Private passwords"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Name one type of evidence historians study.",
-            "answer": "archaeological sites"
-          },
-          {
-            "stem": "What two activities connected Oman with other regions?",
-            "answer": "trade and seafaring"
-          },
-          {
-            "stem": "What does heritage help people understand?",
-            "answer": "identity and history"
-          },
-          {
-            "stem": "What should students respect?",
-            "answer": "historical places"
-          },
-          {
-            "stem": "Historians can study written records.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Oman had no connections with other regions.",
-            "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
             "answer": 1
-          },
-          {
-            "stem": "Students should remove objects from archaeological sites.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 1
-          },
-          {
-            "stem": "Protecting the past can help communities understand the future.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 0
-          }
-        ]
-      },
-      "vocabulary": {
-        "title": "Vocabulary · Civilisation",
-        "questions": [
-          {
-            "stem": "A specialist who studies ancient remains is an ____.",
-            "options": [
-              "engineer of turbines",
-              "meteorologist",
-              "web designer",
-              "archaeologist"
-            ],
-            "answer": 3
-          },
-          {
-            "stem": "The careful digging of a historic site is an ____.",
-            "options": [
-              "evaporation",
-              "emission",
-              "excavation",
-              "upload"
-            ],
-            "answer": 2
-          },
-          {
-            "stem": "An object made or used by people long ago is an ____.",
-            "options": [
-              "app",
-              "artefact",
-              "advert",
-              "attachment"
-            ],
-            "answer": 1
-          },
-          {
-            "stem": "A path used historically to exchange goods is a ____.",
-            "options": [
-              "trade route",
-              "video call",
-              "power grid",
-              "weather map"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "The culture and historic places we inherit are our ____.",
-            "options": [
-              "privacy",
-              "bandwidth",
-              "temperature",
-              "heritage"
-            ],
-            "answer": 3
-          }
-        ]
-      },
-      "grammar": {
-        "title": "Grammar · Civilisation",
-        "questions": [
-          {
-            "stem": "The ancient harbour ____ by traders centuries ago.",
-            "options": [
-              "was used",
-              "is use",
-              "were using",
-              "used is"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "The ruins were ____ preserved.",
-            "options": [
-              "extreme good",
-              "extremity well",
-              "extremely goodly",
-              "extremely well"
-            ],
-            "answer": 3
-          },
-          {
-            "stem": "The inscription ____ during an excavation in 2019.",
-            "options": [
-              "was discover",
-              "is discovering",
-              "was discovered",
-              "discovered was"
-            ],
-            "answer": 2
-          },
-          {
-            "stem": "The site is ____ important to local history.",
-            "options": [
-              "particulars",
-              "particularly",
-              "particular",
-              "particularity"
-            ],
-            "answer": 1
-          },
-          {
-            "stem": "The stone tools ____ in a museum last year.",
-            "options": [
-              "were displayed",
-              "was display",
-              "are displaying yesterday",
-              "displaying were"
-            ],
-            "answer": 0
-          }
-        ]
-      },
-      "reading1": {
-        "passage": "Oman has a long history connected with trade, seafaring and important settlements. Archaeological sites provide evidence about earlier communities. Historians study buildings, objects and written records to understand the past. Preserving heritage is important because it helps people understand their identity and share their history with future generations.",
-        "questions": [
-          {
-            "stem": "What can archaeological sites provide?",
-            "options": [
-              "Evidence about the past",
-              "Weather forecasts",
-              "Mobile phones"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What do historians study?",
-            "options": [
-              "Buildings and records",
-              "Only advertisements",
-              "Only games"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What was important to Oman’s history?",
-            "options": [
-              "Trade and seafaring",
-              "Space travel",
-              "Online shopping"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What did merchants exchange?",
-            "options": [
-              "Goods and ideas",
-              "Passwords",
-              "Apps"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What does heritage include?",
-            "options": [
-              "Cultural and historical traditions",
-              "Only new buildings",
-              "Only phones"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Why should heritage be preserved?",
-            "options": [
-              "To understand identity and history",
-              "To increase pollution",
-              "To remove culture"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "How can students help?",
-            "options": [
-              "Respect historical places",
-              "Damage sites",
-              "Remove objects"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What should students share?",
-            "options": [
-              "Accurate information",
-              "Rumours",
-              "Private passwords"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Who can learn from heritage?",
-            "options": [
-              "Future generations",
-              "Only merchants",
-              "Only archaeologists"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What does protecting the past help communities do?",
-            "options": [
-              "Understand the future better",
-              "Forget history",
-              "Avoid learning"
-            ],
-            "answer": 0
-          }
-        ]
-      },
-      "reading2": {
-        "passage": "New media has changed the way young people communicate and find information. Teenagers can use phones, websites and social-media platforms to share ideas quickly. However, spending too much time online can affect study and sleep. Students should check reliable sources, protect their privacy and think carefully before posting.",
-        "questions": [
-          {
-            "stem": "What can teenagers use to share ideas?",
-            "answer": "phones"
-          },
-          {
-            "stem": "What can too much time online affect?",
-            "answer": "study and sleep"
-          },
-          {
-            "stem": "What sort of information sources should students check?",
-            "answer": "reliable sources"
-          },
-          {
-            "stem": "What should students protect on the internet?",
-            "answer": "privacy"
-          },
-          {
-            "stem": "What should students do before posting?",
-            "answer": "think carefully"
-          },
-          {
-            "stem": "New media can help people communicate quickly.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Too much screen time can never affect sleep.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 1
-          },
-          {
-            "stem": "Students should check reliable sources.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "The passage says privacy is unimportant.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 1
-          },
-          {
-            "stem": "Students should think before posting.",
-            "options": [
-              "True",
-              "False"
-            ],
-            "answer": 0
           }
         ]
       },
@@ -1707,7 +1713,8 @@
           "trade route",
           "heritage"
         ]
-      }
+      },
+      "curriculumPageReviewed": false
     },
     {
       "id": "E",
@@ -1715,7 +1722,7 @@
       "track": "General",
       "unit": null,
       "unitTitle": "Comprehensive Mixed Units",
-      "status": "comprehensive-mixed-original-unit-sections-with-provenance-and-matching-audio; teacher review",
+      "status": "comprehensive four-unit mixed skills; source passages retained; teacher review; no unique-item claim",
       "unitSources": [
         {
           "section": "listening",
@@ -1772,20 +1779,20 @@
           {
             "stem": "What does Maha check first?",
             "options": [
-              "The source",
               "The price",
-              "The weather"
+              "The weather",
+              "The source"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "What can late phone use affect?",
             "options": [
+              "Transport",
               "Sleep",
-              "Rainfall",
-              "Transport"
+              "Rainfall"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What does Maha turn off during study time?",
@@ -1799,20 +1806,20 @@
           {
             "stem": "Why does she compare information?",
             "options": [
-              "To check reliability",
               "To increase screen time",
-              "To change the author"
+              "To change the author",
+              "To check reliability"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "What should students protect?",
             "options": [
+              "Their uniforms",
               "Their privacy",
-              "Their homework books",
-              "Their uniforms"
+              "Their homework books"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What is Maha’s most important rule?",
@@ -1842,34 +1849,34 @@
           {
             "stem": "Maha uses video calls when a group member is absent.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "Maha shares private information with everyone.",
             "options": [
-              "True",
-              "False"
-            ],
-            "answer": 1
-          },
-          {
-            "stem": "She compares important information with another reliable website.",
-            "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
             "answer": 0
           },
           {
-            "stem": "She says social media is always harmful.",
+            "stem": "She compares important information with another reliable website.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
             "answer": 1
+          },
+          {
+            "stem": "She says social media is always harmful.",
+            "options": [
+              "False",
+              "True"
+            ],
+            "answer": 0
           }
         ]
       },
@@ -1879,12 +1886,12 @@
           {
             "stem": "A long period without enough rainfall is a ____.",
             "options": [
+              "drought",
               "turbine",
               "excavation",
-              "monument",
-              "drought"
+              "monument"
             ],
-            "answer": 3
+            "answer": 0
           },
           {
             "stem": "An extremely hot period is a ____.",
@@ -1899,32 +1906,32 @@
           {
             "stem": "A gas that traps heat in the atmosphere is a ____.",
             "options": [
-              "microphone",
               "greenhouse gas",
               "photovoltaic cell",
-              "artifact"
-            ],
-            "answer": 1
-          },
-          {
-            "stem": "The amount of carbon released by an activity is its ____.",
-            "options": [
-              "carbon footprint",
-              "river bank",
-              "data cable",
-              "headline"
+              "artifact",
+              "microphone"
             ],
             "answer": 0
           },
           {
+            "stem": "The amount of carbon released by an activity is its ____.",
+            "options": [
+              "data cable",
+              "headline",
+              "carbon footprint",
+              "river bank"
+            ],
+            "answer": 2
+          },
+          {
             "stem": "Rising water along coasts is related to a higher ____.",
             "options": [
+              "sea level",
               "signal strength",
               "screen time",
-              "heritage site",
-              "sea level"
+              "heritage site"
             ],
-            "answer": 3
+            "answer": 0
           }
         ]
       },
@@ -1934,52 +1941,52 @@
           {
             "stem": "Solar energy is clean, ____ it depends on sunlight.",
             "options": [
-              "but",
               "because of",
               "although of",
-              "so that it"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "The adjective from \"sustain\" is ____.",
-            "options": [
-              "sustainful",
-              "sustainingly",
-              "sustainment",
-              "sustainable"
+              "so that it",
+              "but"
             ],
             "answer": 3
           },
           {
-            "stem": "Wind turbines are useful ____ the wind is strong.",
+            "stem": "The adjective from \"sustain\" is ____.",
             "options": [
-              "unless of",
-              "although of",
-              "when",
-              "despite"
+              "sustainingly",
+              "sustainment",
+              "sustainable",
+              "sustainful"
             ],
             "answer": 2
           },
           {
-            "stem": "The adjective from \"economy\" is ____.",
+            "stem": "Wind turbines are useful ____ the wind is strong.",
             "options": [
-              "economics",
-              "economic",
-              "economize",
-              "economically"
+              "although of",
+              "when",
+              "despite",
+              "unless of"
             ],
             "answer": 1
           },
           {
-            "stem": "The battery stores energy ____ it can be used at night.",
+            "stem": "The adjective from \"economy\" is ____.",
             "options": [
-              "so that",
-              "because of",
-              "although of",
-              "despite of"
+              "economic",
+              "economize",
+              "economically",
+              "economics"
             ],
             "answer": 0
+          },
+          {
+            "stem": "The battery stores energy ____ it can be used at night.",
+            "options": [
+              "because of",
+              "although of",
+              "despite of",
+              "so that"
+            ],
+            "answer": 3
           }
         ]
       },
@@ -1998,20 +2005,20 @@
           {
             "stem": "What do historians study?",
             "options": [
-              "Buildings and records",
               "Only advertisements",
-              "Only games"
+              "Only games",
+              "Buildings and records"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "What was important to Oman’s history?",
             "options": [
+              "Online shopping",
               "Trade and seafaring",
-              "Space travel",
-              "Online shopping"
+              "Space travel"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What did merchants exchange?",
@@ -2025,20 +2032,20 @@
           {
             "stem": "What does heritage include?",
             "options": [
-              "Cultural and historical traditions",
               "Only new buildings",
-              "Only phones"
+              "Only phones",
+              "Cultural and historical traditions"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "Why should heritage be preserved?",
             "options": [
+              "To remove culture",
               "To understand identity and history",
-              "To increase pollution",
-              "To remove culture"
+              "To increase pollution"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "How can students help?",
@@ -2052,20 +2059,20 @@
           {
             "stem": "What should students share?",
             "options": [
-              "Accurate information",
               "Rumours",
-              "Private passwords"
+              "Private passwords",
+              "Accurate information"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "Who can learn from heritage?",
             "options": [
+              "Only archaeologists",
               "Future generations",
-              "Only merchants",
-              "Only archaeologists"
+              "Only merchants"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What does protecting the past help communities do?",
@@ -2079,65 +2086,65 @@
         ]
       },
       "reading2": {
-        "passage": "Climate change is linked to rising temperatures and changes in weather patterns. Burning fossil fuels produces greenhouse gases. These gases contribute to global warming, which can lead to droughts, floods and rising sea levels. People can help by saving energy, reducing waste, recycling and supporting cleaner sources of energy.",
+        "passage": "New media has changed the way young people communicate and find information. Teenagers can use phones, websites and social-media platforms to share ideas quickly. However, spending too much time online can affect study and sleep. Students should check reliable sources, protect their privacy and think carefully before posting.",
         "questions": [
           {
-            "stem": "What activity produces greenhouse gases?",
-            "answer": "burning fossil fuels"
+            "stem": "What can teenagers use to share ideas?",
+            "answer": "phones"
           },
           {
-            "stem": "Name one effect of global warming.",
-            "answer": "droughts"
+            "stem": "What can too much time online affect?",
+            "answer": "study and sleep"
           },
           {
-            "stem": "Name another effect of global warming.",
-            "answer": "floods"
+            "stem": "What sort of information sources should students check?",
+            "answer": "reliable sources"
           },
           {
-            "stem": "What can people reduce?",
-            "answer": "waste"
+            "stem": "What should students protect on the internet?",
+            "answer": "privacy"
           },
           {
-            "stem": "Name one cleaner action mentioned.",
-            "answer": "recycling"
+            "stem": "What should students do before posting?",
+            "answer": "think carefully"
           },
           {
-            "stem": "Climate change can increase temperatures.",
+            "stem": "New media can help people communicate quickly.",
             "options": [
-              "True",
-              "False"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Greenhouse gases have no effect on heat.",
-            "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
             "answer": 1
           },
           {
-            "stem": "Floods can be an effect of climate change.",
+            "stem": "Too much screen time can never affect sleep.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
             "answer": 0
           },
           {
-            "stem": "Students can save electricity.",
+            "stem": "Students should check reliable sources.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "The passage says privacy is unimportant.",
+            "options": [
+              "False",
+              "True"
             ],
             "answer": 0
           },
           {
-            "stem": "The speaker says climate change can be solved in one day.",
+            "stem": "Students should think before posting.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
             "answer": 1
           }
@@ -2148,7 +2155,8 @@
       },
       "writing2": {
         "prompt": "Write at least 100 words. Write a short paragraph about an archaeological site or famous Omani person. Use clear sequence words and relevant historical facts. (80–100 words)"
-      }
+      },
+      "curriculumPageReviewed": false
     },
     {
       "id": "F",
@@ -2156,7 +2164,7 @@
       "track": "General",
       "unit": null,
       "unitTitle": "Comprehensive Mixed Units",
-      "status": "comprehensive-mixed-original-unit-sections-with-provenance-and-matching-audio; teacher review",
+      "status": "comprehensive four-unit mixed skills; source passages retained; teacher review; no unique-item claim",
       "unitSources": [
         {
           "section": "listening",
@@ -2213,20 +2221,20 @@
           {
             "stem": "What was important to Oman’s connections?",
             "options": [
-              "Trade and seafaring",
               "Space travel",
-              "Online shopping"
+              "Online shopping",
+              "Trade and seafaring"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "What can merchants exchange?",
             "options": [
+              "Only photographs",
               "Goods and ideas",
-              "Only passwords",
-              "Only photographs"
+              "Only passwords"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What does heritage include?",
@@ -2240,20 +2248,20 @@
           {
             "stem": "Why is heritage important?",
             "options": [
-              "It helps people understand identity and history",
               "It increases pollution",
-              "It removes local culture"
+              "It removes local culture",
+              "It helps people understand identity and history"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "How can students help?",
             "options": [
+              "Remove objects",
               "Respect historical places",
-              "Damage archaeological sites",
-              "Remove objects"
+              "Damage archaeological sites"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What should students share?",
@@ -2283,10 +2291,10 @@
           {
             "stem": "Historians can study written records.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "Oman had no connections with other regions.",
@@ -2299,10 +2307,10 @@
           {
             "stem": "Students should remove objects from archaeological sites.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Protecting the past can help communities understand the future.",
@@ -2320,52 +2328,52 @@
           {
             "stem": "A device that changes sunlight into electricity is a ____.",
             "options": [
-              "fossil record",
-              "media blog",
               "heritage site",
-              "solar panel"
-            ],
-            "answer": 3
-          },
-          {
-            "stem": "A tall machine that generates power from wind is a ____.",
-            "options": [
-              "bridge arch",
-              "camera tripod",
-              "wind turbine",
-              "rain gauge"
-            ],
-            "answer": 2
-          },
-          {
-            "stem": "Electricity made from moving water is ____.",
-            "options": [
-              "sound energy",
-              "hydropower",
-              "coal power",
-              "seawater salt"
+              "solar panel",
+              "fossil record",
+              "media blog"
             ],
             "answer": 1
           },
           {
-            "stem": "A device that stores electrical energy is a ____.",
+            "stem": "A tall machine that generates power from wind is a ____.",
             "options": [
-              "battery",
-              "headline",
-              "ruin",
-              "paragraph"
+              "wind turbine",
+              "rain gauge",
+              "bridge arch",
+              "camera tripod"
             ],
             "answer": 0
           },
           {
-            "stem": "A network distributing electricity is the power ____.",
+            "stem": "Electricity made from moving water is ____.",
             "options": [
-              "stage",
-              "screen",
-              "cliff",
-              "grid"
+              "coal power",
+              "seawater salt",
+              "sound energy",
+              "hydropower"
             ],
             "answer": 3
+          },
+          {
+            "stem": "A device that stores electrical energy is a ____.",
+            "options": [
+              "ruin",
+              "paragraph",
+              "battery",
+              "headline"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "A network distributing electricity is the power ____.",
+            "options": [
+              "cliff",
+              "grid",
+              "stage",
+              "screen"
+            ],
+            "answer": 1
           }
         ]
       },
@@ -2375,22 +2383,22 @@
           {
             "stem": "Many regions are becoming drier ____ average temperatures are rising.",
             "options": [
-              "because",
-              "although",
               "unless",
-              "in spite"
+              "in spite",
+              "because",
+              "although"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "Select the correct compound noun.",
             "options": [
+              "carbon footprint",
               "carbonly footprint",
               "footprinty carbon",
-              "carboning foot",
-              "carbon footprint"
+              "carboning foot"
             ],
-            "answer": 3
+            "answer": 0
           },
           {
             "stem": "If emissions continue to grow, the sea level ____ rise.",
@@ -2405,22 +2413,22 @@
           {
             "stem": "The reservoir was low; ____, the town reduced water use.",
             "options": [
-              "unless",
               "therefore",
               "although",
-              "despite"
+              "despite",
+              "unless"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Our class will plant trees ____ reduce its carbon footprint.",
             "options": [
-              "to help",
-              "for helping to",
               "helping for",
-              "so to"
+              "so to",
+              "to help",
+              "for helping to"
             ],
-            "answer": 0
+            "answer": 2
           }
         ]
       },
@@ -2439,20 +2447,20 @@
           {
             "stem": "What can teenagers use to find information?",
             "options": [
-              "Websites and platforms",
               "Only museums",
-              "Only books"
+              "Only books",
+              "Websites and platforms"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "What may too much time online affect?",
             "options": [
+              "Trade",
               "Study and sleep",
-              "Sea levels",
-              "Trade"
+              "Sea levels"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What should students protect online?",
@@ -2466,20 +2474,20 @@
           {
             "stem": "What should students do before posting?",
             "options": [
-              "Think carefully",
               "Burn fuel",
-              "Build turbines"
+              "Build turbines",
+              "Think carefully"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "What kind of source should students check?",
             "options": [
+              "Expensive",
               "Reliable",
-              "Ancient only",
-              "Expensive"
+              "Ancient only"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "Which device is mentioned?",
@@ -2493,20 +2501,20 @@
           {
             "stem": "What can social media help people do?",
             "options": [
-              "Share ideas quickly",
               "Generate electricity",
-              "Preserve ruins"
+              "Preserve ruins",
+              "Share ideas quickly"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "What is one disadvantage of too much screen time?",
             "options": [
+              "It lowers sea level",
               "It can affect sleep",
-              "It creates wind",
-              "It lowers sea level"
+              "It creates wind"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What is the main advice in the passage?",
@@ -2520,38 +2528,38 @@
         ]
       },
       "reading2": {
-        "passage": "New media has changed the way young people communicate and find information. Teenagers can use phones, websites and social-media platforms to share ideas quickly. However, spending too much time online can affect study and sleep. Students should check reliable sources, protect their privacy and think carefully before posting.",
+        "passage": "Oman has a long history connected with trade, seafaring and important settlements. Archaeological sites provide evidence about earlier communities. Historians study buildings, objects and written records to understand the past. Preserving heritage is important because it helps people understand their identity and share their history with future generations.",
         "questions": [
           {
-            "stem": "What can teenagers use to share ideas?",
-            "answer": "phones"
+            "stem": "Which activity connects Oman to its long history?",
+            "answer": "trade"
           },
           {
-            "stem": "What can too much time online affect?",
-            "answer": "study and sleep"
+            "stem": "What can archaeological sites provide?",
+            "answer": "evidence"
           },
           {
-            "stem": "What sort of information sources should students check?",
-            "answer": "reliable sources"
+            "stem": "What do historians study?",
+            "answer": "buildings"
           },
           {
-            "stem": "What should students protect on the internet?",
-            "answer": "privacy"
+            "stem": "What does preserving heritage help people understand?",
+            "answer": "identity"
           },
           {
-            "stem": "What should students do before posting?",
-            "answer": "think carefully"
+            "stem": "Who can learn from preserved heritage?",
+            "answer": "future generations"
           },
           {
-            "stem": "New media can help people communicate quickly.",
+            "stem": "Historians can study written records.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
-            "stem": "Too much screen time can never affect sleep.",
+            "stem": "Oman had no trade connections.",
             "options": [
               "True",
               "False"
@@ -2559,15 +2567,15 @@
             "answer": 1
           },
           {
-            "stem": "Students should check reliable sources.",
+            "stem": "Heritage can include places and objects.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
-            "stem": "The passage says privacy is unimportant.",
+            "stem": "Students should damage archaeological sites.",
             "options": [
               "True",
               "False"
@@ -2575,12 +2583,12 @@
             "answer": 1
           },
           {
-            "stem": "Students should think before posting.",
+            "stem": "Protecting the past can help future understanding.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           }
         ]
       },
@@ -2589,7 +2597,8 @@
       },
       "writing2": {
         "prompt": "Write at least 100 words. Write a formal email suggesting a renewable-energy project for your school or community. Explain its benefits. (80–100 words)"
-      }
+      },
+      "curriculumPageReviewed": false
     }
   ]
 }
