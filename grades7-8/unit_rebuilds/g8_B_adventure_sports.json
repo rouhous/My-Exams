@@ -1,0 +1,172 @@
+{
+  "grade": 8,
+  "model": "B",
+  "unit": "Adventure sports",
+  "status": "original_unit_texts_pending_audio_regeneration",
+  "listening1": [
+    {
+      "stem": "Which adventure activity did the students choose?",
+      "options": [
+        "mountain biking",
+        "sailing",
+        "walking in the forest"
+      ],
+      "answer": 0,
+      "images": [
+        "bike",
+        "sailboat",
+        "trees"
+      ],
+      "script": "Our activity leader offered three choices for Saturday. We could sail near the harbour, walk through the forest, or follow the cycling track across the hills. Most pupils had already tried sailing and walking, so we finally voted for mountain biking."
+    },
+    {
+      "stem": "Which item did the guide ask everybody to carry?",
+      "options": [
+        "camera",
+        "backpack",
+        "umbrella"
+      ],
+      "answer": 1,
+      "images": [
+        "camera",
+        "backpack",
+        "umbrella"
+      ],
+      "script": "Before the hike, the guide checked our equipment. A camera was optional, and we did not need an umbrella because the weather was expected to stay dry. However, everybody had to carry a small backpack with a first-aid kit, water and a snack."
+    },
+    {
+      "stem": "How will the group travel to the climbing centre?",
+      "options": [
+        "bus",
+        "train",
+        "plane"
+      ],
+      "answer": 0,
+      "images": [
+        "bus",
+        "train-front",
+        "plane"
+      ],
+      "script": "We first considered travelling by train, but there is no station near the climbing centre. Flying would be unnecessary for such a short journey. Our school has booked a bus instead. It will collect us outside the main gate at seven thirty."
+    },
+    {
+      "stem": "What will the weather be like in the afternoon?",
+      "options": [
+        "sunny",
+        "windy",
+        "rainy"
+      ],
+      "answer": 1,
+      "images": [
+        "sun",
+        "wind",
+        "cloud-rain"
+      ],
+      "script": "The forecast shows a sunny morning for our kayaking lesson. Rain is unlikely until late at night. By the afternoon, however, the wind will become much stronger, so the instructor has decided to finish the lesson early and return all the boats to shore."
+    },
+    {
+      "stem": "Where will the kayaking lesson take place?",
+      "options": [
+        "near an old fort",
+        "in a mountain forest",
+        "in a sheltered bay"
+      ],
+      "answer": 2,
+      "images": [
+        "castle",
+        "tree-pine",
+        "waves"
+      ],
+      "script": "Our instructor explained that beginners should not kayak on the open sea. We also cannot practise near the old fort because there is no safe place to launch the boats. Tomorrow's lesson will take place in a sheltered bay where the water is usually calm."
+    }
+  ],
+  "listening2": {
+    "script": "Interviewer: Welcome to Adventure Hour. Faris, tell us about your first overnight camping trip.\nFaris: We went to a mountain campsite with two trained instructors. I had packed everything the night before, but I still forgot my torch.\nInterviewer: Did that cause a problem?\nFaris: Not really. My friend had brought a spare one, and we checked the equipment together before setting off. The instructors reminded us never to walk away from the group by ourselves.\nInterviewer: What was the most difficult activity?\nFaris: We crossed a narrow path in the afternoon. The wind became stronger, so the leader told us to move slowly and keep a safe distance from the edge.\nInterviewer: Did the bad weather spoil the whole trip?\nFaris: No. We changed our plans, returned to the campsite and cooked dinner together. The next morning, the weather was calmer, and we watched the sunrise.\nInterviewer: Would you go again?\nFaris: Definitely. I learned that being prepared is more important than being brave. You should always listen to experienced guides and check the forecast before you travel.",
+    "items": [
+      {
+        "stem": "Faris went camping with trained instructors.",
+        "answer": true
+      },
+      {
+        "stem": "He remembered to pack his own torch.",
+        "answer": false
+      },
+      {
+        "stem": "The group was told to keep away from the edge of a narrow path.",
+        "answer": true
+      },
+      {
+        "stem": "The students continued walking despite the stronger wind.",
+        "answer": false
+      },
+      {
+        "stem": "Faris thinks preparation is important for adventure activities.",
+        "answer": true
+      }
+    ]
+  },
+  "reading1": {
+    "texts": [
+      "The climbing instructor asked every student to check the safety rope before leaving the ground. Although Sara was excited, she wanted to make sure she understood how to use the equipment correctly.",
+      "The kayaking group reached the bay before sunrise. The water was calm, but the guide explained that tides could change quickly and that life jackets were compulsory.",
+      "After cycling for an hour, Yousuf heard a strange noise from his bike. He stopped beside the path and examined the back wheel rather than continuing downhill.",
+      "Before the camping trip, two friends compared what they had packed. One had brought extra snacks but forgotten a torch; the other had enough batteries for two lights.",
+      "At the end of the mountain hike, pupils gathered near a viewing platform. They discussed the beautiful scenery and how their opinions about taking risks had changed."
+    ],
+    "continuations": [
+      "The guide praised their careful decisions and reminded them that reaching the destination safely was the real achievement.",
+      "The coach told her how to test the rope and wait for a clear signal before she began climbing.",
+      "The visitors bought souvenirs at the museum, although they had come to learn about sea animals.",
+      "Together they shared their supplies so neither pupil would be unprepared after dark.",
+      "The guide checked every jacket and asked students to stay close to the shore during the first lesson.",
+      "He discovered a loose part, tightened it himself and thanked his friends for stopping with him."
+    ],
+    "answers": [
+      1,
+      4,
+      5,
+      3,
+      0
+    ]
+  },
+  "reading2": {
+    "passage": "When Hamad joined a weekend mountain-biking trip, he was certain that cycling quickly would impress his friends. He had ridden on flat roads many times, but he had never explored a rocky mountain track. His instructor, Aisha, explained that controlling a bicycle safely mattered more than finishing first.\n\nBefore they left the camp, everyone checked their helmets and brakes. Hamad realised that he had forgotten to fill his water bottle, so he returned to the tent while the others waited. He felt embarrassed, but Aisha told him that checking equipment carefully was a sign of responsibility.\n\nThe group followed a path through a narrow valley. After they had climbed the first hill, the wind began to rise. Hamad tried to overtake another rider, but his front wheel slipped on loose stones. He stopped himself before falling and waited until the path was clear. Aisha helped him choose a safer speed.\n\nAt midday, the cyclists reached a shaded rest area. They shared snacks and watched the sunlight moving across the mountains. Hamad noticed that the quieter pupils had seen birds, interesting rocks and an old trail marker that he had missed while rushing.\n\nWhen the group returned, Hamad wrote about the trip in his journal. He decided to practise his balance and learn more about mountain safety before attempting a harder route. The greatest discovery had not been his speed, but the confidence that came from making thoughtful decisions.",
+    "items": [
+      {
+        "stem": "Where had Hamad ridden before the mountain trip?",
+        "answers": [
+          "on flat roads",
+          "flat roads"
+        ]
+      },
+      {
+        "stem": "What had Hamad forgotten to fill?",
+        "answers": [
+          "his water bottle",
+          "water bottle"
+        ]
+      },
+      {
+        "stem": "What caused his front wheel to slip?",
+        "answers": [
+          "loose stones",
+          "stones on the path"
+        ]
+      },
+      {
+        "stem": "Where did the cyclists stop at midday?",
+        "answers": [
+          "a shaded rest area",
+          "shaded rest area"
+        ]
+      },
+      {
+        "stem": "What did Hamad decide to practise after the trip?",
+        "answers": [
+          "his balance",
+          "balance"
+        ]
+      }
+    ]
+  }
+}
