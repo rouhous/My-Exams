@@ -1,0 +1,315 @@
+{
+  "source": "Oman Ministry of Education, Student Assessment Handbook English Language Grades 11-12, September 2026",
+  "scope": "Semester one only",
+  "reference": "Appendix 3 pp38,40; Appendix 4 pp43,45 (PDF pages 39,41,44,46)",
+  "officialNotCopyingQuestions": true,
+  "tracks": {
+    "11-core": {
+      "minutes": 150,
+      "marks": 60,
+      "sections": [
+        {
+          "id": "lst1",
+          "marks": 7,
+          "form": "two-speaker dialogue",
+          "lengthWords": [
+            300,
+            350
+          ],
+          "turns": [
+            25,
+            30
+          ],
+          "questions": "7 MCQ × 3 options"
+        },
+        {
+          "id": "lst2",
+          "marks": 8,
+          "form": "one-speaker informative two-part text",
+          "lengthWords": [
+            350,
+            400
+          ],
+          "questions": "4 wh-short-answer + 4 MCQ × 3 options"
+        },
+        {
+          "id": "grm",
+          "marks": 5,
+          "form": "dialogue cloze",
+          "lengthWords": [
+            50,
+            60
+          ],
+          "questions": "5 gaps × 2 options"
+        },
+        {
+          "id": "vcb",
+          "marks": 5,
+          "form": "vocabulary cloze",
+          "lengthWords": [
+            70,
+            80
+          ],
+          "questions": "5 gaps × 3 options"
+        },
+        {
+          "id": "rdg1",
+          "marks": 5,
+          "form": "5 unrelated short texts",
+          "lengthWordsEach": [
+            35,
+            45
+          ],
+          "questions": "5 true/false"
+        },
+        {
+          "id": "rdg2",
+          "marks": 7,
+          "form": "evaluative text",
+          "lengthWords": [
+            300,
+            350
+          ],
+          "questions": "7 MCQ × 3 options"
+        },
+        {
+          "id": "rdg3",
+          "marks": 8,
+          "form": "narrative text",
+          "lengthWords": [
+            350,
+            400
+          ],
+          "questions": "4 wh-short-answer + 4 MCQ × 3 options"
+        },
+        {
+          "id": "wrt1",
+          "marks": 5,
+          "form": "informative",
+          "minWords": 85,
+          "marking": "five-level rating scale"
+        },
+        {
+          "id": "wrt2",
+          "marks": 10,
+          "form": "interactive letter or email",
+          "minWords": 100,
+          "marking": "five-level rating scale"
+        }
+      ]
+    },
+    "11-elective": {
+      "minutes": 150,
+      "marks": 60,
+      "sections": [
+        {
+          "id": "lst1",
+          "marks": 10,
+          "form": "two-speaker dialogue",
+          "lengthWords": [
+            400,
+            450
+          ],
+          "turnsApprox": 25,
+          "questions": "6 MCQ × 3 + 4 T/F"
+        },
+        {
+          "id": "lst2",
+          "marks": 10,
+          "form": "one-speaker narrative",
+          "lengthWords": [
+            400,
+            450
+          ],
+          "questions": "6 wh-short-answer + 4 gap-fill (1–2 words)"
+        },
+        {
+          "id": "rdg1",
+          "marks": 10,
+          "form": "evaluative",
+          "lengthWords": [
+            400,
+            450
+          ],
+          "questions": "6 wh-short-answer + 4 T/F"
+        },
+        {
+          "id": "rdg2",
+          "marks": 10,
+          "form": "informative 6+ paragraphs",
+          "lengthWords": [
+            400,
+            450
+          ],
+          "questions": "6 MCQ × 3 (2 meaning) + 4 paragraph heading matching (3 distractors)"
+        },
+        {
+          "id": "wrt1",
+          "marks": 10,
+          "form": "description of graph/data",
+          "minWords": 100,
+          "marking": "five-level rating scale"
+        },
+        {
+          "id": "wrt2",
+          "marks": 10,
+          "form": "formal interactive letter or email",
+          "minWords": 100,
+          "marking": "five-level rating scale"
+        }
+      ]
+    },
+    "12-core": {
+      "minutes": 180,
+      "marks": 70,
+      "sections": [
+        {
+          "id": "lst1",
+          "marks": 7,
+          "form": "two-speaker interactive",
+          "lengthWords": [
+            350,
+            450
+          ],
+          "turnsApprox": 30,
+          "questions": "7 MCQ × 3"
+        },
+        {
+          "id": "lst2",
+          "marks": 8,
+          "form": "single-speaker narrative in two parts",
+          "lengthWords": [
+            350,
+            450
+          ],
+          "questions": "4 wh-short-answer + 4 MCQ × 3"
+        },
+        {
+          "id": "grm",
+          "marks": 5,
+          "form": "dialogue cloze",
+          "lengthWords": [
+            60,
+            70
+          ],
+          "questions": "5 gaps × 2"
+        },
+        {
+          "id": "vcb",
+          "marks": 5,
+          "form": "vocabulary cloze",
+          "lengthWords": [
+            80,
+            90
+          ],
+          "questions": "5 gaps × 3"
+        },
+        {
+          "id": "rdg1",
+          "marks": 7,
+          "form": "7 unrelated short texts",
+          "lengthWordsEach": [
+            35,
+            45
+          ],
+          "questions": "7 T/F"
+        },
+        {
+          "id": "rdg2",
+          "marks": 8,
+          "form": "interactive letters/emails",
+          "lengthWords": [
+            350,
+            400
+          ],
+          "questions": "8 MCQ × 3"
+        },
+        {
+          "id": "rdg3",
+          "marks": 10,
+          "form": "informative",
+          "lengthWords": [
+            400,
+            450
+          ],
+          "questions": "6 wh-short-answer + 4 MCQ × 3"
+        },
+        {
+          "id": "wrt1",
+          "marks": 10,
+          "form": "evaluative",
+          "minWords": 100,
+          "marking": "five-level rating scale"
+        },
+        {
+          "id": "wrt2",
+          "marks": 10,
+          "form": "narrative",
+          "minWords": 100,
+          "marking": "five-level rating scale"
+        }
+      ]
+    },
+    "12-elective": {
+      "minutes": 180,
+      "marks": 70,
+      "sections": [
+        {
+          "id": "lst1",
+          "marks": 10,
+          "form": "two-speaker dialogue",
+          "lengthWords": [
+            400,
+            450
+          ],
+          "turnsApprox": "25–30",
+          "questions": "6 MCQ × 3 + 4 T/F"
+        },
+        {
+          "id": "lst2",
+          "marks": 10,
+          "form": "one-speaker informative",
+          "lengthWords": [
+            450,
+            500
+          ],
+          "questions": "5 note headings + 5 wh-short-answer"
+        },
+        {
+          "id": "rdg1",
+          "marks": 12,
+          "form": "interactive",
+          "lengthWords": [
+            450,
+            500
+          ],
+          "questions": "7 wh-short-answer + 5 gap-fill (≤3 words)"
+        },
+        {
+          "id": "rdg2",
+          "marks": 13,
+          "form": "narrative",
+          "lengthWords": [
+            450,
+            500
+          ],
+          "questions": "8 MCQ × 3 (3 meaning) + 5 paragraph heading matching (3 distractors)"
+        },
+        {
+          "id": "wrt1",
+          "marks": 15,
+          "form": "evaluative",
+          "minWords": 150,
+          "marking": "five-level rating scale"
+        },
+        {
+          "id": "wrt2",
+          "marks": 10,
+          "form": "description of graph/data",
+          "minWords": 150,
+          "marking": "five-level rating scale"
+        }
+      ]
+    }
+  }
+}
