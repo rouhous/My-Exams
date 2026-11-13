@@ -19,10 +19,11 @@ class Inline(HTMLParser):
   if self.script is not None and data.strip():
    self.data.append((self.script.get('id'),self.script.get('type'),data))
 def embedded(path,id):
- p=Inline();p.feed(path.read_text(encoding='utf-8'))
- matches=[d for sid,t,d in p.data if sid==id]
- assert len(matches)==1,(str(path),id)
- return json.loads(matches[0])
+ content=path.read_text(encoding='utf-8')
+ pattern=r'<script\\b[^>]*\\bid=["\\\']'+re.escape(id)+r'["\\\'][^>]*>(.*?)</script>'
+ hit=re.search(pattern,content,flags=re.S|re.I)
+ assert hit is not None,(str(path),id)
+ return json.loads(hit.group(1))
 def jscheck(path):
  p=Inline();p.feed(path.read_text(encoding='utf-8'))
  for n,(sid,typ,script) in enumerate(p.data):
