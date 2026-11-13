@@ -40,7 +40,7 @@
     },
     "curriculumQA": "Grade 10 A-D now have internally matching Listening, Vocabulary, Grammar, Reading 1, Reading 2 and Writing themes. Textbook page-level and official assessment detail still require manual confirmation.",
     "reading2Correction": "Formerly rotated to next unit, now aligned to model's unit. Comprehensive E/F rebuilt from corrected bases.",
-    "answerOptionOrder": "Answer choices rotated deterministically, key remapped, with each base model Reading 1 distributed across three or four option positions."
+    "answerOptionOrder": "For each source model, the location of each correct MC option follows an even deterministic cycle; answer text is preserved and keys remapped."
   },
   "models": [
     {
@@ -57,11 +57,11 @@
           {
             "stem": "What does the class use to share documents?",
             "options": [
-              "A newspaper",
               "A class platform",
-              "A radio"
+              "A radio",
+              "A newspaper"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What does Maha check first?",
@@ -75,20 +75,20 @@
           {
             "stem": "What can late phone use affect?",
             "options": [
+              "Rainfall",
               "Transport",
-              "Sleep",
-              "Rainfall"
+              "Sleep"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What does Maha turn off during study time?",
             "options": [
-              "The school computer",
               "Unnecessary notifications",
-              "The internet forever"
+              "The internet forever",
+              "The school computer"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Why does she compare information?",
@@ -102,20 +102,20 @@
           {
             "stem": "What should students protect?",
             "options": [
+              "Their homework books",
               "Their uniforms",
-              "Their privacy",
-              "Their homework books"
+              "Their privacy"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What is Maha’s most important rule?",
             "options": [
-              "Never communicate online",
               "Do not share private information without permission",
-              "Never use a website"
+              "Never use a website",
+              "Never communicate online"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What should students check?",
@@ -144,10 +144,10 @@
           {
             "stem": "Maha shares private information with everyone.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "She compares important information with another reliable website.",
@@ -160,10 +160,10 @@
           {
             "stem": "She says social media is always harmful.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           }
         ]
       },
@@ -183,32 +183,32 @@
           {
             "stem": "The place where students share work online is a ____.",
             "options": [
-              "valley",
               "monument",
               "tide",
-              "platform"
+              "platform",
+              "valley"
             ],
-            "answer": 3
+            "answer": 2
           },
           {
             "stem": "To put a video onto a website is to ____.",
             "options": [
-              "preserve",
-              "upload",
               "excavate",
-              "evaporate"
+              "evaporate",
+              "preserve",
+              "upload"
             ],
-            "answer": 1
+            "answer": 3
           },
           {
             "stem": "Personal information should be kept ____.",
             "options": [
+              "private",
               "ancient",
               "renewable",
-              "fossil",
-              "private"
+              "fossil"
             ],
-            "answer": 3
+            "answer": 0
           },
           {
             "stem": "A trustworthy article identifies its ____.",
@@ -228,22 +228,22 @@
           {
             "stem": "This news platform is ____ than the old one.",
             "options": [
-              "more reliable",
-              "reliabler",
               "most reliable",
-              "reliable than"
+              "reliable than",
+              "more reliable",
+              "reliabler"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "Please ____ the information before forwarding it.",
             "options": [
+              "check in",
               "give away",
               "look up to",
-              "check out",
-              "check in"
+              "check out"
             ],
-            "answer": 2
+            "answer": 3
           },
           {
             "stem": "A short video loads ____ than a very large one.",
@@ -258,22 +258,22 @@
           {
             "stem": "We should ____ suspicious links rather than open them.",
             "options": [
-              "run out of",
               "get along with",
               "stay away from",
-              "look forward to"
+              "look forward to",
+              "run out of"
             ],
-            "answer": 2
+            "answer": 1
           },
           {
             "stem": "The latest blog is ____ to read on a phone than the older version.",
             "options": [
-              "easier",
-              "easy",
               "easiest",
-              "more easy"
+              "more easy",
+              "easier",
+              "easy"
             ],
-            "answer": 0
+            "answer": 2
           }
         ]
       },
@@ -283,11 +283,11 @@
           {
             "stem": "What has changed how young people communicate?",
             "options": [
-              "Wind power",
               "New media",
-              "Archaeology"
+              "Archaeology",
+              "Wind power"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What can teenagers use to find information?",
@@ -301,20 +301,20 @@
           {
             "stem": "What may too much time online affect?",
             "options": [
+              "Sea levels",
               "Trade",
-              "Study and sleep",
-              "Sea levels"
+              "Study and sleep"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What should students protect online?",
             "options": [
-              "Heritage sites",
               "Privacy",
-              "Glaciers"
+              "Glaciers",
+              "Heritage sites"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What should students do before posting?",
@@ -328,20 +328,20 @@
           {
             "stem": "What kind of source should students check?",
             "options": [
+              "Ancient only",
               "Expensive",
-              "Reliable",
-              "Ancient only"
+              "Reliable"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "Which device is mentioned?",
             "options": [
-              "Solar panels",
               "Phones",
-              "Wind turbines"
+              "Wind turbines",
+              "Solar panels"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What can social media help people do?",
@@ -355,20 +355,20 @@
           {
             "stem": "What is one disadvantage of too much screen time?",
             "options": [
+              "It creates wind",
               "It lowers sea level",
-              "It can affect sleep",
-              "It creates wind"
+              "It can affect sleep"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What is the main advice in the passage?",
             "options": [
-              "Use only paper",
               "Use new media responsibly",
-              "Avoid all technology"
+              "Avoid all technology",
+              "Use only paper"
             ],
-            "answer": 1
+            "answer": 0
           }
         ]
       },
@@ -406,10 +406,10 @@
           {
             "stem": "Too much screen time can never affect sleep.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Students should check reliable sources.",
@@ -422,10 +422,10 @@
           {
             "stem": "The passage says privacy is unimportant.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Students should think before posting.",
@@ -475,65 +475,65 @@
           {
             "stem": "What produces greenhouse gases?",
             "options": [
+              "Recycling paper",
               "Burning fossil fuels",
-              "Planting trees",
-              "Recycling paper"
+              "Planting trees"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What do greenhouse gases trap?",
             "options": [
+              "Rainwater",
               "Oxygen",
-              "Heat",
-              "Rainwater"
+              "Heat"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "Which is an effect mentioned?",
             "options": [
+              "Rising sea levels",
               "More smartphones",
-              "Lower school costs",
-              "Rising sea levels"
+              "Lower school costs"
             ],
-            "answer": 2
+            "answer": 0
           },
           {
             "stem": "What can students recycle?",
             "options": [
+              "Emissions",
               "Materials",
-              "Weather",
-              "Emissions"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Which action can reduce emissions?",
-            "options": [
-              "Wasting water",
-              "Using public transport",
-              "Leaving lights on"
+              "Weather"
             ],
             "answer": 1
           },
           {
-            "stem": "Who can take long-term action?",
+            "stem": "Which action can reduce emissions?",
             "options": [
-              "Only students",
-              "Only companies",
-              "Individuals, communities and governments"
+              "Leaving lights on",
+              "Wasting water",
+              "Using public transport"
             ],
             "answer": 2
           },
           {
-            "stem": "What is the main message?",
+            "stem": "Who can take long-term action?",
             "options": [
-              "Long-term responsible action is needed",
-              "Climate change can be solved in one day",
-              "Only schools can solve it"
+              "Individuals, communities and governments",
+              "Only students",
+              "Only companies"
             ],
             "answer": 0
+          },
+          {
+            "stem": "What is the main message?",
+            "options": [
+              "Only schools can solve it",
+              "Long-term responsible action is needed",
+              "Climate change can be solved in one day"
+            ],
+            "answer": 1
           },
           {
             "stem": "Name one fossil fuel.",
@@ -591,52 +591,52 @@
           {
             "stem": "A long period without enough rainfall is a ____.",
             "options": [
-              "turbine",
               "excavation",
               "monument",
-              "drought"
-            ],
-            "answer": 3
-          },
-          {
-            "stem": "An extremely hot period is a ____.",
-            "options": [
-              "archive",
-              "profile",
-              "heatwave",
-              "trade route"
+              "drought",
+              "turbine"
             ],
             "answer": 2
           },
           {
-            "stem": "A gas that traps heat in the atmosphere is a ____.",
+            "stem": "An extremely hot period is a ____.",
             "options": [
-              "microphone",
-              "greenhouse gas",
-              "photovoltaic cell",
-              "artifact"
+              "trade route",
+              "archive",
+              "profile",
+              "heatwave"
             ],
-            "answer": 1
+            "answer": 3
           },
           {
-            "stem": "The amount of carbon released by an activity is its ____.",
+            "stem": "A gas that traps heat in the atmosphere is a ____.",
             "options": [
-              "carbon footprint",
-              "river bank",
-              "data cable",
-              "headline"
+              "greenhouse gas",
+              "photovoltaic cell",
+              "artifact",
+              "microphone"
             ],
             "answer": 0
           },
           {
+            "stem": "The amount of carbon released by an activity is its ____.",
+            "options": [
+              "headline",
+              "carbon footprint",
+              "river bank",
+              "data cable"
+            ],
+            "answer": 1
+          },
+          {
             "stem": "Rising water along coasts is related to a higher ____.",
             "options": [
-              "signal strength",
               "screen time",
               "heritage site",
-              "sea level"
+              "sea level",
+              "signal strength"
             ],
-            "answer": 3
+            "answer": 2
           }
         ]
       },
@@ -646,52 +646,52 @@
           {
             "stem": "Many regions are becoming drier ____ average temperatures are rising.",
             "options": [
+              "although",
               "unless",
               "in spite",
-              "because",
+              "because"
+            ],
+            "answer": 3
+          },
+          {
+            "stem": "Select the correct compound noun.",
+            "options": [
+              "carbon footprint",
+              "carbonly footprint",
+              "footprinty carbon",
+              "carboning foot"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "If emissions continue to grow, the sea level ____ rise.",
+            "options": [
+              "has",
+              "will",
+              "had",
+              "were"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "The reservoir was low; ____, the town reduced water use.",
+            "options": [
+              "despite",
+              "unless",
+              "therefore",
               "although"
             ],
             "answer": 2
           },
           {
-            "stem": "Select the correct compound noun.",
-            "options": [
-              "carboning foot",
-              "carbon footprint",
-              "carbonly footprint",
-              "footprinty carbon"
-            ],
-            "answer": 1
-          },
-          {
-            "stem": "If emissions continue to grow, the sea level ____ rise.",
-            "options": [
-              "will",
-              "had",
-              "were",
-              "has"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "The reservoir was low; ____, the town reduced water use.",
-            "options": [
-              "although",
-              "despite",
-              "unless",
-              "therefore"
-            ],
-            "answer": 3
-          },
-          {
             "stem": "Our class will plant trees ____ reduce its carbon footprint.",
             "options": [
+              "for helping to",
               "helping for",
               "so to",
-              "to help",
-              "for helping to"
+              "to help"
             ],
-            "answer": 2
+            "answer": 3
           }
         ]
       },
@@ -701,92 +701,92 @@
           {
             "stem": "What is linked to rising temperatures?",
             "options": [
+              "Civilisation",
               "Climate change",
-              "Social media",
-              "Civilisation"
+              "Social media"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What produces greenhouse gases?",
             "options": [
+              "Recycling",
               "Walking",
-              "Burning fossil fuels",
-              "Recycling"
+              "Burning fossil fuels"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What can global warming contribute to?",
             "options": [
+              "Droughts and floods",
               "More websites",
-              "Ancient trade",
-              "Droughts and floods"
+              "Ancient trade"
             ],
-            "answer": 2
+            "answer": 0
           },
           {
             "stem": "What can people do to help?",
             "options": [
+              "Increase pollution",
               "Save energy",
-              "Waste electricity",
-              "Increase pollution"
+              "Waste electricity"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What can recycling reduce?",
             "options": [
+              "Heritage",
               "History",
-              "Waste",
-              "Heritage"
+              "Waste"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What can rising sea levels affect?",
             "options": [
+              "Communities",
               "Passwords",
-              "Blogs",
-              "Communities"
+              "Blogs"
             ],
-            "answer": 2
+            "answer": 0
           },
           {
             "stem": "What can students use less of?",
             "options": [
+              "History",
               "Energy",
-              "Information",
-              "History"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "What can public transport help reduce?",
-            "options": [
-              "Vocabulary",
-              "Emissions",
-              "Archaeological sites"
+              "Information"
             ],
             "answer": 1
           },
           {
-            "stem": "What can schools plant?",
+            "stem": "What can public transport help reduce?",
             "options": [
-              "Turbines",
-              "Glaciers",
-              "Trees"
+              "Archaeological sites",
+              "Vocabulary",
+              "Emissions"
             ],
             "answer": 2
           },
           {
-            "stem": "What does the speaker say is needed?",
+            "stem": "What can schools plant?",
             "options": [
-              "Long-term action",
-              "One action by one person",
-              "No action"
+              "Trees",
+              "Turbines",
+              "Glaciers"
             ],
             "answer": 0
+          },
+          {
+            "stem": "What does the speaker say is needed?",
+            "options": [
+              "No action",
+              "Long-term action",
+              "One action by one person"
+            ],
+            "answer": 1
           }
         ]
       },
@@ -840,18 +840,18 @@
           {
             "stem": "Students can save electricity.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "The speaker says climate change can be solved in one day.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           }
         ]
       },
@@ -903,20 +903,20 @@
           {
             "stem": "What do solar panels use?",
             "options": [
-              "Sea water",
               "Sunlight",
-              "Coal"
+              "Coal",
+              "Sea water"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What do wind turbines use?",
             "options": [
+              "Plastic",
               "Moving air",
-              "Fossil fuels",
-              "Plastic"
+              "Fossil fuels"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What do large projects need?",
@@ -930,20 +930,20 @@
           {
             "stem": "What can renewable energy reduce?",
             "options": [
-              "Historical evidence",
               "Use of fossil fuels",
-              "School attendance"
+              "School attendance",
+              "Historical evidence"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What can renewable energy support?",
             "options": [
+              "More waste",
               "A sustainable future",
-              "More pollution",
-              "More waste"
+              "More pollution"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What must engineers consider?",
@@ -981,10 +981,10 @@
           {
             "stem": "Wind turbines use sunlight directly.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Large renewable projects need planning.",
@@ -997,10 +997,10 @@
           {
             "stem": "Renewable energy always needs more fossil fuels.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           }
         ]
       },
@@ -1010,22 +1010,22 @@
           {
             "stem": "A device that changes sunlight into electricity is a ____.",
             "options": [
-              "heritage site",
-              "solar panel",
               "fossil record",
-              "media blog"
+              "media blog",
+              "heritage site",
+              "solar panel"
             ],
-            "answer": 1
+            "answer": 3
           },
           {
             "stem": "A tall machine that generates power from wind is a ____.",
             "options": [
-              "camera tripod",
               "wind turbine",
               "rain gauge",
-              "bridge arch"
+              "bridge arch",
+              "camera tripod"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Electricity made from moving water is ____.",
@@ -1040,22 +1040,22 @@
           {
             "stem": "A device that stores electrical energy is a ____.",
             "options": [
+              "ruin",
               "paragraph",
               "battery",
-              "headline",
-              "ruin"
+              "headline"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "A network distributing electricity is the power ____.",
             "options": [
-              "cliff",
-              "grid",
               "stage",
-              "screen"
+              "screen",
+              "cliff",
+              "grid"
             ],
-            "answer": 1
+            "answer": 3
           }
         ]
       },
@@ -1075,32 +1075,32 @@
           {
             "stem": "The adjective from \"sustain\" is ____.",
             "options": [
+              "sustainment",
               "sustainable",
               "sustainful",
-              "sustainingly",
-              "sustainment"
+              "sustainingly"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "Wind turbines are useful ____ the wind is strong.",
             "options": [
-              "when",
-              "despite",
               "unless of",
-              "although of"
+              "although of",
+              "when",
+              "despite"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "The adjective from \"economy\" is ____.",
             "options": [
-              "economic",
               "economize",
               "economically",
-              "economics"
+              "economics",
+              "economic"
             ],
-            "answer": 0
+            "answer": 3
           },
           {
             "stem": "The battery stores energy ____ it can be used at night.",
@@ -1129,20 +1129,20 @@
           {
             "stem": "What do solar panels use?",
             "options": [
-              "Books",
               "Sunlight",
-              "Coal"
+              "Coal",
+              "Books"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What do wind turbines use?",
             "options": [
+              "Rain",
               "Moving air",
-              "Plastic",
-              "Rain"
+              "Plastic"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What can renewable energy generate?",
@@ -1156,20 +1156,20 @@
           {
             "stem": "What do large projects require?",
             "options": [
-              "No money",
               "Investment and planning",
-              "No technology"
+              "No technology",
+              "No money"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What can renewable energy reduce?",
             "options": [
+              "Heritage",
               "Fossil-fuel use and emissions",
-              "School work",
-              "Heritage"
+              "School work"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What can renewable energy support?",
@@ -1183,20 +1183,20 @@
           {
             "stem": "What must engineers consider?",
             "options": [
-              "Only winter",
               "Location and supply",
-              "Only colour"
+              "Only colour",
+              "Only winter"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What should people use efficiently?",
             "options": [
+              "Social media posts",
               "Energy",
-              "Archaeological objects",
-              "Social media posts"
+              "Archaeological objects"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "What can support Oman’s future energy needs?",
@@ -1243,10 +1243,10 @@
           {
             "stem": "Wind turbines use sunlight.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Large projects need planning.",
@@ -1267,10 +1267,10 @@
           {
             "stem": "Renewable energy has no challenges at all.",
             "options": [
-              "False",
-              "True"
+              "True",
+              "False"
             ],
-            "answer": 0
+            "answer": 1
           }
         ]
       },
@@ -1312,11 +1312,11 @@
           {
             "stem": "What do historians study?",
             "options": [
-              "Only modern advertisements",
               "Archaeological evidence",
-              "Only social media"
+              "Only social media",
+              "Only modern advertisements"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What was important to Oman’s connections?",
@@ -1330,20 +1330,20 @@
           {
             "stem": "What can merchants exchange?",
             "options": [
+              "Only passwords",
               "Only photographs",
-              "Goods and ideas",
-              "Only passwords"
+              "Goods and ideas"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What does heritage include?",
             "options": [
-              "Only computers",
               "Cultural and historical traditions, places and objects",
-              "Only new buildings"
+              "Only new buildings",
+              "Only computers"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Why is heritage important?",
@@ -1357,20 +1357,20 @@
           {
             "stem": "How can students help?",
             "options": [
+              "Damage archaeological sites",
               "Remove objects",
-              "Respect historical places",
-              "Damage archaeological sites"
+              "Respect historical places"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What should students share?",
             "options": [
-              "Private passwords",
               "Accurate information",
-              "Rumours"
+              "Rumours",
+              "Private passwords"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Name one type of evidence historians study.",
@@ -1407,18 +1407,18 @@
           {
             "stem": "Students should remove objects from archaeological sites.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Protecting the past can help communities understand the future.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           }
         ]
       },
@@ -1428,52 +1428,52 @@
           {
             "stem": "A specialist who studies ancient remains is an ____.",
             "options": [
+              "archaeologist",
               "engineer of turbines",
               "meteorologist",
-              "web designer",
-              "archaeologist"
-            ],
-            "answer": 3
-          },
-          {
-            "stem": "The careful digging of a historic site is an ____.",
-            "options": [
-              "excavation",
-              "upload",
-              "evaporation",
-              "emission"
+              "web designer"
             ],
             "answer": 0
           },
           {
-            "stem": "An object made or used by people long ago is an ____.",
+            "stem": "The careful digging of a historic site is an ____.",
             "options": [
-              "app",
-              "artefact",
-              "advert",
-              "attachment"
+              "emission",
+              "excavation",
+              "upload",
+              "evaporation"
             ],
             "answer": 1
           },
           {
-            "stem": "A path used historically to exchange goods is a ____.",
+            "stem": "An object made or used by people long ago is an ____.",
             "options": [
-              "power grid",
-              "weather map",
-              "trade route",
-              "video call"
+              "attachment",
+              "app",
+              "artefact",
+              "advert"
             ],
             "answer": 2
           },
           {
-            "stem": "The culture and historic places we inherit are our ____.",
+            "stem": "A path used historically to exchange goods is a ____.",
             "options": [
-              "privacy",
-              "bandwidth",
-              "temperature",
-              "heritage"
+              "video call",
+              "power grid",
+              "weather map",
+              "trade route"
             ],
             "answer": 3
+          },
+          {
+            "stem": "The culture and historic places we inherit are our ____.",
+            "options": [
+              "heritage",
+              "privacy",
+              "bandwidth",
+              "temperature"
+            ],
+            "answer": 0
           }
         ]
       },
@@ -1483,52 +1483,52 @@
           {
             "stem": "The ancient harbour ____ by traders centuries ago.",
             "options": [
-              "were using",
               "used is",
               "was used",
-              "is use"
-            ],
-            "answer": 2
-          },
-          {
-            "stem": "The ruins were ____ preserved.",
-            "options": [
-              "extreme good",
-              "extremity well",
-              "extremely goodly",
-              "extremely well"
-            ],
-            "answer": 3
-          },
-          {
-            "stem": "The inscription ____ during an excavation in 2019.",
-            "options": [
-              "was discovered",
-              "discovered was",
-              "was discover",
-              "is discovering"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "The site is ____ important to local history.",
-            "options": [
-              "particulars",
-              "particularly",
-              "particular",
-              "particularity"
+              "is use",
+              "were using"
             ],
             "answer": 1
           },
           {
-            "stem": "The stone tools ____ in a museum last year.",
+            "stem": "The ruins were ____ preserved.",
             "options": [
-              "are displaying yesterday",
-              "displaying were",
-              "were displayed",
-              "was display"
+              "extremity well",
+              "extremely goodly",
+              "extremely well",
+              "extreme good"
             ],
             "answer": 2
+          },
+          {
+            "stem": "The inscription ____ during an excavation in 2019.",
+            "options": [
+              "discovered was",
+              "was discover",
+              "is discovering",
+              "was discovered"
+            ],
+            "answer": 3
+          },
+          {
+            "stem": "The site is ____ important to local history.",
+            "options": [
+              "particularly",
+              "particular",
+              "particularity",
+              "particulars"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "The stone tools ____ in a museum last year.",
+            "options": [
+              "displaying were",
+              "were displayed",
+              "was display",
+              "are displaying yesterday"
+            ],
+            "answer": 1
           }
         ]
       },
@@ -1538,11 +1538,11 @@
           {
             "stem": "What can archaeological sites provide?",
             "options": [
-              "Mobile phones",
               "Evidence about the past",
-              "Weather forecasts"
+              "Weather forecasts",
+              "Mobile phones"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What do historians study?",
@@ -1556,20 +1556,20 @@
           {
             "stem": "What was important to Oman’s history?",
             "options": [
+              "Space travel",
               "Online shopping",
-              "Trade and seafaring",
-              "Space travel"
+              "Trade and seafaring"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What did merchants exchange?",
             "options": [
-              "Apps",
               "Goods and ideas",
-              "Passwords"
+              "Passwords",
+              "Apps"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What does heritage include?",
@@ -1583,20 +1583,20 @@
           {
             "stem": "Why should heritage be preserved?",
             "options": [
+              "To increase pollution",
               "To remove culture",
-              "To understand identity and history",
-              "To increase pollution"
+              "To understand identity and history"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "How can students help?",
             "options": [
-              "Remove objects",
               "Respect historical places",
-              "Damage sites"
+              "Damage sites",
+              "Remove objects"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What should students share?",
@@ -1610,20 +1610,20 @@
           {
             "stem": "Who can learn from heritage?",
             "options": [
+              "Only merchants",
               "Only archaeologists",
-              "Future generations",
-              "Only merchants"
+              "Future generations"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What does protecting the past help communities do?",
             "options": [
-              "Avoid learning",
               "Understand the future better",
-              "Forget history"
+              "Forget history",
+              "Avoid learning"
             ],
-            "answer": 1
+            "answer": 0
           }
         ]
       },
@@ -1770,11 +1770,11 @@
           {
             "stem": "What does the class use to share documents?",
             "options": [
-              "A newspaper",
               "A class platform",
-              "A radio"
+              "A radio",
+              "A newspaper"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What does Maha check first?",
@@ -1788,20 +1788,20 @@
           {
             "stem": "What can late phone use affect?",
             "options": [
+              "Rainfall",
               "Transport",
-              "Sleep",
-              "Rainfall"
+              "Sleep"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What does Maha turn off during study time?",
             "options": [
-              "The school computer",
               "Unnecessary notifications",
-              "The internet forever"
+              "The internet forever",
+              "The school computer"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Why does she compare information?",
@@ -1815,20 +1815,20 @@
           {
             "stem": "What should students protect?",
             "options": [
+              "Their homework books",
               "Their uniforms",
-              "Their privacy",
-              "Their homework books"
+              "Their privacy"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What is Maha’s most important rule?",
             "options": [
-              "Never communicate online",
               "Do not share private information without permission",
-              "Never use a website"
+              "Never use a website",
+              "Never communicate online"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What should students check?",
@@ -1857,10 +1857,10 @@
           {
             "stem": "Maha shares private information with everyone.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "She compares important information with another reliable website.",
@@ -1873,10 +1873,10 @@
           {
             "stem": "She says social media is always harmful.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           }
         ]
       },
@@ -1886,52 +1886,52 @@
           {
             "stem": "A long period without enough rainfall is a ____.",
             "options": [
-              "turbine",
               "excavation",
               "monument",
-              "drought"
-            ],
-            "answer": 3
-          },
-          {
-            "stem": "An extremely hot period is a ____.",
-            "options": [
-              "archive",
-              "profile",
-              "heatwave",
-              "trade route"
+              "drought",
+              "turbine"
             ],
             "answer": 2
           },
           {
-            "stem": "A gas that traps heat in the atmosphere is a ____.",
+            "stem": "An extremely hot period is a ____.",
             "options": [
-              "microphone",
-              "greenhouse gas",
-              "photovoltaic cell",
-              "artifact"
+              "trade route",
+              "archive",
+              "profile",
+              "heatwave"
             ],
-            "answer": 1
+            "answer": 3
           },
           {
-            "stem": "The amount of carbon released by an activity is its ____.",
+            "stem": "A gas that traps heat in the atmosphere is a ____.",
             "options": [
-              "carbon footprint",
-              "river bank",
-              "data cable",
-              "headline"
+              "greenhouse gas",
+              "photovoltaic cell",
+              "artifact",
+              "microphone"
             ],
             "answer": 0
           },
           {
+            "stem": "The amount of carbon released by an activity is its ____.",
+            "options": [
+              "headline",
+              "carbon footprint",
+              "river bank",
+              "data cable"
+            ],
+            "answer": 1
+          },
+          {
             "stem": "Rising water along coasts is related to a higher ____.",
             "options": [
-              "signal strength",
               "screen time",
               "heritage site",
-              "sea level"
+              "sea level",
+              "signal strength"
             ],
-            "answer": 3
+            "answer": 2
           }
         ]
       },
@@ -1951,32 +1951,32 @@
           {
             "stem": "The adjective from \"sustain\" is ____.",
             "options": [
+              "sustainment",
               "sustainable",
               "sustainful",
-              "sustainingly",
-              "sustainment"
+              "sustainingly"
             ],
-            "answer": 0
+            "answer": 1
           },
           {
             "stem": "Wind turbines are useful ____ the wind is strong.",
             "options": [
-              "when",
-              "despite",
               "unless of",
-              "although of"
+              "although of",
+              "when",
+              "despite"
             ],
-            "answer": 0
+            "answer": 2
           },
           {
             "stem": "The adjective from \"economy\" is ____.",
             "options": [
-              "economic",
               "economize",
               "economically",
-              "economics"
+              "economics",
+              "economic"
             ],
-            "answer": 0
+            "answer": 3
           },
           {
             "stem": "The battery stores energy ____ it can be used at night.",
@@ -1996,11 +1996,11 @@
           {
             "stem": "What can archaeological sites provide?",
             "options": [
-              "Mobile phones",
               "Evidence about the past",
-              "Weather forecasts"
+              "Weather forecasts",
+              "Mobile phones"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What do historians study?",
@@ -2014,20 +2014,20 @@
           {
             "stem": "What was important to Oman’s history?",
             "options": [
+              "Space travel",
               "Online shopping",
-              "Trade and seafaring",
-              "Space travel"
+              "Trade and seafaring"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What did merchants exchange?",
             "options": [
-              "Apps",
               "Goods and ideas",
-              "Passwords"
+              "Passwords",
+              "Apps"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What does heritage include?",
@@ -2041,20 +2041,20 @@
           {
             "stem": "Why should heritage be preserved?",
             "options": [
+              "To increase pollution",
               "To remove culture",
-              "To understand identity and history",
-              "To increase pollution"
+              "To understand identity and history"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "How can students help?",
             "options": [
-              "Remove objects",
               "Respect historical places",
-              "Damage sites"
+              "Damage sites",
+              "Remove objects"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What should students share?",
@@ -2068,20 +2068,20 @@
           {
             "stem": "Who can learn from heritage?",
             "options": [
+              "Only merchants",
               "Only archaeologists",
-              "Future generations",
-              "Only merchants"
+              "Future generations"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What does protecting the past help communities do?",
             "options": [
-              "Avoid learning",
               "Understand the future better",
-              "Forget history"
+              "Forget history",
+              "Avoid learning"
             ],
-            "answer": 1
+            "answer": 0
           }
         ]
       },
@@ -2119,10 +2119,10 @@
           {
             "stem": "Too much screen time can never affect sleep.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Students should check reliable sources.",
@@ -2135,10 +2135,10 @@
           {
             "stem": "The passage says privacy is unimportant.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Students should think before posting.",
@@ -2212,11 +2212,11 @@
           {
             "stem": "What do historians study?",
             "options": [
-              "Only modern advertisements",
               "Archaeological evidence",
-              "Only social media"
+              "Only social media",
+              "Only modern advertisements"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What was important to Oman’s connections?",
@@ -2230,20 +2230,20 @@
           {
             "stem": "What can merchants exchange?",
             "options": [
+              "Only passwords",
               "Only photographs",
-              "Goods and ideas",
-              "Only passwords"
+              "Goods and ideas"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What does heritage include?",
             "options": [
-              "Only computers",
               "Cultural and historical traditions, places and objects",
-              "Only new buildings"
+              "Only new buildings",
+              "Only computers"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Why is heritage important?",
@@ -2257,20 +2257,20 @@
           {
             "stem": "How can students help?",
             "options": [
+              "Damage archaeological sites",
               "Remove objects",
-              "Respect historical places",
-              "Damage archaeological sites"
+              "Respect historical places"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What should students share?",
             "options": [
-              "Private passwords",
               "Accurate information",
-              "Rumours"
+              "Rumours",
+              "Private passwords"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Name one type of evidence historians study.",
@@ -2307,18 +2307,18 @@
           {
             "stem": "Students should remove objects from archaeological sites.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Protecting the past can help communities understand the future.",
             "options": [
-              "True",
-              "False"
+              "False",
+              "True"
             ],
-            "answer": 0
+            "answer": 1
           }
         ]
       },
@@ -2328,22 +2328,22 @@
           {
             "stem": "A device that changes sunlight into electricity is a ____.",
             "options": [
-              "heritage site",
-              "solar panel",
               "fossil record",
-              "media blog"
+              "media blog",
+              "heritage site",
+              "solar panel"
             ],
-            "answer": 1
+            "answer": 3
           },
           {
             "stem": "A tall machine that generates power from wind is a ____.",
             "options": [
-              "camera tripod",
               "wind turbine",
               "rain gauge",
-              "bridge arch"
+              "bridge arch",
+              "camera tripod"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "Electricity made from moving water is ____.",
@@ -2358,22 +2358,22 @@
           {
             "stem": "A device that stores electrical energy is a ____.",
             "options": [
+              "ruin",
               "paragraph",
               "battery",
-              "headline",
-              "ruin"
+              "headline"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "A network distributing electricity is the power ____.",
             "options": [
-              "cliff",
-              "grid",
               "stage",
-              "screen"
+              "screen",
+              "cliff",
+              "grid"
             ],
-            "answer": 1
+            "answer": 3
           }
         ]
       },
@@ -2383,52 +2383,52 @@
           {
             "stem": "Many regions are becoming drier ____ average temperatures are rising.",
             "options": [
+              "although",
               "unless",
               "in spite",
-              "because",
+              "because"
+            ],
+            "answer": 3
+          },
+          {
+            "stem": "Select the correct compound noun.",
+            "options": [
+              "carbon footprint",
+              "carbonly footprint",
+              "footprinty carbon",
+              "carboning foot"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "If emissions continue to grow, the sea level ____ rise.",
+            "options": [
+              "has",
+              "will",
+              "had",
+              "were"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "The reservoir was low; ____, the town reduced water use.",
+            "options": [
+              "despite",
+              "unless",
+              "therefore",
               "although"
             ],
             "answer": 2
           },
           {
-            "stem": "Select the correct compound noun.",
-            "options": [
-              "carboning foot",
-              "carbon footprint",
-              "carbonly footprint",
-              "footprinty carbon"
-            ],
-            "answer": 1
-          },
-          {
-            "stem": "If emissions continue to grow, the sea level ____ rise.",
-            "options": [
-              "will",
-              "had",
-              "were",
-              "has"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "The reservoir was low; ____, the town reduced water use.",
-            "options": [
-              "although",
-              "despite",
-              "unless",
-              "therefore"
-            ],
-            "answer": 3
-          },
-          {
             "stem": "Our class will plant trees ____ reduce its carbon footprint.",
             "options": [
+              "for helping to",
               "helping for",
               "so to",
-              "to help",
-              "for helping to"
+              "to help"
             ],
-            "answer": 2
+            "answer": 3
           }
         ]
       },
@@ -2438,11 +2438,11 @@
           {
             "stem": "What has changed how young people communicate?",
             "options": [
-              "Wind power",
               "New media",
-              "Archaeology"
+              "Archaeology",
+              "Wind power"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What can teenagers use to find information?",
@@ -2456,20 +2456,20 @@
           {
             "stem": "What may too much time online affect?",
             "options": [
+              "Sea levels",
               "Trade",
-              "Study and sleep",
-              "Sea levels"
+              "Study and sleep"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What should students protect online?",
             "options": [
-              "Heritage sites",
               "Privacy",
-              "Glaciers"
+              "Glaciers",
+              "Heritage sites"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What should students do before posting?",
@@ -2483,20 +2483,20 @@
           {
             "stem": "What kind of source should students check?",
             "options": [
+              "Ancient only",
               "Expensive",
-              "Reliable",
-              "Ancient only"
+              "Reliable"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "Which device is mentioned?",
             "options": [
-              "Solar panels",
               "Phones",
-              "Wind turbines"
+              "Wind turbines",
+              "Solar panels"
             ],
-            "answer": 1
+            "answer": 0
           },
           {
             "stem": "What can social media help people do?",
@@ -2510,20 +2510,20 @@
           {
             "stem": "What is one disadvantage of too much screen time?",
             "options": [
+              "It creates wind",
               "It lowers sea level",
-              "It can affect sleep",
-              "It creates wind"
+              "It can affect sleep"
             ],
-            "answer": 1
+            "answer": 2
           },
           {
             "stem": "What is the main advice in the passage?",
             "options": [
-              "Use only paper",
               "Use new media responsibly",
-              "Avoid all technology"
+              "Avoid all technology",
+              "Use only paper"
             ],
-            "answer": 1
+            "answer": 0
           }
         ]
       },
