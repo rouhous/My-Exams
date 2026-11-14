@@ -1,0 +1,196 @@
+{
+  "id": "g12-elective-unit3-rdg2-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 3,
+    "title": "Living in a Changing World"
+  },
+  "skill": "Reading 2",
+  "genre": "five-paragraph narrative",
+  "status": "original_450_500_word_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "marks": 13,
+  "passage": "Paragraph A\nWhen the students at Al Noor School decided to demonstrate a digital weather station, they expected an ordinary science afternoon. Their model used a sensor to measure wind and a small screen to show the results. Sara was responsible for explaining the data, while Hamad checked the equipment. The class had tested everything on Tuesday. On the morning of the exhibition, however, the electrical supply stopped without warning. Visitors were already arriving, and the screen remained dark. Sara looked at the silent equipment and wondered whether their work had been wasted.\n\nParagraph B\nSome students wanted to cancel the demonstration. Hamad suggested borrowing a large generator, but the science teacher said that the machine was too powerful for a crowded classroom. The group considered other options. They could use a battery for a short display, or present the measurements recorded during earlier experiments. Sara remembered that their notebooks contained tables from five trial days. She proposed showing the original data on paper while the technical team looked for a safe power source. The visitors could still discuss how weather measurements had been collected.\n\nParagraph C\nThe teacher agreed, and the team began to improvise. Hamad attached the small battery normally used for an emergency light to the sensor, following its safety instructions. The screen worked for a few minutes, but its brightness dropped quickly. Sara explained that this limitation was useful evidence: stored energy was not unlimited, and technology depended on careful planning. She drew a simple diagram showing when a solar panel could recharge a battery and when a backup might be necessary. Several visitors asked why solar power could change during cloudy weather.\n\nParagraph D\nA younger pupil noticed a contradiction between two numbers on the paper charts. One table showed a higher wind reading than the class summary. Sara checked the notebook instead of dismissing the question. She discovered that the summary contained a copying error, not a problem with the sensor. She corrected the figure publicly and thanked the pupil. Some students felt embarrassed, but the teacher said that explaining a mistake openly was an important part of scientific work. The revised chart was easier for visitors to trust.\n\nParagraph E\nBy the end of the afternoon, the power had returned. The group could have restarted the screen and acted as if nothing unusual had happened. Instead, Sara placed a small display beside it describing the power failure, the temporary battery and the corrected measurement. Visitors voted that the explanation was the most useful part of the exhibition. Sara realised that technology was not only about impressive devices. Careful evidence, flexible plans and honest communication mattered just as much when communities faced unexpected change.",
+  "wordCount": 450,
+  "paragraphs": 5,
+  "questions": [
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "stem": "The word improvised in paragraph C suggests the team ____.",
+      "options": [
+        "adapted quickly with available materials",
+        "repeated a memorised performance",
+        "stopped working entirely"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "stem": "The word limitation in paragraph C means ____.",
+      "options": [
+        "advantage",
+        "restriction",
+        "prediction"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "stem": "The word contradiction in paragraph D refers to ____.",
+      "options": [
+        "matching facts",
+        "a private agreement",
+        "conflicting information"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "stem": "What stopped working on exhibition morning?",
+      "options": [
+        "The weather station screen",
+        "The school gate",
+        "The water pump"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "stem": "How many trial days did the notebooks cover?",
+      "options": [
+        "Three",
+        "Five",
+        "Ten"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "stem": "Why did the teacher reject a large generator?",
+      "options": [
+        "It was too noisy to buy",
+        "It was unsafe for the crowded classroom",
+        "It could not produce electricity"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "stem": "What caused the incorrect wind figure?",
+      "options": [
+        "A copying mistake",
+        "A missing sensor",
+        "A visitor's joke"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "stem": "Why did Sara keep the power-failure explanation on display?",
+      "options": [
+        "To blame the technician",
+        "To hide the original measurements",
+        "To share what the class had learned"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "match",
+      "stem": "Select the best heading for paragraph A.",
+      "options": [
+        "A demonstration interrupted",
+        "Choosing a safer alternative",
+        "Learning from limited backup energy",
+        "Correcting a public mistake",
+        "Turning a problem into learning",
+        "A journey through the desert",
+        "Buying a new science building",
+        "A music festival prize"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "stem": "Select the best heading for paragraph B.",
+      "options": [
+        "A demonstration interrupted",
+        "Choosing a safer alternative",
+        "Learning from limited backup energy",
+        "Correcting a public mistake",
+        "Turning a problem into learning",
+        "A journey through the desert",
+        "Buying a new science building",
+        "A music festival prize"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "match",
+      "stem": "Select the best heading for paragraph C.",
+      "options": [
+        "A demonstration interrupted",
+        "Choosing a safer alternative",
+        "Learning from limited backup energy",
+        "Correcting a public mistake",
+        "Turning a problem into learning",
+        "A journey through the desert",
+        "Buying a new science building",
+        "A music festival prize"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "match",
+      "stem": "Select the best heading for paragraph D.",
+      "options": [
+        "A demonstration interrupted",
+        "Choosing a safer alternative",
+        "Learning from limited backup energy",
+        "Correcting a public mistake",
+        "Turning a problem into learning",
+        "A journey through the desert",
+        "Buying a new science building",
+        "A music festival prize"
+      ],
+      "answer": 3
+    },
+    {
+      "type": "match",
+      "stem": "Select the best heading for paragraph E.",
+      "options": [
+        "A demonstration interrupted",
+        "Choosing a safer alternative",
+        "Learning from limited backup energy",
+        "Correcting a public mistake",
+        "Turning a problem into learning",
+        "A journey through the desert",
+        "Buying a new science building",
+        "A music festival prize"
+      ],
+      "answer": 4
+    }
+  ],
+  "headings": [
+    "A demonstration interrupted",
+    "Choosing a safer alternative",
+    "Learning from limited backup energy",
+    "Correcting a public mistake",
+    "Turning a problem into learning",
+    "A journey through the desert",
+    "Buying a new science building",
+    "A music festival prize"
+  ],
+  "sahSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / rdg2",
+  "notes": "Original fictional narrative on resilient technology and honesty; eight MCQ with 3 meaning-in-context, five heading matches."
+}
