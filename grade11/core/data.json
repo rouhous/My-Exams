@@ -1328,42 +1328,18 @@
         ]
       },
       "reading": {
-        "passage": "Online shopping makes it easy to compare products and order them from home. However, customers should read descriptions and terms carefully before paying. A product may look different from its photograph, or delivery may take longer than expected. Customers should keep the receipt and check the return policy. If an item arrives damaged, they should contact the company and explain the problem clearly. A reliable online store usually provides information about payment, delivery, guarantees and returns. Good online shoppers compare these details instead of choosing a product only because its price is low.",
+        "passage": "At a school in Sohar, a group of Grade Eleven students developed a simple water-saving device. They first noticed that a tap near the science laboratory kept dripping after break. Instead of asking someone to replace every tap, they investigated the problem and discussed possible solutions. One pupil suggested using a sensor, but the group could not afford an expensive commercial system.\n\nThey designed a small prototype from a low-cost moisture sensor, a battery and a warning light. When water continues to flow for too long, the light flashes. The invention does not shut off water automatically; it alerts the caretaker to check the tap. Students tested the device over two weeks, recording how often it gave a correct warning.\n\nOn one rainy afternoon, the sensor reacted to spilled water, so the team improved the plastic cover. By the final test, the device gave fewer false warnings and used less power. The team presented its design at a local innovation fair. Visitors suggested adding an audio signal for people with poor eyesight. The pupils now hope to create clear instructions so another school can build an affordable version.",
         "questions": [
           {
-            "stem": "Online shopping lets customers compare products.",
+            "stem": "The pupils wanted to reduce wasted water at their school.",
             "options": [
-              "False",
-              "True"
-            ],
-            "answer": 1
-          },
-          {
-            "stem": "Product descriptions should be ignored.",
-            "options": [
-              "False",
-              "True"
+              "True",
+              "False"
             ],
             "answer": 0
           },
           {
-            "stem": "Delivery can take longer than expected.",
-            "options": [
-              "False",
-              "True"
-            ],
-            "answer": 1
-          },
-          {
-            "stem": "Customers should throw away the receipt.",
-            "options": [
-              "False",
-              "True"
-            ],
-            "answer": 0
-          },
-          {
-            "stem": "Low price is the only detail worth checking.",
+            "stem": "The team purchased a costly commercial system.",
             "options": [
               "True",
               "False"
@@ -1371,109 +1347,135 @@
             "answer": 1
           },
           {
-            "stem": "The passage is about…",
+            "stem": "The device turns the water off automatically.",
             "options": [
-              "friendship rules",
-              "shopping for technology online",
-              "touring the desert"
+              "True",
+              "False"
             ],
             "answer": 1
           },
           {
-            "stem": "Before payment customers should read…",
+            "stem": "The students tested their prototype for two weeks.",
             "options": [
-              "sports results",
-              "hotel maps",
-              "descriptions and terms"
-            ],
-            "answer": 2
-          },
-          {
-            "stem": "An online product may differ from…",
-            "options": [
-              "its photograph",
-              "its dictionary definition",
-              "a passport"
+              "True",
+              "False"
             ],
             "answer": 0
           },
           {
-            "stem": "Customers should keep…",
+            "stem": "Visitors suggested an audio signal to make the design more accessible.",
             "options": [
-              "a brochure",
-              "the receipt",
-              "an old ticket"
-            ],
-            "answer": 1
-          },
-          {
-            "stem": "If goods arrive damaged, customers should…",
-            "options": [
-              "ignore the problem",
-              "change their names",
-              "contact the company"
-            ],
-            "answer": 2
-          },
-          {
-            "stem": "A reliable store usually gives details of…",
-            "options": [
-              "returns and guarantees",
-              "university grades",
-              "tour guides"
+              "True",
+              "False"
             ],
             "answer": 0
           },
           {
-            "stem": "The best buyers compare…",
+            "stem": "What first alerted the students to the problem?",
             "options": [
-              "only product colours",
-              "several conditions",
-              "only low prices"
+              "A damaged computer",
+              "A dripping tap",
+              "A crowded school bus"
             ],
             "answer": 1
           },
           {
-            "stem": "What can customers compare online?",
-            "options": null,
-            "answer": "products"
+            "stem": "Why did the pupils make a simple prototype?",
+            "options": [
+              "A commercial system was too expensive",
+              "They wanted to avoid testing",
+              "They needed a larger garden"
+            ],
+            "answer": 0
           },
           {
-            "stem": "What should buyers read before paying?",
-            "options": null,
-            "answer": "descriptions"
+            "stem": "Which component gives the warning?",
+            "options": [
+              "A small camera",
+              "An automatic door",
+              "A flashing light"
+            ],
+            "answer": 2
           },
           {
-            "stem": "What may take longer than expected?",
-            "options": null,
-            "answer": "delivery"
+            "stem": "Who receives the warning from the device?",
+            "options": [
+              "The caretaker",
+              "The visitors",
+              "The bus driver"
+            ],
+            "answer": 0
           },
           {
-            "stem": "Which document should customers keep?",
-            "options": null,
-            "answer": "receipt"
+            "stem": "What caused a false warning?",
+            "options": [
+              "A broken chair",
+              "Spilled water",
+              "A school holiday"
+            ],
+            "answer": 1
           },
           {
-            "stem": "What policy should they check?",
-            "options": null,
-            "answer": "return policy"
+            "stem": "What did the team improve after the false warning?",
+            "options": [
+              "The classroom floor",
+              "The timetable",
+              "The sensor cover"
+            ],
+            "answer": 2
           },
           {
-            "stem": "Who should they contact about damage?",
-            "options": null,
-            "answer": "the company"
+            "stem": "The invention was presented at…",
+            "options": [
+              "a local innovation fair",
+              "a shopping festival",
+              "an airport"
+            ],
+            "answer": 0
           },
           {
-            "stem": "What should they explain clearly?",
+            "stem": "Name one component used to make the prototype.",
             "options": null,
-            "answer": "the problem"
+            "answer": "a moisture sensor"
           },
           {
-            "stem": "Name one detail a reliable store provides.",
+            "stem": "Name another component used in the prototype.",
             "options": null,
-            "answer": "guarantees"
+            "answer": "a battery"
+          },
+          {
+            "stem": "What does the warning light do?",
+            "options": null,
+            "answer": "flashes"
+          },
+          {
+            "stem": "For how long did the team test the device?",
+            "options": null,
+            "answer": "two weeks"
+          },
+          {
+            "stem": "What did the pupils record during testing?",
+            "options": null,
+            "answer": "correct warnings"
+          },
+          {
+            "stem": "What did the team improve after spilled water caused a problem?",
+            "options": null,
+            "answer": "plastic cover"
+          },
+          {
+            "stem": "Where did they present the design?",
+            "options": null,
+            "answer": "local innovation fair"
+          },
+          {
+            "stem": "Who might benefit from an added audio signal?",
+            "options": null,
+            "answer": "people with poor eyesight"
           }
-        ]
+        ],
+        "curriculumAlignment": "Innovation: prototype design, testing, iteration, accessibility and community problem solving",
+        "editorialStatus": "replaced_mismatched_online_shopping_text"
       },
       "writing1": {
         "prompt": "Write an informative text of at least 85 words about innovation and its impact on everyday life.",
@@ -1496,7 +1498,8 @@
           "research",
           "prototypes"
         ]
-      }
+      },
+      "curriculumPageReviewed": false
     },
     {
       "id": "E",
