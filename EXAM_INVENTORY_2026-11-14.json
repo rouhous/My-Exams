@@ -1,0 +1,149 @@
+{
+  "generated": "2026-11-14",
+  "scope": {
+    "grades": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "semester": 1,
+    "excludedGrades": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "project": "My Exams"
+  },
+  "tracks": [
+    {
+      "grade": "5",
+      "fixedModels": 4,
+      "fixedIds": "A-D",
+      "mixedFixedModels": 2,
+      "mixedIds": "E-F",
+      "randomComplete": true,
+      "sectionsAudioInBase": 8,
+      "audioVerified": 8,
+      "listeningPictures": 24,
+      "certifiedComplete": false
+    },
+    {
+      "grade": "6",
+      "fixedModels": 4,
+      "fixedIds": "A-D (D mixed)",
+      "mixedFixedModels": 2,
+      "mixedIds": "E-F",
+      "randomComplete": true,
+      "sectionsAudioInBase": 8,
+      "audioVerified": 8,
+      "listeningPictures": 24,
+      "certifiedComplete": false
+    },
+    {
+      "grade": "7",
+      "fixedModels": 4,
+      "fixedIds": "A-D (D mixed)",
+      "mixedFixedModels": 2,
+      "mixedIds": "E-F",
+      "randomComplete": true,
+      "sectionsAudioInBase": 8,
+      "audioVerified": 8,
+      "listeningPictures": 60,
+      "certifiedComplete": false
+    },
+    {
+      "grade": "8",
+      "fixedModels": 4,
+      "fixedIds": "A-D (D mixed)",
+      "mixedFixedModels": 2,
+      "mixedIds": "E-F",
+      "randomComplete": true,
+      "sectionsAudioInBase": 8,
+      "audioVerified": 8,
+      "listeningPictures": 60,
+      "certifiedComplete": false
+    },
+    {
+      "grade": "9",
+      "fixedModels": 7,
+      "fixedIds": "A-G",
+      "mixedFixedModels": 0,
+      "mixedIds": "",
+      "randomComplete": true,
+      "sectionsAudioInBase": 14,
+      "audioVerified": 4,
+      "audioNaturalHostedButNoSourceHash": 10,
+      "listeningPictures": 105,
+      "certifiedComplete": false
+    },
+    {
+      "grade": "10",
+      "fixedModels": 4,
+      "fixedIds": "A-D",
+      "mixedFixedModels": 2,
+      "mixedIds": "E-F",
+      "randomComplete": true,
+      "sectionsAudioInBase": 6,
+      "audioVerified": 6,
+      "certifiedComplete": false
+    },
+    {
+      "grade": "11 Core",
+      "fixedModels": 4,
+      "fixedIds": "A-D (5-section pilot)",
+      "mixedFixedModels": 2,
+      "mixedIds": "E-F",
+      "additionalTeacherReadSemesterPapers": 1,
+      "randomComplete": true,
+      "legacyPilotAudio": 6,
+      "newSemesterPaperAudio": 0,
+      "certifiedComplete": false
+    },
+    {
+      "grade": "11 Elective",
+      "fixedModels": 4,
+      "fixedIds": "A-D provisional",
+      "mixedFixedModels": 2,
+      "mixedIds": "E-F",
+      "randomComplete": true,
+      "legacyListeningMP3": 0,
+      "certifiedComplete": false
+    },
+    {
+      "grade": "12 Core",
+      "fixedModels": 4,
+      "fixedIds": "A-D provisional",
+      "mixedFixedModels": 2,
+      "mixedIds": "E-F",
+      "randomComplete": true,
+      "legacyListeningMP3": 0,
+      "certifiedComplete": false
+    },
+    {
+      "grade": "12 Elective",
+      "fixedModels": 4,
+      "fixedIds": "A-D new unit papers",
+      "mixedFixedModels": 0,
+      "mixedIds": "",
+      "additionalLegacyDraftModels": 6,
+      "randomComplete": true,
+      "sectionsAudioInNewUnitPapers": 8,
+      "audioVerified": 8,
+      "certifiedComplete": false
+    }
+  ],
+  "notes": [
+    "Grade 5–8 mixed models E/F and random exams compose intact tasks from source models; no new independent MP3 required where a passage is reused with its exact answer key.",
+    "Grade 9 provides A–G and a regenerated R random mode; model D/E/F reuse listening sections, not new independent scripts.",
+    "Grade 11 Core five-section pilots cannot be treated as official nine-section semester papers; only a separate teacher-read nine-section Paper A has been authored so far.",
+    "Grade 12 Elective old A–F drafts coexist with four new, distinct 70-mark unit papers; only new unit papers are the basis of the new comprehensive randomized full exam.",
+    "Physical image availability is NOT evidence of correct subject depiction. Grade 9 PNG filenames are opaque and require visual page-level signoff.",
+    "Technical source matches do NOT certify official textbook page-to-unit alignment, AI writing grading, naturalness, or real phone offline playback."
+  ]
+}

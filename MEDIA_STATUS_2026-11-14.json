@@ -1,0 +1,328 @@
+{
+  "generated": "2026-11-14",
+  "scope": "Grades 5–12 first-semester media, no Grades 1–4",
+  "images": {
+    "5": {
+      "optionReferences": 24,
+      "missingFiles": [],
+      "scriptKeywordChecks": 20,
+      "scriptKeywordMatches": 20,
+      "visualApproval": "pending"
+    },
+    "6": {
+      "optionReferences": 24,
+      "missingFiles": [],
+      "scriptKeywordChecks": 20,
+      "scriptKeywordMatches": 20,
+      "visualApproval": "pending"
+    },
+    "7": {
+      "optionReferences": 60,
+      "missingFiles": [],
+      "scriptKeywordChecks": 0,
+      "scriptKeywordMatches": 0,
+      "visualApproval": "pending"
+    },
+    "8": {
+      "optionReferences": 60,
+      "missingFiles": [],
+      "scriptKeywordChecks": 0,
+      "scriptKeywordMatches": 0,
+      "visualApproval": "pending"
+    },
+    "9": {
+      "optionReferences": 105,
+      "missingFiles": [],
+      "scriptKeywordChecks": 0,
+      "scriptKeywordMatches": 0,
+      "visualApproval": "pending_visual_check_of_opaque_PNG_filenames"
+    }
+  },
+  "audio": {
+    "5": {
+      "requiredOriginalListeningSections": 8,
+      "verifiedLinkedMP3": 8,
+      "presentButNotSourceVerified": 0,
+      "missing": [],
+      "reportedReusedSources": []
+    },
+    "6": {
+      "requiredOriginalListeningSections": 8,
+      "verifiedLinkedMP3": 8,
+      "presentButNotSourceVerified": 0,
+      "missing": [],
+      "reportedReusedSources": []
+    },
+    "7": {
+      "requiredOriginalListeningSections": 8,
+      "verifiedLinkedMP3": 8,
+      "presentButNotSourceVerified": 0,
+      "missing": [],
+      "reportedReusedSources": []
+    },
+    "8": {
+      "requiredOriginalListeningSections": 8,
+      "verifiedLinkedMP3": 8,
+      "presentButNotSourceVerified": 0,
+      "missing": [],
+      "reportedReusedSources": []
+    },
+    "9": {
+      "requiredOriginalListeningSections": 14,
+      "verifiedLinkedMP3": 4,
+      "presentButNotSourceVerified": 10,
+      "missing": [],
+      "reportedReusedSources": [],
+      "sourceModelsWithListening": 7
+    },
+    "10": {
+      "requiredOriginalListeningSections": 6,
+      "verifiedLinkedMP3": 6,
+      "presentButNotSourceVerified": 0,
+      "missing": [],
+      "reportedReusedSources": []
+    },
+    "11-core": {
+      "requiredOriginalListeningSections": 6,
+      "verifiedLinkedMP3": 6,
+      "presentButNotSourceVerified": 0,
+      "missing": [],
+      "reportedReusedSources": []
+    },
+    "11-core-semester-a": {
+      "requiredOriginalListeningSections": 2,
+      "verifiedLinkedMP3": 0,
+      "presentButNotSourceVerified": 0,
+      "missing": [
+        {
+          "model": "semester-paper-A",
+          "section": "Listening 1",
+          "reason": "teacher-read script only"
+        },
+        {
+          "model": "semester-paper-A",
+          "section": "Listening 2",
+          "reason": "teacher-read script only"
+        }
+      ],
+      "reportedReusedSources": []
+    },
+    "11-elective-legacy": {
+      "requiredOriginalListeningSections": 12,
+      "verifiedLinkedMP3": 0,
+      "presentButNotSourceVerified": 0,
+      "missing": [
+        {
+          "model": "A",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "A",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "B",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "B",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "C",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "C",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "D",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "D",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "E",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "E",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "F",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "F",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        }
+      ],
+      "reportedReusedSources": [],
+      "sourceModelsWithListening": 6
+    },
+    "12-core-legacy": {
+      "requiredOriginalListeningSections": 12,
+      "verifiedLinkedMP3": 0,
+      "presentButNotSourceVerified": 0,
+      "missing": [
+        {
+          "model": "A",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "A",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "B",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "B",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "C",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "C",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "D",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "D",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "E",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "E",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "F",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "F",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        }
+      ],
+      "reportedReusedSources": [],
+      "sourceModelsWithListening": 6
+    },
+    "12-elective-legacy": {
+      "requiredOriginalListeningSections": 12,
+      "verifiedLinkedMP3": 0,
+      "presentButNotSourceVerified": 0,
+      "missing": [
+        {
+          "model": "A",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "A",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "B",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "B",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "C",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "C",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "D",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "D",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "E",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "E",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "F",
+          "section": "lst1",
+          "reason": "no validated MP3 linked in source bank"
+        },
+        {
+          "model": "F",
+          "section": "lst2",
+          "reason": "no validated MP3 linked in source bank"
+        }
+      ],
+      "reportedReusedSources": [],
+      "sourceModelsWithListening": 6
+    },
+    "12-elective-units": {
+      "requiredOriginalListeningSections": 8,
+      "verifiedLinkedMP3": 8,
+      "presentButNotSourceVerified": 0,
+      "missing": [],
+      "reportedReusedSources": []
+    }
+  },
+  "missingPhysicalAssets": [],
+  "editorialReviewWarnings": [],
+  "note": "Audio source SHA verification is stronger than presence-only. Semantic illustration and textbook alignment need teacher review."
+}
