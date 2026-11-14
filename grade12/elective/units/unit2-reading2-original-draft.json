@@ -1,0 +1,196 @@
+{
+  "id": "g12-elective-unit2-rdg2-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "Doing the right thing"
+  },
+  "skill": "Reading 2",
+  "genre": "five-paragraph narrative",
+  "status": "original_450_500_word_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "marks": 13,
+  "passage": "Paragraph A\nRashid joined his school's volunteer group because he wanted to practise speaking with people he did not know. On Saturday morning, the group helped organise a community sports day. His first job was to carry drinking water from a storage room to a table near the entrance. The building was crowded with families, and volunteers moved between several rooms. While looking for a missing trolley, Rashid noticed a small envelope under a chair. It contained 50 OMR and a note saying, For the children's prizes. There was no name or telephone number.\n\nParagraph B\nRashid was tempted to hand the envelope directly to the prize team, but he realised that he could not know whether the money belonged to them. His friend Khalid suggested leaving it on the registration desk so its owner could collect it. Another volunteer thought they should count it together and add it to the event's donations. The suggestions sounded practical, yet none provided reliable evidence about who owned the money. Rashid remembered that the school had appointed an adult coordinator to handle lost property, so he decided to ask her.\n\nParagraph C\nThe coordinator, Ms Safiya, thanked Rashid for bringing the envelope without opening any more papers. She wrote down the time and place where he had found it, then placed it in a sealed bag. Two adults signed the record. Ms Safiya announced that anyone who had lost an envelope could speak privately with her, but she did not disclose the amount. The person claiming it would need to describe the envelope and its contents accurately. Rashid returned to carrying water, unsure whether the owner would appear.\n\nParagraph D\nJust before the sports day ended, a woman approached the coordinator. She explained that the envelope had contained money collected by several parents to buy prizes for younger children. She described the note, the amount and the colour of the envelope. Ms Safiya checked these details against the record before handing it back. The woman offered Rashid a small reward, but he declined politely. He said that returning the money was simply the right thing to do, not a service he expected to be paid for.\n\nParagraph E\nLater, the volunteer group discussed how the incident could improve future events. They agreed to label the collection boxes more clearly and provide a secure place for lost property. Rashid also realised that good intentions were not enough to make a decision trustworthy: a clear procedure protected the owner, the volunteers and the organisers. At the next school assembly, Ms Safiya praised the whole team without revealing the woman's identity. Rashid felt more confident speaking with strangers, but he valued the lesson about integrity even more.",
+  "wordCount": 451,
+  "paragraphs": 5,
+  "questions": [
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "stem": "The word tempted in paragraph B suggests Rashid ____.",
+      "options": [
+        "considered doing something",
+        "had already taken a decision",
+        "was unable to move"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "stem": "The word reliable in paragraph B is closest in meaning to ____.",
+      "options": [
+        "expensive",
+        "trustworthy",
+        "unusual"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "stem": "The word declined in paragraph D means ____.",
+      "options": [
+        "refused",
+        "requested",
+        "forgot"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "stem": "Where did Rashid find the envelope?",
+      "options": [
+        "In a sports bag",
+        "Under a chair",
+        "On the prize table"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "stem": "How much money did the envelope contain?",
+      "options": [
+        "20 OMR",
+        "75 OMR",
+        "50 OMR"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "stem": "Why did Ms Safiya avoid announcing the amount of money?",
+      "options": [
+        "To help verify genuine claims",
+        "Because she had lost the record",
+        "To keep the money herself"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "stem": "What did the woman offer Rashid?",
+      "options": [
+        "A new trolley",
+        "A small reward",
+        "A school certificate"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "stem": "Which lesson did the group draw from the incident?",
+      "options": [
+        "Good intentions are always enough",
+        "Volunteers should never speak to visitors",
+        "Clear procedures protect everyone"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for paragraph A.",
+      "options": [
+        "Discovering an unclaimed envelope",
+        "Choosing a reliable procedure",
+        "A careful record and private announcement",
+        "The owner identifies her property",
+        "A lesson for future volunteers",
+        "An unexpected trip abroad",
+        "A disagreement about a football match",
+        "A damaged sports building"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for paragraph B.",
+      "options": [
+        "Discovering an unclaimed envelope",
+        "Choosing a reliable procedure",
+        "A careful record and private announcement",
+        "The owner identifies her property",
+        "A lesson for future volunteers",
+        "An unexpected trip abroad",
+        "A disagreement about a football match",
+        "A damaged sports building"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for paragraph C.",
+      "options": [
+        "Discovering an unclaimed envelope",
+        "Choosing a reliable procedure",
+        "A careful record and private announcement",
+        "The owner identifies her property",
+        "A lesson for future volunteers",
+        "An unexpected trip abroad",
+        "A disagreement about a football match",
+        "A damaged sports building"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for paragraph D.",
+      "options": [
+        "Discovering an unclaimed envelope",
+        "Choosing a reliable procedure",
+        "A careful record and private announcement",
+        "The owner identifies her property",
+        "A lesson for future volunteers",
+        "An unexpected trip abroad",
+        "A disagreement about a football match",
+        "A damaged sports building"
+      ],
+      "answer": 3
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for paragraph E.",
+      "options": [
+        "Discovering an unclaimed envelope",
+        "Choosing a reliable procedure",
+        "A careful record and private announcement",
+        "The owner identifies her property",
+        "A lesson for future volunteers",
+        "An unexpected trip abroad",
+        "A disagreement about a football match",
+        "A damaged sports building"
+      ],
+      "answer": 4
+    }
+  ],
+  "headings": [
+    "Discovering an unclaimed envelope",
+    "Choosing a reliable procedure",
+    "A careful record and private announcement",
+    "The owner identifies her property",
+    "A lesson for future volunteers",
+    "An unexpected trip abroad",
+    "A disagreement about a football match",
+    "A damaged sports building"
+  ],
+  "sahSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / rdg2",
+  "notes": "Original fictional story: honesty and verifying ownership. Eight MCQ (3 vocabulary meaning) plus 5 headings and 3 distractors."
+}
