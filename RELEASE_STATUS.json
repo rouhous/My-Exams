@@ -209,5 +209,43 @@
     "crossTrackExactSharedPassages": 7,
     "unlinkedValidatedListeningTracks": 24,
     "note": "Totals are based on A-D fixed drafts from 11-elective, 12-core and 12-elective; no automatic proof of textbook matching."
+  },
+  "grade12ElectiveRecoveredBooklet": {
+    "file": "English_Insights_3_Enhanced_Sem1_Grade12_EDITABLE.docx",
+    "printedYear": "2025/2026",
+    "sourceScope": "ChatGPT Library; not in repository",
+    "unitTests": 8,
+    "finalPracticeExams": 1,
+    "release": "unapproved",
+    "qa": "docs/PRIOR_G12_ELECTIVE_BOOKLET_AUDIT_2026-11-14.json",
+    "issues": [
+      "16/18 listening activities no standalone scripts in original booklet; 2 supplied snippets too short",
+      "all 18 reading passage lengths substantially below 2026 specification",
+      "incomplete model answer keys",
+      "different printed academic year"
+    ],
+    "integratedIntoLiveExamBank": false
+  },
+  "grade12ElectiveUnit1ListeningDrafts": {
+    "sourcePaths": [
+      "grade12/elective/units/unit1-listening1-original-draft.json",
+      "grade12/elective/units/unit1-listening2-original-draft.json"
+    ],
+    "preview": "grade12/elective/units/index.html",
+    "status": "teacher-led original practice, not textbook-certified",
+    "listening1": {
+      "words": 408,
+      "dialogueTurns": 28,
+      "questions": 10,
+      "task": "six MCQ + four true/false"
+    },
+    "listening2": {
+      "words": 461,
+      "questions": 10,
+      "task": "five notes + five short answers"
+    },
+    "naturalAudioGenerated": false,
+    "studentFinalExamApproved": false,
+    "qaWorkflow": ".github/workflows/upper-grades-qa.yml"
   }
 }
