@@ -42,9 +42,9 @@ async def build(src,key,target):
     def pause(sec):
       f=p/f's{len(items)}.mp3';ff('-f','lavfi','-i','anullsrc=channel_layout=mono:sample_rate=44100','-t',sec,'-c:a','libmp3lame','-b:a','96k',f);items.append(f)
     await say('Listen carefully. This recording will be played twice.',0);pause(3)
-    for round in range(2):
+    for repeat_index in range(2):
       for t,v in turns:await say(t,v);pause(.6)
-      pause(4 if round==0 else 2)
+      pause(4 if repeat_index==0 else 2)
     lst=p/'concat.txt';lst.write_text(''.join("file '"+str(x.resolve()).replace("'","'\\''")+"'\n" for x in items))
     ff('-f','concat','-safe','0','-i',lst,'-ac','1','-ar','44100','-c:a','libmp3lame','-b:a','96k',target)
   duration=MP3(target).info.length
