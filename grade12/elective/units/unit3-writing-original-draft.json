@@ -1,0 +1,66 @@
+{
+  "id": "g12-elective-unit3-writing-drafts-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 3,
+    "title": "Living in a Changing World"
+  },
+  "status": "original_drafts_teacher_review_pending",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "writing1": {
+    "id": "wrt1",
+    "type": "evaluative",
+    "marks": 15,
+    "minWords": 150,
+    "prompt": "Some people believe digital technology will improve everyone's life, while others worry that older and disadvantaged groups may be left behind. Evaluate both views and explain your own opinion. Write at least 150 words.",
+    "grading": "five-level Ministry rating scale; teacher review"
+  },
+  "writing2": {
+    "id": "wrt2",
+    "type": "informative graph description",
+    "marks": 10,
+    "minWords": 150,
+    "prompt": "The chart compares electricity supplied by three fictional sources to a school microgrid in 2023 and 2025. Describe the main differences and make relevant comparisons. Write at least 150 words.",
+    "chart": {
+      "chartType": "grouped_bar",
+      "title": "Electricity supplied to a model school microgrid, 2023 and 2025",
+      "unit": "megawatt-hours (MWh)",
+      "categories": [
+        "Solar",
+        "Wind",
+        "Grid electricity"
+      ],
+      "series": [
+        {
+          "year": "2023",
+          "values": [
+            25,
+            12,
+            95
+          ]
+        },
+        {
+          "year": "2025",
+          "values": [
+            60,
+            22,
+            70
+          ]
+        }
+      ]
+    },
+    "teacherKeyFacts": [
+      "Solar supply increased from 25 to 60 MWh (+35).",
+      "Wind supply increased from 12 to 22 MWh (+10).",
+      "Grid electricity fell from 95 to 70 MWh (−25).",
+      "Grid electricity remained the largest single source in 2025.",
+      "Total recorded supply rose from 132 to 152 MWh."
+    ],
+    "grading": "five-level Ministry rating scale; teacher review"
+  },
+  "sahSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / wrt1,wrt2",
+  "notes": "Numbers describe a fictional model, not national energy statistics."
+}
