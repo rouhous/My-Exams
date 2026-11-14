@@ -1,0 +1,675 @@
+{
+  "schema": "grade9_unit_specific_original_full_papers_2026_v1",
+  "grade": 9,
+  "semester": 1,
+  "curriculum": "Gold Experience Oman 9A trial edition 2026",
+  "status": "original_unit_specific_teacher_review_required",
+  "reference": "https://www.omanedubooks.com/2026/08/gold-experience-oman-grade-9a.html",
+  "imageGroups": [
+    {
+      "labels": [
+        "school",
+        "library",
+        "sports hall"
+      ],
+      "imgs": [
+        "illustration-1-1.png",
+        "illustration-1-2.png",
+        "illustration-1-3.png"
+      ]
+    },
+    {
+      "labels": [
+        "art",
+        "football",
+        "photography"
+      ],
+      "imgs": [
+        "illustration-2-1.png",
+        "illustration-2-2.png",
+        "illustration-2-3.png"
+      ]
+    },
+    {
+      "labels": [
+        "sunny",
+        "rainy",
+        "snowy"
+      ],
+      "imgs": [
+        "illustration-3-1.png",
+        "illustration-3-2.png",
+        "illustration-3-3.png"
+      ]
+    },
+    {
+      "labels": [
+        "three o'clock",
+        "seven o'clock",
+        "five o'clock"
+      ],
+      "imgs": [
+        "illustration-4-1.png",
+        "illustration-4-2.png",
+        "illustration-4-3.png"
+      ]
+    },
+    {
+      "labels": [
+        "beach",
+        "camping",
+        "shopping"
+      ],
+      "imgs": [
+        "illustration-5-1.png",
+        "illustration-5-2.png",
+        "illustration-5-3.png"
+      ]
+    },
+    {
+      "labels": [
+        "backpack",
+        "jacket",
+        "shoes"
+      ],
+      "imgs": [
+        "illustration-extra-1-1.png",
+        "illustration-extra-1-2.png",
+        "illustration-extra-1-3.png"
+      ]
+    },
+    {
+      "labels": [
+        "swimming",
+        "running",
+        "cycling"
+      ],
+      "imgs": [
+        "illustration-extra-2-1.png",
+        "illustration-extra-2-2.png",
+        "illustration-extra-2-3.png"
+      ]
+    },
+    {
+      "labels": [
+        "stadium",
+        "school building",
+        "park"
+      ],
+      "imgs": [
+        "illustration-extra-3-1.png",
+        "illustration-extra-3-2.png",
+        "illustration-extra-3-3.png"
+      ]
+    }
+  ],
+  "units": [
+    {
+      "unit": 1,
+      "title": "Identity",
+      "model": "U1",
+      "listening1": [
+        {
+          "group": 0,
+          "answer": 1,
+          "stem": "Where will the class photograph board be displayed?",
+          "script": "Our class is creating a photo board that shows who we are and what we enjoy. The sports hall was too noisy and the school entrance had little space. After speaking to the librarian, we decided to display it in the public library next Thursday. People can read our short profiles beside the photographs."
+        },
+        {
+          "group": 1,
+          "answer": 0,
+          "stem": "Which hobby is Layla most interested in?",
+          "script": "Layla is confident but rather quiet in large groups. Her brother plays football and her cousin enjoys photography. Layla, however, is brilliant at drawing, and she is spending this month learning how to use watercolours. Her family is buying her an art palette for the exhibition."
+        },
+        {
+          "group": 2,
+          "answer": 0,
+          "stem": "What weather does Sami usually enjoy in his hometown?",
+          "script": "Sami often talks about the city where he grew up. His favourite days are warm and clear because he can walk through its old streets. His sister prefers rainy weather and his friend likes snowy holidays abroad, but Sami always chooses sunny days when he describes his home."
+        },
+        {
+          "group": 3,
+          "answer": 2,
+          "stem": "At what time will the personal-profile workshop begin?",
+          "script": "Some students thought our personality workshop would begin at three o'clock. A notice printed last week showed seven, but the teacher has checked the timetable. The correct starting time is five o'clock on Thursday afternoon. Please arrive early enough to choose a seat and complete your name card."
+        },
+        {
+          "group": 4,
+          "answer": 1,
+          "stem": "Which family activity does Rana usually enjoy at weekends?",
+          "script": "Rana says her family sometimes visits the beach and occasionally goes shopping. They usually prefer spending a night outdoors, however, because everyone enjoys talking beneath the stars. They are preparing their tents for this weekend, so camping is the activity she describes in her personal profile."
+        }
+      ],
+      "interview": [
+        [
+          "Interviewer",
+          "Welcome to our school identity programme. What encouraged you to make a personal photo board, Huda?"
+        ],
+        [
+          "Huda",
+          "I noticed that classmates who seemed different often shared hobbies, so I wanted to help people discover them."
+        ],
+        [
+          "Interviewer",
+          "Did the first display focus only on people's appearance, or did you include their interests as well?"
+        ],
+        [
+          "Huda",
+          "We included their hobbies, family traditions and personal strengths. Appearance cannot explain the whole story of someone's identity."
+        ],
+        [
+          "Interviewer",
+          "Where did your team first collect information for the project, and how did you ask pupils to contribute?"
+        ],
+        [
+          "Huda",
+          "We visited three classes and offered simple questionnaires. Everyone was free to answer privately or leave a question blank."
+        ],
+        [
+          "Interviewer",
+          "When did you begin preparing the photographs, and how long did your work take altogether?"
+        ],
+        [
+          "Huda",
+          "We started in October and worked for nearly three weeks before the first display was ready."
+        ],
+        [
+          "Interviewer",
+          "Who helped you organise the captions, and which languages did you decide to use?"
+        ],
+        [
+          "Huda",
+          "Our English teacher helped us. We wrote short captions in both Arabic and English so more families could understand."
+        ],
+        [
+          "Interviewer",
+          "What happened when one classmate changed her mind about showing a photograph? Did this cause an argument?"
+        ],
+        [
+          "Huda",
+          "No. We removed her picture immediately and used a drawing instead. Respecting someone's choice matters more than a display."
+        ],
+        [
+          "Interviewer",
+          "How did the project change the way students talked to one another at school?"
+        ],
+        [
+          "Huda",
+          "People began asking about interests rather than making quick assumptions. Several shy pupils also joined clubs that suited them."
+        ]
+      ],
+      "interviewQs": [
+        [
+          "When did preparation begin?",
+          [
+            "September",
+            "October",
+            "January"
+          ],
+          1
+        ],
+        [
+          "How long did the team work?",
+          [
+            "One day",
+            "Three weeks",
+            "Three months"
+          ],
+          1
+        ],
+        [
+          "Who helped organise the captions?",
+          [
+            "The English teacher",
+            "A famous actor",
+            "A shop manager"
+          ],
+          0
+        ],
+        [
+          "What languages were used in the captions?",
+          [
+            "Only English",
+            "Arabic and English",
+            "English and French"
+          ],
+          1
+        ],
+        [
+          "What replaced a photograph after a pupil withdrew permission?",
+          [
+            "A drawing",
+            "A map",
+            "A timetable"
+          ],
+          0
+        ]
+      ],
+      "matchPeople": [
+        "Hamad enjoys designing posters that express his personality through colours, shapes and drawings. He wants to practise creative techniques.",
+        "Salma has moved to a new town and wants to learn about classmates' family traditions and the stories behind them.",
+        "Rashid is shy when speaking to strangers but enjoys astronomy and hopes to meet others who share this interest.",
+        "Amal enjoys sport and wants to work with a small team while improving her football skills."
+      ],
+      "matchOptions": [
+        "A: Meet a group of young astronomers who explore the night sky and share discoveries through short presentations.",
+        "B: Learn to paint and design personal posters that show your ideas, interests and individual style.",
+        "C: Join a football team that welcomes new players and values teamwork, respect and regular practice.",
+        "D: Listen to students share family traditions and create a short bilingual collection of personal memories.",
+        "E: Compete in an advanced mathematics competition with no preparation sessions."
+      ],
+      "matchAnswers": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "reading2Questions": [
+        [
+          "What subject does Aisha enjoy studying in the evening?",
+          "astronomy"
+        ],
+        [
+          "Which artistic task did Salma volunteer to do?",
+          "design the posters"
+        ],
+        [
+          "Who felt confident speaking to visitors?",
+          "Hamad"
+        ],
+        [
+          "Which pupil preferred organising details quietly?",
+          "Noura"
+        ],
+        [
+          "Name one feature Aisha now includes in the meaning of identity.",
+          "values"
+        ],
+        [
+          "What skill is Aisha learning when she listens first?",
+          "understanding other people"
+        ]
+      ],
+      "writing1": "Write a story about joining a new class and discovering that one of your classmates shares an unexpected interest with you. Describe how you felt at first, what happened and how the friendship developed. Write at least 100 words.",
+      "writing2": "Write an email to a new school friend introducing your hobbies, personality, family traditions and the activities you are enjoying this month. Use present simple and present continuous appropriately. Write at least 100 words."
+    },
+    {
+      "unit": 2,
+      "title": "Connections",
+      "model": "U2",
+      "listening1": [
+        {
+          "group": 0,
+          "answer": 1,
+          "stem": "Where will the language interview be recorded?",
+          "script": "Our group is recording interviews about the different languages spoken in our town. We first considered the sports hall, but the echo makes voices difficult to understand. The school corridor was crowded too. We have booked a quiet room in the library for Saturday, so the interview will be recorded there."
+        },
+        {
+          "group": 1,
+          "answer": 2,
+          "stem": "What did the students use to record their communication project?",
+          "script": "While our grandparents were telling us stories, we wanted to keep their original voices. One student offered a football as a gift, while another brought an art palette for the poster. The most useful object was a camera with a microphone, so we used that to record the interviews."
+        },
+        {
+          "group": 3,
+          "answer": 0,
+          "stem": "When did the telephone-language workshop start?",
+          "script": "Please check your messages carefully. A notice mistakenly announced that our communication workshop started at seven, and a later poster showed five. We spoke to the organiser this morning and she confirmed that the first session had actually begun at three o'clock. The next session will use the same time."
+        },
+        {
+          "group": 5,
+          "answer": 0,
+          "stem": "Which item did the visiting speaker bring?",
+          "script": "When the visiting language researcher arrived at our school, we expected her to carry a jacket and several pairs of shoes for a drama activity. Instead, she opened a backpack containing notebooks, a small recorder and photographs from interviews with families. The backpack is what she placed on the table."
+        },
+        {
+          "group": 7,
+          "answer": 1,
+          "stem": "Which building hosted the exhibition about human communication?",
+          "script": "The town wanted a safe place to show a display about signs, words and technology. The stadium was being repaired, and the park had no electricity. We finally displayed the exhibits in the school building, where students could ask the visitors questions in two languages."
+        }
+      ],
+      "interview": [
+        [
+          "Interviewer",
+          "Today we are discussing how young people can protect languages and share stories. Why did your class begin this project, Bilal?"
+        ],
+        [
+          "Bilal",
+          "We realised that some children understood their grandparents' words but rarely tried speaking the same language themselves."
+        ],
+        [
+          "Interviewer",
+          "Were you studying only written words, or were you interested in conversations and stories as well?"
+        ],
+        [
+          "Bilal",
+          "We focused on conversations. A language lives through the people who use it and tell stories in it."
+        ],
+        [
+          "Interviewer",
+          "Where did your first interview take place, and who was the guest that day?"
+        ],
+        [
+          "Bilal",
+          "We recorded our first interview at the community centre with my grandmother, who loves telling family stories."
+        ],
+        [
+          "Interviewer",
+          "What happened while you were checking the recording, and how did your team respond to the problem?"
+        ],
+        [
+          "Bilal",
+          "The microphone stopped working for a few minutes. We checked the batteries and repeated that section patiently."
+        ],
+        [
+          "Interviewer",
+          "What language did the grandparents speak during the interview? Did you translate anything for younger students?"
+        ],
+        [
+          "Bilal",
+          "They spoke Arabic, and two pupils added short English summaries so the whole class could learn from them."
+        ],
+        [
+          "Interviewer",
+          "When did you share the collection, and how did you protect personal information in the recordings?"
+        ],
+        [
+          "Bilal",
+          "We shared it on Tuesday during the school exhibition, but we used only recordings that families had approved."
+        ],
+        [
+          "Interviewer",
+          "What was the most important lesson you learned about communication through this project?"
+        ],
+        [
+          "Bilal",
+          "Listening respectfully is as important as speaking clearly. We should ask questions instead of pretending we understand."
+        ]
+      ],
+      "interviewQs": [
+        [
+          "Where was the first interview recorded?",
+          [
+            "The community centre",
+            "The airport",
+            "The football stadium"
+          ],
+          0
+        ],
+        [
+          "Who was the first interview guest?",
+          [
+            "The teacher",
+            "Bilal's grandmother",
+            "A shop assistant"
+          ],
+          1
+        ],
+        [
+          "What interrupted part of the recording?",
+          [
+            "A missing poster",
+            "A broken bicycle",
+            "A microphone problem"
+          ],
+          2
+        ],
+        [
+          "When did the pupils share their collection?",
+          [
+            "Tuesday",
+            "Saturday",
+            "Thursday"
+          ],
+          0
+        ],
+        [
+          "What language did pupils use for the short summaries?",
+          [
+            "French",
+            "English",
+            "Spanish"
+          ],
+          1
+        ]
+      ],
+      "matchPeople": [
+        "Maryam would like to interview elderly relatives about the words and expressions they used when they were younger.",
+        "Salim finds English pronunciation difficult and wants patient practice speaking and listening.",
+        "Nasser wants to learn how cameras and microphones capture conversations without losing the speaker's meaning.",
+        "Fatma has prepared a bilingual project and needs advice on expressing the same idea clearly in different languages."
+      ],
+      "matchOptions": [
+        "A: Audio skills club: learn to record, edit and check interviews without changing what speakers meant.",
+        "B: Pronunciation circle: practise listening carefully and saying unfamiliar words with friendly feedback.",
+        "C: Family memories: plan respectful questions and record older relatives telling stories about the past.",
+        "D: Translation workshop: compare messages in two languages and learn how to explain a meaning accurately.",
+        "E: Weekend mountain climbing for athletes with advanced equipment."
+      ],
+      "matchAnswers": [
+        2,
+        1,
+        0,
+        3
+      ],
+      "reading2Questions": [
+        [
+          "What did Mariam's class make about communication?",
+          "a short film"
+        ],
+        [
+          "Who did the class interview about earlier ways of sharing news?",
+          "grandparents"
+        ],
+        [
+          "What seemed to disappear from the shared folder?",
+          "a recorded interview"
+        ],
+        [
+          "Who had moved the missing recording?",
+          "Bilal"
+        ],
+        [
+          "Why did he move it?",
+          "to protect it"
+        ],
+        [
+          "What did the team agree to record in future?",
+          "file movements"
+        ]
+      ],
+      "writing1": "Write a story about a message that caused a misunderstanding while you were preparing a school event. Use past simple and past continuous, include a clear solution and write at least 100 words.",
+      "writing2": "Write an email to a friend describing a language or communication project in which you took part. Explain what you learned about listening, speaking, translation or technology. Write at least 100 words."
+    },
+    {
+      "unit": 3,
+      "title": "The future is now",
+      "model": "U3",
+      "listening1": [
+        {
+          "group": 7,
+          "answer": 1,
+          "stem": "Where will the new health-technology exhibition take place?",
+          "script": "Our science club is demonstrating devices that help people in everyday life. The stadium was considered but would be too expensive, while the park lacks a reliable power supply. The exhibition will be held in the school building next month, where the prototypes can be tested safely."
+        },
+        {
+          "group": 1,
+          "answer": 2,
+          "stem": "Which device did Ali choose for a home-technology experiment?",
+          "script": "Ali considered a robot that could paint pictures, and his cousin wanted a system for analysing football matches. Ali finally chose a camera connected to a simple computer program. It can recognise whether a plant is healthy from its leaves, although the students must still check the result."
+        },
+        {
+          "group": 2,
+          "answer": 1,
+          "stem": "What weather does the smart-home system predict?",
+          "script": "A new home assistant helps the family plan outdoor activities. Yesterday it showed sunshine, and an old video displayed snow in another country. Today the assistant predicts heavy rain for the afternoon, so the family will stay indoors and test their new interactive game instead."
+        },
+        {
+          "group": 3,
+          "answer": 2,
+          "stem": "At what time will the robotics demonstration begin?",
+          "script": "The robotics exhibition has a new timetable. Some notices showed seven o'clock and one message incorrectly said three o'clock. The official school website confirms that the presentation starts at five o'clock. Students are meeting the engineer half an hour earlier to test the equipment."
+        },
+        {
+          "group": 6,
+          "answer": 1,
+          "stem": "Which activity will the smart watch help track?",
+          "script": "The new wrist device can measure distance and record movement. It is not waterproof enough for swimming, and the school does not have equipment for cycling lessons. The team has decided to test the watch during running sessions, when students can compare their results safely."
+        }
+      ],
+      "interview": [
+        [
+          "Interviewer",
+          "Welcome to Future Voices. What kind of technology is your science club developing, Noura, and who might benefit from it?"
+        ],
+        [
+          "Noura",
+          "We are building a simple device that reminds older people to drink water at regular times during the day."
+        ],
+        [
+          "Interviewer",
+          "Did the idea come from a famous inventor, or did someone in your local community suggest it?"
+        ],
+        [
+          "Noura",
+          "My grandmother suggested it when she forgot to drink enough water during a busy afternoon last year."
+        ],
+        [
+          "Interviewer",
+          "How will the device work, and does it use artificial intelligence to make medical decisions for its user?"
+        ],
+        [
+          "Noura",
+          "A timer activates a small light and a sound. It never gives medical advice; people still make their own decisions."
+        ],
+        [
+          "Interviewer",
+          "Where are the students going to test the prototype, and who is supervising the trial?"
+        ],
+        [
+          "Noura",
+          "We are going to test it in the science laboratory next month with our teacher and a volunteer engineer."
+        ],
+        [
+          "Interviewer",
+          "What happened when you tried an early version, and how are you changing the design because of that problem?"
+        ],
+        [
+          "Noura",
+          "The warning was too quiet, so we are adding a brighter signal as well as a clearer button."
+        ],
+        [
+          "Interviewer",
+          "When is your team meeting the engineer again? Is the appointment already confirmed with the school?"
+        ],
+        [
+          "Noura",
+          "We are meeting her on Wednesday. The school timetable confirms that she will arrive before the second break."
+        ],
+        [
+          "Interviewer",
+          "What advice would you give other students who want to design useful technology for families?"
+        ],
+        [
+          "Noura",
+          "Ask people what they need, test your ideas carefully and remember that technology should support human judgement."
+        ]
+      ],
+      "interviewQs": [
+        [
+          "Who suggested the invention?",
+          [
+            "Noura's grandmother",
+            "A famous singer",
+            "A football coach"
+          ],
+          0
+        ],
+        [
+          "What activates the reminder?",
+          [
+            "A timer",
+            "A rain sensor",
+            "A shop alarm"
+          ],
+          0
+        ],
+        [
+          "Where will students test the prototype?",
+          [
+            "At a railway station",
+            "In the science laboratory",
+            "At the town market"
+          ],
+          1
+        ],
+        [
+          "What problem was found in the early version?",
+          [
+            "It was too heavy",
+            "It used the wrong colour",
+            "The warning was too quiet"
+          ],
+          2
+        ],
+        [
+          "When is the next meeting with the engineer?",
+          [
+            "Wednesday",
+            "Friday",
+            "Sunday"
+          ],
+          0
+        ]
+      ],
+      "matchPeople": [
+        "Amal is designing a reminder system and wants to learn how safe technology can assist older relatives at home.",
+        "Rashid wants to understand how computer programs recognise patterns in photographs without replacing human decisions.",
+        "Huda enjoys filming and hopes to create interactive entertainment that responds to the viewer's choices.",
+        "Salim wants to predict his team's performance by using sensor readings collected during running practice."
+      ],
+      "matchOptions": [
+        "A: Interactive media club: explore how a story or film can change in response to what an audience chooses.",
+        "B: Health design workshop: create and test simple reminder devices that support people's everyday routines.",
+        "C: Image technology group: learn how software identifies patterns and why humans must verify results.",
+        "D: Sports technology workshop: compare distance and movement information from safe wearable sensors.",
+        "E: A historical costume workshop about traditional clothing from previous centuries."
+      ],
+      "matchAnswers": [
+        1,
+        2,
+        0,
+        3
+      ],
+      "reading2Questions": [
+        [
+          "Which property will the smart garden's sensors measure?",
+          "soil moisture"
+        ],
+        [
+          "When are the pupils planning to test the prototype?",
+          "next month"
+        ],
+        [
+          "Which professional are they meeting on Tuesday?",
+          "a local engineer"
+        ],
+        [
+          "At what time does the exhibition open?",
+          "nine o'clock"
+        ],
+        [
+          "What may happen if a sensor breaks?",
+          "water may be wasted"
+        ],
+        [
+          "What should technology be combined with?",
+          "human judgement"
+        ]
+      ],
+      "writing1": "Write a story about a school technology demonstration that went wrong at first but was improved through teamwork and careful testing. Include a clear ending and write at least 100 words.",
+      "writing2": "Write an email to your science teacher proposing an invention that helps people with technology. Explain how it will work, when you are going to test it and what advice you need. Write at least 100 words."
+    }
+  ]
+}
