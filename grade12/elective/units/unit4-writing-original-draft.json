@@ -1,0 +1,69 @@
+{
+  "id": "g12-elective-unit4-writing-drafts-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 4,
+    "title": "Higher Education"
+  },
+  "status": "original_drafts_teacher_review_pending",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "writing1": {
+    "id": "wrt1",
+    "type": "evaluative",
+    "marks": 15,
+    "minWords": 150,
+    "prompt": "Some school leavers prefer university degrees, while others argue that vocational training and apprenticeships offer better preparation for employment. Evaluate both views and explain your conclusion with reasons and examples. Write at least 150 words.",
+    "grading": "five-level Ministry rating scale; teacher review"
+  },
+  "writing2": {
+    "id": "wrt2",
+    "type": "informative graph description",
+    "marks": 10,
+    "minWords": 150,
+    "prompt": "The chart shows how students at a fictional school chose four post-school pathways in 2024 and 2025. Summarise the main trends and compare the figures where relevant. Write at least 150 words.",
+    "chart": {
+      "chartType": "grouped_bar",
+      "title": "Fictional school leavers choosing education pathways, 2024–2025",
+      "unit": "students",
+      "categories": [
+        "University degree",
+        "Technical diploma",
+        "Apprenticeship",
+        "Gap-year programme"
+      ],
+      "series": [
+        {
+          "year": "2024",
+          "values": [
+            85,
+            40,
+            22,
+            13
+          ]
+        },
+        {
+          "year": "2025",
+          "values": [
+            90,
+            53,
+            28,
+            9
+          ]
+        }
+      ]
+    },
+    "teacherKeyFacts": [
+      "University degrees were the most popular in both years (85 then 90).",
+      "Technical diplomas increased from 40 to 53.",
+      "Apprenticeships increased from 22 to 28.",
+      "Gap-year programmes fell from 13 to 9.",
+      "Total students in the fictional dataset increased from 160 to 180."
+    ],
+    "grading": "five-level Ministry rating scale; teacher review"
+  },
+  "sahSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / wrt1,wrt2",
+  "notes": "All figures are invented for the practice question; this is not an official graduation dataset."
+}
