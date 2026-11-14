@@ -29,7 +29,7 @@ table{border-collapse:collapse;width:100%;margin:10px 0}th,td{border:1px solid #
 <p>Semester 1 · 70 marks · 180-minute full practice · independent skills without a timer</p></header>
 <main><section class="card alert">
 <strong>Unapproved teacher-review practice, not an official Ministry examination.</strong>
-The six original activities follow the stored question formats and word-length targets for Grade 12 elective. Individual textbook page correspondence, fact checking, answer equivalence, Writing rubric and natural MP3 are still awaiting review. A teacher must read both listening scripts twice; this page does not claim audio playback.</section>
+The six original activities follow the stored question formats and word-length targets for Grade 12 elective. Individual textbook page correspondence, fact checking, answer equivalence, Writing rubric and natural MP3 are still awaiting review. If verified, source-matched natural MP3 players appear automatically. Otherwise a teacher must read both listening scripts twice.</section>
 <section class="card controls">
 <div class="grid"><label>Activity mode<select id="mode"><option value="full">Complete Unit 1 paper · 180-minute timer</option><option value="skill">One independent skill · no timer</option></select></label>
 <label id="skillWrap" hidden>Choose skill<select id="skill">
@@ -54,10 +54,15 @@ const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;'
 const order=['lst1','lst2','rdg1','rdg2','wrt1','wrt2'];
 const name={lst1:'Listening 1',lst2:'Listening 2',rdg1:'Reading 1',rdg2:'Reading 2',wrt1:'Writing 1',wrt2:'Writing 2'};
 const files=['unit1-listening1-original-draft.json','unit1-listening2-original-draft.json','unit1-reading1-original-draft.json','unit1-reading2-original-draft.json','unit1-writing-original-draft.json'];
-let tasks={},questions=[],onPaper=false,submitted=false,clockId=null,clockLength=0,clockStarted=0,selected=[];
+let audioFiles={},tasks={},questions=[],onPaper=false,submitted=false,clockId=null,clockLength=0,clockStarted=0,selected=[];
 $('mode').addEventListener('change',()=>{$('skillWrap').hidden=$('mode').value!=='skill'});
-Promise.all(files.map(async file=>{const r=await fetch(file);if(!r.ok)throw Error(file+' unavailable');return r.json()})).then(ds=>{
- const [l1,l2,r1,r2,writing]=ds;
+Promise.all([...files.map(async file=>{const r=await fetch(file);if(!r.ok)throw Error(file+' unavailable');return r.json()}),fetch('audio/manifest.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null)]).then(async ds=>{
+ const [l1,l2,r1,r2,writing,manifest]=ds;
+ const hashScript=async text=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text)))).map(b=>b.toString(16).padStart(2,'0')).join('');
+ if(manifest&&crypto.subtle)for(const [n,source] of [[1,l1],[2,l2]]){
+  const entry=manifest['unit1-listening'+n+'-original-draft.json'];
+  if(entry&&/^[a-z0-9-]+\.mp3$/.test(entry.mp3)&&entry.scriptSha256===await hashScript(source.script))audioFiles['lst'+n]=entry.mp3;
+ }
  tasks={lst1:l1,lst2:l2,rdg1:r1,rdg2:r2,wrt1:writing.writing1,wrt2:writing.writing2};
  const expected={lst1:[10,10],lst2:[10,10],rdg1:[12,12],rdg2:[13,13],wrt1:[0,15],wrt2:[0,10]};
  order.forEach(key=>{
@@ -65,7 +70,7 @@ Promise.all(files.map(async file=>{const r=await fetch(file);if(!r.ok)throw Erro
   if(Number(d.marks)!==exp[1]||((d.questions||[]).length!==exp[0]))throw Error('Incorrect part '+key);
   if(d.passage&&d.wordCount!==d.passage.trim().split(/\s+/).length)throw Error('Incorrect word count '+key);
  });
- $('loadState').textContent='All six practice sections loaded: 20 Listening + 25 Reading + 25 Writing = 70 marks. Listening MP3 is not available.';
+ $('loadState').textContent='All six practice sections loaded: 20 Listening + 25 Reading + 25 Writing = 70 marks. Verified listening MP3s: '+Object.keys(audioFiles).length+'/2. Missing recordings use teacher script.';
  $('start').disabled=false;
 }).catch(e=>{$('loadState').textContent='Source draft not ready: '+e.message});
 function chart(c){
@@ -77,7 +82,8 @@ function render(key){
  const d=tasks[key],isListening=key.startsWith('lst'),isWriting=key.startsWith('wrt');
  let h='<section class="part"><h2>'+esc(name[key])+' · '+d.marks+' marks</h2>';
  if(isListening){
-  h+='<p class="meta">Teacher read-aloud. Listen twice and answer; recording not yet available.</p>'+
+  h+='<p class="meta">'+(audioFiles[key]?'Source-matched MP3 confirmed (played twice).':'Teacher read-aloud required. No validated recording yet.')+'</p>'+
+  (audioFiles[key]?'<audio controls preload="metadata" src="audio/'+esc(audioFiles[key])+'"></audio>':'')+
   '<details class="teacher"><summary>Teacher-only script (open for supervised reading)</summary><div class="script">'+esc(d.script)+'</div></details>';
  } else if(d.passage)h+='<div class="passage">'+esc(d.passage)+'</div>';
  if(isWriting){
