@@ -1,6 +1,6 @@
 /* My Exams offline router v4. Supports MP3 range requests and previous exam media caches. */
-const SHELL_CACHE='my-exams-shell-v4', MEDIA_CACHE='my-exams-media-v4';
-const SHELL=['./','index.html','review.html','tasks_5_to_9_corrected.json','higher_grades_corrected.json','curriculum_units.json','OFFLINE_MEDIA_MANIFEST.json'];
+const SHELL_CACHE='my-exams-shell-v5', MEDIA_CACHE='my-exams-media-v4';
+const SHELL=['./','index.html','review.html','tasks_5_to_9_corrected.json','higher_grades_corrected.json','upper-grades-practice.html','curriculum_units.json','OFFLINE_MEDIA_MANIFEST.json'];
 self.addEventListener('install',e=>e.waitUntil((async()=>{await (await caches.open(SHELL_CACHE)).addAll(SHELL);await self.skipWaiting()})()));
 self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));
 async function fromCache(req){
