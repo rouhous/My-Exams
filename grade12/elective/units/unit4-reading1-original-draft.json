@@ -1,0 +1,94 @@
+{
+  "id": "g12-elective-unit4-rdg1-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 4,
+    "title": "Higher Education"
+  },
+  "skill": "Reading 1",
+  "genre": "interactive admissions and finance email exchange",
+  "status": "original_450_500_word_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "marks": 12,
+  "passage": "Email 1 — From Amina, Grade 12 student, to the College Admissions Office.\n\nDear Admissions Team,\nI am interested in your environmental engineering diploma and would like to clarify a few requirements before submitting my application. The website says students must provide their final school results and a personal statement. However, a friend told me that applicants also need a year of paid work experience. I cannot find that condition in the current handbook. Could you confirm whether it is necessary?\n\nI am also considering an internship after my first year. Does the college arrange placements with local organisations, or are students expected to find them independently? I hope to choose a programme that combines academic knowledge with practical skills.\n\nYours faithfully,\nAmina\n\nEmail 2 — From College Admissions Office to Amina.\n\nDear Amina,\nThank you for contacting us. You do not need paid work experience to apply for the diploma. The official requirements are listed in the current course handbook, and applicants should rely on those details rather than informal messages. We require school certificates, a personal statement and one academic reference. Students are responsible for checking that uploaded documents can be read clearly.\n\nThe internship normally takes place in the second year. Our careers team helps students identify suitable organisations, but a placement depends on the employer's availability and safety requirements. We recommend attending our online information session next Thursday.\n\nKind regards,\nAdmissions Team\n\nEmail 3 — From Amina to the Scholarship Office.\n\nDear Scholarship Officer,\nI have received information about the college diploma and now want to understand whether I could apply for financial support. My family may be able to contribute to tuition, but transport and equipment are additional costs. I have read that your scholarship might cover tuition fees, while a separate grant may help with study materials. Could you explain the difference and confirm the deadline?\n\nI am preparing a simple budget and do not want to assume that every expense will be paid. I would also appreciate advice about the documents needed to demonstrate financial eligibility.\n\nBest regards,\nAmina\n\nEmail 4 — From Scholarship Office to Amina.\n\nDear Amina,\nScholarships and grants may have different conditions. In this example programme, the scholarship supports tuition only, whereas the equipment grant is awarded separately. Applications for both close on 20 April. You will need your admission offer, a budget summary and the required family income documents. Please submit them using our secure portal rather than sending private financial information through social media.\n\nYou may apply for both forms of support, but an application does not guarantee funding. Read the assessment criteria carefully and keep copies of all confirmation messages. If you have questions, contact the office directly before the deadline.\n\nYours sincerely,\nScholarship Office",
+  "wordCount": 459,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "Which diploma does Amina want to study?",
+      "answer": "environmental engineering",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What false requirement did Amina's friend mention?",
+      "answer": "paid work experience",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "How many academic references does the college require?",
+      "answer": "one",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "When will the internship normally take place?",
+      "answer": "the second year",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Which team helps students find placements?",
+      "answer": "the careers team",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What additional costs concern Amina?",
+      "answer": "transport and equipment",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "When do scholarship and grant applications close?",
+      "answer": "20 April",
+      "maxWords": 4
+    },
+    {
+      "type": "gap",
+      "stem": "Applicants should rely on the current course ______.",
+      "answer": "handbook",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "Applicants must upload a ______ as part of the application.",
+      "answer": "personal statement",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "The scholarship in this example covers ______ only.",
+      "answer": "tuition",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "Private financial documents should be submitted through a ______.",
+      "answer": "secure portal",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "Applying for funding does not ______ an award.",
+      "answer": "guarantee",
+      "maxWords": 3
+    }
+  ],
+  "sahSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / rdg1",
+  "notes": "Fictional college and scholarship procedures, not real admissions rules. Seven short answers plus five contextual gaps."
+}
