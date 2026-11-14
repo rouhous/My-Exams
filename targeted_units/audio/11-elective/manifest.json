@@ -1,0 +1,56 @@
+{
+  "11-elective-unit3-lst1": {
+    "paperId": "11-elective-unit3",
+    "skill": "lst1",
+    "mp3": "11-elective-unit3-lst1.mp3",
+    "scriptSha256": "2209b24a2d51c3bed693fd022c229e850286cd3a2170e70ad96e9492cfe0dde6",
+    "durationSeconds": 427.62,
+    "bytes": 5131851,
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "generated_neural_audio__teacher_listening_review_pending"
+  },
+  "11-elective-unit3-lst2": {
+    "paperId": "11-elective-unit3",
+    "skill": "lst2",
+    "mp3": "11-elective-unit3-lst2.mp3",
+    "scriptSha256": "9b5d0f0cb93d904d589ea6380170c0d5a56a40aa6ab8453879caf614e7dfb6fe",
+    "durationSeconds": 385.25,
+    "bytes": 4623404,
+    "voices": [
+      "en-GB-SoniaNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "generated_neural_audio__teacher_listening_review_pending"
+  },
+  "11-elective-unit4-lst1": {
+    "paperId": "11-elective-unit4",
+    "skill": "lst1",
+    "mp3": "11-elective-unit4-lst1.mp3",
+    "scriptSha256": "afb86500fa62ab8ef5e6172512ea0028a069dce8b415a35e6d7028f31ebece1f",
+    "durationSeconds": 429.53,
+    "bytes": 5154734,
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "generated_neural_audio__teacher_listening_review_pending"
+  },
+  "11-elective-unit4-lst2": {
+    "paperId": "11-elective-unit4",
+    "skill": "lst2",
+    "mp3": "11-elective-unit4-lst2.mp3",
+    "scriptSha256": "dba26ca10a7c0281d6bb24a2d805f60dd0a201adfe02b22617f4814d5a7fae6d",
+    "durationSeconds": 385.25,
+    "bytes": 4623404,
+    "voices": [
+      "en-GB-SoniaNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "generated_neural_audio__teacher_listening_review_pending"
+  }
+}
