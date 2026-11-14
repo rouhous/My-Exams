@@ -113,7 +113,7 @@ $('questions').innerHTML=out;
 $('paperTitle').textContent=mode==='random'?'Comprehensive randomized paper':mode==='skill'?'Individual skill practice':'Model '+pick.id+' · '+(pick.theme||'');
 var markSum=parts.reduce(function(s,x){return s+(x.part?Number(x.part.marks):0)},0);
 $('paperMeta').textContent=tr+' · '+(mode==='skill'?'Untimed':(tr.startsWith('11')?'150':'180')+' minutes')+' · '+markSum+' total paper marks · Not approved as a unit test';
-$('paper').className='active';$('result').style.display='none';$('start').disabled=true;
+$('paper').className='active';$('result').style.display='none';$('start').disabled=true;['track','mode','model','skill'].forEach(function(id){$(id).disabled=true});
 seconds=mode==='skill'?0:(tr.startsWith('11')?150:180)*60;started=Date.now();
 if(seconds){tick();timerId=setInterval(tick,1000)}else $('timer').textContent='No time limit';
 $('paper').scrollIntoView({behavior:'smooth'});
@@ -139,7 +139,7 @@ $('track').addEventListener('change',rebuild);$('mode').addEventListener('change
 $('start').addEventListener('click',function(){$('submit').disabled=false;build()});
 $('submit').addEventListener('click',function(){grade(false)});
 $('print').addEventListener('click',function(){window.print()});
-$('reset').addEventListener('click',function(){clearInterval(timerId);$('paper').className='';$('start').disabled=false;rebuild();window.scrollTo({top:0,behavior:'smooth'})});
+$('reset').addEventListener('click',function(){clearInterval(timerId);$('paper').className='';$('start').disabled=false;['track','mode','model','skill'].forEach(function(id){$(id).disabled=false});rebuild();window.scrollTo({top:0,behavior:'smooth'})});
 fetch('./higher_grades_corrected.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw Error('bank HTTP '+r.status);return r.json()}).then(function(data){bank=data;keys.forEach(function(k){if(!Array.isArray(data[k])||data[k].length<4)throw Error('Missing models for '+k)});rebuild();$('loadState').textContent='Review bank loaded. No listening audio has been claimed.'}).catch(function(e){$('loadState').textContent='Bank unavailable: '+e.message;$('start').disabled=true});
 if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('./sw.js').catch(function(){});
 })();
