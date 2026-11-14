@@ -1,0 +1,68 @@
+name: Grade 12 Elective source-matched natural listening MP3
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'grade12/elective/units/unit*-listening*-original-draft.json'
+      - 'scripts/generate_grade12_elective_unit_audio.py'
+      - '.github/workflows/grade12-elective-unit-audio.yml'
+permissions:
+  contents: write
+concurrency:
+  group: grade12-elective-unit-audio
+  cancel-in-progress: true
+jobs:
+  create-mp3:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install neural TTS and audio validators
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          pip install edge-tts mutagen
+      - name: Generate both read-twice MP3 tracks per drafted unit
+        run: python scripts/generate_grade12_elective_unit_audio.py
+      - name: Validate latest script hashes, track lengths, and publish audio
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          from mutagen.mp3 import MP3
+          root=pathlib.Path('grade12/elective/units/audio')
+          manifest=json.loads((root/'manifest.json').read_text())
+          assert len(manifest)>=2
+          for filename,entry in manifest.items():
+              data=json.loads(pathlib.Path(entry['sourceFile']).read_text())
+              file=root/entry['mp3']
+              assert entry['scriptSha256']==hashlib.sha256(data['script'].encode()).hexdigest()
+              assert file.is_file() and file.stat().st_size>25000
+              assert MP3(file).info.length>180
+              assert entry['scriptReadTwice'] is True
+          print('Confirmed',len(manifest),'valid script-linked MP3.')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3 4;do
+            git fetch origin main
+            for src in grade12/elective/units/unit*-listening*-original-draft.json;do
+              local_sum=$(sha256sum "$src" | cut -d' ' -f1)
+              remote_sum=$(git show "origin/main:$src" | sha256sum | cut -d' ' -f1)
+              if [ "$local_sum" != "$remote_sum" ];then
+                echo "Script changed while speaking. Refusing stale MP3: $src" >&2
+                exit 1
+              fi
+            done
+            git reset --mixed origin/main
+            git add grade12/elective/units/audio
+            if git diff --cached --quiet;then exit 0;fi
+            git commit -m 'Publish Grade 12 Elective unit MP3 bound to original listening script hashes'
+            if git push origin HEAD:main;then exit 0;fi
+            sleep 6
+          done
+          echo 'Could not push validated audio' >&2
+          exit 1
