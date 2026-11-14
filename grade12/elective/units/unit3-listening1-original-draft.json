@@ -1,0 +1,125 @@
+{
+  "id": "g12-elective-unit3-lst1-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 3,
+    "title": "Living in a Changing World"
+  },
+  "skill": "Listening 1",
+  "status": "original_script_and_questions_created__teacher_review_and_natural_audio_pending",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "passage": "Maya: Our school is preparing a Future Neighbourhood exhibition. Each team must present one realistic change.\nOmar: What will your group demonstrate? I heard some students have chosen electric transport.\nMaya: We are designing a model of a community centre powered partly by solar panels with batteries.\nOmar: Why choose solar power? Though there is sunshine, weather and maintenance still affect electricity production.\nMaya: Exactly. The model shows both sunny and cloudy days, so visitors can compare different energy conditions.\nOmar: Will your group promise that the community centre will never need electricity from the grid?\nMaya: No. That would be misleading. We will explain they provide support when sunlight is limited.\nOmar: Did you consider installing a wind turbine? Some classmates think wind energy works equally well everywhere.\nMaya: We discussed it, but wind speeds vary. We cannot recommend a turbine without wind measurements.\nOmar: What will happen to the model after the exhibition? Will materials be thrown away.\nMaya: The science department will reuse the panels and sensors in lessons, then recycle damaged components properly.\nOmar: How will visitors understand the difference between a forecast and a prediction?\nMaya: We will display a chart and label all figures as measurements from a classroom model.\nOmar: What about people who cannot read small labels?\nMaya: We are preparing large-print explanations and an audio description,.\nOmar: Are the sensors online? Will personal data be collected.\nMaya: The demonstration records light levels only. It does not record faces, voices.\nOmar: What date is the exhibition? My cousin is interested in climate science and wants to attend.\nMaya: It opens next Wednesday at ten. Families can visit the school hall until two.\nOmar: How many teams are involved, and will all of them present the same kind of technology?\nMaya: There are six teams. Their topics include transport, renewable electricity, water conservation and digital services.\nOmar: Which team will discuss changing employment?.\nMaya: The digital services team will examine changing jobs and explain why people may need new skills.\nOmar: Will the exhibition decide which technology is best for Oman, or encourage visitors to ask questions?\nMaya: We want thoughtful questions. Different communities have different needs, budgets and environmental conditions.\nOmar: What will visitors do if they have a suggestion about the models?\nMaya: They can complete an anonymous feedback form, and the groups will discuss useful ideas after the event.\nOmar: Then I will bring my cousin. Your exhibition sounds more balanced than exaggerated promises.",
+  "script": "Maya: Our school is preparing a Future Neighbourhood exhibition. Each team must present one realistic change.\nOmar: What will your group demonstrate? I heard some students have chosen electric transport.\nMaya: We are designing a model of a community centre powered partly by solar panels with batteries.\nOmar: Why choose solar power? Though there is sunshine, weather and maintenance still affect electricity production.\nMaya: Exactly. The model shows both sunny and cloudy days, so visitors can compare different energy conditions.\nOmar: Will your group promise that the community centre will never need electricity from the grid?\nMaya: No. That would be misleading. We will explain they provide support when sunlight is limited.\nOmar: Did you consider installing a wind turbine? Some classmates think wind energy works equally well everywhere.\nMaya: We discussed it, but wind speeds vary. We cannot recommend a turbine without wind measurements.\nOmar: What will happen to the model after the exhibition? Will materials be thrown away.\nMaya: The science department will reuse the panels and sensors in lessons, then recycle damaged components properly.\nOmar: How will visitors understand the difference between a forecast and a prediction?\nMaya: We will display a chart and label all figures as measurements from a classroom model.\nOmar: What about people who cannot read small labels?\nMaya: We are preparing large-print explanations and an audio description,.\nOmar: Are the sensors online? Will personal data be collected.\nMaya: The demonstration records light levels only. It does not record faces, voices.\nOmar: What date is the exhibition? My cousin is interested in climate science and wants to attend.\nMaya: It opens next Wednesday at ten. Families can visit the school hall until two.\nOmar: How many teams are involved, and will all of them present the same kind of technology?\nMaya: There are six teams. Their topics include transport, renewable electricity, water conservation and digital services.\nOmar: Which team will discuss changing employment?.\nMaya: The digital services team will examine changing jobs and explain why people may need new skills.\nOmar: Will the exhibition decide which technology is best for Oman, or encourage visitors to ask questions?\nMaya: We want thoughtful questions. Different communities have different needs, budgets and environmental conditions.\nOmar: What will visitors do if they have a suggestion about the models?\nMaya: They can complete an anonymous feedback form, and the groups will discuss useful ideas after the event.\nOmar: Then I will bring my cousin. Your exhibition sounds more balanced than exaggerated promises.",
+  "wordCount": 414,
+  "speakerTurns": 28,
+  "speakers": [
+    "Maya",
+    "Omar"
+  ],
+  "audioStatus": "not_generated_until_content_review",
+  "audioFile": null,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "What is Maya's group designing?",
+      "options": [
+        "A solar-supported community centre model",
+        "A new football stadium",
+        "A shopping website"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Why won't the students guarantee complete independence from grid electricity?",
+      "options": [
+        "They dislike solar panels",
+        "Batteries and grid power are sometimes needed",
+        "Their model has no lights"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "Why did the group avoid recommending a wind turbine immediately?",
+      "options": [
+        "They had not measured local wind conditions",
+        "Turbines cannot produce electricity",
+        "The school had banned wind energy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What does the model record?",
+      "options": [
+        "Visitors' voices",
+        "People's faces",
+        "Light levels only"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "When does the exhibition open?",
+      "options": [
+        "Tuesday at nine",
+        "Wednesday at ten",
+        "Friday at noon"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "How many teams are preparing displays?",
+      "options": [
+        "Four",
+        "Eight",
+        "Six"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "tf",
+      "stem": "The group's chart distinguishes model measurements from predictions.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "Visitors must provide their names when giving suggestions.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "The digital services team will discuss changing jobs.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "The exhibition claims that one technology is best for every community.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    }
+  ],
+  "officialTaskShapeSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / lst1",
+  "notes": "Fictional future-neighbourhood model discussion and renewable energy."
+}
