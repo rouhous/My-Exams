@@ -46,7 +46,7 @@ jobs:
             for p in m['parts']:
               if p['key'] not in ('lst1','lst2'):continue
               e=man[m['id']+'-'+p['key']]
-              txt=(p.get('script') or p['passage']).strip()
+              txt=(p['script'] if isinstance(p.get('script'),str) else p['passage']).strip()
               assert e['passageSha256']==hashlib.sha256(txt.encode()).hexdigest()
               f=base/e['mp3']
               assert f.is_file() and f.stat().st_size>20000 and MP3(f).info.length>120
