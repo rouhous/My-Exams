@@ -1,0 +1,58 @@
+{
+  "id": "g11-elective-unit1-writing-new",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 1,
+    "title": "Fame"
+  },
+  "status": "original_unit_writing_draft__teacher_marking_required",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "writing1": {
+    "id": "wrt1",
+    "title": "Writing 1 · Data description",
+    "marks": 10,
+    "minWords": 100,
+    "type": "graph/data description",
+    "prompt": "The chart shows the number of students following a school media-awareness page over four weeks: 45, 62, 78 and 86. Describe the trend, compare the values and suggest a reason for the increase. Write at least 100 words.",
+    "chart": {
+      "title": "Students following a school media-awareness page",
+      "unit": "students",
+      "categories": [
+        "Week 1",
+        "Week 2",
+        "Week 3",
+        "Week 4"
+      ],
+      "series": [
+        {
+          "label": "Followers",
+          "values": [
+            45,
+            62,
+            78,
+            86
+          ]
+        }
+      ]
+    },
+    "teacherKeyFacts": [
+      "Week 1: 45; Week 2: 62; Week 3: 78; Week 4: 86.",
+      "The count rises every week.",
+      "Total increase from first to last week is 41.",
+      "Largest rise is between Weeks 1 and 2 (17)."
+    ],
+    "grading": "five-level teacher rubric, no automatic writing grade"
+  },
+  "writing2": {
+    "id": "wrt2",
+    "title": "Writing 2 · Formal email",
+    "marks": 10,
+    "minWords": 100,
+    "type": "formal interactive email",
+    "prompt": "Write a formal email to your school principal proposing a campaign about responsible social-media influence. Explain how students can check claims made by influencers and how the campaign will benefit the school. Write at least 100 words.",
+    "grading": "five-level teacher rubric, no automatic writing grade"
+  }
+}
