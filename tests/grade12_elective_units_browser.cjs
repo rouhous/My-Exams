@@ -33,7 +33,7 @@ const {chromium}=require('playwright');
   if(await page.locator('#sections .question').count()!==45)throw Error('Comprehensive random must have exactly 45 objective or short items');
   if(await page.locator('#sections textarea').count()!==2)throw Error('Comprehensive random missing two writing prompts');
   if(!(await page.locator('#paperMarks').textContent()).includes('70 marks'))throw Error('Comprehensive random must total 70 marks');
-  const sourceLabels=await page.locator('#sections .part > p.meta').allTextContents();
+  const sourceLabels=await page.locator('#sections .part > p.meta:first-of-type').allTextContents();
   const from=new Set(sourceLabels.map(t=>{const m=t.match(/Source unit (\d)/);return m?.[1]}));
   if(from.size!==4)throw Error('Comprehensive random must draw from four source units, instead got '+JSON.stringify(sourceLabels));
   if(!sourceLabels.every(t=>/Source unit [1-4]:/.test(t)))throw Error('Missing provenance in comprehensive random');
