@@ -84,6 +84,7 @@ for key in ("g9-A-L1","g9-A-L2"):
         local=(ROOT/"grade9"/seg["url"]).resolve()
         if not local.is_file() or local.stat().st_size<1000:
             failures.append({"grade":"9","task":key,"issue":"Natural segmented audio missing","url":seg["url"]})
+natural_manifest9=read("grade9/audio-natural/manifest.json") if file("grade9/audio-natural/manifest.json") else {}
 source9={}
 for m in models9:
     for t in m["tasks"]:
@@ -99,8 +100,13 @@ for m in models9:
             name={"g9-B-L1":"g9-b-listening-1.mp3","g9-B-L2":"g9-b-listening-2.mp3",
                   "g9-C-L1":"g9-c-listening-1.mp3","g9-C-L2":"g9-c-listening-2.mp3",
                   "g9-D-L1":"g9-g-listening-1.mp3","g9-D-L2":"g9-g-listening-2.mp3"}.get(key)
+            entry=natural_manifest9.get(key,{})
+            fp=digest({"transcript":t.get("transcript"),"items":t.get("items"),"questions":t.get("questions")})
             if name and req(9,"grade9/audio-natural/"+name,"Grade 9 natural MP3 missing"):
-                audio["9"]["presentButNotSourceVerified"]+=1
+                if entry.get("sourceHash")==fp and entry.get("mp3")==name:
+                    audio["9"]["verifiedLinkedMP3"]+=1
+                else:
+                    audio["9"]["presentButNotSourceVerified"]+=1
             else:audio["9"]["missing"].append(key)
         for q in t.get("items",[]):
             if not q.get("images"):continue
