@@ -1,0 +1,69 @@
+{
+  "id": "g12-elective-unit1-writing-drafts-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 1,
+    "title": "The arts"
+  },
+  "status": "original_drafts_teacher_review_pending",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "writing1": {
+    "id": "wrt1",
+    "type": "evaluative",
+    "marks": 15,
+    "minWords": 150,
+    "prompt": "Some people believe schools should spend more money on public art exhibitions, while others think the money should be used to improve sports facilities. Discuss both views and explain your own opinion. Write at least 150 words.",
+    "grading": "five-level Ministry rating scale required; no verified AI marking endpoint in this page"
+  },
+  "writing2": {
+    "id": "wrt2",
+    "type": "informative graph description",
+    "marks": 10,
+    "minWords": 150,
+    "prompt": "The chart shows the number of visitors to four activities at a fictional school arts festival in 2024 and 2025. Summarise the main features and make relevant comparisons. Include accurate numbers. Write at least 150 words.",
+    "chart": {
+      "chartType": "grouped_bar",
+      "title": "Visitors to school arts festival activities (2024–2025)",
+      "unit": "people",
+      "categories": [
+        "Painting",
+        "Photography",
+        "Dance",
+        "Sculpture"
+      ],
+      "series": [
+        {
+          "year": "2024",
+          "values": [
+            90,
+            60,
+            120,
+            40
+          ]
+        },
+        {
+          "year": "2025",
+          "values": [
+            140,
+            110,
+            150,
+            80
+          ]
+        }
+      ]
+    },
+    "teacherKeyFacts": [
+      "Dance was the most visited activity in both years (120 then 150).",
+      "Sculpture was the least visited in both years (40 then 80).",
+      "All four activities increased.",
+      "Painting increased by 50 visitors, photography by 50, dance by 30, sculpture by 40.",
+      "Totals are 310 in 2024 and 480 in 2025."
+    ],
+    "grading": "five-level Ministry rating scale required; no verified AI marking endpoint in this page"
+  },
+  "sahSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / wrt1,wrt2",
+  "notes": "Fictional numerical dataset; not claimed to be actual survey results. Preserve exact numbers in chart and teacher key."
+}
