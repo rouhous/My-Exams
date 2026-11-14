@@ -8,6 +8,8 @@ on:
       - 'higher_grades_corrected.json'
       - 'UPPER_GRADES_RELEASE_GATE_2026-11-14.json'
       - 'tests/upper_grades_browser_smoke.cjs'
+      - 'grade12/elective/units/**'
+      - 'docs/PRIOR_G12_ELECTIVE_BOOKLET_AUDIT_2026-11-14.json'
       - '.github/workflows/upper-grades-qa.yml'
 permissions:
   contents: read
@@ -45,6 +47,18 @@ jobs:
           report=json.load(open('UPPER_GRADES_RELEASE_GATE_2026-11-14.json'))
           assert report['summary']['readyForFinalStudentRelease'] is False
           print('Draft bank task structure passes technical checks; unit/audio release blockers remain explicitly OPEN.')
+          unit=json.load(open('grade12/elective/units/unit1-listening1-original-draft.json'))
+          assert unit['grade']==12 and unit['unit']=={'number':1,'title':'The arts'}
+          assert unit['audioStatus']=='not_generated_until_content_review'
+          actual=len(unit['script'].split())
+          actual_turns=len([x for x in unit['script'].splitlines() if x.startswith(('Maha:','Hamad:'))])
+          assert 400<=actual<=450 and actual==unit['wordCount'],actual
+          assert 25<=actual_turns<=30 and actual_turns==unit['speakerTurns'],actual_turns
+          assert [q['type'] for q in unit['questions']]==['mc']*6+['tf']*4
+          for q in unit['questions']:
+              assert len(q['options'])==(3 if q['type']=='mc' else 2)
+              assert isinstance(q['answer'],int) and 0<=q['answer']<len(q['options'])
+          print('Grade 12 elective original The Arts listening script and answer shapes valid.')
           PY
       - name: Test mobile browser view, complete random exams and independent untimed skills
         run: |
