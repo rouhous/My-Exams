@@ -1,6 +1,6 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Grade 11 Core · Semester 1 · Paper A</title><style>body{max-width:760px;margin:auto;padding:18px;font:17px/1.6 system-ui;color:#183e36}h1,h2{line-height:1.2}h2{border-top:2px solid #b29650;padding-top:18px}summary,a{cursor:pointer;color:#145742}label{display:block}textarea,input[type=text]{width:95%;padding:8px;font:inherit}li{margin:1em 0}p{white-space:pre-line}@media print{.teacher,a{display:none}h2{break-after:avoid}li{break-inside:avoid}}</style><body><a href="index.html">Back to Grade 11 Core</a><h1>Semester 1 · Paper A</h1><p>Grade 11 Core English · Teacher-led practice · 150 minutes · 60 marks. Your teacher reads the listening scripts aloud. Write your answers on this page or print the paper. Answers entered here last only until you leave the page.</p>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Grade 11 Core · Semester 1 · Paper A</title><style>body{max-width:760px;margin:auto;padding:18px;font:17px/1.6 system-ui;color:#183e36}h1,h2{line-height:1.2}h2{border-top:2px solid #b29650;padding-top:18px}summary,a{cursor:pointer;color:#145742}label{display:block}textarea,input[type=text]{width:95%;padding:8px;font:inherit}li{margin:1em 0}p{white-space:pre-line}@media print{.teacher,a{display:none}h2{break-after:avoid}li{break-inside:avoid}}</style><body><a href="index.html">Back to Grade 11 Core</a><h1>Semester 1 · Paper A</h1><p>Grade 11 Core English · Teacher-led practice · 150 minutes · 60 marks. Validated natural Listening MP3s are available for this draft paper; otherwise your teacher reads the scripts aloud. Write your answers on this page or print the paper. Answers entered here last only until you leave the page.</p>
 <section><h2>Listening 1 · A change of venue · 7 marks</h2>
-<p>Listen to the conversation and choose one answer for each question.</p>
+<p>Listen to the conversation and choose one answer for each question.</p><p class="audio-load" id="audio-info1">Checking source-matched Listening 1 audio…</p><audio controls id="paper-a-lst1" preload="metadata" hidden style="max-width:100%;width:100%"></audio>
 <details class="teacher"><summary>Teacher listening script</summary><p>Maha: Did you see the crowd outside the library yesterday? Visitors expected our workshop there.
 Nasser: I did. The booking was correct, but the poster still showed the room we used last term.
 Maha: Didn&#x27;t we replace that poster when the science club asked for our room?
@@ -37,7 +37,7 @@ Maha: Good. I&#x27;ll bring the old photograph on Wednesday.</p></details>
 </ol>
 </section>
 <section><h2>Listening 2 · A talking map · 8 marks</h2>
-<p>Listen to Part One and answer questions 1–4 briefly. Listen to Part Two and choose the answer for questions 5–8.</p>
+<p>Listen to Part One and answer questions 1–4 briefly. Listen to Part Two and choose the answer for questions 5–8.</p><p class="audio-load" id="audio-info2">Checking source-matched Listening 2 audio…</p><audio controls id="paper-a-lst2" preload="metadata" hidden style="max-width:100%;width:100%"></audio>
 <details class="teacher"><summary>Teacher listening script</summary><p>Part One
 When our youth centre asked me to explain how its talking map works, I brought along the first map we made. It looks beautiful on paper. Each building has a coloured dot beside it, and the paths curve neatly around the trees. Yet on our first walk a visitor stopped at the gate and asked which way to turn. A blue dot meant nothing to someone listening to a description through headphones. That question changed the way we wrote directions.
 
@@ -130,4 +130,25 @@ Ali: Yes, I read it (3) ___ breakfast. If nobody else volunteers, I (4) ___ do i
 <h3>Reading 1 · Short texts</h3><ol><li>False</li><li>False</li><li>True</li><li>True</li><li>False</li></ol>
 <h3>Reading 2 · A listening table</h3><ol><li>A small group would dominate.</li><li>The lack of a response</li><li>To illustrate the value of explaining a delay</li><li>Two readers discussed a suggestion.</li><li>Some students cannot attend.</li><li>Public discussion can discourage participation.</li><li>Two ways to contribute and published replies</li></ol>
 <h3>Reading 3 · The missing label</h3><ol><li>Yellow</li><li>Fishing hooks</li><li>A chair</li><li>His younger sister’s</li><li>The holes seemed unsuitable for keeping water out.</li><li>His sister should hear it first.</li><li>The source of the leaves</li><li>It led to a richer, checked account.</li></ol>
-</details></body></html>
+</details><script>
+(async()=>{
+ try{
+  const response=await fetch('./semester-a/audio/manifest.json',{cache:'no-store'});
+  if(!response.ok)throw Error('manifest missing');
+  const manifest=await response.json();
+  if(!crypto.subtle)throw Error('browser checksum unavailable');
+  const sections=Array.from(document.querySelectorAll('section')).filter(s=>s.querySelector('h2')?.textContent.startsWith('Listening'));
+  for(let i=0;i<2;i++){
+   const section=sections[i],src=section.querySelector('details.teacher p')?.textContent.trim();
+   const key='lst'+(i+1),entry=manifest[key],info=document.getElementById('audio-info'+(i+1)),player=document.getElementById('paper-a-lst'+(i+1));
+   if(!src||!entry||!/^(lst1|lst2)\.mp3$/.test(entry.mp3))throw Error('unverified audio reference '+key);
+   const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(src)))).map(x=>x.toString(16).padStart(2,'0')).join('');
+   if(digest!==entry.scriptSha256)throw Error('script audio mismatch '+key);
+   player.src='./semester-a/audio/'+entry.mp3;player.hidden=false;
+   info.textContent='Source-matched recording (played twice). Educational review pending.';
+  }
+ }catch(err){
+  for(const el of document.querySelectorAll('.audio-load'))if(el.textContent.startsWith('Checking'))el.textContent='Audio not verified. Teacher reads this script twice ('+err.message+').';
+ }
+})();
+</script></body></html>
