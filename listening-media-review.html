@@ -1,0 +1,107 @@
+<!doctype html><html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#164b38">
+<title>مراجعة صور الاستماع | My Exams Grades 5–9</title>
+<style>
+:root{--green:#18513e;--gold:#ad8b3f;--line:#d4ded6}*{box-sizing:border-box}
+body{margin:0;background:#f2f6f2;color:#244236;font:16px/1.65 system-ui,Arial,sans-serif}
+header{background:#164b38;color:white;padding:18px;text-align:center}header a{color:#ffe5a2}
+main{max-width:1080px;margin:auto;padding:16px}
+.card,.task{background:#fff;border:1px solid var(--line);border-radius:13px;padding:16px;margin:13px 0}
+.warning{border-right:5px solid var(--gold);background:#fff9e9}
+.controls{display:flex;gap:13px;align-items:center;flex-wrap:wrap}
+select,button{font:inherit;border-radius:9px;padding:9px 12px}
+button{border:0;background:var(--green);color:white;cursor:pointer}
+select{background:white;border:1px solid #c6d6c9}
+.task h2{border-bottom:2px solid #d5bd81;font-size:19px;margin-top:0;padding-bottom:7px}
+.q{border:1px solid #e1eae3;border-radius:10px;margin:13px 0;padding:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(115px,1fr));gap:9px}
+.pic{margin:0;border:1px solid #d6e2db;border-radius:8px;text-align:center;padding:7px}
+.pic img{display:block;width:100%;height:108px;object-fit:contain;background:white}
+.pic.good{border:2px solid #43826b}.pic figcaption{font-size:13px;direction:ltr}
+.story{white-space:pre-wrap;background:#f5f9f6;border-radius:8px;padding:10px;direction:ltr;text-align:left}
+.flag{display:flex;flex-wrap:wrap;gap:6px;margin:7px 0}.flag button{font-size:12px;padding:6px 10px}
+.flag button.bad{background:#9b3d29}.flag button.neutral{background:#6b7d76}
+small,.meta{color:#63786c}audio{width:100%;max-width:600px}
+@media print{header,.controls,.flag,.warning,audio{display:none!important}.task{break-inside:avoid}}
+</style></head><body>
+<header><p><a href="./index.html">العودة إلى My Exams</a></p><h1>مراجعة صور أنشطة الإنصات — الصفوف 5–9</h1>
+<div>Listening pictures compared with original scripts, choices and answers</div></header>
+<main>
+<section class="card warning"><strong>لوحة مراجعة صور المعلم:</strong> تتحقق أداة التدقيق من وجود الملفات وربط الصور بالخيارات،
+لكن الحكم على المحتوى المرئي نفسه يحتاج تفقد كل صورة. استخدم هذه اللوحة للاستماع إلى النص، وقراءة الإجابة، ثم تأكيد ملاءمة الصورة.
+لا يتم نقل قرارات المراجعة إلى الخادم تلقائيًا.</section>
+<section class="card controls"><label>الصف <select id="grade"><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></label>
+<button id="load">عرض الصور والصوتيات</button><button id="export">تصدير قرارات المراجعة JSON</button>
+<span id="status" class="meta" role="status">اختر الصف للعرض</span></section>
+<section id="content"></section>
+</main><script>
+(()=>{
+'use strict';
+const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+const choices={},seen={};
+function media(p){return './'+p.replace(/^\/+/,'')}
+function verifyImg(el){el.addEventListener('error',()=>{el.parentNode.style.borderColor='#b63d21';el.alt+=' (BROKEN ASSET)';seen[el.getAttribute('src')]=false});el.addEventListener('load',()=>{seen[el.getAttribute('src')]=true});}
+function qcard(id,script,images,answers,correct,player){
+ let p='<div class="q"><div class="meta">'+esc(id)+'</div><p class="story">'+esc(script)+'</p>';
+ if(player)p+='<audio controls preload="none" src="'+esc(media(player))+'"></audio>';
+ p+='<div class="grid">'+images.map((img,i)=>'<figure class="pic '+(i===correct?'good':'')+'"><img src="'+esc(media(img))+'" alt="'+esc(answers[i]||'option')+'"><figcaption>'+String.fromCharCode(65+i)+'. '+esc(answers[i]||img.split('/').at(-1))+'</figcaption></figure>').join('')+'</div>';
+ p+='<p class="meta">الإجابة الصحيحة: <strong>'+String.fromCharCode(65+correct)+' — '+esc(answers[correct]||'')+'</strong></p>';
+ p+='<div class="flag"><button data-decision="correct" data-q="'+esc(id)+'">الصورة مطابقة</button><button class="bad" data-decision="wrong" data-q="'+esc(id)+'">صورة غير مطابقة</button><button class="neutral" data-decision="review" data-q="'+esc(id)+'">تحتاج مراجعة</button></div></div>';
+ return p;
+}
+async function draw(){
+ const grade=Number($('grade').value);
+ $('status').textContent='تحميل أنشطة الصف '+grade+' ...';$('content').innerHTML='';
+ let html='',count=0;
+ try{
+ if(grade===5||grade===6){
+  const j=await (await fetch('grades5-6/activities.json')).json();
+  const acts=j.activities.filter(a=>a.grade===grade&&a.skill==='listening'&&a.part===1);
+  for(const t of acts){
+   html+='<section class="task"><h2>Model '+esc(t.model)+' · '+esc(t.unitTheme||'')+'</h2>';
+   t.questions.forEach((q,i)=>{
+    const images=t.pictureOptions.map(word=>'grades5-6/images/'+word+'.svg');
+    html+=qcard(t.id+'-item-'+(i+1),t.passages[i],images,t.pictureOptions,q.answer,'grades5-6/audio-natural/'+t.id+'.mp3');count++;
+   });html+='</section>';
+  }
+ }else if(grade===7||grade===8){
+  const models=await (await fetch('grades7-8/activities.json')).json();
+  for(const m of models.filter(m=>m.grade===grade)){
+   const t=m.sections.find(x=>x.key==='listening1');
+   html+='<section class="task"><h2>Model '+esc(m.model)+' · '+esc(m.theme)+'</h2>';
+   (t.items||[]).forEach((q,i)=>{
+    const images=(q.images||[]).map(s=>'grades7-8/assets/illustrations/'+s+'.svg');
+    html+=qcard('g'+grade+'-'+m.model+'-item-'+(i+1),q.script,images,q.options,q.answer,
+      'grades7-8/assets/audio-natural/g'+grade+'-'+m.model.toLowerCase()+'-listening1.mp3');count++;
+   });html+='</section>';
+  }
+ }else{
+  const j=await (await fetch('grade9/data.json')).json();
+  for(const m of j.models){
+   const t=m.tasks.find(x=>x.skill==='listening'&&x.group===1);
+   if(!t)continue;
+   html+='<section class="task"><h2>Model '+esc(m.model)+' · '+esc(m.theme)+'</h2>';
+   (t.items||[]).forEach((q,i)=>{
+    const images=q.images.map(s=>'grade9/'+s),labels=q.choices;
+    const player=t.id==='g9-A-L1'?'audio-natural/g9/a/listening1/text'+(i+1)+'.mp3':
+      t.id==='g9-B-L1'?'grade9/audio-natural/g9-b-listening-1.mp3':
+      t.id==='g9-C-L1'?'grade9/audio-natural/g9-c-listening-1.mp3':
+      t.id==='g9-D-L1'?'grade9/audio-natural/g9-g-listening-1.mp3':'grade9/'+t.audio;
+    html+=qcard('g9-'+m.model+'-item-'+(i+1),q.script||t.transcript||'',images,labels,q.answer,player);count++;
+   });html+='</section>';
+  }
+ }
+ $('content').innerHTML=html;document.querySelectorAll('.q img').forEach(verifyImg);
+ $('content').addEventListener('click',e=>{const t=e.target.closest('[data-decision]');if(!t)return;choices[t.dataset.q]={decision:t.dataset.decision,grade,at:new Date().toISOString()};t.parentNode.querySelectorAll('button').forEach(b=>b.style.outline=b===t?'3px solid #a98740':'none');},{once:false});
+ $('status').textContent='الصف '+grade+': '+count+' مجموعة أسئلة مصورة؛ الروابط موجودة في البنك. راجع التطابق المرئي وصوت النص.';
+ }catch(e){$('status').textContent='خطأ في فتح البيانات: '+e.message}
+}
+$('load').onclick=draw;
+$('grade').onchange=draw;
+$('export').onclick=()=>{
+ const out=JSON.stringify({project:'My Exams',kind:'teacher_listening_image_review',decisions:choices},null,2);
+ const blob=new Blob([out],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='my-exams-listening-image-review.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);
+};
+draw();
+})();
+</script></body></html>
