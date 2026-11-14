@@ -33,7 +33,7 @@ jobs:
               p=pathlib.PurePosixPath(filename)
               if p.parts[0] in {'.github','.git','_site','scripts','docs'}: continue
               if filename.endswith(('.zip','.csv','.md','.py')): continue
-              if not (p.parts[0] in {'grade9','grade10','grade11','grade12','grades5-6','grades7-8','audio-natural'} or len(p.parts)==1):continue
+              if not (p.parts[0] in {'grade9','grade10','grade11','grade12','upper-audio','grades5-6','grades7-8','audio-natural'} or len(p.parts)==1):continue
               src=pathlib.Path(filename)
               if not src.is_file():continue
               dst=site.joinpath(*p.parts)
