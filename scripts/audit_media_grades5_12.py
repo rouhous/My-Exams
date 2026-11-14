@@ -80,7 +80,7 @@ jdecoder=json.JSONDecoder()
 cfg9,_=jdecoder.raw_decode(natu9_js[start:])
 # The segmented Grade 9 A recording has no source SHA manifest. Verify its
 # actual segment transcripts match the current source items/interview exactly.
-def normalize_spoken(s): return re.sub(r"\\s+"," ",s).strip()
+def normalize_spoken(s): return re.sub(r"\s+"," ",s).strip()
 original_a=next(m for m in models9 if m["model"]=="A")
 a_source_matches={}
 for key in ("g9-A-L1","g9-A-L2"):
@@ -91,7 +91,7 @@ for key in ("g9-A-L1","g9-A-L2"):
             normalize_spoken(segments[i])==normalize_spoken(t["script"])
             for i,t in enumerate(task["items"])))
     else:
-        source=re.sub(r"\\b(?:Interviewer|Maha)\\s*:","",task["transcript"])
+        source=re.sub(r"\b(?:Interviewer|Maha)\s*:","",task["transcript"])
         a_source_matches[key]=normalize_spoken(source)==normalize_spoken(" ".join(segments))
     if not a_source_matches[key]:
         failures.append({"grade":"9","task":key,"issue":"Segmented natural audio spoken transcript is stale"})
