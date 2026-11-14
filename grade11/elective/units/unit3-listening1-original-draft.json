@@ -1,0 +1,122 @@
+{
+  "id": "g11-elective-unit3-lst1-original",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 3,
+    "title": "In the Past"
+  },
+  "skill": "Listening 1",
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "script": "Interviewer: Why did your history club choose family recipes for an exhibition about the past?\nSalim: Recipes reveal what families ate, how they shared food and which ingredients were available locally.\nInterviewer: Where did you find the oldest recipe, and who originally wrote it?\nSalim: In my grandmother's notebook. She recognised her mother's handwriting beside the dates.\nInterviewer: What was the first problem when you tried to understand the instructions?\nSalim: Some measurements had unfamiliar names, and several ingredients were described differently from the words we use today.\nInterviewer: Who helped the team interpret those expressions without inventing details?\nSalim: An older neighbour explained traditional measures while our teacher confirmed them with other families.\nInterviewer: Did you simply copy the page, or investigate how people prepared meals?\nSalim: We interviewed relatives about cooking equipment, seasonal ingredients and tasks that family members shared.\nInterviewer: What surprised you when you compared old kitchens with modern ones?\nSalim: The older methods needed more preparation, but neighbours often worked together and exchanged useful skills.\nInterviewer: Where will visitors see the notebooks and photographs this month?\nSalim: In the school library, with captions explaining dates and family sources.\nInterviewer: What did you do with a photograph that had no clear date?\nSalim: We labelled it undated rather than presenting a guess as a historical fact.\nInterviewer: How did the project help you understand history beyond remembering dates?\nSalim: It encouraged us to examine evidence, compare accounts and notice changes in everyday life. We kept our interview recordings so visitors can compare the exact words spoken by different generations. These recordings will also help future pupils study the project responsibly.\nInterviewer: Which recipe will volunteers demonstrate, and why did they choose it?\nSalim: A simple bread recipe, because ingredients are available and visitors can watch each stage safely.\nInterviewer: What safety arrangements were made for the cooking demonstration at school?\nSalim: A trained adult manages hot equipment while pupils explain the process from a safe distance.\nInterviewer: When is the public presentation, and what can families contribute?\nSalim: It is on Thursday. Families may bring copies of old photographs with permission.\nInterviewer: Will you publish every family story online after the exhibition?\nSalim: No. We will request consent and keep private information out of the public summary.\nInterviewer: What is the most important lesson you would like younger visitors to learn?\nSalim: History includes ordinary objects and carefully checked memories, not only famous people and events.",
+  "passage": "Interviewer: Why did your history club choose family recipes for an exhibition about the past?\nSalim: Recipes reveal what families ate, how they shared food and which ingredients were available locally.\nInterviewer: Where did you find the oldest recipe, and who originally wrote it?\nSalim: In my grandmother's notebook. She recognised her mother's handwriting beside the dates.\nInterviewer: What was the first problem when you tried to understand the instructions?\nSalim: Some measurements had unfamiliar names, and several ingredients were described differently from the words we use today.\nInterviewer: Who helped the team interpret those expressions without inventing details?\nSalim: An older neighbour explained traditional measures while our teacher confirmed them with other families.\nInterviewer: Did you simply copy the page, or investigate how people prepared meals?\nSalim: We interviewed relatives about cooking equipment, seasonal ingredients and tasks that family members shared.\nInterviewer: What surprised you when you compared old kitchens with modern ones?\nSalim: The older methods needed more preparation, but neighbours often worked together and exchanged useful skills.\nInterviewer: Where will visitors see the notebooks and photographs this month?\nSalim: In the school library, with captions explaining dates and family sources.\nInterviewer: What did you do with a photograph that had no clear date?\nSalim: We labelled it undated rather than presenting a guess as a historical fact.\nInterviewer: How did the project help you understand history beyond remembering dates?\nSalim: It encouraged us to examine evidence, compare accounts and notice changes in everyday life. We kept our interview recordings so visitors can compare the exact words spoken by different generations. These recordings will also help future pupils study the project responsibly.\nInterviewer: Which recipe will volunteers demonstrate, and why did they choose it?\nSalim: A simple bread recipe, because ingredients are available and visitors can watch each stage safely.\nInterviewer: What safety arrangements were made for the cooking demonstration at school?\nSalim: A trained adult manages hot equipment while pupils explain the process from a safe distance.\nInterviewer: When is the public presentation, and what can families contribute?\nSalim: It is on Thursday. Families may bring copies of old photographs with permission.\nInterviewer: Will you publish every family story online after the exhibition?\nSalim: No. We will request consent and keep private information out of the public summary.\nInterviewer: What is the most important lesson you would like younger visitors to learn?\nSalim: History includes ordinary objects and carefully checked memories, not only famous people and events.",
+  "wordCount": 410,
+  "speakerTurns": 28,
+  "speakers": [
+    "Interviewer",
+    "Salim"
+  ],
+  "marks": 10,
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "Where was the oldest recipe found?",
+      "options": [
+        "In a newspaper",
+        "In a grandmother's notebook",
+        "On a modern website"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "Who helped explain traditional measurements?",
+      "options": [
+        "An older neighbour",
+        "A sports coach",
+        "A bus driver"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Where will the exhibition be held?",
+      "options": [
+        "In the school library",
+        "At the airport",
+        "On the beach"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "How was an undated photograph described?",
+      "options": [
+        "As a famous image",
+        "As taken last year",
+        "As undated"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What kind of recipe will be demonstrated?",
+      "options": [
+        "A complicated imported dish",
+        "A simple bread recipe",
+        "An ice-cream recipe"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "On which day is the public presentation?",
+      "options": [
+        "Monday",
+        "Thursday",
+        "Saturday"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "The pupils invented dates to make their photographs more attractive.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "The club interviewed relatives about older cooking methods.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "An adult supervised the use of hot equipment.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "The club will publish all family stories without permission.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    }
+  ],
+  "audioStatus": "pending_voice_generation__keep_teacher_read_aloud_until_mp3_verified"
+}
