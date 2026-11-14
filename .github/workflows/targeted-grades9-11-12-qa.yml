@@ -1,0 +1,24 @@
+name: Targeted Grade 9, 11 and 12 curriculum/audio repair QA
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'grade9/unit-remediation/**'
+      - 'grade11/core/data.json'
+      - 'grade11/elective/units/**'
+      - 'grade12/core/units/**'
+      - 'higher_grades_corrected.json'
+      - 'scripts/audit_targeted_repairs_9_11_12.py'
+      - '.github/workflows/targeted-grades9-11-12-qa.yml'
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate only targeted repaired grades and audio source SHA
+        run: python scripts/audit_targeted_repairs_9_11_12.py
