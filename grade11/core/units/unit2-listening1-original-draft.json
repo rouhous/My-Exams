@@ -1,0 +1,98 @@
+{
+  "id": "g11-core-unit2-lst1-original",
+  "grade": 11,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "Those Teenage Things"
+  },
+  "skill": "Listening 1",
+  "genre": "two-person dialogue",
+  "marks": 7,
+  "status": "original_official_shape_teacher_review_not_approved",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "script": "Fatma: Did you hear about the student wellbeing survey our class discussed yesterday?\nHamid: Many pupils said they struggle to balance study time with rest and hobbies.\nFatma: Our teacher suggested a workshop rather than another lecture about stress.\nHamid: Who will lead it? Some pupils dislike sharing problems in front of everyone.\nFatma: A counsellor will introduce strategies, but nobody must discuss private experiences.\nHamid: When will the workshop take place, and how long will it last?\nFatma: It starts on Tuesday at ten and finishes before the second break.\nHamid: Our sports club practises then. Could we attend an activity afterwards?\nFatma: Yes, a smaller group can try the exercises on Thursday afternoon.\nHamid: I hope the workshop does not claim every teenager faces the same problem.\nFatma: The counsellor agrees. People respond differently and need suitable approaches.\nHamid: What will students practise during the first part of the session?\nFatma: They will plan a weekly timetable for lessons, family and sleep.\nHamid: That is useful. My brother often forgets time for hobbies.\nFatma: The second activity asks groups to listen without interrupting their partners.\nHamid: Will someone check whether we listen instead of offering quick advice?\nFatma: One student will summarise what another said and check its accuracy.\nHamid: What about social media? Comparing ourselves with friends can feel stressful.\nFatma: The class will discuss why photographs rarely show someone's whole experience.\nHamid: Could we ask questions anonymously? Some students prefer privacy.\nFatma: There will be a question box for general concerns.\nHamid: Will the workshop explain how to ask adults for support?\nFatma: Yes. It covers speaking to trusted adults and school professionals.\nHamid: Who will collect feedback after the activities?\nFatma: Class representatives will read anonymous forms and suggest improvements.\nHamid: I am glad pupils can share suggestions without being identified.\nFatma: The aim is confidence, respect and healthy habits, not judgement.\nHamid: I will attend Tuesday and invite my friend on Thursday.",
+  "passage": "Fatma: Did you hear about the student wellbeing survey our class discussed yesterday?\nHamid: Many pupils said they struggle to balance study time with rest and hobbies.\nFatma: Our teacher suggested a workshop rather than another lecture about stress.\nHamid: Who will lead it? Some pupils dislike sharing problems in front of everyone.\nFatma: A counsellor will introduce strategies, but nobody must discuss private experiences.\nHamid: When will the workshop take place, and how long will it last?\nFatma: It starts on Tuesday at ten and finishes before the second break.\nHamid: Our sports club practises then. Could we attend an activity afterwards?\nFatma: Yes, a smaller group can try the exercises on Thursday afternoon.\nHamid: I hope the workshop does not claim every teenager faces the same problem.\nFatma: The counsellor agrees. People respond differently and need suitable approaches.\nHamid: What will students practise during the first part of the session?\nFatma: They will plan a weekly timetable for lessons, family and sleep.\nHamid: That is useful. My brother often forgets time for hobbies.\nFatma: The second activity asks groups to listen without interrupting their partners.\nHamid: Will someone check whether we listen instead of offering quick advice?\nFatma: One student will summarise what another said and check its accuracy.\nHamid: What about social media? Comparing ourselves with friends can feel stressful.\nFatma: The class will discuss why photographs rarely show someone's whole experience.\nHamid: Could we ask questions anonymously? Some students prefer privacy.\nFatma: There will be a question box for general concerns.\nHamid: Will the workshop explain how to ask adults for support?\nFatma: Yes. It covers speaking to trusted adults and school professionals.\nHamid: Who will collect feedback after the activities?\nFatma: Class representatives will read anonymous forms and suggest improvements.\nHamid: I am glad pupils can share suggestions without being identified.\nFatma: The aim is confidence, respect and healthy habits, not judgement.\nHamid: I will attend Tuesday and invite my friend on Thursday.",
+  "wordCount": 328,
+  "speakerTurns": 28,
+  "speakers": [
+    "Fatma",
+    "Hamid"
+  ],
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "What did many pupils find difficult?",
+      "options": [
+        "Balancing study with rest",
+        "Finding a school bus",
+        "Choosing a sports uniform"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Who will lead the workshop?",
+      "options": [
+        "A visiting singer",
+        "A school counsellor",
+        "A travel guide"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "When does the main workshop start?",
+      "options": [
+        "Tuesday at ten",
+        "Thursday at eight",
+        "Friday at ten"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What will students make during the first activity?",
+      "options": [
+        "A television programme",
+        "A shopping list",
+        "A weekly timetable"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What does the second activity practise?",
+      "options": [
+        "Listening without interrupting",
+        "Taking photographs",
+        "Learning a new sport"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "How may students ask private questions?",
+      "options": [
+        "By speaking on television",
+        "Through an anonymous box",
+        "Through a public social-media post"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "Who will read the feedback forms?",
+      "options": [
+        "Parents alone",
+        "Sports coaches",
+        "Class representatives"
+      ],
+      "answer": 2
+    }
+  ],
+  "audioStatus": "pending_source_sha_mp3",
+  "reference": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json/11-core/lst1"
+}
