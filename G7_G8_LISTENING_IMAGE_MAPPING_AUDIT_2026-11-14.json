@@ -1,0 +1,502 @@
+{
+  "date": "2026-11-14",
+  "scope": "Grades 7 and 8, first-semester Listening 1 image selections, source JSON after water-bottle correction",
+  "checks": {
+    "7": {
+      "modelCount": 4,
+      "picturedQuestions": 20,
+      "optionImageReferences": 60,
+      "validAnswerIndices": 20,
+      "missingOptionMappings": 0
+    },
+    "8": {
+      "modelCount": 4,
+      "picturedQuestions": 20,
+      "optionImageReferences": 60,
+      "validAnswerIndices": 20,
+      "missingOptionMappings": 0
+    }
+  },
+  "answerMappingErrors": [],
+  "optionLabelsWithConflictingIcons": [],
+  "genericSymbolsWithSeveralWordings": [
+    {
+      "icon": "guitar",
+      "labels": [
+        "guitar",
+        "playing guitar",
+        "a guitar"
+      ]
+    },
+    {
+      "icon": "camera",
+      "labels": [
+        "camera",
+        "take photographs",
+        "a camera"
+      ]
+    },
+    {
+      "icon": "book",
+      "labels": [
+        "book",
+        "a book",
+        "exchange the book"
+      ]
+    },
+    {
+      "icon": "library",
+      "labels": [
+        "library",
+        "a library",
+        "read in a library"
+      ]
+    },
+    {
+      "icon": "trees",
+      "labels": [
+        "towards trees",
+        "trees",
+        "plant trees",
+        "walking in the forest"
+      ]
+    },
+    {
+      "icon": "waves",
+      "labels": [
+        "towards the sea",
+        "a beach",
+        "in a sheltered bay"
+      ]
+    },
+    {
+      "icon": "wind",
+      "labels": [
+        "wind",
+        "strong wind",
+        "windy"
+      ]
+    },
+    {
+      "icon": "backpack",
+      "labels": [
+        "backpack",
+        "repair the bag",
+        "a backpack"
+      ]
+    }
+  ],
+  "correctedIssue": {
+    "grade": 8,
+    "model": "D",
+    "question": "What must students bring to the beach clean-up?",
+    "before": "glass-water.svg",
+    "after": "bottle-water.svg",
+    "originalSpokenRecordingUnchanged": true,
+    "updatedQuestionSha256": "66913d87d0f273d9fc888e07ff46ca483f1883295ae2377eeb46eab4af4e95f9"
+  },
+  "reviewedQuestions": [
+    {
+      "grade": 7,
+      "model": "A",
+      "unitTheme": "Entertainment",
+      "stem": "Which instrument will the pupil play in the show?",
+      "correctChoice": "drum",
+      "correctSvg": "drum.svg",
+      "audioItemScript": "Our school is organising a music show next Friday. I practised the guitar last year, and I can play a little piano, but neither instrument is part of my performance this time. I have joined the percussion group, so I will play the drum on stage.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "A",
+      "unitTheme": "Entertainment",
+      "stem": "What item did the stage manager forget?",
+      "correctChoice": "microphone",
+      "correctSvg": "mic.svg",
+      "audioItemScript": "The drama club arrived early for its rehearsal. Everyone had brought their scripts, and a parent had already prepared a camera for the photographs. However, the stage manager discovered that the microphone was still in the classroom, so she asked someone to collect it.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "A",
+      "unitTheme": "Entertainment",
+      "stem": "Where will the final performance take place?",
+      "correctChoice": "school",
+      "correctSvg": "school.svg",
+      "audioItemScript": "The young performers first wanted to use the public library, but the room was too small for their audience. The museum offered an outdoor space, although the weather might change. In the end, the head teacher agreed to let them perform in the school hall.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "A",
+      "unitTheme": "Entertainment",
+      "stem": "Which activity did the student choose after school?",
+      "correctChoice": "playing guitar",
+      "correctSvg": "guitar.svg",
+      "audioItemScript": "I tried painting in the art club and watched my friends play football, but I wanted an activity that involved music. My cousin showed me how to play a few chords, and I have now joined the guitar club, where we rehearse twice a week.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "A",
+      "unitTheme": "Entertainment",
+      "stem": "How will the pupils travel to the music festival?",
+      "correctChoice": "bus",
+      "correctSvg": "bus.svg",
+      "audioItemScript": "Our class will attend a music festival in another town. Some students asked whether we would fly, while others suggested going by train. Our teacher explained that the journey was short and the school had already booked a bus for everyone to travel together.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "B",
+      "unitTheme": "Awesome animals",
+      "stem": "Which animal did the ranger see near the water?",
+      "correctChoice": "turtle",
+      "correctSvg": "turtle.svg",
+      "audioItemScript": "During our walk, the ranger pointed out birds on the rocks and small fish in a shallow pool. Then she noticed a turtle moving slowly towards the water. We watched it from a distance because visitors must not touch or disturb wild animals.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "B",
+      "unitTheme": "Awesome animals",
+      "stem": "What did the wildlife team use to record animal movements?",
+      "correctChoice": "camera",
+      "correctSvg": "camera.svg",
+      "audioItemScript": "The nature club wanted to study birds without approaching their nests. Some pupils suggested drawing what they saw in a notebook, while others preferred recording a spoken report. The ranger recommended using a camera with a long lens, so the animals would remain undisturbed.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "B",
+      "unitTheme": "Awesome animals",
+      "stem": "Where did the rescued bird finally fly?",
+      "correctChoice": "towards trees",
+      "correctSvg": "trees.svg",
+      "audioItemScript": "A young bird had fallen into a garden and could not fly properly. After a veterinarian checked its wing, it rested safely for several days. When it was strong again, the ranger released it near the forest, and it immediately flew towards the trees.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "B",
+      "unitTheme": "Awesome animals",
+      "stem": "What caused the animals to hide?",
+      "correctChoice": "rain",
+      "correctSvg": "cloud-rain.svg",
+      "audioItemScript": "The school group visited a protected area to look for small desert animals. At first, the sun was bright, and the weather was calm. Suddenly, heavy rain began, so the animals disappeared under rocks and plants. The students returned to the visitor centre.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "B",
+      "unitTheme": "Awesome animals",
+      "stem": "What should visitors take on a long nature walk?",
+      "correctChoice": "backpack",
+      "correctSvg": "backpack.svg",
+      "audioItemScript": "Our guide explained that wildlife walks can take several hours. Playing football would frighten animals, and musical instruments would make too much noise. Everyone should bring a small backpack containing water, sunscreen and a notebook, and remember to leave the area clean.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "C",
+      "unitTheme": "Travel",
+      "stem": "How will the class travel to Nizwa?",
+      "correctChoice": "by bus",
+      "correctSvg": "bus.svg",
+      "audioItemScript": "Our class is planning a history trip to Nizwa. A few pupils asked about going by plane, while others were interested in trains. The teacher explained that neither would suit this journey. We will travel together on a school bus and return in the evening.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "C",
+      "unitTheme": "Travel",
+      "stem": "Which place will the family visit first?",
+      "correctChoice": "an old fort",
+      "correctSvg": "castle.svg",
+      "audioItemScript": "We have planned a busy day in the town. My sister hopes to swim at the beach, and my brother wants to read in the public library. However, our first stop will be the old fort, where a guide is waiting to show us the towers.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "C",
+      "unitTheme": "Travel",
+      "stem": "What did Sara remember to pack?",
+      "correctChoice": "camera",
+      "correctSvg": "camera.svg",
+      "audioItemScript": "Sara checked her bag before leaving for the mountains. She had already packed a hat and a bottle of water, and no rain was expected, so she did not need an umbrella. She left her football at home but remembered her camera for the scenery.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "C",
+      "unitTheme": "Travel",
+      "stem": "What weather will affect the journey?",
+      "correctChoice": "strong wind",
+      "correctSvg": "wind.svg",
+      "audioItemScript": "The weather forecast shows a dry morning, with plenty of sunshine and almost no chance of rain. Strong winds are expected after lunch, however. The guide has decided to visit the exposed viewpoint early and move to the sheltered museum in the afternoon.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "C",
+      "unitTheme": "Travel",
+      "stem": "How will the tourists reach the small island?",
+      "correctChoice": "by boat",
+      "correctSvg": "sailboat.svg",
+      "audioItemScript": "The visitors will explore a small island near the coast. Their bus will take them to the harbour, but it cannot continue across the water. There is no railway nearby, so they will board a small boat and travel with a local guide.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "D",
+      "unitTheme": "Mixed practice from Units 1–3",
+      "stem": "Which instrument will the pupil play in the show?",
+      "correctChoice": "drum",
+      "correctSvg": "drum.svg",
+      "audioItemScript": "Our school is organising a music show next Friday. I practised the guitar last year, and I can play a little piano, but neither instrument is part of my performance this time. I have joined the percussion group, so I will play the drum on stage.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "D",
+      "unitTheme": "Mixed practice from Units 1–3",
+      "stem": "What item did the stage manager forget?",
+      "correctChoice": "microphone",
+      "correctSvg": "mic.svg",
+      "audioItemScript": "The drama club arrived early for its rehearsal. Everyone had brought their scripts, and a parent had already prepared a camera for the photographs. However, the stage manager discovered that the microphone was still in the classroom, so she asked someone to collect it.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "D",
+      "unitTheme": "Mixed practice from Units 1–3",
+      "stem": "Where will the final performance take place?",
+      "correctChoice": "school",
+      "correctSvg": "school.svg",
+      "audioItemScript": "The young performers first wanted to use the public library, but the room was too small for their audience. The museum offered an outdoor space, although the weather might change. In the end, the head teacher agreed to let them perform in the school hall.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "D",
+      "unitTheme": "Mixed practice from Units 1–3",
+      "stem": "Which activity did the student choose after school?",
+      "correctChoice": "playing guitar",
+      "correctSvg": "guitar.svg",
+      "audioItemScript": "I tried painting in the art club and watched my friends play football, but I wanted an activity that involved music. My cousin showed me how to play a few chords, and I have now joined the guitar club, where we rehearse twice a week.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 7,
+      "model": "D",
+      "unitTheme": "Mixed practice from Units 1–3",
+      "stem": "How will the pupils travel to the music festival?",
+      "correctChoice": "bus",
+      "correctSvg": "bus.svg",
+      "audioItemScript": "Our class will attend a music festival in another town. Some students asked whether we would fly, while others suggested going by train. Our teacher explained that the journey was short and the school had already booked a bus for everyone to travel together.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "A",
+      "unitTheme": "Our planet",
+      "stem": "Which weather is expected tomorrow?",
+      "correctChoice": "rain",
+      "correctSvg": "cloud-rain.svg",
+      "audioItemScript": "Our class is visiting the nature reserve tomorrow, so I checked the forecast again. Yesterday it showed sunshine, and this morning someone mentioned strong winds. However, the latest forecast now predicts heavy rain in the afternoon. We should take waterproof jackets and follow our teacher's advice.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "A",
+      "unitTheme": "Our planet",
+      "stem": "What does the school's new campaign aim to save?",
+      "correctChoice": "water",
+      "correctSvg": "glass-water.svg",
+      "audioItemScript": "Our school already switches off lights and takes care of the garden. This month, the science team has decided to focus on the water we use. Every class will measure how much water it saves by turning off taps and reporting leaks immediately.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "A",
+      "unitTheme": "Our planet",
+      "stem": "Which animal was rescued on the beach?",
+      "correctChoice": "turtle",
+      "correctSvg": "turtle.svg",
+      "audioItemScript": "On Friday, we saw birds flying above the beach and small fish swimming close to the rocks. Suddenly, my sister noticed a young turtle trapped in plastic. We called the rescue team, who carefully freed it and checked that it could swim safely again.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "A",
+      "unitTheme": "Our planet",
+      "stem": "What will the eco-club do on Saturday?",
+      "correctChoice": "plant trees",
+      "correctSvg": "trees.svg",
+      "audioItemScript": "Some members of the eco-club wanted to take wildlife photographs, and others suggested visiting the library. The club leader said both ideas could wait. On Saturday, everyone will plant new trees beside the playground, where they can provide shade for younger children.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "A",
+      "unitTheme": "Our planet",
+      "stem": "What must students bring to the beach clean-up?",
+      "correctChoice": "water bottle",
+      "correctSvg": "bottle-water.svg",
+      "audioItemScript": "We are collecting rubbish from the beach on Thursday. Gloves and bags will be provided, and there is no need to bring an umbrella because the forecast is dry. You may bring a small backpack, but everyone must carry a reusable bottle of drinking water.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "B",
+      "unitTheme": "Adventure sports",
+      "stem": "Which adventure activity did the students choose?",
+      "correctChoice": "mountain biking",
+      "correctSvg": "bike.svg",
+      "audioItemScript": "Our activity leader offered three choices for Saturday. We could sail near the harbour, walk through the forest, or follow the cycling track across the hills. Most pupils had already tried sailing and walking, so we finally voted for mountain biking.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "B",
+      "unitTheme": "Adventure sports",
+      "stem": "Which item did the guide ask everybody to carry?",
+      "correctChoice": "backpack",
+      "correctSvg": "backpack.svg",
+      "audioItemScript": "Before the hike, the guide checked our equipment. A camera was optional, and we did not need an umbrella because the weather was expected to stay dry. However, everybody had to carry a small backpack with a first-aid kit, water and a snack.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "B",
+      "unitTheme": "Adventure sports",
+      "stem": "How will the group travel to the climbing centre?",
+      "correctChoice": "bus",
+      "correctSvg": "bus.svg",
+      "audioItemScript": "We first considered travelling by train, but there is no station near the climbing centre. Flying would be unnecessary for such a short journey. Our school has booked a bus instead. It will collect us outside the main gate at seven thirty.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "B",
+      "unitTheme": "Adventure sports",
+      "stem": "What will the weather be like in the afternoon?",
+      "correctChoice": "windy",
+      "correctSvg": "wind.svg",
+      "audioItemScript": "The forecast shows a sunny morning for our kayaking lesson. Rain is unlikely until late at night. By the afternoon, however, the wind will become much stronger, so the instructor has decided to finish the lesson early and return all the boats to shore.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "B",
+      "unitTheme": "Adventure sports",
+      "stem": "Where will the kayaking lesson take place?",
+      "correctChoice": "in a sheltered bay",
+      "correctSvg": "waves.svg",
+      "audioItemScript": "Our instructor explained that beginners should not kayak on the open sea. We also cannot practise near the old fort because there is no safe place to launch the boats. Tomorrow's lesson will take place in a sheltered bay where the water is usually calm.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "C",
+      "unitTheme": "Spend or save?",
+      "stem": "What did the student decide to buy?",
+      "correctChoice": "a book",
+      "correctSvg": "book.svg",
+      "audioItemScript": "I had saved enough money for a new phone case, but then I found a useful book about photography. My friend suggested buying a camera instead, although it was far too expensive. In the end, I chose the book and kept the rest of my money.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "C",
+      "unitTheme": "Spend or save?",
+      "stem": "What is Amal saving money for?",
+      "correctChoice": "a bicycle",
+      "correctSvg": "bike.svg",
+      "audioItemScript": "Amal really enjoys music, but she can borrow a guitar from her sister. Her phone still works well, so she does not need another one. She has decided to save her pocket money for a bicycle because she wants to ride to the sports centre.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "C",
+      "unitTheme": "Spend or save?",
+      "stem": "How did the family travel to the shops?",
+      "correctChoice": "by bus",
+      "correctSvg": "bus.svg",
+      "audioItemScript": "My parents planned a shopping trip to the city. We checked the train times first, but the station was too far from home. Flying was clearly unnecessary. We travelled by bus and used the money we saved to buy lunch together.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "C",
+      "unitTheme": "Spend or save?",
+      "stem": "What did the shop assistant suggest?",
+      "correctChoice": "exchange the book",
+      "correctSvg": "book.svg",
+      "audioItemScript": "I took a damaged book back to the shop with my receipt. I first asked for my money, but the shop assistant explained that another copy was available. She suggested exchanging the book instead of asking for a refund, and I agreed.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "C",
+      "unitTheme": "Spend or save?",
+      "stem": "Which item was on sale?",
+      "correctChoice": "a backpack",
+      "correctSvg": "backpack.svg",
+      "audioItemScript": "There were many special offers in the shop window. The desk lamp looked attractive, and my brother liked the small piano, but neither had a lower price. The blue backpack was on sale for half its usual cost, so we bought it.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "D",
+      "unitTheme": "Mixed practice from Units 1–3",
+      "stem": "Which weather is expected tomorrow?",
+      "correctChoice": "rain",
+      "correctSvg": "cloud-rain.svg",
+      "audioItemScript": "Our class is visiting the nature reserve tomorrow, so I checked the forecast again. Yesterday it showed sunshine, and this morning someone mentioned strong winds. However, the latest forecast now predicts heavy rain in the afternoon. We should take waterproof jackets and follow our teacher's advice.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "D",
+      "unitTheme": "Mixed practice from Units 1–3",
+      "stem": "What does the school's new campaign aim to save?",
+      "correctChoice": "water",
+      "correctSvg": "glass-water.svg",
+      "audioItemScript": "Our school already switches off lights and takes care of the garden. This month, the science team has decided to focus on the water we use. Every class will measure how much water it saves by turning off taps and reporting leaks immediately.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "D",
+      "unitTheme": "Mixed practice from Units 1–3",
+      "stem": "Which animal was rescued on the beach?",
+      "correctChoice": "turtle",
+      "correctSvg": "turtle.svg",
+      "audioItemScript": "On Friday, we saw birds flying above the beach and small fish swimming close to the rocks. Suddenly, my sister noticed a young turtle trapped in plastic. We called the rescue team, who carefully freed it and checked that it could swim safely again.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "D",
+      "unitTheme": "Mixed practice from Units 1–3",
+      "stem": "What will the eco-club do on Saturday?",
+      "correctChoice": "plant trees",
+      "correctSvg": "trees.svg",
+      "audioItemScript": "Some members of the eco-club wanted to take wildlife photographs, and others suggested visiting the library. The club leader said both ideas could wait. On Saturday, everyone will plant new trees beside the playground, where they can provide shade for younger children.",
+      "visualTeacherApproved": false
+    },
+    {
+      "grade": 8,
+      "model": "D",
+      "unitTheme": "Mixed practice from Units 1–3",
+      "stem": "What must students bring to the beach clean-up?",
+      "correctChoice": "water bottle",
+      "correctSvg": "bottle-water.svg",
+      "audioItemScript": "We are collecting rubbish from the beach on Thursday. Gloves and bags will be provided, and there is no need to bring an umbrella because the forecast is dry. You may bring a small backpack, but everyone must carry a reusable bottle of drinking water.",
+      "visualTeacherApproved": false
+    }
+  ],
+  "note": "Option-to-icon-name mapping and transcript excerpts audited; a correctly named SVG or a working URL is not visual approval of its full depiction or textbook page. Generic icons may represent more than one related scene. Teacher final image sign-off remains required.",
+  "teacherImageApproval": false
+}
