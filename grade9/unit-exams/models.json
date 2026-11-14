@@ -160,97 +160,97 @@
           "group": 1,
           "marks": 10,
           "title": "Grammar and Vocabulary — ten gaps",
-          "passage": "1. My sister usually ____ to school by bus.\n2. Listen! The pupils ____ a presentation about their hobbies.\n3. Faris ____ football on Saturdays; he prefers reading.\n4. I ____ this photograph of my grandparents.\n5. What ____ your best friend usually do after school?\n6. At the moment, Noura ____ a personal profile.\n7. A person who is willing to try new ideas is ____.\n8. A student who speaks easily to strangers is ____.\n9. A person who tells the truth is ____.\n10. Someone who thinks about other people's feelings is ____.",
+          "passage": "Every autumn, our school (1) _____ an identity week. My friend Huda usually (2) _____ family stories with her grandmother, but this month she (3) _____ a photo board about her interests. Her classmates (4) _____ helping her choose captions in Arabic and English. Huda is sometimes shy, yet she becomes (5) _____ when she describes her favourite subjects. She (6) _____ learning about other people's traditions and never (7) _____ a new pupil by appearance alone. Today she (8) _____ her classmates about their hobbies, and she always (9) _____ the answers carefully. She is particularly interested (10) _____ the different skills that help people work together.",
           "items": [
             {
               "stem": "Gap 1",
               "choices": [
-                "goes",
-                "is going",
-                "go"
+                "holds",
+                "hold",
+                "holding"
               ],
               "answer": 0
             },
             {
               "stem": "Gap 2",
               "choices": [
-                "give",
-                "are giving",
-                "gave"
+                "share",
+                "shares",
+                "shared"
               ],
               "answer": 1
             },
             {
               "stem": "Gap 3",
               "choices": [
-                "never plays",
-                "is never playing",
-                "has never play"
+                "created",
+                "creates",
+                "is creating"
               ],
-              "answer": 0
+              "answer": 2
             },
             {
               "stem": "Gap 4",
               "choices": [
-                "am loving",
-                "love",
-                "loves"
-              ],
-              "answer": 1
-            },
-            {
-              "stem": "Gap 5",
-              "choices": [
-                "does",
+                "are",
                 "is",
-                "do"
+                "be"
               ],
               "answer": 0
             },
             {
-              "stem": "Gap 6",
+              "stem": "Gap 5",
               "choices": [
-                "writes",
-                "is writing",
-                "write"
+                "confidence",
+                "confident",
+                "confidently"
               ],
               "answer": 1
             },
             {
+              "stem": "Gap 6",
+              "choices": [
+                "enjoy",
+                "enjoyed",
+                "enjoys"
+              ],
+              "answer": 2
+            },
+            {
               "stem": "Gap 7",
               "choices": [
-                "open-minded",
-                "careless",
-                "rude"
+                "judges",
+                "judging",
+                "judge"
               ],
               "answer": 0
             },
             {
               "stem": "Gap 8",
               "choices": [
-                "confident",
-                "silent",
-                "uncertain"
+                "interview",
+                "interviews",
+                "is interviewing"
               ],
-              "answer": 0
+              "answer": 2
             },
             {
               "stem": "Gap 9",
               "choices": [
-                "honest",
-                "lazy",
-                "selfish"
+                "remembering",
+                "remembers",
+                "remember"
               ],
-              "answer": 0
+              "answer": 1
             },
             {
               "stem": "Gap 10",
               "choices": [
-                "considerate",
-                "impatient",
-                "arrogant"
+                "at",
+                "on",
+                "in"
               ],
-              "answer": 0
+              "answer": 2
             }
           ]
         },
@@ -547,68 +547,68 @@
           "group": 1,
           "marks": 10,
           "title": "Grammar and Vocabulary — ten gaps",
-          "passage": "1. While I ____ to my cousin, the phone suddenly stopped working.\n2. The interviewer ____ three questions yesterday.\n3. We enjoy ____ to stories about our grandparents.\n4. She ____ me when I was explaining the problem.\n5. The students ____ their project when the teacher arrived.\n6. I prefer ____ messages to making phone calls.\n7. Please listen ____ the instructions carefully.\n8. She explained the plan ____ the new students.\n9. We talked ____ our project for twenty minutes.\n10. To say a word correctly is to ____ it.",
+          "passage": "Last month, our class (1) _____ a short film about different ways of communicating. While we (2) _____ older relatives, one student (3) _____ an unfamiliar expression in the recording. We asked the speaker (4) _____ explain its meaning rather than guessing. The grandparents enjoyed (5) _____ about the messages they had sent in the past. When the microphone (6) _____ working, we checked its batteries and (7) _____ the question. Our teacher reminded us to listen (8) _____ every answer carefully and to speak (9) _____ visitors politely. By the end of the project, we (10) _____ several words that younger pupils had not known before.",
           "items": [
             {
               "stem": "Gap 1",
               "choices": [
-                "talked",
-                "was talking",
-                "talk"
+                "made",
+                "make",
+                "were making tomorrow"
               ],
-              "answer": 1
+              "answer": 0
             },
             {
               "stem": "Gap 2",
               "choices": [
-                "asks",
-                "was asking now",
-                "asked"
-              ],
-              "answer": 2
-            },
-            {
-              "stem": "Gap 3",
-              "choices": [
-                "listen",
-                "listening",
-                "listened"
+                "interview",
+                "were interviewing",
+                "are interviewing"
               ],
               "answer": 1
             },
             {
+              "stem": "Gap 3",
+              "choices": [
+                "notices",
+                "was noticing now",
+                "noticed"
+              ],
+              "answer": 2
+            },
+            {
               "stem": "Gap 4",
               "choices": [
-                "called",
-                "was call",
-                "calls yesterday"
+                "to",
+                "for",
+                "at"
               ],
               "answer": 0
             },
             {
               "stem": "Gap 5",
               "choices": [
-                "were discussing",
-                "discuss",
-                "are discussing"
-              ],
-              "answer": 0
-            },
-            {
-              "stem": "Gap 6",
-              "choices": [
-                "write",
-                "writing",
-                "wrote"
+                "talked",
+                "talking",
+                "talk"
               ],
               "answer": 1
             },
             {
+              "stem": "Gap 6",
+              "choices": [
+                "stops",
+                "is stopping",
+                "stopped"
+              ],
+              "answer": 2
+            },
+            {
               "stem": "Gap 7",
               "choices": [
-                "to",
-                "at",
-                "in"
+                "repeated",
+                "repeat",
+                "repeating"
               ],
               "answer": 0
             },
@@ -617,27 +617,27 @@
               "choices": [
                 "at",
                 "to",
-                "for"
+                "about"
               ],
               "answer": 1
             },
             {
               "stem": "Gap 9",
               "choices": [
-                "about",
+                "in",
                 "on",
-                "of"
+                "to"
               ],
-              "answer": 0
+              "answer": 2
             },
             {
               "stem": "Gap 10",
               "choices": [
-                "translate",
-                "pronounce",
-                "repeat wrongly"
+                "had learned",
+                "learning",
+                "learns"
               ],
-              "answer": 1
+              "answer": 0
             }
           ]
         },
@@ -934,95 +934,95 @@
           "group": 1,
           "marks": 10,
           "title": "Grammar and Vocabulary — ten gaps",
-          "passage": "1. I think more schools ____ use solar energy in the future.\n2. Look at those dark clouds. It ____ rain.\n3. We ____ the engineer on Tuesday; the appointment is confirmed.\n4. The exhibition ____ at nine o'clock tomorrow.\n5. Our class ____ build a robot next term; we have already made the plan.\n6. If the device fails, we ____ the battery first.\n7. A first working model of an invention is a ____.\n8. A device that measures changes in its environment is a ____.\n9. The ability of a computer to perform tasks associated with human intelligence is called ____.\n10. To make a product better after testing is to ____ it.",
+          "passage": "Our science club (1) _____ a smart-home exhibition next month. We have already agreed on the plan, and we (2) _____ an engineer on Wednesday to check the prototypes. The official programme (3) _____ at nine o'clock on Thursday morning. I think more families (4) _____ use helpful technology in the future, but a device should not make every decision for people. Look at the new soil sensor; its warning light is flashing, so it (5) _____ need checking. If a test fails, we (6) _____ the measurements before making changes. Why don't we (7) _____ a clearer guide? The group is going to (8) _____ the software after collecting feedback. We must remember to (9) _____ off equipment safely and (10) _____ up unfamiliar technical words before presenting them.",
           "items": [
             {
               "stem": "Gap 1",
               "choices": [
-                "will",
-                "were",
-                "have"
+                "are going to hold",
+                "held yesterday",
+                "is hold"
               ],
               "answer": 0
             },
             {
               "stem": "Gap 2",
               "choices": [
-                "will to",
-                "is going to",
-                "is going"
+                "met last week",
+                "are meeting",
+                "meet yesterday"
               ],
               "answer": 1
             },
             {
               "stem": "Gap 3",
               "choices": [
-                "are meeting",
-                "met yesterday",
-                "meet every day"
-              ],
-              "answer": 0
-            },
-            {
-              "stem": "Gap 4",
-              "choices": [
-                "will opened",
-                "is opening yesterday",
-                "opens"
+                "is started",
+                "starting yesterday",
+                "starts"
               ],
               "answer": 2
             },
             {
-              "stem": "Gap 5",
+              "stem": "Gap 4",
               "choices": [
-                "is going to",
-                "was going to yesterday",
-                "is"
+                "will",
+                "would have",
+                "were"
               ],
               "answer": 0
             },
             {
-              "stem": "Gap 6",
+              "stem": "Gap 5",
               "choices": [
-                "checked",
-                "will check",
-                "checking"
+                "going to",
+                "is going to",
+                "is going"
               ],
               "answer": 1
             },
             {
+              "stem": "Gap 6",
+              "choices": [
+                "checking",
+                "checked yesterday",
+                "will check"
+              ],
+              "answer": 2
+            },
+            {
               "stem": "Gap 7",
               "choices": [
-                "prototype",
-                "receipt",
-                "passenger"
+                "design",
+                "designing",
+                "designed"
               ],
               "answer": 0
             },
             {
               "stem": "Gap 8",
               "choices": [
-                "sensor",
-                "passport",
-                "paragraph"
-              ],
-              "answer": 0
-            },
-            {
-              "stem": "Gap 9",
-              "choices": [
-                "public transport",
-                "artificial intelligence",
-                "customer service"
+                "improving",
+                "improve",
+                "improved"
               ],
               "answer": 1
             },
             {
+              "stem": "Gap 9",
+              "choices": [
+                "turning",
+                "turned",
+                "turn"
+              ],
+              "answer": 2
+            },
+            {
               "stem": "Gap 10",
               "choices": [
-                "improve",
-                "ignore",
-                "delete"
+                "look",
+                "looking",
+                "looked"
               ],
               "answer": 0
             }
