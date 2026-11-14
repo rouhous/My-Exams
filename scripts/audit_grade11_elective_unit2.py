@@ -8,7 +8,7 @@ def words(s):return len(s.strip().split())
 parts={k:read(f"unit2-{k}-original-draft.json") for k in ("listening1","listening2","reading1","reading2","writing")}
 for kind in ("listening1","listening2","reading1","reading2"):
     d=parts[kind]
-    assert d["grade"]==11 and d["track"]=="elective" and d["unit"]=={"number":1,"title":"The Mind"},kind
+    assert d["grade"]==11 and d["track"]=="elective" and d["unit"]=={"number":2,"title":"The Mind"},kind
     assert d["certifiedTextbookMatch"] is False and d["readyForStudentExam"] is False
     assert 400<=d["wordCount"]<=450 and d["wordCount"]==words(d.get("script") or d["passage"]),kind
     assert d["marks"]==10 and len(d["questions"])==10,kind
