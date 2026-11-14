@@ -50,14 +50,14 @@ $('mode').onchange=()=>{$('skillWrap').hidden=$('mode').value!=='skill';updateSt
 $('paperSelect').onchange=updateStatus;$('skill').onchange=updateStatus;
 async function digest(s){if(!crypto.subtle)return'';let bytes=new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)));return Array.from(bytes).map(b=>b.toString(16).padStart(2,'0')).join('')}
 async function init(){
- try{let [r,a]=await Promise.all([fetch('./full_papers.json'),fetch('./audio/manifest.json',{cache:'no-store'}).catch(()=>null)]);
+ try{let [r,...sources]=await Promise.all([fetch('./full_papers.json'),...['11-core','11-elective','12-core'].map(k=>fetch('./audio/'+k+'/manifest.json',{cache:'no-store'}).catch(()=>null))]);
   if(!r.ok)throw Error('Original paper source bank has not been published yet');
   db=await r.json();if(db.papers.length!==8)throw Error('Unexpected number of papers');
-  man=a&&a.ok?await a.json():{};
+  man={};for(const response of sources){if(response&&response.ok){Object.assign(man,await response.json())}}
   for(let paper of db.papers){
     let n=0;
     for(let k of ['lst1','lst2']){let src=paper.sections[k].script,entry=man[paper.id+'-'+k];let ok=entry&&entry.scriptSha256===await digest(src);
-      if(ok){paper.sections[k].audioPath='audio/'+entry.mp3;n++;}
+      if(ok){paper.sections[k].audioPath='audio/'+paper.grade+'-'+paper.track+'/'+entry.mp3;n++;}
     }
     validated[paper.id]=n;
   }
