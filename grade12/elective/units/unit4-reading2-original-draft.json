@@ -1,0 +1,196 @@
+{
+  "id": "g12-elective-unit4-rdg2-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 4,
+    "title": "Higher Education"
+  },
+  "skill": "Reading 2",
+  "genre": "five-paragraph narrative",
+  "status": "original_450_500_word_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "marks": 13,
+  "passage": "Paragraph A\nSamira had always imagined studying at university, but she had never considered how many decisions the application process would involve. She enjoyed design and mathematics and wanted a career solving practical problems. When her school organised a higher education fair, Samira collected brochures from several institutions. One offered a four-year engineering degree, while another provided a shorter technical diploma with workplace training. At first, she judged the degree to be automatically superior. Her teacher suggested that she examine what each course actually taught before deciding.\n\nParagraph B\nAt home, Samira compared modules, tuition costs and travel arrangements. She was surprised to discover that the diploma included a substantial internship, whereas the university degree offered more advanced theoretical study. Her family encouraged her to keep both options open. Samira prepared a detailed table listing entry requirements and important dates. She also contacted current students, who described both the advantages and the difficulties of their programmes. The conversations challenged her initial assumptions, and she realised that choosing a course required more than following friends.\n\nParagraph C\nA week later, Samira attended an interview for a small fictional scholarship. She had prepared examples of her school projects, including a bridge model that collapsed during testing. When the interviewer asked about failure, Samira was tempted to describe only her team's final success. Instead, she explained how she had measured the problem and changed the design. The interviewer appreciated her candour and asked what she would do differently next time. Samira answered that she would test the materials earlier and ask for specialist advice. She remembered that even unsuccessful experiments could demonstrate patience, teamwork and a willingness to learn from evidence.\n\nParagraph D\nThe scholarship committee requested one additional document before making its decision. Samira initially panicked because she thought her application had been rejected. The message, however, simply asked for a clearer copy of her school certificate. She scanned the original again and uploaded it through the official portal. She also checked that she had not accidentally included personal financial details in a public folder. Her older sister reminded her that careful administration was part of the process, not a sign that something had gone wrong.\n\nParagraph E\nWhen the results arrived, Samira received an offer of financial support but decided not to choose immediately. She returned to the two course handbooks and discussed her long-term aims with a careers adviser. Eventually she selected the option that combined strong practical teaching with opportunities for further study. She wrote polite messages to the institutions she would not attend. Looking back, Samira understood that informed decisions depended on honest self-reflection, reliable information and a willingness to revise early opinions. Her choice felt deliberate rather than hurried.",
+  "wordCount": 452,
+  "paragraphs": 5,
+  "headings": [
+    "A choice becomes more complicated",
+    "Comparing programmes instead of reputations",
+    "Learning through an honest interview",
+    "Solving a document problem",
+    "Making an informed final decision",
+    "A journey to an overseas museum",
+    "Planning a football tournament",
+    "An unexpected family holiday"
+  ],
+  "questions": [
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "stem": "The word substantial in paragraph B means ____.",
+      "options": [
+        "significant",
+        "unpaid",
+        "irrelevant"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "stem": "The word candour in paragraph C refers to ____.",
+      "options": [
+        "speed",
+        "honesty",
+        "anger"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "stem": "The word deliberate in paragraph E is closest to ____.",
+      "options": [
+        "thoughtful",
+        "accidental",
+        "impossible"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "stem": "Which subjects does Samira enjoy?",
+      "options": [
+        "Art and sport",
+        "Design and mathematics",
+        "History and music"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "stem": "What did Samira's teacher encourage her to compare?",
+      "options": [
+        "The courses' actual content",
+        "Only campus photographs",
+        "Students' social media profiles"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "stem": "Why did Samira discuss her failed bridge model during the interview?",
+      "options": [
+        "To blame another student",
+        "To show what she learned and changed",
+        "To avoid answering the question"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "stem": "What extra document did the committee need?",
+      "options": [
+        "A passport photograph",
+        "A new internship contract",
+        "A clearer school certificate"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "stem": "What was Samira's main lesson from the application process?",
+      "options": [
+        "Choose immediately when offered funding",
+        "Trust informal rumours first",
+        "Compare evidence and reconsider assumptions"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for paragraph A.",
+      "options": [
+        "A choice becomes more complicated",
+        "Comparing programmes instead of reputations",
+        "Learning through an honest interview",
+        "Solving a document problem",
+        "Making an informed final decision",
+        "A journey to an overseas museum",
+        "Planning a football tournament",
+        "An unexpected family holiday"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for paragraph B.",
+      "options": [
+        "A choice becomes more complicated",
+        "Comparing programmes instead of reputations",
+        "Learning through an honest interview",
+        "Solving a document problem",
+        "Making an informed final decision",
+        "A journey to an overseas museum",
+        "Planning a football tournament",
+        "An unexpected family holiday"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for paragraph C.",
+      "options": [
+        "A choice becomes more complicated",
+        "Comparing programmes instead of reputations",
+        "Learning through an honest interview",
+        "Solving a document problem",
+        "Making an informed final decision",
+        "A journey to an overseas museum",
+        "Planning a football tournament",
+        "An unexpected family holiday"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for paragraph D.",
+      "options": [
+        "A choice becomes more complicated",
+        "Comparing programmes instead of reputations",
+        "Learning through an honest interview",
+        "Solving a document problem",
+        "Making an informed final decision",
+        "A journey to an overseas museum",
+        "Planning a football tournament",
+        "An unexpected family holiday"
+      ],
+      "answer": 3
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for paragraph E.",
+      "options": [
+        "A choice becomes more complicated",
+        "Comparing programmes instead of reputations",
+        "Learning through an honest interview",
+        "Solving a document problem",
+        "Making an informed final decision",
+        "A journey to an overseas museum",
+        "Planning a football tournament",
+        "An unexpected family holiday"
+      ],
+      "answer": 4
+    }
+  ],
+  "sahSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / rdg2",
+  "notes": "Original fictional scholarship interview narrative, eight MCQ and five heading matches."
+}
