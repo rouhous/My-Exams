@@ -35,7 +35,7 @@
       "missingFiles": [],
       "scriptKeywordChecks": 0,
       "scriptKeywordMatches": 0,
-      "visualApproval": "pending_visual_check_of_opaque_PNG_filenames"
+      "visualApproval": "contact_sheet_option_labels_checked_105_references__unit_page_review_pending"
     }
   },
   "audio": {
@@ -97,12 +97,12 @@
         {
           "model": "semester-paper-A",
           "section": "Listening 1",
-          "reason": "teacher-read script only"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "semester-paper-A",
           "section": "Listening 2",
-          "reason": "teacher-read script only"
+          "reason": "no_source_verified_mp3"
         }
       ],
       "reportedReusedSources": []
@@ -115,62 +115,62 @@
         {
           "model": "A",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "A",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "B",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "B",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "C",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "C",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "D",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "D",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "E",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "E",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "F",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "F",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         }
       ],
       "reportedReusedSources": [],
@@ -184,62 +184,62 @@
         {
           "model": "A",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "A",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "B",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "B",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "C",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "C",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "D",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "D",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "E",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "E",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "F",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "F",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         }
       ],
       "reportedReusedSources": [],
@@ -253,62 +253,62 @@
         {
           "model": "A",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "A",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "B",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "B",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "C",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "C",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "D",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "D",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "E",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "E",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "F",
           "section": "lst1",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         },
         {
           "model": "F",
           "section": "lst2",
-          "reason": "no validated MP3 linked in source bank"
+          "reason": "no_source_verified_mp3"
         }
       ],
       "reportedReusedSources": [],
