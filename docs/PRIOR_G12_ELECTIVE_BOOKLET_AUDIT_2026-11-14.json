@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-14",
+  "status": "source_recovered_not_integrated",
+  "source": {
+    "filename": "English_Insights_3_Enhanced_Sem1_Grade12_EDITABLE.docx",
+    "supplemental": "elective 12 sem1.pdf",
+    "location": "Earlier ChatGPT Library artifacts; not necessarily latest Work environment revision",
+    "printedSchoolYear": "2025/2026",
+    "grade": 12,
+    "track": "Elective",
+    "semester": 1,
+    "contentType": "Practice booklet, not an officially approved Ministry test",
+    "tests": "2 A/B drafts per each of units 1-4, plus one final comprehensive practice exam",
+    "totalPracticeExams": 9
+  },
+  "paperBlueprint": {
+    "marks": 70,
+    "minutes": 180,
+    "listening": 20,
+    "reading": 25,
+    "writing": 25,
+    "readingQuestionsPerExam": 25,
+    "objectiveAndShortQuestionsPerExam": 45,
+    "writingTasksPerExam": 2
+  },
+  "curriculumUnits": [
+    "The arts",
+    "Doing the right thing",
+    "Living in a Changing World",
+    "Higher Education"
+  ],
+  "comparisonToStored2026SAH": {
+    "officialReference": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / 12-elective",
+    "readingTextOfficialRangeWords": [
+      450,
+      500
+    ],
+    "listening1OfficialRangeWords": [
+      400,
+      450
+    ],
+    "listening2OfficialRangeWords": [
+      450,
+      500
+    ],
+    "note": "Source booklet printed 2025/26; revalidate against the applicable 2026/27 assessment version before designating official compliance."
+  },
+  "listening": {
+    "requiredTasksForNineExams": 18,
+    "distinctTasksWithAnyStandaloneScript": 2,
+    "completeLengthCompliantScriptsConfirmed": 0,
+    "scriptCoverageByTest": "Only Unit 1 Test A has an approximately 109-word five-turn Listening 1 and a 75-word Listening 2 summary. Remaining seven unit tests plus final exam have no standalone Listening 1/2 script in the recovered booklet.",
+    "naturalMp3ValidatedForThisBooklet": 0,
+    "releaseBlocked": true
+  },
+  "answerKeys": {
+    "verifiedPresentInBooklet": [
+      "Unit 1 Test A Listening 1",
+      "Unit 1 Test A Listening 2",
+      "Unit 1 Test A Reading 1 and 2",
+      "Full final exam Reading 1 and 2"
+    ],
+    "missingMostOtherExams": true,
+    "writingRubricInBooklet": "informal 40/20/20/20 guidance—not demonstrated to be official 2026 rubric"
+  },
+  "readingAudit": {
+    "method": "Word counts approximate from original DOCX paragraph text, with page headers removed. Count may be affected by line wraps or hyphenation; all excerpts are substantially below 450.",
+    "grade12Elective2026SAHRequiredWords": [
+      450,
+      500
+    ],
+    "passagesTotal": 18,
+    "passagesShorterThan450": 18,
+    "tests": [
+      {
+        "unit": "The arts",
+        "model": "A",
+        "reading1": 279,
+        "reading2": 266
+      },
+      {
+        "unit": "The arts",
+        "model": "B",
+        "reading1": 206,
+        "reading2": 238
+      },
+      {
+        "unit": "Doing the right thing",
+        "model": "A",
+        "reading1": 216,
+        "reading2": 215
+      },
+      {
+        "unit": "Doing the right thing",
+        "model": "B",
+        "reading1": 202,
+        "reading2": 212
+      },
+      {
+        "unit": "Living in a Changing World",
+        "model": "A",
+        "reading1": 224,
+        "reading2": 191
+      },
+      {
+        "unit": "Living in a Changing World",
+        "model": "B",
+        "reading1": 183,
+        "reading2": 185
+      },
+      {
+        "unit": "Higher Education",
+        "model": "A",
+        "reading1": 207,
+        "reading2": 198
+      },
+      {
+        "unit": "Higher Education",
+        "model": "B",
+        "reading1": 197,
+        "reading2": 208
+      },
+      {
+        "unit": "All units comprehensive",
+        "model": "Final",
+        "reading1": 232,
+        "reading2": 343
+      }
+    ]
+  },
+  "additionalReviewNeeded": [
+    "Verify each passage's fact claims, including official-looking statements about national arts programmes and cultural statistics.",
+    "Verify that every writing chart's embedded image matches its wording and answer guidance.",
+    "Create original correctly sized listening scripts for all nine exams, avoiding repetition and aligning every answer with the script.",
+    "Build separate and complete keys for every exam before automatic checking.",
+    "Treat recovered booklet as a source bank for QA/editing, not eight release-ready official exam models.",
+    "Maintain four fixed exams A-D per grade/track as project-wide goal and allow wider unit-level bank; booklet A/B pairs are additional earlier material."
+  ],
+  "nextAction": "Repair and validate original Unit 1 models against stored 2026 SAH; map independently to per-skill bank; complete remaining scripts; validate audio after scripts, then release."
+}
