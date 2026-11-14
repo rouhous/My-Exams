@@ -1,0 +1,87 @@
+{
+  "id": "g12-elective-unit3-lst2-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 3,
+    "title": "Living in a Changing World"
+  },
+  "skill": "Listening 2",
+  "status": "original_script_and_questions_created__teacher_review_and_natural_audio_pending",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "speaker": "Salim",
+  "voice": "single male",
+  "fictionalProject": true,
+  "passage": "Good morning. I am Salim, the student coordinator of our school's Changing City project. We are studying how technology can improve ordinary services without ignoring the needs of people who use them. Our project is fictional, but every decision is based on questions that real communities would need to consider. We began planning in January and chose public transport as our first topic.\n\nAt the beginning, we imagined that a mobile application would solve every problem. Students designed a map showing bus stops, routes and arrival times. However, our teacher asked a simple question: What happens when a passenger does not own a smartphone? That question changed the project. We decided to combine a digital timetable with printed information at the bus shelter, using large numbers and clear symbols.\n\nNext, we needed reliable data. Rather than inventing arrival times, volunteers recorded a model route over five practice days. The trial included twelve stops, and students checked how long the bus took between them. They noticed that roadworks delayed the service on one afternoon. We added a note explaining that our figures were observations, not guaranteed future times. This distinction was especially important in the exhibition.\n\nOur second experiment examined energy use. A small solar panel powered the model bus-stop display during daytime. We also used a rechargeable battery to demonstrate how the information might stay visible after sunset. The panel could not provide the same power on every day because cloud cover and the angle of sunlight varied. Visitors will be able to change the light reaching the model and see the output change.\n\nWe invited a group of older adults to evaluate the prototype. Several liked the idea of receiving messages when a bus was delayed, but others preferred a telephone information service. One participant could not read the original pale lettering easily, so we chose darker text with stronger contrast. Students also checked that an audio announcement would not reveal the names or travel habits of individual passengers.\n\nThe exhibition is scheduled for Thursday afternoon in the school hall. Its three areas cover transport information, renewable energy and access for different users. We have prepared an anonymous questionnaire, but students will not collect personal telephone numbers. After the event, our design team will write a report that separates observations from suggestions and predictions. We will also note the criticisms visitors raise, because a model is more useful when weaknesses are recorded openly rather than hidden.\n\nIn the future, towns may use more digital services, but responsible planning requires more than advanced devices. We must ask who benefits, who might be excluded, what evidence supports a decision and how a service can be maintained over time. I hope our visitors leave with questions and practical ideas rather than unrealistic promises about technology.",
+  "script": "Good morning. I am Salim, the student coordinator of our school's Changing City project. We are studying how technology can improve ordinary services without ignoring the needs of people who use them. Our project is fictional, but every decision is based on questions that real communities would need to consider. We began planning in January and chose public transport as our first topic.\n\nAt the beginning, we imagined that a mobile application would solve every problem. Students designed a map showing bus stops, routes and arrival times. However, our teacher asked a simple question: What happens when a passenger does not own a smartphone? That question changed the project. We decided to combine a digital timetable with printed information at the bus shelter, using large numbers and clear symbols.\n\nNext, we needed reliable data. Rather than inventing arrival times, volunteers recorded a model route over five practice days. The trial included twelve stops, and students checked how long the bus took between them. They noticed that roadworks delayed the service on one afternoon. We added a note explaining that our figures were observations, not guaranteed future times. This distinction was especially important in the exhibition.\n\nOur second experiment examined energy use. A small solar panel powered the model bus-stop display during daytime. We also used a rechargeable battery to demonstrate how the information might stay visible after sunset. The panel could not provide the same power on every day because cloud cover and the angle of sunlight varied. Visitors will be able to change the light reaching the model and see the output change.\n\nWe invited a group of older adults to evaluate the prototype. Several liked the idea of receiving messages when a bus was delayed, but others preferred a telephone information service. One participant could not read the original pale lettering easily, so we chose darker text with stronger contrast. Students also checked that an audio announcement would not reveal the names or travel habits of individual passengers.\n\nThe exhibition is scheduled for Thursday afternoon in the school hall. Its three areas cover transport information, renewable energy and access for different users. We have prepared an anonymous questionnaire, but students will not collect personal telephone numbers. After the event, our design team will write a report that separates observations from suggestions and predictions. We will also note the criticisms visitors raise, because a model is more useful when weaknesses are recorded openly rather than hidden.\n\nIn the future, towns may use more digital services, but responsible planning requires more than advanced devices. We must ask who benefits, who might be excluded, what evidence supports a decision and how a service can be maintained over time. I hope our visitors leave with questions and practical ideas rather than unrealistic promises about technology.",
+  "wordCount": 463,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "note",
+      "stem": "Project name (two words)",
+      "answer": "Changing City",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Planning began in",
+      "answer": "January",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Number of model bus stops",
+      "answer": "twelve",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Energy source for the model display",
+      "answer": "solar panel",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Exhibition day",
+      "answer": "Thursday",
+      "maxWords": 2
+    },
+    {
+      "type": "short",
+      "stem": "Which two formats now share bus timetable information?",
+      "answer": "digital and printed",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "How many days did students record the trial route?",
+      "answer": "five practice days",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What delayed the bus during one trial afternoon?",
+      "answer": "roadworks",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Why did students choose darker display text?",
+      "answer": "to improve readability",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What personal information will the questionnaire avoid collecting?",
+      "answer": "personal telephone numbers",
+      "maxWords": 4
+    }
+  ],
+  "audioStatus": "not_generated_until_content_review",
+  "audioFile": null,
+  "officialTaskShapeSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / lst2",
+  "notes": "Fictional technology and inclusion project. Five 2-word notes and five 4-word short answers."
+}
