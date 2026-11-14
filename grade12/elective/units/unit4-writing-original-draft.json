@@ -15,8 +15,10 @@
     "type": "evaluative",
     "marks": 15,
     "minWords": 150,
-    "prompt": "Some school leavers prefer university degrees, while others argue that vocational training and apprenticeships offer better preparation for employment. Evaluate both views and explain your conclusion with reasons and examples. Write at least 150 words.",
-    "grading": "five-level Ministry rating scale; teacher review"
+    "prompt": "Many school leavers face difficulties choosing a suitable higher-education course and adapting to university or vocational study. Explain the main problems they may face and suggest practical solutions. Support your ideas with examples, and organise your response as a problem–solution essay. Write at least 150 words.",
+    "grading": "five-level Ministry rating scale; teacher review",
+    "textType": "problem-solution essay",
+    "unitSkillAlignment": "Unit 4 Higher Education: writing a problem–solution essay and giving examples"
   },
   "writing2": {
     "id": "wrt2",
@@ -62,7 +64,8 @@
       "Gap-year programmes fell from 13 to 9.",
       "Total students in the fictional dataset increased from 160 to 180."
     ],
-    "grading": "five-level Ministry rating scale; teacher review"
+    "grading": "five-level Ministry rating scale; teacher review",
+    "unitSkillAlignment": "Post-school pathways theme; chart description practised in Unit 3 and assessed here as a cross-unit examination writing skill"
   },
   "sahSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / wrt1,wrt2",
   "notes": "All figures are invented for the practice question; this is not an official graduation dataset."
