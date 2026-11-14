@@ -1,0 +1,31 @@
+name: Grade 11 Elective Fame original complete unit paper QA
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'grade11/elective/units/**'
+      - 'scripts/audit_grade11_elective_unit1.py'
+      - 'tests/grade11_elective_unit_browser.cjs'
+      - '.github/workflows/grade11-elective-unit-qa.yml'
+permissions:
+  contents: read
+jobs:
+  validate-and-browser:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Strict structural, answer and audio hashes
+        run: python3 scripts/audit_grade11_elective_unit1.py
+      - name: Grade11 mobile browser full/skill testing
+        run: |
+          npm install --no-save playwright@1.56.1
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/exams11e.log 2>&1 &
+          sleep 3
+          node tests/grade11_elective_unit_browser.cjs
