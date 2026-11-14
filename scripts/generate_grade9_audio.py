@@ -84,18 +84,30 @@ async def build(model,task,tmp):
     print('CREATED',output.relative_to(ROOT),round(duration,1),'seconds',output.stat().st_size,'bytes')
 
 async def main():
+    prior_manifest_path=OUT/'manifest.json'
+    prior=json.loads(prior_manifest_path.read_text(encoding='utf-8')) if prior_manifest_path.exists() else {}
     manifest={}
     for m in DATA['models']:
         if m['model'] not in {'B','C','G'}:continue
         with tempfile.TemporaryDirectory() as d:
             for t in m['tasks']:
-                if t.get('skill')=='listening':
+                if t.get('skill')!='listening':continue
+                source={'transcript':t.get('transcript'),'items':t.get('items'),'questions':t.get('questions')}
+                fingerprint=hashlib.sha256(json.dumps(source,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
+                mp3=f"g9-{m['model'].lower()}-listening-{t['group']}.mp3"
+                target=OUT/mp3
+                old=prior.get(t['id'],{})
+                if (old.get('sourceHash')==fingerprint and old.get('mp3')==mp3
+                        and target.is_file() and target.stat().st_size>15000
+                        and MP3(target).info.length>40):
+                    print('REUSE exact source-verified MP3:',t['id'])
+                else:
+                    print('REBUILD stale or absent MP3:',t['id'])
                     with tempfile.TemporaryDirectory(dir=d) as taskdir:
                         await build(m['model'],t,pathlib.Path(taskdir))
-                        source={'transcript':t.get('transcript'),'items':t.get('items'),'questions':t.get('questions')}
-                        fingerprint=hashlib.sha256(json.dumps(source,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
-                        mp3=f"g9-{m['model'].lower()}-listening-{t['group']}.mp3"
-                        manifest[t['id']]={'sourceHash':fingerprint,'mp3':mp3,'sourceModel':m['model'],'seconds':round(MP3(OUT/mp3).info.length,2),'bytes':(OUT/mp3).stat().st_size,'playedTwice':True}
+                manifest[t['id']]={'sourceHash':fingerprint,'mp3':mp3,
+                    'sourceModel':m['model'],'seconds':round(MP3(target).info.length,2),
+                    'bytes':target.stat().st_size,'playedTwice':True}
     (OUT/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     assert len(manifest)==6
 if __name__=='__main__':asyncio.run(main())
