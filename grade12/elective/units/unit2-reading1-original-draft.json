@@ -1,0 +1,94 @@
+{
+  "id": "g12-elective-unit2-rdg1-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "Doing the right thing"
+  },
+  "skill": "Reading 1",
+  "genre": "interactive email exchange",
+  "status": "original_450_500_word_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "marks": 12,
+  "passage": "Email 1 — From Hana, School Environment Club, to Dr Amal, community adviser.\n\nDear Dr Amal,\nOur club is organising a recycling campaign for neighbourhood families. We hope to collect used batteries and small electronic devices that must not be placed in ordinary household bins. A local shop has offered to advertise the campaign, but its poster includes a photograph of a student who has not agreed to appear on it. Some members think we should accept the poster because printing another one will cost money. I believe we should ask for permission first. Could you help us explain the issue to the shop without damaging our relationship?\n\nKind regards,\nHana\n\nEmail 2 — From Dr Amal to Hana.\n\nDear Hana,\nYou are right to consider the student's wishes. A generous offer does not remove the need for consent. Thank the shop for its support and suggest replacing the photograph with a drawing of a recycling box. Explain that the project is about community responsibility and that showing respect is part of its message. Remember that collecting batteries requires safe storage and an approved company to handle the materials. Before announcing a collection point, ask the municipal environment officer for advice and check which items the contractor can legally accept.\n\nBest wishes,\nDr Amal\n\nEmail 3 — From Hana to Dr Amal.\n\nDear Dr Amal,\nWe followed your advice. The shop has agreed to a new poster with no personal photograph. The environment officer recommended a covered collection point inside the community centre and asked volunteers not to open or repair any batteries. We have booked the centre for Saturday morning. A licensed collection company will transport the materials after the campaign. Our volunteers can explain the instructions, but only trained adults will handle any damaged items.\n\nWe still have a problem with information online. One student shared a message promising that every donated device would be repaired and given to another family. The contractor has not made that promise. We removed the message quickly, but several people had already shared it. What is the fairest way to correct the mistake?\n\nKind regards,\nHana\n\nEmail 4 — From Dr Amal to Hana.\n\nDear Hana,\nPublish a clear correction in the same places where the original announcement appeared. State that reusable items may be assessed, while unsuitable ones will be handled according to the contractor's procedures. Do not blame an individual volunteer publicly; explain what your team has learned and name a contact person who can answer questions. At the event, display a short list of accepted devices and provide a sealed box for questions from visitors.\n\nAfter the campaign, report how many items were collected and whether the agreed safety instructions were followed. Avoid promising environmental benefits you cannot measure. Integrity means telling people what you know, acknowledging what remains uncertain, and correcting information when necessary. Your club can still run a successful campaign by putting those principles into practice.\n\nKind regards,\nDr Amal",
+  "wordCount": 494,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "What items will Hana's club collect?",
+      "answer": "batteries and electronic devices",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Whose permission is missing from the shop's poster?",
+      "answer": "a student's permission",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What should replace the personal photograph?",
+      "answer": "a recycling box drawing",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who advised the club about safe collection?",
+      "answer": "the municipal environment officer",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Where will the covered collection point be?",
+      "answer": "inside the community centre",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who will handle damaged batteries?",
+      "answer": "trained adults",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What promise in the shared message was incorrect?",
+      "answer": "every device would be repaired",
+      "maxWords": 4
+    },
+    {
+      "type": "gap",
+      "stem": "The shop accepted a poster without a ______.",
+      "answer": "personal photograph",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "The collection event is booked for ______.",
+      "answer": "Saturday morning",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "A ______ will transport the collected materials.",
+      "answer": "licensed collection company",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "Dr Amal suggests posting a ______ in the same online locations.",
+      "answer": "clear correction",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "Visitors can leave questions in a ______.",
+      "answer": "sealed box",
+      "maxWords": 3
+    }
+  ],
+  "sahSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / rdg1",
+  "notes": "Fictional ethical collection campaign; seven short answers and five contextual gaps, teacher checks equivalent word-limited answers."
+}
