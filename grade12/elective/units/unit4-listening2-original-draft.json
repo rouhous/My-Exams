@@ -1,0 +1,87 @@
+{
+  "id": "g12-elective-unit4-lst2-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 4,
+    "title": "Higher Education"
+  },
+  "skill": "Listening 2",
+  "status": "original_script_and_questions_created__teacher_review_and_natural_audio_pending",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "speaker": "Sami",
+  "voice": "one male speaker",
+  "fictionalProgramme": true,
+  "passage": "Hello, everyone. My name is Sami, and I work as a guidance volunteer for a fictional college access programme. Today I will explain how students can research higher education choices without relying on rumours or incomplete advertising. Our example concerns a student named Amina, who is applying for a renewable-energy technology course. She begins preparing in October, long before the final application deadline.\n\nThe first step is comparing institutions. Amina studies course descriptions from two colleges and a university. She checks entry requirements, teaching methods and practical opportunities instead of choosing a place simply because its name is famous. The university offers a four-year degree, while one college offers a two-year diploma with a supervised internship. Neither route is automatically better for every learner.\n\nNext, Amina calculates her budget. Tuition is only one expense; transport, accommodation, books and equipment also cost money. She creates a spreadsheet showing expected costs for each term. She learns that some scholarships cover tuition only, while others may include a living allowance. To avoid disappointment, she reads the exact conditions and asks the institution's financial-aid office for written clarification.\n\nThe programme's scholarship application closes on 20 March. Amina must supply academic certificates, two teacher references and a personal statement. She decides to describe the genuine work she completed on a school solar project, including a mistake she helped correct. She does not claim to have won a competition that she never entered. Her teachers advise her to focus on what she learned rather than listing impressive adjectives.\n\nAmina also wants practical experience. She contacts a local workshop and arranges a one-week observation placement during the school holiday. The supervisor explains that observing trained technicians does not mean she may operate every machine. She follows the safety rules, keeps a learning diary and asks questions about teamwork. Later she uses that experience to compare classroom study with workplace training.\n\nBefore accepting any offer, Amina visits a college open day. She meets students from different courses and asks about laboratory access, accessibility services and the support available to new learners. She discovers that her preferred programme includes evening classes in one term. That schedule would affect her transport plan, so she checks the timetable rather than making assumptions. She also discovers that the library offers a quiet study room and that trained tutors can provide extra help with technical vocabulary.\n\nFinally, Amina prepares a backup choice in case her first application is unsuccessful. She keeps digital copies of documents but does not share passwords or private financial information in public groups. She plans to submit her application a week early, leaving time to correct errors. Her careful approach shows that making an education decision is a process of checking evidence, managing costs and keeping several realistic options open.",
+  "script": "Hello, everyone. My name is Sami, and I work as a guidance volunteer for a fictional college access programme. Today I will explain how students can research higher education choices without relying on rumours or incomplete advertising. Our example concerns a student named Amina, who is applying for a renewable-energy technology course. She begins preparing in October, long before the final application deadline.\n\nThe first step is comparing institutions. Amina studies course descriptions from two colleges and a university. She checks entry requirements, teaching methods and practical opportunities instead of choosing a place simply because its name is famous. The university offers a four-year degree, while one college offers a two-year diploma with a supervised internship. Neither route is automatically better for every learner.\n\nNext, Amina calculates her budget. Tuition is only one expense; transport, accommodation, books and equipment also cost money. She creates a spreadsheet showing expected costs for each term. She learns that some scholarships cover tuition only, while others may include a living allowance. To avoid disappointment, she reads the exact conditions and asks the institution's financial-aid office for written clarification.\n\nThe programme's scholarship application closes on 20 March. Amina must supply academic certificates, two teacher references and a personal statement. She decides to describe the genuine work she completed on a school solar project, including a mistake she helped correct. She does not claim to have won a competition that she never entered. Her teachers advise her to focus on what she learned rather than listing impressive adjectives.\n\nAmina also wants practical experience. She contacts a local workshop and arranges a one-week observation placement during the school holiday. The supervisor explains that observing trained technicians does not mean she may operate every machine. She follows the safety rules, keeps a learning diary and asks questions about teamwork. Later she uses that experience to compare classroom study with workplace training.\n\nBefore accepting any offer, Amina visits a college open day. She meets students from different courses and asks about laboratory access, accessibility services and the support available to new learners. She discovers that her preferred programme includes evening classes in one term. That schedule would affect her transport plan, so she checks the timetable rather than making assumptions. She also discovers that the library offers a quiet study room and that trained tutors can provide extra help with technical vocabulary.\n\nFinally, Amina prepares a backup choice in case her first application is unsuccessful. She keeps digital copies of documents but does not share passwords or private financial information in public groups. She plans to submit her application a week early, leaving time to correct errors. Her careful approach shows that making an education decision is a process of checking evidence, managing costs and keeping several realistic options open.",
+  "wordCount": 461,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "note",
+      "stem": "Application example student's first name",
+      "answer": "Amina",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Preparation begins in",
+      "answer": "October",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Length of college diploma",
+      "answer": "two years",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Scholarship deadline (day and month)",
+      "answer": "20 March",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Work observation duration",
+      "answer": "one week",
+      "maxWords": 2
+    },
+    {
+      "type": "short",
+      "stem": "What kind of technology does Amina want to study?",
+      "answer": "renewable-energy technology",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "How many teacher references must Amina provide?",
+      "answer": "two",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What document describes Amina's genuine school-project work?",
+      "answer": "a personal statement",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What discovery changes Amina's transport planning?",
+      "answer": "evening classes",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "When does Amina intend to submit her application?",
+      "answer": "a week early",
+      "maxWords": 4
+    }
+  ],
+  "audioStatus": "not_generated_until_content_review",
+  "audioFile": null,
+  "officialTaskShapeSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / lst2",
+  "notes": "Original informative monologue on higher education, scholarships, and career choices."
+}
