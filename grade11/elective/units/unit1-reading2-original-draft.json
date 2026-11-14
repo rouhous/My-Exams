@@ -1,0 +1,148 @@
+{
+  "id": "g11-elective-unit1-rdg2-new",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 1,
+    "title": "Fame"
+  },
+  "skill": "Reading 2",
+  "genre": "informative six-paragraph media literacy",
+  "marks": 10,
+  "passage": "Paragraph A\nOnline fame can appear suddenly, yet an audience is not always evidence of reliable information. A funny or surprising clip may be shared thousands of times before anybody checks its claims. Schools increasingly teach young viewers to separate popularity from evidence. Students can compare a dramatic headline with the original source and discuss why emotional language attracts attention. Being visible is not the same as being correct.\n\nParagraph B\nBefore publishing a student film, a production team should agree on a clear purpose. A short plan identifies the intended audience, the main message and the people who will be interviewed. It also names a person responsible for checking facts and keeping records. If students plan each stage together, they can avoid collecting attractive images that have little connection to the topic. A clear schedule reduces confusion when volunteers have different commitments.\n\nParagraph C\nConsent is essential when cameras record identifiable people. Participants need to know where their images will be shown and how long a school intends to keep recordings. Even when somebody originally agrees, circumstances can change, and a respectful team should consider a request to remove a clip. Students must never assume that an interesting story gives them permission to disclose private information. Trust should come before the desire for publicity.\n\nParagraph D\nEditing creates a further responsibility. A filmmaker may shorten a conversation, but the edited version must not reverse what a speaker meant. Responsible teams keep their original recordings and check whether vital context has been lost. Subtitles should represent spoken words accurately, especially when a video is shared with people who may find it difficult to hear. Misleading editing may harm reputations even without deliberate dishonesty.\n\nParagraph E\nMedia-literacy classes often compare two versions of one message. One version might contain a dramatic picture and emotional words, while the other offers a careful explanation and a link to evidence. Discussing these differences helps pupils recognise persuasion and understand why attention-grabbing material spreads quickly. It also shows future filmmakers how to encourage viewers to think rather than react immediately. A balanced message can still be interesting.\n\nParagraph F\nSuccess should finally be measured in more than views. A useful film may change a student's habits, help families locate information or begin a constructive discussion. A school can collect feedback through short anonymous questions instead of demanding public comments. This protects participants and supplies the production team with specific suggestions. Responsible creators improve their next project by listening to people, not merely counting followers.",
+  "wordCount": 419,
+  "paragraphs": 6,
+  "headings": [
+    "Popularity is not proof",
+    "Planning a purposeful production",
+    "Privacy and consent",
+    "Fair and accurate editing",
+    "A sports victory abroad",
+    "A dangerous mountain expedition",
+    "Buying new film equipment"
+  ],
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "The word disclose in Paragraph C means ____.",
+      "options": [
+        "hide",
+        "make known",
+        "forget"
+      ],
+      "answer": 1,
+      "kind": "meaning"
+    },
+    {
+      "type": "mc",
+      "stem": "The word misleading in Paragraph D most nearly means ____.",
+      "options": [
+        "creating a false impression",
+        "unusually expensive",
+        "carefully arranged"
+      ],
+      "answer": 0,
+      "kind": "meaning"
+    },
+    {
+      "type": "mc",
+      "stem": "What is the main difference between online popularity and accuracy?",
+      "options": [
+        "A large audience does not establish truth",
+        "Only famous people can be accurate",
+        "All videos are unreliable"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What should students identify before filming?",
+      "options": [
+        "A purpose and audience",
+        "The number of online likes",
+        "A celebrity's salary"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Why are accurate subtitles important?",
+      "options": [
+        "They replace all research",
+        "They help people follow spoken content",
+        "They make a video private"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "How can creators judge the usefulness of a school film?",
+      "options": [
+        "By counting views alone",
+        "By hiding criticism",
+        "By collecting meaningful audience feedback"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "match",
+      "stem": "Match Paragraph A to its best heading.",
+      "options": [
+        "Popularity is not proof",
+        "Planning a purposeful production",
+        "Privacy and consent",
+        "Fair and accurate editing",
+        "A sports victory abroad",
+        "A dangerous mountain expedition",
+        "Buying new film equipment"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "stem": "Match Paragraph B to its best heading.",
+      "options": [
+        "Popularity is not proof",
+        "Planning a purposeful production",
+        "Privacy and consent",
+        "Fair and accurate editing",
+        "A sports victory abroad",
+        "A dangerous mountain expedition",
+        "Buying new film equipment"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "match",
+      "stem": "Match Paragraph C to its best heading.",
+      "options": [
+        "Popularity is not proof",
+        "Planning a purposeful production",
+        "Privacy and consent",
+        "Fair and accurate editing",
+        "A sports victory abroad",
+        "A dangerous mountain expedition",
+        "Buying new film equipment"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "match",
+      "stem": "Match Paragraph D to its best heading.",
+      "options": [
+        "Popularity is not proof",
+        "Planning a purposeful production",
+        "Privacy and consent",
+        "Fair and accurate editing",
+        "A sports victory abroad",
+        "A dangerous mountain expedition",
+        "Buying new film equipment"
+      ],
+      "answer": 3
+    }
+  ],
+  "status": "original_unit_topic_info_reading_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false
+}
