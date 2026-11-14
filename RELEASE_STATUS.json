@@ -179,5 +179,35 @@
     "wordLengthReviewPass": true,
     "remainingReleaseBlocker": "Grade 11 Core six-model pilot has only five broad sections; official specification requires nine",
     "remaining": "cross-track repeated source scripts, exact unit-page alignment, natural voices for elective and Grade12, teacher approval"
+  },
+  "lastVerifiedRepositoryState": "2026-11-14",
+  "upperGradesReviewPractice": {
+    "page": "upper-grades-practice.html",
+    "linkedFromIndex": true,
+    "modes": [
+      "fixed complete timed draft A-F",
+      "comprehensive random timed draft drawing whole sections from A-D",
+      "single skill untimed"
+    ],
+    "tracks": [
+      "11-elective",
+      "12-core",
+      "12-elective"
+    ],
+    "contentStatus": "unapproved teacher review ONLY; does not imply verified textbook-unit alignment",
+    "scoring": "MCQ/TF/matching automatic; free short responses and writing require teacher review; full grade withheld",
+    "listening": "teacher-led scripts, no verified MP3 for these 3 upper tracks",
+    "offline": "page added to shell cache; real-phone offline validation pending",
+    "releaseGate": "UPPER_GRADES_RELEASE_GATE_2026-11-14.json",
+    "qaWorkflow": ".github/workflows/upper-grades-qa.yml",
+    "qaBrowser": "tests/upper_grades_browser_smoke.cjs",
+    "approvedUnitModels": 0,
+    "fullStudentRelease": false
+  },
+  "upperGradeBlockers20261114": {
+    "mismatchedUnitTitles": 8,
+    "crossTrackExactSharedPassages": 7,
+    "unlinkedValidatedListeningTracks": 24,
+    "note": "Totals are based on A-D fixed drafts from 11-elective, 12-core and 12-elective; no automatic proof of textbook matching."
   }
 }
