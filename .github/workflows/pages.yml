@@ -40,7 +40,7 @@ jobs:
               dst.parent.mkdir(parents=True,exist_ok=True)
               shutil.copyfile(src,dst)
               n+=1
-          for need in ['index.html','sw.js','grade9/index.html','grades5-6/index.html','grades7-8/index.html','grade9/natural_audio.js','grade10/index.html','grade10/data.json','grade11/core/index.html','grade11/core/data.json','upper-grades-practice.html','grade12/elective/units/index.html','grade12/elective/units/unit1-listening1-original-draft.json']:
+          for need in ['index.html','sw.js','grade9/index.html','grades5-6/index.html','grades7-8/index.html','grade9/natural_audio.js','grade10/index.html','grade10/data.json','grade11/core/index.html','grade11/core/data.json','upper-grades-practice.html','grade12/elective/units/index.html','grade12/elective/units/unit1-listening1-original-draft.json','grade12/elective/units/unit1-listening2-original-draft.json','grade12/elective/units/unit1-reading1-original-draft.json','grade12/elective/units/unit1-reading2-original-draft.json','grade12/elective/units/unit1-writing-original-draft.json','grade12/elective/units/paper-a-preview.html']:
               if not (site/need).is_file():raise SystemExit('Missing required page: '+need)
           count=len(list((site/'audio-natural'/'g9'/'a').rglob('*.mp3')))
           if count!=21:raise SystemExit(f'Expected 21 natural Grade 9 MP3, got {count}')
