@@ -49,6 +49,17 @@ const {chromium}=require('playwright');
  await page.click('#mark');
  if(!(await page.locator('#feedback').textContent()).includes('10 / 10 correct'))throw Error('The Arts answer checking failed');
 
+ await page.selectOption('#task','2');
+ await page.waitForFunction(()=>document.querySelectorAll('#quiz .q').length===10&&document.querySelector('#taskTitle').textContent.includes('Listening 2'),null,{timeout:30000});
+ const second=await page.evaluate(async()=>{
+  const r=await fetch('unit1-listening2-original-draft.json');const d=await r.json();
+  return {words:d.wordCount,actualWords:d.script.trim().split(/\s+/).length,notes:d.questions.filter(q=>q.type==='note').length,short:d.questions.filter(q=>q.type==='short').length,blankOptions:d.questions.every(q=>!q.options)};
+ });
+ if(second.words<450||second.words>500||second.actualWords!==second.words||second.notes!==5||second.short!==5||!second.blankOptions)throw Error('Listening 2 shape mismatch '+JSON.stringify(second));
+ await page.locator('input[name="q0"]').fill('school auditorium');
+ await page.click('#mark');
+ if(!(await page.locator('#feedback').textContent()).includes('Teacher review required'))throw Error('Listening 2 must not receive unreliable automatic score');
+
  if(errors.length)throw Error('Browser errors: '+errors.join('; '));
  await browser.close();console.log('PASS upper grade A-D, timed full, randomized complete, independent untimed skill and honest score review');
 })().catch(e=>{console.error(e);process.exit(1)});
