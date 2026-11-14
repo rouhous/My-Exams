@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#174b38"><title>Grade 9 · Three Original Unit Examinations</title>
+<style>
+:root{--green:#164c37;--gold:#b08b45;--bg:#f3f7f4;--ink:#263a2d;--line:#d7e4d9}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,Arial,sans-serif}
+header{background:linear-gradient(115deg,#164632,#287353);color:white;padding:22px 5vw}header a{color:#fff1b1}
+h1{font-size:clamp(23px,4vw,33px);margin:7px 0}h2{color:var(--green);font-size:21px}
+main{max-width:980px;margin:auto;padding:14px 12px 55px}
+section{background:#fff;border:1px solid var(--line);border-radius:13px;margin:12px 0;padding:16px}
+.notice{background:#fffaea;border-left:5px solid var(--gold)}
+input,select,button,textarea{font:inherit}select,input[type=text],textarea{border:1px solid #b9ccbd;border-radius:8px;padding:9px}
+select{width:100%}button{color:#fff;background:var(--green);border:0;border-radius:8px;padding:11px 16px;cursor:pointer}button:disabled{opacity:.5}
+.topgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.q{padding:12px 0;border-top:1px solid var(--line)}.q strong{display:block;margin-bottom:5px}
+.choice{display:block;margin:5px 0;border:1px solid #e4ebe5;border-radius:8px;padding:8px;cursor:pointer}
+.choice:has(input:checked){background:#eaf5ec;border-color:#87b797}
+.images{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:9px 0}
+.images .choice{text-align:center}.images img{display:block;width:100%;height:118px;object-fit:contain;max-width:190px;margin:auto}
+.passage{white-space:pre-wrap;background:#f7faf7;border-left:3px solid #91baa1;padding:13px}
+.manual{font-size:14px;color:#5c705e}.paper{display:none}.paper.active{display:block}
+audio{width:100%;max-width:650px}.clock{font-weight:800;font-size:21px;font-variant-numeric:tabular-nums}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.section{border-top:4px solid #93b18e}
+textarea{width:100%;min-height:170px}.teacherScript{white-space:pre-wrap;max-height:450px;overflow:auto}
+.muted{color:#597362;font-size:14px}
+@media(max-width:560px){.topgrid{grid-template-columns:1fr}.images img{height:85px}}
+@media print{header,.setup,button,.clock{display:none!important}.paper{display:block!important}.section{break-inside:avoid}}
+</style></head><body><header><a href="../index.html">← Grade 9 existing practice</a>
+<h1>Grade 9 · Gold Experience Oman 9A</h1><p>Three original unit-based full examinations · picture listening · individual skills</p></header>
+<main>
+<section class="notice"><strong>Original teacher-review papers, not Ministry-issued examinations.</strong>
+The three exams are written specifically for Identity, Connections, and The future is now; they do not rename older mixed models. The Ministry-style sections total 40 marks over 120 minutes. Pictures match the options, and a local Listening MP3 is offered only after a source-transcript checksum passes. Open-response marking and textbook-page review remain the teacher's responsibility.</section>
+<section class="setup" id="setup"><div class="topgrid"><label>Unit exam<select id="unit"><option value="U1">Unit 1 · Identity</option><option value="U2">Unit 2 · Connections</option><option value="U3">Unit 3 · The future is now</option></select></label>
+<label>Mode<select id="mode"><option value="full">Full 40-mark paper · 120-minute timer</option><option value="skill">Individual skill · no timer</option></select></label></div>
+<label id="skillWrap" hidden>Skill<select id="skill"><option value="0">Listening 1 · Pictures</option><option value="1">Listening 2 · Interview</option><option value="2">Grammar and Vocabulary</option><option value="3">Reading 1</option><option value="4">Reading 2</option><option value="5">Writing 1</option><option value="6">Writing 2</option></select></label>
+<p id="ready" class="muted">Checking unit source files and audio hashes…</p><button id="start" disabled>Start activities</button></section>
+<div id="paper" class="paper"><section><div class="row"><h2 id="paperTitle">Paper</h2><span id="marks"></span><span class="clock" id="clock"></span></div><div class="row"><button id="back">Back to unit choice</button><button id="end">Finish and review</button></div></section>
+<div id="tasks"></div><section id="results" hidden aria-live="polite"></section></div>
+</main><script>
+'use strict';
+const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;':'&quot;',"'":'&#39;'}[c]));
+const names=['Listening 1','Listening 2','Grammar & Vocabulary','Reading 1','Reading 2','Writing 1','Writing 2'];
+let bank=null,manifest={},model=null,selected=[],asked=[],seconds=0,timer=null,finished=false,sourceStatus={};
+$('mode').onchange=()=>$('skillWrap').hidden=$('mode').value!=='skill';
+$('unit').onchange=()=>setReady();
+async function sha(s){if(!crypto.subtle)return'';let d=new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)));return Array.from(d).map(x=>x.toString(16).padStart(2,'0')).join('')}
+async function init(){
+ try{
+  const [r,m]=await Promise.all([fetch('./models.json'),fetch('./audio/manifest.json',{cache:'no-store'}).catch(()=>null)]);
+  if(!r.ok)throw Error('The original paper build has not been published yet');
+  bank=await r.json();manifest=m&&m.ok?await m.json():{};
+  if(bank.models.length!==3||bank.models.some(x=>x.tasks.length!==7||x.marks!==40))throw Error('Unvalidated paper shape');
+  for(const unit of bank.models)for(const task of unit.tasks.slice(0,2)){
+    const entry=manifest[task.id],hash=await sha(task.transcript);
+    sourceStatus[task.id]=entry&&entry.sourceTranscriptSha256===hash?'audio/'+entry.mp3:null;
+  }
+  setReady();
+ }catch(e){$('ready').textContent='Cannot open original unit exams: '+e.message}
+}
+function setReady(){if(!bank)return;model=bank.models.find(x=>x.model===$('unit').value);
+ const ok=model.tasks.slice(0,2).filter(t=>sourceStatus[t.id]).length;
+ $('ready').textContent='Unit '+model.unit+': '+model.unitTitle+' · seven sections, 40 marks · source-verified MP3 '+ok+'/2. Unverified audio is not played.';
+ $('start').disabled=false}
+function question(task,q,index){
+ const id=task.id+'-'+index;asked.push({id,q,task});let h='<div class="q"><strong>'+(index+1)+'. '+esc(q.stem)+'</strong>';
+ if(q.images){h+='<div class="images">'+q.images.map((src,i)=>'<label class="choice"><img src="'+esc(src)+'" alt="'+esc(q.choices[i])+'"><input name="'+id+'" type="radio" value="'+i+'"> '+String.fromCharCode(65+i)+'. '+esc(q.choices[i])+'</label>').join('')+'</div>';}
+ else if(q.choices){h+=q.choices.map((opt,i)=>'<label class="choice"><input name="'+id+'" type="radio" value="'+i+'"> '+String.fromCharCode(65+i)+'. '+esc(opt)+'</label>').join('')}
+ else h+='<input type="text" name="'+id+'" maxlength="200" placeholder="Short answer · teacher review">';
+ return h+'</div>';
+}
+function render(task){
+ let h='<section class="section"><h2>'+esc(task.title)+' · '+task.marks+' marks</h2>';
+ if(task.skill==='listening'){
+ const src=sourceStatus[task.id];
+ h+='<p class="muted">'+(src?'Verified MP3, script read twice.':'MP3 pending or source mismatch. Teacher should read the script twice.')+'</p>';
+ if(src)h+='<audio controls preload="metadata" src="'+esc(src)+'"></audio>';
+ if($('mode').value==='skill')h+='<details><summary>Teacher transcript (supervised revision only)</summary><div class="teacherScript">'+esc(task.transcript)+'</div></details>';
+ }
+ if(task.passage)h+='<div class="passage">'+esc(task.passage)+'</div>';
+ if(task.people)h+='<p><b>Activities</b></p><ol type="A">'+task.options.map(x=>'<li>'+esc(x.replace(/^[A-E]:\s*/,''))+'</li>').join('')+'</ol>';
+ if(task.skill==='writing'){h+='<p>'+esc(task.prompt)+'</p><textarea id="write'+task.group+'" placeholder="Write at least '+task.minWords+' words"></textarea><p class="manual">Minimum '+task.minWords+' words · teacher review required</p>';}
+ else for(const [i,item] of task.items.entries())h+=question(task,item,i);
+ return h+'</section>';
+}
+function clock(){let m=Math.floor(seconds/60);$('clock').textContent=String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0')}
+function stop(){if(timer){clearInterval(timer);timer=null}}
+function start(){if(!model)return;stop();asked=[];finished=false;selected=$('mode').value==='full'?model.tasks:[model.tasks[Number($('skill').value)]];
+ $('tasks').innerHTML=selected.map(render).join('');$('paperTitle').textContent='Unit '+model.unit+': '+model.unitTitle;$('marks').textContent=selected.reduce((n,t)=>n+t.marks,0)+' marks';$('results').hidden=true;$('results').innerHTML='';$('end').disabled=false;$('setup').hidden=true;$('paper').classList.add('active');
+ if(selected.length===7){seconds=120*60;clock();$('clock').hidden=false;timer=setInterval(()=>{seconds--;clock();if(seconds<=0){stop();finish()}},1000)}else $('clock').hidden=true;window.scrollTo(0,0)}
+function finish(){if(finished)return;finished=true;stop();$('end').disabled=true;let n=0,score=0,manual=0,rows=[];
+ for(const {id,q,task} of asked){
+   if(Array.isArray(q.choices)){n++;const v=document.querySelector('input[name="'+id+'"]:checked');
+     if(v&&Number(v.value)===q.answer)score++;else rows.push('<li>'+esc(task.title)+' · '+esc(q.stem)+' — '+esc(q.choices[q.answer])+'</li>');
+   }else{manual++;const v=document.querySelector('input[name="'+id+'"]');rows.push('<li>'+esc(task.title)+' · '+esc(q.stem)+' — suggested: '+esc((q.answers||[]).join(' / '))+'; student: '+esc(v?.value||'blank')+'</li>');}}
+ const writing=selected.filter(t=>t.skill==='writing').map(t=>{const v=$('write'+t.group)?.value||'';return t.title+': '+(v.trim().match(/\S+/g)||[]).length+' words'});
+ $('results').hidden=false;$('results').innerHTML='<h2>Objective answers: '+score+' / '+n+'</h2><p>'+manual+' short answers and '+writing.length+' writing tasks need human marking. No final 40-mark grade is assigned automatically.</p>'+(writing.length?'<p>'+writing.map(esc).join(' · ')+'</p>':'')+(rows.length?'<details><summary>Answer key and review checklist</summary><ol>'+rows.join('')+'</ol></details>':'');
+ $('results').scrollIntoView({behavior:'smooth'})}
+$('start').onclick=start;$('end').onclick=finish;$('back').onclick=()=>{stop();$('paper').classList.remove('active');$('setup').hidden=false;window.scrollTo(0,0)};
+init();
+</script></body></html>
