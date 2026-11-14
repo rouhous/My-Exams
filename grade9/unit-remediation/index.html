@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grade 9 · Gold Experience Oman · Unit Skills</title>
+<style>
+:root{--green:#184d38;--gold:#b18b47;--bg:#f2f7f3;--ink:#1d362a;--line:#d8e3da}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--bg);font:16px/1.65 system-ui,Arial,sans-serif}
+header{padding:18px 4vw;background:linear-gradient(115deg,#174a35,#2c7355);color:#fff}
+header a{color:#ffe6a6}main{max-width:1020px;margin:auto;padding:14px 14px 60px}
+h1{font-size:clamp(23px,4vw,32px);margin:4px 0}h2{font-size:21px;color:var(--green)}
+.panel{background:#fff;border:1px solid var(--line);border-radius:13px;padding:18px;margin:14px 0}
+.notice{background:#fff9e7;border-left:5px solid var(--gold)}
+label{display:block;margin:8px 0}select,button,textarea{font:inherit}select,textarea{border:1px solid #aec4b5;border-radius:8px;padding:10px;width:100%}
+.controls{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+button{background:var(--green);color:#fff;border:0;border-radius:9px;padding:11px 15px;cursor:pointer}
+button:disabled{opacity:.55;cursor:not-allowed}.question{padding:12px 0;border-top:1px solid var(--line)}
+.choice{display:block;margin:5px 0;padding:9px;border-radius:8px;border:1px solid #dde7df;cursor:pointer}
+.choice:has(input:checked){background:#edf7ef;border-color:#6ba682}
+.choice input{margin-right:10px}.answer{font-size:14px;margin-top:6px}.answer.ok{color:#146b3e}.answer.no{color:#9b402e}
+.passage{white-space:pre-wrap;background:#f6f9f7;padding:14px;border-left:3px solid #78a18b;border-radius:8px}
+textarea{min-height:155px;resize:vertical}.writing{padding:12px 0;border-top:1px solid var(--line)}
+.result{font-weight:700;font-size:19px;color:var(--green)}.muted{color:#5c6f60;font-size:14px}
+@media(max-width:580px){.controls{grid-template-columns:1fr}}
+</style></head><body>
+<header><a href="../index.html">← Grade 9 full examinations with Listening audio</a><h1>Unit-specific skills · Gold Experience Oman 9A</h1><p>Original questions for Identity, Connections and The future is now</p></header>
+<main>
+<section class="panel notice">These are <strong>independent unit revision activities, not new full examination papers</strong>. They contain grammar, vocabulary, reading and writing only, so they do not require additional Listening MP3. For a full 120-minute exam with linked audio and listening pictures, use the <a href="../index.html">original Grade 9 papers</a>. Textbook page-by-page approval remains pending.</section>
+<section class="panel"><div class="controls"><label>Unit<select id="unit"><option value="1">Unit 1 · Identity</option><option value="2">Unit 2 · Connections</option><option value="3">Unit 3 · The future is now</option></select></label><label>Practice skill<select id="skill"><option value="all">All unit skills</option><option value="grammar">Grammar</option><option value="vocabulary">Vocabulary</option><option value="reading">Reading</option><option value="writing">Writing</option></select></label></div>
+<p id="focus" class="muted"></p><button id="start" type="button">Open activities</button></section>
+<div id="tasks" aria-live="polite"></div>
+</main>
+<script>
+const el=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let bank=null,active=null,items=[],submitted=false;
+const groups=[['grammar','Grammar'],['vocabulary','Vocabulary'],['reading','Reading'],['writing','Writing']];
+function focus(){if(!bank)return;const d=bank.units.find(x=>x.number===Number(el('unit').value));el('focus').textContent='Focus · '+[...d.focus.grammar,...d.focus.vocabulary].join(' · ')}
+function mcRows(type,title,questions,passage){
+ let out='<section class="panel"><h2>'+esc(title)+'</h2>'+(passage?'<div class="passage">'+esc(passage)+'</div>':'');
+ questions.forEach((q,i)=>{const id='q'+items.length;items.push({id,question:q,type,group:title});out+='<div class="question"><strong>'+(i+1)+'. '+esc(q.stem)+'</strong>';
+ q.options.forEach((opt,j)=>{out+='<label class="choice"><input type="radio" name="'+id+'" value="'+j+'"> '+String.fromCharCode(65+j)+'. '+esc(opt)+'</label>'});
+ out+='<p class="answer" data-feedback="'+id+'"></p></div>'});
+ return out+'</section>';
+}
+function writingBlock(d){return '<section class="panel"><h2>Writing · teacher review required</h2>'+d.writing.map((w,i)=>'<div class="writing"><strong>'+(i+1)+'. '+esc(w.title)+'</strong><p>'+esc(w.prompt)+'</p><textarea id="writing'+i+'" placeholder="Write your answer here…"></textarea><p class="muted">Minimum '+w.minWords+' words · <span id="count'+i+'">0</span> words · writing is not automatically marked</p></div>').join('')+'</section>'}
+function render(){
+ if(!active)return;items=[];submitted=false;
+ const skill=el('skill').value;
+ let html='<section class="panel"><h2>Unit '+active.number+': '+esc(active.title)+'</h2><p class="muted">No timer · explanations appear after checking. Extended writing is not automatically scored.</p></section>';
+ if(skill==='all'||skill==='grammar')html+=mcRows('grammar','Grammar · '+active.title,active.grammar);
+ if(skill==='all'||skill==='vocabulary')html+=mcRows('vocabulary','Vocabulary · '+active.title,active.vocabulary);
+ if(skill==='all'||skill==='reading')html+=mcRows('reading','Reading · '+active.reading.title,active.reading.questions,active.reading.passage);
+ if(skill==='all'||skill==='writing')html+=writingBlock(active);
+ if(items.length)html+='<section class="panel"><button type="button" id="check">Check objective answers</button><p id="score" class="result" role="status"></p></section>';
+ el('tasks').innerHTML=html;
+ document.querySelectorAll('textarea').forEach((ta,i)=>ta.addEventListener('input',()=>{el('count'+i).textContent=(ta.value.trim().match(/\S+/g)||[]).length}));
+ if(items.length)el('check').onclick=check;
+}
+function check(){if(submitted)return;submitted=true;let correct=0;for(const {id,question:q} of items){const sel=document.querySelector('input[name="'+id+'"]:checked'),ok=sel&&Number(sel.value)===q.answer;if(ok)correct++;let p=document.querySelector('[data-feedback="'+id+'"]');p.className='answer '+(ok?'ok':'no');p.textContent=(ok?'Correct. ':'Review: ')+'Answer '+String.fromCharCode(65+q.answer)+'. '+q.options[q.answer]+'.'+(q.explanation?' '+q.explanation:'');}el('score').textContent=correct+' / '+items.length+' objective answers correct. Writing requires teacher feedback.';el('check').disabled=true}
+async function init(){try{const r=await fetch('./units.json');if(!r.ok)throw Error('unit data unavailable');bank=await r.json();focus();el('unit').onchange=()=>{focus();el('tasks').innerHTML=''};el('start').onclick=()=>{active=bank.units.find(x=>x.number===Number(el('unit').value));render()}}catch(e){el('tasks').textContent='Unable to load unit activities: '+e.message}}
+init();
+</script></body></html>
