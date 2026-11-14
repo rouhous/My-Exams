@@ -65,7 +65,7 @@
       "mixedIds": "E-F",
       "randomComplete": true,
       "sectionsAudioInBase": 8,
-      "audioVerified": 8,
+      "audioVerified": 7,
       "listeningPictures": 60,
       "certifiedComplete": false
     },
@@ -102,7 +102,7 @@
       "additionalTeacherReadSemesterPapers": 1,
       "randomComplete": true,
       "legacyPilotAudio": 6,
-      "newSemesterPaperAudio": 0,
+      "newSemesterPaperAudio": 2,
       "certifiedComplete": false
     },
     {

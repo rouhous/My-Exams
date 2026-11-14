@@ -62,9 +62,15 @@
     },
     "8": {
       "requiredOriginalListeningSections": 8,
-      "verifiedLinkedMP3": 8,
+      "verifiedLinkedMP3": 7,
       "presentButNotSourceVerified": 0,
-      "missing": [],
+      "missing": [
+        {
+          "model": "A",
+          "task": "g8-a-listening1",
+          "reason": "missing_or_stale_audio_manifest"
+        }
+      ],
       "reportedReusedSources": []
     },
     "9": {
@@ -91,20 +97,9 @@
     },
     "11-core-semester-a": {
       "requiredOriginalListeningSections": 2,
-      "verifiedLinkedMP3": 0,
+      "verifiedLinkedMP3": 2,
       "presentButNotSourceVerified": 0,
-      "missing": [
-        {
-          "model": "semester-paper-A",
-          "section": "Listening 1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "semester-paper-A",
-          "section": "Listening 2",
-          "reason": "no_source_verified_mp3"
-        }
-      ],
+      "missing": [],
       "reportedReusedSources": []
     },
     "11-elective-legacy": {
