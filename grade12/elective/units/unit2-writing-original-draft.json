@@ -1,0 +1,69 @@
+{
+  "id": "g12-elective-unit2-writing-drafts-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "Doing the right thing"
+  },
+  "status": "original_drafts_teacher_review_pending",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "writing1": {
+    "id": "wrt1",
+    "type": "evaluative",
+    "marks": 15,
+    "minWords": 150,
+    "prompt": "Some people argue that students should have to complete community service before graduating, while others believe volunteering must always be a personal choice. Discuss both sides and give a justified conclusion. Write at least 150 words.",
+    "grading": "five-level Ministry rating scale; teacher review"
+  },
+  "writing2": {
+    "id": "wrt2",
+    "type": "informative graph description",
+    "marks": 10,
+    "minWords": 150,
+    "prompt": "The chart shows the number of volunteers participating in four fictional school community projects in 2024 and 2025. Summarise the main features and compare the two years. Write at least 150 words.",
+    "chart": {
+      "chartType": "grouped_bar",
+      "title": "Volunteers in community projects, 2024 and 2025",
+      "unit": "students",
+      "categories": [
+        "Library help",
+        "Recycling",
+        "Food support",
+        "Neighbourhood clean-up"
+      ],
+      "series": [
+        {
+          "year": "2024",
+          "values": [
+            35,
+            55,
+            40,
+            65
+          ]
+        },
+        {
+          "year": "2025",
+          "values": [
+            60,
+            70,
+            58,
+            72
+          ]
+        }
+      ]
+    },
+    "teacherKeyFacts": [
+      "All projects recruited more volunteers in 2025.",
+      "Neighbourhood clean-up was the largest project in both years.",
+      "Library help increased from 35 to 60 (+25).",
+      "Recycling increased from 55 to 70 (+15).",
+      "Totals increased from 195 to 260 volunteers."
+    ],
+    "grading": "five-level Ministry rating scale; teacher review"
+  },
+  "sahSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / wrt1,wrt2",
+  "notes": "Fictional dataset designed for practice. Teacher must check no made-up AI grade."
+}
