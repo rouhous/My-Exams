@@ -41,7 +41,8 @@ async def render_task(source, target):
     else:
         if not 450 <= len(script.split()) <= 500:
             raise ValueError("Monologue outside SAH word range")
-        turns = [(paragraph.strip().replace("\n"," "),0) for paragraph in re.split(r"\n\s*\n",script) if paragraph.strip()]
+        solo_voice = 1 if ('male' in str(source.get("voice","")).lower() and 'female' not in str(source.get("voice","")).lower()) else 0
+        turns = [(paragraph.strip().replace("\n"," "),solo_voice) for paragraph in re.split(r"\n\s*\n",script) if paragraph.strip()]
         intro = "You are going to hear an informative text about the arts. Complete the notes and short answers. You will hear the recording twice."
 
     with tempfile.TemporaryDirectory() as tmp:
@@ -108,8 +109,9 @@ async def main():
         identifier=source_path.stem.replace("-original-draft","")
         out=AUDIO_DIR/(identifier+".mp3")
         digest=hashlib.sha256(source["script"].encode("utf-8")).hexdigest()
+        expected_voices=list(VOICES) if source["skill"]=="Listening 1" else [VOICES[1 if ('male' in str(source.get("voice","")).lower() and 'female' not in str(source.get("voice","")).lower()) else 0]]
         previous=prior.get(source_path.name)
-        if previous and previous.get('scriptSha256')==digest and out.exists() and out.stat().st_size>25000 and MP3(out).info.length>180:
+        if previous and previous.get('voices')==expected_voices and previous.get('scriptSha256')==digest and out.exists() and out.stat().st_size>25000 and MP3(out).info.length>180:
             duration=round(MP3(out).info.length,2)
             print("REUSE",out.relative_to(ROOT),"validated script hash",flush=True)
         else:
@@ -120,7 +122,7 @@ async def main():
             "mp3":out.name,
             "durationSeconds":duration,
             "bytes":out.stat().st_size,
-            "voices":list(VOICES if source["skill"]=="Listening 1" else VOICES[:1]),
+            "voices":expected_voices,
             "scriptReadTwice":True,
             "status":"neural_mp3_generated__teacher_listening_quality_approval_pending"
         }
