@@ -5089,7 +5089,7 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "The chart shows samples correctly recorded over four periods. Describe the main trend, compare the first and last periods, and include all given figures. Write at least 100 words.",
+          "prompt": "The chart shows the number of students following a school media-awareness page over four weeks: 45, 62, 78 and 86. Describe the trend, compare the values and suggest a reason for the increase. Write at least 100 words.",
           "chart": {
             "labels": [
               "Week 1",
@@ -5098,13 +5098,14 @@
               "Week 4"
             ],
             "values": [
-              18,
-              24,
-              31,
-              38
+              45,
+              62,
+              78,
+              86
             ],
-            "label": "samples correctly recorded"
-          }
+            "label": "students following the school media-awareness page"
+          },
+          "unitWritingFocus": "English Insights 2 unit A: chart description of topic-specific data"
         },
         {
           "key": "wrt2",
@@ -5114,7 +5115,8 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "Write a formal email to your school principal proposing a public exhibition at the school library. Explain its purpose, the preparations needed and why the school should support it. Write at least 100 words."
+          "prompt": "Write a formal email to your school principal proposing a campaign about responsible social-media influence. Explain how students can check claims made by influencers and how the campaign will benefit the school. Write at least 100 words.",
+          "unitWritingFocus": "English Insights 2: formal interactive email relating to unit topic"
         }
       ],
       "type": "unit-themed-draft"
@@ -5508,7 +5510,7 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "The chart shows weekly visitors over four periods. Describe the main trend, compare the first and last periods, and include all given figures. Write at least 100 words.",
+          "prompt": "The chart shows students attending memory and study-skills workshops in four successive weeks: 18, 30, 38 and 51. Summarise the main changes, make comparisons and describe what the data suggest. Write at least 100 words.",
           "chart": {
             "labels": [
               "Week 1",
@@ -5517,13 +5519,14 @@
               "Week 4"
             ],
             "values": [
-              28,
-              35,
-              44,
-              52
+              18,
+              30,
+              38,
+              51
             ],
-            "label": "weekly visitors"
-          }
+            "label": "students attending memory and study-skills workshops"
+          },
+          "unitWritingFocus": "English Insights 2 unit B: chart description of topic-specific data"
         },
         {
           "key": "wrt2",
@@ -5533,7 +5536,8 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "Write a formal email to your school principal proposing a weekend storytelling festival. Explain its purpose, the preparations needed and why the school should support it. Write at least 100 words."
+          "prompt": "Write a formal email to your school principal proposing a workshop about memory strategies, checking information and exam anxiety. Explain the activities you recommend and their benefits. Write at least 100 words.",
+          "unitWritingFocus": "English Insights 2: formal interactive email relating to unit topic"
         }
       ],
       "type": "unit-themed-draft"
@@ -5927,22 +5931,23 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "The chart shows hours of battery use over four periods. Describe the main trend, compare the first and last periods, and include all given figures. Write at least 100 words.",
+          "prompt": "The chart shows the number of family-history interviews completed in each of four weeks: 12, 20, 27 and 35. Describe the trend, include key figures and explain what this tells us about interest in the past. Write at least 100 words.",
           "chart": {
             "labels": [
-              "Test 1",
-              "Test 2",
-              "Test 3",
-              "Test 4"
+              "Week 1",
+              "Week 2",
+              "Week 3",
+              "Week 4"
             ],
             "values": [
-              2,
-              3,
-              5,
-              6
+              12,
+              20,
+              27,
+              35
             ],
-            "label": "hours of battery use"
-          }
+            "label": "family-history interviews completed"
+          },
+          "unitWritingFocus": "English Insights 2 unit C: chart description of topic-specific data"
         },
         {
           "key": "wrt2",
@@ -5952,7 +5957,8 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "Write a formal email to your school principal proposing a regional student innovation fair. Explain its purpose, the preparations needed and why the school should support it. Write at least 100 words."
+          "prompt": "Write a formal email to your school principal requesting permission to hold an oral-history exhibition. Explain how students will collect older people's memories, check sources and present their findings respectfully. Write at least 100 words.",
+          "unitWritingFocus": "English Insights 2: formal interactive email relating to unit topic"
         }
       ],
       "type": "unit-themed-draft"
@@ -6346,22 +6352,23 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "The chart shows visitors completing the walk over four periods. Describe the main trend, compare the first and last periods, and include all given figures. Write at least 100 words.",
+          "prompt": "The chart shows attendance at four weekly career-planning sessions: 14, 26, 34 and 47 students. Describe the pattern, compare the first and last weeks and explain a possible reason for the increase. Write at least 100 words.",
           "chart": {
             "labels": [
-              "Tour 1",
-              "Tour 2",
-              "Tour 3",
-              "Tour 4"
+              "Week 1",
+              "Week 2",
+              "Week 3",
+              "Week 4"
             ],
             "values": [
-              12,
-              20,
-              29,
-              41
+              14,
+              26,
+              34,
+              47
             ],
-            "label": "visitors completing the walk"
-          }
+            "label": "students attending career-planning sessions"
+          },
+          "unitWritingFocus": "English Insights 2 unit D: chart description of topic-specific data"
         },
         {
           "key": "wrt2",
@@ -6371,7 +6378,8 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "Write a formal email to your school principal proposing a community photo exhibition. Explain its purpose, the preparations needed and why the school should support it. Write at least 100 words."
+          "prompt": "Write a formal email to your school principal proposing a careers event with a sports professional, a product designer and a technical specialist. Explain the purpose, preparation and benefits for students. Write at least 100 words.",
+          "unitWritingFocus": "English Insights 2: formal interactive email relating to unit topic"
         }
       ],
       "type": "unit-themed-draft"
@@ -7770,7 +7778,8 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "Some students believe schools should invest more time in activities about coastal research. Others prefer regular classroom lessons. Discuss both views and justify your opinion. Write at least 100 words."
+          "prompt": "Many people enjoy shopping in malls, while others prefer online shops or traditional souqs. Evaluate the benefits and drawbacks of these three ways of shopping, and explain which is the most responsible choice for students. Write at least 100 words.",
+          "unitWritingFocus": "Engage with English 12A theme-specific evaluative paper prompt"
         },
         {
           "key": "wrt2",
@@ -7780,7 +7789,8 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "Write a story beginning: 'When Salma arrived at a marine research station near Sur, the plan had already changed.' Explain what happened, how the characters responded and what they learned. Write at least 100 words."
+          "prompt": "Write a story beginning: 'When I checked the receipt, I realised the item had not been charged at the advertised price.' Describe what you bought, what went wrong and how you solved the problem. Write at least 100 words.",
+          "unitWritingFocus": "Engage with English 12A theme-specific narrative paper prompt"
         }
       ],
       "type": "unit-themed-draft",
@@ -8437,7 +8447,8 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "Some students believe schools should invest more time in activities about community reading. Others prefer regular classroom lessons. Discuss both views and justify your opinion. Write at least 100 words."
+          "prompt": "Some school leavers believe living in university accommodation helps them become independent, while others prefer staying with their families. Evaluate both choices and support your opinion with reasons. Write at least 100 words.",
+          "unitWritingFocus": "Engage with English 12A theme-specific evaluative paper prompt"
         },
         {
           "key": "wrt2",
@@ -8447,7 +8458,8 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "Write a story beginning: 'When Khalid arrived at a new neighbourhood reading room in Nizwa, the plan had already changed.' Explain what happened, how the characters responded and what they learned. Write at least 100 words."
+          "prompt": "Write a story beginning: 'I thought I had completed my university application, but one important document was missing.' Explain what happened, how you responded and what you learned. Write at least 100 words.",
+          "unitWritingFocus": "Engage with English 12A theme-specific narrative paper prompt"
         }
       ],
       "type": "unit-themed-draft",
@@ -9104,7 +9116,8 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "Some students believe schools should invest more time in activities about renewable energy. Others prefer regular classroom lessons. Discuss both views and justify your opinion. Write at least 100 words."
+          "prompt": "Tourism creates jobs and income, but increased visitor numbers can put pressure on local communities and the environment. Evaluate the benefits and challenges of responsible tourism in Oman and give your opinion. Write at least 100 words.",
+          "unitWritingFocus": "Engage with English 12A theme-specific evaluative paper prompt"
         },
         {
           "key": "wrt2",
@@ -9114,7 +9127,8 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "Write a story beginning: 'When Nasser arrived at a secondary school in Sohar, the plan had already changed.' Explain what happened, how the characters responded and what they learned. Write at least 100 words."
+          "prompt": "Write a story beginning: 'The hotel guest approached reception just as the tour guide was leaving.' Describe the problem, how the staff responded and how the visit ended. Write at least 100 words.",
+          "unitWritingFocus": "Engage with English 12A theme-specific narrative paper prompt"
         }
       ],
       "type": "unit-themed-draft",
@@ -9771,7 +9785,8 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "Some students believe schools should invest more time in activities about local heritage. Others prefer regular classroom lessons. Discuss both views and justify your opinion. Write at least 100 words."
+          "prompt": "Some people think travelling by private car is more convenient, while others prefer buses or shared transport. Evaluate the costs, safety and environmental effects of these options and give your recommendation. Write at least 100 words.",
+          "unitWritingFocus": "Engage with English 12A theme-specific evaluative paper prompt"
         },
         {
           "key": "wrt2",
@@ -9781,7 +9796,8 @@
           "questions": [],
           "script": false,
           "wordCount": 0,
-          "prompt": "Write a story beginning: 'When Mariam arrived at an old neighbourhood in Bahla, the plan had already changed.' Explain what happened, how the characters responded and what they learned. Write at least 100 words."
+          "prompt": "Write a story beginning: 'We had been travelling for two hours when the bus stopped unexpectedly.' Explain what caused the delay, how the passengers reacted and how the journey continued. Write at least 100 words.",
+          "unitWritingFocus": "Engage with English 12A theme-specific narrative paper prompt"
         }
       ],
       "type": "unit-themed-draft",
@@ -13711,5 +13727,18 @@
         "wrt2": "The Coastal Science Station"
       }
     }
-  ]
+  ],
+  "educationalAudit20261114": {
+    "status": "partial_correction_only__NOT_unit_approved",
+    "changedWritingParts": 16,
+    "tracks": [
+      "11-elective",
+      "12-core"
+    ],
+    "remaining": "Listening and reading source passages in A-D remain mismatched and must be rewritten and recorded before unit-specific certification",
+    "curriculumReferences": [
+      "English Insights 2 Units 1-4 Fame/The Mind/In the Past/Careers",
+      "Engage with English 12A Themes 1-4 Retail Therapy/Starting University/Tourism and Hospitality/Travel and Transport"
+    ]
+  }
 }
