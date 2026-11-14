@@ -1,0 +1,125 @@
+{
+  "id": "g12-elective-unit4-lst1-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 4,
+    "title": "Higher Education"
+  },
+  "skill": "Listening 1",
+  "status": "original_script_and_questions_created__teacher_review_and_natural_audio_pending",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "passage": "Huda: I have to choose a course after school, but cannot choose between university and training.\nAdviser: What subjects do you enjoy,?\nHuda: I enjoy science and solving practical problems. I also repair school equipment.\nAdviser: Have you compared an engineering degree with a shorter technical training programme?\nHuda: Yes. The degree takes four years, while the training programme lasts two years with an internship.\nAdviser: Do both options explain their entry requirements clearly? Applicants should check qualifications.\nHuda: The university requires mathematics and English results. The training centre also asks for a practical assessment.\nAdviser: What about tuition fees? Include transport and accommodation costs.\nHuda: I have calculated those costs. My family can help, but I hope to apply for a scholarship.\nAdviser: Have you checked the scholarship deadline? Some funding schemes close before university applications do.\nHuda: The online application closes on 15 February, and I must upload my certificates and personal statement.\nAdviser: Your personal statement should describe actual achievements, not invented awards or exaggerated claims about your skills.\nHuda: I will discuss our school science project and explain what I learned from working with the team.\nAdviser: Good. Can your teachers provide references, or will the application require an interview with an admissions officer?\nHuda: Two teachers have agreed to write references. The university might invite shortlisted applicants for an interview.\nAdviser: How will you decide between the courses if both institutions offer you a place?\nHuda: I will compare modules, internships, costs and future opportunities instead of choosing only by reputation.\nAdviser: Would you be disappointed if the scholarship application failed? It is sensible to plan other possibilities.\nHuda: I would look for a grant or begin at the training centre, then consider further study later.\nAdviser: That is a realistic backup plan. Do you know whether the training qualification can lead to further education?\nHuda: Its handbook says graduates may progress to advanced courses after meeting specified entry conditions.\nAdviser: Have you visited either campus? Photographs do not always show what laboratories and classrooms are like.\nHuda: I attended the technical college's open day and spoke to students about their workshop experience.\nAdviser: What did they say? It is useful to hear both positive opinions and concerns.\nHuda: They liked the practical classes but warned that the internship timetable could be demanding.\nAdviser: When will you make your final decision? You should leave time to complete every document properly.\nHuda: I will review the options with my family this weekend and submit the scholarship form before the deadline.\nAdviser: That sounds thoughtful. Whatever you choose, keep learning and check information directly with the institution.",
+  "script": "Huda: I have to choose a course after school, but cannot choose between university and training.\nAdviser: What subjects do you enjoy,?\nHuda: I enjoy science and solving practical problems. I also repair school equipment.\nAdviser: Have you compared an engineering degree with a shorter technical training programme?\nHuda: Yes. The degree takes four years, while the training programme lasts two years with an internship.\nAdviser: Do both options explain their entry requirements clearly? Applicants should check qualifications.\nHuda: The university requires mathematics and English results. The training centre also asks for a practical assessment.\nAdviser: What about tuition fees? Include transport and accommodation costs.\nHuda: I have calculated those costs. My family can help, but I hope to apply for a scholarship.\nAdviser: Have you checked the scholarship deadline? Some funding schemes close before university applications do.\nHuda: The online application closes on 15 February, and I must upload my certificates and personal statement.\nAdviser: Your personal statement should describe actual achievements, not invented awards or exaggerated claims about your skills.\nHuda: I will discuss our school science project and explain what I learned from working with the team.\nAdviser: Good. Can your teachers provide references, or will the application require an interview with an admissions officer?\nHuda: Two teachers have agreed to write references. The university might invite shortlisted applicants for an interview.\nAdviser: How will you decide between the courses if both institutions offer you a place?\nHuda: I will compare modules, internships, costs and future opportunities instead of choosing only by reputation.\nAdviser: Would you be disappointed if the scholarship application failed? It is sensible to plan other possibilities.\nHuda: I would look for a grant or begin at the training centre, then consider further study later.\nAdviser: That is a realistic backup plan. Do you know whether the training qualification can lead to further education?\nHuda: Its handbook says graduates may progress to advanced courses after meeting specified entry conditions.\nAdviser: Have you visited either campus? Photographs do not always show what laboratories and classrooms are like.\nHuda: I attended the technical college's open day and spoke to students about their workshop experience.\nAdviser: What did they say? It is useful to hear both positive opinions and concerns.\nHuda: They liked the practical classes but warned that the internship timetable could be demanding.\nAdviser: When will you make your final decision? You should leave time to complete every document properly.\nHuda: I will review the options with my family this weekend and submit the scholarship form before the deadline.\nAdviser: That sounds thoughtful. Whatever you choose, keep learning and check information directly with the institution.",
+  "wordCount": 440,
+  "speakerTurns": 28,
+  "speakers": [
+    "Huda",
+    "Adviser"
+  ],
+  "audioStatus": "not_generated_until_content_review",
+  "audioFile": null,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "Which subject does Huda enjoy?",
+      "options": [
+        "Science",
+        "History only",
+        "Music only"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "How long does the technical training programme last?",
+      "options": [
+        "Four years",
+        "Two years",
+        "Six months"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "Which additional requirement does the training centre have?",
+      "options": [
+        "An overseas interview",
+        "A sports competition",
+        "A practical assessment"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "When does the scholarship application close?",
+      "options": [
+        "15 February",
+        "15 January",
+        "1 April"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What should Huda's personal statement contain?",
+      "options": [
+        "Invented prizes",
+        "Genuine experiences and learning",
+        "Only course prices"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "What will Huda compare before accepting a course?",
+      "options": [
+        "Campus colours alone",
+        "Only the institution's fame",
+        "Modules, internships and costs"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "tf",
+      "stem": "The university course and training programme have the same duration.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "Two teachers have agreed to provide references.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "Huda already visited the technical college on an open day.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "The adviser tells Huda to invent achievements to impress the university.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    }
+  ],
+  "officialTaskShapeSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / lst1",
+  "notes": "Fictional university and vocational route counselling, with 28 dialogue turns."
+}
