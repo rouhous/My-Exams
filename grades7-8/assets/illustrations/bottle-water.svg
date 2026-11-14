@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384" role="img" aria-labelledby="waterbottle-title">
+<title id="waterbottle-title">Reusable water bottle</title>
+<rect width="384" height="384" fill="#ffffff"/>
+<g stroke="#234f67" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+<rect x="152" y="36" width="80" height="40" rx="11" fill="#e2eff4"/>
+<path d="M160 76 L160 102 Q160 117 145 131 Q121 149 121 173 L121 314 Q121 337 143 337 L241 337 Q263 337 263 314 L263 173 Q263 149 239 131 Q224 117 224 102 L224 76 Z" fill="#d9f2f9"/>
+<path d="M127 208 Q165 220 192 208 T257 208 L257 310 Q257 331 240 331 L144 331 Q127 331 127 310 Z" fill="#78cce1" stroke="none"/>
+<path d="M139 171 L245 171" stroke="#5bacc8"/>
+<path d="M139 252 L245 252" stroke="#5bacc8"/>
+<path d="M160 88 L224 88" stroke="#234f67"/>
+</g>
+</svg>
