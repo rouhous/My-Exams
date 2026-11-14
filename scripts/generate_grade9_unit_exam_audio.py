@@ -105,7 +105,7 @@ async def main():
                     print('REBUILD stale or absent MP3:',t['id'])
                     with tempfile.TemporaryDirectory(dir=d) as taskdir:
                         await build(m['model'],t,pathlib.Path(taskdir))
-                manifest[t['id']]={'sourceHash':fingerprint,'mp3':mp3,
+                manifest[t['id']]={'sourceHash':fingerprint,'sourceTranscriptSha256':hashlib.sha256(t['transcript'].encode('utf-8')).hexdigest(),'mp3':mp3,
                     'sourceModel':m['model'],'seconds':round(MP3(target).info.length,2),
                     'bytes':target.stat().st_size,'playedTwice':True}
     (OUT/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
