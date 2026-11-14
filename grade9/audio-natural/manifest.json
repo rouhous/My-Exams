@@ -1,0 +1,50 @@
+{
+  "g9-B-L1": {
+    "sourceHash": "d896d532c09201e05f952d078ab22c406add2bd0ffe30682b60a76a3b3af03b1",
+    "mp3": "g9-b-listening-1.mp3",
+    "sourceModel": "B",
+    "seconds": 249.5,
+    "bytes": 2994303,
+    "playedTwice": true
+  },
+  "g9-B-L2": {
+    "sourceHash": "93b52d4d53cbd01b938780ccff60e6a960616826a6c92128e989d6312860352e",
+    "mp3": "g9-b-listening-2.mp3",
+    "sourceModel": "B",
+    "seconds": 213.63,
+    "bytes": 2563910,
+    "playedTwice": true
+  },
+  "g9-C-L1": {
+    "sourceHash": "fa086bb2a2e98662dc1c38807cf35b63857e4923cbe94cf090838c77b6f0dcc9",
+    "mp3": "g9-c-listening-1.mp3",
+    "sourceModel": "C",
+    "seconds": 236.46,
+    "bytes": 2837882,
+    "playedTwice": true
+  },
+  "g9-C-L2": {
+    "sourceHash": "462f7edb1ee7a8eee29f592e6b0f91d856bdb435562b0fa01fac8eb814393e6a",
+    "mp3": "g9-c-listening-2.mp3",
+    "sourceModel": "C",
+    "seconds": 222.93,
+    "bytes": 2675505,
+    "playedTwice": true
+  },
+  "g9-D-L1": {
+    "sourceHash": "dd34719826e08069cbfbb1027af2909419158e4b87d70ddca7f79b54c6516d19",
+    "mp3": "g9-g-listening-1.mp3",
+    "sourceModel": "G",
+    "seconds": 242.83,
+    "bytes": 2914368,
+    "playedTwice": true
+  },
+  "g9-D-L2": {
+    "sourceHash": "9284b4a15211ffdb51f4a88edee29519ab48f4758363f3a58942fdb65bf83a08",
+    "mp3": "g9-g-listening-2.mp3",
+    "sourceModel": "G",
+    "seconds": 220.92,
+    "bytes": 2651368,
+    "playedTwice": true
+  }
+}
