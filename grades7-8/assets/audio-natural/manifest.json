@@ -162,9 +162,7 @@
     "voices": [
       "en-GB-SoniaNeural",
       "en-GB-RyanNeural"
-    ],
-    "imageOnlyCorrection": "water bottle option now points to bottle-water.svg rather than a glass; spoken transcript and answers unchanged",
-    "originalRecordedScriptSha256": "99ed68913b178aaae43e1230707424d044f514fd45969964bf2364d2a2b7a923"
+    ]
   },
   "g8-d-listening2": {
     "mp3": "g8-d-listening2.mp3",
