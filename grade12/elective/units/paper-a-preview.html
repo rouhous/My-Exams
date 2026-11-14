@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#19503d">
+<title>Grade 12 Elective · Unit 1 · The Arts · Full Teacher-Review Paper</title>
+<style>
+:root{--green:#1b523e;--gold:#a98740;--ink:#18362c;--pale:#f3f7f4;--line:#d9e3da}
+*{box-sizing:border-box}body{margin:0;background:var(--pale);color:var(--ink);font:16px/1.65 system-ui,Arial,sans-serif}
+header{background:linear-gradient(120deg,#164531,#277653);color:white;padding:20px 18px}header a{color:#ffe9a3}
+h1{font-size:clamp(23px,4vw,32px);margin:5px 0}main{max-width:940px;margin:auto;padding:14px 12px 60px}
+.card,.part{background:white;border:1px solid var(--line);border-radius:14px;padding:17px;margin:15px 0}
+.alert{background:#fff9ea;border-left:5px solid var(--gold)}.row{display:flex;flex-wrap:wrap;gap:13px;align-items:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px}
+label{display:block;font-weight:600}label.option{font-weight:400;margin:3px 0;padding:4px 8px}
+button,select,input[type=text],textarea{font:inherit}select,input[type=text],textarea{width:100%;border:1px solid #b2c9b6;border-radius:9px;padding:10px}
+button{background:var(--green);color:white;border:0;border-radius:10px;padding:10px 16px;font-weight:700;cursor:pointer}
+button:disabled{opacity:.5;cursor:default}button.secondary{background:#e9f1e7;color:var(--green)}
+.part h2{margin:0 0 7px;border-bottom:2px solid #d7bc7c;padding-bottom:7px}
+.meta,small{color:#586c60;font-size:14px}.script,.passage{white-space:pre-wrap;background:#f6faf6;border-radius:10px;border:1px solid #e1eae2;padding:12px;margin:10px 0;line-height:1.85}
+.teacher summary{cursor:pointer;color:var(--green)}.question{padding:12px 0;border-top:1px solid #e1e7e2}
+.question strong{display:block}.question input[type=text]{margin-top:8px}
+textarea{min-height:200px;resize:vertical;margin-top:10px}
+table{border-collapse:collapse;width:100%;margin:10px 0}th,td{border:1px solid #d5dfd7;padding:8px;text-align:left}
+#paper{display:none}#paper.active{display:block}#clock{font-weight:700;font-variant-numeric:tabular-nums}
+#results{display:none}#results h2{margin-top:0}
+@media print{header,.alert,.controls,.actions,.teacher,#results{display:none!important}body{background:white}.card,.part{border:0;margin:5px 0;padding:5px;break-inside:avoid}.passage{background:white}}
+</style></head><body>
+<header><a href="./index.html">← Unit 1 Listening Practice</a>
+<h1>Grade 12 Elective · The Arts · Paper A (Draft)</h1>
+<p>Semester 1 · 70 marks · 180-minute full practice · independent skills without a timer</p></header>
+<main><section class="card alert">
+<strong>Unapproved teacher-review practice, not an official Ministry examination.</strong>
+The six original activities follow the stored question formats and word-length targets for Grade 12 elective. Individual textbook page correspondence, fact checking, answer equivalence, Writing rubric and natural MP3 are still awaiting review. A teacher must read both listening scripts twice; this page does not claim audio playback.</section>
+<section class="card controls">
+<div class="grid"><label>Activity mode<select id="mode"><option value="full">Complete Unit 1 paper · 180-minute timer</option><option value="skill">One independent skill · no timer</option></select></label>
+<label id="skillWrap" hidden>Choose skill<select id="skill">
+<option value="lst1">Listening 1 · Dialogue</option><option value="lst2">Listening 2 · Notes and short answers</option>
+<option value="rdg1">Reading 1 · Interactive emails</option><option value="rdg2">Reading 2 · Narrative</option>
+<option value="wrt1">Writing 1 · Evaluate</option><option value="wrt2">Writing 2 · Describe chart</option>
+</select></label></div>
+<p class="meta" id="loadState">Loading six original activities…</p>
+<button id="start" disabled>Start activity</button>
+</section>
+<div id="paper"><section class="card">
+<div class="row" style="justify-content:space-between"><div><h2 id="paperTitle">Paper A</h2><p class="meta" id="paperMarks"></p></div><div id="clock" aria-live="polite"></div></div></section>
+<div id="sections"></div>
+<section class="card actions"><div class="row"><button id="finish">Finish and review</button><button id="print" class="secondary" type="button">Print</button><button id="restart" class="secondary" type="button">New activity</button></div></section>
+<section class="card" id="results" aria-live="polite"></section>
+</div></main>
+<script>
+(function(){
+'use strict';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+const order=['lst1','lst2','rdg1','rdg2','wrt1','wrt2'];
+const name={lst1:'Listening 1',lst2:'Listening 2',rdg1:'Reading 1',rdg2:'Reading 2',wrt1:'Writing 1',wrt2:'Writing 2'};
+const files=['unit1-listening1-original-draft.json','unit1-listening2-original-draft.json','unit1-reading1-original-draft.json','unit1-reading2-original-draft.json','unit1-writing-original-draft.json'];
+let tasks={},questions=[],onPaper=false,submitted=false,clockId=null,clockLength=0,clockStarted=0,selected=[];
+$('mode').addEventListener('change',()=>{$('skillWrap').hidden=$('mode').value!=='skill'});
+Promise.all(files.map(async file=>{const r=await fetch(file);if(!r.ok)throw Error(file+' unavailable');return r.json()})).then(ds=>{
+ const [l1,l2,r1,r2,writing]=ds;
+ tasks={lst1:l1,lst2:l2,rdg1:r1,rdg2:r2,wrt1:writing.writing1,wrt2:writing.writing2};
+ const expected={lst1:[10,10],lst2:[10,10],rdg1:[12,12],rdg2:[13,13],wrt1:[0,15],wrt2:[0,10]};
+ order.forEach(key=>{
+  const d=tasks[key],exp=expected[key];
+  if(Number(d.marks)!==exp[1]||((d.questions||[]).length!==exp[0]))throw Error('Incorrect part '+key);
+  if(d.passage&&d.wordCount!==d.passage.trim().split(/\s+/).length)throw Error('Incorrect word count '+key);
+ });
+ $('loadState').textContent='All six practice sections loaded: 20 Listening + 25 Reading + 25 Writing = 70 marks. Listening MP3 is not available.';
+ $('start').disabled=false;
+}).catch(e=>{$('loadState').textContent='Source draft not ready: '+e.message});
+function chart(c){
+ let out='<table><caption>'+esc(c.title)+' · '+esc(c.unit)+'</caption><thead><tr><th>Activity</th>'+c.series.map(s=>'<th>'+esc(s.year)+'</th>').join('')+'</tr></thead><tbody>';
+ c.categories.forEach((name,i)=>{out+='<tr><th>'+esc(name)+'</th>'+c.series.map(s=>'<td>'+esc(s.values[i])+'</td>').join('')+'</tr>'});
+ return out+'</tbody></table>';
+}
+function render(key){
+ const d=tasks[key],isListening=key.startsWith('lst'),isWriting=key.startsWith('wrt');
+ let h='<section class="part"><h2>'+esc(name[key])+' · '+d.marks+' marks</h2>';
+ if(isListening){
+  h+='<p class="meta">Teacher read-aloud. Listen twice and answer; recording not yet available.</p>'+
+  '<details class="teacher"><summary>Teacher-only script (open for supervised reading)</summary><div class="script">'+esc(d.script)+'</div></details>';
+ } else if(d.passage)h+='<div class="passage">'+esc(d.passage)+'</div>';
+ if(isWriting){
+  h+='<p><strong>'+esc(d.prompt)+'</strong></p>';
+  if(d.chart)h+=chart(d.chart);
+  h+='<label>Written response<textarea name="'+key+'" placeholder="Write at least '+d.minWords+' words."></textarea></label>';
+ }else d.questions.forEach((q,i)=>{
+  const id=questions.length;questions.push({key,q,index:id});
+  h+='<div class="question"><strong>'+(i+1)+'. '+esc(q.stem)+'</strong>';
+  if(Array.isArray(q.options))
+    h+=q.options.map((option,j)=>'<label class="option"><input type="radio" name="answer'+id+'" value="'+j+'"> '+esc(option)+'</label>').join('');
+  else h+='<input type="text" name="answer'+id+'" placeholder="'+(q.maxWords?'Maximum '+q.maxWords+' words':'Short answer')+'" maxlength="150">';
+  h+='</div>';
+ });
+ return h+'</section>';
+}
+function begin(){
+ if(!tasks.lst1||onPaper)return;
+ selected=$('mode').value==='full'?order.slice():[$('skill').value];
+ questions=[];submitted=false;
+ $('sections').innerHTML=selected.map(render).join('');
+ const total=selected.reduce((n,k)=>n+tasks[k].marks,0);
+ $('paperTitle').textContent=selected.length===6?'Unit 1 complete paper A':name[selected[0]]+' · independent practice';
+ $('paperMarks').textContent=total+' marks in this activity · not certified · teacher script required for Listening';
+ $('paper').className='active';$('results').style.display='none';$('finish').disabled=false;
+ $('start').disabled=true; $('mode').disabled=true;$('skill').disabled=true;onPaper=true;
+ clockLength=$('mode').value==='full'?180*60:0;clockStarted=Date.now();
+ clearInterval(clockId);
+ if(clockLength){tick();clockId=setInterval(tick,1000)}else $('clock').textContent='Untimed';
+ $('paper').scrollIntoView({behavior:'smooth'});
+}
+function tick(){
+ if(submitted)return;
+ const left=Math.max(0,clockLength-Math.floor((Date.now()-clockStarted)/1000));
+ $('clock').textContent='Time left '+Math.floor(left/60)+':'+String(left%60).padStart(2,'0');
+ if(!left){clearInterval(clockId);finish(true)}
+}
+function finish(expired){
+ if(submitted)return;submitted=true;clearInterval(clockId);$('finish').disabled=true;
+ let scored=0,correct=0,manual=0,blank=0,review=[];
+ questions.forEach(({key,q,index})=>{
+  const picked=document.querySelector('input[name="answer'+index+'"]:checked');
+  const input=picked||document.querySelector('input[type=text][name="answer'+index+'"]');
+  const answer=input?(input.value||'').trim():'';
+  if(!answer)blank++;
+  if(Array.isArray(q.options)&&Number.isInteger(q.answer)){
+   scored++;if(answer&&Number(answer)===q.answer)correct++;
+   else review.push(name[key]+' item '+(index+1)+': '+q.options[q.answer]);
+  }else{manual++;review.push(name[key]+' item '+(index+1)+': suggested '+String(q.answer||'teacher review'))}
+ });
+ const writing=selected.filter(k=>k.startsWith('wrt')).length;
+ const result=$('results');result.style.display='block';
+ result.innerHTML='<h2>Practice review'+(expired?' — time expired':'')+'</h2>'+
+ '<p><strong>'+correct+' / '+scored+'</strong> automatically scored multiple-choice / True-False / matching questions. '+
+ manual+' notes or short answers require a teacher to check equivalence, and '+writing+' writing task(s) require the official rating scale. '+
+ blank+' unanswered question(s).</p>'+
+ '<p>This is NOT a final score out of 70. No unverified Writing AI connection or natural audio playback is claimed.</p>'+
+ '<details><summary>Reference answers for missed choices and manual responses</summary><ol>'+review.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol></details>';
+ result.scrollIntoView({behavior:'smooth'});
+}
+$('start').addEventListener('click',begin);
+$('finish').addEventListener('click',()=>finish(false));
+$('print').addEventListener('click',()=>window.print());
+$('restart').addEventListener('click',()=>{
+ clearInterval(clockId);onPaper=false;submitted=false;
+ $('paper').className='';$('start').disabled=false;$('mode').disabled=false;$('skill').disabled=false;
+ window.scrollTo({top:0,behavior:'smooth'});
+});
+})();
+</script></body></html>
