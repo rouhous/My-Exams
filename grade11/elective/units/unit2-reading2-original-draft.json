@@ -1,0 +1,148 @@
+{
+  "id": "g11-elective-unit2-rdg2-original",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "The Mind"
+  },
+  "skill": "Reading 2",
+  "genre": "informative six-paragraph text",
+  "status": "original_unit_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "passage": "Paragraph A\nHuman memory does not work like a storage box that can be filled without effort. People notice information, connect it with earlier knowledge and retrieve it later. Attention plays a part in this process: when a student moves constantly between messages and homework, concentrating on either task can become difficult. A useful first step is to reduce distractions during work that requires careful thinking.\n\nParagraph B\nActive recall is a common revision strategy. A learner closes the textbook, tries to answer a question and then checks the explanation. This process reveals what has been understood and what is still uncertain. Simply seeing a familiar paragraph again can create an impression of confidence without proving that the knowledge is available from memory. Short questions offer students a practical way to test themselves.\n\nParagraph C\nSpaced revision gives learners repeated opportunities to revisit material over time. A pupil might review important ideas after a lesson, several days later and again before an assessment. The aim is not to memorise every sentence in one evening. Shorter sessions leave space for sleep, exercise and family responsibilities. A revision calendar can make these intervals easier to manage. Pupils can adjust the calendar when school projects or family events change their plans.\n\nParagraph D\nDiagrams and mind maps can make relationships between ideas visible. The main concept is placed near the centre, and related details are organised around it. Such pictures work particularly well when a topic contains clear categories or sequences. They become less helpful when learners spend more time decorating the page than explaining connections in their own words. Simple labels are often better than complicated drawings.\n\nParagraph E\nPeople differ in the circumstances that help them concentrate. One student may prefer a quiet room, while another finds discussion with a partner useful after independent revision. Teachers can encourage reflection instead of insisting on one routine. If a learner experiences continuing distress, professional advice and support from trusted adults remain important. A classroom strategy should never be presented as medical treatment.\n\nParagraph F\nStudy habits improve when learners review evidence of their own progress. A brief reflection log can identify difficult topics and record which method was tried. Over several weeks, a student may discover patterns that guide future choices. The aim is thoughtful development, not comparison with an unrealistic picture of perfection shared online. Feedback from teachers and classmates can provide another useful perspective.",
+  "wordCount": 403,
+  "paragraphs": 6,
+  "headings": [
+    "How attention affects learning",
+    "Testing memory without the textbook",
+    "Returning to ideas over time",
+    "Using a picture to organise ideas",
+    "Different conditions for concentration",
+    "The history of the telescope",
+    "A traditional shopping festival"
+  ],
+  "marks": 10,
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "The word retrieve in paragraph A is closest to ____.",
+      "options": [
+        "recall",
+        "ignore",
+        "decorate"
+      ],
+      "answer": 0,
+      "kind": "meaning"
+    },
+    {
+      "type": "mc",
+      "stem": "The word intervals in paragraph C means ____.",
+      "options": [
+        "regular gaps in time",
+        "marks on a test",
+        "photographs"
+      ],
+      "answer": 0,
+      "kind": "meaning"
+    },
+    {
+      "type": "mc",
+      "stem": "Why may repeated reading create a false feeling of confidence?",
+      "options": [
+        "It requires no books",
+        "Familiarity is not the same as recall",
+        "It always improves exercise"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "What can a revision calendar help organise?",
+      "options": [
+        "Spaced review sessions",
+        "The size of a school building",
+        "Medical appointments for strangers"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "When are mind maps especially useful?",
+      "options": [
+        "When topics have clear categories",
+        "Only in sports",
+        "When a student refuses to read"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Why is a reflection log useful?",
+      "options": [
+        "It removes the need for teachers",
+        "It helps identify what worked",
+        "It guarantees perfect results"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "match",
+      "stem": "Match Paragraph A with a suitable heading.",
+      "options": [
+        "How attention affects learning",
+        "Testing memory without the textbook",
+        "Returning to ideas over time",
+        "Using a picture to organise ideas",
+        "Different conditions for concentration",
+        "The history of the telescope",
+        "A traditional shopping festival"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "stem": "Match Paragraph B with a suitable heading.",
+      "options": [
+        "How attention affects learning",
+        "Testing memory without the textbook",
+        "Returning to ideas over time",
+        "Using a picture to organise ideas",
+        "Different conditions for concentration",
+        "The history of the telescope",
+        "A traditional shopping festival"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "match",
+      "stem": "Match Paragraph C with a suitable heading.",
+      "options": [
+        "How attention affects learning",
+        "Testing memory without the textbook",
+        "Returning to ideas over time",
+        "Using a picture to organise ideas",
+        "Different conditions for concentration",
+        "The history of the telescope",
+        "A traditional shopping festival"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "match",
+      "stem": "Match Paragraph D with a suitable heading.",
+      "options": [
+        "How attention affects learning",
+        "Testing memory without the textbook",
+        "Returning to ideas over time",
+        "Using a picture to organise ideas",
+        "Different conditions for concentration",
+        "The history of the telescope",
+        "A traditional shopping festival"
+      ],
+      "answer": 3
+    }
+  ]
+}
