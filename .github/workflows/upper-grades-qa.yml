@@ -67,6 +67,25 @@ jobs:
           assert [q['type'] for q in second['questions']]==['note']*5+['short']*5
           assert all(len(q['answer'].split())<=q['maxWords'] for q in second['questions'])
           print('Grade 12 elective Listening 2: word count, answer limits, five notes and five short answers verified.')
+          r1=json.load(open('grade12/elective/units/unit1-reading1-original-draft.json'))
+          r2=json.load(open('grade12/elective/units/unit1-reading2-original-draft.json'))
+          wr=json.load(open('grade12/elective/units/unit1-writing-original-draft.json'))
+          for d in (r1,r2):
+              assert d['grade']==12 and d['unit']==unit['unit']
+              realWords=len(d['passage'].split())
+              assert 450<=realWords<=500 and realWords==d['wordCount'],(d['skill'],realWords)
+          assert r1['marks']==12 and [q['type'] for q in r1['questions']]==['short']*7+['gap']*5
+          assert all(len(q['answer'].split())<=q['maxWords'] for q in r1['questions'])
+          assert r2['marks']==13 and [q['type'] for q in r2['questions']]==['mc']*8+['match']*5
+          assert sum(q.get('kind')=='meaning' for q in r2['questions'])==3
+          assert len(r2['headings'])==8 and len(r2['passage'].split('Paragraph '))==6
+          assert all(0<=q['answer']<len(q['options']) for q in r2['questions'])
+          assert wr['writing1']['marks']==15 and wr['writing2']['marks']==10
+          assert wr['writing1']['minWords']==150 and wr['writing2']['minWords']==150
+          chart=wr['writing2']['chart']
+          assert sum(chart['series'][0]['values'])==310 and sum(chart['series'][1]['values'])==480
+          print('Grade 12 elective The Arts: 20 listening, 25 reading and 25 writing marks match the stored exam shape.')
+
           PY
       - name: Test mobile browser view, complete random exams and independent untimed skills
         run: |
