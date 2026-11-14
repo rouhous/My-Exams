@@ -1,0 +1,87 @@
+{
+  "id": "g11-core-unit2-lst2-original",
+  "grade": 11,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "Those Teenage Things"
+  },
+  "skill": "Listening 2",
+  "genre": "single-speaker informative two-part narrative",
+  "marks": 8,
+  "status": "original_official_shape_teacher_review_not_approved",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "script": "Part One\n\nMy name is Reem, and I am going to describe a change our class made to the way we manage revision and free time. Last year, several pupils thought that success meant studying every evening without a break. Some of us stayed awake late, checking our phones between exercises and feeling worried when classmates shared photographs of completed homework. Our teacher asked us to keep a simple record of our activities for one week. The results surprised us. Many students spent more time switching between tasks than concentrating on their work.\n\nWe invited a school counsellor to discuss the findings. She suggested short periods of focused study followed by regular breaks, but she did not recommend exactly the same timetable for everyone. She explained that teenagers need sleep, exercise and supportive friendships as well as time for lessons. Our class decided to design personal weekly plans and review them after a fortnight. My plan included a quiet hour for revision after dinner and an earlier bedtime. I also agreed to leave my phone outside the room when I had difficult reading to finish.\n\nPart Two\n\nDuring the first week, I forgot my plan twice and worried that the experiment had failed. My friend Huda reminded me that making a mistake was not a reason to give up. We discussed the difficulties without criticising each other. By the second week, I found it easier to complete homework before meeting friends. I still had busy days, but I could explain what I needed instead of pretending that everything was fine.\n\nAt our final meeting, pupils described different outcomes. Some preferred studying in the morning, while others worked better after school. A few students had spoken to their families about having a quieter place to revise. The counsellor encouraged us to request help from a trusted adult if stress continued. She also reminded us that social-media pictures rarely show the whole story of another person's life.\n\nWe collected anonymous comments and proposed a lunchtime study club for pupils who needed a calm space. The club will provide books and shared revision materials, but it will not replace individual support. I learned that independence includes asking sensible questions, respecting other people's choices and knowing when a plan needs to change.",
+  "passage": "Part One\n\nMy name is Reem, and I am going to describe a change our class made to the way we manage revision and free time. Last year, several pupils thought that success meant studying every evening without a break. Some of us stayed awake late, checking our phones between exercises and feeling worried when classmates shared photographs of completed homework. Our teacher asked us to keep a simple record of our activities for one week. The results surprised us. Many students spent more time switching between tasks than concentrating on their work.\n\nWe invited a school counsellor to discuss the findings. She suggested short periods of focused study followed by regular breaks, but she did not recommend exactly the same timetable for everyone. She explained that teenagers need sleep, exercise and supportive friendships as well as time for lessons. Our class decided to design personal weekly plans and review them after a fortnight. My plan included a quiet hour for revision after dinner and an earlier bedtime. I also agreed to leave my phone outside the room when I had difficult reading to finish.\n\nPart Two\n\nDuring the first week, I forgot my plan twice and worried that the experiment had failed. My friend Huda reminded me that making a mistake was not a reason to give up. We discussed the difficulties without criticising each other. By the second week, I found it easier to complete homework before meeting friends. I still had busy days, but I could explain what I needed instead of pretending that everything was fine.\n\nAt our final meeting, pupils described different outcomes. Some preferred studying in the morning, while others worked better after school. A few students had spoken to their families about having a quieter place to revise. The counsellor encouraged us to request help from a trusted adult if stress continued. She also reminded us that social-media pictures rarely show the whole story of another person's life.\n\nWe collected anonymous comments and proposed a lunchtime study club for pupils who needed a calm space. The club will provide books and shared revision materials, but it will not replace individual support. I learned that independence includes asking sensible questions, respecting other people's choices and knowing when a plan needs to change.",
+  "wordCount": 378,
+  "parts": 2,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "For how long did the class record its activities?",
+      "answer": "one week",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who was invited to discuss the findings?",
+      "answer": "a school counsellor",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Where did Reem put her phone during difficult reading?",
+      "answer": "outside the room",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What type of comments did the pupils collect?",
+      "answer": "anonymous comments",
+      "maxWords": 4
+    },
+    {
+      "type": "mc",
+      "stem": "Why did the class begin the project?",
+      "options": [
+        "To manage time and revision better",
+        "To prepare for a shopping competition",
+        "To organise a school trip"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What helped Reem after she forgot her plan?",
+      "options": [
+        "A penalty",
+        "Huda's encouragement",
+        "A new phone"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "What did the counsellor say about social media?",
+      "options": [
+        "Photographs show every part of life",
+        "Students must share every result",
+        "Pictures rarely show the whole story"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What new activity did the students propose?",
+      "options": [
+        "An evening concert",
+        "A lunchtime study club",
+        "A sports tournament"
+      ],
+      "answer": 1
+    }
+  ],
+  "audioStatus": "pending_source_sha_mp3"
+}
