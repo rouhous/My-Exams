@@ -1,0 +1,103 @@
+{
+  "id": "g12-core-unit1-lst1-new",
+  "grade": 12,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 1,
+    "title": "Retail Therapy"
+  },
+  "skill": "Listening 1",
+  "status": "original_theme_aligned_script_and_questions__audio_pending",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "bookReference": "Engage With English Coursebook 12A, Theme 1 Retail Therapy",
+  "curriculumLanguageTargets": [
+    "shopping and advertising language",
+    "comparing prices",
+    "past passive",
+    "responsible buying"
+  ],
+  "script": "Presenter: Our school is planning a responsible shopping fair. Where will the event take place next Saturday?\nNoura: It will be held in the old market courtyard beside the town library.\nPresenter: Why did the organisers choose a traditional souq instead of the new shopping centre?\nNoura: Students want visitors to compare prices, meet local sellers and think about unnecessary waste.\nPresenter: Will the stalls sell brand-new electronic products, or have the pupils prepared something different?\nNoura: We are selling repaired lamps, reusable bags and notebooks made from leftover paper.\nPresenter: Who repaired the lamps? Some visitors may worry that old electrical items are unsafe.\nNoura: Each lamp was checked by a trained technician before it was accepted for sale.\nPresenter: I heard your team invited younger pupils to help. What tasks can they safely perform?\nNoura: They can label prices and welcome visitors, but teachers will supervise all payments.\nPresenter: Is an entrance fee required? Families sometimes avoid events if admission is expensive.\nNoura: Entrance is free. We want everyone to learn something about responsible buying.\nPresenter: How will customers know whether a price has been reduced fairly or merely advertised attractively?\nNoura: We will display the original price beside the reduced price and explain any discount.\nPresenter: What should visitors do if they cannot understand the description of a product?\nNoura: They should ask the seller for details instead of paying for something uncertain.\nPresenter: Does every stall accept bank cards, or will some sellers use cash only?\nNoura: Most will accept cash, and a teacher will record each sale in a shared register.\nPresenter: Last year's posters showed an incorrect starting time. How did you prevent that mistake?\nNoura: The final notice was checked by two teachers before it appeared on the school website.\nPresenter: Some students think advertisements always tell the complete truth. How will the fair challenge that idea?\nNoura: A small display compares persuasive slogans with clear descriptions of real product features.\nPresenter: What will happen to useful items that remain unsold at the end of the afternoon?\nNoura: They will be donated to a local community group, with permission from their makers.\nPresenter: Will the volunteers keep the money raised, or is there a planned educational purpose?\nNoura: The proceeds will buy basic equipment for our school's practical design club.\nPresenter: How can a family help if they cannot buy anything during the fair?\nNoura: They can share repair skills, bring clean reusable materials or simply attend a workshop.\nPresenter: What do you hope pupils will remember when they see a tempting sale advertised online?\nNoura: Compare evidence and prices, keep receipts and ask whether the purchase is truly necessary.",
+  "passage": "Presenter: Our school is planning a responsible shopping fair. Where will the event take place next Saturday?\nNoura: It will be held in the old market courtyard beside the town library.\nPresenter: Why did the organisers choose a traditional souq instead of the new shopping centre?\nNoura: Students want visitors to compare prices, meet local sellers and think about unnecessary waste.\nPresenter: Will the stalls sell brand-new electronic products, or have the pupils prepared something different?\nNoura: We are selling repaired lamps, reusable bags and notebooks made from leftover paper.\nPresenter: Who repaired the lamps? Some visitors may worry that old electrical items are unsafe.\nNoura: Each lamp was checked by a trained technician before it was accepted for sale.\nPresenter: I heard your team invited younger pupils to help. What tasks can they safely perform?\nNoura: They can label prices and welcome visitors, but teachers will supervise all payments.\nPresenter: Is an entrance fee required? Families sometimes avoid events if admission is expensive.\nNoura: Entrance is free. We want everyone to learn something about responsible buying.\nPresenter: How will customers know whether a price has been reduced fairly or merely advertised attractively?\nNoura: We will display the original price beside the reduced price and explain any discount.\nPresenter: What should visitors do if they cannot understand the description of a product?\nNoura: They should ask the seller for details instead of paying for something uncertain.\nPresenter: Does every stall accept bank cards, or will some sellers use cash only?\nNoura: Most will accept cash, and a teacher will record each sale in a shared register.\nPresenter: Last year's posters showed an incorrect starting time. How did you prevent that mistake?\nNoura: The final notice was checked by two teachers before it appeared on the school website.\nPresenter: Some students think advertisements always tell the complete truth. How will the fair challenge that idea?\nNoura: A small display compares persuasive slogans with clear descriptions of real product features.\nPresenter: What will happen to useful items that remain unsold at the end of the afternoon?\nNoura: They will be donated to a local community group, with permission from their makers.\nPresenter: Will the volunteers keep the money raised, or is there a planned educational purpose?\nNoura: The proceeds will buy basic equipment for our school's practical design club.\nPresenter: How can a family help if they cannot buy anything during the fair?\nNoura: They can share repair skills, bring clean reusable materials or simply attend a workshop.\nPresenter: What do you hope pupils will remember when they see a tempting sale advertised online?\nNoura: Compare evidence and prices, keep receipts and ask whether the purchase is truly necessary.",
+  "wordCount": 447,
+  "speakerTurns": 30,
+  "speakers": [
+    "Presenter",
+    "Noura"
+  ],
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "Where will the fair be held?",
+      "options": [
+        "At the school sports hall",
+        "In the old market courtyard",
+        "In a shopping centre"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "Which goods will students sell?",
+      "options": [
+        "Repaired lamps and reusable bags",
+        "New mobile phones",
+        "Imported jewellery"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Who checked the lamps before the sale?",
+      "options": [
+        "Younger pupils",
+        "A bank manager",
+        "A trained technician"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "How much is admission to the event?",
+      "options": [
+        "One rial",
+        "Free",
+        "Two rials"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "How will a reduced price be explained?",
+      "options": [
+        "By hiding the original price",
+        "By using only a colourful slogan",
+        "By showing both original and reduced prices"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What will happen to useful unsold items?",
+      "options": [
+        "They will be donated",
+        "They will be destroyed",
+        "They will be sent to an airport"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What is the planned use of the proceeds?",
+      "options": [
+        "Paying celebrities",
+        "Buying school design-club equipment",
+        "Funding a football trip"
+      ],
+      "answer": 1
+    }
+  ],
+  "marks": 7,
+  "audioStatus": "pending_source_bound_mp3_generation"
+}
