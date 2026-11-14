@@ -1,0 +1,124 @@
+{
+  "id": "g11-elective-unit1-lst1-new",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 1,
+    "title": "Fame"
+  },
+  "skill": "Listening 1",
+  "status": "original_unit_aligned_script_and_questions_audio_generation_pending",
+  "curriculumThemeReference": "English Insights 2, Unit 1 Fame: Followers, Influencers, Exchanging Opinions and New Zealand on Film",
+  "curriculumUrl": "https://ict.moe.gov.om/flyers/PDF/2023/cls1_12_English_2023/files/basic-html/page57.html",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "script": "Host: Why are your fact-checking videos becoming popular? Why did you start?\nSalma: Pupils copied strangers' advice. I wanted to help them check claims before sharing anything.\nHost: Did you invite a celebrity or begin with research?\nSalma: We interviewed two teachers and used reliable educational websites. Accuracy mattered more than celebrities.\nHost: What was the title of your first video, and how long was it?\nSalma: We called it Check Before You Share. The finished video was only four minutes long.\nHost: That sounds simple. Why so many volunteers?\nSalma: Twelve students spent almost three weeks checking information, recording interviews and carefully editing the short film.\nHost: An online personality offered to promote your work. Why did the team hesitate before accepting this offer?\nSalma: The creator wanted to add an advertisement. We worried that viewers might mistake a sponsored product for advice.\nHost: Were you disappointed about losing the opportunity to reach thousands of followers in a single day?\nSalma: A little, but public trust is worth more than a sudden increase in the follower count.\nHost: Where did families see your film if it was not promoted through that commercial account?\nSalma: We uploaded it to the school website and screened it for parents.\nHost: One of the interviews disappeared from the final version. Did the students make a serious editing mistake?\nSalma: No. The pupil changed her mind about appearing, so we respected her decision and removed the recording.\nHost: Did the comments section contain any disagreement, or did everyone immediately agree with your message?\nSalma: Several viewers questioned one sentence. We checked their concern, corrected the wording and thanked them politely.\nHost: Your team now meets on Wednesday afternoons. Was the original meeting time unsuitable for some members?\nSalma: Yes, Friday mornings were difficult for students visiting relatives. Wednesday makes participation much easier.\nHost: Are you planning to invite another influencer next term, or has your group chosen something different?\nSalma: We are preparing a workshop about recognising sponsored posts and checking claims in online videos.\nHost: Some adults suggest that teenagers should stop following all famous creators. What do you think about that?\nSalma: Good creators sometimes share useful ideas. Viewers should ask sensible questions instead of trusting popularity automatically.\nHost: How will you measure whether your workshop helps students rather than simply attracts an audience?\nSalma: We will ask pupils to evaluate sample posts before and after the lessons, then explain their answers.\nHost: Finally, what message should listeners remember when someone on the internet suddenly becomes extremely famous?\nSalma: Fame tells us that people are watching; it does not prove that every claim is true.",
+  "passage": "Host: Why are your fact-checking videos becoming popular? Why did you start?\nSalma: Pupils copied strangers' advice. I wanted to help them check claims before sharing anything.\nHost: Did you invite a celebrity or begin with research?\nSalma: We interviewed two teachers and used reliable educational websites. Accuracy mattered more than celebrities.\nHost: What was the title of your first video, and how long was it?\nSalma: We called it Check Before You Share. The finished video was only four minutes long.\nHost: That sounds simple. Why so many volunteers?\nSalma: Twelve students spent almost three weeks checking information, recording interviews and carefully editing the short film.\nHost: An online personality offered to promote your work. Why did the team hesitate before accepting this offer?\nSalma: The creator wanted to add an advertisement. We worried that viewers might mistake a sponsored product for advice.\nHost: Were you disappointed about losing the opportunity to reach thousands of followers in a single day?\nSalma: A little, but public trust is worth more than a sudden increase in the follower count.\nHost: Where did families see your film if it was not promoted through that commercial account?\nSalma: We uploaded it to the school website and screened it for parents.\nHost: One of the interviews disappeared from the final version. Did the students make a serious editing mistake?\nSalma: No. The pupil changed her mind about appearing, so we respected her decision and removed the recording.\nHost: Did the comments section contain any disagreement, or did everyone immediately agree with your message?\nSalma: Several viewers questioned one sentence. We checked their concern, corrected the wording and thanked them politely.\nHost: Your team now meets on Wednesday afternoons. Was the original meeting time unsuitable for some members?\nSalma: Yes, Friday mornings were difficult for students visiting relatives. Wednesday makes participation much easier.\nHost: Are you planning to invite another influencer next term, or has your group chosen something different?\nSalma: We are preparing a workshop about recognising sponsored posts and checking claims in online videos.\nHost: Some adults suggest that teenagers should stop following all famous creators. What do you think about that?\nSalma: Good creators sometimes share useful ideas. Viewers should ask sensible questions instead of trusting popularity automatically.\nHost: How will you measure whether your workshop helps students rather than simply attracts an audience?\nSalma: We will ask pupils to evaluate sample posts before and after the lessons, then explain their answers.\nHost: Finally, what message should listeners remember when someone on the internet suddenly becomes extremely famous?\nSalma: Fame tells us that people are watching; it does not prove that every claim is true.",
+  "wordCount": 443,
+  "speakerTurns": 28,
+  "speakers": [
+    "Host",
+    "Salma"
+  ],
+  "marks": 10,
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "What was the main aim of Salma's first project?",
+      "options": [
+        "To attract celebrities",
+        "To teach people to check claims",
+        "To advertise school supplies"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "How long was the first completed video?",
+      "options": [
+        "Four minutes",
+        "Twelve minutes",
+        "Three weeks"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "How many student volunteers worked on the video?",
+      "options": [
+        "Four",
+        "Twenty",
+        "Twelve"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "Where did families watch the completed film?",
+      "options": [
+        "On the school website",
+        "Only on a celebrity's paid account",
+        "At an international cinema"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Why was an interview removed?",
+      "options": [
+        "The audio was accidentally lost",
+        "The participant withdrew consent",
+        "The interviewer forgot the question"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "What will Salma's next workshop teach?",
+      "options": [
+        "Wildlife photography",
+        "Sports commentary",
+        "Recognising sponsored posts"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "tf",
+      "stem": "The media team decided to reject a promotional offer involving an advertisement.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "The team stopped meeting because every member had left the project.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "The students corrected unclear wording after checking viewers' criticism.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "Salma believes popularity guarantees that information is correct.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    }
+  ],
+  "audioStatus": "pending_voice_generation__keep_teacher_read_aloud_until_mp3_verified"
+}
