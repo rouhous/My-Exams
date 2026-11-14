@@ -31,6 +31,24 @@ const {chromium}=require('playwright');
    if(!(await page.locator('#result').textContent()).includes('automatically scored option questions'))throw Error(track+' missing honest score message');
    await page.click('#reset');
  }
+
+ await page.goto('http://127.0.0.1:8765/grade12/elective/units/index.html',{waitUntil:'domcontentloaded'});
+ await page.waitForFunction(()=>document.querySelectorAll('#quiz .q').length===10,null,{timeout:30000});
+ if(await page.locator('#quiz .q').count()!==10)throw Error('The Arts listening draft question count is not ten');
+ const source=await page.evaluate(async()=>{
+    const r=await fetch('unit1-listening1-original-draft.json');
+    const d=await r.json();
+    d.questions.forEach((q,i)=>{
+      const input=document.querySelector('input[name="q'+i+'"][value="'+q.answer+'"]');
+      if(!input)throw Error('Missing correct option '+i);
+      input.checked=true;
+    });
+    return {words:d.wordCount,turns:d.speakerTurns,mc:d.questions.filter(q=>q.type==='mc').length,tf:d.questions.filter(q=>q.type==='tf').length};
+ });
+ if(source.words<400||source.words>450||source.turns<25||source.turns>30||source.mc!==6||source.tf!==4)throw Error('The Arts listening format mismatch '+JSON.stringify(source));
+ await page.click('#mark');
+ if(!(await page.locator('#feedback').textContent()).includes('10 / 10 correct'))throw Error('The Arts answer checking failed');
+
  if(errors.length)throw Error('Browser errors: '+errors.join('; '));
  await browser.close();console.log('PASS upper grade A-D, timed full, randomized complete, independent untimed skill and honest score review');
 })().catch(e=>{console.error(e);process.exit(1)});
