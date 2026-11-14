@@ -59,6 +59,14 @@ jobs:
               assert len(q['options'])==(3 if q['type']=='mc' else 2)
               assert isinstance(q['answer'],int) and 0<=q['answer']<len(q['options'])
           print('Grade 12 elective original The Arts listening script and answer shapes valid.')
+          second=json.load(open('grade12/elective/units/unit1-listening2-original-draft.json'))
+          assert second['grade']==12 and second['unit']==unit['unit']
+          assert second['audioStatus']=='not_generated_until_content_review'
+          count=len(second['script'].split())
+          assert 450<=count<=500 and count==second['wordCount'],count
+          assert [q['type'] for q in second['questions']]==['note']*5+['short']*5
+          assert all(len(q['answer'].split())<=q['maxWords'] for q in second['questions'])
+          print('Grade 12 elective Listening 2: word count, answer limits, five notes and five short answers verified.')
           PY
       - name: Test mobile browser view, complete random exams and independent untimed skills
         run: |
