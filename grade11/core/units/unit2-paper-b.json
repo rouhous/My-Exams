@@ -1,0 +1,375 @@
+{
+  "id": "g11-core-unit2-paper-b-original",
+  "grade": 11,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "Those Teenage Things"
+  },
+  "durationMinutes": 150,
+  "marks": 60,
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "status": "original_9_section_teacher_review_draft__audio_pending",
+  "reference": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json/tracks/11-core",
+  "listeningSources": [
+    "unit2-listening1-original-draft.json",
+    "unit2-listening2-original-draft.json"
+  ],
+  "sections": {
+    "grm": {
+      "title": "Grammar: Dialogue cloze",
+      "marks": 5,
+      "passage": "Mariam: I (1) _____ homework when the phone rang.\nHuda: Did you finish it?\nMariam: Yes, but I (2) _____ to sleep late.\nHuda: You (3) _____ take a break if tired.\nMariam: My brother (4) _____ me useful advice yesterday.\nHuda: If we organise our time, we (5) _____ feel confident.",
+      "wordCount": 52,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "Gap 1",
+          "options": [
+            "was doing",
+            "did"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 2",
+          "options": [
+            "went",
+            "go"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 3",
+          "options": [
+            "should",
+            "would to"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 4",
+          "options": [
+            "gave",
+            "give"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 5",
+          "options": [
+            "will",
+            "were"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "vcb": {
+      "title": "Vocabulary cloze",
+      "marks": 5,
+      "passage": "Teenagers want greater (1) _____ as they grow older, but they need understanding. A good friend shows (2) _____ by listening without interrupting. Comparing ourselves with online photographs may create unnecessary (3) _____. It is sensible to make a study (4) _____ that includes sleep, family and exercise. When a problem feels difficult, asking a trusted adult for (5) _____ can help. Learning to make thoughtful choices is an important part of becoming responsible, independent and respectful of other people.",
+      "wordCount": 80,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "Gap 1",
+          "options": [
+            "independence",
+            "destination",
+            "competition"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 2",
+          "options": [
+            "respect",
+            "risk",
+            "fashion"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 3",
+          "options": [
+            "pressure",
+            "equipment",
+            "tourism"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 4",
+          "options": [
+            "timetable",
+            "celebrity",
+            "receipt"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 5",
+          "options": [
+            "support",
+            "performance",
+            "transport"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "rdg1": {
+      "title": "Reading 1: Short texts",
+      "marks": 5,
+      "texts": [
+        {
+          "passage": "Message from the school counsellor: If you feel worried about a friendship or examination, you may book a confidential conversation during lunchtime. Your form will not be displayed publicly. Students are welcome to ask a trusted teacher for help finding an appointment.",
+          "statement": "Students must describe their concerns publicly before booking.",
+          "answer": 1
+        },
+        {
+          "passage": "Dear Bilal, I enjoyed our football practice yesterday, but I have an important family commitment on Thursday afternoon. I cannot attend the next session. Could you please ask the coach whether I can join Saturday's practice instead? I will bring my own equipment.",
+          "statement": "The writer hopes to attend an alternative weekend practice.",
+          "answer": 0
+        },
+        {
+          "passage": "Study club notice: Students who prefer a quiet place to revise can use Room Four on Mondays and Wednesdays after school. Bring your own notes and a water bottle. Members are encouraged to help one another but should not disturb anyone who needs silence.",
+          "statement": "The club meets every school day.",
+          "answer": 1
+        },
+        {
+          "passage": "Online safety reminder: Do not assume every photograph shows someone's real daily life. People often select their most successful moments before sharing. If a post makes you feel anxious, take a break and discuss your feelings with somebody you trust.",
+          "statement": "The reminder says online photographs always show people's complete lives.",
+          "answer": 1
+        },
+        {
+          "passage": "School survey: Of thirty pupils who replied, eighteen preferred shorter homework sessions with regular breaks. Seven liked studying for longer periods, and five were unsure. Class representatives will discuss these views with teachers but will not publish individual names.",
+          "statement": "Most respondents preferred shorter study sessions.",
+          "answer": 0
+        }
+      ],
+      "questions": [
+        {
+          "type": "tf",
+          "stem": "Students must describe their concerns publicly before booking.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "The writer hopes to attend an alternative weekend practice.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "tf",
+          "stem": "The club meets every school day.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "The reminder says online photographs always show people's complete lives.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "Most respondents preferred shorter study sessions.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "rdg2": {
+      "title": "Reading 2: Evaluative",
+      "marks": 7,
+      "passage": "Teenagers sometimes hear that independence means never needing advice. This view is attractive because growing up involves making more choices, developing personal interests and taking responsibility for mistakes. Yet complete independence is unrealistic. Young people still benefit from trusted adults, supportive friends and clear information when they face difficult decisions.\n\nOne argument in favour of giving teenagers greater freedom is that practice builds judgement. A student who decides when to study or how to spend pocket money learns to compare options and deal with consequences. If adults solve every problem immediately, students may hesitate when they eventually have to decide for themselves. Reasonable freedom allows pupils to develop confidence and understand their own strengths.\n\nOn the other hand, freedom without guidance may cause unnecessary stress. Many choices involve safety, financial cost or long-term educational plans. A teenager may not recognise misleading information online or may feel pressured by friends to accept an unsuitable risk. Adults can provide experience, ask useful questions and help young people notice details they might have missed.\n\nSome critics argue that too much advice prevents teenagers from becoming independent. This can happen if adults do not listen or insist on making every decision. However, advice does not have to be a command. A respectful conversation gives a teenager room to explain their own reasoning while considering another person's perspective. The final choice may still belong to the young person.\n\nI believe responsibility develops best through a balance of freedom and support. Schools and families should offer practical opportunities for independent decisions, such as planning a project, managing a timetable or comparing reliable sources of information. They should also make it easy to request help without embarrassment. Independence is not simply refusing assistance; it includes knowing when another person's knowledge can make a decision safer and wiser.",
+      "wordCount": 300,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "Which belief does the text challenge?",
+          "options": [
+            "Independence means refusing advice",
+            "Teenagers develop judgement",
+            "Pupils enjoy freedom"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "What is one benefit of reasonable freedom?",
+          "options": [
+            "Avoiding responsibility",
+            "Practising decisions",
+            "Never needing support"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "Why may guidance help with online information?",
+          "options": [
+            "Adults always know everything",
+            "Online information is always correct",
+            "Young people may miss misleading details"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mc",
+          "stem": "When may advice harm independence?",
+          "options": [
+            "When adults refuse to listen",
+            "When pupils ask questions",
+            "When people exchange perspectives"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "How should respectful advice work?",
+          "options": [
+            "As an unquestionable command",
+            "As a conversation",
+            "As an excuse to stop thinking"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "What develops practical independence?",
+          "options": [
+            "Ignoring rules",
+            "Refusing teamwork",
+            "Planning projects and managing time"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mc",
+          "stem": "What is the writer's central argument?",
+          "options": [
+            "Balance freedom and support",
+            "Adults must always decide",
+            "Teenagers should refuse help"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "rdg3": {
+      "title": "Reading 3: Narrative",
+      "marks": 8,
+      "passage": "When Noor joined a new school, she hoped to make friends quickly. She enjoyed drawing, but most of her classmates seemed interested in sport. During the first week, she answered questions politely without offering much information about herself. At home she worried that other pupils would find her hobbies unusual. Her older sister suggested joining one school club, even if it felt difficult at first.\n\nNoor visited the art room on Wednesday afternoon. A teacher was supervising pupils who were designing posters for an exhibition about healthy habits. Noor liked the idea but was uncertain about speaking to strangers. The club leader, Laila, asked whether she would prefer to work on the illustrations. Noor agreed and created several colourful drawings that explained the importance of sleep and exercise.\n\nA problem appeared just before the posters were printed. The group discovered that a chart contained an incorrect number. One member wanted to ignore the mistake because changing the design would take time. Noor suggested checking the original survey and adjusting the figure. Laila supported her, but the club needed someone to explain the change to the teacher.\n\nNoor felt nervous. She had never spoken at a meeting with older pupils. Laila offered to accompany her, and the two students described what had happened. The teacher thanked them for noticing the error and helped arrange a later printing time. The club spent an extra afternoon reviewing every statement, which meant their final posters were more reliable.\n\nOn exhibition day, visitors stopped to examine Noor's drawings. A younger pupil asked why one picture showed a student turning off a phone before bedtime. Noor explained that reducing distractions could make it easier to rest. She realised that she could speak confidently when discussing something she understood.\n\nAt the end of the event, Laila invited Noor to help plan another project. Noor had not suddenly become the loudest person in her class, and she still liked quiet activities. However, she no longer believed that having different interests prevented friendship. She had learned that listening carefully, correcting mistakes and contributing her own skills could help a group succeed.",
+      "wordCount": 352,
+      "questions": [
+        {
+          "type": "short",
+          "stem": "What hobby did Noor enjoy?",
+          "answer": "drawing",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "When did Noor visit the art room?",
+          "answer": "Wednesday afternoon",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "What was wrong with the chart?",
+          "answer": "an incorrect number",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "Who accompanied Noor to explain the error?",
+          "answer": "Laila",
+          "maxWords": 4
+        },
+        {
+          "type": "mc",
+          "stem": "Why did Noor initially worry about classmates?",
+          "options": [
+            "She had different interests",
+            "She lost her keys",
+            "The school had no clubs"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "What did the club's posters discuss?",
+          "options": [
+            "Travel",
+            "Healthy habits",
+            "Shopping"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "How did the teacher respond?",
+          "options": [
+            "She cancelled the exhibition",
+            "She ignored the problem",
+            "She arranged later printing"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mc",
+          "stem": "What did Noor learn?",
+          "options": [
+            "Different interests need not prevent friendship",
+            "Quiet people cannot be confident",
+            "Correcting mistakes is harmful"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "wrt1": {
+      "title": "Writing 1: Informative",
+      "marks": 5,
+      "minWords": 85,
+      "prompt": "Write an informative text of at least 85 words explaining how teenagers can balance revision, friendships, family responsibilities and rest. Give two practical suggestions and a clear conclusion.",
+      "grading": "teacher review"
+    },
+    "wrt2": {
+      "title": "Writing 2: Interactive email",
+      "marks": 10,
+      "minWords": 100,
+      "prompt": "Your friend emails you: 'I find it difficult to organise homework, hobbies and time with family. I also worry when I compare myself with others online. What should I do?' Write a reply email of at least 100 words. Respond to both concerns, suggest practical steps and encourage your friend to seek help from a trusted adult if needed.",
+      "grading": "teacher review"
+    }
+  }
+}
