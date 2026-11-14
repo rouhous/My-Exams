@@ -23,5 +23,80 @@
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
+  },
+  "unit2-listening1-original-draft.json": {
+    "sourceFile": "grade12/elective/units/unit2-listening1-original-draft.json",
+    "scriptSha256": "3859ba68b321178ffc74b46fb4ebd5a4493bd07ad26caa82d3ec3038acf337b4",
+    "mp3": "unit2-listening1.mp3",
+    "durationSeconds": 433.24,
+    "bytes": 5199247,
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
+  },
+  "unit2-listening2-original-draft.json": {
+    "sourceFile": "grade12/elective/units/unit2-listening2-original-draft.json",
+    "scriptSha256": "09161e3fec35f32e2c02fb626ac151457c1771754adc1e40601c05e5719acbdb",
+    "mp3": "unit2-listening2.mp3",
+    "durationSeconds": 438.52,
+    "bytes": 5262568,
+    "voices": [
+      "en-GB-SoniaNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
+  },
+  "unit3-listening1-original-draft.json": {
+    "sourceFile": "grade12/elective/units/unit3-listening1-original-draft.json",
+    "scriptSha256": "1cb5a97410b804eb0c44e2cf9df355209256eb85b4759ca6f6060768524fbb6a",
+    "mp3": "unit3-listening1.mp3",
+    "durationSeconds": 420.23,
+    "bytes": 5043139,
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
+  },
+  "unit3-listening2-original-draft.json": {
+    "sourceFile": "grade12/elective/units/unit3-listening2-original-draft.json",
+    "scriptSha256": "90bef643fa2e07d4444cc521a8f3c2b12ea7696448070e7ac9afcd0ef586eade",
+    "mp3": "unit3-listening2.mp3",
+    "durationSeconds": 425.09,
+    "bytes": 5101444,
+    "voices": [
+      "en-GB-RyanNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
+  },
+  "unit4-listening1-original-draft.json": {
+    "sourceFile": "grade12/elective/units/unit4-listening1-original-draft.json",
+    "scriptSha256": "af96c42d1fb43188df0add5021bc9667b946e72974f91a6b608f83344eb29ab5",
+    "mp3": "unit4-listening1.mp3",
+    "durationSeconds": 440.5,
+    "bytes": 5286391,
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
+  },
+  "unit4-listening2-original-draft.json": {
+    "sourceFile": "grade12/elective/units/unit4-listening2-original-draft.json",
+    "scriptSha256": "b1f4c9defac96ceeac633c0d41afa190cb3cd288ed3fa0e1e5db53b6cfa3fbd0",
+    "mp3": "unit4-listening2.mp3",
+    "durationSeconds": 448.18,
+    "bytes": 5378551,
+    "voices": [
+      "en-GB-RyanNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
   }
 }
