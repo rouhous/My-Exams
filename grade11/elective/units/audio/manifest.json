@@ -48,5 +48,18 @@
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
+  },
+  "unit3-listening1-original-draft.json": {
+    "sourceFile": "grade11/elective/units/unit3-listening1-original-draft.json",
+    "scriptSha256": "7d243647eff8a393e6f6cc44f410f7f8e6d65aa6b6d943b0d614553b24625957",
+    "mp3": "unit3-listening1.mp3",
+    "durationSeconds": 400.43,
+    "bytes": 4805529,
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
   }
 }
