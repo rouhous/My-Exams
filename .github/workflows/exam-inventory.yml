@@ -1,0 +1,52 @@
+name: Verify listening pictures, natural MP3 and Grade 5–12 exam inventory
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/exam-inventory.yml'
+      - 'scripts/audit_media_grades5_12.py'
+      - 'grade12/elective/units/audio/**'
+      - 'grades7-8/assets/audio-natural/**'
+      - 'grades5-6/activities.json'
+      - 'grades7-8/activities.json'
+      - 'grade9/data.json'
+      - 'grade10/data.json'
+      - 'grade11/core/data.json'
+      - 'higher_grades_corrected.json'
+permissions:
+  contents: write
+concurrency:
+  group: my-exams-media-inventory
+  cancel-in-progress: true
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify all available MP3 source hashes and pictured listening options
+        run: python scripts/audit_media_grades5_12.py
+      - name: Preserve generated verified inventory in repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5;do
+            git fetch origin main
+            current=$(git show origin/main:scripts/audit_media_grades5_12.py | sha256sum | cut -d' ' -f1)
+            local=$(sha256sum scripts/audit_media_grades5_12.py | cut -d' ' -f1)
+            if [ "$current" != "$local" ];then
+              echo 'Audit logic was updated during run. Refusing to commit old report.' >&2
+              exit 1
+            fi
+            git reset --mixed origin/main
+            git add MEDIA_STATUS_2026-11-14.json EXAM_INVENTORY_2026-11-14.json
+            if git diff --cached --quiet;then exit 0;fi
+            git commit -m 'Archive audited exam count, listening audio provenance and picture inventory (grades 5–12)'
+            if git push origin HEAD:main;then exit 0;fi
+            sleep 5
+          done
+          exit 1
