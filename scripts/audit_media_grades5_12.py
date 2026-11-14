@@ -6,6 +6,7 @@ visual semantics, textbook pages, and recorded voice quality require human revie
 import hashlib,json,pathlib,re,collections,datetime,sys
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 DATE="2026-11-14"
+# Re-run final inventory after publishing Grade 7–8 corrected visual/audio and all upper-grade MP3.
 def read(path):return json.loads((ROOT/path).read_text(encoding="utf-8"))
 def file(path):return (ROOT/path).is_file()
 def size(path):
