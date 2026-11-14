@@ -62,15 +62,9 @@
     },
     "8": {
       "requiredOriginalListeningSections": 8,
-      "verifiedLinkedMP3": 7,
+      "verifiedLinkedMP3": 8,
       "presentButNotSourceVerified": 0,
-      "missing": [
-        {
-          "model": "A",
-          "task": "g8-a-listening1",
-          "reason": "missing_or_stale_audio_manifest"
-        }
-      ],
+      "missing": [],
       "reportedReusedSources": []
     },
     "9": {
@@ -104,208 +98,25 @@
     },
     "11-elective-legacy": {
       "requiredOriginalListeningSections": 12,
-      "verifiedLinkedMP3": 0,
+      "verifiedLinkedMP3": 12,
       "presentButNotSourceVerified": 0,
-      "missing": [
-        {
-          "model": "A",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "A",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "B",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "B",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "C",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "C",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "D",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "D",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "E",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "E",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "F",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "F",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        }
-      ],
+      "missing": [],
       "reportedReusedSources": [],
       "sourceModelsWithListening": 6
     },
     "12-core-legacy": {
       "requiredOriginalListeningSections": 12,
-      "verifiedLinkedMP3": 0,
+      "verifiedLinkedMP3": 12,
       "presentButNotSourceVerified": 0,
-      "missing": [
-        {
-          "model": "A",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "A",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "B",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "B",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "C",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "C",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "D",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "D",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "E",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "E",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "F",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "F",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        }
-      ],
+      "missing": [],
       "reportedReusedSources": [],
       "sourceModelsWithListening": 6
     },
     "12-elective-legacy": {
       "requiredOriginalListeningSections": 12,
-      "verifiedLinkedMP3": 0,
+      "verifiedLinkedMP3": 12,
       "presentButNotSourceVerified": 0,
-      "missing": [
-        {
-          "model": "A",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "A",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "B",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "B",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "C",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "C",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "D",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "D",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "E",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "E",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "F",
-          "section": "lst1",
-          "reason": "no_source_verified_mp3"
-        },
-        {
-          "model": "F",
-          "section": "lst2",
-          "reason": "no_source_verified_mp3"
-        }
-      ],
+      "missing": [],
       "reportedReusedSources": [],
       "sourceModelsWithListening": 6
     },
