@@ -10,7 +10,7 @@ out=R/'upper-audio'/TRACK;out.mkdir(parents=True,exist_ok=True)
 voices=('en-GB-SoniaNeural','en-GB-RyanNeural')
 def ff(*args):subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y',*map(str,args)],check=True)
 async def build(src,key,target):
-  passage=(src.get('script') or src['passage']).strip()
+  passage=(src['script'] if isinstance(src.get('script'),str) else src['passage']).strip()
   if key=='lst1':
     matches=[re.match(r"^\s*([A-Za-z .'-]{2,40}):\s*(.+)$",line.strip()) for line in passage.splitlines()]
     pairs=[(m.group(1).strip(),m.group(2).strip()) for m in matches if m]
@@ -56,7 +56,7 @@ async def main():
   for model in data:
     for p in model['parts']:
       if p['key'] not in ('lst1','lst2'):continue
-      src=(p.get('script') or p['passage']).strip()
+      src=(p['script'] if isinstance(p.get('script'),str) else p['passage']).strip()
       h=hashlib.sha256(src.encode()).hexdigest()
       key=model['id']+'-'+p['key']
       target=out/(model['id'].lower()+'-'+p['key']+'.mp3')
