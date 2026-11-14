@@ -1,0 +1,103 @@
+{
+  "id": "g12-elective-unit1-lst2-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 1,
+    "title": "The arts"
+  },
+  "skill": "Listening 2",
+  "status": "original_script_and_questions_created__teacher_review_and_natural_audio_pending",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "voice": "single female speaker",
+  "speaker": "Fatma",
+  "fictionalSchoolProject": true,
+  "curriculumReference": {
+    "book": "English Insights 3 (Grade 12 Elective), Unit 1",
+    "url": "https://ict.moe.gov.om/book/PDF/12/cls12_Insights3_SB/files/downloads/cls12_Insights3_SB.pdf",
+    "skills": [
+      "informative monologue",
+      "notetaking",
+      "short answers",
+      "art and sculpture exhibition"
+    ]
+  },
+  "officialTaskShapeSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / lst2",
+  "passage": "Good afternoon. My name is Fatma, and I coordinate a project called Sculpture from Stories at our fictional secondary school in northern Oman. I would like to explain how we built a small exhibition that encourages visitors to look closely at ordinary objects. Our final display is in the school auditorium, not in the art classroom, because the auditorium has wider pathways for families and wheelchair users.\n\nWe started planning in September. At first, students wanted to make large sculptures from metal, but our teachers explained that the necessary equipment would be expensive and difficult to handle safely. Instead, we chose recycled cardboard as the main material. Families saved packaging boxes, and nearby shops donated clean pieces that would otherwise have been thrown away. Students also used string, paper tape, and water-based paint.\n\nBefore starting a sculpture, each group wrote a short story about an object from everyday life. One group chose a fishing basket, another a broken clock, and a third an old school bag. They sketched different shapes, then built small paper models to test how the objects might stand. The finished collection contains twenty-four sculptures. We deliberately kept empty space between them, so visitors can walk around and notice details from several directions.\n\nPreparing the captions took longer than expected. The language teachers checked the Arabic and English versions to make sure they explained the ideas clearly without telling visitors exactly what to think. We also recorded short audio descriptions for people who prefer listening to reading. Each description focuses on shape, texture and colour; it does not simply repeat the printed caption.\n\nLighting presented another challenge. We rejected powerful lamps because they could produce unwanted heat near the fragile paper surfaces. Instead, we borrowed low-heat lights from the school hall. During our final trial, two sculptures leaned to one side because their bases were unstable. The students widened those bases and tested the pieces again before inviting any guests.\n\nThe exhibition opens on Friday at ten in the morning. Visitors may enter for free and can join a short workshop in which they make a tiny sculpture from clean waste paper. We ask everyone to photograph only the artworks whose young makers have agreed to share them. Spare supplies are kept in the locked art room, where teachers can check the materials before each workshop. The same visitors can also compare the students' early sketches with their finished objects in a nearby display.\n\nWhen the exhibition closes, students will collect anonymous comments about which shapes communicated their stories most successfully. We plan to use these comments in the next project, rather than pretending that a first design must always be perfect. To me, that process of observing, experimenting and improving is as valuable as the finished art.",
+  "script": "Good afternoon. My name is Fatma, and I coordinate a project called Sculpture from Stories at our fictional secondary school in northern Oman. I would like to explain how we built a small exhibition that encourages visitors to look closely at ordinary objects. Our final display is in the school auditorium, not in the art classroom, because the auditorium has wider pathways for families and wheelchair users.\n\nWe started planning in September. At first, students wanted to make large sculptures from metal, but our teachers explained that the necessary equipment would be expensive and difficult to handle safely. Instead, we chose recycled cardboard as the main material. Families saved packaging boxes, and nearby shops donated clean pieces that would otherwise have been thrown away. Students also used string, paper tape, and water-based paint.\n\nBefore starting a sculpture, each group wrote a short story about an object from everyday life. One group chose a fishing basket, another a broken clock, and a third an old school bag. They sketched different shapes, then built small paper models to test how the objects might stand. The finished collection contains twenty-four sculptures. We deliberately kept empty space between them, so visitors can walk around and notice details from several directions.\n\nPreparing the captions took longer than expected. The language teachers checked the Arabic and English versions to make sure they explained the ideas clearly without telling visitors exactly what to think. We also recorded short audio descriptions for people who prefer listening to reading. Each description focuses on shape, texture and colour; it does not simply repeat the printed caption.\n\nLighting presented another challenge. We rejected powerful lamps because they could produce unwanted heat near the fragile paper surfaces. Instead, we borrowed low-heat lights from the school hall. During our final trial, two sculptures leaned to one side because their bases were unstable. The students widened those bases and tested the pieces again before inviting any guests.\n\nThe exhibition opens on Friday at ten in the morning. Visitors may enter for free and can join a short workshop in which they make a tiny sculpture from clean waste paper. We ask everyone to photograph only the artworks whose young makers have agreed to share them. Spare supplies are kept in the locked art room, where teachers can check the materials before each workshop. The same visitors can also compare the students' early sketches with their finished objects in a nearby display.\n\nWhen the exhibition closes, students will collect anonymous comments about which shapes communicated their stories most successfully. We plan to use these comments in the next project, rather than pretending that a first design must always be perfect. To me, that process of observing, experimenting and improving is as valuable as the finished art.",
+  "wordCount": 461,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "note",
+      "stem": "Exhibition location",
+      "answer": "school auditorium",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Planning started in",
+      "answer": "September",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Main recycled material",
+      "answer": "cardboard",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Number of sculptures",
+      "answer": "twenty-four",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Opening day",
+      "answer": "Friday",
+      "maxWords": 2
+    },
+    {
+      "type": "short",
+      "stem": "What did students build before making their final sculptures?",
+      "answer": "small paper models",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who checked the captions in both languages?",
+      "answer": "the language teachers",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Why did the organisers avoid powerful lamps?",
+      "answer": "to avoid unwanted heat",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What problem affected two sculptures during the final trial?",
+      "answer": "unstable bases",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Where are spare materials kept?",
+      "answer": "the locked art room",
+      "maxWords": 4
+    }
+  ],
+  "audioStatus": "not_generated_until_content_review",
+  "audioFile": null,
+  "qa": {
+    "fiveTwoWordNotes": true,
+    "fiveWhShortAnswers": true,
+    "teacherReviewRequired": true,
+    "verifiedNaturalAudio": false
+  },
+  "notes": "Original fictional school-sculpture exhibition to avoid presenting invented institutional figures as real. Standalone draft; not claimed as textbook wording."
+}
