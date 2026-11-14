@@ -247,5 +247,63 @@
     "naturalAudioGenerated": false,
     "studentFinalExamApproved": false,
     "qaWorkflow": ".github/workflows/upper-grades-qa.yml"
+  },
+  "grade12ElectiveUnit1CompletePractice": {
+    "unitsCovered": [
+      "The arts"
+    ],
+    "semester": 1,
+    "track": "12-elective",
+    "paperId": "A",
+    "page": "grade12/elective/units/paper-a-preview.html",
+    "sections": [
+      {
+        "id": "lst1",
+        "marks": 10,
+        "words": 408,
+        "questions": 10
+      },
+      {
+        "id": "lst2",
+        "marks": 10,
+        "words": 461,
+        "questions": 10
+      },
+      {
+        "id": "rdg1",
+        "marks": 12,
+        "words": 496,
+        "questions": 12
+      },
+      {
+        "id": "rdg2",
+        "marks": 13,
+        "words": 484,
+        "questions": 13
+      },
+      {
+        "id": "wrt1",
+        "marks": 15,
+        "minWords": 150
+      },
+      {
+        "id": "wrt2",
+        "marks": 10,
+        "minWords": 150,
+        "chartProvided": true
+      }
+    ],
+    "totalMarks": 70,
+    "fullExamMinutes": 180,
+    "individualSkillsUntimed": true,
+    "automaticItems": 23,
+    "teacherShortItems": 22,
+    "writingTasks": 2,
+    "verifiedNaturalAudioCount": 0,
+    "teacherApproval": false,
+    "certifiedTextbookMatch": false,
+    "status": "original six-section paper A teacher-review draft; no final student release",
+    "browserQA": "tests/upper_grades_browser_smoke.cjs",
+    "officialTaskReference": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json"
   }
 }
