@@ -1,0 +1,31 @@
+name: Grade 12 Elective four-unit exam QA
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'grade12/elective/**'
+      - 'scripts/audit_grade12_elective_units.py'
+      - 'tests/grade12_elective_units_browser.cjs'
+      - '.github/workflows/grade12-elective-units-qa.yml'
+permissions:
+  contents: read
+jobs:
+  validate-and-browser:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate every unit's listening, reading, writing and available audio manifest
+        run: python3 scripts/audit_grade12_elective_units.py > /tmp/grade12-elective-qa.json
+      - name: Test student mobile interface for all four papers and isolated skills
+        run: |
+          npm install --no-save playwright@1.56.1
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/serve-unit-exams.log 2>&1 &
+          sleep 3
+          node tests/grade12_elective_units_browser.cjs
