@@ -1,0 +1,56 @@
+{
+  "g9-U1-L1": {
+    "sourceHash": "a2e159bf9dd5b15f1daf1887a12f7ddcfe5c6e9a2c8809b463eaaac78c3f1f26",
+    "sourceTranscriptSha256": "86d0150c575e0cc4b39e4fd6ccc0c74fd6708df841f5d3f74d658520cd4aee82",
+    "mp3": "g9-u1-listening-1.mp3",
+    "sourceModel": "U1",
+    "seconds": 254.88,
+    "bytes": 3058878,
+    "playedTwice": true
+  },
+  "g9-U1-L2": {
+    "sourceHash": "4db93db1a1d10e9e2699d378a620bd1ed6a3b9a86684fce724bcc2b43a7a2040",
+    "sourceTranscriptSha256": "00c013575b37c784c988c8209d1defc75c6ad23b09a4d7ef08fbbb833b32ea3f",
+    "mp3": "g9-u1-listening-2.mp3",
+    "sourceModel": "U1",
+    "seconds": 246.2,
+    "bytes": 2954806,
+    "playedTwice": true
+  },
+  "g9-U2-L1": {
+    "sourceHash": "4afc0052ef3f28eb9ba6e4b4fd9b61e3e727be198d225606772ef0a54d55879b",
+    "sourceTranscriptSha256": "ea3591ea86ff1cdba0ea15bf9ecb8b2fb97dfe378e9ccce0b1c697a16d68eaa1",
+    "mp3": "g9-u2-listening-1.mp3",
+    "sourceModel": "U2",
+    "seconds": 251.48,
+    "bytes": 3018127,
+    "playedTwice": true
+  },
+  "g9-U2-L2": {
+    "sourceHash": "2427357ff9d75152ea0750032987a82ae798dc01263a23c60d593df8020079d9",
+    "sourceTranscriptSha256": "f817ad1a56dab990c2fa7df65067e952eabf1d2df7120a4e70af2932e8a1035e",
+    "mp3": "g9-u2-listening-2.mp3",
+    "sourceModel": "U2",
+    "seconds": 233.93,
+    "bytes": 2807475,
+    "playedTwice": true
+  },
+  "g9-U3-L1": {
+    "sourceHash": "1a0fd29dc859c75673e0598c856e5e51ce126030b1793e12dceeb73289a6590e",
+    "sourceTranscriptSha256": "818bb76cf17ed29b73fdbd89971d8ec4ce553e83512795f1603515ef31669565",
+    "mp3": "g9-u3-listening-1.mp3",
+    "sourceModel": "U3",
+    "seconds": 245.42,
+    "bytes": 2945402,
+    "playedTwice": true
+  },
+  "g9-U3-L2": {
+    "sourceHash": "496a5717f4a4dafb86e3531b8444fe8d63900baf1173b1cabb356eb91c59b081",
+    "sourceTranscriptSha256": "5959f343fc5942e77cdb4402995247400b4049939121882e150c632b2668e5b3",
+    "mp3": "g9-u3-listening-2.mp3",
+    "sourceModel": "U3",
+    "seconds": 231.68,
+    "bytes": 2780517,
+    "playedTwice": true
+  }
+}

@@ -1,0 +1,1170 @@
+{
+  "grade": 9,
+  "semester": 1,
+  "series": "Gold Experience Oman 9A Trial Edition 2026",
+  "models": [
+    {
+      "model": "U1",
+      "grade": 9,
+      "semester": 1,
+      "unit": 1,
+      "unitTitle": "Identity",
+      "minutes": 120,
+      "marks": 40,
+      "tasks": [
+        {
+          "id": "g9-U1-L1",
+          "skill": "listening",
+          "group": 1,
+          "marks": 5,
+          "title": "Listening 1 — Choose the picture",
+          "items": [
+            {
+              "stem": "Where will the class photograph board be displayed?",
+              "choices": [
+                "school",
+                "library",
+                "sports hall"
+              ],
+              "images": [
+                "../images/illustration-1-1.png",
+                "../images/illustration-1-2.png",
+                "../images/illustration-1-3.png"
+              ],
+              "answer": 1,
+              "script": "Our class is creating a photo board that shows who we are and what we enjoy. The sports hall was too noisy and the school entrance had little space. After speaking to the librarian, we decided to display it in the public library next Thursday. People can read our short profiles beside the photographs."
+            },
+            {
+              "stem": "Which hobby is Layla most interested in?",
+              "choices": [
+                "art",
+                "football",
+                "photography"
+              ],
+              "images": [
+                "../images/illustration-2-1.png",
+                "../images/illustration-2-2.png",
+                "../images/illustration-2-3.png"
+              ],
+              "answer": 0,
+              "script": "Layla is confident but rather quiet in large groups. Her brother plays football and her cousin enjoys photography. Layla, however, is brilliant at drawing, and she is spending this month learning how to use watercolours. Her family is buying her an art palette for the exhibition."
+            },
+            {
+              "stem": "What weather does Sami usually enjoy in his hometown?",
+              "choices": [
+                "sunny",
+                "rainy",
+                "snowy"
+              ],
+              "images": [
+                "../images/illustration-3-1.png",
+                "../images/illustration-3-2.png",
+                "../images/illustration-3-3.png"
+              ],
+              "answer": 0,
+              "script": "Sami often talks about the city where he grew up. His favourite days are warm and clear because he can walk through its old streets. His sister prefers rainy weather and his friend likes snowy holidays abroad, but Sami always chooses sunny days when he describes his home."
+            },
+            {
+              "stem": "At what time will the personal-profile workshop begin?",
+              "choices": [
+                "three o'clock",
+                "seven o'clock",
+                "five o'clock"
+              ],
+              "images": [
+                "../images/illustration-4-1.png",
+                "../images/illustration-4-2.png",
+                "../images/illustration-4-3.png"
+              ],
+              "answer": 2,
+              "script": "Some students thought our personality workshop would begin at three o'clock. A notice printed last week showed seven, but the teacher has checked the timetable. The correct starting time is five o'clock on Thursday afternoon. Please arrive early enough to choose a seat and complete your name card."
+            },
+            {
+              "stem": "Which family activity does Rana usually enjoy at weekends?",
+              "choices": [
+                "beach",
+                "camping",
+                "shopping"
+              ],
+              "images": [
+                "../images/illustration-5-1.png",
+                "../images/illustration-5-2.png",
+                "../images/illustration-5-3.png"
+              ],
+              "answer": 1,
+              "script": "Rana says her family sometimes visits the beach and occasionally goes shopping. They usually prefer spending a night outdoors, however, because everyone enjoys talking beneath the stars. They are preparing their tents for this weekend, so camping is the activity she describes in her personal profile."
+            }
+          ],
+          "transcript": "Text 1. Our class is creating a photo board that shows who we are and what we enjoy. The sports hall was too noisy and the school entrance had little space. After speaking to the librarian, we decided to display it in the public library next Thursday. People can read our short profiles beside the photographs.\n\nText 2. Layla is confident but rather quiet in large groups. Her brother plays football and her cousin enjoys photography. Layla, however, is brilliant at drawing, and she is spending this month learning how to use watercolours. Her family is buying her an art palette for the exhibition.\n\nText 3. Sami often talks about the city where he grew up. His favourite days are warm and clear because he can walk through its old streets. His sister prefers rainy weather and his friend likes snowy holidays abroad, but Sami always chooses sunny days when he describes his home.\n\nText 4. Some students thought our personality workshop would begin at three o'clock. A notice printed last week showed seven, but the teacher has checked the timetable. The correct starting time is five o'clock on Thursday afternoon. Please arrive early enough to choose a seat and complete your name card.\n\nText 5. Rana says her family sometimes visits the beach and occasionally goes shopping. They usually prefer spending a night outdoors, however, because everyone enjoys talking beneath the stars. They are preparing their tents for this weekend, so camping is the activity she describes in her personal profile.",
+          "audio": "audio/g9-u1-listening-1.mp3"
+        },
+        {
+          "id": "g9-U1-L2",
+          "skill": "listening",
+          "group": 2,
+          "marks": 5,
+          "title": "Listening 2 — Interview",
+          "items": [
+            {
+              "stem": "When did preparation begin?",
+              "choices": [
+                "September",
+                "October",
+                "January"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "How long did the team work?",
+              "choices": [
+                "One day",
+                "Three weeks",
+                "Three months"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Who helped organise the captions?",
+              "choices": [
+                "The English teacher",
+                "A famous actor",
+                "A shop manager"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "What languages were used in the captions?",
+              "choices": [
+                "Only English",
+                "Arabic and English",
+                "English and French"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "What replaced a photograph after a pupil withdrew permission?",
+              "choices": [
+                "A drawing",
+                "A map",
+                "A timetable"
+              ],
+              "answer": 0
+            }
+          ],
+          "transcript": "Interviewer: Welcome to our school identity programme. What encouraged you to make a personal photo board, Huda?\nHuda: I noticed that classmates who seemed different often shared hobbies, so I wanted to help people discover them.\nInterviewer: Did the first display focus only on people's appearance, or did you include their interests as well?\nHuda: We included their hobbies, family traditions and personal strengths. Appearance cannot explain the whole story of someone's identity.\nInterviewer: Where did your team first collect information for the project, and how did you ask pupils to contribute?\nHuda: We visited three classes and offered simple questionnaires. Everyone was free to answer privately or leave a question blank.\nInterviewer: When did you begin preparing the photographs, and how long did your work take altogether?\nHuda: We started in October and worked for nearly three weeks before the first display was ready.\nInterviewer: Who helped you organise the captions, and which languages did you decide to use?\nHuda: Our English teacher helped us. We wrote short captions in both Arabic and English so more families could understand.\nInterviewer: What happened when one classmate changed her mind about showing a photograph? Did this cause an argument?\nHuda: No. We removed her picture immediately and used a drawing instead. Respecting someone's choice matters more than a display.\nInterviewer: How did the project change the way students talked to one another at school?\nHuda: People began asking about interests rather than making quick assumptions. Several shy pupils also joined clubs that suited them.",
+          "audio": "audio/g9-u1-listening-2.mp3"
+        },
+        {
+          "id": "g9-U1-GV",
+          "skill": "grammar_vocabulary",
+          "group": 1,
+          "marks": 10,
+          "title": "Grammar and Vocabulary — ten gaps",
+          "passage": "1. My sister usually ____ to school by bus.\n2. Listen! The pupils ____ a presentation about their hobbies.\n3. Faris ____ football on Saturdays; he prefers reading.\n4. I ____ this photograph of my grandparents.\n5. What ____ your best friend usually do after school?\n6. At the moment, Noura ____ a personal profile.\n7. A person who is willing to try new ideas is ____.\n8. A student who speaks easily to strangers is ____.\n9. A person who tells the truth is ____.\n10. Someone who thinks about other people's feelings is ____.",
+          "items": [
+            {
+              "stem": "Gap 1",
+              "choices": [
+                "goes",
+                "is going",
+                "go"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 2",
+              "choices": [
+                "give",
+                "are giving",
+                "gave"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 3",
+              "choices": [
+                "never plays",
+                "is never playing",
+                "has never play"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 4",
+              "choices": [
+                "am loving",
+                "love",
+                "loves"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 5",
+              "choices": [
+                "does",
+                "is",
+                "do"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 6",
+              "choices": [
+                "writes",
+                "is writing",
+                "write"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 7",
+              "choices": [
+                "open-minded",
+                "careless",
+                "rude"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 8",
+              "choices": [
+                "confident",
+                "silent",
+                "uncertain"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 9",
+              "choices": [
+                "honest",
+                "lazy",
+                "selfish"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 10",
+              "choices": [
+                "considerate",
+                "impatient",
+                "arrogant"
+              ],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "id": "g9-U1-R1",
+          "skill": "reading",
+          "group": 1,
+          "marks": 4,
+          "title": "Reading 1 — Matching",
+          "passage": "Match four learners to five activities. One extra.",
+          "people": [
+            "Hamad enjoys designing posters that express his personality through colours, shapes and drawings. He wants to practise creative techniques.",
+            "Salma has moved to a new town and wants to learn about classmates' family traditions and the stories behind them.",
+            "Rashid is shy when speaking to strangers but enjoys astronomy and hopes to meet others who share this interest.",
+            "Amal enjoys sport and wants to work with a small team while improving her football skills."
+          ],
+          "options": [
+            "A: Meet a group of young astronomers who explore the night sky and share discoveries through short presentations.",
+            "B: Learn to paint and design personal posters that show your ideas, interests and individual style.",
+            "C: Join a football team that welcomes new players and values teamwork, respect and regular practice.",
+            "D: Listen to students share family traditions and create a short bilingual collection of personal memories.",
+            "E: Compete in an advanced mathematics competition with no preparation sessions."
+          ],
+          "items": [
+            {
+              "stem": "Person 1: Hamad enjoys designing posters that express his personality through colours, shapes and drawings. He wants to practise creative techniques.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Person 2: Salma has moved to a new town and wants to learn about classmates' family traditions and the stories behind them.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 3
+            },
+            {
+              "stem": "Person 3: Rashid is shy when speaking to strangers but enjoys astronomy and hopes to meet others who share this interest.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Person 4: Amal enjoys sport and wants to work with a small team while improving her football skills.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 2
+            }
+          ]
+        },
+        {
+          "id": "g9-U1-R2",
+          "skill": "reading",
+          "group": 2,
+          "marks": 6,
+          "title": "Reading 2 — Short answers",
+          "passage": "When Aisha joined a new school in Sohar, she worried that her classmates would not understand her interests. She loved astronomy and usually spent Friday evenings looking at the night sky. Her desk partner, Salma, enjoyed art and was always drawing. At first, the girls had little to talk about. Then their teacher asked the class to organise a display about personal identity. Aisha suggested a simple model of the solar system while Salma offered to design the posters. They invited two other pupils: Hamad, who was confident speaking to visitors, and Noura, who preferred organising details quietly. The project succeeded because each student contributed a different strength. Aisha now believes identity is not only about appearance or nationality; it also includes values, habits, abilities and the way people treat one another. She still enjoys astronomy, but she is learning that sharing an interest can be easier when she listens to other people first.",
+          "items": [
+            {
+              "stem": "What subject does Aisha enjoy studying in the evening?",
+              "answers": [
+                "astronomy"
+              ]
+            },
+            {
+              "stem": "Which artistic task did Salma volunteer to do?",
+              "answers": [
+                "design the posters"
+              ]
+            },
+            {
+              "stem": "Who felt confident speaking to visitors?",
+              "answers": [
+                "Hamad"
+              ]
+            },
+            {
+              "stem": "Which pupil preferred organising details quietly?",
+              "answers": [
+                "Noura"
+              ]
+            },
+            {
+              "stem": "Name one feature Aisha now includes in the meaning of identity.",
+              "answers": [
+                "values"
+              ]
+            },
+            {
+              "stem": "What skill is Aisha learning when she listens first?",
+              "answers": [
+                "understanding other people"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g9-U1-W1",
+          "skill": "writing",
+          "group": 1,
+          "marks": 5,
+          "title": "Writing 1 — Story",
+          "prompt": "Write a story about joining a new class and discovering that one of your classmates shares an unexpected interest with you. Describe how you felt at first, what happened and how the friendship developed. Write at least 100 words.",
+          "minWords": 100
+        },
+        {
+          "id": "g9-U1-W2",
+          "skill": "writing",
+          "group": 2,
+          "marks": 5,
+          "title": "Writing 2 — Email",
+          "prompt": "Write an email to a new school friend introducing your hobbies, personality, family traditions and the activities you are enjoying this month. Use present simple and present continuous appropriately. Write at least 100 words.",
+          "minWords": 100
+        }
+      ],
+      "teacherReviewPending": true,
+      "certifiedTextbookMatch": false,
+      "status": "original_unit_aligned_teacher_review_paper"
+    },
+    {
+      "model": "U2",
+      "grade": 9,
+      "semester": 1,
+      "unit": 2,
+      "unitTitle": "Connections",
+      "minutes": 120,
+      "marks": 40,
+      "tasks": [
+        {
+          "id": "g9-U2-L1",
+          "skill": "listening",
+          "group": 1,
+          "marks": 5,
+          "title": "Listening 1 — Choose the picture",
+          "items": [
+            {
+              "stem": "Where will the language interview be recorded?",
+              "choices": [
+                "school",
+                "library",
+                "sports hall"
+              ],
+              "images": [
+                "../images/illustration-1-1.png",
+                "../images/illustration-1-2.png",
+                "../images/illustration-1-3.png"
+              ],
+              "answer": 1,
+              "script": "Our group is recording interviews about the different languages spoken in our town. We first considered the sports hall, but the echo makes voices difficult to understand. The school corridor was crowded too. We have booked a quiet room in the library for Saturday, so the interview will be recorded there."
+            },
+            {
+              "stem": "What did the students use to record their communication project?",
+              "choices": [
+                "art",
+                "football",
+                "photography"
+              ],
+              "images": [
+                "../images/illustration-2-1.png",
+                "../images/illustration-2-2.png",
+                "../images/illustration-2-3.png"
+              ],
+              "answer": 2,
+              "script": "While our grandparents were telling us stories, we wanted to keep their original voices. One student offered a football as a gift, while another brought an art palette for the poster. The most useful object was a camera with a microphone, so we used that to record the interviews."
+            },
+            {
+              "stem": "When did the telephone-language workshop start?",
+              "choices": [
+                "three o'clock",
+                "seven o'clock",
+                "five o'clock"
+              ],
+              "images": [
+                "../images/illustration-4-1.png",
+                "../images/illustration-4-2.png",
+                "../images/illustration-4-3.png"
+              ],
+              "answer": 0,
+              "script": "Please check your messages carefully. A notice mistakenly announced that our communication workshop started at seven, and a later poster showed five. We spoke to the organiser this morning and she confirmed that the first session had actually begun at three o'clock. The next session will use the same time."
+            },
+            {
+              "stem": "Which item did the visiting speaker bring?",
+              "choices": [
+                "backpack",
+                "jacket",
+                "shoes"
+              ],
+              "images": [
+                "../images/illustration-extra-1-1.png",
+                "../images/illustration-extra-1-2.png",
+                "../images/illustration-extra-1-3.png"
+              ],
+              "answer": 0,
+              "script": "When the visiting language researcher arrived at our school, we expected her to carry a jacket and several pairs of shoes for a drama activity. Instead, she opened a backpack containing notebooks, a small recorder and photographs from interviews with families. The backpack is what she placed on the table."
+            },
+            {
+              "stem": "Which building hosted the exhibition about human communication?",
+              "choices": [
+                "stadium",
+                "school building",
+                "park"
+              ],
+              "images": [
+                "../images/illustration-extra-3-1.png",
+                "../images/illustration-extra-3-2.png",
+                "../images/illustration-extra-3-3.png"
+              ],
+              "answer": 1,
+              "script": "The town wanted a safe place to show a display about signs, words and technology. The stadium was being repaired, and the park had no electricity. We finally displayed the exhibits in the school building, where students could ask the visitors questions in two languages."
+            }
+          ],
+          "transcript": "Text 1. Our group is recording interviews about the different languages spoken in our town. We first considered the sports hall, but the echo makes voices difficult to understand. The school corridor was crowded too. We have booked a quiet room in the library for Saturday, so the interview will be recorded there.\n\nText 2. While our grandparents were telling us stories, we wanted to keep their original voices. One student offered a football as a gift, while another brought an art palette for the poster. The most useful object was a camera with a microphone, so we used that to record the interviews.\n\nText 3. Please check your messages carefully. A notice mistakenly announced that our communication workshop started at seven, and a later poster showed five. We spoke to the organiser this morning and she confirmed that the first session had actually begun at three o'clock. The next session will use the same time.\n\nText 4. When the visiting language researcher arrived at our school, we expected her to carry a jacket and several pairs of shoes for a drama activity. Instead, she opened a backpack containing notebooks, a small recorder and photographs from interviews with families. The backpack is what she placed on the table.\n\nText 5. The town wanted a safe place to show a display about signs, words and technology. The stadium was being repaired, and the park had no electricity. We finally displayed the exhibits in the school building, where students could ask the visitors questions in two languages.",
+          "audio": "audio/g9-u2-listening-1.mp3"
+        },
+        {
+          "id": "g9-U2-L2",
+          "skill": "listening",
+          "group": 2,
+          "marks": 5,
+          "title": "Listening 2 — Interview",
+          "items": [
+            {
+              "stem": "Where was the first interview recorded?",
+              "choices": [
+                "The community centre",
+                "The airport",
+                "The football stadium"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Who was the first interview guest?",
+              "choices": [
+                "The teacher",
+                "Bilal's grandmother",
+                "A shop assistant"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "What interrupted part of the recording?",
+              "choices": [
+                "A missing poster",
+                "A broken bicycle",
+                "A microphone problem"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "When did the pupils share their collection?",
+              "choices": [
+                "Tuesday",
+                "Saturday",
+                "Thursday"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "What language did pupils use for the short summaries?",
+              "choices": [
+                "French",
+                "English",
+                "Spanish"
+              ],
+              "answer": 1
+            }
+          ],
+          "transcript": "Interviewer: Today we are discussing how young people can protect languages and share stories. Why did your class begin this project, Bilal?\nBilal: We realised that some children understood their grandparents' words but rarely tried speaking the same language themselves.\nInterviewer: Were you studying only written words, or were you interested in conversations and stories as well?\nBilal: We focused on conversations. A language lives through the people who use it and tell stories in it.\nInterviewer: Where did your first interview take place, and who was the guest that day?\nBilal: We recorded our first interview at the community centre with my grandmother, who loves telling family stories.\nInterviewer: What happened while you were checking the recording, and how did your team respond to the problem?\nBilal: The microphone stopped working for a few minutes. We checked the batteries and repeated that section patiently.\nInterviewer: What language did the grandparents speak during the interview? Did you translate anything for younger students?\nBilal: They spoke Arabic, and two pupils added short English summaries so the whole class could learn from them.\nInterviewer: When did you share the collection, and how did you protect personal information in the recordings?\nBilal: We shared it on Tuesday during the school exhibition, but we used only recordings that families had approved.\nInterviewer: What was the most important lesson you learned about communication through this project?\nBilal: Listening respectfully is as important as speaking clearly. We should ask questions instead of pretending we understand.",
+          "audio": "audio/g9-u2-listening-2.mp3"
+        },
+        {
+          "id": "g9-U2-GV",
+          "skill": "grammar_vocabulary",
+          "group": 1,
+          "marks": 10,
+          "title": "Grammar and Vocabulary — ten gaps",
+          "passage": "1. While I ____ to my cousin, the phone suddenly stopped working.\n2. The interviewer ____ three questions yesterday.\n3. We enjoy ____ to stories about our grandparents.\n4. She ____ me when I was explaining the problem.\n5. The students ____ their project when the teacher arrived.\n6. I prefer ____ messages to making phone calls.\n7. Please listen ____ the instructions carefully.\n8. She explained the plan ____ the new students.\n9. We talked ____ our project for twenty minutes.\n10. To say a word correctly is to ____ it.",
+          "items": [
+            {
+              "stem": "Gap 1",
+              "choices": [
+                "talked",
+                "was talking",
+                "talk"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 2",
+              "choices": [
+                "asks",
+                "was asking now",
+                "asked"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 3",
+              "choices": [
+                "listen",
+                "listening",
+                "listened"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 4",
+              "choices": [
+                "called",
+                "was call",
+                "calls yesterday"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 5",
+              "choices": [
+                "were discussing",
+                "discuss",
+                "are discussing"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 6",
+              "choices": [
+                "write",
+                "writing",
+                "wrote"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 7",
+              "choices": [
+                "to",
+                "at",
+                "in"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 8",
+              "choices": [
+                "at",
+                "to",
+                "for"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 9",
+              "choices": [
+                "about",
+                "on",
+                "of"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 10",
+              "choices": [
+                "translate",
+                "pronounce",
+                "repeat wrongly"
+              ],
+              "answer": 1
+            }
+          ]
+        },
+        {
+          "id": "g9-U2-R1",
+          "skill": "reading",
+          "group": 1,
+          "marks": 4,
+          "title": "Reading 1 — Matching",
+          "passage": "Match four learners to five activities. One extra.",
+          "people": [
+            "Maryam would like to interview elderly relatives about the words and expressions they used when they were younger.",
+            "Salim finds English pronunciation difficult and wants patient practice speaking and listening.",
+            "Nasser wants to learn how cameras and microphones capture conversations without losing the speaker's meaning.",
+            "Fatma has prepared a bilingual project and needs advice on expressing the same idea clearly in different languages."
+          ],
+          "options": [
+            "A: Audio skills club: learn to record, edit and check interviews without changing what speakers meant.",
+            "B: Pronunciation circle: practise listening carefully and saying unfamiliar words with friendly feedback.",
+            "C: Family memories: plan respectful questions and record older relatives telling stories about the past.",
+            "D: Translation workshop: compare messages in two languages and learn how to explain a meaning accurately.",
+            "E: Weekend mountain climbing for athletes with advanced equipment."
+          ],
+          "items": [
+            {
+              "stem": "Person 1: Maryam would like to interview elderly relatives about the words and expressions they used when they were younger.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Person 2: Salim finds English pronunciation difficult and wants patient practice speaking and listening.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Person 3: Nasser wants to learn how cameras and microphones capture conversations without losing the speaker's meaning.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Person 4: Fatma has prepared a bilingual project and needs advice on expressing the same idea clearly in different languages.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 3
+            }
+          ]
+        },
+        {
+          "id": "g9-U2-R2",
+          "skill": "reading",
+          "group": 2,
+          "marks": 6,
+          "title": "Reading 2 — Short answers",
+          "passage": "Last term, Mariam and her classmates were making a short film about communication in their town. They interviewed grandparents who remembered sharing news by letter, and younger people who used messaging apps every day. While they were editing the film, a recorded interview disappeared from the shared folder. Everyone thought the file had been deleted. Mariam was checking the computer when she noticed a message from Bilal. He explained that he had moved the recording to a different folder to protect it from accidental changes. Unfortunately, he had forgotten to tell the team. The students felt relieved, but they also realised that a useful action can cause confusion if nobody explains it. They agreed to keep a simple record whenever a file was moved and to listen carefully when someone raised a concern. The finished film showed more than changes in technology: it showed why clear messages, careful listening and trust matter in every generation.",
+          "items": [
+            {
+              "stem": "What did Mariam's class make about communication?",
+              "answers": [
+                "a short film"
+              ]
+            },
+            {
+              "stem": "Who did the class interview about earlier ways of sharing news?",
+              "answers": [
+                "grandparents"
+              ]
+            },
+            {
+              "stem": "What seemed to disappear from the shared folder?",
+              "answers": [
+                "a recorded interview"
+              ]
+            },
+            {
+              "stem": "Who had moved the missing recording?",
+              "answers": [
+                "Bilal"
+              ]
+            },
+            {
+              "stem": "Why did he move it?",
+              "answers": [
+                "to protect it"
+              ]
+            },
+            {
+              "stem": "What did the team agree to record in future?",
+              "answers": [
+                "file movements"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g9-U2-W1",
+          "skill": "writing",
+          "group": 1,
+          "marks": 5,
+          "title": "Writing 1 — Story",
+          "prompt": "Write a story about a message that caused a misunderstanding while you were preparing a school event. Use past simple and past continuous, include a clear solution and write at least 100 words.",
+          "minWords": 100
+        },
+        {
+          "id": "g9-U2-W2",
+          "skill": "writing",
+          "group": 2,
+          "marks": 5,
+          "title": "Writing 2 — Email",
+          "prompt": "Write an email to a friend describing a language or communication project in which you took part. Explain what you learned about listening, speaking, translation or technology. Write at least 100 words.",
+          "minWords": 100
+        }
+      ],
+      "teacherReviewPending": true,
+      "certifiedTextbookMatch": false,
+      "status": "original_unit_aligned_teacher_review_paper"
+    },
+    {
+      "model": "U3",
+      "grade": 9,
+      "semester": 1,
+      "unit": 3,
+      "unitTitle": "The future is now",
+      "minutes": 120,
+      "marks": 40,
+      "tasks": [
+        {
+          "id": "g9-U3-L1",
+          "skill": "listening",
+          "group": 1,
+          "marks": 5,
+          "title": "Listening 1 — Choose the picture",
+          "items": [
+            {
+              "stem": "Where will the new health-technology exhibition take place?",
+              "choices": [
+                "stadium",
+                "school building",
+                "park"
+              ],
+              "images": [
+                "../images/illustration-extra-3-1.png",
+                "../images/illustration-extra-3-2.png",
+                "../images/illustration-extra-3-3.png"
+              ],
+              "answer": 1,
+              "script": "Our science club is demonstrating devices that help people in everyday life. The stadium was considered but would be too expensive, while the park lacks a reliable power supply. The exhibition will be held in the school building next month, where the prototypes can be tested safely."
+            },
+            {
+              "stem": "Which device did Ali choose for a home-technology experiment?",
+              "choices": [
+                "art",
+                "football",
+                "photography"
+              ],
+              "images": [
+                "../images/illustration-2-1.png",
+                "../images/illustration-2-2.png",
+                "../images/illustration-2-3.png"
+              ],
+              "answer": 2,
+              "script": "Ali considered a robot that could paint pictures, and his cousin wanted a system for analysing football matches. Ali finally chose a camera connected to a simple computer program. It can recognise whether a plant is healthy from its leaves, although the students must still check the result."
+            },
+            {
+              "stem": "What weather does the smart-home system predict?",
+              "choices": [
+                "sunny",
+                "rainy",
+                "snowy"
+              ],
+              "images": [
+                "../images/illustration-3-1.png",
+                "../images/illustration-3-2.png",
+                "../images/illustration-3-3.png"
+              ],
+              "answer": 1,
+              "script": "A new home assistant helps the family plan outdoor activities. Yesterday it showed sunshine, and an old video displayed snow in another country. Today the assistant predicts heavy rain for the afternoon, so the family will stay indoors and test their new interactive game instead."
+            },
+            {
+              "stem": "At what time will the robotics demonstration begin?",
+              "choices": [
+                "three o'clock",
+                "seven o'clock",
+                "five o'clock"
+              ],
+              "images": [
+                "../images/illustration-4-1.png",
+                "../images/illustration-4-2.png",
+                "../images/illustration-4-3.png"
+              ],
+              "answer": 2,
+              "script": "The robotics exhibition has a new timetable. Some notices showed seven o'clock and one message incorrectly said three o'clock. The official school website confirms that the presentation starts at five o'clock. Students are meeting the engineer half an hour earlier to test the equipment."
+            },
+            {
+              "stem": "Which activity will the smart watch help track?",
+              "choices": [
+                "swimming",
+                "running",
+                "cycling"
+              ],
+              "images": [
+                "../images/illustration-extra-2-1.png",
+                "../images/illustration-extra-2-2.png",
+                "../images/illustration-extra-2-3.png"
+              ],
+              "answer": 1,
+              "script": "The new wrist device can measure distance and record movement. It is not waterproof enough for swimming, and the school does not have equipment for cycling lessons. The team has decided to test the watch during running sessions, when students can compare their results safely."
+            }
+          ],
+          "transcript": "Text 1. Our science club is demonstrating devices that help people in everyday life. The stadium was considered but would be too expensive, while the park lacks a reliable power supply. The exhibition will be held in the school building next month, where the prototypes can be tested safely.\n\nText 2. Ali considered a robot that could paint pictures, and his cousin wanted a system for analysing football matches. Ali finally chose a camera connected to a simple computer program. It can recognise whether a plant is healthy from its leaves, although the students must still check the result.\n\nText 3. A new home assistant helps the family plan outdoor activities. Yesterday it showed sunshine, and an old video displayed snow in another country. Today the assistant predicts heavy rain for the afternoon, so the family will stay indoors and test their new interactive game instead.\n\nText 4. The robotics exhibition has a new timetable. Some notices showed seven o'clock and one message incorrectly said three o'clock. The official school website confirms that the presentation starts at five o'clock. Students are meeting the engineer half an hour earlier to test the equipment.\n\nText 5. The new wrist device can measure distance and record movement. It is not waterproof enough for swimming, and the school does not have equipment for cycling lessons. The team has decided to test the watch during running sessions, when students can compare their results safely.",
+          "audio": "audio/g9-u3-listening-1.mp3"
+        },
+        {
+          "id": "g9-U3-L2",
+          "skill": "listening",
+          "group": 2,
+          "marks": 5,
+          "title": "Listening 2 — Interview",
+          "items": [
+            {
+              "stem": "Who suggested the invention?",
+              "choices": [
+                "Noura's grandmother",
+                "A famous singer",
+                "A football coach"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "What activates the reminder?",
+              "choices": [
+                "A timer",
+                "A rain sensor",
+                "A shop alarm"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Where will students test the prototype?",
+              "choices": [
+                "At a railway station",
+                "In the science laboratory",
+                "At the town market"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "What problem was found in the early version?",
+              "choices": [
+                "It was too heavy",
+                "It used the wrong colour",
+                "The warning was too quiet"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "When is the next meeting with the engineer?",
+              "choices": [
+                "Wednesday",
+                "Friday",
+                "Sunday"
+              ],
+              "answer": 0
+            }
+          ],
+          "transcript": "Interviewer: Welcome to Future Voices. What kind of technology is your science club developing, Noura, and who might benefit from it?\nNoura: We are building a simple device that reminds older people to drink water at regular times during the day.\nInterviewer: Did the idea come from a famous inventor, or did someone in your local community suggest it?\nNoura: My grandmother suggested it when she forgot to drink enough water during a busy afternoon last year.\nInterviewer: How will the device work, and does it use artificial intelligence to make medical decisions for its user?\nNoura: A timer activates a small light and a sound. It never gives medical advice; people still make their own decisions.\nInterviewer: Where are the students going to test the prototype, and who is supervising the trial?\nNoura: We are going to test it in the science laboratory next month with our teacher and a volunteer engineer.\nInterviewer: What happened when you tried an early version, and how are you changing the design because of that problem?\nNoura: The warning was too quiet, so we are adding a brighter signal as well as a clearer button.\nInterviewer: When is your team meeting the engineer again? Is the appointment already confirmed with the school?\nNoura: We are meeting her on Wednesday. The school timetable confirms that she will arrive before the second break.\nInterviewer: What advice would you give other students who want to design useful technology for families?\nNoura: Ask people what they need, test your ideas carefully and remember that technology should support human judgement.",
+          "audio": "audio/g9-u3-listening-2.mp3"
+        },
+        {
+          "id": "g9-U3-GV",
+          "skill": "grammar_vocabulary",
+          "group": 1,
+          "marks": 10,
+          "title": "Grammar and Vocabulary — ten gaps",
+          "passage": "1. I think more schools ____ use solar energy in the future.\n2. Look at those dark clouds. It ____ rain.\n3. We ____ the engineer on Tuesday; the appointment is confirmed.\n4. The exhibition ____ at nine o'clock tomorrow.\n5. Our class ____ build a robot next term; we have already made the plan.\n6. If the device fails, we ____ the battery first.\n7. A first working model of an invention is a ____.\n8. A device that measures changes in its environment is a ____.\n9. The ability of a computer to perform tasks associated with human intelligence is called ____.\n10. To make a product better after testing is to ____ it.",
+          "items": [
+            {
+              "stem": "Gap 1",
+              "choices": [
+                "will",
+                "were",
+                "have"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 2",
+              "choices": [
+                "will to",
+                "is going to",
+                "is going"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 3",
+              "choices": [
+                "are meeting",
+                "met yesterday",
+                "meet every day"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 4",
+              "choices": [
+                "will opened",
+                "is opening yesterday",
+                "opens"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Gap 5",
+              "choices": [
+                "is going to",
+                "was going to yesterday",
+                "is"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 6",
+              "choices": [
+                "checked",
+                "will check",
+                "checking"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 7",
+              "choices": [
+                "prototype",
+                "receipt",
+                "passenger"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 8",
+              "choices": [
+                "sensor",
+                "passport",
+                "paragraph"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Gap 9",
+              "choices": [
+                "public transport",
+                "artificial intelligence",
+                "customer service"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Gap 10",
+              "choices": [
+                "improve",
+                "ignore",
+                "delete"
+              ],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "id": "g9-U3-R1",
+          "skill": "reading",
+          "group": 1,
+          "marks": 4,
+          "title": "Reading 1 — Matching",
+          "passage": "Match four learners to five activities. One extra.",
+          "people": [
+            "Amal is designing a reminder system and wants to learn how safe technology can assist older relatives at home.",
+            "Rashid wants to understand how computer programs recognise patterns in photographs without replacing human decisions.",
+            "Huda enjoys filming and hopes to create interactive entertainment that responds to the viewer's choices.",
+            "Salim wants to predict his team's performance by using sensor readings collected during running practice."
+          ],
+          "options": [
+            "A: Interactive media club: explore how a story or film can change in response to what an audience chooses.",
+            "B: Health design workshop: create and test simple reminder devices that support people's everyday routines.",
+            "C: Image technology group: learn how software identifies patterns and why humans must verify results.",
+            "D: Sports technology workshop: compare distance and movement information from safe wearable sensors.",
+            "E: A historical costume workshop about traditional clothing from previous centuries."
+          ],
+          "items": [
+            {
+              "stem": "Person 1: Amal is designing a reminder system and wants to learn how safe technology can assist older relatives at home.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 1
+            },
+            {
+              "stem": "Person 2: Rashid wants to understand how computer programs recognise patterns in photographs without replacing human decisions.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 2
+            },
+            {
+              "stem": "Person 3: Huda enjoys filming and hopes to create interactive entertainment that responds to the viewer's choices.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 0
+            },
+            {
+              "stem": "Person 4: Salim wants to predict his team's performance by using sensor readings collected during running practice.",
+              "choices": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ],
+              "answer": 3
+            }
+          ]
+        },
+        {
+          "id": "g9-U3-R2",
+          "skill": "reading",
+          "group": 2,
+          "marks": 6,
+          "title": "Reading 2 — Short answers",
+          "passage": "A group of students at a school in Nizwa is planning a small smart garden. The project will use sensors to measure moisture in the soil, and a simple app will display the results. The students are going to test the first prototype next month. Their science teacher reminds them that a sensor cannot make every decision. For example, the app may report dry soil, but the team must check whether a plant actually needs water before opening the irrigation system. Some pupils think artificial intelligence will make gardening easier; others worry that relying completely on technology could waste water when a sensor breaks. The group is meeting a local engineer on Tuesday to discuss those risks. A school exhibition opens at nine o'clock on Thursday, and the pupils hope to demonstrate the garden there. They will collect feedback and improve the design before producing a larger version. They want to show that useful inventions combine technology with responsible human judgement.",
+          "items": [
+            {
+              "stem": "Which property will the smart garden's sensors measure?",
+              "answers": [
+                "soil moisture"
+              ]
+            },
+            {
+              "stem": "When are the pupils planning to test the prototype?",
+              "answers": [
+                "next month"
+              ]
+            },
+            {
+              "stem": "Which professional are they meeting on Tuesday?",
+              "answers": [
+                "a local engineer"
+              ]
+            },
+            {
+              "stem": "At what time does the exhibition open?",
+              "answers": [
+                "nine o'clock"
+              ]
+            },
+            {
+              "stem": "What may happen if a sensor breaks?",
+              "answers": [
+                "water may be wasted"
+              ]
+            },
+            {
+              "stem": "What should technology be combined with?",
+              "answers": [
+                "human judgement"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g9-U3-W1",
+          "skill": "writing",
+          "group": 1,
+          "marks": 5,
+          "title": "Writing 1 — Story",
+          "prompt": "Write a story about a school technology demonstration that went wrong at first but was improved through teamwork and careful testing. Include a clear ending and write at least 100 words.",
+          "minWords": 100
+        },
+        {
+          "id": "g9-U3-W2",
+          "skill": "writing",
+          "group": 2,
+          "marks": 5,
+          "title": "Writing 2 — Email",
+          "prompt": "Write an email to your science teacher proposing an invention that helps people with technology. Explain how it will work, when you are going to test it and what advice you need. Write at least 100 words.",
+          "minWords": 100
+        }
+      ],
+      "teacherReviewPending": true,
+      "certifiedTextbookMatch": false,
+      "status": "original_unit_aligned_teacher_review_paper"
+    }
+  ],
+  "notLegacyRecycled": true,
+  "approvedByTeacher": false
+}
