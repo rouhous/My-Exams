@@ -42,9 +42,9 @@ async def write_audio(script,part):
         parsed.append((m.group(2),0 if m.group(1)=='Maha' else 1))
       assert 25<=len(parsed)<=30
     else:
-      parsed=[(x.strip().replace('\n',' '),0) for x in script.split('Part Two')]
-      if len(parsed)!=2:raise ValueError('Need two parts in listening 2')
-      parsed=[('Part One. '+parsed[0].replace('Part One','',1),0),('Part Two. '+parsed[1],0)]
+      parts=[x.strip().replace('\n',' ') for x in script.split('Part Two')]
+      if len(parts)!=2:raise ValueError('Need two parts in listening 2')
+      parsed=[('Part One. '+parts[0].replace('Part One','',1),0),('Part Two. '+parts[1],0)]
     for repeat_index in range(2):
       for text,voice in parsed:await speak(text,voice);pause(.7)
       pause(5 if repeat_index==0 else 3)
