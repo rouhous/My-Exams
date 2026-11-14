@@ -25,10 +25,10 @@ summary{cursor:pointer;color:var(--green)}small,.muted{color:#60746a}
 <main>
 <p><a href="./paper-a-preview.html">Complete Unit 1 paper A: 70 marks / 180-minute timer, or one untimed skill</a></p>
 <section class="notice"><strong>Teacher-review drafts, not certified Ministry papers.</strong>
-These scripts were composed for the Unit 1 theme; the source book's specific content and full official-paper readiness still need teacher approval. No natural MP3 has been generated. Listening 1 needs two readers; Listening 2 uses one reader. Read the script twice before students answer.</section>
+These scripts were composed for the Unit 1 theme; the source book's specific content and full official-paper readiness still need teacher approval. Natural MP3 players appear only after a successful recording with a matching script checksum. Otherwise Listening 1 needs two readers and Listening 2 needs one. Read the script twice before students answer.</section>
 <section><label for="task"><strong>Select the listening task</strong></label>
 <select id="task"><option value="1">Listening 1 — two-speaker dialogue (6 MCQ + 4 T/F)</option><option value="2">Listening 2 — informative monologue (5 notes + 5 short answers)</option></select>
-<h2 id="taskTitle">Listening 1</h2><p id="instructions">Loading original draft…</p>
+<h2 id="taskTitle">Listening 1</h2><p id="instructions">Loading original draft…</p><p id="audioState" class="muted">Checking source-matched MP3…</p><audio id="audioPlayer" controls preload="metadata" hidden></audio>
 <details id="teacher"><summary>Teacher-only listening script — keep closed for student practice</summary><div class="script" id="script"></div></details>
 </section>
 <section><h2>Questions</h2><div id="quiz">Loading…</div>
@@ -42,6 +42,20 @@ These scripts were composed for the Unit 1 theme; the source book's specific con
 const $=id=>document.getElementById(id);
 const e=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
 let questions=[],kind='1',loading=false;
+async function linkAudio(source,n){
+  $('audioPlayer').hidden=true;$('audioPlayer').removeAttribute('src');$('audioState').textContent='Checking validated audio…';
+  try{
+    const r=await fetch('audio/manifest.json',{cache:'no-store'});if(!r.ok)throw Error('not yet generated');
+    const man=await r.json(),entry=man['unit1-listening'+n+'-original-draft.json'];
+    if(!entry||!/^[a-z0-9-]+\.mp3$/.test(entry.mp3)||!crypto.subtle)throw Error('no validated track');
+    const bytes=new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(source.script)));
+    const digest=Array.from(bytes).map(b=>b.toString(16).padStart(2,'0')).join('');
+    if(digest!==entry.scriptSha256)throw Error('script changed since recording');
+    if(n!==$('task').value)return;
+    $('audioPlayer').src='audio/'+entry.mp3;$('audioPlayer').hidden=false;
+    $('audioState').textContent='Verified source-matched natural MP3 available. Each text is read twice.';
+  }catch(err){if(n===$('task').value)$('audioState').textContent='Natural MP3 unavailable: teacher reads the script twice ('+err.message+').'}
+}
 async function load(){
 kind=$('task').value;questions=[];$('mark').disabled=true;$('feedback').innerHTML='';$('quiz').textContent='Loading original questions…';
 $('teacher').open=false;loading=true;
@@ -52,7 +66,7 @@ try{
  const d=await response.json();if(kind!==$('task').value)return;
  const words=d.script.trim().split(/\s+/).length;
  if(d.questions.length!==10||words!==d.wordCount||((kind==='1')&&(words<400||words>450||d.speakerTurns<25||d.speakerTurns>30))||((kind==='2')&&(words<450||words>500)))throw Error('Unreviewed content format');
- questions=d.questions;$('script').textContent=d.script;$('taskTitle').textContent=d.skill+' · 10 marks';
+ questions=d.questions;$('script').textContent=d.script;linkAudio(d,kind);$('taskTitle').textContent=d.skill+' · 10 marks';
  $('instructions').textContent=kind==='1'?
   'Listen twice to a dialogue between Maha and Hamad about a photography exhibition. For items 1–6 choose one of three options; for items 7–10 choose True or False.':
   'Listen twice to a single-speaker description of a sculpture exhibition. Complete five notes with at most TWO WORDS or a NUMBER, then give five short answers with at most FOUR WORDS.';
