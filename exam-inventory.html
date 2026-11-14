@@ -31,9 +31,9 @@ th{background:#eff5f0}a{color:#14583e}
    if(track==='11 Core')message+=' (تدريبات 5 أقسام فقط؛ الامتحان الرسمي الجديد بلا صوت)';
    if(track==='12 Elective')message+=' (نماذج الوحدات الجديدة؛ المسودات القديمة بدون صوت)';
    if(track==='11 Elective'||track==='12 Core')message+=' (مسودات بدون تسجيلات)';
-   const link=track==='12 Elective'?'grade12/elective/index.html':track==='11 Core'?'grade11/core/index.html':track==='10'?'grade10/index.html':Number(track)===9?'grade9/index.html':Number(track)===7||Number(track)===8?'grades7-8/index.html?grade='+track:'grades5-6/index.html?grade='+track;
+   const link=track==='12 Elective'?'grade12/elective/index.html':track==='11 Core'?'grade11/core/index.html':track==='10'?'grade10/index.html':Number(track)===9?'grade9/index.html':Number(track)===7||Number(track)===8?'grades7-8/index.html?grade='+track:Number(track)===5||Number(track)===6?'grades5-6/index.html?grade='+track:'upper-grades-practice.html';
    let txt=x.fixedIds+(x.additionalTeacherReadSemesterPapers?' + ورقة فصلية واحدة':'');
-   return '<tr><td><strong>'+e(track)+'</strong></td><td>'+e(x.fixedModels)+' ('+e(txt)+')</td><td>'+e(x.mixedFixedModels)+(x.additionalLegacyDraftModels?' + '+x.additionalLegacyDraftModels+' مسودات قديمة':'')+'</td><td>'+(x.randomComplete?'متاح للتجربة':'غير متاح')+'</td><td>'+e(message)+'</td><td class="indicator">قيد المراجعة</td></tr>';
+   return '<tr><td><strong><a href="'+e(link)+'">'+e(track)+'</a></strong></td><td>'+e(x.fixedModels)+' ('+e(txt)+')</td><td>'+e(x.mixedFixedModels)+(x.additionalLegacyDraftModels?' + '+x.additionalLegacyDraftModels+' مسودات قديمة':'')+'</td><td>'+(x.randomComplete?'متاح للتجربة':'غير متاح')+'</td><td>'+e(message)+'</td><td class="indicator">قيد المراجعة</td></tr>';
   }).join('');
   $('images').innerHTML=[5,6,7,8,9].map(g=>{const d=aud.images[g]||{};return '<div class="banner"><h2>الصف '+g+'</h2><div class="big">'+(d.optionReferences??0)+'</div><p>مرجعًا للصور داخل الخيارات</p><p class="muted">'+(d.missingFiles?.length?'ملفات مفقودة: '+d.missingFiles.length:'جميع الملفات موجودة')+'</p></div>'}).join('');
   const affected=Object.entries(aud.audio).filter(([_,v])=>v.missing?.length).map(([track,v])=>'<p><strong>'+e(track)+'</strong>: '+v.missing.length+' مهمات تستلزم صوتًا معتمدًا أو تحققًا جديدًا.</p>').join('');
