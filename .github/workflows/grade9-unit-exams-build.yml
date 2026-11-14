@@ -1,0 +1,82 @@
+name: Grade 9 build three original unit exams and verified Listening MP3
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'grade9/unit-exams/source-content.json'
+      - 'grade9/unit-remediation/units.json'
+      - 'scripts/build_grade9_unit_exams.py'
+      - 'scripts/generate_grade9_unit_exam_audio.py'
+      - '.github/workflows/grade9-unit-exams-build.yml'
+permissions:
+  contents: write
+concurrency:
+  group: original-grade9-unit-exams
+  cancel-in-progress: false
+jobs:
+  original-papers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install neural voices, MP3 validators and ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          pip install edge-tts gTTS mutagen
+      - name: Build unit-specific model data
+        run: python scripts/build_grade9_unit_exams.py
+      - name: Generate all six local Listening recordings
+        run: python scripts/generate_grade9_unit_exam_audio.py
+      - name: Verify each complete paper and all media sources
+        run: |
+          python - <<'PY'
+          import json,hashlib,pathlib
+          from mutagen.mp3 import MP3
+          base=pathlib.Path('grade9/unit-exams')
+          data=json.loads((base/'models.json').read_text())
+          man=json.loads((base/'audio/manifest.json').read_text())
+          assert len(data['models'])==3 and len(man)==6
+          for m in data['models']:
+              assert sum(x['marks'] for x in m['tasks'])==40 and len(m['tasks'])==7
+              for t in m['tasks'][:2]:
+                  src={'transcript':t.get('transcript'),'items':t.get('items'),'questions':t.get('questions')}
+                  h=hashlib.sha256(json.dumps(src,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
+                  entry=man[t['id']]
+                  assert entry['sourceHash']==h
+                  f=base/'audio'/entry['mp3']
+                  assert f.stat().st_size>15000 and MP3(f).info.length>40
+                  assert entry['playedTwice'] is True
+                  if t['group']==1:
+                      assert all(len(q['images'])==3 for q in t['items'])
+                      for q in t['items']:
+                          for img in q['images']:
+                              assert (base/img).is_file(),img
+          print('PASS: three 40-mark unit papers, six exact-source MP3 tracks, fifteen illustrated listening questions.')
+          PY
+      - name: Publish only when originating sources remain identical on main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            for p in grade9/unit-exams/source-content.json grade9/unit-remediation/units.json scripts/build_grade9_unit_exams.py scripts/generate_grade9_unit_exam_audio.py; do
+              ours=$(sha256sum "$p" | cut -d' ' -f1)
+              theirs=$(git show "origin/main:$p" | sha256sum | cut -d' ' -f1)
+              if [ "$ours" != "$theirs" ]; then
+                echo "Source changed during speech generation; cannot publish stale MP3 for $p" >&2
+                exit 1
+              fi
+            done
+            git reset --mixed origin/main
+            git add grade9/unit-exams/models.json grade9/unit-exams/audio/
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m 'Publish three original Grade 9 40-mark unit papers with six checked MP3'
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 6
+          done
+          exit 1
