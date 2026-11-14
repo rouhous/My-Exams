@@ -55,7 +55,7 @@
     {
       "type": "short",
       "stem": "What promise in the shared message was incorrect?",
-      "answer": "every device would be repaired",
+      "answer": "all devices repaired",
       "maxWords": 4
     },
     {
