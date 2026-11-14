@@ -78,6 +78,23 @@ natu9_js=(ROOT/"grade9/natural_audio.js").read_text()
 start=natu9_js.index("const NATURAL_AUDIO=")+len("const NATURAL_AUDIO=")
 jdecoder=json.JSONDecoder()
 cfg9,_=jdecoder.raw_decode(natu9_js[start:])
+# The segmented Grade 9 A recording has no source SHA manifest. Verify its
+# actual segment transcripts match the current source items/interview exactly.
+def normalize_spoken(s): return re.sub(r"\\s+"," ",s).strip()
+original_a=next(m for m in models9 if m["model"]=="A")
+a_source_matches={}
+for key in ("g9-A-L1","g9-A-L2"):
+    task=next(t for t in original_a["tasks"] if t["id"]==key)
+    segments=[x["text"] for x in cfg9[key]["segments"]]
+    if key.endswith("L1"):
+        a_source_matches[key]=(len(segments)==len(task["items"]) and all(
+            normalize_spoken(segments[i])==normalize_spoken(t["script"])
+            for i,t in enumerate(task["items"])))
+    else:
+        source=re.sub(r"\\b(?:Interviewer|Maha)\\s*:","",task["transcript"])
+        a_source_matches[key]=normalize_spoken(source)==normalize_spoken(" ".join(segments))
+    if not a_source_matches[key]:
+        failures.append({"grade":"9","task":key,"issue":"Segmented natural audio spoken transcript is stale"})
 for key in ("g9-A-L1","g9-A-L2"):
     c=cfg9[key]
     for seg in [c["intro"],*c["segments"]]:
@@ -91,11 +108,19 @@ for m in models9:
         if t.get("skill")!="listening":continue
         key=t["id"]
         audio["9"]["requiredOriginalListeningSections"]+=1
+        if key in source9:
+            current=digest({"transcript":t.get("transcript"),"items":t.get("items"),"questions":t.get("questions")})
+            previous=digest({"transcript":source9[key].get("transcript"),"items":source9[key].get("items"),"questions":source9[key].get("questions")})
+            if current!=previous:
+                failures.append({"grade":"9","task":key,"issue":"Mixed model reuses identifier with modified source script or questions","model":m["model"]})
         source9[key]=t
         if not req(9,"grade9/"+t["audio"],"Grade 9 fallback MP3 missing"):
             audio["9"]["missing"].append(key)
         elif key.startswith("g9-A-"):
-            audio["9"]["verifiedLinkedMP3"]+=1
+            if a_source_matches.get(key):
+                audio["9"]["verifiedLinkedMP3"]+=1
+            else:
+                audio["9"]["missing"].append({"task":key,"reason":"segment_source_text_mismatch"})
         else:
             name={"g9-B-L1":"g9-b-listening-1.mp3","g9-B-L2":"g9-b-listening-2.mp3",
                   "g9-C-L1":"g9-c-listening-1.mp3","g9-C-L2":"g9-c-listening-2.mp3",
