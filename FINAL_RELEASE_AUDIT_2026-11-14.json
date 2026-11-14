@@ -1,0 +1,279 @@
+{
+  "date": "2026-11-14",
+  "project": "My Exams",
+  "semester": 1,
+  "excludedGrades": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "auditType": "final_technical_and_curriculum_gap_inventory__NOT_teacher_approval",
+  "noPhysicalMediaMissing": true,
+  "imageReferencesByGrade": {
+    "5": {
+      "references": 24,
+      "missingFiles": 0,
+      "visualApproval": "pending"
+    },
+    "6": {
+      "references": 24,
+      "missingFiles": 0,
+      "visualApproval": "pending"
+    },
+    "7": {
+      "references": 60,
+      "missingFiles": 0,
+      "visualApproval": "pending"
+    },
+    "8": {
+      "references": 60,
+      "missingFiles": 0,
+      "visualApproval": "pending"
+    },
+    "9": {
+      "references": 105,
+      "missingFiles": 0,
+      "visualApproval": "contact_sheet_option_labels_checked_105_references__unit_page_review_pending"
+    }
+  },
+  "audioByTrack": {
+    "5": {
+      "requiredLinkedSections": 8,
+      "sourceMatchedOrSegmentVerified": 8,
+      "notVerified": 0,
+      "missing": 0
+    },
+    "6": {
+      "requiredLinkedSections": 8,
+      "sourceMatchedOrSegmentVerified": 8,
+      "notVerified": 0,
+      "missing": 0
+    },
+    "7": {
+      "requiredLinkedSections": 8,
+      "sourceMatchedOrSegmentVerified": 8,
+      "notVerified": 0,
+      "missing": 0
+    },
+    "8": {
+      "requiredLinkedSections": 8,
+      "sourceMatchedOrSegmentVerified": 8,
+      "notVerified": 0,
+      "missing": 0
+    },
+    "9": {
+      "requiredLinkedSections": 14,
+      "sourceMatchedOrSegmentVerified": 14,
+      "notVerified": 0,
+      "missing": 0
+    },
+    "10": {
+      "requiredLinkedSections": 6,
+      "sourceMatchedOrSegmentVerified": 6,
+      "notVerified": 0,
+      "missing": 0
+    },
+    "11-core": {
+      "requiredLinkedSections": 6,
+      "sourceMatchedOrSegmentVerified": 6,
+      "notVerified": 0,
+      "missing": 0
+    },
+    "11-core-semester-a": {
+      "requiredLinkedSections": 2,
+      "sourceMatchedOrSegmentVerified": 2,
+      "notVerified": 0,
+      "missing": 0
+    },
+    "11-elective-legacy": {
+      "requiredLinkedSections": 12,
+      "sourceMatchedOrSegmentVerified": 12,
+      "notVerified": 0,
+      "missing": 0
+    },
+    "12-core-legacy": {
+      "requiredLinkedSections": 12,
+      "sourceMatchedOrSegmentVerified": 12,
+      "notVerified": 0,
+      "missing": 0
+    },
+    "12-elective-legacy": {
+      "requiredLinkedSections": 12,
+      "sourceMatchedOrSegmentVerified": 12,
+      "notVerified": 0,
+      "missing": 0
+    },
+    "12-elective-units": {
+      "requiredLinkedSections": 8,
+      "sourceMatchedOrSegmentVerified": 8,
+      "notVerified": 0,
+      "missing": 0
+    }
+  },
+  "totalVerifiedSectionLinks": 104,
+  "totalImageOptionReferences": 273,
+  "imageMapping7_8": {
+    "questionsReviewed": 40,
+    "optionReferencesReviewed": 120,
+    "answerMappingErrors": 0,
+    "inconsistentLabelIcons": 0,
+    "teacherActualVisualApproval": false
+  },
+  "tracks": [
+    {
+      "grade": 5,
+      "track": "standard",
+      "unitFixed": "A-D four units",
+      "fixed": 4,
+      "mixed": 2,
+      "otherDrafts": 0,
+      "random": true,
+      "audioKey": "5",
+      "imageCount": 24,
+      "unitReview": "four themes match published unit titles; question-language mapping reviewed thematically",
+      "release": "pilot_only_pending_textbook_page_and_audio_quality_signoff"
+    },
+    {
+      "grade": 6,
+      "track": "standard",
+      "unitFixed": "A-C three units; D semester-mixed",
+      "fixed": 4,
+      "mixed": 2,
+      "otherDrafts": 0,
+      "random": true,
+      "audioKey": "6",
+      "imageCount": 24,
+      "unitReview": "A-C align with Free-time Fun, Technology and Places; D mixed",
+      "release": "pilot_only_pending_textbook_page_and_audio_quality_signoff"
+    },
+    {
+      "grade": 7,
+      "track": "standard",
+      "unitFixed": "A-C three units; D semester-mixed",
+      "fixed": 4,
+      "mixed": 2,
+      "otherDrafts": 0,
+      "random": true,
+      "audioKey": "7",
+      "imageCount": 60,
+      "unitReview": "A-C currently themed Entertainment, Awesome Animals, Travel; D mixed",
+      "release": "pilot_only_pending_textbook_page_and_picture_visual_signoff"
+    },
+    {
+      "grade": 8,
+      "track": "standard",
+      "unitFixed": "A-C three units; D semester-mixed",
+      "fixed": 4,
+      "mixed": 2,
+      "otherDrafts": 0,
+      "random": true,
+      "audioKey": "8",
+      "imageCount": 60,
+      "unitReview": "A-C currently themed Our Planet, Adventure Sports, Spend or Save; D mixed; D water-bottle image repaired",
+      "release": "pilot_only_pending_textbook_page_and_picture_visual_signoff"
+    },
+    {
+      "grade": 9,
+      "track": "standard",
+      "unitFixed": "A,B,C,G thematic drafts; D,E,F mixed reuse",
+      "fixed": 7,
+      "mixed": 0,
+      "otherDrafts": 0,
+      "random": true,
+      "audioKey": "9",
+      "imageCount": 105,
+      "unitReview": "New 2026 Gold Experience units Identity, Connections, The Future Is Now; zero complete A/B/C/G models certified unit-specific; D/E/F explicitly mixed",
+      "release": "blocked_for_unit_specific_release"
+    },
+    {
+      "grade": 10,
+      "track": "standard",
+      "unitFixed": "A-D four units",
+      "fixed": 4,
+      "mixed": 2,
+      "otherDrafts": 0,
+      "random": true,
+      "audioKey": "10",
+      "imageCount": null,
+      "unitReview": "A-D source sections now follow New Media, Climate Change, Renewable Energy, Civilisation; E/F mixed",
+      "release": "pilot_only_pending_official_question_and_textbook_page_signoff"
+    },
+    {
+      "grade": 11,
+      "track": "core",
+      "unitFixed": "A-D unit-themed five-section pilot",
+      "fixed": 4,
+      "mixed": 2,
+      "otherDrafts": 1,
+      "random": true,
+      "audioKey": "11-core",
+      "extraAudioKey": "11-core-semester-a",
+      "imageCount": null,
+      "unitReview": "A-D have correct unit headings but omit four of nine official SAH sections; one separate nine-section teacher draft A exists",
+      "release": "blocked_official_paper_structure"
+    },
+    {
+      "grade": 11,
+      "track": "elective",
+      "unitFixed": "A-D provisional; themes do not match Fame, The Mind, In the Past, Careers",
+      "fixed": 4,
+      "mixed": 2,
+      "otherDrafts": 0,
+      "random": true,
+      "audioKey": "11-elective-legacy",
+      "imageCount": null,
+      "unitReview": "all four A-D unit themes mismatch course unit titles and sections; mixed E/F cannot fix",
+      "release": "blocked_unit_mismatch"
+    },
+    {
+      "grade": 12,
+      "track": "core",
+      "unitFixed": "A-D provisional; titles exist but content borrowed from unrelated projects",
+      "fixed": 4,
+      "mixed": 2,
+      "otherDrafts": 0,
+      "random": true,
+      "audioKey": "12-core-legacy",
+      "imageCount": null,
+      "unitReview": "Retail Therapy, Starting University, Tourism and Hospitality, Travel and Transport headers do not establish matching listening/reading/writing source content; rebuild required",
+      "release": "blocked_unit_content_mismatch"
+    },
+    {
+      "grade": 12,
+      "track": "elective",
+      "unitFixed": "four distinct new complete unit drafts A-D",
+      "fixed": 4,
+      "mixed": 0,
+      "otherDrafts": 6,
+      "random": true,
+      "audioKey": "12-elective-units",
+      "legacyAudioKey": "12-elective-legacy",
+      "imageCount": null,
+      "unitReview": "The Arts, Doing the Right Thing, Living in a Changing World, Higher Education: all new models have 6 sections/70 marks; Unit4 writing1 updated to problem-solution; old six remain unapproved and excluded from new random",
+      "release": "structural_audio_pilot_passed_pending_teacher_curriculum_page_signoff"
+    }
+  ],
+  "safeguards": [
+    "fixed and mixed papers remain separate; reusing intact tasks does not require duplicate MP3",
+    "matching source hash or exact segmented transcript is not listening-quality certification",
+    "picture filename/label matching is not physical image teacher signoff",
+    "theme match is not proof that all vocabulary/grammar stems are sourced from unit pages",
+    "AI grading of extended writing and real-device offline operation remain unapproved"
+  ],
+  "references": {
+    "repoInventory": "EXAM_INVENTORY_2026-11-14.json",
+    "mediaAudit": "MEDIA_STATUS_2026-11-14.json",
+    "imageAudit": "G7_G8_LISTENING_IMAGE_MAPPING_AUDIT_2026-11-14.json",
+    "grade9Image": "GRADE9_LISTENING_IMAGE_VISUAL_REVIEW_2026-11-14.json",
+    "upperGate": "UPPER_GRADES_RELEASE_GATE_2026-11-14.json",
+    "grade12QA": "scripts/audit_grade12_elective_units.py",
+    "officialGrade5": "https://ict.moe.gov.om/book/PDF/5/cls5_cb_5A/files/basic-html/page10.html",
+    "officialGrade6": "https://ict.moe.gov.om/book/PDF/6/cls6_cb_6A/files/basic-html/page10.html",
+    "officialGrade8": "https://ict.moe.gov.om/book/PDF/8/cls8_cb_8A/files/basic-html/page11.html",
+    "officialGrade10": "https://ict.moe.gov.om/book/PDF/10/cls10_cb_10A/files/basic-html/page13.html",
+    "officialGrade12Elective": "https://ict.moe.gov.om/book/PDF/12/cls12_Insights3_SB/files/downloads/cls12_Insights3_SB.pdf"
+  },
+  "totalStoredFixedAndDraftPapers": 66,
+  "note": "Technical inventory final for snapshot 2026-11-14; not all 66 are curriculum-approved or distinct original sources. A student-facing official-compliant release remains blocked for noted tracks."
+}
