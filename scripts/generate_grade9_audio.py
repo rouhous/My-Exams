@@ -3,7 +3,7 @@
 Uses Edge Neural TTS where available, then Google TTS as a fallback.
 Both attempts are checked for actual MP3 audio; failures stop the release.
 """
-import asyncio, json, pathlib, re, subprocess, tempfile
+import asyncio, json, pathlib, re, subprocess, tempfile, hashlib
 from gtts import gTTS
 from mutagen.mp3 import MP3
 import edge_tts
@@ -84,6 +84,7 @@ async def build(model,task,tmp):
     print('CREATED',output.relative_to(ROOT),round(duration,1),'seconds',output.stat().st_size,'bytes')
 
 async def main():
+    manifest={}
     for m in DATA['models']:
         if m['model'] not in {'B','C','G'}:continue
         with tempfile.TemporaryDirectory() as d:
@@ -91,4 +92,10 @@ async def main():
                 if t.get('skill')=='listening':
                     with tempfile.TemporaryDirectory(dir=d) as taskdir:
                         await build(m['model'],t,pathlib.Path(taskdir))
+                        source={'transcript':t.get('transcript'),'items':t.get('items'),'questions':t.get('questions')}
+                        fingerprint=hashlib.sha256(json.dumps(source,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
+                        mp3=f"g9-{m['model'].lower()}-listening-{t['group']}.mp3"
+                        manifest[t['id']]={'sourceHash':fingerprint,'mp3':mp3,'sourceModel':m['model'],'seconds':round(MP3(OUT/mp3).info.length,2),'bytes':(OUT/mp3).stat().st_size,'playedTwice':True}
+    (OUT/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+    assert len(manifest)==6
 if __name__=='__main__':asyncio.run(main())
