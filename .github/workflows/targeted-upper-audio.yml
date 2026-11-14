@@ -1,0 +1,73 @@
+name: Produce sixteen exact-source MP3 for eight new Grade 11/12 unit papers
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'targeted_units/full_papers.json'
+      - 'scripts/generate_targeted_upper_audio.py'
+      - '.github/workflows/targeted-upper-audio.yml'
+permissions:
+  contents: write
+jobs:
+  generate:
+    strategy:
+      fail-fast: false
+      matrix:
+        track: ['11-core','11-elective','12-core']
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install neural TTS and source audio validation
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          pip install edge-tts mutagen
+      - name: Generate only this track's exact-source Listening audio
+        run: python scripts/generate_targeted_upper_audio.py ${{ matrix.track }}
+      - name: Check both audio sections of each new unit paper
+        run: |
+          python - <<'PY'
+          import json,pathlib,hashlib
+          from mutagen.mp3 import MP3
+          d=json.loads(pathlib.Path('targeted_units/full_papers.json').read_text())
+          key='${{ matrix.track }}'
+          man=json.loads((pathlib.Path('targeted_units/audio')/key/'manifest.json').read_text())
+          papers=[x for x in d['papers'] if str(x['grade'])+'-'+x['track']==key]
+          assert len(man)==2*len(papers)
+          for paper in papers:
+            for skill in ('lst1','lst2'):
+              rec=man[paper['id']+'-'+skill]
+              src=paper['sections'][skill]['script']
+              assert rec['scriptSha256']==hashlib.sha256(src.encode()).hexdigest()
+              assert rec['scriptReadTwice'] is True
+              path=pathlib.Path('targeted_units/audio')/key/rec['mp3']
+              assert path.stat().st_size>25000 and MP3(path).info.length>150
+          print('Verified',len(man),'source-matched local recordings for',key)
+          PY
+      - name: Publish source-matched audio with safe retry
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            for f in targeted_units/full_papers.json scripts/generate_targeted_upper_audio.py; do
+              local_hash=$(sha256sum "$f" | cut -d' ' -f1)
+              remote_hash=$(git show "origin/main:$f" | sha256sum | cut -d' ' -f1)
+              if [ "$local_hash" != "$remote_hash" ]; then
+                echo "Refusing stale Listening audio: source changed in $f" >&2
+                exit 1
+              fi
+            done
+            git reset --mixed origin/main
+            git add "targeted_units/audio/${{ matrix.track }}"
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m "Publish new ${{ matrix.track }} source-matched unit Listening MP3"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 7
+          done
+          exit 1
