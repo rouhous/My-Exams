@@ -1,6 +1,6 @@
 /* My Exams offline router v4. Supports MP3 range requests and previous exam media caches. */
-const SHELL_CACHE='my-exams-shell-v7', MEDIA_CACHE='my-exams-media-v4';
-const SHELL=['./','index.html','review.html','tasks_5_to_9_corrected.json','higher_grades_corrected.json','upper-grades-practice.html','grade12/elective/units/index.html','grade12/elective/units/unit1-listening1-original-draft.json','grade12/elective/units/unit1-listening2-original-draft.json','curriculum_units.json','OFFLINE_MEDIA_MANIFEST.json'];
+const SHELL_CACHE='my-exams-shell-v8', MEDIA_CACHE='my-exams-media-v4';
+const SHELL=['./','index.html','review.html','tasks_5_to_9_corrected.json','higher_grades_corrected.json','upper-grades-practice.html','grade12/elective/units/index.html','grade12/elective/units/unit1-listening1-original-draft.json','grade12/elective/units/unit1-listening2-original-draft.json','grade12/elective/units/paper-a-preview.html','grade12/elective/units/unit1-reading1-original-draft.json','grade12/elective/units/unit1-reading2-original-draft.json','grade12/elective/units/unit1-writing-original-draft.json','curriculum_units.json','OFFLINE_MEDIA_MANIFEST.json'];
 self.addEventListener('install',e=>e.waitUntil((async()=>{await (await caches.open(SHELL_CACHE)).addAll(SHELL);await self.skipWaiting()})()));
 self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));
 async function fromCache(req){
