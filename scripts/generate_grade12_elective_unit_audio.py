@@ -26,11 +26,15 @@ async def render_task(source, target):
     script = source["script"].strip()
     if source["skill"] == "Listening 1":
         turns = []
+        speaker_names = []
         for line in script.splitlines():
-            m = re.fullmatch(r"\s*(Maha|Hamad)\s*:\s*(.+)\s*", line)
+            m = re.fullmatch(r"\s*([A-Za-z]+)\s*:\s*(.+)\s*", line)
             if not m:
                 raise ValueError("Unexpected dialogue line: " + line[:120])
-            turns.append((m.group(2).strip(), 0 if m.group(1)=="Maha" else 1))
+            speaker=m.group(1)
+            if speaker not in speaker_names: speaker_names.append(speaker)
+            if len(speaker_names)>2:raise ValueError("Dialogue has more than two speakers")
+            turns.append((m.group(2).strip(),speaker_names.index(speaker)))
         if not 25 <= len(turns) <= 30:
             raise ValueError("Dialogue turns missing")
         intro = "You are going to hear a conversation between two people about an art exhibition. Choose one answer for each question. You will hear the conversation twice."
@@ -88,6 +92,9 @@ async def render_task(source, target):
 async def main():
     tracks=sorted(UNIT_DIR.glob("unit*-listening[12]-original-draft.json"))
     if not tracks: raise SystemExit("No approved-shape listening scripts found")
+    prior={}
+    if (AUDIO_DIR/'manifest.json').exists():
+        prior=json.loads((AUDIO_DIR/'manifest.json').read_text())
     manifest={}
     for source_path in tracks:
         source=json.loads(source_path.read_text())
@@ -100,8 +107,13 @@ async def main():
         if source["skill"]=="Listening 2" and not 450<=actual<=500:raise ValueError(source_path.name)
         identifier=source_path.stem.replace("-original-draft","")
         out=AUDIO_DIR/(identifier+".mp3")
-        duration=await render_task(source,out)
         digest=hashlib.sha256(source["script"].encode("utf-8")).hexdigest()
+        previous=prior.get(source_path.name)
+        if previous and previous.get('scriptSha256')==digest and out.exists() and out.stat().st_size>25000 and MP3(out).info.length>180:
+            duration=round(MP3(out).info.length,2)
+            print("REUSE",out.relative_to(ROOT),"validated script hash",flush=True)
+        else:
+            duration=await render_task(source,out)
         manifest[source_path.name]={
             "sourceFile":str(source_path.relative_to(ROOT)),
             "scriptSha256":digest,
