@@ -96,7 +96,7 @@ var p=item.part,src=item.model;if(!p)return;
 var teacher=/^lst/.test(p.key);
 out+='<section class="part"><h2>'+esc(title(p.key))+' · '+esc(p.marks)+' marks</h2>';
 out+='<p class="meta">Source model '+esc(src.id)+' · '+esc(src.theme||'mixed')+' · '+esc(p.title||'')+'</p>';
-if(teacher){var url=verifiedAudio[tr+'|'+src.id+'|'+p.key];out+='<p class="red">'+(url?'Source-matched natural recording: played twice. Teacher approval of voices and textbook unit content remains pending.':'No source-verified MP3 yet. Teacher reads the script twice.')+'</p>'+(url?'<audio controls preload="metadata" src="'+esc(url)+'"></audio>':'')+'<details class="script"><summary>Teacher listening script (open only for supervised practice)</summary><div class="passage">'+esc(p.script||p.passage||'Script not available')+'</div></details>';}
+if(teacher){var url=verifiedAudio[tr+'|'+src.id+'|'+p.key];out+='<p class="red">'+(url?'Source-matched natural recording: played twice. Teacher approval of voices and textbook unit content remains pending.':'No source-verified MP3 yet. Teacher reads the script twice.')+'</p>'+(url?'<audio controls preload="metadata" src="'+esc(url)+'"></audio>':'')+'<details class="script"><summary>Teacher listening script (open only for supervised practice)</summary><div class="passage">'+esc((typeof p.script==='string'?p.script:p.passage)||'Script not available')+'</div></details>';}
 else if(p.passage)out+='<div class="passage">'+esc(p.passage)+'</div>';
 if(p.chart&&Array.isArray(p.chart.labels)){
 out+='<table class="chart"><caption>'+esc(p.chart.label||'Data')+'</caption><tbody>';
@@ -149,7 +149,7 @@ Promise.all([
    var track=keys[t],manifest=got[t+1];if(!manifest)continue;
    for(const m of bank[track])for(const part of m.parts){
      if(!/^lst/.test(part.key))continue;
-     var entry=manifest[m.id+'-'+part.key],txt=(part.script||part.passage||'').trim();
+     var entry=manifest[m.id+'-'+part.key],txt=((typeof part.script==='string'?part.script:part.passage)||'').trim();
      if(!entry||!/^[a-f]\d*-(?:lst1|lst2)\.mp3$/.test(entry.mp3))continue;
      var h=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(txt)))).map(function(b){return b.toString(16).padStart(2,'0')}).join('');
      if(entry.passageSha256===h)verifiedAudio[track+'|'+m.id+'|'+part.key]='./upper-audio/'+track+'/'+entry.mp3;
