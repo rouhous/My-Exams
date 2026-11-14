@@ -1,33 +1,89 @@
-<!doctype html><html lang="en"><head>
+<!doctype html>
+<html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Grade 12 Elective · The Arts · Listening 1 (Draft)</title>
+<meta name="theme-color" content="#174c39"><title>Grade 12 Elective · The Arts · Listening Practice Drafts</title>
 <style>
-:root{--green:#174c39;--gold:#b29247}*{box-sizing:border-box}body{margin:0;background:#f2f6f2;color:#23372e;font:16px/1.6 system-ui,Arial,sans-serif}
-header{background:var(--green);color:white;padding:18px}header a{color:#fbebb4}main{max-width:760px;margin:auto;padding:15px}
-section,.box{background:#fff;padding:17px;border:1px solid #dae3dc;border-radius:13px;margin:13px 0}.notice{background:#fff8e8;border-left:5px solid var(--gold)}
-h1{font-size:24px;margin:6px 0}h2{font-size:20px}label{display:block;padding:6px;margin:3px 0;cursor:pointer}button{font:inherit;background:var(--green);color:white;border:0;border-radius:10px;padding:10px 17px;cursor:pointer}button:disabled{opacity:.5}
-.q{border-top:1px solid #e3e9e4;padding:10px 0}.script{white-space:pre-wrap;background:#f5f9f5;padding:12px;line-height:1.8}summary{cursor:pointer;color:var(--green)}
+:root{--green:#174c39;--gold:#b29247}*{box-sizing:border-box}
+body{margin:0;background:#f2f6f2;color:#23372e;font:16px/1.6 system-ui,Arial,sans-serif}
+header{background:var(--green);color:white;padding:18px}header a{color:#fbebb4}
+main{max-width:780px;margin:auto;padding:15px}section{background:#fff;padding:17px;border:1px solid #dae3dc;border-radius:13px;margin:13px 0}
+.notice{background:#fff8e8;border-left:5px solid var(--gold)}
+h1{font-size:24px;margin:6px 0}h2{font-size:20px}
+label{display:block;padding:6px;margin:3px 0;cursor:pointer}
+select,input[type=text],button{font:inherit}
+select,input[type=text]{border:1px solid #b4c9bd;border-radius:9px;padding:10px;max-width:100%;width:100%}
+button{background:var(--green);color:white;border:0;border-radius:10px;padding:10px 17px;cursor:pointer}
+button:disabled{opacity:.5}
+.q{border-top:1px solid #e3e9e4;padding:10px 0}
+.q strong{display:block;margin-bottom:4px}
+.script{white-space:pre-wrap;background:#f5f9f5;padding:12px;line-height:1.8;max-height:500px;overflow:auto}
+summary{cursor:pointer;color:var(--green)}small,.muted{color:#60746a}
 </style></head><body>
-<header><a href="../../../upper-grades-practice.html">← Upper-grade practice</a><h1>Grade 12 Elective · Unit 1: The arts</h1><p>Listening 1 · 10 marks · Single-skill practice (no timer)</p></header>
-<main><section class="notice"><strong>Teacher-review draft, not a certified exam.</strong> Original 28-turn dialogue, with 6 three-option MCQ and 4 True/False items. Natural MP3 has not yet been generated. The teacher should read both voices (or use two readers) before students answer; this page does not pretend to contain audio.</section>
-<section><h2>Instructions</h2><p>You are going to hear a conversation between Maha and Hamad about a school exhibition. Listen, and shade in the bubble next to the correct option.</p>
-<details><summary>Teacher-only script · open before reading aloud</summary><pre class="script" id="script"></pre></details></section>
-<section><h2>Questions</h2><div id="quiz">Loading…</div><p><button id="mark" disabled>Check objective answers</button></p><div id="feedback" aria-live="polite"></div></section>
-<section><small>Source: original practice material drafted around the Unit 1 theme and listening-for-detail skills in <i>English Insights 3</i>. Teacher verification against the actual current textbook pages and full official paper is still required. The independent skill is intentionally untimed.</small></section></main>
+<header><a href="../../../upper-grades-practice.html">← Upper-grade practice</a>
+<h1>Grade 12 Elective · Unit 1: The arts</h1>
+<p>Two original listening activities · 20 marks together · Untimed skill practice</p></header>
+<main>
+<section class="notice"><strong>Teacher-review drafts, not certified Ministry papers.</strong>
+These scripts were composed for the Unit 1 theme; the source book's specific content and full official-paper readiness still need teacher approval. No natural MP3 has been generated. Listening 1 needs two readers; Listening 2 uses one reader. Read the script twice before students answer.</section>
+<section><label for="task"><strong>Select the listening task</strong></label>
+<select id="task"><option value="1">Listening 1 — two-speaker dialogue (6 MCQ + 4 T/F)</option><option value="2">Listening 2 — informative monologue (5 notes + 5 short answers)</option></select>
+<h2 id="taskTitle">Listening 1</h2><p id="instructions">Loading original draft…</p>
+<details id="teacher"><summary>Teacher-only listening script — keep closed for student practice</summary><div class="script" id="script"></div></details>
+</section>
+<section><h2>Questions</h2><div id="quiz">Loading…</div>
+<p><button id="mark" disabled>Review responses</button></p>
+<div id="feedback" aria-live="polite"></div></section>
+<section><small>The Grade 12 elective SAH shape used in this practice requires 400–450 dialogue words for Listening 1, and a 450–500-word informative monologue for Listening 2. Both tasks carry 10 marks. The short-answer model key is guidance, not reliable automatic grading. This is an independent, untimed practice activity.</small></section>
+</main>
 <script>
 (function(){
 'use strict';
-function e(s){return String(s||'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
-var questions=[];
-fetch('unit1-listening1-original-draft.json').then(function(r){if(!r.ok)throw Error(r.status);return r.json()}).then(function(d){
- if(d.wordCount<400||d.wordCount>450||d.speakerTurns<25||d.speakerTurns>30||d.questions.length!==10)throw Error('Script needs correction');
- questions=d.questions;document.getElementById('script').textContent=d.script;
- document.getElementById('quiz').innerHTML=d.questions.map(function(q,i){return '<div class="q"><strong>'+(i+1)+'. '+e(q.stem)+'</strong>'+q.options.map(function(opt,j){return '<label><input type="radio" name="q'+i+'" value="'+j+'"> '+e(opt)+'</label>'}).join('')+'</div>'}).join('');
- document.getElementById('mark').disabled=false;
-}).catch(function(err){document.getElementById('quiz').textContent='Draft unavailable: '+err.message});
-document.getElementById('mark').onclick=function(){var right=0,missed=[];
-questions.forEach(function(q,i){var el=document.querySelector('input[name="q'+i+'"]:checked'),v=el?Number(el.value):-1;if(v===q.answer)right++;else missed.push('Item '+(i+1)+': '+q.options[q.answer])});
-document.getElementById('feedback').innerHTML='<h2>'+right+' / '+questions.length+' correct</h2><p>Draft practice score only; not an official final exam mark.</p>'+ (missed.length?'<details><summary>Review missed answers</summary><ol>'+missed.map(function(x){return '<li>'+e(x)+'</li>'}).join('')+'</ol></details>':'');
-};
+const $=id=>document.getElementById(id);
+const e=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+let questions=[],kind='1',loading=false;
+async function load(){
+kind=$('task').value;questions=[];$('mark').disabled=true;$('feedback').innerHTML='';$('quiz').textContent='Loading original questions…';
+$('teacher').open=false;loading=true;
+const filename='unit1-listening'+kind+'-original-draft.json';
+try{
+ const response=await fetch(filename);
+ if(!response.ok)throw Error('HTTP '+response.status);
+ const d=await response.json();if(kind!==$('task').value)return;
+ const words=d.script.trim().split(/\s+/).length;
+ if(d.questions.length!==10||words!==d.wordCount||((kind==='1')&&(words<400||words>450||d.speakerTurns<25||d.speakerTurns>30))||((kind==='2')&&(words<450||words>500)))throw Error('Unreviewed content format');
+ questions=d.questions;$('script').textContent=d.script;$('taskTitle').textContent=d.skill+' · 10 marks';
+ $('instructions').textContent=kind==='1'?
+  'Listen twice to a dialogue between Maha and Hamad about a photography exhibition. For items 1–6 choose one of three options; for items 7–10 choose True or False.':
+  'Listen twice to a single-speaker description of a sculpture exhibition. Complete five notes with at most TWO WORDS or a NUMBER, then give five short answers with at most FOUR WORDS.';
+ $('quiz').innerHTML=questions.map((q,i)=>{
+  let options=Array.isArray(q.options)?
+    q.options.map((option,j)=>'<label><input type="radio" name="q'+i+'" value="'+j+'"> '+e(option)+'</label>').join(''):
+    '<input type="text" aria-label="'+e(q.stem)+'" name="q'+i+'" maxlength="120" autocomplete="off" placeholder="'+(q.type==='note'?'≤ 2 words / a number':'≤ 4 words')+'">';
+  return '<div class="q"><strong>'+(i+1)+'. '+e(q.stem)+'</strong>'+options+'</div>';
+ }).join('');$('mark').disabled=false;
+}catch(err){if(kind===$('task').value)$('quiz').textContent='Draft not available: '+err.message}
+finally{loading=false}
+}
+$('task').addEventListener('change',load);
+$('mark').addEventListener('click',function(){
+ if(loading||!questions.length)return;
+ if(kind==='1'){
+  let correct=0,missed=[];
+  questions.forEach((q,i)=>{
+   const input=document.querySelector('input[name="q'+i+'"]:checked');
+   if(input&&Number(input.value)===q.answer)correct++;
+   else missed.push('Item '+(i+1)+': '+q.options[q.answer]);
+  });
+  $('feedback').innerHTML='<h2>'+correct+' / 10 correct</h2><p>Objective practice feedback only; not a certified exam mark.</p>'+
+  (missed.length?'<details><summary>Review missed answers</summary><ol>'+missed.map(x=>'<li>'+e(x)+'</li>').join('')+'</ol></details>':'');
+ }else{
+  const answers=questions.map((q,i)=>{
+    const input=document.querySelector('input[name="q'+i+'"]');
+    return '<li><strong>'+e(q.stem)+'</strong> — suggested: <em>'+e(q.answer)+'</em> (student: '+e(input?.value||'blank')+')</li>';
+  }).join('');
+  $('feedback').innerHTML='<h2>Teacher review required</h2><p>Suggested answers are shown below. Equivalent short responses supported by the script may be accepted. No numeric mark was assigned automatically.</p><details open><summary>Suggested answer key</summary><ol>'+answers+'</ol></details>';
+ }
+});
+load();
 })();
 </script></body></html>
