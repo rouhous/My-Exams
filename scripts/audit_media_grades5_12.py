@@ -109,7 +109,23 @@ for m in models9:
                 im=images["9"];im["optionReferences"]+=1
                 path="grade9/"+image
                 if not req(9,path,"Grade 9 picture missing"):im["missingFiles"].append(path)
-images["9"]["visualApproval"]="pending_visual_check_of_opaque_PNG_filenames"
+# Actual 24-image contact sheet reviewed; verify image semantics against every choice label.
+visual_path="GRADE9_LISTENING_IMAGE_VISUAL_REVIEW_2026-11-14.json"
+if file(visual_path):
+    vr=read(visual_path)
+    reference=vr["assetMap"]
+    n=0
+    for m in models9:
+        for t in m["tasks"]:
+            if t.get("skill")!="listening":continue
+            for q in t.get("items",[]):
+                for label,img in zip(q.get("choices",[]),q.get("images",[])):
+                    if img in reference:
+                        n+=1
+                        if reference[img]!=label:
+                            warnings.append({"grade":"9","task":t["id"],"kind":"image_visual_label_mismatch","option":label,"image":img,"contactSheetLabel":reference[img]})
+    images["9"]["visualApproval"]="contact_sheet_option_labels_checked_"+str(n)+"_references__unit_page_review_pending"
+else:images["9"]["visualApproval"]="pending_visual_check_of_opaque_PNG_filenames"
 # Grade 10 and Grade 11 Core pilots: six natural model MP3, with hashed source passage.
 for track,location,manifest_path,prefix in (
     ("10","grade10/data.json","grade10/audio/manifest.json","grade10/audio/"),
@@ -123,22 +139,41 @@ for track,location,manifest_path,prefix in (
         if req(track,path,"Model natural MP3 absent") and entry.get("passage_sha256")==sha(m["listening"]["passage"]) and size(path)>15000:
             a["verifiedLinkedMP3"]+=1
         else:a["missing"].append({"model":m["id"],"issue":"audio_absent_or_stale"})
-# Grade 11 Core separate nine-section semester A paper: original 2 listening tasks need independent audio.
-audio["11-core-semester-a"]["requiredOriginalListeningSections"]=2
-audio["11-core-semester-a"]["missing"]=[
-    {"model":"semester-paper-A","section":"Listening 1","reason":"teacher-read script only"},
-    {"model":"semester-paper-A","section":"Listening 2","reason":"teacher-read script only"}
-]
-# Higher-grade provisional banks A-F: no verified published audio manifest at this checkpoint.
+# Grade 11 Core official-shaped separate semester paper A has two independent teacher scripts.
+core_audio=audio["11-core-semester-a"]
+core_audio["requiredOriginalListeningSections"]=2
+core_html=(ROOT/"grade11/core/semester-a.html").read_text()
+import html as htmlparser
+scripts=re.findall(r'<h2>Listening [12][\s\S]*?<details class="teacher"><summary>Teacher listening script</summary><p>([\s\S]*?)</p></details>',core_html)
+core_manifest=read("grade11/core/semester-a/audio/manifest.json") if file("grade11/core/semester-a/audio/manifest.json") else {}
+for i in (1,2):
+    source=htmlparser.unescape(scripts[i-1]).strip() if len(scripts)>=2 else ""
+    key="lst"+str(i)
+    entry=core_manifest.get(key,{})
+    p="grade11/core/semester-a/audio/"+entry.get("mp3","__missing__.mp3")
+    if source and file(p) and entry.get("scriptSha256")==sha(source) and size(p)>20000:
+        core_audio["verifiedLinkedMP3"]+=1
+    else:core_audio["missing"].append({"model":"semester-paper-A","section":"Listening "+str(i),"reason":"no_source_verified_mp3"})
+
+# All 3 upper provisional tracks: each A-F source model uses two Listening passages,
+# including E/F mixed reuse. Verify the MP3 SHA against the actual passage (script field is a boolean flag).
 upper=read("higher_grades_corrected.json")
 for track in ("11-elective","12-core","12-elective"):
     a=audio[track+"-legacy"]
     a["sourceModelsWithListening"]=len(upper[track])
+    manpath="upper-audio/"+track+"/manifest.json"
+    man=read(manpath) if file(manpath) else {}
     for m in upper[track]:
         for p in m["parts"]:
-            if p["key"].startswith("lst"):
-                a["requiredOriginalListeningSections"]+=1
-                a["missing"].append({"model":m["id"],"section":p["key"],"reason":"no validated MP3 linked in source bank"})
+            if p["key"] not in ("lst1","lst2"):continue
+            a["requiredOriginalListeningSections"]+=1
+            key=m["id"]+"-"+p["key"]
+            entry=man.get(key,{})
+            content=p["script"] if isinstance(p.get("script"),str) else p["passage"]
+            dest="upper-audio/"+track+"/"+entry.get("mp3","__missing__.mp3")
+            if file(dest) and entry.get("passageSha256")==sha(content.strip()) and size(dest)>20000:
+                a["verifiedLinkedMP3"]+=1
+            else:a["missing"].append({"model":m["id"],"section":p["key"],"reason":"no_source_verified_mp3"})
 # New Grade 12 Elective unit papers: eight independent 400-500-word listening source recordings.
 unit_dir=ROOT/"grade12/elective/units"
 manifest_path=unit_dir/"audio/manifest.json"
@@ -165,10 +200,10 @@ inventory={
 {"grade":"8","fixedModels":4,"fixedIds":"A-D (D mixed)","mixedFixedModels":2,"mixedIds":"E-F","randomComplete":True,"sectionsAudioInBase":8,"audioVerified":audio["8"]["verifiedLinkedMP3"],"listeningPictures":images["8"]["optionReferences"],"certifiedComplete":False},
 {"grade":"9","fixedModels":7,"fixedIds":"A-G","mixedFixedModels":0,"mixedIds":"","randomComplete":True,"sectionsAudioInBase":14,"audioVerified":audio["9"]["verifiedLinkedMP3"],"audioNaturalHostedButNoSourceHash":audio["9"]["presentButNotSourceVerified"],"listeningPictures":images["9"]["optionReferences"],"certifiedComplete":False},
 {"grade":"10","fixedModels":4,"fixedIds":"A-D","mixedFixedModels":2,"mixedIds":"E-F","randomComplete":True,"sectionsAudioInBase":6,"audioVerified":audio["10"]["verifiedLinkedMP3"],"certifiedComplete":False},
-{"grade":"11 Core","fixedModels":4,"fixedIds":"A-D (5-section pilot)","mixedFixedModels":2,"mixedIds":"E-F","additionalTeacherReadSemesterPapers":1,"randomComplete":True,"legacyPilotAudio":audio["11-core"]["verifiedLinkedMP3"],"newSemesterPaperAudio":0,"certifiedComplete":False},
-{"grade":"11 Elective","fixedModels":4,"fixedIds":"A-D provisional","mixedFixedModels":2,"mixedIds":"E-F","randomComplete":True,"legacyListeningMP3":0,"certifiedComplete":False},
-{"grade":"12 Core","fixedModels":4,"fixedIds":"A-D provisional","mixedFixedModels":2,"mixedIds":"E-F","randomComplete":True,"legacyListeningMP3":0,"certifiedComplete":False},
-{"grade":"12 Elective","fixedModels":4,"fixedIds":"A-D new unit papers","mixedFixedModels":0,"mixedIds":"","additionalLegacyDraftModels":6,"randomComplete":True,"sectionsAudioInNewUnitPapers":8,"audioVerified":audio["12-elective-units"]["verifiedLinkedMP3"],"certifiedComplete":False}
+{"grade":"11 Core","fixedModels":4,"fixedIds":"A-D (5-section pilot)","mixedFixedModels":2,"mixedIds":"E-F","additionalTeacherReadSemesterPapers":1,"randomComplete":True,"legacyPilotAudio":audio["11-core"]["verifiedLinkedMP3"],"newSemesterPaperAudio":audio["11-core-semester-a"]["verifiedLinkedMP3"],"certifiedComplete":False},
+{"grade":"11 Elective","fixedModels":4,"fixedIds":"A-D provisional","mixedFixedModels":2,"mixedIds":"E-F","randomComplete":True,"legacyListeningMP3":audio["11-elective-legacy"]["verifiedLinkedMP3"],"certifiedComplete":False},
+{"grade":"12 Core","fixedModels":4,"fixedIds":"A-D provisional","mixedFixedModels":2,"mixedIds":"E-F","randomComplete":True,"legacyListeningMP3":audio["12-core-legacy"]["verifiedLinkedMP3"],"certifiedComplete":False},
+{"grade":"12 Elective","fixedModels":4,"fixedIds":"A-D new unit papers","mixedFixedModels":0,"mixedIds":"","additionalLegacyDraftModels":6,"legacyListeningMP3":audio["12-elective-legacy"]["verifiedLinkedMP3"],"randomComplete":True,"sectionsAudioInNewUnitPapers":8,"audioVerified":audio["12-elective-units"]["verifiedLinkedMP3"],"certifiedComplete":False}
 ],
 "notes":[
 "Grade 5–8 mixed models E/F and random exams compose intact tasks from source models; no new independent MP3 required where a passage is reused with its exact answer key.",
