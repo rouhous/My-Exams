@@ -8,7 +8,7 @@ const {chromium}=require('playwright');
   await page.selectOption('#grade',String(g));
   await page.waitForFunction(x=>document.querySelector('#status').textContent.includes('الصف '+x+':'),g,{timeout:30000});
   const count=await page.locator('.pic img').count();
-  const expected=g===9?105:60;
+  const expected=g===9?105:(g===5||g===6?120:60);
   if(count!==expected)throw Error('Grade '+g+' pictures '+count+' != '+expected);
   await page.waitForFunction(()=>[...document.querySelectorAll('.pic img')].every(im=>im.complete),null,{timeout:20000});
   const bad=await page.locator('.pic img').evaluateAll(images=>images.filter(im=>!im.naturalWidth).map(im=>im.src));
@@ -19,5 +19,5 @@ const {chromium}=require('playwright');
  }
  if(errors.length)throw Error(errors.join('; '));
  await browser.close();
- console.log('PASS grade 5-9 illustrated listening: 345 image loads, 115 items, answer-to-picture maps');
+ console.log('PASS grade 5-9 illustrated listening: 465 image loads, 115 items, answer-to-picture maps');
 })().catch(err=>{console.error(err);process.exit(1)});
