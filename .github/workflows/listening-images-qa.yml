@@ -1,0 +1,34 @@
+name: Grades 5-9 illustrated Listening browser QA
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'listening-media-review.html'
+      - 'grades5-6/activities.json'
+      - 'grades5-6/images/**'
+      - 'grades7-8/activities.json'
+      - 'grades7-8/assets/illustrations/**'
+      - 'grade9/data.json'
+      - 'grade9/images/**'
+      - 'tests/listening_images_browser_smoke.cjs'
+      - '.github/workflows/listening-images-qa.yml'
+permissions:
+  contents: read
+jobs:
+  verify-picture-options:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test all 345 grade5-9 Listening picture options and correct option mapping
+        run: |
+          npm install --no-save playwright@1.56.1
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/gallery-server.log 2>&1 &
+          sleep 3
+          node tests/listening_images_browser_smoke.cjs
