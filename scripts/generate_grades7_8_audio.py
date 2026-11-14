@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Create full Grade 7–8 original listening MP3 with instructions, repeats and pauses."""
-import asyncio,json,pathlib,re,subprocess,tempfile,os
+import asyncio,json,pathlib,re,subprocess,tempfile,os,hashlib
 import edge_tts
 from mutagen.mp3 import MP3
 ROOT=pathlib.Path(__file__).resolve().parents[1]
@@ -8,6 +8,7 @@ MODELS=json.loads((ROOT/'grades7-8/activities.json').read_text(encoding='utf-8')
 OUT=ROOT/'grades7-8/assets/audio-natural'
 OUT.mkdir(parents=True,exist_ok=True)
 VOICES=('en-GB-SoniaNeural','en-GB-RyanNeural')
+MANIFEST={}
 def ff(*args):subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y',*map(str,args)],check=True)
 async def make(m,s):
   with tempfile.TemporaryDirectory() as d:
@@ -52,6 +53,8 @@ async def make(m,s):
     out=OUT/f'{m["id"]}-{s["key"]}.mp3'
     ff('-f','concat','-safe','0','-i',concat,'-ac','1','-ar','44100','-c:a','libmp3lame','-b:a','96k',out)
     assert out.stat().st_size>15000 and MP3(out).info.length>40,out
+    fp=hashlib.sha256(json.dumps({'items':s.get('items'), 'script':s.get('script'),'transcript':s.get('transcript')},sort_keys=True,ensure_ascii=False).encode()).hexdigest()
+    MANIFEST[f'{m["id"]}-{s["key"]}']={'mp3':out.name,'script_and_questions_sha256':fp,'seconds':round(MP3(out).info.length,2),'bytes':out.stat().st_size,'sourceExam':m['id'],'voices':list(VOICES)}
     print('VALID',out.relative_to(ROOT),round(MP3(out).info.length),'sec',flush=True)
 async def main():
   for m in MODELS:
@@ -59,4 +62,5 @@ async def main():
     for s in m['sections']:
       if s['key'] in ('listening1','listening2'):
         await make(m,s)
+  (OUT/'manifest.json').write_text(json.dumps(MANIFEST,ensure_ascii=False,indent=2)+'\n')
 if __name__=='__main__':asyncio.run(main())
