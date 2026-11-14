@@ -1,0 +1,54 @@
+name: Upper Grade Review Practice browser QA
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'upper-grades-practice.html'
+      - 'higher_grades_corrected.json'
+      - 'UPPER_GRADES_RELEASE_GATE_2026-11-14.json'
+      - 'tests/upper_grades_browser_smoke.cjs'
+      - '.github/workflows/upper-grades-qa.yml'
+permissions:
+  contents: read
+jobs:
+  audit-and-browser:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check official section and mark patterns in the unapproved upper-grade bank
+        run: |
+          python3 - <<'PY'
+          import json
+          data=json.load(open('higher_grades_corrected.json'))
+          ref=json.load(open('UPPER_GRADES_SAH_SEM1_2026_SPEC.json'))['tracks']
+          for track in ('11-elective','12-core','12-elective'):
+              expected=ref[track]['sections']
+              keys=[p['id'] for p in expected]
+              for model in data[track]:
+                  parts=model['parts']
+                  assert [p['key'] for p in parts]==keys,(track,model['id'])
+                  assert sum(p['marks'] for p in parts)==ref[track]['marks'],(track,model['id'])
+                  for p,r in zip(parts,expected):
+                      assert p['marks']==r['marks'],(track,model['id'],p['key'])
+                      for q in p['questions']:
+                          if q.get('options') is not None:
+                              assert isinstance(q['answer'],int) and 0<=q['answer']<len(q['options']),(track,model['id'],p['key'])
+                          else:
+                              assert isinstance(q['answer'],str) and q['answer'].strip(),(track,model['id'],p['key'])
+          report=json.load(open('UPPER_GRADES_RELEASE_GATE_2026-11-14.json'))
+          assert report['summary']['readyForFinalStudentRelease'] is False
+          print('Draft bank task structure passes technical checks; unit/audio release blockers remain explicitly OPEN.')
+          PY
+      - name: Test mobile browser view, complete random exams and independent untimed skills
+        run: |
+          npm install --no-save playwright@1.56.1
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/upper-grades.log 2>&1 &
+          sleep 3
+          node tests/upper_grades_browser_smoke.cjs
