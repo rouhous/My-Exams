@@ -1,0 +1,43 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#165039"><title>جرد اختبارات My Exams | الصفوف 5–12</title>
+<style>:root{--green:#174f3b;--gold:#a5843a;--line:#d7e2db;--muted:#52695b}
+*{box-sizing:border-box}body{margin:0;background:#f3f7f3;font:16px/1.75 system-ui,Arial,sans-serif;color:#253d32}
+header{background:var(--green);color:white;padding:20px;text-align:center}header a{color:#f6e7ae}h1{margin:0;font-size:clamp(24px,5vw,32px)}
+main{max-width:1100px;margin:auto;padding:16px}
+article,.banner{border:1px solid var(--line);border-radius:14px;background:white;padding:18px;margin:12px 0}
+.warn{background:#fff9e9;border-right:5px solid var(--gold)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:12px}
+h2{font-size:19px;margin:0 0 7px}p{margin:6px 0}.muted,small{color:var(--muted)}.big{font-weight:bold;font-size:24px}
+table{width:100%;border-collapse:collapse;background:white}th,td{text-align:right;vertical-align:top;padding:10px;border-bottom:1px solid var(--line)}
+th{background:#eff5f0}a{color:#14583e}
+.indicator{font-weight:700;color:#8c4a16}
+@media(max-width:730px){.wide{overflow-x:auto}table{min-width:650px}}@media print{header{background:white;color:#222}.banner{display:none}main{padding:0}}
+</style></head><body><header><p><a href="./index.html">العودة إلى My Exams</a></p><h1>جرد اختبارات الفصل الأول — الصفوف 5 إلى 12</h1><p>Exam models · Listening recordings · Illustrated listening options · Remaining QA</p></header><main>
+<div class="banner warn"><strong>هذه لوحة جرد موثقة وليست شهادة جاهزية نهائية.</strong> العدد يشمل النماذج الموجودة، حتى لو احتاج بعضها مطابقة الكتاب أو الصوتيات. يُفصل بين الاختبار الثابت والمختلط والعشوائي؛ العشوائي وضع إنشاء وليس ملف اختبار ثابت. لا تشمل الخطة الصفوف 1–4.</div>
+<div id="summary" class="grid"></div><article><h2>الجرد بحسب الصف والمسار</h2><div class="wide"><table><thead><tr><th>الصف</th><th>النماذج الثابتة</th><th>الشاملة E/F أو الإضافية</th><th>الوضع العشوائي</th><th>الإنصات</th><th>الحالة</th></tr></thead><tbody id="rows"><tr><td colspan="6">تحميل البيانات…</td></tr></tbody></table></div></article>
+<article><h2>صور الاستماع (5–9)</h2><div id="images" class="grid"></div><p class="muted">التحقق من أسماء الصور ووجودها لا يساوي اعتمادًا تامًا لمعانيها. يمكن مراجعتها بصريًا في <a href="./listening-media-review.html">لوحة صور وأنشطة الاستماع</a>.</p></article>
+<article><h2>فجوات التسجيلات</h2><div id="audio"></div></article>
+<article><p class="muted">المصدر: ملفات تدقيق تنشئها GitHub Actions مباشرة من بنك الأسئلة وملفات MP3؛ المراجعة التربوية المنهجية واختبار الهاتف دون إنترنت ما زالا منفصلين.</p><p><a href="./EXAM_INVENTORY_2026-11-14.json">الجرد التفصيلي JSON</a> · <a href="./MEDIA_STATUS_2026-11-14.json">تقرير الصوتيات والصور JSON</a></p></article>
+</main><script>
+(async()=>{
+ const $=id=>document.getElementById(id),e=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+ try{
+  const [inv,aud]=await Promise.all(['EXAM_INVENTORY_2026-11-14.json','MEDIA_STATUS_2026-11-14.json'].map(async p=>{const r=await fetch(p);if(!r.ok)throw Error('Missing '+p);return r.json()}));
+  const tracks=inv.tracks, base=tracks.reduce((n,x)=>n+x.fixedModels,0),all=tracks.reduce((n,x)=>n+x.fixedModels+x.mixedFixedModels,0);
+  $('summary').innerHTML='<article><div class="big">'+tracks.length+'</div><p>صفوف ومسارات من 5 إلى 12</p></article><article><div class="big">'+base+'</div><p>نماذج أساسية ثابتة</p></article><article><div class="big">'+all+'</div><p>نماذج ثابتة مع E/F</p></article>';
+  $('rows').innerHTML=tracks.map(x=>{
+   let track=String(x.grade),audioKey=/11 Core/.test(track)?'11-core':/12 Elective/.test(track)?'12-elective-units':track==='11 Elective'?'11-elective-legacy':track==='12 Core'?'12-core-legacy':track;
+   let a=aud.audio[audioKey]||{};
+   let message=(a.verifiedLinkedMP3??x.legacyPilotAudio??x.audioVerified??0)+'/'+(a.requiredOriginalListeningSections||x.sectionsAudioInBase||x.sectionsAudioInNewUnitPapers||0);
+   if(track==='11 Core')message+=' (تدريبات 5 أقسام فقط؛ الامتحان الرسمي الجديد بلا صوت)';
+   if(track==='12 Elective')message+=' (نماذج الوحدات الجديدة؛ المسودات القديمة بدون صوت)';
+   if(track==='11 Elective'||track==='12 Core')message+=' (مسودات بدون تسجيلات)';
+   const link=track==='12 Elective'?'grade12/elective/index.html':track==='11 Core'?'grade11/core/index.html':track==='10'?'grade10/index.html':Number(track)===9?'grade9/index.html':Number(track)===7||Number(track)===8?'grades7-8/index.html?grade='+track:'grades5-6/index.html?grade='+track;
+   let txt=x.fixedIds+(x.additionalTeacherReadSemesterPapers?' + ورقة فصلية واحدة':'');
+   return '<tr><td><strong>'+e(track)+'</strong></td><td>'+e(x.fixedModels)+' ('+e(txt)+')</td><td>'+e(x.mixedFixedModels)+(x.additionalLegacyDraftModels?' + '+x.additionalLegacyDraftModels+' مسودات قديمة':'')+'</td><td>'+(x.randomComplete?'متاح للتجربة':'غير متاح')+'</td><td>'+e(message)+'</td><td class="indicator">قيد المراجعة</td></tr>';
+  }).join('');
+  $('images').innerHTML=[5,6,7,8,9].map(g=>{const d=aud.images[g]||{};return '<div class="banner"><h2>الصف '+g+'</h2><div class="big">'+(d.optionReferences??0)+'</div><p>مرجعًا للصور داخل الخيارات</p><p class="muted">'+(d.missingFiles?.length?'ملفات مفقودة: '+d.missingFiles.length:'جميع الملفات موجودة')+'</p></div>'}).join('');
+  const affected=Object.entries(aud.audio).filter(([_,v])=>v.missing?.length).map(([track,v])=>'<p><strong>'+e(track)+'</strong>: '+v.missing.length+' مهمات تستلزم صوتًا معتمدًا أو تحققًا جديدًا.</p>').join('');
+  $('audio').innerHTML=affected||'<p>لا توجد تسجيلات ناقصة بحسب البيانات المتحققة، مع بقاء اعتماد الصوت البشري والفحص النهائي.</p>';
+ }catch(err){$('rows').innerHTML='<tr><td colspan="6">لم يكتمل نشر تقرير الجرد: '+e(err.message)+'</td></tr>';}
+})();
+</script></body></html>
