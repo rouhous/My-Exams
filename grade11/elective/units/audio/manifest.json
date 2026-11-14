@@ -23,5 +23,30 @@
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
+  },
+  "unit2-listening1-original-draft.json": {
+    "sourceFile": "grade11/elective/units/unit2-listening1-original-draft.json",
+    "scriptSha256": "db3a2bbe8b2cb849a5251c033fddbd5a1332a2307558369e1871ada63915e256",
+    "mp3": "unit2-listening1.mp3",
+    "durationSeconds": 406.15,
+    "bytes": 4874179,
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
+  },
+  "unit2-listening2-original-draft.json": {
+    "sourceFile": "grade11/elective/units/unit2-listening2-original-draft.json",
+    "scriptSha256": "c81dd3802f36d4811d1bc746e971f79e42eb90a6878b736d90f80d638a04e29d",
+    "mp3": "unit2-listening2.mp3",
+    "durationSeconds": 366.0,
+    "bytes": 4392377,
+    "voices": [
+      "en-GB-SoniaNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
   }
 }
