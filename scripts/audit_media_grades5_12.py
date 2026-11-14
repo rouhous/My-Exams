@@ -151,7 +151,7 @@ for unit in (1,2,3,4):
         a["requiredOriginalListeningSections"]+=1
         entry=unitmanifest.get(task,{})
         path="grade12/elective/units/audio/"+entry.get("mp3","__missing__.mp3")
-        if req("12-elective",path,"Unit paper natural MP3 absent") and entry.get("scriptSha256")==sha(d["script"]) and size(path)>25000:
+        if file(path) and entry.get("scriptSha256")==sha(d["script"]) and size(path)>25000:
             a["verifiedLinkedMP3"]+=1
         else:a["missing"].append({"unit":unit,"listening":t,"reason":"MP3 missing or script hash stale"})
 # Inventory: fixed/mixed and random clearly separated; no claim of complete teacher-approved release.
