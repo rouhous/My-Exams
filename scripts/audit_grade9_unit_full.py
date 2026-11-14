@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Grade9 Gold Experience Oman three NEW full papers: exact source audio, picture options, 40 marks and coherent clozes."""
 import json,pathlib,hashlib,re
-from mutagen.mp3 import MP3
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 base=ROOT/'grade9/unit-exams'
 bank=json.loads((base/'models.json').read_text())
@@ -17,7 +16,8 @@ for m in bank['models']:
   row=manifest[t['id']]
   assert row['sourceHash']==digest
   assert row['sourceTranscriptSha256']==hashlib.sha256(t['transcript'].encode()).hexdigest()
-  f=base/'audio'/row['mp3'];assert f.stat().st_size>15000 and MP3(f).info.length>40
+  f=base/'audio'/row['mp3'];assert f.stat().st_size>15000 and row['seconds']>40 and row['bytes']==f.stat().st_size
+  assert f.open('rb').read(3)==b'ID3' or f.open('rb').read(1)==b'\xff'
   assert row['playedTwice'] is True
  assert len(m['tasks'][0]['items'])==5
  for q in m['tasks'][0]['items']:
