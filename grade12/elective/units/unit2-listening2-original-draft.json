@@ -1,0 +1,87 @@
+{
+  "id": "g12-elective-unit2-lst2-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "Doing the right thing"
+  },
+  "skill": "Listening 2",
+  "status": "original_script_and_questions_created__teacher_review_and_natural_audio_pending",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "voice": "single female speaker",
+  "speaker": "Noura",
+  "fictionalCampaign": true,
+  "passage": "My name is Noura, and I coordinate a fictional student campaign called Small Choices, Real Results. Our aim is to help teenagers make responsible decisions when organising community projects. Last term, our class learned that being enthusiastic is not enough. Volunteers also need reliable information, clear promises and respect for the people they hope to support.\n\nThe first stage began in September, when students visited a local community centre. We spoke with the centre manager and discovered that its main problem was not a lack of donations. Several cupboards were already full of unused stationery. What the centre needed was a better way to sort materials and lend them to children who attended evening classes.\n\nOur team prepared an inventory using a simple spreadsheet. We counted 240 notebooks and checked which pens still worked. Instead of requesting new supplies, we asked volunteers to organise the existing materials. We divided the group into three teams: sorting, record keeping and communication. Each team selected a leader, but decisions about spending still required approval from the centre manager.\n\nNot every decision was easy. One company offered us free bags if its large logo appeared on every student's workbook. Some volunteers welcomed the offer because we had little money. Others worried that children might feel pressured to advertise a business. We discussed both views, asked the manager, and declined the condition. We later accepted plain recycled bags from another supplier.\n\nWe also learned to protect personal information. Originally, some students wanted to publish photographs showing the children receiving their materials. After talking to their families, we decided to photograph only the supplies and volunteers who gave permission. No child's name was included in our online posts. For fundraising, we displayed a written target of 75 OMR and promised to explain every purchase.\n\nAt our final meeting, we noticed that two boxes contained duplicate items. We corrected the inventory rather than hiding the mistake. The class also created a feedback form with an optional name field so families could share concerns anonymously. During the next visit, the manager told us that borrowing supplies had become easier and that staff spent less time searching through crowded cupboards.\n\nBefore leaving, we practised explaining the new system to younger volunteers. Each person demonstrated how to record a borrowed item, check its condition, and return it to the correct shelf. This made the project easier to maintain after our class went home.\n\nIn December, we plan to return and ask whether the system still works. We will not judge success only by the total number of donated objects. We want to know whether the children can find what they need, whether families feel respected, and whether the centre can manage the scheme without us. Responsible volunteering means listening first, keeping honest records and changing a plan when evidence shows a better way.",
+  "script": "My name is Noura, and I coordinate a fictional student campaign called Small Choices, Real Results. Our aim is to help teenagers make responsible decisions when organising community projects. Last term, our class learned that being enthusiastic is not enough. Volunteers also need reliable information, clear promises and respect for the people they hope to support.\n\nThe first stage began in September, when students visited a local community centre. We spoke with the centre manager and discovered that its main problem was not a lack of donations. Several cupboards were already full of unused stationery. What the centre needed was a better way to sort materials and lend them to children who attended evening classes.\n\nOur team prepared an inventory using a simple spreadsheet. We counted 240 notebooks and checked which pens still worked. Instead of requesting new supplies, we asked volunteers to organise the existing materials. We divided the group into three teams: sorting, record keeping and communication. Each team selected a leader, but decisions about spending still required approval from the centre manager.\n\nNot every decision was easy. One company offered us free bags if its large logo appeared on every student's workbook. Some volunteers welcomed the offer because we had little money. Others worried that children might feel pressured to advertise a business. We discussed both views, asked the manager, and declined the condition. We later accepted plain recycled bags from another supplier.\n\nWe also learned to protect personal information. Originally, some students wanted to publish photographs showing the children receiving their materials. After talking to their families, we decided to photograph only the supplies and volunteers who gave permission. No child's name was included in our online posts. For fundraising, we displayed a written target of 75 OMR and promised to explain every purchase.\n\nAt our final meeting, we noticed that two boxes contained duplicate items. We corrected the inventory rather than hiding the mistake. The class also created a feedback form with an optional name field so families could share concerns anonymously. During the next visit, the manager told us that borrowing supplies had become easier and that staff spent less time searching through crowded cupboards.\n\nBefore leaving, we practised explaining the new system to younger volunteers. Each person demonstrated how to record a borrowed item, check its condition, and return it to the correct shelf. This made the project easier to maintain after our class went home.\n\nIn December, we plan to return and ask whether the system still works. We will not judge success only by the total number of donated objects. We want to know whether the children can find what they need, whether families feel respected, and whether the centre can manage the scheme without us. Responsible volunteering means listening first, keeping honest records and changing a plan when evidence shows a better way.",
+  "wordCount": 473,
+  "audioStatus": "not_generated_until_content_review",
+  "audioFile": null,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "note",
+      "stem": "Campaign name (first two words)",
+      "answer": "Small Choices",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Campaign started in",
+      "answer": "September",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Number of notebooks",
+      "answer": "240",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Original fundraising target (OMR)",
+      "answer": "75",
+      "maxWords": 2
+    },
+    {
+      "type": "note",
+      "stem": "Return visit planned for",
+      "answer": "December",
+      "maxWords": 2
+    },
+    {
+      "type": "short",
+      "stem": "What kind of place did the students visit?",
+      "answer": "a community centre",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Which computer tool did students use for the inventory?",
+      "answer": "a simple spreadsheet",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who had to approve any spending decisions?",
+      "answer": "the centre manager",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What did the students refuse to put on workbooks?",
+      "answer": "a company logo",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "How did students protect children's privacy online?",
+      "answer": "did not name children",
+      "maxWords": 4
+    }
+  ],
+  "officialTaskShapeSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / lst2",
+  "notes": "Original monologue about ethical volunteering and privacy; five ≤2-word notes and five ≤4-word short answers."
+}
