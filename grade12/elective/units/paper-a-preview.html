@@ -51,32 +51,51 @@ Each unit's six original activities follow the stored question formats and word-
 'use strict';
 const $=id=>document.getElementById(id);
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
-const unitNumber=Number(new URLSearchParams(location.search).get('unit'))||1;
+const params=new URLSearchParams(location.search);
+const mixed=params.get('mixed')==='1';
+const unitNumber=Number(params.get('unit'))||1;
 const unitNames={1:'The arts',2:'Doing the right thing',3:'Living in a Changing World',4:'Higher Education'};
 if(!unitNames[unitNumber])throw Error('Unsupported unit number');
-document.title='Grade 12 Elective · Unit '+unitNumber+' · '+unitNames[unitNumber]+' · Teacher Review';
-document.querySelector('header h1').textContent='Grade 12 Elective · Unit '+unitNumber+': '+unitNames[unitNumber]+' · Paper A (Draft)';
+document.title=mixed?'Grade 12 Elective · Comprehensive Mixed Units · Teacher Review':'Grade 12 Elective · Unit '+unitNumber+' · '+unitNames[unitNumber]+' · Teacher Review';
+document.querySelector('header h1').textContent=mixed?'Grade 12 Elective · Comprehensive random unit exam (Draft)':'Grade 12 Elective · Unit '+unitNumber+': '+unitNames[unitNumber]+' · Paper A (Draft)';
 const order=['lst1','lst2','rdg1','rdg2','wrt1','wrt2'];
 const name={lst1:'Listening 1',lst2:'Listening 2',rdg1:'Reading 1',rdg2:'Reading 2',wrt1:'Writing 1',wrt2:'Writing 2'};
-const files=['listening1','listening2','reading1','reading2','writing'].map(k=>'unit'+unitNumber+'-'+k+'-original-draft.json');
-let audioFiles={},tasks={},questions=[],onPaper=false,submitted=false,clockId=null,clockLength=0,clockStarted=0,selected=[];
+const files=(mixed?[1,2,3,4]:[unitNumber]).flatMap(n=>['listening1','listening2','reading1','reading2','writing'].map(k=>'unit'+n+'-'+k+'-original-draft.json'));
+let audioFiles={},sourceByKey={},tasks={},questions=[],onPaper=false,submitted=false,clockId=null,clockLength=0,clockStarted=0,selected=[];
 $('mode').addEventListener('change',()=>{$('skillWrap').hidden=$('mode').value!=='skill'});
 Promise.all([...files.map(async file=>{const r=await fetch(file);if(!r.ok)throw Error(file+' unavailable');return r.json()}),fetch('audio/manifest.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null)]).then(async ds=>{
- const [l1,l2,r1,r2,writing,manifest]=ds;
- for(const data of [l1,l2,r1,r2,writing])if(data.unit?.number!==unitNumber)throw Error('Wrong unit source in practice bank');
- const hashScript=async text=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text)))).map(b=>b.toString(16).padStart(2,'0')).join('');
- if(manifest&&crypto.subtle)for(const [n,source] of [[1,l1],[2,l2]]){
-  const entry=manifest['unit'+unitNumber+'-listening'+n+'-original-draft.json'];
-  if(entry&&/^[a-z0-9-]+\.mp3$/.test(entry.mp3)&&entry.scriptSha256===await hashScript(source.script))audioFiles['lst'+n]=entry.mp3;
+ const manifest=ds.pop(),src={};
+ for(let i=0;i<files.length;i++) {
+  const data=ds[i],u=mixed?Math.floor(i/5)+1:unitNumber;
+  if(data.unit?.number!==u)throw Error('Wrong unit source: '+files[i]);
+  if(!src[u])src[u]={};
+  src[u][['listening1','listening2','reading1','reading2','writing'][i%5]]=data;
  }
- tasks={lst1:l1,lst2:l2,rdg1:r1,rdg2:r2,wrt1:writing.writing1,wrt2:writing.writing2};
+ if(mixed){
+  const draw=[1,2,3,4,1,2];
+  for(let i=draw.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[draw[i],draw[j]]=[draw[j],draw[i]];}
+  order.forEach((key,i)=>{
+   const u=draw[i],bank=src[u],map={lst1:'listening1',lst2:'listening2',rdg1:'reading1',rdg2:'reading2'};
+   tasks[key]=key.startsWith('wrt')?bank.writing[key==='wrt1'?'writing1':'writing2']:bank[map[key]];
+   sourceByKey[key]=u;
+  });
+ }else{
+  const {listening1, listening2,reading1,reading2,writing}=src[unitNumber];
+  tasks={lst1:listening1,lst2:listening2,rdg1:reading1,rdg2:reading2,wrt1:writing.writing1,wrt2:writing.writing2};
+  order.forEach(key=>sourceByKey[key]=unitNumber);
+ }
+ const hashScript=async text=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text)))).map(b=>b.toString(16).padStart(2,'0')).join('');
+ if(manifest&&crypto.subtle)for(const [key,n] of [['lst1',1],['lst2',2]]){
+  const u=sourceByKey[key],entry=manifest['unit'+u+'-listening'+n+'-original-draft.json'];
+  if(entry&&/^[a-z0-9-]+\.mp3$/.test(entry.mp3)&&entry.scriptSha256===await hashScript(tasks[key].script))audioFiles[key]=entry.mp3;
+ }
  const expected={lst1:[10,10],lst2:[10,10],rdg1:[12,12],rdg2:[13,13],wrt1:[0,15],wrt2:[0,10]};
  order.forEach(key=>{
   const d=tasks[key],exp=expected[key];
   if(Number(d.marks)!==exp[1]||((d.questions||[]).length!==exp[0]))throw Error('Incorrect part '+key);
   if(d.passage&&d.wordCount!==d.passage.trim().split(/\s+/).length)throw Error('Incorrect word count '+key);
  });
- $('loadState').textContent='All six practice sections loaded: 20 Listening + 25 Reading + 25 Writing = 70 marks. Verified listening MP3s: '+Object.keys(audioFiles).length+'/2. Missing recordings use teacher script.';
+ $('loadState').textContent='Six sections loaded from '+(mixed?'all 4 semester units':'Unit '+unitNumber)+'. 20 Listening + 25 Reading + 25 Writing = 70 marks. Source-matched MP3s: '+Object.keys(audioFiles).length+'/2. Missing audio uses teacher script.';
  $('start').disabled=false;
 }).catch(e=>{$('loadState').textContent='Source draft not ready: '+e.message});
 function chart(c){
@@ -86,7 +105,7 @@ function chart(c){
 }
 function render(key){
  const d=tasks[key],isListening=key.startsWith('lst'),isWriting=key.startsWith('wrt');
- let h='<section class="part"><h2>'+esc(name[key])+' · '+d.marks+' marks</h2>';
+ let h='<section class="part"><h2>'+esc(name[key])+' · '+d.marks+' marks</h2><p class="meta">Source unit '+sourceByKey[key]+': '+esc(unitNames[sourceByKey[key]])+'</p>';
  if(isListening){
   h+='<p class="meta">'+(audioFiles[key]?'Source-matched MP3 confirmed (played twice).':'Teacher read-aloud required. No validated recording yet.')+'</p>'+
   (audioFiles[key]?'<audio controls preload="metadata" src="audio/'+esc(audioFiles[key])+'"></audio>':'')+
@@ -112,7 +131,7 @@ function begin(){
  questions=[];submitted=false;
  $('sections').innerHTML=selected.map(render).join('');
  const total=selected.reduce((n,k)=>n+tasks[k].marks,0);
- $('paperTitle').textContent=selected.length===6?'Unit '+unitNumber+' complete paper A':name[selected[0]]+' · independent practice';
+ $('paperTitle').textContent=selected.length===6?(mixed?'Comprehensive randomized unit paper':'Unit '+unitNumber+' complete paper A'):name[selected[0]]+' · independent practice';
  $('paperMarks').textContent=total+' marks in this activity · not certified · teacher script required for Listening';
  $('paper').className='active';$('results').style.display='none';$('finish').disabled=false;
  $('start').disabled=true; $('mode').disabled=true;$('skill').disabled=true;onPaper=true;
@@ -146,7 +165,7 @@ function finish(expired){
  '<p><strong>'+correct+' / '+scored+'</strong> automatically scored multiple-choice / True-False / matching questions. '+
  manual+' notes or short answers require a teacher to check equivalence, and '+writing+' writing task(s) require the official rating scale. '+
  blank+' unanswered question(s).</p>'+
- '<p>This is NOT a final score out of 70. No unverified Writing AI connection or natural audio playback is claimed.</p>'+
+ '<p>This is NOT a final score out of 70. No unverified Writing AI connection is claimed. Only script-hash-verified MP3 tracks are shown.</p>'+
  '<details><summary>Reference answers for missed choices and manual responses</summary><ol>'+review.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol></details>';
  result.scrollIntoView({behavior:'smooth'});
 }
@@ -154,7 +173,7 @@ $('start').addEventListener('click',begin);
 $('finish').addEventListener('click',()=>finish(false));
 $('print').addEventListener('click',()=>window.print());
 $('restart').addEventListener('click',()=>{
- clearInterval(clockId);onPaper=false;submitted=false;
+ clearInterval(clockId);if(mixed){location.reload();return;}onPaper=false;submitted=false;
  $('paper').className='';$('start').disabled=false;$('mode').disabled=false;$('skill').disabled=false;
  window.scrollTo({top:0,behavior:'smooth'});
 });
