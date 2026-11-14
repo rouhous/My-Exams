@@ -1,0 +1,41 @@
+<!doctype html><html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#164e39"><title>Grade 12 Elective — Unit Exam Bank</title>
+<style>
+:root{--green:#164e39;--gold:#ab8b45;--border:#d5e5dc}
+*{box-sizing:border-box}body{margin:0;font:16px/1.7 system-ui,Arial,sans-serif;background:#f2f6f2;color:#244238}
+header{background:linear-gradient(130deg,#154530,#267a56);color:white;text-align:center;padding:28px 15px}
+header a{color:#fff1bc}h1{font-size:clamp(25px,5vw,34px);margin:8px 0}
+main{max-width:1000px;margin:auto;padding:14px 14px 60px}
+.card{background:white;border:1px solid var(--border);border-radius:15px;padding:18px;margin:14px 0}
+.note{background:#fff9eb;border-right:5px solid var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:13px}
+.unit{background:white;border:1px solid var(--border);border-radius:15px;padding:18px}
+.unit h2{font-size:18px;direction:ltr;text-align:left}
+.unit small{display:block;color:#66776c;direction:ltr;text-align:left}
+.unit a{display:inline-block;background:var(--green);color:white;border-radius:9px;padding:10px 15px;text-decoration:none;margin-top:10px}
+</style></head>
+<body>
+<header><p><a href="../../index.html">العودة إلى الصفوف</a></p><h1>الصف الثاني عشر — اللغة الإنجليزية الاختيارية</h1>
+<p>Grade 12 Elective · Semester 1 · English Insights 3</p></header>
+<main>
+<section class="card note"><strong>بوابة مراجعة المعلم وليست إصدارًا امتحانيًا رسميًا.</strong>
+أُعدّت أربعة نماذج أصلية، نموذج لكل وحدة من وحدات الفصل الأول، مع امتحان كامل مدته 180 دقيقة (70 درجة) وتدريب منفصل لكل مهارة دون مؤقت.
+لا تزال مطابقة صفحات الكتاب والتصحيح الكتابي واعتماد جودة النطق بحاجة إلى مراجعة تربوية. وتُعرض التسجيلات فقط عندما تطابق بصمتها النص المعروض.</section>
+<section class="grid">
+<article class="unit"><h2>Unit 1 · The arts</h2><small>Listening 1/2 · Reading 1/2 · Writing 1/2</small><a href="./units/paper-a-preview.html?unit=1">فتح اختبار الوحدة الأولى</a></article>
+<article class="unit"><h2>Unit 2 · Doing the right thing</h2><small>Listening 1/2 · Reading 1/2 · Writing 1/2</small><a href="./units/paper-a-preview.html?unit=2">فتح اختبار الوحدة الثانية</a></article>
+<article class="unit"><h2>Unit 3 · Living in a Changing World</h2><small>Listening 1/2 · Reading 1/2 · Writing 1/2</small><a href="./units/paper-a-preview.html?unit=3">فتح اختبار الوحدة الثالثة</a></article>
+<article class="unit"><h2>Unit 4 · Higher Education</h2><small>Listening 1/2 · Reading 1/2 · Writing 1/2</small><a href="./units/paper-a-preview.html?unit=4">فتح اختبار الوحدة الرابعة</a></article>
+</section>
+<section class="card"><h2>حالة الأصول الصوتية</h2><p id="soundStatus">يتم التحقق من الملفات المتاحة...</p>
+<p>أنشطة الإنصات الثمانية لهذه الوحدات مستقلة في النصوص والأسئلة، ولا تُعتبر ملفات الصوت جاهزة إلا بعد ظهور التسجيل ومطابقة نصه بالمستودع.</p>
+<p><a href="../core/index.html" hidden> </a><a href="../../upper-grades-practice.html">بنك الاختبارات الشاملة للمسارات العليا — للمراجعة فقط</a></p></section>
+</main><script>
+(async()=>{
+ try{const r=await fetch('./units/audio/manifest.json',{cache:'no-store'});if(!r.ok)throw Error('not published');
+  const j=await r.json(),n=Object.keys(j).length;
+  document.getElementById('soundStatus').textContent='عدد ملفات Listening الطبيعية المفهرسة: '+n+' من 8 تسجيلات. تحقق من كل اختبار لتأكيد تطابق النص.';
+ }catch(e){document.getElementById('soundStatus').textContent='الصوتيات قيد التجهيز؛ النصوص متاحة للمعلم للقراءة.'}
+})();
+</script></body></html>
