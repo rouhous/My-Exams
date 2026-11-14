@@ -1,0 +1,123 @@
+{
+  "id": "g11-elective-unit2-lst1-original",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "The Mind"
+  },
+  "skill": "Listening 1",
+  "genre": "two-speaker dialogue",
+  "status": "original_unit_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "script": "Interviewer: Why did your school launch a memory workshop instead of another traditional revision lesson?\nHuda: Many pupils studied for hours but struggled to remember information when they needed it during tests.\nInterviewer: Who suggested the topic, and who considered students' feelings and concerns?\nHuda: Our science teacher suggested it, and the counsellor helped us discuss stress without embarrassing anyone publicly.\nInterviewer: Where was the first session held, and how many pupils took part?\nHuda: We met in the school library, and twenty-four pupils volunteered to test a range of practical study methods.\nInterviewer: Did students begin with huge chapters, or did they try shorter exercises first?\nHuda: We used five-minute recall activities and compared answers after taking short breaks between the sessions.\nInterviewer: What difference did you notice between rereading notes and trying to remember information?\nHuda: Active recall showed gaps in understanding more clearly than repeatedly looking at familiar sentences on the page.\nInterviewer: How did colourful diagrams help pupils understand connections between ideas in science?\nHuda: Groups drew mind maps linking important concepts and then explained those connections aloud to their partners.\nInterviewer: What did the counsellor say to students who felt afraid of forgetting?\nHuda: She said mistakes are part of learning and encouraged professional support if serious anxiety continued.\nInterviewer: How important was sleep in your workshop for young people preparing for exams?\nHuda: Regular sleep matters, and staying awake all night is rarely a helpful or reliable revision strategy.\nInterviewer: What happened when one student found the library difficult to concentrate in?\nHuda: We offered a different seat because the same study environment does not suit everybody equally well.\nInterviewer: When did participants return, and what evidence did they bring to the follow-up?\nHuda: They returned on Wednesday with short study logs showing which techniques they had tried during the previous week.\nInterviewer: Did every pupil benefit from the same memory technique during the trial?\nHuda: No. Some preferred mind maps, while others remembered more by explaining ideas to another student.\nInterviewer: What did anonymous feedback reveal about students' feelings towards making mistakes?\nHuda: Many appreciated practising privately instead of being judged against classmates' marks or compared with their friends.\nInterviewer: How will you introduce these strategies to younger pupils next term?\nHuda: We are designing an illustrated guide explaining several options and encouraging pupils to ask teachers for help.\nInterviewer: What final lesson about memory would you like listeners to remember today?\nHuda: Useful memories develop through active practice, rest and reflection, not pressure to appear perfect every single day.",
+  "passage": "Interviewer: Why did your school launch a memory workshop instead of another traditional revision lesson?\nHuda: Many pupils studied for hours but struggled to remember information when they needed it during tests.\nInterviewer: Who suggested the topic, and who considered students' feelings and concerns?\nHuda: Our science teacher suggested it, and the counsellor helped us discuss stress without embarrassing anyone publicly.\nInterviewer: Where was the first session held, and how many pupils took part?\nHuda: We met in the school library, and twenty-four pupils volunteered to test a range of practical study methods.\nInterviewer: Did students begin with huge chapters, or did they try shorter exercises first?\nHuda: We used five-minute recall activities and compared answers after taking short breaks between the sessions.\nInterviewer: What difference did you notice between rereading notes and trying to remember information?\nHuda: Active recall showed gaps in understanding more clearly than repeatedly looking at familiar sentences on the page.\nInterviewer: How did colourful diagrams help pupils understand connections between ideas in science?\nHuda: Groups drew mind maps linking important concepts and then explained those connections aloud to their partners.\nInterviewer: What did the counsellor say to students who felt afraid of forgetting?\nHuda: She said mistakes are part of learning and encouraged professional support if serious anxiety continued.\nInterviewer: How important was sleep in your workshop for young people preparing for exams?\nHuda: Regular sleep matters, and staying awake all night is rarely a helpful or reliable revision strategy.\nInterviewer: What happened when one student found the library difficult to concentrate in?\nHuda: We offered a different seat because the same study environment does not suit everybody equally well.\nInterviewer: When did participants return, and what evidence did they bring to the follow-up?\nHuda: They returned on Wednesday with short study logs showing which techniques they had tried during the previous week.\nInterviewer: Did every pupil benefit from the same memory technique during the trial?\nHuda: No. Some preferred mind maps, while others remembered more by explaining ideas to another student.\nInterviewer: What did anonymous feedback reveal about students' feelings towards making mistakes?\nHuda: Many appreciated practising privately instead of being judged against classmates' marks or compared with their friends.\nInterviewer: How will you introduce these strategies to younger pupils next term?\nHuda: We are designing an illustrated guide explaining several options and encouraging pupils to ask teachers for help.\nInterviewer: What final lesson about memory would you like listeners to remember today?\nHuda: Useful memories develop through active practice, rest and reflection, not pressure to appear perfect every single day.",
+  "wordCount": 427,
+  "speakerTurns": 28,
+  "speakers": [
+    "Interviewer",
+    "Huda"
+  ],
+  "marks": 10,
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "Where was the first memory workshop held?",
+      "options": [
+        "In the school library",
+        "At an airport",
+        "In a football stadium"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "How many pupils took part in the initial session?",
+      "options": [
+        "Twelve",
+        "Twenty-four",
+        "Forty"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "What technique helped students find gaps in understanding?",
+      "options": [
+        "Only rereading",
+        "Avoiding questions",
+        "Active recall"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "On which day did pupils return with study logs?",
+      "options": [
+        "Monday",
+        "Wednesday",
+        "Saturday"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "What did the group prepare for younger students?",
+      "options": [
+        "An illustrated guide",
+        "A long examination",
+        "A sports competition"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What did anonymous feedback show?",
+      "options": [
+        "Every pupil wanted a higher mark",
+        "Pupils disliked every strategy",
+        "Many valued private practice"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "tf",
+      "stem": "The workshop suggested that all learners should use exactly the same study method.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "The counsellor encouraged sensible sleep habits.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "Pupils used mind maps to connect ideas.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "Every student obtained the same result from the trial.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    }
+  ],
+  "audioStatus": "pending_voice_generation__keep_teacher_read_aloud_until_mp3_verified"
+}
