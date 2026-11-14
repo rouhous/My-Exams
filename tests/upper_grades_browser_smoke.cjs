@@ -60,6 +60,28 @@ const {chromium}=require('playwright');
  await page.click('#mark');
  if(!(await page.locator('#feedback').textContent()).includes('Teacher review required'))throw Error('Listening 2 must not receive unreliable automatic score');
 
+
+ await page.goto('http://127.0.0.1:8765/grade12/elective/units/paper-a-preview.html',{waitUntil:'domcontentloaded'});
+ await page.waitForFunction(()=>document.querySelector('#start')&&!document.querySelector('#start').disabled,null,{timeout:30000});
+ await page.click('#start');
+ if(await page.locator('#sections section.part').count()!==6)throw Error('The Arts complete model is missing sections');
+ if(await page.locator('#sections .question').count()!==45)throw Error('The Arts model must include 45 objective/short questions');
+ if(await page.locator('#sections textarea').count()!==2)throw Error('The Arts model must include both writing tasks');
+ const clock=await page.locator('#clock').textContent();
+ if(!clock.includes('Time left 180:')&&!clock.includes('Time left 179:'))throw Error('The Arts complete model must have 180-minute clock');
+ if(!(await page.locator('#paperMarks').textContent()).includes('70 marks'))throw Error('The Arts marks mismatch');
+ await page.click('#finish');
+ const fullReview=await page.locator('#results').textContent();
+ if(!fullReview.includes('0 / 23')||!fullReview.includes('22 notes or short answers'))throw Error('The Arts full marking must separate 23 auto vs 22 manual items: '+fullReview.slice(0,400));
+ await page.click('#restart');
+ await page.selectOption('#mode','skill');
+ await page.selectOption('#skill','rdg1');
+ await page.click('#start');
+ if(await page.locator('#sections section.part').count()!==1)throw Error('The Arts independent reading should be single section');
+ if((await page.locator('#clock').textContent())!=='Untimed')throw Error('The Arts single skill must be untimed');
+ if(await page.locator('#sections .question').count()!==12)throw Error('The Arts reading 1 should have twelve questions');
+ await page.click('#restart');
+
  if(errors.length)throw Error('Browser errors: '+errors.join('; '));
  await browser.close();console.log('PASS upper grade A-D, timed full, randomized complete, independent untimed skill and honest score review');
 })().catch(e=>{console.error(e);process.exit(1)});
