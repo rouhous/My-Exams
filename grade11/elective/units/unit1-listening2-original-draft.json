@@ -1,0 +1,83 @@
+{
+  "id": "g11-elective-unit1-lst2-new",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 1,
+    "title": "Fame"
+  },
+  "skill": "Listening 2",
+  "genre": "one-speaker narrative",
+  "status": "original_unit_aligned_script_and_questions_audio_generation_pending",
+  "curriculumThemeReference": "English Insights 2 Unit 1 Fame: ethical influence, film and media storytelling",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "script": "My name is Rana, and I am going to tell you how a short documentary changed my ideas about fame. Last autumn, our media club entered a youth film competition. The theme was 'Someone who makes a difference'. At first, several classmates wanted to film a famous athlete or singer. I suggested my aunt, who helps new families find the right school and community services when they move to our town.\n\nSome pupils laughed because my aunt did not have a public online account. However, our teacher asked us to consider the difference between being famous and being influential. We began filming at the community centre. My aunt explained that she listens carefully before offering advice, because every family needs different information. We also spoke to two families who had given permission to be interviewed. They described how practical help made their first weeks less stressful.\n\nThe filming itself was more difficult than we expected. On our first visit, traffic noise covered several answers. We returned on a quieter Saturday and used a borrowed microphone. During editing, one pupil wanted to remove a sentence in which my aunt admitted making mistakes. I disagreed because the sentence showed that trustworthy helpers learn from experience. The whole team watched the original recording and decided to keep her words.\n\nWe gave the documentary the title 'Famous for Kindness', although its main message was that kindness does not require fame. The final film lasted six minutes. Before we submitted it, we checked that each participant had approved the edited version. We also added subtitles so that people could follow the conversations in a busy room.\n\nAt the festival, our film did not win the main prize. A documentary about a wildlife rescue received that award. Instead, our group received a special mention for responsible storytelling. A local youth organisation invited us to screen the film during a welcome event for new residents. I was disappointed for a few minutes, but then I watched families speaking to my aunt after the screening.\n\nThe organisers later sent us thoughtful comments about our interviews, and one teacher asked permission to use a short extract in a media-literacy lesson. That was another pleasant surprise.\n\nThat experience taught me that attention is only useful when it helps people. Our next project will be a short film about volunteers who teach children to read. We will keep the same rules about consent, careful editing and checking information. I no longer measure the success of a story only by how many people watch it.",
+  "passage": "My name is Rana, and I am going to tell you how a short documentary changed my ideas about fame. Last autumn, our media club entered a youth film competition. The theme was 'Someone who makes a difference'. At first, several classmates wanted to film a famous athlete or singer. I suggested my aunt, who helps new families find the right school and community services when they move to our town.\n\nSome pupils laughed because my aunt did not have a public online account. However, our teacher asked us to consider the difference between being famous and being influential. We began filming at the community centre. My aunt explained that she listens carefully before offering advice, because every family needs different information. We also spoke to two families who had given permission to be interviewed. They described how practical help made their first weeks less stressful.\n\nThe filming itself was more difficult than we expected. On our first visit, traffic noise covered several answers. We returned on a quieter Saturday and used a borrowed microphone. During editing, one pupil wanted to remove a sentence in which my aunt admitted making mistakes. I disagreed because the sentence showed that trustworthy helpers learn from experience. The whole team watched the original recording and decided to keep her words.\n\nWe gave the documentary the title 'Famous for Kindness', although its main message was that kindness does not require fame. The final film lasted six minutes. Before we submitted it, we checked that each participant had approved the edited version. We also added subtitles so that people could follow the conversations in a busy room.\n\nAt the festival, our film did not win the main prize. A documentary about a wildlife rescue received that award. Instead, our group received a special mention for responsible storytelling. A local youth organisation invited us to screen the film during a welcome event for new residents. I was disappointed for a few minutes, but then I watched families speaking to my aunt after the screening.\n\nThe organisers later sent us thoughtful comments about our interviews, and one teacher asked permission to use a short extract in a media-literacy lesson. That was another pleasant surprise.\n\nThat experience taught me that attention is only useful when it helps people. Our next project will be a short film about volunteers who teach children to read. We will keep the same rules about consent, careful editing and checking information. I no longer measure the success of a story only by how many people watch it.",
+  "wordCount": 423,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "Whose community work did Rana's documentary describe?",
+      "answer": "her aunt",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Where did the team begin filming?",
+      "answer": "the community centre",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Why did the team return on a quieter Saturday?",
+      "answer": "traffic noise",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What equipment did the pupils borrow?",
+      "answer": "a microphone",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What subject won the competition's main prize?",
+      "answer": "a wildlife rescue",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What recognition did Rana's team receive?",
+      "answer": "a special mention",
+      "maxWords": 4
+    },
+    {
+      "type": "gap",
+      "stem": "Complete the documentary title: Famous for _____.",
+      "answer": "Kindness",
+      "maxWords": 1
+    },
+    {
+      "type": "gap",
+      "stem": "Final documentary duration: _____ minutes.",
+      "answer": "six",
+      "maxWords": 1
+    },
+    {
+      "type": "gap",
+      "stem": "Subtitles helped viewers follow speech in a _____ room.",
+      "answer": "busy",
+      "maxWords": 1
+    },
+    {
+      "type": "gap",
+      "stem": "The next film will feature volunteers helping children to _____.",
+      "answer": "read",
+      "maxWords": 1
+    }
+  ],
+  "audioStatus": "pending_voice_generation__one_speaker_twice"
+}
