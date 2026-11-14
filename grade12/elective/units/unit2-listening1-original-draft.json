@@ -1,0 +1,125 @@
+{
+  "id": "g12-elective-unit2-lst1-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "Doing the right thing"
+  },
+  "skill": "Listening 1",
+  "status": "original_script_and_questions_created__teacher_review_and_natural_audio_pending",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "passage": "Layla: Our council wants to organise a charity market next month, but we must agree on important details first.\nYousuf: What is the event's main purpose? I heard several clubs suggested different projects this year.\nLayla: We chose an accessible reading corner. Younger pupils need large-print books and better lighting in the library.\nYousuf: Will students collect money, donate books, or offer their time to improve the reading space?\nLayla: All three. The finance teacher will count donations with two witnesses and keep a written record.\nYousuf: Why two witnesses? Our volunteers have always been reliable when organising school activities.\nLayla: Transparent records protect everyone from misunderstanding. That is good practice, not an accusation against volunteers.\nYousuf: Will families pay an entrance fee? That might discourage some people from joining the event.\nLayla: Entry will be free, but our stall will sell homemade cards with prices displayed clearly.\nYousuf: What about damaged second-hand books? Some donations might be unsuitable for young readers.\nLayla: Volunteers will check the books and send unsuitable items to an appropriate recycling collection.\nYousuf: Parents have offered to prepare food. How will customers know whether dishes contain allergens?\nLayla: Our team will provide ingredient cards and ask families not to use nuts in any dishes.\nYousuf: Can younger children help at the stalls, or will only older pupils be involved?\nLayla: Older students will manage payments with a teacher. Younger pupils can welcome visitors and arrange books.\nYousuf: When will the market open, and how much time will families have to visit?\nLayla: On Saturday morning, from nine until noon, when the school building is available for community activities.\nYousuf: Last year's online notice named the wrong location. How will you avoid confusion this time?\nLayla: We will publish confirmed details on the school website and beside the main gate.\nYousuf: Some visitors may not want their photographs shared online. Have you prepared a consent policy?\nLayla: Yes. We will never publish a visitor's photograph without asking for clear permission first.\nYousuf: What happens if the donations fail to reach your target? Will families receive an update?\nLayla: We will report the total collected and actual purchases, then plan another event if necessary.\nYousuf: Who will decide what equipment to buy? Attractive items are not always the most useful.\nLayla: Pupils will test the reading corner and recommend the changes that help them most.\nYousuf: Can families share suggestions as well, or is the survey only for pupils?\nLayla: There will be an anonymous feedback box, so nobody must write their name.\nYousuf: Then the market teaches integrity as well as raising money. I can help at the book stall.",
+  "script": "Layla: Our council wants to organise a charity market next month, but we must agree on important details first.\nYousuf: What is the event's main purpose? I heard several clubs suggested different projects this year.\nLayla: We chose an accessible reading corner. Younger pupils need large-print books and better lighting in the library.\nYousuf: Will students collect money, donate books, or offer their time to improve the reading space?\nLayla: All three. The finance teacher will count donations with two witnesses and keep a written record.\nYousuf: Why two witnesses? Our volunteers have always been reliable when organising school activities.\nLayla: Transparent records protect everyone from misunderstanding. That is good practice, not an accusation against volunteers.\nYousuf: Will families pay an entrance fee? That might discourage some people from joining the event.\nLayla: Entry will be free, but our stall will sell homemade cards with prices displayed clearly.\nYousuf: What about damaged second-hand books? Some donations might be unsuitable for young readers.\nLayla: Volunteers will check the books and send unsuitable items to an appropriate recycling collection.\nYousuf: Parents have offered to prepare food. How will customers know whether dishes contain allergens?\nLayla: Our team will provide ingredient cards and ask families not to use nuts in any dishes.\nYousuf: Can younger children help at the stalls, or will only older pupils be involved?\nLayla: Older students will manage payments with a teacher. Younger pupils can welcome visitors and arrange books.\nYousuf: When will the market open, and how much time will families have to visit?\nLayla: On Saturday morning, from nine until noon, when the school building is available for community activities.\nYousuf: Last year's online notice named the wrong location. How will you avoid confusion this time?\nLayla: We will publish confirmed details on the school website and beside the main gate.\nYousuf: Some visitors may not want their photographs shared online. Have you prepared a consent policy?\nLayla: Yes. We will never publish a visitor's photograph without asking for clear permission first.\nYousuf: What happens if the donations fail to reach your target? Will families receive an update?\nLayla: We will report the total collected and actual purchases, then plan another event if necessary.\nYousuf: Who will decide what equipment to buy? Attractive items are not always the most useful.\nLayla: Pupils will test the reading corner and recommend the changes that help them most.\nYousuf: Can families share suggestions as well, or is the survey only for pupils?\nLayla: There will be an anonymous feedback box, so nobody must write their name.\nYousuf: Then the market teaches integrity as well as raising money. I can help at the book stall.",
+  "wordCount": 444,
+  "speakerTurns": 28,
+  "speakers": [
+    "Layla",
+    "Yousuf"
+  ],
+  "audioStatus": "not_generated_until_content_review",
+  "audioFile": null,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "What will the charity market mainly support?",
+      "options": [
+        "An accessible library reading corner",
+        "New sports uniforms",
+        "A school bus"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Why will two witnesses check the cash records?",
+      "options": [
+        "To judge students' personalities",
+        "To keep fundraising transparent",
+        "To slow down the visitors"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "What will visitors pay to enter the market?",
+      "options": [
+        "No entrance fee",
+        "Two rials",
+        "One rial"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What happens to unsuitable second-hand books?",
+      "options": [
+        "They are sold at full price",
+        "They are returned anonymously",
+        "They are sent for appropriate recycling"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "When will the market be open?",
+      "options": [
+        "Friday evening",
+        "Saturday from nine to noon",
+        "Sunday afternoon"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "Who will help decide which reading-corner items to buy?",
+      "options": [
+        "Only the finance teacher",
+        "Local shop owners",
+        "Pupils who test the corner"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "tf",
+      "stem": "Older students may manage payments with a teacher.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "The council plans to publish visitor photographs without asking.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "The council will report the total collected and what it purchased.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "Families must sign their names on every suggestion.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    }
+  ],
+  "officialTaskShapeSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / lst1",
+  "notes": "Original fictional charity activity focusing on integrity, permission and volunteering, not a copied textbook passage."
+}
