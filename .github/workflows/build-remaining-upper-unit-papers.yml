@@ -1,0 +1,56 @@
+name: Generate missing Grade 11/12 unit paper drafts from original scenario bank
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_remaining_upper_papers.py'
+      - 'targeted_units/upper_remaining_profiles.json'
+      - '.github/workflows/build-remaining-upper-unit-papers.yml'
+permissions:
+  contents: write
+concurrency:
+  group: remaining-upper-paper-build
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build and validate all eight original upper-unit papers
+        run: |
+          python scripts/build_remaining_upper_papers.py
+          python - <<'PY'
+          import json
+          d=json.load(open('targeted_units/full_papers.json'))
+          assert len(d['papers'])==8
+          for p in d['papers']:
+              assert p['marks'] in (60,70) and p['minutes'] in (150,180)
+              assert len(p['sectionOrder']) in (6,9)
+              assert sum(p['sections'][k]['marks'] for k in p['sectionOrder'])==p['marks']
+              assert p['certifiedTextbookMatch'] is False
+          print('Eight original paper drafts pass structural checks.')
+          PY
+      - name: Commit source-validated paper JSON if scenario bank is unchanged
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3 4; do
+            git fetch origin main
+            for f in scripts/build_remaining_upper_papers.py targeted_units/upper_remaining_profiles.json; do
+              local=$(sha256sum "$f" | cut -d' ' -f1)
+              remote=$(git show "origin/main:$f" | sha256sum | cut -d' ' -f1)
+              if [ "$local" != "$remote" ];then echo "Source changed; refusing stale papers: $f" >&2;exit 1;fi
+            done
+            git reset --mixed origin/main
+            git add targeted_units/full_papers.json
+            if git diff --cached --quiet;then exit 0;fi
+            git commit -m 'Generate eight original official-shaped Grade11/12 unit teacher-review papers'
+            if git push origin HEAD:main;then exit 0;fi
+            sleep 6
+          done
+          exit 1
