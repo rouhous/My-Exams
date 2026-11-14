@@ -1,0 +1,92 @@
+{
+  "id": "g11-elective-unit2-rdg1-original",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "The Mind"
+  },
+  "skill": "Reading 1",
+  "genre": "evaluative",
+  "status": "original_unit_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "passage": "Schools increasingly organise workshops about memory, attention and study habits. Supporters argue that these lessons give teenagers practical tools for understanding what helps them learn. Instead of telling pupils only to study harder, teachers can demonstrate active recall, spaced revision and realistic planning. These approaches encourage students to check their understanding and notice which topics require more attention before an assessment. The techniques are inexpensive and can often be practised at home.\n\nA further benefit is that a workshop can reduce the pressure to appear perfect. A pupil who forgets a definition may believe that everyone else remembers it easily. When teachers show that mistakes can be useful evidence, the classroom may become a safer place to ask questions. Students also learn that concentration can change with sleep, worry and noise. Respectful discussion can make different experiences easier to understand.\n\nHowever, a short workshop has limits. No technique works equally well for every learner, and advice copied from social media may lack reliable evidence. Schools should avoid promising that a colourful diagram or a phone application will guarantee high marks. A pupil who experiences serious ongoing stress needs more than an attractive timetable. Qualified staff should provide support and clearly explain where confidential help can be requested.\n\nTime and resources must also be considered. Teachers already have crowded schedules, and pupils need opportunities to apply strategies rather than simply attend another lecture. A workshop is most useful when it includes demonstrations, guided practice and a chance to review results. Schools could provide several short sessions rather than one long presentation. This would allow learners to try an approach and report what happened later.\n\nCritics sometimes suggest that teaching study techniques is unnecessary because teenagers will discover useful methods independently. Some certainly do, but others continue ineffective habits for years without feedback. Explicit instruction can help pupils test alternatives, provided the school does not replace personal choice with rigid rules. Students should be encouraged to explain their own reasoning rather than imitate a teacher's routine without thinking.\n\nIn my opinion, memory workshops are valuable when they are modest, evidence-aware and supportive. They should help learners organise revision, understand that forgetting is normal and recognise when to ask for guidance. A carefully planned programme can improve confidence without pretending that academic success depends on one magical method. Schools should evaluate these activities through student feedback and useful changes in study habits, not only examination marks.",
+  "wordCount": 403,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "Name one study technique a memory workshop can demonstrate.",
+      "answer": "active recall",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What can a workshop reduce about appearing perfect?",
+      "answer": "pressure",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Name one condition that may affect concentration.",
+      "answer": "sleep",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What kind of online advice may lack evidence?",
+      "answer": "social media advice",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What should pupils have a chance to review?",
+      "answer": "their results",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "How should schools evaluate their workshops?",
+      "answer": "student feedback",
+      "maxWords": 4
+    },
+    {
+      "type": "tf",
+      "stem": "The writer claims the same technique works for every learner.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "Serious ongoing stress may require qualified support.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "The author wants to remove students' choice of study methods.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "The programme should include practice and reflection.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    }
+  ]
+}
