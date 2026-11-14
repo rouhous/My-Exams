@@ -1,0 +1,141 @@
+{
+  "id": "g12-elective-unit1-lst1-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 1,
+    "title": "The arts"
+  },
+  "skill": "Listening 1",
+  "status": "original_script_and_questions_created__teacher_review_and_natural_audio_pending",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "curriculumReference": {
+    "book": "English Insights 3 (Grade 12 Elective), Unit 1",
+    "url": "https://ict.moe.gov.om/book/PDF/12/cls12_Insights3_SB/files/downloads/cls12_Insights3_SB.pdf",
+    "skills": [
+      "listening for details",
+      "discussing photographs and performing arts",
+      "interpreting a visitor survey"
+    ]
+  },
+  "officialTaskShapeSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / lst1",
+  "passage": "Maha: Our school is preparing a photography exhibition called Everyday Oman Through Young Eyes for next week.\nHamad: Will it show famous landmarks or ordinary moments that visitors often overlook in their daily lives?\nMaha: Mainly ordinary moments: market stalls, fishermen repairing nets, and families teaching traditional crafts to younger children.\nHamad: Where will you display the photographs, and when will the exhibition open?\nMaha: In the school library hall next Thursday. Neighbouring families and students can visit without paying.\nHamad: How many entries arrived? The committee must have faced some difficult decisions.\nMaha: We received eighty-four pictures but selected thirty to represent a balanced range of subjects and different viewpoints.\nHamad: Did you judge them only by technical quality, or consider the story behind each photograph?\nMaha: Each photographer included a short explanation of why the moment mattered and what visitors might learn.\nHamad: Did everyone photographed give permission for their image to be publicly displayed?\nMaha: Two entries lacked consent. We requested written permission before considering either picture.\nHamad: Respect matters as much as creativity. What about the captions displayed beside the photographs?\nMaha: We surveyed one hundred and twenty visitors; three quarters preferred captions in both Arabic and English.\nHamad: Did the survey also ask whether captions should be long or short?\nMaha: Yes. Most preferred two or three sentences, leaving time to study the photographs.\nHamad: Will you include performing arts, or will the event only display pictures?\nMaha: Our drama group will perform a ten-minute scene about how a photograph can change someone's memories.\nHamad: Is their performance based on a real family, or is something fictional?\nMaha: It is fictional. We did not want to expose anyone's private memories without consent.\nHamad: What rules guide the students when editing their photographs?\nMaha: They can crop and adjust brightness, but cannot remove people or invent details.\nHamad: Exactly. Editing should clarify an image, not deceive visitors about what happened.\nMaha: Signs will ask visitors not to reproduce individual artworks without the artist's permission.\nHamad: What will happen to the photographs after the exhibition closes?\nMaha: Original files and consent forms stay in a secure school archive; printed copies return to their owners.\nHamad: Can visitors offer helpful feedback, so students learn from the experience?\nMaha: A short form asks which picture communicates its message most clearly.\nHamad: Excellent. The exhibition combines careful observation, artistic choices, and respect for other people and their stories.",
+  "script": "Maha: Our school is preparing a photography exhibition called Everyday Oman Through Young Eyes for next week.\nHamad: Will it show famous landmarks or ordinary moments that visitors often overlook in their daily lives?\nMaha: Mainly ordinary moments: market stalls, fishermen repairing nets, and families teaching traditional crafts to younger children.\nHamad: Where will you display the photographs, and when will the exhibition open?\nMaha: In the school library hall next Thursday. Neighbouring families and students can visit without paying.\nHamad: How many entries arrived? The committee must have faced some difficult decisions.\nMaha: We received eighty-four pictures but selected thirty to represent a balanced range of subjects and different viewpoints.\nHamad: Did you judge them only by technical quality, or consider the story behind each photograph?\nMaha: Each photographer included a short explanation of why the moment mattered and what visitors might learn.\nHamad: Did everyone photographed give permission for their image to be publicly displayed?\nMaha: Two entries lacked consent. We requested written permission before considering either picture.\nHamad: Respect matters as much as creativity. What about the captions displayed beside the photographs?\nMaha: We surveyed one hundred and twenty visitors; three quarters preferred captions in both Arabic and English.\nHamad: Did the survey also ask whether captions should be long or short?\nMaha: Yes. Most preferred two or three sentences, leaving time to study the photographs.\nHamad: Will you include performing arts, or will the event only display pictures?\nMaha: Our drama group will perform a ten-minute scene about how a photograph can change someone's memories.\nHamad: Is their performance based on a real family, or is something fictional?\nMaha: It is fictional. We did not want to expose anyone's private memories without consent.\nHamad: What rules guide the students when editing their photographs?\nMaha: They can crop and adjust brightness, but cannot remove people or invent details.\nHamad: Exactly. Editing should clarify an image, not deceive visitors about what happened.\nMaha: Signs will ask visitors not to reproduce individual artworks without the artist's permission.\nHamad: What will happen to the photographs after the exhibition closes?\nMaha: Original files and consent forms stay in a secure school archive; printed copies return to their owners.\nHamad: Can visitors offer helpful feedback, so students learn from the experience?\nMaha: A short form asks which picture communicates its message most clearly.\nHamad: Excellent. The exhibition combines careful observation, artistic choices, and respect for other people and their stories.",
+  "wordCount": 408,
+  "speakerTurns": 28,
+  "speakers": [
+    "Maha",
+    "Hamad"
+  ],
+  "audioStatus": "not_generated_until_content_review",
+  "audioFile": null,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "Where will the exhibition be held?",
+      "options": [
+        "In the school library hall",
+        "In the town sports centre",
+        "At a national museum"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "How many photographs were selected for display?",
+      "options": [
+        "Eighty-four",
+        "Thirty",
+        "One hundred and twenty"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "Who preferred captions in both Arabic and English?",
+      "options": [
+        "Three quarters of survey respondents",
+        "All members of the judging committee",
+        "Only the drama performers"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Why were two entries not immediately accepted?",
+      "options": [
+        "The frames were too small",
+        "The photographs had no stories",
+        "The photographers had not obtained consent"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What will the drama group perform?",
+      "options": [
+        "A ten-minute scene about photographs and memories",
+        "A dance about market prices",
+        "An hour-long historical play"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Which changes to photographs are allowed?",
+      "options": [
+        "Removing people from the scene",
+        "Cropping and adjusting brightness",
+        "Adding events that never happened"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "Families can attend the exhibition free of charge.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "The exhibition focuses only on famous landmarks.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "The school will delete all original photographs after the exhibition.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "Visitors can explain their favourite photograph through a feedback form.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    }
+  ],
+  "qa": {
+    "sixMultipleChoiceWithThreeOptions": true,
+    "fourTrueFalse": true,
+    "answersPassageGroundedDraft": true,
+    "semanticTeacherReviewRequired": true,
+    "verifiedNaturalAudio": false
+  },
+  "notes": "Original school-exhibition dialogue, not copied from textbook. Isolated draft only; not yet replacing existing bank or claiming all six unit-paper sections are ready."
+}
