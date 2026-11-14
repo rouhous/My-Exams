@@ -155,14 +155,16 @@
   },
   "g8-d-listening1": {
     "mp3": "g8-d-listening1.mp3",
-    "script_and_questions_sha256": "99ed68913b178aaae43e1230707424d044f514fd45969964bf2364d2a2b7a923",
+    "script_and_questions_sha256": "66913d87d0f273d9fc888e07ff46ca483f1883295ae2377eeb46eab4af4e95f9",
     "seconds": 235.02,
     "bytes": 2820641,
     "sourceExam": "g8-d",
     "voices": [
       "en-GB-SoniaNeural",
       "en-GB-RyanNeural"
-    ]
+    ],
+    "imageOnlyCorrection": "water bottle option now points to bottle-water.svg rather than a glass; spoken transcript and answers unchanged",
+    "originalRecordedScriptSha256": "99ed68913b178aaae43e1230707424d044f514fd45969964bf2364d2a2b7a923"
   },
   "g8-d-listening2": {
     "mp3": "g8-d-listening2.mp3",
