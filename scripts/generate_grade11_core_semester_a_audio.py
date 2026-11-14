@@ -45,9 +45,9 @@ async def write_audio(script,part):
       parsed=[(x.strip().replace('\n',' '),0) for x in script.split('Part Two')]
       if len(parsed)!=2:raise ValueError('Need two parts in listening 2')
       parsed=[('Part One. '+parsed[0].replace('Part One','',1),0),('Part Two. '+parsed[1],0)]
-    for round in range(2):
+    for repeat_index in range(2):
       for text,voice in parsed:await speak(text,voice);pause(.7)
-      pause(5 if round==0 else 3)
+      pause(5 if repeat_index==0 else 3)
     concat=tmp/'list.txt';concat.write_text(''.join("file '"+str(x.resolve()).replace("'","'\\''")+"'\n" for x in files))
     target=OUT/(part+'.mp3')
     ff('-f','concat','-safe','0','-i',concat,'-ac','1','-ar','44100','-c:a','libmp3lame','-b:a','96k',target)
