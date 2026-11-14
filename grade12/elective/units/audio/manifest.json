@@ -1,0 +1,27 @@
+{
+  "unit1-listening1-original-draft.json": {
+    "sourceFile": "grade12/elective/units/unit1-listening1-original-draft.json",
+    "scriptSha256": "e37fea2b36a9581f3b8a6e2054290b2b17e3cb41ac582398d8b9f4699e9aeeb4",
+    "mp3": "unit1-listening1.mp3",
+    "durationSeconds": 411.9,
+    "bytes": 4943142,
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
+  },
+  "unit1-listening2-original-draft.json": {
+    "sourceFile": "grade12/elective/units/unit1-listening2-original-draft.json",
+    "scriptSha256": "c45337c5ea5bba4c67d3c081403f3ef606f395339cc2b46aeec2f7031a4ca90c",
+    "mp3": "unit1-listening2.mp3",
+    "durationSeconds": 417.36,
+    "bytes": 5008657,
+    "voices": [
+      "en-GB-SoniaNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
+  }
+}
