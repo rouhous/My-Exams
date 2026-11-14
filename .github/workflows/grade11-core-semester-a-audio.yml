@@ -1,0 +1,63 @@
+name: Grade 11 Core 9-section semester Paper A natural Listening
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'grade11/core/semester-a.html'
+      - 'scripts/generate_grade11_core_semester_a_audio.py'
+      - '.github/workflows/grade11-core-semester-a-audio.yml'
+permissions:
+  contents: write
+concurrency:
+  group: g11-core-semester-a-audio
+  cancel-in-progress: true
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install two voices and validator
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          pip install edge-tts mutagen beautifulsoup4
+      - name: Generate two voice/source matched listening recordings
+        run: python scripts/generate_grade11_core_semester_a_audio.py
+      - name: Verify script checksum, duration and publish
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          from bs4 import BeautifulSoup
+          from mutagen.mp3 import MP3
+          src=BeautifulSoup(pathlib.Path('grade11/core/semester-a.html').read_text(),'html.parser')
+          parts=[sec for sec in src.select('section') if sec.h2 and sec.h2.get_text(strip=True).startswith('Listening')]
+          manifest=json.loads(pathlib.Path('grade11/core/semester-a/audio/manifest.json').read_text())
+          assert len(parts)==2
+          for i,part in enumerate(parts,1):
+            entry=manifest['lst'+str(i)]
+            script=part.select_one('details.teacher p').get_text('\n').strip()
+            assert hashlib.sha256(script.encode()).hexdigest()==entry['scriptSha256']
+            file=pathlib.Path('grade11/core/semester-a/audio')/entry['mp3']
+            assert file.is_file() and file.stat().st_size>20000 and MP3(file).info.length>120
+          print('Both Grade 11 Core semester A listening recordings match exact scripts.')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5;do
+            git fetch origin main
+            current=$(sha256sum grade11/core/semester-a.html | cut -d' ' -f1)
+            remote=$(git show origin/main:grade11/core/semester-a.html | sha256sum | cut -d' ' -f1)
+            if [ "$current" != "$remote" ];then echo "Semester paper changed, refusing stale audio" >&2;exit 1;fi
+            git reset --mixed origin/main
+            git add grade11/core/semester-a/audio/
+            if git diff --cached --quiet;then exit 0;fi
+            git commit -m "Archive two script-hashed Grade11 Core semester A listening MP3"
+            if git push origin HEAD:main;then exit 0;fi
+            sleep 6
+          done
+          exit 1
