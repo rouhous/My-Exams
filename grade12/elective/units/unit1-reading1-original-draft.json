@@ -1,0 +1,94 @@
+{
+  "id": "g12-elective-unit1-rdg1-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 1,
+    "title": "The arts"
+  },
+  "skill": "Reading 1",
+  "genre": "interactive email exchange",
+  "status": "original_450_500_word_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "marks": 12,
+  "passage": "Email 1 — From Aisha, the school art club, to Mr Rami, a local conservator.\n\nDear Mr Rami,\nLast month our art club found a faded mural on a wall beside the old school courtyard. Former students painted it many years ago. The picture shows a traditional fishing boat, but several colours have disappeared and a crack runs across the lower corner. Some members suggested covering it with a new painting. I am hesitant about that idea because the original design belongs to those students, and we do not yet know what materials they used.\n\nCould you advise us before we touch the wall? We have made digital photographs from several angles and asked the school office to contact the original artists. Our aim is not to make the mural look completely new. We want younger pupils to understand why an older artwork deserves careful attention. We are also planning a public workshop at the community library.\n\nKind regards,\nAisha\n\nEmail 2 — From Mr Rami to Aisha.\n\nDear Aisha,\nThank you for asking first. Cleaning old paint without knowing its condition can cause further damage. For the moment, do not scrub the surface or add fresh colour. Ask the maintenance team to check whether water is entering through the roof above the wall. A clear roof cover may reduce the risk while we develop a plan.\n\nThe photographs are an excellent starting point, but they cannot reveal everything about the layers of paint. I can visit with your art teacher to examine a small section without disturbing the whole mural. At the public workshop, you could demonstrate safe painting methods on a portable board instead of inviting people to practise on the original wall. Please obtain written permission from the former students before displaying their names or private photographs.\n\nBest wishes,\nRami\n\nEmail 3 — From Aisha to Mr Rami.\n\nDear Mr Rami,\nYour suggestions helped us change the programme. The maintenance team has checked the roof, and the principal has approved a temporary cover. Our art teacher will supervise the demonstration and check safety before visitors enter.\n\nThe club has a budget of 180 OMR, so we are asking local businesses to lend some equipment rather than buy everything. Two students are preparing information boards in two languages, Arabic and English. We have also started an attendance list for anyone who wants to join the demonstration. Would you be able to explain how specialists decide whether restoration is appropriate?\n\nYours sincerely,\nAisha\n\nEmail 4 — From Mr Rami to Aisha.\n\nDear Aisha,\nI can attend and explain why conservation sometimes means leaving part of an artwork unchanged. Please show visitors the before-and-after photographs of your planning process, not a misleading picture of a completed restoration. A successful project includes accurate records, respectful decisions and a clear account of what remains uncertain. Your club can improve public understanding even if the mural needs a longer period of professional study.\n\nSee you at the library,\nRami",
+  "wordCount": 496,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "What did the art club find beside the old courtyard?",
+      "answer": "a faded mural",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who painted the original artwork?",
+      "answer": "former students",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Why does Aisha oppose painting over the mural immediately?",
+      "answer": "to preserve original design",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Where will the public workshop take place?",
+      "answer": "the community library",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What will visitors use for the demonstration?",
+      "answer": "a portable board",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What is the art club's budget?",
+      "answer": "180 OMR",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who will supervise the demonstration?",
+      "answer": "the art teacher",
+      "maxWords": 4
+    },
+    {
+      "type": "gap",
+      "stem": "The students took ______ from several angles.",
+      "answer": "digital photographs",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "A ______ may protect the mural from water.",
+      "answer": "roof cover",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "The club must obtain ______ before showing artists' names.",
+      "answer": "written permission",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "The information boards will be written in ______.",
+      "answer": "two languages",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "Students have started an ______ for workshop participants.",
+      "answer": "attendance list",
+      "maxWords": 3
+    }
+  ],
+  "sahSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / rdg1",
+  "notes": "Fictional student-conservator correspondence; teacher should check answer wording and rubric. Seven wh short answers and five 1–3-word gaps."
+}
