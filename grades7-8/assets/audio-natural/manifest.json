@@ -1,0 +1,178 @@
+{
+  "g7-a-listening1": {
+    "mp3": "g7-a-listening1.mp3",
+    "script_and_questions_sha256": "161178a8b709ec09215fa546517771d5db96eb2eb701ef6465fdfe99f40290ad",
+    "seconds": 221.81,
+    "bytes": 2662026,
+    "sourceExam": "g7-a",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  },
+  "g7-a-listening2": {
+    "mp3": "g7-a-listening2.mp3",
+    "script_and_questions_sha256": "3c8d9b1f354d1c461e06b1f47924b7a0dd957e74963155046f8a1d003bfdef36",
+    "seconds": 175.7,
+    "bytes": 2108752,
+    "sourceExam": "g7-a",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  },
+  "g7-b-listening1": {
+    "mp3": "g7-b-listening1.mp3",
+    "script_and_questions_sha256": "b4c31f6cfd0191ca648cbe932975c52b2aada1d2c09a7ddbbb2355f7e93988cc",
+    "seconds": 234.74,
+    "bytes": 2817193,
+    "sourceExam": "g7-b",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  },
+  "g7-b-listening2": {
+    "mp3": "g7-b-listening2.mp3",
+    "script_and_questions_sha256": "ea1a71de78ad7f58542cb9adf0c76f5a48609e88acbb7029d5cad552a7ad8c18",
+    "seconds": 181.32,
+    "bytes": 2176148,
+    "sourceExam": "g7-b",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  },
+  "g7-c-listening1": {
+    "mp3": "g7-c-listening1.mp3",
+    "script_and_questions_sha256": "1631d3f960821e0b38f9867dc770b3cf9a75fde85ec9b271687931bf695e9a8a",
+    "seconds": 218.41,
+    "bytes": 2621275,
+    "sourceExam": "g7-c",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  },
+  "g7-c-listening2": {
+    "mp3": "g7-c-listening2.mp3",
+    "script_and_questions_sha256": "23496a491318054f459cb0e56992bf7564751285631bed47d5e633258859fd30",
+    "seconds": 183.14,
+    "bytes": 2198091,
+    "sourceExam": "g7-c",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  },
+  "g7-d-listening1": {
+    "mp3": "g7-d-listening1.mp3",
+    "script_and_questions_sha256": "161178a8b709ec09215fa546517771d5db96eb2eb701ef6465fdfe99f40290ad",
+    "seconds": 221.81,
+    "bytes": 2662026,
+    "sourceExam": "g7-d",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  },
+  "g7-d-listening2": {
+    "mp3": "g7-d-listening2.mp3",
+    "script_and_questions_sha256": "ea1a71de78ad7f58542cb9adf0c76f5a48609e88acbb7029d5cad552a7ad8c18",
+    "seconds": 181.32,
+    "bytes": 2176148,
+    "sourceExam": "g7-d",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  },
+  "g8-a-listening1": {
+    "mp3": "g8-a-listening1.mp3",
+    "script_and_questions_sha256": "99ed68913b178aaae43e1230707424d044f514fd45969964bf2364d2a2b7a923",
+    "seconds": 235.02,
+    "bytes": 2820641,
+    "sourceExam": "g8-a",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  },
+  "g8-a-listening2": {
+    "mp3": "g8-a-listening2.mp3",
+    "script_and_questions_sha256": "7f75356b90be54b9834f2db45266d4cddeac9f262875f54fe6dc0925fb3f59b5",
+    "seconds": 172.15,
+    "bytes": 2066120,
+    "sourceExam": "g8-a",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  },
+  "g8-b-listening1": {
+    "mp3": "g8-b-listening1.mp3",
+    "script_and_questions_sha256": "429906b159f7e1f8ce90737dad0ed3356d8881260f184eab049bcdd48d18c29e",
+    "seconds": 225.75,
+    "bytes": 2709359,
+    "sourceExam": "g8-b",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  },
+  "g8-b-listening2": {
+    "mp3": "g8-b-listening2.mp3",
+    "script_and_questions_sha256": "75299ef2675f8a7032957befc06a8287a15a335c5ecda70dd4c409d95ed400c8",
+    "seconds": 172.38,
+    "bytes": 2068942,
+    "sourceExam": "g8-b",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  },
+  "g8-c-listening1": {
+    "mp3": "g8-c-listening1.mp3",
+    "script_and_questions_sha256": "a9f757e7756d96d748df50bab7ff537e7dad656abd376b0a1e195450d9b46c24",
+    "seconds": 215.28,
+    "bytes": 2583658,
+    "sourceExam": "g8-c",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  },
+  "g8-c-listening2": {
+    "mp3": "g8-c-listening2.mp3",
+    "script_and_questions_sha256": "a2f93b51743e327c607e09c4202f48fbc3c6fb78fe35972b1f1d8896c34f137a",
+    "seconds": 181.24,
+    "bytes": 2175208,
+    "sourceExam": "g8-c",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  },
+  "g8-d-listening1": {
+    "mp3": "g8-d-listening1.mp3",
+    "script_and_questions_sha256": "99ed68913b178aaae43e1230707424d044f514fd45969964bf2364d2a2b7a923",
+    "seconds": 235.02,
+    "bytes": 2820641,
+    "sourceExam": "g8-d",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  },
+  "g8-d-listening2": {
+    "mp3": "g8-d-listening2.mp3",
+    "script_and_questions_sha256": "75299ef2675f8a7032957befc06a8287a15a335c5ecda70dd4c409d95ed400c8",
+    "seconds": 172.38,
+    "bytes": 2068942,
+    "sourceExam": "g8-d",
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ]
+  }
+}
