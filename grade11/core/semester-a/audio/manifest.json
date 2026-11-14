@@ -1,0 +1,20 @@
+{
+  "lst1": {
+    "mp3": "lst1.mp3",
+    "scriptSha256": "0c306b354255df306fb7bdda0c989e3b7f517850f130536a364625a53888d1f1",
+    "words": 339,
+    "seconds": 312.4,
+    "bytes": 3749137,
+    "playedTwice": true,
+    "contentApproved": false
+  },
+  "lst2": {
+    "mp3": "lst2.mp3",
+    "scriptSha256": "edbf8f71903d3cf0f9f6de453af05bc74f73f288ad36f577b15987b348d9f39b",
+    "words": 363,
+    "seconds": 293.04,
+    "bytes": 3516857,
+    "playedTwice": true,
+    "contentApproved": false
+  }
+}
