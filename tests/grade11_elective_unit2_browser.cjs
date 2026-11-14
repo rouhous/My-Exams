@@ -1,0 +1,26 @@
+const {chromium}=require('playwright');
+(async()=>{
+ const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
+ const page=await browser.newPage({viewport:{width:390,height:844}});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('http://127.0.0.1:8765/grade11/elective/units/paper-b-preview.html',{waitUntil:'domcontentloaded'});
+ await page.waitForFunction(()=>!document.querySelector('#start').disabled,{timeout:30000});
+ if(!(await page.locator('#ready').textContent()).includes('2/2'))throw Error('Listening MP3 sources not validated');
+ await page.click('#start');
+ if(await page.locator('section.part').count()!==6)throw Error('Grade11 elective The Mind needs six sections');
+ if(await page.locator('.q').count()!==40)throw Error('Listening/Reading must have 40 items');
+ if(await page.locator('textarea').count()!==2)throw Error('Two writing tasks missing');
+ if(!(await page.locator('#paperMarks').textContent()).includes('60 marks'))throw Error('Paper marks not 60');
+ if(!(await page.locator('#clock').textContent()).startsWith('02:'))throw Error('150 min timer not active');
+ if(await page.locator('section.part audio').count()!==2)throw Error('Two listening audio players missing');
+ await page.click('#end');
+ if(!(await page.locator('#results').textContent()).includes('0 / 24'))throw Error('Objective split not 24');
+ if(!(await page.locator('#results').textContent()).includes('16 short answers'))throw Error('Manual short-answer split not 16');
+ await page.click('#back');
+ await page.selectOption('#mode','skill');await page.selectOption('#skill','rdg2');await page.click('#start');
+ if(await page.locator('section.part').count()!==1||await page.locator('.q').count()!==10)throw Error('Reading 2 independent practice invalid');
+ if(!(await page.locator('#clock').isHidden()))throw Error('Skill practice timer should be hidden');
+ if(errors.length)throw Error('Page JS: '+errors.join('; '));
+ console.log('PASS Grade11 The Mind 60/150min 6 sections, 40 items, 2 MP3 and correct honest marking');
+ await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});
