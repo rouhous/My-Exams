@@ -1,0 +1,95 @@
+{
+  "id": "g12-core-unit1-lst2-new",
+  "grade": 12,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 1,
+    "title": "Retail Therapy"
+  },
+  "skill": "Listening 2",
+  "genre": "one-speaker two-part consumer narrative",
+  "status": "original_theme_aligned_script_and_questions__audio_pending",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "curriculumLanguageTargets": [
+    "consumer choices",
+    "advertisements",
+    "past simple",
+    "past passive",
+    "returns and receipts"
+  ],
+  "bookReference": "Engage With English Coursebook 12A, Theme 1 Retail Therapy",
+  "script": "Part One\n\nLast month, our class studied how advertisements influence shopping choices. I decided to examine a purchase I was planning to make. I needed a desk lamp because my old one was broken, and I had saved part of my pocket money for a replacement. On a shopping website, I saw a bright advertisement claiming that a modern lamp was twenty-five per cent cheaper than before. The photograph looked impressive, but the description did not clearly explain which accessories were included.\n\nI ordered the lamp on Sunday, and the parcel arrived on Tuesday afternoon. I was excited until I opened the box. The lamp looked smaller than the photograph, and its charging cable was missing. I checked the online receipt and discovered that the seller had listed the cable as a separate purchase. I had overlooked that detail because the advertisement drew my attention to the discount rather than the full conditions.\n\nInstead of posting an angry message immediately, I contacted customer service. The assistant was polite but explained that the missing cable was not included in the advertised price. She offered me a return under the shop's seven-day policy. I kept the packaging and saved our conversation so that I could make a careful decision.\n\nPart Two\n\nThe next morning, our consumer-awareness teacher encouraged me to compare several local shops before deciding what to do. I visited a traditional souq with my older sister. A shopkeeper demonstrated two lamps, explained how much electricity they used, and showed us their warranties. One lamp cost a little more than the online offer, but the cable was included and replacement parts were available.\n\nI returned the original lamp within seven days and received the amount I had paid. Then I bought the locally demonstrated lamp using my savings. It was not the cheapest option, but the total cost and conditions were clear. The experience made me realise that an advertisement can highlight a true fact while leaving out other details that matter to a customer.\n\nFor our class project, I presented both advertisements with their complete descriptions. We discussed how to recognise a persuasive slogan, compare a product's actual features and ask about the return policy before paying. Several classmates said they would now check the total price, including accessories and delivery, instead of trusting a large discount number.",
+  "passage": "Part One\n\nLast month, our class studied how advertisements influence shopping choices. I decided to examine a purchase I was planning to make. I needed a desk lamp because my old one was broken, and I had saved part of my pocket money for a replacement. On a shopping website, I saw a bright advertisement claiming that a modern lamp was twenty-five per cent cheaper than before. The photograph looked impressive, but the description did not clearly explain which accessories were included.\n\nI ordered the lamp on Sunday, and the parcel arrived on Tuesday afternoon. I was excited until I opened the box. The lamp looked smaller than the photograph, and its charging cable was missing. I checked the online receipt and discovered that the seller had listed the cable as a separate purchase. I had overlooked that detail because the advertisement drew my attention to the discount rather than the full conditions.\n\nInstead of posting an angry message immediately, I contacted customer service. The assistant was polite but explained that the missing cable was not included in the advertised price. She offered me a return under the shop's seven-day policy. I kept the packaging and saved our conversation so that I could make a careful decision.\n\nPart Two\n\nThe next morning, our consumer-awareness teacher encouraged me to compare several local shops before deciding what to do. I visited a traditional souq with my older sister. A shopkeeper demonstrated two lamps, explained how much electricity they used, and showed us their warranties. One lamp cost a little more than the online offer, but the cable was included and replacement parts were available.\n\nI returned the original lamp within seven days and received the amount I had paid. Then I bought the locally demonstrated lamp using my savings. It was not the cheapest option, but the total cost and conditions were clear. The experience made me realise that an advertisement can highlight a true fact while leaving out other details that matter to a customer.\n\nFor our class project, I presented both advertisements with their complete descriptions. We discussed how to recognise a persuasive slogan, compare a product's actual features and ask about the return policy before paying. Several classmates said they would now check the total price, including accessories and delivery, instead of trusting a large discount number.",
+  "wordCount": 388,
+  "parts": 2,
+  "marks": 8,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "What product did the narrator order online?",
+      "answer": "a desk lamp",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What discount did the advertisement claim?",
+      "answer": "twenty-five per cent",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "On which day did the parcel arrive?",
+      "answer": "Tuesday afternoon",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Which accessory was missing from the box?",
+      "answer": "charging cable",
+      "maxWords": 4
+    },
+    {
+      "type": "mc",
+      "stem": "Who encouraged the narrator to compare local shops?",
+      "options": [
+        "Her science teacher",
+        "Her consumer-awareness teacher",
+        "The online seller"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "Where did the narrator compare lamps in person?",
+      "options": [
+        "At a traditional souq",
+        "At an airport",
+        "In a sports hall"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "How long did the online shop allow for returns?",
+      "options": [
+        "Thirty days",
+        "Two weeks",
+        "Seven days"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What did the narrator learn about advertising?",
+      "options": [
+        "The lowest advertised price is always best",
+        "Customers should check full conditions and total cost",
+        "Advertisements never contain any true facts"
+      ],
+      "answer": 1
+    }
+  ],
+  "audioStatus": "pending_source_bound_mp3_generation"
+}
