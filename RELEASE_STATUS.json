@@ -305,5 +305,90 @@
     "status": "original six-section paper A teacher-review draft; no final student release",
     "browserQA": "tests/upper_grades_browser_smoke.cjs",
     "officialTaskReference": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json"
+  },
+  "gradesForExams": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "gradesExcludedFromExamDevelopment": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "grades5_9ListeningPictureAudit": {
+    "grade5": {
+      "optionSourceReferences": 24,
+      "renderedImages": 120,
+      "questions": 20,
+      "missingAssets": 0
+    },
+    "grade6": {
+      "optionSourceReferences": 24,
+      "renderedImages": 120,
+      "questions": 20,
+      "missingAssets": 0
+    },
+    "grade7": {
+      "optionSourceReferences": 60,
+      "renderedImages": 60,
+      "questions": 20,
+      "missingAssets": 0
+    },
+    "grade8": {
+      "optionSourceReferences": 60,
+      "renderedImages": 60,
+      "questions": 20,
+      "missingAssets": 0,
+      "repair": "Dedicated water bottle icon used instead of glass of water"
+    },
+    "grade9": {
+      "optionSourceReferences": 105,
+      "renderedImages": 105,
+      "questions": 35,
+      "missingAssets": 0,
+      "visualChoiceMappingsChecked": 105
+    },
+    "imageGallery": "listening-media-review.html",
+    "browserQA": "https://github.com/rouhous/My-Exams/actions/runs/43570376550",
+    "verified": "345 distinct per-task image references and 465 visible rendered image occurrences across 115 original picture tasks",
+    "caution": "All picture files and option identities confirmed; exact textbook-unit-page alignment is NOT yet teacher-certified."
+  },
+  "upperGradeAudio20261114": {
+    "grade11ElectiveProvisional": "12/12 source-hash-verified natural MP3 in upper-audio/11-elective",
+    "grade12CoreProvisional": "12/12 source-hash-verified natural MP3 in upper-audio/12-core",
+    "grade12ElectiveLegacy": "12/12 source-hash-verified natural MP3 in upper-audio/12-elective",
+    "grade11CoreSemesterA": "2/2 source-hash-verified natural MP3 in grade11/core/semester-a/audio",
+    "grade12ElectiveUnitPapers": "8/8 source-hash-verified natural MP3 in grade12/elective/units/audio",
+    "approvalStatus": "Natural MP3 source verification passed; voice quality and curricular suitability must be approved by teacher before final release."
+  },
+  "latestAuditFiles": [
+    "EXAM_INVENTORY_2026-11-14.json",
+    "MEDIA_STATUS_2026-11-14.json",
+    "GRADE9_LISTENING_IMAGE_VISUAL_REVIEW_2026-11-14.json"
+  ],
+  "latestMediaAuditGithubAction": "https://github.com/rouhous/My-Exams/actions/runs/43570428907",
+  "grades5_8ComprehensiveQAPassed": "https://github.com/rouhous/My-Exams/actions/runs/43570551099",
+  "grade12ElectiveNewFourUnitPapers": {
+    "count": 4,
+    "units": [
+      "The arts",
+      "Doing the right thing",
+      "Living in a Changing World",
+      "Higher Education"
+    ],
+    "marks": 70,
+    "minutes": 180,
+    "randomComprehensive": true,
+    "singleSkillUntimed": true,
+    "verifiedListeningTracks": 8,
+    "educationallyApproved": false,
+    "portal": "grade12/elective/index.html"
   }
 }
