@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/grade9-natural-audio.yml'
+      - 'scripts/generate_grade9_audio.py'
+      - 'grade9/data.json'
 permissions:
   contents: write
 jobs:
@@ -35,13 +37,33 @@ jobs:
                   assert MP3(f).info.length>40,f
                   print(f,round(MP3(f).info.length),'sec')
           PY
+      - name: Verify current script/question hash for each generated track
+        run: |
+          python - <<'PY'
+          import json,hashlib,pathlib
+          from mutagen.mp3 import MP3
+          j=json.loads(pathlib.Path('grade9/data.json').read_text())
+          man=json.loads(pathlib.Path('grade9/audio-natural/manifest.json').read_text())
+          assert len(man)==6
+          for m in j['models']:
+              if m['model'] not in ('B','C','G'):continue
+              for t in m['tasks']:
+                  if t.get('skill')!='listening':continue
+                  source={'transcript':t.get('transcript'),'items':t.get('items'),'questions':t.get('questions')}
+                  sha=hashlib.sha256(json.dumps(source,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
+                  e=man[t['id']]
+                  assert e['sourceHash']==sha,t['id']
+                  f=pathlib.Path('grade9/audio-natural')/e['mp3']
+                  assert f.stat().st_size>15000 and MP3(f).info.length>40
+          print('Six distinct Grade9 natural tracks matched to their exact original picture questions.')
+          PY
       - name: Commit natural audio files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add grade9/audio-natural/
           if ! git diff --cached --quiet; then
-            git commit -m "Add six natural Grade 9 listening MP3 for B C G"
+            git commit -m "Publish six Grade9 source-hashed natural listening MP3 and provenance manifest"
             for attempt in 1 2 3 4 5; do
               git fetch origin main
               git rebase origin/main
