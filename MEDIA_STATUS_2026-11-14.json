@@ -69,8 +69,8 @@
     },
     "9": {
       "requiredOriginalListeningSections": 14,
-      "verifiedLinkedMP3": 4,
-      "presentButNotSourceVerified": 10,
+      "verifiedLinkedMP3": 14,
+      "presentButNotSourceVerified": 0,
       "missing": [],
       "reportedReusedSources": [],
       "sourceModelsWithListening": 7

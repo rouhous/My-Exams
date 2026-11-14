@@ -77,8 +77,8 @@
       "mixedIds": "",
       "randomComplete": true,
       "sectionsAudioInBase": 14,
-      "audioVerified": 4,
-      "audioNaturalHostedButNoSourceHash": 10,
+      "audioVerified": 14,
+      "audioNaturalHostedButNoSourceHash": 0,
       "listeningPictures": 105,
       "certifiedComplete": false
     },
