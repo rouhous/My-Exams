@@ -1,0 +1,92 @@
+{
+  "id": "g11-elective-unit1-rdg1-new",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 1,
+    "title": "Fame"
+  },
+  "skill": "Reading 1",
+  "genre": "evaluative argument",
+  "marks": 10,
+  "passage": "It is easy to understand why some schools invite well-known online creators to speak to pupils. Popular guests attract attention, and a number of influencers have excellent communication skills. They may introduce young people to new hobbies, encourage reading or explain difficult subjects in an engaging way. A short visit can even motivate reluctant students to ask questions they would not normally ask in class.\n\nSupporters also argue that discussions with creators can make media education realistic. Rather than presenting social networks as simply good or bad, a guest can show how a photograph is prepared, how a caption affects meaning and why advertising agreements should be disclosed. Students might learn to recognise mistakes and examine a claim before sharing it with friends. Such opportunities are particularly valuable when pupils are invited to challenge an example respectfully.\n\nHowever, popularity does not guarantee expertise. A creator admired for entertainment may not understand health, finance or educational research. Young viewers sometimes confuse confidence with evidence, especially when a speaker offers a quick solution to a complicated problem. Schools should therefore check a guest's qualifications and review the content of a proposed talk. Otherwise an entertaining visit might unintentionally spread unreliable advice to the whole audience.\n\nThere are financial concerns as well. Some famous visitors request payment, and schools with limited budgets might have to reduce spending on other useful activities. A talk mainly promoting products or personal accounts is unlikely to provide genuine educational value. In addition, some pupils may feel pressured to follow the visitor online even when they dislike the content. Teachers must be free to refuse events that put commercial interests ahead of learning.\n\nA balanced approach is possible. Schools can invite creators to explain their working methods without treating them as unquestionable authorities. Teachers might ask the audience to identify an opinion, verify a factual claim and discuss how a sponsored message differs from independent advice. Students can then practise these skills using examples from their everyday lives. Inviting a local professional alongside an online creator could also provide a useful second perspective.\n\nIn my view, an influencer's visit should be judged by what pupils learn, not by the number of photographs or online reactions received. A modest local speaker who answers questions carefully may offer more lasting value than a celebrity with millions of followers. The strongest school programmes combine engaging visitors with independent research, practical tasks and opportunities for respectful disagreement. Written feedback after the event can help staff decide whether to repeat it.",
+  "wordCount": 418,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "Name one hobby or activity an influencer might encourage.",
+      "answer": "reading",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What agreements should be disclosed to viewers?",
+      "answer": "advertising agreements",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What does popularity fail to guarantee?",
+      "answer": "expertise",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What should a school check before booking a guest?",
+      "answer": "the guest's qualifications",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Which other spending might costly visits reduce?",
+      "answer": "other useful activities",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What should determine whether a guest visit was successful?",
+      "answer": "what pupils learn",
+      "maxWords": 4
+    },
+    {
+      "type": "tf",
+      "stem": "Some online creators are skilled communicators.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "A confident speaker is automatically a qualified expert.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "The writer thinks all paid promotional talks are valuable educational events.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "Students should be allowed to question a speaker's claims respectfully.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    }
+  ],
+  "status": "original_unit_topic_eval_reading_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false
+}
