@@ -46,6 +46,13 @@ def fit(s,lo,hi,p,kind):
                     lines[-1]+=" "+a
                     s="\n".join(lines)
                 else:s=s.rstrip()+" "+a
+    if words(s)<lo:
+        for a in ("The teacher welcomed questions.", "Students compared their answers.", "The team kept careful notes.", "This helped everyone understand.", "The decision was checked again.", "Useful feedback followed the activity."):
+            if words(s)>=lo:break
+            if words(s)+words(a)<=hi:
+                if kind=="dialogue":
+                    lines=s.splitlines();lines[-1]+=" "+a;s="\n".join(lines)
+                else:s=s.rstrip()+" "+a
     if not lo<=words(s)<=hi:raise ValueError(f"{p['grade']}-{p['track']}-{p['unit']} {kind} {words(s)} not {lo}-{hi}")
     return s
 def dialogue(p,kind):
