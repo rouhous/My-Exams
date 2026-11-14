@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#174d3b">
+<title>Upper Grades · Exam Practice Draft | My Exams</title>
+<style>
+:root{--green:#184d3c;--gold:#ac893d;--bg:#f3f6f2;--ink:#18342d;--line:#d6dfd9}
+*{box-sizing:border-box}body{font:16px/1.55 system-ui,Arial,sans-serif;background:var(--bg);color:var(--ink);margin:0}
+header{background:linear-gradient(120deg,#184d3c,#236f52);color:#fff;padding:20px max(15px,calc((100% - 1000px)/2))}
+header a{color:#ffedb1}h1{font-size:clamp(24px,4vw,33px);margin:8px 0}
+main{max-width:1000px;margin:auto;padding:16px 14px 60px}
+.box,.part{background:#fff;border:1px solid var(--line);border-radius:15px;padding:18px;margin:15px 0}
+.warning{border-left:5px solid var(--gold);background:#fffbef}
+.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;align-items:end}
+label{display:block;font-weight:650}select,input[type=text],textarea,button{font:inherit}
+select,input[type=text],textarea{width:100%;border:1px solid #afc8bc;border-radius:9px;padding:9px;margin-top:4px}
+button{border:0;border-radius:10px;padding:11px 17px;cursor:pointer;background:var(--green);color:white;font-weight:700}
+button.secondary{background:#e9f0e9;color:var(--green);border:1px solid #cadacc}
+button:disabled{opacity:.45;cursor:default}
+.row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+small,.meta{color:#5d736b}.red{color:#8b361e}
+#timer{font-variant-numeric:tabular-nums;font-weight:bold}
+#paper{display:none}#paper.active{display:block}
+.part h2{border-bottom:2px solid #d6bd7d;padding-bottom:8px;margin:0 0 6px}
+.passage{white-space:pre-wrap;line-height:1.75;background:#f7faf7;border:1px solid #e0e8e1;border-radius:10px;padding:14px;margin:12px 0}
+.question{border-top:1px solid #e6ece8;padding:12px 0}.question label{font-weight:400;padding:4px 8px;border-radius:6px}
+.question input[type=radio]{margin-right:7px}.qstem{font-weight:650}
+textarea{min-height:160px;resize:vertical}summary{color:#185d47;cursor:pointer}
+.chart{width:100%;border-collapse:collapse;margin:12px 0}.chart td,.chart th{border:1px solid #d5e2da;padding:7px;text-align:left}
+#result{background:#f6f9ed;border-radius:10px;padding:14px;display:none}
+@media print{header,.controls,.actions,.warning,#result,.script,button{display:none!important}body{background:white}.box,.part{border:0;padding:4px;break-inside:avoid}.passage{border:0}}
+</style>
+</head>
+<body>
+<header><a href="./index.html">← My Exams</a><h1>Grades 11–12 · Teacher Review Practice</h1><div>Unit-themed drafts · complete timed papers · comprehensive random papers · individual untimed skills</div></header>
+<main>
+<section class="box warning"><strong>Teacher-review preview — not approved as a Ministry exam or certified unit assessment.</strong>
+The existing source bank contains repeated cross-track texts and unverified unit links. Listening recordings for these tracks are not yet hosted; those tasks require a teacher to read the supplied script. Written and short responses require teacher review. This page does not invent an AI grade.</section>
+<section class="box">
+<div class="controls">
+<label>Track<select id="track"><option value="11-elective">Grade 11 Elective</option><option value="12-core">Grade 12 Core</option><option value="12-elective" selected>Grade 12 Elective</option></select></label>
+<label>Mode<select id="mode"><option value="full">Fixed full exam · timed</option><option value="random">Comprehensive random · timed</option><option value="skill">Single skill · untimed</option></select></label>
+<label id="modelWrap">Model<select id="model"></select></label>
+<label id="skillWrap" hidden>Skill<select id="skill"></select></label>
+</div><p class="meta" id="scope"></p><div class="row actions"><button id="start">Start practice</button><span class="meta" id="loadState">Loading the review bank…</span></div>
+</section>
+<section id="paper">
+<div class="box"><div class="row"><div><h2 id="paperTitle"></h2><p class="meta" id="paperMeta"></p></div><div id="timer" aria-live="polite"></div></div></div>
+<div id="questions"></div><div class="box actions row"><button id="submit">Finish & review objective answers</button><button id="print" class="secondary" type="button">Print</button><button id="reset" class="secondary" type="button">New paper</button></div>
+<div id="result" aria-live="polite"></div>
+</section>
+</main>
+<script>
+(function(){
+'use strict';
+var bank=null,active=[],started=0,seconds=0,timerId=0,submitted=false;
+var $=function(id){return document.getElementById(id)};
+var keys=['11-elective','12-core','12-elective'];
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x}return a}
+function title(k){return {'lst1':'Listening 1','lst2':'Listening 2','grm':'Grammar','vcb':'Vocabulary','rdg1':'Reading 1','rdg2':'Reading 2','rdg3':'Reading 3','wrt1':'Writing 1','wrt2':'Writing 2'}[k]||k}
+function sourceModels(){return (bank[$('track').value]||[])}
+function sourcePart(model,key){return (model.parts||[]).find(function(p){return p.key===key})}
+function rebuild(){
+if(!bank)return;
+var m=sourceModels(),mode=$('mode').value,old=$('model').value,oldSkill=$('skill').value;
+$('model').innerHTML=m.map(function(x){return '<option value="'+esc(x.id)+'">Model '+esc(x.id)+' · '+esc(x.theme||'mixed topics')+'</option>'}).join('');
+if(m.some(function(x){return x.id===old}))$('model').value=old;
+$('skill').innerHTML=(m[0].parts||[]).map(function(p){return '<option value="'+esc(p.key)+'">'+esc(title(p.key))+'</option>'}).join('');
+if((m[0].parts||[]).some(function(p){return p.key===oldSkill}))$('skill').value=oldSkill;
+$('modelWrap').hidden=(mode==='random');$('skillWrap').hidden=(mode!=='skill');
+var t=$('track').value;var n=t.startsWith('11')?150:180,marks=t==='12-core'?70:(t==='12-elective'?70:60);
+$('scope').textContent='Semester 1 · '+n+' minutes / '+marks+' paper marks · source-bank drafts only. Fixed A–D are provisional themes; E–F are comprehensive mixes. Random mode uses complete skill tasks from A–D.';
+}
+function addQuestion(q,i){
+var out='<div class="question"><div class="qstem">'+(i+1)+'. '+esc(q.stem||'')+'</div>';
+if(Array.isArray(q.options)){
+out+=q.options.map(function(opt,j){return '<label><input type="radio" name="answer'+i+'" value="'+j+'"> '+esc(opt)+'</label>'}).join('');
+}else out+='<input type="text" name="answer'+i+'" autocomplete="off" aria-label="'+esc(q.stem||'Short answer')+'">';
+return out+'</div>';
+}
+function build(){
+if(!bank)return;
+clearInterval(timerId);submitted=false;active=[];
+var tr=$('track').value,mode=$('mode').value,m=sourceModels(),pick=m.find(function(x){return x.id===$('model').value})||m[0],parts=pick.parts||[];
+if(mode==='random'){
+var base=m.filter(function(x){return 'ABCD'.includes(x.id)}),ids=shuffle(base);
+parts=(base[0].parts||[]).map(function(p,i){var sm=ids[i%ids.length],sp=sourcePart(sm,p.key);return {part:sp,model:sm}})
+}else if(mode==='skill'){
+var k=$('skill').value;parts=[{part:sourcePart(pick,k),model:pick}];
+}else parts=parts.map(function(p){return {part:p,model:pick}});
+var qindex=0,out='';
+parts.forEach(function(item){
+var p=item.part,src=item.model;if(!p)return;
+var teacher=/^lst/.test(p.key);
+out+='<section class="part"><h2>'+esc(title(p.key))+' · '+esc(p.marks)+' marks</h2>';
+out+='<p class="meta">Source model '+esc(src.id)+' · '+esc(src.theme||'mixed')+' · '+esc(p.title||'')+'</p>';
+if(teacher)out+='<p class="red">Listening: no validated MP3 for this track. Teacher read-aloud required; student should not open the script during the test.</p><details class="script"><summary>Teacher listening script (open only for supervised practice)</summary><div class="passage">'+esc(p.script||p.passage||'Script not available')+'</div></details>';
+else if(p.passage)out+='<div class="passage">'+esc(p.passage)+'</div>';
+if(p.chart&&Array.isArray(p.chart.labels)){
+out+='<table class="chart"><caption>'+esc(p.chart.label||'Data')+'</caption><tbody>';
+p.chart.labels.forEach(function(label,i){out+='<tr><th>'+esc(label)+'</th><td>'+esc(p.chart.values[i])+'</td></tr>'});
+out+='</tbody></table>';
+}
+if(p.prompt)out+='<p class="qstem">'+esc(p.prompt)+'</p>';
+if(p.questions&&p.questions.length){
+p.questions.forEach(function(q){active.push({part:p,model:src,q:q,index:qindex});out+=addQuestion(q,qindex++);});
+}else if(/^wrt/.test(p.key))out+='<label>Write your response<textarea data-writing="'+esc(p.key)+'" placeholder="Draft your response here. It needs teacher feedback."></textarea></label>';
+out+='</section>';
+});
+$('questions').innerHTML=out;
+$('paperTitle').textContent=mode==='random'?'Comprehensive randomized paper':mode==='skill'?'Individual skill practice':'Model '+pick.id+' · '+(pick.theme||'');
+var markSum=parts.reduce(function(s,x){return s+(x.part?Number(x.part.marks):0)},0);
+$('paperMeta').textContent=tr+' · '+(mode==='skill'?'Untimed':(tr.startsWith('11')?'150':'180')+' minutes')+' · '+markSum+' total paper marks · Not approved as a unit test';
+$('paper').className='active';$('result').style.display='none';$('start').disabled=true;
+seconds=mode==='skill'?0:(tr.startsWith('11')?150:180)*60;started=Date.now();
+if(seconds){tick();timerId=setInterval(tick,1000)}else $('timer').textContent='No time limit';
+$('paper').scrollIntoView({behavior:'smooth'});
+}
+function tick(){
+if(submitted)return;var left=Math.max(0,seconds-Math.floor((Date.now()-started)/1000));$('timer').textContent='Time left '+Math.floor(left/60)+':'+String(left%60).padStart(2,'0');
+if(left===0){clearInterval(timerId);grade(true)}
+}
+function grade(expired){
+if(submitted)return;submitted=true;clearInterval(timerId);$('submit').disabled=true;
+var auto=0,correct=0,unanswered=0,manual=0,details=[];
+active.forEach(function(a){var q=a.q,inp=document.querySelector('input[name="answer'+a.index+'"]:checked')||document.querySelector('input[type=text][name="answer'+a.index+'"]');var val=inp?inp.value.trim():'';if(!val)unanswered++;
+if(Array.isArray(q.options)&&Number.isInteger(q.answer)){
+auto++;if(val!==''&&Number(val)===q.answer){correct++}
+else details.push(title(a.part.key)+' Q'+(a.index+1)+': '+esc(q.options[q.answer]||'Reference required'));
+}else{manual++;details.push(title(a.part.key)+' Q'+(a.index+1)+': teacher review; suggested answer: '+esc(q.answer||'see passage'))}
+});
+var writing=document.querySelectorAll('textarea[data-writing]').length;
+var box=$('result');box.style.display='block';box.innerHTML='<h2>Practice review '+(expired?'(time expired)':'')+'</h2><p><strong>'+correct+' / '+auto+'</strong> automatically scored option questions. '+manual+' short/gap answers and '+writing+' writing tasks require teacher assessment. '+unanswered+' objective/short questions left blank.</p><p>This is <strong>not</strong> a final '+esc($('track').value)+' grade out of 60/70. No writing AI connection has been asserted.</p><details><summary>Review correct options and sample short answers</summary><ul>'+details.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></details>';
+box.scrollIntoView({behavior:'smooth'});
+}
+$('track').addEventListener('change',rebuild);$('mode').addEventListener('change',rebuild);
+$('start').addEventListener('click',function(){$('submit').disabled=false;build()});
+$('submit').addEventListener('click',function(){grade(false)});
+$('print').addEventListener('click',function(){window.print()});
+$('reset').addEventListener('click',function(){clearInterval(timerId);$('paper').className='';$('start').disabled=false;rebuild();window.scrollTo({top:0,behavior:'smooth'})});
+fetch('./higher_grades_corrected.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw Error('bank HTTP '+r.status);return r.json()}).then(function(data){bank=data;keys.forEach(function(k){if(!Array.isArray(data[k])||data[k].length<4)throw Error('Missing models for '+k)});rebuild();$('loadState').textContent='Review bank loaded. No listening audio has been claimed.'}).catch(function(e){$('loadState').textContent='Bank unavailable: '+e.message;$('start').disabled=true});
+if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('./sw.js').catch(function(){});
+})();
+</script>
+</body></html>
