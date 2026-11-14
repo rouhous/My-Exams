@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/grades7-8-natural-audio.yml'
       - 'grades7-8/activities.json'
+      - 'scripts/generate_grades7_8_audio.py'
 concurrency:
   group: natural-grade7-8-${{ github.ref }}
   cancel-in-progress: true
@@ -27,26 +28,41 @@ jobs:
           pip install edge-tts mutagen
       - name: Regenerate all Grade 7 and 8 curriculum-focused natural recordings
         run: python scripts/generate_grades7_8_audio.py
-      - name: Validate every model and commit audio
+      - name: Validate source-bound recordings and publish safely
         run: |
           python - <<'PY'
           from pathlib import Path
           from mutagen.mp3 import MP3
-          files=list(Path('grades7-8/assets/audio-natural').glob('*.mp3'))
-          assert len(files)==16, f'Expected 16 MP3, got {len(files)}'
-          for f in files:assert f.stat().st_size>15000 and MP3(f).info.length>40,f
-          print('Validated',len(files),'natural recordings')
+          import hashlib,json
+          root=Path('grades7-8/assets/audio-natural')
+          data=json.loads(Path('grades7-8/activities.json').read_text())
+          manifest=json.loads((root/'manifest.json').read_text())
+          tasks=[(m,s) for m in data for s in m['sections'] if s['key'] in ('listening1','listening2')]
+          assert len(tasks)==len(manifest)==16,(len(tasks),len(manifest))
+          for m,s in tasks:
+              key=f"{m['id']}-{s['key']}"
+              entry=manifest[key]
+              f=root/entry['mp3']
+              assert f.is_file() and f.stat().st_size>15000 and MP3(f).info.length>40
+              fp=hashlib.sha256(json.dumps({'items':s.get('items'), 'script':s.get('script'),'transcript':s.get('transcript')},sort_keys=True,ensure_ascii=False).encode()).hexdigest()
+              assert fp==entry['script_and_questions_sha256'],key
+          print('All 16 recordings generated and linked to exact current questions and image choices.')
           PY
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add grades7-8/assets/audio-natural/
-          if ! git diff --cached --quiet; then
-            git commit -m "Publish 16 natural Grade 7 and 8 listening recordings"
-            for attempt in 1 2 3 4 5; do
-              git fetch origin "$GITHUB_REF_NAME"
-              git rebase "origin/$GITHUB_REF_NAME"
-              if git push origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
-              sleep 5
-            done
-            exit 1
-          fi
+          for attempt in 1 2 3 4 5;do
+            git fetch origin "$GITHUB_REF_NAME"
+            local_bank=$(sha256sum grades7-8/activities.json | cut -d' ' -f1)
+            remote_bank=$(git show "origin/$GITHUB_REF_NAME:grades7-8/activities.json" | sha256sum | cut -d' ' -f1)
+            if [ "$local_bank" != "$remote_bank" ]; then
+              echo "Questions changed during audio generation; do not publish stale recordings" >&2
+              exit 1
+            fi
+            git reset --mixed "origin/$GITHUB_REF_NAME"
+            git add grades7-8/assets/audio-natural/
+            if git diff --cached --quiet;then exit 0;fi
+            git commit -m "Publish 16 Grade 7–8 source-checksummed natural MP3"
+            if git push origin "HEAD:$GITHUB_REF_NAME";then exit 0;fi
+            sleep 5
+          done
+          exit 1
