@@ -1,0 +1,110 @@
+{
+  "A-lst1": {
+    "mp3": "a-lst1.mp3",
+    "passageSha256": "4ba41cd735f07122c9f4d4bfd16211ab8d4dc0c87edad272dcfd18aa5f83911f",
+    "seconds": 402.86,
+    "voiceMode": "two_voices",
+    "bytes": 4834682,
+    "readTwice": true,
+    "contentApproval": "teacher_review_required"
+  },
+  "A-lst2": {
+    "mp3": "a-lst2.mp3",
+    "passageSha256": "fe1c1d32cc045a5d15467bc74e07164a49b27e3c5539a709bd56cc78e7197113",
+    "seconds": 397.37,
+    "voiceMode": "one_voice",
+    "bytes": 4768853,
+    "readTwice": true,
+    "contentApproval": "teacher_review_required"
+  },
+  "B-lst1": {
+    "mp3": "b-lst1.mp3",
+    "passageSha256": "fb0c98326a3ca6166ec48b019af3d46f4dd03fbcb3d690f91f87b3fc146bf463",
+    "seconds": 418.8,
+    "voiceMode": "two_voices",
+    "bytes": 5025898,
+    "readTwice": true,
+    "contentApproval": "teacher_review_required"
+  },
+  "B-lst2": {
+    "mp3": "b-lst2.mp3",
+    "passageSha256": "b91d21d7095cf900819ed14cd59619ba13b660fed4a202c7b8c546d91c318db6",
+    "seconds": 393.53,
+    "voiceMode": "one_voice",
+    "bytes": 4722773,
+    "readTwice": true,
+    "contentApproval": "teacher_review_required"
+  },
+  "C-lst1": {
+    "mp3": "c-lst1.mp3",
+    "passageSha256": "d8615fe5d85066591e23359acfbb7094a56c1f32a4d2248bd58457e78888abad",
+    "seconds": 425.09,
+    "voiceMode": "two_voices",
+    "bytes": 5101444,
+    "readTwice": true,
+    "contentApproval": "teacher_review_required"
+  },
+  "C-lst2": {
+    "mp3": "c-lst2.mp3",
+    "passageSha256": "591f21a60291bdd2de8f1d048e55bc53bf586dd9e4d6b7f020e75b5716dae0cb",
+    "seconds": 394.74,
+    "voiceMode": "one_voice",
+    "bytes": 4737193,
+    "readTwice": true,
+    "contentApproval": "teacher_review_required"
+  },
+  "D-lst1": {
+    "mp3": "d-lst1.mp3",
+    "passageSha256": "ea35194eb75ba1360231a7e1d2981fabc157975e44834707aa0f0b5113c8002a",
+    "seconds": 431.91,
+    "voiceMode": "two_voices",
+    "bytes": 5183260,
+    "readTwice": true,
+    "contentApproval": "teacher_review_required"
+  },
+  "D-lst2": {
+    "mp3": "d-lst2.mp3",
+    "passageSha256": "c43f7c45d5312ecb1fc71ab9b9338f58a5a7c79f83dd888ba3c59ef58d857165",
+    "seconds": 405.29,
+    "voiceMode": "one_voice",
+    "bytes": 4863835,
+    "readTwice": true,
+    "contentApproval": "teacher_review_required"
+  },
+  "E-lst1": {
+    "mp3": "e-lst1.mp3",
+    "passageSha256": "554d560da635c1a5631d76fde87ea4be25a888cd72f97d3ddee9f8730cdf2983",
+    "seconds": 421.83,
+    "voiceMode": "two_voices",
+    "bytes": 5062261,
+    "readTwice": true,
+    "contentApproval": "teacher_review_required"
+  },
+  "E-lst2": {
+    "mp3": "e-lst2.mp3",
+    "passageSha256": "b91d21d7095cf900819ed14cd59619ba13b660fed4a202c7b8c546d91c318db6",
+    "seconds": 393.53,
+    "voiceMode": "one_voice",
+    "bytes": 4722773,
+    "readTwice": true,
+    "contentApproval": "teacher_review_required"
+  },
+  "F-lst1": {
+    "mp3": "f-lst1.mp3",
+    "passageSha256": "554d560da635c1a5631d76fde87ea4be25a888cd72f97d3ddee9f8730cdf2983",
+    "seconds": 421.83,
+    "voiceMode": "two_voices",
+    "bytes": 5062261,
+    "readTwice": true,
+    "contentApproval": "teacher_review_required"
+  },
+  "F-lst2": {
+    "mp3": "f-lst2.mp3",
+    "passageSha256": "b91d21d7095cf900819ed14cd59619ba13b660fed4a202c7b8c546d91c318db6",
+    "seconds": 393.53,
+    "voiceMode": "one_voice",
+    "bytes": 4722773,
+    "readTwice": true,
+    "contentApproval": "teacher_review_required"
+  }
+}
