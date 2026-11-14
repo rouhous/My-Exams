@@ -36,7 +36,7 @@ textarea{min-height:160px;resize:vertical}summary{color:#185d47;cursor:pointer}
 <header><a href="./index.html">← My Exams</a><h1>Grades 11–12 · Teacher Review Practice</h1><div>Unit-themed drafts · complete timed papers · comprehensive random papers · individual untimed skills</div></header>
 <main>
 <section class="box warning"><strong>Teacher-review preview — not approved as a Ministry exam or certified unit assessment.</strong>
-The existing source bank contains repeated cross-track texts and unverified unit links. Listening recordings for these tracks are not yet hosted; those tasks require a teacher to read the supplied script. Written and short responses require teacher review. This page does not invent an AI grade. <a href="./grade12/elective/units/paper-a-preview.html">Complete Grade 12 Elective Unit 1 original full-paper review</a>.</section>
+The existing source bank contains repeated cross-track texts and unverified unit links. A recording is displayed only when its MP3 has a matching script checksum; otherwise the teacher reads the script. These are unapproved draft passages. Written and short responses require teacher review. This page does not invent an AI grade. <a href="./grade12/elective/units/paper-a-preview.html">Complete Grade 12 Elective Unit 1 original full-paper review</a>.</section>
 <section class="box">
 <div class="controls">
 <label>Track<select id="track"><option value="11-elective">Grade 11 Elective</option><option value="12-core">Grade 12 Core</option><option value="12-elective" selected>Grade 12 Elective</option></select></label>
@@ -54,7 +54,7 @@ The existing source bank contains repeated cross-track texts and unverified unit
 <script>
 (function(){
 'use strict';
-var bank=null,active=[],started=0,seconds=0,timerId=0,submitted=false;
+var bank=null,verifiedAudio={},active=[],started=0,seconds=0,timerId=0,submitted=false;
 var $=function(id){return document.getElementById(id)};
 var keys=['11-elective','12-core','12-elective'];
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
@@ -96,7 +96,7 @@ var p=item.part,src=item.model;if(!p)return;
 var teacher=/^lst/.test(p.key);
 out+='<section class="part"><h2>'+esc(title(p.key))+' · '+esc(p.marks)+' marks</h2>';
 out+='<p class="meta">Source model '+esc(src.id)+' · '+esc(src.theme||'mixed')+' · '+esc(p.title||'')+'</p>';
-if(teacher)out+='<p class="red">Listening: no validated MP3 for this track. Teacher read-aloud required; student should not open the script during the test.</p><details class="script"><summary>Teacher listening script (open only for supervised practice)</summary><div class="passage">'+esc(p.script||p.passage||'Script not available')+'</div></details>';
+if(teacher){var url=verifiedAudio[tr+'|'+src.id+'|'+p.key];out+='<p class="red">'+(url?'Source-matched natural recording: played twice. Teacher approval of voices and textbook unit content remains pending.':'No source-verified MP3 yet. Teacher reads the script twice.')+'</p>'+(url?'<audio controls preload="metadata" src="'+esc(url)+'"></audio>':'')+'<details class="script"><summary>Teacher listening script (open only for supervised practice)</summary><div class="passage">'+esc(p.script||p.passage||'Script not available')+'</div></details>';}
 else if(p.passage)out+='<div class="passage">'+esc(p.passage)+'</div>';
 if(p.chart&&Array.isArray(p.chart.labels)){
 out+='<table class="chart"><caption>'+esc(p.chart.label||'Data')+'</caption><tbody>';
@@ -140,7 +140,23 @@ $('start').addEventListener('click',function(){$('submit').disabled=false;build(
 $('submit').addEventListener('click',function(){grade(false)});
 $('print').addEventListener('click',function(){window.print()});
 $('reset').addEventListener('click',function(){clearInterval(timerId);$('paper').className='';$('start').disabled=false;['track','mode','model','skill'].forEach(function(id){$(id).disabled=false});rebuild();window.scrollTo({top:0,behavior:'smooth'})});
-fetch('./higher_grades_corrected.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw Error('bank HTTP '+r.status);return r.json()}).then(function(data){bank=data;keys.forEach(function(k){if(!Array.isArray(data[k])||data[k].length<4)throw Error('Missing models for '+k)});rebuild();$('loadState').textContent='Review bank loaded. No listening audio has been claimed.'}).catch(function(e){$('loadState').textContent='Bank unavailable: '+e.message;$('start').disabled=true});
+Promise.all([
+ fetch('./higher_grades_corrected.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw Error('bank HTTP '+r.status);return r.json()}),
+ ...keys.map(function(k){return fetch('./upper-audio/'+k+'/manifest.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).catch(function(){return null})})
+]).then(async function(got){
+ bank=got[0];keys.forEach(function(k){if(!Array.isArray(bank[k])||bank[k].length<4)throw Error('Missing models for '+k)});
+ if(crypto.subtle)for(var t=0;t<keys.length;t++){
+   var track=keys[t],manifest=got[t+1];if(!manifest)continue;
+   for(const m of bank[track])for(const part of m.parts){
+     if(!/^lst/.test(part.key))continue;
+     var entry=manifest[m.id+'-'+part.key],txt=(part.script||part.passage||'').trim();
+     if(!entry||!/^[a-f]\d*-(?:lst1|lst2)\.mp3$/.test(entry.mp3))continue;
+     var h=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(txt)))).map(function(b){return b.toString(16).padStart(2,'0')}).join('');
+     if(entry.passageSha256===h)verifiedAudio[track+'|'+m.id+'|'+part.key]='./upper-audio/'+track+'/'+entry.mp3;
+   }
+ }
+ rebuild();$('loadState').textContent='Review bank loaded. Linked source-matched natural listening MP3: '+Object.keys(verifiedAudio).length+' / 36 provisional task uses. Listening quality and textbook alignment still need teacher review.';
+}).catch(function(e){$('loadState').textContent='Bank unavailable: '+e.message;$('start').disabled=true});
 if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('./sw.js').catch(function(){});
 })();
 </script>
