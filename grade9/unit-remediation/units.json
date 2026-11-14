@@ -1,0 +1,590 @@
+{
+  "version": "2026-11-14-unit-skill-remediation-1",
+  "grade": 9,
+  "semester": 1,
+  "series": "Gold Experience Oman 9A (2026 trial)",
+  "status": "original_unit_skill_practice__NOT_full_exam__NOT_textbook-page_certified",
+  "source": "https://www.omanedubooks.com/2026/08/gold-experience-oman-grade-9a.html",
+  "notes": "New remedial tasks are independent skills practice without listening; original Grade 9 A-G listening sections remain linked to source-verified MP3. These units DO NOT count as additional full fixed exams.",
+  "units": [
+    {
+      "number": 1,
+      "title": "Identity",
+      "focus": {
+        "grammar": [
+          "present simple",
+          "present continuous",
+          "adverbs of frequency",
+          "stative verbs"
+        ],
+        "vocabulary": [
+          "personality adjectives",
+          "personal information",
+          "hobbies",
+          "interests"
+        ],
+        "writing": [
+          "personal profile email"
+        ]
+      },
+      "reading": {
+        "title": "Different People, One Team",
+        "passage": "When Aisha joined a new school in Sohar, she worried that her classmates would not understand her interests. She loved astronomy and usually spent Friday evenings looking at the night sky. Her desk partner, Salma, enjoyed art and was always drawing. At first, the girls had little to talk about. Then their teacher asked the class to organise a display about personal identity. Aisha suggested a simple model of the solar system while Salma offered to design the posters. They invited two other pupils: Hamad, who was confident speaking to visitors, and Noura, who preferred organising details quietly. The project succeeded because each student contributed a different strength. Aisha now believes identity is not only about appearance or nationality; it also includes values, habits, abilities and the way people treat one another. She still enjoys astronomy, but she is learning that sharing an interest can be easier when she listens to other people first.",
+        "questions": [
+          {
+            "stem": "Why was Aisha worried at first?",
+            "options": [
+              "She had lost a book",
+              "She thought others would not understand her interests",
+              "The class had no teacher"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What did Salma contribute to the display?",
+            "options": [
+              "Poster designs",
+              "A telescope",
+              "Bus tickets"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "Which pupil was confident speaking to visitors?",
+            "options": [
+              "Aisha",
+              "Noura",
+              "Hamad"
+            ],
+            "answer": 2
+          },
+          {
+            "stem": "What did Aisha learn about identity?",
+            "options": [
+              "It only depends on appearance",
+              "Different strengths and values are part of it",
+              "Everyone must have the same interests"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      "grammar": [
+        {
+          "stem": "My sister usually ____ to school by bus.",
+          "options": [
+            "goes",
+            "is going",
+            "go"
+          ],
+          "answer": 0,
+          "explanation": "A habit: present simple with she = goes."
+        },
+        {
+          "stem": "Listen! The pupils ____ a presentation about their hobbies.",
+          "options": [
+            "give",
+            "are giving",
+            "gave"
+          ],
+          "answer": 1,
+          "explanation": "An action happening now: are giving."
+        },
+        {
+          "stem": "Faris ____ football on Saturdays; he prefers reading.",
+          "options": [
+            "never plays",
+            "is never playing",
+            "has never play"
+          ],
+          "answer": 0,
+          "explanation": "Frequency adverb with present simple: never plays."
+        },
+        {
+          "stem": "I ____ this photograph of my grandparents.",
+          "options": [
+            "am loving",
+            "love",
+            "loves"
+          ],
+          "answer": 1,
+          "explanation": "Love is a stative verb here, so use present simple."
+        },
+        {
+          "stem": "What ____ your best friend usually do after school?",
+          "options": [
+            "does",
+            "is",
+            "do"
+          ],
+          "answer": 0,
+          "explanation": "Present simple question with he/she: does."
+        },
+        {
+          "stem": "At the moment, Noura ____ a personal profile.",
+          "options": [
+            "writes",
+            "is writing",
+            "write"
+          ],
+          "answer": 1,
+          "explanation": "At the moment signals present continuous."
+        },
+        {
+          "stem": "She is a very ____ student who always helps new classmates.",
+          "options": [
+            "help",
+            "helpful",
+            "helpfully"
+          ],
+          "answer": 1,
+          "explanation": "An adjective describes a student: helpful."
+        }
+      ],
+      "vocabulary": [
+        {
+          "stem": "A person who is willing to try new ideas is ____.",
+          "options": [
+            "open-minded",
+            "careless",
+            "rude"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "A student who speaks easily to strangers is ____.",
+          "options": [
+            "confident",
+            "silent",
+            "uncertain"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "A person who tells the truth is ____.",
+          "options": [
+            "honest",
+            "lazy",
+            "selfish"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "Someone who thinks about other people's feelings is ____.",
+          "options": [
+            "considerate",
+            "impatient",
+            "arrogant"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "The phrase 'a personal profile' refers to ____.",
+          "options": [
+            "information about a person",
+            "a train schedule",
+            "a shopping receipt"
+          ],
+          "answer": 0
+        }
+      ],
+      "writing": [
+        {
+          "title": "Personal profile email",
+          "minWords": 100,
+          "prompt": "Write an email to a new exchange student. Introduce yourself, describe your personality, explain what you usually do in your free time and mention one activity you are enjoying this month. Use present simple and present continuous appropriately."
+        },
+        {
+          "title": "Identity information sheet",
+          "minWords": 80,
+          "prompt": "Write an information sheet about a classmate's interests, strengths and usual habits. Explain why different personalities can help people work together."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Connections",
+      "focus": {
+        "grammar": [
+          "past simple",
+          "past continuous",
+          "verb patterns with -ing"
+        ],
+        "vocabulary": [
+          "language and communication",
+          "verb + preposition collocations"
+        ],
+        "writing": [
+          "story"
+        ]
+      },
+      "reading": {
+        "title": "The Message That Changed a Project",
+        "passage": "Last term, Mariam and her classmates were making a short film about communication in their town. They interviewed grandparents who remembered sharing news by letter, and younger people who used messaging apps every day. While they were editing the film, a recorded interview disappeared from the shared folder. Everyone thought the file had been deleted. Mariam was checking the computer when she noticed a message from Bilal. He explained that he had moved the recording to a different folder to protect it from accidental changes. Unfortunately, he had forgotten to tell the team. The students felt relieved, but they also realised that a useful action can cause confusion if nobody explains it. They agreed to keep a simple record whenever a file was moved and to listen carefully when someone raised a concern. The finished film showed more than changes in technology: it showed why clear messages, careful listening and trust matter in every generation.",
+        "questions": [
+          {
+            "stem": "What was the class producing?",
+            "options": [
+              "A short film",
+              "A sports timetable",
+              "A school uniform"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "When did the recording seem to disappear?",
+            "options": [
+              "While the team was editing",
+              "While the class was travelling",
+              "Before the project began"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "Why had Bilal moved the file?",
+            "options": [
+              "To delete it permanently",
+              "To protect it from changes",
+              "To send it to a newspaper"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What rule did the pupils introduce?",
+            "options": [
+              "Avoid all messages",
+              "Stop using interviews",
+              "Record when a file is moved"
+            ],
+            "answer": 2
+          }
+        ]
+      },
+      "grammar": [
+        {
+          "stem": "While I ____ to my cousin, the phone suddenly stopped working.",
+          "options": [
+            "talked",
+            "was talking",
+            "talk"
+          ],
+          "answer": 1,
+          "explanation": "A background action interrupted by a shorter past action: was talking."
+        },
+        {
+          "stem": "The interviewer ____ three questions yesterday.",
+          "options": [
+            "asks",
+            "was asking now",
+            "asked"
+          ],
+          "answer": 2,
+          "explanation": "Finished past event: asked."
+        },
+        {
+          "stem": "We enjoy ____ to stories about our grandparents.",
+          "options": [
+            "listen",
+            "listening",
+            "listened"
+          ],
+          "answer": 1,
+          "explanation": "Enjoy takes the -ing form."
+        },
+        {
+          "stem": "She ____ me when I was explaining the problem.",
+          "options": [
+            "called",
+            "was call",
+            "calls yesterday"
+          ],
+          "answer": 0,
+          "explanation": "A short past action interrupting a longer one: called."
+        },
+        {
+          "stem": "The students ____ their project when the teacher arrived.",
+          "options": [
+            "were discussing",
+            "discuss",
+            "are discussing"
+          ],
+          "answer": 0,
+          "explanation": "Past continuous for action in progress at that past moment."
+        },
+        {
+          "stem": "I prefer ____ messages to making phone calls.",
+          "options": [
+            "write",
+            "writing",
+            "wrote"
+          ],
+          "answer": 1,
+          "explanation": "Prefer + -ing is natural in this comparison."
+        },
+        {
+          "stem": "He ____ the instructions carefully before using the app.",
+          "options": [
+            "read",
+            "reads tomorrow",
+            "is reading last night"
+          ],
+          "answer": 0,
+          "explanation": "Past form of read is spelled 'read'."
+        }
+      ],
+      "vocabulary": [
+        {
+          "stem": "Please listen ____ the instructions carefully.",
+          "options": [
+            "to",
+            "at",
+            "in"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "She explained the plan ____ the new students.",
+          "options": [
+            "at",
+            "to",
+            "for"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "We talked ____ our project for twenty minutes.",
+          "options": [
+            "about",
+            "on",
+            "of"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "To say a word correctly is to ____ it.",
+          "options": [
+            "translate",
+            "pronounce",
+            "repeat wrongly"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "If you understand a message, you know what it ____.",
+          "options": [
+            "means",
+            "draws",
+            "weighs"
+          ],
+          "answer": 0
+        }
+      ],
+      "writing": [
+        {
+          "title": "Story: a communication mistake",
+          "minWords": 100,
+          "prompt": "Write a story about a message that caused a misunderstanding while students were preparing an event. Use past simple and past continuous, describe the problem and show how clear communication solved it."
+        },
+        {
+          "title": "Communication choices",
+          "minWords": 90,
+          "prompt": "Explain how people communicate with family and friends today and how this differs from the past. Use at least three expressions connected with speaking, listening or explaining."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "The future is now",
+      "focus": {
+        "grammar": [
+          "will",
+          "be going to",
+          "present continuous for arrangements",
+          "present simple for timetables"
+        ],
+        "vocabulary": [
+          "technology",
+          "innovation",
+          "responsible AI",
+          "predictions"
+        ],
+        "writing": [
+          "future plans and suggestions"
+        ]
+      },
+      "reading": {
+        "title": "A Smart Garden with a Human Decision",
+        "passage": "A group of students at a school in Nizwa is planning a small smart garden. The project will use sensors to measure moisture in the soil, and a simple app will display the results. The students are going to test the first prototype next month. Their science teacher reminds them that a sensor cannot make every decision. For example, the app may report dry soil, but the team must check whether a plant actually needs water before opening the irrigation system. Some pupils think artificial intelligence will make gardening easier; others worry that relying completely on technology could waste water when a sensor breaks. The group is meeting a local engineer on Tuesday to discuss those risks. A school exhibition opens at nine o'clock on Thursday, and the pupils hope to demonstrate the garden there. They will collect feedback and improve the design before producing a larger version. They want to show that useful inventions combine technology with responsible human judgement.",
+        "questions": [
+          {
+            "stem": "What will the sensors measure?",
+            "options": [
+              "Airline tickets",
+              "Soil moisture",
+              "Classroom noise"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "When are students planning to test the prototype?",
+            "options": [
+              "Next month",
+              "Last year",
+              "Yesterday"
+            ],
+            "answer": 0
+          },
+          {
+            "stem": "Why must people check a sensor reading?",
+            "options": [
+              "The plants never need water",
+              "Sensors may sometimes be wrong",
+              "The app cannot show results"
+            ],
+            "answer": 1
+          },
+          {
+            "stem": "What is the main message of the text?",
+            "options": [
+              "Avoid all technology",
+              "Only engineers can grow plants",
+              "Combine technology with responsible human decisions"
+            ],
+            "answer": 2
+          }
+        ]
+      },
+      "grammar": [
+        {
+          "stem": "I think more schools ____ use solar energy in the future.",
+          "options": [
+            "will",
+            "were",
+            "have"
+          ],
+          "answer": 0,
+          "explanation": "Prediction: will + base form."
+        },
+        {
+          "stem": "Look at those dark clouds. It ____ rain.",
+          "options": [
+            "will to",
+            "is going to",
+            "is going"
+          ],
+          "answer": 1,
+          "explanation": "Present evidence supports is going to."
+        },
+        {
+          "stem": "We ____ the engineer on Tuesday; the appointment is confirmed.",
+          "options": [
+            "are meeting",
+            "met yesterday",
+            "meet every day"
+          ],
+          "answer": 0,
+          "explanation": "Present continuous can express a fixed future arrangement."
+        },
+        {
+          "stem": "The exhibition ____ at nine o'clock tomorrow.",
+          "options": [
+            "will opened",
+            "is opening yesterday",
+            "opens"
+          ],
+          "answer": 2,
+          "explanation": "Present simple commonly states timetables."
+        },
+        {
+          "stem": "Our class ____ build a robot next term; we have already made the plan.",
+          "options": [
+            "is going to",
+            "was going to yesterday",
+            "is"
+          ],
+          "answer": 0,
+          "explanation": "Be going to expresses a decided plan."
+        },
+        {
+          "stem": "If the device fails, we ____ the battery first.",
+          "options": [
+            "checked",
+            "will check",
+            "checking"
+          ],
+          "answer": 1,
+          "explanation": "First conditional: if + present, will + infinitive."
+        },
+        {
+          "stem": "Why don't we ____ a clearer instruction poster?",
+          "options": [
+            "make",
+            "making",
+            "made"
+          ],
+          "answer": 0,
+          "explanation": "Why don't we + base verb introduces a suggestion."
+        }
+      ],
+      "vocabulary": [
+        {
+          "stem": "A first working model of an invention is a ____.",
+          "options": [
+            "prototype",
+            "receipt",
+            "passenger"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "A device that measures changes in its environment is a ____.",
+          "options": [
+            "sensor",
+            "passport",
+            "paragraph"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "The ability of a computer to perform tasks associated with human intelligence is called ____.",
+          "options": [
+            "public transport",
+            "artificial intelligence",
+            "customer service"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "To make a product better after testing is to ____ it.",
+          "options": [
+            "improve",
+            "ignore",
+            "delete"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "A careful statement about what may happen in the future is a ____.",
+          "options": [
+            "prediction",
+            "memory",
+            "complaint"
+          ],
+          "answer": 0
+        }
+      ],
+      "writing": [
+        {
+          "title": "Email proposing an invention",
+          "minWords": 100,
+          "prompt": "Write an email to your science teacher proposing a useful invention for your school. Explain what it will do, how your team is going to build it, when you are meeting and what problems you may need to solve."
+        },
+        {
+          "title": "Future technology: balanced opinion",
+          "minWords": 90,
+          "prompt": "Some people believe AI will improve everyday life, while others worry about relying on it too much. Write a balanced paragraph, give examples and suggest one sensible rule for responsible use."
+        }
+      ]
+    }
+  ]
+}
