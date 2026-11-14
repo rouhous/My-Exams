@@ -1,0 +1,426 @@
+{
+  "id": "g12-core-s1-unit1-original-paper-a",
+  "grade": 12,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 1,
+    "title": "Retail Therapy"
+  },
+  "durationMinutes": 180,
+  "marks": 70,
+  "status": "original_nine_section_unit_paper__teacher_review_and_official_page_alignment_pending",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "bookReference": "Engage With English Coursebook 12A Theme 1 Retail Therapy",
+  "sahReference": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json, track 12-core",
+  "listeningSources": [
+    "unit1-listening1-original-draft.json",
+    "unit1-listening2-original-draft.json"
+  ],
+  "sections": {
+    "grm": {
+      "title": "Grammar: Dialogue cloze",
+      "marks": 5,
+      "passage": "Customer: I (1) _____ a jacket yesterday, but the size is wrong.\nAssistant: Was it bought here?\nCustomer: Yes. The receipt (2) _____ inside the bag.\nAssistant: We can exchange it if the label is still attached.\nCustomer: I (3) _____ not remove the label. Can I try another size?\nAssistant: Certainly. The jackets (4) _____ displayed upstairs.\nCustomer: Thank you. If this one fits, I (5) _____ take it.",
+      "wordCount": 70,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "Gap 1",
+          "options": [
+            "bought",
+            "buy"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 2",
+          "options": [
+            "was",
+            "were"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 3",
+          "options": [
+            "was",
+            "did"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 4",
+          "options": [
+            "are",
+            "is"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 5",
+          "options": [
+            "will",
+            "would"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "vcb": {
+      "title": "Vocabulary: Cloze",
+      "marks": 5,
+      "passage": "Buying something at a discount can feel exciting, but customers read the full (1) _____ before paying. A colourful (2) _____ may attract attention without explaining every condition. Shoppers should compare the final price, ask about the product's (3) _____ and keep the (4) _____ as proof of payment. If an item is faulty, a clear return (5) _____ helps both the customer and the seller understand what to do. Responsible shopping is not simply about finding the lowest price; it is also about avoiding waste and making informed decisions.",
+      "wordCount": 90,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "Gap 1",
+          "options": [
+            "description",
+            "destination",
+            "discussion"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 2",
+          "options": [
+            "advertisement",
+            "appointment",
+            "argument"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 3",
+          "options": [
+            "warranty",
+            "timetable",
+            "passport"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 4",
+          "options": [
+            "receipt",
+            "opinion",
+            "survey"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 5",
+          "options": [
+            "policy",
+            "photograph",
+            "preference"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "rdg1": {
+      "title": "Reading 1: Seven short unrelated texts",
+      "marks": 7,
+      "texts": [
+        {
+          "passage": "Notice from the school shop: This Friday, students may bring clean reusable bags to receive a small discount on stationery. The offer does not apply to textbooks or electronic devices. Please check the final price on the receipt before leaving the counter.",
+          "statement": "The school-shop discount includes electronic devices.",
+          "answer": 1
+        },
+        {
+          "passage": "Dear Huda, I bought a camera bag yesterday, but the zip broke during the first use. I have kept my receipt and have not attempted to repair it. Could you accompany me to the shop after school so I can explain the problem?",
+          "statement": "The writer has already repaired the broken zip.",
+          "answer": 1
+        },
+        {
+          "passage": "A local market has introduced clearly marked price labels for handmade baskets. Visitors may still ask questions about materials, but sellers agreed to show one final price per item. Organisers hope that transparent prices will help customers compare products more confidently.",
+          "statement": "Sellers at the market now display a final price for each basket.",
+          "answer": 0
+        },
+        {
+          "passage": "Advertisement: Our recycled notebooks are made from carefully selected leftover paper. Each notebook contains eighty pages, and every cover has a different design. Customers can see sample books in the shop before ordering. Delivery charges are shown separately at checkout.",
+          "statement": "The advertised notebook price automatically includes delivery charges.",
+          "answer": 1
+        },
+        {
+          "passage": "Shopping club report: Twenty-five pupils completed a survey about buying clothes. Fifteen preferred to repair slightly damaged clothing, while ten usually replaced it. The club decided to organise a sewing workshop because more students were interested in learning simple repairs.",
+          "statement": "More surveyed pupils preferred repairs than replacement.",
+          "answer": 0
+        },
+        {
+          "passage": "A customer paid for a sports bottle by bank card. The shop assistant printed a receipt and explained that unopened items could be returned within seven days. The customer placed the receipt in a folder to make sure the purchase details remained available.",
+          "statement": "The customer threw away the receipt immediately.",
+          "answer": 1
+        },
+        {
+          "passage": "Dear Parents, the charity book sale will start at nine o'clock on Saturday morning in the school courtyard. Entrance is free, and all prices will be displayed beside the books. Unsold books will be offered to the school library after the event.",
+          "statement": "Visitors must pay an entrance fee to attend the book sale.",
+          "answer": 1
+        }
+      ],
+      "questions": [
+        {
+          "type": "tf",
+          "stem": "The school-shop discount includes electronic devices.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "The writer has already repaired the broken zip.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "Sellers at the market now display a final price for each basket.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "tf",
+          "stem": "The advertised notebook price automatically includes delivery charges.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "More surveyed pupils preferred repairs than replacement.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "tf",
+          "stem": "The customer threw away the receipt immediately.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "Visitors must pay an entrance fee to attend the book sale.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    "rdg2": {
+      "title": "Reading 2: Interactive emails",
+      "marks": 8,
+      "passage": "Email 1 — From Amal to Green Market Online\n\nDear Customer Service Team,\n\nLast Monday I ordered a study lamp from your website because the advertisement showed a significant discount. The description said the lamp could be charged by USB, and the photograph included a charging cable. My parcel arrived on Thursday, but the box contained no cable. The lamp itself seems undamaged. I checked the order confirmation, and I cannot find a sentence clearly explaining that the cable is sold separately.\n\nI would like to know whether the missing cable can be supplied without an extra charge. If that is not possible, please explain the return procedure and whether I must pay delivery costs. I have kept the receipt, the packaging and a copy of the advertisement.\n\nKind regards,\nAmal\n\nEmail 2 — From Customer Service to Amal\n\nDear Amal,\n\nThank you for explaining the problem clearly and sending the order number. We have reviewed your purchase. The USB cable is listed under optional accessories in the full product description, but we agree that our main photograph may have created a misleading impression. We will make the wording more obvious for future customers.\n\nYou may choose one of two options. We can send a compatible cable free of charge, or you may return the lamp within fourteen days of delivery. If you choose the return, we will provide a prepaid label and refund the original purchase price after the item has been checked. Please do not send the parcel before receiving the label.\n\nSincerely,\nGreen Market Online Support\n\nEmail 3 — From Amal to Customer Service\n\nDear Support Team,\n\nThank you for your prompt response. I appreciate your decision to improve the advertisement. I would prefer to receive the free cable because the lamp suits my desk and I do not want a working product to be wasted. Please confirm the delivery address already attached to my order and tell me when the cable is expected.\n\nI will keep the original receipt and show your message to our school's consumer-awareness group. We are studying how clear descriptions and fair return policies can prevent misunderstandings. Your explanation will help us discuss both the customer's responsibilities and the seller's duties.\n\nBest wishes,\nAmal",
+      "wordCount": 372,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "When did Amal order the lamp?",
+          "options": [
+            "Monday",
+            "Thursday",
+            "Saturday"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "What was the main feature of the advertisement?",
+          "options": [
+            "A free school bag",
+            "A significant discount",
+            "A warranty extension"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "Which item was missing from the parcel?",
+          "options": [
+            "The lamp shade",
+            "A printed receipt",
+            "A charging cable"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mc",
+          "stem": "What did Amal keep as evidence?",
+          "options": [
+            "Only a photograph",
+            "The receipt, packaging and advertisement",
+            "An old shopping list"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "Where did the company say the cable was mentioned?",
+          "options": [
+            "Under optional accessories",
+            "On the shipping label only",
+            "In an unrelated school notice"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "What did the company offer?",
+          "options": [
+            "A free compatible cable or a return",
+            "A second lamp at full price",
+            "No assistance"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Within how many days of delivery could Amal return the lamp?",
+          "options": [
+            "Seven",
+            "Fourteen",
+            "Thirty"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "Why did Amal choose the free cable?",
+          "options": [
+            "She no longer wanted the lamp",
+            "She preferred to avoid wasting a working item",
+            "She had lost the packaging"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    "rdg3": {
+      "title": "Reading 3: Consumer choices",
+      "marks": 10,
+      "passage": "People often think that a low price automatically makes a purchase a good decision. In reality, responsible shopping involves several separate questions. A buyer should consider whether an item is needed, how long it may last, what the complete cost will be and what happens if the product develops a fault. These questions apply to traditional markets, shopping centres and online stores.\n\nAdvertisements can provide useful information, but their main purpose is often to persuade customers. A slogan might draw attention to a large discount without mentioning delivery fees or accessories that must be bought separately. Good shoppers therefore read the detailed description and compare similar products. They also recognise that an attractive photograph cannot demonstrate the quality of an item on its own.\n\nA receipt is another important part of a purchase. It normally shows the date, amount paid and details of the product. Keeping a receipt helps a customer explain a problem accurately and may be necessary when asking for an exchange or refund. In an online transaction, the confirmation email can serve a similar purpose. Customers should save this information in a safe place rather than share private payment details publicly.\n\nConsumers must also understand the difference between a warranty and a return policy. A warranty may explain what happens if a product stops working under certain conditions, while a return policy describes when the shop will accept an item back. The exact rules can differ, so assumptions based on another seller's policy may be unreliable. Asking a clear question before payment is usually easier than solving a misunderstanding afterwards.\n\nResponsible shopping also has environmental and community benefits. Repairing an item, choosing durable materials or using a reusable bag can reduce unnecessary waste. Buying from a local seller may make it easier to inspect goods and ask about their origin, although local products are not automatically better in every situation. What matters is comparing evidence rather than relying on a single attractive claim.\n\nStudents can practise these skills by examining two advertisements for similar products. They can identify the essential features, calculate the total price and discuss which questions remain unanswered. Such exercises teach financial awareness and careful communication. The goal is not to avoid every purchase, but to make decisions that are informed, fair and suitable for a person's actual needs.\n\nEvery school can develop these habits through classroom discussions, consumer-awareness workshops and community projects that involve both families and students.",
+      "wordCount": 405,
+      "questions": [
+        {
+          "type": "short",
+          "stem": "Besides price, name one factor shoppers should consider.",
+          "answer": "durability",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "What extra charges may be missing from a discount slogan?",
+          "answer": "delivery fees",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "Name one detail normally shown on a receipt.",
+          "answer": "date",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "Which electronic message can prove an online transaction?",
+          "answer": "confirmation email",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "What explains what happens if a product stops working?",
+          "answer": "a warranty",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "What should students compare to practise responsible shopping?",
+          "answer": "two advertisements",
+          "maxWords": 4
+        },
+        {
+          "type": "mc",
+          "stem": "What is the primary purpose of many advertisements?",
+          "options": [
+            "To persuade customers",
+            "To guarantee every product lasts forever",
+            "To replace receipts"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "According to the text, an attractive photograph cannot prove…",
+          "options": [
+            "a product's quality",
+            "the shop's address",
+            "the season"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "What is one advantage of visiting a local seller?",
+          "options": [
+            "Every product is automatically better",
+            "Customers can inspect goods and ask questions",
+            "There are no prices"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "What is the overall recommendation?",
+          "options": [
+            "Avoid all purchases",
+            "Choose the cheapest item",
+            "Make informed and fair decisions"
+          ],
+          "answer": 2
+        }
+      ]
+    },
+    "wrt1": {
+      "title": "Writing 1: Evaluative",
+      "marks": 10,
+      "minWords": 100,
+      "prompt": "Many people enjoy shopping in malls, while others prefer online shops or traditional souqs. Evaluate the benefits and drawbacks of these three ways of shopping, and explain which is the most responsible choice for students. Write at least 100 words.",
+      "marking": "teacher review; no automatic AI score"
+    },
+    "wrt2": {
+      "title": "Writing 2: Narrative",
+      "marks": 10,
+      "minWords": 100,
+      "prompt": "Write a story beginning: 'When I checked the receipt, I realised the item had not been charged at the advertised price.' Describe what you bought, what went wrong and how you solved the problem. Write at least 100 words.",
+      "marking": "teacher review; no automatic AI score"
+    }
+  }
+}
