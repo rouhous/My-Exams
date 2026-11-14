@@ -1,0 +1,83 @@
+{
+  "11-core-unit1-lst1": {
+    "paperId": "11-core-unit1",
+    "skill": "lst1",
+    "mp3": "11-core-unit1-lst1.mp3",
+    "scriptSha256": "98e3638a4d37a86f43020b8da3cee63752d9a02cb1810a65630962d5ba944b6d",
+    "durationSeconds": 305.48,
+    "bytes": 3666068,
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "generated_neural_audio__teacher_listening_review_pending"
+  },
+  "11-core-unit1-lst2": {
+    "paperId": "11-core-unit1",
+    "skill": "lst2",
+    "mp3": "11-core-unit1-lst2.mp3",
+    "scriptSha256": "95ea3ab9163f2551ad85ae149f14416bef5a533b950a5197d722996e7df7b6b7",
+    "durationSeconds": 331.86,
+    "bytes": 3982672,
+    "voices": [
+      "en-GB-SoniaNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "generated_neural_audio__teacher_listening_review_pending"
+  },
+  "11-core-unit3-lst1": {
+    "paperId": "11-core-unit3",
+    "skill": "lst1",
+    "mp3": "11-core-unit3-lst1.mp3",
+    "scriptSha256": "e3cbc0c010b81363160b0dfe5409ab0d21a6fc8b6010e3e6ac4b60046ac708b8",
+    "durationSeconds": 305.5,
+    "bytes": 3666382,
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "generated_neural_audio__teacher_listening_review_pending"
+  },
+  "11-core-unit3-lst2": {
+    "paperId": "11-core-unit3",
+    "skill": "lst2",
+    "mp3": "11-core-unit3-lst2.mp3",
+    "scriptSha256": "5ec8c72551701cab80f325604f24a5149a3cf8b5340becd12aca998a4336135e",
+    "durationSeconds": 333.92,
+    "bytes": 4007436,
+    "voices": [
+      "en-GB-SoniaNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "generated_neural_audio__teacher_listening_review_pending"
+  },
+  "11-core-unit4-lst1": {
+    "paperId": "11-core-unit4",
+    "skill": "lst1",
+    "mp3": "11-core-unit4-lst1.mp3",
+    "scriptSha256": "f6f9401a802533ce090a193086cd3feb1ea5636b8a19e236271b43b5a4492a18",
+    "durationSeconds": 298.08,
+    "bytes": 3577356,
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "generated_neural_audio__teacher_listening_review_pending"
+  },
+  "11-core-unit4-lst2": {
+    "paperId": "11-core-unit4",
+    "skill": "lst2",
+    "mp3": "11-core-unit4-lst2.mp3",
+    "scriptSha256": "13cb01e4495ad7ff9218500d95eb4379ea6fba735e5b042fcf92846fc5f0d580",
+    "durationSeconds": 340.45,
+    "bytes": 4085804,
+    "voices": [
+      "en-GB-SoniaNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "generated_neural_audio__teacher_listening_review_pending"
+  }
+}
