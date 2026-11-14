@@ -1,0 +1,94 @@
+{
+  "id": "g12-elective-unit3-rdg1-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 3,
+    "title": "Living in a Changing World"
+  },
+  "skill": "Reading 1",
+  "genre": "four-email interactive exchange",
+  "status": "original_450_500_word_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "marks": 12,
+  "passage": "Email 1 — From Mariam, Student Technology Club, to Engineer Hassan.\n\nDear Engineer Hassan,\nOur class is planning a small exhibition about changes in city transport. We have built a model bus shelter with a digital information board and a solar lamp. The idea is to make travelling easier for visitors, but some residents are worried about the cost. We collected opinions from thirty volunteers at the community centre, and their main concern was what would happen if the screen stopped working.\n\nOur first plan showed departure times only on the screen. We now think printed timetables should also be available. Would you review our design and explain which features are likely to work in different weather conditions?\n\nBest wishes,\nMariam\n\nEmail 2 — From Engineer Hassan to Mariam.\n\nDear Mariam,\nA backup timetable is a sensible decision. Digital services can improve access, but they must not prevent people without smartphones from using public transport. Your model should include information in clear language, with large lettering and simple directions. If the display uses solar electricity, remember that the output changes when clouds reduce sunlight. You should measure performance at different times instead of claiming that one panel will always be sufficient.\n\nI also suggest inviting people with different accessibility needs to test the shelter. A technology project is only successful when its users can understand and operate it.\n\nKind regards,\nHassan\n\nEmail 3 — From Mariam to Engineer Hassan.\n\nDear Engineer Hassan,\nThank you for your comments. We tested the solar lamp during three afternoons and found that it became noticeably dimmer under heavy cloud. We added a small battery so the display could remain visible when the model received less light. Our teacher helped us label the chart as classroom data, not a prediction about a real bus network.\n\nWe also asked five older visitors to review the directions. Two preferred printed information, while others liked the idea of audio announcements. After their feedback, we changed the colour contrast and added a large printed route map. We will show the revised model to families next Monday. What should we explain about the information the display collects?\n\nBest wishes,\nMariam\n\nEmail 4 — From Engineer Hassan to Mariam.\n\nDear Mariam,\nIt is important to separate useful measurements from personal data. A model can record sunlight and battery levels without storing a passenger's name, telephone number or travel history. If a future service collects such information, its operators will need clear rules about consent and secure storage. For your exhibition, display exactly what the sensors measure and what they do not measure.\n\nInvite visitors to compare the original model with the revised version. Explain which changes resulted from evidence and which remain suggestions for future testing. Your project will then show how technology, energy choices and public feedback can work together without promising an unrealistic solution for every city.\n\nWith best wishes,\nHassan",
+  "wordCount": 482,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "What two items form the model bus shelter?",
+      "answer": "digital board and lamp",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "How many volunteers first gave their opinions?",
+      "answer": "thirty",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What backup does Hassan recommend?",
+      "answer": "a printed timetable",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What makes solar output change?",
+      "answer": "clouds",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "How many afternoons did the lamp trial last?",
+      "answer": "three afternoons",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who reviewed the directions?",
+      "answer": "five older visitors",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "When will the revised model be shown?",
+      "answer": "next Monday",
+      "maxWords": 4
+    },
+    {
+      "type": "gap",
+      "stem": "The first visitors worried about the screen ______.",
+      "answer": "stopping working",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "Students added a ______ to support the solar display.",
+      "answer": "small battery",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "The new design uses stronger ______.",
+      "answer": "colour contrast",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "The model can measure sunlight and ______.",
+      "answer": "battery levels",
+      "maxWords": 3
+    },
+    {
+      "type": "gap",
+      "stem": "The students should distinguish evidence from ______.",
+      "answer": "future testing",
+      "maxWords": 3
+    }
+  ],
+  "sahSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / rdg1",
+  "notes": "Fictional bus shelter; revised design, accessible information, solar and data privacy; seven short answers and five gaps."
+}
