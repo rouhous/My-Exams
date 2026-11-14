@@ -1,0 +1,305 @@
+{
+  "date": "2026-11-14",
+  "scope": "Original fixed A-D models for Grade 11 Elective / Grade 12 Core / Grade 12 Elective",
+  "status": "blocked_pending_teacher_review",
+  "officialCertification": false,
+  "sourceFiles": [
+    "higher_grades_corrected.json",
+    "curriculum_units.json",
+    "UPPER_GRADES_SAH_SEM1_2026_SPEC.json"
+  ],
+  "tracks": {
+    "11-elective": {
+      "fixedModels": 4,
+      "parts": 24,
+      "officialSectionPattern": [
+        {
+          "id": "lst1",
+          "marks": 10
+        },
+        {
+          "id": "lst2",
+          "marks": 10
+        },
+        {
+          "id": "rdg1",
+          "marks": 10
+        },
+        {
+          "id": "rdg2",
+          "marks": 10
+        },
+        {
+          "id": "wrt1",
+          "marks": 10
+        },
+        {
+          "id": "wrt2",
+          "marks": 10
+        }
+      ],
+      "missingValidatedListeningMp3": 8,
+      "passageLengthOutsideStoredSAH": [],
+      "questionCountMismatch": []
+    },
+    "12-core": {
+      "fixedModels": 4,
+      "parts": 36,
+      "officialSectionPattern": [
+        {
+          "id": "lst1",
+          "marks": 7
+        },
+        {
+          "id": "lst2",
+          "marks": 8
+        },
+        {
+          "id": "grm",
+          "marks": 5
+        },
+        {
+          "id": "vcb",
+          "marks": 5
+        },
+        {
+          "id": "rdg1",
+          "marks": 7
+        },
+        {
+          "id": "rdg2",
+          "marks": 8
+        },
+        {
+          "id": "rdg3",
+          "marks": 10
+        },
+        {
+          "id": "wrt1",
+          "marks": 10
+        },
+        {
+          "id": "wrt2",
+          "marks": 10
+        }
+      ],
+      "missingValidatedListeningMp3": 8,
+      "passageLengthOutsideStoredSAH": [],
+      "questionCountMismatch": []
+    },
+    "12-elective": {
+      "fixedModels": 4,
+      "parts": 24,
+      "officialSectionPattern": [
+        {
+          "id": "lst1",
+          "marks": 10
+        },
+        {
+          "id": "lst2",
+          "marks": 10
+        },
+        {
+          "id": "rdg1",
+          "marks": 12
+        },
+        {
+          "id": "rdg2",
+          "marks": 13
+        },
+        {
+          "id": "wrt1",
+          "marks": 15
+        },
+        {
+          "id": "wrt2",
+          "marks": 10
+        }
+      ],
+      "missingValidatedListeningMp3": 8,
+      "passageLengthOutsideStoredSAH": [],
+      "questionCountMismatch": []
+    }
+  },
+  "unitTitleMismatches": [
+    {
+      "track": "11-elective",
+      "model": "A",
+      "unitNumber": 1,
+      "bookUnitTitle": "Fame",
+      "draftModelTheme": "The Coastal Science Station",
+      "severity": "release_blocker"
+    },
+    {
+      "track": "11-elective",
+      "model": "B",
+      "unitNumber": 2,
+      "bookUnitTitle": "The mind",
+      "draftModelTheme": "The Neighbourhood Reading Project",
+      "severity": "release_blocker"
+    },
+    {
+      "track": "11-elective",
+      "model": "C",
+      "unitNumber": 3,
+      "bookUnitTitle": "In the past",
+      "draftModelTheme": "The Solar School Challenge",
+      "severity": "release_blocker"
+    },
+    {
+      "track": "11-elective",
+      "model": "D",
+      "unitNumber": 4,
+      "bookUnitTitle": "Careers",
+      "draftModelTheme": "The Heritage Walk",
+      "severity": "release_blocker"
+    },
+    {
+      "track": "12-elective",
+      "model": "A",
+      "unitNumber": 1,
+      "bookUnitTitle": "The arts",
+      "draftModelTheme": "The Coastal Science Station",
+      "severity": "release_blocker"
+    },
+    {
+      "track": "12-elective",
+      "model": "B",
+      "unitNumber": 2,
+      "bookUnitTitle": "Doing the right thing",
+      "draftModelTheme": "The Neighbourhood Reading Project",
+      "severity": "release_blocker"
+    },
+    {
+      "track": "12-elective",
+      "model": "C",
+      "unitNumber": 3,
+      "bookUnitTitle": "Living in a Changing World",
+      "draftModelTheme": "The Solar School Challenge",
+      "severity": "release_blocker"
+    },
+    {
+      "track": "12-elective",
+      "model": "D",
+      "unitNumber": 4,
+      "bookUnitTitle": "Higher Education",
+      "draftModelTheme": "The Heritage Walk",
+      "severity": "release_blocker"
+    }
+  ],
+  "crossTrackExactPassageReuse": [
+    [
+      {
+        "track": "11-elective",
+        "model": "A",
+        "section": "rdg2",
+        "words": 424
+      },
+      {
+        "track": "12-core",
+        "model": "A",
+        "section": "rdg3",
+        "words": 424
+      }
+    ],
+    [
+      {
+        "track": "11-elective",
+        "model": "B",
+        "section": "lst1",
+        "words": 442
+      },
+      {
+        "track": "12-elective",
+        "model": "B",
+        "section": "lst1",
+        "words": 442
+      }
+    ],
+    [
+      {
+        "track": "11-elective",
+        "model": "B",
+        "section": "rdg2",
+        "words": 425
+      },
+      {
+        "track": "12-core",
+        "model": "B",
+        "section": "rdg3",
+        "words": 425
+      }
+    ],
+    [
+      {
+        "track": "11-elective",
+        "model": "C",
+        "section": "lst1",
+        "words": 443
+      },
+      {
+        "track": "12-elective",
+        "model": "C",
+        "section": "lst1",
+        "words": 443
+      }
+    ],
+    [
+      {
+        "track": "11-elective",
+        "model": "C",
+        "section": "rdg2",
+        "words": 427
+      },
+      {
+        "track": "12-core",
+        "model": "C",
+        "section": "rdg3",
+        "words": 427
+      }
+    ],
+    [
+      {
+        "track": "11-elective",
+        "model": "D",
+        "section": "lst1",
+        "words": 447
+      },
+      {
+        "track": "12-elective",
+        "model": "D",
+        "section": "lst1",
+        "words": 447
+      }
+    ],
+    [
+      {
+        "track": "11-elective",
+        "model": "D",
+        "section": "rdg2",
+        "words": 423
+      },
+      {
+        "track": "12-core",
+        "model": "D",
+        "section": "rdg3",
+        "words": 423
+      }
+    ]
+  ],
+  "notes": [
+    "Matching the model theme to a textbook unit title does not prove the individual skill sections belong to that unit.",
+    "Length/task shape checks are technical only, not an educational content sign-off.",
+    "All 24 listening tasks in this audit lack linked validated per-track MP3 assets.",
+    "The 2025/26 uploaded Grade 12 Core exam uses separate 2.5-mark Vocabulary, 2.5-mark Grammar, and 5-mark Grammar/Vocabulary headings; the repository's September 2026 SAH summary groups grammar and vocabulary differently. Do not silently treat the two years as identical."
+  ],
+  "summary": {
+    "fixedModels": 12,
+    "parts": 84,
+    "unitTitleMismatches": 8,
+    "crossTrackExactPassageGroups": 7,
+    "missingValidatedListeningMp3": 24,
+    "needsActualBookPageReview": true,
+    "readyForFinalStudentRelease": false
+  }
+}
