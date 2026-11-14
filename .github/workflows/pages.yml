@@ -52,5 +52,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+      - name: Allow large Pages artifact to appear in GitHub's run index
+        run: sleep 25
       - id: deployment
         uses: actions/deploy-pages@v4
