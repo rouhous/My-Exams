@@ -23,7 +23,6 @@ jobs:
           node-version: '22'
       - name: Validate audio source checksum and exact images
         run: |
-          pip install mutagen
           python3 scripts/audit_grade9_unit_full.py
       - name: Exercise three full papers on mobile Chromium
         run: |
