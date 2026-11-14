@@ -111,7 +111,7 @@
       "missing": 0
     }
   },
-  "totalVerifiedSectionLinks": 104,
+  "totalVerifiedSectionLinks": 110,
   "totalImageOptionReferences": 273,
   "imageMapping7_8": {
     "questionsReviewed": 40,
@@ -183,8 +183,11 @@
       "random": true,
       "audioKey": "9",
       "imageCount": 105,
-      "unitReview": "New 2026 Gold Experience units Identity, Connections, The Future Is Now; zero complete A/B/C/G models certified unit-specific; D/E/F explicitly mixed",
-      "release": "blocked_for_unit_specific_release"
+      "unitReview": "New 2026 Gold Experience units Identity, Connections, The Future Is Now; zero complete A/B/C/G models certified unit-specific; D/E/F explicitly mixed | Three independent remedial unit packs (48 objective, 6 writing), NOT additional full papers.",
+      "release": "blocked_for_unit_specific_release",
+      "newUntimedUnitSkillPacks": 3,
+      "newObjectiveUnitQuestions": 48,
+      "newUngradedWritingPrompts": 6
     },
     {
       "grade": 10,
@@ -205,13 +208,16 @@
       "unitFixed": "A-D unit-themed five-section pilot",
       "fixed": 4,
       "mixed": 2,
-      "otherDrafts": 1,
+      "otherDrafts": 2,
       "random": true,
       "audioKey": "11-core",
       "extraAudioKey": "11-core-semester-a",
       "imageCount": null,
-      "unitReview": "A-D have correct unit headings but omit four of nine official SAH sections; one separate nine-section teacher draft A exists",
-      "release": "blocked_official_paper_structure"
+      "unitReview": "A-D have correct unit headings but omit four of nine official SAH sections; one separate nine-section teacher draft A exists | Additional original technically validated unit paper: New original nine-section 60-mark Those Teenage Things paper B, source-verified 2 MP3",
+      "release": "blocked_official_paper_structure_and_one_new_unit_paper_technical_pilot_only",
+      "newOriginalUnitPapers": [
+        "11-core-unit2"
+      ]
     },
     {
       "grade": 11,
@@ -219,12 +225,15 @@
       "unitFixed": "A-D provisional; themes do not match Fame, The Mind, In the Past, Careers",
       "fixed": 4,
       "mixed": 2,
-      "otherDrafts": 0,
+      "otherDrafts": 1,
       "random": true,
       "audioKey": "11-elective-legacy",
       "imageCount": null,
-      "unitReview": "all four A-D unit themes mismatch course unit titles and sections; mixed E/F cannot fix",
-      "release": "blocked_unit_mismatch"
+      "unitReview": "all four A-D unit themes mismatch course unit titles and sections; mixed E/F cannot fix | Additional original technically validated unit paper: New original six-section 60-mark Fame paper A, source-verified 2 MP3",
+      "release": "blocked_unit_mismatch_and_one_new_unit_paper_technical_pilot_only",
+      "newOriginalUnitPapers": [
+        "11-elective-unit1"
+      ]
     },
     {
       "grade": 12,
@@ -232,12 +241,15 @@
       "unitFixed": "A-D provisional; titles exist but content borrowed from unrelated projects",
       "fixed": 4,
       "mixed": 2,
-      "otherDrafts": 0,
+      "otherDrafts": 1,
       "random": true,
       "audioKey": "12-core-legacy",
       "imageCount": null,
-      "unitReview": "Retail Therapy, Starting University, Tourism and Hospitality, Travel and Transport headers do not establish matching listening/reading/writing source content; rebuild required",
-      "release": "blocked_unit_content_mismatch"
+      "unitReview": "Retail Therapy, Starting University, Tourism and Hospitality, Travel and Transport headers do not establish matching listening/reading/writing source content; rebuild required | Additional original technically validated unit paper: New original nine-section 70-mark Retail Therapy paper A, source-verified 2 MP3",
+      "release": "blocked_unit_content_mismatch_and_one_new_unit_paper_technical_pilot_only",
+      "newOriginalUnitPapers": [
+        "12-core-unit1"
+      ]
     },
     {
       "grade": 12,
@@ -274,6 +286,52 @@
     "officialGrade10": "https://ict.moe.gov.om/book/PDF/10/cls10_cb_10A/files/basic-html/page13.html",
     "officialGrade12Elective": "https://ict.moe.gov.om/book/PDF/12/cls12_Insights3_SB/files/downloads/cls12_Insights3_SB.pdf"
   },
-  "totalStoredFixedAndDraftPapers": 66,
-  "note": "Technical inventory final for snapshot 2026-11-14; not all 66 are curriculum-approved or distinct original sources. A student-facing official-compliant release remains blocked for noted tracks."
+  "totalStoredFixedAndDraftPapers": 69,
+  "note": "Technical inventory includes three newly authored original unit papers Grade11Core Unit2, Grade11Elective Unit1, Grade12Core Unit1. Their MP3 passed source hash and browser QA. No Ministry or teacher textbook-page certification. Grade9 new unit drills are NOT full papers.",
+  "baselineBeforeTargetedRepairs": {
+    "storedFixedAndDraftPapers": 66,
+    "verifiedListeningSectionLinks": 104,
+    "illustrationOptionReferences": 273
+  },
+  "newVerifiedAudio": {
+    "11-core-unit2": {
+      "sections": 2,
+      "sourceVerified": 2,
+      "manifest": "grade11/core/units/audio/manifest.json",
+      "qa": "Grade 11 Core Those Teenage Things full nine-section paper QA"
+    },
+    "11-elective-unit1": {
+      "sections": 2,
+      "sourceVerified": 2,
+      "manifest": "grade11/elective/units/audio/manifest.json",
+      "qa": "Grade 11 Elective Fame original complete unit paper QA"
+    },
+    "12-core-unit1": {
+      "sections": 2,
+      "sourceVerified": 2,
+      "manifest": "grade12/core/units/audio/manifest.json",
+      "qa": "Grade 12 Core Retail Therapy full nine-section paper QA"
+    }
+  },
+  "newUnitPapers": [
+    {
+      "grade": 11,
+      "track": "core",
+      "key": "11-core-unit2",
+      "desc": "New original nine-section 60-mark Those Teenage Things paper B, source-verified 2 MP3"
+    },
+    {
+      "grade": 11,
+      "track": "elective",
+      "key": "11-elective-unit1",
+      "desc": "New original six-section 60-mark Fame paper A, source-verified 2 MP3"
+    },
+    {
+      "grade": 12,
+      "track": "core",
+      "key": "12-core-unit1",
+      "desc": "New original nine-section 70-mark Retail Therapy paper A, source-verified 2 MP3"
+    }
+  ],
+  "updatedAfterTargetedRepairs": "2026-11-14"
 }
