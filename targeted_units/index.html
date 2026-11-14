@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#174b38"><title>My Exams · New Original Grade 11–12 Unit Papers</title>
+<style>
+:root{--green:#1a4c37;--gold:#b28b43;--bg:#f2f7f3;--ink:#20362a;--line:#dbe6dc}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,Arial,sans-serif}
+header{background:linear-gradient(110deg,#164731,#2c7254);color:#fff;padding:20px 5vw}header a{color:#ffebb1}
+h1{font-size:clamp(23px,4vw,34px);margin:5px 0}h2{font-size:21px;color:var(--green)}
+main{max-width:1060px;margin:auto;padding:14px 12px 60px}
+section{background:#fff;padding:17px;border-radius:13px;border:1px solid var(--line);margin:13px 0}
+.notice{background:#fffaec;border-left:5px solid var(--gold)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:block;margin:6px 0}select,input,textarea,button{font:inherit}
+select,textarea,input[type=text]{border:1px solid #bbd0c1;border-radius:8px;padding:9px;width:100%}
+button{border:0;border-radius:8px;padding:11px 16px;cursor:pointer;color:#fff;background:var(--green)}
+button:disabled{opacity:.5;cursor:default}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.q{padding:12px 0;border-top:1px solid var(--line)}.q strong{display:block}
+.choice{border:1px solid #e0eae2;border-radius:8px;display:block;padding:7px;margin:5px 0}
+.choice:has(input:checked){background:#eaf6ed;border-color:#82b793}
+.passage{white-space:pre-wrap;background:#f6f9f6;padding:13px;border-left:3px solid #98bca2}
+.script{white-space:pre-wrap;max-height:380px;overflow:auto}
+.part{border-top:4px solid #8dac8d}
+.chart{border-collapse:collapse;width:100%;max-width:650px;margin:10px 0}
+.chart th,.chart td{border:1px solid #d3e3d7;padding:9px;text-align:left}
+textarea{min-height:190px}.paper{display:none}.paper.active{display:block}
+.muted{font-size:14px;color:#607263}.clock{font-size:21px;font-weight:800;font-variant-numeric:tabular-nums}
+audio{width:100%;max-width:650px}
+@media(max-width:640px){.grid{grid-template-columns:1fr}}
+@media print{header,#setup,button,.clock{display:none!important}.paper{display:block!important}.part{break-inside:avoid}}
+</style></head><body>
+<header><a href="../index.html">← My Exams homepage</a><h1>New unit-specific papers · Grades 11–12</h1>
+<p>Original teacher-review paper library · 2026 SAH-shaped sections · offline-friendly practice</p></header>
+<main>
+<section class="notice"><b>Teacher-review drafts, not Ministry-approved papers.</b> Each paper is written around its own textbook theme, uses the stored 2026 SAH section structure, and requires approval against textbook pages. A complete timed examination is available only when both Listening MP3s match the current scripts. Individual non-Listening skills can be practised without a timer while recordings are pending. Short answers and writing are not automatically marked.</section>
+<section id="setup"><div class="grid"><label>Select unit paper<select id="paperSelect"><option>Loading original unit papers…</option></select></label>
+<label>Mode<select id="mode"><option value="full">Complete exam · timed</option><option value="skill">Independent skill · untimed</option></select></label></div>
+<label id="skillWrap" hidden>Skill<select id="skill"></select></label>
+<p id="status" class="muted">Checking saved question files and source-verified audio…</p>
+<button id="start" disabled>Start practice</button></section>
+<div class="paper" id="paper"><section><div class="row"><h2 id="heading"></h2><span id="paperMarks"></span><span id="clock" class="clock"></span></div><div class="row"><button id="back">Back to paper selection</button><button id="finish">Finish & review</button></div></section>
+<div id="sections"></div><section id="results" hidden aria-live="polite"></section></div>
+</main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id),esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let db=null,man={},current=null,selected=[],questions=[],secs=[],remaining=0,timer=null,done=false,validated={};
+const gradeName=p=>p.grade+' '+(p.track==='core'?'Core':'Elective')+' · Unit '+p.unit+': '+p.unitTitle;
+$('mode').onchange=()=>{$('skillWrap').hidden=$('mode').value!=='skill';updateStatus()};
+$('paperSelect').onchange=updateStatus;$('skill').onchange=updateStatus;
+async function digest(s){if(!crypto.subtle)return'';let bytes=new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)));return Array.from(bytes).map(b=>b.toString(16).padStart(2,'0')).join('')}
+async function init(){
+ try{let [r,a]=await Promise.all([fetch('./full_papers.json'),fetch('./audio/manifest.json',{cache:'no-store'}).catch(()=>null)]);
+  if(!r.ok)throw Error('Original paper source bank has not been published yet');
+  db=await r.json();if(db.papers.length!==8)throw Error('Unexpected number of papers');
+  man=a&&a.ok?await a.json():{};
+  for(let paper of db.papers){
+    let n=0;
+    for(let k of ['lst1','lst2']){let src=paper.sections[k].script,entry=man[paper.id+'-'+k];let ok=entry&&entry.scriptSha256===await digest(src);
+      if(ok){paper.sections[k].audioPath='audio/'+entry.mp3;n++;}
+    }
+    validated[paper.id]=n;
+  }
+  $('paperSelect').innerHTML=db.papers.map(p=>'<option value="'+esc(p.id)+'">'+esc(gradeName(p))+'</option>').join('');
+  updateStatus();
+ }catch(e){$('status').textContent='Source unavailable: '+e.message}
+}
+function updateStatus(){
+ if(!db)return;current=db.papers.find(p=>p.id===$('paperSelect').value);if(!current)return;
+ let key=$('skill').value;
+ $('skill').innerHTML=current.sectionOrder.map((k,i)=>'<option value="'+k+'" '+(key===k?'selected':'')+'>'+esc(current.sections[k].title)+' · '+current.sections[k].marks+' marks</option>').join('');
+ let full=$('mode').value==='full';let count=validated[current.id];
+ $('status').textContent=gradeName(current)+' · '+current.sectionOrder.length+' sections · '+current.marks+' marks · '+current.minutes+' minutes. Source-verified MP3: '+count+'/2.'+(count<2?' Audio is not yet complete; isolated non-listening practice remains available.':' Audio ready for two playbacks.');
+ $('start').disabled=full?count!==2:($('skill').value.startsWith('lst')&&count!==2);
+}
+function mkQ(k,q,i){let id=k+'-'+i;questions.push({id,q,k});let h='<div class="q"><strong>'+(i+1)+'. '+esc(q.stem)+'</strong>';
+ if(Array.isArray(q.options))h+=q.options.map((opt,j)=>'<label class="choice"><input type="radio" name="'+id+'" value="'+j+'"> '+String.fromCharCode(65+j)+'. '+esc(opt)+'</label>').join('');
+ else h+='<input type="text" name="'+id+'" maxlength="220" placeholder="Short answer: teacher checks meaning">';
+ return h+'</div>';}
+function chart(s){let c=s.chart;if(!c)return'';let vals=c.series[0].values;return'<table class="chart"><thead><tr><th>Period</th><th>Value</th></tr></thead><tbody>'+c.categories.map((v,i)=>'<tr><td>'+esc(v)+'</td><td>'+esc(vals[i])+'</td></tr>').join('')+'</tbody></table><p class="muted">'+esc(c.title||'Unit practice dataset')+'</p>'}
+function part(k){let s=current.sections[k];let h='<section class="part"><h2>'+esc(s.title)+' · '+s.marks+' marks</h2>';
+ if(k.startsWith('lst')){if(s.audioPath)h+='<audio preload="metadata" controls src="'+esc(s.audioPath)+'"></audio><p class="muted">Recording source matches this text; played twice.</p>';
+ else h+='<p class="muted">Audio unavailable, teacher may read script twice.</p>';
+ if($('mode').value==='skill')h+='<details><summary>Teacher script — open only after practice</summary><div class="script">'+esc(s.script)+'</div></details>';}
+ if(s.passage)h+='<div class="passage">'+esc(s.passage)+'</div>';
+ if(s.texts){s.texts.forEach((t,i)=>{h+='<h3>Text '+(i+1)+'</h3><div class="passage">'+esc(t.passage)+'</div>';h+=mkQ(k,s.questions[i],i);});}
+ else if(k.startsWith('wrt'))h+='<p>'+esc(s.prompt)+'</p>'+chart(s)+'<textarea id="writing-'+k+'" placeholder="Write at least '+s.minWords+' words"></textarea><p class="muted">Minimum '+s.minWords+' words · teacher review required</p>';
+ else s.questions.forEach((q,i)=>h+=mkQ(k,q,i));
+ return h+'</section>';}
+function stop(){if(timer){clearInterval(timer);timer=null}}
+function clock(){let m=Math.floor(remaining/60);$('clock').textContent=String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0')+':'+String(remaining%60).padStart(2,'0')}
+function start(){if(!current)return;stop();done=false;questions=[];selected=$('mode').value==='full'?current.sectionOrder.slice():[$('skill').value];let total=selected.reduce((n,k)=>n+current.sections[k].marks,0);
+ $('sections').innerHTML=selected.map(part).join('');$('heading').textContent=gradeName(current);$('paperMarks').textContent=total+' marks';$('finish').disabled=false;$('results').hidden=true;$('results').innerHTML='';$('setup').hidden=true;$('paper').classList.add('active');
+ if(selected.length===current.sectionOrder.length){remaining=current.minutes*60;clock();$('clock').hidden=false;timer=setInterval(()=>{remaining--;clock();if(remaining<=0){stop();finish()}},1000)}else $('clock').hidden=true;window.scrollTo(0,0)}
+function finish(){if(done)return;done=true;stop();$('finish').disabled=true;let n=0,correct=0,manual=0,review=[];
+ for(let {id,q,k} of questions){if(Array.isArray(q.options)){n++;let chosen=document.querySelector('input[name="'+id+'"]:checked');if(chosen&&Number(chosen.value)===q.answer)correct++;else review.push('<li>'+esc(current.sections[k].title)+' · '+esc(q.stem)+' — '+esc(q.options[q.answer])+'</li>');}
+ else{manual++;let input=document.querySelector('input[name="'+id+'"]');review.push('<li>'+esc(current.sections[k].title)+' · '+esc(q.stem)+' — suggested: '+esc(q.answer)+'; response: '+esc(input?.value||'blank')+'</li>')}}
+ let writing=selected.filter(x=>x.startsWith('wrt')).map(k=>{let text=$('writing-'+k)?.value||'';return current.sections[k].title+': '+(text.trim().match(/\S+/g)||[]).length+' words'});
+ $('results').hidden=false;$('results').innerHTML='<h2>Automatically checked objective answers: '+correct+' / '+n+'</h2><p>'+manual+' short responses and '+writing.length+' writing responses require teacher review. No final '+current.marks+'-mark grade is awarded automatically.</p>'+(writing.length?'<p>'+writing.map(esc).join(' · ')+'</p>':'')+(review.length?'<details><summary>Teacher answer review</summary><ol>'+review.join('')+'</ol></details>':'');
+ $('results').scrollIntoView({behavior:'smooth'});}
+$('start').onclick=start;$('finish').onclick=finish;$('back').onclick=()=>{stop();$('paper').classList.remove('active');$('setup').hidden=false;window.scrollTo(0,0)};
+init();
+</script></body></html>
