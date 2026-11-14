@@ -45,3 +45,16 @@ The user-provided **2025/26 Grade 12 Core** first-session PDF is a 3-hour, 70-ma
 - Run upper-grade GitHub Actions and inspect failing logs. Pages workflow may cancel older runs whenever a newer commit is pushed.
 - Keep exam practice separate from My English Journey and School Teacher Notebook. Do not copy API keys or user data into public HTML/JSON. No new writing-AI endpoint has been published by this continuation.
 - Preserve existing bank material while working; repair in small reviewable commits and never claim educational approval without it.
+
+
+## Update after user provided a closed Work conversation share link
+- Shared link: https://chatgpt.com/share/6af7ab7f-7c00-83ed-aea0-8e3b1aa32fc6?ogimg=plain . Browser fetch returned no conversation text; **do not claim it was fully reviewed**.
+- Recovered personal Library sources: English_Insights_3_Enhanced_Sem1_Grade12_EDITABLE.docx and elective 12 sem1.pdf. These are older 2025/26 practice booklets with two A/B unit tests for each of Grade 12 elective units 1–4, plus a final paper. They are NOT evidence of Work's latest 2026/27 state.
+- QA: docs/PRIOR_G12_ELECTIVE_BOOKLET_AUDIT_2026-11-14.json. Eight unit tests + one full practice; all 18 Reading texts are short against the stored SAH 450–500 words (approx. 183–343 words). Only Unit 1 Test A has two Listening script fragments: 109-word five-turn dialogue plus 75-word monologue summary. Another 16 Listening scripts are absent. Answer keys are partial. Do NOT migrate blindly.
+- New original teacher-led Grade 12 Elective Unit 1 The arts Listening 1+2 drafts:
+  - grade12/elective/units/unit1-listening1-original-draft.json: 408 words / 28 turns / 6 MCQ + 4 T/F.
+  - grade12/elective/units/unit1-listening2-original-draft.json: 461 words / 5 note-heading items + 5 short answers.
+  - grade12/elective/units/index.html: choose task; L1 automatic objective score; L2 suggested teacher key, NO untrustworthy automatic score. Scripts are read aloud; NO validated natural MP3 yet.
+  - SW shell cache includes both JSONs; Pages stages grade12/elective/units; QA in tests/upper_grades_browser_smoke.cjs and .github/workflows/upper-grades-qa.yml.
+- Pages workflow now waits 25 seconds after uploading approx. 108 MB archive to mitigate GitHub Actions artifact indexing race. Verify latest deployment run before claiming the site is updated.
+- Next content: Grade 12 Elective Unit 1 Reading 1 interactive (450–500 words, 7 short plus 5 gaps), Reading 2 narrative (450–500 words, 8 MCQ plus five headings), then two 150-word-minimum writing tasks with chart. Continue Units 2–4 and comprehensive unit-mixed models. Generate natural MP3 only after complete teacher-reviewed scripts.
