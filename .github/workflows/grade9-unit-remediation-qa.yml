@@ -1,0 +1,22 @@
+name: Grade 9 Gold Experience unit-specific skills integrity
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'grade9/unit-remediation/**'
+      - 'scripts/audit_grade9_unit_remediation.py'
+      - '.github/workflows/grade9-unit-remediation-qa.yml'
+      - 'grade9/index.html'
+      - 'sw.js'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate unit maps, objective keys and writing-safe grading
+        run: python scripts/audit_grade9_unit_remediation.py
