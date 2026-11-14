@@ -1,0 +1,197 @@
+{
+  "id": "g12-elective-unit1-rdg2-draft-20261114",
+  "grade": 12,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 1,
+    "title": "The arts"
+  },
+  "skill": "Reading 2",
+  "genre": "five-paragraph narrative",
+  "status": "original_450_500_word_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "marks": 13,
+  "passage": "Paragraph A\nOn the morning of the school art exhibition, Mariam opened a wooden box that her grandfather had kept in a cupboard for years. Inside were faded photographs, two small brushes and a landscape painting of a harbour. She was hesitant to touch the canvas because the paint looked fragile. Her aunt told her that Grandfather had created the picture when he was young. Mariam liked the idea of displaying something made by her family, so she carried it to the library where the exhibition was being prepared. The organiser offered a place near the entrance.\n\nParagraph B\nMariam wrote a label describing the painting as her grandfather's earliest masterpiece. Then she telephoned him to confirm the title. He sounded surprised. He explained that he had bought the picture from a market stall many years earlier and had never claimed to be its painter. Her aunt had remembered the story incorrectly. Mariam felt embarrassed because her label was already printed, and the doors would open in less than an hour. Some classmates suggested removing the name quietly and keeping the rest of the description. But Mariam wanted visitors to receive accurate information.\n\nParagraph C\nThe school librarian offered to help with a meticulous investigation. Together they examined the frame without touching the painting itself. On the back they found an old postcard with a handwritten date, 1978, and a few letters that might have been an artist's initials. The librarian explained that a date and an incomplete signature could not establish who had painted the scene. They photographed the evidence, wrote down what Grandfather could remember, and asked the art teacher to check whether the paint needed special handling. No one was allowed to make a dramatic claim from uncertain clues.\n\nParagraph D\nThe organiser asked Mariam to decide what should happen before the opening. Mariam could remove the landscape entirely, but she believed its story might still teach students something important about art. She replaced the original label with a new one saying, Artist not confirmed. Underneath, she explained how the picture came into the family's possession and why the postcard did not prove its creator's identity. Her friends helped adjust the display so visitors could read the new account comfortably. The painting remained beside the entrance, but the misleading attribution disappeared.\n\nParagraph E\nThat afternoon an elderly visitor stopped to look at the painting. She recognised a detail in the harbour and remembered seeing a similar picture in a small shop decades earlier. She could not name the artist, but she offered to write down her memory and contact the organiser if she found an old photograph. Mariam felt relieved. The visitor had not solved the mystery, yet she had shown why honesty encourages people to share useful information. At the end of the exhibition, Mariam placed the postcard and every visitor note in a labelled folder, ready for future research.",
+  "wordCount": 484,
+  "paragraphs": 5,
+  "questions": [
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "stem": "The word hesitant in paragraph A is closest in meaning to ____.",
+      "options": [
+        "uncertain",
+        "impatient",
+        "careless"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "stem": "The word meticulous in paragraph C is closest in meaning to ____.",
+      "options": [
+        "hasty",
+        "very careful",
+        "unnecessary"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "kind": "meaning",
+      "stem": "The word relieved in paragraph E means Mariam felt ____.",
+      "options": [
+        "more worried",
+        "less worried",
+        "angrier"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "stem": "What did Mariam initially believe about the painting?",
+      "options": [
+        "It was bought by the librarian.",
+        "Her grandfather had painted it.",
+        "It belonged to a museum."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "stem": "Where did Mariam and the librarian find a dated postcard?",
+      "options": [
+        "Behind the frame",
+        "Inside a market bag",
+        "Under the library desk"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "stem": "Why did the librarian refuse to identify the artist immediately?",
+      "options": [
+        "The painting was too large.",
+        "A postcard and incomplete initials were insufficient evidence.",
+        "The art teacher disliked landscapes."
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "kind": "detail",
+      "stem": "Which label did Mariam finally put beside the painting?",
+      "options": [
+        "Grandfather's masterpiece",
+        "Artist not confirmed",
+        "Painted in the library"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "kind": "inference",
+      "stem": "Why did the visitor offer to write down her memory?",
+      "options": [
+        "To help with further research",
+        "To claim ownership of the painting",
+        "To ask for a refund"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for paragraph A.",
+      "options": [
+        "A surprising find",
+        "A mistaken family assumption",
+        "A careful investigation",
+        "Choosing an honest label",
+        "An unexpected visitor's clue",
+        "An expensive international sale",
+        "A long journey overseas",
+        "Preparing a musical performance"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for paragraph B.",
+      "options": [
+        "A surprising find",
+        "A mistaken family assumption",
+        "A careful investigation",
+        "Choosing an honest label",
+        "An unexpected visitor's clue",
+        "An expensive international sale",
+        "A long journey overseas",
+        "Preparing a musical performance"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for paragraph C.",
+      "options": [
+        "A surprising find",
+        "A mistaken family assumption",
+        "A careful investigation",
+        "Choosing an honest label",
+        "An unexpected visitor's clue",
+        "An expensive international sale",
+        "A long journey overseas",
+        "Preparing a musical performance"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for paragraph D.",
+      "options": [
+        "A surprising find",
+        "A mistaken family assumption",
+        "A careful investigation",
+        "Choosing an honest label",
+        "An unexpected visitor's clue",
+        "An expensive international sale",
+        "A long journey overseas",
+        "Preparing a musical performance"
+      ],
+      "answer": 3
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for paragraph E.",
+      "options": [
+        "A surprising find",
+        "A mistaken family assumption",
+        "A careful investigation",
+        "Choosing an honest label",
+        "An unexpected visitor's clue",
+        "An expensive international sale",
+        "A long journey overseas",
+        "Preparing a musical performance"
+      ],
+      "answer": 4
+    }
+  ],
+  "headings": [
+    "A surprising find",
+    "A mistaken family assumption",
+    "A careful investigation",
+    "Choosing an honest label",
+    "An unexpected visitor's clue",
+    "An expensive international sale",
+    "A long journey overseas",
+    "Preparing a musical performance"
+  ],
+  "officialTaskPattern": "8 MCQ with 3 meaning-in-context + 5 heading matches with 3 extra headings",
+  "sahSource": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json / tracks / 12-elective / rdg2",
+  "notes": "Original fictional narrative about accurate attribution of an artwork; answer key indexes are normalized to the question's options."
+}
