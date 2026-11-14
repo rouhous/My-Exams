@@ -1,0 +1,82 @@
+{
+  "id": "g11-elective-unit2-lst2-original",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "The Mind"
+  },
+  "skill": "Listening 2",
+  "genre": "single-speaker narrative",
+  "status": "original_unit_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "script": "Last term, my class joined a project called Learning About Learning. I had always believed that a good student should read the same notes again and again until every sentence looked familiar. Before a science test, however, I spent several evenings rereading a chapter and then struggled to answer questions without looking at the page. My teacher suggested recording the way I studied and trying one new technique at a time. I wanted to know whether a different method could make revision less stressful.\n\nFirst, I made small cards with a question on the front and a short explanation on the back. Instead of looking at the answer immediately, I tried to remember it aloud. During the first few days I made many mistakes. My teacher explained that noticing a mistake gave me useful information about what I should practise next. I began organising questions into groups rather than copying whole paragraphs.\n\nNext, my friend Mariam showed me how she drew a mind map. She placed the main idea in the centre and connected related facts with lines. I enjoyed choosing clear headings, but some diagrams became crowded. We agreed that different methods would suit different topics, and we asked our science teacher when a diagram was useful.\n\nA school counsellor also visited our class. She reminded us that sleep, rest and supportive relationships affect how students feel while learning. She did not promise that one technique would solve every problem. She encouraged anyone who continued to feel overwhelmed to speak privately to a trusted adult. I decided to keep my phone away during difficult homework and finish studying earlier in the evening.\n\nAfter two weeks, the class completed a short reflection survey. Students reported different results: some liked the question cards, while others preferred explaining concepts to a partner. I was pleased because I could describe why an answer was wrong rather than simply recognising a familiar sentence. Our group prepared an illustrated guide for younger pupils, including an example of each technique.\n\nWe called the project Study with Understanding. It did not turn us into perfect students, but it made revision more thoughtful. I now try to review what I have forgotten, practise again later and ask questions when I need help. Learning about the mind has taught me that a useful study routine combines practice with sensible breaks and kindness towards oneself. The project also showed that confidence should be based on progress rather than comparison with someone else's results.",
+  "passage": "Last term, my class joined a project called Learning About Learning. I had always believed that a good student should read the same notes again and again until every sentence looked familiar. Before a science test, however, I spent several evenings rereading a chapter and then struggled to answer questions without looking at the page. My teacher suggested recording the way I studied and trying one new technique at a time. I wanted to know whether a different method could make revision less stressful.\n\nFirst, I made small cards with a question on the front and a short explanation on the back. Instead of looking at the answer immediately, I tried to remember it aloud. During the first few days I made many mistakes. My teacher explained that noticing a mistake gave me useful information about what I should practise next. I began organising questions into groups rather than copying whole paragraphs.\n\nNext, my friend Mariam showed me how she drew a mind map. She placed the main idea in the centre and connected related facts with lines. I enjoyed choosing clear headings, but some diagrams became crowded. We agreed that different methods would suit different topics, and we asked our science teacher when a diagram was useful.\n\nA school counsellor also visited our class. She reminded us that sleep, rest and supportive relationships affect how students feel while learning. She did not promise that one technique would solve every problem. She encouraged anyone who continued to feel overwhelmed to speak privately to a trusted adult. I decided to keep my phone away during difficult homework and finish studying earlier in the evening.\n\nAfter two weeks, the class completed a short reflection survey. Students reported different results: some liked the question cards, while others preferred explaining concepts to a partner. I was pleased because I could describe why an answer was wrong rather than simply recognising a familiar sentence. Our group prepared an illustrated guide for younger pupils, including an example of each technique.\n\nWe called the project Study with Understanding. It did not turn us into perfect students, but it made revision more thoughtful. I now try to review what I have forgotten, practise again later and ask questions when I need help. Learning about the mind has taught me that a useful study routine combines practice with sensible breaks and kindness towards oneself. The project also showed that confidence should be based on progress rather than comparison with someone else's results.",
+  "wordCount": 413,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "What was the name of the class project?",
+      "answer": "Learning About Learning",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Which subject was the narrator revising at first?",
+      "answer": "science",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who showed the narrator how to draw mind maps?",
+      "answer": "Mariam",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What did the counsellor recommend protecting during revision?",
+      "answer": "sleep",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "How long did the study trial last?",
+      "answer": "two weeks",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who was the illustrated guide intended for?",
+      "answer": "younger pupils",
+      "maxWords": 4
+    },
+    {
+      "type": "gap",
+      "stem": "The narrator used question ____ for active recall.",
+      "answer": "cards",
+      "maxWords": 2
+    },
+    {
+      "type": "gap",
+      "stem": "Each mind map had a main idea in the _____.",
+      "answer": "centre",
+      "maxWords": 2
+    },
+    {
+      "type": "gap",
+      "stem": "The narrator kept her ____ away during difficult homework.",
+      "answer": "phone",
+      "maxWords": 2
+    },
+    {
+      "type": "gap",
+      "stem": "The final project title was Study with _____.",
+      "answer": "Understanding",
+      "maxWords": 2
+    }
+  ],
+  "audioStatus": "pending_voice_generation__one_speaker_twice"
+}
