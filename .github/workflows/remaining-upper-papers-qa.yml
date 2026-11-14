@@ -1,0 +1,33 @@
+name: QA eight new unit-specific Grade 11/12 papers
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'targeted_units/full_papers.json'
+      - 'targeted_units/index.html'
+      - 'targeted_units/audio/**'
+      - 'scripts/audit_remaining_upper_papers.py'
+      - 'tests/remaining_upper_papers_browser.cjs'
+      - '.github/workflows/remaining-upper-papers-qa.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Strict SAH task shape and answer key checks
+        run: python3 scripts/audit_remaining_upper_papers.py
+      - name: Mobile browser source-audio locking and independent-skill tests
+        run: |
+          npm install --no-save playwright@1.56.1
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/remaining-upper.log 2>&1 &
+          sleep 3
+          node tests/remaining_upper_papers_browser.cjs
