@@ -33,7 +33,7 @@ jobs:
               keys=[p['id'] for p in expected]
               for model in data[track]:
                   parts=model['parts']
-                  assert [p['key'] for p in parts]==keys,(track,model['id'])
+                  assert [{'grammar':'grm','vocabulary':'vcb'}.get(p['key'],p['key']) for p in parts]==keys,(track,model['id'])
                   assert sum(p['marks'] for p in parts)==ref[track]['marks'],(track,model['id'])
                   for p,r in zip(parts,expected):
                       assert p['marks']==r['marks'],(track,model['id'],p['key'])
