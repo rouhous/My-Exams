@@ -1,0 +1,118 @@
+{
+  "id": "g11-elective-unit4-lst1-original",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 4,
+    "title": "Careers"
+  },
+  "skill": "Listening 1",
+  "genre": "two-speaker career interview",
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "script": "Interviewer: Welcome to our school careers programme. What made you interested in becoming an environmental engineer?\nLayla: I enjoyed science, but I wanted to use it to solve practical problems in local communities.\nInterviewer: Did you always know which job you wanted, or did your plans change during secondary school?\nLayla: My plans changed several times. I considered teaching before joining a school project about water conservation.\nInterviewer: What did the project involve, and which part of the work helped you most?\nLayla: We measured water use, interviewed families and designed posters. I liked analysing results and suggesting improvements.\nInterviewer: How did you find out what environmental engineers actually do during a normal working week?\nLayla: Our teacher arranged an online conversation with a professional who explained field visits, reports and teamwork.\nInterviewer: Did the engineer tell you that good examination results were the only requirement for success?\nLayla: No. She emphasised communication, careful observation, problem solving and a willingness to learn from mistakes.\nInterviewer: What advice did she give about choosing university subjects and planning future qualifications?\nLayla: She suggested checking official entry requirements and speaking with advisers rather than relying on social-media rumours.\nInterviewer: Some students feel pressure to choose a career immediately. What would you say to them?\nLayla: Explore several possibilities. Talk to people who do different jobs and notice which tasks genuinely interest you.\nInterviewer: Can short work-experience visits help, even if a student later chooses a completely different profession?\nLayla: Certainly. A visit can reveal workplace routines and teach useful habits such as punctuality and respectful questions.\nInterviewer: What was the biggest surprise when you visited a small engineering company during the holidays?\nLayla: Engineers spent considerable time listening to clients and explaining choices, not just drawing technical plans.\nInterviewer: How important is teamwork when people are working on complicated projects with limited budgets?\nLayla: It is essential. Different specialists examine safety, costs and environmental effects before recommending a practical solution.\nInterviewer: Have you ever made a mistake in a project, and what did you learn from it?\nLayla: I once copied a measurement incorrectly. Our group checked the original notes and corrected the report together.\nInterviewer: What are your next steps now that you have learned more about the field?\nLayla: I will strengthen my mathematics, volunteer for another project and compare courses using official university information.\nInterviewer: What final message would you give pupils who are still uncertain about their future careers?\nLayla: Your first plan need not be permanent. Keep learning, ask thoughtful questions and choose opportunities that develop real skills.",
+  "wordCount": 430,
+  "speakerTurns": 26,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "Which career is Layla considering?",
+      "options": [
+        "Environmental engineer",
+        "Professional athlete",
+        "Journalist"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What school project influenced her?",
+      "options": [
+        "A water conservation project",
+        "A theatre festival",
+        "A photography competition"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "How did Layla first speak to a working engineer?",
+      "options": [
+        "At an airport",
+        "Through an online conversation",
+        "In a television contest"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "Which skill did the engineer emphasise?",
+      "options": [
+        "Guessing answers",
+        "Avoiding teamwork",
+        "Problem solving"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What should pupils check when planning university study?",
+      "options": [
+        "Official entry requirements",
+        "Unverified rumours",
+        "Celebrity recommendations"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What did Layla learn during a company visit?",
+      "options": [
+        "Engineers never meet clients",
+        "Communication is a large part of the job",
+        "All projects have unlimited budgets"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "Layla always planned to be an environmental engineer.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "A short workplace visit can teach useful habits.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "Layla's team ignored an incorrect measurement.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "Layla thinks pupils can change their first career plan.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    }
+  ],
+  "audioStatus": "pending_source_verified_MP3"
+}
