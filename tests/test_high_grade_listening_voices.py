@@ -15,11 +15,22 @@ GENERIC_ROLES = {
 }
 
 def check_named_speakers(testcase, script, source):
-    names = [m.group(1).lower() for m in SPEAKER_RE.finditer(script)]
-    for name in names:
+    tags = list(SPEAKER_RE.finditer(script))
+    # A colon in ordinary narration ("students reported different results: ...")
+    # is NOT a new speaker. Only explicit cast labels identify characters.
+    dialogue_present = any(
+        tag.group(1).lower() in GENERIC_ROLES | KNOWN_GENDERS.keys()
+        for tag in tags
+    )
+    for tag in tags:
+        name = tag.group(1).lower()
         if name in GENERIC_ROLES:
-            continue  # The role is not a gender; production needs explicit casting.
-        testcase.assertIn(name, KNOWN_GENDERS, source + ': unknown named speaker ' + name)
+            continue  # "Student" and "Adviser" need editorial casting.
+        if name not in KNOWN_GENDERS:
+            prefix = script[:tag.start()].rsplit('\n', 1)[-1].strip()
+            if not dialogue_present or prefix:
+                continue  # e.g. "different results: some preferred ..."
+            testcase.fail(source + ': unknown named speaker label ' + name)
         expected = 1 if KNOWN_GENDERS[name] == 'male' else 2
         testcase.assertEqual(voice_for_speaker(name), expected, source + ': ' + name)
     self_id = SELF_NAME_RE.search(script)
