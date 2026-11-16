@@ -1,0 +1,375 @@
+{
+  "id": "g11-core-u3-original",
+  "grade": 11,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 3,
+    "title": "Travellers and Tourists"
+  },
+  "durationMinutes": 150,
+  "marks": 60,
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "status": "original_nine_section_teacher_review_draft",
+  "reference": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json/tracks/11-core",
+  "listeningSources": [
+    "unit3-listening1-original-draft.json",
+    "unit3-listening2-original-draft.json"
+  ],
+  "sections": {
+    "grm": {
+      "title": "Grammar: Dialogue cloze",
+      "marks": 5,
+      "passage": "Maha: I (1) _____ a report about our tourism project when you called yesterday.\nHamid: (2) _____ you finished the report yet?\nMaha: Yes. Our teacher (3) _____ every detail carefully this morning.\nHamid: You (4) _____ verify the facts before sharing information.\nMaha: I agree. If another mistake appears, we (5) _____ correct it immediately.",
+      "wordCount": 56,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "Gap 1",
+          "options": [
+            "was preparing",
+            "prepare"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 2",
+          "options": [
+            "Have",
+            "Does"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 3",
+          "options": [
+            "checked",
+            "checking"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 4",
+          "options": [
+            "should",
+            "should to"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 5",
+          "options": [
+            "will",
+            "had"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "vcb": {
+      "title": "Vocabulary cloze",
+      "marks": 5,
+      "passage": "Our school heritage club organised a useful project about tourism. The first (1) _____ described the activity and its meeting time. Students identified their intended (2) _____ and prepared clear information. They collected (3) _____ before publishing the final version. Each important (4) _____ was checked using reliable evidence. This attention to (5) _____ reduced confusion and made the group more responsible. Pupils also learned to cooperate, discuss different views and improve their work.",
+      "wordCount": 74,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "Gap 1",
+          "options": [
+            "announcement",
+            "journey",
+            "bicycle"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 2",
+          "options": [
+            "audience",
+            "journey",
+            "bicycle"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 3",
+          "options": [
+            "feedback",
+            "journey",
+            "bicycle"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 4",
+          "options": [
+            "message",
+            "journey",
+            "bicycle"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 5",
+          "options": [
+            "accuracy",
+            "journey",
+            "bicycle"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "rdg1": {
+      "title": "Reading 1: Short texts",
+      "marks": 5,
+      "texts": [
+        {
+          "passage": "Notice: The heritage club will meet in the old souq on Tuesday to plan local walking route. Participants must register before attending. The activity is free and everyone should bring a notebook and follow the teacher's instructions.",
+          "statement": "Registration is required for the workshop.",
+          "answer": 0
+        },
+        {
+          "passage": "Email: Dear Bilal, I noticed an incorrect street name in our first report. We checked the road sign and corrected it. Please do not share the earlier version before the revised announcement is approved and published.",
+          "statement": "Bilal should distribute the incorrect version immediately.",
+          "answer": 1
+        },
+        {
+          "passage": "School information: Pupils have prepared local walking route for visiting families. No fee is required, but everyone should follow the instructions and show respect. Students may ask the organisers questions whenever an explanation is unclear.",
+          "statement": "Visitors must pay an admission fee.",
+          "answer": 1
+        },
+        {
+          "passage": "Survey: Thirty pupils reviewed the materials. Eighteen preferred the revised explanation, seven wanted more detail and five were uncertain. Organisers planned another session so that everyone could ask questions and offer useful suggestions. Please ask the teacher for further details.",
+          "statement": "Eighteen pupils preferred the revised explanation.",
+          "answer": 0
+        },
+        {
+          "passage": "Coordinator: The final local walking route must be checked by local guide before publication. Errors can be reported privately. Our purpose is accurate information and useful learning, not simply attracting attention on social media. Please ask the teacher for further details.",
+          "statement": "The final project can be published without checking.",
+          "answer": 1
+        }
+      ],
+      "questions": [
+        {
+          "type": "tf",
+          "stem": "Registration is required for the workshop.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "tf",
+          "stem": "Bilal should distribute the incorrect version immediately.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "Visitors must pay an admission fee.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "Eighteen pupils preferred the revised explanation.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "tf",
+          "stem": "The final project can be published without checking.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    "rdg2": {
+      "title": "Reading 2: Evaluative",
+      "marks": 7,
+      "passage": "School projects about tourism can develop valuable skills. Supporters say that producing local walking route helps students apply knowledge to practical situations. Members must discuss ideas, plan their responsibilities and think about the people who will benefit. The best outcomes are supported by evidence rather than attractive appearances.\n\nAnother benefit is learning how to check information. The heritage club can consult local guide and compare reliable sources. This helps pupils recognise rumours and explains why confident claims are not always correct. Quieter students may contribute through research and careful writing, even when they prefer not to speak in public.\n\nHowever, practical work can be time-consuming. A first version may contain an incorrect street name, and sharing it without checking could confuse visitors. Students must consider privacy and safety. Teachers should supervise unfamiliar equipment and give clear instructions.\n\nFairness matters as well. Some pupils cannot afford expensive materials or remain at school after lessons. Groups should therefore offer varied roles and use accessible resources. Criticism should be about the evidence and the decisions, not personal disagreements.\n\nIn my opinion, responsible school projects are worthwhile when pupils check the road sign, correct mistakes and invite useful feedback. The strongest result is a class that learns to ask questions, explain uncertainty and improve its work. Responsible judgement is more important than publicity. Our teacher encouraged every student to record sources and explain the evidence before making public claims. We also compared different ideas, invited questions and made sure our explanations were accessible to younger pupils. Different people contributed through research, writing, careful planning and respectful discussion of unexpected problems. The group learned that correcting an error is a responsible choice rather than a reason for embarrassment. Parents appreciated being able to ask questions and receive clear answers supported by reliable information. This experience showed why patience and independent checking matter just as much as creative ideas.",
+      "wordCount": 313,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "What do supporters value?",
+          "options": [
+            "Practical skills",
+            "Avoiding work",
+            "Only gaining fame"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Who can help check evidence?",
+          "options": [
+            "A celebrity",
+            "local guide",
+            "A football coach"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "What can an uncorrected error cause?",
+          "options": [
+            "More prizes",
+            "No effect",
+            "Confusion for visitors"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mc",
+          "stem": "What supports fair participation?",
+          "options": [
+            "Affordable materials",
+            "Expensive equipment only",
+            "No supervision"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "What should criticism focus on?",
+          "options": [
+            "Personal insults",
+            "Evidence and decisions",
+            "Social-media followers"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "What is one disadvantage of projects?",
+          "options": [
+            "They need no time",
+            "They are always perfect",
+            "They require supervision"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mc",
+          "stem": "What is the writer's final position?",
+          "options": [
+            "Responsible projects are valuable",
+            "All projects must be banned",
+            "Evidence is unimportant"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "rdg3": {
+      "title": "Reading 3: Narrative",
+      "marks": 8,
+      "passage": "When Aisha joined the heritage club, she wanted to learn new skills. The students were preparing local walking route. Aisha liked organising research, but she felt nervous about speaking in public. Her friend Mariam explained that a team needs different strengths.\n\nThe group met in the old souq with local guide. Pupils divided the responsibilities, and Aisha recorded facts and sources. Mariam prepared a small presentation, while two classmates arranged materials. The teacher reminded the group to keep clear notes.\n\nDuring preparation, Aisha discovered an incorrect street name. One student wanted to ignore the problem because the deadline was approaching. Aisha disagreed politely and suggested checking the road sign. The group examined the source, corrected its explanation and recorded the reason. Everyone appreciated that the improved version was more reliable.\n\nA younger class then tested the project. Some pupils requested simpler language and clearer instructions. Aisha collected their comments and helped rewrite the explanation. She also practised speaking about one section of the work until she felt comfortable answering questions.\n\nOn exhibition day, visitors examined the project. One person asked why the group had revised its first version. Aisha explained the original error and the evidence used to correct it. The teacher praised the students for accepting criticism without becoming defensive.\n\nAfterwards, Aisha wrote a reflection. She realised that confidence can grow through preparation, patience and teamwork. Her experience showed that honest decisions matter more than a perfect-looking display. Our teacher encouraged every student to record sources and explain the evidence before making public claims. We also compared different ideas, invited questions and made sure our explanations were accessible to younger pupils. Different people contributed through research, writing, careful planning and respectful discussion of unexpected problems. The group learned that correcting an error is a responsible choice rather than a reason for embarrassment. Parents appreciated being able to ask questions and receive clear answers supported by reliable information. This experience showed why patience and independent checking matter just as much as creative ideas. Our group agreed to review the final version carefully before sharing it with other classes. The teachers reminded us that every useful project needs an honest explanation of its limitations.",
+      "wordCount": 363,
+      "questions": [
+        {
+          "type": "short",
+          "stem": "Which club did Aisha join?",
+          "answer": "heritage club",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "Where did the group meet?",
+          "answer": "old souq",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "What error did Aisha find?",
+          "answer": "an incorrect street name",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "What evidence did they check?",
+          "answer": "the road sign",
+          "maxWords": 4
+        },
+        {
+          "type": "mc",
+          "stem": "Why did Aisha first prefer research?",
+          "options": [
+            "She felt nervous speaking",
+            "She disliked all pupils",
+            "She was absent"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "What did younger pupils request?",
+          "options": [
+            "Expensive prizes",
+            "Clearer instructions",
+            "Longer holidays"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "What did Aisha explain during the exhibition?",
+          "options": [
+            "A football game",
+            "A shopping trip",
+            "Why an error was corrected"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mc",
+          "stem": "What did Aisha learn?",
+          "options": [
+            "Preparation can build confidence",
+            "Quiet students cannot help",
+            "Mistakes should be hidden"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "wrt1": {
+      "title": "Writing 1: Informative",
+      "marks": 5,
+      "minWords": 85,
+      "prompt": "Write an informative text of at least 85 words about how tourism can benefit students and their community. Include examples and a clear conclusion.",
+      "grading": "teacher review"
+    },
+    "wrt2": {
+      "title": "Writing 2: Interactive email",
+      "marks": 10,
+      "minWords": 100,
+      "prompt": "Write a polite email of at least 100 words describing your class local walking route. Explain its purpose, a problem you solved, and what you learned.",
+      "grading": "teacher review"
+    }
+  }
+}
