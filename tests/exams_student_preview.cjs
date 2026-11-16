@@ -27,7 +27,7 @@ const {chromium}=require('playwright');
     await page.selectOption('#unit','d');
     await page.waitForTimeout(300);
     const src=await page.locator('iframe').getAttribute('src');
-    if(!src.includes('grade'+grade+'/elective/units/paper-d-preview.html'))throw Error('Wrong elective/Unit 4 path '+src);
+    if(grade===12){if(!src.includes('grade12/elective/units/paper-a-preview.html?unit=4'))throw Error('Wrong Grade 12 Elective Unit 4 path '+src);}else if(!src.includes('grade11/elective/units/paper-d-preview.html'))throw Error('Wrong Grade 11 Elective Unit 4 path '+src);
   }
   console.log('PASS independent student URL, Grade '+grade);
  }
