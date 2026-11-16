@@ -8,6 +8,7 @@ import argparse,json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 BANK=ROOT/'grade9/data.js'
+JSON_BANK=ROOT/'grade9/data.json'
 FILES=[ROOT/f'review/grade9-model-{letter.lower()}-original-listening.json' for letter in ('D','E','F')]
 
 def validate_and_load():
@@ -37,6 +38,8 @@ def validate_and_load():
  src=BANK.read_text(encoding='utf-8')
  assert src.startswith('const EXAM_DATA=')
  data=json.loads(src.removeprefix('const EXAM_DATA=').rstrip(';\n '))
+ snapshot=json.loads(JSON_BANK.read_text(encoding='utf-8'))
+ assert {m['model']:tuple(t['id'] for t in m['tasks'] if t.get('skill')=='listening') for m in snapshot['models']}=={m['model']:tuple(t['id'] for t in m['tasks'] if t.get('skill')=='listening') for m in data['models']},'JSON and JS source model IDs disagree'
  original={m['model']:m for m in data['models']}
  expected={'D':('A','B'),'E':('B','C'),'F':('C','A')}
  for key,(m1,m2) in expected.items():
@@ -71,5 +74,6 @@ def main():
    task['sourceStatus']='unique-review-preview-only'
  data_string='const EXAM_DATA='+json.dumps(data,ensure_ascii=False,separators=(',',':'))+';\n'
  BANK.write_text(data_string,encoding='utf-8')
- print('STAGE overlaid Grade 9 D/E/F in throwaway checkout')
+ JSON_BANK.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ print('STAGE overlaid both Grade 9 JS and JSON sources in throwaway checkout')
 if __name__=='__main__':main()
