@@ -30,15 +30,24 @@ async def make(task):
     if task['part']==1:
       await speak('You are going to hear five short dialogues. For each dialogue, choose the correct picture. You will hear the dialogues twice.')
       pause(3)
-      for i,dialogue in enumerate(task['passages']):
+      # Play all five in order, then repeat the complete sequence.
+      # Do NOT repeat each short text immediately after it is read.
+      prepared=[]
+      for dialogue in task['passages']:
         turns=re.split(r'(?=\b[AB]\s*:)',dialogue)
         parsed=[]
         for p in turns:
           m=re.match(r'\s*([AB])\s*:\s*(.+)',p,flags=re.S)
           if m:parsed.append((m.group(2).strip(),0 if m.group(1)=='A' else 1))
         if not parsed:parsed=[(dialogue,0)]
-        for repeat in range(2):
-          await speak(f'Dialogue {i+1}.')
+        prepared.append(parsed)
+      labels=('one','two','three','four','five')
+      for repeat in range(2):
+        if repeat:
+          await speak('Now listen again.')
+          pause(2)
+        for i,parsed in enumerate(prepared):
+          await speak(f'Text {labels[i]}.')
           for text,voice in parsed:
             await speak(text,voice);pause(.5)
           pause(3)
