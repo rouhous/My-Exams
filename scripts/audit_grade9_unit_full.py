@@ -24,12 +24,12 @@ for m in bank['models']:
  assert 200<=len(listening2['transcript'].split())<=250
  assert len(listening2['items'])==5 and all(len(q['choices'])==3 for q in listening2['items'])
  assert all(40<=len(q['script'].split())<=50 for q in listening1['items'])
- assert 70<=len(grammar['passage'].split())<=80
+ assert 70<=len(re.sub(r'\\(\\d+\\)\\s+_____', 'ANSWER', grammar['passage']).split())<=80, 'Cloze word count counts each gap as one completed word'
  assert all(len(q['choices'])==4 and 0<=q['answer']<4 for q in grammar['items'])
  assert len(grammar['items'])==grammar['passage'].count('_____')==10
  assert len(reading1['people'])==4 and len(reading1['options'])==5
  assert all(30<=len(p.split())<=35 for p in reading1['people'])
- assert all(50<=len(o.split())<=55 for o in reading1['options'])
+ assert all(50<=len(re.sub(r'^[A-E]:\\s*', '', o).split())<=55 for o in reading1['options']), 'Exclude option labels A–E from 50–55-word reading text count'
  assert 250<=len(reading2['passage'].split())<=300
  assert len(reading2['items'])==6 and all(len(q.get('answers',[]))>=1 for q in reading2['items'])
  assert writing1['minWords']>=100 and writing2['minWords']>=100
