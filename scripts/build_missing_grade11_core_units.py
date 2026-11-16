@@ -14,6 +14,8 @@ units={
 }
 def W(s):return len(s.split())
 def pad(s,lo,hi):
+  if hi<=45 and W(s)<lo:
+    s+=' Please ask the teacher for further details.'
   additions=[
   "Our teacher encouraged every student to record sources and explain the evidence before making public claims.",
   "We also compared different ideas, invited questions and made sure our explanations were accessible to younger pupils.",
