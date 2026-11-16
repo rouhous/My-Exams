@@ -111,7 +111,7 @@
       "missing": 0
     }
   },
-  "totalVerifiedSectionLinks": 116,
+  "totalVerifiedSectionLinks": 124,
   "totalImageOptionReferences": 273,
   "imageMapping7_8": {
     "questionsReviewed": 40,
@@ -296,7 +296,7 @@
     "officialGrade12Elective": "https://ict.moe.gov.om/book/PDF/12/cls12_Insights3_SB/files/downloads/cls12_Insights3_SB.pdf"
   },
   "totalStoredFixedAndDraftPapers": 76,
-  "note": "76 stored papers/drafts after adding three Grade9 complete original unit exams (3×40 marks), three Grade11 elective unit papers, one Grade12 Core unit paper. Grade9 original six MP3 passed source-hash, 45 picture references and mobile QA. Teacher textbook-page approval pending.",
+  "note": "76 archived papers/drafts, 124 source-verified listening section links including 6 new Grade9 unit links, 6 Grade11 elective units2–4 links, and 2 Grade12 Core Unit2 links beyond previous 110. New Grade9 U1–U3, Grade11 elective U3/U4 and Grade12 Core U2 passed browser and audio QA. All still need teacher textbook-page approval.",
   "baselineBeforeTargetedRepairs": {
     "storedFixedAndDraftPapers": 66,
     "verifiedListeningSectionLinks": 104,
@@ -326,6 +326,18 @@
       "sourceVerified": 6,
       "manifest": "grade9/unit-exams/audio/manifest.json",
       "qa": "Verify original Grade 9 full unit exams audio and illustrations"
+    },
+    "11-elective-units2to4": {
+      "sections": 6,
+      "sourceVerified": 6,
+      "manifest": "grade11/elective/units/audio/manifest.json",
+      "qa": "Grade 11 Elective In the Past and Careers original paper QA"
+    },
+    "12-core-unit2": {
+      "sections": 2,
+      "sourceVerified": 2,
+      "manifest": "grade12/core/units/audio/manifest.json",
+      "qa": "Grade 12 Core Starting University original Paper B QA"
     }
   },
   "newUnitPapers": [
