@@ -122,5 +122,6 @@ Afterwards, Aisha wrote a reflection. She realised that confidence can grow thro
   name="abcd"[number-1]
   (D/f"unit{number}-paper-{name}.json").write_text(json.dumps(u,ensure_ascii=False,indent=2)+"\n")
   html=ref_html.replace("Those Teenage Things",x["title"]).replace("unit2-",f"unit{number}-").replace("Unit 2",f"Unit {number}").replace("Paper B",f"Paper {name.upper()}").replace("unit2-paper-b.json",f"unit{number}-paper-{name}.json")
+  html=html.replace(f"unit{number}-paper-b.json",f"unit{number}-paper-{name}.json")
   (D/f"paper-{name}-preview.html").write_text(html)
   print(number,x["title"],"60 marks",[(k,W(s[k]["passage"])) for k in ("grm","vcb","rdg2","rdg3")],flush=True)
