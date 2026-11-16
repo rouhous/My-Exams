@@ -3,11 +3,12 @@
 import asyncio,json,pathlib,re,subprocess,tempfile,hashlib
 import edge_tts
 from mutagen.mp3 import MP3
+from listening_voice_roles import VOICE_NAMES, parse_dialogue, voice_for_narration
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 TASKS=json.loads((ROOT/'grades5-6/activities.json').read_text(encoding='utf-8'))['activities']
 OUT=ROOT/'grades5-6/audio-natural'
 OUT.mkdir(parents=True,exist_ok=True)
-VOICES=('en-GB-SoniaNeural','en-GB-RyanNeural')
+VOICES=VOICE_NAMES
 MANIFEST={}
 def ff(*args):subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y',*map(str,args)],check=True)
 async def make(task):
@@ -33,13 +34,12 @@ async def make(task):
       # Play all five in order, then repeat the complete sequence.
       # Do NOT repeat each short text immediately after it is read.
       prepared=[]
-      for dialogue in task['passages']:
-        turns=re.split(r'(?=\b[AB]\s*:)',dialogue)
-        parsed=[]
-        for p in turns:
-          m=re.match(r'\s*([AB])\s*:\s*(.+)',p,flags=re.S)
-          if m:parsed.append((m.group(2).strip(),0 if m.group(1)=='A' else 1))
-        if not parsed:parsed=[(dialogue,0)]
+      for i,dialogue in enumerate(task['passages']):
+        parsed=[(words,voice) for words,voice,_ in parse_dialogue(dialogue,task.get('speakerGenders'))]
+        if not parsed:
+          hints=task.get('textSpeakerGenders') or []
+          explicit=hints[i] if i<len(hints) else None
+          parsed=[(dialogue,voice_for_narration(dialogue,explicit,fallback_voice=i%2))]
         prepared.append(parsed)
       labels=('one','two','three','four','five')
       for repeat in range(2):
@@ -55,13 +55,8 @@ async def make(task):
       await speak('You are going to hear a dialogue or interview. Listen carefully and choose the correct answers. You will hear it twice.')
       pause(3)
       passage=task.get('passage') or ''
-      segments=re.split(r'(?=\b(?:Interviewer|Host|Student|Teacher|Salma|Hamad|Mariam|Ahmed|Yousuf|Fatma|Dana|A|B)\s*:)',passage)
-      turns=[]
-      for seg in segments:
-        m=re.match(r'\s*(Interviewer|Host|Student|Teacher|Salma|Hamad|Mariam|Ahmed|Yousuf|Fatma|Dana|A|B)\s*:\s*(.+)',seg,flags=re.S)
-        if m:turns.append((m.group(2).strip(),0 if m.group(1) in ('Interviewer','Host','Teacher','A') else 1))
-      if len(turns)<5:raise ValueError('Interviewer and student must alternate: '+task['id'])
-      if not turns:turns=[(passage,0)]
+      turns=[(words,voice) for words,voice,_ in parse_dialogue(passage,task.get('speakerGenders'))]
+      if len(turns)<5:raise ValueError('Listening interview needs at least five explicit turns: '+task['id'])
       for repeat in range(2):
         for text,voice in turns:
           await speak(text,voice);pause(.6)
