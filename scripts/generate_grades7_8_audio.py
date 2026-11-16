@@ -13,7 +13,7 @@ MANIFEST={}
 def ff(*args):subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y',*map(str,args)],check=True)
 async def make(m,s):
   with tempfile.TemporaryDirectory() as d:
-    tmp=pathlib.Path(d);cache={};seq=[];usedVoices=set()
+    tmp=pathlib.Path(d);cache={};seq=[];usedVoices=set();speaker_cast={}
     async def say(text,voice=0):
       key=(text,voice)
       if key not in cache:
@@ -46,7 +46,9 @@ async def make(m,s):
       pause(3)
       script=s.get('script') or s.get('transcript') or ''
       script=re.sub(r'^Listening two\.\s*Listen to the dialogue carefully\.\s*','',script,flags=re.I)
-      speakers=[(words,voice) for words,voice,_ in parse_dialogue(script,s.get('speakerGenders'))]
+      labeled_turns=parse_dialogue(script,s.get('speakerGenders'))
+      speakers=[(words,voice) for words,voice,_ in labeled_turns]
+      speaker_cast={name:VOICES[voice] for _,voice,name in labeled_turns}
       if len(speakers)<4:
         raise ValueError('Listening interview requires explicit speaker turns: '+m['id'])
       for repeat in range(2):
@@ -59,7 +61,7 @@ async def make(m,s):
     ff('-f','concat','-safe','0','-i',concat,'-ac','1','-ar','44100','-c:a','libmp3lame','-b:a','96k',out)
     assert out.stat().st_size>15000 and MP3(out).info.length>40,out
     fp=hashlib.sha256(json.dumps({'items':s.get('items'), 'script':s.get('script'),'transcript':s.get('transcript')},sort_keys=True,ensure_ascii=False).encode()).hexdigest()
-    MANIFEST[f'{m["id"]}-{s["key"]}']={'mp3':out.name,'script_and_questions_sha256':fp,'seconds':round(MP3(out).info.length,2),'bytes':out.stat().st_size,'sourceExam':m['id'],'voices':list(VOICES),'usedVoices':sorted(usedVoices)}
+    MANIFEST[f'{m["id"]}-{s["key"]}']={'mp3':out.name,'script_and_questions_sha256':fp,'seconds':round(MP3(out).info.length,2),'bytes':out.stat().st_size,'sourceExam':m['id'],'voices':list(VOICES),'usedVoices':sorted(usedVoices),'speakerCast':speaker_cast,'voiceRoutingVersion':'identity-v2'}
     print('VALID',out.relative_to(ROOT),round(MP3(out).info.length),'sec',flush=True)
 async def main():
   for m in MODELS:
