@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "model": "D",
+  "reviewOnly": true,
+  "theme": "Identity, heritage and local community",
+  "listening1": {
+    "id": "g9-D-L1",
+    "group": 1,
+    "items": [
+      {
+        "stem": "Which device did pupils use to record an oral history?",
+        "choices": [
+          "camera",
+          "handheld recorder",
+          "laptop"
+        ],
+        "answer": 1,
+        "images": [
+          "camera-g9d",
+          "handheld-recorder-g9d",
+          "laptop-g9d"
+        ],
+        "script": "Our history teacher asked us to collect our grandparents' memories of village life. A camera could have taken photographs, but some guests did not want to be filmed. We used a small handheld recorder so that their voices and stories could be preserved without showing their faces."
+      },
+      {
+        "stem": "How did the group display the old family photographs?",
+        "choices": [
+          "wooden frames",
+          "tablets",
+          "projector"
+        ],
+        "answer": 2,
+        "images": [
+          "wooden-frames-g9d",
+          "tablets-g9d",
+          "projector-g9d"
+        ],
+        "script": "Visitors brought many old family photographs to our exhibition. We tried using wooden frames, but there were too many pictures for the walls. Instead of passing tablets around the room, the organisers used a projector to show a different photograph every minute."
+      },
+      {
+        "stem": "Where did the pupils place the language display?",
+        "choices": [
+          "school garden",
+          "library entrance",
+          "sports field"
+        ],
+        "answer": 1,
+        "images": [
+          "garden-display-g9d",
+          "library-entrance-g9d",
+          "sports-display-g9d"
+        ],
+        "script": "Our class made a display about words borrowed from different languages. The sports field was too far from the classrooms, and the posters could get wet in the garden. We finally put the display near the library entrance, where students pass between lessons."
+      },
+      {
+        "stem": "Which item helped the walkers find the right direction?",
+        "choices": [
+          "binoculars",
+          "torch",
+          "compass"
+        ],
+        "answer": 2,
+        "images": [
+          "binoculars-walk-g9d",
+          "torch-walk-g9d",
+          "compass-walk-g9d"
+        ],
+        "script": "During a heritage walk through the hills, we followed a paper map. Our guide carried binoculars to look at distant buildings, and I had a torch for the journey home. At a confusing junction, she used a compass to check which path led north."
+      },
+      {
+        "stem": "How did the history club travel to the old village?",
+        "choices": [
+          "minibus",
+          "boat",
+          "bicycles"
+        ],
+        "answer": 0,
+        "images": [
+          "minibus-g9d",
+          "village-boat-g9d",
+          "village-bicycles-g9d"
+        ],
+        "script": "Our class visited an old village to meet a craftsperson. Some students suggested bicycles, and others wondered if a boat would be possible. As the village was reached by a mountain road, a small minibus collected us from school and returned before lunch."
+      }
+    ],
+    "transcript": "Text 1. Our history teacher asked us to collect our grandparents' memories of village life. A camera could have taken photographs, but some guests did not want to be filmed. We used a small handheld recorder so that their voices and stories could be preserved without showing their faces.\n\nText 2. Visitors brought many old family photographs to our exhibition. We tried using wooden frames, but there were too many pictures for the walls. Instead of passing tablets around the room, the organisers used a projector to show a different photograph every minute.\n\nText 3. Our class made a display about words borrowed from different languages. The sports field was too far from the classrooms, and the posters could get wet in the garden. We finally put the display near the library entrance, where students pass between lessons.\n\nText 4. During a heritage walk through the hills, we followed a paper map. Our guide carried binoculars to look at distant buildings, and I had a torch for the journey home. At a confusing junction, she used a compass to check which path led north.\n\nText 5. Our class visited an old village to meet a craftsperson. Some students suggested bicycles, and others wondered if a boat would be possible. As the village was reached by a mountain road, a small minibus collected us from school and returned before lunch.",
+    "audio": "audio/g9-d-listening-1.mp3"
+  },
+  "listening2": {
+    "id": "g9-D-L2",
+    "group": 2,
+    "items": [
+      {
+        "stem": "What was the mural meant to celebrate?",
+        "choices": [
+          "Only sporting success",
+          "People with different interests",
+          "Traditional food only"
+        ],
+        "answer": 1,
+        "evidence": "people with different interests make our town special"
+      },
+      {
+        "stem": "Where was the mural painted?",
+        "choices": [
+          "Beside the youth centre",
+          "Inside a museum",
+          "On the school bus"
+        ],
+        "answer": 0,
+        "evidence": "a wall beside the youth centre"
+      },
+      {
+        "stem": "How many designs were selected for the mural?",
+        "choices": [
+          "Twenty",
+          "Ten",
+          "Six"
+        ],
+        "answer": 2,
+        "evidence": "we voted for six designs"
+      },
+      {
+        "stem": "Why did the club stop work twice?",
+        "choices": [
+          "A power cut",
+          "Heavy rain",
+          "A holiday"
+        ],
+        "answer": 1,
+        "evidence": "stopped twice because of heavy rain"
+      },
+      {
+        "stem": "What is the club planning next?",
+        "choices": [
+          "A short audio guide",
+          "A swimming competition",
+          "A new sports centre"
+        ],
+        "answer": 0,
+        "evidence": "make a short audio guide"
+      }
+    ],
+    "transcript": "Interviewer: Welcome to Young Voices. Huda, your art club created a community mural. What did you want it to show?\nHuda: We wanted to show how people with different interests make our town special. The mural includes musicians, fishermen, scientists and families working together.\nInterviewer: Where did you paint it?\nHuda: The council gave us a wall beside the youth centre. First, we cleaned the surface and covered it with safe white paint.\nInterviewer: Who designed the pictures?\nHuda: Twenty pupils shared sketches, but we voted for six designs. Our art teacher helped us combine them into one picture.\nInterviewer: Did you work alone after that?\nHuda: No. We invited a local artist to explain how to mix colours and keep the shapes large enough to be seen from the road.\nInterviewer: What problem did you face?\nHuda: We stopped twice because of heavy rain. We kept the brushes in a covered store and returned when the wall was dry.\nInterviewer: How did people respond when it was finished?\nHuda: Parents and younger children came to see it. Several visitors said they recognised a family member's job in the artwork.\nInterviewer: What will you do next?\nHuda: We will make a short audio guide so visitors who cannot read the information can learn about every section.",
+    "speakerGenders": {
+      "Interviewer": "female",
+      "Huda": "female"
+    },
+    "audio": "audio/g9-d-listening-2.mp3"
+  },
+  "imageStatus": "15 new illustrations required; do not reuse earlier grade models",
+  "audioStatus": "new MP3s pending review and generation"
+}
