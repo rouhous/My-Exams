@@ -13,7 +13,7 @@ MANIFEST={}
 def ff(*args):subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y',*map(str,args)],check=True)
 async def make(m,s):
   with tempfile.TemporaryDirectory() as d:
-    tmp=pathlib.Path(d);cache={};seq=[]
+    tmp=pathlib.Path(d);cache={};seq=[];usedVoices=set()
     async def say(text,voice=0):
       key=(text,voice)
       if key not in cache:
@@ -21,7 +21,7 @@ async def make(m,s):
         await edge_tts.Communicate(text,VOICES[voice],rate='-8%').save(str(p))
         if p.stat().st_size<1200:raise ValueError(f'Invalid speech {m["id"]}')
         cache[key]=p
-      seq.append(cache[key])
+      usedVoices.add(VOICES[voice]);seq.append(cache[key])
     def pause(sec):
       p=tmp/f'pause{len(seq):03d}.mp3'
       ff('-f','lavfi','-i','anullsrc=channel_layout=mono:sample_rate=44100','-t',sec,'-c:a','libmp3lame','-b:a','96k',p)
@@ -59,13 +59,15 @@ async def make(m,s):
     ff('-f','concat','-safe','0','-i',concat,'-ac','1','-ar','44100','-c:a','libmp3lame','-b:a','96k',out)
     assert out.stat().st_size>15000 and MP3(out).info.length>40,out
     fp=hashlib.sha256(json.dumps({'items':s.get('items'), 'script':s.get('script'),'transcript':s.get('transcript')},sort_keys=True,ensure_ascii=False).encode()).hexdigest()
-    MANIFEST[f'{m["id"]}-{s["key"]}']={'mp3':out.name,'script_and_questions_sha256':fp,'seconds':round(MP3(out).info.length,2),'bytes':out.stat().st_size,'sourceExam':m['id'],'voices':list(VOICES)}
+    MANIFEST[f'{m["id"]}-{s["key"]}']={'mp3':out.name,'script_and_questions_sha256':fp,'seconds':round(MP3(out).info.length,2),'bytes':out.stat().st_size,'sourceExam':m['id'],'voices':list(VOICES),'usedVoices':sorted(usedVoices)}
     print('VALID',out.relative_to(ROOT),round(MP3(out).info.length),'sec',flush=True)
 async def main():
   for m in MODELS:
     if os.environ.get('ONLY_GRADE') and str(m['grade'])!=os.environ['ONLY_GRADE']: continue
     for s in m['sections']:
-      if s['key'] in ('listening1','listening2'):
+      task_id=f"{m['id']}-{s['key']}"
+      chosen=set(filter(None,(x.strip() for x in os.environ.get('ONLY_LISTENING_IDS','').split(','))))
+      if s['key'] in ('listening1','listening2') and (not chosen or task_id in chosen):
         await make(m,s)
   (OUT/'manifest.json').write_text(json.dumps(MANIFEST,ensure_ascii=False,indent=2)+'\n')
 if __name__=='__main__':asyncio.run(main())
