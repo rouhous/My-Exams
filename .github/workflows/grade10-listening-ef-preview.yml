@@ -1,13 +1,12 @@
 name: Grade 10 E/F original-text audio preview (review only)
 on:
-  pull_request:
-    branches: [exam-review-2026-11-16]
+  push:
+    branches: [fix/listening-two-pass-order-2026-11-16]
     paths:
+      - .github/workflows/grade10-listening-ef-preview.yml
       - review/grade10-e-f-unique-listening.json
       - scripts/stage_grade10_listening_ef.py
       - scripts/generate_grade10_audio.py
-      - scripts/listening_voice_roles.py
-      - .github/workflows/grade10-listening-ef-preview.yml
   workflow_dispatch:
 permissions:
   contents: read
