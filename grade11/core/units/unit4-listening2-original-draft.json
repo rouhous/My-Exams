@@ -1,0 +1,84 @@
+{
+  "id": "g11-core-u4-lst2",
+  "grade": 11,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 4,
+    "title": "Innovation"
+  },
+  "skill": "Listening 2",
+  "marks": 8,
+  "script": "Part One\n\nMy name is Reem. Last term, our class began an energy-saving sensor after noticing a problem that affected people around us. We wanted to do something useful rather than simply prepare an attractive display. Our teacher asked us to explain our purpose, identify the people who might benefit and plan what resources we needed. We held our first meeting at the science laboratory. Students had different ideas about the best approach, but we agreed that accurate information would matter more than finishing quickly.\n\nWe divided the tasks between several small teams. Some pupils prepared questions and checked documents; others organised materials and contacted people who could give reliable advice. We used a sensor, but soon discovered that equipment alone could not guarantee a successful result. The school engineer helped us examine the evidence, ask better questions and plan realistic steps. We recorded decisions in a shared notebook so that nobody would forget what had been agreed.\n\nPart Two\n\nOur first attempt revealed a sensor that missed some movement. At first, one student suggested leaving the mistake because correcting it would take extra time. I disagreed, and we returned to measurements from repeated tests to find out what was actually correct. We changed the relevant information and explained the reason for our decision. That experience taught us testing ideas and working safely. We also understood why a group should welcome careful criticism instead of treating every question as a personal attack.\n\nAfter preparing the improved prototype, we invited teachers and pupils to examine it. Some people were pleased, while others suggested clearer wording and additional practical details. We listened to their comments and made adjustments where the evidence supported them. We did not expect every visitor to have identical needs, so we tried to explain our work in accessible language. The team held another meeting to discuss what had gone well and what should change.\n\nBy the end of the term, I understood that a successful school project involves more than a final product. It requires cooperation, responsible decisions and willingness to correct mistakes. Our class hopes the activity will support less unnecessary electricity use. I have become more confident asking questions when an explanation is unclear. I also know that sharing work publicly creates a responsibility to respect other people and present reliable information.",
+  "wordCount": 386,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "Where did the class first meet?",
+      "answer": "the science laboratory",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who helped the team examine evidence?",
+      "answer": "the school engineer",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What material was used to check the mistake?",
+      "answer": "measurements from repeated tests",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who examined the finished project?",
+      "answer": "teachers and pupils",
+      "maxWords": 4
+    },
+    {
+      "type": "mc",
+      "stem": "What did the class value most?",
+      "options": [
+        "Reliable information",
+        "Finishing without checking",
+        "Winning a sports prize"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What did the team do after discovering an error?",
+      "options": [
+        "Hide the mistake",
+        "Check evidence and correct it",
+        "Cancel the whole project"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "How did people respond to the final work?",
+      "options": [
+        "Nobody commented",
+        "Everyone refused to attend",
+        "They suggested improvements"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What did the narrator learn?",
+      "options": [
+        "Questions and cooperation are useful",
+        "Teamwork must be avoided",
+        "Only attractive displays matter"
+      ],
+      "answer": 0
+    }
+  ],
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "audioStatus": "pending_source_sha_mp3"
+}
