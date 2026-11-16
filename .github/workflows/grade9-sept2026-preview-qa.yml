@@ -12,7 +12,7 @@ permissions:
   contents: write
 concurrency:
   group: grade9-sept2026-preview
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   build-and-validate:
     runs-on: ubuntu-latest
