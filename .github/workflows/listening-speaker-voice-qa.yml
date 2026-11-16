@@ -5,6 +5,7 @@ on:
       - fix/listening-two-pass-order-2026-11-16
     paths:
       - scripts/listening_voice_roles.py
+      - scripts/audit_listening_reuse.py
       - scripts/generate_grades5_6_audio.py
       - scripts/generate_grades7_8_audio.py
       - tests/test_listening_voice_roles.py
@@ -18,6 +19,7 @@ on:
   pull_request:
     paths:
       - scripts/listening_voice_roles.py
+      - scripts/audit_listening_reuse.py
       - scripts/generate_grades5_6_audio.py
       - scripts/generate_grades7_8_audio.py
       - tests/test_listening_voice_roles.py
@@ -39,3 +41,12 @@ jobs:
           python -m py_compile scripts/listening_voice_roles.py scripts/generate_grades5_6_audio.py scripts/generate_grades7_8_audio.py
       - name: Verify all listening interviews and gender rules without contacting TTS
         run: python -m unittest discover -s tests -p 'test_*voice*.py' -v
+      - name: Audit duplicate listening texts against current backlog
+        run: python scripts/audit_listening_reuse.py --max-exact 38 --fail-cross-grade --output /tmp/listening-reuse-report.json
+      - name: Save duplication review report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-exams-listening-reuse-audit
+          retention-days: 14
+          path: /tmp/listening-reuse-report.json
