@@ -1,0 +1,96 @@
+{
+  "id": "g12-core-unit2-rdg3-original",
+  "grade": 12,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "Starting University"
+  },
+  "skill": "Reading 3",
+  "genre": "informative personal narrative",
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "passage": "When Abdullah received an offer to study at university, he was pleased but nervous. He had worked hard at school, yet he had never lived away from his family. His first concern was accommodation. He compared the university residence with a rented room, checking costs, transport and the distance from lectures. After discussing the options with his parents, he chose the residence for the first semester.\n\nDuring orientation week, Abdullah met students from different towns. Some were confident speaking to strangers, while others were quiet. He joined a small group exploring the library and science laboratories. A student guide explained how to borrow books, reserve study spaces and contact an academic adviser. Abdullah wrote down the information because he knew he would not remember every detail from the tour. He also learned where to find the official timetable and how to check changes to lecture rooms.\n\nHis first group assignment was more difficult than expected. Four students had to prepare a presentation about reducing water use on campus. Abdullah wanted to start collecting facts immediately, but another member suggested dividing the responsibilities first. They agreed that two people would research reliable sources, one would design the slides and Abdullah would organise the speaking order.\n\nA week later, the team discovered that one of their figures came from an outdated report. The presentation was due soon, and Abdullah considered keeping the number to save time. His classmate reminded him that accurate information mattered more than finishing early. They checked the university library database, found a newer report and changed their conclusion. The extra work made the presentation clearer and more trustworthy.\n\nAt the same time, Abdullah struggled to balance lectures with independent study. He sometimes spent too long on his phone and then rushed through homework. After attending a study-skills workshop, he began using a weekly timetable with short breaks. He also started walking in the evenings and contacting his family regularly. These changes did not remove every difficulty, but they helped him feel more organised. His roommate encouraged him to keep trying even when a difficult week interrupted the new routine.\n\nAt the end of the semester, Abdullah realised that university independence did not mean solving every problem alone. He had learned to compare reliable information, discuss decisions, respect teammates and ask advisers for support when necessary. He was still learning, but he felt better prepared for the next stage of his studies.",
+  "wordCount": 403,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "Where did Abdullah decide to live during his first semester?",
+      "answer": "the university residence",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What did the student guide explain how to reserve?",
+      "answer": "study spaces",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What topic did Abdullah's group investigate?",
+      "answer": "reducing water use",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What was wrong with one research figure?",
+      "answer": "it was outdated",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Where did the team find a newer report?",
+      "answer": "the university library database",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What helped Abdullah organise independent study?",
+      "answer": "a weekly timetable",
+      "maxWords": 4
+    },
+    {
+      "type": "mc",
+      "stem": "Why did Abdullah choose the residence?",
+      "options": [
+        "After comparing practical options",
+        "Because a friend demanded it",
+        "Without checking costs"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What did the group do before collecting research?",
+      "options": [
+        "Cancel the presentation",
+        "Divide responsibilities",
+        "Ignore the deadline"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "Why did they replace the old figure?",
+      "options": [
+        "It looked unattractive",
+        "It was too short",
+        "Accuracy was important"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What did Abdullah learn about independence?",
+      "options": [
+        "It can include asking for support",
+        "It means refusing teamwork",
+        "It removes every difficulty"
+      ],
+      "answer": 0
+    }
+  ]
+}
