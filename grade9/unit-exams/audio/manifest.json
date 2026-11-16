@@ -9,12 +9,12 @@
     "playedTwice": true
   },
   "g9-U1-L2": {
-    "sourceHash": "8b9c08c8daffeccd3665995f525c0e064d68cf3f2504f6ad26f7cced8b6158c4",
-    "sourceTranscriptSha256": "113e76fb52c3c7dc1ad315847fd169708cfcaabe26dd6d7e64c89700475aff51",
+    "sourceHash": "d5a75a40a4c9aaa77cb96f25c1835ba68f031025e0fa4a617d76c8cafd50bcfd",
+    "sourceTranscriptSha256": "6b4f84cfc3cfdc216512961e8ebba3da4bc8c54d82243667929bbbb185ad4485",
     "mp3": "g9-u1-listening-2.mp3",
     "sourceModel": "U1",
-    "seconds": 231.99,
-    "bytes": 2784279,
+    "seconds": 232.15,
+    "bytes": 2786159,
     "playedTwice": true
   },
   "g9-U2-L1": {
@@ -27,8 +27,8 @@
     "playedTwice": true
   },
   "g9-U2-L2": {
-    "sourceHash": "e8f3683ea78c2ec549a606910c171dd2822ceb1a18782275a415af8ee52bc94f",
-    "sourceTranscriptSha256": "5800ff1c7d071a86847880f28604a2ebb3430db1334c1af312ca3fa8c2bedd05",
+    "sourceHash": "6690fe03c8f14497fdf5b46aaf57bf1b0683cd768c48dc366c6f4cd5e328b51b",
+    "sourceTranscriptSha256": "9ac7598cb73b72538ec206100f1b6095b10ec3bd76e14b299d1f44dfbba111ea",
     "mp3": "g9-u2-listening-2.mp3",
     "sourceModel": "U2",
     "seconds": 216.11,
@@ -45,8 +45,8 @@
     "playedTwice": true
   },
   "g9-U3-L2": {
-    "sourceHash": "79fbe0e3fd01c0cb607a037d1e14cc8477a124193d8036b44d20d0d164c348f6",
-    "sourceTranscriptSha256": "dda8684399b4b6511d5e33a9eee41bdc7e8a2c5cd8a485b5ba51bb957a53afe5",
+    "sourceHash": "00f498a20d44a986ae79c9920d7a7a1a4f91b6ca29704c83c4cf9f0577c0e8a4",
+    "sourceTranscriptSha256": "2392c2ee05b64e4bdba1e31ccad9518bae9e1be2b526c908dd9679bf12d19485",
     "mp3": "g9-u3-listening-2.mp3",
     "sourceModel": "U3",
     "seconds": 211.41,
