@@ -1,0 +1,30 @@
+name: Student Exams Grades 5 to 12 pre-release link QA
+on:
+  workflow_dispatch:
+  push:
+    branches: [exam-review-2026-11-16]
+    paths:
+      - 'exams/**'
+      - 'grades5-6/index.html'
+      - 'grades7-8/index.html'
+      - 'tests/exams_student_preview.cjs'
+      - '.github/workflows/exams-student-preview-qa.yml'
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run student links with a local preview server
+        run: |
+          npm install --no-save playwright@1.56.1
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/student-exams-preview.log 2>&1 &
+          sleep 3
+          node tests/exams_student_preview.cjs
