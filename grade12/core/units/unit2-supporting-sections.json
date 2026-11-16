@@ -1,0 +1,246 @@
+{
+  "id": "g12-core-unit2-supporting-sections",
+  "grade": 12,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "Starting University"
+  },
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "sections": {
+    "grm": {
+      "title": "Grammar: Dialogue cloze",
+      "marks": 5,
+      "passage": "Huda: I (1) _____ the official university website when you called.\nSalim: (2) _____ you visited the university campus yet?\nHuda: Not yet, but I (3) _____ attend the open day next week.\nSalim: You (4) _____ check the entry requirements carefully.\nHuda: If I get more information, I (5) _____ update my comparison table before the final application deadline.",
+      "wordCount": 60,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "Gap 1",
+          "options": [
+            "was checking",
+            "check"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 2",
+          "options": [
+            "Have",
+            "Did already"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 3",
+          "options": [
+            "am going to",
+            "was going to yesterday"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 4",
+          "options": [
+            "should",
+            "must to"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 5",
+          "options": [
+            "will",
+            "had"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "vcb": {
+      "title": "Vocabulary: University cloze",
+      "marks": 5,
+      "passage": "Choosing a university requires careful (1) _____ rather than relying on rumours. Students should read official course descriptions and check entry (2) _____ before applying. An orientation programme helps students become familiar with the campus and its (3) _____. Some learners prefer quiet study areas, while others enjoy working with classmates on shared (4) _____. A weekly schedule should include lessons, revision, exercise and rest. Students who need advice can contact an academic (5) _____. Making informed decisions and asking thoughtful questions are important parts of becoming independent and responsible.",
+      "wordCount": 90,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "Gap 1",
+          "options": [
+            "research",
+            "advertising",
+            "fashion"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 2",
+          "options": [
+            "requirements",
+            "receipts",
+            "passengers"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 3",
+          "options": [
+            "facilities",
+            "invoices",
+            "competitions"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 4",
+          "options": [
+            "projects",
+            "souvenirs",
+            "discounts"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 5",
+          "options": [
+            "adviser",
+            "customer",
+            "passenger"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "rdg1": {
+      "title": "Reading 1: Seven independent texts",
+      "marks": 7,
+      "texts": [
+        {
+          "passage": "University open-day notice: Visitors should register online before Friday. The engineering laboratory tour begins at ten in the morning, and students must wear closed shoes. Parents may attend the introductory talk but should not enter restricted workshop areas.",
+          "statement": "Visitors may enter the engineering workshop without following safety instructions.",
+          "answer": 1
+        },
+        {
+          "passage": "Dear Admissions Office, I have read the course description but cannot find the deadline for submitting my language certificate. Could you please confirm the correct date and explain whether an electronic copy is acceptable? Thank you for your assistance.",
+          "statement": "The writer is asking for information about an application requirement.",
+          "answer": 0
+        },
+        {
+          "passage": "Student library guide: New members may borrow up to five books for two weeks. Quiet study rooms can be reserved online, but food is not permitted inside them. Students needing research support should ask at the information desk.",
+          "statement": "Students may eat meals in the quiet study rooms.",
+          "answer": 1
+        },
+        {
+          "passage": "Accommodation information: The residence office provides details about shared rooms, laundry facilities and monthly costs. Applicants are advised to compare transport options before accepting an offer. A room is not guaranteed until the residence office confirms the booking.",
+          "statement": "Every student is guaranteed accommodation as soon as they apply.",
+          "answer": 1
+        },
+        {
+          "passage": "Study-skills workshop: First-year students can join a free session about planning assignments, avoiding plagiarism and finding reliable academic sources. The workshop is held on Wednesday afternoon, and registration is required because places are limited. Students should bring a notebook.",
+          "statement": "Students need to register to attend the workshop.",
+          "answer": 0
+        },
+        {
+          "passage": "Campus transport update: The morning bus leaves the main gate at seven thirty and stops beside the science building. During examinations an additional afternoon service operates at four. Updated schedules are displayed on the university transport page.",
+          "statement": "The additional afternoon service runs during examinations.",
+          "answer": 0
+        },
+        {
+          "passage": "Student wellbeing message: If university life feels overwhelming, speak with a student adviser or another trusted professional. Asking for help is a responsible choice. Support appointments can be arranged privately, and students are encouraged to discuss practical solutions without embarrassment.",
+          "statement": "The message tells students never to ask for support.",
+          "answer": 1
+        }
+      ],
+      "questions": [
+        {
+          "type": "tf",
+          "stem": "Visitors may enter the engineering workshop without following safety instructions.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "The writer is asking for information about an application requirement.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "tf",
+          "stem": "Students may eat meals in the quiet study rooms.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "Every student is guaranteed accommodation as soon as they apply.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "Students need to register to attend the workshop.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "tf",
+          "stem": "The additional afternoon service runs during examinations.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "tf",
+          "stem": "The message tells students never to ask for support.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    "wrt1": {
+      "title": "Writing 1: Evaluative essay",
+      "marks": 10,
+      "minWords": 100,
+      "prompt": "Some students prefer to study at a university close to home, while others choose to live away from their families. Write an evaluative essay of at least 100 words discussing the advantages and disadvantages of both choices. Include your own justified opinion and a conclusion.",
+      "marking": "teacher five-level rubric"
+    },
+    "wrt2": {
+      "title": "Writing 2: Narrative",
+      "marks": 10,
+      "minWords": 100,
+      "prompt": "Write a story of at least 100 words beginning: 'On my first day at university, I opened my bag and discovered that the most important document was missing.' Describe what happened next, how you solved the problem and what you learned.",
+      "marking": "teacher five-level rubric"
+    }
+  }
+}
