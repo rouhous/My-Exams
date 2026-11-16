@@ -48,7 +48,7 @@ Salim: You (4) _____ tell visitors about any important correction as soon as pos
 Maha: If another mistake appears, I (5) _____ report it to the organisers immediately.""",60,70)
   s["grm"]["wordCount"]=W(s["grm"]["passage"])
   s["grm"]["questions"]=[mc(f"Gap {i+1}",v,0) for i,v in enumerate([["was reading","read now"],["Have","Does"],["checked","checking"],["should","should to"],["will","had"]])]
-  s["vcb"]["passage"]=extend(f"""Planning a successful {x['topic']} activity requires accurate information. The (1) _____ describes arrangements and explains when visitors may arrive. A friendly (2) _____ should listen carefully and respond politely to questions. Staff need to check every (3) _____ before it is confirmed. Clear (4) _____ makes it easier for people to understand the available choices. A respectful attitude improves the overall visitor (5) _____. Students can practise these skills by working together, comparing official sources and correcting inaccurate details before anyone is inconvenienced. Such preparation encourages responsibility and cooperation.""",80,90)
+  s["vcb"]["passage"]=extend(f"""Planning a {x['topic']} activity requires accurate information. The (1) _____ describes arrangements and explains when visitors may arrive. A friendly (2) _____ should listen carefully and respond politely to questions. Staff need to check every (3) _____ before it is confirmed. Clear (4) _____ makes it easier for people to understand the available choices. A respectful attitude improves the overall visitor (5) _____. Students can practise these skills by working together, comparing official sources and correcting inaccurate details before anyone is inconvenienced. Such preparation encourages responsibility and cooperation.""",80,90)
   s["vcb"]["wordCount"]=W(s["vcb"]["passage"])
   s["vcb"]["questions"]=[mc(f"Gap {i+1}",[a,"football","passport"],0) for i,a in enumerate(["schedule","representative","reservation","communication","experience"])]
   notices=[
@@ -144,6 +144,7 @@ Ultimately, {x['feature']} depends on reliable evidence and respect for differen
   suffix="c" if n==3 else "d"
   (D/f"unit{n}-paper-{suffix}.json").write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
   html=view.replace("Starting University",x["title"]).replace("unit2-",f"unit{n}-").replace("Unit 2",f"Unit {n}").replace("Paper B",f"Paper {suffix.upper()}").replace("unit2-paper-b.json",f"unit{n}-paper-{suffix}.json")
+  html=html.replace(f"unit{n}-paper-b.json",f"unit{n}-paper-{suffix}.json")
   (D/f"paper-{suffix}-preview.html").write_text(html,encoding="utf-8")
   assert sum(part['marks'] for part in s.values())+15==70
   print(f"Grade 12 Core Unit {n} {x['title']}: 70 marks, 9 sections",[(k,W(s[k]['passage'])) for k in ("grm","vcb","rdg2","rdg3")],flush=True)
