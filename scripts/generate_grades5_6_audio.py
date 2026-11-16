@@ -13,7 +13,7 @@ MANIFEST={}
 def ff(*args):subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y',*map(str,args)],check=True)
 async def make(task):
   with tempfile.TemporaryDirectory() as d:
-    temp=pathlib.Path(d);cache={};parts=[];usedVoices=set()
+    temp=pathlib.Path(d);cache={};parts=[];usedVoices=set();speaker_cast={}
     async def speak(text,voice=0):
       text=re.sub(r'\s+',' ',text).strip()
       if not text:return
@@ -55,7 +55,9 @@ async def make(task):
       await speak('You are going to hear a dialogue or interview. Listen carefully and choose the correct answers. You will hear it twice.')
       pause(3)
       passage=task.get('passage') or ''
-      turns=[(words,voice) for words,voice,_ in parse_dialogue(passage,task.get('speakerGenders'))]
+      labeled_turns=parse_dialogue(passage,task.get('speakerGenders'))
+      turns=[(words,voice) for words,voice,_ in labeled_turns]
+      speaker_cast={name:VOICES[voice] for _,voice,name in labeled_turns}
       if len(turns)<5:raise ValueError('Listening interview needs at least five explicit turns: '+task['id'])
       for repeat in range(2):
         for text,voice in turns:
@@ -66,7 +68,7 @@ async def make(task):
     out=OUT/f'{task["id"]}.mp3'
     ff('-f','concat','-safe','0','-i',concat,'-ac','1','-ar','44100','-c:a','libmp3lame','-b:a','96k',out)
     assert out.stat().st_size>15000 and MP3(out).info.length>35,out
-    MANIFEST[task['id']]={'sha256_of_script':hashlib.sha256(json.dumps({'passages':task.get('passages'),'passage':task.get('passage'),'questions':task['questions'],'pictures':task.get('pictureOptions')},sort_keys=True,ensure_ascii=False).encode()).hexdigest(),'mp3':out.name,'size':out.stat().st_size,'seconds':round(MP3(out).info.length,2),'voices':list(VOICES),'usedVoices':sorted(usedVoices)}
+    MANIFEST[task['id']]={'sha256_of_script':hashlib.sha256(json.dumps({'passages':task.get('passages'),'passage':task.get('passage'),'questions':task['questions'],'pictures':task.get('pictureOptions')},sort_keys=True,ensure_ascii=False).encode()).hexdigest(),'mp3':out.name,'size':out.stat().st_size,'seconds':round(MP3(out).info.length,2),'voices':list(VOICES),'usedVoices':sorted(usedVoices),'speakerCast':speaker_cast,'voiceRoutingVersion':'identity-v2'}
     print('VALID',out.relative_to(ROOT),round(MP3(out).info.length),'sec',flush=True)
 async def main():
   selected=set(filter(None,(x.strip() for x in __import__('os').environ.get('ONLY_LISTENING_IDS','').split(','))))
