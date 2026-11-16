@@ -27,8 +27,9 @@ jobs:
             source=Path(file).read_text(encoding='utf-8')
             assert '../shared/practice-feedback.js' in source,file
             assert '../shared/listening-runtime.js' in source,file
-            parts=re.findall(r'<script(?![^>]*\bsrc\s*=)[^>]*>([\s\S]*?)</script>',source,re.I)
-            assert parts,(file,'no inline JS')
+            tags=re.findall(r'<script([^>]*)>([\s\S]*?)</script>',source,re.I)
+            parts=[body for attrs,body in tags if not re.search(r'\bsrc\s*=',attrs,re.I) and not re.search(r'application/json',attrs,re.I)]
+            assert parts,(file,'no inline JavaScript')
             for n,part in enumerate(parts):
               if not part.strip(): continue
               with tempfile.TemporaryDirectory() as temp:
