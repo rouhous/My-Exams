@@ -1,0 +1,81 @@
+{
+  "id": "g11-elective-unit3-lst2-original",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 3,
+    "title": "In the Past"
+  },
+  "skill": "Listening 2",
+  "genre": "single-speaker narrative",
+  "status": "original_unit_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "script": "My grandfather kept a small wooden box containing photographs, letters and a train ticket from a journey he made when he was young. I discovered it while helping my family organise a cupboard. At first, I wanted to arrange the objects in a display and write interesting stories about them. My history teacher reminded me that an attractive story was not necessarily an accurate account. She encouraged me to record where each object came from and to distinguish what we knew from what we were merely guessing.\n\nThe oldest photograph showed a group of relatives standing outside a building that no longer exists. Nobody could remember the exact year. My grandfather recognised two people and explained that they had worked together in a small family business. I wrote down his words and asked my aunt whether she remembered the same events. Her account was similar, but she thought the photograph had been taken several years later. Rather than choosing the more exciting version, I wrote that the date was uncertain.\n\nNext, I examined a handwritten letter. The paper had become fragile, so I placed it inside a protective cover and photographed both sides. A local librarian helped me read two difficult words, but she advised me not to change the original spelling when I prepared a transcript. The letter described an ordinary family celebration and mentioned the cost of travelling between two towns. I compared the information with a newspaper advertisement from the same period and found that transport had been much slower than it is today.\n\nI also interviewed my grandmother about the train ticket. She explained why the journey had mattered to the family and how relatives kept in touch before mobile phones became common. I recorded the interview with her permission, then sent her a written summary to check. She corrected one name and added a detail about the weather that day. I realised that listening carefully and asking follow-up questions were as important as collecting objects.\n\nOur class eventually created an exhibition called Everyday History. Each object had a label explaining its source and any uncertainty. Visitors could hear short interview extracts, read selected letters and compare the old travel information with modern timetables. I learned that history is not only a list of famous people and major events. Ordinary objects can reveal how people lived, provided that we handle evidence respectfully and avoid presenting guesses as facts.",
+  "wordCount": 402,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "Where did the narrator find the wooden box?",
+      "answer": "in a cupboard",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who helped the narrator read difficult words?",
+      "answer": "a local librarian",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Which object mentioned the cost of travelling?",
+      "answer": "a handwritten letter",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who explained the importance of the train ticket?",
+      "answer": "the narrator's grandmother",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What was the class exhibition called?",
+      "answer": "Everyday History",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What must historians avoid presenting as facts?",
+      "answer": "guesses",
+      "maxWords": 4
+    },
+    {
+      "type": "gap",
+      "stem": "The photograph's exact _____ was uncertain.",
+      "answer": "date",
+      "maxWords": 2
+    },
+    {
+      "type": "gap",
+      "stem": "The fragile letter was put inside a protective _____.",
+      "answer": "cover",
+      "maxWords": 2
+    },
+    {
+      "type": "gap",
+      "stem": "The narrator recorded the interview with the grandmother's _____.",
+      "answer": "permission",
+      "maxWords": 2
+    },
+    {
+      "type": "gap",
+      "stem": "Each displayed object had a label explaining its _____.",
+      "answer": "source",
+      "maxWords": 2
+    }
+  ],
+  "audioStatus": "pending_source_verified_MP3"
+}
