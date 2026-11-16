@@ -1,0 +1,100 @@
+{
+  "id": "g12-core-unit2-rdg2-original",
+  "grade": 12,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "Starting University"
+  },
+  "skill": "Reading 2",
+  "genre": "interactive email",
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "passage": "Dear Mariam,\n\nThank you for asking about my first month at university. I was excited when I arrived, but the timetable was quite different from school. Some lectures finished early while others were followed by laboratory sessions, so I had to plan independent study rather than wait for homework instructions. I now keep a weekly schedule that includes revision, meals, exercise and time to contact my family. It is not perfect, but it helps me avoid leaving assignments until the final evening. I check it each Sunday and change my plan when a group project requires extra preparation.\n\nYou asked how I chose my course. Before applying, I compared the official descriptions of several programmes. I checked entry requirements, practical modules and the support available to first-year students. I also attended an open day and spoke to current students. Their experiences were different, so I did not assume that one person's opinion represented everyone. The admissions office answered a question about a deadline that had been reported incorrectly on social media.\n\nLiving away from home has taught me to manage money carefully. I record transport, food and study expenses, then review the totals every weekend. I still make mistakes, especially when I buy things without planning, but I am learning to make realistic choices. My roommate and I also share responsibility for keeping our study area tidy. We disagree occasionally, yet discussing expectations calmly has helped us work together. We have even agreed on quiet hours before important assessments.\n\nIf you are worried about making friends, remember that many new students feel uncertain. I joined a small science club, where we work on practical projects and discuss our interests. I also attended a study-skills workshop after finding my first research assignment difficult. The adviser showed us how to locate reliable sources and ask questions during tutorials.\n\nPlease do not think you must solve every problem alone. University independence means taking responsibility, but it also means knowing when to ask for help. I hope you can visit a campus before making your final choice. Write back and tell me which subjects interest you most.\n\nBest wishes,\nSalim",
+  "wordCount": 356,
+  "marks": 8,
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "What was different about Salim's timetable?",
+      "options": [
+        "All classes ended at the same time",
+        "He had to plan independent study",
+        "There were no practical sessions"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "How did Salim compare courses?",
+      "options": [
+        "By reading official programme details",
+        "By copying a friend's choice",
+        "By following advertisements only"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Who corrected the application deadline information?",
+      "options": [
+        "A sports coach",
+        "His roommate",
+        "The admissions office"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "How often does Salim review his expenses?",
+      "options": [
+        "Every morning",
+        "Every weekend",
+        "Once a year"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "What helped Salim and his roommate?",
+      "options": [
+        "Calmly discussing expectations",
+        "Ignoring disagreements",
+        "Avoiding shared responsibilities"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Which club did Salim join?",
+      "options": [
+        "A drama club",
+        "A travel club",
+        "A science club"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "Where did Salim learn to locate reliable sources?",
+      "options": [
+        "At a study-skills workshop",
+        "At a shopping centre",
+        "During a sports match"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What does Salim believe university independence includes?",
+      "options": [
+        "Never asking questions",
+        "Taking responsibility and seeking help",
+        "Avoiding all difficult tasks"
+      ],
+      "answer": 1
+    }
+  ]
+}
