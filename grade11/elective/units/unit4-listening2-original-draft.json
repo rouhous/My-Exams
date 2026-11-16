@@ -1,0 +1,81 @@
+{
+  "id": "g11-elective-unit4-lst2-original",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 4,
+    "title": "Careers"
+  },
+  "skill": "Listening 2",
+  "genre": "single-speaker career exploration narrative",
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "script": "When I was in Grade Eleven, I believed that choosing a career meant finding one perfect job and following a fixed plan. I enjoyed design and mathematics, but I did not know how these interests could fit together. During our school's careers week, I attended a workshop led by a local architect. She showed us photographs of buildings and explained how architects consider safety, climate, cost and the needs of people who use a space. I realised that creative ideas become more useful when they are tested against practical requirements.\n\nAfter the workshop, our teacher asked each student to investigate two possible careers. I chose architecture and teaching. I used official university websites to check entry requirements and made notes about the subjects I would need to study. I also interviewed a teacher and an architect, asking them about an ordinary working day rather than only their most exciting achievements. Both professionals said that communication was essential. They needed to listen to people, explain difficult information clearly and continue learning when new challenges appeared.\n\nNext, I joined a short volunteering project at a community centre. Our group helped organise a reading corner for younger children. I measured shelves, planned where chairs could go and drew a simple layout. When the first arrangement made it difficult for a wheelchair user to move between the tables, we changed the design. The experience taught me that a good plan should include people with different needs. It also showed me how useful feedback can be when a team is willing to revise its ideas. We asked the children which books they preferred and moved the shelves to make the room feel welcoming. Their suggestions were different from our original assumptions, which made the final arrangement more practical for everyone.\n\nI did not make my final career decision immediately. Instead, I discussed my strengths with my family and a school adviser. They encouraged me to compare realistic opportunities and avoid choosing a course simply because a friend had selected it. I made a timetable for improving my mathematics and practising clear presentations. I also planned to visit a university open day and ask students about their experiences.\n\nBy the end of the year, I felt less anxious about the future. I understood that careers develop through learning, experience and thoughtful decisions. My interests may change, and that is not necessarily a failure. What matters is researching reliable information, asking respectful questions and building skills that will remain useful in many different jobs.",
+  "wordCount": 417,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "Which two school subjects did the speaker enjoy?",
+      "answer": "design and mathematics",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Which two careers did the speaker investigate?",
+      "answer": "architecture and teaching",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What sources provided university entry requirements?",
+      "answer": "official university websites",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Where did the speaker volunteer?",
+      "answer": "a community centre",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who helped discuss the speaker's strengths?",
+      "answer": "family and school adviser",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What event did the speaker plan to visit?",
+      "answer": "a university open day",
+      "maxWords": 4
+    },
+    {
+      "type": "gap",
+      "stem": "Architects consider safety, climate, cost and people's _____.",
+      "answer": "needs",
+      "maxWords": 2
+    },
+    {
+      "type": "gap",
+      "stem": "The team changed its design after receiving useful _____.",
+      "answer": "feedback",
+      "maxWords": 2
+    },
+    {
+      "type": "gap",
+      "stem": "The speaker planned to improve mathematics and clear _____.",
+      "answer": "presentations",
+      "maxWords": 2
+    },
+    {
+      "type": "gap",
+      "stem": "Careers develop through learning, experience and thoughtful _____.",
+      "answer": "decisions",
+      "maxWords": 2
+    }
+  ],
+  "audioStatus": "pending_source_verified_MP3"
+}
