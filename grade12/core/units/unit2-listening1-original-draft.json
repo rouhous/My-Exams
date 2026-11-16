@@ -1,0 +1,92 @@
+{
+  "id": "g12-core-unit2-lst1-original",
+  "grade": 12,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "Starting University"
+  },
+  "skill": "Listening 1",
+  "genre": "two-speaker university guidance dialogue",
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "script": "Counsellor: Good morning, Sara. What concerns you most about starting university next year?\nSara: I am excited about engineering, but I cannot compare different courses confidently.\nCounsellor: Have you checked university websites, or mainly friends' opinions online?\nSara: Online comments about entry requirements seem inconsistent and sometimes contradict what my teachers have told me.\nCounsellor: Requirements change. Check official course pages and record when you read them.\nSara: Should I compare degree names or examine what students actually study?\nCounsellor: Read module descriptions and look for projects, laboratories and supervised training.\nSara: Do first-year students receive help with unfamiliar academic expectations?\nCounsellor: Universities may offer orientation sessions, workshops and advisers. Confirm each service directly.\nSara: My cousin says university students must solve every problem alone. Is that true?\nCounsellor: No. Independence includes recognising when you need reliable information and appropriate help.\nSara: I worry about organising time without my familiar school timetable.\nCounsellor: Plan a week including classes, independent study, exercise, family and sleep.\nSara: What if group members disagree about completing an assignment?\nCounsellor: Agree on responsibilities, listen respectfully and consult a tutor when necessary.\nSara: Would visiting a campus help me decide where to apply?\nCounsellor: Yes. An open day introduces facilities and opportunities to meet current students.\nSara: I want to prepare questions rather than just take photographs.\nCounsellor: Ask how students revise, use library resources and contact academic staff.\nSara: Accommodation and transport may affect my family's budget as much as tuition.\nCounsellor: Compare realistic costs and check whether financial support is available.\nSara: Other students seem certain about their futures, while I still have questions.\nCounsellor: Uncertainty is normal. Careful research is better than pretending to know everything.\nSara: I will prepare a table of entry requirements, course content, support and expenses.\nCounsellor: Good. Keep your sources and update the table when information changes.\nSara: Thank you. A clear process feels better than relying on rumours.\nCounsellor: Bring your questions after the campus visit, and we can review the evidence together with your family's practical concerns.\nSara: I will ask my family which practical arrangements need investigation before deciding.",
+  "wordCount": 354,
+  "speakerTurns": 28,
+  "marks": 7,
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "Which subject does Sara hope to study?",
+      "options": [
+        "Engineering",
+        "Medicine",
+        "History"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Where should Sara check entry requirements?",
+      "options": [
+        "Social media rumours",
+        "Official course pages",
+        "Old advertisements"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "What might university courses include?",
+      "options": [
+        "Only online games",
+        "No practical work",
+        "Laboratories and projects"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What does the counsellor say independence includes?",
+      "options": [
+        "Asking for appropriate help",
+        "Refusing advice",
+        "Avoiding responsibility"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What could help Sara experience a university campus?",
+      "options": [
+        "A school concert",
+        "An open day",
+        "A sports competition"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "Which costs should Sara consider?",
+      "options": [
+        "Only the price of books",
+        "Only tuition fees",
+        "Accommodation and transport"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What does Sara plan to prepare?",
+      "options": [
+        "A comparison table",
+        "A travel advertisement",
+        "A television interview"
+      ],
+      "answer": 0
+    }
+  ],
+  "audioStatus": "pending_source_verified_MP3"
+}
