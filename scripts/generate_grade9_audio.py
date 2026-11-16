@@ -33,7 +33,7 @@ async def speech(text,path,voice):
 
 async def build(model,task,tmp):
     clips=[]
-    spoken={};used_voices=set();speaker_cast={}
+    spoken={};used_voices=set();speaker_cast={};playback_sequence=[]
     async def say(text,voice=0):
         key=(text,voice)
         if key not in spoken:
@@ -51,9 +51,11 @@ async def build(model,task,tmp):
         labels=('one','two','three','four','five')
         for repetition in range(2):
             if repetition:
+                playback_sequence.append('now-listen-again')
                 await say('Now listen again.')
                 pause(2)
             for i,item in enumerate(task['items']):
+                playback_sequence.append('text-'+labels[i])
                 spoken_text=re.sub(r'^Text (?:one|two|three|four|five|[1-5])[. :]+','',item['script'],flags=re.I)
                 voice=voice_for_narration(spoken_text,item.get('speakerGender'),fallback_voice=i%2)
                 await say(f'Text {labels[i]}. '+spoken_text,voice)
@@ -78,7 +80,7 @@ async def build(model,task,tmp):
     duration=MP3(output).info.length
     if duration<40 or output.stat().st_size<15000:raise ValueError(f'Audio invalid: {output}, {duration}s')
     print('CREATED',output.relative_to(ROOT),round(duration,1),'seconds',output.stat().st_size,'bytes')
-    return {'usedVoices':sorted(used_voices),'speakerCast':speaker_cast}
+    return {'usedVoices':sorted(used_voices),'speakerCast':speaker_cast,'playbackSequence':playback_sequence}
 
 async def main():
     prior_manifest_path=OUT/'manifest.json'
