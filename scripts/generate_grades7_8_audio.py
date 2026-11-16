@@ -3,11 +3,12 @@
 import asyncio,json,pathlib,re,subprocess,tempfile,os,hashlib
 import edge_tts
 from mutagen.mp3 import MP3
+from listening_voice_roles import VOICE_NAMES, parse_dialogue, voice_for_narration
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 MODELS=json.loads((ROOT/'grades7-8/activities.json').read_text(encoding='utf-8'))
 OUT=ROOT/'grades7-8/assets/audio-natural'
 OUT.mkdir(parents=True,exist_ok=True)
-VOICES=('en-GB-SoniaNeural','en-GB-RyanNeural')
+VOICES=VOICE_NAMES
 MANIFEST={}
 def ff(*args):subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y',*map(str,args)],check=True)
 async def make(m,s):
@@ -38,20 +39,16 @@ async def make(m,s):
           pause(2)
         for i,item in enumerate(s['items']):
           text=re.sub(r'^Text (?:one|two|three|four|five|[1-5])[. :]+','',item['script'],flags=re.I)
-          await say(f'Text {labels[i]}. '+text,i%2)
+          await say(f'Text {labels[i]}. '+text,voice_for_narration(text,item.get('speakerGender'),fallback_voice=i%2))
           pause(3)
     else:
       await say('You are going to hear a dialogue. Listen carefully and answer the questions. You will hear the dialogue twice.')
       pause(3)
       script=s.get('script') or s.get('transcript') or ''
       script=re.sub(r'^Listening two\.\s*Listen to the dialogue carefully\.\s*','',script,flags=re.I)
-      chunks=re.split(r'(?=\b(?:Interviewer|Maha|Hind|Salim|Alya|Dana|Faris|Nasser|Rashid)\s*:)',script)
-      speakers=[]
-      for part in chunks:
-        hit=re.match(r'\s*(Interviewer|Maha|Hind|Salim|Alya|Dana|Faris|Nasser|Rashid)\s*:\s*(.*)',part,flags=re.S)
-        if hit and hit.group(2).strip():speakers.append((hit.group(2).strip(),0 if hit.group(1)=='Interviewer' else 1))
+      speakers=[(words,voice) for words,voice,_ in parse_dialogue(script,s.get('speakerGenders'))]
       if len(speakers)<4:
-        speakers=[(script,1)]
+        raise ValueError('Listening interview requires explicit speaker turns: '+m['id'])
       for repeat in range(2):
         for text,voice in speakers:
           await say(text,voice);pause(.55)
