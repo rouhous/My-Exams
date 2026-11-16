@@ -37,6 +37,9 @@ jobs:
           root=Path('grades7-8/assets/audio-natural')
           data=json.loads(Path('grades7-8/activities.json').read_text())
           manifest=json.loads((root/'manifest.json').read_text())
+          import sys
+          sys.path.insert(0, 'scripts')
+          from listening_voice_roles import VOICE_NAMES, parse_dialogue
           tasks=[(m,s) for m in data for s in m['sections'] if s['key'] in ('listening1','listening2')]
           assert len(tasks)==len(manifest)==16,(len(tasks),len(manifest))
           for m,s in tasks:
@@ -46,6 +49,10 @@ jobs:
               assert f.is_file() and f.stat().st_size>15000 and MP3(f).info.length>40
               fp=hashlib.sha256(json.dumps({'items':s.get('items'), 'script':s.get('script'),'transcript':s.get('transcript')},sort_keys=True,ensure_ascii=False).encode()).hexdigest()
               assert fp==entry['script_and_questions_sha256'],key
+              assert entry.get('usedVoices'), ('missing actual voice audit',key)
+              if s['key']=='listening2':
+                  expected={VOICE_NAMES[v] for _,v,_ in parse_dialogue(s['script'],s.get('speakerGenders'))}
+                  assert set(entry['usedVoices'])==expected,(key,expected,entry['usedVoices'])
           print('All 16 recordings generated and linked to exact current questions and image choices.')
           PY
           git config user.name "github-actions[bot]"
