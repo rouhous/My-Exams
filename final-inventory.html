@@ -27,7 +27,7 @@ footer{text-align:center;font-size:13px;padding:16px;color:#607567}
 <div class="metrics">
 <div class="metric"><strong id="papers">81</strong><span>أوراق ومسودات موجودة، بما فيها المختلطة</span></div>
 <div class="metric"><strong id="audio">134</strong><span>روابط أقسام إنصات مفحوصة (مع إعادة الاستخدام)</span></div>
-<div class="metric"><strong id="images">273</strong><span>إحالات صور في أسئلة الاستماع 5–9</span></div>
+<div class="metric"><strong id="images">318</strong><span>إحالات صور إنصات (273 أصلية + 45 لوحدات التاسع الجديدة)</span></div>
 <div class="metric"><strong id="missing">0</strong><span>ملفات صوت وصور مفقودة وفق الفحص الآلي</span></div>
 </div>
 <section><h2>حالة الاختبارات حسب الصف والمسار</h2>
@@ -42,6 +42,7 @@ footer{text-align:center;font-size:13px;padding:16px;color:#607567}
 <li>الصور المفقودة: صفر، لكن مراجعة وضوحها الفعلي ومطابقتها الدقيقة للدرس تحتاج اعتمادًا من المعلم.</li></ul></section>
 <section><h2>ملفات التدقيق ونسخة قابلة للتحرير</h2>
 <a class="btn" href="./FINAL_RELEASE_AUDIT_2026-11-14.json">عرض البيانات التفصيلية JSON</a>
+<a class="btn" href="https://github.com/rouhous/My-Exams/blob/main/docs/CORE_G11_G12_COMPLETION_2026-11-16.md">تقرير إغلاق النواقص 16 نوفمبر</a>
 <a class="btn alt" href="https://github.com/rouhous/My-Exams/blob/main/docs/FINAL_EXAM_INVENTORY_AND_UNIT_REVIEW_2026-11-14.md">قراءة التقرير الكامل</a>
 <a class="btn alt" href="https://github.com/rouhous/My-Exams/blob/main/FINAL_EXAM_INVENTORY_2026-11-14.csv">جدول CSV</a>
 <p><small>المرجع: الفحوص الآلية للوسائط، وبيانات النماذج في المستودع، ومراجع الوحدات المدرسية. تفاصيل الاعتماد غير المنجزة مذكورة بوضوح في التقرير الكامل.</small></p></section>
@@ -51,7 +52,7 @@ const $=id=>document.getElementById(id),esc=v=>String(v??'').replace(/[&<>"']/g,
 const gradeLabel=t=>t.grade+(t.track==='core'?' أساسي':t.track==='elective'?' اختياري':'');
 const statusLabel=v=>v.startsWith('blocked')?'يلزم استكمال/إعادة بناء':'جاهز للفحص الفني · اعتماد تربوي معلق';
 (async()=>{try{const r=await fetch('./FINAL_RELEASE_AUDIT_2026-11-14.json',{cache:'no-store'});if(!r.ok)throw Error('data not available');const d=await r.json();
-$('papers').textContent=d.totalStoredFixedAndDraftPapers;$('audio').textContent=d.totalVerifiedSectionLinks;$('images').textContent=d.totalImageOptionReferences;$('missing').textContent=d.noPhysicalMediaMissing?'0':'يحتاج تدقيق';
+$('papers').textContent=d.totalStoredFixedAndDraftPapers;$('audio').textContent=d.totalVerifiedSectionLinks;$('images').textContent=d.totalImageOptionReferences+(d.newOriginalUnitImageReferences||0);$('missing').textContent=d.noPhysicalMediaMissing?'0':'يحتاج تدقيق';
 $('rows').innerHTML=d.tracks.map(t=>{const a=d.audioByTrack[t.audioKey],extras=[t.extraAudioKey,t.legacyAudioKey].filter(Boolean).map(k=>d.audioByTrack[k]?.sourceMatchedOrSegmentVerified||0);const total=t.fixed+t.mixed+t.otherDrafts;const stat=statusLabel(t.release);return '<tr><td><b>'+esc(gradeLabel(t))+'</b></td><td>'+t.fixed+'</td><td>'+t.mixed+'</td><td>'+t.otherDrafts+'</td><td><b>'+total+'</b></td><td>'+a.sourceMatchedOrSegmentVerified+'/'+a.requiredLinkedSections+(extras.length?' + '+extras.join(' + '):'')+'</td><td>'+(t.imageCount===null?'غير مطلوب':t.imageCount+' مرجعًا')+'</td><td>'+esc(t.unitReview)+'</td><td class="status '+(t.release.startsWith('blocked')?'blocked':'review')+'">'+esc(stat)+'</td></tr>'}).join('');
 }catch(e){$('rows').innerHTML='<tr><td colspan="9">تعذر فتح JSON. اقرأ التقرير الكامل عبر GitHub.</td></tr>'}})();
 </script></body></html>
