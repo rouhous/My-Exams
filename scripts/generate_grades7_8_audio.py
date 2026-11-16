@@ -28,9 +28,17 @@ async def make(m,s):
     if s['key']=='listening1':
       await say('You are going to hear five short texts. For each text, choose the correct picture, A, B or C. You will hear the texts twice.')
       pause(3)
-      for i,item in enumerate(s['items']):
-        for repeat in range(2):
-          await say(f'Text {i+1}. '+re.sub(r'^Text (?:one|two|three|four|five|[1-5])[. :]+','',item['script'],flags=re.I),i%2)
+      # Read Text one through Text five before repeating the entire set.
+      labels=('one','two','three','four','five')
+      if len(s['items'])!=5:
+        raise ValueError(f'Listening 1 must contain five texts: {m["id"]}')
+      for repeat in range(2):
+        if repeat:
+          await say('Now listen again.')
+          pause(2)
+        for i,item in enumerate(s['items']):
+          text=re.sub(r'^Text (?:one|two|three|four|five|[1-5])[. :]+','',item['script'],flags=re.I)
+          await say(f'Text {labels[i]}. '+text,i%2)
           pause(3)
     else:
       await say('You are going to hear a dialogue. Listen carefully and answer the questions. You will hear the dialogue twice.')
