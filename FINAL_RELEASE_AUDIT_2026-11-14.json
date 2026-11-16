@@ -111,7 +111,7 @@
       "missing": 0
     }
   },
-  "totalVerifiedSectionLinks": 110,
+  "totalVerifiedSectionLinks": 116,
   "totalImageOptionReferences": 273,
   "imageMapping7_8": {
     "questionsReviewed": 40,
@@ -179,15 +179,20 @@
       "unitFixed": "A,B,C,G thematic drafts; D,E,F mixed reuse",
       "fixed": 7,
       "mixed": 0,
-      "otherDrafts": 0,
+      "otherDrafts": 3,
       "random": true,
       "audioKey": "9",
       "imageCount": 105,
-      "unitReview": "New 2026 Gold Experience units Identity, Connections, The Future Is Now; zero complete A/B/C/G models certified unit-specific; D/E/F explicitly mixed | Three independent remedial unit packs (48 objective, 6 writing), NOT additional full papers.",
+      "unitReview": "New 2026 Gold Experience units Identity, Connections, The Future Is Now; zero complete A/B/C/G models certified unit-specific; D/E/F explicitly mixed | Three independent remedial unit packs (48 objective, 6 writing), NOT additional full papers. | Three new complete original 40-mark unit papers U1 Identity, U2 Connections, U3 The future is now; 6 source-verified MP3, 45 image choices, 120min and mobile browser QA passed.",
       "release": "blocked_for_unit_specific_release",
       "newUntimedUnitSkillPacks": 3,
       "newObjectiveUnitQuestions": 48,
-      "newUngradedWritingPrompts": 6
+      "newUngradedWritingPrompts": 6,
+      "newOriginalUnitPapers": [
+        "9-unit1",
+        "9-unit2",
+        "9-unit3"
+      ]
     },
     {
       "grade": 10,
@@ -290,8 +295,8 @@
     "officialGrade10": "https://ict.moe.gov.om/book/PDF/10/cls10_cb_10A/files/basic-html/page13.html",
     "officialGrade12Elective": "https://ict.moe.gov.om/book/PDF/12/cls12_Insights3_SB/files/downloads/cls12_Insights3_SB.pdf"
   },
-  "totalStoredFixedAndDraftPapers": 73,
-  "note": "73 stored fixed/mixed/draft papers. Grade11 elective units3/4 original 60-mark papers have 4 verified MP3 and browser QA; Grade12 core Starting University Unit2 is a new 70-mark original paper pending MP3/QA. No official certification.",
+  "totalStoredFixedAndDraftPapers": 76,
+  "note": "76 stored papers/drafts after adding three Grade9 complete original unit exams (3×40 marks), three Grade11 elective unit papers, one Grade12 Core unit paper. Grade9 original six MP3 passed source-hash, 45 picture references and mobile QA. Teacher textbook-page approval pending.",
   "baselineBeforeTargetedRepairs": {
     "storedFixedAndDraftPapers": 66,
     "verifiedListeningSectionLinks": 104,
@@ -315,6 +320,12 @@
       "sourceVerified": 2,
       "manifest": "grade12/core/units/audio/manifest.json",
       "qa": "Grade 12 Core Retail Therapy full nine-section paper QA"
+    },
+    "9-original-unit-papers": {
+      "sections": 6,
+      "sourceVerified": 6,
+      "manifest": "grade9/unit-exams/audio/manifest.json",
+      "qa": "Verify original Grade 9 full unit exams audio and illustrations"
     }
   },
   "newUnitPapers": [
@@ -359,7 +370,26 @@
       "track": "core",
       "key": "12-core-unit2",
       "desc": "Original nine-section 70-mark Starting University paper B; two MP3 generated or queued; teacher review pending"
+    },
+    {
+      "grade": 9,
+      "track": "standard",
+      "key": "9-unit1",
+      "desc": "New original 40-mark unit exam with 2 verified MP3, 15 picture choices and browser QA; textbook teacher approval pending"
+    },
+    {
+      "grade": 9,
+      "track": "standard",
+      "key": "9-unit2",
+      "desc": "New original 40-mark unit exam with 2 verified MP3, 15 picture choices and browser QA; textbook teacher approval pending"
+    },
+    {
+      "grade": 9,
+      "track": "standard",
+      "key": "9-unit3",
+      "desc": "New original 40-mark unit exam with 2 verified MP3, 15 picture choices and browser QA; textbook teacher approval pending"
     }
   ],
-  "updatedAfterTargetedRepairs": "2026-11-14"
+  "updatedAfterTargetedRepairs": "2026-11-14",
+  "newOriginalUnitImageReferences": 45
 }
