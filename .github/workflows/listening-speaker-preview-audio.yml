@@ -77,7 +77,12 @@ jobs:
           name: my-exams-speaker-voice-audition
           retention-days: 14
           path: |
-            grades5-6/audio-natural/*.mp3
+            grades5-6/audio-natural/g5-a-listening-2.mp3
+            grades5-6/audio-natural/g5-b-listening-2.mp3
+            grades5-6/audio-natural/g6-b-listening-2.mp3
             grades5-6/audio-natural/script_audio_manifest.json
-            grades7-8/assets/audio-natural/*.mp3
+            grades7-8/assets/audio-natural/g7-a-listening2.mp3
+            grades7-8/assets/audio-natural/g7-b-listening2.mp3
+            grades7-8/assets/audio-natural/g8-a-listening2.mp3
+            grades7-8/assets/audio-natural/g8-b-listening2.mp3
             grades7-8/assets/audio-natural/manifest.json
