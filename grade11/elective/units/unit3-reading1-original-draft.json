@@ -1,0 +1,92 @@
+{
+  "id": "g11-elective-unit3-rdg1-original",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 3,
+    "title": "In the Past"
+  },
+  "skill": "Reading 1",
+  "genre": "evaluative argument",
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "marks": 10,
+  "passage": "Museums sometimes invite visitors to experience a reconstructed historical home. Supporters believe these displays make the past easier to understand. Instead of reading a list of dates, pupils can see how a kitchen was arranged, how people stored water and which tools they used. A well-designed reconstruction may encourage questions about everyday life that traditional exhibitions rarely inspire.\n\nSome educators also argue that practical activities improve engagement. Students who compare an old writing instrument with a modern pen can notice how technology affects ordinary routines. Reconstructed rooms can support conversations between generations, especially when grandparents recognise familiar objects. For young people who find history difficult, handling safe replicas may provide a memorable starting point for research. Students may then search for reliable documents and compare the museum's explanation with accounts written by people who lived at the time.\n\nHowever, reconstructions can create a misleading impression of certainty. Historians rarely possess every detail about the past. A museum may know the approximate shape of a room but not the exact colour of its walls. If visitors are not told which features are based on evidence and which are educated guesses, they might assume the entire display is historically accurate. Attractive decorations are not proof.\n\nAnother concern is that displays often focus on wealthy families or famous people. Ordinary workers, children and people from less powerful groups may be overlooked because fewer objects have survived. A reconstruction that ignores these voices risks presenting an incomplete picture of society. Museums should explain why certain evidence is missing and consider letters, oral accounts and photographs from different communities.\n\nCost matters too. Building a realistic room can require specialist materials and considerable maintenance. Some institutions might spend so much on visual effects that they have little money left for research or accessibility. A simpler exhibition with clear labels and reliable sources could sometimes offer more educational value than an expensive attraction. Visitors should be able to understand the evidence without needing special technology.\n\nIn my opinion, reconstructed spaces can be useful if museums are open about their limitations. Labels should distinguish original objects from copies, and visitors should be invited to compare different interpretations. Teachers can ask pupils to identify a claim, find its source and discuss what remains unknown. The goal should not be to make the past look perfect. It should be to help people ask better questions about lives that were different from their own.",
+  "wordCount": 403,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "Name one place that museums may reconstruct.",
+      "answer": "a historical home",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What can pupils compare with a modern pen?",
+      "answer": "an old writing instrument",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What may historians not know about a room?",
+      "answer": "its exact wall colour",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Which groups can be overlooked in displays?",
+      "answer": "ordinary workers and children",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What can consume a museum's research budget?",
+      "answer": "expensive visual effects",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What should labels distinguish?",
+      "answer": "original objects from copies",
+      "maxWords": 4
+    },
+    {
+      "type": "tf",
+      "stem": "Every detail in a reconstructed room is always historically certain.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "Practical activities may make historical learning memorable.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "The writer argues that all reconstructions should be banned.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "Museums should be open about what is still unknown.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    }
+  ]
+}
