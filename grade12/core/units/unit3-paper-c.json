@@ -1,0 +1,426 @@
+{
+  "id": "g12-core-unit3-original-paper",
+  "grade": 12,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 3,
+    "title": "Tourism and Hospitality"
+  },
+  "durationMinutes": 180,
+  "marks": 70,
+  "status": "original_nine_section_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "bookReference": "Unit 2 Starting University; exact textbook pages pending teacher review",
+  "sahReference": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json/tracks/12-core",
+  "listeningSources": [
+    "unit3-listening1-original-draft.json",
+    "unit3-listening2-original-draft.json"
+  ],
+  "sections": {
+    "grm": {
+      "title": "Grammar: Dialogue cloze",
+      "marks": 5,
+      "passage": "Maha: I (1) _____ the latest tourism and hospitality information when you called me yesterday.\nSalim: (2) _____ you checked the official details yet?\nMaha: Yes. The supervisor (3) _____ the document carefully this morning.\nSalim: You (4) _____ tell visitors about any important correction as soon as possible.\nMaha: If another mistake appears, I (5) _____ report it to the organisers immediately.",
+      "wordCount": 63,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "Gap 1",
+          "options": [
+            "was reading",
+            "read now"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 2",
+          "options": [
+            "Have",
+            "Does"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 3",
+          "options": [
+            "checked",
+            "checking"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 4",
+          "options": [
+            "should",
+            "should to"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 5",
+          "options": [
+            "will",
+            "had"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "vcb": {
+      "title": "Vocabulary: University cloze",
+      "marks": 5,
+      "passage": "Planning a tourism and hospitality activity requires accurate information. The (1) _____ describes arrangements and explains when visitors may arrive. A friendly (2) _____ should listen carefully and respond politely to questions. Staff need to check every (3) _____ before it is confirmed. Clear (4) _____ makes it easier for people to understand the available choices. A respectful attitude improves the overall visitor (5) _____. Students can practise these skills by working together, comparing official sources and correcting inaccurate details before anyone is inconvenienced. Such preparation encourages responsibility and cooperation.",
+      "wordCount": 90,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "Gap 1",
+          "options": [
+            "schedule",
+            "football",
+            "passport"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 2",
+          "options": [
+            "representative",
+            "football",
+            "passport"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 3",
+          "options": [
+            "reservation",
+            "football",
+            "passport"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 4",
+          "options": [
+            "communication",
+            "football",
+            "passport"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 5",
+          "options": [
+            "experience",
+            "football",
+            "passport"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "rdg1": {
+      "title": "Reading 1: Seven independent texts",
+      "marks": 7,
+      "texts": [
+        {
+          "passage": "Visitor notice: The visitor welcome programme will take place at the heritage guesthouse on Wednesday afternoon. Participants must register before joining and should arrive ten minutes early. There is no fee for school pupils. Please contact the organisers for further information.",
+          "statement": "Participants must register before attending.",
+          "answer": 0
+        },
+        {
+          "passage": "Email: Dear Salim, we discovered an incorrect booking time in our original notice. We checked the confirmed reservation and corrected the information. Please use the new version when contacting visitors and avoid distributing the old message.",
+          "statement": "Salim should use the inaccurate notice.",
+          "answer": 1
+        },
+        {
+          "passage": "Information desk: Our programme provides simple explanations for visiting families. Visitors can ask about accessibility and practical arrangements. The organisers will answer politely and direct people to an appropriate member of staff when they need further assistance.",
+          "statement": "The information desk refuses to answer visitors' questions.",
+          "answer": 1
+        },
+        {
+          "passage": "Survey report: Thirty participants answered questions after the visit. Eighteen found the revised information clearer, seven requested extra detail and five were uncertain. The team agreed to review these comments before preparing another event. Please contact the organisers for further information.",
+          "statement": "Eighteen participants found the revision clearer.",
+          "answer": 0
+        },
+        {
+          "passage": "Coordinator's note: The hotel supervisor will check the final announcement before publication. Students should record all changes, especially those affecting safety or schedules. The purpose is trustworthy information rather than collecting followers on social media.",
+          "statement": "The final announcement will be published without checking.",
+          "answer": 1
+        },
+        {
+          "passage": "Community message: The event will use reusable materials wherever practical, and participants should leave shared spaces clean. Volunteers are asked to respect local residents, follow safety advice and report any concerns to the organising teacher.",
+          "statement": "Volunteers should keep public spaces clean.",
+          "answer": 0
+        },
+        {
+          "passage": "Reminder: The visitor welcome programme is designed for learning and will not replace official professional services. Visitors should confirm important arrangements directly with staff and ask questions whenever a detail in the printed information seems unclear.",
+          "statement": "The school activity replaces all professional services.",
+          "answer": 1
+        }
+      ],
+      "questions": [
+        {
+          "type": "tf",
+          "stem": "Participants must register before attending.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "tf",
+          "stem": "Salim should use the inaccurate notice.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "The information desk refuses to answer visitors' questions.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "Eighteen participants found the revision clearer.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "tf",
+          "stem": "The final announcement will be published without checking.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "Volunteers should keep public spaces clean.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "tf",
+          "stem": "The school activity replaces all professional services.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    "wrt1": {
+      "title": "Writing 1: Evaluative essay",
+      "marks": 10,
+      "minWords": 100,
+      "prompt": "Write an evaluative essay of at least 100 words discussing the benefits and difficulties of tourism and hospitality for local communities. Explain both sides and give your justified opinion.",
+      "marking": "teacher five-level rubric"
+    },
+    "wrt2": {
+      "title": "Writing 2: Narrative",
+      "marks": 10,
+      "minWords": 100,
+      "prompt": "Write a narrative of at least 100 words beginning: 'We arrived at the meeting point, but the information on our ticket did not match the official notice.' Explain what happened, how the problem was solved and what you learned.",
+      "marking": "teacher five-level rubric"
+    },
+    "rdg2": {
+      "title": "Reading 2: Interactive university email",
+      "marks": 8,
+      "passage": "Email 1 — From Sara to the visitor information team\n\nDear Team,\n\nI am preparing a school group visit connected with tourism and hospitality. Your website describes visitor welcome programme, but I would like to confirm the meeting arrangements. Several pupils are travelling from different areas, and one student needs information about accessibility. I would also appreciate advice about what to bring and how much time to allow for the activity.\n\nAn earlier message mentioned a different starting time. Could you please confirm which information is current? Our teacher has asked us to verify the details before collecting any payments or arranging transport. Thank you for helping us plan responsibly.\n\nBest wishes,\nSara\n\nEmail 2 — From the information team\n\nDear Sara,\n\nThank you for your message. We apologise for the confusion caused by an incorrect booking time. The current information is recorded in the confirmed reservation, and we have corrected our public notice. The hotel supervisor will make sure that staff use the revised version.\n\nThe programme will begin at the announced meeting point in the heritage guesthouse. Please contact us before your visit if any pupil requires additional assistance. We can discuss suitable arrangements and give clear instructions. There is no school participation fee, although families should consider their own travel expenses.\n\nKind regards,\nInformation Team\n\nEmail 3 — From Sara\n\nDear Team,\n\nThank you for checking the details. I appreciate your clear explanation and your willingness to consider different visitors' needs. I will share only the revised information with our group and remind pupils to ask questions respectfully. After the activity, I hope we can send feedback about what we learned.\n\nBest wishes,\nSara The organisers reminded students that reliable information matters more than a confident voice or an attractive photograph. They recorded where each statement came from and checked whether the source had changed recently. Some people needed simple explanations, so the group prepared clear words and invited further questions. The teacher encouraged everyone to discuss uncertainty honestly rather than present a guess as a fact. Different students contributed through careful research, writing, practical organisation and respectful discussion with visitors.",
+      "wordCount": 354,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "Why does Sara contact the team?",
+          "options": [
+            "To confirm visiting arrangements",
+            "To complain about a sports match",
+            "To order a new phone"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "What information does one pupil need?",
+          "options": [
+            "A football timetable",
+            "Accessibility arrangements",
+            "A shopping voucher"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "What caused confusion?",
+          "options": [
+            "A missing photograph",
+            "A library closure",
+            "Different starting times"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mc",
+          "stem": "Who will make sure staff use the corrected version?",
+          "options": [
+            "The hotel supervisor",
+            "A singer",
+            "A tour bus driver"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Where is the meeting point?",
+          "options": [
+            "At a football stadium",
+            "At the heritage guesthouse",
+            "Inside an aircraft"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "What should families consider?",
+          "options": [
+            "Only a competition prize",
+            "The cost of uniforms",
+            "Their own travel expenses"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mc",
+          "stem": "How much is the school participation fee?",
+          "options": [
+            "There is no fee",
+            "Ten rials",
+            "Twenty rials"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "What does Sara offer after the visit?",
+          "options": [
+            "A public advertisement",
+            "Feedback on the experience",
+            "A new booking system"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    "rdg3": {
+      "title": "Reading 3: First semester university narrative",
+      "marks": 10,
+      "passage": "Reliable tourism and hospitality information is important because people make real decisions based on what they read. Visitors may compare prices, travel times, accessibility and safety rules before choosing a service. An attractive advertisement cannot replace a clear explanation of the actual arrangements.\n\nGood organisations prepare accurate public notices and revise them whenever circumstances change. The team managing visitor welcome programme must check dates and conditions against authoritative sources. A mistake such as an incorrect booking time can inconvenience families and damage public trust. When an error is discovered, a responsible organisation should explain the correction openly.\n\nCommunication is another essential skill. Staff should listen before answering and avoid assuming that every person has the same needs. Somebody travelling with a child, an older relative or a person with limited mobility may require different practical information. Using simple language and inviting questions helps people understand the service without embarrassment.\n\nTraining and teamwork also affect the quality of a visitor's experience. Different staff members may handle bookings, safety checks and information. They need a shared, updated record so that visitors do not receive conflicting answers. A group can practise realistic conversations and review how an unexpected problem should be handled.\n\nCosts and environmental responsibilities deserve attention too. Organisations can reduce unnecessary printing, use durable materials and encourage people to respect shared places. However, environmental claims should be supported by evidence rather than repeated simply because they sound positive. Visitors benefit when choices and limitations are explained honestly.\n\nStudents learning about tourism and hospitality can develop these habits through small supervised projects. They should compare official information, identify missing details, prepare questions and discuss the possible effects of inaccurate claims. The aim is not to memorise one perfect response. It is to practise responsible judgement, cooperation and clear communication.\n\nUltimately, respectful customer service depends on reliable evidence and respect for different people. A service becomes more trustworthy when it welcomes feedback, corrects mistakes promptly and helps visitors make informed choices. The organisers reminded students that reliable information matters more than a confident voice or an attractive photograph. They recorded where each statement came from and checked whether the source had changed recently. Some people needed simple explanations, so the group prepared clear words and invited further questions. The teacher encouraged everyone to discuss uncertainty honestly rather than present a guess as a fact. Different students contributed through careful research, writing, practical organisation and respectful discussion with visitors.",
+      "wordCount": 405,
+      "questions": [
+        {
+          "type": "short",
+          "stem": "Name one factor visitors may compare before choosing a service.",
+          "answer": "travel times",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "What source should staff use to check changed arrangements?",
+          "answer": "authoritative sources",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "Name one problem that can inconvenience families.",
+          "answer": "an incorrect booking time",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "What kind of language helps people understand services?",
+          "answer": "simple language",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "Name one duty handled by different staff members.",
+          "answer": "bookings",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "What should support environmental claims?",
+          "answer": "evidence",
+          "maxWords": 4
+        },
+        {
+          "type": "mc",
+          "stem": "What can conflicting information damage?",
+          "options": [
+            "Public trust",
+            "Only a sports result",
+            "A school uniform"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Why should staff listen carefully?",
+          "options": [
+            "Every visitor has identical needs",
+            "People have different needs",
+            "Questions are not allowed"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "What helps a group respond to unexpected problems?",
+          "options": [
+            "Ignoring complaints",
+            "Guessing explanations",
+            "Training and shared records"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mc",
+          "stem": "What is the writer's overall message?",
+          "options": [
+            "Evidence and respect are essential",
+            "Popularity guarantees accuracy",
+            "Corrections should be hidden"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  }
+}
