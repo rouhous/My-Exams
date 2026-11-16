@@ -8,6 +8,10 @@ on:
       - scripts/generate_grades5_6_audio.py
       - scripts/generate_grades7_8_audio.py
       - tests/test_listening_voice_roles.py
+      - tests/test_high_grade_listening_voices.py
+      - grade9/data.js
+      - grade9/unit-exams/models.json
+      - grade10/data.json
       - grades5-6/activities.json
       - grades7-8/activities.json
       - .github/workflows/listening-speaker-voice-qa.yml
@@ -34,4 +38,4 @@ jobs:
         run: |
           python -m py_compile scripts/listening_voice_roles.py scripts/generate_grades5_6_audio.py scripts/generate_grades7_8_audio.py
       - name: Verify all listening interviews and gender rules without contacting TTS
-        run: python -m unittest discover -s tests -p 'test_listening_voice_roles.py' -v
+        run: python -m unittest discover -s tests -p 'test_*voice*.py' -v
