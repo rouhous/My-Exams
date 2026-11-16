@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "status": "review-only-not-linked-to-current-mp3",
+  "description": "Original replacements for Grade 10 E/F (currently exact duplicates of A/D). Re-record with identity-based voices before publishing.",
+  "models": {
+    "E": {
+      "title": "Listening 1 — A Student Podcast on Digital Responsibility",
+      "speakerGenders": {
+        "Layla": "female",
+        "Yousuf": "male"
+      },
+      "passage": "Layla: Welcome to Smart Choices. Today Yousuf is telling us about an online exhibition his class created. What was the exhibition about?\nYousuf: We collected photographs of traditional crafts in our town, but wanted to tell the stories behind them rather than simply post pictures.\nLayla: How did the class find reliable information?\nYousuf: First, we interviewed local artists with their permission. Then we checked dates and descriptions with a museum guide. One online caption gave the wrong name for a tool, so we corrected it before publishing.\nLayla: Did everyone agree to show their face?\nYousuf: No. Two artists preferred to show only their hands at work. We respected their choice and used photographs of the objects instead.\nLayla: How did you make the exhibition accessible?\nYousuf: We recorded short audio descriptions in both English and Arabic, with clear titles for younger visitors.\nLayla: What technical problem did the team face?\nYousuf: Our first website loaded slowly on mobile phones. We reduced the image sizes and tested the pages on different devices before inviting families.\nLayla: What will happen next?\nYousuf: The class will ask visitors for suggestions. We hope to create another section about traditional musical instruments next term.",
+      "questions": [
+        {
+          "stem": "What was the exhibition about?",
+          "options": [
+            "Traditional crafts",
+            "International sports",
+            "Modern cars"
+          ],
+          "answer": 0,
+          "evidence": "photographs of traditional crafts"
+        },
+        {
+          "stem": "Who did students interview?",
+          "options": [
+            "Football coaches",
+            "Local artists",
+            "Tourists"
+          ],
+          "answer": 1,
+          "evidence": "interviewed local artists"
+        },
+        {
+          "stem": "Who helped check the information?",
+          "options": [
+            "A driver",
+            "A shop assistant",
+            "A museum guide"
+          ],
+          "answer": 2,
+          "evidence": "checked dates and descriptions with a museum guide"
+        },
+        {
+          "stem": "Why did some pictures show hands only?",
+          "options": [
+            "Artists preferred privacy",
+            "Cameras were broken",
+            "The event was cancelled"
+          ],
+          "answer": 0,
+          "evidence": "preferred to show only their hands"
+        },
+        {
+          "stem": "Which languages were used for the audio descriptions?",
+          "options": [
+            "English and French",
+            "English and Arabic",
+            "Arabic and Spanish"
+          ],
+          "answer": 1,
+          "evidence": "audio descriptions in both English and Arabic"
+        },
+        {
+          "stem": "What caused slow loading at first?",
+          "options": [
+            "Many visitors",
+            "A damaged microphone",
+            "Large images"
+          ],
+          "answer": 2,
+          "evidence": "reduced the image sizes"
+        },
+        {
+          "stem": "What will the next section focus on?",
+          "options": [
+            "Traditional musical instruments",
+            "School uniforms",
+            "Mountain weather"
+          ],
+          "answer": 0,
+          "evidence": "another section about traditional musical instruments"
+        },
+        {
+          "stem": "Who helped check dates and descriptions?",
+          "answer": "a museum guide",
+          "evidence": "with a museum guide"
+        },
+        {
+          "stem": "What did the class record for visitors?",
+          "answer": "audio descriptions",
+          "evidence": "recorded short audio descriptions"
+        },
+        {
+          "stem": "Which devices had trouble loading the website?",
+          "answer": "mobile phones",
+          "evidence": "slowly on mobile phones"
+        },
+        {
+          "stem": "What will students ask visitors for?",
+          "answer": "suggestions",
+          "evidence": "ask visitors for suggestions"
+        },
+        {
+          "stem": "Students checked facts before publishing.",
+          "options": [
+            "False",
+            "True"
+          ],
+          "answer": 1,
+          "evidence": "corrected it before publishing"
+        },
+        {
+          "stem": "All the artists agreed to show their faces.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "evidence": "Two artists preferred to show only their hands"
+        },
+        {
+          "stem": "The team reduced image sizes to improve the site.",
+          "options": [
+            "False",
+            "True"
+          ],
+          "answer": 1,
+          "evidence": "We reduced the image sizes"
+        },
+        {
+          "stem": "The second section will open tomorrow.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "evidence": "We hope to create another section ... next term"
+        }
+      ]
+    },
+    "F": {
+      "title": "Listening 1 — Preserving a Traditional Falaj",
+      "speakerGenders": {
+        "Amina": "female",
+        "Hamed": "male"
+      },
+      "passage": "Amina: Our school heritage club is visiting an old falaj this week. Hamed, you recently joined a team studying its water channel. What surprised you?\nHamed: I had seen the small stream beside the palm gardens, but I had never realised how carefully people managed the flow of water.\nAmina: How does the falaj help farms?\nHamed: Water travels along channels towards different gardens. Traditionally, farmers followed a shared timetable so families knew when water would reach their land.\nAmina: What did your team do during the first visit?\nHamed: We walked with a local guide, sketched the channel and photographed a stone marker. The guide asked us not to enter narrow sections because the ground could be slippery.\nAmina: Did you repair anything yourselves?\nHamed: No. Repairs need trained people. Instead, we collected information and removed a few empty bottles from a safe public path.\nAmina: What problem did the guide describe?\nHamed: Some visitors leave rubbish near the channel, and others step over old walls to take photographs. Both actions may damage the site.\nAmina: How will you share what you learnt?\nHamed: We are preparing a simple visitor map and a short bilingual presentation for the school assembly.\nAmina: What should visitors remember?\nHamed: Stay on marked paths, follow the guide's instructions and respect the families who still use the water system.",
+      "questions": [
+        {
+          "stem": "What does the falaj carry to gardens?",
+          "options": [
+            "Water",
+            "Electricity",
+            "Sand"
+          ],
+          "answer": 0,
+          "evidence": "Water travels along channels towards different gardens"
+        },
+        {
+          "stem": "What helped families share the water?",
+          "options": [
+            "Television",
+            "A timetable",
+            "A road sign"
+          ],
+          "answer": 1,
+          "evidence": "farmers followed a shared timetable"
+        },
+        {
+          "stem": "Who accompanied the pupils?",
+          "options": [
+            "A tourist",
+            "A coach",
+            "A local guide"
+          ],
+          "answer": 2,
+          "evidence": "We walked with a local guide"
+        },
+        {
+          "stem": "Why were narrow sections dangerous?",
+          "options": [
+            "The ground was slippery",
+            "They were noisy",
+            "They were painted"
+          ],
+          "answer": 0,
+          "evidence": "ground could be slippery"
+        },
+        {
+          "stem": "Who should repair the falaj?",
+          "options": [
+            "Any visitor",
+            "Trained people",
+            "Children"
+          ],
+          "answer": 1,
+          "evidence": "Repairs need trained people"
+        },
+        {
+          "stem": "What did the group remove?",
+          "options": [
+            "Stone markers",
+            "Palm trees",
+            "Empty bottles"
+          ],
+          "answer": 2,
+          "evidence": "removed a few empty bottles"
+        },
+        {
+          "stem": "What will the group prepare?",
+          "options": [
+            "A map and presentation",
+            "A pump",
+            "A race"
+          ],
+          "answer": 0,
+          "evidence": "visitor map and a short bilingual presentation"
+        },
+        {
+          "stem": "What did the pupils photograph?",
+          "answer": "a stone marker",
+          "evidence": "photographed a stone marker"
+        },
+        {
+          "stem": "What can damage the old walls?",
+          "answer": "visitors stepping over them",
+          "evidence": "visitors ... step over old walls"
+        },
+        {
+          "stem": "Where will the presentation be given?",
+          "answer": "school assembly",
+          "evidence": "for the school assembly"
+        },
+        {
+          "stem": "What should visitors stay on?",
+          "answer": "marked paths",
+          "evidence": "Stay on marked paths"
+        },
+        {
+          "stem": "The falaj helps water reach gardens.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "evidence": "Water travels along channels"
+        },
+        {
+          "stem": "The pupils repaired the channel themselves.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "evidence": "No. Repairs need trained people"
+        },
+        {
+          "stem": "The group collected rubbish from a safe path.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "evidence": "removed a few empty bottles from a safe public path"
+        },
+        {
+          "stem": "Families no longer use the falaj water system.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "evidence": "families who still use the water system"
+        }
+      ]
+    }
+  }
+}
