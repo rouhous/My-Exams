@@ -1,0 +1,91 @@
+{
+  "id": "g11-core-u4-lst1",
+  "grade": 11,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 4,
+    "title": "Innovation"
+  },
+  "skill": "Listening 1",
+  "marks": 7,
+  "speakerTurns": 28,
+  "script": "Presenter: Why was this project started?\nSalma: We wanted to make electricity-saving classroom sensor because our school community needed a practical improvement.\nPresenter: Where did you plan the first version?\nSalma: We began in the science laboratory, where our teacher organised responsibilities for everyone.\nPresenter: When was the team meeting held?\nSalma: It was Wednesday afternoon, which allowed our team to prepare without missing lessons.\nPresenter: Which item was particularly useful?\nSalma: We used a movement sensor, and checked that it was suitable for the task.\nPresenter: Who checked the details and safety?\nSalma: We consulted the school engineer instead of trusting rumours or making unsupported claims.\nPresenter: Did students work completely alone?\nSalma: No, our teacher supervised carefully, while students researched information and shared different responsibilities.\nPresenter: What problem appeared during the project?\nSalma: Our first attempt contained unreliable movement detection, so the results needed further checking.\nPresenter: How did your group correct the error?\nSalma: We returned to repeated testing results and explained our correction clearly to teammates.\nPresenter: Who will benefit from your work?\nSalma: We hope teachers and students will gain useful information from the finished project.\nPresenter: What did users suggest improving?\nSalma: They recommended a manual switch, and we recorded their suggestions for the next version.\nPresenter: How did you handle disagreements?\nSalma: We listened respectfully, considered the evidence and tested the strongest suggestions together.\nPresenter: What did the team do with feedback?\nSalma: We discussed comments at our weekly meeting and made a clear improvement plan.\nPresenter: What will you prepare next term?\nSalma: Our next step will be a solar-power project, building on the experience gained this term.\nPresenter: What is the most important lesson?\nSalma: We learned the value of safe and evidence-based invention, honest feedback and careful preparation. Every group member also checked the final explanation and asked useful questions before sharing it with others.",
+  "wordCount": 315,
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "What was the project?",
+      "options": [
+        "electricity-saving classroom sensor",
+        "a football tournament",
+        "a shopping campaign"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Where did the team begin?",
+      "options": [
+        "At the airport",
+        "science laboratory",
+        "In a hospital"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "When did they meet?",
+      "options": [
+        "Friday evening",
+        "Sunday midnight",
+        "Wednesday afternoon"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What item was used?",
+      "options": [
+        "movement sensor",
+        "a suitcase",
+        "a football"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Who gave advice?",
+      "options": [
+        "A singer",
+        "the school engineer",
+        "A taxi driver"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "Which problem was corrected?",
+      "options": [
+        "A lost passport",
+        "A broken bus",
+        "unreliable movement detection"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What is the main lesson?",
+      "options": [
+        "safe and evidence-based invention",
+        "Ignoring information",
+        "Avoiding all teamwork"
+      ],
+      "answer": 0
+    }
+  ],
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "audioStatus": "pending_source_sha_mp3"
+}
