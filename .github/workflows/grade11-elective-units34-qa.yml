@@ -27,6 +27,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      # Force a new run after GitHub Actions bot publishes the audio manifest.
       - name: Validate new units when both script-matched recordings are published
         run: |
           python3 - <<'PY'
