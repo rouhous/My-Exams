@@ -21,6 +21,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      # Rerun after the bot publishes both source-bound audio files.
       - name: Check 70-mark original unit structure and recording when available
         run: |
           python3 - <<'PY'
