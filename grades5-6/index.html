@@ -75,4 +75,19 @@ window.addEventListener('DOMContentLoaded',()=>{
    model.dispatchEvent(new Event('change',{bubbles:true}));
  }
 });
+</script><script>
+/* Exams grade-specific deep links: ?grade=5&locked=1 keeps one grade only. */
+window.addEventListener('DOMContentLoaded',()=>{
+ const q=new URLSearchParams(location.search);
+ if(q.get('locked')!=='1')return;
+ const allowed=["5","6"];
+ const selected=q.get('grade');
+ if(!allowed.includes(selected))return;
+ const el=document.getElementById('grade');
+ if(!el)return;
+ el.value=selected;
+ el.dispatchEvent(new Event('change',{bubbles:true}));
+ el.disabled=true;
+ el.title='This dedicated Exams link is for Grade '+selected+' only.';
+});
 </script></body></html>
