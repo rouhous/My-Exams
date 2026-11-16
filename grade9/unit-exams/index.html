@@ -38,7 +38,7 @@ The three exams are written specifically for Identity, Connections, and The futu
 <div id="tasks"></div><section id="results" hidden aria-live="polite"></section></div>
 </main><script>
 'use strict';
-const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;':'&quot;',"'":'&#39;'}[c]));
+const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const names=['Listening 1','Listening 2','Grammar & Vocabulary','Reading 1','Reading 2','Writing 1','Writing 2'];
 let bank=null,manifest={},model=null,selected=[],asked=[],seconds=0,timer=null,finished=false,sourceStatus={};
 $('mode').onchange=()=>$('skillWrap').hidden=$('mode').value!=='skill';
