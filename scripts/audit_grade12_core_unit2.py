@@ -7,7 +7,7 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 base=ROOT/"grade12/core/units"
 def read(name):return json.loads((base/name).read_text(encoding="utf-8"))
 def words(s):return len(s.strip().split())
-paper=read("unit2-paper-a.json")
+paper=read("unit2-paper-b.json")
 assert paper["grade"]==12 and paper["track"]=="core" and paper["unit"]=={"number":2,"title":"Starting University"}
 assert paper["durationMinutes"]==180 and paper["marks"]==70
 assert paper["certifiedTextbookMatch"] is False and paper["readyForStudentExam"] is False
