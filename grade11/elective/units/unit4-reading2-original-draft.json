@@ -1,0 +1,148 @@
+{
+  "id": "g11-elective-unit4-rdg2-original",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 4,
+    "title": "Careers"
+  },
+  "skill": "Reading 2",
+  "genre": "six-paragraph informative",
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "passage": "Paragraph A\nA career interview is most useful when students prepare questions in advance. Asking about a typical working day can reveal tasks that do not appear in advertisements. Pupils should listen carefully, request examples and thank the professional for their time. After the meeting, a short written summary can help them compare what they expected with what they actually learned. Such conversations often challenge unrealistic assumptions. Students may also ask which skills the professional learned after starting the job.\n\nParagraph B\nUniversity entry requirements vary between institutions and may change from one year to the next. Students should use official course pages rather than rely entirely on advice shared online. They need to check required subjects, application dates and any additional assessments. A school adviser can explain unfamiliar terms, but applicants remain responsible for verifying current information before making decisions. Keeping a dated record of each source can prevent confusion later.\n\nParagraph C\nWorkplace visits can introduce pupils to safety procedures, teamwork and professional behaviour. Visitors may observe meetings or ask staff about how projects are organised. They must respect confidential information and follow instructions from supervisors. Even a short experience can help teenagers discover whether they enjoy the everyday routines associated with a particular career. Reflecting on an ordinary task is often more useful than photographing an impressive office.\n\nParagraph D\nVolunteering provides opportunities to practise transferable skills. Helping organise a community event may require planning, communication and solving unexpected problems. These abilities can be useful in many professions, even when the volunteer's eventual job is completely different. Students should keep accurate records of their responsibilities and reflect on what they would improve next time. A teacher can help turn these experiences into clear examples for future applications.\n\nParagraph E\nCareer decisions can be influenced by family expectations and social media. Supportive relatives may offer valuable experience, but one person's career path is not suitable for everyone. Online videos often show exciting moments rather than routine work. Comparing several trustworthy sources helps young people make decisions based on evidence instead of popularity or pressure. It is sensible to discuss different possibilities respectfully with family members.\n\nParagraph F\nA flexible career plan includes both goals and opportunities to review them. A pupil might choose a subject to strengthen, arrange a professional interview and attend an open day. After each step, they can reconsider their interests and identify further questions. Changing direction after thoughtful research is not necessarily a failure; it can be evidence of better understanding.",
+  "wordCount": 417,
+  "marks": 10,
+  "paragraphs": 6,
+  "headings": [
+    "Preparing useful career interviews",
+    "Checking official university information",
+    "Learning through workplace visits",
+    "Building skills by volunteering",
+    "Family and online influences",
+    "How to become a famous actor",
+    "The history of computer games"
+  ],
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "The word confidential in Paragraph C means ____.",
+      "options": [
+        "private",
+        "popular",
+        "inexpensive"
+      ],
+      "answer": 0,
+      "kind": "meaning"
+    },
+    {
+      "type": "mc",
+      "stem": "The word transferable in Paragraph D describes skills that ____.",
+      "options": [
+        "can help in different jobs",
+        "must remain secret",
+        "are only used in one school"
+      ],
+      "answer": 0,
+      "kind": "meaning"
+    },
+    {
+      "type": "mc",
+      "stem": "Why should students prepare interview questions?",
+      "options": [
+        "To discover real daily tasks",
+        "To make a video famous",
+        "To avoid listening"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Where should applicants check course requirements?",
+      "options": [
+        "Unverified comments",
+        "Official university pages",
+        "Old advertisements only"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "What should visitors do at a workplace?",
+      "options": [
+        "Ignore safety rules",
+        "Publish private records",
+        "Follow supervisors' instructions"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What can a flexible plan include?",
+      "options": [
+        "Goals and review points",
+        "A single permanent decision",
+        "Only online popularity"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for Paragraph A.",
+      "options": [
+        "Preparing useful career interviews",
+        "Checking official university information",
+        "Learning through workplace visits",
+        "Building skills by volunteering",
+        "Family and online influences",
+        "How to become a famous actor",
+        "The history of computer games"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for Paragraph B.",
+      "options": [
+        "Preparing useful career interviews",
+        "Checking official university information",
+        "Learning through workplace visits",
+        "Building skills by volunteering",
+        "Family and online influences",
+        "How to become a famous actor",
+        "The history of computer games"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for Paragraph C.",
+      "options": [
+        "Preparing useful career interviews",
+        "Checking official university information",
+        "Learning through workplace visits",
+        "Building skills by volunteering",
+        "Family and online influences",
+        "How to become a famous actor",
+        "The history of computer games"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for Paragraph D.",
+      "options": [
+        "Preparing useful career interviews",
+        "Checking official university information",
+        "Learning through workplace visits",
+        "Building skills by volunteering",
+        "Family and online influences",
+        "How to become a famous actor",
+        "The history of computer games"
+      ],
+      "answer": 3
+    }
+  ]
+}
