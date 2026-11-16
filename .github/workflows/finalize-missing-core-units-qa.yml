@@ -1,0 +1,35 @@
+name: Finish Grade 11 and 12 Core missing unit paper QA
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'grade11/core/units/**'
+      - 'grade12/core/units/**'
+      - 'scripts/audit_remaining_grade11_12_core.py'
+      - 'tests/remaining_core_units_browser.cjs'
+      - '.github/workflows/finalize-missing-core-units-qa.yml'
+permissions:
+  contents: read
+concurrency:
+  group: remaining-core-unit-qa
+  cancel-in-progress: true
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate all five papers against official-shaped SAH schema and recorded source hashes
+        run: python3 scripts/audit_remaining_grade11_12_core.py
+      - name: Run mobile interactive exam and untimed skill checks
+        run: |
+          npm install --no-save playwright@1.56.1
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/core-unit-qa.log 2>&1 &
+          sleep 3
+          node tests/remaining_core_units_browser.cjs
