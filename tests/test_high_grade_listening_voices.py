@@ -40,6 +40,12 @@ def check_named_speakers(testcase, script, source):
 
 
 class TestHighGradeSpeakerSources(unittest.TestCase):
+    def test_colon_in_normal_narration_is_not_a_new_speaker(self):
+        check_named_speakers(self, "Students reported different results: some preferred the cards.", "narrative")
+        check_named_speakers(self, "Interviewer: Why?\nSalma: The results: more pupils joined.", "interview")
+        with self.assertRaisesRegex(AssertionError, "unknown named speaker label"):
+            check_named_speakers(self, "Interviewer: Welcome.\nSomeoneUnknown: Hello.", "unregistered")
+
     def test_grade9_fixed_models(self):
         raw = (ROOT / 'grade9/data.js').read_text(encoding='utf-8')
         data = json.loads(raw.removeprefix('const EXAM_DATA=').rstrip(';\n '))
