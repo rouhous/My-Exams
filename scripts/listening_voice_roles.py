@@ -51,7 +51,7 @@ def voice_for_speaker(name, overrides=None):
     return 1 if g == MALE else 2
 
 
-def voice_for_narration(text, explicit_gender=None):
+def voice_for_narration(text, explicit_gender=None, fallback_voice=0):
     """Only infer from the narrator's OWN identity, not he/his/she/her about others."""
     g = _gender(explicit_gender)
     if g is None:
@@ -65,7 +65,7 @@ def voice_for_narration(text, explicit_gender=None):
             g = MALE
         elif re.search(r"\b(?:i am|i'm) a (?:girl|woman)\b", text, re.I):
             g = FEMALE
-    return 1 if g == MALE else 0  # unmarked narrator = Sonia; never infer from he/she
+    return 1 if g == MALE else (0 if g == FEMALE else fallback_voice)  # unknown narrator: editorial fallback, never infer from he/she
 
 
 def parse_dialogue(text, overrides=None):
