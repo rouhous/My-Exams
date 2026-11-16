@@ -1,16 +1,7 @@
 name: Preview corrected natural speaker voices (Grades 5–8)
 on:
   push:
-    branches:
-      - fix/listening-two-pass-order-2026-11-16
-    paths:
-      - .github/workflows/listening-speaker-preview-audio.yml
-      - scripts/listening_voice_roles.py
-      - scripts/generate_grades5_6_audio.py
-      - scripts/generate_grades7_8_audio.py
-  pull_request:
-    branches:
-      - exam-review-2026-11-16
+    branches: [fix/listening-two-pass-order-2026-11-16]
     paths:
       - .github/workflows/listening-speaker-preview-audio.yml
       - scripts/listening_voice_roles.py
