@@ -2,7 +2,7 @@ name: Verify original Grade 9 full unit exams audio and illustrations
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main, exam-review-2026-11-16]
     paths:
       - 'grade9/unit-exams/**'
       - 'scripts/audit_grade9_unit_full.py'
