@@ -1,0 +1,92 @@
+{
+  "id": "g11-elective-unit4-rdg1-original",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 4,
+    "title": "Careers"
+  },
+  "skill": "Reading 1",
+  "genre": "evaluative argument",
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "passage": "Some schools encourage pupils to choose a future career before they finish secondary education. Supporters say an early decision helps teenagers select appropriate subjects and develop useful skills. A student who hopes to become an engineer, for example, may be motivated to strengthen mathematics and investigate university requirements. Clear goals can make revision feel more purposeful and help families plan for possible costs.\n\nCareer planning can also introduce young people to the realities of work. Visiting a company, interviewing a professional or joining a community project may reveal responsibilities that job titles do not explain. Students can learn about teamwork, safety, communication and the need for continuous training. Such experiences are especially valuable when a teenager has only seen a profession represented in films or online advertisements. Teachers can help students prepare respectful questions before these visits and reflect on what they have learned afterwards.\n\nHowever, insisting on one permanent choice can create unnecessary pressure. Many students discover new interests as they grow older. Some professions change rapidly because of technology, while entirely new types of work may appear. A young person who feels locked into an early decision might avoid subjects or opportunities that could lead to a more suitable path. Planning should not be confused with predicting every detail of the future.\n\nAccess to information is another concern. Pupils from different backgrounds may have unequal opportunities to meet professionals or pay for extra courses. Advice based only on a family's personal experience can unintentionally narrow a student's choices. Schools should therefore offer reliable information about several routes, including vocational training, higher education and work-based learning. Students should be encouraged to check official requirements rather than trust rumours.\n\nSome critics argue that flexible plans encourage indecision. Yet reviewing a goal does not mean abandoning responsibility. A student can research a profession carefully, practise relevant skills and still change direction after gaining new evidence. Good advisers help young people explain their reasons, consider alternatives and understand the consequences of each option. These conversations build judgement instead of rewarding a single answer.\n\nI believe schools should teach career exploration rather than demand an unchangeable career choice. Students need time to discover strengths, ask questions and try manageable responsibilities. A useful plan identifies the next sensible step while leaving room for revision. Success should be measured not by how early pupils name a job, but by how thoughtfully they prepare for the opportunities and challenges ahead.",
+  "wordCount": 404,
+  "marks": 10,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "Name one subject a future engineer may strengthen.",
+      "answer": "mathematics",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What can students learn about through workplace visits?",
+      "answer": "teamwork and communication",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What can change rapidly because of technology?",
+      "answer": "some professions",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What may unequal family backgrounds affect?",
+      "answer": "access to career information",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Name one route besides higher education mentioned.",
+      "answer": "vocational training",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What should a useful career plan leave room for?",
+      "answer": "revision",
+      "maxWords": 4
+    },
+    {
+      "type": "tf",
+      "stem": "The writer believes every teenager must keep the same career choice forever.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "A workplace visit may reveal responsibilities not shown by job titles.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "tf",
+      "stem": "Changing a goal always means avoiding responsibility.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "tf",
+      "stem": "The writer values thoughtful preparation over naming a career early.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": 0
+    }
+  ]
+}
