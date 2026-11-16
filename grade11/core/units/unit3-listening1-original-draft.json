@@ -1,0 +1,91 @@
+{
+  "id": "g11-core-u3-lst1",
+  "grade": 11,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 3,
+    "title": "Travellers and Tourists"
+  },
+  "skill": "Listening 1",
+  "marks": 7,
+  "speakerTurns": 28,
+  "script": "Presenter: Why was this project started?\nKhalid: We wanted to make heritage walking route because our school community needed a practical improvement.\nPresenter: Where did you plan the first version?\nKhalid: We began in the old souq, where our teacher organised responsibilities for everyone.\nPresenter: When was the team meeting held?\nKhalid: It was Saturday morning, which allowed our team to prepare without missing lessons.\nPresenter: Which item was particularly useful?\nKhalid: We used a printed map, and checked that it was suitable for the task.\nPresenter: Who checked the details and safety?\nKhalid: We consulted a local guide instead of trusting rumours or making unsupported claims.\nPresenter: Did students work completely alone?\nKhalid: No, our teacher supervised carefully, while students researched information and shared different responsibilities.\nPresenter: What problem appeared during the project?\nKhalid: Our first attempt contained a wrong street name, so the results needed further checking.\nPresenter: How did your group correct the error?\nKhalid: We returned to the road sign and explained our correction clearly to teammates.\nPresenter: Who will benefit from your work?\nKhalid: We hope visiting families will gain useful information from the finished project.\nPresenter: What did users suggest improving?\nKhalid: They recommended more rest stops, and we recorded their suggestions for the next version.\nPresenter: How did you handle disagreements?\nKhalid: We listened respectfully, considered the evidence and tested the strongest suggestions together.\nPresenter: What did the team do with feedback?\nKhalid: We discussed comments at our weekly meeting and made a clear improvement plan.\nPresenter: What will you prepare next term?\nKhalid: Our next step will be a library exhibition, building on the experience gained this term.\nPresenter: What is the most important lesson?\nKhalid: We learned the value of respectful tourism, honest feedback and careful preparation. Every group member also checked the final explanation and asked useful questions before sharing it with others.",
+  "wordCount": 313,
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "What was the project?",
+      "options": [
+        "heritage walking route",
+        "a football tournament",
+        "a shopping campaign"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Where did the team begin?",
+      "options": [
+        "At the airport",
+        "old souq",
+        "In a hospital"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "When did they meet?",
+      "options": [
+        "Friday evening",
+        "Sunday midnight",
+        "Saturday morning"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What item was used?",
+      "options": [
+        "printed map",
+        "a suitcase",
+        "a football"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Who gave advice?",
+      "options": [
+        "A singer",
+        "a local guide",
+        "A taxi driver"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "Which problem was corrected?",
+      "options": [
+        "A lost passport",
+        "A broken bus",
+        "a wrong street name"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What is the main lesson?",
+      "options": [
+        "respectful tourism",
+        "Ignoring information",
+        "Avoiding all teamwork"
+      ],
+      "answer": 0
+    }
+  ],
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "audioStatus": "pending_source_sha_mp3"
+}
