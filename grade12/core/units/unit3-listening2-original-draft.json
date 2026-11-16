@@ -1,0 +1,84 @@
+{
+  "id": "g12-core-u3-l2-original",
+  "grade": 12,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 3,
+    "title": "Tourism and Hospitality"
+  },
+  "skill": "Listening 2",
+  "marks": 8,
+  "script": "Part One\n\nMy name is Noura, and I joined a visitor welcome programme because I wanted to understand how real services help different people. Our teacher encouraged us to learn from professionals rather than rely on a few pictures on the internet. The first meeting took place at the local heritage guesthouse. We discussed the importance of clear information and how visitors may have different needs, budgets and expectations.\n\nOur team then spoke to hotel supervisor, who explained the ordinary responsibilities involved in this work. We prepared information cards and practised welcoming guests and explaining local customs. Some students enjoyed meeting new people, while others preferred checking facts or organising resources. The teacher reminded us that careful preparation is just as important as confident speaking. We kept a notebook recording decisions and the sources used to verify each important detail.\n\nDuring our first trial we noticed an incorrectly recorded booking time. At first, one member suggested leaving the information unchanged because the deadline was near. I disagreed, and we checked the confirmed reservation before making a correction. We then informed the other students so they would not repeat the mistake. The experience showed that a small error may create real inconvenience for people who trust a service.\n\nPart Two\n\nA week later, we invited visiting families to test our explanations. Some participants requested clearer instructions while others asked about accessibility and practical arrangements. We listened carefully, considered their feedback and updated the materials where appropriate. We also learned to avoid making assumptions about a person's circumstances. Asking a respectful question was often the best way to understand what somebody actually needed.\n\nThe group discussed why responsible hospitality involves both professional knowledge and personal responsibility. We compared different ways of communicating and considered how changes should be announced promptly. Our teacher encouraged us to explain not just what we had changed but also why the original version had been confusing.\n\nAt the end of the project, I wrote a short reflection. I had gained confidence in working with a team and using reliable evidence. I understood that a successful activity is not measured only by the number of people who attend. It is also measured by whether the information is accurate, the service is respectful and people can make informed decisions.",
+  "wordCount": 380,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "Where did the first meeting take place?",
+      "answer": "local heritage guesthouse",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Who explained professional responsibilities?",
+      "answer": "hotel supervisor",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What problem appeared in the first trial?",
+      "answer": "an incorrectly recorded booking time",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What document helped correct the mistake?",
+      "answer": "the confirmed reservation",
+      "maxWords": 4
+    },
+    {
+      "type": "mc",
+      "stem": "What did pupils prepare?",
+      "options": [
+        "information cards",
+        "football tickets",
+        "library certificates"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Who tested the explanations?",
+      "options": [
+        "A famous band",
+        "visiting families",
+        "Only the school principal"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "What did people request during the test?",
+      "options": [
+        "More sports equipment",
+        "A longer holiday",
+        "Clearer instructions"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What does the narrator believe matters most?",
+      "options": [
+        "Accuracy and respect",
+        "Online popularity alone",
+        "Finishing without checking"
+      ],
+      "answer": 0
+    }
+  ],
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "audioStatus": "pending_source_verified_MP3"
+}
