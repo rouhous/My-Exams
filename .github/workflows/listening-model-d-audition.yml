@@ -1,0 +1,102 @@
+name: Preview unique Grade 6–8 Model D listening texts
+on:
+  pull_request:
+    branches: [exam-review-2026-11-16]
+    paths:
+      - review/listening-replacements-grade6-8-model-d.json
+      - scripts/stage_review_listening_drafts.py
+      - scripts/generate_grades5_6_audio.py
+      - scripts/generate_grades7_8_audio.py
+      - scripts/listening_voice_roles.py
+      - .github/workflows/listening-model-d-audition.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Stage review texts into disposable checkout (never commit source changes)
+        run: |
+          python scripts/stage_review_listening_drafts.py --apply
+          python scripts/audit_listening_reuse.py --max-exact 20 --fail-cross-grade --output /tmp/model-d-duplicate-audit.json
+      - name: Install natural voices and MP3 validators
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m pip install edge-tts mutagen
+      - name: Create Grade 6 Model D original-text MP3s
+        env:
+          ONLY_LISTENING_IDS: g6-d-listening-1,g6-d-listening-2
+        run: python scripts/generate_grades5_6_audio.py
+      - name: Create Grade 7 and 8 Model D original-text MP3s
+        env:
+          ONLY_LISTENING_IDS: g7-d-listening1,g7-d-listening2,g8-d-listening1,g8-d-listening2
+        run: python scripts/generate_grades7_8_audio.py
+      - name: Check six newly recorded files against current draft data and speaker identities
+        run: |
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          from mutagen.mp3 import MP3
+          import sys
+          sys.path.insert(0,'scripts')
+          from listening_voice_roles import parse_dialogue,VOICE_NAMES
+          g56=json.loads(Path('grades5-6/activities.json').read_text())['activities']
+          g78=json.loads(Path('grades7-8/activities.json').read_text())
+          man56=json.loads(Path('grades5-6/audio-natural/script_audio_manifest.json').read_text())
+          man78=json.loads(Path('grades7-8/assets/audio-natural/manifest.json').read_text())
+          assert set(man56)=={'g6-d-listening-1','g6-d-listening-2'},list(man56)
+          assert set(man78)=={'g7-d-listening1','g7-d-listening2','g8-d-listening1','g8-d-listening2'},list(man78)
+          for task in g56:
+            if task['id'] not in man56: continue
+            info=man56[task['id']]
+            h=hashlib.sha256(json.dumps({'passages':task.get('passages'),'passage':task.get('passage'),'questions':task['questions'],'pictures':task.get('pictureOptions')},sort_keys=True,ensure_ascii=False).encode()).hexdigest()
+            assert info['sha256_of_script']==h,task['id']
+            assert info['voiceRoutingVersion']=='identity-v2'
+            if task['part']==2:
+              expected={name:VOICE_NAMES[voice] for _,voice,name in parse_dialogue(task['passage'])}
+              assert info['speakerCast']==expected,task['id']
+            audio=Path('grades5-6/audio-natural')/info['mp3']
+            assert audio.is_file() and MP3(audio).info.length>35
+            print('PASS',task['id'],int(MP3(audio).info.length),'seconds')
+          for model in g78:
+            for section in model['sections']:
+              key=f"{model['id']}-{section['key']}"
+              if key not in man78:continue
+              info=man78[key]
+              h=hashlib.sha256(json.dumps({'items':section.get('items'),'script':section.get('script'),'transcript':section.get('transcript')},sort_keys=True,ensure_ascii=False).encode()).hexdigest()
+              assert info['script_and_questions_sha256']==h,key
+              assert info['voiceRoutingVersion']=='identity-v2',key
+              if section['key']=='listening2':
+                expected={name:VOICE_NAMES[voice] for _,voice,name in parse_dialogue(section['script'])}
+                assert info['speakerCast']==expected,key
+              audio=Path('grades7-8/assets/audio-natural')/info['mp3']
+              assert audio.is_file() and MP3(audio).info.length>40
+              print('PASS',key,int(MP3(audio).info.length),'seconds')
+          PY
+      - name: Save only the six new MP3 auditions and manifests
+        uses: actions/upload-artifact@v4
+        with:
+          name: model-d-unique-listening-auditions
+          retention-days: 14
+          path: |
+            grades5-6/audio-natural/g6-d-listening-1.mp3
+            grades5-6/audio-natural/g6-d-listening-2.mp3
+            grades5-6/audio-natural/script_audio_manifest.json
+            grades7-8/assets/audio-natural/g7-d-listening1.mp3
+            grades7-8/assets/audio-natural/g7-d-listening2.mp3
+            grades7-8/assets/audio-natural/g8-d-listening1.mp3
+            grades7-8/assets/audio-natural/g8-d-listening2.mp3
+            grades7-8/assets/audio-natural/manifest.json
+      - name: Save distinct-script audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: model-d-uniqueness-audit
+          retention-days: 14
+          path: /tmp/model-d-duplicate-audit.json
