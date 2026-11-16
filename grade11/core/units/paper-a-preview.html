@@ -20,7 +20,7 @@ audio{width:100%;max-width:630px}.script{white-space:pre-wrap;max-height:320px;o
 .clock{font-weight:800;font-size:20px;font-variant-numeric:tabular-nums}
 @media(max-width:640px){.controls{grid-template-columns:1fr}}@media print{header,.setup,#end,#back,#clock{display:none!important}.paper{display:block!important}section{break-inside:avoid}}
 </style></head><body>
-<header><a href="../index.html">← Communication Listening practice</a>
+<header><a href="../index.html">← Grade 11 Core</a>
 <h1>Grade 11 Core · Unit 1: Communication</h1><p>Original nine-section assessment · 60 marks · Teacher-review draft</p></header>
 <main>
 <section class="notice"><strong>Not an officially approved Ministry paper.</strong> This original paper follows the stored 2026 SAH structure of nine sections and uses original unit-themed content. The current recording is played only if its MP3 checksum matches the Listening source. Page-by-page book alignment, recording quality, acceptable short answers and written marking still need teacher sign-off. The uploaded 2025/26 paper uses some different grammar/vocabulary headings; do not silently treat the two academic-year formats as identical.</section>
@@ -38,7 +38,7 @@ const sum=k=>k.reduce((n,x)=>n+sections[x].marks,0);
 $('mode').onchange=()=>$('skillWrap').hidden=$('mode').value!=='skill';
 async function digest(s){if(!crypto.subtle)return'';const bytes=new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)));return Array.from(bytes).map(b=>b.toString(16).padStart(2,'0')).join('')}
 async function initialize(){
- try{const [r,a,b,m]=await Promise.all([fetch('unit1-paper-b.json'),fetch('unit1-listening1-original-draft.json'),fetch('unit1-listening2-original-draft.json'),fetch('audio/manifest.json',{cache:'no-store'}).catch(()=>null)]);
+ try{const [r,a,b,m]=await Promise.all([fetch('unit1-paper-a.json'),fetch('unit1-listening1-original-draft.json'),fetch('unit1-listening2-original-draft.json'),fetch('audio/manifest.json',{cache:'no-store'}).catch(()=>null)]);
  if(!r.ok||!a.ok||!b.ok)throw Error('One original section source is missing');
  data=await r.json();const l1=await a.json(),l2=await b.json();audioManifest=m&&m.ok?await m.json():{};
  sections={...data.sections,lst1:l1,lst2:l2};
