@@ -1,14 +1,13 @@
 name: Preview unique Grade 6–8 Model D listening texts
 on:
-  pull_request:
-    branches: [exam-review-2026-11-16]
+  push:
+    branches: [fix/listening-two-pass-order-2026-11-16]
     paths:
+      - .github/workflows/listening-model-d-audition.yml
       - review/listening-replacements-grade6-8-model-d.json
       - scripts/stage_review_listening_drafts.py
       - scripts/generate_grades5_6_audio.py
       - scripts/generate_grades7_8_audio.py
-      - scripts/listening_voice_roles.py
-      - .github/workflows/listening-model-d-audition.yml
   workflow_dispatch:
 permissions:
   contents: read
