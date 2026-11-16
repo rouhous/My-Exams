@@ -184,7 +184,7 @@
       "audioKey": "9",
       "imageCount": 105,
       "unitReview": "New 2026 Gold Experience units Identity, Connections, The Future Is Now; zero complete A/B/C/G models certified unit-specific; D/E/F explicitly mixed | Three independent remedial unit packs (48 objective, 6 writing), NOT additional full papers. | Three new complete original 40-mark unit papers U1 Identity, U2 Connections, U3 The future is now; 6 source-verified MP3, 45 image choices, 120min and mobile browser QA passed.",
-      "release": "blocked_for_unit_specific_release",
+      "release": "new_original_three_unit_papers_technical_QA_passed__legacy_models_unapproved__teacher_review_pending",
       "newUntimedUnitSkillPacks": 3,
       "newObjectiveUnitQuestions": 48,
       "newUngradedWritingPrompts": 6,
@@ -219,7 +219,7 @@
       "extraAudioKey": "11-core-semester-a",
       "imageCount": null,
       "unitReview": "A-D have correct unit headings but omit four of nine official SAH sections; one separate nine-section teacher draft A exists | Additional original technically validated unit paper: New original nine-section 60-mark Those Teenage Things paper B, source-verified 2 MP3 | Four complete original 9-section Core unit papers (Communication, Those Teenage Things, Travellers and Tourists, Innovation); all 8 unit MP3 source-verified, teacher approval pending.",
-      "release": "blocked_official_paper_structure_and_one_new_unit_paper_technical_pilot_only",
+      "release": "new_original_unit_papers_complete_technical_QA_passed__legacy_pilots_unapproved__teacher_textbook_validation_pending",
       "newOriginalUnitPapers": [
         "11-core-unit2",
         "11-core-unit1",
@@ -238,7 +238,7 @@
       "audioKey": "11-elective-legacy",
       "imageCount": null,
       "unitReview": "all four A-D unit themes mismatch course unit titles and sections; mixed E/F cannot fix | Additional original technically validated unit paper: New original six-section 60-mark Fame paper A, source-verified 2 MP3 | Units 2 The Mind, 3 In the Past, 4 Careers now have original six-section paper drafts; do not claim full audio approval until manifest/QA confirms.",
-      "release": "blocked_unit_mismatch_and_one_new_unit_paper_technical_pilot_only",
+      "release": "new_original_four_unit_papers_technical_QA_passed__legacy_models_unapproved__teacher_review_pending",
       "newOriginalUnitPapers": [
         "11-elective-unit1",
         "11-elective-unit2",
@@ -257,7 +257,7 @@
       "audioKey": "12-core-legacy",
       "imageCount": null,
       "unitReview": "Retail Therapy, Starting University, Tourism and Hospitality, Travel and Transport headers do not establish matching listening/reading/writing source content; rebuild required | Additional original technically validated unit paper: New original nine-section 70-mark Retail Therapy paper A, source-verified 2 MP3 | Starting University Unit 2 full original 9-section 70-mark draft added; source MP3 and browser QA must pass. | Four complete original 9-section Core unit papers (Retail Therapy, Starting University, Tourism and Hospitality, Travel and Transport); all 8 unit MP3 source-verified, teacher approval pending.",
-      "release": "blocked_unit_content_mismatch_and_one_new_unit_paper_technical_pilot_only",
+      "release": "new_original_unit_papers_complete_technical_QA_passed__legacy_pilots_unapproved__teacher_textbook_validation_pending",
       "newOriginalUnitPapers": [
         "12-core-unit1",
         "12-core-unit2",
@@ -301,7 +301,7 @@
     "officialGrade12Elective": "https://ict.moe.gov.om/book/PDF/12/cls12_Insights3_SB/files/downloads/cls12_Insights3_SB.pdf"
   },
   "totalStoredFixedAndDraftPapers": 81,
-  "note": "81 stored fixed/mixed/draft papers including 5 new original nine-section Grade11/12 Core unit papers. 134 source/segment verified listening section links, not necessarily distinct files. Technical browser and source SHA QA passed for all five. Teacher and page-by-page curriculum approval remain pending.",
+  "note": "81 archived papers including 5 newly built original Grade11/12 Core papers; 134 source-verified listening section links. All 4 new unit papers for each Grade11/12 Core track and three new Grade9 unit papers passed technical structure/mobile/audio QA. No Ministry approval or teacher textbook-page signoff.",
   "baselineBeforeTargetedRepairs": {
     "storedFixedAndDraftPapers": 66,
     "verifiedListeningSectionLinks": 104,
