@@ -1,0 +1,56 @@
+name: Grade 11 Elective In the Past and Careers original paper QA
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'grade11/elective/units/unit3-*.json'
+      - 'grade11/elective/units/unit4-*.json'
+      - 'grade11/elective/units/paper-c-preview.html'
+      - 'grade11/elective/units/paper-d-preview.html'
+      - 'grade11/elective/units/audio/manifest.json'
+      - 'scripts/audit_grade11_elective_unit3.py'
+      - 'scripts/audit_grade11_elective_unit4.py'
+      - 'tests/grade11_elective_unit3_browser.cjs'
+      - 'tests/grade11_elective_unit4_browser.cjs'
+      - '.github/workflows/grade11-elective-units34-qa.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate new units when both script-matched recordings are published
+        run: |
+          python3 - <<'PY'
+          import json,pathlib,subprocess
+          root=pathlib.Path("grade11/elective/units")
+          manifest=json.loads((root/"audio/manifest.json").read_text())
+          for n in (3,4):
+              files=[f"unit{n}-listening{i}-original-draft.json" for i in (1,2)]
+              if not all(f in manifest for f in files):
+                  print(f"Unit {n} pending MP3 generation; no completion claim")
+                  continue
+              subprocess.run(["python3",f"scripts/audit_grade11_elective_unit{n}.py"],check=True)
+          PY
+      - name: Verify full-paper mobile UX only after recordings are available
+        run: |
+          npm install --no-save playwright@1.56.1
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/grade11elective34.log 2>&1 &
+          sleep 3
+          python3 - <<'PY'
+          import json,pathlib,subprocess
+          m=json.loads(pathlib.Path("grade11/elective/units/audio/manifest.json").read_text())
+          for n in (3,4):
+              files=[f"unit{n}-listening{i}-original-draft.json" for i in (1,2)]
+              if all(f in m for f in files):
+                  subprocess.run(["node",f"tests/grade11_elective_unit{n}_browser.cjs"],check=True)
+              else:print(f"Unit {n}: mobile audio QA pending until both source MP3 files are published")
+          PY
