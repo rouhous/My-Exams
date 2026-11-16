@@ -25,6 +25,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      # Deliberate full rerun after Grade 12 Core units 3 and 4 source-linked MP3 were published.
       - name: Validate all five papers against official-shaped SAH schema and recorded source hashes
         run: python3 scripts/audit_remaining_grade11_12_core.py
       - name: Run mobile interactive exam and untimed skill checks
