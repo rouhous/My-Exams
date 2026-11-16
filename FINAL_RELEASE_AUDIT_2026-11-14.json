@@ -244,14 +244,15 @@
       "unitFixed": "A-D provisional; titles exist but content borrowed from unrelated projects",
       "fixed": 4,
       "mixed": 2,
-      "otherDrafts": 1,
+      "otherDrafts": 2,
       "random": true,
       "audioKey": "12-core-legacy",
       "imageCount": null,
-      "unitReview": "Retail Therapy, Starting University, Tourism and Hospitality, Travel and Transport headers do not establish matching listening/reading/writing source content; rebuild required | Additional original technically validated unit paper: New original nine-section 70-mark Retail Therapy paper A, source-verified 2 MP3",
+      "unitReview": "Retail Therapy, Starting University, Tourism and Hospitality, Travel and Transport headers do not establish matching listening/reading/writing source content; rebuild required | Additional original technically validated unit paper: New original nine-section 70-mark Retail Therapy paper A, source-verified 2 MP3 | Starting University Unit 2 full original 9-section 70-mark draft added; source MP3 and browser QA must pass.",
       "release": "blocked_unit_content_mismatch_and_one_new_unit_paper_technical_pilot_only",
       "newOriginalUnitPapers": [
-        "12-core-unit1"
+        "12-core-unit1",
+        "12-core-unit2"
       ]
     },
     {
@@ -289,8 +290,8 @@
     "officialGrade10": "https://ict.moe.gov.om/book/PDF/10/cls10_cb_10A/files/basic-html/page13.html",
     "officialGrade12Elective": "https://ict.moe.gov.om/book/PDF/12/cls12_Insights3_SB/files/downloads/cls12_Insights3_SB.pdf"
   },
-  "totalStoredFixedAndDraftPapers": 72,
-  "note": "72 archived fixed/mixed/draft papers including three additional Grade 11 elective original Unit 2–4 drafts. Audio totals remain at prior verified baseline until source-bound MP3 and mobile QA pass. No Ministry certification.",
+  "totalStoredFixedAndDraftPapers": 73,
+  "note": "73 stored fixed/mixed/draft papers. Grade11 elective units3/4 original 60-mark papers have 4 verified MP3 and browser QA; Grade12 core Starting University Unit2 is a new 70-mark original paper pending MP3/QA. No official certification.",
   "baselineBeforeTargetedRepairs": {
     "storedFixedAndDraftPapers": 66,
     "verifiedListeningSectionLinks": 104,
@@ -352,6 +353,12 @@
       "track": "elective",
       "key": "11-elective-unit4",
       "desc": "Original six-section 60-mark Unit 4 paper, content drafted; verify MP3 and teacher textbook alignment separately"
+    },
+    {
+      "grade": 12,
+      "track": "core",
+      "key": "12-core-unit2",
+      "desc": "Original nine-section 70-mark Starting University paper B; two MP3 generated or queued; teacher review pending"
     }
   ],
   "updatedAfterTargetedRepairs": "2026-11-14"
