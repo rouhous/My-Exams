@@ -1,0 +1,79 @@
+name: Grade 10 E/F original-text audio preview (review only)
+on:
+  pull_request:
+    branches: [exam-review-2026-11-16]
+    paths:
+      - review/grade10-e-f-unique-listening.json
+      - scripts/stage_grade10_listening_ef.py
+      - scripts/generate_grade10_audio.py
+      - scripts/listening_voice_roles.py
+      - .github/workflows/grade10-listening-ef-preview.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax-check source and overlay Grade 10 E/F in disposable checkout
+        run: |
+          python -m py_compile scripts/stage_grade10_listening_ef.py scripts/generate_grade10_audio.py scripts/listening_voice_roles.py
+          python scripts/stage_grade10_listening_ef.py --apply
+          python scripts/audit_listening_reuse.py --max-exact 36 --fail-cross-grade --output /tmp/grade10-listening-uniqueness.json
+      - name: Install free British neural voices and MP3 validators
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m pip install edge-tts mutagen
+      - name: Create Grade 10 E/F recordings with role-correct voice cast
+        env:
+          ONLY_MODELS: E,F
+        run: python scripts/generate_grade10_audio.py
+      - name: Verify audio, distinct texts and cast
+        run: |
+          python - <<'PY'
+          import json,hashlib,sys
+          from pathlib import Path
+          from mutagen.mp3 import MP3
+          from collections import Counter
+          models={m['id']:m for m in json.loads(Path('grade10/data.json').read_text())['models']}
+          manifest=json.loads(Path('grade10/audio/manifest.json').read_text())
+          assert set(manifest)=={'E','F'},list(manifest)
+          assert models['E']['listening']['passage']!=models['A']['listening']['passage']
+          assert models['F']['listening']['passage']!=models['D']['listening']['passage']
+          expected={
+             'E':{'Layla':'en-GB-LibbyNeural','Yousuf':'en-GB-RyanNeural'},
+             'F':{'Amina':'en-GB-LibbyNeural','Hamed':'en-GB-RyanNeural'}
+          }
+          for name,model in models.items():
+            if name not in ('E','F'):continue
+            audio=manifest[name]
+            assert audio['voiceRoutingVersion']=='identity-v2'
+            assert audio['speakerCast']==expected[name],(name,audio['speakerCast'])
+            assert audio['playedTwice'] is True
+            assert len(model['listening']['questions'])==15
+            assert all(x.get('evidence') for x in model['listening']['questions'])
+            dest=Path('grade10/audio')/audio['mp3']
+            assert dest.is_file() and MP3(dest).info.length>60,(name,'bad mp3')
+            print('PASS',name,round(MP3(dest).info.length),'seconds',audio['speakerCast'])
+          PY
+      - name: Upload only the newly recorded E/F listening previews
+        uses: actions/upload-artifact@v4
+        with:
+          name: grade10-ef-unique-audio-audition
+          retention-days: 14
+          path: |
+            grade10/audio/g10-e-listening.mp3
+            grade10/audio/g10-f-listening.mp3
+            grade10/audio/manifest.json
+      - name: Preserve source uniqueness audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: grade10-ef-unique-text-report
+          retention-days: 14
+          path: /tmp/grade10-listening-uniqueness.json
