@@ -1,0 +1,58 @@
+{
+  "id": "g11-elective-unit3-writing-original",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 3,
+    "title": "In the Past"
+  },
+  "status": "original_unit_writing_draft_teacher_marking_required",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "writing1": {
+    "id": "wrt1",
+    "title": "Writing 1 · Historical museum attendance data",
+    "marks": 10,
+    "minWords": 100,
+    "type": "graph/data description",
+    "prompt": "The chart shows how many students visited the school heritage exhibition during four weeks. Describe the changes in attendance from 32 to 48 to 59 to 73 students. Compare the weeks and summarise the overall trend in at least 100 words.",
+    "chart": {
+      "title": "Visitors to the school heritage exhibition",
+      "unit": "students",
+      "categories": [
+        "Week 1",
+        "Week 2",
+        "Week 3",
+        "Week 4"
+      ],
+      "series": [
+        {
+          "label": "Visitors",
+          "values": [
+            32,
+            48,
+            59,
+            73
+          ]
+        }
+      ]
+    },
+    "teacherKeyFacts": [
+      "Attendance rises in each successive week.",
+      "The first week has 32 visitors and the last has 73.",
+      "Overall increase is 41 visitors.",
+      "Largest weekly increase is 16, between Weeks 1 and 2."
+    ],
+    "grading": "teacher rubric required; no automatic writing grade"
+  },
+  "writing2": {
+    "id": "wrt2",
+    "title": "Writing 2 · Formal heritage exhibition email",
+    "marks": 10,
+    "minWords": 100,
+    "type": "formal interactive email",
+    "prompt": "Your school is planning an exhibition called Everyday History. Write a formal email of at least 100 words to the local museum coordinator. Explain the purpose of the exhibition, ask whether the museum could lend safe replicas or provide advice, describe how students will check historical sources, and politely request a reply.",
+    "grading": "teacher rubric required; no automatic writing grade"
+  }
+}
