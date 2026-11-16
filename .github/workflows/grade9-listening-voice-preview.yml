@@ -1,12 +1,12 @@
 name: Grade 9 listening playback and voices — review only
 on:
-  pull_request:
-    branches: [exam-review-2026-11-16]
+  push:
+    branches: [fix/listening-two-pass-order-2026-11-16]
     paths:
+      - .github/workflows/grade9-listening-voice-preview.yml
       - scripts/generate_grade9_audio.py
       - scripts/listening_voice_roles.py
       - tests/test_grade9_listening_voice_order.py
-      - .github/workflows/grade9-listening-voice-preview.yml
   workflow_dispatch:
 permissions:
   contents: read
