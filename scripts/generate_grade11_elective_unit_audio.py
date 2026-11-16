@@ -37,13 +37,13 @@ async def render_task(source, target):
             turns.append((m.group(2).strip(),speaker_names.index(speaker)))
         if not 25 <= len(turns) <= 30:
             raise ValueError("Dialogue turns missing")
-        intro = "You are going to hear a conversation between two people about responsible online influence. Choose one answer for each question. You will hear the conversation twice."
+        intro = "You are going to hear a conversation between two people. Choose one answer for each question. You will hear the conversation twice."
     else:
         if not 400 <= len(script.split()) <= 450:
             raise ValueError("Monologue outside SAH word range")
         solo_voice = 1 if ('male' in str(source.get("voice","")).lower() and 'female' not in str(source.get("voice","")).lower()) else 0
         turns = [(paragraph.strip().replace("\n"," "),solo_voice) for paragraph in re.split(r"\n\s*\n",script) if paragraph.strip()]
-        intro = "You are going to hear an informative text about fame and media. Complete the notes and short answers. You will hear the recording twice."
+        intro = "You are going to hear a text about the unit topic. Complete the notes and short answers. You will hear the recording twice."
 
     with tempfile.TemporaryDirectory() as tmp:
         temp=pathlib.Path(tmp)
@@ -99,7 +99,7 @@ async def main():
     manifest={}
     for source_path in tracks:
         source=json.loads(source_path.read_text())
-        if source.get("audioStatus") not in {"not_generated_until_content_review","generated_draft_pending_teacher_approval","pending_voice_generation__keep_teacher_read_aloud_until_mp3_verified","pending_voice_generation__one_speaker_twice"}:
+        if source.get("audioStatus") not in {"not_generated_until_content_review","generated_draft_pending_teacher_approval","pending_voice_generation__keep_teacher_read_aloud_until_mp3_verified","pending_voice_generation__one_speaker_twice","pending_source_verified_MP3"}:
             raise ValueError("Unexpected state in "+source_path.name)
         actual=len(source["script"].split())
         if actual!=source["wordCount"]:
