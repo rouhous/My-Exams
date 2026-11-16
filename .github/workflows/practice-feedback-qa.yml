@@ -1,0 +1,51 @@
+name: QA My Exams practice explanation controls
+on:
+  pull_request:
+    branches: [exam-review-2026-11-16]
+    paths:
+      - grades5-6/index.html
+      - grades7-8/index.html
+      - shared/practice-feedback.js
+      - .github/workflows/practice-feedback-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  feedback-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify reusable feedback renderer JavaScript
+        run: node --check shared/practice-feedback.js
+      - name: Verify all inline student-page scripts parse as JavaScript
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re,subprocess,tempfile
+          pages=['grades5-6/index.html','grades7-8/index.html']
+          for file in pages:
+            source=Path(file).read_text(encoding='utf-8')
+            assert '../shared/practice-feedback.js' in source,file
+            assert '../shared/listening-runtime.js' in source,file
+            parts=re.findall(r'<script(?![^>]*\bsrc\s*=)[^>]*>([\s\S]*?)</script>',source,re.I)
+            assert parts,(file,'no inline JS')
+            for n,part in enumerate(parts):
+              if not part.strip(): continue
+              with tempfile.TemporaryDirectory() as temp:
+                output=Path(temp)/f'script-{n}.js'
+                output.write_text(part,encoding='utf-8')
+                subprocess.run(['node','--check',str(output)],check=True)
+            print('PASS',file,len(parts),'inline script blocks')
+          PY
+      - name: Verify explanations cannot be exposed before exam submission
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          a=Path('grades5-6/index.html').read_text()
+          b=Path('grades7-8/index.html').read_text()
+          assert "if(!state.full)str+=" in a
+          assert "if(!current.timed)sections.forEach" in b
+          assert "function finish(" in a and "function finish(" in b
+          assert 'showQuestionFeedback' in a and 'reviewAnswer' in b
+          print('PASS mode gating and explanatory review')
+          PY
