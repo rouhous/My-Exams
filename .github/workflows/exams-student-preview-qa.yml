@@ -11,6 +11,9 @@ on:
       - '.github/workflows/exams-student-preview-qa.yml'
 permissions:
   contents: read
+concurrency:
+  group: exams-student-preview
+  cancel-in-progress: true
 jobs:
   browser:
     runs-on: ubuntu-latest
