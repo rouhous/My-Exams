@@ -53,6 +53,9 @@ jobs:
               if s['key']=='listening2':
                   expected={VOICE_NAMES[v] for _,v,_ in parse_dialogue(s['script'],s.get('speakerGenders'))}
                   assert set(entry['usedVoices'])==expected,(key,expected,entry['usedVoices'])
+                  cast={speaker:VOICE_NAMES[voice] for _,voice,speaker in parse_dialogue(s['script'],s.get('speakerGenders'))}
+                  assert entry.get('speakerCast')==cast,(key,'wrong voice for speaker')
+              assert entry.get('voiceRoutingVersion')=='identity-v2',key
           print('All 16 recordings generated and linked to exact current questions and image choices.')
           PY
           git config user.name "github-actions[bot]"
