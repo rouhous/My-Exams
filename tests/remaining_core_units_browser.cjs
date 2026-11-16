@@ -1,0 +1,41 @@
+const {chromium}=require('playwright');
+(async()=>{
+ const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
+ const page=await browser.newPage({viewport:{width:390,height:844}});
+ const units=[[11,1,'a','Communication'],[11,3,'c','Travellers and Tourists'],[11,4,'d','Innovation'],[12,3,'c','Tourism and Hospitality'],[12,4,'d','Travel and Transport']];
+ let passed=0,awaiting=0;
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ for(const [grade,unit,letter,title] of units){
+  await page.goto(`http://127.0.0.1:8765/grade${grade}/core/units/paper-${letter}-preview.html`,{waitUntil:'domcontentloaded'});
+  await page.waitForFunction(()=>!document.querySelector('#start')?.disabled,{timeout:30000});
+  const ready=await page.locator('#ready').textContent();
+  const audioReady=ready.includes('2 / 2');
+  await page.click('#start');
+  const tag=`G${grade} U${unit} ${title}`;
+  if(await page.locator('section.part').count()!==9)throw Error(tag+' nine sections missing');
+  if(await page.locator('.q').count()!==(grade===11?45:50))throw Error(tag+' question count wrong');
+  if(await page.locator('textarea').count()!==2)throw Error(tag+' writing tasks missing');
+  if(!(await page.locator('#paperMarks').textContent()).includes(grade===11?'60 marks':'70 marks'))throw Error(tag+' marks wrong');
+  if(!(await page.locator('#clock').textContent()).startsWith(grade===11?'02:':'03:'))throw Error(tag+' timer wrong');
+  const players=await page.locator('section.part audio').count();
+  if(audioReady&&players!==2)throw Error(tag+' verified MP3 links missing');
+  if(!audioReady&&players===2)throw Error(tag+' unverified MP3 presented as valid');
+  await page.click('#end');
+  const feedback=await page.locator('#results').textContent();
+  if(!feedback.includes(grade===11?'0 / 37':'0 / 40'))throw Error(tag+' objective count wrong');
+  if(!feedback.includes(grade===11?'8 short answers':'10 short answers'))throw Error(tag+' manual answers miscounted');
+  if(!feedback.includes('teacher review'))throw Error(tag+' auto-assigned subjective grade');
+  await page.click('#back');
+  await page.selectOption('#mode','skill');
+  await page.selectOption('#skill','rdg3');
+  await page.click('#start');
+  if(await page.locator('section.part').count()!==1)throw Error(tag+' untimed single skill failed');
+  if(await page.locator('.q').count()!==(grade===11?8:10))throw Error(tag+' independent Reading3 items wrong');
+  if(!(await page.locator('#clock').isHidden()))throw Error(tag+' timer visible for skill');
+  if(audioReady)passed++;else awaiting++;
+  console.log(tag+': pass browser structure; audio '+(audioReady?'2/2 verified':'pending'));
+ }
+ if(errors.length)throw Error('Browser JS errors: '+errors.join(' | '));
+ console.log('PASS 5 complete unit papers, 9 sections, correct grading, timers and untimed skills. MP3 ready: '+passed+'/5; pending: '+awaiting);
+ await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});
