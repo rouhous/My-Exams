@@ -1,0 +1,426 @@
+{
+  "id": "g12-core-unit2-paper-b-original",
+  "grade": 12,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "Starting University"
+  },
+  "durationMinutes": 180,
+  "marks": 70,
+  "status": "original_9_section_teacher_review_draft__audio_source_check_required",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "bookReference": "Unit 2 Starting University; exact textbook pages pending teacher review",
+  "sahReference": "UPPER_GRADES_SAH_SEM1_2026_SPEC.json/tracks/12-core",
+  "listeningSources": [
+    "unit2-listening1-original-draft.json",
+    "unit2-listening2-original-draft.json"
+  ],
+  "sections": {
+    "grm": {
+      "title": "Grammar: Dialogue cloze",
+      "marks": 5,
+      "passage": "Huda: I (1) _____ the official university website when you called.\nSalim: (2) _____ you visited the university campus yet?\nHuda: Not yet, but I (3) _____ attend the open day next week.\nSalim: You (4) _____ check the entry requirements carefully.\nHuda: If I get more information, I (5) _____ update my comparison table before the final application deadline.",
+      "wordCount": 60,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "Gap 1",
+          "options": [
+            "was checking",
+            "check"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 2",
+          "options": [
+            "Have",
+            "Did already"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 3",
+          "options": [
+            "am going to",
+            "was going to yesterday"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 4",
+          "options": [
+            "should",
+            "must to"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 5",
+          "options": [
+            "will",
+            "had"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "vcb": {
+      "title": "Vocabulary: University cloze",
+      "marks": 5,
+      "passage": "Choosing a university requires careful (1) _____ rather than relying on rumours. Students should read official course descriptions and check entry (2) _____ before applying. An orientation programme helps students become familiar with the campus and its (3) _____. Some learners prefer quiet study areas, while others enjoy working with classmates on shared (4) _____. A weekly schedule should include lessons, revision, exercise and rest. Students who need advice can contact an academic (5) _____. Making informed decisions and asking thoughtful questions are important parts of becoming independent and responsible.",
+      "wordCount": 90,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "Gap 1",
+          "options": [
+            "research",
+            "advertising",
+            "fashion"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 2",
+          "options": [
+            "requirements",
+            "receipts",
+            "passengers"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 3",
+          "options": [
+            "facilities",
+            "invoices",
+            "competitions"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 4",
+          "options": [
+            "projects",
+            "souvenirs",
+            "discounts"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Gap 5",
+          "options": [
+            "adviser",
+            "customer",
+            "passenger"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "rdg1": {
+      "title": "Reading 1: Seven independent texts",
+      "marks": 7,
+      "texts": [
+        {
+          "passage": "University open-day notice: Visitors should register online before Friday. The engineering laboratory tour begins at ten in the morning, and students must wear closed shoes. Parents may attend the introductory talk but should not enter restricted workshop areas.",
+          "statement": "Visitors may enter the engineering workshop without following safety instructions.",
+          "answer": 1
+        },
+        {
+          "passage": "Dear Admissions Office, I have read the course description but cannot find the deadline for submitting my language certificate. Could you please confirm the correct date and explain whether an electronic copy is acceptable? Thank you for your assistance.",
+          "statement": "The writer is asking for information about an application requirement.",
+          "answer": 0
+        },
+        {
+          "passage": "Student library guide: New members may borrow up to five books for two weeks. Quiet study rooms can be reserved online, but food is not permitted inside them. Students needing research support should ask at the information desk.",
+          "statement": "Students may eat meals in the quiet study rooms.",
+          "answer": 1
+        },
+        {
+          "passage": "Accommodation information: The residence office provides details about shared rooms, laundry facilities and monthly costs. Applicants are advised to compare transport options before accepting an offer. A room is not guaranteed until the residence office confirms the booking.",
+          "statement": "Every student is guaranteed accommodation as soon as they apply.",
+          "answer": 1
+        },
+        {
+          "passage": "Study-skills workshop: First-year students can join a free session about planning assignments, avoiding plagiarism and finding reliable academic sources. The workshop is held on Wednesday afternoon, and registration is required because places are limited. Students should bring a notebook.",
+          "statement": "Students need to register to attend the workshop.",
+          "answer": 0
+        },
+        {
+          "passage": "Campus transport update: The morning bus leaves the main gate at seven thirty and stops beside the science building. During examinations an additional afternoon service operates at four. Updated schedules are displayed on the university transport page.",
+          "statement": "The additional afternoon service runs during examinations.",
+          "answer": 0
+        },
+        {
+          "passage": "Student wellbeing message: If university life feels overwhelming, speak with a student adviser or another trusted professional. Asking for help is a responsible choice. Support appointments can be arranged privately, and students are encouraged to discuss practical solutions without embarrassment.",
+          "statement": "The message tells students never to ask for support.",
+          "answer": 1
+        }
+      ],
+      "questions": [
+        {
+          "type": "tf",
+          "stem": "Visitors may enter the engineering workshop without following safety instructions.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "The writer is asking for information about an application requirement.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "tf",
+          "stem": "Students may eat meals in the quiet study rooms.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "Every student is guaranteed accommodation as soon as they apply.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "tf",
+          "stem": "Students need to register to attend the workshop.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "tf",
+          "stem": "The additional afternoon service runs during examinations.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "tf",
+          "stem": "The message tells students never to ask for support.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    "wrt1": {
+      "title": "Writing 1: Evaluative essay",
+      "marks": 10,
+      "minWords": 100,
+      "prompt": "Some students prefer to study at a university close to home, while others choose to live away from their families. Write an evaluative essay of at least 100 words discussing the advantages and disadvantages of both choices. Include your own justified opinion and a conclusion.",
+      "marking": "teacher five-level rubric"
+    },
+    "wrt2": {
+      "title": "Writing 2: Narrative",
+      "marks": 10,
+      "minWords": 100,
+      "prompt": "Write a story of at least 100 words beginning: 'On my first day at university, I opened my bag and discovered that the most important document was missing.' Describe what happened next, how you solved the problem and what you learned.",
+      "marking": "teacher five-level rubric"
+    },
+    "rdg2": {
+      "title": "Reading 2: Interactive university email",
+      "marks": 8,
+      "passage": "Dear Mariam,\n\nThank you for asking about my first month at university. I was excited when I arrived, but the timetable was quite different from school. Some lectures finished early while others were followed by laboratory sessions, so I had to plan independent study rather than wait for homework instructions. I now keep a weekly schedule that includes revision, meals, exercise and time to contact my family. It is not perfect, but it helps me avoid leaving assignments until the final evening. I check it each Sunday and change my plan when a group project requires extra preparation.\n\nYou asked how I chose my course. Before applying, I compared the official descriptions of several programmes. I checked entry requirements, practical modules and the support available to first-year students. I also attended an open day and spoke to current students. Their experiences were different, so I did not assume that one person's opinion represented everyone. The admissions office answered a question about a deadline that had been reported incorrectly on social media.\n\nLiving away from home has taught me to manage money carefully. I record transport, food and study expenses, then review the totals every weekend. I still make mistakes, especially when I buy things without planning, but I am learning to make realistic choices. My roommate and I also share responsibility for keeping our study area tidy. We disagree occasionally, yet discussing expectations calmly has helped us work together. We have even agreed on quiet hours before important assessments.\n\nIf you are worried about making friends, remember that many new students feel uncertain. I joined a small science club, where we work on practical projects and discuss our interests. I also attended a study-skills workshop after finding my first research assignment difficult. The adviser showed us how to locate reliable sources and ask questions during tutorials.\n\nPlease do not think you must solve every problem alone. University independence means taking responsibility, but it also means knowing when to ask for help. I hope you can visit a campus before making your final choice. Write back and tell me which subjects interest you most.\n\nBest wishes,\nSalim",
+      "wordCount": 356,
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "What was different about Salim's timetable?",
+          "options": [
+            "All classes ended at the same time",
+            "He had to plan independent study",
+            "There were no practical sessions"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "How did Salim compare courses?",
+          "options": [
+            "By reading official programme details",
+            "By copying a friend's choice",
+            "By following advertisements only"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Who corrected the application deadline information?",
+          "options": [
+            "A sports coach",
+            "His roommate",
+            "The admissions office"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mc",
+          "stem": "How often does Salim review his expenses?",
+          "options": [
+            "Every morning",
+            "Every weekend",
+            "Once a year"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "What helped Salim and his roommate?",
+          "options": [
+            "Calmly discussing expectations",
+            "Ignoring disagreements",
+            "Avoiding shared responsibilities"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "Which club did Salim join?",
+          "options": [
+            "A drama club",
+            "A travel club",
+            "A science club"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mc",
+          "stem": "Where did Salim learn to locate reliable sources?",
+          "options": [
+            "At a study-skills workshop",
+            "At a shopping centre",
+            "During a sports match"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "What does Salim believe university independence includes?",
+          "options": [
+            "Never asking questions",
+            "Taking responsibility and seeking help",
+            "Avoiding all difficult tasks"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    "rdg3": {
+      "title": "Reading 3: First semester university narrative",
+      "marks": 10,
+      "passage": "When Abdullah received an offer to study at university, he was pleased but nervous. He had worked hard at school, yet he had never lived away from his family. His first concern was accommodation. He compared the university residence with a rented room, checking costs, transport and the distance from lectures. After discussing the options with his parents, he chose the residence for the first semester.\n\nDuring orientation week, Abdullah met students from different towns. Some were confident speaking to strangers, while others were quiet. He joined a small group exploring the library and science laboratories. A student guide explained how to borrow books, reserve study spaces and contact an academic adviser. Abdullah wrote down the information because he knew he would not remember every detail from the tour. He also learned where to find the official timetable and how to check changes to lecture rooms.\n\nHis first group assignment was more difficult than expected. Four students had to prepare a presentation about reducing water use on campus. Abdullah wanted to start collecting facts immediately, but another member suggested dividing the responsibilities first. They agreed that two people would research reliable sources, one would design the slides and Abdullah would organise the speaking order.\n\nA week later, the team discovered that one of their figures came from an outdated report. The presentation was due soon, and Abdullah considered keeping the number to save time. His classmate reminded him that accurate information mattered more than finishing early. They checked the university library database, found a newer report and changed their conclusion. The extra work made the presentation clearer and more trustworthy.\n\nAt the same time, Abdullah struggled to balance lectures with independent study. He sometimes spent too long on his phone and then rushed through homework. After attending a study-skills workshop, he began using a weekly timetable with short breaks. He also started walking in the evenings and contacting his family regularly. These changes did not remove every difficulty, but they helped him feel more organised. His roommate encouraged him to keep trying even when a difficult week interrupted the new routine.\n\nAt the end of the semester, Abdullah realised that university independence did not mean solving every problem alone. He had learned to compare reliable information, discuss decisions, respect teammates and ask advisers for support when necessary. He was still learning, but he felt better prepared for the next stage of his studies.",
+      "wordCount": 403,
+      "questions": [
+        {
+          "type": "short",
+          "stem": "Where did Abdullah decide to live during his first semester?",
+          "answer": "the university residence",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "What did the student guide explain how to reserve?",
+          "answer": "study spaces",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "What topic did Abdullah's group investigate?",
+          "answer": "reducing water use",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "What was wrong with one research figure?",
+          "answer": "it was outdated",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "Where did the team find a newer report?",
+          "answer": "the university library database",
+          "maxWords": 4
+        },
+        {
+          "type": "short",
+          "stem": "What helped Abdullah organise independent study?",
+          "answer": "a weekly timetable",
+          "maxWords": 4
+        },
+        {
+          "type": "mc",
+          "stem": "Why did Abdullah choose the residence?",
+          "options": [
+            "After comparing practical options",
+            "Because a friend demanded it",
+            "Without checking costs"
+          ],
+          "answer": 0
+        },
+        {
+          "type": "mc",
+          "stem": "What did the group do before collecting research?",
+          "options": [
+            "Cancel the presentation",
+            "Divide responsibilities",
+            "Ignore the deadline"
+          ],
+          "answer": 1
+        },
+        {
+          "type": "mc",
+          "stem": "Why did they replace the old figure?",
+          "options": [
+            "It looked unattractive",
+            "It was too short",
+            "Accuracy was important"
+          ],
+          "answer": 2
+        },
+        {
+          "type": "mc",
+          "stem": "What did Abdullah learn about independence?",
+          "options": [
+            "It can include asking for support",
+            "It means refusing teamwork",
+            "It removes every difficulty"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  }
+}
