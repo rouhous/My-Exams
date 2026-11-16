@@ -1,0 +1,53 @@
+name: Grade 9 September 2026 SAH revised audio and preview QA
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - exam-review-2026-11-16
+    paths:
+      - 'grade9/unit-exams/models.json'
+      - 'scripts/audit_grade9_unit_full.py'
+      - '.github/workflows/grade9-sept2026-preview-qa.yml'
+permissions:
+  contents: write
+concurrency:
+  group: grade9-sept2026-preview
+  cancel-in-progress: false
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare TTS and MP3 checking
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m pip install edge-tts gTTS mutagen
+      - name: Regenerate all six voice recordings from the corrected September 2026 scripts
+        run: python scripts/generate_grade9_unit_exam_audio.py
+      - name: Validate exact 2026 official exam structure, source SHA and photographs
+        run: python scripts/audit_grade9_unit_full.py
+      - name: Commit only corrected audio files to isolated preview branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin exam-review-2026-11-16
+          old=$(sha256sum grade9/unit-exams/models.json | cut -d' ' -f1)
+          new=$(git show origin/exam-review-2026-11-16:grade9/unit-exams/models.json | sha256sum | cut -d' ' -f1)
+          if [ "$old" != "$new" ]; then
+            echo 'Preview model changed during recording; do not publish stale MP3' >&2
+            exit 1
+          fi
+          git reset --mixed origin/exam-review-2026-11-16
+          git add grade9/unit-exams/audio/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Generate Grade9 September 2026 exact-source listening MP3 (review only)'
+          git push origin HEAD:exam-review-2026-11-16
+      - name: Confirm review branch is not the published main branch
+        run: |
+          test "$GITHUB_REF_NAME" = "exam-review-2026-11-16"
+          echo 'PASS: revised unit models and MP3 remain on review branch.'
