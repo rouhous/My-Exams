@@ -1,14 +1,14 @@
 name: Unique listening bank pilot — Grades 6–10
 on:
-  pull_request:
-    branches: [exam-review-2026-11-16]
+  push:
+    branches: [fix/listening-two-pass-order-2026-11-16]
     paths:
+      - .github/workflows/unique-listening-grades6-10.yml
       - review/grade9-model-d-original-listening.json
       - review/grade9-model-e-original-listening.json
       - review/grade9-model-f-original-listening.json
       - scripts/stage_grade9_listening_def.py
       - scripts/generate_grade9_audio.py
-      - .github/workflows/unique-listening-grades6-10.yml
   workflow_dispatch:
 permissions:
   contents: read
