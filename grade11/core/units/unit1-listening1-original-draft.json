@@ -1,0 +1,91 @@
+{
+  "id": "g11-core-u1-lst1",
+  "grade": 11,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 1,
+    "title": "Communication"
+  },
+  "skill": "Listening 1",
+  "marks": 7,
+  "speakerTurns": 28,
+  "script": "Presenter: Why was this project started?\nAmina: We wanted to make weekly school news bulletin because our school community needed a practical improvement.\nPresenter: Where did you plan the first version?\nAmina: We began in the media room, where our teacher organised responsibilities for everyone.\nPresenter: When was the team meeting held?\nAmina: It was Monday afternoon, which allowed our team to prepare without missing lessons.\nPresenter: Which item was particularly useful?\nAmina: We used a microphone, and checked that it was suitable for the task.\nPresenter: Who checked the details and safety?\nAmina: We consulted two teachers instead of trusting rumours or making unsupported claims.\nPresenter: Did students work completely alone?\nAmina: No, our teacher supervised carefully, while students researched information and shared different responsibilities.\nPresenter: What problem appeared during the project?\nAmina: Our first attempt contained an incorrect activity date, so the results needed further checking.\nPresenter: How did your group correct the error?\nAmina: We returned to the official school notice and explained our correction clearly to teammates.\nPresenter: Who will benefit from your work?\nAmina: We hope younger pupils will gain useful information from the finished project.\nPresenter: What did users suggest improving?\nAmina: They recommended slower speech and captions, and we recorded their suggestions for the next version.\nPresenter: How did you handle disagreements?\nAmina: We listened respectfully, considered the evidence and tested the strongest suggestions together.\nPresenter: What did the team do with feedback?\nAmina: We discussed comments at our weekly meeting and made a clear improvement plan.\nPresenter: What will you prepare next term?\nAmina: Our next step will be shorter interviews, building on the experience gained this term.\nPresenter: What is the most important lesson?\nAmina: We learned the value of clear communication, honest feedback and careful preparation. Every group member also checked the final explanation and asked useful questions before sharing it with others.",
+  "wordCount": 313,
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "What was the project?",
+      "options": [
+        "weekly school news bulletin",
+        "a football tournament",
+        "a shopping campaign"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Where did the team begin?",
+      "options": [
+        "At the airport",
+        "media room",
+        "In a hospital"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "When did they meet?",
+      "options": [
+        "Friday evening",
+        "Sunday midnight",
+        "Monday afternoon"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What item was used?",
+      "options": [
+        "microphone",
+        "a suitcase",
+        "a football"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "Who gave advice?",
+      "options": [
+        "A singer",
+        "two teachers",
+        "A taxi driver"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "Which problem was corrected?",
+      "options": [
+        "A lost passport",
+        "A broken bus",
+        "an incorrect activity date"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What is the main lesson?",
+      "options": [
+        "clear communication",
+        "Ignoring information",
+        "Avoiding all teamwork"
+      ],
+      "answer": 0
+    }
+  ],
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "audioStatus": "pending_source_sha_mp3"
+}
