@@ -1,0 +1,85 @@
+{
+  "id": "g12-core-unit2-lst2-original",
+  "grade": 12,
+  "track": "core",
+  "semester": 1,
+  "unit": {
+    "number": 2,
+    "title": "Starting University"
+  },
+  "skill": "Listening 2",
+  "genre": "two-part single-speaker informative narrative",
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "script": "Part One\n\nMy name is Hamed, and last month I attended a university open day with two classmates. We wanted to compare different courses before submitting applications. Our teacher had advised us to prepare questions, so we made a list about entry requirements, practical training, library facilities and the cost of living away from home. We also agreed not to rely on comments from strangers online when checking important information.\n\nThe first session introduced students to the engineering department. A lecturer explained that the first year includes mathematics, laboratory work and group projects. She showed us a typical weekly timetable and reminded us that independent study requires planning. I was surprised to learn that students often work together to solve practical problems rather than study every subject alone. After the talk, we visited a workshop where older students demonstrated a simple water-saving device.\n\nWe then spoke with a student adviser. She explained how new students can ask for help with course choices, study methods and personal difficulties. She also suggested checking the official university website regularly because deadlines and entry requirements may change. I wrote down the contact details for the admissions office and asked whether scholarships were available. The adviser encouraged us to compare realistic costs, including transport and accommodation, before making a final decision.\n\nPart Two\n\nIn the afternoon, we joined a guided tour of the library and study areas. The librarian showed us how to find reliable academic sources and book quiet rooms for group work. My friend Mariam asked whether students could borrow laptops, while Faisal wanted to know about accessible study spaces. The librarian explained that equipment and support services differ between institutions, so applicants should ask direct questions.\n\nBefore leaving, we attended a short discussion with current students. They described how they balanced lectures, revision, exercise and family commitments. One student said he had initially struggled with time management but improved after joining a study-skills workshop. Another explained that asking questions during tutorials helped her feel more confident. Their experiences were different, which reminded us that there is no single perfect way to adjust to university life.\n\nOn the journey home, we compared our notes and corrected a misunderstanding about one application deadline. I realised that an open day is useful not because it makes every decision for you, but because it helps you collect evidence and identify further questions. I now plan to speak with my family, review official course details and prepare a realistic budget before choosing where to apply.",
+  "wordCount": 418,
+  "marks": 8,
+  "questions": [
+    {
+      "type": "short",
+      "stem": "Where did Hamed go last month?",
+      "answer": "a university open day",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Which department did the first session introduce?",
+      "answer": "engineering department",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "What kind of device did students demonstrate?",
+      "answer": "a water-saving device",
+      "maxWords": 4
+    },
+    {
+      "type": "short",
+      "stem": "Which office's contact details did Hamed record?",
+      "answer": "the admissions office",
+      "maxWords": 4
+    },
+    {
+      "type": "mc",
+      "stem": "What did the lecturer say students need for independent study?",
+      "options": [
+        "A private car",
+        "Good planning",
+        "No teamwork"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "What did the librarian demonstrate?",
+      "options": [
+        "How to find reliable sources",
+        "How to purchase tickets",
+        "How to avoid assignments"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What helped a student with time management?",
+      "options": [
+        "Changing universities",
+        "Avoiding lectures",
+        "A study-skills workshop"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "mc",
+      "stem": "What does Hamed plan to prepare before applying?",
+      "options": [
+        "A sports programme",
+        "A realistic budget",
+        "An advertising campaign"
+      ],
+      "answer": 1
+    }
+  ],
+  "audioStatus": "pending_source_verified_MP3"
+}
