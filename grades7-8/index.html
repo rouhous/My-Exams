@@ -54,7 +54,7 @@ function reviewAnswer(s,i){const k=s.key+':'+i,v=state[k],empty=v===undefined||S
 if(s.type==='picture-choice'||s.type==='cloze'){correct=!empty&&Number(v)===q.answer;expected=letters[q.answer]+' — '+(q.options?.[q.answer]||'');your=empty?'Not answered':letters[Number(v)]+' — '+(q.options?.[Number(v)]||'')}
 else if(s.type==='matching'){correct=!empty&&Number(v)===s.answers[i];expected=letters[s.answers[i]];your=empty?'Not answered':letters[Number(v)]}
 else if(s.type==='true-false'){correct=!empty&&Number(v)===(q.answer?0:1);expected=q.answer?'True':'False';your=empty?'Not answered':(Number(v)===0?'True':'False')}
-else if(s.type==='short-answer'){const norm=t=>String(t||'').toLowerCase().trim().replace(/[^a-z0-9 ]/g,'').replace(/\\s+/g,' ');correct=!empty&&q.answers.some(x=>norm(x)===norm(v));expected=q.answers[0]}
+else if(s.type==='short-answer'){const norm=t=>String(t||'').toLowerCase().trim().replace(/[^a-z0-9 ]/g,'').replace(/\s+/g,' ');correct=!empty&&q.answers.some(x=>norm(x)===norm(v));expected=q.answers[0]}
 const evidence=q.evidence||(s.type==='picture-choice'?q.script:'');
 const explanation=q.explanation||(s.type==='picture-choice'?'Listen for the final choice. The other pictures can represent words mentioned as distractors.':s.type==='true-false'?'Compare the exact detail with the statement; an incorrect word can make the statement false.':'');
 return {correct,correctAnswer:expected,yourAnswer:your,explanation,evidence,retryHint:correct?'':'Read the evidence or listen again before retrying.',unanswered:empty};
