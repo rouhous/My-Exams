@@ -54,6 +54,11 @@ jobs:
               used=set(item['usedVoices'])
               assert sonia in used and guest_voice in used,(id,used)
               assert used == {sonia,guest_voice},(id,used)
+              cast=item.get('speakerCast') or {}
+              assert cast.get('Interviewer')==sonia,(id,cast)
+              guest=[name for name in cast if name!='Interviewer']
+              assert len(guest)==1 and cast[guest[0]]==guest_voice,(id,cast)
+              assert item.get('voiceRoutingVersion')=='identity-v2',id
               f=Path(audio_dir)/item['mp3']
               assert f.exists() and MP3(f).info.length>35,id
               print('PASS',id,sorted(used))
