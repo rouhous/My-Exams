@@ -1,0 +1,148 @@
+{
+  "id": "g11-elective-unit3-rdg2-original",
+  "grade": 11,
+  "track": "elective",
+  "semester": 1,
+  "unit": {
+    "number": 3,
+    "title": "In the Past"
+  },
+  "skill": "Reading 2",
+  "genre": "six-paragraph informative",
+  "status": "original_unit_teacher_review_draft",
+  "certifiedTextbookMatch": false,
+  "readyForStudentExam": false,
+  "marks": 10,
+  "passage": "Paragraph A\nA family photograph may seem like a simple record, but it often raises more questions than it answers. The people pictured might be identified while the date remains uncertain. Researchers begin by asking who kept the photograph, whether the location can be recognised and what other records might confirm the information. An honest description should state clearly when evidence is incomplete. Comparing clothing or objects in the background can sometimes suggest a period, but such clues must be checked against reliable documents.\n\nParagraph B\nLetters and diaries offer details that official reports sometimes omit. They may describe journeys, celebrations, work or everyday difficulties. However, a writer usually presents events from a personal point of view. Historians therefore compare several accounts instead of assuming that one diary tells the complete story. Differences between memories can reveal how individuals experienced the same event. A private letter may also include unfamiliar expressions that need careful explanation rather than modern replacement.\n\nParagraph C\nOlder buildings can provide evidence about local materials and construction methods. A traditional house may show how families adapted to climate and available resources. Conservators document damage before repairs and try to protect original features. Replacing everything with modern materials might make a building look attractive while removing valuable clues about its past. Photographs taken before and after restoration can help future researchers understand exactly what was changed.\n\nParagraph D\nOral-history interviews allow people to describe experiences that were never recorded in books. Interviewers should ask open questions, listen patiently and obtain permission before recording. Names and private details must be handled respectfully. A good researcher checks uncertain dates and allows participants to review summaries so that their words are not represented unfairly. Recording a person's exact words is especially important when different generations remember the same event differently.\n\nParagraph E\nDigital archives can help pupils study objects without travelling to distant collections. Clear photographs, searchable records and recorded explanations make some evidence easier to access. Nevertheless, an image on a screen cannot always show an object's weight, texture or condition. Online descriptions also require checking because mistakes can be copied from one website to another. Students should record the original archive name and reference number when using an image.\n\nParagraph F\nA responsible exhibition brings different kinds of evidence together. Students can place photographs beside interview extracts and labels explaining where each source came from. They should separate confirmed information from possible interpretations and invite visitors to ask questions. When new evidence appears, the display can be updated rather than pretending that the original explanation was perfect.",
+  "wordCount": 429,
+  "paragraphs": 6,
+  "headings": [
+    "Questioning family photographs",
+    "Personal accounts and their limits",
+    "Buildings as historical evidence",
+    "Recording people's memories ethically",
+    "Benefits and limits of digital archives",
+    "Famous battles of ancient armies",
+    "Modern sports technology"
+  ],
+  "questions": [
+    {
+      "type": "mc",
+      "stem": "The word omit in Paragraph B means ____.",
+      "options": [
+        "leave out",
+        "carefully repair",
+        "write twice"
+      ],
+      "answer": 0,
+      "kind": "meaning"
+    },
+    {
+      "type": "mc",
+      "stem": "The word conservators in Paragraph C refers to people who ____.",
+      "options": [
+        "protect historic objects and places",
+        "sell digital tickets",
+        "teach modern dance"
+      ],
+      "answer": 0,
+      "kind": "meaning"
+    },
+    {
+      "type": "mc",
+      "stem": "Why should researchers compare different diaries?",
+      "options": [
+        "All diaries are identical",
+        "Writers present personal viewpoints",
+        "Dates never matter"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "What should happen before recording an interview?",
+      "options": [
+        "Get permission",
+        "Publish private details",
+        "Remove all questions"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "mc",
+      "stem": "What is one limitation of digital images?",
+      "options": [
+        "They can never be shared",
+        "They cannot show all physical qualities",
+        "They always contain accurate descriptions"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "mc",
+      "stem": "What should an exhibition do when new evidence appears?",
+      "options": [
+        "Ignore it",
+        "Hide the original labels",
+        "Update its explanation"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for Paragraph A.",
+      "options": [
+        "Questioning family photographs",
+        "Personal accounts and their limits",
+        "Buildings as historical evidence",
+        "Recording people's memories ethically",
+        "Benefits and limits of digital archives",
+        "Famous battles of ancient armies",
+        "Modern sports technology"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for Paragraph B.",
+      "options": [
+        "Questioning family photographs",
+        "Personal accounts and their limits",
+        "Buildings as historical evidence",
+        "Recording people's memories ethically",
+        "Benefits and limits of digital archives",
+        "Famous battles of ancient armies",
+        "Modern sports technology"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for Paragraph C.",
+      "options": [
+        "Questioning family photographs",
+        "Personal accounts and their limits",
+        "Buildings as historical evidence",
+        "Recording people's memories ethically",
+        "Benefits and limits of digital archives",
+        "Famous battles of ancient armies",
+        "Modern sports technology"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "match",
+      "stem": "Choose the best heading for Paragraph D.",
+      "options": [
+        "Questioning family photographs",
+        "Personal accounts and their limits",
+        "Buildings as historical evidence",
+        "Recording people's memories ethically",
+        "Benefits and limits of digital archives",
+        "Famous battles of ancient armies",
+        "Modern sports technology"
+      ],
+      "answer": 3
+    }
+  ]
+}
