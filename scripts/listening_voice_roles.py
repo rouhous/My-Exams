@@ -19,7 +19,7 @@ KNOWN_GENDERS = {
     'salma': FEMALE, 'mariam': FEMALE, 'fatma': FEMALE,
     'dana': FEMALE, 'alya': FEMALE, 'maha': FEMALE,
     'hind': FEMALE, 'amal': FEMALE, 'sara': FEMALE, 'aisha': FEMALE,
-    'huda': FEMALE,
+    'huda': FEMALE, 'noura': FEMALE, 'bilal': MALE,
 }
 HOST_ROLES = {'interviewer', 'host', 'presenter', 'narrator'}
 SPEAKER_RE = re.compile(r'(?<![A-Za-z0-9])([A-Za-z][A-Za-z0-9]*)\s*:\s*')
