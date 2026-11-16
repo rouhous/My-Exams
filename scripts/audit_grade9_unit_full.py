@@ -19,6 +19,20 @@ for m in bank['models']:
   f=base/'audio'/row['mp3'];assert f.stat().st_size>15000 and row['seconds']>40 and row['bytes']==f.stat().st_size
   assert f.open('rb').read(3)==b'ID3' or f.open('rb').read(1)==b'\xff'
   assert row['playedTwice'] is True
+ # 2026-2027 official SAH Grade Nine Semester One, September 2026, printed p.53
+ listening1,listening2,grammar,reading1,reading2,writing1,writing2=m['tasks']
+ assert 200<=len(listening2['transcript'].split())<=250
+ assert len(listening2['items'])==5 and all(len(q['choices'])==3 for q in listening2['items'])
+ assert all(40<=len(q['script'].split())<=50 for q in listening1['items'])
+ assert 70<=len(grammar['passage'].split())<=80
+ assert all(len(q['choices'])==4 and 0<=q['answer']<4 for q in grammar['items'])
+ assert len(grammar['items'])==grammar['passage'].count('_____')==10
+ assert len(reading1['people'])==4 and len(reading1['options'])==5
+ assert all(30<=len(p.split())<=35 for p in reading1['people'])
+ assert all(50<=len(o.split())<=55 for o in reading1['options'])
+ assert 250<=len(reading2['passage'].split())<=300
+ assert len(reading2['items'])==6 and all(len(q.get('answers',[]))>=1 for q in reading2['items'])
+ assert writing1['minWords']>=100 and writing2['minWords']>=100
  assert len(m['tasks'][0]['items'])==5
  for q in m['tasks'][0]['items']:
   assert len(q['images'])==len(q['choices'])==3 and 0<=q['answer']<3
@@ -27,4 +41,4 @@ for m in bank['models']:
  assert len(m['tasks'][2]['items'])==10 and m['tasks'][2]['passage'].count('_____')==10
  assert len(m['tasks'][3]['items'])==4 and len(m['tasks'][4]['items'])==6
  assert sum(len(x.get('items',[])) for x in m['tasks'])==30
-print('PASS three fully drafted 40-mark unit papers, six verified local MP3 and 45 image-option references; teacher curriculum approval still pending.')
+print('PASS Grade 9 SAH September 2026: three 40-mark original unit papers, 6 current-source verified MP3, 45 image options; teacher curriculum approval remains pending.')
