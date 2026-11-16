@@ -48,5 +48,55 @@
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
+  },
+  "unit3-listening1-original-draft.json": {
+    "sourceFile": "grade12/core/units/unit3-listening1-original-draft.json",
+    "scriptSha256": "a6d6f0a13fceae3a7bf3d764e54998e991942e6a941c7b7475256377a4c9f793",
+    "mp3": "unit3-listening1.mp3",
+    "durationSeconds": 372.22,
+    "bytes": 4466982,
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
+  },
+  "unit3-listening2-original-draft.json": {
+    "sourceFile": "grade12/core/units/unit3-listening2-original-draft.json",
+    "scriptSha256": "798c1801c7a0ee3e690025f3ba2f41c82c6e3ed4d8b78a94e1a62aea378b0e62",
+    "mp3": "unit3-listening2.mp3",
+    "durationSeconds": 362.87,
+    "bytes": 4354760,
+    "voices": [
+      "en-GB-SoniaNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
+  },
+  "unit4-listening1-original-draft.json": {
+    "sourceFile": "grade12/core/units/unit4-listening1-original-draft.json",
+    "scriptSha256": "af460aab153065057ceae66e22d5a7b152a4ec62d71e9adce59b80bed758310c",
+    "mp3": "unit4-listening1.mp3",
+    "durationSeconds": 374.28,
+    "bytes": 4491746,
+    "voices": [
+      "en-GB-SoniaNeural",
+      "en-GB-RyanNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
+  },
+  "unit4-listening2-original-draft.json": {
+    "sourceFile": "grade12/core/units/unit4-listening2-original-draft.json",
+    "scriptSha256": "ee94677665727d8ececa0cf819623e747e0b31c90d97306146af36ceef8f097b",
+    "mp3": "unit4-listening2.mp3",
+    "durationSeconds": 360.41,
+    "bytes": 4325294,
+    "voices": [
+      "en-GB-SoniaNeural"
+    ],
+    "scriptReadTwice": true,
+    "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
   }
 }
