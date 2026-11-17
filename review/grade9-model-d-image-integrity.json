@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "grade": 9,
+  "model": "D",
+  "skill": "Listening 1",
+  "status": "review-only-await-artwork-approval-and-binary-upload",
+  "sourceBundle": "My_Exams_Grade9_ModelD_Illustrations_Review.zip",
+  "format": "PNG",
+  "dimensions": [
+    512,
+    512
+  ],
+  "items": [
+    {
+      "id": "camera-g9d",
+      "relativePath": "grade9/images/camera-g9d.png",
+      "sha256": "414ae0f0256abae89e739f26904a3994ff58c1b8c1b6cd098d7c2d324568a0a4",
+      "question": 1,
+      "choice": "A"
+    },
+    {
+      "id": "handheld-recorder-g9d",
+      "relativePath": "grade9/images/handheld-recorder-g9d.png",
+      "sha256": "17feece6fd0ba8297aec32c02429951850dab7a57383c9b25b65c7f156888286",
+      "question": 1,
+      "choice": "B"
+    },
+    {
+      "id": "laptop-g9d",
+      "relativePath": "grade9/images/laptop-g9d.png",
+      "sha256": "7159f294090e66b303f3cb3e0c8c5307c906a25374f176716f78f8c7acc1a4b4",
+      "question": 1,
+      "choice": "C"
+    },
+    {
+      "id": "wooden-frames-g9d",
+      "relativePath": "grade9/images/wooden-frames-g9d.png",
+      "sha256": "b7e1f2e148153fdaa373759f93525f8347b8683eba375cfc47a8ac2c9c1329e7",
+      "question": 2,
+      "choice": "A"
+    },
+    {
+      "id": "tablets-g9d",
+      "relativePath": "grade9/images/tablets-g9d.png",
+      "sha256": "a6c30cd10df00b67ec44c3874defec42f3a92579f2ed8155720dd1c45d336b12",
+      "question": 2,
+      "choice": "B"
+    },
+    {
+      "id": "projector-g9d",
+      "relativePath": "grade9/images/projector-g9d.png",
+      "sha256": "844a072156b59d4ca8ceecbb26b96b06eb56451a386a68026ac180d7e80776ed",
+      "question": 2,
+      "choice": "C"
+    },
+    {
+      "id": "garden-display-g9d",
+      "relativePath": "grade9/images/garden-display-g9d.png",
+      "sha256": "a212bb16dc3f4f8766f12453b8a6835c8c61e68297b5acce0bcae8f524ba00ee",
+      "question": 3,
+      "choice": "A"
+    },
+    {
+      "id": "library-entrance-g9d",
+      "relativePath": "grade9/images/library-entrance-g9d.png",
+      "sha256": "4e66a7a25e6fb457c7c92b40e39f87da1bd9520ca512f5a8d1946cde7c4bf065",
+      "question": 3,
+      "choice": "B"
+    },
+    {
+      "id": "sports-display-g9d",
+      "relativePath": "grade9/images/sports-display-g9d.png",
+      "sha256": "92246b831271f00f3aae627695fc1106bb43da2bb926151ac652221889b74e48",
+      "question": 3,
+      "choice": "C"
+    },
+    {
+      "id": "binoculars-walk-g9d",
+      "relativePath": "grade9/images/binoculars-walk-g9d.png",
+      "sha256": "ef3be06862edb2883b452c3f592dce7342e56191fd12626269c4556c7e95c5ea",
+      "question": 4,
+      "choice": "A"
+    },
+    {
+      "id": "torch-walk-g9d",
+      "relativePath": "grade9/images/torch-walk-g9d.png",
+      "sha256": "c85438bf40383301539fdd5991ed4e59030355a9be50e08daf242431c5040457",
+      "question": 4,
+      "choice": "B"
+    },
+    {
+      "id": "compass-walk-g9d",
+      "relativePath": "grade9/images/compass-walk-g9d.png",
+      "sha256": "c3d317146bf5f27b5628cc3d0b34e4b4ac2ece848e444b9a49fcd43bb6fca4f7",
+      "question": 4,
+      "choice": "C"
+    },
+    {
+      "id": "minibus-g9d",
+      "relativePath": "grade9/images/minibus-g9d.png",
+      "sha256": "7ef66a9a3bb5d80ba8b8b75e8aa6b56a12fc4c22948a5ed016201e518449d226",
+      "question": 5,
+      "choice": "A"
+    },
+    {
+      "id": "village-boat-g9d",
+      "relativePath": "grade9/images/village-boat-g9d.png",
+      "sha256": "ed3517a6ce9b4d424c0e557306c258340f824644c521c6ec61d7c7bd4cbbe64e",
+      "question": 5,
+      "choice": "B"
+    },
+    {
+      "id": "village-bicycles-g9d",
+      "relativePath": "grade9/images/village-bicycles-g9d.png",
+      "sha256": "ecb42e1827ef1da5e76ab384796d6924bf01d14e8f83f1b1c2f652b90b9cfec0",
+      "question": 5,
+      "choice": "C"
+    }
+  ]
+}
