@@ -60,7 +60,7 @@ def main():
   expected=integrity.get(item['path'])
   if expected and hashlib.sha256(blob).hexdigest()!=expected:
    mismatches.append(item['path'])
-  if len(blob)<24 or blob[:8]!=b'\\x89PNG\\r\\n\\x1a\\n':
+  if len(blob)<24 or blob[:8]!=b'\x89PNG\r\n\x1a\n':
    bad_dimensions.append(item['path'])
   else:
    width,height=struct.unpack('>II',blob[16:24])
