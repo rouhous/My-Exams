@@ -50,6 +50,11 @@ def voice_for_speaker(name, overrides=None):
         g = KNOWN_GENDERS.get(key)
     if g is None:
         raise ValueError('Unmapped speaker ' + repr(name) + ': provide speakerGenders metadata')
+    # A female interviewer/host uses the main presenter voice (Sonia),
+    # distinct from the female interviewee (Libby). Explicit male hosts
+    # still use Ryan; never infer their gender from third-person pronouns.
+    if key in HOST_ROLES and g == FEMALE:
+        return 0
     return 1 if g == MALE else 2
 
 
