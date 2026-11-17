@@ -24,8 +24,12 @@ def inventory():
   paper=json.loads(file.read_text(encoding='utf-8'))
   for q,question in enumerate(paper['listening1']['items'],1):
    for choice,raw in enumerate(question['images']):
-    assert raw.startswith('images/') and raw.endswith('.png')
-    candidates.append({'grade':9,'model':paper['model'],'task':paper['listening1']['id'],'question':q,'choice':choice,'id':Path(raw).stem,'path':'grade9/'+raw})
+    # Review JSON uses bare IDs in Models D/E/F, while the student UI
+    # consumes images/<id>.png after the disposable source overlay.
+    relative = raw if raw.startswith('images/') else 'images/' + raw
+    if not relative.endswith('.png'):
+     relative += '.png'
+    candidates.append({'grade':9,'model':paper['model'],'task':paper['listening1']['id'],'question':q,'choice':choice,'id':Path(relative).stem,'path':'grade9/'+relative})
  return candidates
 
 def main():
