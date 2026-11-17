@@ -16,6 +16,12 @@ from listening_voice_roles import (
 
 
 class TestListeningVoiceRoles(unittest.TestCase):
+    def test_explicit_female_interviewer_keeps_presenter_voice(self):
+        self.assertEqual(voice_for_speaker("Interviewer", {"Interviewer": "female"}), 0)
+        self.assertEqual(voice_for_speaker("Interviewer", {"Interviewer": "male"}), 1)
+        dialog = parse_dialogue("Interviewer: Hello. Huda: Hello!", {"Interviewer": "female", "Huda": "female"})
+        self.assertEqual([voice for _,voice,_ in dialog], [0,2])
+
     def test_named_boys(self):
         for name in ("Sam", "Hamad", "Ahmed", "Salim", "Faris", "Yousuf", "Bilal"):
             self.assertEqual(voice_for_speaker(name), 1, name)
