@@ -24,7 +24,7 @@ def run(apply=False):
     for row in rows:
         grade,unit=row['grade'],unit_number(row)
         part=part_number(row)
-        assert row['track']=='core' and row['readyForStudentExam'] is False
+        assert row.get('track','core')=='core' and row['readyForStudentExam'] is False
         n=len(row['script'].split())
         lower,upper=(250,380) if part==1 else (300,350)
         assert lower<=n<=upper,(grade,unit,part,n)
