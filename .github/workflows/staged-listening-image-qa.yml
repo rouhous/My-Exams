@@ -1,9 +1,18 @@
 name: QA planned Listening 1 illustration inventory
 on:
+  pull_request:
+    branches: [exam-review-2026-11-16]
+    paths:
+      - scripts/audit_staged_listening_images.py
+      - review/grade8-model-d-image-integrity.json
+      - review/grade9-model-d-image-integrity.json
+      - .github/workflows/staged-listening-image-qa.yml
   push:
     branches: [fix/listening-two-pass-order-2026-11-16]
     paths:
       - scripts/audit_staged_listening_images.py
+      - review/grade8-model-d-image-integrity.json
+      - review/grade9-model-d-image-integrity.json
       - review/listening-replacements-grade6-8-model-d.json
       - review/grade9-model-d-original-listening.json
       - review/grade9-model-e-original-listening.json
