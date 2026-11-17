@@ -1,5 +1,10 @@
 name: Listening content similarity — Grades 11–12 Core/Elective
 on:
+  pull_request:
+    branches: [exam-review-2026-11-16]
+    paths:
+      - scripts/audit_listening_grades11_12.py
+      - .github/workflows/listening-grades11-12-content-qa.yml
   push:
     branches: [fix/listening-two-pass-order-2026-11-16]
     paths:
