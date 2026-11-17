@@ -4,7 +4,7 @@
 Run with --require-files only on a release candidate after images are imported.
 The default validates all staged plans and writes the upload checklist.
 """
-import argparse,collections,json
+import argparse,collections,json,hashlib,struct
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 G68=ROOT/'review/listening-replacements-grade6-8-model-d.json'
@@ -42,6 +42,31 @@ def main():
   raise ValueError('Image identifiers reused in different questions: '+str(list(repeated)[:12]))
  by_grade=collections.Counter(str(q['grade']) for q in pictures)
  missing=[p for p in pictures if not (ROOT/p['path']).is_file()]
+ # When a binary has been uploaded, require an exact match with the reviewed
+ # picture content. Missing images are still reported as release blockers.
+ integrity={}
+ for spec in ('review/grade8-model-d-image-integrity.json',
+              'review/grade9-model-d-image-integrity.json'):
+  review=json.loads((ROOT/spec).read_text(encoding='utf-8'))
+  for entry in review['items']:
+   path=ROOT/entry['relativePath']
+   integrity[entry['relativePath']]=entry['sha256']
+ mismatches=[]
+ bad_dimensions=[]
+ for item in pictures:
+  image=ROOT/item['path']
+  if not image.is_file():continue
+  blob=image.read_bytes()
+  expected=integrity.get(item['path'])
+  if expected and hashlib.sha256(blob).hexdigest()!=expected:
+   mismatches.append(item['path'])
+  if len(blob)<24 or blob[:8]!=b'\\x89PNG\\r\\n\\x1a\\n':
+   bad_dimensions.append(item['path'])
+  else:
+   width,height=struct.unpack('>II',blob[16:24])
+   if (width,height)!=(512,512):bad_dimensions.append(item['path'])
+ if mismatches or bad_dimensions:
+  raise ValueError('Unapproved modified art or invalid 512px PNG: '+str(mismatches+bad_dimensions))
  result={'totalPlanned':len(pictures),'uniqueIdentifiers':len(by_id),
   'byGrade':dict(by_grade),'duplicateIdentifiers':0,'missingInGitHubReview':len(missing),
   'readyForLiveLinking':len(missing)==0,'imageSpecification':'2D detailed B&W cartoon; square consistent framing; no labels',
