@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "reviewOnly": true,
+  "schoolYear": "2026-2027",
+  "status": "original-review-draft-not-released",
+  "notes": "Two independently authored alternatives to very high template-similarity Listening 2 drafts. Recheck ministry task shape, word counts, answers, and regenerate natural audio before replacing existing sources.",
+  "drafts": [
+    {
+      "grade": 11,
+      "track": "core",
+      "unit": {
+        "number": 4,
+        "title": "Innovation"
+      },
+      "skill": "listening2",
+      "speaker": "Reem",
+      "script": "Part One\n\nWhen our school introduced a competition for practical inventions, I joined a team of four students who wanted to reduce wasted electricity in the library. The lights often remained on in empty study areas. Our first idea was a motion sensor, but before building anything, we watched how visitors used the room at different times of day. We discovered that quiet readers sometimes sat almost completely still for an hour. A sensor that switched off the lights whenever nobody moved would make reading difficult.\n\nOur physics teacher suggested testing a combination of movement and a manual timer. We borrowed a small controller and measured how long it took to detect movement. During the first trial, the lights went off while two students were revising. We asked them what had happened, then changed the system so that a desk could remain lit for twenty minutes after the last movement. A clearly marked button also allowed readers to extend the time.\n\nPart Two\n\nThe next challenge was cost. Our design needed more components than we had expected. We prepared a simple price list and chose to reuse a safe working sensor from another school project. An electrician checked the wiring before anyone connected the device to the lighting demonstration board. No pupil was allowed to work directly with the building's electrical supply.\n\nOn presentation day, we invited the librarian to test the demonstration. She liked the timer, but pointed out that the button was difficult to reach for someone sitting in a wheelchair. We moved the control to the front of the desk and asked another volunteer to try it.\n\nOur invention did not immediately save electricity across the whole library. It was a small model that helped us test an idea responsibly. The most useful lesson was that a clever design must consider the people who will use it, not just the technology inside it.",
+      "questions": [
+        {
+          "type": "short",
+          "stem": "Where were lights sometimes left on?",
+          "answer": "the library",
+          "maxWords": 4,
+          "evidence": "lights often remained on in empty study areas"
+        },
+        {
+          "type": "short",
+          "stem": "Who suggested combining movement and a timer?",
+          "answer": "our physics teacher",
+          "maxWords": 4,
+          "evidence": "Our physics teacher suggested testing a combination"
+        },
+        {
+          "type": "short",
+          "stem": "How long could a desk stay lit after the last movement?",
+          "answer": "twenty minutes",
+          "maxWords": 4,
+          "evidence": "remain lit for twenty minutes"
+        },
+        {
+          "type": "short",
+          "stem": "Who checked the wiring?",
+          "answer": "an electrician",
+          "maxWords": 4,
+          "evidence": "An electrician checked the wiring"
+        },
+        {
+          "type": "mc",
+          "stem": "Why was a motion-only sensor a problem?",
+          "options": [
+            "Readers sometimes remained still",
+            "The library had no windows",
+            "The sensor was too colourful"
+          ],
+          "answer": 0,
+          "evidence": "quiet readers sometimes sat almost completely still"
+        },
+        {
+          "type": "mc",
+          "stem": "How did the team reduce costs?",
+          "options": [
+            "They hired another engineer",
+            "They reused a safe working sensor",
+            "They removed all the controls"
+          ],
+          "answer": 1,
+          "evidence": "reuse a safe working sensor"
+        },
+        {
+          "type": "mc",
+          "stem": "What did the librarian identify?",
+          "options": [
+            "An incorrect date",
+            "A missing book",
+            "A control that was hard to reach"
+          ],
+          "answer": 2,
+          "evidence": "button was difficult to reach"
+        },
+        {
+          "type": "mc",
+          "stem": "What did Reem learn?",
+          "options": [
+            "Design must consider its users",
+            "Only expensive parts work",
+            "Testing can be skipped"
+          ],
+          "answer": 0,
+          "evidence": "must consider the people who will use it"
+        }
+      ],
+      "wordCount": 316,
+      "readyForStudentExam": false,
+      "audioStatus": "not_generated",
+      "certifiedTextbookMatch": false
+    },
+    {
+      "grade": 12,
+      "track": "core",
+      "unit": {
+        "number": 4,
+        "title": "Travel and Transport"
+      },
+      "skill": "listening2",
+      "speaker": "Khalid",
+      "script": "Part One\n\nLast winter, I volunteered at a transport information desk during a weekend festival near the coast. Hundreds of visitors arrived by bus, car and taxi, and many were unfamiliar with the area. My job was to help them find the correct departure point for their return journey. I was given a printed map of the temporary bus stops and a list of departure times, but I quickly learned that a map alone was not enough.\n\nOn Saturday morning, a family asked how to reach the railway exhibition. The nearest shuttle bus stopped beside the old market, a ten-minute walk from our desk. I explained the route and showed them the accessible entrance. Later, a visitor told me that the route on one sign was confusing because two streets had similar names. I walked with a supervisor to check the sign rather than guessing.\n\nPart Two\n\nAt lunchtime, the organisers announced that part of the waterfront road would close for a cycling event. The shuttle could no longer use its usual stop. The transport team moved it to the northern car park and posted the change on the festival website. We also placed a temporary notice at the original stop and asked volunteers to guide passengers to the new location. Some visitors had already printed the earlier timetable, so we explained the change in person.\n\nThat afternoon, a passenger using a wheelchair asked whether the replacement stop had a safe ramp. I did not know the answer. I contacted the transport supervisor, who confirmed that an accessible vehicle would collect passengers at a marked waiting area. This took several minutes, but giving a verified answer mattered more than sounding confident.\n\nBy the end of the festival, I understood how quickly travel arrangements can change. Clear signs, accurate departure times and patient communication helped visitors reach their destinations. I also learned that saying 'I will check' is sometimes the most responsible response.",
+      "questions": [
+        {
+          "type": "short",
+          "stem": "Where did Khalid volunteer?",
+          "answer": "transport information desk",
+          "maxWords": 4,
+          "evidence": "volunteered at a transport information desk"
+        },
+        {
+          "type": "short",
+          "stem": "Where was the shuttle stop for the railway exhibition?",
+          "answer": "beside the old market",
+          "maxWords": 4,
+          "evidence": "stopped beside the old market"
+        },
+        {
+          "type": "short",
+          "stem": "Which event caused the waterfront road closure?",
+          "answer": "a cycling event",
+          "maxWords": 4,
+          "evidence": "close for a cycling event"
+        },
+        {
+          "type": "short",
+          "stem": "Where was the shuttle moved?",
+          "answer": "northern car park",
+          "maxWords": 4,
+          "evidence": "moved it to the northern car park"
+        },
+        {
+          "type": "mc",
+          "stem": "Why was one route sign confusing?",
+          "options": [
+            "Two streets had similar names",
+            "The map was written in French",
+            "The road was flooded"
+          ],
+          "answer": 0,
+          "evidence": "two streets had similar names"
+        },
+        {
+          "type": "mc",
+          "stem": "How were passengers informed about the new stop?",
+          "options": [
+            "Only through a radio programme",
+            "Website, notice and volunteers",
+            "By cancelling their tickets"
+          ],
+          "answer": 1,
+          "evidence": "posted the change on the festival website"
+        },
+        {
+          "type": "mc",
+          "stem": "What did a passenger ask about?",
+          "options": [
+            "The price of a hotel",
+            "Lost luggage",
+            "A safe wheelchair ramp"
+          ],
+          "answer": 2,
+          "evidence": "whether the replacement stop had a safe ramp"
+        },
+        {
+          "type": "mc",
+          "stem": "What did Khalid learn was responsible?",
+          "options": [
+            "Checking information before answering",
+            "Guessing quickly",
+            "Avoiding difficult questions"
+          ],
+          "answer": 0,
+          "evidence": "giving a verified answer mattered more"
+        }
+      ],
+      "wordCount": 322,
+      "readyForStudentExam": false,
+      "audioStatus": "not_generated",
+      "certifiedTextbookMatch": false
+    }
+  ]
+}
