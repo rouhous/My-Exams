@@ -67,7 +67,20 @@ def main():
    draft=d[label]
    task=next(t for t in m['tasks'] if t.get('skill')=='listening' and t.get('group')==group)
    task['id']=draft['id']
-   task['items']=draft['items']
+   # Student renderer reads image paths verbatim; review drafts use IDs.
+   # Resolve IDs to actual image asset locations, preserving existing paths.
+   if group==1:
+    task['items']=[]
+    for item in draft['items']:
+     resolved=dict(item)
+     resolved['images']=[
+      img if img.startswith('images/') and img.endswith('.png')
+      else 'images/'+img.removeprefix('images/').removesuffix('.png')+'.png'
+      for img in item['images']
+     ]
+     task['items'].append(resolved)
+   else:
+    task['items']=draft['items']
    task['transcript']=draft['transcript']
    task['audio']=draft['audio']
    if group==2: task['speakerGenders']=draft['speakerGenders']
