@@ -1,38 +1,58 @@
 #!/usr/bin/env python3
-"""Stage Grade 11/12 unique Listening 2 drafts only in disposable CI checkouts.
+"""Apply six staged Grade 11/12 Core listening rewrites in CI only.
 
-The existing approved/teacher-review sources are never modified in GitHub.
+Never commit the modified source bank or release stale audio alongside new text.
 """
 import argparse,json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-DRAFT=ROOT/'review/g11-g12-core-listening2-unique-replacements.json'
+DRAFTS=[
+ ROOT/'review/g11-g12-core-listening2-unique-replacements.json',
+ ROOT/'review/g11-g12-core-remaining-listening-unique.json',
+]
 
-def stage(apply=False):
-    doc=json.loads(DRAFT.read_text(encoding='utf-8'))
-    rows=doc['drafts']
-    assert len(rows)==2 and {(x['grade'],x['unit']['number']) for x in rows}=={(11,4),(12,4)}
+def run(apply=False):
+    rows=[]
+    for file in DRAFTS:
+        obj=json.loads(file.read_text(encoding='utf-8'))
+        assert obj['reviewOnly'] is True
+        rows.extend(obj['drafts'])
+    expected={(11,4,2),(12,4,2),(11,3,1),(11,4,1),(11,3,2),(12,4,1)}
+    assert {(x['grade'],x['unit']['number'],int(re.search(r'\d+',x['skill']).group())) for x in rows}==expected
     for row in rows:
-        assert row['track']=='core' and row['skill']=='listening2'
-        assert row['readyForStudentExam'] is False
-        assert 300<=len(row['script'].split())<=350, (row['grade'],'wrong length')
+        grade,unit=row['grade'],row['unit']['number']
+        part=int(re.search(r'\d+',row['skill']).group())
+        assert row['track']=='core' and row['readyForStudentExam'] is False
+        n=len(row['script'].split())
+        lower,upper=(250,380) if part==1 else (300,350)
+        assert lower<=n<=upper,(grade,unit,part,n)
         questions=row['questions']
-        assert len(questions)==8 and sum(q['type']=='short' for q in questions)==4
-        assert sum(q['type']=='mc' for q in questions)==4
-        for question in questions:
-            assert question['evidence'].casefold() in row['script'].casefold(),question['stem']
-        path=ROOT/f"grade{row['grade']}/core/units/unit4-listening2-original-draft.json"
-        source=json.loads(path.read_text(encoding='utf-8'))
-        assert source['unit']['number']==row['unit']['number']
-        assert source['status']=='original_unit_teacher_review_draft'
+        assert len(questions)==(7 if part==1 else 8)
+        if part==2:
+            assert sum(q['type']=='short' for q in questions)==4
+            assert sum(q['type']=='mc' for q in questions)==4
+        else:
+            assert all(q['type']=='mc' for q in questions)
+        for q in questions:
+            assert q['evidence'].lower() in row['script'].lower(),(grade,unit,part,q['stem'])
+        path=ROOT/f'grade{grade}/core/units/unit{unit}-listening{part}-original-draft.json'
+        current=json.loads(path.read_text(encoding='utf-8'))
+        assert current['unit']['number']==unit
+        assert current['status']=='original_unit_teacher_review_draft'
+        if part==1:
+            labels=re.findall(r'(?m)^([A-Z][A-Za-z]+):',row['script'])
+            assert 24<=len(labels)<=30,(grade,unit,len(labels))
+            assert set(labels)==set(row['cast']),(grade,unit,'speaker mismatch')
         if apply:
-            source.update(script=row['script'],passage=row['script'],wordCount=row['wordCount'],
-                          questions=questions,readyForStudentExam=False,
-                          certifiedTextbookMatch=False,audioStatus='REVIEW_ONLY_NEW_MP3_REQUIRED')
-            path.write_text(json.dumps(source,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-            print('OVERLAY',path.relative_to(ROOT),'words',row['wordCount'])
-    if not apply:print('DRY RUN: validation only; no student source changed')
+            current.update(script=row['script'],passage=row['script'],wordCount=n,
+                           questions=questions,readyForStudentExam=False,
+                           certifiedTextbookMatch=False,audioStatus='REVIEW_ONLY_NEW_MP3_REQUIRED')
+            if part==1:current.update(speakerTurns=len(labels),speakerGenders=row['cast'])
+            path.write_text(json.dumps(current,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+            print('OVERLAY',path.relative_to(ROOT),'words',n)
+    if not apply:print('DRY RUN: validated',len(rows),'drafts; no original files changed')
+
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('--apply',action='store_true')
-    stage(parser.parse_args().apply)
+    run(parser.parse_args().apply)
