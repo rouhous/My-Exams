@@ -1,0 +1,91 @@
+name: Natural voice audition — six new Grade 11/12 Core listening scripts
+on:
+  pull_request:
+    branches: [exam-review-2026-11-16]
+    paths:
+      - review/g11-g12-core-listening2-unique-replacements.json
+      - review/g11-g12-core-remaining-listening-unique.json
+      - scripts/generate_highgrade_review_audio.py
+      - scripts/listening_voice_roles.py
+      - .github/workflows/highgrade-natural-audio-audition.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  content-and-cast:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate Python syntax and all six speaker casts without TTS calls
+        run: |
+          python -m py_compile scripts/generate_highgrade_review_audio.py scripts/listening_voice_roles.py
+          python - <<'PY'
+          import sys
+          sys.path.insert(0,"scripts")
+          from generate_highgrade_review_audio import find_draft,segments
+          cases=[(11,3,1),(11,3,2),(11,4,1),(11,4,2),(12,4,1),(12,4,2)]
+          for grade,unit,part in cases:
+              draft=find_draft(grade,unit,part)
+              speech=segments(draft,part)
+              assert len(speech)>=(20 if part==1 else 2)
+              assert all(words.strip() and 0 <= voice < 3 for words,voice,name in speech)
+              print("PASS CAST",grade,unit,part,sorted({(name,voice) for _,voice,name in speech}))
+          PY
+  neural-voice-audition:
+    needs: content-and-cast
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {grade: 11, unit: 3, part: 1}
+          - {grade: 11, unit: 3, part: 2}
+          - {grade: 11, unit: 4, part: 1}
+          - {grade: 11, unit: 4, part: 2}
+          - {grade: 12, unit: 4, part: 1}
+          - {grade: 12, unit: 4, part: 2}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install free neural voices, FFmpeg and MP3 reader
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m pip install edge-tts mutagen
+      - name: Generate complete twice-read audio, no source modification
+        run: |
+          python scripts/generate_highgrade_review_audio.py --grade ${{ matrix.grade }} --unit ${{ matrix.unit }} --part ${{ matrix.part }} --out /tmp/my-exams-highgrade-audio-review
+      - name: Validate manifest and MP3 output
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          from mutagen.mp3 import MP3
+          grade=${{ matrix.grade }}
+          unit=${{ matrix.unit }}
+          part=${{ matrix.part }}
+          root=Path("/tmp/my-exams-highgrade-audio-review")
+          stem=f"g{grade}-core-u{unit}-listening{part}"
+          info=json.loads((root/(stem+".manifest.json")).read_text())
+          assert info["status"]=="audition-only-no-student-release"
+          assert info["completeReadings"]==2
+          assert info["speakerCast"]
+          assert len(info["sourceSha256"])==64
+          audio=root/info["mp3"]
+          assert audio.exists() and MP3(audio).info.length>90
+          print("PASS",stem,info["seconds"],info["speakerCast"])
+          PY
+      - name: Upload review-only recording and source/voice audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: audition-g${{ matrix.grade }}-u${{ matrix.unit }}-l${{ matrix.part }}
+          retention-days: 14
+          path: |
+            /tmp/my-exams-highgrade-audio-review/*.mp3
+            /tmp/my-exams-highgrade-audio-review/*.manifest.json
