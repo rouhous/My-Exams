@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "project": "My Exams",
+  "grade": 8,
+  "model": "D",
+  "skill": "Listening 1",
+  "status": "review-only-await-visual-teacher-approval-and-binary-upload",
+  "shape": {
+    "width": 512,
+    "height": 512,
+    "format": "PNG",
+    "style": "detailed monochrome 2D cartoon"
+  },
+  "sourceBundle": "My_Exams_Grade8_ModelD_Illustrations_Review.zip",
+  "items": [
+    {
+      "id": "sound-meter-beach-g8d",
+      "relativePath": "grades7-8/assets/illustrations/sound-meter-beach-g8d.png",
+      "sha256": "97315ec146ba0e94a5ca64b96d38262e0131c10fe4c26af3f139c01d8ce405cc",
+      "question": 1,
+      "choice": "A"
+    },
+    {
+      "id": "thermometer-water-g8d",
+      "relativePath": "grades7-8/assets/illustrations/thermometer-water-g8d.png",
+      "sha256": "21a930bfb87fda15bc152bc549929cd69d89843d571f2a29bf5a22913344ff5b",
+      "question": 1,
+      "choice": "B"
+    },
+    {
+      "id": "wind-meter-g8d",
+      "relativePath": "grades7-8/assets/illustrations/wind-meter-g8d.png",
+      "sha256": "0eb984f3c495e0bcffe91a9611519c6f8c8e2cb3245710a2f2a158ae35efcb3c",
+      "question": 1,
+      "choice": "C"
+    },
+    {
+      "id": "bottled-water-g8d",
+      "relativePath": "grades7-8/assets/illustrations/bottled-water-g8d.png",
+      "sha256": "42610daac83fd76137161c85a4177dc6b3a0afd7842ef4a5bd6a304d736cd927",
+      "question": 2,
+      "choice": "A"
+    },
+    {
+      "id": "rain-barrel-g8d",
+      "relativePath": "grades7-8/assets/illustrations/rain-barrel-g8d.png",
+      "sha256": "ad4e66811029e46ac1a4e898789880c4dd5c3d11c89dbeb2a117c2a65149fe84",
+      "question": 2,
+      "choice": "B"
+    },
+    {
+      "id": "seawater-bucket-g8d",
+      "relativePath": "grades7-8/assets/illustrations/seawater-bucket-g8d.png",
+      "sha256": "5e33ceb7e6aa38fb673f4c6a768c70e71612d2241b153c7cf68f42cec20efc20",
+      "question": 2,
+      "choice": "C"
+    },
+    {
+      "id": "kayak-lake-g8d",
+      "relativePath": "grades7-8/assets/illustrations/kayak-lake-g8d.png",
+      "sha256": "9978cd8cfaad0bef879feaa7b63a51f2774ce3df37f76291f232ec1d6b32fd13",
+      "question": 3,
+      "choice": "A"
+    },
+    {
+      "id": "rope-bridge-g8d",
+      "relativePath": "grades7-8/assets/illustrations/rope-bridge-g8d.png",
+      "sha256": "afbe6ec62d61860d12db3758e8863ed76980c9810c46713b2f8635efb416b519",
+      "question": 3,
+      "choice": "B"
+    },
+    {
+      "id": "hill-cycling-g8d",
+      "relativePath": "grades7-8/assets/illustrations/hill-cycling-g8d.png",
+      "sha256": "46ce6af0a92b9db3271dc131c7cb840dfccc20d7980bf7a590d79aed06b0d799",
+      "question": 3,
+      "choice": "C"
+    },
+    {
+      "id": "schoolbag-repair-g8d",
+      "relativePath": "grades7-8/assets/illustrations/schoolbag-repair-g8d.png",
+      "sha256": "d14a1c69669f54fe78bea03682a449c9009d5343c653543fd2d3c638846a638f",
+      "question": 4,
+      "choice": "A"
+    },
+    {
+      "id": "bicycle-tyre-repair-g8d",
+      "relativePath": "grades7-8/assets/illustrations/bicycle-tyre-repair-g8d.png",
+      "sha256": "b5174d538aab537110dec35eca6dde684a298d0b106a01728b625612acc2cbd4",
+      "question": 4,
+      "choice": "B"
+    },
+    {
+      "id": "phonecase-g8d",
+      "relativePath": "grades7-8/assets/illustrations/phonecase-g8d.png",
+      "sha256": "a1755ca4268dac1c1553b1e7d800b135d81810d207e01b42bb1c02a2c41cc7d6",
+      "question": 4,
+      "choice": "C"
+    },
+    {
+      "id": "plastic-bag-g8d",
+      "relativePath": "grades7-8/assets/illustrations/plastic-bag-g8d.png",
+      "sha256": "d873cc5f72462416a83ed0b85d6725dde219dd820c8b50985604055cd2bab330",
+      "question": 5,
+      "choice": "A"
+    },
+    {
+      "id": "paper-cup-g8d",
+      "relativePath": "grades7-8/assets/illustrations/paper-cup-g8d.png",
+      "sha256": "6ba0e886c89183d1858247b14ab51ca3347987d1215cfb3959d11fce06154e98",
+      "question": 5,
+      "choice": "B"
+    },
+    {
+      "id": "reusable-lunchbox-g8d",
+      "relativePath": "grades7-8/assets/illustrations/reusable-lunchbox-g8d.png",
+      "sha256": "f09a87f9ffe6a2132d62226423135a2b6f0f7f3b91f4b6385a4f7bd08a2103cc",
+      "question": 5,
+      "choice": "C"
+    }
+  ]
+}
