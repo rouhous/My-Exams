@@ -1,0 +1,48 @@
+name: Review unique G11/G12 Core Listening 2 replacements
+on:
+  pull_request:
+    branches: [exam-review-2026-11-16]
+    paths:
+      - review/g11-g12-core-listening2-unique-replacements.json
+      - scripts/stage_highgrade_listening2_review.py
+      - scripts/audit_listening_grades11_12.py
+      - .github/workflows/highgrade-listening-replacement-review.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit original content
+        run: python scripts/audit_listening_grades11_12.py --output /tmp/g11-g12-original-similarity.json
+      - name: Stage two candidate replacements only in this disposable runner
+        run: |
+          python -m py_compile scripts/stage_highgrade_listening2_review.py
+          python scripts/stage_highgrade_listening2_review.py --apply
+      - name: Confirm similarity reduced without copying or approving audio
+        run: |
+          python scripts/audit_listening_grades11_12.py --fail-exact --output /tmp/g11-g12-after-two-drafts.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          original=json.loads(Path('/tmp/g11-g12-original-similarity.json').read_text())
+          updated=json.loads(Path('/tmp/g11-g12-after-two-drafts.json').read_text())
+          assert updated['totalScripts']==original['totalScripts']==32
+          assert updated['exactPairs']==0
+          assert updated['highTemplateSimilarityPairs']<original['highTemplateSimilarityPairs'],(original['highTemplateSimilarityPairs'],updated['highTemplateSimilarityPairs'])
+          print('PASS reduced high similarity',original['highTemplateSimilarityPairs'],'->',updated['highTemplateSimilarityPairs'])
+          PY
+      - name: Attach both reports for teacher approval
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: highgrade-two-script-uniqueness-review
+          retention-days: 14
+          path: |
+            /tmp/g11-g12-original-similarity.json
+            /tmp/g11-g12-after-two-drafts.json
