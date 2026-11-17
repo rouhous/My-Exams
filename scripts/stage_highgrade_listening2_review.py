@@ -19,10 +19,11 @@ def run(apply=False):
         rows.extend(obj['drafts'])
     expected={(11,4,2),(12,4,2),(11,3,1),(11,4,1),(11,3,2),(12,4,1)}
     unit_number=lambda x: x['unit']['number'] if isinstance(x['unit'],dict) else int(x['unit'])
+    part_number=lambda x: int(x['part']) if 'part' in x else int(re.search(r'\d+',x['skill']).group())
     assert {(x['grade'],unit_number(x),int(re.search(r'\d+',x['skill']).group())) for x in rows}==expected
     for row in rows:
         grade,unit=row['grade'],unit_number(row)
-        part=int(re.search(r'\d+',row['skill']).group())
+        part=part_number(row)
         assert row['track']=='core' and row['readyForStudentExam'] is False
         n=len(row['script'].split())
         lower,upper=(250,380) if part==1 else (300,350)
