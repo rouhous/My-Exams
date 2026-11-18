@@ -125,6 +125,14 @@ function finish(){
    else{objective++;if(result.correct)score++;missed.push('<li>'+(result.correct?'✓ Correct':'✗ Incorrect')+' — '+esc(names[key])+' — '+esc(q.stem)+(result.correct?'':'; expected: '+esc(result.reference))+(result.reason==='too-long'?'; allowed: '+result.permitted+' words':'')+'</li>')}
   }
  }
+ questions.forEach(({id,key,q})=>{
+  const input=document.querySelector('input[name="'+id+'"]:checked')||document.querySelector('input[name="'+id+'"]');
+  const box=input?.closest('.question,.q');if(!box)return;
+  const ok=Array.isArray(q.options)?!!input&&input.type==='radio'&&Number(input.value)===q.answer:window.MyExamsShortAnswers.evaluate(input?.value||'',q).correct;
+  const part=s[key]||{};
+  box.querySelectorAll('.mex-fb').forEach(n=>n.remove());
+  box.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:key,passage:part.passage,script:part.script||part.transcript},ok));
+ });
  const writing=selected.filter(k=>k.startsWith('wrt')).map(k=>{let value=$('writing-'+k)?.value||'';return names[k]+': '+(value.trim().split(/\s+/).filter(Boolean)).length+' words; minimum '+s[k].minWords});
  $('results').hidden=false;
  $('results').innerHTML='<h2>Automatically checked: '+score+' / '+objective+'</h2><p>'+blank+' unanswered, '+manual+' reference-less responses, '+writing.length+' writing tasks require teacher assessment. Short answers are accepted within the stated word limit plus 4 additional words. This is not a final 60-mark grade.</p>'+(writing.length?'<p>'+writing.map(esc).join(' · ')+'</p>':'')+(missed.length?'<details open><summary>Answer-by-answer feedback</summary><ol>'+missed.join('')+'</ol></details>':'');
