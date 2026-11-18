@@ -12,5 +12,5 @@
 .ex-note button{min-height:42px;border-radius:9px;border:1px solid #9db19c;background:#105940;color:white;font:600 14px system-ui;padding:7px 12px;cursor:pointer}
 .ex-toast{position:fixed;bottom:82px;left:50%;transform:translateX(-50%);background:#113f30;color:white;padding:8px 16px;border-radius:10px;z-index:2147483002;font:13px system-ui;pointer-events:none}
 body.ex-ink-mode{user-select:none}
-@media(max-width:560px){.ex-tools{gap:3px;border-radius:15px;padding:6px}.ex-tools button{min-width:39px;min-height:43px;padding:4px 5px;font-size:11px}.ex-tools .ex-tool-text{font-size:10px}.ex-tools .ex-icon{font-size:16px}.ex-note{bottom:76px;right:7px;width:calc(100vw - 14px)}}
+@media(max-width:560px){.ex-tools{gap:3px;border-radius:15px;padding:6px}.ex-tools button{min-width:39px;min-height:43px;padding:4px 5px;font-size:11px}.ex-tools .ex-tool-text{display:none}.ex-tools button{flex:0 0 auto;min-width:36px;min-height:42px;padding:4px}.ex-tools .ex-icon{font-size:19px}.ex-tools{overflow-x:auto;scrollbar-width:none}.ex-tools::-webkit-scrollbar{display:none}.ex-note{bottom:76px;right:7px;width:calc(100vw - 14px)}}
 @media print{.ex-tools,.ex-note,.ex-ink,.ex-toast{display:none!important}}
