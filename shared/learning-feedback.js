@@ -12,13 +12,23 @@ function answer(q,override){
  if(Array.isArray(q?.answers))return String(q.answers[0]||"");
  return typeof q?.answer==="string"?q.answer:typeof q?.answer==="boolean"?(q.answer?"True":"False"):"";
 }
-function evidence(expected,source){
- if(!expected||!source)return "";
+function evidence(expected,source,question){
+ if(!source)return "";
  const parts=String(Array.isArray(source)?source.join("\n"):source).split(/\n+|(?<=[.!?])\s+/).map(s=>s.trim()).filter(Boolean);
  const key=norm(expected),tokens=key.split(" ").filter(x=>x.length>2);
- if(!tokens.length||(tokens.length===1&&tokens[0].length<4))return "";
- const matches=parts.filter(s=>{const t=norm(s),words=t.split(" ");return (" "+t+" ").includes(" "+key+" ")||(tokens.length>=2&&tokens.every(v=>words.includes(v)))});
- return matches.length?matches.sort((a,b)=>a.length-b.length)[0].slice(0,300):"";
+ if(key&&!/^(true|false|yes|no)$/.test(key)&&tokens.length&&!(tokens.length===1&&tokens[0].length<4)){
+  const matches=parts.filter(s=>{const t=norm(s),words=t.split(" ");return (" "+t+" ").includes(" "+key+" ")||(tokens.length>=2&&tokens.every(v=>words.includes(v)))});
+  if(matches.length)return matches.sort((a,b)=>a.length-b.length)[0].slice(0,300);
+ }
+ const stop=new Set(["what","where","when","which","whose","does","did","this","that","they","them","with","have","from","into","about","should","will","would","their","there","your","were","was","does","uses","what","why","how","who","much","many","main","students","student"]);
+ const qwords=[...new Set(norm(question).split(" ").filter(t=>t.length>3&&!stop.has(t)))];
+ if(qwords.length<2)return "";
+ const candidates=parts.map(t=>{
+  const words=new Set(norm(t).split(" "));
+  const found=qwords.filter(k=>words.has(k)).length;
+  return {text:t,found,ratio:found/qwords.length};
+ }).filter(a=>a.found>=2&&a.ratio>=0.6);
+ return candidates.length?candidates.sort((a,b)=>b.ratio-a.ratio||b.found-a.found||a.text.length-b.text.length)[0].text.slice(0,300):"";
 }
 function completedGap(q,ctx,expected){
  const match=String(q?.stem||"").match(/\bGap\s*(\d+)\b/i);
@@ -58,7 +68,7 @@ function explanation(q,ctx={},override){
  return {expected,rule:/gram|^grm$/.test(type)?rule(q,expected,ctx):"",
    meaning:/vocab|^vcb$|spell|word/.test(type)?q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(expected)]||( /_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,expected):""):"",
    example:/gram|^grm$/.test(type)?completedGap(q,ctx,expected):/vocab|^vcb$|spell|word/.test(type)&&/_{2,}/.test(q?.stem||"")&&(q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(expected)])?String(q.stem).replace(/_{2,}/,expected):"",
-   evidence:q?.evidence||q?.sourceQuote||evidence(expected,q?.script||q?.transcript||q?.passage||ctx.script||ctx.transcript||ctx.passage||ctx.text||""),
+   evidence:q?.evidence||q?.sourceQuote||evidence(expected,q?.script||q?.transcript||q?.passage||ctx.script||ctx.transcript||ctx.passage||ctx.text||"",q?.stem||""),
    kind:/listen|lst/.test(type)?"Listening script":"Reading text"};
 }
 function feedback(q,ctx={},ok=false,override){
