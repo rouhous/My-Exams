@@ -58,7 +58,7 @@ function evaluate(value,question){
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
-</script></head><body>
+</script><script src="../../../shared/data-charts.js?v=1"></script></head><body>
 <header><a href="../index.html">← Grade 12 Elective four-unit bank</a>
 <h1>Grade 12 Elective · The Arts · Paper A (Draft)</h1>
 <p>Semester 1 · 70 marks · 180-minute full practice · independent skills without a timer</p></header>
@@ -140,11 +140,7 @@ Promise.all([...files.map(async file=>{const r=await fetch(file);if(!r.ok)throw 
  $('loadState').textContent='Six sections loaded from '+(mixed?'all 4 semester units':'Unit '+unitNumber)+'. 20 Listening + 25 Reading + 25 Writing = 70 marks. Source-matched MP3s: '+Object.keys(audioFiles).length+'/2. Missing audio uses teacher script.';
  $('start').disabled=false;
 }).catch(e=>{$('loadState').textContent='Source draft not ready: '+e.message});
-function chart(c){
- let out='<table><caption>'+esc(c.title)+' · '+esc(c.unit)+'</caption><thead><tr><th>Activity</th>'+c.series.map(s=>'<th>'+esc(s.year)+'</th>').join('')+'</tr></thead><tbody>';
- c.categories.forEach((name,i)=>{out+='<tr><th>'+esc(name)+'</th>'+c.series.map(s=>'<td>'+esc(s.values[i])+'</td>').join('')+'</tr>'});
- return out+'</tbody></table>';
-}
+function chart(c){return window.MyExamsCharts.render(c);}
 function render(key){
  const d=tasks[key],isListening=key.startsWith('lst'),isWriting=key.startsWith('wrt');
  let h='<section class="part"><h2>'+esc(name[key])+' · '+d.marks+' marks</h2><p class="meta">Source unit '+sourceByKey[key]+': '+esc(unitNames[sourceByKey[key]])+'</p>';
