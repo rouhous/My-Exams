@@ -90,7 +90,7 @@ function mount(){
  d.querySelectorAll("textarea").forEach(ta=>{
   if(seen.has(ta)||ta.closest(".ex-note,.mex-ai-panel")||ta.disabled)return;
   const surroundings=(ta.closest("section,.part,.writing-task")?.textContent||"").toLowerCase();
-  if(!ta.matches("[data-writing],[data-write],textarea[name^='wrt'],textarea[name^='writing'],textarea[name='dataAnalysis'],textarea[id^='write']")&&!/writing|essay|story|paragraph|email|chart|write at least|اكتب|الكتابة/.test(surroundings))return;
+  if(!ta.matches("[data-writing],[data-write],textarea[name^='wrt'],textarea[name^='writing'],textarea[name='dataAnalysis'],textarea[id^='write'],textarea[data-k$=':text']")&&!/writing|essay|story|paragraph|email|chart|write at least|اكتب|الكتابة/.test(surroundings))return;
   seen.add(ta);
   const panel=d.createElement("div");panel.className="mex-ai-panel";
   const button=d.createElement("button");button.type="button";button.className="mex-ai-trigger";button.textContent="✨ راجع كتابتي بالذكاء الاصطناعي · AI Writing Feedback";
