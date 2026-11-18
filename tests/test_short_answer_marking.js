@@ -12,7 +12,7 @@ for(const q of questions){
  assert(r.wordCount<=r.permitted);
 }
 const sample=questions[11];
-assert(grade.evaluate('Students made an attendance list for workshop participants',sample).correct);
+assert(grade.evaluate('Students made an attendance list for participants',sample).correct);
 assert(!grade.evaluate('Students prepared the official complete workshop attendance list for all new participants',sample).correct);
 assert(!grade.evaluate('a guest register',sample).correct);
 assert(grade.evaluate('180 OMR',questions[5]).correct);
