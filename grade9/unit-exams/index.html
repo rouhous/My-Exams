@@ -25,7 +25,40 @@ textarea{width:100%;min-height:170px}.teacherScript{white-space:pre-wrap;max-hei
 .muted{color:#597362;font-size:14px}
 @media(max-width:560px){.topgrid{grid-template-columns:1fr}.images img{height:85px}}
 @media print{header,.setup,button,.clock{display:none!important}.paper{display:block!important}.section{break-inside:avoid}}
-</style><link rel="stylesheet" href="../../shared/exam-tools.css"></head><body><header><a href="../index.html">← Grade 9 existing practice</a>
+</style><link rel="stylesheet" href="../../shared/exam-tools.css"><script src="../../shared/short-answer-marking.js"></script><script>/* English short answer marking for My Exams.
+   Accept the expected answer as a complete contiguous phrase, with up to four
+   words above the question's stated maximum. This checks text, not meaning. */
+(function(g){
+"use strict";
+function words(value){
+ return String(value==null?"":value)
+ .normalize("NFKC").toLowerCase().replace(/[’‘]/g,"'")
+ .replace(/\b(\d+)\s*[-–]\s*(\d+)\b/g,"$1 $2")
+ .replace(/[^\p{L}\p{N}]+/gu," ").trim().split(/\s+/).filter(Boolean);
+}
+function evaluate(value,question){
+ const typed=words(value),limit=Number(question&&question.maxWords);
+ const maxWords=Number.isFinite(limit)&&limit>0?Math.floor(limit):4;
+ const permitted=maxWords+4;
+ const variants=[...(Array.isArray(question&&question.answers)?question.answers:[]),question&&question.answer]
+   .filter(x=>typeof x==="string"&&x.trim()).flatMap(x=>x.split(/\s+(?:\/|\bor\b)\s+/i));
+ const reference=variants.length?variants[0]:"";
+ if(!typed.length)return {correct:false,reason:"empty",wordCount:0,maxWords,permitted,reference};
+ if(typed.length>permitted)return {correct:false,reason:"too-long",wordCount:typed.length,maxWords,permitted,reference};
+ for(const v of variants){
+  const target=words(v);
+  if(!target.length)continue;
+  for(let i=0;i<=typed.length-target.length;i++){
+   if(target.every((word,j)=>typed[i+j]===word)){
+    return {correct:true,reason:"matched",wordCount:typed.length,maxWords,permitted,reference};
+   }
+  }
+ }
+ return {correct:false,reason:variants.length?"no-match":"manual",wordCount:typed.length,maxWords,permitted,reference};
+}
+g.MyExamsShortAnswers={evaluate,words};
+})(window);
+</script></head><body><header><a href="../index.html">← Grade 9 existing practice</a>
 <h1>Grade 9 · Gold Experience Oman 9A</h1><p>Three original unit-based full examinations · picture listening · individual skills</p></header>
 <main>
 <section class="notice"><strong>Original teacher-review papers, not Ministry-issued examinations.</strong>
@@ -87,14 +120,37 @@ function stop(){if(timer){clearInterval(timer);timer=null}}
 function start(){if(!model)return;stop();asked=[];finished=false;selected=$('mode').value==='full'?model.tasks:[model.tasks[Number($('skill').value)]];
  $('tasks').innerHTML=selected.map(render).join('');$('paperTitle').textContent='Unit '+model.unit+': '+model.unitTitle;$('marks').textContent=selected.reduce((n,t)=>n+t.marks,0)+' marks';$('results').hidden=true;$('results').innerHTML='';$('end').disabled=false;$('setup').hidden=true;$('paper').classList.add('active');
  if(selected.length===7){seconds=120*60;clock();$('clock').hidden=false;timer=setInterval(()=>{seconds--;clock();if(seconds<=0){stop();finish()}},1000)}else $('clock').hidden=true;window.scrollTo(0,0)}
-function finish(){if(finished)return;finished=true;stop();$('end').disabled=true;let n=0,score=0,manual=0,rows=[];
+function finish(){
+ if(finished)return;finished=true;stop();$('end').disabled=true;
+ let checked=0,correct=0,manual=0,blank=0,rows=[];
  for(const {id,q,task} of asked){
-   if(Array.isArray(q.choices)){n++;const v=document.querySelector('input[name="'+id+'"]:checked');
-     if(v&&Number(v.value)===q.answer)score++;else rows.push('<li>'+esc(task.title)+' · '+esc(q.stem)+' — '+esc(q.choices[q.answer])+'</li>');
-   }else{manual++;const v=document.querySelector('input[name="'+id+'"]');rows.push('<li>'+esc(task.title)+' · '+esc(q.stem)+' — suggested: '+esc((q.answers||[]).join(' / '))+'; student: '+esc(v?.value||'blank')+'</li>');}}
- const writing=selected.filter(t=>t.skill==='writing').map(t=>{const v=$('write'+t.group)?.value||'';return t.title+': '+(v.trim().match(/\S+/g)||[]).length+' words'});
- $('results').hidden=false;$('results').innerHTML='<h2>Objective answers: '+score+' / '+n+'</h2><p>'+manual+' short answers and '+writing.length+' writing tasks need human marking. No final 40-mark grade is assigned automatically.</p>'+(writing.length?'<p>'+writing.map(esc).join(' · ')+'</p>':'')+(rows.length?'<details><summary>Answer key and review checklist</summary><ol>'+rows.join('')+'</ol></details>':'');
- $('results').scrollIntoView({behavior:'smooth'})}
+   if(Array.isArray(q.choices)){
+     checked++;
+     const picked=document.querySelector('input[name="'+id+'"]:checked');
+     if(!picked)blank++;
+     const ok=!!picked&&Number(picked.value)===q.answer;
+     if(ok)correct++;
+     rows.push('<li>'+(ok?'✓ Correct':'✗ Incorrect')+' · '+esc(task.title)+' · '+esc(q.stem)+(ok?'':'; expected: '+esc(q.choices[q.answer]))+'</li>');
+   }else{
+     const field=document.querySelector('input[name="'+id+'"]');
+     const value=field?.value?.trim()||'';
+     if(!value)blank++;
+     const verdict=window.MyExamsShortAnswers.evaluate(value,q);
+     if(verdict.reason==='manual'){
+       manual++;
+       rows.push('<li>Review needed · '+esc(task.title)+' · '+esc(q.stem)+'</li>');
+     }else{
+       checked++;
+       if(verdict.correct)correct++;
+       rows.push('<li>'+(verdict.correct?'✓ Correct':'✗ Incorrect')+' · '+esc(task.title)+' · '+esc(q.stem)+(verdict.correct?'':'; expected: '+esc(verdict.reference))+(verdict.reason==='too-long'?'; allowed: '+verdict.permitted+' words':'')+'</li>');
+     }
+   }
+ }
+ const writing=selected.filter(t=>t.skill==='writing').map(t=>{const v=$('write'+t.group)?.value||'';return t.title+': '+(v.trim().match(/\\S+/g)||[]).length+' words'});
+ $('results').hidden=false;
+ $('results').innerHTML='<h2>Practice review</h2><p><strong>'+correct+' / '+checked+'</strong> automatically checked answers. '+blank+' blank, '+manual+' answer(s) without a stored reference, '+writing.length+' writing task(s) need teacher assessment.</p><p>Short answers are marked correct when the required reference appears in the response, with up to <strong>4 extra words</strong> above the question limit.</p>'+(writing.length?'<p>'+writing.map(esc).join(' · ')+'</p>':'')+'<p>The result excludes writing and is not a final 40-mark grade.</p>'+(rows.length?'<details open><summary>Review every answer</summary><ol>'+rows.join('')+'</ol></details>':'');
+ $('results').scrollIntoView({behavior:'smooth'});
+}
 $('start').onclick=start;$('end').onclick=finish;$('back').onclick=()=>{stop();$('paper').classList.remove('active');$('setup').hidden=false;window.scrollTo(0,0)};
 init();
 </script><script defer src="../../shared/exam-tools.js"></script></body></html>
