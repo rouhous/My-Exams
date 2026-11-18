@@ -25,7 +25,7 @@ textarea{width:100%;min-height:170px}.teacherScript{white-space:pre-wrap;max-hei
 .muted{color:#597362;font-size:14px}
 @media(max-width:560px){.topgrid{grid-template-columns:1fr}.images img{height:85px}}
 @media print{header,.setup,button,.clock{display:none!important}.paper{display:block!important}.section{break-inside:avoid}}
-</style></head><body><header><a href="../index.html">← Grade 9 existing practice</a>
+</style><link rel="stylesheet" href="../../shared/exam-tools.css"></head><body><header><a href="../index.html">← Grade 9 existing practice</a>
 <h1>Grade 9 · Gold Experience Oman 9A</h1><p>Three original unit-based full examinations · picture listening · individual skills</p></header>
 <main>
 <section class="notice"><strong>Original teacher-review papers, not Ministry-issued examinations.</strong>
@@ -97,4 +97,4 @@ function finish(){if(finished)return;finished=true;stop();$('end').disabled=true
  $('results').scrollIntoView({behavior:'smooth'})}
 $('start').onclick=start;$('end').onclick=finish;$('back').onclick=()=>{stop();$('paper').classList.remove('active');$('setup').hidden=false;window.scrollTo(0,0)};
 init();
-</script></body></html>
+</script><script defer src="../../shared/exam-tools.js"></script></body></html>
