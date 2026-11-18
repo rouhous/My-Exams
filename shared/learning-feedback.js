@@ -51,6 +51,7 @@ function feedback(q,ctx={},ok=false,override){
 function pageGrade(){
  const url=new URLSearchParams(w.location?.search||"");
  const grade=Number(url.get("grade"));if(grade>=5&&grade<=12)return grade;
+ const track=String(url.get("track")||"");if(/^11(?:-|$)/.test(track))return 11;if(/^12(?:-|$)/.test(track))return 12;
  const path=(w.location?.pathname||"").match(/grade[-_]?(\d+)|grades(\d+)-(\d+)/i);
  if(path)return Number(path[1]||path[2]);
  const el=d.querySelector("#grade");if(el&&Number(el.value)>=5)return Number(el.value);
