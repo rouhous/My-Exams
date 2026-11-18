@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "reviewOnly": true,
+  "description": "Original replacement listening texts for repeated Grade 6-8 Model D; do not apply to live exams before new MP3 and new illustrations pass review.",
+  "createdDate": "2026-11-16",
+  "replacements": [
+    {
+      "id": "g6-d-listening-1",
+      "grade": 6,
+      "model": "D",
+      "skill": "listening",
+      "part": 1,
+      "title": "Listening 1 · Match five different texts to pictures",
+      "format": "picture-match",
+      "unitTheme": "Comprehensive practice — technology, local places and free time",
+      "pictureOptions": [
+        "solar-study-lamp",
+        "compass-hiking",
+        "magnifying-leaf",
+        "bus-timetable-tablet",
+        "recycling-station",
+        "studio-microphone"
+      ],
+      "passages": [
+        "At our science club, we made a small desk lamp that gets its power from a solar panel. We tested it beside the classroom window, and it helped us read after sunset.",
+        "During our mountain walk, the guide showed us how to find north using a compass. We checked the path on a paper map before walking towards the village.",
+        "My grandmother asked me to look carefully at the plants in her garden. I used a magnifying glass to see the tiny patterns on the leaves and drew them in my notebook.",
+        "Our class will visit the museum tomorrow. The bus times have changed, so I checked the new timetable on my tablet before telling everyone when to meet.",
+        "After lunch, our school team collected empty paper cartons and plastic bottles. We took them to the recycling station instead of putting them in the ordinary rubbish bin."
+      ],
+      "questions": [
+        {
+          "stem": "Text 1",
+          "answer": 0
+        },
+        {
+          "stem": "Text 2",
+          "answer": 1
+        },
+        {
+          "stem": "Text 3",
+          "answer": 2
+        },
+        {
+          "stem": "Text 4",
+          "answer": 3
+        },
+        {
+          "stem": "Text 5",
+          "answer": 4
+        }
+      ],
+      "status": "teacher-review-and-new-audio-pending",
+      "source": "fresh-original-to-replace-cross-model-reuse"
+    },
+    {
+      "id": "g6-d-listening-2",
+      "grade": 6,
+      "model": "D",
+      "skill": "listening",
+      "part": 2,
+      "title": "Listening 2 · Interview about a community project",
+      "format": "mc",
+      "unitTheme": "Comprehensive practice — school technology and community",
+      "passage": "Interviewer: Welcome to Our Town Today. Rashid, what did your class do for the community? Rashid: We made a simple electronic board that shows when the local library opens. Interviewer: Why was it needed? Rashid: Some families arrived when the library was closed. We wanted visitors to see the correct hours. Interviewer: Who helped you make the board? Rashid: Our ICT teacher showed us how to connect the small screen, but the students wrote the information. Interviewer: Where did you test it? Rashid: We tested it in our classroom for a week before taking it to the library entrance. Interviewer: What problem did you discover? Rashid: The screen was hard to read in strong sunlight, so we added a small cover. Interviewer: What will your group do next? Rashid: We hope to add simple directions to the reading room and children's corner.",
+      "questions": [
+        {
+          "stem": "What information does the electronic board show?",
+          "options": [
+            "Bus ticket prices",
+            "Library opening times",
+            "Weather forecasts"
+          ],
+          "answer": 1
+        },
+        {
+          "stem": "Why did the class make the board?",
+          "options": [
+            "Visitors came when the library was closed",
+            "The classroom needed a clock",
+            "They wanted to sell computers"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "Who helped connect the screen?",
+          "options": [
+            "Rashid's grandfather",
+            "The librarian",
+            "The ICT teacher"
+          ],
+          "answer": 2
+        },
+        {
+          "stem": "Where did the pupils test the board first?",
+          "options": [
+            "In their classroom",
+            "At the bus station",
+            "In the market"
+          ],
+          "answer": 0
+        },
+        {
+          "stem": "What will the group add next?",
+          "options": [
+            "A larger battery",
+            "Directions to library rooms",
+            "A camera"
+          ],
+          "answer": 1
+        }
+      ],
+      "status": "teacher-review-and-new-audio-pending",
+      "source": "fresh-original-to-replace-cross-model-reuse"
+    },
+    {
+      "id": "g7-d-listening1",
+      "grade": 7,
+      "model": "D",
+      "section": "listening1",
+      "type": "picture-choice",
+      "instructions": "You will hear five short texts twice. For each text choose the correct picture A, B or C.",
+      "items": [
+        {
+          "stem": "Which instrument will the student perform with?",
+          "options": [
+            "violin",
+            "flute",
+            "drum"
+          ],
+          "images": [
+            "violin-stage-g7d",
+            "flute-school-g7d",
+            "hand-drum-g7d"
+          ],
+          "answer": 0,
+          "script": "I played the flute last term, and my friend performs with a drum. This year, I have practised the violin every evening, so I will play a short piece on it during our school assembly next week."
+        },
+        {
+          "stem": "Where did the children try making bowls?",
+          "options": [
+            "pottery workshop",
+            "cinema",
+            "museum gallery"
+          ],
+          "images": [
+            "pottery-workshop-g7d",
+            "cinema-seats-g7d",
+            "museum-gallery-g7d"
+          ],
+          "answer": 0,
+          "script": "On our school trip, we first passed the cinema and admired the old museum building. The most interesting stop was a pottery workshop, where a craftsperson taught us to shape wet clay into small bowls."
+        },
+        {
+          "stem": "Which animal did the guide point out?",
+          "options": [
+            "eagle",
+            "Arabian oryx",
+            "fox"
+          ],
+          "images": [
+            "eagle-rock-g7d",
+            "oryx-reserve-g7d",
+            "fox-desert-g7d"
+          ],
+          "answer": 1,
+          "script": "The guide said an eagle sometimes circles above the valley, and a fox may come out at night. This morning we were lucky to watch an Arabian oryx walking slowly beside a group of acacia trees."
+        },
+        {
+          "stem": "Where will the school performance take place?",
+          "options": [
+            "school hall",
+            "open-air courtyard",
+            "museum"
+          ],
+          "images": [
+            "school-hall-g7d",
+            "courtyard-stage-g7d",
+            "museum-front-g7d"
+          ],
+          "answer": 1,
+          "script": "The school hall is being painted, and the museum cannot host visitors that evening. The drama club has therefore arranged its performance in an open-air courtyard, with chairs for families near the small stage."
+        },
+        {
+          "stem": "What will Leena bring to watch distant birds?",
+          "options": [
+            "umbrella",
+            "headphones",
+            "binoculars"
+          ],
+          "images": [
+            "umbrella-hike-g7d",
+            "headphones-hike-g7d",
+            "binoculars-g7d"
+          ],
+          "answer": 2,
+          "script": "Leena checked the weather before the nature walk. She left her umbrella at home because no rain was expected, and she did not need headphones. She packed her binoculars so she could watch birds from a distance."
+        }
+      ],
+      "status": "teacher-review-and-new-audio-pending",
+      "source": "fresh-original-to-replace-cross-model-reuse"
+    },
+    {
+      "id": "g7-d-listening2",
+      "grade": 7,
+      "model": "D",
+      "section": "listening2",
+      "type": "true-false",
+      "instructions": "Listen to the interview twice. Decide whether the statements are True or False.",
+      "script": "Interviewer: Welcome to Community Stories. Huda, what special event did your class organise last month?\nHuda: We prepared a puppet show based on a traditional journey through the mountains. Younger children helped us choose the characters, and our art teacher showed us how to make the puppets.\nInterviewer: Did you buy expensive materials?\nHuda: No. Most puppets were made from clean cardboard boxes, old fabric and wooden sticks. We wanted the project to cost very little and avoid unnecessary waste.\nInterviewer: Where did you plan to perform?\nHuda: At first we chose the courtyard beside the old fort. Unfortunately, strong winds were forecast for that evening, so the library let us use its large activity room.\nInterviewer: Were the changes difficult?\nHuda: Moving the stage took time, but the children helped carry the chairs. We practised the songs once more before the visitors arrived.\nInterviewer: How did the audience react?\nHuda: They laughed at the funny scenes and asked questions about the journey afterwards. Several parents offered to help with a second show next month.\nInterviewer: What did your class learn?\nHuda: Working together and adapting our plan were just as important as acting on stage.",
+      "items": [
+        {
+          "stem": "Huda's class presented a puppet show about a journey.",
+          "answer": true
+        },
+        {
+          "stem": "The pupils bought expensive new materials for their puppets.",
+          "answer": false
+        },
+        {
+          "stem": "Strong winds caused the performance to move indoors.",
+          "answer": true
+        },
+        {
+          "stem": "The children refused to help move the chairs.",
+          "answer": false
+        },
+        {
+          "stem": "Some parents offered to help with another performance.",
+          "answer": true
+        }
+      ],
+      "status": "teacher-review-and-new-audio-pending",
+      "source": "fresh-original-to-replace-cross-model-reuse"
+    },
+    {
+      "id": "g8-d-listening1",
+      "grade": 8,
+      "model": "D",
+      "section": "listening1",
+      "type": "picture-choice",
+      "instructions": "You will hear five short texts twice. For each text choose the correct picture A, B or C.",
+      "items": [
+        {
+          "stem": "What did the students measure near the beach?",
+          "options": [
+            "sound levels",
+            "water temperature",
+            "wind speed"
+          ],
+          "images": [
+            "sound-meter-beach-g8d",
+            "thermometer-water-g8d",
+            "wind-meter-g8d"
+          ],
+          "answer": 0,
+          "script": "Our science group visited a busy beach to study how noise affects the area. We took photographs of the waves, but our main task was to use a sound meter to measure noise from boats and cars at different times."
+        },
+        {
+          "stem": "What did the garden club use to water its plants?",
+          "options": [
+            "bottled water",
+            "collected rainwater",
+            "sea water"
+          ],
+          "images": [
+            "bottled-water-g8d",
+            "rain-barrel-g8d",
+            "seawater-bucket-g8d"
+          ],
+          "answer": 1,
+          "script": "The gardening club wanted to save water. Rather than opening the tap every morning, the students collected rainwater in a covered barrel and used it to water seedlings when the ground became dry."
+        },
+        {
+          "stem": "Which activity did the adventure group choose?",
+          "options": [
+            "kayaking",
+            "climbing a rope bridge",
+            "cycling"
+          ],
+          "images": [
+            "kayak-lake-g8d",
+            "rope-bridge-g8d",
+            "hill-cycling-g8d"
+          ],
+          "answer": 1,
+          "script": "The adventure centre offered kayaking and mountain cycling, but the students had tried both activities before. This time, with safety helmets and an instructor, they decided to cross a low rope bridge above a shallow stream."
+        },
+        {
+          "stem": "What did Mariam replace instead of buying a new one?",
+          "options": [
+            "school bag",
+            "bicycle tyre",
+            "phone case"
+          ],
+          "images": [
+            "schoolbag-repair-g8d",
+            "bicycle-tyre-repair-g8d",
+            "phonecase-g8d"
+          ],
+          "answer": 1,
+          "script": "Mariam noticed that her bicycle had a damaged tyre. She could have bought a new bicycle or left it unused, but the repair shop replaced the tyre. Now she can cycle to school again without wasting a useful bike."
+        },
+        {
+          "stem": "Which item will students bring for a waste-free lunch?",
+          "options": [
+            "disposable bag",
+            "paper cup",
+            "reusable lunchbox"
+          ],
+          "images": [
+            "plastic-bag-g8d",
+            "paper-cup-g8d",
+            "reusable-lunchbox-g8d"
+          ],
+          "answer": 2,
+          "script": "On Environment Day, the canteen will provide drinking water and students must avoid single-use packaging. They have been asked to bring a reusable lunchbox for their food rather than paper cups or plastic bags."
+        }
+      ],
+      "status": "teacher-review-and-new-audio-pending",
+      "source": "fresh-original-to-replace-cross-model-reuse"
+    },
+    {
+      "id": "g8-d-listening2",
+      "grade": 8,
+      "model": "D",
+      "section": "listening2",
+      "type": "true-false",
+      "instructions": "Listen to the interview twice. Decide whether each statement is True or False.",
+      "script": "Interviewer: Welcome to Better Choices. Sam, can you explain the event your class organised last Saturday?\nSam: We held a swap day at the community centre. Families brought useful things they no longer needed, including books, school bags and sports equipment.\nInterviewer: Was the idea to encourage people to buy more new products?\nSam: Not at all. We wanted to show that an item can be useful to someone else without being thrown away. Nobody paid money to exchange an item.\nInterviewer: How did you keep the event organised?\nSam: We asked everyone to clean their items first and write a small label explaining their condition. Volunteers checked that the equipment was safe before placing it on the tables.\nInterviewer: Did everything go as planned?\nSam: We expected about thirty visitors, but more than sixty arrived. At first there were long queues, so our teacher opened a second table and two classmates helped record exchanges.\nInterviewer: What happened to the things that remained?\nSam: With permission from their owners, we gave suitable items to a local charity. We kept damaged items out of the donation boxes.\nInterviewer: What is the next step?\nSam: We will review the feedback at our club meeting. We have not decided whether to repeat the event next term.",
+      "items": [
+        {
+          "stem": "Sam's class held the swap day at a community centre.",
+          "answer": true
+        },
+        {
+          "stem": "Families had to pay money to exchange items.",
+          "answer": false
+        },
+        {
+          "stem": "Volunteers checked the condition and safety of items.",
+          "answer": true
+        },
+        {
+          "stem": "Fewer people came than the organisers expected.",
+          "answer": false
+        },
+        {
+          "stem": "Suitable remaining items were donated with their owners' permission.",
+          "answer": true
+        }
+      ],
+      "status": "teacher-review-and-new-audio-pending",
+      "source": "fresh-original-to-replace-cross-model-reuse"
+    }
+  ]
+}

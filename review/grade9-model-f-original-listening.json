@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "model": "F",
+  "reviewOnly": true,
+  "theme": "The Future Is Now — practical technology",
+  "listening1": {
+    "id": "g9-F-L1",
+    "group": 1,
+    "items": [
+      {
+        "stem": "Which device monitored the seedlings' temperature?",
+        "choices": [
+          "temperature probe",
+          "sound meter",
+          "light sensor"
+        ],
+        "answer": 0,
+        "images": [
+          "temperature-probe-g9f",
+          "sound-meter-g9f",
+          "light-sensor-g9f"
+        ],
+        "script": "Our science club was testing conditions inside a greenhouse. A sound meter was ready for another experiment, while a light sensor was attached to the roof. For the seedlings, we placed a small temperature probe beside the plants and recorded the readings on a tablet."
+      },
+      {
+        "stem": "How did visitors travel between research buildings?",
+        "choices": [
+          "electric bus",
+          "ferry",
+          "tram"
+        ],
+        "answer": 0,
+        "images": [
+          "electric-bus-g9f",
+          "research-ferry-g9f",
+          "urban-tram-g9f"
+        ],
+        "script": "The new research park has two buildings on opposite sides of a wide valley. A ferry could not help because there is no water crossing, and the city tram does not reach the park. Visitors used a quiet electric bus between the centres."
+      },
+      {
+        "stem": "What did the group design for older residents?",
+        "choices": [
+          "reminder box",
+          "key holder",
+          "desk lamp"
+        ],
+        "answer": 0,
+        "images": [
+          "reminder-box-g9f",
+          "key-holder-g9f",
+          "desk-lamp-g9f"
+        ],
+        "script": "Our design group talked with elderly residents about daily routines. Some people found it difficult to remember important appointments. Rather than making another lamp or key holder, we built a reminder box that shows a light and plays a gentle sound at a set time."
+      },
+      {
+        "stem": "Where was the sorting robot first tested?",
+        "choices": [
+          "hospital corridor",
+          "school garden",
+          "science laboratory"
+        ],
+        "answer": 2,
+        "images": [
+          "hospital-corridor-g9f",
+          "garden-robot-g9f",
+          "science-lab-g9f"
+        ],
+        "script": "Our class designed a robot that could sort small objects by size. We hope to show it in a hospital corridor and the school garden later, but the first experiment took place in the science laboratory, where we had a safe power supply and plenty of space."
+      },
+      {
+        "stem": "Which object did the robot accidentally drop?",
+        "choices": [
+          "water bottle",
+          "book",
+          "empty box"
+        ],
+        "answer": 1,
+        "images": [
+          "water-bottle-g9f",
+          "fallen-book-g9f",
+          "empty-box-g9f"
+        ],
+        "script": "At the technology fair, our robot successfully carried an empty box across the table and avoided a water bottle. When it tried to lift a heavy book, the object slipped from its hand. The team stopped the demonstration to adjust the grip."
+      }
+    ],
+    "transcript": "Text 1. Our science club was testing conditions inside a greenhouse. A sound meter was ready for another experiment, while a light sensor was attached to the roof. For the seedlings, we placed a small temperature probe beside the plants and recorded the readings on a tablet.\n\nText 2. The new research park has two buildings on opposite sides of a wide valley. A ferry could not help because there is no water crossing, and the city tram does not reach the park. Visitors used a quiet electric bus between the centres.\n\nText 3. Our design group talked with elderly residents about daily routines. Some people found it difficult to remember important appointments. Rather than making another lamp or key holder, we built a reminder box that shows a light and plays a gentle sound at a set time.\n\nText 4. Our class designed a robot that could sort small objects by size. We hope to show it in a hospital corridor and the school garden later, but the first experiment took place in the science laboratory, where we had a safe power supply and plenty of space.\n\nText 5. At the technology fair, our robot successfully carried an empty box across the table and avoided a water bottle. When it tried to lift a heavy book, the object slipped from its hand. The team stopped the demonstration to adjust the grip.",
+    "audio": "audio/g9-f-listening-1.mp3"
+  },
+  "listening2": {
+    "id": "g9-F-L2",
+    "group": 2,
+    "items": [
+      {
+        "stem": "What problem was the service designed to solve?",
+        "choices": [
+          "Finding library books",
+          "Paying school fees",
+          "Ordering lunches"
+        ],
+        "answer": 0,
+        "evidence": "find it difficult to locate books"
+      },
+      {
+        "stem": "What does the tablet show?",
+        "choices": [
+          "Bus routes",
+          "A book's shelf and availability",
+          "Sports results"
+        ],
+        "answer": 1,
+        "evidence": "which shelf holds a suitable book and whether that book is available"
+      },
+      {
+        "stem": "How many pupils tested the system?",
+        "choices": [
+          "Ten",
+          "Twenty",
+          "Thirty"
+        ],
+        "answer": 2,
+        "evidence": "We asked thirty pupils"
+      },
+      {
+        "stem": "What change improved accessibility?",
+        "choices": [
+          "Larger text and audio",
+          "Smaller icons only",
+          "A new printer"
+        ],
+        "answer": 0,
+        "evidence": "made the text larger and added an audio button"
+      },
+      {
+        "stem": "What information requires frequent updating?",
+        "choices": [
+          "School timetables",
+          "Borrowed and returned books",
+          "Weather forecasts"
+        ],
+        "answer": 1,
+        "evidence": "updated when books are borrowed or returned"
+      }
+    ],
+    "transcript": "Interviewer: Welcome to Tomorrow's Ideas. Noura, your science club is creating a digital library service. Why did you start?\nNoura: Some pupils find it difficult to locate books, especially when the library is busy. We wanted a system that could help without replacing our librarian.\nInterviewer: How does the service work?\nNoura: A pupil enters a topic on a tablet. The screen shows which shelf holds a suitable book and whether that book is available.\nInterviewer: Does artificial intelligence choose every title?\nNoura: We use a basic recommendation system based on subjects, but our teacher and librarian check every suggestion. We do not want the computer to invent books that do not exist.\nInterviewer: How did you test it?\nNoura: We asked thirty pupils to search for books. Most found what they wanted more quickly, although some requested larger text.\nInterviewer: What did you change?\nNoura: We made the text larger and added an audio button that reads the main instructions aloud. That should help visitors with different needs.\nInterviewer: What is one challenge that remains?\nNoura: The information must be updated when books are borrowed or returned. We cannot assume a computer is always correct.\nInterviewer: What will happen next?\nNoura: We will show the service to younger classes and ask whether the instructions are easy to understand.",
+    "speakerGenders": {
+      "Interviewer": "female",
+      "Noura": "female"
+    },
+    "audio": "audio/g9-f-listening-2.mp3"
+  },
+  "imageStatus": "15 distinct 2D B&W picture scenes pending",
+  "audioStatus": "review-only; recordings not yet generated"
+}

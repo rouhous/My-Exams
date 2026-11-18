@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "model": "E",
+  "reviewOnly": true,
+  "theme": "Connections — community communication",
+  "listening1": {
+    "id": "g9-E-L1",
+    "group": 1,
+    "items": [
+      {
+        "stem": "How did the cousins exchange pronunciation practice?",
+        "choices": [
+          "postcards",
+          "video calls",
+          "voice notes"
+        ],
+        "answer": 2,
+        "images": [
+          "postcards-g9e",
+          "video-call-g9e",
+          "voice-note-g9e"
+        ],
+        "script": "My cousin lives far from our village, but we are learning each other's favourite expressions. Video calls were difficult because our internet was slow in the evening. Instead, we sent short voice notes and listened to them when the connection improved."
+      },
+      {
+        "stem": "Which instrument did the visiting musician actually play?",
+        "choices": [
+          "oud",
+          "flute",
+          "violin"
+        ],
+        "answer": 0,
+        "images": [
+          "oud-player-g9e",
+          "flute-player-g9e",
+          "violin-player-g9e"
+        ],
+        "script": "During the cultural evening, a visitor explained how different instruments make different sounds. She showed us a wooden flute and a modern violin, but the instrument she performed with for the audience was a traditional oud."
+      },
+      {
+        "stem": "Where did families meet the project coordinator?",
+        "choices": [
+          "sports centre",
+          "community library",
+          "public park"
+        ],
+        "answer": 1,
+        "images": [
+          "sports-centre-g9e",
+          "library-workshop-g9e",
+          "park-meeting-g9e"
+        ],
+        "script": "We invited families to a workshop about keeping in touch across generations. A festival made the public park too noisy and the sports centre was unavailable. Our coordinator welcomed everyone in the meeting room at the community library."
+      },
+      {
+        "stem": "What did the pupil use to keep the phone working?",
+        "choices": [
+          "portable charger",
+          "printed map",
+          "headphones"
+        ],
+        "answer": 0,
+        "images": [
+          "portable-charger-g9e",
+          "folded-map-g9e",
+          "headphones-g9e"
+        ],
+        "script": "Our class exchanged messages with pupils from another island during a ferry trip. I remembered my headphones and a printed map, but the most useful item was a portable charger. It kept my phone working until I could send our arrival message."
+      },
+      {
+        "stem": "What did the families make together?",
+        "choices": [
+          "date sweets",
+          "rice dish",
+          "flatbread"
+        ],
+        "answer": 2,
+        "images": [
+          "dates-sweets-g9e",
+          "rice-dish-g9e",
+          "flatbread-g9e"
+        ],
+        "script": "At the neighbourhood food workshop, families shared recipes from different places. We tasted sweet dates and a rice dish, but the activity everyone joined was making flatbread. We mixed the dough, rolled it into small circles and cooked it carefully on a hot plate."
+      }
+    ],
+    "transcript": "Text 1. My cousin lives far from our village, but we are learning each other's favourite expressions. Video calls were difficult because our internet was slow in the evening. Instead, we sent short voice notes and listened to them when the connection improved.\n\nText 2. During the cultural evening, a visitor explained how different instruments make different sounds. She showed us a wooden flute and a modern violin, but the instrument she performed with for the audience was a traditional oud.\n\nText 3. We invited families to a workshop about keeping in touch across generations. A festival made the public park too noisy and the sports centre was unavailable. Our coordinator welcomed everyone in the meeting room at the community library.\n\nText 4. Our class exchanged messages with pupils from another island during a ferry trip. I remembered my headphones and a printed map, but the most useful item was a portable charger. It kept my phone working until I could send our arrival message.\n\nText 5. At the neighbourhood food workshop, families shared recipes from different places. We tasted sweet dates and a rice dish, but the activity everyone joined was making flatbread. We mixed the dough, rolled it into small circles and cooked it carefully on a hot plate.",
+    "audio": "audio/g9-e-listening-1.mp3"
+  },
+  "listening2": {
+    "id": "g9-E-L2",
+    "group": 2,
+    "items": [
+      {
+        "stem": "What started the exchange idea?",
+        "choices": [
+          "Regional words",
+          "A sports competition",
+          "An airport visit"
+        ],
+        "answer": 0,
+        "evidence": "A visitor spoke to us about regional words"
+      },
+      {
+        "stem": "What did each recording include?",
+        "choices": [
+          "Music only",
+          "A word, meaning and example",
+          "Photographs only"
+        ],
+        "answer": 1,
+        "evidence": "a word, its meaning and an example sentence"
+      },
+      {
+        "stem": "How did the pupils prevent misunderstandings?",
+        "choices": [
+          "They ignored unusual words",
+          "They stopped the exchange",
+          "They asked for examples"
+        ],
+        "answer": 2,
+        "evidence": "We asked for examples instead of guessing"
+      },
+      {
+        "stem": "Where did the classes finally meet?",
+        "choices": [
+          "The school hall",
+          "The ferry terminal",
+          "A shopping centre"
+        ],
+        "answer": 0,
+        "evidence": "a joint workshop in our school hall"
+      },
+      {
+        "stem": "Who will receive the phrase cards?",
+        "choices": [
+          "Local businesses",
+          "Younger pupils",
+          "International tourists"
+        ],
+        "answer": 1,
+        "evidence": "give them to younger pupils next semester"
+      }
+    ],
+    "transcript": "Interviewer: Welcome to Connections. Bilal, your class organised a language exchange with another school. How did the idea begin?\nBilal: A visitor spoke to us about regional words and expressions. We discovered that we knew different names for some everyday objects and wanted to learn more.\nInterviewer: Did you travel to the other school?\nBilal: Not at first. We created short recordings and exchanged them online. Each recording included a word, its meaning and an example sentence.\nInterviewer: How did you make the recordings clear?\nBilal: We spoke slowly and kept background noise low. Our teacher checked every recording before it was sent.\nInterviewer: Was the exchange only about vocabulary?\nBilal: No. Pupils shared stories about family celebrations and school traditions. We learnt that people can have different customs but still enjoy many of the same activities.\nInterviewer: What was difficult?\nBilal: Sometimes the same word meant different things. We asked for examples instead of guessing. This prevented misunderstandings.\nInterviewer: When did the classes finally meet?\nBilal: At the end of term, we held a joint workshop in our school hall. Pupils worked in mixed groups and made illustrated phrase cards.\nInterviewer: What will you do with the phrase cards?\nBilal: We plan to give them to younger pupils next semester. The project taught us to listen respectfully and ask better questions.",
+    "speakerGenders": {
+      "Interviewer": "female",
+      "Bilal": "male"
+    },
+    "audio": "audio/g9-e-listening-2.mp3"
+  },
+  "imageStatus": "15 original black-and-white scenes required",
+  "audioStatus": "review-only not generated"
+}

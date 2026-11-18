@@ -1,0 +1,41 @@
+name: QA planned Listening 1 illustration inventory
+on:
+  pull_request:
+    branches: [exam-review-2026-11-16]
+    paths:
+      - scripts/audit_staged_listening_images.py
+      - review/grade8-model-d-image-integrity.json
+      - review/grade9-model-d-image-integrity.json
+      - .github/workflows/staged-listening-image-qa.yml
+  push:
+    branches: [fix/listening-two-pass-order-2026-11-16]
+    paths:
+      - scripts/audit_staged_listening_images.py
+      - review/grade8-model-d-image-integrity.json
+      - review/grade9-model-d-image-integrity.json
+      - review/listening-replacements-grade6-8-model-d.json
+      - review/grade9-model-d-original-listening.json
+      - review/grade9-model-e-original-listening.json
+      - review/grade9-model-f-original-listening.json
+      - .github/workflows/staged-listening-image-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit-art:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate planned pictures do not repeat an ID
+        run: |
+          python -m py_compile scripts/audit_staged_listening_images.py
+          python scripts/audit_staged_listening_images.py --output /tmp/my-exams-staged-image-report.json
+      - name: Upload image inventory for teacher artwork production
+        uses: actions/upload-artifact@v4
+        with:
+          name: staged-listening-image-production-checklist
+          retention-days: 14
+          path: /tmp/my-exams-staged-image-report.json

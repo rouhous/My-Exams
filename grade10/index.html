@@ -63,7 +63,7 @@ function renderQuestion(q,i,prefix){
  if(Array.isArray(q.options)){
   label+=q.options.map((option,j)=>'<label><input type="radio" name="'+esc(name)+'" value="'+j+'"> '+String.fromCharCode(65+j)+'. '+esc(option)+'</label>').join('');
  }else{label+='<input type="text" name="'+esc(name)+'" placeholder="Short answer" />'}
- return label+'</div>';
+ return label+($('mode').value==='practice'?'<button type="button" class="practice-check" data-check="'+esc(name)+'" style="margin-top:9px;padding:6px 11px">Check answer</button><div class="practice-review" data-feedback="'+esc(name)+'"></div>':'')+'</div>';
 }
 function renderSection(section,i){
  var data=section.data,key=section.skill;
@@ -87,30 +87,15 @@ function start(){
  stopTimer();active=modelChoices();if(!active.length)return;
  var m=current();$('intro').textContent='Grade 10 · '+m.unitTitle+' · '+(m.marks||'')+' marks · Original practice';
  $('exam').innerHTML=active.map(renderSection).join('');
- $('actions').classList.remove('hidden');$('result').textContent='';status('Exam started. Listening passages and associated questions stay together.');
+ $('actions').classList.remove('hidden');$('result').textContent='';$('submit').disabled=false;status('Exam started. Listening passages and associated questions stay together.');
+ $('exam').querySelectorAll('.practice-check').forEach(button=>button.onclick=()=>{if($('mode').value!=='practice'||$('submit').disabled)return;const [skill,index]=button.dataset.check.split('-');const part=active.find(x=>x.skill===skill);if(!part)return;const r=reviewQuestion(part,part.data.questions[Number(index)],Number(index));const target=button.nextElementSibling;if(target)target.innerHTML=r.unanswered?'Choose or enter your answer first.':MyExamsFeedback.render(r)});
+ $('exam').querySelectorAll('input').forEach(el=>el.addEventListener(el.type==='radio'?'change':'input',()=>{const k=el.name;const fb=document.querySelector('[data-feedback="'+k+'"]');if(fb)fb.innerHTML=''}));
  $('exam').querySelectorAll('textarea').forEach(t=>t.addEventListener('input',()=>{t.closest('section').querySelector('.words').textContent=t.value.trim()?t.value.trim().split(/\s+/).length:0}));
  if($('mode').value==='exam'){end=Date.now()+(m.timeMinutes||150)*60000;tick();timer=setInterval(tick,1000)}else{$('clock').textContent='Untimed'}
 }
 function normalize(text){return String(text??'').normalize('NFKC').trim().toLowerCase().replace(/[.,!?;:]/g,'').replace(/\s+/g,' ')}
-function evaluateAnswers(){
- if(!active)return;
- stopTimer();let total=0,correct=0;
- active.forEach(part=>{
-  if(part.skill.startsWith('writing'))return;
-  (part.data.questions||[]).forEach((q,i)=>{
-   total++;
-   const name=part.skill+'-'+i;const input=[...document.querySelectorAll('#exam input')].find(n=>n.name===name&&(n.type==='text'||n.checked));
-   if(!input)return;
-   const actual=input.value;
-   const good=typeof q.answer==='number'?Number(actual)===q.answer:normalize(actual)===normalize(q.answer);
-   if(good)correct++;
-   const cell=input.closest('.question');
-   if(cell)cell.style.borderLeft='4px solid '+(good?'#3b8f67':'#bc7240');
-  });
- });
- $('result').textContent='Objective responses: '+correct+' / '+total+'. Writing is not automatically graded; short answers may require teacher review.';
- status('Results are practice estimates, not a final Ministry score.');
-}
+function reviewQuestion(part,q,i){const key=part.skill+'-'+i;const all=[...document.querySelectorAll('#exam input')].filter(n=>n.name===key);const input=all.find(n=>n.type==='text'||n.checked);const v=input?.value,unanswered=v===undefined||String(v).trim()==='';const good=!unanswered&&(typeof q.answer==='number'?Number(v)===q.answer:normalize(v)===normalize(q.answer));const prefix=n=>String.fromCharCode(65+Number(n));const your=unanswered?'Not answered':typeof q.answer==='number'?prefix(v)+' — '+(q.options?.[Number(v)]||''):v;const expected=typeof q.answer==='number'?prefix(q.answer)+' — '+(q.options?.[q.answer]||''):q.answer;return {correct:good,unanswered,yourAnswer:your,correctAnswer:expected,explanation:q.explanation||q.rule||'',evidence:q.evidence||'',retryHint:good?'':'Read or listen again and check the exact detail.'};}
+function evaluateAnswers(){if(!active||$('submit').disabled)return;stopTimer();let total=0,correct=0;active.forEach(part=>{if(part.skill.startsWith('writing'))return;(part.data.questions||[]).forEach((q,i)=>{total++;const r=reviewQuestion(part,q,i);if(r.correct)correct++;const name=part.skill+'-'+i;const input=[...document.querySelectorAll('#exam input')].find(n=>n.name===name);const cell=input?.closest('.question');if(cell){cell.style.borderLeft='4px solid '+(r.correct?'#3b8f67':'#bc7240');cell.insertAdjacentHTML('beforeend',MyExamsFeedback.render(r));}})});$('result').textContent='Objective responses: '+correct+' / '+total+'. Writing is not automatically graded; short answers may require teacher review.';document.querySelectorAll('#exam input,#exam textarea,.practice-check').forEach(el=>el.disabled=true);$('submit').disabled=true;status('Results are practice estimates. The answer review is visible only after submission in exam mode.');}
 async function prepareOffline(){
  if(!('caches' in window)||!('serviceWorker' in navigator)){status('Offline caching unavailable. Open via HTTPS.');return}
  try{
@@ -133,4 +118,4 @@ $('submit').addEventListener('click',evaluateAnswers);
 $('offline').addEventListener('click',prepareOffline);
 init();
 })();
-</script></body></html>
+</script><script src="../shared/practice-feedback.js"></script><script src="../shared/listening-runtime.js"></script></body></html>

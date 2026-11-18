@@ -1,0 +1,91 @@
+name: Unique listening bank pilot — Grades 6–10
+on:
+  push:
+    branches: [fix/listening-two-pass-order-2026-11-16]
+    paths:
+      - .github/workflows/unique-listening-grades6-10.yml
+      - review/grade9-model-d-original-listening.json
+      - review/grade9-model-e-original-listening.json
+      - review/grade9-model-f-original-listening.json
+      - scripts/stage_grade9_listening_def.py
+      - scripts/generate_grade9_audio.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  deduplicate-and-record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate and stage unique texts only in throwaway checkout
+        run: |
+          python -m py_compile scripts/stage_grade9_listening_def.py scripts/generate_grade9_audio.py
+          python scripts/stage_review_listening_drafts.py --apply
+          python scripts/stage_grade9_listening_def.py --apply
+          python scripts/stage_grade10_listening_ef.py --apply
+          python scripts/audit_listening_reuse.py --max-exact 0 --fail-cross-grade --output /tmp/listening-zero-duplicates.json
+          node --check grade9/data.js
+      - name: Install natural voice generator
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m pip install edge-tts mutagen
+      - name: Generate six new Grade 9 listening tracks only
+        env:
+          ONLY_MODELS: D,E,F
+        run: python scripts/generate_grade9_audio.py
+      - name: Verify source hashes, five-text order, gender and MP3s
+        run: |
+          python - <<'PY'
+          import json,hashlib,sys
+          from pathlib import Path
+          from mutagen.mp3 import MP3
+          sys.path.insert(0,'scripts')
+          from listening_voice_roles import VOICE_NAMES
+          raw=Path('grade9/data.js').read_text()
+          data=json.loads(raw.removeprefix('const EXAM_DATA=').rstrip(';'+'\n '))
+          selected={m['model']:m for m in data['models'] if m['model'] in 'DEF'}
+          manifest=json.loads(Path('grade9/audio-natural/manifest.json').read_text())
+          assert set(manifest)=={f'g9-{m}-L{part}' for m in 'DEF' for part in (1,2)},list(manifest)
+          expected_order=['text-one','text-two','text-three','text-four','text-five','now-listen-again','text-one','text-two','text-three','text-four','text-five']
+          for model in 'DEF':
+            for task in selected[model]['tasks']:
+              if task.get('skill')!='listening':continue
+              meta=manifest[task['id']]
+              source={'transcript':task.get('transcript'),'items':task.get('items'),'questions':task.get('questions'),'speakerGenders':task.get('speakerGenders')}
+              sha=hashlib.sha256(json.dumps(source,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
+              assert sha==meta['sourceHash'],task['id']
+              assert meta['voiceRoutingVersion']=='identity-v2'
+              audio=Path('grade9/audio-natural')/meta['mp3']
+              assert audio.is_file() and MP3(audio).info.length>50,(task['id'],'short/missing mp3')
+              if task['group']==1:
+                assert meta['playbackSequence']==expected_order,(task['id'],meta['playbackSequence'])
+              else:
+                guest={'D':('Huda',2),'E':('Bilal',1),'F':('Noura',2)}[model]
+                assert meta['speakerCast'][guest[0]]==VOICE_NAMES[guest[1]]
+                assert meta['speakerCast']['Interviewer']==VOICE_NAMES[0]
+              print('PASS',task['id'],round(MP3(audio).info.length),'seconds')
+          PY
+      - name: Upload six new MP3 previews and speaker metadata only
+        uses: actions/upload-artifact@v4
+        with:
+          name: grade9-def-new-original-listening-auditions
+          retention-days: 14
+          path: |
+            grade9/audio-natural/g9-d-listening-1.mp3
+            grade9/audio-natural/g9-d-listening-2.mp3
+            grade9/audio-natural/g9-e-listening-1.mp3
+            grade9/audio-natural/g9-e-listening-2.mp3
+            grade9/audio-natural/g9-f-listening-1.mp3
+            grade9/audio-natural/g9-f-listening-2.mp3
+            grade9/audio-natural/manifest.json
+      - name: Preserve all-unique text report
+        uses: actions/upload-artifact@v4
+        with:
+          name: grades6-10-zero-exact-duplicate-audit
+          retention-days: 14
+          path: /tmp/listening-zero-duplicates.json

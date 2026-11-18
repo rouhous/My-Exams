@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 1,
+  "reviewOnly": true,
+  "description": "Further distinct Core listening scripts to remove the five remaining very high similarity pairs; original source drafts preserved.",
+  "drafts": [
+    {
+      "grade": 11,
+      "unit": 3,
+      "part": 1,
+      "unitTitle": "Travellers and Tourists",
+      "cast": {
+        "Presenter": "female",
+        "Khalid": "male"
+      },
+      "script": "Presenter: Welcome to Routes and Places. Khalid, why did your class visit the old harbour last month?\nKhalid: We wanted to learn how trade shaped the town, rather than simply take photographs for our geography project.\nPresenter: Who guided you around the harbour?\nKhalid: A retired boat builder, Mr Nasser, walked with us and explained why different boats were built for different journeys.\nPresenter: Did you begin at the museum?\nKhalid: No, we met beside the fish market at eight thirty, before the harbour became crowded with delivery vehicles.\nPresenter: What could visitors see at the first stop?\nKhalid: We examined a wooden doorway with carved patterns. The builder said the design helped people recognise the workshop.\nPresenter: How did you record the information?\nKhalid: One student took notes and another used a voice recorder, after asking the guide for permission.\nPresenter: Why not rely on information from the internet?\nKhalid: Some websites confused the dates of two buildings, so we compared them with the signs at the heritage centre.\nPresenter: Did you travel by boat?\nKhalid: Only for a short demonstration inside the sheltered harbour. Everyone wore a life jacket and stayed seated.\nPresenter: What happened after the demonstration?\nKhalid: The wind grew stronger, and the guide cancelled the second trip. We continued the visit on foot instead.\nPresenter: Where did you have lunch?\nKhalid: At a small café near the old customs house. We ordered simple meals and had time to organise our notes.\nPresenter: Was anything difficult for the group?\nKhalid: A few paths were too narrow for our class to walk together, so we divided into smaller groups with teachers.\nPresenter: What did the class make at school afterwards?\nKhalid: We produced a visitor leaflet containing a map, a short timeline and advice about protecting the historic buildings.\nPresenter: What did you learn from the experience?\nKhalid: That good travel information should be accurate, respectful and accessible to the people using it.",
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "Who guided the class around the harbour?",
+          "options": [
+            "A retired boat builder",
+            "A television reporter",
+            "A football coach"
+          ],
+          "answer": 0,
+          "evidence": "A retired boat builder"
+        },
+        {
+          "type": "mc",
+          "stem": "Where did the class meet?",
+          "options": [
+            "Inside the museum",
+            "Beside the fish market",
+            "At the airport"
+          ],
+          "answer": 1,
+          "evidence": "met beside the fish market at eight thirty"
+        },
+        {
+          "type": "mc",
+          "stem": "Which device did a student use?",
+          "options": [
+            "A telescope",
+            "A weather meter",
+            "A voice recorder"
+          ],
+          "answer": 2,
+          "evidence": "another used a voice recorder"
+        },
+        {
+          "type": "mc",
+          "stem": "Why did pupils check heritage-centre signs?",
+          "options": [
+            "Some website dates were wrong",
+            "They needed lunch prices",
+            "They lost their shoes"
+          ],
+          "answer": 0,
+          "evidence": "Some websites confused the dates"
+        },
+        {
+          "type": "mc",
+          "stem": "Why was the second boat trip cancelled?",
+          "options": [
+            "The guide was absent",
+            "The wind became stronger",
+            "The engine was stolen"
+          ],
+          "answer": 1,
+          "evidence": "The wind grew stronger, and the guide cancelled the second trip"
+        },
+        {
+          "type": "mc",
+          "stem": "Where did the class eat lunch?",
+          "options": [
+            "At the museum roof",
+            "On a fishing boat",
+            "At a small café"
+          ],
+          "answer": 2,
+          "evidence": "At a small café near the old customs house"
+        },
+        {
+          "type": "mc",
+          "stem": "What did the pupils produce afterwards?",
+          "options": [
+            "A visitor leaflet",
+            "A radio advertisement",
+            "A weather station"
+          ],
+          "answer": 0,
+          "evidence": "We produced a visitor leaflet"
+        }
+      ],
+      "wordCount": 326,
+      "status": "review_only_teacher_validation_required",
+      "readyForStudentExam": false,
+      "audioStatus": "not_generated",
+      "certifiedTextbookMatch": false
+    },
+    {
+      "grade": 11,
+      "unit": 4,
+      "part": 1,
+      "unitTitle": "Innovation",
+      "cast": {
+        "Presenter": "female",
+        "Salma": "female"
+      },
+      "script": "Presenter: Welcome to Future Makers. Salma, your group built something unusual for the school greenhouse. What was it?\nSalma: We designed a simple alert that tells gardeners when the water tank is nearly empty.\nPresenter: Why did you choose that problem?\nSalma: Our science teacher noticed that seedlings sometimes became dry during long weekends when nobody checked the tank.\nPresenter: What was the first step?\nSalma: We measured the depth of the water in several containers, then compared the readings with the amount left inside.\nPresenter: Did you build a robot to carry water?\nSalma: No. We wanted a warning device, not a machine that waters plants automatically.\nPresenter: How does the alert work?\nSalma: A small floating switch moves when the water level drops. The switch activates a light beside the greenhouse door.\nPresenter: Who helped with the electronic parts?\nSalma: Our technology teacher explained the circuit, and a technician checked that the demonstration used a safe battery.\nPresenter: What went wrong during the first trial?\nSalma: The float became stuck against the side of the tank, so the light stayed off even when the water was low.\nPresenter: How did your team solve it?\nSalma: We widened the space around the float and tested different water levels again.\nPresenter: Did the new version work immediately?\nSalma: It worked in the classroom, but the first outdoor test showed that bright sunlight made the warning light hard to see.\nPresenter: What change did you make?\nSalma: We placed the light inside a dark protective shade and added a small sound that can be turned off.\nPresenter: Who tested the final model?\nSalma: The school gardener tried it during the morning routine and suggested putting the switch near the filling pipe.\nPresenter: What is the next step?\nSalma: We will monitor it for two more weeks. We are not claiming it is perfect until the longer test is finished.",
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "What does the invention warn about?",
+          "options": [
+            "Low water in a tank",
+            "Broken classroom windows",
+            "A late school bus"
+          ],
+          "answer": 0,
+          "evidence": "water tank is nearly empty"
+        },
+        {
+          "type": "mc",
+          "stem": "What problem affected seedlings?",
+          "options": [
+            "Too much music",
+            "Dry soil during weekends",
+            "Incorrect room numbers"
+          ],
+          "answer": 1,
+          "evidence": "seedlings sometimes became dry during long weekends"
+        },
+        {
+          "type": "mc",
+          "stem": "What makes the warning light activate?",
+          "options": [
+            "A solar camera",
+            "A loudspeaker",
+            "A floating switch"
+          ],
+          "answer": 2,
+          "evidence": "A small floating switch moves when the water level drops"
+        },
+        {
+          "type": "mc",
+          "stem": "Who checked that the battery was safe?",
+          "options": [
+            "A technician",
+            "The gardener's son",
+            "The school librarian"
+          ],
+          "answer": 0,
+          "evidence": "a technician checked that the demonstration used a safe battery"
+        },
+        {
+          "type": "mc",
+          "stem": "Why did the light fail during the first trial?",
+          "options": [
+            "The tank was missing",
+            "The float was stuck",
+            "The plants grew too quickly"
+          ],
+          "answer": 1,
+          "evidence": "The float became stuck"
+        },
+        {
+          "type": "mc",
+          "stem": "What made outdoor use difficult?",
+          "options": [
+            "Heavy rain",
+            "A broken roof",
+            "Bright sunlight"
+          ],
+          "answer": 2,
+          "evidence": "bright sunlight made the warning light hard to see"
+        },
+        {
+          "type": "mc",
+          "stem": "How long will the team monitor the device?",
+          "options": [
+            "Two more weeks",
+            "One hour",
+            "Three months"
+          ],
+          "answer": 0,
+          "evidence": "monitor it for two more weeks"
+        }
+      ],
+      "wordCount": 318,
+      "status": "review_only_teacher_validation_required",
+      "readyForStudentExam": false,
+      "audioStatus": "not_generated",
+      "certifiedTextbookMatch": false
+    },
+    {
+      "grade": 11,
+      "unit": 3,
+      "part": 2,
+      "unitTitle": "Travellers and Tourists",
+      "cast": {
+        "Hamad": "male"
+      },
+      "script": "Part One\n\nDuring the spring holiday, I helped my uncle at a small visitor centre near a mountain village. Most travellers came for the walking paths and the old stone houses, but many arrived without knowing how quickly the weather could change. My uncle asked me to prepare a short information talk for families planning a day trip. Before writing anything, I walked the easiest path with an experienced local guide. The guide showed me a shaded rest area, a safe viewpoint and a section where loose stones made walking difficult.\n\nOn our second visit, I carried a notebook and a bottle of water. I recorded the approximate walking time for each part of the route and checked where mobile-phone reception was weakest. We agreed that the route was suitable for visitors who could walk steadily for about ninety minutes, but not for people who needed a completely flat surface. I wrote this clearly because I did not want anyone to misunderstand the difficulty.\n\nPart Two\n\nOne Friday, a family with two young children asked whether they could complete the entire walk before midday. Heavy clouds were forming over the mountains. I recommended the short viewpoint trail and told them to speak to the guide before choosing a longer route. They thanked us and returned later with photographs of the valley.\n\nThe visitor centre also received requests for directions to a nearby café. We drew a simple map showing the café, the parking area and the public toilets. An older visitor pointed out that our first map used very small writing. We enlarged the labels, and my uncle added an English description beside the Arabic one.\n\nBy the end of the holiday, I realised that a helpful visitor centre is not just a place for handing out brochures. It must provide honest advice about time, weather and accessibility, even when that means suggesting a shorter journey.",
+      "questions": [
+        {
+          "type": "short",
+          "stem": "Who accompanied Hamad on the walking route?",
+          "answer": "a local guide",
+          "maxWords": 4,
+          "evidence": "an experienced local guide"
+        },
+        {
+          "type": "short",
+          "stem": "What did Hamad carry on his second visit besides water?",
+          "answer": "a notebook",
+          "maxWords": 4,
+          "evidence": "a notebook and a bottle of water"
+        },
+        {
+          "type": "short",
+          "stem": "How long could the full route take?",
+          "answer": "about ninety minutes",
+          "maxWords": 4,
+          "evidence": "about ninety minutes"
+        },
+        {
+          "type": "short",
+          "stem": "What did a visitor find too small on the map?",
+          "answer": "the writing",
+          "maxWords": 4,
+          "evidence": "our first map used very small writing"
+        },
+        {
+          "type": "mc",
+          "stem": "What made one part of the route difficult?",
+          "options": [
+            "Loose stones",
+            "Deep snow",
+            "A closed bridge"
+          ],
+          "answer": 0,
+          "evidence": "loose stones made walking difficult"
+        },
+        {
+          "type": "mc",
+          "stem": "What did Hamad recommend to the family?",
+          "options": [
+            "The entire mountain crossing",
+            "The short viewpoint trail",
+            "A night walk alone"
+          ],
+          "answer": 1,
+          "evidence": "recommended the short viewpoint trail"
+        },
+        {
+          "type": "mc",
+          "stem": "What did the new map include?",
+          "options": [
+            "Airport flight numbers",
+            "Bus ticket prices",
+            "A café and public toilets"
+          ],
+          "answer": 2,
+          "evidence": "the café, the parking area and the public toilets"
+        },
+        {
+          "type": "mc",
+          "stem": "What was the main lesson?",
+          "options": [
+            "Offer honest and accessible advice",
+            "Promote every route as easy",
+            "Use only very small labels"
+          ],
+          "answer": 0,
+          "evidence": "honest advice about time, weather and accessibility"
+        }
+      ],
+      "wordCount": 316,
+      "status": "review_only_teacher_validation_required",
+      "readyForStudentExam": false,
+      "audioStatus": "not_generated",
+      "certifiedTextbookMatch": false
+    },
+    {
+      "grade": 12,
+      "unit": 4,
+      "part": 1,
+      "unitTitle": "Travel and Transport",
+      "cast": {
+        "Presenter": "female",
+        "Hamad": "male"
+      },
+      "script": "Presenter: Good morning, Hamad. Your class studied how passengers use the ferry terminal. What did you find?\nHamad: We discovered that first-time visitors often looked for the ticket counter at the wrong entrance.\nPresenter: Was the terminal difficult to reach?\nHamad: No, but the signs outside were small, and the main road led drivers towards a delivery gate.\nPresenter: When did your group carry out the observation?\nHamad: On Thursday morning, between seven and nine, when most commuters were arriving for work.\nPresenter: How did you avoid disturbing passengers?\nHamad: We stood in a marked public area and noted where people stopped to check directions.\nPresenter: Did you record anyone's personal information?\nHamad: Certainly not. We counted questions about routes but did not collect names or photographs.\nPresenter: What was the most common question?\nHamad: People wanted to know which entrance they should use if they had bought their ticket online.\nPresenter: Did passengers with heavy luggage have the same problem?\nHamad: Some found the stairs near the ticket counter difficult, so staff showed us a lift on the eastern side.\nPresenter: What did you suggest to the terminal manager?\nHamad: We prepared a clearer entrance map with a symbol for the lift and arrows towards the boarding area.\nPresenter: Was the suggestion accepted?\nHamad: The manager agreed to test it on a temporary noticeboard before changing any permanent signs.\nPresenter: What happened during the trial?\nHamad: Fewer people asked about the ticket counter, although some still confused the boarding gate with the waiting room.\nPresenter: How did the team respond?\nHamad: We changed the arrow beside the waiting-room label and tried the notice again during the afternoon service.\nPresenter: What did the project teach you?\nHamad: Good transport information should be tested with real users. A sign is not helpful merely because it looks attractive.",
+      "questions": [
+        {
+          "type": "mc",
+          "stem": "What confused first-time ferry passengers?",
+          "options": [
+            "The ticket-counter entrance",
+            "The boat's colour",
+            "The food menu"
+          ],
+          "answer": 0,
+          "evidence": "ticket counter at the wrong entrance"
+        },
+        {
+          "type": "mc",
+          "stem": "When did the class make its observations?",
+          "options": [
+            "Saturday evening",
+            "Thursday morning",
+            "Monday afternoon"
+          ],
+          "answer": 1,
+          "evidence": "On Thursday morning, between seven and nine"
+        },
+        {
+          "type": "mc",
+          "stem": "What information did students avoid collecting?",
+          "options": [
+            "General route questions",
+            "Numbers of visitors",
+            "Names and photographs"
+          ],
+          "answer": 2,
+          "evidence": "did not collect names or photographs"
+        },
+        {
+          "type": "mc",
+          "stem": "Where was the lift?",
+          "options": [
+            "On the eastern side",
+            "Inside the café",
+            "Under the car park"
+          ],
+          "answer": 0,
+          "evidence": "a lift on the eastern side"
+        },
+        {
+          "type": "mc",
+          "stem": "What was suggested to the manager?",
+          "options": [
+            "A larger ferry",
+            "A clearer entrance map",
+            "A new restaurant"
+          ],
+          "answer": 1,
+          "evidence": "prepared a clearer entrance map"
+        },
+        {
+          "type": "mc",
+          "stem": "What remained confusing after the first trial?",
+          "options": [
+            "Ticket prices",
+            "The weather forecast",
+            "Boarding gate and waiting room"
+          ],
+          "answer": 2,
+          "evidence": "confused the boarding gate with the waiting room"
+        },
+        {
+          "type": "mc",
+          "stem": "What was Hamad's main conclusion?",
+          "options": [
+            "Test signs with real users",
+            "Replace all staff with posters",
+            "Avoid giving directions"
+          ],
+          "answer": 0,
+          "evidence": "should be tested with real users"
+        }
+      ],
+      "wordCount": 306,
+      "status": "review_only_teacher_validation_required",
+      "readyForStudentExam": false,
+      "audioStatus": "not_generated",
+      "certifiedTextbookMatch": false
+    }
+  ]
+}

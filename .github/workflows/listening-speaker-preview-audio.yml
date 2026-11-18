@@ -1,0 +1,79 @@
+name: Preview corrected natural speaker voices (Grades 5–8)
+on:
+  push:
+    branches: [fix/listening-two-pass-order-2026-11-16]
+    paths:
+      - .github/workflows/listening-speaker-preview-audio.yml
+      - scripts/listening_voice_roles.py
+      - scripts/generate_grades5_6_audio.py
+      - scripts/generate_grades7_8_audio.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install free voice engine and audio tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m pip install edge-tts mutagen
+      - name: Preview female and male guest roles in Grades 5–6
+        env:
+          ONLY_LISTENING_IDS: g5-a-listening-2,g5-b-listening-2,g6-b-listening-2
+        run: python scripts/generate_grades5_6_audio.py
+      - name: Preview female and male guest roles in Grades 7–8
+        env:
+          ONLY_LISTENING_IDS: g7-a-listening2,g7-b-listening2,g8-a-listening2,g8-b-listening2
+        run: python scripts/generate_grades7_8_audio.py
+      - name: Verify generated voices actually used
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from mutagen.mp3 import MP3
+          sonia='en-GB-SoniaNeural'
+          ryan='en-GB-RyanNeural'
+          libby='en-GB-LibbyNeural'
+          cases=[
+            ('grades5-6/audio-natural/script_audio_manifest.json','grades5-6/audio-natural',{'g5-a-listening-2':libby,'g5-b-listening-2':ryan,'g6-b-listening-2':libby}),
+            ('grades7-8/assets/audio-natural/manifest.json','grades7-8/assets/audio-natural',{'g7-a-listening2':libby,'g7-b-listening2':ryan,'g8-a-listening2':libby,'g8-b-listening2':ryan}),
+          ]
+          for manifest_path,audio_dir,expected in cases:
+            manifest=json.loads(Path(manifest_path).read_text())
+            assert set(manifest)==set(expected), (manifest_path, list(manifest))
+            for id,guest_voice in expected.items():
+              item=manifest[id]
+              used=set(item['usedVoices'])
+              assert sonia in used and guest_voice in used,(id,used)
+              assert used == {sonia,guest_voice},(id,used)
+              cast=item.get('speakerCast') or {}
+              assert cast.get('Interviewer')==sonia,(id,cast)
+              guest=[name for name in cast if name!='Interviewer']
+              assert len(guest)==1 and cast[guest[0]]==guest_voice,(id,cast)
+              assert item.get('voiceRoutingVersion')=='identity-v2',id
+              f=Path(audio_dir)/item['mp3']
+              assert f.exists() and MP3(f).info.length>35,id
+              print('PASS',id,sorted(used))
+          PY
+      - name: Upload MP3 files only as a review artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-exams-speaker-voice-audition
+          retention-days: 14
+          path: |
+            grades5-6/audio-natural/g5-a-listening-2.mp3
+            grades5-6/audio-natural/g5-b-listening-2.mp3
+            grades5-6/audio-natural/g6-b-listening-2.mp3
+            grades5-6/audio-natural/script_audio_manifest.json
+            grades7-8/assets/audio-natural/g7-a-listening2.mp3
+            grades7-8/assets/audio-natural/g7-b-listening2.mp3
+            grades7-8/assets/audio-natural/g8-a-listening2.mp3
+            grades7-8/assets/audio-natural/g8-b-listening2.mp3
+            grades7-8/assets/audio-natural/manifest.json

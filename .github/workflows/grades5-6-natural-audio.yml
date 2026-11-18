@@ -39,10 +39,20 @@ jobs:
           import json,hashlib
           tasks=json.load(open('grades5-6/activities.json'))['activities']
           manifest=json.load(open('grades5-6/audio-natural/script_audio_manifest.json'))
+          import sys
+          sys.path.insert(0, 'scripts')
+          from listening_voice_roles import VOICE_NAMES, parse_dialogue
           for t in tasks:
             if t['skill']!='listening':continue
             h=hashlib.sha256(json.dumps({'passages':t.get('passages'),'passage':t.get('passage'),'questions':t['questions'],'pictures':t.get('pictureOptions')},sort_keys=True,ensure_ascii=False).encode()).hexdigest()
             assert manifest[t['id']]['sha256_of_script']==h,t['id']
+            assert manifest[t['id']].get('usedVoices'), ('missing actual voice audit',t['id'])
+            if t['part']==2:
+              expected={VOICE_NAMES[v] for _,v,_ in parse_dialogue(t['passage'],t.get('speakerGenders'))}
+              assert set(manifest[t['id']]['usedVoices'])==expected, (t['id'],expected,manifest[t['id']]['usedVoices'])
+              cast={speaker:VOICE_NAMES[voice] for _,voice,speaker in parse_dialogue(t['passage'],t.get('speakerGenders'))}
+              assert manifest[t['id']].get('speakerCast')==cast,(t['id'],'wrong voice for speaker')
+            assert manifest[t['id']].get('voiceRoutingVersion')=='identity-v2',t['id']
           print('Validated',len(files),'MP3 files')
           PY
           git config user.name "github-actions[bot]"

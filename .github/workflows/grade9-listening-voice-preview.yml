@@ -1,0 +1,69 @@
+name: Grade 9 listening playback and voices — review only
+on:
+  push:
+    branches: [fix/listening-two-pass-order-2026-11-16]
+    paths:
+      - .github/workflows/grade9-listening-voice-preview.yml
+      - scripts/generate_grade9_audio.py
+      - scripts/listening_voice_roles.py
+      - tests/test_grade9_listening_voice_order.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify source code syntax and casting
+        run: |
+          python -m py_compile scripts/generate_grade9_audio.py scripts/listening_voice_roles.py
+          python -m unittest discover -s tests -p 'test_grade9_listening_voice_order.py' -v
+      - name: Install voice synthesis and audio validator
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m pip install edge-tts mutagen
+      - name: Record sample female and male speakers plus five-text sequence
+        env:
+          ONLY_MODELS: B,C
+          ONLY_LISTENING_IDS: g9-C-L1,g9-B-L2,g9-C-L2
+        run: python scripts/generate_grade9_audio.py
+      - name: Validate exact source, speaker casting and two full passes
+        run: |
+          python - <<'PY'
+          import json,sys
+          from pathlib import Path
+          from mutagen.mp3 import MP3
+          sys.path.insert(0,'scripts')
+          from listening_voice_roles import VOICE_NAMES
+          root=Path('grade9/audio-natural')
+          data=json.loads((root/'manifest.json').read_text())
+          assert set(data)=={'g9-C-L1','g9-B-L2','g9-C-L2'},list(data)
+          expected=['text-one','text-two','text-three','text-four','text-five',
+                    'now-listen-again','text-one','text-two','text-three','text-four','text-five']
+          assert data['g9-C-L1']['playbackSequence']==expected,data['g9-C-L1']['playbackSequence']
+          for task,guest,voice in [('g9-B-L2','Salim',VOICE_NAMES[1]),('g9-C-L2','Alya',VOICE_NAMES[2])]:
+            item=data[task]
+            assert item['speakerCast'].get(guest)==voice,(task,item['speakerCast'])
+            assert item['speakerCast'].get('Interviewer')==VOICE_NAMES[0],item
+          for task,item in data.items():
+            f=root/item['mp3']
+            assert f.is_file() and MP3(f).info.length>45,(task,'invalid audio')
+            assert item['voiceRoutingVersion']=='identity-v2'
+            print('PASS',task,int(MP3(f).info.length),'seconds',item['usedVoices'])
+          PY
+      - name: Preserve generated MP3s as review artifacts only
+        uses: actions/upload-artifact@v4
+        with:
+          name: grade9-voice-and-two-pass-preview
+          retention-days: 14
+          path: |
+            grade9/audio-natural/g9-c-listening-1.mp3
+            grade9/audio-natural/g9-b-listening-2.mp3
+            grade9/audio-natural/g9-c-listening-2.mp3
+            grade9/audio-natural/manifest.json

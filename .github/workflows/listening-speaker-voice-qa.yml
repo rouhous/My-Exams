@@ -1,0 +1,52 @@
+name: QA listening speaker identity and gender
+on:
+  push:
+    branches:
+      - fix/listening-two-pass-order-2026-11-16
+    paths:
+      - scripts/listening_voice_roles.py
+      - scripts/audit_listening_reuse.py
+      - scripts/generate_grades5_6_audio.py
+      - scripts/generate_grades7_8_audio.py
+      - tests/test_listening_voice_roles.py
+      - tests/test_high_grade_listening_voices.py
+      - grade9/data.js
+      - grade9/unit-exams/models.json
+      - grade10/data.json
+      - grades5-6/activities.json
+      - grades7-8/activities.json
+      - .github/workflows/listening-speaker-voice-qa.yml
+  pull_request:
+    paths:
+      - scripts/listening_voice_roles.py
+      - scripts/audit_listening_reuse.py
+      - scripts/generate_grades5_6_audio.py
+      - scripts/generate_grades7_8_audio.py
+      - tests/test_listening_voice_roles.py
+      - grades5-6/activities.json
+      - grades7-8/activities.json
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  voice-identity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax-check the original speech pipeline
+        run: |
+          python -m py_compile scripts/listening_voice_roles.py scripts/generate_grades5_6_audio.py scripts/generate_grades7_8_audio.py
+      - name: Verify all listening interviews and gender rules without contacting TTS
+        run: python -m unittest discover -s tests -p 'test_*voice*.py' -v
+      - name: Audit duplicate listening texts against current backlog
+        run: python scripts/audit_listening_reuse.py --max-exact 38 --fail-cross-grade --output /tmp/listening-reuse-report.json
+      - name: Save duplication review report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-exams-listening-reuse-audit
+          retention-days: 14
+          path: /tmp/listening-reuse-report.json

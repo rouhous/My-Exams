@@ -81,4 +81,4 @@ function finish(){if(current)return;current=true;stopClock();$('end').disabled=t
  $('results').hidden=false;$('results').innerHTML='<h2>Objective answers: '+score+' / '+objective+'</h2><p>'+manual+' short answers and '+writing.length+' writing tasks require teacher review. A final 60-mark grade is not assigned automatically.</p>'+(writing.length?'<p>'+writing.map(esc).join(' · ')+'</p>':'')+(missed.length?'<details><summary>Teacher answer key and review notes</summary><ol>'+missed.join('')+'</ol></details>':'');$('results').scrollIntoView({behavior:'smooth'});
 }
 $('start').onclick=start;$('end').onclick=finish;$('back').onclick=()=>{stopClock();$('paper').classList.remove('active');$('setup').hidden=false;window.scrollTo(0,0)};init();
-</script></body></html>
+</script><script src="../../../shared/listening-runtime.js"></script></body></html>
