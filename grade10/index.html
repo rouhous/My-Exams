@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Grade 10 · My Exams · Student Review Pilot</title>
+<title>Grade 10 English Exams | My Exams</title>
 <style>
 :root{--green:#154b44;--gold:#bb9648;--bg:#f5f7f4;--ink:#17372f}*{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Arial,sans-serif}
@@ -20,9 +20,9 @@ small,.muted{color:#5c7168}.hidden{display:none!important}.meta{display:flex;gap
 #clock{font-variant-numeric:tabular-nums;font-size:20px;font-weight:700}.score{font-size:20px}
 @media print{header,.controls,.notice,.no-print{display:none!important}body{background:white}.section{break-inside:avoid;border:none;padding:4px}}
 </style><link rel="stylesheet" href="../shared/exam-tools.css"></head><body>
-<header><h1>My Exams · Grade 10</h1><p>Original Semester 1 English practice — student review pilot</p><a href="../index.html">Back to My Exams home</a></header>
+<header><h1>My Exams · Grade 10</h1><p>English Language · Semester 1</p><a href="../index.html">Back to My Exams home</a></header>
 <main>
-<div class="notice"><strong>Teacher review / pilot version.</strong> Models A–D follow the bank's four unit themes; E/F are mixed comprehensive practice. This is not an official Ministry paper. Vocabulary, grammar, reading and writing still require final textbook and assessment-specification review.</div>
+
 <div class="panel"><div class="controls">
 <label>Model <select id="model"><option value="A">A · New Media</option><option value="B">B · Climate Change</option><option value="C">C · Renewable Energy</option><option value="D">D · Civilisation</option><option value="E">E · Mixed</option><option value="F">F · Mixed</option></select></label>
 <label>Mode <select id="mode"><option value="exam">Full exam · timed</option><option value="practice">Single skill · untimed</option></select></label>
@@ -77,7 +77,7 @@ function renderSection(section,i){
   if($('mode').value==='practice')h+='<details><summary>Show practice transcript</summary><p class="passage">'+esc(data.passage)+'</p></details>';
  }else if(data.passage){h+='<div class="passage">'+esc(data.passage)+'</div>'}
  if(key.startsWith('writing')){
-  h+='<p>'+esc(data.prompt)+'</p><textarea name="'+key+'" aria-label="'+key+' writing draft"></textarea><p class="muted"><span class="words">0</span> words · teacher feedback and final writing score are not enabled in this pilot</p>';
+  h+='<p>'+esc(data.prompt)+'</p><textarea name="'+key+'" aria-label="'+key+' writing draft"></textarea><p class="muted"><span class="words">0</span> words · Writing responses are assessed by your teacher</p>';
  }else{h+=(data.questions||[]).map((q,j)=>renderQuestion(q,j,key)).join('')}
  return h+'</section>';
 }
@@ -109,7 +109,7 @@ function evaluateAnswers(){
   });
  });
  $('result').textContent='Objective responses: '+correct+' / '+total+'. Writing is not automatically graded; short answers may require teacher review.';
- status('Results are practice estimates, not a final Ministry score.');
+ status('Your answers are ready for review. Writing requires teacher assessment.');
 }
 async function prepareOffline(){
  if(!('caches' in window)||!('serviceWorker' in navigator)){status('Offline caching unavailable. Open via HTTPS.');return}
@@ -123,7 +123,7 @@ async function prepareOffline(){
  }catch(e){status('Offline download failed: '+e.message)}
 }
 async function init(){
- try{var res=await fetch('./data.json');if(!res.ok)throw Error('HTTP '+res.status);var all=await res.json();models=all.models;$('intro').textContent='Six review models · four unit themes · two comprehensive · final teacher audit pending';status('Choose a model or make a random comprehensive paper.')}catch(e){status('Unable to load exam data: '+e.message)}
+ try{var res=await fetch('./data.json');if(!res.ok)throw Error('HTTP '+res.status);var all=await res.json();models=all.models;$('intro').textContent='Choose your model and start';status('Choose a model or make a random comprehensive paper.')}catch(e){status('Unable to load exam data: '+e.message)}
 }
 $('model').addEventListener('change',()=>{choiceModel=null});
 $('mode').addEventListener('change',()=>{$('skillWrap').classList.toggle('hidden',$('mode').value!=='practice')});
