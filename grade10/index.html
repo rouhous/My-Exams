@@ -125,7 +125,9 @@ function start(){
  stopTimer();active=modelChoices();if(!active.length)return;
  var m=current();$('intro').textContent='Grade 10 · '+m.unitTitle+' · '+(m.marks||'')+' marks · Original practice';
  $('exam').innerHTML=active.map(renderSection).join('');
- $('actions').classList.remove('hidden');$('result').textContent='';status('Exam started. Listening passages and associated questions stay together.');
+ $('actions').classList.remove('hidden');$('result').textContent='';
+  $('submit').textContent=active.every(p=>p.skill.startsWith('writing')||p.skill==='dataAnalysis')?'Finish writing practice':'Check objective answers';
+  status(active.some(p=>p.skill==='dataAnalysis')?'Data-analysis chart ready. Describe the visible figures; untimed practice, with teacher feedback for writing.':'Exam started. Listening passages and associated questions stay together.');
  $('exam').querySelectorAll('textarea').forEach(t=>t.addEventListener('input',()=>{t.closest('section').querySelector('.words').textContent=t.value.trim()?t.value.trim().split(/\s+/).length:0}));
  if($('mode').value==='exam'){end=Date.now()+(m.timeMinutes||150)*60000;tick();timer=setInterval(tick,1000)}else{$('clock').textContent='Untimed'}
 }
@@ -146,7 +148,7 @@ function evaluateAnswers(){
    if(cell)cell.style.borderLeft='4px solid '+(good?'#3b8f67':'#bc7240');
   });
  });
- $('result').textContent='Objective responses: '+correct+' / '+total+'. Writing is not automatically graded; short answers may require teacher review.';
+ $('result').textContent=total?'Objective responses: '+correct+' / '+total+'. Writing is not automatically graded; short answers may require teacher review.':'Chart / writing response saved in this session. No objective score applies: teacher assessment is needed for writing.';
  status('Your answers are ready for review. Writing requires teacher assessment.');
 }
 async function prepareOffline(){
