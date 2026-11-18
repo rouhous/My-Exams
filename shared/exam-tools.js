@@ -29,13 +29,14 @@ function selectedRects(){
  const list=[];for(let i=0;i<selection.rangeCount;i++){const range=selection.getRangeAt(i);if(bar.contains(range.commonAncestorContainer))continue;for(const r of range.getClientRects()){if(r.width>1&&r.height>3)list.push({x:r.left+scrollX,y:r.top+scrollY,w:r.width,h:r.height})}}
  return list;
 }
-add("highlight","تحديد",()=>{const rects=selectedRects();if(!rects.length){toast("حدد النص أولًا ثم اضغط تحديد");return}data.highlights.push(...rects);save();schedule();getSelection()?.removeAllRanges();toast("تم تحديد النص")});
+add("highlight","تحديد",()=>{if(mode)setMode("");const rects=selectedRects();if(!rects.length){toast("حدد النص أولًا ثم اضغط تحديد");return}data.highlights.push(...rects);save();schedule();getSelection()?.removeAllRanges();toast("تم تحديد النص")});
 add("pen","قلم",()=>setMode("pen"));
 add("eraser","ممحاة",()=>setMode("eraser"));
 add("note","أفكاري",()=>{setMode("");note.classList.toggle("visible");if(note.classList.contains("visible"))notes.focus()});
-add("copy","نسخ",async()=>{const selected=getSelection()?.toString().trim();const text=selected||notes.value.trim();if(!text){toast("حدد النص المراد نسخه");return}try{await navigator.clipboard.writeText(text);toast("تم نسخ النص")}catch(e){try{const area=element("textarea");area.value=text;area.style.position="fixed";area.style.opacity="0";doc.body.append(area);area.select();const ok=doc.execCommand("copy");area.remove();toast(ok?"تم نسخ النص":"لم يُسمح بالنسخ")}catch(x){toast("استخدم أمر النسخ في المتصفح")}}});
+add("copy","نسخ",async()=>{if(mode)setMode("");const selected=getSelection()?.toString().trim();const text=selected||notes.value.trim();if(!text){toast("حدد النص المراد نسخه");return}try{await navigator.clipboard.writeText(text);toast("تم نسخ النص")}catch(e){try{const area=element("textarea");area.value=text;area.style.position="fixed";area.style.opacity="0";doc.body.append(area);area.select();const ok=doc.execCommand("copy");area.remove();toast(ok?"تم نسخ النص":"لم يُسمح بالنسخ")}catch(x){toast("استخدم أمر النسخ في المتصفح")}}});
 add("undo","تراجع",()=>{if(data.strokes.length){data.strokes.pop()}else if(data.highlights.length)data.highlights.pop();save();schedule()});
 add("clear","مسح الكل",()=>{if(!data.strokes.length&&!data.highlights.length)return;if(confirm("مسح جميع الرسومات وعلامات التحديد في هذه الصفحة؟")){data.strokes=[];data.highlights=[];save();schedule()}});
+buttons.highlight.addEventListener("pointerdown",event=>event.preventDefault());buttons.copy.addEventListener("pointerdown",event=>event.preventDefault());
 add("min","إخفاء",()=>{collapsed=!collapsed;for(const [id,b] of Object.entries(buttons))if(id!=="min")b.hidden=collapsed;buttons.min.setAttribute("aria-label",collapsed?"إظهار أدوات الدراسة":"إخفاء أدوات الدراسة");buttons.min.querySelector(".ex-tool-text").textContent=collapsed?"إظهار":"إخفاء";if(collapsed)setMode("")});
 doc.body.append(bar);
 const note=element("aside","ex-note");note.setAttribute("aria-label","ملاحظاتي");
