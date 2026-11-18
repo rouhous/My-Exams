@@ -145,6 +145,14 @@ function finish(){
        rows.push('<li>'+(verdict.correct?'✓ Correct':'✗ Incorrect')+' · '+esc(task.title)+' · '+esc(q.stem)+(verdict.correct?'':'; expected: '+esc(verdict.reference))+(verdict.reason==='too-long'?'; allowed: '+verdict.permitted+' words':'')+'</li>');
      }
    }
+   const field=document.querySelector('input[name="'+id+'"]:checked')||document.querySelector('input[name="'+id+'"]');
+   const holder=field?.closest('.question');
+   if(holder){
+     const choice=Array.isArray(q.choices),val=field?.value||'';
+     const good=choice?!!field&&Number(val)===q.answer:window.MyExamsShortAnswers.evaluate(val,q).correct;
+     holder.querySelectorAll('.mex-fb').forEach(el=>el.remove());
+     holder.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:task.skill,passage:task.passage,script:task.transcript||task.script},good));
+   }
  }
  const writing=selected.filter(t=>t.skill==='writing').map(t=>{const v=$('write'+t.group)?.value||'';return t.title+': '+(v.trim().match(/\S+/g)||[]).length+' words'});
  $('results').hidden=false;
