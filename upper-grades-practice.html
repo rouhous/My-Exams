@@ -31,7 +31,7 @@ textarea{min-height:160px;resize:vertical}summary{color:#185d47;cursor:pointer}
 #result{background:#f6f9ed;border-radius:10px;padding:14px;display:none}
 @media print{header,.controls,.actions,.warning,#result,.script,button{display:none!important}body{background:white}.box,.part{border:0;padding:4px;break-inside:avoid}.passage{border:0}}
 </style>
-<link rel="stylesheet" href="./shared/exam-tools.css"><link rel="stylesheet" href="shared/reading-split.css"></head>
+<link rel="stylesheet" href="./shared/exam-tools.css"><link rel="stylesheet" href="shared/reading-split.css"><script src="./shared/short-answer-marking.js"></script></head>
 <body>
 <header><a href="./index.html">← My Exams</a><h1>Grades 11–12 · English Skills & Exams</h1><div>Full exams · random exams · individual skills</div></header>
 <main>
@@ -134,10 +134,14 @@ active.forEach(function(a){var q=a.q,inp=document.querySelector('input[name="ans
 if(Array.isArray(q.options)&&Number.isInteger(q.answer)){
 auto++;if(val!==''&&Number(val)===q.answer){correct++}
 else details.push(title(a.part.key)+' Q'+(a.index+1)+': '+esc(q.options[q.answer]||'Reference required'));
-}else{manual++;details.push(title(a.part.key)+' Q'+(a.index+1)+': teacher review; suggested answer: '+esc(q.answer||'see passage'))}
+}else{
+ var result=window.MyExamsShortAnswers.evaluate(val,q);
+ if(result.reason==='manual'){manual++;details.push(title(a.part.key)+' Q'+(a.index+1)+': teacher review required')}
+ else{auto++;if(result.correct)correct++;details.push((result.correct?'✓ Correct: ':'✗ Incorrect: ')+title(a.part.key)+' Q'+(a.index+1)+(result.correct?'':'; expected: '+esc(result.reference))+(result.reason==='too-long'?'; maximum '+result.permitted+' words':''))}
+}
 });
 var writing=document.querySelectorAll('textarea[data-writing]').length;
-var box=$('result');box.style.display='block';box.innerHTML='<h2>Practice review '+(expired?'(time expired)':'')+'</h2><p><strong>'+correct+' / '+auto+'</strong> automatically scored option questions. '+manual+' short/gap answers and '+writing+' writing tasks require teacher assessment. '+unanswered+' objective/short questions left blank.</p><p>This is <strong>not</strong> a final '+esc($('track').value)+' grade out of 60/70. No writing AI connection has been asserted.</p><details><summary>Review correct options and sample short answers</summary><ul>'+details.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></details>';
+var box=$('result');box.style.display='block';box.innerHTML='<h2>Practice review '+(expired?'(time expired)':'')+'</h2><p><strong>'+correct+' / '+auto+'</strong> automatically checked questions. '+manual+' answers and '+writing+' writing tasks require teacher assessment. '+unanswered+' objective/short questions left blank.</p><p>This is <strong>not</strong> a final '+esc($('track').value)+' grade out of 60/70. No writing AI connection has been asserted.</p><details><summary>Review correct options and sample short answers</summary><ul>'+details.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></details>';
 box.scrollIntoView({behavior:'smooth'});
 }
 $('track').addEventListener('change',rebuild);$('mode').addEventListener('change',rebuild);
