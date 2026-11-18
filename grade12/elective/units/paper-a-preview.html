@@ -203,6 +203,13 @@ function finish(expired){
    const reason=result.reason==='too-long'?' (maximum '+result.permitted+' words)':result.reason==='empty'?' (no answer)':'';
    review.push('<li>'+(result.correct?'✓ Correct':'✗ Incorrect')+' — '+esc(name[key])+' Q'+(index+1)+reason+(result.correct?'':': '+esc(result.reference))+'</li>');
   }else{manual++;review.push('<li>'+esc(name[key])+' Q'+(index+1)+' — Teacher check required</li>')}
+  const holder=input?.closest('.question,.q');
+  if(holder){
+   const passed=Array.isArray(q.options)&&Number.isInteger(q.answer)?answer!==''&&Number(answer)===q.answer:window.MyExamsShortAnswers.evaluate(answer,q).correct;
+   const part=tasks[key]||{};
+   holder.querySelectorAll('.mex-fb').forEach(el=>el.remove());
+   holder.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:key,passage:part.passage,script:part.script||part.transcript},passed));
+  }
  });
  const writing=selected.filter(k=>k.startsWith('wrt')).length;
  const result=$('results');result.style.display='block';
