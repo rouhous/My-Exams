@@ -78,7 +78,7 @@ function finish(){if(current)return;current=true;stopClock();$('end').disabled=t
  for(const {id,key,q} of questions){if(Array.isArray(q.options)){objective++;const selected=document.querySelector('input[name="'+id+'"]:checked');if(selected&&Number(selected.value)===q.answer)score++;else missed.push('<li>'+esc(names[key])+' — '+esc(q.stem)+' · correct: '+esc(q.options[q.answer])+'</li>');}
  else{const field=document.querySelector('input[name="'+id+'"]');const check=window.MyExamsShortAnswers.evaluate(field?.value||'',q);
  if(check.reason==='manual'){manual++;missed.push('<li>'+esc(names[key])+' — teacher review required</li>')}
- else{objective++;if(check.correct)score++;missed.push('<li>'+(check.correct?'✓ Correct':'✗ Incorrect')+' — '+esc(names[key])+' · '+esc(q.stem)+(check.correct?'':'; expected: '+esc(check.reference))+'</li>')}}
+ else{objective++;if(check.correct)score++;missed.push('<li>'+(check.correct?'✓ Correct':'✗ Incorrect')+' — '+esc(names[key])+' · '+esc(q.stem)+(check.correct?'':'; expected: '+esc(check.reference))+'</li>')}}}
  const writing=selected.filter(k=>k.startsWith('wrt')).map(k=>{let v=$('writing-'+k)?.value||'';return names[k]+': '+(v.trim().match(/\S+/g)||[]).length+' words; minimum '+s[k].minWords});
  $('results').hidden=false;$('results').innerHTML='<h2>Objective answers: '+score+' / '+objective+'</h2><p>'+manual+' unmatched answers and '+writing.length+' writing tasks require teacher review. A final 60-mark grade is not assigned automatically.</p>'+(writing.length?'<p>'+writing.map(esc).join(' · ')+'</p>':'')+(missed.length?'<details><summary>Teacher answer key and review notes</summary><ol>'+missed.join('')+'</ol></details>':'');$('results').scrollIntoView({behavior:'smooth'});
 }
