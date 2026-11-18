@@ -124,7 +124,7 @@ function tick(){var left=Math.max(0,Math.ceil((end-Date.now())/1000));$('clock')
 function start(){
  stopTimer();active=modelChoices();if(!active.length)return;
  var m=current();$('intro').textContent='Grade 10 · '+m.unitTitle+' · '+(m.marks||'')+' marks · Original practice';
- $('exam').innerHTML=active.map(renderSection).join('');
+ $('exam').innerHTML=active.map(renderSection).join('');$('submit').disabled=false;
  $('actions').classList.remove('hidden');$('result').textContent='';
   $('submit').textContent=active.every(p=>p.skill.startsWith('writing')||p.skill==='dataAnalysis')?'Finish writing practice':'Check objective answers';
   status(active.some(p=>p.skill==='dataAnalysis')?'Data-analysis chart ready. Describe the visible figures; untimed practice, with teacher feedback for writing.':'Exam started. Listening passages and associated questions stay together.');
@@ -134,7 +134,7 @@ function start(){
 function normalize(text){return String(text??'').normalize('NFKC').trim().toLowerCase().replace(/[.,!?;:]/g,'').replace(/\s+/g,' ')}
 function evaluateAnswers(){
  if(!active)return;
- stopTimer();let total=0,correct=0;
+ stopTimer();$('submit').disabled=true;let total=0,correct=0;
  active.forEach(part=>{
   if(part.skill.startsWith('writing')||part.skill==='dataAnalysis')return;
   (part.data.questions||[]).forEach((q,i)=>{
