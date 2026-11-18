@@ -142,6 +142,14 @@ function finish(){
    else{n++;if(result.correct)correct++;review.push('<li>'+(result.correct?'✓ Correct':'✗ Incorrect')+' · '+esc(current.sections[k].title)+' · '+esc(q.stem)+(result.correct?'':'; expected: '+esc(result.reference))+(result.reason==='too-long'?'; allowed: '+result.permitted+' words':'')+'</li>')}
   }
  }
+ questions.forEach(({id,q,k})=>{
+  const input=document.querySelector('input[name="'+id+'"]:checked')||document.querySelector('input[name="'+id+'"]');
+  const box=input?.closest('.question,.q');if(!box)return;
+  const ok=Array.isArray(q.options)?!!input&&input.type==='radio'&&Number(input.value)===q.answer:window.MyExamsShortAnswers.evaluate(input?.value||'',q).correct;
+  const part=current.sections[k]||{};
+  box.querySelectorAll('.mex-fb').forEach(el=>el.remove());
+  box.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:k,passage:part.passage,script:part.script||part.transcript},ok));
+ });
  let writing=selected.filter(x=>x.startsWith('wrt')).map(k=>{let value=$('writing-'+k)?.value||'';return current.sections[k].title+': '+(value.trim().split(/\s+/).filter(Boolean)).length+' words'});
  $('results').hidden=false;$('results').innerHTML='<h2>Automatically checked: '+correct+' / '+n+'</h2><p>'+blank+' unanswered, '+manual+' answers lack references, '+writing.length+' writing task(s) require teacher assessment. The required answer is accepted within the word limit plus four additional words.</p><p>This is not a final '+current.marks+'-mark grade.</p>'+(writing.length?'<p>'+writing.map(esc).join(' · ')+'</p>':'')+(review.length?'<details open><summary>Answer-by-answer feedback</summary><ol>'+review.join('')+'</ol></details>':'');
  $('results').scrollIntoView({behavior:'smooth'});
