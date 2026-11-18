@@ -31,7 +31,42 @@ textarea{min-height:160px;resize:vertical}summary{color:#185d47;cursor:pointer}
 #result{background:#f6f9ed;border-radius:10px;padding:14px;display:none}
 @media print{header,.controls,.actions,.warning,#result,.script,button{display:none!important}body{background:white}.box,.part{border:0;padding:4px;break-inside:avoid}.passage{border:0}}
 </style>
-<link rel="stylesheet" href="./shared/exam-tools.css"><link rel="stylesheet" href="shared/reading-split.css"><script src="./shared/short-answer-marking.js"></script></head>
+<link rel="stylesheet" href="./shared/exam-tools.css"><link rel="stylesheet" href="shared/reading-split.css"><script src="./shared/short-answer-marking.js"></script><script id="short-answer-critical">
+/* English short answer marking for My Exams.
+   Accept the expected answer as a complete contiguous phrase, with up to four
+   words above the question's stated maximum. This checks text, not meaning. */
+(function(g){
+"use strict";
+function words(value){
+ return String(value==null?"":value)
+ .normalize("NFKC").toLowerCase().replace(/[’‘]/g,"'")
+ .replace(/\b(\d+)\s*[-–]\s*(\d+)\b/g,"$1 $2")
+ .replace(/[^\p{L}\p{N}]+/gu," ").trim().split(/\s+/).filter(Boolean);
+}
+function evaluate(value,question){
+ const typed=words(value),limit=Number(question&&question.maxWords);
+ const maxWords=Number.isFinite(limit)&&limit>0?Math.floor(limit):4;
+ const permitted=maxWords+4;
+ const variants=[...(Array.isArray(question&&question.answers)?question.answers:[]),question&&question.answer]
+   .filter(x=>typeof x==="string"&&x.trim()).flatMap(x=>x.split(/\s+(?:\/|\bor\b)\s+/i));
+ const reference=variants.length?variants[0]:"";
+ if(!typed.length)return {correct:false,reason:"empty",wordCount:0,maxWords,permitted,reference};
+ if(typed.length>permitted)return {correct:false,reason:"too-long",wordCount:typed.length,maxWords,permitted,reference};
+ for(const v of variants){
+  const target=words(v);
+  if(!target.length)continue;
+  for(let i=0;i<=typed.length-target.length;i++){
+   if(target.every((word,j)=>typed[i+j]===word)){
+    return {correct:true,reason:"matched",wordCount:typed.length,maxWords,permitted,reference};
+   }
+  }
+ }
+ return {correct:false,reason:variants.length?"no-match":"manual",wordCount:typed.length,maxWords,permitted,reference};
+}
+g.MyExamsShortAnswers={evaluate,words};
+})(window);
+
+</script></head>
 <body>
 <header><a href="./index.html">← My Exams</a><h1>Grades 11–12 · English Skills & Exams</h1><div>Full exams · random exams · individual skills</div></header>
 <main>
