@@ -72,7 +72,9 @@ function genre(prompt){
 }
 function metadata(ta){
  const box=ta.closest("section,.part,.writing-task,.question")||ta.parentElement;
- const prompt=(box?.querySelector(".prompt,.qstem,.writing-prompt")?.textContent||ta.previousElementSibling?.textContent||box?.querySelector("p")?.textContent||box?.textContent||"").trim().slice(0,320);
+ const candidates=[...(box?.querySelectorAll?.(".prompt,.qstem,.writing-prompt,p,.notice")||[])].map(el=>(el.textContent||"").trim()).filter(Boolean);
+ const taskLine=candidates.find(v=>v.length>35&&/write|describe|summaris|summariz|discuss|evaluate|compare|essay|email|اكتب|تحدث عن/i.test(v));
+ const prompt=(taskLine||ta.previousElementSibling?.textContent||candidates.find(v=>v.length>25)||box?.textContent||"").trim().slice(0,320);
  return {grade:pageGrade(),genre:genre(prompt),topic:prompt.length>=8?prompt:"Complete the English writing task."};
 }
 const style=d.createElement("style");style.id="mex-feedback-style-v1";
