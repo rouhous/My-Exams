@@ -31,7 +31,7 @@ fieldset{border:0;padding:0;margin:0}.skills{display:grid;grid-template-columns:
 footer{color:var(--muted);font-size:13px;text-align:center;padding:18px}
 @media(max-width:520px){.skills{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.skill a{padding:12px;min-height:143px}.skill strong{font-size:15px}.filters{grid-template-columns:1fr 1fr}.filters>label:first-child{grid-column:1/-1}}
 </style>
-</head>
+<link rel="stylesheet" href="./shared/exam-tools.css"></head>
 <body>
 <header>
 <div><a href="./exams.html">الاختبارات الرئيسية</a> · <a href="./grade12/elective/index.html">اختبارات Elective</a></div>
@@ -127,4 +127,4 @@ for(const id of ['track','model','source','unit'])$(id).addEventListener('change
 redraw();
 })();
 </script>
-</body></html>
+<script defer src="./shared/exam-tools.js"></script></body></html>
