@@ -1,0 +1,63 @@
+name: Mobile layout and WH answer scoring QA
+on:
+  push:
+    branches: [main]
+    paths:
+      - shared/short-answer-marking.js
+      - tests/test_short_answer_marking.js
+      - index.html
+      - exams.html
+      - grade-skills.html
+      - grade12-skills.html
+      - grade11/**/units/paper-*-preview.html
+      - grade12/**/units/paper-*-preview.html
+      - upper-grades-practice.html
+      - .github/workflows/mobile-layout-and-answer-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Real Grade-12 12-item answer regression
+        run: node tests/test_short_answer_marking.js
+      - name: Check that student portal styling survives missing external CSS
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          pages=['index.html','exams.html','grade-skills.html','grade12-skills.html']
+          for name in pages:
+            text=Path(name).read_text(encoding='utf-8')
+            assert 'id="om-offline-critical"' in text,name
+            assert '.om-card{' in text,name
+            assert '@media(max-width:440px)' in text,name
+            print('PASS embedded mobile styling:',name)
+          PY
+      - name: Verify all edited student JavaScript parses
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          import subprocess,tempfile
+          class Extract(HTMLParser):
+            def __init__(self): super().__init__();self.active=False;self.scripts=[]
+            def handle_starttag(self,t,a):
+              if t=='script' and not any(k=='src' or (k=='type' and v=='application/json') for k,v in a):self.scripts.append('');self.active=True
+            def handle_endtag(self,t):
+              if t=='script':self.active=False
+            def handle_data(self,x):
+              if self.active:self.scripts[-1]+=x
+          paths=['grade-skills.html','grade12-skills.html','grade9/index.html','grade10/index.html','grades7-8/index.html','upper-grades-practice.html']
+          paths += [f'grade{g}/core/units/paper-{p}-preview.html' for g in (11,12) for p in 'abcd']
+          paths += ['grade11/elective/units/paper-a-preview.html','grade12/elective/units/paper-a-preview.html']
+          for name in paths:
+            e=Extract();e.feed(Path(name).read_text(encoding='utf-8'))
+            for snippet in e.scripts:
+              if not snippet.strip():continue
+              with tempfile.TemporaryDirectory() as d:
+                f=Path(d)/'snippet.js';f.write_text(snippet,encoding='utf-8')
+                subprocess.run(['node','--check',str(f)],check=True)
+            print('PASS JavaScript:',name)
+          PY
