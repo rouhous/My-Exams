@@ -146,7 +146,7 @@ function finish(){
      }
    }
  }
- const writing=selected.filter(t=>t.skill==='writing').map(t=>{const v=$('write'+t.group)?.value||'';return t.title+': '+(v.trim().match(/\\S+/g)||[]).length+' words'});
+ const writing=selected.filter(t=>t.skill==='writing').map(t=>{const v=$('write'+t.group)?.value||'';return t.title+': '+(v.trim().match(/\S+/g)||[]).length+' words'});
  $('results').hidden=false;
  $('results').innerHTML='<h2>Practice review</h2><p><strong>'+correct+' / '+checked+'</strong> automatically checked answers. '+blank+' blank, '+manual+' answer(s) without a stored reference, '+writing.length+' writing task(s) need teacher assessment.</p><p>Short answers are marked correct when the required reference appears in the response, with up to <strong>4 extra words</strong> above the question limit.</p>'+(writing.length?'<p>'+writing.map(esc).join(' · ')+'</p>':'')+'<p>The result excludes writing and is not a final 40-mark grade.</p>'+(rows.length?'<details open><summary>Review every answer</summary><ol>'+rows.join('')+'</ol></details>':'');
  $('results').scrollIntoView({behavior:'smooth'});
