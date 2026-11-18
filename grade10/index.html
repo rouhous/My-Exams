@@ -19,7 +19,7 @@ textarea{min-height:160px;resize:vertical}.passage{background:#f1f7f3;padding:15
 small,.muted{color:#5c7168}.hidden{display:none!important}.meta{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between}
 #clock{font-variant-numeric:tabular-nums;font-size:20px;font-weight:700}.score{font-size:20px}
 @media print{header,.controls,.notice,.no-print{display:none!important}body{background:white}.section{break-inside:avoid;border:none;padding:4px}}
-</style><link rel="stylesheet" href="../shared/exam-tools.css"><link rel="stylesheet" href="../shared/reading-split.css"></head><body>
+</style><link rel="stylesheet" href="../shared/exam-tools.css"><link rel="stylesheet" href="../shared/reading-split.css"><script src="../shared/short-answer-marking.js"></script></head><body>
 <header><h1>My Exams · Grade 10</h1><p>English Language · Semester 1</p><a href="../index.html">Back to My Exams home</a></header>
 <main>
 
@@ -102,7 +102,7 @@ function evaluateAnswers(){
    const name=part.skill+'-'+i;const input=[...document.querySelectorAll('#exam input')].find(n=>n.name===name&&(n.type==='text'||n.checked));
    if(!input)return;
    const actual=input.value;
-   const good=typeof q.answer==='number'?Number(actual)===q.answer:normalize(actual)===normalize(q.answer);
+   const good=typeof q.answer==='number'?Number(actual)===q.answer:window.MyExamsShortAnswers.evaluate(actual,q).correct;
    if(good)correct++;
    const cell=input.closest('.question');
    if(cell)cell.style.borderLeft='4px solid '+(good?'#3b8f67':'#bc7240');
