@@ -24,7 +24,7 @@ select{max-width:370px;width:100%}textarea{width:100%;min-height:220px}
 .clock{font-size:21px;font-weight:800;font-variant-numeric:tabular-nums}
 @media(max-width:600px){.controls{grid-template-columns:1fr}}
 @media print{header,.setup,#end,#back,#clock{display:none!important}.paper{display:block!important}section{break-inside:avoid}}
-</style></head><body>
+</style><link rel="stylesheet" href="../../../shared/exam-tools.css"></head><body>
 <header><a href="./index.html">← Grade 11 elective listening practice</a><h1>Grade 11 Elective · Unit 3: In the Past</h1>
 <p>Six original sections · 60 marks · 150-minute full paper / untimed skills</p></header>
 <main>
@@ -81,4 +81,4 @@ function finish(){if(current)return;current=true;stopClock();$('end').disabled=t
  $('results').hidden=false;$('results').innerHTML='<h2>Objective answers: '+score+' / '+objective+'</h2><p>'+manual+' short answers and '+writing.length+' writing tasks require teacher review. A final 60-mark grade is not assigned automatically.</p>'+(writing.length?'<p>'+writing.map(esc).join(' · ')+'</p>':'')+(missed.length?'<details><summary>Teacher answer key and review notes</summary><ol>'+missed.join('')+'</ol></details>':'');$('results').scrollIntoView({behavior:'smooth'});
 }
 $('start').onclick=start;$('end').onclick=finish;$('back').onclick=()=>{stopClock();$('paper').classList.remove('active');$('setup').hidden=false;window.scrollTo(0,0)};init();
-</script></body></html>
+</script><script defer src="../../../shared/exam-tools.js"></script></body></html>
