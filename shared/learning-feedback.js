@@ -29,11 +29,19 @@ function rule(q,expected){
  if(/\bto\s+_{2,}/.test(s))return "Use the base form of the verb after ‘to’ in a to-infinitive.";
  return "";
 }
+const GLOSSES={
+"blog":"مدوّنة","platform":"منصّة إلكترونية","upload":"يرفع ملفًا على الإنترنت",
+"private":"خاصّ / سرّي","source":"مصدر","drought":"جفاف","heatwave":"موجة حر",
+"greenhouse gas":"غاز دفيئة","carbon footprint":"البصمة الكربونية","sea level":"مستوى سطح البحر",
+"solar panel":"لوح شمسي","wind turbine":"توربين رياح","hydropower":"طاقة كهرومائية",
+"battery":"بطارية","grid":"شبكة الكهرباء","archaeologist":"عالم آثار",
+"excavation":"تنقيب أثري","artefact":"قطعة أثرية","trade route":"طريق تجاري","heritage":"تراث"
+};
 function explanation(q,ctx={},override){
  const expected=answer(q,override),type=String(ctx.skill||ctx.key||q?.skill||"").toLowerCase();
  return {expected,rule:/gram/.test(type)?rule(q,expected):"",
-   meaning:/vocab|spell|word/.test(type)?q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||( /_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,expected):""):"",
-   example:/vocab|spell|word/.test(type)&&/_{2,}/.test(q?.stem||"")&&(q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning)?String(q.stem).replace(/_{2,}/,expected):"",
+   meaning:/vocab|spell|word/.test(type)?q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(expected)]||( /_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,expected):""):"",
+   example:/vocab|spell|word/.test(type)&&/_{2,}/.test(q?.stem||"")&&(q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(expected)])?String(q.stem).replace(/_{2,}/,expected):"",
    evidence:q?.evidence||q?.sourceQuote||evidence(expected,q?.script||q?.transcript||q?.passage||ctx.script||ctx.transcript||ctx.passage||ctx.text||""),
    kind:/listen|lst/.test(type)?"Listening script":"Reading text"};
 }
