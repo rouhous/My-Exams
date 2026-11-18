@@ -1,0 +1,29 @@
+name: Verify ministry-style Listening image choices
+on:
+  push:
+    branches: [main]
+    paths:
+      - grades5-6/index.html
+      - grades7-8/index.html
+      - grade9/index.html
+      - tests/test_official_listening_picture_layout.py
+      - .github/workflows/listening-picture-labels-qa.yml
+  pull_request:
+    paths:
+      - grades5-6/index.html
+      - grades7-8/index.html
+      - grade9/index.html
+      - tests/test_official_listening_picture_layout.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pictures-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Assert pictures use letters A-F or A-C with no word captions
+        run: python -m unittest discover -s tests -p test_official_listening_picture_layout.py -v
