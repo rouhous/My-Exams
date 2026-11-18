@@ -19,7 +19,7 @@ audio{width:100%;max-width:630px}.script{white-space:pre-wrap;max-height:320px;o
 .controls{display:grid;grid-template-columns:1fr 1fr;gap:13px}
 .clock{font-weight:800;font-size:20px;font-variant-numeric:tabular-nums}
 @media(max-width:640px){.controls{grid-template-columns:1fr}}@media print{header,.setup,#end,#back,#clock{display:none!important}.paper{display:block!important}section{break-inside:avoid}}
-</style></head><body>
+</style><link rel="stylesheet" href="../../../shared/exam-tools.css"></head><body>
 <header><a href="./index.html">← Travel and Transport Listening practice</a>
 <h1>Grade 12 Core · Unit 4: Travel and Transport</h1><p>Original nine-section assessment · 70 marks · Teacher-review draft</p></header>
 <main>
@@ -83,4 +83,4 @@ function finish(){if(submitted)return;submitted=true;stopTimer();$('end').disabl
  $('results').scrollIntoView({behavior:'smooth'});
 }
 $('start').onclick=start;$('end').onclick=finish;$('back').onclick=()=>{stopTimer();$('paper').classList.remove('active');$('setup').hidden=false;$('end').disabled=false;window.scrollTo(0,0)};initialize();
-</script></body></html>
+</script><script defer src="../../../shared/exam-tools.js"></script></body></html>
