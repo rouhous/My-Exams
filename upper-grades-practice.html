@@ -57,9 +57,14 @@ The existing source bank contains repeated cross-track texts and unverified unit
 var bank=null,verifiedAudio={},active=[],started=0,seconds=0,timerId=0,submitted=false;
 var $=function(id){return document.getElementById(id)};
 var keys=['11-elective','12-core','12-elective'];
+var deepLink=new URLSearchParams(location.search);
+var requestedTrack=deepLink.get('track'),requestedMode=deepLink.get('mode'),requestedSkill=deepLink.get('skill'),requestedModel=deepLink.get('model');
+if(keys.includes(requestedTrack))$('track').value=requestedTrack;
+if(['skill','full','random'].includes(requestedMode))$('mode').value=requestedMode;
+
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),x=a[i];a[i]=a[j];a[j]=x}return a}
-function title(k){return {'lst1':'Listening 1','lst2':'Listening 2','grm':'Grammar','vcb':'Vocabulary','rdg1':'Reading 1','rdg2':'Reading 2','rdg3':'Reading 3','wrt1':'Writing 1','wrt2':'Writing 2'}[k]||k}
+function title(k){return {'lst1':'Listening 1','lst2':'Listening 2','grammar':'Grammar','vocabulary':'Vocabulary','grm':'Grammar','vcb':'Vocabulary','rdg1':'Reading 1','rdg2':'Reading 2','rdg3':'Reading 3','wrt1':'Writing 1','wrt2':'Writing 2'}[k]||k}
 function sourceModels(){return (bank[$('track').value]||[])}
 function sourcePart(model,key){return (model.parts||[]).find(function(p){return p.key===key})}
 function rebuild(){
@@ -155,7 +160,11 @@ Promise.all([
      if(entry.passageSha256===h)verifiedAudio[track+'|'+m.id+'|'+part.key]='./upper-audio/'+track+'/'+entry.mp3;
    }
  }
- rebuild();$('loadState').textContent='Review bank loaded. Linked source-matched natural listening MP3: '+Object.keys(verifiedAudio).length+' / 36 provisional task uses. Listening quality and textbook alignment still need teacher review.';
+ rebuild();
+ if((sourceModels()[0]?.parts||[]).some(p=>p.key===requestedSkill))$('skill').value=requestedSkill;
+ if(sourceModels().some(m=>m.id===requestedModel))$('model').value=requestedModel;
+ rebuild();
+ $('loadState').textContent='Review bank loaded. Linked source-matched natural listening MP3: '+Object.keys(verifiedAudio).length+' / 36 provisional task uses. Listening quality and textbook alignment still need teacher review.';
 }).catch(function(e){$('loadState').textContent='Bank unavailable: '+e.message;$('start').disabled=true});
 if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('./sw.js').catch(function(){});
 })();
