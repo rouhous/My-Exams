@@ -170,6 +170,13 @@ else details.push(title(a.part.key)+' Q'+(a.index+1)+': '+esc(q.options[q.answer
  if(result.reason==='manual'){manual++;details.push(title(a.part.key)+' Q'+(a.index+1)+': teacher review required')}
  else{auto++;if(result.correct)correct++;details.push((result.correct?'✓ Correct: ':'✗ Incorrect: ')+title(a.part.key)+' Q'+(a.index+1)+(result.correct?'':'; expected: '+esc(result.reference))+(result.reason==='too-long'?'; maximum '+result.permitted+' words':''))}
 }
+ const card=inp?.closest('.question');
+ if(card){
+   const isChoice=Array.isArray(q.options)&&Number.isInteger(q.answer);
+   const passed=isChoice?(val!==''&&Number(val)===q.answer):window.MyExamsShortAnswers.evaluate(val,q).correct;
+   card.querySelectorAll('.mex-fb').forEach(el=>el.remove());
+   card.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:a.part.key,passage:a.part.passage,script:a.part.script},passed));
+ }
 });
 var writing=document.querySelectorAll('textarea[data-writing]').length;
 var box=$('result');box.style.display='block';box.innerHTML='<h2>Practice review '+(expired?'(time expired)':'')+'</h2><p><strong>'+correct+' / '+auto+'</strong> automatically checked questions. '+manual+' answers and '+writing+' writing tasks require teacher assessment. '+unanswered+' objective/short questions left blank.</p><p>This is <strong>not</strong> a final '+esc($('track').value)+' grade out of 60/70. No writing AI connection has been asserted.</p><details><summary>Review correct options and sample short answers</summary><ul>'+details.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></details>';
