@@ -27,7 +27,7 @@ function enhance(){
    reference.setAttribute("aria-label","نص القراءة، تمرير مستقل");
    exercise.setAttribute("aria-label","أسئلة النشاط، تمرير مستقل");
    function heading(text){const h=document.createElement("strong");h.className="exam-dual-heading";h.textContent=text;return h}
-   reference.append(heading("النص · Reading Text"));
+   reference.append(heading("النص · Text"));
    exercise.append(heading("الأسئلة · Questions"));
    const insertBefore=children[first];
    section.insertBefore(grid,insertBefore);grid.append(reference,exercise);
