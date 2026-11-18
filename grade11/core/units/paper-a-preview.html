@@ -82,5 +82,6 @@ function finish(){if(submitted)return;submitted=true;stopTimer();$('end').disabl
  $('results').hidden=false;$('results').innerHTML='<h2>Objective answers: '+correct+' / '+objective+'</h2><p>'+manual+' short answers and '+writings.length+' writing tasks require teacher review. <b>No total 60-mark examination grade is assigned automatically.</b></p>'+(writings.length?'<p>'+writings.map(esc).join(' · ')+'</p>':'')+(rows.length?'<details><summary>Answer key and teacher-review checklist</summary><ol>'+rows.join('')+'</ol></details>':'');
  $('results').scrollIntoView({behavior:'smooth'});
 }
+const direct=new URLSearchParams(location.search);if(direct.get('mode')==='skill'&&keys.includes(direct.get('skill'))){$('mode').value='skill';$('skillWrap').hidden=false;$('skill').value=direct.get('skill')}
 $('start').onclick=start;$('end').onclick=finish;$('back').onclick=()=>{stopTimer();$('paper').classList.remove('active');$('setup').hidden=false;$('end').disabled=false;window.scrollTo(0,0)};initialize();
 </script><script defer src="../../../shared/exam-tools.js"></script></body></html>
