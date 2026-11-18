@@ -9,6 +9,9 @@ function enhance(){
    if(section.dataset.dualReady==="yes")continue;
    const children=[...section.children];
    const sources=children.filter(el=>el.matches(".passage,.paired,.two-col,.source-text"));
+   // Reading 1 may present several texts with explicit "Text 1" labels.
+   // Keep those labels with their respective passages when moving them.
+   for(const source of [...sources]){const prev=source.previousElementSibling;if(prev&&prev.tagName==="P"&&/^Text\\s+\\d+\\s*$/i.test(prev.textContent.trim())&&!sources.includes(prev))sources.push(prev)}
    const questions=children.filter(el=>el.matches(".question,.q"));
    if(!sources.length||questions.length<2)continue;
    // Never split scripts hidden inside teacher-only listening details.
