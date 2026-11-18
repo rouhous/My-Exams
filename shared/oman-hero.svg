@@ -16,4 +16,17 @@
 <path d="M0 0 24 24 48 0 72 24 96 0 120 24M0 50l24-24 24 24 24-24 24 24 24-24M0 100l24-24 24 24 24-24 24 24 24-24"/>
 <path d="M1400 0h-140l15 15-15 15 15 15-15 15 15 15-15 15 15 15-15 15v20h140"/>
 </g>
-</svg>
+<g transform="translate(1068 90)" opacity=".86">
+<!-- Contemporary Omani khanjar motif, decorative only -->
+<path d="M91 11q-28-21-55 3l-4 21q19-15 38-8l5 9-18 18 13 16 24-18q10-12 6-26z" fill="#d5a856" stroke="#81531e" stroke-width="4"/>
+<path d="M81 62q-42 28-9 66 40 31 110-5l-7-16q-55 20-76-2-15-18 7-32z" fill="#d0a256" stroke="#805322" stroke-width="6"/>
+<path d="M78 74q-10 23 16 37 24 12 58-1" fill="none" stroke="#f6ddb0" stroke-width="6"/>
+<path d="M43 31l14-8M41 44l14-7M67 16l10-6" stroke="#845a28" stroke-width="4"/>
+<!-- stacked schoolbooks -->
+<g transform="translate(132 134) rotate(-5)">
+<rect x="0" y="0" width="140" height="33" rx="5" fill="#0b6046" stroke="#c59d55" stroke-width="4"/>
+<path d="M14 3v27M126 3v27" stroke="#e3d49e" stroke-width="3"/>
+<rect x="-18" y="33" width="155" height="28" rx="4" fill="#c69c53" stroke="#875f32" stroke-width="3"/>
+<path d="M0 45h120" stroke="#f9e7b5" stroke-width="3"/>
+</g>
+</g></svg>
