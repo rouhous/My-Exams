@@ -1,0 +1,47 @@
+name: Verify public My Exams portal links
+on:
+  push:
+    branches: [main]
+    paths:
+      - exams.html
+      - index.html
+      - .github/workflows/exam-portal-links.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check-portal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the complete student portal and links
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          from urllib.parse import urlsplit, unquote
+          class A(HTMLParser):
+            def __init__(self):super().__init__();self.links=[]
+            def handle_starttag(self,tag,attrs):
+              if tag=='a':
+                d=dict(attrs)
+                if 'href' in d:self.links.append(d['href'])
+          home=Path('index.html').read_text(encoding='utf-8')
+          assert 'href="./exams.html"' in home, 'Missing portal link in homepage'
+          p=Path('exams.html')
+          assert p.is_file()
+          content=p.read_text(encoding='utf-8')
+          parser=A();parser.feed(content)
+          assert len(parser.links)>=16
+          missing=[]
+          for href in parser.links:
+            u=urlsplit(href)
+            if u.scheme or href.startswith('#'):continue
+            dest=(p.parent/unquote(u.path)).resolve()
+            if not dest.is_relative_to(Path.cwd().resolve()) or not dest.is_file():
+              missing.append(href)
+          assert not missing, 'Broken local portal links: '+repr(missing)
+          for grade in ('الصف الخامس','الصف السادس','الصف السابع','الصف الثامن','الصف التاسع','الصف العاشر','الحادي عشر','الثاني عشر'):
+            assert grade in content, grade
+          print('PASS portal exists and',len(parser.links),'links target existing files')
+          PY
