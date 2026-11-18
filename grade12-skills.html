@@ -96,7 +96,14 @@ body.om-shell .om-footer{background:#06442f;color:#fff}
  body.om-shell .om-card strong{font-size:14px}
  body.om-shell .om-quick a{font-size:12px}
 }
-</style></head>
+</style><script id="om-sw-update-v23">
+/* Check and activate the current offline worker on every portal entry. */
+window.addEventListener('load',function(){
+ if(!('serviceWorker' in navigator)||location.protocol!=='https:')return;
+ navigator.serviceWorker.register('./sw.js',{scope:'./',updateViaCache:'none'})
+ .then(function(reg){return reg.update()}).catch(function(){});
+});
+</script></head>
 <body class="om-shell">
 <div class="om-top"><div class="om-brand">📖 My Exams</div><nav class="om-nav"><a href="./exams.html">⌂ الرئيسية</a><a href="./exams.html#grades">🎓 الصفوف</a><a class="active" href="./grade12-skills.html">📚 مهارات 12</a></nav></div>
 <header class="om-hero">
