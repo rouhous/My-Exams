@@ -31,16 +31,16 @@ fieldset{border:0;padding:0;margin:0}.skills{display:grid;grid-template-columns:
 footer{color:var(--muted);font-size:13px;text-align:center;padding:18px}
 @media(max-width:520px){.skills{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.skill a{padding:12px;min-height:143px}.skill strong{font-size:15px}.filters{grid-template-columns:1fr 1fr}.filters>label:first-child{grid-column:1/-1}}
 </style>
-<link rel="stylesheet" href="./shared/exam-tools.css"></head>
-<body>
-<header>
-<div><a href="./exams.html">الاختبارات الرئيسية</a> · <a href="./grade12/elective/index.html">اختبارات Elective</a></div>
+<link rel="stylesheet" href="./shared/oman-theme.css"><link rel="stylesheet" href="./shared/exam-tools.css"><style>body.om-shell{background:#faf7f0}header.om-hero{background:#faf5eb url("./shared/oman-hero.svg") center/cover no-repeat;color:#06422f;min-height:186px;border-bottom:1px solid #d9c49c}header.om-hero p{color:#17402e}header.om-hero h1{color:#06422f}body.om-shell .panel{background:#fffdf8;border:1px solid #dac7a1;border-radius:18px}body.om-shell .skill{background:linear-gradient(135deg,#fffefb,#fff7ea);border:1.5px solid #d7a65a;border-radius:15px}body.om-shell .skill a{min-height:128px}body.om-shell .btn{min-height:48px;background:#086247;border-radius:12px}body.om-shell .btn.alt{background:#fff;color:#075038}body.om-shell footer.om-footer{background:#06442f;color:white}</style></head>
+<body class="om-shell">
+<div class="om-top"><div class="om-brand">📖 My Exams</div><nav class="om-nav"><a href="./exams.html">⌂ الرئيسية</a><a href="./exams.html#grades">🎓 الصفوف</a><a class="active" href="./grade12-skills.html">📚 مهارات 12</a></nav></div>
+<header class="om-hero">
 <h1>مهارات الصف الثاني عشر</h1><p dir="ltr">Grade 12 English Skills · Semester 1</p>
 <p>Listening · Grammar · Vocabulary · Reading · Writing</p>
 </header>
 <main>
 <nav><a href="./exams.html">⌂ العودة إلى جميع الاختبارات</a><a href="./upper-grades-practice.html?track=12-core&mode=skill">بنك التدريب الكامل</a></nav>
-<div class="notice" role="note"><strong>للتجربة العملية:</strong> هذه الأنشطة نسخ تدريبية قيد المراجعة، وليست أوراق وزارة معتمدة. المهارات المنفصلة بلا مؤقت. بعض تسجيلات الاستماع لا تُعرض إلا بعد التحقق من تطابقها مع النص؛ وقد يحتاج الاستماع إلى قراءة المعلم. الكتابة والإجابات القصيرة تتطلب مراجعة بشرية.</div>
+
 <section class="panel">
 <h2>حدد المسار ونموذج التدريب</h2>
 <div class="filters">
@@ -57,7 +57,7 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:18px}
 </section>
 <section class="panel">
 <h2>اختر المهارة للتدريب المباشر</h2>
-<p class="sub">تفتح كل بطاقة صفحة المهارة المحددة على الوضع <span dir="ltr">Single skill · Untimed</span>. بعد فتحها اضغط <strong dir="ltr">Start practice</strong> لبدء الأسئلة، مع الاحتفاظ باختيار المسار والنموذج أو الوحدة.</p>
+<p class="sub">اختر المهارة ثم ابدأ التدريب بدون مؤقت.</p>
 <div id="skills" class="skills">
 <article class="skill"><a href="./upper-grades-practice.html?track=12-core&mode=skill&model=A&skill=lst1"><strong>Listening 1</strong><small>الاستماع الأول · 7 درجات</small><span class="go">ابدأ التدريب</span></a></article>
 <article class="skill"><a href="./upper-grades-practice.html?track=12-core&mode=skill&model=A&skill=lst2"><strong>Listening 2</strong><small>الاستماع الثاني · 8 درجات</small><span class="go">ابدأ التدريب</span></a></article>
@@ -72,7 +72,7 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:18px}
 </section>
 <section class="panel">
 <h2>اختبارات كاملة أو عشوائية</h2>
-<p class="sub">يمكنك تجربة الاختبار الكامل بمؤقت، أو الاختبارات العشوائية التي تختار مهام كاملة من بنك المراجعة. نماذج الوحدات الأصلية للغة الاختيارية منفصلة.</p>
+<p class="sub">اختبار كامل، اختبار عشوائي أو تدريبات الوحدات.</p>
 <div class="actions">
 <a id="full" class="btn" href="./upper-grades-practice.html?track=12-core&mode=full&model=A">اختبار كامل بمؤقت</a>
 <a id="random" class="btn alt" href="./upper-grades-practice.html?track=12-core&mode=random">اختبار عشوائي</a>
@@ -80,7 +80,7 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:18px}
 <a class="btn alt" href="./grade12/core/units/paper-a-preview.html">معاينة Core · Unit 1</a>
 </div>
 </section>
-</main><footer>My Exams · مدرسة وادي الحواسنة · Houssem Rouatbi · نسخة مراجعة تعليمية</footer>
+</main><footer class="om-footer">© Houssem Rouatbi — جميع الحقوق محفوظة للأستاذ</footer>
 <script>
 (function(){
 'use strict';
