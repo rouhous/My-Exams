@@ -145,7 +145,11 @@ function evaluateAnswers(){
    const good=typeof q.answer==='number'?Number(actual)===q.answer:window.MyExamsShortAnswers.evaluate(actual,q).correct;
    if(good)correct++;
    const cell=input.closest('.question');
-   if(cell)cell.style.borderLeft='4px solid '+(good?'#3b8f67':'#bc7240');
+   if(cell){
+     cell.style.borderLeft='4px solid '+(good?'#3b8f67':'#bc7240');
+     cell.querySelectorAll('.mex-fb').forEach(n=>n.remove());
+     cell.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:part.skill,passage:part.data.passage,script:part.data.script||part.data.transcript},good));
+   }
   });
  });
  $('result').textContent=total?'Objective responses: '+correct+' / '+total+'. Writing is not automatically graded; short answers may require teacher review.':'Chart / writing response saved in this session. No objective score applies: teacher assessment is needed for writing.';
