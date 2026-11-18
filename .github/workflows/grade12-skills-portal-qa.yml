@@ -1,0 +1,86 @@
+name: Validate Grade 12 Skills direct links and real activity bank
+on:
+  push:
+    branches: [main]
+    paths:
+      - grade12-skills.html
+      - upper-grades-practice.html
+      - grade12/elective/units/paper-a-preview.html
+      - exams.html
+      - index.html
+      - .github/workflows/grade12-skills-portal-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check JavaScript syntax for all student entrypoints
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          import subprocess,tempfile
+          class Scripts(HTMLParser):
+            def __init__(self):super().__init__();self.in_script=False;self.code=[]
+            def handle_starttag(self,tag,attrs):
+              if tag=='script' and not any(k=='src' for k,v in attrs):
+                self.in_script=True;self.code.append('')
+            def handle_data(self,data):
+              if self.in_script:self.code[-1]+=data
+            def handle_endtag(self,tag):
+              if tag=='script':self.in_script=False
+          for path in ['grade12-skills.html','upper-grades-practice.html','grade12/elective/units/paper-a-preview.html']:
+            parser=Scripts();parser.feed(Path(path).read_text())
+            assert parser.code,path
+            for code in parser.code:
+              if not code.strip():continue
+              with tempfile.TemporaryDirectory() as directory:
+                temp=Path(directory)/'check.js';temp.write_text(code)
+                subprocess.run(['node','--check',str(temp)],check=True)
+            print('PASS JS',path)
+          PY
+      - name: Verify all Grade 12 skill links open an existing exercise and valid bank key
+        run: |
+          python - <<'PY'
+          import json
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.parse import urlsplit,parse_qs
+          class Links(HTMLParser):
+            def __init__(self):super().__init__();self.links=[]
+            def handle_starttag(self,tag,attrs):
+              if tag=='a':
+                for key,val in attrs:
+                  if key=='href':self.links.append(val)
+          page=Path('grade12-skills.html')
+          html=page.read_text()
+          parser=Links();parser.feed(html)
+          paths=[urlsplit(x).path for x in parser.links]
+          assert len(parser.links)>=16
+          assert all((page.parent/x).is_file() for x in paths),[(x,paths[i]) for i,x in enumerate(parser.links) if not (page.parent/paths[i]).is_file()]
+          assert 'grade12-skills.html' in Path('exams.html').read_text()
+          assert 'grade12-skills.html' in Path('index.html').read_text()
+          bank=json.loads(Path('higher_grades_corrected.json').read_text())
+          expected={'12-core':{'lst1','lst2','grammar','vocabulary','rdg1','rdg2','rdg3','wrt1','wrt2'},
+                    '12-elective':{'lst1','lst2','rdg1','rdg2','wrt1','wrt2'}}
+          for track,keys in expected.items():
+            assert len(bank[track])>=4
+            for model in bank[track]:
+              assert keys=={x['key'] for x in model['parts']},(track,model['id'])
+          for href in parser.links:
+            query=parse_qs(urlsplit(href).query)
+            if 'skill' in query:
+              track=query.get('track',['12-core'])[0]
+              assert query['skill'][0] in expected[track],href
+          for key in ('track','mode','model','skill'):
+            assert "deepLink.get('"+key+"')" in Path('upper-grades-practice.html').read_text(),key
+          for key in ('mode','skill'):
+            assert "params.get('"+key+"')" in Path('grade12/elective/units/paper-a-preview.html').read_text(),key
+          print('PASS',len(parser.links),'static links; all bank models offer expected skills')
+          PY
