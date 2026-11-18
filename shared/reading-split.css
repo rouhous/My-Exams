@@ -1,0 +1,16 @@
+/* Independently scrollable reading / cloze panels: desktop side-by-side, phone stacked */
+.exam-dual-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:stretch;direction:ltr;margin:14px 0 18px;max-width:100%}
+.exam-dual-panel{min-width:0;min-height:0;height:min(66vh,660px);height:min(66dvh,660px);overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;background:#fffdf9;border:1.5px solid #d8c399;border-radius:14px;padding:15px 16px;scroll-behavior:auto;direction:ltr;color:#17372e;line-height:1.72}
+.exam-dual-panel:focus-visible{outline:3px solid #117453;outline-offset:2px}
+.exam-dual-panel .exam-dual-heading{position:sticky;top:-15px;z-index:2;background:#f6eee0;border-bottom:1px solid #d8c399;color:#12563f;display:block;margin:-15px -16px 13px;padding:9px 15px;font:700 15px/1.4 system-ui,Tahoma,Arial,sans-serif;direction:rtl;text-align:start}
+.exam-dual-panel .passage{white-space:pre-wrap;line-height:1.8;max-width:100%;overflow-wrap:anywhere}
+.exam-dual-panel .question,.exam-dual-panel .q{margin:0 0 11px;padding:12px;border-radius:9px;border:1px solid #e0e8de;background:white}
+.exam-dual-panel .question:last-child,.exam-dual-panel .q:last-child{margin-bottom:0}
+.exam-dual-panel input[type=text],.exam-dual-panel textarea,.exam-dual-panel select{max-width:100%}
+.exam-dual-panel input[type=radio],.exam-dual-panel input[type=checkbox]{min-width:19px;min-height:19px}
+.exam-dual-panel .paired,.exam-dual-panel .two-col{display:block}
+.exam-dual-panel .paired>div,.exam-dual-panel .two-col>div{margin-bottom:12px}
+.exam-dual-panel p{margin:7px 0 12px}
+@media(max-width:700px){.exam-dual-grid{grid-template-columns:minmax(0,1fr);gap:9px}.exam-dual-panel{height:auto;max-height:40vh;max-height:40dvh;min-height:160px;padding:12px}.exam-dual-panel.exam-questions{max-height:46vh;max-height:46dvh}.exam-dual-panel .exam-dual-heading{top:-12px;margin:-12px -12px 9px;padding:8px 12px}.exam-dual-panel .question,.exam-dual-panel .q{padding:10px 9px}}
+@media print{.exam-dual-grid{display:block!important}.exam-dual-panel{height:auto!important;max-height:none!important;overflow:visible!important;border:0!important;padding:0!important;background:white!important;break-inside:auto!important}.exam-dual-panel .exam-dual-heading{position:static;margin:8px 0;background:#fff}.exam-dual-panel .question,.exam-dual-panel .q{break-inside:avoid}}
+@media(prefers-reduced-motion:reduce){.exam-dual-panel{scroll-behavior:auto}}
