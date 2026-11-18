@@ -20,9 +20,25 @@ function evidence(expected,source){
  const matches=parts.filter(s=>{const t=norm(s),words=t.split(" ");return (" "+t+" ").includes(" "+key+" ")||(tokens.length>=2&&tokens.every(v=>words.includes(v)))});
  return matches.length?matches.sort((a,b)=>a.length-b.length)[0].slice(0,300):"";
 }
-function rule(q,expected){
+function completedGap(q,ctx,expected){
+ const match=String(q?.stem||"").match(/\bGap\s*(\d+)\b/i);
+ const src=String(ctx?.passage||"");
+ if(!match||!src)return "";
+ const rex=new RegExp("\\("+match[1]+"\\)\\s*_{2,}");
+ const line=src.split(/\n|(?<=[.!?])\s+/).map(x=>x.trim()).find(x=>rex.test(x));
+ return line?line.replace(rex,expected).slice(0,260):"";
+}
+function rule(q,expected,ctx){
  const known=q?.rule||q?.grammarRule||q?.explanation||q?.feedback;
  if(typeof known==="string"&&known.trim())return known;
+ const filled=completedGap(q,ctx,expected);
+ const opts=(q?.options||[]).map(x=>String(x).toLowerCase());
+ if(/\bdid not\b/i.test(filled))return "Past simple negative: use did not + base verb (e.g., did not remove).";
+ if(/\bif\b/i.test(filled)&&/\bwill\b/i.test(filled))return "First conditional: If + present simple, will + base verb for a likely future result.";
+ if(/\b(?:was|were)\s+\w+ed\b/i.test(filled))return "Passive voice or past continuous depends on the verb form: past be + past participle describes an action done to the subject.";
+ if((opts.includes("was")&&opts.includes("were"))||(opts.includes("is")&&opts.includes("are")))return "Subject–verb agreement: use is/was with a singular subject, and are/were with a plural subject.";
+ if(/\byesterday\b/i.test(filled)&&opts.includes("buy")&&opts.includes("bought"))return "Past simple: use ‘bought’ (past of buy) for an action completed yesterday.";
+ if(opts.includes("should")&&opts.includes("should to"))return "Modal verb: ‘should’ is followed directly by a base verb, not ‘should to’.";
  const s=String(q?.stem||"").toLowerCase();
  if(/\bthan\b/.test(s)&&/more\b|er$|ier$|better|worse/i.test(expected))return "Comparatives: use the comparative form with ‘than’ to compare two things (-er, -ier or more + adjective/adverb).";
  if(/\b(?:should|must|can|could|will|may)\s+_{2,}/.test(s))return "After a modal verb (can, should, must), use the base form of the verb.";
@@ -39,9 +55,9 @@ const GLOSSES={
 };
 function explanation(q,ctx={},override){
  const expected=answer(q,override),type=String(ctx.skill||ctx.key||q?.skill||"").toLowerCase();
- return {expected,rule:/gram/.test(type)?rule(q,expected):"",
+ return {expected,rule:/gram/.test(type)?rule(q,expected,ctx):"",
    meaning:/vocab|spell|word/.test(type)?q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(expected)]||( /_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,expected):""):"",
-   example:/vocab|spell|word/.test(type)&&/_{2,}/.test(q?.stem||"")&&(q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(expected)])?String(q.stem).replace(/_{2,}/,expected):"",
+   example:/gram/.test(type)?completedGap(q,ctx,expected):/vocab|spell|word/.test(type)&&/_{2,}/.test(q?.stem||"")&&(q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(expected)])?String(q.stem).replace(/_{2,}/,expected):"",
    evidence:q?.evidence||q?.sourceQuote||evidence(expected,q?.script||q?.transcript||q?.passage||ctx.script||ctx.transcript||ctx.passage||ctx.text||""),
    kind:/listen|lst/.test(type)?"Listening script":"Reading text"};
 }
