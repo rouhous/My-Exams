@@ -30,9 +30,9 @@ const data={
 6:[['listening1','Listening 1','listening'],['listening2','Listening 2','listening'],['grammar','Grammar','grammar'],['vocabulary','Vocabulary','vocabulary'],['reading1','Reading 1','reading'],['reading2','Reading 2','reading'],['writing1','Writing 1','writing'],['writing2','Writing 2','writing']],
 7:[['listening1','Listening 1','listening'],['listening2','Listening 2','listening'],['grammar','Grammar','grammar'],['vocabulary','Vocabulary','vocabulary'],['reading1','Reading 1','reading'],['writing','Writing','writing']],
 8:[['listening1','Listening 1','listening'],['listening2','Listening 2','listening'],['grammar','Grammar','grammar'],['vocabulary','Vocabulary','vocabulary'],['reading1','Reading 1','reading'],['reading2','Reading 2','reading'],['writing','Writing','writing']],
-9:[['listening1','Listening 1','listening'],['listening2','Listening 2','listening'],['grammar','Grammar','grammar'],['vocabulary','Vocabulary','vocabulary'],['reading1','Reading 1','reading'],['reading2','Reading 2','reading'],['writing','Writing','writing']],
+9:[['listening1','Listening 1','listening'],['listening2','Listening 2','listening'],['grammarvocabulary','Grammar & Vocabulary','grammar'],['reading1','Reading 1','reading'],['reading2','Reading 2','reading'],['writing','Writing','writing']],
 10:[['listening','Listening','listening'],['grammar','Grammar','grammar'],['vocabulary','Vocabulary','vocabulary'],['reading1','Reading 1','reading'],['reading2','Reading 2','reading'],['writing1','Writing 1','writing'],['writing2','Writing 2','writing']],
-11:[['lst1','Listening 1','listening'],['lst2','Listening 2','listening'],['grammar','Grammar','grammar'],['vocabulary','Vocabulary','vocabulary'],['rdg1','Reading 1','reading'],['rdg2','Reading 2','reading'],['wrt1','Writing 1','writing'],['wrt2','Writing 2','writing']]
+11:[['lst1','Listening 1','listening'],['lst2','Listening 2','listening'],['grammar','Grammar','grammar'],['vocabulary','Vocabulary','vocabulary'],['rdg1','Reading 1','reading'],['rdg2','Reading 2','reading'],['rdg3','Reading 3','reading'],['wrt1','Writing 1','writing'],['wrt2','Writing 2','writing']
 };
 const $=id=>document.getElementById(id);const params=new URLSearchParams(location.search);
 let grade=Number(params.get('grade'))||5;if(grade<5||grade>12)grade=5;
@@ -44,7 +44,7 @@ if(grade<=8)return './grades7-8/index.html?grade='+grade+'&model='+model+'&'+(sk
 if(grade===9)return './grade9/index.html?model='+model+'&'+(skill?'mode=practice&skill='+skill:'mode='+mode);
 if(grade===10)return './grade10/index.html?model='+model+'&'+(skill?'mode=practice&skill='+skill:'mode='+mode);
 if(grade===11 && track==='elective')return './upper-grades-practice.html?track=11-elective&model='+model+'&mode='+(skill?'skill':'full')+(skill?'&skill='+skill:'');
-return './grade11/core/units/paper-a-preview.html'+(skill?'?mode=skill&skill='+skill:'');
+const coreKey=skill==='grammar'?'grm':skill==='vocabulary'?'vcb':skill;return './grade11/core/units/paper-a-preview.html'+(coreKey?'?mode=skill&skill='+coreKey:'');
 }
 function update(){
 const grade=Number($('grade').value),model=$('model').value,track=$('track').value;
@@ -56,7 +56,7 @@ $('crumb').textContent='الصف '+names[grade];
 document.title='مهارات الصف '+names[grade]+' | My Exams';
 const root=$('skills');root.textContent='';
 for(const [id,title,family] of data[grade]){
-if(grade===11&&track==='core'&&['grammar','vocabulary','rdg2'].includes(id))continue;
+
 const link=document.createElement('a');link.className='om-card';link.href=path(grade,model,id,track,'practice');link.setAttribute('aria-label','بدء '+title);
 const symbol=document.createElement('span');symbol.className='om-symbol';symbol.setAttribute('aria-hidden','true');symbol.textContent=icon[family]||'📚';
 const name=document.createElement('strong');name.textContent=title;
