@@ -36,7 +36,7 @@ self.addEventListener('fetch',event=>{
       catch(e){return await fromCache(req)||await fromCache(new URL('index.html',self.registration.scope).href)||Response.error()}
     }
     const path=new URL(req.url).pathname;
-    const sourceFile=/\\.(?:css|js)$/i.test(path);
+    const sourceFile=/\.(?:css|js)$/i.test(path);
     /* Fetch live styles/scripts first; old offline copies must never override an available update. */
     if(sourceFile){
       try{
@@ -45,7 +45,7 @@ self.addEventListener('fetch',event=>{
       }catch(e){}
       return await fromCache(req)||Response.error();
     }
-    const media=/\\.(?:mp3|wav|m4a|ogg|png|jpe?g|webp|svg)$/i.test(path);
+    const media=/\.(?:mp3|wav|m4a|ogg|png|jpe?g|webp|svg)$/i.test(path);
     const cached=await fromCache(req,media);
     if(cached)return req.headers.has('range')?rangeResponse(req,cached):cached;
     try{
