@@ -1,0 +1,82 @@
+name: Validate My Exams interactive Oman portal and study tools
+on:
+  push:
+    branches: [main]
+    paths:
+      - exams.html
+      - index.html
+      - grade-skills.html
+      - grade12-skills.html
+      - shared/oman-theme.css
+      - shared/oman-hero.svg
+      - shared/exam-tools.js
+      - shared/exam-tools.css
+      - grades5-6/index.html
+      - grades7-8/index.html
+      - grade9/index.html
+      - grade10/index.html
+      - upper-grades-practice.html
+      - .github/workflows/oman-student-ui-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify toolbar JS and page scripts parse
+        run: |
+          node --check shared/exam-tools.js
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          import tempfile,subprocess
+          class JS(HTMLParser):
+            def __init__(self):super().__init__();self.active=False;self.codes=[]
+            def handle_starttag(self,tag,attrs):
+              if tag=='script' and not any(k=='src' or (k=='type' and v=='application/json') for k,v in attrs):
+                self.active=True;self.codes.append('')
+            def handle_data(self,value):
+              if self.active:self.codes[-1]+=value
+            def handle_endtag(self,tag):
+              if tag=='script':self.active=False
+          pages=['index.html','exams.html','grade-skills.html','grade12-skills.html',
+            'grades5-6/index.html','grades7-8/index.html','grade9/index.html','grade10/index.html',
+            'upper-grades-practice.html']
+          for page in pages:
+            code=JS();code.feed(Path(page).read_text(encoding='utf8'))
+            for snippet in code.codes:
+              if not snippet.strip():continue
+              with tempfile.TemporaryDirectory() as d:
+                p=Path(d)/'check.js';p.write_text(snippet,encoding='utf8')
+                subprocess.run(['node','--check',str(p)],check=True)
+            print('PASS JS',page)
+          PY
+      - name: Verify all entry paths and tool assets exist
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          from urllib.parse import urlsplit,unquote
+          class Links(HTMLParser):
+            def __init__(self):super().__init__();self.items=[]
+            def handle_starttag(self,tag,attrs):
+              if tag in ('a','script','link'):
+                a=dict(attrs);val=a.get('href') or a.get('src')
+                if val:self.items.append(val)
+          for source in ['index.html','exams.html','grade-skills.html','grade12-skills.html']:
+            p=Path(source)
+            links=Links();links.feed(p.read_text(encoding='utf8'))
+            missing=[url for url in links.items if not urlsplit(url).scheme and not url.startswith('#')
+              and not (p.parent / unquote(urlsplit(url).path)).is_file()]
+            assert not missing,(source,missing)
+            print('PASS LINKS',source,len(links.items))
+          for page,prefix in [('grades5-6/index.html','../'),('grades7-8/index.html','../'),
+                              ('grade9/index.html','../'),('grade10/index.html','../'),
+                              ('upper-grades-practice.html','./')]:
+            s=Path(page).read_text()
+            for asset in ('shared/exam-tools.js','shared/exam-tools.css'):
+              assert prefix+asset in s,(page,asset)
+          print('PASS TOOL ASSETS')
+          PY
