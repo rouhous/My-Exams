@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#174b3c">
+<meta name="description" content="مهارات اللغة الإنجليزية للصف الثاني عشر في سلطنة عُمان: استماع وقراءة وقواعد ومفردات وكتابة وتدريب بدون مؤقت">
+<title>مهارات الصف الثاني عشر | Grade 12 Skills · My Exams</title>
+<style>
+:root{--green:#185447;--deep:#153b35;--gold:#b9954b;--ink:#1b4037;--muted:#5e746a;--bg:#f2f7f3;--line:#d7e3db}
+*{box-sizing:border-box}body{margin:0;font:16px/1.65 system-ui,Tahoma,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:inherit}header{background:linear-gradient(125deg,#103c36,#24775e);border-bottom:5px solid var(--gold);color:white;text-align:center;padding:28px 16px}
+header a{color:#fae5ab}h1{font-size:clamp(28px,5vw,39px);margin:7px 0 4px}header p{margin:5px auto;max-width:720px;color:#e5f6ed}
+main{max-width:1080px;margin:0 auto;padding:17px 14px 45px}
+nav{display:flex;flex-wrap:wrap;gap:15px;margin-bottom:17px}nav a{text-decoration:none;font-weight:750;color:var(--green)}
+.notice{padding:14px 17px;background:#fffaf0;border:1px solid #e1cd9f;border-right:5px solid var(--gold);border-radius:12px;margin-bottom:18px}
+.panel{background:white;border:1px solid var(--line);padding:19px;border-radius:15px;margin:15px 0;box-shadow:0 4px 17px #134b2c0a}
+h2{font-size:20px;margin:0 0 9px}.sub{color:var(--muted);font-size:14px;margin:0 0 14px}
+.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+label{display:block;font-weight:700}select{display:block;width:100%;padding:12px;margin-top:7px;border:1px solid #99b7a8;border-radius:10px;background:#fff;color:#164738;font:inherit}
+fieldset{border:0;padding:0;margin:0}.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:12px}
+.skill{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:white}
+.skill a{display:block;padding:16px;min-height:137px;text-decoration:none;outline-offset:-3px}
+.skill a:hover,.skill a:focus-visible{outline:2px solid var(--green);background:#f3f9f5}
+.skill strong{display:block;font-size:18px;direction:ltr;text-align:left;color:var(--deep)}
+.skill small{display:block;color:var(--muted);font-size:13px;margin:3px 0}
+.skill .go{display:inline-block;margin-top:11px;color:var(--green);font-size:14px;font-weight:800}
+.pill{display:inline-block;background:#e7f1eb;border-radius:9px;color:#27634d;padding:2px 7px;font-size:12px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}.btn{display:inline-block;background:var(--green);color:white;padding:11px 16px;border-radius:10px;text-decoration:none;font-weight:750}.btn.alt{background:#fff;color:var(--green);border:1px solid #9db8a7}
+#unitSection[hidden],#unitControls[hidden]{display:none}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:18px}
+@media(max-width:520px){.skills{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.skill a{padding:12px;min-height:143px}.skill strong{font-size:15px}.filters{grid-template-columns:1fr 1fr}.filters>label:first-child{grid-column:1/-1}}
+</style>
+</head>
+<body>
+<header>
+<div><a href="./exams.html">الاختبارات الرئيسية</a> · <a href="./grade12/elective/index.html">اختبارات Elective</a></div>
+<h1>مهارات الصف الثاني عشر</h1><p dir="ltr">Grade 12 English Skills · Semester 1</p>
+<p>Listening · Grammar · Vocabulary · Reading · Writing</p>
+</header>
+<main>
+<nav><a href="./exams.html">⌂ العودة إلى جميع الاختبارات</a><a href="./upper-grades-practice.html?track=12-core&mode=skill">بنك التدريب الكامل</a></nav>
+<div class="notice" role="note"><strong>للتجربة العملية:</strong> هذه الأنشطة نسخ تدريبية قيد المراجعة، وليست أوراق وزارة معتمدة. المهارات المنفصلة بلا مؤقت. بعض تسجيلات الاستماع لا تُعرض إلا بعد التحقق من تطابقها مع النص؛ وقد يحتاج الاستماع إلى قراءة المعلم. الكتابة والإجابات القصيرة تتطلب مراجعة بشرية.</div>
+<section class="panel">
+<h2>حدد المسار ونموذج التدريب</h2>
+<div class="filters">
+<label for="track">المسار
+<select id="track"><option value="12-core">اللغة الإنجليزية الأساسية · Core</option><option value="12-elective">اللغة الإنجليزية الاختيارية · Elective</option></select></label>
+<label for="model">نموذج بنك الأنشطة
+<select id="model"><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option></select></label>
+<label for="source">مصدر نشاط Elective
+<select id="source"><option value="bank">النماذج A–F</option><option value="unit">وحدة دراسية محددة</option></select></label>
+<label for="unit" id="unitControls" hidden>وحدة Elective
+<select id="unit"><option value="1">Unit 1 · The arts</option><option value="2">Unit 2 · Doing the right thing</option><option value="3">Unit 3 · Living in a Changing World</option><option value="4">Unit 4 · Higher Education</option></select></label>
+</div>
+<p id="scope" class="sub" style="margin-top:12px" aria-live="polite">Core · اختر مهارة للبدء مباشرة بدون مؤقت.</p>
+</section>
+<section class="panel">
+<h2>اختر المهارة للتدريب المباشر</h2>
+<p class="sub">تفتح كل بطاقة النشاط الفعلي على الوضع <span dir="ltr">Single skill · Untimed</span> مع حفظ اختيارك للمسار والنموذج أو الوحدة.</p>
+<div id="skills" class="skills">
+<article class="skill"><a href="./upper-grades-practice.html?track=12-core&mode=skill&model=A&skill=lst1"><strong>Listening 1</strong><small>الاستماع الأول · 7 درجات</small><span class="go">ابدأ التدريب</span></a></article>
+<article class="skill"><a href="./upper-grades-practice.html?track=12-core&mode=skill&model=A&skill=lst2"><strong>Listening 2</strong><small>الاستماع الثاني · 8 درجات</small><span class="go">ابدأ التدريب</span></a></article>
+<article class="skill"><a href="./upper-grades-practice.html?track=12-core&mode=skill&model=A&skill=grammar"><strong>Grammar</strong><small>القواعد · 5 درجات</small><span class="go">ابدأ التدريب</span></a></article>
+<article class="skill"><a href="./upper-grades-practice.html?track=12-core&mode=skill&model=A&skill=vocabulary"><strong>Vocabulary</strong><small>المفردات · 5 درجات</small><span class="go">ابدأ التدريب</span></a></article>
+<article class="skill"><a href="./upper-grades-practice.html?track=12-core&mode=skill&model=A&skill=rdg1"><strong>Reading 1</strong><small>القراءة الأولى · 7 درجات</small><span class="go">ابدأ التدريب</span></a></article>
+<article class="skill"><a href="./upper-grades-practice.html?track=12-core&mode=skill&model=A&skill=rdg2"><strong>Reading 2</strong><small>القراءة الثانية · 8 درجات</small><span class="go">ابدأ التدريب</span></a></article>
+<article class="skill"><a href="./upper-grades-practice.html?track=12-core&mode=skill&model=A&skill=rdg3"><strong>Reading 3</strong><small>القراءة الثالثة · 10 درجات</small><span class="go">ابدأ التدريب</span></a></article>
+<article class="skill"><a href="./upper-grades-practice.html?track=12-core&mode=skill&model=A&skill=wrt1"><strong>Writing 1</strong><small>الكتابة الأولى · تصحيح المعلم</small><span class="go">ابدأ التدريب</span></a></article>
+<article class="skill"><a href="./upper-grades-practice.html?track=12-core&mode=skill&model=A&skill=wrt2"><strong>Writing 2</strong><small>الكتابة الثانية · تصحيح المعلم</small><span class="go">ابدأ التدريب</span></a></article>
+</div>
+</section>
+<section class="panel">
+<h2>اختبارات كاملة أو عشوائية</h2>
+<p class="sub">يمكنك تجربة الاختبار الكامل بمؤقت، أو الاختبارات العشوائية التي تختار مهام كاملة من بنك المراجعة. نماذج الوحدات الأصلية للغة الاختيارية منفصلة.</p>
+<div class="actions">
+<a id="full" class="btn" href="./upper-grades-practice.html?track=12-core&mode=full&model=A">اختبار كامل بمؤقت</a>
+<a id="random" class="btn alt" href="./upper-grades-practice.html?track=12-core&mode=random">اختبار عشوائي</a>
+<a id="unitExam" class="btn alt" href="./grade12/elective/index.html">اختبارات وحدات Elective</a>
+<a class="btn alt" href="./grade12/core/units/paper-a-preview.html">معاينة Core · Unit 1</a>
+</div>
+</section>
+</main><footer>My Exams · مدرسة وادي الحواسنة · Houssem Rouatbi · نسخة مراجعة تعليمية</footer>
+<script>
+(function(){
+'use strict';
+const $=id=>document.getElementById(id);
+const catalogue={
+  '12-core':[
+   ['lst1','Listening 1','الاستماع الأول · 7 درجات'],['lst2','Listening 2','الاستماع الثاني · 8 درجات'],
+   ['grammar','Grammar','القواعد · 5 درجات'],['vocabulary','Vocabulary','المفردات · 5 درجات'],
+   ['rdg1','Reading 1','القراءة الأولى · 7 درجات'],['rdg2','Reading 2','القراءة الثانية · 8 درجات'],
+   ['rdg3','Reading 3','القراءة الثالثة · 10 درجات'],['wrt1','Writing 1','الكتابة الأولى · تصحيح المعلم'],
+   ['wrt2','Writing 2','الكتابة الثانية · تصحيح المعلم']],
+  '12-elective':[
+   ['lst1','Listening 1','الاستماع الأول'],['lst2','Listening 2','الاستماع الثاني'],
+   ['rdg1','Reading 1','القراءة الأولى'],['rdg2','Reading 2','القراءة الثانية'],
+   ['wrt1','Writing 1','الكتابة الأولى · تصحيح المعلم'],['wrt2','Writing 2','الكتابة الثانية · تصحيح المعلم']]
+};
+function linkToSkill(t,source,model,unit,skill){
+ if(t==='12-elective'&&source==='unit')return './grade12/elective/units/paper-a-preview.html?unit='+unit+'&mode=skill&skill='+encodeURIComponent(skill);
+ return './upper-grades-practice.html?track='+t+'&mode=skill&model='+model+'&skill='+encodeURIComponent(skill);
+}
+function redraw(){
+ const t=$('track').value,model=$('model').value,source=t==='12-elective'?$('source').value:'bank',unit=$('unit').value;
+ $('source').parentElement.hidden=t!=='12-elective';
+ $('unitControls').hidden=t!=='12-elective'||source!=='unit';
+ $('model').parentElement.hidden=t==='12-elective'&&source==='unit';
+ $('scope').textContent=t==='12-core'?'Core · النموذج '+model+' · 9 مهارات منفصلة، لا مؤقت أثناء التدريب':source==='unit'?'Elective · Unit '+unit+' · 6 أنشطة مأخوذة من مراجعة الوحدة':'Elective · النموذج '+model+' · 6 مهارات منفصلة';
+ const root=$('skills');root.textContent='';
+ for(const [key,title,detail] of catalogue[t]){
+  const article=document.createElement('article');article.className='skill';
+  const a=document.createElement('a');a.href=linkToSkill(t,source,model,unit,key);
+  const strong=document.createElement('strong');strong.textContent=title;
+  const small=document.createElement('small');small.textContent=detail;
+  const go=document.createElement('span');go.className='go';go.textContent='ابدأ التدريب';
+  a.append(strong,small,go);article.append(a);root.append(article);
+ }
+ $('full').href=t==='12-elective'&&source==='unit'?'./grade12/elective/units/paper-a-preview.html?unit='+unit+'&mode=full':'./upper-grades-practice.html?track='+t+'&mode=full&model='+model;
+ $('random').href='./upper-grades-practice.html?track='+t+'&mode=random';
+}
+const p=new URLSearchParams(location.search);
+if(['12-core','12-elective'].includes(p.get('track')))$('track').value=p.get('track');
+if(['A','B','C','D','E','F'].includes(p.get('model')))$('model').value=p.get('model');
+if(['1','2','3','4'].includes(p.get('unit'))){$('unit').value=p.get('unit');$('source').value='unit';}
+for(const id of ['track','model','source','unit'])$(id).addEventListener('change',redraw);
+redraw();
+})();
+</script>
+</body></html>
