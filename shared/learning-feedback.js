@@ -130,7 +130,7 @@ function mount(){
   seen.add(ta);
   const panel=d.createElement("div");panel.className="mex-ai-panel";
   const button=d.createElement("button");button.type="button";button.className="mex-ai-trigger";button.textContent="✨ راجع كتابتي بالذكاء الاصطناعي · AI Writing Feedback";
-  const status=d.createElement("p");status.className="mex-ai-status";status.textContent="تقدير تدريبي فقط — تصحيح المعلم هو المرجع.";
+  const status=d.createElement("p");status.className="mex-ai-status";status.textContent="تقدير تدريبي فقط. عند الضغط يُرسل النص إلى خدمة AI للمراجعة؛ لا تُدخل بيانات شخصية.";
   const result=d.createElement("div");result.className="mex-ai-result";
   panel.append(button,status,result);ta.insertAdjacentElement("afterend",panel);
   button.addEventListener("click",async()=>{
