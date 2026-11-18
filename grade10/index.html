@@ -19,7 +19,7 @@ textarea{min-height:160px;resize:vertical}.passage{background:#f1f7f3;padding:15
 small,.muted{color:#5c7168}.hidden{display:none!important}.meta{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between}
 #clock{font-variant-numeric:tabular-nums;font-size:20px;font-weight:700}.score{font-size:20px}
 @media print{header,.controls,.notice,.no-print{display:none!important}body{background:white}.section{break-inside:avoid;border:none;padding:4px}}
-</style></head><body>
+</style><link rel="stylesheet" href="../shared/exam-tools.css"></head><body>
 <header><h1>My Exams · Grade 10</h1><p>Original Semester 1 English practice — student review pilot</p><a href="../index.html">Back to My Exams home</a></header>
 <main>
 <div class="notice"><strong>Teacher review / pilot version.</strong> Models A–D follow the bank's four unit themes; E/F are mixed comprehensive practice. This is not an official Ministry paper. Vocabulary, grammar, reading and writing still require final textbook and assessment-specification review.</div>
@@ -133,4 +133,4 @@ $('submit').addEventListener('click',evaluateAnswers);
 $('offline').addEventListener('click',prepareOffline);
 init();
 })();
-</script></body></html>
+</script><script>window.addEventListener('load',()=>{const p=new URLSearchParams(location.search);const model=p.get('model');if(model&&[...document.querySelectorAll('#model option')].some(o=>o.value===model)){document.getElementById('model').value=model;document.getElementById('model').dispatchEvent(new Event('change'))}const skill=p.get('skill');if(p.get('mode')==='practice'||skill){document.getElementById('mode').value='practice';document.getElementById('mode').dispatchEvent(new Event('change'))}if(skill){const opts=[...document.querySelectorAll('#skill option')];if(opts.some(o=>o.value===skill))document.getElementById('skill').value=skill;document.getElementById('start')?.click()}});</script><script defer src="../shared/exam-tools.js"></script></body></html>
