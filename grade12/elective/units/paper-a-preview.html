@@ -59,6 +59,13 @@ if(!unitNames[unitNumber])throw Error('Unsupported unit number');
 document.title=mixed?'Grade 12 Elective · Comprehensive Mixed Units · Teacher Review':'Grade 12 Elective · Unit '+unitNumber+' · '+unitNames[unitNumber]+' · Teacher Review';
 document.querySelector('header h1').textContent=mixed?'Grade 12 Elective · Comprehensive random unit exam (Draft)':'Grade 12 Elective · Unit '+unitNumber+': '+unitNames[unitNumber]+' · Paper A (Draft)';
 const order=['lst1','lst2','rdg1','rdg2','wrt1','wrt2'];
+const requestedMode=params.get('mode'),requestedSkill=params.get('skill');
+if(requestedMode==='skill' && order.includes(requestedSkill)){
+ $('mode').value='skill';
+ $('skillWrap').hidden=false;
+ $('skill').value=requestedSkill;
+}
+
 const name={lst1:'Listening 1',lst2:'Listening 2',rdg1:'Reading 1',rdg2:'Reading 2',wrt1:'Writing 1',wrt2:'Writing 2'};
 const files=(mixed?[1,2,3,4]:[unitNumber]).flatMap(n=>['listening1','listening2','reading1','reading2','writing'].map(k=>'unit'+n+'-'+k+'-original-draft.json'));
 let audioFiles={},sourceByKey={},tasks={},questions=[],onPaper=false,submitted=false,clockId=null,clockLength=0,clockStarted=0,selected=[];
