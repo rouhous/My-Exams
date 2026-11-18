@@ -108,6 +108,13 @@ function mount(){
   const result=d.createElement("div");result.className="mex-ai-result";
   panel.append(button,status,result);ta.insertAdjacentElement("afterend",panel);
   button.addEventListener("click",async()=>{
+   const mode=String(d.querySelector("#mode")?.value||"").toLowerCase();
+   const fullExam=["exam","full","random"].includes(mode);
+   const finishControl=d.querySelector("#submit,#end,#finish,#finishBtn");
+   if((fullExam||(!mode&&finishControl))&&finishControl&&!finishControl.disabled){
+     status.textContent="تظهر مراجعة AI بعد تسليم الاختبار الكامل. في تدريب المهارة يمكنك طلبها مباشرة.";
+     return;
+   }
    const value=ta.value.trim(),info=metadata(ta);
    if(value.length<50){status.textContent="اكتب 50 حرفًا على الأقل قبل طلب المراجعة.";return}
    if(value.length>7000){status.textContent="الحد الأقصى 7000 حرف.";return}
