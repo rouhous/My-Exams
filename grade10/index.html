@@ -54,14 +54,14 @@ function evaluate(value,question){
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
-</script></head><body>
+</script><script src="../shared/data-charts.js?v=1"></script></head><body>
 <header><h1>My Exams · Grade 10</h1><p>English Language · Semester 1</p><a href="../index.html">Back to My Exams home</a></header>
 <main>
 
 <div class="panel"><div class="controls">
 <label>Model <select id="model"><option value="A">A · New Media</option><option value="B">B · Climate Change</option><option value="C">C · Renewable Energy</option><option value="D">D · Civilisation</option><option value="E">E · Mixed</option><option value="F">F · Mixed</option></select></label>
 <label>Mode <select id="mode"><option value="exam">Full exam · timed</option><option value="practice">Single skill · untimed</option></select></label>
-<label id="skillWrap" class="hidden">Skill <select id="skill"><option value="listening">Listening</option><option value="vocabulary">Vocabulary</option><option value="grammar">Grammar</option><option value="reading1">Reading 1</option><option value="reading2">Reading 2</option><option value="writing1">Writing 1</option><option value="writing2">Writing 2</option></select></label>
+<label id="skillWrap" class="hidden">Skill <select id="skill"><option value="listening">Listening</option><option value="vocabulary">Vocabulary</option><option value="grammar">Grammar</option><option value="reading1">Reading 1</option><option value="reading2">Reading 2</option><option value="writing1">Writing 1</option><option value="writing2">Writing 2</option><option value="dataAnalysis">Data Analysis · Charts (practice)</option></select></label>
 <button id="start">Start</button><button id="random" class="alt">New random comprehensive</button><button id="offline" class="alt">Save selected model offline</button>
 </div><div class="meta"><span id="intro">Loading exam data…</span><span id="clock">150:00</span></div><div id="status" role="status"></div></div>
 <div id="exam"></div>
@@ -102,7 +102,7 @@ function renderQuestion(q,i,prefix){
 }
 function renderSection(section,i){
  var data=section.data,key=section.skill;
- var h='<section class="section" data-skill="'+key+'"><h2>'+esc(key.replace(/(\d)/g,' $1').toUpperCase())+'</h2>';
+ var h='<section class="section" data-skill="'+key+'"><h2>'+esc(key==='dataAnalysis'?'DATA ANALYSIS · CHART DESCRIPTION':key.replace(/(\d)/g,' $1').toUpperCase())+'</h2>';
  var origin=(current()?.unitSources||[]).find(x=>x.section===key||x.skill===key);
  if(origin)h+='<p class="muted">Mixed revision source: Model '+esc(origin.model||origin.sourceModel)+' · '+esc(origin.unit||'original unit')+' (reused practice activity)</p>';
  if(key==='listening'){
@@ -111,8 +111,11 @@ function renderSection(section,i){
   else h+='<p class="notice">Natural audio is being prepared for this model.</p>';
   if($('mode').value==='practice')h+='<details><summary>Show practice transcript</summary><p class="passage">'+esc(data.passage)+'</p></details>';
  }else if(data.passage){h+='<div class="passage">'+esc(data.passage)+'</div>'}
- if(key.startsWith('writing')){
-  h+='<p>'+esc(data.prompt)+'</p><textarea name="'+key+'" aria-label="'+key+' writing draft"></textarea><p class="muted"><span class="words">0</span> words · Writing responses are assessed by your teacher</p>';
+ if(key.startsWith('writing')||key==='dataAnalysis'){
+  if(data.chart)h+=window.MyExamsCharts.render(data.chart);
+   h+='<p>'+esc(data.prompt)+'</p>';
+   if(key==='dataAnalysis')h+='<p class="notice">Separate untimed practice activity · fictional data · not part of the official full-exam score.</p>';
+   h+='<textarea name="'+key+'" aria-label="'+key+' writing draft"></textarea><p class="muted"><span class="words">0</span> words · Writing responses are assessed by your teacher</p>';
  }else{h+=(data.questions||[]).map((q,j)=>renderQuestion(q,j,key)).join('')}
  return h+'</section>';
 }
@@ -131,7 +134,7 @@ function evaluateAnswers(){
  if(!active)return;
  stopTimer();let total=0,correct=0;
  active.forEach(part=>{
-  if(part.skill.startsWith('writing'))return;
+  if(part.skill.startsWith('writing')||part.skill==='dataAnalysis')return;
   (part.data.questions||[]).forEach((q,i)=>{
    total++;
    const name=part.skill+'-'+i;const input=[...document.querySelectorAll('#exam input')].find(n=>n.name===name&&(n.type==='text'||n.checked));
