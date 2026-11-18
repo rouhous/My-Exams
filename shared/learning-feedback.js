@@ -32,8 +32,8 @@ function rule(q,expected){
 function explanation(q,ctx={},override){
  const expected=answer(q,override),type=String(ctx.skill||ctx.key||q?.skill||"").toLowerCase();
  return {expected,rule:/gram/.test(type)?rule(q,expected):"",
-   meaning:/vocab|spell|word/.test(type)?q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||"":"",
-   example:/vocab|spell|word/.test(type)&&/_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,expected):"",
+   meaning:/vocab|spell|word/.test(type)?q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||( /_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,expected):""):"",
+   example:/vocab|spell|word/.test(type)&&/_{2,}/.test(q?.stem||"")&&(q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning)?String(q.stem).replace(/_{2,}/,expected):"",
    evidence:q?.evidence||q?.sourceQuote||evidence(expected,q?.script||q?.transcript||q?.passage||ctx.script||ctx.transcript||ctx.passage||ctx.text||""),
    kind:/listen|lst/.test(type)?"Listening script":"Reading text"};
 }
@@ -44,7 +44,12 @@ function feedback(q,ctx={},ok=false,override){
  if(p.rule)html+='<p><b>Grammar rule:</b> '+esc(p.rule)+'</p>';
  if(p.meaning)html+='<p><b>Word meaning:</b> '+esc(p.meaning)+'</p>';
  if(p.example)html+='<p><b>Example:</b> '+esc(p.example)+'</p>';
- if(p.evidence)html+='<p><b>From the '+esc(p.kind)+':</b></p><blockquote>'+esc(p.evidence)+'</blockquote>';
+ if(p.evidence){
+  let quote=esc(p.evidence);
+  const pos=p.evidence.toLowerCase().indexOf(p.expected.toLowerCase());
+  if(pos>=0&&p.expected){quote=esc(p.evidence.slice(0,pos))+'<mark>'+esc(p.evidence.slice(pos,pos+p.expected.length))+'</mark>'+esc(p.evidence.slice(pos+p.expected.length))}
+  html+='<p><b>From the '+esc(p.kind)+':</b></p><blockquote>'+quote+'</blockquote>';
+ }
  if(!p.rule&&!p.meaning&&!p.example&&!p.evidence)html+='<p class="mex-fb-note">Compare your response with the reference answer. No verified explanation or source sentence was stored for this item.</p>';
  return html+'</div>';
 }
@@ -73,7 +78,7 @@ function metadata(ta){
 const style=d.createElement("style");style.id="mex-feedback-style-v1";
 style.textContent=[
 '.mex-fb{font:14px/1.6 system-ui,Arial,sans-serif;direction:ltr;text-align:left;margin:9px 0 12px;padding:11px 13px;border:1px solid #b8d5c7;border-left:4px solid #0a7859;border-radius:10px;background:#f2faf5;color:#1b4036}',
-'.mex-fb-try{background:#fff8ef;border-color:#ead7b2;border-left-color:#b78839;color:#503b20}.mex-fb p{margin:6px 0}.mex-fb blockquote{margin:6px 0;padding:9px;background:#fff;border-left:3px solid #be9d50}.mex-fb-note{font-size:12px;color:#60766c}',
+'.mex-fb mark{background:#ffdb63;padding:1px 2px;border-radius:2px;color:#263b27}.mex-fb-try{background:#fff8ef;border-color:#ead7b2;border-left-color:#b78839;color:#503b20}.mex-fb p{margin:6px 0}.mex-fb blockquote{margin:6px 0;padding:9px;background:#fff;border-left:3px solid #be9d50}.mex-fb-note{font-size:12px;color:#60766c}',
 '.mex-ai-panel{margin:12px 0 18px;padding:12px;border:1px solid #b8d5c7;border-radius:12px;background:#f7fcf8;direction:rtl;text-align:right}',
 '.mex-ai-trigger{min-height:44px;padding:9px 14px;border:0;border-radius:9px;background:#0b6348;color:white;font:700 14px system-ui,sans-serif;cursor:pointer}.mex-ai-trigger:disabled{opacity:.55;cursor:wait}',
 '.mex-ai-status{font:13px/1.6 system-ui,sans-serif;margin:7px 0}.mex-ai-result{font:14px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}',
