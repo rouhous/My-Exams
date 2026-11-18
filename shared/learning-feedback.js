@@ -55,9 +55,9 @@ const GLOSSES={
 };
 function explanation(q,ctx={},override){
  const expected=answer(q,override),type=String(ctx.skill||ctx.key||q?.skill||"").toLowerCase();
- return {expected,rule:/gram/.test(type)?rule(q,expected,ctx):"",
-   meaning:/vocab|spell|word/.test(type)?q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(expected)]||( /_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,expected):""):"",
-   example:/gram/.test(type)?completedGap(q,ctx,expected):/vocab|spell|word/.test(type)&&/_{2,}/.test(q?.stem||"")&&(q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(expected)])?String(q.stem).replace(/_{2,}/,expected):"",
+ return {expected,rule:/gram|^grm$/.test(type)?rule(q,expected,ctx):"",
+   meaning:/vocab|^vcb$|spell|word/.test(type)?q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(expected)]||( /_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,expected):""):"",
+   example:/gram|^grm$/.test(type)?completedGap(q,ctx,expected):/vocab|^vcb$|spell|word/.test(type)&&/_{2,}/.test(q?.stem||"")&&(q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(expected)])?String(q.stem).replace(/_{2,}/,expected):"",
    evidence:q?.evidence||q?.sourceQuote||evidence(expected,q?.script||q?.transcript||q?.passage||ctx.script||ctx.transcript||ctx.passage||ctx.text||""),
    kind:/listen|lst/.test(type)?"Listening script":"Reading text"};
 }
