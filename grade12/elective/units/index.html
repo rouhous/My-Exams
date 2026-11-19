@@ -75,7 +75,7 @@ try{
     '<input type="text" aria-label="'+e(q.stem)+'" name="q'+i+'" maxlength="120" autocomplete="off" placeholder="'+(q.type==='note'?'≤ 2 words / a number':'≤ 4 words')+'">';
   return '<div class="q"><strong>'+(i+1)+'. '+e(q.stem)+'</strong>'+options+'</div>';
  }).join('');$('mark').disabled=false;
-}catch(err){if(kind===$('task').value)$('quiz').textContent='Draft not available: '+err.message}
+}catch(err){if(kind===$('task').value)$('quiz').textContent='Unable to load the activity: '+err.message}
 finally{loading=false}
 }
 $('task').addEventListener('change',load);

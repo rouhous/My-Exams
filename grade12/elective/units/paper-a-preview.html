@@ -90,7 +90,7 @@ const unitNumber=Number(params.get('unit'))||1;
 const unitNames={1:'The arts',2:'Doing the right thing',3:'Living in a Changing World',4:'Higher Education'};
 if(!unitNames[unitNumber])throw Error('Unsupported unit number');
 document.title=mixed?'Grade 12 Elective · Comprehensive Mixed Units · Teacher Review':'Grade 12 Elective · Unit '+unitNumber+' · '+unitNames[unitNumber]+' · Teacher Review';
-document.querySelector('header h1').textContent=mixed?'Grade 12 Elective · Comprehensive random unit exam (Draft)':'Grade 12 Elective · Unit '+unitNumber+': '+unitNames[unitNumber]+' · Paper A';
+document.querySelector('header h1').textContent=mixed?'Grade 12 Elective · Comprehensive random unit exam':'Grade 12 Elective · Unit '+unitNumber+': '+unitNames[unitNumber]+' · Paper A';
 const order=['lst1','lst2','rdg1','rdg2','wrt1','wrt2'];
 const requestedMode=params.get('mode'),requestedSkill=params.get('skill');
 if(requestedMode==='skill' && order.includes(requestedSkill)){
