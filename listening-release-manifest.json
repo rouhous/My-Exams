@@ -1,0 +1,474 @@
+{
+  "grades5-6/audio-reviewed/g5-a-listening-1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 148.92,
+    "bytes": 1191596,
+    "sha256": "3873f76238efc79f64abbd0495e3fd88fe1b92f4519641346892f35d8edcfc96"
+  },
+  "grades5-6/audio-reviewed/g5-b-listening-1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 135.67,
+    "bytes": 1085612,
+    "sha256": "24e4bb72b2528a707233df36544ae3377da90891a935170ee675ade0fa51a190"
+  },
+  "grades5-6/audio-reviewed/g5-c-listening-1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 218.9,
+    "bytes": 1751468,
+    "sha256": "6545e15710ad687dd6869dfcfed3e0f1d116836ed64a24a15498c18cd973bc99"
+  },
+  "grades5-6/audio-reviewed/g5-d-listening-1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 144.7,
+    "bytes": 1157804,
+    "sha256": "5e8054a6bb032d7bd2b31e73f65f6543cf4ac44f04ee766ecf81b9a5a4b61d05"
+  },
+  "grades5-6/audio-reviewed/g6-a-listening-1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 136.73,
+    "bytes": 1094060,
+    "sha256": "0021fd3dd0d0cae258c447a0bfa055a69bfd6ffeb9f16aed2902e4c64822013f"
+  },
+  "grades5-6/audio-reviewed/g6-b-listening-1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 139.37,
+    "bytes": 1115180,
+    "sha256": "f0c443cd9b25263d1aebb49e8fa9617200122afdfbb68f4f0b680d4a4027f6b4"
+  },
+  "grades5-6/audio-reviewed/g6-c-listening-1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 139.7,
+    "bytes": 1117868,
+    "sha256": "c31007e0291d3204e37a251c4db3fc1dd117ed0e4563c569d9eaa00eb96e55b5"
+  },
+  "grades5-6/audio-reviewed/g6-d-listening-1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 171.19,
+    "bytes": 1369772,
+    "sha256": "494451da7cb34f7f7b27105f96c2615136108706e4d188f656de32952d7b0816"
+  },
+  "grades5-6/audio-reviewed/g6-d-listening-2.mp3": {
+    "sequence": [
+      "complete passage",
+      "Now listen again.",
+      "complete passage"
+    ],
+    "seconds": 131.45,
+    "bytes": 1051820,
+    "sha256": "b6f0dbdf3b568b42d7c399ca2d40e3807bac597d1f48f08e7278b333af21c1bd"
+  },
+  "grades7-8/assets/audio-reviewed/g7-a-listening1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 224.62,
+    "bytes": 1797164,
+    "sha256": "c5b5fa826664c5808bf8f63c3089055355e4306f0715a2696e8dd5f82f088153"
+  },
+  "grades7-8/assets/audio-reviewed/g7-b-listening1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 238.15,
+    "bytes": 1905452,
+    "sha256": "8107af136e31d6d55ea016e3c82e4999492fcbaaa051b92de28cec0c749ac21e"
+  },
+  "grades7-8/assets/audio-reviewed/g7-c-listening1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 220.73,
+    "bytes": 1766060,
+    "sha256": "0556e51e51a7b31914aceb7fe304a985280fa3a92c91978b3d6cad4d15f604c5"
+  },
+  "grades7-8/assets/audio-reviewed/g7-d-listening1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 194.18,
+    "bytes": 1553708,
+    "sha256": "35eba901afe9dcb73d7ff383b66d8031306e648044948dc90995ee0a8cd258bf"
+  },
+  "grades7-8/assets/audio-reviewed/g7-d-listening2.mp3": {
+    "sequence": [
+      "complete passage",
+      "Now listen again.",
+      "complete passage"
+    ],
+    "seconds": 200.33,
+    "bytes": 1602860,
+    "sha256": "68cff1ac6bc55e25faddbda3e43377187d6ef0dfafd475f329da1f9343db3a5d"
+  },
+  "grades7-8/assets/audio-reviewed/g8-a-listening1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 238.58,
+    "bytes": 1908908,
+    "sha256": "2542175a0a319807868b6d1da557b8f339b477971c8b7562e3f5a6bb795bbe45"
+  },
+  "grades7-8/assets/audio-reviewed/g8-b-listening1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 229.03,
+    "bytes": 1832492,
+    "sha256": "0f10c5d54eb401a4edbfc2931bf88f5d3948a9e4913f24ef9f2c34fe8ed5e029"
+  },
+  "grades7-8/assets/audio-reviewed/g8-c-listening1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 218.81,
+    "bytes": 1750700,
+    "sha256": "c76e7c5a69317b82ab2f83f06d2c6ea052bdfd341a68036843de8a9618e5a0ba"
+  },
+  "grades7-8/assets/audio-reviewed/g8-d-listening1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 201.38,
+    "bytes": 1611308,
+    "sha256": "baff93f13a77072fe7d5db60c585fe13585c8f5efc1937af12bcf2cd7bd80815"
+  },
+  "grades7-8/assets/audio-reviewed/g8-d-listening2.mp3": {
+    "sequence": [
+      "complete passage",
+      "Now listen again.",
+      "complete passage"
+    ],
+    "seconds": 196.49,
+    "bytes": 1572140,
+    "sha256": "c396558778d7bf75c99efb6b8493f7c3da794f071df8ff2894c979bb09b98da4"
+  },
+  "grade9/audio-reviewed/g9-a-listening-1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 245.16,
+    "bytes": 1961516,
+    "sha256": "6a671d9b03ea14989420b615259f58cac3096b40cf3d78d90d35c79df29cc0e5"
+  },
+  "grade9/audio-reviewed/g9-b-listening-1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 252.26,
+    "bytes": 2018348,
+    "sha256": "8130203446ab27d42cd5b12d733ecaa03c3ff0589175de3afbb821e3a5d06547"
+  },
+  "grade9/audio-reviewed/g9-c-listening-1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 239.11,
+    "bytes": 1913132,
+    "sha256": "02af925ffde1e39612aaf4aee2a57927f62a8fa42248cd20c994285488e9a097"
+  },
+  "grade9/audio-reviewed/g9-d-listening-1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 233.21,
+    "bytes": 1865900,
+    "sha256": "5116efb6a15ed78bb2fab8aaac4e700e9ce7bf5ae56971209ce512781d1a25ce"
+  },
+  "grade9/audio-reviewed/g9-d-listening-2.mp3": {
+    "sequence": [
+      "complete passage",
+      "Now listen again.",
+      "complete passage"
+    ],
+    "seconds": 211.82,
+    "bytes": 1694828,
+    "sha256": "af6f7ccc034dd7ac702c688462827ff1089c8738258ff6d7dab70cfc8c7b103d"
+  },
+  "grade9/audio-reviewed/g9-g-listening-1.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 246.12,
+    "bytes": 1969196,
+    "sha256": "b576ad55307898775bd5146aa92cba89801273ad2616ccb632ac22bb1c1e0b6f"
+  },
+  "grade9/unit-exams/audio/g9-u1-listening-1-two-pass.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 258.12,
+    "bytes": 2065196,
+    "sha256": "9213fc89bc00226477da42ba61193f4375cfb4b2149f1eb183cc80eead0ae9c7"
+  },
+  "grade9/unit-exams/audio/g9-u2-listening-1-two-pass.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 254.9,
+    "bytes": 2039468,
+    "sha256": "a2a761f45703229d4c91f0570943531263d551e3ea291d720f7390dd37e18000"
+  },
+  "grade9/unit-exams/audio/g9-u3-listening-1-two-pass.mp3": {
+    "sequence": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "Now listen again.",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "seconds": 248.9,
+    "bytes": 1991468,
+    "sha256": "2e24d02fab18aa220c14c4490223e853d9817abd31e88cec9de85737a12efbcf"
+  }
+}
