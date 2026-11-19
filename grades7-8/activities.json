@@ -982,123 +982,119 @@
         "key": "listening1",
         "label": "Listening 1",
         "marks": 5,
+        "type": "picture-choice",
+        "audio": "assets/audio/g7-d-listening1.mp3",
         "items": [
           {
-            "stem": "Which instrument will the pupil play in the show?",
+            "stem": "Which instrument will the student perform with?",
             "options": [
-              "guitar",
-              "drum",
-              "piano"
+              "violin",
+              "flute",
+              "drum"
+            ],
+            "images": [
+              "violin-stage-g7d",
+              "flute-school-g7d",
+              "hand-drum-g7d"
+            ],
+            "answer": 0,
+            "script": "I played the flute last term, and my friend performs with a drum. This year, I have practised the violin every evening, so I will play a short piece on it during our school assembly next week."
+          },
+          {
+            "stem": "Where did the children try making bowls?",
+            "options": [
+              "pottery workshop",
+              "cinema",
+              "museum gallery"
+            ],
+            "images": [
+              "pottery-workshop-g7d",
+              "cinema-seats-g7d",
+              "museum-gallery-g7d"
+            ],
+            "answer": 0,
+            "script": "On our school trip, we first passed the cinema and admired the old museum building. The most interesting stop was a pottery workshop, where a craftsperson taught us to shape wet clay into small bowls."
+          },
+          {
+            "stem": "Which animal did the guide point out?",
+            "options": [
+              "eagle",
+              "Arabian oryx",
+              "fox"
+            ],
+            "images": [
+              "eagle-rock-g7d",
+              "oryx-reserve-g7d",
+              "fox-desert-g7d"
             ],
             "answer": 1,
-            "images": [
-              "guitar",
-              "drum",
-              "piano"
-            ],
-            "script": "Our school is organising a music show next Friday. I practised the guitar last year, and I can play a little piano, but neither instrument is part of my performance this time. I have joined the percussion group, so I will play the drum on stage."
+            "script": "The guide said an eagle sometimes circles above the valley, and a fox may come out at night. This morning we were lucky to watch an Arabian oryx walking slowly beside a group of acacia trees."
           },
           {
-            "stem": "What item did the stage manager forget?",
+            "stem": "Where will the school performance take place?",
             "options": [
-              "microphone",
-              "camera",
-              "book"
-            ],
-            "answer": 0,
-            "images": [
-              "mic",
-              "camera",
-              "book"
-            ],
-            "script": "The drama club arrived early for its rehearsal. Everyone had brought their scripts, and a parent had already prepared a camera for the photographs. However, the stage manager discovered that the microphone was still in the classroom, so she asked someone to collect it."
-          },
-          {
-            "stem": "Where will the final performance take place?",
-            "options": [
-              "school",
-              "library",
+              "school hall",
+              "open-air courtyard",
               "museum"
             ],
-            "answer": 0,
             "images": [
-              "school",
-              "library",
-              "landmark"
+              "school-hall-g7d",
+              "courtyard-stage-g7d",
+              "museum-front-g7d"
             ],
-            "script": "The young performers first wanted to use the public library, but the room was too small for their audience. The museum offered an outdoor space, although the weather might change. In the end, the head teacher agreed to let them perform in the school hall."
+            "answer": 1,
+            "script": "The school hall is being painted, and the museum cannot host visitors that evening. The drama club has therefore arranged its performance in an open-air courtyard, with chairs for families near the small stage."
           },
           {
-            "stem": "Which activity did the student choose after school?",
+            "stem": "What will Leena bring to watch distant birds?",
             "options": [
-              "painting",
-              "football",
-              "playing guitar"
+              "umbrella",
+              "headphones",
+              "binoculars"
+            ],
+            "images": [
+              "umbrella-hike-g7d",
+              "headphones-hike-g7d",
+              "binoculars-g7d"
             ],
             "answer": 2,
-            "images": [
-              "palette",
-              "football",
-              "guitar"
-            ],
-            "script": "I tried painting in the art club and watched my friends play football, but I wanted an activity that involved music. My cousin showed me how to play a few chords, and I have now joined the guitar club, where we rehearse twice a week."
-          },
-          {
-            "stem": "How will the pupils travel to the music festival?",
-            "options": [
-              "bus",
-              "train",
-              "plane"
-            ],
-            "answer": 0,
-            "images": [
-              "bus",
-              "train-front",
-              "plane"
-            ],
-            "script": "Our class will attend a music festival in another town. Some students asked whether we would fly, while others suggested going by train. Our teacher explained that the journey was short and the school had already booked a bus for everyone to travel together."
+            "script": "Leena checked the weather before the nature walk. She left her umbrella at home because no rain was expected, and she did not need headphones. She packed her binoculars so she could watch birds from a distance."
           }
         ],
-        "type": "picture-choice",
         "instructions": "You will hear five short texts twice. For each text choose the correct picture A, B or C.",
-        "audio": "assets/audio/g7-a-listening1.mp3",
-        "transcript": "Listening one. You will hear five short texts twice. Text 1. Our school is organising a music show next Friday. I practised the guitar last year, and I can play a little piano, but neither instrument is part of my performance this time. I have joined the percussion group, so I will play the drum on stage. Text 2. The drama club arrived early for its rehearsal. Everyone had brought their scripts, and a parent had already prepared a camera for the photographs. However, the stage manager discovered that the microphone was still in the classroom, so she asked someone to collect it. Text 3. The young performers first wanted to use the public library, but the room was too small for their audience. The museum offered an outdoor space, although the weather might change. In the end, the head teacher agreed to let them perform in the school hall. Text 4. I tried painting in the art club and watched my friends play football, but I wanted an activity that involved music. My cousin showed me how to play a few chords, and I have now joined the guitar club, where we rehearse twice a week. Text 5. Our class will attend a music festival in another town. Some students asked whether we would fly, while others suggested going by train. Our teacher explained that the journey was short and the school had already booked a bus for everyone to travel together.",
-        "sourceModel": "A",
-        "sourceExamId": "g7-a"
+        "transcript": "Text 1. I played the flute last term, and my friend performs with a drum. This year, I have practised the violin every evening, so I will play a short piece on it during our school assembly next week.\nText 2. On our school trip, we first passed the cinema and admired the old museum building. The most interesting stop was a pottery workshop, where a craftsperson taught us to shape wet clay into small bowls.\nText 3. The guide said an eagle sometimes circles above the valley, and a fox may come out at night. This morning we were lucky to watch an Arabian oryx walking slowly beside a group of acacia trees.\nText 4. The school hall is being painted, and the museum cannot host visitors that evening. The drama club has therefore arranged its performance in an open-air courtyard, with chairs for families near the small stage.\nText 5. Leena checked the weather before the nature walk. She left her umbrella at home because no rain was expected, and she did not need headphones. She packed her binoculars so she could watch birds from a distance."
       },
       {
         "key": "listening2",
         "label": "Listening 2",
         "marks": 5,
+        "type": "true-false",
+        "audio": "assets/audio/g7-d-listening2.mp3",
         "items": [
           {
-            "stem": "Salim's class visited a place where turtles are protected.",
+            "stem": "Huda's class presented a puppet show about a journey.",
             "answer": true
           },
           {
-            "stem": "The ranger said plastic waste cannot harm young turtles.",
+            "stem": "The pupils bought expensive new materials for their puppets.",
             "answer": false
           },
           {
-            "stem": "Students watched turtles without touching them.",
+            "stem": "Strong winds caused the performance to move indoors.",
             "answer": true
           },
           {
-            "stem": "Salim's group used camera flashes close to the turtles.",
+            "stem": "The children refused to help move the chairs.",
             "answer": false
           },
           {
-            "stem": "Salim recommends following reserve rules and staying quiet.",
+            "stem": "Some parents offered to help with another performance.",
             "answer": true
           }
         ],
-        "script": "Interviewer: Welcome to Nature Watch. Salim, why did your class visit the turtle reserve?\nSalim: We wanted to understand how sea turtles are protected. Our teacher reminded us that bright lights and noise can disturb them.\nInterviewer: What did you learn from the ranger?\nSalim: She explained that turtles return to beaches to lay their eggs. If people leave plastic on the sand, young turtles may become trapped.\nInterviewer: Did you see any turtles?\nSalim: Yes, we watched two from a safe distance. We did not touch them or use a camera flash.\nInterviewer: Was there a problem during the visit?\nSalim: Some visitors had left empty bottles near a path. The ranger asked us to collect them while wearing gloves.\nInterviewer: How can young people help after the trip?\nSalim: We can use reusable bottles, tell others not to litter and support beach clean-ups. If we protect nesting areas, more turtles may reach the sea safely.\nInterviewer: What would you tell someone planning a visit?\nSalim: Follow the rules and stay quiet. Seeing animals in their natural habitat is exciting, but their safety is more important than our photographs.",
-        "type": "true-false",
-        "instructions": "Listen to the dialogue twice. Decide whether each statement is True or False.",
-        "audio": "assets/audio/g7-b-listening2.mp3",
-        "transcript": "Listening two. Listen to the dialogue carefully. Interviewer: Welcome to Nature Watch. Salim, why did your class visit the turtle reserve? Salim: We wanted to understand how sea turtles are protected. Our teacher reminded us that bright lights and noise can disturb them. Interviewer: What did you learn from the ranger? Salim: She explained that turtles return to beaches to lay their eggs. If people leave plastic on the sand, young turtles may become trapped. Interviewer: Did you see any turtles? Salim: Yes, we watched two from a safe distance. We did not touch them or use a camera flash. Interviewer: Was there a problem during the visit? Salim: Some visitors had left empty bottles near a path. The ranger asked us to collect them while wearing gloves. Interviewer: How can young people help after the trip? Salim: We can use reusable bottles, tell others not to litter and support beach clean-ups. If we protect nesting areas, more turtles may reach the sea safely. Interviewer: What would you tell someone planning a visit? Salim: Follow the rules and stay quiet. Seeing animals in their natural habitat is exciting, but their safety is more important than our photographs.",
-        "sourceModel": "B",
-        "sourceExamId": "g7-b"
+        "script": "Interviewer: Welcome to Community Stories. Huda, what special event did your class organise last month?\nHuda: We prepared a puppet show based on a traditional journey through the mountains. Younger children helped us choose the characters, and our art teacher showed us how to make the puppets.\nInterviewer: Did you buy expensive materials?\nHuda: No. Most puppets were made from clean cardboard boxes, old fabric and wooden sticks. We wanted the project to cost very little and avoid unnecessary waste.\nInterviewer: Where did you plan to perform?\nHuda: At first we chose the courtyard beside the old fort. Unfortunately, strong winds were forecast for that evening, so the library let us use its large activity room.\nInterviewer: Were the changes difficult?\nHuda: Moving the stage took time, but the children helped carry the chairs. We practised the songs once more before the visitors arrived.\nInterviewer: How did the audience react?\nHuda: They laughed at the funny scenes and asked questions about the journey afterwards. Several parents offered to help with a second show next month.\nInterviewer: What did your class learn?\nHuda: Working together and adapting our plan were just as important as acting on stage.",
+        "instructions": "Listen to the interview twice. Decide whether the statements are True or False.",
+        "transcript": "Interviewer: Welcome to Community Stories. Huda, what special event did your class organise last month?\nHuda: We prepared a puppet show based on a traditional journey through the mountains. Younger children helped us choose the characters, and our art teacher showed us how to make the puppets.\nInterviewer: Did you buy expensive materials?\nHuda: No. Most puppets were made from clean cardboard boxes, old fabric and wooden sticks. We wanted the project to cost very little and avoid unnecessary waste.\nInterviewer: Where did you plan to perform?\nHuda: At first we chose the courtyard beside the old fort. Unfortunately, strong winds were forecast for that evening, so the library let us use its large activity room.\nInterviewer: Were the changes difficult?\nHuda: Moving the stage took time, but the children helped carry the chairs. We practised the songs once more before the visitors arrived.\nInterviewer: How did the audience react?\nHuda: They laughed at the funny scenes and asked questions about the journey afterwards. Several parents offered to help with a second show next month.\nInterviewer: What did your class learn?\nHuda: Working together and adapting our plan were just as important as acting on stage."
       },
       {
         "key": "grammarvocabulary",
@@ -2307,123 +2303,119 @@
         "key": "listening1",
         "label": "Listening 1",
         "marks": 5,
+        "type": "picture-choice",
+        "audio": "assets/audio/g8-d-listening1.mp3",
         "items": [
           {
-            "stem": "Which weather is expected tomorrow?",
+            "stem": "What did the students measure near the beach?",
             "options": [
-              "sunshine",
-              "rain",
-              "strong wind"
+              "sound levels",
+              "water temperature",
+              "wind speed"
+            ],
+            "images": [
+              "sound-meter-beach-g8d",
+              "thermometer-water-g8d",
+              "wind-meter-g8d"
+            ],
+            "answer": 0,
+            "script": "Our science group visited a busy beach to study how noise affects the area. We took photographs of the waves, but our main task was to use a sound meter to measure noise from boats and cars at different times."
+          },
+          {
+            "stem": "What did the garden club use to water its plants?",
+            "options": [
+              "bottled water",
+              "collected rainwater",
+              "sea water"
+            ],
+            "images": [
+              "bottled-water-g8d",
+              "rain-barrel-g8d",
+              "seawater-bucket-g8d"
             ],
             "answer": 1,
-            "images": [
-              "sun",
-              "cloud-rain",
-              "wind"
-            ],
-            "script": "Our class is visiting the nature reserve tomorrow, so I checked the forecast again. Yesterday it showed sunshine, and this morning someone mentioned strong winds. However, the latest forecast now predicts heavy rain in the afternoon. We should take waterproof jackets and follow our teacher's advice."
+            "script": "The gardening club wanted to save water. Rather than opening the tap every morning, the students collected rainwater in a covered barrel and used it to water seedlings when the ground became dry."
           },
           {
-            "stem": "What does the school's new campaign aim to save?",
+            "stem": "Which activity did the adventure group choose?",
             "options": [
-              "water",
-              "electricity",
-              "trees"
+              "kayaking",
+              "climbing a rope bridge",
+              "cycling"
             ],
-            "answer": 0,
             "images": [
-              "glass-water",
-              "lamp-desk",
-              "trees"
+              "kayak-lake-g8d",
+              "rope-bridge-g8d",
+              "hill-cycling-g8d"
             ],
-            "script": "Our school already switches off lights and takes care of the garden. This month, the science team has decided to focus on the water we use. Every class will measure how much water it saves by turning off taps and reporting leaks immediately."
+            "answer": 1,
+            "script": "The adventure centre offered kayaking and mountain cycling, but the students had tried both activities before. This time, with safety helmets and an instructor, they decided to cross a low rope bridge above a shallow stream."
           },
           {
-            "stem": "Which animal was rescued on the beach?",
+            "stem": "What did Mariam replace instead of buying a new one?",
             "options": [
-              "fish",
-              "bird",
-              "turtle"
+              "school bag",
+              "bicycle tyre",
+              "phone case"
+            ],
+            "images": [
+              "schoolbag-repair-g8d",
+              "bicycle-tyre-repair-g8d",
+              "phonecase-g8d"
+            ],
+            "answer": 1,
+            "script": "Mariam noticed that her bicycle had a damaged tyre. She could have bought a new bicycle or left it unused, but the repair shop replaced the tyre. Now she can cycle to school again without wasting a useful bike."
+          },
+          {
+            "stem": "Which item will students bring for a waste-free lunch?",
+            "options": [
+              "disposable bag",
+              "paper cup",
+              "reusable lunchbox"
+            ],
+            "images": [
+              "plastic-bag-g8d",
+              "paper-cup-g8d",
+              "reusable-lunchbox-g8d"
             ],
             "answer": 2,
-            "images": [
-              "fish",
-              "bird",
-              "turtle"
-            ],
-            "script": "On Friday, we saw birds flying above the beach and small fish swimming close to the rocks. Suddenly, my sister noticed a young turtle trapped in plastic. We called the rescue team, who carefully freed it and checked that it could swim safely again."
-          },
-          {
-            "stem": "What will the eco-club do on Saturday?",
-            "options": [
-              "plant trees",
-              "read in a library",
-              "take photographs"
-            ],
-            "answer": 0,
-            "images": [
-              "trees",
-              "library",
-              "camera"
-            ],
-            "script": "Some members of the eco-club wanted to take wildlife photographs, and others suggested visiting the library. The club leader said both ideas could wait. On Saturday, everyone will plant new trees beside the playground, where they can provide shade for younger children."
-          },
-          {
-            "stem": "What must students bring to the beach clean-up?",
-            "options": [
-              "umbrella",
-              "backpack",
-              "water bottle"
-            ],
-            "answer": 2,
-            "images": [
-              "umbrella",
-              "backpack",
-              "bottle-water"
-            ],
-            "script": "We are collecting rubbish from the beach on Thursday. Gloves and bags will be provided, and there is no need to bring an umbrella because the forecast is dry. You may bring a small backpack, but everyone must carry a reusable bottle of drinking water."
+            "script": "On Environment Day, the canteen will provide drinking water and students must avoid single-use packaging. They have been asked to bring a reusable lunchbox for their food rather than paper cups or plastic bags."
           }
         ],
-        "type": "picture-choice",
         "instructions": "You will hear five short texts twice. For each text choose the correct picture A, B or C.",
-        "audio": "assets/audio/g8-a-listening1.mp3",
-        "transcript": "Listening one. You will hear five short texts twice. Text 1. Our class is visiting the nature reserve tomorrow, so I checked the forecast again. Yesterday it showed sunshine, and this morning someone mentioned strong winds. However, the latest forecast now predicts heavy rain in the afternoon. We should take waterproof jackets and follow our teacher's advice. Text 2. Our school already switches off lights and takes care of the garden. This month, the science team has decided to focus on the water we use. Every class will measure how much water it saves by turning off taps and reporting leaks immediately. Text 3. On Friday, we saw birds flying above the beach and small fish swimming close to the rocks. Suddenly, my sister noticed a young turtle trapped in plastic. We called the rescue team, who carefully freed it and checked that it could swim safely again. Text 4. Some members of the eco-club wanted to take wildlife photographs, and others suggested visiting the library. The club leader said both ideas could wait. On Saturday, everyone will plant new trees beside the playground, where they can provide shade for younger children. Text 5. We are collecting rubbish from the beach on Thursday. Gloves and bags will be provided, and there is no need to bring an umbrella because the forecast is dry. You may bring a small backpack, but everyone must carry a reusable bottle of drinking water.",
-        "sourceModel": "A",
-        "sourceExamId": "g8-a"
+        "transcript": "Text 1. Our science group visited a busy beach to study how noise affects the area. We took photographs of the waves, but our main task was to use a sound meter to measure noise from boats and cars at different times.\nText 2. The gardening club wanted to save water. Rather than opening the tap every morning, the students collected rainwater in a covered barrel and used it to water seedlings when the ground became dry.\nText 3. The adventure centre offered kayaking and mountain cycling, but the students had tried both activities before. This time, with safety helmets and an instructor, they decided to cross a low rope bridge above a shallow stream.\nText 4. Mariam noticed that her bicycle had a damaged tyre. She could have bought a new bicycle or left it unused, but the repair shop replaced the tyre. Now she can cycle to school again without wasting a useful bike.\nText 5. On Environment Day, the canteen will provide drinking water and students must avoid single-use packaging. They have been asked to bring a reusable lunchbox for their food rather than paper cups or plastic bags."
       },
       {
         "key": "listening2",
         "label": "Listening 2",
         "marks": 5,
+        "type": "true-false",
+        "audio": "assets/audio/g8-d-listening2.mp3",
         "items": [
           {
-            "stem": "Faris went camping with trained instructors.",
+            "stem": "Sam's class held the swap day at a community centre.",
             "answer": true
           },
           {
-            "stem": "He remembered to pack his own torch.",
+            "stem": "Families had to pay money to exchange items.",
             "answer": false
           },
           {
-            "stem": "The group was told to keep away from the edge of a narrow path.",
+            "stem": "Volunteers checked the condition and safety of items.",
             "answer": true
           },
           {
-            "stem": "The students continued walking despite the stronger wind.",
+            "stem": "Fewer people came than the organisers expected.",
             "answer": false
           },
           {
-            "stem": "Faris thinks preparation is important for adventure activities.",
+            "stem": "Suitable remaining items were donated with their owners' permission.",
             "answer": true
           }
         ],
-        "script": "Interviewer: Welcome to Adventure Hour. Faris, tell us about your first overnight camping trip.\nFaris: We went to a mountain campsite with two trained instructors. I had packed everything the night before, but I still forgot my torch.\nInterviewer: Did that cause a problem?\nFaris: Not really. My friend had brought a spare one, and we checked the equipment together before setting off. The instructors reminded us never to walk away from the group by ourselves.\nInterviewer: What was the most difficult activity?\nFaris: We crossed a narrow path in the afternoon. The wind became stronger, so the leader told us to move slowly and keep a safe distance from the edge.\nInterviewer: Did the bad weather spoil the whole trip?\nFaris: No. We changed our plans, returned to the campsite and cooked dinner together. The next morning, the weather was calmer, and we watched the sunrise.\nInterviewer: Would you go again?\nFaris: Definitely. I learned that being prepared is more important than being brave. You should always listen to experienced guides and check the forecast before you travel.",
-        "type": "true-false",
-        "instructions": "Listen to the dialogue twice. Decide whether each statement is True or False.",
-        "audio": "assets/audio/g8-b-listening2.mp3",
-        "transcript": "Listening two. Listen to the dialogue carefully. Interviewer: Welcome to Adventure Hour. Faris, tell us about your first overnight camping trip. Faris: We went to a mountain campsite with two trained instructors. I had packed everything the night before, but I still forgot my torch. Interviewer: Did that cause a problem? Faris: Not really. My friend had brought a spare one, and we checked the equipment together before setting off. The instructors reminded us never to walk away from the group by ourselves. Interviewer: What was the most difficult activity? Faris: We crossed a narrow path in the afternoon. The wind became stronger, so the leader told us to move slowly and keep a safe distance from the edge. Interviewer: Did the bad weather spoil the whole trip? Faris: No. We changed our plans, returned to the campsite and cooked dinner together. The next morning, the weather was calmer, and we watched the sunrise. Interviewer: Would you go again? Faris: Definitely. I learned that being prepared is more important than being brave. You should always listen to experienced guides and check the forecast before you travel.",
-        "sourceModel": "B",
-        "sourceExamId": "g8-b"
+        "script": "Interviewer: Welcome to Better Choices. Sam, can you explain the event your class organised last Saturday?\nSam: We held a swap day at the community centre. Families brought useful things they no longer needed, including books, school bags and sports equipment.\nInterviewer: Was the idea to encourage people to buy more new products?\nSam: Not at all. We wanted to show that an item can be useful to someone else without being thrown away. Nobody paid money to exchange an item.\nInterviewer: How did you keep the event organised?\nSam: We asked everyone to clean their items first and write a small label explaining their condition. Volunteers checked that the equipment was safe before placing it on the tables.\nInterviewer: Did everything go as planned?\nSam: We expected about thirty visitors, but more than sixty arrived. At first there were long queues, so our teacher opened a second table and two classmates helped record exchanges.\nInterviewer: What happened to the things that remained?\nSam: With permission from their owners, we gave suitable items to a local charity. We kept damaged items out of the donation boxes.\nInterviewer: What is the next step?\nSam: We will review the feedback at our club meeting. We have not decided whether to repeat the event next term.",
+        "instructions": "Listen to the interview twice. Decide whether each statement is True or False.",
+        "transcript": "Interviewer: Welcome to Better Choices. Sam, can you explain the event your class organised last Saturday?\nSam: We held a swap day at the community centre. Families brought useful things they no longer needed, including books, school bags and sports equipment.\nInterviewer: Was the idea to encourage people to buy more new products?\nSam: Not at all. We wanted to show that an item can be useful to someone else without being thrown away. Nobody paid money to exchange an item.\nInterviewer: How did you keep the event organised?\nSam: We asked everyone to clean their items first and write a small label explaining their condition. Volunteers checked that the equipment was safe before placing it on the tables.\nInterviewer: Did everything go as planned?\nSam: We expected about thirty visitors, but more than sixty arrived. At first there were long queues, so our teacher opened a second table and two classmates helped record exchanges.\nInterviewer: What happened to the things that remained?\nSam: With permission from their owners, we gave suitable items to a local charity. We kept damaged items out of the donation boxes.\nInterviewer: What is the next step?\nSam: We will review the feedback at our club meeting. We have not decided whether to repeat the event next term."
       },
       {
         "key": "grammarvocabulary",

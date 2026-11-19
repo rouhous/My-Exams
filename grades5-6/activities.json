@@ -2168,23 +2168,16 @@
       "model": "D",
       "skill": "listening",
       "part": 1,
-      "title": "Listening 1 · Match dialogues to pictures",
       "marks": 5,
       "format": "picture-match",
-      "pictureOptions": [
-        "football",
-        "bicycle",
-        "drum",
-        "piano",
-        "kite",
-        "paintbrush"
-      ],
+      "audio": "audio/g6-d-listening-1.mp3",
+      "mediaId": "g6-d-listening-1",
       "passages": [
-        "After finishing my homework I play football with my neighbours at the small field. We meet there three evenings a week.",
-        "I joined the school music club to learn the drum. We practise rhythms every Monday with our teacher.",
-        "I love riding my bicycle on quiet paths. My father checks my helmet before we leave the house.",
-        "The wind is strong today, so we will fly our kite in the open park away from roads and power lines.",
-        "During the holiday I started painting. My aunt lent me a paintbrush and I made a picture of our garden."
+        "At our science club, we made a small desk lamp that gets its power from a solar panel. We tested it beside the classroom window, and it helped us read after sunset.",
+        "During our mountain walk, the guide showed us how to find north using a compass. We checked the path on a paper map before walking towards the village.",
+        "My grandmother asked me to look carefully at the plants in her garden. I used a magnifying glass to see the tiny patterns on the leaves and drew them in my notebook.",
+        "Our class will visit the museum tomorrow. The bus times have changed, so I checked the new timetable on my tablet before telling everyone when to meet.",
+        "After lunch, our school team collected empty paper cartons and plastic bottles. We took them to the recycling station instead of putting them in the ordinary rubbish bin."
       ],
       "questions": [
         {
@@ -2193,26 +2186,31 @@
         },
         {
           "stem": "Text 2",
-          "answer": 2
-        },
-        {
-          "stem": "Text 3",
           "answer": 1
         },
         {
+          "stem": "Text 3",
+          "answer": 2
+        },
+        {
           "stem": "Text 4",
-          "answer": 4
+          "answer": 3
         },
         {
           "stem": "Text 5",
-          "answer": 5
+          "answer": 4
         }
       ],
-      "audio": "audio/g6-a-listening-1.mp3",
-      "sourceModel": "A",
-      "sourceActivityId": "g6-a-listening-1",
-      "mediaId": "g6-a-listening-1",
-      "unitTheme": "Comprehensive semester review"
+      "pictureOptions": [
+        "solar-study-lamp",
+        "compass-hiking",
+        "magnifying-leaf",
+        "bus-timetable-tablet",
+        "recycling-station",
+        "studio-microphone"
+      ],
+      "unitTheme": "Comprehensive practice — technology, local places and free time",
+      "title": "Listening 1 · Match five different texts to pictures"
     },
     {
       "id": "g6-d-listening-2",
@@ -2220,62 +2218,60 @@
       "model": "D",
       "skill": "listening",
       "part": 2,
-      "title": "Listening 2 · Dialogue / interview",
       "marks": 5,
       "format": "mc",
-      "passage": "Interviewer: What did you build for the technology exhibition, Fatma? Fatma: A robot that waters plants. Interviewer: How does it check dry soil? Fatma: With a sensor connected to a computer program. Interviewer: Who helped you with the wires? Fatma: My older sister. Interviewer: Where did you demonstrate it? Fatma: At our school science exhibition. Interviewer: What will you add next? Fatma: A warning light for an empty water tank.",
+      "audio": "audio/g6-d-listening-2.mp3",
+      "mediaId": "g6-d-listening-2",
+      "passage": "Interviewer: Welcome to Our Town Today. Rashid, what did your class do for the community? Rashid: We made a simple electronic board that shows when the local library opens. Interviewer: Why was it needed? Rashid: Some families arrived when the library was closed. We wanted visitors to see the correct hours. Interviewer: Who helped you make the board? Rashid: Our ICT teacher showed us how to connect the small screen, but the students wrote the information. Interviewer: Where did you test it? Rashid: We tested it in our classroom for a week before taking it to the library entrance. Interviewer: What problem did you discover? Rashid: The screen was hard to read in strong sunlight, so we added a small cover. Interviewer: What will your group do next? Rashid: We hope to add simple directions to the reading room and children's corner.",
       "questions": [
         {
-          "stem": "What does Fatma's robot do?",
+          "stem": "What information does the electronic board show?",
           "options": [
-            "Washes clothes",
-            "Waters plants",
-            "Carries bags"
+            "Bus ticket prices",
+            "Library opening times",
+            "Weather forecasts"
           ],
           "answer": 1
         },
         {
-          "stem": "How does it check the soil?",
+          "stem": "Why did the class make the board?",
           "options": [
-            "With a sensor",
-            "With a camera",
-            "With a clock"
+            "Visitors came when the library was closed",
+            "The classroom needed a clock",
+            "They wanted to sell computers"
           ],
           "answer": 0
         },
         {
-          "stem": "Who helped Fatma?",
+          "stem": "Who helped connect the screen?",
           "options": [
-            "Her teacher",
-            "Her cousin",
-            "Her sister"
+            "Rashid's grandfather",
+            "The librarian",
+            "The ICT teacher"
           ],
           "answer": 2
         },
         {
-          "stem": "Where did she show the robot?",
+          "stem": "Where did the pupils test the board first?",
           "options": [
-            "At a market",
-            "At school",
-            "At a clinic"
-          ],
-          "answer": 1
-        },
-        {
-          "stem": "What will she add?",
-          "options": [
-            "A warning light",
-            "A bigger wheel",
-            "A keyboard"
+            "In their classroom",
+            "At the bus station",
+            "In the market"
           ],
           "answer": 0
+        },
+        {
+          "stem": "What will the group add next?",
+          "options": [
+            "A larger battery",
+            "Directions to library rooms",
+            "A camera"
+          ],
+          "answer": 1
         }
       ],
-      "audio": "audio/g6-b-listening-2.mp3",
-      "sourceModel": "B",
-      "sourceActivityId": "g6-b-listening-2",
-      "mediaId": "g6-b-listening-2",
-      "unitTheme": "Comprehensive semester review"
+      "unitTheme": "Comprehensive practice — school technology and community",
+      "title": "Listening 2 · Interview about a community project"
     },
     {
       "id": "g6-d-vocabulary",

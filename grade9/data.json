@@ -94,7 +94,8 @@
           "audio": "audio/g9-a-listening-1.mp3",
           "transcript": "Text 1. Our environment club is planning its next meeting. We usually meet at school, but the hall is being repaired. Someone suggested the sports centre, but it closes too early. This Thursday, we will use the public library, where a quiet room has already been booked.\n\nText 2. I wanted to try something creative after school. My brother plays football, and my cousin takes photographs. I enjoy both, but this term I have joined an art club. I have bought a paintbrush and a small palette because we are learning watercolour painting.\n\nText 3. We are planning a class trip tomorrow, so everyone has checked the weather. Yesterday, the forecast showed sunshine, and one website even mentioned cold winds. This morning, however, the updated forecast says there will be rain for most of the day. Remember to bring a jacket.\n\nText 4. Please note a change to the community festival programme. Some posters showed three o'clock, and an early email said seven o'clock. The organisers have now confirmed that the opening performance will begin at five o'clock. Please arrive at least fifteen minutes before the show.\n\nText 5. My family discussed what to do this weekend. My sister wanted to go shopping, and my father suggested spending the afternoon at the beach. We finally decided to go camping in the mountains, because everyone wanted to spend the night outdoors and watch the stars.",
           "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C).",
-          "naturalAudioAvailable": true
+          "naturalAudioAvailable": true,
+          "reviewedAudio": "audio-reviewed/g9-a-listening-1.mp3"
         },
         {
           "id": "g9-A-L2",
@@ -500,7 +501,8 @@
           "audio": "audio/g9-b-listening-1.mp3",
           "transcript": "Text one. My cousins and I are preparing for a long walk around our neighbourhood. I thought about wearing my school jacket, but the afternoon will be warm. My old backpack is still strong. Instead, I bought comfortable shoes because the route includes several steep streets and narrow paths.\n\nText two. Last term I tried running with my brother and cycling with my friends. I enjoyed both, but I wanted to learn something different. When the new sports centre opened an indoor pool, I joined the swimming club. Now I practise twice a week and feel much more confident in the water.\n\nText three. The youth festival needs a place for its final match. The school building is too small, and the public park has no seats for spectators. The organisers have booked the stadium instead. The match will begin there on Saturday afternoon, and families can enter through the main gate.\n\nText four. Yesterday the weather website predicted rain, and my sister even worried about snow in the mountains. This morning the forecast changed. According to the latest update, the sky will be clear and sunny throughout the day. Our class can hold its outdoor activities as planned, but we should bring water.\n\nText five. Our school photography club cannot use the sports hall because it is booked for a tournament. We considered the public library, but we need to display our pictures near the entrance. Our head teacher has now offered us a room at school. That is where we will meet next Thursday.",
           "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C).",
-          "naturalAudioAvailable": true
+          "naturalAudioAvailable": true,
+          "reviewedAudio": "audio-reviewed/g9-b-listening-1.mp3"
         },
         {
           "id": "g9-B-L2",
@@ -905,7 +907,8 @@
           ],
           "audio": "audio/g9-c-listening-1.mp3",
           "transcript": "Text 1. My family considered different plans for the weekend on Monday. We considered beach and camping, but neither matched our needs. After reviewing the options, we chose shopping. We have now shared the final decision and everyone knows what to prepare.\n\nText 2. The organisers discussed the starting time of the event on Monday. Some suggested 3 o’clock, while others preferred 5 o’clock. The official notice confirms 7 o’clock. We have now shared the final decision and everyone knows what to prepare. The\n\nText 3. I needed one useful item for my school activities on Monday. We considered backpack and shoes, but neither matched our needs. After reviewing the options, we chose jacket. We have now shared the final decision and everyone knows what to prepare.\n\nText 4. I talked with my friends about a new hobby on Monday. We considered art palette and camera, but neither matched our needs. After reviewing the options, we chose football. We have now shared the final decision and everyone knows what to prepare.\n\nText 5. The organisers examined several locations for the public event on Monday. We considered stadium and park, but neither matched our needs. After reviewing the options, we chose school building. We have now shared the final decision and everyone knows what to prepare.",
-          "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C)."
+          "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C).",
+          "reviewedAudio": "audio-reviewed/g9-c-listening-1.mp3"
         },
         {
           "id": "g9-C-L2",
@@ -1237,152 +1240,163 @@
       ],
       "tasks": [
         {
-          "id": "g9-A-L1",
+          "id": "g9-D-L1",
           "skill": "listening",
           "group": 1,
           "title": "Listening 1 — Choose the picture",
           "marks": 5,
           "items": [
             {
-              "stem": "Where will the club meet?",
+              "stem": "Which device did pupils use to record an oral history?",
               "choices": [
-                "school",
-                "library",
-                "sports hall"
-              ],
-              "images": [
-                "images/illustration-1-1.png",
-                "images/illustration-1-2.png",
-                "images/illustration-1-3.png"
+                "camera",
+                "handheld recorder",
+                "laptop"
               ],
               "answer": 1,
-              "script": "Our environment club is planning its next meeting. We usually meet at school, but the hall is being repaired. Someone suggested the sports centre, but it closes too early. This Thursday, we will use the public library, where a quiet room has already been booked."
+              "images": [
+                "images/camera-g9d.png",
+                "images/handheld-recorder-g9d.png",
+                "images/laptop-g9d.png"
+              ],
+              "script": "Our history teacher asked us to collect our grandparents' memories of village life. A camera could have taken photographs, but some guests did not want to be filmed. We used a small handheld recorder so that their voices and stories could be preserved without showing their faces."
             },
             {
-              "stem": "Which hobby did the speaker choose?",
+              "stem": "How did the group display the old family photographs?",
               "choices": [
-                "art palette",
-                "football",
-                "camera"
-              ],
-              "images": [
-                "images/illustration-2-1.png",
-                "images/illustration-2-2.png",
-                "images/illustration-2-3.png"
-              ],
-              "answer": 0,
-              "script": "I wanted to try something creative after school. My brother plays football, and my cousin takes photographs. I enjoy both, but this term I have joined an art club. I have bought a paintbrush and a small palette because we are learning watercolour painting."
-            },
-            {
-              "stem": "What weather does the latest forecast predict?",
-              "choices": [
-                "sunny",
-                "rainy",
-                "snowy"
-              ],
-              "images": [
-                "images/illustration-3-1.png",
-                "images/illustration-3-2.png",
-                "images/illustration-3-3.png"
-              ],
-              "answer": 1,
-              "script": "We are planning a class trip tomorrow, so everyone has checked the weather. Yesterday, the forecast showed sunshine, and one website even mentioned cold winds. This morning, however, the updated forecast says there will be rain for most of the day. Remember to bring a jacket."
-            },
-            {
-              "stem": "What is the confirmed time of the event?",
-              "choices": [
-                "3 oclock",
-                "7 oclock",
-                "5 oclock"
-              ],
-              "images": [
-                "images/illustration-4-1.png",
-                "images/illustration-4-2.png",
-                "images/illustration-4-3.png"
+                "wooden frames",
+                "tablets",
+                "projector"
               ],
               "answer": 2,
-              "script": "Please note a change to the community festival programme. Some posters showed three o'clock, and an early email said seven o'clock. The organisers have now confirmed that the opening performance will begin at five o'clock. Please arrive at least fifteen minutes before the show."
+              "images": [
+                "images/wooden-frames-g9d.png",
+                "images/tablets-g9d.png",
+                "images/projector-g9d.png"
+              ],
+              "script": "Visitors brought many old family photographs to our exhibition. We tried using wooden frames, but there were too many pictures for the walls. Instead of passing tablets around the room, the organisers used a projector to show a different photograph every minute."
             },
             {
-              "stem": "What is the family's weekend plan?",
+              "stem": "Where did the pupils place the language display?",
               "choices": [
-                "beach",
-                "camping",
-                "shopping"
-              ],
-              "images": [
-                "images/illustration-5-1.png",
-                "images/illustration-5-2.png",
-                "images/illustration-5-3.png"
+                "school garden",
+                "library entrance",
+                "sports field"
               ],
               "answer": 1,
-              "script": "My family discussed what to do this weekend. My sister wanted to go shopping, and my father suggested spending the afternoon at the beach. We finally decided to go camping in the mountains, because everyone wanted to spend the night outdoors and watch the stars."
+              "images": [
+                "images/garden-display-g9d.png",
+                "images/library-entrance-g9d.png",
+                "images/sports-display-g9d.png"
+              ],
+              "script": "Our class made a display about words borrowed from different languages. The sports field was too far from the classrooms, and the posters could get wet in the garden. We finally put the display near the library entrance, where students pass between lessons."
+            },
+            {
+              "stem": "Which item helped the walkers find the right direction?",
+              "choices": [
+                "binoculars",
+                "torch",
+                "compass"
+              ],
+              "answer": 2,
+              "images": [
+                "images/binoculars-walk-g9d.png",
+                "images/torch-walk-g9d.png",
+                "images/compass-walk-g9d.png"
+              ],
+              "script": "During a heritage walk through the hills, we followed a paper map. Our guide carried binoculars to look at distant buildings, and I had a torch for the journey home. At a confusing junction, she used a compass to check which path led north."
+            },
+            {
+              "stem": "How did the history club travel to the old village?",
+              "choices": [
+                "minibus",
+                "boat",
+                "bicycles"
+              ],
+              "answer": 0,
+              "images": [
+                "images/minibus-g9d.png",
+                "images/village-boat-g9d.png",
+                "images/village-bicycles-g9d.png"
+              ],
+              "script": "Our class visited an old village to meet a craftsperson. Some students suggested bicycles, and others wondered if a boat would be possible. As the village was reached by a mountain road, a small minibus collected us from school and returned before lunch."
             }
           ],
-          "audio": "audio/g9-a-listening-1.mp3",
-          "transcript": "Text 1. Our environment club is planning its next meeting. We usually meet at school, but the hall is being repaired. Someone suggested the sports centre, but it closes too early. This Thursday, we will use the public library, where a quiet room has already been booked.\n\nText 2. I wanted to try something creative after school. My brother plays football, and my cousin takes photographs. I enjoy both, but this term I have joined an art club. I have bought a paintbrush and a small palette because we are learning watercolour painting.\n\nText 3. We are planning a class trip tomorrow, so everyone has checked the weather. Yesterday, the forecast showed sunshine, and one website even mentioned cold winds. This morning, however, the updated forecast says there will be rain for most of the day. Remember to bring a jacket.\n\nText 4. Please note a change to the community festival programme. Some posters showed three o'clock, and an early email said seven o'clock. The organisers have now confirmed that the opening performance will begin at five o'clock. Please arrive at least fifteen minutes before the show.\n\nText 5. My family discussed what to do this weekend. My sister wanted to go shopping, and my father suggested spending the afternoon at the beach. We finally decided to go camping in the mountains, because everyone wanted to spend the night outdoors and watch the stars.",
+          "audio": "audio/g9-d-listening-1.mp3",
+          "transcript": "Text 1. Our history teacher asked us to collect our grandparents' memories of village life. A camera could have taken photographs, but some guests did not want to be filmed. We used a small handheld recorder so that their voices and stories could be preserved without showing their faces.\n\nText 2. Visitors brought many old family photographs to our exhibition. We tried using wooden frames, but there were too many pictures for the walls. Instead of passing tablets around the room, the organisers used a projector to show a different photograph every minute.\n\nText 3. Our class made a display about words borrowed from different languages. The sports field was too far from the classrooms, and the posters could get wet in the garden. We finally put the display near the library entrance, where students pass between lessons.\n\nText 4. During a heritage walk through the hills, we followed a paper map. Our guide carried binoculars to look at distant buildings, and I had a torch for the journey home. At a confusing junction, she used a compass to check which path led north.\n\nText 5. Our class visited an old village to meet a craftsperson. Some students suggested bicycles, and others wondered if a boat would be possible. As the village was reached by a mountain road, a small minibus collected us from school and returned before lunch.",
           "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C).",
           "naturalAudioAvailable": true,
-          "source_model": "A"
+          "source_model": "A",
+          "reviewedAudio": "audio-reviewed/g9-d-listening-1.mp3"
         },
         {
-          "id": "g9-B-L2",
+          "id": "g9-D-L2",
           "skill": "listening",
           "group": 2,
           "title": "Listening 2 — Interview",
           "marks": 5,
           "items": [
             {
-              "stem": "What did their first map show?",
+              "stem": "What was the mural meant to celebrate?",
               "choices": [
-                "historic doors",
-                "local beaches",
-                "mountain animals"
+                "Only sporting success",
+                "People with different interests",
+                "Traditional food only"
               ],
-              "answer": 0
+              "answer": 1,
+              "evidence": "people with different interests make our town special"
             },
             {
-              "stem": "When was the project launched?",
+              "stem": "Where was the mural painted?",
               "choices": [
-                "November",
-                "February",
-                "June"
+                "Beside the youth centre",
+                "Inside a museum",
+                "On the school bus"
               ],
-              "answer": 0
+              "answer": 0,
+              "evidence": "a wall beside the youth centre"
             },
             {
-              "stem": "Who shared old photographs?",
+              "stem": "How many designs were selected for the mural?",
               "choices": [
-                "families",
-                "shopkeepers only",
-                "football coaches"
+                "Twenty",
+                "Ten",
+                "Six"
               ],
-              "answer": 0
+              "answer": 2,
+              "evidence": "we voted for six designs"
             },
             {
-              "stem": "When does the team meet?",
+              "stem": "Why did the club stop work twice?",
               "choices": [
-                "Monday morning",
-                "Thursday afternoon",
-                "Saturday evening"
+                "A power cut",
+                "Heavy rain",
+                "A holiday"
               ],
-              "answer": 1
+              "answer": 1,
+              "evidence": "stopped twice because of heavy rain"
             },
             {
-              "stem": "What did the team learn?",
+              "stem": "What is the club planning next?",
               "choices": [
-                "making jewellery",
-                "checking photo sources",
-                "repairing cars"
+                "A short audio guide",
+                "A swimming competition",
+                "A new sports centre"
               ],
-              "answer": 1
+              "answer": 0,
+              "evidence": "make a short audio guide"
             }
           ],
-          "audio": "audio/g9-b-listening-2.mp3",
-          "transcript": "Interviewer: Welcome to Young Historians. Today Salim is joining us to explain his community heritage-mapping project. Salim, what did your team put on its first map? Salim: We chose the historic doors in our neighbourhood. Some have unusual wooden patterns, so we walked along the old streets and carefully recorded their locations. Interviewer: That sounds interesting. When did your project begin? Salim: We launched it in November, just after a local museum invited schools to share ideas for protecting our heritage. Interviewer: Where did the old photographs come from? Salim: Families shared them with us. Parents and grandparents brought photographs of streets and houses that have changed over the years. Interviewer: How often do you work on the project? Salim: Our group meets on Thursday afternoons. That gives everyone time to finish lessons before we compare notes and plan our next visit. Interviewer: What important lesson have you learned? Salim: We must check the source of every photograph before publishing it. A date or place written on the back can help us avoid mistakes. Interviewer: And what happens next? Salim: We hope to add recorded memories from older residents. Their stories will explain why these places matter to the community. Interviewer: Thank you, Salim. Your project shows how history can connect generations.",
+          "audio": "audio/g9-d-listening-2.mp3",
+          "transcript": "Interviewer: Welcome to Young Voices. Huda, your art club created a community mural. What did you want it to show?\nHuda: We wanted to show how people with different interests make our town special. The mural includes musicians, fishermen, scientists and families working together.\nInterviewer: Where did you paint it?\nHuda: The council gave us a wall beside the youth centre. First, we cleaned the surface and covered it with safe white paint.\nInterviewer: Who designed the pictures?\nHuda: Twenty pupils shared sketches, but we voted for six designs. Our art teacher helped us combine them into one picture.\nInterviewer: Did you work alone after that?\nHuda: No. We invited a local artist to explain how to mix colours and keep the shapes large enough to be seen from the road.\nInterviewer: What problem did you face?\nHuda: We stopped twice because of heavy rain. We kept the brushes in a covered store and returned when the wall was dry.\nInterviewer: How did people respond when it was finished?\nHuda: Parents and younger children came to see it. Several visitors said they recognised a family member's job in the artwork.\nInterviewer: What will you do next?\nHuda: We will make a short audio guide so visitors who cannot read the information can learn about every section.",
           "instructions": "Listen to the interview twice. Choose the correct answer (A, B or C).",
           "source_model": "B",
-          "naturalAudioAvailable": true
+          "naturalAudioAvailable": true,
+          "speakerGenders": {
+            "Interviewer": "female",
+            "Huda": "female"
+          },
+          "reviewedAudio": "audio-reviewed/g9-d-listening-2.mp3"
         },
         {
           "id": "g9-C-GV",
@@ -1743,7 +1757,8 @@
           "transcript": "Text one. My cousins and I are preparing for a long walk around our neighbourhood. I thought about wearing my school jacket, but the afternoon will be warm. My old backpack is still strong. Instead, I bought comfortable shoes because the route includes several steep streets and narrow paths.\n\nText two. Last term I tried running with my brother and cycling with my friends. I enjoyed both, but I wanted to learn something different. When the new sports centre opened an indoor pool, I joined the swimming club. Now I practise twice a week and feel much more confident in the water.\n\nText three. The youth festival needs a place for its final match. The school building is too small, and the public park has no seats for spectators. The organisers have booked the stadium instead. The match will begin there on Saturday afternoon, and families can enter through the main gate.\n\nText four. Yesterday the weather website predicted rain, and my sister even worried about snow in the mountains. This morning the forecast changed. According to the latest update, the sky will be clear and sunny throughout the day. Our class can hold its outdoor activities as planned, but we should bring water.\n\nText five. Our school photography club cannot use the sports hall because it is booked for a tournament. We considered the public library, but we need to display our pictures near the entrance. Our head teacher has now offered us a room at school. That is where we will meet next Thursday.",
           "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C).",
           "source_model": "B",
-          "naturalAudioAvailable": true
+          "naturalAudioAvailable": true,
+          "reviewedAudio": "audio-reviewed/g9-b-listening-1.mp3"
         },
         {
           "id": "g9-C-L2",
@@ -2161,7 +2176,8 @@
           "audio": "audio/g9-c-listening-1.mp3",
           "transcript": "Text 1. My family considered different plans for the weekend on Monday. We considered beach and camping, but neither matched our needs. After reviewing the options, we chose shopping. We have now shared the final decision and everyone knows what to prepare.\n\nText 2. The organisers discussed the starting time of the event on Monday. Some suggested 3 o’clock, while others preferred 5 o’clock. The official notice confirms 7 o’clock. We have now shared the final decision and everyone knows what to prepare. The\n\nText 3. I needed one useful item for my school activities on Monday. We considered backpack and shoes, but neither matched our needs. After reviewing the options, we chose jacket. We have now shared the final decision and everyone knows what to prepare.\n\nText 4. I talked with my friends about a new hobby on Monday. We considered art palette and camera, but neither matched our needs. After reviewing the options, we chose football. We have now shared the final decision and everyone knows what to prepare.\n\nText 5. The organisers examined several locations for the public event on Monday. We considered stadium and park, but neither matched our needs. After reviewing the options, we chose school building. We have now shared the final decision and everyone knows what to prepare.",
           "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C).",
-          "source_model": "C"
+          "source_model": "C",
+          "reviewedAudio": "audio-reviewed/g9-c-listening-1.mp3"
         },
         {
           "id": "g9-A-L2",
@@ -2567,10 +2583,11 @@
           ],
           "audio": "audio/g9-d-listening-1.mp3",
           "transcript": "Text 1. I compared different sports before joining a school club during our planning meeting. We considered swimming and running, but neither matched our needs. After reviewing the options, we chose cycling. We have now shared the final decision and everyone knows what to prepare.\n\nText 2. The organisers examined several locations for the public event during our planning meeting. We considered stadium and school building, but neither matched our needs. After reviewing the options, we chose park. We have now shared the final decision and everyone knows what to prepare.\n\nText 3. I talked with my friends about a new hobby during our planning meeting. We considered football and camera, but neither matched our needs. After reviewing the options, we chose art palette. We have now shared the final decision and everyone knows what to prepare.\n\nText 4. My family considered different plans for the weekend during our planning meeting. We considered beach and shopping, but neither matched our needs. After reviewing the options, we chose camping. We have now shared the final decision and everyone knows what to prepare.\n\nText 5. The organisers discussed the starting time of the event during our planning meeting. Some suggested 3 o’clock, while others preferred 7 o’clock. The official notice confirms 5 o’clock. We have now shared the final decision and everyone knows what to prepare.",
-          "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C)."
+          "instructions": "Listen to five short texts. For each text, choose the correct picture (A, B or C).",
+          "reviewedAudio": "audio-reviewed/g9-g-listening-1.mp3"
         },
         {
-          "id": "g9-D-L2",
+          "id": "g9-G-L2",
           "skill": "listening",
           "group": 2,
           "title": "Listening 2 — Interview",
