@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#174b38"><title>Grade 11 Core · Communication · Original 60-mark Unit Paper A</title>
+<meta name="theme-color" content="#174b38"><title>Grade 11 Core · Communication · Original 60-mark Unit Exam</title>
 <style>
 :root{--green:#1a503c;--gold:#ac8845;--ink:#1b3527;--bg:#f2f7f4;--line:#dce7df}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,Arial,sans-serif}
@@ -55,7 +55,7 @@ g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
 </script><script src="../../../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../../../shared/assessment-theme.css?v=28"></head><body>
-<header><a href="../index.html">← Communication Listening practice</a>
+<header><a href="../../../grade-skills.html?grade=11&amp;track=core">← اختبارات المسار</a>
 <h1>Grade 11 Core · Unit 1: Communication</h1><p>Original nine-section assessment · 60 marks</p></header>
 <main>
 
@@ -103,7 +103,7 @@ function stopTimer(){if(interval){clearInterval(interval);interval=null}}
 function updateClock(){const m=Math.floor(seconds/60),ss=seconds%60;$('clock').textContent=String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0')+':'+String(ss).padStart(2,'0')}
 function start(){if(!loaded)return;stopTimer();submitted=false;questions=[];selected=$('mode').value==='full'?keys.slice():[$('skill').value];
  $('sections').innerHTML=selected.map(render).join('');$('results').hidden=true;$('results').innerHTML='';$('end').disabled=false;
- $('paperTitle').textContent=selected.length===9?'Complete Communication Paper A':'Independent '+names[selected[0]]+' practice';$('paperMarks').textContent=sum(selected)+' marks';
+ $('paperTitle').textContent=selected.length===9?'Complete Communication Exam':'Independent '+names[selected[0]]+' practice';$('paperMarks').textContent=sum(selected)+' marks';
  $('setup').hidden=true;$('paper').classList.add('active');
  if(selected.length===9){seconds=150*60;updateClock();interval=setInterval(()=>{seconds--;updateClock();if(seconds<=0){stopTimer();finish()}},1000);$('clock').hidden=false}else{$('clock').hidden=true}
  window.scrollTo(0,0);

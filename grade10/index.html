@@ -55,11 +55,11 @@ g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
 </script><script src="../shared/data-charts.js?v=1"></script><script src="../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../shared/assessment-theme.css?v=28"></head><body>
-<header><h1>My Exams · Grade 10</h1><p>English Language · Semester 1</p><a href="../index.html">Back to My Exams home</a></header>
+<header><h1>My Exams · Grade 10</h1><p>English Language · Semester 1</p><a href="../grade-skills.html?grade=10">← اختبارات الصف العاشر</a></header>
 <main>
 
 <div class="panel"><div class="controls">
-<label>Model <select id="model"><option value="A">A · New Media</option><option value="B">B · Climate Change</option><option value="C">C · Renewable Energy</option><option value="D">D · Civilisation</option><option value="E">E · Mixed</option><option value="F">F · Mixed</option></select></label>
+<label>الاختبار <select id="model"><option value="A">الوحدة الأولى · New Media</option><option value="B">الوحدة الثانية · Climate Change</option><option value="C">الوحدة الثالثة · Renewable Energy</option><option value="D">الوحدة الرابعة · Civilisation</option><option value="E">اختبار شامل</option><option value="F">اختبار شامل إضافي</option></select></label>
 <label>Mode <select id="mode"><option value="exam">Full exam · timed</option><option value="practice">Single skill · untimed</option></select></label>
 <label id="skillWrap" class="hidden">Skill <select id="skill"><option value="listening">Listening</option><option value="vocabulary">Vocabulary</option><option value="grammar">Grammar</option><option value="reading1">Reading 1</option><option value="reading2">Reading 2</option><option value="writing1">Writing 1</option><option value="writing2">Writing 2</option><option value="dataAnalysis">Data Analysis · Charts (practice)</option></select></label>
 <button id="start" disabled>Start</button><button id="random" class="alt" disabled>New random comprehensive</button><button id="offline" class="alt" disabled>Save selected model offline</button>
@@ -104,7 +104,7 @@ function renderSection(section,i){
  var data=section.data,key=section.skill;
  var h='<section class="section" data-skill="'+key+'"><h2>'+esc(key==='dataAnalysis'?'DATA ANALYSIS · CHART DESCRIPTION':key.replace(/(\d)/g,' $1').toUpperCase())+'</h2>';
  var origin=(current()?.unitSources||[]).find(x=>x.section===key||x.skill===key);
- if(origin)h+='<p class="muted">Mixed revision source: Model '+esc(origin.model||origin.sourceModel)+' · '+esc(origin.unit||'original unit')+' (reused practice activity)</p>';
+ if(origin)h+='<p class="muted">Mixed revision source: '+esc(origin.unit||'original unit')+' (reused practice activity)</p>';
  if(key==='listening'){
   var sound=audioUrl(data);
   if(sound)h+='<audio controls preload="metadata" src="'+esc(sound)+'"></audio><p class="muted">Natural English MP3 · passage played twice, with pauses.</p>';

@@ -17,7 +17,7 @@ body.om-shell{margin:0;color:#173c32;background:#f9f5eb;font:16px/1.55 system-ui
 [hidden]{display:none!important}
 @media(max-width:440px){.om-grid,.om-skillgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
-<link rel="stylesheet" href="./shared/oman-theme.css?v=28">
+<link rel="stylesheet" href="./shared/oman-theme.css?v=29">
 <script>
 if ('serviceWorker' in navigator && window.isSecureContext) {
   window.addEventListener('load', () => {
@@ -27,101 +27,33 @@ if ('serviceWorker' in navigator && window.isSecureContext) {
 }
 </script>
 </head>
-<body class="om-shell">
-<div class="om-top"><a class="om-brand" href="./exams.html"><svg class="om-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7C8 4 4 4 2 5v14c4-1 7 0 10 2 3-2 6-3 10-2V5c-2-1-6-1-10 2zm0 0v14"/></svg> My Exams</a><nav class="om-nav" aria-label="التنقل الرئيسي"><a class="active" href="./exams.html#grades"><svg class="om-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span><strong>الصفوف</strong><small lang="en" dir="ltr">Grades</small></span></a><a class="" href="./exams.html#full-exams"><svg class="om-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 12h7m-7 4h7"/></svg><span><strong>الاختبارات الشاملة</strong><small lang="en" dir="ltr">Full Exams</small></span></a><a class="" href="./exams.html#quick"><svg class="om-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="m8 12 3 3 5-6"/></svg><span><strong>وصول سريع</strong><small lang="en" dir="ltr">Quick Access</small></span></a></nav><details class="om-menu"><summary aria-label="القائمة"><svg class="om-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></summary><nav class="om-nav" aria-label="التنقل الرئيسي"><a class="active" href="./exams.html#grades"><svg class="om-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span><strong>الصفوف</strong><small lang="en" dir="ltr">Grades</small></span></a><a class="" href="./exams.html#full-exams"><svg class="om-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 12h7m-7 4h7"/></svg><span><strong>الاختبارات الشاملة</strong><small lang="en" dir="ltr">Full Exams</small></span></a><a class="" href="./exams.html#quick"><svg class="om-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="m8 12 3 3 5-6"/></svg><span><strong>وصول سريع</strong><small lang="en" dir="ltr">Quick Access</small></span></a></nav></details></div>
-<header class="om-hero"><span class="om-mark" aria-hidden="true">✦</span>
-<h1>مهارات الصف الثاني عشر</h1><p dir="ltr">Grade 12 English Skills · Semester 1</p>
-
-</header>
+<body class="om-shell" data-grade="12">
+<div class="om-top"><a class="om-brand" href="./exams.html"><svg class="om-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7C8 4 4 4 2 5v14c4-1 7 0 10 2 3-2 6-3 10-2V5c-2-1-6-1-10 2zm0 0v14"/></svg> My Exams</a></div>
+<header class="om-hero"><span class="om-mark" aria-hidden="true">✦</span><h1 id="gradeTitle">اختبارات الصف الثاني عشر</h1><p id="enTitle" lang="en">English Exams</p></header>
 <main class="om-content">
-<nav class="om-breadcrumb"><a href="./exams.html">⌂ العودة إلى جميع الاختبارات</a><a href="./upper-grades-practice.html?track=12-core&mode=skill">بنك التدريب الكامل</a></nav>
-
-<section class="om-formpanel">
-<h2>حدد المسار ونموذج التدريب</h2>
-<div class="om-formgrid">
-<label for="track">المسار
-<select id="track"><option value="12-core">اللغة الإنجليزية الأساسية · Core</option><option value="12-elective">اللغة الإنجليزية الاختيارية · Elective</option></select></label>
-<label for="model">نموذج بنك الأنشطة
-<select id="model"><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option></select></label>
-<label for="source">مصدر نشاط Elective
-<select id="source"><option value="bank">النماذج A–F</option><option value="unit">وحدة دراسية محددة</option></select></label>
-<label for="unit" id="unitControls" hidden>وحدة Elective
-<select id="unit"><option value="1">Unit 1 · The arts</option><option value="2">Unit 2 · Doing the right thing</option><option value="3">Unit 3 · Living in a Changing World</option><option value="4">Unit 4 · Higher Education</option></select></label>
-</div>
-<p id="scope" class="om-meta" style="margin-top:12px" aria-live="polite">Core · اختر مهارة للبدء مباشرة بدون مؤقت.</p>
+<nav class="om-breadcrumb"><a href="./exams.html">⌂ جميع الصفوف</a><a id="trackBack" hidden>‹ اختيار المسار</a></nav>
+<section class="om-section" id="chooseTrack" hidden aria-labelledby="trackHeading">
+ <h2 id="trackHeading">اختر المسار</h2>
+ <div class="om-actions">
+  <a id="coreLink" class="om-btn" href="./grade12-skills.html?track=12-core">اللغة الإنجليزية الأساسية · Core</a>
+  <a id="electiveLink" class="om-btn outline" href="./grade12-skills.html?track=12-elective">اللغة الإنجليزية الاختيارية · Elective</a>
+ </div>
 </section>
-<section class="om-section">
-<h2 id="skill-list">اختر المهارة للتدريب المباشر</h2>
-
-<div id="skills" class="om-skillgrid">
-<a class="om-card" href="./upper-grades-practice.html?track=12-core&amp;mode=skill&amp;model=A&amp;skill=lst1"><strong>Listening 1</strong><small>الاستماع الأول</small></a>
-<a class="om-card" href="./upper-grades-practice.html?track=12-core&amp;mode=skill&amp;model=A&amp;skill=lst2"><strong>Listening 2</strong><small>الاستماع الثاني</small></a>
-<a class="om-card" href="./upper-grades-practice.html?track=12-core&amp;mode=skill&amp;model=A&amp;skill=grammar"><strong>Grammar</strong><small>القواعد</small></a>
-<a class="om-card" href="./upper-grades-practice.html?track=12-core&amp;mode=skill&amp;model=A&amp;skill=vocabulary"><strong>Vocabulary</strong><small>المفردات</small></a>
-<a class="om-card" href="./upper-grades-practice.html?track=12-core&amp;mode=skill&amp;model=A&amp;skill=rdg1"><strong>Reading 1</strong><small>القراءة الأولى</small></a>
-<a class="om-card" href="./upper-grades-practice.html?track=12-core&amp;mode=skill&amp;model=A&amp;skill=rdg2"><strong>Reading 2</strong><small>القراءة الثانية</small></a>
-<a class="om-card" href="./upper-grades-practice.html?track=12-core&amp;mode=skill&amp;model=A&amp;skill=rdg3"><strong>Reading 3</strong><small>القراءة الثالثة</small></a>
-<a class="om-card" href="./upper-grades-practice.html?track=12-core&amp;mode=skill&amp;model=A&amp;skill=wrt1"><strong>Writing 1</strong><small>الكتابة الأولى</small></a>
-<a class="om-card" href="./upper-grades-practice.html?track=12-core&amp;mode=skill&amp;model=A&amp;skill=wrt2"><strong>Writing 2</strong><small>الكتابة الثانية</small></a>
+<div id="gradeContent" hidden>
+ <section class="om-section" aria-labelledby="unitHeading">
+  <h2 id="unitHeading">اختبارات الوحدات</h2>
+  <div class="om-grid" id="units"></div>
+ </section>
+ <section class="om-section" aria-labelledby="skillHeading">
+  <div class="om-formpanel">
+   <label for="unit">الوحدة للتدريب على المهارات<select id="unit"></select></label>
+  </div>
+  <h2 id="skillHeading">تدريبات المهارات</h2>
+  <div class="om-skillgrid" id="skills"></div>
+ </section>
 </div>
-</section>
-<section class="om-section">
-<h2>اختبارات كاملة أو عشوائية</h2>
-<p class="om-meta">اختبار كامل، اختبار عشوائي أو تدريبات الوحدات.</p>
-<div class="om-actions">
-<a id="full" class="om-btn gold" href="./upper-grades-practice.html?track=12-core&mode=full&model=A">اختبار كامل بمؤقت</a>
-<a id="random" class="om-btn outline" href="./upper-grades-practice.html?track=12-core&mode=random">اختبار عشوائي</a>
-<a id="unitExam" class="om-btn outline" href="./grade12/elective/index.html">اختبارات وحدات Elective</a>
-<a class="om-btn outline" href="./grade12/core/units/paper-a-preview.html">اختبار الوحدة الأولى · Core</a>
-</div>
-</section>
-</main><footer class="om-footer">© Houssem Rouatbi — جميع الحقوق محفوظة للأستاذ</footer>
-<script>
-(function(){
-'use strict';
-const $=id=>document.getElementById(id);
-const catalogue={
-  '12-core':[
-   ['lst1','Listening 1','الاستماع الأول · 7 درجات'],['lst2','Listening 2','الاستماع الثاني · 8 درجات'],
-   ['grammar','Grammar','القواعد · 5 درجات'],['vocabulary','Vocabulary','المفردات · 5 درجات'],
-   ['rdg1','Reading 1','القراءة الأولى · 7 درجات'],['rdg2','Reading 2','القراءة الثانية · 8 درجات'],
-   ['rdg3','Reading 3','القراءة الثالثة · 10 درجات'],['wrt1','Writing 1','الكتابة الأولى · تصحيح المعلم'],
-   ['wrt2','Writing 2','الكتابة الثانية · تصحيح المعلم']],
-  '12-elective':[
-   ['lst1','Listening 1','الاستماع الأول'],['lst2','Listening 2','الاستماع الثاني'],
-   ['rdg1','Reading 1','القراءة الأولى'],['rdg2','Reading 2','القراءة الثانية'],
-   ['wrt1','Writing 1','الكتابة الأولى · تصحيح المعلم'],['wrt2','Writing 2','الكتابة الثانية · تصحيح المعلم']]
-};
-function linkToSkill(t,source,model,unit,skill){
- if(t==='12-elective'&&source==='unit')return './grade12/elective/units/paper-a-preview.html?unit='+unit+'&mode=skill&skill='+encodeURIComponent(skill);
- return './upper-grades-practice.html?track='+t+'&mode=skill&model='+model+'&skill='+encodeURIComponent(skill);
-}
-function redraw(){
- const t=$('track').value,model=$('model').value,source=t==='12-elective'?$('source').value:'bank',unit=$('unit').value;
- $('source').parentElement.hidden=t!=='12-elective';
- $('unitControls').hidden=t!=='12-elective'||source!=='unit';
- $('model').parentElement.hidden=t==='12-elective'&&source==='unit';
- $('scope').textContent=t==='12-core'?'Core · النموذج '+model+' · 9 مهارات منفصلة، لا مؤقت أثناء التدريب':source==='unit'?'Elective · Unit '+unit+' · 6 أنشطة مأخوذة من مراجعة الوحدة':'Elective · النموذج '+model+' · 6 مهارات منفصلة';
- const root=$('skills');root.textContent='';
- $('skill-list').textContent=p.get('section')==='listening'?'تدريبات الاستماع':'اختر المهارة للتدريب المباشر';
- for(const [key,title,detail] of catalogue[t]){
-  if(p.get('section')==='listening'&&!key.startsWith('lst'))continue;
-  const a=document.createElement('a');a.className='om-card';a.href=linkToSkill(t,source,model,unit,key);
-  const strong=document.createElement('strong');strong.textContent=title;
-  const small=document.createElement('small');small.textContent=detail;
-  const symbol=document.createElement('span');symbol.className='om-symbol';
-  symbol.innerHTML=key.startsWith('lst')?'<svg class="om-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 14v-2a9 9 0 1 1 18 0v2"/><rect x="3" y="12" width="5" height="8" rx="2"/><rect x="16" y="12" width="5" height="8" rx="2"/></svg>':key.startsWith('wrt')?'<svg class="om-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 21 4-1 13-13-3-3L4 17zM15 6l3 3"/></svg>':'<svg class="om-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7C8 4 4 4 2 5v14c4-1 7 0 10 2 3-2 6-3 10-2V5c-2-1-6-1-10 2zm0 0v14"/></svg>';
-  a.append(symbol,strong,small);root.append(a);
- }
- $('full').href=t==='12-elective'&&source==='unit'?'./grade12/elective/units/paper-a-preview.html?unit='+unit+'&mode=full':'./upper-grades-practice.html?track='+t+'&mode=full&model='+model;
- $('random').href='./upper-grades-practice.html?track='+t+'&mode=random';
-}
-const p=new URLSearchParams(location.search);
-if(['12-core','12-elective'].includes(p.get('track')))$('track').value=p.get('track');
-if(['A','B','C','D','E','F'].includes(p.get('model')))$('model').value=p.get('model');
-if(['1','2','3','4'].includes(p.get('unit'))){$('unit').value=p.get('unit');$('source').value='unit';}
-for(const id of ['track','model','source','unit'])$(id).addEventListener('change',redraw);
-redraw();
-})();
-</script>
-<script defer src="./shared/exam-tools.js"></script></body></html>
+</main>
+<footer class="om-footer">© Houssem Rouatbi — جميع الحقوق محفوظة للأستاذ</footer>
+<script defer src="./shared/grade-catalogue.js?v=29"></script>
+<script defer src="./shared/exam-tools.js"></script>
+</body></html>

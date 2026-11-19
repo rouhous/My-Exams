@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - grade12-skills.html
+      - shared/grade-catalogue.js
       - upper-grades-practice.html
       - grade12/elective/units/paper-a-preview.html
       - exams.html
@@ -62,7 +63,7 @@ jobs:
           html=page.read_text()
           parser=Links();parser.feed(html)
           paths=[urlsplit(x).path for x in parser.links]
-          assert len(parser.links)>=16
+          assert len(parser.links)>=4
           assert all((page.parent/x).is_file() for x in paths),[(x,paths[i]) for i,x in enumerate(parser.links) if not (page.parent/paths[i]).is_file()]
           assert 'grade12-skills.html' in Path('exams.html').read_text()
           assert 'grade12-skills.html' in Path('index.html').read_text()

@@ -227,11 +227,11 @@ function boot(){mount();if(w.MutationObserver){const o=new MutationObserver(()=>
 if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot);else if(d.body)boot();
 w.MyExamsLearning={feedback,answer,evidence,explanation,mount,metadata};
 })(window,document);
-</script><link rel="stylesheet" href="../../shared/assessment-theme.css?v=28"></head><body><header><a href="../index.html">← Grade 9 existing practice</a>
+</script><link rel="stylesheet" href="../../shared/assessment-theme.css?v=28"></head><body><header><a href="../../grade-skills.html?grade=9">← اختبارات الصف التاسع</a>
 <h1>Grade 9 · Gold Experience Oman 9A</h1><p>Three original unit-based full examinations · picture listening · individual skills</p></header>
 <main>
 
-<section class="setup" id="setup"><div class="topgrid"><label>Unit exam<select id="unit"><option value="U1">Unit 1 · Identity</option><option value="U2">Unit 2 · Connections</option><option value="U3">Unit 3 · The future is now</option></select></label>
+<section class="setup" id="setup"><div class="topgrid"><label>Unit exam<select id="unit"><option value="U1">الوحدة الأولى · Identity</option><option value="U2">الوحدة الثانية · Connections</option><option value="U3">الوحدة الثالثة · The future is now</option></select></label>
 <label>Mode<select id="mode"><option value="full">Full 40-mark paper · 120-minute timer</option><option value="skill">Individual skill · no timer</option></select></label></div>
 <label id="skillWrap" hidden>Skill<select id="skill"><option value="0">Listening 1 · Pictures</option><option value="1">Listening 2 · Interview</option><option value="2">Grammar and Vocabulary</option><option value="3">Reading 1</option><option value="4">Reading 2</option><option value="5">Writing 1</option><option value="6">Writing 2</option></select></label>
 <p id="ready" class="muted">Checking unit source files and audio hashes…</p><button id="start" disabled>Start activities</button></section>
@@ -241,6 +241,12 @@ w.MyExamsLearning={feedback,answer,evidence,explanation,mount,metadata};
 'use strict';
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const names=['Listening 1','Listening 2','Grammar & Vocabulary','Reading 1','Reading 2','Writing 1','Writing 2'];
+const direct = new URLSearchParams(location.search);
+const unitValue = 'U' + direct.get('unit');
+if (['U1', 'U2', 'U3'].includes(unitValue)) $('unit').value = unitValue;
+if (direct.get('mode') === 'skill' && /^[0-6]$/.test(direct.get('skill') || '')) {
+ $('mode').value = 'skill'; $('skill').value = direct.get('skill'); $('skillWrap').hidden = false;
+}
 let bank=null,manifest={},model=null,selected=[],asked=[],seconds=0,timer=null,finished=false,sourceStatus={};
 $('mode').onchange=()=>$('skillWrap').hidden=$('mode').value!=='skill';
 $('unit').onchange=()=>setReady();

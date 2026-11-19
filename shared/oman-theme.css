@@ -172,3 +172,7 @@ body.om-shell {
   html { scroll-behavior: auto; }
   .om-card, .om-quick a { transition: none; }
 }
+.om-card-comprehensive {
+  border-color: #a88137;
+  background: linear-gradient(140deg, #f8eac8, #f1dfae);
+}

@@ -20,10 +20,10 @@ small,.muted{color:#5c7168}.hidden{display:none!important}.meta{display:flex;gap
 #clock{font-variant-numeric:tabular-nums;font-size:20px;font-weight:700}.score{font-size:20px}
 @media print{header,.controls,.notice,.no-print{display:none!important}body{background:white}.section{break-inside:avoid;border:none;padding:4px}}
 </style><script src="../../shared/learning-feedback.js?v=28"></script><link rel="stylesheet" href="../../shared/assessment-theme.css?v=28"></head><body>
-<header><h1>My Exams · Grade 11 Core</h1><p>Original Semester 1 English practice</p><a href="../../index.html">Back to My Exams home</a></header>
+<header><h1>My Exams · Grade 11 Core</h1><p>Original Semester 1 English practice</p><a href="../../grade-skills.html?grade=11&amp;track=core">← اختبارات المسار</a></header>
 <main>
 <div class="panel"><div class="controls">
-<label>Model <select id="model"><option value="A">A · Communication</option><option value="B">B · Those Teenage Things</option><option value="C">C · Travellers and Tourists</option><option value="D">D · Innovation</option><option value="E">E · Mixed</option><option value="F">F · Mixed</option></select></label>
+<label>الاختبار <select id="model"><option value="A">الوحدة الأولى · Communication</option><option value="B">الوحدة الثانية · Those Teenage Things</option><option value="C">الوحدة الثالثة · Travellers and Tourists</option><option value="D">الوحدة الرابعة · Innovation</option><option value="E">اختبار شامل</option><option value="F">اختبار شامل إضافي</option></select></label>
 <label>Mode <select id="mode"><option value="exam">Mixed practice · timed</option><option value="practice">Single skill · untimed</option></select></label>
 <label id="skillWrap" class="hidden">Skill <select id="skill"><option value="listening">Listening</option><option value="grammarvocabulary">Grammar &amp; Vocabulary</option><option value="reading">Reading</option><option value="writing1">Writing 1</option><option value="writing2">Writing 2</option></select></label>
 <button id="start" disabled>Start</button><button id="random" class="alt" disabled>New random comprehensive</button><button id="offline" class="alt" disabled>Save selected model offline</button>
@@ -125,6 +125,8 @@ async function init(){
  try{var res=await fetch('./data.json');if(!res.ok)throw Error('HTTP '+res.status);var all=await res.json();models=all.models;
  for(const id of ['start','random','offline'])$(id).disabled=false;
  const params=new URLSearchParams(location.search);
+ if(models.some(model=>model.id===params.get('model')))$('model').value=params.get('model');
+ if(params.get('model')==='E') for(const option of $('model').options) option.hidden='ABCD'.includes(option.value);
  if(params.get('mode')==='random')$('random').click();$('intro').textContent='Grade 11 Core · English practice';status('Choose a model or make a random comprehensive paper.')}catch(e){status('Unable to load exam data: '+e.message)}
 }
 $('model').addEventListener('change',()=>{choiceModel=null});

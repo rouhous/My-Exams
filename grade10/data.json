@@ -441,7 +441,7 @@
         "prompt": "Write a blog post about new media. Give two advantages, one disadvantage and two safe-use tips. (80–100 words) Write at least 80 words."
       },
       "writing2": {
-        "prompt": "Write at least 100 words. Write a short discussion text about climate change. Explain two causes and two effects, then suggest two solutions. (80–100 words)"
+        "prompt": "Write at least 100 words. A friend shares a surprising story on social media. Write an email explaining how to check the story before sharing it. Give at least two steps and explain why they matter."
       },
       "audioLocal": null,
       "timeMinutes": 150,
@@ -884,7 +884,7 @@
         "prompt": "Write a short discussion text about climate change. Explain two causes and two effects, then suggest two solutions. (80–100 words) Write at least 80 words."
       },
       "writing2": {
-        "prompt": "Write at least 100 words. Write a formal email suggesting a renewable-energy project for your school or community. Explain its benefits. (80–100 words)"
+        "prompt": "Write at least 100 words. Write a message to your school council proposing two practical ways students can respond to climate change. Explain how each idea would help and suggest one first step."
       },
       "audioLocal": null,
       "timeMinutes": 150,
@@ -1328,7 +1328,7 @@
         "prompt": "Write a formal email suggesting a renewable-energy project for your school or community. Explain its benefits. (80–100 words) Write at least 80 words."
       },
       "writing2": {
-        "prompt": "Write at least 100 words. Write a short paragraph about an archaeological site or famous Omani person. Use clear sequence words and relevant historical facts. (80–100 words)"
+        "prompt": "Write at least 100 words. Write an article for your school newsletter comparing solar and wind energy for a community in Oman. Explain one advantage and one challenge for each, and say which you would choose."
       },
       "audioLocal": null,
       "timeMinutes": 150,
@@ -1782,7 +1782,7 @@
         "prompt": "Write a short paragraph about an archaeological site or famous Omani person. Use clear sequence words and relevant historical facts. (80–100 words) Write at least 80 words."
       },
       "writing2": {
-        "prompt": "Write at least 100 words. Write a blog post about new media. Give two advantages, one disadvantage and two safe-use tips. (80–100 words)"
+        "prompt": "Write at least 100 words. Write a report about an Omani fort or archaeological site that your class could visit. Explain what students could learn there and suggest two ways to protect the site."
       },
       "audioLocal": null,
       "timeMinutes": 150,

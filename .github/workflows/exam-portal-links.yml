@@ -5,6 +5,10 @@ on:
     paths:
       - exams.html
       - index.html
+      - grade-skills.html
+      - grade12-skills.html
+      - shared/grade-catalogue.js
+      - tests/grade_catalogue_test.cjs
       - .github/workflows/exam-portal-links.yml
   workflow_dispatch:
 permissions:
@@ -32,7 +36,7 @@ jobs:
           assert p.is_file()
           content=p.read_text(encoding='utf-8')
           parser=A();parser.feed(content)
-          assert len(parser.links)>=16
+          assert len(parser.links)==9
           missing=[]
           for href in parser.links:
             u=urlsplit(href)
@@ -45,3 +49,5 @@ jobs:
             assert grade in content, grade
           print('PASS portal exists and',len(parser.links),'links target existing files')
           PY
+      - name: Check grade, track and unit routing
+        run: node tests/grade_catalogue_test.cjs
