@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Grade 11 Core · My Exams · Student Review Pilot</title>
+<title>Grade 11 Core · My Exams</title>
 <style>
 :root{--green:#154b44;--gold:#bb9648;--bg:#f5f7f4;--ink:#17372f}*{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Arial,sans-serif}
@@ -19,17 +19,12 @@ textarea{min-height:160px;resize:vertical}.passage{background:#f1f7f3;padding:15
 small,.muted{color:#5c7168}.hidden{display:none!important}.meta{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between}
 #clock{font-variant-numeric:tabular-nums;font-size:20px;font-weight:700}.score{font-size:20px}
 @media print{header,.controls,.notice,.no-print{display:none!important}body{background:white}.section{break-inside:avoid;border:none;padding:4px}}
-</style></head><body>
-<header><h1>My Exams · Grade 11 Core</h1><p>Original Semester 1 English practice — student review pilot</p><a href="../../index.html">Back to My Exams home</a></header>
+</style><script src="../../shared/learning-feedback.js?v=28"></script><link rel="stylesheet" href="../../shared/assessment-theme.css?v=28"></head><body>
+<header><h1>My Exams · Grade 11 Core</h1><p>Original Semester 1 English practice</p><a href="../../index.html">Back to My Exams home</a></header>
 <main>
-<section class="panel"><h2>New units 1, 3 and 4</h2><p><a href="../../targeted_units/index.html">Open original Communication, Travellers and Tourists and Innovation papers</a> · each nine sections / 60 marks. Full timer opens only when matching MP3 is available.</p></section>
-<section class="panel"><h2>New original Unit 2 · Those Teenage Things</h2><p><a href="units/paper-b-preview.html">Open full nine-section Paper B</a> · 60 marks · 150-minute timer or untimed single skill · two source-validated listening recordings when available · teacher review draft.</p></section>
-<section class="panel"><h2>New complete unit papers · original teacher-review drafts</h2><p><a href="units/paper-a-preview.html">Unit 1 · Communication (A)</a> · <a href="units/paper-b-preview.html">Unit 2 · Those Teenage Things (B)</a> · <a href="units/paper-c-preview.html">Unit 3 · Travellers and Tourists (C)</a> · <a href="units/paper-d-preview.html">Unit 4 · Innovation (D)</a></p><p>All four units use 9 sections, 60 marks and 150 minutes. Full papers have timers; individual skills have no timer. Teacher approval still required.</p></section>
-<section class="panel"><h2>Semester 1 paper · teacher review</h2><p><a href="semester-a.html">Open nine-section Paper A</a> · 60 marks · 150 minutes · teacher-read listening scripts and answer key.</p></section>
-<div class="notice"><strong>Teacher review / pilot version — NOT a complete September 2026 SAH semester exam.</strong> This page offers five broad practice sections and six working revision models. The official Grade 11 Core semester-one paper requires nine specific sections: LST 1 (7), LST 2 (8), Grammar (5), Vocabulary (5), Reading 1 (5), Reading 2 (7), Reading 3 (8), Writing 1 (5) and Writing 2 (10), totaling 60 marks. Scripts, lengths, rubrics and final textbook alignment are still being rebuilt.  Models A–D use Communication, Those Teenage Things, Travellers and Tourists, Innovation; E/F reuse whole authentic-to-this-bank tasks across units. This is not an official Ministry paper. Vocabulary, grammar, reading and writing still require final textbook and assessment-specification review.</div>
 <div class="panel"><div class="controls">
 <label>Model <select id="model"><option value="A">A · Communication</option><option value="B">B · Those Teenage Things</option><option value="C">C · Travellers and Tourists</option><option value="D">D · Innovation</option><option value="E">E · Mixed</option><option value="F">F · Mixed</option></select></label>
-<label>Mode <select id="mode"><option value="exam">Full exam · timed</option><option value="practice">Single skill · untimed</option></select></label>
+<label>Mode <select id="mode"><option value="exam">Mixed practice · timed</option><option value="practice">Single skill · untimed</option></select></label>
 <label id="skillWrap" class="hidden">Skill <select id="skill"><option value="listening">Listening</option><option value="grammarvocabulary">Grammar &amp; Vocabulary</option><option value="reading">Reading</option><option value="writing1">Writing 1</option><option value="writing2">Writing 2</option></select></label>
 <button id="start">Start</button><button id="random" class="alt">New random comprehensive</button><button id="offline" class="alt">Save selected model offline</button>
 </div><div class="meta"><span id="intro">Loading exam data…</span><span id="clock">150:00</span></div><div id="status" role="status"></div></div>
@@ -50,7 +45,7 @@ function buildRandom(){
  var base=models.filter(m=>'ABCD'.includes(m.id));if(base.length!==4)return;
  var order=base.slice();for(var i=order.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]]}
  var picks=[...order,...order.slice(0,3)];
- var mixed=Object.assign({},order[0],{id:'R',unitTitle:'Random complete semester review',unit:null,status:'mixed sections, original passages and keys'});
+ var mixed=Object.assign({},order[0],{id:'R',unitTitle:'Random mixed practice',unit:null,status:'mixed sections, original passages and keys'});
  keys.forEach((k,i)=>mixed[k]=picks[i][k]);mixed.audioLocal=null;
  return mixed;
 }
@@ -81,7 +76,7 @@ function renderSection(section,i){
   if($('mode').value==='practice')h+='<details><summary>Show practice transcript</summary><p class="passage">'+esc(data.passage)+'</p></details>';
  }else if(data.passage){h+='<div class="passage">'+esc(data.passage)+'</div>'}
  if(key.startsWith('writing')){
-  h+='<p>'+esc(data.prompt)+'</p><textarea name="'+key+'" aria-label="'+key+' writing draft"></textarea><p class="muted"><span class="words">0</span> words · teacher feedback and final writing score are not enabled in this pilot</p>';
+  h+='<p>'+esc(data.prompt)+'</p><textarea name="'+key+'" aria-label="'+key+' writing response"></textarea><p class="muted"><span class="words">0</span> words · writing is assessed separately</p>';
  }else{h+=(data.questions||[]).map((q,j)=>renderQuestion(q,j,key)).join('')}
  return h+'</section>';
 }
@@ -127,7 +122,9 @@ async function prepareOffline(){
  }catch(e){status('Offline download failed: '+e.message)}
 }
 async function init(){
- try{var res=await fetch('./data.json');if(!res.ok)throw Error('HTTP '+res.status);var all=await res.json();models=all.models;$('intro').textContent='Six Grade 11 Core pilot models · four unit themes · two mixed revision papers · teacher approval pending';status('Choose a model or make a random comprehensive paper.')}catch(e){status('Unable to load exam data: '+e.message)}
+ try{var res=await fetch('./data.json');if(!res.ok)throw Error('HTTP '+res.status);var all=await res.json();models=all.models;
+ const params=new URLSearchParams(location.search);
+ if(params.get('mode')==='random')$('random').click();$('intro').textContent='Grade 11 Core · English practice';status('Choose a model or make a random comprehensive paper.')}catch(e){status('Unable to load exam data: '+e.message)}
 }
 $('model').addEventListener('change',()=>{choiceModel=null});
 $('mode').addEventListener('change',()=>{$('skillWrap').classList.toggle('hidden',$('mode').value!=='practice')});

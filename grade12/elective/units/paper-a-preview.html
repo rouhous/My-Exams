@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#19503d">
-<title>Grade 12 Elective · Unit 1 · The Arts · Full Teacher-Review Paper</title>
+<title>Grade 12 Elective · Unit 1 · The Arts · Full Practice Paper</title>
 <style>
 :root{--green:#1b523e;--gold:#a98740;--ink:#18362c;--pale:#f3f7f4;--line:#d9e3da}
 *{box-sizing:border-box}body{margin:0;background:var(--pale);color:var(--ink);font:16px/1.65 system-ui,Arial,sans-serif}
@@ -58,13 +58,11 @@ function evaluate(value,question){
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
-</script><script src="../../../shared/data-charts.js?v=1"></script><script src="../../../shared/learning-feedback.js?v=1"></script></head><body>
+</script><script src="../../../shared/data-charts.js?v=1"></script><script src="../../../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../../../shared/assessment-theme.css?v=28"></head><body>
 <header><a href="../index.html">← Grade 12 Elective four-unit bank</a>
-<h1>Grade 12 Elective · The Arts · Paper A (Draft)</h1>
+<h1>Grade 12 Elective · The Arts · Paper A</h1>
 <p>Semester 1 · 70 marks · 180-minute full practice · independent skills without a timer</p></header>
-<main><section class="card alert">
-<strong>Unapproved teacher-review practice, not an official Ministry examination.</strong>
-Each unit's six original activities follow the stored question formats and word-length targets for Grade 12 elective. Individual textbook-page correspondence, answer equivalence, Writing rubric and recorded-voice quality still need teacher approval. Source-matched neural MP3 recordings for the four units are now available: a player appears only when the recording's source hash matches the selected listening script. Otherwise a teacher must read the script twice.</section>
+<main>
 <section class="card controls">
 <div class="grid"><label>Activity mode<select id="mode"><option value="full">Complete Unit 1 paper · 180-minute timer</option><option value="skill">One independent skill · no timer</option></select></label>
 <label id="skillWrap" hidden>Choose skill<select id="skill">
@@ -92,7 +90,7 @@ const unitNumber=Number(params.get('unit'))||1;
 const unitNames={1:'The arts',2:'Doing the right thing',3:'Living in a Changing World',4:'Higher Education'};
 if(!unitNames[unitNumber])throw Error('Unsupported unit number');
 document.title=mixed?'Grade 12 Elective · Comprehensive Mixed Units · Teacher Review':'Grade 12 Elective · Unit '+unitNumber+' · '+unitNames[unitNumber]+' · Teacher Review';
-document.querySelector('header h1').textContent=mixed?'Grade 12 Elective · Comprehensive random unit exam (Draft)':'Grade 12 Elective · Unit '+unitNumber+': '+unitNames[unitNumber]+' · Paper A (Draft)';
+document.querySelector('header h1').textContent=mixed?'Grade 12 Elective · Comprehensive random unit exam (Draft)':'Grade 12 Elective · Unit '+unitNumber+': '+unitNames[unitNumber]+' · Paper A';
 const order=['lst1','lst2','rdg1','rdg2','wrt1','wrt2'];
 const requestedMode=params.get('mode'),requestedSkill=params.get('skill');
 if(requestedMode==='skill' && order.includes(requestedSkill)){
@@ -139,7 +137,7 @@ Promise.all([...files.map(async file=>{const r=await fetch(file);if(!r.ok)throw 
  });
  $('loadState').textContent='Six sections loaded from '+(mixed?'all 4 semester units':'Unit '+unitNumber)+'. 20 Listening + 25 Reading + 25 Writing = 70 marks. Source-matched MP3s: '+Object.keys(audioFiles).length+'/2. Missing audio uses teacher script.';
  $('start').disabled=false;
-}).catch(e=>{$('loadState').textContent='Source draft not ready: '+e.message});
+}).catch(e=>{$('loadState').textContent='Unable to load activities: '+e.message});
 function chart(c){return window.MyExamsCharts.render(c);}
 function render(key){
  const d=tasks[key],isListening=key.startsWith('lst'),isWriting=key.startsWith('wrt');
@@ -208,7 +206,7 @@ function finish(expired){
    const passed=Array.isArray(q.options)&&Number.isInteger(q.answer)?answer!==''&&Number(answer)===q.answer:window.MyExamsShortAnswers.evaluate(answer,q).correct;
    const part=tasks[key]||{};
    holder.querySelectorAll('.mex-fb').forEach(el=>el.remove());
-   holder.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:key,passage:part.passage,script:part.script||part.transcript},passed));
+   if(window.MyExamsLearning)holder.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:key,passage:part.passage,script:part.script||part.transcript},passed));
   }
  });
  const writing=selected.filter(k=>k.startsWith('wrt')).length;

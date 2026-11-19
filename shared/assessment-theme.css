@@ -1,0 +1,33 @@
+/* Shared visual treatment for the existing exam and skill interfaces. */
+:root {
+  --exam-paper: #faf6ed;
+  --exam-ink: #173c32;
+  --exam-green: #0b543c;
+  --exam-gold: #b2873d;
+}
+body {
+  background-color: var(--exam-paper);
+  color: var(--exam-ink);
+}
+body > header {
+  background: linear-gradient(115deg, #073b2d, #155c44);
+  border-bottom: 3px solid #cfaa58;
+  color: #fffdf5;
+}
+body > header a { color: #fae0a6; }
+body > main { min-width: 0; }
+button:not(:disabled) { cursor: pointer; }
+:is(button, a, select, input, textarea):focus-visible {
+  outline: 2px solid #a8771e;
+  outline-offset: 3px;
+}
+:is(button, select) { min-height: 42px; }
+button:disabled { opacity: .7; cursor: default; }
+audio { width: 100%; max-width: 100%; }
+:is(input[type=text], textarea, select) { max-width: 100%; }
+img { max-width: 100%; }
+@media (max-width: 640px) {
+  :is(.controls, .toolbar, .row) { max-width: 100%; flex-wrap: wrap; }
+  :is(.controls, .toolbar) select { min-width: 0; }
+  :is(.question, .part, .section) { overflow-wrap: anywhere; }
+}

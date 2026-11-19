@@ -54,11 +54,11 @@ function evaluate(value,question){
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
-</script><script src="../../../shared/learning-feedback.js?v=1"></script></head><body>
+</script><script src="../../../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../../../shared/assessment-theme.css?v=28"></head><body>
 <header><a href="../index.html">← Those Teenage Things Listening practice</a>
-<h1>Grade 11 Core · Unit 2: Those Teenage Things</h1><p>Original nine-section assessment · 60 marks · Teacher-review draft</p></header>
+<h1>Grade 11 Core · Unit 2: Those Teenage Things</h1><p>Original nine-section assessment · 60 marks</p></header>
 <main>
-<section class="notice"><strong>Not an officially approved Ministry paper.</strong> This original paper follows the stored 2026 SAH structure of nine sections and uses original unit-themed content. The current recording is played only if its MP3 checksum matches the Listening source. Page-by-page book alignment, recording quality, acceptable short answers and written marking still need teacher sign-off. The uploaded 2025/26 paper uses some different grammar/vocabulary headings; do not silently treat the two academic-year formats as identical.</section>
+
 <section class="setup" id="setup"><div class="controls"><label>Activity mode<select id="mode"><option value="full">Full paper · 150-minute timer</option><option value="skill">One skill · no timer</option></select></label><label id="skillWrap" hidden>Skill<select id="skill"><option value="lst1">Listening 1 · 7 marks</option><option value="lst2">Listening 2 · 8 marks</option><option value="grm">Grammar · 5 marks</option><option value="vcb">Vocabulary · 5 marks</option><option value="rdg1">Reading 1 · 5 marks</option><option value="rdg2">Reading 2 · 7 marks</option><option value="rdg3">Reading 3 · 8 marks</option><option value="wrt1">Writing 1 · 5 marks</option><option value="wrt2">Writing 2 · 10 marks</option></select></label></div>
 <p id="ready">Checking all nine sections and source-matched recordings…</p><button id="start" disabled>Start practice</button></section>
 <div id="paper" class="paper"><section><div class="row"><h2 id="paperTitle">Unit 1 assessment</h2><span class="meta" id="paperMarks"></span><span id="clock" class="clock"></span></div><div class="row"><button id="back" type="button">Back to selection</button><button id="end" type="button">Finish and review</button></div></section>
@@ -126,7 +126,7 @@ function finish(){if(submitted)return;submitted=true;stopTimer();$('end').disabl
       window.MyExamsShortAnswers.evaluate(input?.value||'',q).correct;
    const part=sections[key]||{};
    box.querySelectorAll('.mex-fb').forEach(el=>el.remove());
-   box.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:key,passage:part.passage,script:part.script||part.transcript},good));
+   if(window.MyExamsLearning)box.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:key,passage:part.passage,script:part.script||part.transcript},good));
  });
  const writings=selected.filter(k=>k.startsWith('wrt')).map(k=>{const v=$('write-'+k)?.value||'';return names[k]+': '+(v.trim().match(/\S+/g)||[]).length+' words (minimum '+sections[k].minWords+')'});
  $('results').hidden=false;$('results').innerHTML='<h2>Objective answers: '+correct+' / '+objective+'</h2><p>'+manual+' unmatched answers and '+writings.length+' writing tasks require teacher review. <b>No total 60-mark examination grade is assigned automatically.</b></p>'+(writings.length?'<p>'+writings.map(esc).join(' · ')+'</p>':'')+(rows.length?'<details><summary>Answer key and teacher-review checklist</summary><ol>'+rows.join('')+'</ol></details>':'');

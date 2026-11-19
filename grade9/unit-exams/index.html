@@ -227,11 +227,10 @@ function boot(){mount();if(w.MutationObserver){const o=new MutationObserver(()=>
 if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot);else if(d.body)boot();
 w.MyExamsLearning={feedback,answer,evidence,explanation,mount,metadata};
 })(window,document);
-</script></head><body><header><a href="../index.html">← Grade 9 existing practice</a>
+</script><link rel="stylesheet" href="../../shared/assessment-theme.css?v=28"></head><body><header><a href="../index.html">← Grade 9 existing practice</a>
 <h1>Grade 9 · Gold Experience Oman 9A</h1><p>Three original unit-based full examinations · picture listening · individual skills</p></header>
 <main>
-<section class="notice"><strong>Original teacher-review papers, not Ministry-issued examinations.</strong>
-The three exams are written specifically for Identity, Connections, and The future is now; they do not rename older mixed models. The Ministry-style sections total 40 marks over 120 minutes. Pictures match the options, and a local Listening MP3 is offered only after a source-transcript checksum passes. Open-response marking and textbook-page review remain the teacher's responsibility.</section>
+
 <section class="setup" id="setup"><div class="topgrid"><label>Unit exam<select id="unit"><option value="U1">Unit 1 · Identity</option><option value="U2">Unit 2 · Connections</option><option value="U3">Unit 3 · The future is now</option></select></label>
 <label>Mode<select id="mode"><option value="full">Full 40-mark paper · 120-minute timer</option><option value="skill">Individual skill · no timer</option></select></label></div>
 <label id="skillWrap" hidden>Skill<select id="skill"><option value="0">Listening 1 · Pictures</option><option value="1">Listening 2 · Interview</option><option value="2">Grammar and Vocabulary</option><option value="3">Reading 1</option><option value="4">Reading 2</option><option value="5">Writing 1</option><option value="6">Writing 2</option></select></label>
@@ -274,7 +273,7 @@ function render(task){
  let h='<section class="section"><h2>'+esc(task.title)+' · '+task.marks+' marks</h2>';
  if(task.skill==='listening'){
  const src=sourceStatus[task.id];
- h+='<p class="muted">'+(src?'Verified MP3, script read twice.':'MP3 pending or source mismatch. Teacher should read the script twice.')+'</p>';
+ h+='<p class="muted">'+(src?'Verified MP3, script read twice.':'Audio unavailable. For supervised practice, ask your teacher to read the script twice.')+'</p>';
  if(src)h+='<audio controls preload="metadata" src="'+esc(src)+'"></audio>';
  if($('mode').value==='skill')h+='<details><summary>Teacher transcript (supervised revision only)</summary><div class="teacherScript">'+esc(task.transcript)+'</div></details>';
  }
@@ -320,7 +319,7 @@ function finish(){
      const choice=Array.isArray(q.choices),val=field?.value||'';
      const good=choice?!!field&&Number(val)===q.answer:window.MyExamsShortAnswers.evaluate(val,q).correct;
      holder.querySelectorAll('.mex-fb').forEach(el=>el.remove());
-     holder.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:task.skill,passage:task.passage,script:task.transcript||task.script},good));
+     if(window.MyExamsLearning)holder.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:task.skill,passage:task.passage,script:task.transcript||task.script},good));
    }
  }
  const writing=selected.filter(t=>t.skill==='writing').map(t=>{const v=$('write'+t.group)?.value||'';return t.title+': '+(v.trim().match(/\S+/g)||[]).length+' words'});

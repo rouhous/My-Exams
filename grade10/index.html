@@ -54,7 +54,7 @@ function evaluate(value,question){
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
-</script><script src="../shared/data-charts.js?v=1"></script><script src="../shared/learning-feedback.js?v=1"></script></head><body>
+</script><script src="../shared/data-charts.js?v=1"></script><script src="../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../shared/assessment-theme.css?v=28"></head><body>
 <header><h1>My Exams · Grade 10</h1><p>English Language · Semester 1</p><a href="../index.html">Back to My Exams home</a></header>
 <main>
 
@@ -115,7 +115,7 @@ function renderSection(section,i){
   if(data.chart)h+=window.MyExamsCharts.render(data.chart);
    h+='<p>'+esc(data.prompt)+'</p>';
    if(key==='dataAnalysis')h+='<p class="notice">Separate untimed practice activity · fictional data · not part of the official full-exam score.</p>';
-   h+='<textarea name="'+key+'" aria-label="'+key+' writing draft"></textarea><p class="muted"><span class="words">0</span> words · Writing responses are assessed by your teacher</p>';
+   h+='<textarea name="'+key+'" aria-label="'+key+' writing response"></textarea><p class="muted"><span class="words">0</span> words · Writing responses are assessed by your teacher</p>';
  }else{h+=(data.questions||[]).map((q,j)=>renderQuestion(q,j,key)).join('')}
  return h+'</section>';
 }
@@ -148,7 +148,7 @@ function evaluateAnswers(){
    if(cell){
      cell.style.borderLeft='4px solid '+(good?'#3b8f67':'#bc7240');
      cell.querySelectorAll('.mex-fb').forEach(n=>n.remove());
-     cell.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:part.skill,passage:part.data.passage,script:part.data.script||part.data.transcript},good));
+     if(window.MyExamsLearning)cell.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:part.skill,passage:part.data.passage,script:part.data.script||part.data.transcript},good));
    }
   });
  });
@@ -167,7 +167,9 @@ async function prepareOffline(){
  }catch(e){status('Offline download failed: '+e.message)}
 }
 async function init(){
- try{var res=await fetch('./data.json');if(!res.ok)throw Error('HTTP '+res.status);var all=await res.json();models=all.models;$('intro').textContent='Choose your model and start';status('Choose a model or make a random comprehensive paper.')}catch(e){status('Unable to load exam data: '+e.message)}
+ try{var res=await fetch('./data.json');if(!res.ok)throw Error('HTTP '+res.status);var all=await res.json();models=all.models;
+ const params=new URLSearchParams(location.search);
+ if(params.get('mode')==='random')$('random').click();$('intro').textContent='Choose your model and start';status('Choose a model or make a random comprehensive paper.')}catch(e){status('Unable to load exam data: '+e.message)}
 }
 $('model').addEventListener('change',()=>{choiceModel=null});
 $('mode').addEventListener('change',()=>{$('skillWrap').classList.toggle('hidden',$('mode').value!=='practice')});
