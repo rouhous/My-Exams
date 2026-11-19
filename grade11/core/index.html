@@ -26,7 +26,7 @@ small,.muted{color:#5c7168}.hidden{display:none!important}.meta{display:flex;gap
 <label>Model <select id="model"><option value="A">A · Communication</option><option value="B">B · Those Teenage Things</option><option value="C">C · Travellers and Tourists</option><option value="D">D · Innovation</option><option value="E">E · Mixed</option><option value="F">F · Mixed</option></select></label>
 <label>Mode <select id="mode"><option value="exam">Mixed practice · timed</option><option value="practice">Single skill · untimed</option></select></label>
 <label id="skillWrap" class="hidden">Skill <select id="skill"><option value="listening">Listening</option><option value="grammarvocabulary">Grammar &amp; Vocabulary</option><option value="reading">Reading</option><option value="writing1">Writing 1</option><option value="writing2">Writing 2</option></select></label>
-<button id="start">Start</button><button id="random" class="alt">New random comprehensive</button><button id="offline" class="alt">Save selected model offline</button>
+<button id="start" disabled>Start</button><button id="random" class="alt" disabled>New random comprehensive</button><button id="offline" class="alt" disabled>Save selected model offline</button>
 </div><div class="meta"><span id="intro">Loading exam data…</span><span id="clock">150:00</span></div><div id="status" role="status"></div></div>
 <div id="exam"></div>
 <div id="actions" class="panel no-print hidden"><button id="submit">Check objective answers</button><span id="result" role="status"></span></div>
@@ -123,6 +123,7 @@ async function prepareOffline(){
 }
 async function init(){
  try{var res=await fetch('./data.json');if(!res.ok)throw Error('HTTP '+res.status);var all=await res.json();models=all.models;
+ for(const id of ['start','random','offline'])$(id).disabled=false;
  const params=new URLSearchParams(location.search);
  if(params.get('mode')==='random')$('random').click();$('intro').textContent='Grade 11 Core · English practice';status('Choose a model or make a random comprehensive paper.')}catch(e){status('Unable to load exam data: '+e.message)}
 }

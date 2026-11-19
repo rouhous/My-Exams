@@ -77,7 +77,7 @@ g.MyExamsShortAnswers={evaluate,words};
 <label>Mode<select id="mode"><option value="full">Fixed full exam · timed</option><option value="random">Comprehensive random · timed</option><option value="skill">Single skill · untimed</option></select></label>
 <label id="modelWrap">Model<select id="model"></select></label>
 <label id="skillWrap" hidden>Skill<select id="skill"></select></label>
-</div><p class="meta" id="scope"></p><div class="row actions"><button id="start">Start practice</button><span class="meta" id="loadState">Loading exams…</span></div>
+</div><p class="meta" id="scope"></p><div class="row actions"><button id="start" disabled>Start practice</button><span class="meta" id="loadState" role="status">Loading exams…</span></div>
 </section>
 <section id="paper">
 <div class="box"><div class="row"><div><h2 id="paperTitle"></h2><p class="meta" id="paperMeta"></p></div><div id="timer" aria-live="polite"></div></div></div>
@@ -206,6 +206,7 @@ Promise.all([
  if(sourceModels().some(m=>m.id===requestedModel))$('model').value=requestedModel;
  rebuild();
  $('loadState').textContent='Choose a model and start.';
+ $('start').disabled=false;
 }).catch(function(e){$('loadState').textContent='Bank unavailable: '+e.message;$('start').disabled=true});
 if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('./sw.js').catch(function(){});
 })();
