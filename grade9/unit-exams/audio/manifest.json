@@ -6,20 +6,7 @@
     "sourceModel": "U1",
     "seconds": 258.12,
     "bytes": 2065196,
-    "playedTwice": true,
-    "sequence": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "Now listen again.",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
-    ]
+    "playedTwice": true
   },
   "g9-U1-L2": {
     "sourceHash": "4db93db1a1d10e9e2699d378a620bd1ed6a3b9a86684fce724bcc2b43a7a2040",
@@ -37,20 +24,7 @@
     "sourceModel": "U2",
     "seconds": 254.9,
     "bytes": 2039468,
-    "playedTwice": true,
-    "sequence": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "Now listen again.",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
-    ]
+    "playedTwice": true
   },
   "g9-U2-L2": {
     "sourceHash": "2427357ff9d75152ea0750032987a82ae798dc01263a23c60d593df8020079d9",
@@ -68,20 +42,7 @@
     "sourceModel": "U3",
     "seconds": 248.9,
     "bytes": 1991468,
-    "playedTwice": true,
-    "sequence": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "Now listen again.",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
-    ]
+    "playedTwice": true
   },
   "g9-U3-L2": {
     "sourceHash": "496a5717f4a4dafb86e3531b8444fe8d63900baf1173b1cabb356eb91c59b081",
