@@ -14,7 +14,8 @@
   const title = randomExam ? 'Random exam' : 'Comprehensive exam';
   const storageKey = 'my-exams-mixed-v1:' + scope + ':' + (randomExam ? 'random-' : 'fixed-') + seed;
   const cachedPaper = 'my-exams-downloaded-papers-v1';
-  let state = { started: Date.now(), answers: {}, finished: false };
+  const emptyState = () => ({ version: 2, started: null, page: 0, answers: {}, finished: false });
+  let state = emptyState();
   let sections = [], interval = 0, bank;
   const assessed = [];
   const media = new Set();
@@ -50,11 +51,11 @@
       '<label class="answer">' + radio(id, i, label) + '<span>' + letters[i] + '. ' + escape(label) + '</span></label>').join('') + '</div>';
   }
 
-  function renderQuestion(q, i, s) {
+  function renderQuestion(q, i, s, omitPassage = false) {
     const id = s.key + '-' + (i + 1);
     assessed.push({ id, q, skill: s.key });
     return '<div class="question" id="' + id + '-item" data-unit="' + q.source.unit + '">' +
-      (q.passage ? '<div class="passage">' + escape(q.passage) + '</div>' : '') +
+      (q.passage && !omitPassage ? '<div class="passage">' + escape(q.passage) + '</div>' : '') +
       '<h3>' + (i + 1) + '. ' + escape(q.stem) + '</h3>' +
       (q.picture ? '<img class="stem-image" src="' + file(q.picture) + '" alt="Picture for item ' + (i + 1) + '">' : '') +
       renderOptions(q, id) + '</div>';
@@ -80,7 +81,8 @@
       return '<tr id="' + id + '-item" data-unit="' + q.source.unit + '"><th scope="row">' + (i + 1) + '</th>' +
         options.map((_, j) => '<td><label>' + radio(id, j, 'Item ' + (i + 1) + ', option ' + letters[j]) + '</label></td>').join('') + '</tr>';
     }).join('');
-    return gallery + prompts + '<table class="answer-grid" aria-label="Shade one answer for each item">' + head + '<tbody>' + rows + '</tbody></table>';
+    const answerTable = prompts + '<table class="answer-grid" aria-label="Shade one answer for each item">' + head + '<tbody>' + rows + '</tbody></table>';
+    return s.key.startsWith('reading') ? readingPanes(gallery, answerTable) : gallery + answerTable;
   }
 
   function renderWriting(task) {
@@ -93,13 +95,87 @@
       escape(task.minWords || '') + '" aria-label="Write your answer"></textarea><p id="' + task.key + '-words"></p></div>';
   }
 
+  function readingPanes(text, questions) {
+    const pane = (title, content) => '<div class="exam-dual-panel" tabindex="0" role="region" aria-label="'+title+'">' +
+      '<strong class="exam-dual-heading">'+title+'</strong>'+content+'</div>';
+    return '<div class="exam-dual-grid">'+pane('Reading text',text)+pane('Questions',questions)+'</div>';
+  }
+
+  function prepareMatching(section) {
+    const correctTexts = section.questions.map(q => q.options[q.answer]);
+    const extra = section.questions.flatMap(q => q.source.options || q.options.filter(option =>
+      !q.source.questions.some(original => original.options[original.answer] === option)))
+      .find(option => !correctTexts.includes(option));
+    if (new Set(correctTexts).size !== correctTexts.length || !extra) return;
+    const options = [...correctTexts, extra];
+    // Keep the options stable for a saved attempt.
+    let x = seed;
+    for (let i = options.length - 1; i > 0; i--) {
+      x = (Math.imul(x, 1664525) + 1013904223) >>> 0;
+      const j = x % (i + 1);
+      [options[i], options[j]] = [options[j], options[i]];
+    }
+    section.matching = options;
+    section.questions = section.questions.map((q, i) => ({
+      ...q, oldOptions: q.options, options, answer: options.indexOf(correctTexts[i]), matching: true
+    }));
+  }
+
+  function renderMatching(s) {
+    const controls = window.MyExamsSplitPanels;
+    const prompts = s.questions.map(q => q.stem);
+    return '<p>Write one letter for each numbered text. One choice is extra.</p>' +
+      controls.matching(prompts, s.matching, (i, allowed) => {
+        const id = s.key + '-' + (i + 1);
+        assessed.push({ id, q: s.questions[i], skill: s.key });
+        return controls.letterField(i, allowed, 'name="'+id+'" id="'+id+'-item" data-unit="'+s.questions[i].source.unit+'"');
+      })+'<div id="match-review" class="exam-match-review"></div>';
+  }
+
+  function renderReading(s) {
+    let index = 0;
+    if (s.groups) {
+      const text = s.groups.map(({ source }, i) =>
+        '<section><h3>Text '+letters[i]+'</h3><div class="passage">'+escape(source.passage)+'</div></section>').join('');
+      const questions = s.groups.map(({ questions }, i) =>
+        '<section><h3>Questions for Text '+letters[i]+'</h3>'+questions.map(q => renderQuestion(q,index++,s)).join('')+'</section>').join('');
+      return readingPanes(text, questions);
+    }
+    if (s.questions.every(q => q.passage)) {
+      const text = s.questions.map((q,i) => '<h3>Text '+(i+1)+'</h3><div class="passage">'+escape(q.passage)+'</div>').join('');
+      return readingPanes(text, s.questions.map((q,i) => renderQuestion(q,i,s,true)).join(''));
+    }
+    if (bank.grade === 6 && s.key === 'reading1') {
+      const groups = [...new Set(s.questions.map(q => q.source.unit))];
+      const text = groups.map((unit,i) => {
+        const choices = s.questions.find(q => q.source.unit === unit).options;
+        return '<h3>Text set '+(i+1)+'</h3>'+choices.map((choice,j) => '<div class="passage"><strong>'+letters[j]+'.</strong> '+escape(choice)+'</div>').join('');
+      }).join('');
+      const questions = s.questions.map((q,i) => {
+        const choices = q.options.map((_,j) => 'Text '+letters[j]);
+        return renderQuestion({...q, options:choices, stem:'Text set '+(groups.indexOf(q.source.unit)+1)+' · '+q.stem},i,s);
+      }).join('');
+      return readingPanes(text, questions);
+    }
+    return s.questions.map((q,i) => renderQuestion(q,i,s)).join('');
+  }
+
+  function studentSheet() {
+    const label = (name, text) => '<label>'+text+'<input type="text" maxlength="80" name="student-'+name+'" autocomplete="off"></label>';
+    return '<section class="exam-part" data-student-sheet><h2>Student details</h2>' +
+      '<p>Enter your details if needed, then select Next to start the timer and open Listening.</p>' +
+      '<div class="exam-student-fields">'+label('name','Name')+label('class','Class')+label('school','School')+'</div></section>';
+  }
+
   function renderSection(s) {
     const device = s.audio ? '<p>Listen to texts 1–5, then listen to the same texts again.</p><button type="button" id="' + s.key +
       '-prepare">Prepare recording</button><p id="' + s.key + '-audio-status" role="status"></p><audio controls hidden></audio>' : '';
     s.audio?.forEach(({ path }) => file(path));
     let i = 0;
     const content = s.writing ? renderWriting(s.writing)
+      : s.matching ? renderMatching(s)
       : s.grid ? renderGrid(s)
+      : s.key.startsWith('reading') ? renderReading(s)
       : s.groups ? s.groups.map(({ source, questions }, n) => '<div class="source-group"><h3>' +
           (source.audio ? 'Recording ' : 'Text ') + letters[n] + '</h3>' +
           (source.audio ? '<audio controls preload="none" src="' + file(source.audio) + '"></audio>'
@@ -181,7 +257,17 @@
   function restore() {
     try {
       const saved = JSON.parse(sessionStorage.getItem(storageKey));
-      if (saved && Number.isFinite(saved.started) && saved.answers) state = saved;
+      if (saved && (saved.started === null || Number.isFinite(saved.started)) && saved.answers) {
+        state = { ...emptyState(), ...saved, version: 2 };
+        if (saved.version !== 2) {
+          state.page = saved.finished ? 1 : saved.started ? 1 : 0;
+          for (const { id, q } of assessed.filter(row => row.q.matching)) {
+            const old = saved.answers[id];
+            const index = q.options.indexOf(q.oldOptions[Number(old)]);
+            if (old !== undefined) state.answers[id] = index >= 0 ? letters[index] : '';
+          }
+        }
+      }
     } catch {}
     for (const input of $('paper').querySelectorAll('input, textarea')) {
       const saved = state.answers[input.name];
@@ -202,12 +288,18 @@
     let correct = 0, unanswered = 0;
     for (const { id, q, skill } of assessed) {
       const selected = state.answers[id] || '';
+      const normalized = selected.trim().toUpperCase();
       const okay = selected.trim() && (q.options
-        ? Number(selected) === q.answer
+        ? (q.matching ? normalized === letters[q.answer] : Number(selected) === q.answer)
         : window.MyExamsShortAnswers.evaluate(selected, q).correct);
       if (okay) correct++;
       if (!selected.trim()) unanswered++;
       const item = $(id + '-item');
+      if (q.matching) {
+        item.closest('label').dataset.verdict = okay ? 'correct' : 'incorrect';
+        $('match-review').insertAdjacentHTML('beforeend','<p>Item '+id.split('-').at(-1)+': '+(okay?'✓ ':'')+letters[q.answer]+'</p>');
+        continue;
+      }
       item.dataset.verdict = okay ? 'correct' : 'incorrect';
       const override = q.target && q.source.grid === 'images' ? letters[q.answer] : undefined;
       const context = { skill, passage: q.passage || q.source.passage, script: q.script || q.source.script };
@@ -229,7 +321,7 @@
   }
 
   function tick(move = true) {
-    const seconds = Math.max(0, Math.ceil((state.started + bank.minutes * 60000 - Date.now()) / 1000));
+    const seconds = state.started === null ? bank.minutes * 60 : Math.max(0, Math.ceil((state.started + bank.minutes * 60000 - Date.now()) / 1000));
     $('clock').textContent = [Math.floor(seconds / 3600), Math.floor(seconds / 60) % 60, seconds % 60].map(n =>
       String(n).padStart(2, '0')).join(':');
     if (!seconds && !state.finished) finish(true, move);
@@ -241,7 +333,8 @@
     button.disabled = true;
     try {
       const cache = await caches.open(cachedPaper);
-      const assets = [location.href, './' + scope + '.json', './paper.css', './paper.js', './assemble.js',
+      const assets = [location.href, './' + scope + '.json', './paper.css', './paper.js?v=2', './assemble.js',
+        '../shared/reading-split.js?v=3', '../shared/reading-split.css?v=3', '../shared/exam-pages.js?v=1', '../shared/exam-pages.css?v=1',
         '../shared/oman-theme.css?v=29', '../shared/short-answer-marking.js',
         '../shared/data-charts.js', '../shared/learning-feedback.js?v=1', ...media];
       let done = 0;
@@ -277,11 +370,11 @@
     if (!response.ok) throw Error('The question bank could not be loaded. Reload the page to try again.');
     bank = await response.json();
     sections = window.MyExamsMixed.build(bank, seed);
+    if (grade >= 7 && grade <= 9) prepareMatching(sections.find(section => section.key === 'reading1'));
     $('title').textContent = title + ' · Grade ' + grade + (grade >= 11 ? ' ' + titleFor(track) : '');
     document.title = $('title').textContent + ' | My Exams';
     $('paperMarks').textContent = bank.marks + ' marks · ' + bank.minutes + ' minutes';
-    $('skills').innerHTML = sections.map(s => '<a href="#' + s.key + '">' + titleFor(s.key) + '</a>').join('');
-    $('paper').innerHTML = sections.map(renderSection).join('');
+    $('paper').innerHTML = studentSheet() + sections.map(renderSection).join('');
     $('paper').addEventListener('submit', e => e.preventDefault());
     $('paper').addEventListener('play', event => {
       for (const audio of $('paper').querySelectorAll('audio')) {
@@ -298,13 +391,21 @@
     $('download').onclick = download;
     $('finish').onclick = () => finish();
     $('retry').onclick = () => {
-      state = { started: Date.now(), answers: {}, finished: false };
+      state = emptyState();
       persist();
       location.reload();
     };
     $('status').hidden = true;
     $('session').hidden = false;
     restore();
+    window.MyExamsPages.refresh();
+    window.MyExamsPages.restore(state.page);
+    $('paper').addEventListener('exam:page', event => {
+      state.page = event.detail.index;
+      if (!event.detail.studentSheet && state.started === null && !state.finished) state.started = Date.now();
+      persist();
+      tick(false);
+    });
     tick(false);
     if ($('finish').disabled) return;
     if (state.finished) finish(false, false);

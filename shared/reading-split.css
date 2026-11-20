@@ -11,6 +11,16 @@
 .exam-dual-panel .paired,.exam-dual-panel .two-col{display:block}
 .exam-dual-panel .paired>div,.exam-dual-panel .two-col>div{margin-bottom:12px}
 .exam-dual-panel p{margin:7px 0 12px}
-@media(max-width:700px){.exam-dual-grid{grid-template-columns:minmax(0,1fr);gap:9px}.exam-dual-panel{height:auto;max-height:40vh;max-height:40dvh;min-height:160px;padding:12px;overscroll-behavior-y:auto}.exam-dual-panel.exam-questions{max-height:46vh;max-height:46dvh}.exam-dual-panel .exam-dual-heading{top:-12px;margin:-12px -12px 9px;padding:8px 12px}.exam-dual-panel .question,.exam-dual-panel .q{padding:10px 9px}}
+@media(max-width:700px){.exam-dual-grid{grid-template-columns:minmax(0,1fr);gap:9px}.exam-dual-panel{height:34vh;height:34dvh;max-height:none;min-height:120px;padding:12px;overscroll-behavior-y:auto}.exam-dual-panel.exam-questions{max-height:none}.exam-dual-panel .exam-dual-heading{top:-12px;margin:-12px -12px 9px;padding:8px 12px}.exam-dual-panel .question,.exam-dual-panel .q{padding:10px 9px}}
 @media print{.exam-dual-grid{display:block!important}.exam-dual-panel{height:auto!important;max-height:none!important;overflow:visible!important;border:0!important;padding:0!important;background:white!important;break-inside:auto!important}.exam-dual-panel .exam-dual-heading{position:static;margin:8px 0;background:#fff}.exam-dual-panel .question,.exam-dual-panel .q{break-inside:avoid}}
 @media(prefers-reduced-motion:reduce){.exam-dual-panel{scroll-behavior:auto}}
+
+/* Matching responses stay in one numbered row below the two independent panes. */
+.exam-letter-row{display:grid;grid-template-columns:repeat(var(--answer-count),minmax(0,1fr));gap:6px;width:100%;direction:ltr;margin:12px 0}
+.exam-letter-cell{display:flex;flex-direction:column;align-items:center;min-width:0;gap:4px}
+.exam-letter-cell>input[type=text]{box-sizing:border-box;width:100%;min-width:0;max-width:64px;min-height:44px;text-align:center;padding:5px 2px;font:700 1.1rem system-ui,sans-serif}
+.exam-letter-cell[data-verdict=correct]>input{border:2px solid #23804e}
+.exam-letter-cell[data-verdict=incorrect]>input{border:2px solid #a65a34}
+.exam-match-text{white-space:pre-line;border-bottom:1px solid #dccfaf;padding:8px 0;overflow-wrap:anywhere}
+.exam-match-text:last-child{border:0}
+.exam-match-review{margin:10px 0}

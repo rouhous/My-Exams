@@ -10,10 +10,10 @@ const { chromium, devices } = require('playwright');
    const model = grade === 5 ? 'E' : 'D';
    await page.goto(base + path + '?grade=' + grade + '&model=' + model + '&mode=' + mode,{waitUntil:'commit'});
    await page.waitForURL('**/mixed-exams/index.html?**');
-   await page.locator('#finish').waitFor({state:'visible'});
+   await page.locator('[data-student-sheet]').waitFor({state:'visible'});
    const result = await page.evaluate(() => ({
-     sections: document.querySelectorAll('#paper .exam-part').length,
-     all: [...document.querySelectorAll('#paper .exam-part')].map(section => (
+     sections: document.querySelectorAll('#paper .exam-part:not([data-student-sheet])').length,
+     all: [...document.querySelectorAll('#paper .exam-part:not([data-student-sheet])')].map(section => (
        [...section.querySelectorAll('[data-unit]')].map(item => item.dataset.unit)
      )),
      writing: [...document.querySelectorAll('.writing-task')].map(item => item.dataset.unit)
@@ -28,7 +28,7 @@ const { chromium, devices } = require('playwright');
    const signature = await page.locator('#paper .question h3').allTextContents();
    if (mode === 'random') {
      await page.locator('#newPaper').click();
-     await page.locator('#finish').waitFor({state:'visible'});
+     await page.locator('[data-student-sheet]').waitFor({state:'visible'});
      if (JSON.stringify(signature) === JSON.stringify(await page.locator('#paper .question h3').allTextContents()))
        throw Error('Random paper did not change for grade ' + grade);
    }
@@ -44,6 +44,7 @@ const { chromium, devices } = require('playwright');
  await page.getByText('This paper is ready for offline use on this device.').waitFor({timeout:120000});
  await context.setOffline(true);
  await page.reload({waitUntil:'domcontentloaded'});
+ await page.getByRole('button',{name:'Next page',exact:true}).click();
  await page.locator('#listening1-prepare').click();
  await page.getByText('Recording ready. Press play to begin.').waitFor({timeout:45000});
  const audio = page.locator('#listening1 audio');

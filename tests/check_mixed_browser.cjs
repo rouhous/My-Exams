@@ -8,11 +8,11 @@ exports.checkMixed = async function checkMixed(context, legacyPath, query, expec
       const params = new URLSearchParams({ ...query, model: 'E', mode: mode === 'exam' && query.track ? 'full' : mode, open: '1' });
       await page.goto(prefix + legacyPath + '?' + params, { waitUntil: 'commit' });
       await page.waitForURL('**/mixed-exams/index.html?**');
-      await page.locator('#finish').waitFor({ state: 'visible' });
-      assert.equal(await page.locator('.exam-part').count(), expected.sections);
+      await page.locator('[data-student-sheet]').waitFor({ state: 'visible' });
+      assert.equal(await page.locator('.exam-part:not([data-student-sheet])').count(), expected.sections);
       const actual = await page.evaluate(() => ({
         questions: document.querySelectorAll('#paper .question').length,
-        allUnits: [...document.querySelectorAll('#paper .exam-part')].map(section =>
+        allUnits: [...document.querySelectorAll('#paper .exam-part:not([data-student-sheet])')].map(section =>
           new Set([...section.querySelectorAll('.question')].map(item => item.dataset.unit)).size),
         writing: [...document.querySelectorAll('.writing-task')].map(item => item.dataset.unit)
       }));

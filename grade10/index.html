@@ -19,7 +19,7 @@ textarea{min-height:160px;resize:vertical}.passage{background:#f1f7f3;padding:15
 small,.muted{color:#5c7168}.hidden{display:none!important}.meta{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between}
 #clock{font-variant-numeric:tabular-nums;font-size:20px;font-weight:700}.score{font-size:20px}
 @media print{header,.controls,.notice,.no-print{display:none!important}body{background:white}.section{break-inside:avoid;border:none;padding:4px}}
-</style><link rel="stylesheet" href="../shared/exam-tools.css"><link rel="stylesheet" href="../shared/reading-split.css"><script src="../shared/short-answer-marking.js"></script><script id="short-answer-critical">
+</style><link rel="stylesheet" href="../shared/exam-tools.css"><script src="../shared/short-answer-marking.js"></script><script id="short-answer-critical">
 /* English short answer marking for My Exams.
    Accept the expected answer as a complete contiguous phrase, with up to four
    words above the question's stated maximum. This checks text, not meaning. */
@@ -54,7 +54,7 @@ function evaluate(value,question){
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
-</script><script src="../shared/data-charts.js?v=1"></script><script src="../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../shared/assessment-theme.css?v=28"><script src="../shared/mixed-exam-links.js" data-exam-source="10" defer></script></head><body>
+</script><script src="../shared/data-charts.js?v=1"></script><script src="../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../shared/assessment-theme.css?v=28"><script src="../shared/mixed-exam-links.js" data-exam-source="10" defer></script><link rel="stylesheet" href="../shared/reading-split.css?v=3"><link rel="stylesheet" href="../shared/exam-pages.css?v=1"><script defer src="../shared/reading-split.js?v=3"></script><script defer src="../shared/exam-pages.js?v=1" data-host="exam"></script></head><body>
 <header><h1>My Exams · Grade 10</h1><p>English Language · Semester 1</p><a href="../grade-skills.html?grade=10">← اختبارات الصف العاشر</a></header>
 <main>
 
@@ -102,7 +102,7 @@ function renderQuestion(q,i,prefix){
 }
 function renderSection(section,i){
  var data=section.data,key=section.skill;
- var h='<section class="section" data-skill="'+key+'"><h2>'+esc(key==='dataAnalysis'?'DATA ANALYSIS · CHART DESCRIPTION':key.replace(/(\d)/g,' $1').toUpperCase())+'</h2>';
+ var h='<section class="section" data-skill="'+key+'"'+(key.startsWith('reading')?' data-reading':'')+'><h2>'+esc(key==='dataAnalysis'?'DATA ANALYSIS · CHART DESCRIPTION':key.replace(/(\d)/g,' $1').toUpperCase())+'</h2>';
  var origin=(current()?.unitSources||[]).find(x=>x.section===key||x.skill===key);
  if(origin)h+='<p class="muted">Mixed revision source: '+esc(origin.unit||'original unit')+' (reused practice activity)</p>';
  if(key==='listening'){
@@ -180,4 +180,4 @@ $('submit').addEventListener('click',evaluateAnswers);
 $('offline').addEventListener('click',prepareOffline);
 init();
 })();
-</script><script>window.addEventListener('load',()=>{const p=new URLSearchParams(location.search);const model=p.get('model');if(model&&[...document.querySelectorAll('#model option')].some(o=>o.value===model)){document.getElementById('model').value=model;document.getElementById('model').dispatchEvent(new Event('change'))}const skill=p.get('skill');if(p.get('mode')==='practice'||skill){document.getElementById('mode').value='practice';document.getElementById('mode').dispatchEvent(new Event('change'))}if(skill){const opts=[...document.querySelectorAll('#skill option')];if(opts.some(o=>o.value===skill))document.getElementById('skill').value=skill}});</script><script defer src="../shared/exam-tools.js"></script><footer style="text-align:center;background:#06442f;color:white;padding:12px;font:13px system-ui,Tahoma,sans-serif;margin-top:30px">© Houssem Rouatbi — جميع الحقوق محفوظة للأستاذ</footer><script defer src="../shared/reading-split.js"></script></body></html>
+</script><script>window.addEventListener('load',()=>{const p=new URLSearchParams(location.search);const model=p.get('model');if(model&&[...document.querySelectorAll('#model option')].some(o=>o.value===model)){document.getElementById('model').value=model;document.getElementById('model').dispatchEvent(new Event('change'))}const skill=p.get('skill');if(p.get('mode')==='practice'||skill){document.getElementById('mode').value='practice';document.getElementById('mode').dispatchEvent(new Event('change'))}if(skill){const opts=[...document.querySelectorAll('#skill option')];if(opts.some(o=>o.value===skill))document.getElementById('skill').value=skill}});</script><script defer src="../shared/exam-tools.js"></script><footer style="text-align:center;background:#06442f;color:white;padding:12px;font:13px system-ui,Tahoma,sans-serif;margin-top:30px">© Houssem Rouatbi — جميع الحقوق محفوظة للأستاذ</footer></body></html>

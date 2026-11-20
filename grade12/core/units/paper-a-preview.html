@@ -19,7 +19,7 @@ audio{width:100%;max-width:630px}.script{white-space:pre-wrap;max-height:320px;o
 .controls{display:grid;grid-template-columns:1fr 1fr;gap:13px}
 .clock{font-weight:800;font-size:20px;font-variant-numeric:tabular-nums}
 @media(max-width:640px){.controls{grid-template-columns:1fr}}@media print{header,.setup,#end,#back,#clock{display:none!important}.paper{display:block!important}section{break-inside:avoid}}
-</style><link rel="stylesheet" href="../../../shared/exam-tools.css"><link rel="stylesheet" href="../../../shared/reading-split.css"><script src="../../../shared/short-answer-marking.js"></script><script id="short-answer-critical">
+</style><link rel="stylesheet" href="../../../shared/exam-tools.css"><script src="../../../shared/short-answer-marking.js"></script><script id="short-answer-critical">
 /* English short answer marking for My Exams.
    Accept the expected answer as a complete contiguous phrase, with up to four
    words above the question's stated maximum. This checks text, not meaning. */
@@ -54,7 +54,7 @@ function evaluate(value,question){
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
-</script><script src="../../../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../../../shared/assessment-theme.css?v=28"></head><body data-study-tools="compact">
+</script><script src="../../../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../../../shared/assessment-theme.css?v=28"><link rel="stylesheet" href="../../../shared/reading-split.css?v=3"><link rel="stylesheet" href="../../../shared/exam-pages.css?v=1"><script defer src="../../../shared/reading-split.js?v=3"></script><script defer src="../../../shared/exam-pages.js?v=1" data-host="sections" data-reset="back"></script></head><body data-study-tools="compact">
 <header><a href="../../../grade12-skills.html?track=12-core">← اختبارات المسار</a>
 <h1>Grade 12 Core · Unit 1: Retail Therapy</h1><p>Original nine-section assessment · 70 marks</p></header>
 <main>
@@ -84,7 +84,7 @@ async function initialize(){
  }catch(e){$('ready').textContent='Paper unavailable: '+e.message}
 }
 function render(key){
- const s=sections[key];let h='<section class="part"><h2>'+names[key]+' · '+s.marks+' marks</h2>';
+ const s=sections[key];let h='<section class="part"'+(key.startsWith('rdg')?' data-reading':'')+'><h2>'+names[key]+' · '+s.marks+' marks</h2>';
  if(key.startsWith('lst')){h+='<p class="meta">'+(s.audioFile?'Source-matched MP3 confirmed, read twice.':'No verified recording: use teacher reading twice.')+'</p>';
  if(s.audioFile)h+='<audio controls preload="metadata" src="'+esc(s.audioFile)+'"></audio>';
  if($('mode').value==='skill')h+='<details><summary>Teacher script (supervised practice only)</summary><div class="script">'+esc(s.script)+'</div></details>';
@@ -140,4 +140,4 @@ if (direct.get('mode') === 'skill' && keys.includes(direct.get('skill'))) {
  $('mode').onchange();
 }
 $('start').onclick=start;$('end').onclick=finish;$('back').onclick=()=>{stopTimer();$('paper').classList.remove('active');$('setup').hidden=false;$('end').disabled=false;window.scrollTo(0,0)};initialize();
-</script><script defer src="../../../shared/exam-tools.js"></script><script defer src="../../../shared/reading-split.js"></script></body></html>
+</script><script defer src="../../../shared/exam-tools.js"></script></body></html>

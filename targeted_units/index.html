@@ -61,7 +61,7 @@ function evaluate(value,question){
 }
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
-</script><script src="../shared/learning-feedback.js?v=1"></script></head><body>
+</script><script src="../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../shared/reading-split.css?v=3"><link rel="stylesheet" href="../shared/exam-pages.css?v=1"><script defer src="../shared/reading-split.js?v=3"></script><script defer src="../shared/exam-pages.js?v=1" data-host="sections" data-reset="back"></script></head><body>
 <header><a href="../index.html">← My Exams homepage</a><h1>New unit-specific papers · Grades 11–12</h1>
 <p>Original teacher-review paper library · 2026 SAH-shaped sections · offline-friendly practice</p></header>
 <main>
@@ -111,7 +111,7 @@ function mkQ(k,q,i){let id=k+'-'+i;questions.push({id,q,k});let h='<div class="q
  else h+='<input type="text" name="'+id+'" maxlength="220" placeholder="Short answer: teacher checks meaning">';
  return h+'</div>';}
 function chart(s){let c=s.chart;if(!c)return'';let vals=c.series[0].values;return'<table class="chart"><thead><tr><th>Period</th><th>Value</th></tr></thead><tbody>'+c.categories.map((v,i)=>'<tr><td>'+esc(v)+'</td><td>'+esc(vals[i])+'</td></tr>').join('')+'</tbody></table><p class="muted">'+esc(c.title||'Unit practice dataset')+'</p>'}
-function part(k){let s=current.sections[k];let h='<section class="part"><h2>'+esc(s.title)+' · '+s.marks+' marks</h2>';
+function part(k){let s=current.sections[k];let h='<section class="part"'+(k.startsWith('rdg')?' data-reading':'')+'><h2>'+esc(s.title)+' · '+s.marks+' marks</h2>';
  if(k.startsWith('lst')){if(s.audioPath)h+='<audio preload="metadata" controls src="'+esc(s.audioPath)+'"></audio><p class="muted">Recording source matches this text; played twice.</p>';
  else h+='<p class="muted">Audio unavailable, teacher may read script twice.</p>';
  if($('mode').value==='skill')h+='<details><summary>Teacher script — open only after practice</summary><div class="script">'+esc(s.script)+'</div></details>';}

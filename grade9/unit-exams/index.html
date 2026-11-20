@@ -227,7 +227,7 @@ function boot(){mount();if(w.MutationObserver){const o=new MutationObserver(()=>
 if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot);else if(d.body)boot();
 w.MyExamsLearning={feedback,answer,evidence,explanation,mount,metadata};
 })(window,document);
-</script><link rel="stylesheet" href="../../shared/assessment-theme.css?v=28"><style>.images .choice{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:6px}.images .choice img{width:100%;aspect-ratio:1;object-fit:contain}.images .choice input[type="radio"]{margin:2px auto;min-width:19px;min-height:19px}</style><script src="../../shared/mixed-exam-links.js" data-exam-source="9" defer></script></head><body data-study-tools="compact"><header><a href="../../grade-skills.html?grade=9">← اختبارات الصف التاسع</a>
+</script><link rel="stylesheet" href="../../shared/assessment-theme.css?v=28"><style>.images .choice{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:6px}.images .choice img{width:100%;aspect-ratio:1;object-fit:contain}.images .choice input[type="radio"]{margin:2px auto;min-width:19px;min-height:19px}</style><script src="../../shared/mixed-exam-links.js" data-exam-source="9" defer></script><link rel="stylesheet" href="../../shared/reading-split.css?v=3"><link rel="stylesheet" href="../../shared/exam-pages.css?v=1"><script defer src="../../shared/reading-split.js?v=3"></script><script defer src="../../shared/exam-pages.js?v=1" data-host="tasks" data-reset="back"></script></head><body data-study-tools="compact"><header><a href="../../grade-skills.html?grade=9">← اختبارات الصف التاسع</a>
 <h1>Grade 9 · Gold Experience Oman 9A</h1><p>Unit exams and skills practice</p></header>
 <main>
 <section class="setup" id="setup"><div class="topgrid"><label>Unit exam<select id="unit"><option value="U1">الوحدة الأولى · Identity</option><option value="U2">الوحدة الثانية · Connections</option><option value="U3">الوحدة الثالثة · The future is now</option></select></label>
@@ -333,15 +333,23 @@ function question(task,q,index){
  return h+'</div>';
 }
 function render(task){
- let h='<section class="section"><h2>'+esc(task.title)+' · '+task.marks+' marks</h2>';
+ let h='<section class="section"'+(task.skill==='reading'?' data-reading':'')+'><h2>'+esc(task.title)+' · '+task.marks+' marks</h2>';
  if(task.skill==='listening'){
  const src=sourceStatus[task.id];
  h+='<p class="muted">'+(src?'Verified MP3, script read twice.':'Audio unavailable. For supervised practice, ask your teacher to read the script twice.')+'</p>';
  if(src)h+='<audio controls preload="metadata" src="'+esc(src)+'"></audio>';
  if($('mode').value==='skill')h+='<details><summary>Teacher transcript (supervised revision only)</summary><div class="teacherScript">'+esc(task.transcript)+'</div></details>';
  }
+ if(task.people){
+  const match=window.MyExamsSplitPanels;
+  const options=task.options.map(x=>x.replace(/^[A-Z]:\s*/,''));
+  return h+'<p>'+esc(task.passage)+'</p>'+match.matching(task.people,options,(i,letters)=>{
+   const id=task.id+'-'+i;
+   asked.push({id,q:task.items[i],task});
+   return match.letterField(i,letters,'name="'+id+'"');
+  })+'<div class="exam-match-review" id="review-'+task.id+'"></div></section>';
+ }
  if(task.passage)h+='<div class="passage">'+esc(task.passage)+'</div>';
- if(task.people)h+='<p><b>Activities</b></p><ol type="A">'+task.options.map(x=>'<li>'+esc(x.replace(/^[A-E]:\s*/,''))+'</li>').join('')+'</ol>';
  if(task.skill==='writing'){h+='<p>'+esc(task.prompt)+'</p><textarea id="write'+task.group+'" placeholder="Write at least '+task.minWords+' words"></textarea><p class="manual">Minimum '+task.minWords+' words · teacher review required</p>';}
  else for(const [i,item] of task.items.entries())h+=question(task,item,i);
  return h+'</section>';
@@ -356,6 +364,20 @@ function finish(){
  if(finished)return;finished=true;stop();$('end').disabled=true;
  let checked=0,correct=0,manual=0,blank=0,rows=[];
  for(const {id,q,task} of asked){
+   if(task.people){
+     const field=document.querySelector('input[name="'+id+'"]');
+     const value=field?.value.trim().toUpperCase()||'';
+     const expected=q.choices[q.answer];
+     const ok=value===expected;
+     checked++;
+     if(ok)correct++;
+     if(!value)blank++;
+     if(field)field.closest('label').dataset.verdict=ok?'correct':'incorrect';
+     const item=Number(id.split('-').at(-1))+1;
+     $('review-'+task.id).insertAdjacentHTML('beforeend','<p>Item '+item+': '+(ok?'✓ ':'')+esc(expected)+'</p>');
+     rows.push('<li>'+(ok?'✓ Correct':'✗ Incorrect')+' · '+esc(q.stem)+(ok?'':' · Expected '+esc(expected))+'</li>');
+     continue;
+   }
    if(Array.isArray(q.choices)){
      checked++;
      const picked=document.querySelector('input[name="'+id+'"]:checked');
@@ -392,5 +414,5 @@ function finish(){
  $('results').scrollIntoView({behavior:'smooth'});
 }
 $('start').onclick=start;$('end').onclick=finish;$('back').onclick=()=>{stop();$('paper').classList.remove('active');$('setup').hidden=false;window.scrollTo(0,0)};
-init();
+document.addEventListener("DOMContentLoaded",init,{once:true});
 </script><script defer src="../../shared/exam-tools.js"></script></body></html>

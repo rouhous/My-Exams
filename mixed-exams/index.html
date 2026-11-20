@@ -11,8 +11,8 @@
   <script defer src="../shared/data-charts.js"></script>
   <script defer src="../shared/learning-feedback.js?v=1"></script>
   <script defer src="assemble.js"></script>
-  <script defer src="paper.js"></script>
-</head>
+
+<link rel="stylesheet" href="../shared/reading-split.css?v=3"><link rel="stylesheet" href="../shared/exam-pages.css?v=1"><script defer src="../shared/reading-split.js?v=3"></script><script defer src="../shared/exam-pages.js?v=1" data-host="paper" data-group="session"></script><script defer src="paper.js?v=2"></script></head>
 <body class="om-shell">
   <header class="om-top">
     <a class="om-brand" href="../exams.html">My Exams</a>
@@ -24,10 +24,9 @@
     <div id="session" hidden>
       <div class="exam-bar">
         <span id="paperMarks"></span>
-        <span id="clock" aria-label="Time remaining"></span>
-        <button type="button" id="finish">Finish and review</button>
+        <span id="clock" data-after-details aria-label="Time remaining"></span>
+        <button type="button" id="finish" data-after-details>Finish and review</button>
       </div>
-      <nav id="skills" aria-label="Exam sections"></nav>
       <form id="paper" autocomplete="off"></form>
       <div id="result" tabindex="-1" hidden></div>
       <details class="offline">

@@ -23,7 +23,8 @@ class DualScrollReadingTests(unittest.TestCase):
  def test_pages_have_correct_assets(self):
   pages=[
     'grades5-6/index.html','grades7-8/index.html','grade9/index.html',
-    'grade10/index.html','upper-grades-practice.html',
+    'grade9/unit-exams/index.html','grade10/index.html','upper-grades-practice.html',
+    'mixed-exams/index.html','targeted_units/index.html',
   ]+[f'grade{grade}/{track}/units/paper-{m}-preview.html'
     for grade,track,letters in ((11,'core','abcd'),(11,'elective','abcd'),(12,'core','abcd'),(12,'elective','a'))
     for m in letters]
@@ -36,7 +37,8 @@ class DualScrollReadingTests(unittest.TestCase):
    self.assertIn(prefix+'shared/reading-split.js',html,item)
  def test_g7_g8_wrap_the_tasks_that_need_split(self):
   html=(ROOT/'grades7-8/index.html').read_text(encoding='utf-8')
-  self.assertIn("['cloze','short-answer','matching'].includes(s.type)",html)
-  self.assertIn('exam-dual-candidate',html)
+  self.assertIn("k.startsWith('reading')",html)
+  self.assertIn("match.matching",html)
+  self.assertNotIn(".single-scroll-exam .exam-dual-panel{",html)
 
 if __name__=='__main__':unittest.main()

@@ -2,10 +2,8 @@
 .om-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
 .om-top a { color:white; }
 .paper-shell h1 { margin:.5rem 0; font-size:clamp(1.65rem,5vw,2.45rem); }
-.exam-bar { position:sticky; top:0; z-index:2; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px; background:#eaf2ed; border:1px solid #c4d8ca; border-radius:10px; padding:8px 12px; }
+.exam-bar { position:relative; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px; background:#eaf2ed; border:1px solid #c4d8ca; border-radius:10px; padding:8px 12px; }
 #clock { font-weight:700; font-variant-numeric:tabular-nums; }
-#skills { display:flex; flex-wrap:wrap; gap:6px; margin:.85rem 0; }
-#skills a { border:1px solid #d8c698; border-radius:7px; padding:5px 9px; background:#fffaf0; color:#174631; }
 .exam-part { background:#fffdf7; border:1px solid #deceb1; border-radius:13px; padding:clamp(12px,3vw,22px); margin:12px 0; scroll-margin-top:116px; }
 .exam-part h2 { margin:0 0 .6rem; color:#0b543c; display:flex; gap:12px; align-items:baseline; justify-content:space-between; font-size:1.3rem; }
 .exam-part h2 small { font-size:.8rem; white-space:nowrap; color:#4b6254; }

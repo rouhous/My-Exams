@@ -84,6 +84,69 @@ const {chromium}=require('playwright');
    assert.match(await page.locator('.part h2').innerText(),new RegExp(skill));
   }
  }
+ for(const [grade,href,section] of [
+  [5,'/grades5-6/index.html?grade=5&model=A&skill=reading2','#exercise'],
+  [6,'/grades5-6/index.html?grade=6&model=A&skill=reading1','#exercise'],
+  [7,'/grades7-8/index.html?grade=7&model=A&mode=practice&skill=reading2','#exercise'],
+  [8,'/grades7-8/index.html?grade=8&model=A&mode=practice&skill=reading2','#exercise'],
+  [9,'/grade9/unit-exams/index.html?unit=1&mode=skill&skill=4&open=1','#tasks'],
+  [10,'/grade10/index.html?model=A&mode=practice&skill=reading2','#exam'],
+  [11,'/grade11/core/units/paper-a-preview.html?mode=skill&skill=rdg2&open=1','#sections'],
+  [12,'/grade12/elective/units/paper-a-preview.html?unit=1&mode=skill&skill=rdg2&open=1','#sections']
+ ]){
+  await page.goto(base+href);
+  const panes=page.locator(section+' .exam-dual-panel:visible');
+  await panes.first().waitFor();
+  assert.equal(await panes.count(),2);
+  assert(await panes.evaluateAll(els=>els.every(e=>getComputedStyle(e).overflowY==='auto')));
+  assert.equal(await page.locator('input[placeholder="Student name"], input[name^="student-"], #exercise .cover').count(),0,'Cover on grade '+grade);
+ }
+ console.log('PASS two independently scrollable panes for Reading in Grades 5–12');
+
+ await page.goto(base+'/grades7-8/index.html?grade=7&model=A&mode=practice&skill=reading1');
+ const letterFields=page.locator('.exam-letter-row input');
+ await letterFields.first().waitFor();
+ assert.equal(await letterFields.count(),5);
+ const answerLetters=await page.evaluate(()=>JSON.parse(document.getElementById('DATA').textContent)
+   .find(m=>m.grade===7&&m.model==='A').sections.find(s=>s.key==='reading1').answers
+   .map((answer,i)=>String.fromCharCode((i%2 ? 65 : 97)+answer)));
+ for(let i=0;i<answerLetters.length;i++) await letterFields.nth(i).fill(answerLetters[i]);
+ await page.locator('#submit').click();
+ assert.equal(await page.locator('.exam-letter-cell[data-verdict=correct]').count(),5);
+
+ await page.goto(base+'/grade9/unit-exams/index.html?unit=1&mode=skill&skill=3&open=1');
+ await page.locator('.exam-letter-row input').first().waitFor();
+ assert.equal(await page.locator('.exam-letter-row input').count(),4);
+ assert.equal(await page.locator('.exam-matching .exam-dual-panel').count(),2);
+
+ await page.goto(base+'/mixed-exams/index.html?grade=8&mode=exam');
+ await page.locator('[data-student-sheet]').waitFor();
+ assert.equal(await page.locator('[data-exam-page]:visible').count(),1);
+ assert(await page.locator('#clock').isHidden());
+ await page.locator('input[name="student-name"]').fill('Sample learner');
+ const next=page.getByRole('button',{name:'Next page',exact:true});
+ const previous=page.getByRole('button',{name:'Previous page',exact:true});
+ await next.click();
+ await page.locator('#listening1').waitFor();
+ const firstPicture=page.locator('#listening1 input[type=radio]').first();
+ await firstPicture.check();
+ await next.click();
+ assert(await page.locator('#listening2').isVisible());
+ assert(await page.locator('#listening1').isHidden());
+ await previous.click();
+ assert(await firstPicture.isChecked());
+ await page.reload();
+ await firstPicture.waitFor();
+ assert(await firstPicture.isChecked());
+ for(let i=0;i<4;i++)await next.click();
+ assert(await page.locator('#reading1').isVisible());
+ assert.equal(await page.locator('#reading1 .exam-letter-row input').count(),5);
+ await page.setViewportSize({width:1200,height:800});
+ assert(await page.locator('#reading1 .exam-dual-panel').evaluateAll(els=>
+   els.length===2 && Math.abs(els[0].getBoundingClientRect().top-els[1].getBoundingClientRect().top)<2));
+ await page.setViewportSize({width:390,height:844});
+ console.log('PASS numbered matching, case-insensitive marking, and one-page navigation with restoration');
+
  await page.goto(base+'/grade12-skills.html?track=12-core');
  await page.locator('#skills a').first().waitFor();
  assert.equal(await page.locator('.ex-tools,.ex-ink,.ex-note').count(),0);
