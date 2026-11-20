@@ -14,3 +14,11 @@
 .exam-is-paged>section{min-width:0}
 @media(max-width:390px){.exam-page-nav button span{display:none}}
 @media print{.exam-page-nav{display:none!important}[data-exam-page][hidden]{display:block!important}article [data-exam-page],form [data-exam-page],#exercise [data-exam-page]{break-after:page}}
+
+
+@media(max-width:700px){
+  .exam-page-nav{grid-template-columns:40px minmax(0,1fr) 40px;gap:4px;padding:4px 5px;border-radius:8px;}
+  .exam-page-nav button{min-width:40px;min-height:38px;padding:4px;font-size:14px;}
+  .exam-page-nav strong{font-size:clamp(11px,3.2vw,14px);line-height:1.2;}
+  .exam-page-nav small{font-size:11px;margin-top:1px;}
+}
