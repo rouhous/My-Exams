@@ -5,104 +5,188 @@
   "curriculum": "Gold Experience Oman 9A trial edition 2026",
   "status": "original_unit_specific_teacher_review_required",
   "reference": "https://www.omanedubooks.com/2026/08/gold-experience-oman-grade-9a.html",
-  "imageGroups": [
-    {
+  "imageGroups": {
+    "unit1-question1": {
       "labels": [
-        "school",
-        "library",
-        "sports hall"
+        "family tree",
+        "personal profile poster",
+        "neighbourhood map"
       ],
       "imgs": [
-        "illustration-1-1.png",
-        "illustration-1-2.png",
-        "illustration-1-3.png"
+        "unit-listening/u1-1-b.webp",
+        "unit-listening/u1-1-a.webp",
+        "unit-listening/u1-1-c.webp"
       ]
     },
-    {
+    "unit1-question2": {
       "labels": [
-        "art",
+        "photography",
         "football",
-        "photography"
+        "watercolour painting"
       ],
       "imgs": [
-        "illustration-2-1.png",
-        "illustration-2-2.png",
-        "illustration-2-3.png"
+        "unit-listening/u1-2-c.webp",
+        "unit-listening/u1-2-b.webp",
+        "unit-listening/u1-2-a.webp"
       ]
     },
-    {
+    "unit1-question3": {
       "labels": [
-        "sunny",
-        "rainy",
-        "snowy"
+        "welcoming a new classmate",
+        "reading quietly",
+        "hesitating at the classroom door"
       ],
       "imgs": [
-        "illustration-3-1.png",
-        "illustration-3-2.png",
-        "illustration-3-3.png"
+        "unit-listening/u1-3-a.webp",
+        "unit-listening/u1-3-b.webp",
+        "unit-listening/u1-3-c.webp"
       ]
     },
-    {
+    "unit1-question4": {
       "labels": [
-        "three o'clock",
-        "seven o'clock",
-        "five o'clock"
+        "playing the oud",
+        "making pottery",
+        "weaving a palm-leaf basket"
       ],
       "imgs": [
-        "illustration-4-1.png",
-        "illustration-4-2.png",
-        "illustration-4-3.png"
+        "unit-listening/u1-4-a.webp",
+        "unit-listening/u1-4-c.webp",
+        "unit-listening/u1-4-b.webp"
       ]
     },
-    {
+    "unit1-question5": {
       "labels": [
-        "beach",
-        "camping",
-        "shopping"
+        "a family beach walk",
+        "camping with the family",
+        "shopping with the family"
       ],
       "imgs": [
-        "illustration-5-1.png",
-        "illustration-5-2.png",
-        "illustration-5-3.png"
+        "unit-listening/u1-5-a.webp",
+        "unit-listening/u1-5-b.webp",
+        "unit-listening/u1-5-c.webp"
       ]
     },
-    {
+    "unit2-question1": {
       "labels": [
-        "backpack",
-        "jacket",
-        "shoes"
+        "face-to-face conversation",
+        "handwritten letter",
+        "video call"
       ],
       "imgs": [
-        "illustration-extra-1-1.png",
-        "illustration-extra-1-2.png",
-        "illustration-extra-1-3.png"
+        "unit-listening/u2-1-a.webp",
+        "unit-listening/u2-1-c.webp",
+        "unit-listening/u2-1-b.webp"
       ]
     },
-    {
+    "unit2-question2": {
       "labels": [
-        "swimming",
-        "running",
-        "cycling"
+        "voice recorder",
+        "video camera",
+        "smartphone"
       ],
       "imgs": [
-        "illustration-extra-2-1.png",
-        "illustration-extra-2-2.png",
-        "illustration-extra-2-3.png"
+        "unit-listening/u2-2-b.webp",
+        "unit-listening/u2-2-a.webp",
+        "unit-listening/u2-2-c.webp"
       ]
     },
-    {
+    "unit2-question3": {
       "labels": [
-        "stadium",
-        "school building",
-        "park"
+        "sign language",
+        "communication board",
+        "microphone"
       ],
       "imgs": [
-        "illustration-extra-3-1.png",
-        "illustration-extra-3-2.png",
-        "illustration-extra-3-3.png"
+        "unit-listening/u2-3-a.webp",
+        "unit-listening/u2-3-b.webp",
+        "unit-listening/u2-3-c.webp"
+      ]
+    },
+    "unit2-question4": {
+      "labels": [
+        "typing a message",
+        "reading quietly",
+        "a grandmother telling a story"
+      ],
+      "imgs": [
+        "unit-listening/u2-4-c.webp",
+        "unit-listening/u2-4-b.webp",
+        "unit-listening/u2-4-a.webp"
+      ]
+    },
+    "unit2-question5": {
+      "labels": [
+        "bilingual leaflet",
+        "translation app",
+        "headset"
+      ],
+      "imgs": [
+        "unit-listening/u2-5-b.webp",
+        "unit-listening/u2-5-a.webp",
+        "unit-listening/u2-5-c.webp"
+      ]
+    },
+    "unit3-question1": {
+      "labels": [
+        "delivery drone",
+        "driverless car",
+        "delivery robot"
+      ],
+      "imgs": [
+        "unit-listening/u3-1-a.webp",
+        "unit-listening/u3-1-b.webp",
+        "unit-listening/u3-1-c.webp"
+      ]
+    },
+    "unit3-question2": {
+      "labels": [
+        "grow lamp",
+        "watering system",
+        "camera connected to a computer"
+      ],
+      "imgs": [
+        "unit-listening/u3-2-c.webp",
+        "unit-listening/u3-2-b.webp",
+        "unit-listening/u3-2-a.webp"
+      ]
+    },
+    "unit3-question3": {
+      "labels": [
+        "smart speaker",
+        "smart thermostat",
+        "robot vacuum"
+      ],
+      "imgs": [
+        "unit-listening/u3-3-a.webp",
+        "unit-listening/u3-3-b.webp",
+        "unit-listening/u3-3-c.webp"
+      ]
+    },
+    "unit3-question4": {
+      "labels": [
+        "four-wheeled robot with a claw",
+        "stationary robot arm",
+        "walking humanoid robot"
+      ],
+      "imgs": [
+        "unit-listening/u3-4-a.webp",
+        "unit-listening/u3-4-b.webp",
+        "unit-listening/u3-4-c.webp"
+      ]
+    },
+    "unit3-question5": {
+      "labels": [
+        "smartphone",
+        "wireless earbud",
+        "smartwatch"
+      ],
+      "imgs": [
+        "unit-listening/u3-5-a.webp",
+        "unit-listening/u3-5-c.webp",
+        "unit-listening/u3-5-b.webp"
       ]
     }
-  ],
+  },
   "units": [
     {
       "unit": 1,
@@ -110,33 +194,33 @@
       "model": "U1",
       "listening1": [
         {
-          "group": 0,
+          "group": "unit1-question1",
+          "stem": "Which project shows how Mariam wants to introduce herself?",
           "answer": 1,
-          "stem": "Where will the class photograph board be displayed?",
-          "script": "Our class is creating a photo board that shows who we are and what we enjoy. The sports hall was too noisy and the school entrance had little space. After speaking to the librarian, we decided to display it in the public library next Thursday. People can read our short profiles beside the photographs."
+          "script": "Mariam is preparing a display for visitors who have never met her. She wants them to see her photograph with short notes about what she likes and what she does well. A family tree would show her relatives, and a map would show her neighbourhood. Neither would tell visitors enough about her own interests."
         },
         {
-          "group": 1,
-          "answer": 0,
+          "group": "unit1-question2",
           "stem": "Which hobby is Layla most interested in?",
+          "answer": 2,
           "script": "Layla is confident but rather quiet in large groups. Her brother plays football and her cousin enjoys photography. Layla, however, is brilliant at drawing, and she is spending this month learning how to use watercolours. Her family is buying her an art palette for the exhibition."
         },
         {
-          "group": 2,
+          "group": "unit1-question3",
+          "stem": "Which picture best shows Rashid's usual behaviour with new classmates?",
           "answer": 0,
-          "stem": "What weather does Sami usually enjoy in his hometown?",
-          "script": "Sami often talks about the city where he grew up. His favourite days are warm and clear because he can walk through its old streets. His sister prefers rainy weather and his friend likes snowy holidays abroad, but Sami always chooses sunny days when he describes his home."
+          "script": "Rashid enjoys meeting people. When someone new joins the class, he usually waves, walks over and introduces himself. His brother prefers reading on his own, and his cousin often feels too nervous to enter a room full of strangers. Rashid is the one who makes new pupils feel welcome."
         },
         {
-          "group": 3,
+          "group": "unit1-question4",
+          "stem": "Which family tradition is Salma learning?",
           "answer": 2,
-          "stem": "At what time will the personal-profile workshop begin?",
-          "script": "Some students thought our personality workshop would begin at three o'clock. A notice printed last week showed seven, but the teacher has checked the timetable. The correct starting time is five o'clock on Thursday afternoon. Please arrive early enough to choose a seat and complete your name card."
+          "script": "Salma comes from a family that enjoys making things by hand. Her uncle plays the oud and her cousin makes pots from clay. Salma is learning from her grandmother to fold strips of palm leaf over and under one another. She hopes to make a small basket for their next family gathering."
         },
         {
-          "group": 4,
-          "answer": 1,
+          "group": "unit1-question5",
           "stem": "Which family activity does Rana usually enjoy at weekends?",
+          "answer": 1,
           "script": "Rana says her family sometimes visits the beach and occasionally goes shopping. They usually prefer spending a night outdoors, however, because everyone enjoys talking beneath the stars. They are preparing their tents for this weekend, so camping is the activity she describes in her personal profile."
         }
       ],
@@ -200,49 +284,49 @@
       ],
       "interviewQs": [
         [
-          "When did preparation begin?",
+          "Why did Huda want to make a personal photo board?",
           [
-            "September",
-            "October",
-            "January"
-          ],
-          1
-        ],
-        [
-          "How long did the team work?",
-          [
-            "One day",
-            "Three weeks",
-            "Three months"
-          ],
-          1
-        ],
-        [
-          "Who helped organise the captions?",
-          [
-            "The English teacher",
-            "A famous actor",
-            "A shop manager"
+            "To show that different classmates shared hobbies",
+            "To choose a winner for a photo competition",
+            "To advertise a new sports centre"
           ],
           0
         ],
         [
-          "What languages were used in the captions?",
+          "What did the display include besides photographs?",
           [
-            "Only English",
-            "Arabic and English",
-            "English and French"
+            "Timetables and examination results",
+            "Hobbies, family traditions and personal strengths",
+            "Mainly descriptions of classmates' appearance"
           ],
           1
         ],
         [
-          "What replaced a photograph after a pupil withdrew permission?",
+          "How did the pupils collect information?",
           [
-            "A drawing",
-            "A map",
-            "A timetable"
+            "They offered questionnaires pupils could answer privately",
+            "They asked everyone to speak in front of the school",
+            "They looked up pupils’ interests on the internet"
           ],
           0
+        ],
+        [
+          "Why were the captions written in Arabic and English?",
+          [
+            "To practise reading aloud in both languages",
+            "To make them easier for more families to understand",
+            "To make the captions longer"
+          ],
+          1
+        ],
+        [
+          "What did the group do when a pupil changed her mind about a photograph?",
+          [
+            "They kept her photograph on display",
+            "They moved her photograph to another room",
+            "They used a drawing in its place"
+          ],
+          2
         ]
       ],
       "matchPeople": [
@@ -299,34 +383,34 @@
       "model": "U2",
       "listening1": [
         {
-          "group": 0,
-          "answer": 1,
-          "stem": "Where will the language interview be recorded?",
-          "script": "Our group is recording interviews about the different languages spoken in our town. We first considered the sports hall, but the echo makes voices difficult to understand. The school corridor was crowded too. We have booked a quiet room in the library for Saturday, so the interview will be recorded there."
-        },
-        {
-          "group": 1,
+          "group": "unit2-question1",
+          "stem": "How did the students speak to their partner class?",
           "answer": 2,
-          "stem": "What did the students use to record their communication project?",
-          "script": "While our grandparents were telling us stories, we wanted to keep their original voices. One student offered a football as a gift, while another brought an art palette for the poster. The most useful object was a camera with a microphone, so we used that to record the interviews."
+          "script": "Our class wanted to ask students in another town about the expressions they use at home. A letter would take several days, and our partner class could not travel to see us. We were able to see their faces on the screen and ask them questions straight away while the call was running."
         },
         {
-          "group": 3,
-          "answer": 0,
-          "stem": "When did the telephone-language workshop start?",
-          "script": "Please check your messages carefully. A notice mistakenly announced that our communication workshop started at seven, and a later poster showed five. We spoke to the organiser this morning and she confirmed that the first session had actually begun at three o'clock. The next session will use the same time."
-        },
-        {
-          "group": 5,
-          "answer": 0,
-          "stem": "Which item did the visiting speaker bring?",
-          "script": "When the visiting language researcher arrived at our school, we expected her to carry a jacket and several pairs of shoes for a drama activity. Instead, she opened a backpack containing notebooks, a small recorder and photographs from interviews with families. The backpack is what she placed on the table."
-        },
-        {
-          "group": 7,
+          "group": "unit2-question2",
+          "stem": "Which device did the team use to keep a record of the interview?",
           "answer": 1,
-          "stem": "Which building hosted the exhibition about human communication?",
-          "script": "The town wanted a safe place to show a display about signs, words and technology. The stadium was being repaired, and the park had no electricity. We finally displayed the exhibits in the school building, where students could ask the visitors questions in two languages."
+          "script": "We wanted to capture our grandparents’ voices and the gestures they made as they spoke. A handheld recorder could only save the sound, and our phone was almost out of power. In the end we put the device on a tripod and used its top microphone to capture both the picture and the sound."
+        },
+        {
+          "group": "unit2-question3",
+          "stem": "How did the visitor communicate with the students?",
+          "answer": 0,
+          "script": "The visitor showed us that you can have a conversation without speaking. She did not point to pictures on a board and she did not speak into a microphone. Instead, she made different movements with her hands while using her face to show how she felt. We tried to reply in the same way."
+        },
+        {
+          "group": "unit2-question4",
+          "stem": "What were the pupils recording for their language project?",
+          "answer": 2,
+          "script": "Some pupils thought the project would involve reading quietly or typing examples from a book. Our teacher wanted to collect language as people really use it. So I sat with my grandmother and listened as she told me about her childhood in the village. I recorded her voice with her permission."
+        },
+        {
+          "group": "unit2-question5",
+          "stem": "What helped Hana understand the visitor's message?",
+          "answer": 1,
+          "script": "At the exhibition, a visitor showed Hana a short message in a language she was still learning. Hana could not find the right page in the leaflet, and she did not need to call anybody. She opened a tool on her phone, chose both languages and showed the visitor the new version of the message."
         }
       ],
       "interview": [
@@ -389,47 +473,47 @@
       ],
       "interviewQs": [
         [
-          "Where was the first interview recorded?",
+          "Why did Bilal's class start the project?",
           [
-            "The community centre",
-            "The airport",
-            "The football stadium"
+            "Some children understood their grandparents' language but rarely spoke it",
+            "The school needed more textbook recordings",
+            "Families had asked for a reading competition"
           ],
           0
         ],
         [
-          "Who was the first interview guest?",
+          "What type of language did the pupils focus on?",
           [
-            "The teacher",
-            "Bilal's grandmother",
-            "A shop assistant"
+            "Written notices",
+            "Conversations and stories",
+            "Formal speeches"
           ],
           1
         ],
         [
-          "What interrupted part of the recording?",
+          "How did the team deal with a problem during the interview?",
           [
-            "A missing poster",
-            "A broken bicycle",
-            "A microphone problem"
+            "They replaced the guest",
+            "They wrote out the answers from memory",
+            "They checked the batteries and repeated part of the interview"
           ],
           2
         ],
         [
-          "When did the pupils share their collection?",
+          "Why did two pupils add short English summaries?",
           [
-            "Tuesday",
-            "Saturday",
-            "Thursday"
+            "So the whole class could learn from the recordings",
+            "So the guest could read the questions in advance",
+            "So they could shorten the interview itself"
           ],
           0
         ],
         [
-          "What language did pupils use for the short summaries?",
+          "How did the team protect the families’ privacy?",
           [
-            "French",
-            "English",
-            "Spanish"
+            "They removed everyone’s voice from the recordings",
+            "They shared only recordings approved by the families",
+            "They posted the interviews without asking"
           ],
           1
         ]
@@ -488,34 +572,34 @@
       "model": "U3",
       "listening1": [
         {
-          "group": 7,
-          "answer": 1,
-          "stem": "Where will the new health-technology exhibition take place?",
-          "script": "Our science club is demonstrating devices that help people in everyday life. The stadium was considered but would be too expensive, while the park lacks a reliable power supply. The exhibition will be held in the school building next month, where the prototypes can be tested safely."
+          "group": "unit3-question1",
+          "stem": "Which invention will carry supplies across the valley?",
+          "answer": 0,
+          "script": "The village team wants to deliver small parcels after heavy rain closes the road. A driverless car still needs a road, and a wheeled robot cannot cross the flooded path. The engineers are going to try a device with four rotors. It will lift each parcel into the air and carry it across the valley."
         },
         {
-          "group": 1,
+          "group": "unit3-question2",
+          "stem": "Which system will Ali use to check whether plants are healthy?",
           "answer": 2,
-          "stem": "Which device did Ali choose for a home-technology experiment?",
-          "script": "Ali considered a robot that could paint pictures, and his cousin wanted a system for analysing football matches. Ali finally chose a camera connected to a simple computer program. It can recognise whether a plant is healthy from its leaves, although the students must still check the result."
+          "script": "Ali is developing a useful tool for people who grow vegetables at home. It will not water the plants or switch their lights on. A device will take a close picture of each leaf and send it to a computer. The program will compare the picture with examples of healthy and unhealthy leaves."
         },
         {
-          "group": 2,
+          "group": "unit3-question3",
+          "stem": "Which smart-home device will help the family save energy?",
           "answer": 1,
-          "stem": "What weather does the smart-home system predict?",
-          "script": "A new home assistant helps the family plan outdoor activities. Yesterday it showed sunshine, and an old video displayed snow in another country. Today the assistant predicts heavy rain for the afternoon, so the family will stay indoors and test their new interactive game instead."
+          "script": "The family is testing a new way to use less electricity at home. They considered a smart speaker and a robot vacuum, but neither manages the heating. Their new device will measure the temperature in the room and turn the heating down automatically when everyone leaves the house."
         },
         {
-          "group": 3,
+          "group": "unit3-question4",
+          "stem": "What kind of robot is the team going to build?",
+          "answer": 0,
+          "script": "Our team is going to make a robot that collects empty bottles outside. A fixed arm could reach only one spot, and a robot that walks would be difficult to build. We chose a low machine with four wheels that can travel along a path and use a claw to pick up litter."
+        },
+        {
+          "group": "unit3-question5",
+          "stem": "Which device can check the wearer's skin temperature?",
           "answer": 2,
-          "stem": "At what time will the robotics demonstration begin?",
-          "script": "The robotics exhibition has a new timetable. Some notices showed seven o'clock and one message incorrectly said three o'clock. The official school website confirms that the presentation starts at five o'clock. Students are meeting the engineer half an hour earlier to test the equipment."
-        },
-        {
-          "group": 6,
-          "answer": 1,
-          "stem": "Which activity will the smart watch help track?",
-          "script": "The new wrist device can measure distance and record movement. It is not waterproof enough for swimming, and the school does not have equipment for cycling lessons. The team has decided to test the watch during running sessions, when students can compare their results safely."
+          "script": "The health club is testing three types of technology. A phone can show a report and an earbud can play a reminder, but neither will touch the skin on the wrist. The device we will test has a strap and a small screen. Its sensor can check the temperature at the wrist."
         }
       ],
       "interview": [
@@ -578,47 +662,47 @@
       ],
       "interviewQs": [
         [
-          "Who suggested the invention?",
+          "What is the science club’s device designed to do?",
           [
-            "Noura's grandmother",
-            "A famous singer",
-            "A football coach"
-          ],
-          0
-        ],
-        [
-          "What activates the reminder?",
-          [
-            "A timer",
-            "A rain sensor",
-            "A shop alarm"
-          ],
-          0
-        ],
-        [
-          "Where will students test the prototype?",
-          [
-            "At a railway station",
-            "In the science laboratory",
-            "At the town market"
+            "Check how much exercise people get",
+            "Remind older people to drink water",
+            "Measure the temperature of a drink"
           ],
           1
         ],
         [
-          "What problem was found in the early version?",
+          "How does the device tell someone it is time to drink?",
           [
-            "It was too heavy",
-            "It used the wrong colour",
-            "The warning was too quiet"
+            "A timer switches on a light and a sound",
+            "A phone sends a written reminder",
+            "A sensor shakes the water bottle"
+          ],
+          0
+        ],
+        [
+          "How does the team plan to test the prototype?",
+          [
+            "At home without collecting feedback",
+            "At a sports centre with an older student",
+            "In the science lab with a teacher and an engineer"
           ],
           2
         ],
         [
-          "When is the next meeting with the engineer?",
+          "What problem did the first version have?",
           [
-            "Wednesday",
-            "Friday",
-            "Sunday"
+            "The light stayed on all day",
+            "It was too difficult to carry",
+            "The sound was too quiet"
+          ],
+          2
+        ],
+        [
+          "What does Noura recommend before designing technology for families?",
+          [
+            "Ask people about their needs and test ideas carefully",
+            "Add more features before talking to anyone",
+            "Let the device make all the decisions"
           ],
           0
         ]

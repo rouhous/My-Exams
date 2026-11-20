@@ -47,8 +47,9 @@ def split_interview(transcript):
     return out
 
 def track_name(model, group):
-    suffix = '-two-pass' if group == 1 else ''
-    return f'g9-{model.lower()}-listening-{group}{suffix}.mp3'
+    if group == 1:
+        return f'g9-{model.lower()}-unit-v2-listening-1-two-pass.mp3'
+    return f'g9-{model.lower()}-listening-2.mp3'
 
 
 async def build(model,task,tmp):
@@ -109,7 +110,8 @@ async def main():
                 mp3=track_name(m['model'], t['group'])
                 target=OUT/mp3
                 old=prior.get(t['id'],{})
-                if (old.get('sourceHash')==fingerprint and old.get('mp3')==mp3
+                transcript_hash=hashlib.sha256(t['transcript'].encode('utf-8')).hexdigest()
+                if (old.get('sourceTranscriptSha256')==transcript_hash and old.get('mp3')==mp3
                         and target.is_file() and target.stat().st_size>15000
                         and MP3(target).info.length>40):
                     print('REUSE exact source-verified MP3:',t['id'])
@@ -117,7 +119,7 @@ async def main():
                     print('REBUILD stale or absent MP3:',t['id'])
                     with tempfile.TemporaryDirectory(dir=d) as taskdir:
                         await build(m['model'],t,pathlib.Path(taskdir))
-                manifest[t['id']]={'sourceHash':fingerprint,'sourceTranscriptSha256':hashlib.sha256(t['transcript'].encode('utf-8')).hexdigest(),'mp3':mp3,
+                manifest[t['id']]={'sourceHash':fingerprint,'sourceTranscriptSha256':transcript_hash,'mp3':mp3,
                     'sourceModel':m['model'],'seconds':round(MP3(target).info.length,2),
                     'bytes':target.stat().st_size,'playedTwice':True}
     (OUT/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')

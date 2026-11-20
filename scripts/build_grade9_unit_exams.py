@@ -34,7 +34,7 @@ for unit in source["units"]:
       dict(id=prefix+"-L1",skill="listening",group=1,marks=5,
         title="Listening 1 — Choose the picture",items=imageItems,
         transcript="\n\n".join("Text "+str(j+1)+". "+x["script"] for j,x in enumerate(imageItems)),
-        audio="audio/"+prefix.lower()+"-listening-1.mp3"),
+        audio="audio/"+prefix.lower()+"-unit-v2-listening-1-two-pass.mp3"),
       dict(id=prefix+"-L2",skill="listening",group=2,marks=5,
         title="Listening 2 — Interview",items=interviewItems,transcript=interview,
         audio="audio/"+prefix.lower()+"-listening-2.mp3"),

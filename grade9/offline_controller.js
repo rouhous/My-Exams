@@ -1,9 +1,10 @@
 /* Shared Grade 5–9 offline pack: verify complete local files before reporting success. */
 (()=>{
 const VERSION='my-exams-media-v4';
+const scope=new URL('../',document.currentScript.src);
 async function register(){
  if(!('serviceWorker' in navigator)||location.protocol==='file:')return false;
- try{const root=new URL('../sw.js',location.href);await navigator.serviceWorker.register(root.href,{scope:new URL('../',location.href).pathname});await navigator.serviceWorker.ready;return true}
+ try{const root=new URL('sw.js',scope);await navigator.serviceWorker.register(root.href,{scope:scope.pathname});await navigator.serviceWorker.ready;return true}
  catch(e){console.warn('Offline worker unavailable',e);return false}
 }
 async function saveAll(files,report){

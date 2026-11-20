@@ -228,32 +228,35 @@ if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot);else if(
 w.MyExamsLearning={feedback,answer,evidence,explanation,mount,metadata};
 })(window,document);
 </script><link rel="stylesheet" href="../../shared/assessment-theme.css?v=28"><style>.images .choice{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:6px}.images .choice img{width:100%;aspect-ratio:1;object-fit:contain}.images .choice input[type="radio"]{margin:2px auto;min-width:19px;min-height:19px}</style></head><body data-study-tools="compact"><header><a href="../../grade-skills.html?grade=9">← اختبارات الصف التاسع</a>
-<h1>Grade 9 · Gold Experience Oman 9A</h1><p>Three original unit-based full examinations · picture listening · individual skills</p></header>
+<h1>Grade 9 · Gold Experience Oman 9A</h1><p>Unit exams and skills practice</p></header>
 <main>
-
 <section class="setup" id="setup"><div class="topgrid"><label>Unit exam<select id="unit"><option value="U1">الوحدة الأولى · Identity</option><option value="U2">الوحدة الثانية · Connections</option><option value="U3">الوحدة الثالثة · The future is now</option></select></label>
-<label>Mode<select id="mode"><option value="full">Full 40-mark paper · 120-minute timer</option><option value="skill">Individual skill · no timer</option></select></label></div>
+<label>Mode<select id="mode"><option value="full">Full 40-mark paper · 120-minute timer</option><option value="skill">Individual skill · no timer</option><option value="mixed">Comprehensive exam · 120-minute timer</option><option value="random">Random exam · 120-minute timer</option></select></label></div>
 <label id="skillWrap" hidden>Skill<select id="skill"><option value="0">Listening 1 · Pictures</option><option value="1">Listening 2 · Interview</option><option value="2">Grammar and Vocabulary</option><option value="3">Reading 1</option><option value="4">Reading 2</option><option value="5">Writing 1</option><option value="6">Writing 2</option></select></label>
-<p id="ready" class="muted">Checking unit source files and audio hashes…</p><button id="start" disabled>Start activities</button></section>
+<p id="ready" class="muted">Loading exam…</p><button id="start" disabled>Start activities</button></section>
 <div id="paper" class="paper"><section><div class="row"><h2 id="paperTitle">Paper</h2><span id="marks"></span><span class="clock" id="clock"></span></div><div class="row"><button id="back">Back to unit choice</button><button id="end">Finish and review</button></div></section>
 <div id="tasks"></div><section id="results" hidden aria-live="polite"></section></div>
-</main><script>
+<details id="offlineOptions"><summary>استخدام الاختبارات دون إنترنت</summary><button id="saveUnitOffline" type="button" disabled>تنزيل اختبارات الوحدات</button><p id="offlineProgress" aria-live="polite"></p></details>
+</main><script src="../offline_controller.js?v=2"></script><script>
 'use strict';
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const names=['Listening 1','Listening 2','Grammar & Vocabulary','Reading 1','Reading 2','Writing 1','Writing 2'];
 const direct = new URLSearchParams(location.search);
 const unitValue = 'U' + direct.get('unit');
+const directMode = direct.get('mode');
+const mixedModes = ['mixed', 'random'];
+if (mixedModes.includes(directMode)) $('mode').value = directMode;
 if (['U1', 'U2', 'U3'].includes(unitValue)) $('unit').value = unitValue;
 if (direct.get('mode') === 'skill' && /^[0-6]$/.test(direct.get('skill') || '')) {
  $('mode').value = 'skill'; $('skill').value = direct.get('skill'); $('skillWrap').hidden = false;
 }
 let bank=null,manifest={},model=null,selected=[],asked=[],seconds=0,timer=null,finished=false,sourceStatus={};
-$('mode').onchange=()=>$('skillWrap').hidden=$('mode').value!=='skill';
+$('mode').onchange=setReady;
 $('unit').onchange=()=>setReady();
 async function sha(s){if(!crypto.subtle)return'';let d=new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)));return Array.from(d).map(x=>x.toString(16).padStart(2,'0')).join('')}
 async function init(){
  try{
-  const [r,m]=await Promise.all([fetch('./models.json'),fetch('./audio/manifest.json',{cache:'no-store'}).catch(()=>null)]);
+  const [r,m]=await Promise.all([fetch('./models.json',{cache:'no-store'}),fetch('./audio/manifest.json',{cache:'no-store'}).catch(()=>null)]);
   if(!r.ok)throw Error('The original paper build has not been published yet');
   bank=await r.json();manifest=m&&m.ok?await m.json():{};
   if(bank.models.length!==3||bank.models.some(x=>x.tasks.length!==7||x.marks!==40))throw Error('Unvalidated paper shape');
@@ -262,17 +265,69 @@ async function init(){
     sourceStatus[task.id]=entry&&entry.sourceTranscriptSha256===hash?'audio/'+entry.mp3:null;
   }
   setReady();
-  if(direct.get('open')==='1'&&['U1','U2','U3'].includes(unitValue)&&(direct.get('mode')==='full'||direct.get('mode')==='skill'&&/^[0-6]$/.test(direct.get('skill')||'')))start();
+  $('saveUnitOffline').disabled = !window.ExamOffline;
+  const directUnit = ['U1','U2','U3'].includes(unitValue) && (directMode==='full' || (directMode==='skill' && /^[0-6]$/.test(direct.get('skill')||'')));
+  if (direct.get('open')==='1' && (directUnit || mixedModes.includes(directMode))) start();
  }catch(e){$('ready').textContent='Cannot open original unit exams: '+e.message}
 }
-function setReady(){if(!bank)return;model=bank.models.find(x=>x.model===$('unit').value);
- const ok=model.tasks.slice(0,2).filter(t=>sourceStatus[t.id]).length;
- $('ready').textContent='Unit '+model.unit+': '+model.unitTitle+' · seven sections, 40 marks · source-verified MP3 '+ok+'/2. Unverified audio is not played.';
- $('start').disabled=false}
-function pictureAsset(path){return path.replace(/(\/illustration-(?:extra-)?\d-\d)\.png$/,'$1.webp')}
+function setReady(){
+ if (!bank) return;
+ const mode = $('mode').value;
+ model = bank.models.find(unit => unit.model === $('unit').value);
+ $('skillWrap').hidden = mode !== 'skill';
+ $('unit').closest('label').hidden = mixedModes.includes(mode);
+ const title = mixedModes.includes(mode) ? 'Units 1–3' : 'Unit ' + model.unit + ': ' + model.unitTitle;
+ $('ready').textContent = title;
+ $('start').disabled = false;
+}
+function selectTasks(mode){
+ if (mode === 'skill') return [model.tasks[Number($('skill').value)]];
+ if (mode === 'full') return model.tasks;
+ const unitOrder = [2, 1, 0];
+ if (mode === 'random') {
+  for (let i = unitOrder.length - 1; i > 0; i--) {
+   const j = Math.floor(Math.random() * (i + 1));
+   [unitOrder[i], unitOrder[j]] = [unitOrder[j], unitOrder[i]];
+  }
+ }
+ return model.tasks.map((_, i) => bank.models[mode === 'random' && i >= 3
+  ? Math.floor(Math.random() * unitOrder.length)
+  : unitOrder[i % unitOrder.length]].tasks[i]);
+}
+$('saveUnitOffline').onclick = async () => {
+ const button = $('saveUnitOffline');
+ const status = $('offlineProgress');
+ button.disabled = true;
+ const files = [
+  'index.html', 'models.json', 'audio/manifest.json',
+  '../offline_controller.js?v=2', '../../grade-skills.html?grade=9',
+  '../../shared/grade-catalogue.js?v=32', '../../shared/oman-theme.css?v=29',
+  '../../shared/assessment-theme.css?v=28', '../../shared/short-answer-marking.js',
+  '../../shared/learning-feedback.js?v=1', '../../shared/exam-tools.js', '../../shared/exam-tools.css'
+ ];
+ const listening = bank.models.flatMap(unit => unit.tasks.slice(0, 2));
+ for (const task of listening) {
+  if (!sourceStatus[task.id]) {
+   status.textContent = 'بعض التسجيلات غير متاحة. أعد المحاولة بعد الاتصال بالإنترنت.';
+   button.disabled = false;
+   return;
+  }
+  files.push(sourceStatus[task.id], ...task.items.flatMap(item => item.images || []));
+ }
+ try {
+  const result = await window.ExamOffline.saveAll(files, (done, total) => {
+   status.textContent = `جارٍ التنزيل ${done} / ${total}`;
+  });
+  status.textContent = result.ok ? 'اختبارات الوحدات جاهزة دون إنترنت.' : 'تعذّر تنزيل بعض الملفات. أعد المحاولة.';
+ } catch {
+  status.textContent = 'تعذّر تنزيل الاختبارات. أعد المحاولة.';
+ } finally {
+  button.disabled = false;
+ }
+};
 function question(task,q,index){
  const id=task.id+'-'+index;asked.push({id,q,task});let h='<div class="q"><strong>'+(index+1)+'. '+esc(q.stem)+'</strong>';
- if(q.images){h+='<div class="images">'+q.images.map((src,i)=>'<label class="choice"><b>'+String.fromCharCode(65+i)+'</b><img src="'+esc(pictureAsset(src))+'" alt="Illustration for option '+String.fromCharCode(65+i)+'"><input name="'+id+'" type="radio" value="'+i+'" aria-label="Option '+String.fromCharCode(65+i)+'"></label>').join('')+'</div>';}
+ if(q.images){h+='<div class="images">'+q.images.map((src,i)=>'<label class="choice"><b>'+String.fromCharCode(65+i)+'</b><img src="'+esc(src)+'" alt="Illustration for option '+String.fromCharCode(65+i)+'"><input name="'+id+'" type="radio" value="'+i+'" aria-label="Option '+String.fromCharCode(65+i)+'"></label>').join('')+'</div>';}
  else if(q.choices){h+=q.choices.map((opt,i)=>'<label class="choice"><input name="'+id+'" type="radio" value="'+i+'"> '+String.fromCharCode(65+i)+'. '+esc(opt)+'</label>').join('')}
  else h+='<input type="text" name="'+id+'" maxlength="200" placeholder="Short answer · teacher review">';
  return h+'</div>';
@@ -293,8 +348,9 @@ function render(task){
 }
 function clock(){let m=Math.floor(seconds/60);$('clock').textContent=String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0')}
 function stop(){if(timer){clearInterval(timer);timer=null}}
-function start(){if(!model)return;stop();asked=[];finished=false;selected=$('mode').value==='full'?model.tasks:[model.tasks[Number($('skill').value)]];
- $('tasks').innerHTML=selected.map(render).join('');$('paperTitle').textContent='Unit '+model.unit+': '+model.unitTitle;$('marks').textContent=selected.reduce((n,t)=>n+t.marks,0)+' marks';$('results').hidden=true;$('results').innerHTML='';$('end').disabled=false;$('setup').hidden=true;$('paper').classList.add('active');
+function start(){if(!model)return;stop();asked=[];finished=false;const mode = $('mode').value;
+ selected = selectTasks(mode);
+ $('tasks').innerHTML=selected.map(render).join('');$('paperTitle').textContent = mode === 'mixed' ? 'Comprehensive exam' : mode === 'random' ? 'Random exam' : 'Unit '+model.unit+': '+model.unitTitle;$('marks').textContent=selected.reduce((n,t)=>n+t.marks,0)+' marks';$('results').hidden=true;$('results').innerHTML='';$('end').disabled=false;$('setup').hidden=true;$('paper').classList.add('active');
  if(selected.length===7){seconds=120*60;clock();$('clock').hidden=false;timer=setInterval(()=>{seconds--;clock();if(seconds<=0){stop();finish()}},1000)}else $('clock').hidden=true;window.scrollTo(0,0)}
 function finish(){
  if(finished)return;finished=true;stop();$('end').disabled=true;
@@ -322,12 +378,12 @@ function finish(){
      }
    }
    const field=document.querySelector('input[name="'+id+'"]:checked')||document.querySelector('input[name="'+id+'"]');
-   const holder=field?.closest('.question');
+   const holder=field?.closest('.q');
    if(holder){
      const choice=Array.isArray(q.choices),val=field?.value||'';
      const good=choice?!!field&&Number(val)===q.answer:window.MyExamsShortAnswers.evaluate(val,q).correct;
      holder.querySelectorAll('.mex-fb').forEach(el=>el.remove());
-     if(window.MyExamsLearning)holder.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:task.skill,passage:task.passage,script:task.transcript||task.script},good));
+     if(window.MyExamsLearning)holder.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:task.skill,passage:task.passage,script:q.script||task.transcript},good));
    }
  }
  const writing=selected.filter(t=>t.skill==='writing').map(t=>{const v=$('write'+t.group)?.value||'';return t.title+': '+(v.trim().match(/\S+/g)||[]).length+' words'});
