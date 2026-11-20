@@ -15,6 +15,14 @@ def size(path):
 def digest(d):
     return hashlib.sha256(json.dumps(d,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
 def sha(s):return hashlib.sha256(s.encode("utf-8")).hexdigest()
+reviewed=read("listening-release-manifest.json")
+def valid_reviewed(path, numbered):
+    labels=["1","2","3","4","5"] if numbered else ["complete passage"]
+    expected=[*labels,"Now listen again.",*labels]
+    track=reviewed.get(path,{})
+    return (file(path) and size(path)==track.get("bytes") and track.get("seconds",0)>40
+            and track.get("sequence")==expected
+            and hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==track.get("sha256"))
 failures=[];warnings=[];images=collections.defaultdict(lambda:{"optionReferences":0,"missingFiles":[],"scriptKeywordChecks":0,"scriptKeywordMatches":0,"visualApproval":"pending"})
 audio=collections.defaultdict(lambda:{"requiredOriginalListeningSections":0,"verifiedLinkedMP3":0,"presentButNotSourceVerified":0,"missing":[],"reportedReusedSources":[]})
 def req(g,path,detail):
@@ -31,14 +39,18 @@ for task in a56:
     path="grades5-6/audio-natural/"+task["id"]+".mp3"
     entry=man56.get(task["id"],{})
     fingerprint=digest({"passages":task.get("passages"),"passage":task.get("passage"),"questions":task["questions"],"pictures":task.get("pictureOptions")})
-    if req(g,path,"Natural listening MP3 missing") and entry.get("sha256_of_script")==fingerprint and size(path)>15000:
+    if task["part"]==1 or task["id"]=="g6-d-listening-2":
+        path="grades5-6/audio-reviewed/"+task["id"]+".mp3"
+        if valid_reviewed(path,task["part"]==1):au["verifiedLinkedMP3"]+=1
+        else:failures.append({"grade":g,"path":path,"issue":"Invalid reviewed two-pass recording"})
+    elif req(g,path,"Natural listening MP3 missing") and entry.get("sha256_of_script")==fingerprint and size(path)>15000:
         au["verifiedLinkedMP3"]+=1
     else:
         au["missing"].append({"model":task["model"],"task":task["id"],"reason":"missing_or_stale_audio_manifest"})
     if task.get("part")==1:
         opts=task.get("pictureOptions",[]);im=images[g]
         for word in opts:
-            path="grades5-6/images/"+word+".svg"
+            path="grades5-6/images/"+word+".webp"
             im["optionReferences"]+=1
             if not req(g,path,"Listening picture option missing"):im["missingFiles"].append(path)
         for i,q in enumerate(task["questions"]):
@@ -60,7 +72,11 @@ for m in models78:
         path="grades7-8/assets/audio-natural/"+key+".mp3"
         fp=digest({"items":s.get("items"),"script":s.get("script"),"transcript":s.get("transcript")})
         entry=manifest78.get(key,{})
-        if req(g,path,"Natural listening MP3 missing") and entry.get("script_and_questions_sha256")==fp and size(path)>15000:
+        if s["key"]=="listening1" or m["model"]=="D":
+            path="grades7-8/assets/audio-reviewed/"+key+".mp3"
+            if valid_reviewed(path,s["key"]=="listening1"):au["verifiedLinkedMP3"]+=1
+            else:failures.append({"grade":g,"path":path,"issue":"Invalid reviewed two-pass recording"})
+        elif req(g,path,"Natural listening MP3 missing") and entry.get("script_and_questions_sha256")==fp and size(path)>15000:
             au["verifiedLinkedMP3"]+=1
         else:au["missing"].append({"model":m["model"],"task":key,"reason":"missing_or_stale_audio_manifest"})
         for q in s.get("items",[]):
@@ -68,7 +84,7 @@ for m in models78:
             if len(q["images"])!=len(q["options"]) or not 0<=q["answer"]<len(q["images"]):
                 failures.append({"grade":g,"task":key,"issue":"Picture options cannot be mapped to answers"})
             for code in q["images"]:
-                path="grades7-8/assets/illustrations/"+code+".svg"
+                path="grades7-8/assets/illustrations/"+code+".webp"
                 im["optionReferences"]+=1
                 if not req(g,path,"Picture asset missing"):im["missingFiles"].append(path)
 # Grade 9: seven delivered models with whole-section reuse, segment voice provenance.
@@ -114,7 +130,11 @@ for m in models9:
             if current!=previous:
                 failures.append({"grade":"9","task":key,"issue":"Mixed model reuses identifier with modified source script or questions","model":m["model"]})
         source9[key]=t
-        if not req(9,"grade9/"+t["audio"],"Grade 9 fallback MP3 missing"):
+        if t.get("reviewedAudio"):
+            path="grade9/"+t["reviewedAudio"]
+            if valid_reviewed(path,t["group"]==1):audio["9"]["verifiedLinkedMP3"]+=1
+            else:failures.append({"grade":"9","path":path,"issue":"Invalid reviewed two-pass recording"})
+        elif not req(9,"grade9/"+t["audio"],"Grade 9 fallback MP3 missing"):
             audio["9"]["missing"].append(key)
         elif key.startswith("g9-A-"):
             if a_source_matches.get(key):
@@ -124,8 +144,8 @@ for m in models9:
         else:
             name={"g9-B-L1":"g9-b-listening-1.mp3","g9-B-L2":"g9-b-listening-2.mp3",
                   "g9-C-L1":"g9-c-listening-1.mp3","g9-C-L2":"g9-c-listening-2.mp3",
-                  "g9-D-L1":"g9-g-listening-1.mp3","g9-D-L2":"g9-g-listening-2.mp3"}.get(key)
-            entry=natural_manifest9.get(key,{})
+                  "g9-G-L1":"g9-g-listening-1.mp3","g9-G-L2":"g9-g-listening-2.mp3"}.get(key)
+            entry=natural_manifest9.get(key,natural_manifest9.get("g9-D-L2",{}) if key=="g9-G-L2" else {})
             fp=digest({"transcript":t.get("transcript"),"items":t.get("items"),"questions":t.get("questions")})
             if name and req(9,"grade9/audio-natural/"+name,"Grade 9 natural MP3 missing"):
                 if entry.get("sourceHash")==fp and entry.get("mp3")==name:

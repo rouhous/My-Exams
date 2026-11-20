@@ -24,14 +24,14 @@ for g in [5,6]:
             if x['skill']!='listening':continue
             p=ROOT/'grades5-6'/x['audio']
             check(p.exists(),f'Missing backup: {p}')
-            natural=ROOT/'grades5-6/audio-natural'/f'{x["id"]}.mp3'
+            natural=ROOT/'grades5-6'/('audio-reviewed' if x['part']==1 or x['id']=='g6-d-listening-2' else 'audio-natural')/f'{x["id"]}.mp3'
             check(natural.exists() and natural.stat().st_size>15000,f'Missing natural: {natural}')
             if natural.exists():check(duration(natural)>35,f'Bad MP3 duration: {natural}')
             if x['part']==1:
                 check(len(x.get('passages',[]))==5,f'{x["id"]}: 5 dialogues expected')
                 check(len(x.get('pictureOptions',[]))>=5,f'{x["id"]}: picture options absent')
                 for img in x.get('pictureOptions',[]):
-                    check((ROOT/'grades5-6/images'/f'{img}.svg').exists(),f'{x["id"]}: missing picture {img}')
+                    check((ROOT/'grades5-6/images'/f'{img}.webp').exists(),f'{x["id"]}: missing picture {img}')
     if g==5:
         source={'A':'Talent Show','B':'Then and Now','C':"Let's Explore",'D':'Off to the Shops'}
     else:
@@ -58,10 +58,9 @@ for g in [5,6]:
             if item['model']!='D' or g==5:
                 check(bool(item.get('unitTheme')),f'{item["id"]}: no unit-theme label')
     if g==6:
-        for part,model in ((1,'A'),(2,'B')):
-            orig=next(x for x in tasks if x['model']==model and x['skill']=='listening' and x['part']==part)
-            mixed=next(x for x in tasks if x['model']=='D' and x['skill']=='listening' and x['part']==part)
-            check(mixed.get('mediaId')==orig['id'] and mixed['questions']==orig['questions'],f'G6 D L{part}: source audio/keys not preserved')
+        for item in tasks:
+            if item["model"]=="D" and item["skill"]=="listening":
+                check(item.get("mediaId")==item["id"],f'{item["id"]}: needs its own recording')
     stats[str(g)]={'fixed_models':4,'mixed_models':2,'random_mode':True,'base_activities':len(tasks),'natural_mp3':8}
 # Grade 5–6 generated audio is valid only when the precise version of its
 # transcript AND answer keys matches the archived MP3 manifest.
@@ -72,6 +71,7 @@ else:
     manifest=json.loads(manifest_path.read_text())
     for item in a:
         if item['skill']!='listening':continue
+        if item['part']==1 or item['id']=='g6-d-listening-2':continue
         payload={'passages':item.get('passages'),'passage':item.get('passage'),
                  'questions':item['questions'],'pictures':item.get('pictureOptions')}
         actual=hashlib.sha256(json.dumps(payload,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
@@ -102,7 +102,7 @@ for g in [7,8]:
         for x in model['sections']:
             if not x['key'].startswith('listening'):continue
             backup=ROOT/'grades7-8'/x['audio']
-            natural=ROOT/'grades7-8/assets/audio-natural'/f'{model["id"]}-{x["key"]}.mp3'
+            natural=ROOT/'grades7-8/assets'/('audio-reviewed' if x['key']=='listening1' or model['model']=='D' else 'audio-natural')/f'{model["id"]}-{x["key"]}.mp3'
             check(backup.exists(),f'Missing backup: {backup}')
             check(natural.exists() and natural.stat().st_size>15000,f'Missing natural: {natural}')
             if natural.exists():check(duration(natural)>35,f'Bad MP3 duration: {natural}')
@@ -111,7 +111,7 @@ for g in [7,8]:
                 for q in x.get('items',[]):
                     check(len(q.get('images',[]))==3,f'{model["id"]}: expected 3 pictures per question')
                     for img in q.get('images',[]):
-                        check((ROOT/'grades7-8/assets/illustrations'/f'{img}.svg').exists(),f'{model["id"]}: missing picture {img}')
+                        check((ROOT/'grades7-8/assets/illustrations'/f'{img}.webp').exists(),f'{model["id"]}: missing picture {img}')
     stats[str(g)]={'fixed_models':4,'mixed_models':2,'random_mode':True,'base_activities':28,'natural_mp3':8}
 report={'technical_status':'passed' if not errors else 'failed','grades':stats,'errors':errors,'unit_alignment_approved':False,'phone_offline_tested':False,'note':'A complete technical audit does not certify conformity to every textbook unit or originality of mixed model items.'}
 out=ROOT/'GRADES5_8_COMPREHENSIVE_TECHNICAL_AUDIT.json'

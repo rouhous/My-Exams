@@ -12,10 +12,12 @@ const {chromium}=require('playwright');
   if(await page.locator('.q').count()!==30)throw Error(unit+' 30 questions missing');
   if(await page.locator('.images img').count()!==15)throw Error(unit+' listening pictures missing');
   if(await page.locator('audio').count()!==2)throw Error(unit+' two MP3 missing');
+  const numberedTrack=await page.locator('audio').first().getAttribute('src');
+  if(!numberedTrack?.endsWith('-listening-1-two-pass.mp3'))throw Error(unit+' numbered two-pass track missing');
   if(!(await page.locator('#clock').textContent()).startsWith('02:'))throw Error(unit+' 120min timer missing');
   await page.click('#end');
-  if(!(await page.locator('#results').textContent()).includes('0 / 24'))throw Error(unit+' objective count wrong');
-  if(!(await page.locator('#results').textContent()).includes('6 short answers'))throw Error(unit+' short answer count wrong');
+  if(!(await page.locator('#results').textContent()).includes('0 / 30'))throw Error(unit+' objective count wrong');
+  if(!(await page.locator('#results').textContent()).includes('30 blank'))throw Error(unit+' short answer count wrong');
   await page.click('#back');
  }
  await page.selectOption('#mode','skill');await page.selectOption('#skill','2');await page.click('#start');

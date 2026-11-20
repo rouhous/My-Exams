@@ -60,8 +60,8 @@ async function draw(){
   for(const t of acts){
    html+='<section class="task"><h2>Model '+esc(t.model)+' · '+esc(t.unitTheme||'')+'</h2>';
    t.questions.forEach((q,i)=>{
-    const images=t.pictureOptions.map(word=>'grades5-6/images/'+word+'.svg');
-    html+=qcard(t.id+'-item-'+(i+1),t.passages[i],images,t.pictureOptions,q.answer,'grades5-6/audio-natural/'+t.id+'.mp3');count++;
+    const images=t.pictureOptions.map(word=>'grades5-6/images/'+word+'.webp');
+    html+=qcard(t.id+'-item-'+(i+1),t.passages[i],images,t.pictureOptions,q.answer,'grades5-6/audio-reviewed/'+t.id+'.mp3');count++;
    });html+='</section>';
   }
  }else if(grade===7||grade===8){
@@ -70,9 +70,9 @@ async function draw(){
    const t=m.sections.find(x=>x.key==='listening1');
    html+='<section class="task"><h2>Model '+esc(m.model)+' · '+esc(m.theme)+'</h2>';
    (t.items||[]).forEach((q,i)=>{
-    const images=(q.images||[]).map(s=>'grades7-8/assets/illustrations/'+s+'.svg');
+    const images=(q.images||[]).map(s=>'grades7-8/assets/illustrations/'+s+'.webp');
     html+=qcard('g'+grade+'-'+m.model+'-item-'+(i+1),q.script,images,q.options,q.answer,
-      'grades7-8/assets/audio-natural/g'+grade+'-'+m.model.toLowerCase()+'-listening1.mp3');count++;
+      'grades7-8/assets/audio-reviewed/g'+grade+'-'+m.model.toLowerCase()+'-listening1.mp3');count++;
    });html+='</section>';
   }
  }else{
@@ -83,10 +83,7 @@ async function draw(){
    html+='<section class="task"><h2>Model '+esc(m.model)+' · '+esc(m.theme)+'</h2>';
    (t.items||[]).forEach((q,i)=>{
     const images=q.images.map(s=>'grade9/'+s),labels=q.choices;
-    const player=t.id==='g9-A-L1'?'audio-natural/g9/a/listening1/text'+(i+1)+'.mp3':
-      t.id==='g9-B-L1'?'grade9/audio-natural/g9-b-listening-1.mp3':
-      t.id==='g9-C-L1'?'grade9/audio-natural/g9-c-listening-1.mp3':
-      t.id==='g9-D-L1'?'grade9/audio-natural/g9-g-listening-1.mp3':'grade9/'+t.audio;
+    const player='grade9/'+(t.reviewedAudio||t.audio);
     html+=qcard('g9-'+m.model+'-item-'+(i+1),q.script||t.transcript||'',images,labels,q.answer,player);count++;
    });html+='</section>';
   }

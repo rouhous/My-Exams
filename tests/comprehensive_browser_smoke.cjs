@@ -103,7 +103,7 @@ const { chromium, devices } = require('playwright');
  await page.click('#startExam');
  if(await page.locator('#session section.section').count()!==8)throw Error('Grade 5 space unit not available offline');
  const spaceResources=await page.evaluate(async()=>{
-  const endpoints=['images/rocket.svg','images/telescope.svg','images/planet.svg','images/spacesuit.svg','images/moon.svg','audio-natural/g5-c-listening-1.mp3'];
+  const endpoints=['images/rocket.webp','images/telescope.webp','images/planet.webp','images/spacesuit.webp','images/moon.webp','audio-reviewed/g5-c-listening-1.mp3'];
   return await Promise.all(endpoints.map(async file=>{
    const r=await fetch(file,file.endsWith('.mp3')?{headers:{range:'bytes=0-1023'}}:{});
    return {file,status:r.status,bytes:(await r.arrayBuffer()).byteLength};

@@ -45,13 +45,13 @@ for grade in (5,6):
   if len(parts)!=8 or sum(x['marks'] for x in parts)!=40:REPORT['errors'].append(f'G{grade} model {m} malformed')
   for task in parts:
    for pic in task.get('pictureOptions',[]):
-    if not (base/'images'/(pic+'.svg')).is_file():
+    if not (base/'images'/(pic+'.webp')).is_file():
      REPORT['errors'].append(f'G{grade} model {m}: missing picture {pic}')
 
   for x in parts:
    if x['skill']=='listening':
     if not (base/x['audio']).exists():REPORT['errors'].append(f'Missing provisional MP3: {base/x["audio"]}')
-    if not (base/'audio-natural'/(x['id']+'.mp3')).exists():REPORT['errors'].append(f'Missing natural MP3: {x["id"]}')
+    if not (base/('audio-reviewed' if x['part']==1 or x['id']=='g6-d-listening-2' else 'audio-natural')/(x['id']+'.mp3')).exists():REPORT['errors'].append(f'Missing natural MP3: {x["id"]}')
  for label,seed in [('E',1),('F',2)]:
   order='ABCD';source=[order[([0,1,2,3,2,3,0,1][i]+seed)%4] for i in range(8)]
   built=[next((x for x in originals if x['model']==source[i] and (x['skill'],x['part'])==key),None) for i,key in enumerate(keys)]
@@ -73,11 +73,11 @@ for grade in (7,8):
     for qi,item in enumerate(section['items']):
      if len(item.get('images',[]))!=3:REPORT['errors'].append(f'G{grade} model {m["model"]}: question {qi+1} not three pictures')
      for pic in item.get('images',[]):
-      if not (base/'assets/illustrations'/(pic+'.svg')).is_file():REPORT['errors'].append(f'G{grade} model {m["model"]}: missing {pic}.svg')
+      if not (base/'assets/illustrations'/(pic+'.webp')).is_file():REPORT['errors'].append(f'G{grade} model {m["model"]}: missing {pic}.webp')
 
    if section['key'].startswith('listening'):
     if not (base/section['audio']).exists():REPORT['errors'].append(f'G{grade}: missing backup {section["audio"]}')
-    if not (base/'assets/audio-natural'/(m['id']+'-'+section['key']+'.mp3')).exists():REPORT['errors'].append(f'G{grade} missing natural {m["id"]}/{section["key"]}')
+    if not (base/'assets'/('audio-reviewed' if section['key']=='listening1' or m['model']=='D' else 'audio-natural')/(m['id']+'-'+section['key']+'.mp3')).exists():REPORT['errors'].append(f'G{grade} missing natural {m["id"]}/{section["key"]}')
  for label,sources in [('E','ABCDABC'),('F','CDABDCA')]:
   parts=[next((s for m in bases if m['model']==sources[i] for s in m['sections'] if s['key']==key),None) for i,key in enumerate(keys)]
   if None in parts or sum(x['marks'] for x in parts)!=40 or len(set(sources))!=4:REPORT['errors'].append(f'G{grade} mixed {label} malformed')
