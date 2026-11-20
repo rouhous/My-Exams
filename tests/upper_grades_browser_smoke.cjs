@@ -4,7 +4,7 @@ const {chromium}=require('playwright');
  const page=await browser.newPage({viewport:{width:400,height:820}});
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('http://127.0.0.1:8765/upper-grades-practice.html',{waitUntil:'domcontentloaded'});
- await page.waitForFunction(()=>document.querySelector('#loadState').textContent.includes('Review bank loaded'),null,{timeout:30000});
+ await page.waitForFunction(()=>!document.querySelector('#start').disabled,null,{timeout:30000});
  const cases=[['11-elective',6,40,150,60],['12-core',9,50,180,70],['12-elective',6,45,180,70]];
  for(const [track,sections,items,mins,marks] of cases){
    await page.selectOption('#track',track);
@@ -22,13 +22,13 @@ const {chromium}=require('playwright');
    if(await page.locator('#questions section.part').count()!==sections)throw Error(track+' random missing sections');
    if(await page.locator('#questions .question').count()!==items)throw Error(track+' random wrong question count');
    const s=await page.locator('#questions section.part .meta').allTextContents();
-   if(s.some(t=>!/Source model [A-D]/.test(t)))throw Error(track+' random not from fixed A-D: '+s.join(','));
+   if(s.some(t=>!/^Topic: \S/.test(t)))throw Error(track+' random paper sections missing source topics: '+s.join(','));
    await page.click('#reset');
    await page.selectOption('#mode','skill');await page.selectOption('#skill','rdg2');await page.click('#start');
    if(await page.locator('#questions section.part').count()!==1)throw Error(track+' skill should be single section');
    if((await page.locator('#timer').textContent())!=='No time limit')throw Error(track+' skill incorrectly timed');
    await page.click('#submit');
-   if(!(await page.locator('#result').textContent()).includes('automatically scored option questions'))throw Error(track+' missing honest score message');
+   if(!(await page.locator('#result').textContent()).includes('automatically checked questions'))throw Error(track+' missing honest score message');
    await page.click('#reset');
  }
 
@@ -72,7 +72,7 @@ const {chromium}=require('playwright');
  if(!(await page.locator('#paperMarks').textContent()).includes('70 marks'))throw Error('The Arts marks mismatch');
  await page.click('#finish');
  const fullReview=await page.locator('#results').textContent();
- if(!fullReview.includes('0 / 23')||!fullReview.includes('22 notes or short answers'))throw Error('The Arts full marking must separate 23 auto vs 22 manual items: '+fullReview.slice(0,400));
+ if(!fullReview.includes('0 / 45')||!fullReview.includes('2 writing task(s) require teacher assessment'))throw Error('The Arts full marking must cover 45 checked questions with writing for teacher assessment: '+fullReview.slice(0,400));
  await page.click('#restart');
  await page.selectOption('#mode','skill');
  await page.selectOption('#skill','rdg1');

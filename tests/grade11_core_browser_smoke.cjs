@@ -4,7 +4,7 @@ const {chromium}=require('playwright');
  const page=await browser.newPage({viewport:{width:420,height:850}});
  page.on('pageerror',e=>console.error('PAGE ERROR',e.message));
  await page.goto('http://127.0.0.1:8765/grade11/core/index.html',{waitUntil:'domcontentloaded'});
- await page.waitForFunction(()=>document.querySelector('#intro').textContent.includes('Six Grade 11 Core pilot models'),null,{timeout:30000});
+ await page.waitForFunction(()=>!document.querySelector('#start').disabled,null,{timeout:30000});
  for(const model of 'ABCDEF'){
   await page.selectOption('#model',model);
   await page.click('#start');
@@ -19,11 +19,13 @@ const {chromium}=require('playwright');
    const expected=model==='E'?'g11-core-a-listening.mp3':'g11-core-d-listening.mp3';
    if(!src.includes(expected))throw Error('Comprehensive source listening mismatch: '+src+' != '+expected);
   }
+  await page.click('#changeExam');
  }
  await page.click('#random');
  if(await page.locator('#exam section.section').count()!==5)throw Error('Grade 11 Core random exam incomplete');
  const models=await page.evaluate(()=>document.querySelector('#intro').textContent);
- if(!models.includes('Random complete semester'))throw Error('Random model never activated');
+ if(!models.includes('Random mixed practice'))throw Error('Random model never activated');
+ await page.click('#changeExam');
  await page.selectOption('#mode','practice');
  await page.selectOption('#skill','reading');
  await page.click('#start');
