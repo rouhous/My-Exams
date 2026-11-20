@@ -55,7 +55,7 @@ const { chromium, devices } = require('playwright');
    if(n!==7)throw Error('Grade '+grade+' random R had '+n+' sections');
    for(let attempt=0;attempt<6;attempt++){
      await page.click('#changeExam');
-   await page.click('#randomNew');
+     await page.click('#randomNew');
      n=await page.locator('.section-title').count();
      if(n!==7)throw Error('Grade '+grade+' randomized paper has '+n+' sections');
      const models=await page.evaluate(()=>current.sections.map(x=>x.sourceModel));
