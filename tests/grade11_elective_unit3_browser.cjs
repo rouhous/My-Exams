@@ -15,7 +15,7 @@ const {chromium}=require('playwright');
  if(await page.locator('section.part audio').count()!==2)throw Error('Two listening audio players missing');
  await page.click('#end');
  if(!(await page.locator('#results').textContent()).includes('0 / 40'))throw Error('Expected 40 checked responses');
- if(!(await page.locator('#results').textContent()).includes('2 writing tasks require teacher review'))throw Error('Writing review boundary missing');
+ if(!(await page.locator('#results').textContent()).includes('2 writing tasks require teacher assessment'))throw Error('Writing review boundary missing');
  await page.click('#back');
  await page.selectOption('#mode','skill');await page.selectOption('#skill','rdg2');await page.click('#start');
  if(await page.locator('section.part').count()!==1||await page.locator('.q').count()!==10)throw Error('Reading 2 independent practice invalid');
