@@ -2,7 +2,8 @@ const { checkMixed } = require('./check_mixed_browser.cjs');
 const {chromium}=require('playwright');
 (async()=>{
  const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
- const page=await browser.newPage({viewport:{width:420,height:850}});
+ const context=await browser.newContext({viewport:{width:420,height:850}});
+ const page=await context.newPage();
  page.on('pageerror',e=>console.error('PAGE ERROR',e.message));
  await page.goto('http://127.0.0.1:8765/grade10/index.html',{waitUntil:'domcontentloaded'});
  await page.waitForFunction(()=>document.querySelector('#intro').textContent.includes('Six review models'),null,{timeout:30000});

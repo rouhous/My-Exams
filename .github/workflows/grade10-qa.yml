@@ -47,15 +47,10 @@ jobs:
               assert theme in model['reading2']['passage'].lower() or token in model['reading2']['passage'].lower(), ('wrong reading2 unit',model['id'])
               keys=[q['answer'] for q in model['reading1']['questions'] if isinstance(q['answer'],int)]
               assert len(set(keys))>=3, ('all reading1 keys clustered',model['id'])
-          pools={x['id']:x for x in m[:4]}
-          sources=d['metadata']['comprehensiveSourceMap']
-          assert len(sources)==2
-          for mixed in m[4:]:
-              assert set(sources[mixed['id']].values())==set('ABCD')
-              for skill,source in sources[mixed['id']].items():
-                  assert mixed[skill]==pools[source][skill], ('mixed passage/key mismatch',mixed['id'],skill)
-          print('All six Grade 10 models structurally valid; Reading 2 aligned and E/F provenance checked.')
+          print('Grade 10 unit banks structurally valid and Reading 2 aligned.')
           PY
+      - name: Verify balanced mixed-paper assembly
+        run: node tests/mixed_exam_assembly.cjs
       - name: Run actual mobile-width browser checks
         run: |
           npm install --no-save playwright@1.56.1
