@@ -24,3 +24,13 @@
 .exam-match-text{white-space:pre-line;border-bottom:1px solid #dccfaf;padding:8px 0;overflow-wrap:anywhere}
 .exam-match-text:last-child{border:0}
 .exam-match-review{margin:10px 0}
+
+
+/* Full-width, independently scrollable reading panels on small screens. */
+@media (max-width:700px) {
+  .exam-dual-grid{width:100%;max-width:100%;margin:7px 0;gap:6px;}
+  .exam-dual-panel{width:100%;box-sizing:border-box;min-width:0;height:36dvh;padding:9px;border-radius:10px;}
+  .exam-dual-panel .exam-dual-heading{top:-9px;margin:-9px -9px 8px;padding:6px 9px;}
+  .exam-dual-panel .passage{padding:8px;}
+  .exam-dual-panel .question,.exam-dual-panel .q{padding:7px 6px;}
+}
