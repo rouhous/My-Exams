@@ -13,7 +13,7 @@
       "optionReferences": 24,
       "missingFiles": [],
       "scriptKeywordChecks": 20,
-      "scriptKeywordMatches": 20,
+      "scriptKeywordMatches": 16,
       "visualApproval": "pending"
     },
     "7": {
@@ -35,7 +35,7 @@
       "missingFiles": [],
       "scriptKeywordChecks": 0,
       "scriptKeywordMatches": 0,
-      "visualApproval": "contact_sheet_option_labels_checked_105_references__unit_page_review_pending"
+      "visualApproval": "contact_sheet_option_labels_checked_90_references__unit_page_review_pending"
     }
   },
   "audio": {
@@ -129,6 +129,35 @@
     }
   },
   "missingPhysicalAssets": [],
-  "editorialReviewWarnings": [],
+  "editorialReviewWarnings": [
+    {
+      "grade": "6",
+      "task": "g6-d-listening-1",
+      "question": 1,
+      "kind": "image_answer_keyword_not_in_script",
+      "image": "solar-study-lamp"
+    },
+    {
+      "grade": "6",
+      "task": "g6-d-listening-1",
+      "question": 2,
+      "kind": "image_answer_keyword_not_in_script",
+      "image": "compass-hiking"
+    },
+    {
+      "grade": "6",
+      "task": "g6-d-listening-1",
+      "question": 3,
+      "kind": "image_answer_keyword_not_in_script",
+      "image": "magnifying-leaf"
+    },
+    {
+      "grade": "6",
+      "task": "g6-d-listening-1",
+      "question": 4,
+      "kind": "image_answer_keyword_not_in_script",
+      "image": "bus-timetable-tablet"
+    }
+  ],
   "note": "Audio source SHA verification is stronger than presence-only. Semantic illustration and textbook alignment need teacher review."
 }
