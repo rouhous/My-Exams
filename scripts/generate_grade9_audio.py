@@ -61,9 +61,16 @@ async def build(model,task,tmp):
     if task['group']==1:
         await say('You are going to hear five short texts. For each text, choose the correct picture, A, B or C. You will hear the texts twice.')
         pause(3)
-        for i,item in enumerate(task['items']):
-            for repetition in range(2):
-                await say(f'Text {i+1}. '+re.sub(r'^Text (?:one|two|three|four|five|[1-5])[. :]+','',item['script'],flags=re.I),i%2)
+        labels=('one','two','three','four','five')
+        if len(task['items'])!=len(labels):
+            raise ValueError('Listening 1 requires five numbered texts')
+        for repetition in range(2):
+            if repetition:
+                await say('Now listen again.')
+                pause(2)
+            for i,(label,item) in enumerate(zip(labels,task['items'])):
+                text=re.sub(r'^Text (?:one|two|three|four|five|[1-5])[. :]+','',item['script'],flags=re.I)
+                await say(f'Text {label}. '+text,i%2)
                 pause(3)
     else:
         await say('You are going to hear an interview. Listen carefully and choose the correct answer, A, B or C. You will hear the interview twice.')
@@ -98,6 +105,7 @@ async def main():
                 target=OUT/mp3
                 old=prior.get(t['id'],{})
                 if (old.get('sourceHash')==fingerprint and old.get('mp3')==mp3
+                        and (t['group'] != 1 or old.get('sequence')=='whole-set-twice')
                         and target.is_file() and target.stat().st_size>15000
                         and MP3(target).info.length>40):
                     print('REUSE exact source-verified MP3:',t['id'])
@@ -107,7 +115,7 @@ async def main():
                         await build(m['model'],t,pathlib.Path(taskdir))
                 manifest[t['id']]={'sourceHash':fingerprint,'mp3':mp3,
                     'sourceModel':m['model'],'seconds':round(MP3(target).info.length,2),
-                    'bytes':target.stat().st_size,'playedTwice':True}
+                    'bytes':target.stat().st_size,'playedTwice':True,'sequence':'whole-set-twice' if t['group']==1 else 'complete-passage-twice'}
     (OUT/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     assert len(manifest)==6
 if __name__=='__main__':asyncio.run(main())

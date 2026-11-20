@@ -1,12 +1,6 @@
 name: Generate Grade 5 and 6 natural listening MP3
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/grades5-6-natural-audio.yml'
-      - 'scripts/generate_grades5_6_audio.py'
-      - 'grades5-6/activities.json'
 concurrency:
   group: grades5-6-audio-latest
   cancel-in-progress: true

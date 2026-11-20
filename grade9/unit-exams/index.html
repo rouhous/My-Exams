@@ -270,7 +270,7 @@ function setReady(){if(!bank)return;model=bank.models.find(x=>x.model===$('unit'
  $('start').disabled=false}
 function question(task,q,index){
  const id=task.id+'-'+index;asked.push({id,q,task});let h='<div class="q"><strong>'+(index+1)+'. '+esc(q.stem)+'</strong>';
- if(q.images){h+='<div class="images">'+q.images.map((src,i)=>'<label class="choice"><img src="'+esc(src)+'" alt="'+esc(q.choices[i])+'"><input name="'+id+'" type="radio" value="'+i+'"> '+String.fromCharCode(65+i)+'. '+esc(q.choices[i])+'</label>').join('')+'</div>';}
+ if(q.images){h+='<div class="images">'+q.images.map((src,i)=>'<label class="choice"><b>'+String.fromCharCode(65+i)+'</b><img src="'+esc(src)+'" alt="Illustration for option '+String.fromCharCode(65+i)+'"><input name="'+id+'" type="radio" value="'+i+'" aria-label="Option '+String.fromCharCode(65+i)+'"></label>').join('')+'</div>';}
  else if(q.choices){h+=q.choices.map((opt,i)=>'<label class="choice"><input name="'+id+'" type="radio" value="'+i+'"> '+String.fromCharCode(65+i)+'. '+esc(opt)+'</label>').join('')}
  else h+='<input type="text" name="'+id+'" maxlength="200" placeholder="Short answer · teacher review">';
  return h+'</div>';

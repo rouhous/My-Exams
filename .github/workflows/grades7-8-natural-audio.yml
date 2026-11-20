@@ -1,12 +1,6 @@
 name: Generate Grade 7 and 8 natural listening MP3
 on:
   workflow_dispatch:
-  push:
-    branches: [main, grade8-original-unit-rebuild]
-    paths:
-      - '.github/workflows/grades7-8-natural-audio.yml'
-      - 'grades7-8/activities.json'
-      - 'scripts/generate_grades7_8_audio.py'
 concurrency:
   group: natural-grade7-8-${{ github.ref }}
   cancel-in-progress: true

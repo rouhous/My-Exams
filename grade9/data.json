@@ -1255,9 +1255,9 @@
               ],
               "answer": 1,
               "images": [
-                "images/camera-g9d.png",
-                "images/handheld-recorder-g9d.png",
-                "images/laptop-g9d.png"
+                "images/camera-g9d.webp",
+                "images/handheld-recorder-g9d.webp",
+                "images/laptop-g9d.webp"
               ],
               "script": "Our history teacher asked us to collect our grandparents' memories of village life. A camera could have taken photographs, but some guests did not want to be filmed. We used a small handheld recorder so that their voices and stories could be preserved without showing their faces."
             },
@@ -1270,9 +1270,9 @@
               ],
               "answer": 2,
               "images": [
-                "images/wooden-frames-g9d.png",
-                "images/tablets-g9d.png",
-                "images/projector-g9d.png"
+                "images/wooden-frames-g9d.webp",
+                "images/tablets-g9d.webp",
+                "images/projector-g9d.webp"
               ],
               "script": "Visitors brought many old family photographs to our exhibition. We tried using wooden frames, but there were too many pictures for the walls. Instead of passing tablets around the room, the organisers used a projector to show a different photograph every minute."
             },
@@ -1285,9 +1285,9 @@
               ],
               "answer": 1,
               "images": [
-                "images/garden-display-g9d.png",
-                "images/library-entrance-g9d.png",
-                "images/sports-display-g9d.png"
+                "images/garden-display-g9d.webp",
+                "images/library-entrance-g9d.webp",
+                "images/sports-display-g9d.webp"
               ],
               "script": "Our class made a display about words borrowed from different languages. The sports field was too far from the classrooms, and the posters could get wet in the garden. We finally put the display near the library entrance, where students pass between lessons."
             },
@@ -1300,9 +1300,9 @@
               ],
               "answer": 2,
               "images": [
-                "images/binoculars-walk-g9d.png",
-                "images/torch-walk-g9d.png",
-                "images/compass-walk-g9d.png"
+                "images/binoculars-walk-g9d.webp",
+                "images/torch-walk-g9d.webp",
+                "images/compass-walk-g9d.webp"
               ],
               "script": "During a heritage walk through the hills, we followed a paper map. Our guide carried binoculars to look at distant buildings, and I had a torch for the journey home. At a confusing junction, she used a compass to check which path led north."
             },
@@ -1315,9 +1315,9 @@
               ],
               "answer": 0,
               "images": [
-                "images/minibus-g9d.png",
-                "images/village-boat-g9d.png",
-                "images/village-bicycles-g9d.png"
+                "images/minibus-g9d.webp",
+                "images/village-boat-g9d.webp",
+                "images/village-bicycles-g9d.webp"
               ],
               "script": "Our class visited an old village to meet a craftsperson. Some students suggested bicycles, and others wondered if a boat would be possible. As the village was reached by a mountain road, a small minibus collected us from school and returned before lunch."
             }
