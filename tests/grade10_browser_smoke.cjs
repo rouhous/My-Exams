@@ -6,7 +6,7 @@ const {chromium}=require('playwright');
  const page=await context.newPage();
  page.on('pageerror',e=>console.error('PAGE ERROR',e.message));
  await page.goto('http://127.0.0.1:8765/grade10/index.html',{waitUntil:'domcontentloaded'});
- await page.waitForFunction(()=>document.querySelector('#intro').textContent.includes('Six review models'),null,{timeout:30000});
+ await page.waitForFunction(()=>!document.querySelector('#start').disabled,null,{timeout:30000});
  for(const model of 'ABCD'){
   await page.selectOption('#model',model);
   await page.click('#start');
