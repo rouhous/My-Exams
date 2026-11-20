@@ -58,7 +58,7 @@ function evaluate(value,question){
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
-</script><script src="../../../shared/data-charts.js?v=1"></script><script src="../../../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../../../shared/assessment-theme.css?v=28"><link rel="stylesheet" href="../../../shared/reading-split.css?v=3"><link rel="stylesheet" href="../../../shared/exam-pages.css?v=1"><script defer src="../../../shared/reading-split.js?v=3"></script><script defer src="../../../shared/exam-pages.js?v=1" data-host="sections" data-reset="back"></script></head><body data-study-tools="compact">
+</script><script src="../../../shared/data-charts.js?v=1"></script><script src="../../../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../../../shared/assessment-theme.css?v=28"><link rel="stylesheet" href="../../../shared/reading-split.css?v=3"><link rel="stylesheet" href="../../../shared/exam-pages.css?v=1"><script defer src="../../../shared/reading-split.js?v=3"></script><script defer src="../../../shared/exam-pages.js?v=1" data-host="sections" data-reset="back"></script><script defer src="../../../shared/journey-results.js"></script></head><body data-study-tools="compact">
 <header><a href="../../../grade12-skills.html?track=12-elective">← اختبارات المسار</a>
 <h1>Grade 12 Elective · Unit 1: The Arts</h1>
 <p>Semester 1 · 70 marks · 180-minute full practice · independent skills without a timer</p></header>
@@ -211,6 +211,7 @@ function finish(expired){
   }
  });
  const writing=selected.filter(k=>k.startsWith('wrt')).length;
+ window.MyExamsJourney?.report({model:'unit-'+unitNumber,skill:selected.length===1?selected[0]:'',earned:correct,possible:scored,writingPending:writing>0});
  const result=$('results');result.style.display='block';
  result.innerHTML='<h2>Practice review'+(expired?' — time expired':'')+'</h2>'+
  '<p><strong>'+correct+' / '+scored+'</strong> automatically checked questions. '+manual+' answers require teacher review. '+writing+' writing task(s) require teacher assessment. '+blank+' unanswered question(s).</p>'+

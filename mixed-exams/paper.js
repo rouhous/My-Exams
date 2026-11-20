@@ -12,9 +12,10 @@
   const validSeed = /^\d{1,10}$/.test(params.get('seed') || '') && Number(params.get('seed')) <= 0xffffffff;
   const seed = randomExam ? (validSeed ? Number(params.get('seed')) : newSeed()) : 20261120;
   const title = randomExam ? 'Random exam' : 'Comprehensive exam';
-  const storageKey = 'my-exams-mixed-v1:' + scope + ':' + (randomExam ? 'random-' : 'fixed-') + seed;
+  const paperKey = 'my-exams-mixed-v1:' + scope + ':' + (randomExam ? 'random-' : 'fixed-') + seed;
+  const storageKey = window.MyExamsJourney?.storageKey(paperKey) || paperKey;
   const cachedPaper = 'my-exams-downloaded-papers-v1';
-  const emptyState = () => ({ version: 2, started: null, page: 0, answers: {}, finished: false });
+  const emptyState = () => ({ attemptId: window.MyExamsJourney ? crypto.randomUUID() : null, version: 2, started: null, page: 0, answers: {}, finished: false });
   let state = emptyState();
   let sections = [], interval = 0, bank;
   const assessed = [];
@@ -280,6 +281,7 @@
 
   function finish(expired = false, move = true) {
     clearInterval(interval);
+    const wasFinished = state.finished;
     state.finished = true;
     persist();
     $('finish').disabled = true;
@@ -316,6 +318,8 @@
     result.hidden = false;
     result.innerHTML = '<h2>' + (expired ? 'Time is up' : 'Exam review') + '</h2><p><strong>' + correct + ' / ' + assessed.length +
       '</strong> automatically marked · ' + unanswered + ' unanswered.</p><p>Writing tasks are marked separately.</p>';
+    if (!wasFinished) window.MyExamsJourney?.report({earned:correct, possible:assessed.length,
+      writingPending:sections.some(section => section.key.startsWith('writing')), attemptId:state.attemptId});
     if (!randomExam) $('retry').hidden = false;
     if (move) result.focus();
   }
@@ -333,7 +337,7 @@
     button.disabled = true;
     try {
       const cache = await caches.open(cachedPaper);
-      const assets = [location.href, './' + scope + '.json', './paper.css', './paper.js?v=2', './assemble.js',
+      const assets = [location.href, './' + scope + '.json', './paper.css', './paper.js?v=4', '../shared/journey-results.js', './assemble.js',
         '../shared/reading-split.js?v=3', '../shared/reading-split.css?v=3', '../shared/exam-pages.js?v=1', '../shared/exam-pages.css?v=1',
         '../shared/oman-theme.css?v=29', '../shared/short-answer-marking.js',
         '../shared/data-charts.js', '../shared/learning-feedback.js?v=1', ...media];

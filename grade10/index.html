@@ -54,7 +54,7 @@ function evaluate(value,question){
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
-</script><script src="../shared/data-charts.js?v=1"></script><script src="../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../shared/assessment-theme.css?v=30"><script src="../shared/mixed-exam-links.js" data-exam-source="10" defer></script><link rel="stylesheet" href="../shared/reading-split.css?v=5"><link rel="stylesheet" href="../shared/exam-pages.css?v=3"><script defer src="../shared/reading-split.js?v=3"></script><script defer src="../shared/exam-pages.js?v=1" data-host="exam"></script></head><body>
+</script><script src="../shared/data-charts.js?v=1"></script><script src="../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../shared/assessment-theme.css?v=30"><script src="../shared/mixed-exam-links.js" data-exam-source="10" defer></script><link rel="stylesheet" href="../shared/reading-split.css?v=5"><link rel="stylesheet" href="../shared/exam-pages.css?v=3"><script defer src="../shared/reading-split.js?v=3"></script><script defer src="../shared/exam-pages.js?v=1" data-host="exam"></script><script defer src="../shared/journey-results.js"></script></head><body>
 <header><h1>My Exams · Grade 10</h1><p>English Language · Semester 1</p><a href="../grade-skills.html?grade=10">← اختبارات الصف العاشر</a></header>
 <main>
 
@@ -71,7 +71,7 @@ g.MyExamsShortAnswers={evaluate,words};
 'use strict';
 var keys=['listening','vocabulary','grammar','reading1','reading2','writing1','writing2'];
 var $=id=>document.getElementById(id);
-var models=[],active=null,timer=null,end=0,choiceModel=null;
+var models=[],active=null,timer=null,end=0,choiceModel=null,activeModel=null;
 var esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function status(text){$('status').textContent=text}
 function find(id){return models.find(m=>m.id===id)}
@@ -123,7 +123,7 @@ function stopTimer(){if(timer){clearInterval(timer);timer=null}}
 function tick(){var left=Math.max(0,Math.ceil((end-Date.now())/1000));$('clock').textContent=String(Math.floor(left/60)).padStart(2,'0')+':'+String(left%60).padStart(2,'0');if(!left){stopTimer();$('submit').click()}}
 function start(){
  stopTimer();active=modelChoices();if(!active.length)return;
- var m=current();$('intro').textContent='Grade 10 · '+m.unitTitle+' · '+(m.marks||'')+' marks · Original practice';
+ var m=current();activeModel=m.id;$('intro').textContent='Grade 10 · '+m.unitTitle+' · '+(m.marks||'')+' marks · Original practice';
  $('exam').innerHTML=active.map(renderSection).join('');$('submit').disabled=false;
  $('actions').classList.remove('hidden');$('result').textContent='';
   $('submit').textContent=active.every(p=>p.skill.startsWith('writing')||p.skill==='dataAnalysis')?'Finish writing practice':'Check objective answers';
@@ -152,6 +152,7 @@ function evaluateAnswers(){
    }
   });
  });
+ window.MyExamsJourney?.report({model:'unit-'+activeModel,skill:active.length===1?active[0].skill:'',earned:correct,possible:total,writingPending:active.some(p=>p.skill.startsWith('writing')||p.skill==='dataAnalysis')});
  $('result').textContent=total?'Objective responses: '+correct+' / '+total+'. Writing is not automatically graded; short answers may require teacher review.':'Chart / writing response saved in this session. No objective score applies: teacher assessment is needed for writing.';
  status('Your answers are ready for review. Writing requires teacher assessment.');
 }
