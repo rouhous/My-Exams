@@ -19,15 +19,15 @@ textarea{min-height:160px;resize:vertical}.passage{background:#f1f7f3;padding:15
 small,.muted{color:#5c7168}.hidden{display:none!important}.meta{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between}
 #clock{font-variant-numeric:tabular-nums;font-size:20px;font-weight:700}.score{font-size:20px}
 @media print{header,.controls,.notice,.no-print{display:none!important}body{background:white}.section{break-inside:avoid;border:none;padding:4px}}
-</style><script src="../../shared/learning-feedback.js?v=28"></script><link rel="stylesheet" href="../../shared/assessment-theme.css?v=28"></head><body>
+</style><script src="../../shared/learning-feedback.js?v=28"></script><link rel="stylesheet" href="../../shared/assessment-theme.css?v=28"><style>#setup[hidden],#changeExam[hidden]{display:none!important}</style></head><body>
 <header><h1>My Exams · Grade 11 Core</h1><p>Original Semester 1 English practice</p><a href="../../grade-skills.html?grade=11&amp;track=core">← اختبارات المسار</a></header>
 <main>
-<div class="panel"><div class="controls">
+<div class="panel"><div class="controls" id="setup">
 <label>الاختبار <select id="model"><option value="A">الوحدة الأولى · Communication</option><option value="B">الوحدة الثانية · Those Teenage Things</option><option value="C">الوحدة الثالثة · Travellers and Tourists</option><option value="D">الوحدة الرابعة · Innovation</option><option value="E">اختبار شامل</option><option value="F">اختبار شامل إضافي</option></select></label>
 <label>Mode <select id="mode"><option value="exam">Mixed practice · timed</option><option value="practice">Single skill · untimed</option></select></label>
 <label id="skillWrap" class="hidden">Skill <select id="skill"><option value="listening">Listening</option><option value="grammarvocabulary">Grammar &amp; Vocabulary</option><option value="reading">Reading</option><option value="writing1">Writing 1</option><option value="writing2">Writing 2</option></select></label>
 <button id="start" disabled>Start</button><button id="random" class="alt" disabled>New random comprehensive</button><button id="offline" class="alt" disabled>Save selected model offline</button>
-</div><div class="meta"><span id="intro">Loading exam data…</span><span id="clock">150:00</span></div><div id="status" role="status"></div></div>
+</div><div class="meta"><span id="intro">Loading exam data…</span><button class="alt" id="changeExam" type="button" hidden>Change exam or skill</button><span id="clock">150:00</span></div><div id="status" role="status"></div></div>
 <div id="exam"></div>
 <div id="actions" class="panel no-print hidden"><button id="submit">Check objective answers</button><span id="result" role="status"></span></div>
 </main><script>
@@ -84,7 +84,7 @@ function stopTimer(){if(timer){clearInterval(timer);timer=null}}
 function tick(){var left=Math.max(0,Math.ceil((end-Date.now())/1000));$('clock').textContent=String(Math.floor(left/60)).padStart(2,'0')+':'+String(left%60).padStart(2,'0');if(!left){stopTimer();$('submit').click()}}
 function start(){
  stopTimer();active=modelChoices();if(!active.length)return;
- var m=current();$('intro').textContent='Grade 11 Core · '+m.unitTitle+' · '+(m.marks||'')+' marks · Original practice';
+ var m=current();$('setup').hidden=true;$('changeExam').hidden=false;$('intro').textContent='Grade 11 Core · '+m.unitTitle+' · '+(m.marks||'')+' marks · Original practice';
  $('exam').innerHTML=active.map(renderSection).join('');
  $('actions').classList.remove('hidden');$('result').textContent='';status('Exam started. Listening passages and associated questions stay together.');
  $('exam').querySelectorAll('textarea').forEach(t=>t.addEventListener('input',()=>{t.closest('section').querySelector('.words').textContent=t.value.trim()?t.value.trim().split(/\s+/).length:0}));
@@ -127,13 +127,21 @@ async function init(){
  const params=new URLSearchParams(location.search);
  if(models.some(model=>model.id===params.get('model')))$('model').value=params.get('model');
  if(params.get('model')==='E') for(const option of $('model').options) option.hidden='ABCD'.includes(option.value);
- if(params.get('mode')==='random')$('random').click();$('intro').textContent='Grade 11 Core · English practice';status('Choose a model or make a random comprehensive paper.')}catch(e){status('Unable to load exam data: '+e.message)}
+ $('intro').textContent='Grade 11 Core · English practice';
+ if(params.get('mode')==='random')$('random').click();
+ else if(params.get('open')==='1'&&params.get('mode')==='exam')start();
+ else status('Choose a model or make a random comprehensive paper.')}catch(e){status('Unable to load exam data: '+e.message)}
 }
 $('model').addEventListener('change',()=>{choiceModel=null});
 $('mode').addEventListener('change',()=>{$('skillWrap').classList.toggle('hidden',$('mode').value!=='practice')});
 $('start').addEventListener('click',()=>{choiceModel=null;start()});
 $('random').addEventListener('click',()=>{choiceModel=buildRandom();if(!choiceModel)return;start()});
 $('submit').addEventListener('click',evaluateAnswers);
+$('changeExam').onclick=()=>{
+ stopTimer();active=null;choiceModel=null;
+ $('exam').innerHTML='';$('actions').classList.add('hidden');
+ $('setup').hidden=false;$('changeExam').hidden=true;window.scrollTo(0,0);
+};
 $('offline').addEventListener('click',prepareOffline);
 init();
 })();

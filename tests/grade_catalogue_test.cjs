@@ -45,9 +45,9 @@ for(const [grade,count] of [[5,4],[6,3],[7,3],[8,3],[9,3],[10,4],[11,4],[12,4]])
 }
 const nine=page('?grade=9&unit=3');
 assert.match(nine('units').children[2].href,/unit-exams\/index\.html\?unit=3/);
-assert.match(nine('skills').children[0].href,/unit=3&mode=skill&skill=0$/);
+assert.match(nine('skills').children[0].href,/unit=3&mode=skill&skill=0&open=1$/);
 const elective=page('?track=12-elective&unit=4','12');
-assert.match(elective('skills').children[0].href,/paper-a-preview\.html\?unit=4&mode=skill&skill=lst1$/);
+assert.match(elective('skills').children[0].href,/paper-a-preview\.html\?unit=4&mode=skill&skill=lst1&open=1$/);
 const core=page('?grade=11&track=core&unit=2');
-assert.match(core('skills').children[0].href,/paper-b-preview\.html\?mode=skill&skill=lst1$/);
+assert.match(core('skills').children[0].href,/paper-b-preview\.html\?mode=skill&skill=lst1&open=1$/);
 console.log('PASS eight grades, two track choices, unit counts, existing routes and selected-unit skills.');

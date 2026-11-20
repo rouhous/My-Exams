@@ -54,7 +54,7 @@ function evaluate(value,question){
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
-</script><script src="../../../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../../../shared/assessment-theme.css?v=28"></head><body>
+</script><script src="../../../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../../../shared/assessment-theme.css?v=28"></head><body data-study-tools="compact">
 <header><a href="../../../grade12-skills.html?track=12-core">← اختبارات المسار</a>
 <h1>Grade 12 Core · Unit 3: Tourism and Hospitality</h1><p>Original nine-section assessment · 70 marks</p></header>
 <main>
@@ -80,6 +80,7 @@ async function initialize(){
  if(keys.reduce((n,k)=>n+Number(sections[k]?.marks||0),0)!==70||l1.questions.length!==7||l2.questions.length!==8||data.status.indexOf('teacher_review')===-1)throw Error('Structure not validated');
  for(const k of ['lst1','lst2']){const src=k==='lst1'?'unit3-listening1-original-draft.json':'unit3-listening2-original-draft.json',entry=audioManifest[src];sections[k].verifiedAudio=!!(entry&&entry.scriptSha256===await digest(sections[k].script));sections[k].audioFile=sections[k].verifiedAudio?'audio/'+entry.mp3:null}
  loaded=true;$('ready').textContent='Nine sections available · 70 marks. Source-matched Listening MP3: '+['lst1','lst2'].filter(k=>sections[k].verifiedAudio).length+' / 2. Short answers and writing remain teacher-reviewed.';$('start').disabled=false;
+ if(direct.get('open')==='1'&&(direct.get('mode')==='full'||direct.get('mode')==='skill'&&keys.includes(direct.get('skill'))))start();
  }catch(e){$('ready').textContent='Paper unavailable: '+e.message}
 }
 function render(key){

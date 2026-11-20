@@ -37,8 +37,9 @@ add("copy","نسخ",async()=>{if(mode)setMode("");const selected=getSelection()?
 add("undo","تراجع",()=>{if(data.strokes.length){data.strokes.pop()}else if(data.highlights.length)data.highlights.pop();save();schedule()});
 add("clear","مسح الكل",()=>{if(!data.strokes.length&&!data.highlights.length)return;if(confirm("مسح جميع الرسومات وعلامات التحديد في هذه الصفحة؟")){data.strokes=[];data.highlights=[];save();schedule()}});
 buttons.highlight.addEventListener("pointerdown",event=>event.preventDefault());buttons.copy.addEventListener("pointerdown",event=>event.preventDefault());
-add("min","إخفاء",()=>{collapsed=!collapsed;for(const [id,b] of Object.entries(buttons))if(id!=="min")b.hidden=collapsed;buttons.min.setAttribute("aria-label",collapsed?"إظهار أدوات الدراسة":"إخفاء أدوات الدراسة");buttons.min.querySelector(".ex-tool-text").textContent=collapsed?"إظهار":"إخفاء";if(collapsed)setMode("")});
+add("min","إخفاء",()=>{collapsed=!collapsed;bar.classList.toggle("ex-collapsed",collapsed);for(const [id,b] of Object.entries(buttons))if(id!=="min")b.hidden=collapsed;buttons.min.setAttribute("aria-label",collapsed?"إظهار أدوات الدراسة":"إخفاء أدوات الدراسة");buttons.min.querySelector(".ex-tool-text").textContent=collapsed?"إظهار":"إخفاء";if(collapsed)setMode("")});
 doc.body.append(bar);
+if(doc.body.dataset.studyTools==="compact"&&matchMedia("(max-width: 640px)").matches)buttons.min.click();
 const note=element("aside","ex-note");note.setAttribute("aria-label","ملاحظاتي");
 const row=element("div","ex-heading");row.append(element("strong","", "ملاحظاتي وأفكاري"));
 const close=element("button","","إغلاق");close.type="button";close.addEventListener("click",()=>note.classList.remove("visible"));row.append(close);

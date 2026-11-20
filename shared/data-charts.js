@@ -13,7 +13,9 @@ function unpack(c){
 }
 function bars(c,labels,series){
  const max=Math.max(1,...series.flatMap(s=>s.values));
- const maxAxis=Math.ceil(max/10)*10||1;
+ const percent=c.unit==='%';
+ const maxAxis=percent?100:Math.ceil(max/10)*10||1;
+ const axisLabel=value=>show(value)+(percent?'%':'');
  let html="";
  if(series.length>1)html+='<div class="mex-legend">'+series.map((s,i)=>'<span><i style="background:'+palette[i%palette.length]+'"></i>'+esc(s.name)+'</span>').join("")+'</div>';
  html+='<div class="mex-bars" role="group" aria-label="Bar chart">';
@@ -22,11 +24,11 @@ function bars(c,labels,series){
   series.forEach((s,j)=>{
    const v=s.values[i],width=Math.min(100,100*v/maxAxis);
    html+='<div class="mex-row" role="group" aria-label="'+esc(label+" "+s.name+" "+show(v))+'">'+(series.length>1?'<span class="mex-year">'+esc(s.name)+'</span>':"")+
-   '<div class="mex-track"><div class="mex-fill" style="width:'+width.toFixed(2)+'%;background:'+palette[j%palette.length]+'"></div></div><b class="mex-value">'+esc(show(v))+'</b></div>';
+   '<div class="mex-track"><div class="mex-fill" style="width:'+width.toFixed(2)+'%;background:'+palette[j%palette.length]+'"></div></div><b class="mex-value">'+esc(axisLabel(v))+'</b></div>';
   });
   html+='</div></div>';
  });
- return html+'<div class="mex-axis"><span>0</span><span>'+esc(show(maxAxis/2))+'</span><span>'+esc(show(maxAxis))+'</span></div></div>';
+ return html+'<div class="mex-axis"><span>'+axisLabel(0)+'</span><span>'+axisLabel(maxAxis/2)+'</span><span>'+axisLabel(maxAxis)+'</span></div></div>';
 }
 function pie(c,labels,series){
  const values=series[0].values,total=values.reduce((a,v)=>a+v,0);

@@ -70,20 +70,20 @@
     if (grade <= 8) return './grades7-8/index.html?grade=' + grade + '&model=' + model + (skill ? '&mode=practice&skill=' + skill : '&mode=exam');
     if (grade === 9) {
       const task = gradeSkills[9].findIndex(([key]) => key === skill);
-      return './grade9/unit-exams/index.html?unit=' + (index + 1) + (task < 0 ? '' : '&mode=skill&skill=' + task);
+      return './grade9/unit-exams/index.html?unit=' + (index + 1) + (task < 0 ? '&mode=full' : '&mode=skill&skill=' + task) + '&open=1';
     }
     if (grade === 10) return './grade10/index.html?model=' + model + (skill ? '&mode=practice&skill=' + skill : '&mode=exam');
     const paper = grade === 12 && track === 'elective' ? 'a' : model.toLowerCase();
     const unitQuery = grade === 12 && track === 'elective' ? 'unit=' + (index + 1) + '&' : '';
-    return './grade' + grade + '/' + track + '/units/paper-' + paper + '-preview.html?' + unitQuery + (skill ? 'mode=skill&skill=' + skill : 'mode=full');
+    return './grade' + grade + '/' + track + '/units/paper-' + paper + '-preview.html?' + unitQuery + (skill ? 'mode=skill&skill=' + skill : 'mode=full') + '&open=1';
   }
   function mixedLink(random) {
     const mode = random ? 'random' : 'exam';
     if (grade <= 6) return './grades5-6/index.html?grade=' + grade + '&model=' + (grade === 6 ? 'D' : 'E') + '&mode=' + mode;
     if (grade <= 8) return './grades7-8/index.html?grade=' + grade + '&model=D&mode=' + mode;
     if (grade <= 10) return './grade' + grade + '/index.html?model=' + (grade === 9 ? 'D' : 'E') + '&mode=' + mode;
-    if (grade === 11 && track === 'core') return './grade11/core/index.html?model=E&mode=' + mode;
-    return './upper-grades-practice.html?track=' + grade + '-' + track + '&model=E&mode=' + (random ? 'random' : 'full');
+    if (grade === 11 && track === 'core') return './grade11/core/index.html?model=E&mode=' + mode + '&open=1';
+    return './upper-grades-practice.html?track=' + grade + '-' + track + '&model=E&mode=' + (random ? 'random' : 'full') + '&open=1';
   }
   function card(url, name, detail, accessibleName) {
     const a = document.createElement('a');

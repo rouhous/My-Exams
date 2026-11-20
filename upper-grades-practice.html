@@ -67,11 +67,11 @@ g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
 </script><script src="./shared/data-charts.js?v=1"></script><script src="shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="shared/assessment-theme.css?v=28"></head>
-<body>
+<body data-study-tools="compact">
 <header><a href="./index.html">← My Exams</a><h1>Grades 11–12 · English Skills & Exams</h1><div>Full exams · random exams · individual skills</div></header>
 <main>
 
-<section class="box">
+<section class="box" id="setup">
 <div class="controls">
 <label>Track<select id="track"><option value="11-elective">Grade 11 Elective</option><option value="12-core">Grade 12 Core</option><option value="12-elective" selected>Grade 12 Elective</option></select></label>
 <label>Mode<select id="mode"><option value="full">Fixed full exam · timed</option><option value="random">Comprehensive random · timed</option><option value="skill">Single skill · untimed</option></select></label>
@@ -157,7 +157,7 @@ $('questions').innerHTML=out;
 $('paperTitle').textContent=mode==='random'?'Comprehensive randomized paper':mode==='skill'?'Individual skill practice':examName(pick);
 var markSum=parts.reduce(function(s,x){return s+(x.part?Number(x.part.marks):0)},0);
 $('paperMeta').textContent=tr+' · '+(mode==='skill'?'Untimed':(tr.startsWith('11')?'150':'180')+' minutes')+' · '+markSum+' total paper marks';
-$('paper').className='active';$('result').style.display='none';$('start').disabled=true;['track','mode','model','skill'].forEach(function(id){$(id).disabled=true});
+$('setup').hidden=true;$('paper').className='active';$('result').style.display='none';$('start').disabled=true;['track','mode','model','skill'].forEach(function(id){$(id).disabled=true});
 seconds=mode==='skill'?0:(tr.startsWith('11')?150:180)*60;started=Date.now();
 if(seconds){tick();timerId=setInterval(tick,1000)}else $('timer').textContent='No time limit';
 $('paper').scrollIntoView({behavior:'smooth'});
@@ -194,7 +194,7 @@ $('track').addEventListener('change',rebuild);$('mode').addEventListener('change
 $('start').addEventListener('click',function(){$('submit').disabled=false;build()});
 $('submit').addEventListener('click',function(){grade(false)});
 $('print').addEventListener('click',function(){window.print()});
-$('reset').addEventListener('click',function(){clearInterval(timerId);$('paper').className='';$('start').disabled=false;['track','mode','model','skill'].forEach(function(id){$(id).disabled=false});rebuild();window.scrollTo({top:0,behavior:'smooth'})});
+$('reset').addEventListener('click',function(){clearInterval(timerId);$('setup').hidden=false;$('paper').className='';$('start').disabled=false;['track','mode','model','skill'].forEach(function(id){$(id).disabled=false});rebuild();window.scrollTo({top:0,behavior:'smooth'})});
 Promise.all([
  fetch('./higher_grades_corrected.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw Error('bank HTTP '+r.status);return r.json()}),
  ...keys.map(function(k){return fetch('./upper-audio/'+k+'/manifest.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).catch(function(){return null})})
@@ -216,6 +216,9 @@ Promise.all([
  rebuild();
  $('loadState').textContent='Choose a model and start.';
  $('start').disabled=false;
+ if(deepLink.get('open')==='1'&&keys.includes(requestedTrack)&&(
+   ['full','random'].includes(requestedMode)||requestedMode==='skill'&&[...$('skill').options].some(option=>option.value===requestedSkill)
+ ))$('start').click();
 }).catch(function(e){$('loadState').textContent='Bank unavailable: '+e.message;$('start').disabled=true});
 if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('./sw.js').catch(function(){});
 })();

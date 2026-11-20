@@ -82,7 +82,7 @@ async function draw(){
    if(!t)continue;
    html+='<section class="task"><h2>Model '+esc(m.model)+' · '+esc(m.theme)+'</h2>';
    (t.items||[]).forEach((q,i)=>{
-    const images=q.images.map(s=>'grade9/'+s),labels=q.choices;
+    const images=q.images.map(s=>('grade9/'+s).replace(/(\/illustration-(?:extra-)?\d-\d)\.png$/,'$1.webp')),labels=q.choices;
     const player='grade9/'+(t.reviewedAudio||t.audio);
     html+=qcard('g9-'+m.model+'-item-'+(i+1),q.script||t.transcript||'',images,labels,q.answer,player);count++;
    });html+='</section>';

@@ -14,3 +14,6 @@
 body.ex-ink-mode{user-select:none}
 @media(max-width:560px){.ex-tools{gap:3px;border-radius:15px;padding:6px}.ex-tools button{min-width:39px;min-height:43px;padding:4px 5px;font-size:11px}.ex-tools .ex-tool-text{display:none}.ex-tools button{flex:0 0 auto;min-width:36px;min-height:42px;padding:4px}.ex-tools .ex-icon{font-size:19px}.ex-tools{overflow-x:auto;scrollbar-width:none}.ex-tools::-webkit-scrollbar{display:none}.ex-note{bottom:76px;right:7px;width:calc(100vw - 14px)}}
 @media print{.ex-tools,.ex-note,.ex-ink,.ex-toast{display:none!important}}
+
+.ex-tools button[hidden]{display:none!important}
+@media(max-width:640px){.ex-tools.ex-collapsed{left:auto;right:8px;transform:none;padding:3px}.ex-tools.ex-collapsed button{min-width:42px}}

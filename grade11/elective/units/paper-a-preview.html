@@ -59,7 +59,7 @@ function evaluate(value,question){
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
-</script><script src="../../../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../../../shared/assessment-theme.css?v=28"></head><body>
+</script><script src="../../../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../../../shared/assessment-theme.css?v=28"></head><body data-study-tools="compact">
 <header><a href="../../../grade-skills.html?grade=11&amp;track=elective">← اختبارات المسار</a><h1>Grade 11 Elective · Unit 1: Fame</h1>
 <p>Six original sections · 60 marks · 150-minute full paper / untimed skills</p></header>
 <main>
@@ -87,6 +87,7 @@ async function init(){
  if(keys.some(k=>s[k].marks!==10)||s.lst1.questions.length!==10||s.lst2.questions.length!==10||s.rdg1.questions.length!==10||s.rdg2.questions.length!==10)throw Error('SAH paper sections not validated');
  for(const k of ['lst1','lst2']){const file=filenames[k],entry=manifest[file];s[k].audioFile=entry&&entry.scriptSha256===await digest(s[k].script)?'audio/'+entry.mp3:null}
  $('ready').textContent='All six sections loaded · 60 marks · verified Listening MP3 '+['lst1','lst2'].filter(k=>s[k].audioFile).length+'/2. Human review required for extended answers.';loaded=true;$('start').disabled=false;
+ if(direct.get('open')==='1'&&(direct.get('mode')==='full'||direct.get('mode')==='skill'&&keys.includes(direct.get('skill'))))start();
  }catch(e){$('ready').textContent='Source load failed: '+e.message}
 }
 function question(key,q,i){const id=key+'-'+i;questions.push({id,key,q});let h='<div class="q"><strong>'+(i+1)+'. '+esc(q.stem)+'</strong>';

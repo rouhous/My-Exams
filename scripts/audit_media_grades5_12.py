@@ -159,7 +159,7 @@ for m in models9:
                 failures.append({"grade":"9","task":key,"issue":"Question choice and picture count mismatch"})
             for image in q["images"]:
                 im=images["9"];im["optionReferences"]+=1
-                path="grade9/"+image
+                path="grade9/"+re.sub(r"(/illustration-(?:extra-)?\d-\d)\.png$",r"\1.webp",image)
                 if not req(9,path,"Grade 9 picture missing"):im["missingFiles"].append(path)
 # Actual 24-image contact sheet reviewed; verify image semantics against every choice label.
 visual_path="GRADE9_LISTENING_IMAGE_VISUAL_REVIEW_2026-11-14.json"

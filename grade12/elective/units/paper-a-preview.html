@@ -58,12 +58,12 @@ function evaluate(value,question){
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
-</script><script src="../../../shared/data-charts.js?v=1"></script><script src="../../../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../../../shared/assessment-theme.css?v=28"></head><body>
+</script><script src="../../../shared/data-charts.js?v=1"></script><script src="../../../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../../../shared/assessment-theme.css?v=28"></head><body data-study-tools="compact">
 <header><a href="../../../grade12-skills.html?track=12-elective">← اختبارات المسار</a>
 <h1>Grade 12 Elective · Unit 1: The Arts</h1>
 <p>Semester 1 · 70 marks · 180-minute full practice · independent skills without a timer</p></header>
 <main>
-<section class="card controls">
+<section class="card controls" id="setup">
 <div class="grid"><label>Activity mode<select id="mode"><option value="full">Complete unit paper · 180-minute timer</option><option value="skill">One independent skill · no timer</option></select></label>
 <label id="skillWrap" hidden>Choose skill<select id="skill">
 <option value="lst1">Listening 1 · Dialogue</option><option value="lst2">Listening 2 · Notes and short answers</option>
@@ -137,6 +137,7 @@ Promise.all([...files.map(async file=>{const r=await fetch(file);if(!r.ok)throw 
  });
  $('loadState').textContent='Six sections loaded from '+(mixed?'all 4 semester units':'Unit '+unitNumber)+'. 20 Listening + 25 Reading + 25 Writing = 70 marks. Source-matched MP3s: '+Object.keys(audioFiles).length+'/2. Missing audio uses teacher script.';
  $('start').disabled=false;
+ if(params.get('open')==='1'&&(requestedMode==='full'||requestedMode==='skill'&&order.includes(requestedSkill)))begin();
 }).catch(e=>{$('loadState').textContent='Unable to load activities: '+e.message});
 function chart(c){return window.MyExamsCharts.render(c);}
 function render(key){
@@ -169,7 +170,7 @@ function begin(){
  const total=selected.reduce((n,k)=>n+tasks[k].marks,0);
  $('paperTitle').textContent=selected.length===6?(mixed?'Comprehensive randomized unit paper':'Unit '+unitNumber+' complete paper A'):name[selected[0]]+' · independent practice';
  $('paperMarks').textContent=total+' marks in this activity · not certified · teacher script required for Listening';
- $('paper').className='active';$('results').style.display='none';$('finish').disabled=false;
+ $('setup').hidden=true;$('paper').className='active';$('results').style.display='none';$('finish').disabled=false;
  $('start').disabled=true; $('mode').disabled=true;$('skill').disabled=true;onPaper=true;
  clockLength=$('mode').value==='full'?180*60:0;clockStarted=Date.now();
  clearInterval(clockId);
@@ -222,7 +223,7 @@ $('finish').addEventListener('click',()=>finish(false));
 $('print').addEventListener('click',()=>window.print());
 $('restart').addEventListener('click',()=>{
  clearInterval(clockId);if(mixed){location.reload();return;}onPaper=false;submitted=false;
- $('paper').className='';$('start').disabled=false;$('mode').disabled=false;$('skill').disabled=false;
+ $('setup').hidden=false;$('paper').className='';$('start').disabled=false;$('mode').disabled=false;$('skill').disabled=false;
  window.scrollTo({top:0,behavior:'smooth'});
 });
 })();

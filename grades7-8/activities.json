@@ -1600,24 +1600,43 @@
         "label": "Writing 1",
         "marks": 5,
         "type": "writing",
-        "kind": "chart",
-        "chart": {
-          "title": "How 100 students help protect our planet",
-          "labels": [
-            "Save water",
-            "Reduce plastic",
-            "Plant trees",
-            "Walk to school"
-          ],
-          "values": [
-            38,
-            29,
-            21,
-            12
-          ],
-          "unit": "students (out of 100)"
-        },
-        "topic": "Study the bar chart carefully. Write a survey report comparing the four categories, using figures and an overall conclusion. Write at least 80 words."
+        "kind": "survey",
+        "topic": "A survey asked 100 students two questions. Write a report of at least 80 words including all the information from both charts. Compare the results and give an overall conclusion.",
+        "survey": [
+          {
+            "chartType": "bar",
+            "title": "Is it important for students to protect the environment?",
+            "labels": [
+              "Yes",
+              "No",
+              "Not sure"
+            ],
+            "values": [
+              84,
+              10,
+              6
+            ],
+            "unit": "%"
+          },
+          {
+            "chartType": "pie",
+            "title": "Which action is the best way to help the environment?",
+            "labels": [
+              "Save water",
+              "Reduce plastic",
+              "Plant trees",
+              "Walk to school"
+            ],
+            "values": [
+              38,
+              29,
+              21,
+              12
+            ],
+            "unit": "%"
+          }
+        ],
+        "minWords": 80
       },
       {
         "key": "writing2",
@@ -1927,24 +1946,43 @@
         "label": "Writing 1",
         "marks": 5,
         "type": "writing",
-        "kind": "chart",
-        "chart": {
-          "title": "Adventure sports 100 students want to try",
-          "labels": [
-            "Kayaking",
-            "Climbing",
-            "Cycling",
-            "Hiking"
-          ],
-          "values": [
-            34,
-            27,
-            24,
-            15
-          ],
-          "unit": "students (out of 100)"
-        },
-        "topic": "Study the bar chart carefully. Write a survey report comparing the four categories, using figures and an overall conclusion. Write at least 80 words."
+        "kind": "survey",
+        "topic": "A survey asked 100 students two questions. Write a report of at least 80 words including all the information from both charts. Compare the results and give an overall conclusion.",
+        "survey": [
+          {
+            "chartType": "bar",
+            "title": "Would you like to try an adventure sport?",
+            "labels": [
+              "Yes",
+              "No",
+              "Not sure"
+            ],
+            "values": [
+              68,
+              20,
+              12
+            ],
+            "unit": "%"
+          },
+          {
+            "chartType": "pie",
+            "title": "Which adventure sport would you most like to try?",
+            "labels": [
+              "Kayaking",
+              "Climbing",
+              "Cycling",
+              "Hiking"
+            ],
+            "values": [
+              34,
+              27,
+              24,
+              15
+            ],
+            "unit": "%"
+          }
+        ],
+        "minWords": 80
       },
       {
         "key": "writing2",
@@ -2259,24 +2297,43 @@
         "label": "Writing 1",
         "marks": 5,
         "type": "writing",
-        "kind": "chart",
-        "chart": {
-          "title": "How 100 pupils use their weekly pocket money",
-          "labels": [
-            "Save",
-            "Food",
-            "Transport",
-            "Entertainment"
-          ],
-          "values": [
-            41,
-            28,
-            17,
-            14
-          ],
-          "unit": "pupils (out of 100)"
-        },
-        "topic": "Study the bar chart carefully. Write a survey report comparing the four categories, using figures and an overall conclusion. Write at least 80 words."
+        "kind": "survey",
+        "topic": "A survey asked 100 students two questions. Write a report of at least 80 words including all the information from both charts. Compare the results and give an overall conclusion.",
+        "survey": [
+          {
+            "chartType": "bar",
+            "title": "Is it important to save some of your pocket money?",
+            "labels": [
+              "Yes",
+              "No",
+              "Not sure"
+            ],
+            "values": [
+              79,
+              14,
+              7
+            ],
+            "unit": "%"
+          },
+          {
+            "chartType": "pie",
+            "title": "What do you mainly do with your weekly pocket money?",
+            "labels": [
+              "Save",
+              "Food",
+              "Transport",
+              "Entertainment"
+            ],
+            "values": [
+              41,
+              28,
+              17,
+              14
+            ],
+            "unit": "%"
+          }
+        ],
+        "minWords": 80
       },
       {
         "key": "writing2",
@@ -2592,26 +2649,45 @@
         "label": "Writing 1",
         "marks": 5,
         "type": "writing",
-        "kind": "chart",
-        "chart": {
-          "title": "How 100 pupils use their weekly pocket money",
-          "labels": [
-            "Save",
-            "Food",
-            "Transport",
-            "Entertainment"
-          ],
-          "values": [
-            41,
-            28,
-            17,
-            14
-          ],
-          "unit": "pupils (out of 100)"
-        },
-        "topic": "Study the bar chart carefully. Write a survey report comparing the four categories, using figures and an overall conclusion. Write at least 80 words.",
+        "kind": "survey",
+        "topic": "A survey asked 100 students two questions. Write a report of at least 80 words including all the information from both charts. Compare the results and give an overall conclusion.",
         "sourceModel": "C",
-        "sourceExamId": "g8-c"
+        "sourceExamId": "g8-c",
+        "survey": [
+          {
+            "chartType": "bar",
+            "title": "Should schools teach students how to manage their money?",
+            "labels": [
+              "Yes",
+              "No",
+              "Not sure"
+            ],
+            "values": [
+              76,
+              15,
+              9
+            ],
+            "unit": "%"
+          },
+          {
+            "chartType": "pie",
+            "title": "Which money skill should schools teach first?",
+            "labels": [
+              "Planning a budget",
+              "Comparing prices",
+              "Saving for a goal",
+              "Avoiding waste"
+            ],
+            "values": [
+              37,
+              24,
+              26,
+              13
+            ],
+            "unit": "%"
+          }
+        ],
+        "minWords": 80
       },
       {
         "key": "writing2",
