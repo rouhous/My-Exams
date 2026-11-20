@@ -1,11 +1,6 @@
 name: Grade 9 build three original unit exams and verified Listening MP3
 on:
   workflow_dispatch:
-      - 'grade9/unit-exams/source-content.json'
-      - 'grade9/unit-remediation/units.json'
-      - 'scripts/build_grade9_unit_exams.py'
-      - 'scripts/generate_grade9_unit_exam_audio.py'
-      - '.github/workflows/grade9-unit-exams-build.yml'
 permissions:
   contents: write
 concurrency:

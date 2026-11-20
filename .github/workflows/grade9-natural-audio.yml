@@ -1,9 +1,6 @@
 name: Complete Grade 9 natural listening recordings
 on:
   workflow_dispatch:
-      - '.github/workflows/grade9-natural-audio.yml'
-      - 'scripts/generate_grade9_audio.py'
-      - 'grade9/data.json'
 permissions:
   contents: write
 jobs:
