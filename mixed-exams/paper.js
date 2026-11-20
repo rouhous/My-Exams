@@ -161,13 +161,6 @@
     return s.questions.map((q,i) => renderQuestion(q,i,s)).join('');
   }
 
-  function studentSheet() {
-    const label = (name, text) => '<label>'+text+'<input type="text" maxlength="80" name="student-'+name+'" autocomplete="off"></label>';
-    return '<section class="exam-part" data-student-sheet><h2>Student details</h2>' +
-      '<p>Enter your details if needed, then select Next to start the timer and open Listening.</p>' +
-      '<div class="exam-student-fields">'+label('name','Name')+label('class','Class')+label('school','School')+'</div></section>';
-  }
-
   function renderSection(s) {
     const device = s.audio ? '<p>Listen to texts 1–5, then listen to the same texts again.</p><button type="button" id="' + s.key +
       '-prepare">Prepare recording</button><p id="' + s.key + '-audio-status" role="status"></p><audio controls hidden></audio>' : '';
@@ -261,7 +254,7 @@
       if (saved && (saved.started === null || Number.isFinite(saved.started)) && saved.answers) {
         state = { ...emptyState(), ...saved, version: 2 };
         if (saved.version !== 2) {
-          state.page = saved.finished ? 1 : saved.started ? 1 : 0;
+          state.page = 0;
           for (const { id, q } of assessed.filter(row => row.q.matching)) {
             const old = saved.answers[id];
             const index = q.options.indexOf(q.oldOptions[Number(old)]);
@@ -296,32 +289,19 @@
         : window.MyExamsShortAnswers.evaluate(selected, q).correct);
       if (okay) correct++;
       if (!selected.trim()) unanswered++;
-      const item = $(id + '-item');
-      if (q.matching) {
-        item.closest('label').dataset.verdict = okay ? 'correct' : 'incorrect';
-        $('match-review').insertAdjacentHTML('beforeend','<p>Item '+id.split('-').at(-1)+': '+(okay?'✓ ':'')+letters[q.answer]+'</p>');
-        continue;
-      }
-      item.dataset.verdict = okay ? 'correct' : 'incorrect';
-      const override = q.target && q.source.grid === 'images' ? letters[q.answer] : undefined;
-      const context = { skill, passage: q.passage || q.source.passage, script: q.script || q.source.script };
-      const feedback = window.MyExamsLearning.feedback(q, context, Boolean(okay), override);
-      if (item.tagName === 'TR') {
-        const review = item.parentElement.insertRow(item.sectionRowIndex + 1);
-        review.insertCell().colSpan = item.cells.length;
-        review.cells[0].innerHTML = feedback;
-      } else {
-        item.insertAdjacentHTML('beforeend', feedback);
-      }
+      // Keep automated scoring, but do not expose answer keys or explanations
+      // inside timed comprehensive/random exam papers.
+
     }
     const result = $('result');
     result.hidden = false;
-    result.innerHTML = '<h2>' + (expired ? 'Time is up' : 'Exam review') + '</h2><p><strong>' + correct + ' / ' + assessed.length +
-      '</strong> automatically marked · ' + unanswered + ' unanswered.</p><p>Writing tasks are marked separately.</p>';
+    result.innerHTML = '<h2>' + (expired ? 'Time is up · Result' : 'Your result') +
+      '</h2><p class="exam-final-score"><strong>' + correct + ' / ' + assessed.length + '</strong></p>';
+
     if (!wasFinished) window.MyExamsJourney?.report({earned:correct, possible:assessed.length,
       writingPending:sections.some(section => section.key.startsWith('writing')), attemptId:state.attemptId});
     if (!randomExam) $('retry').hidden = false;
-    if (move) result.focus();
+    if (move) { result.focus(); result.scrollIntoView({block:'start',behavior:'smooth'}); }
   }
 
   function tick(move = true) {
@@ -337,8 +317,8 @@
     button.disabled = true;
     try {
       const cache = await caches.open(cachedPaper);
-      const assets = [location.href, './' + scope + '.json', './paper.css', './paper.js?v=4', '../shared/journey-results.js', './assemble.js',
-        '../shared/reading-split.js?v=3', '../shared/reading-split.css?v=3', '../shared/exam-pages.js?v=1', '../shared/exam-pages.css?v=1',
+      const assets = [location.href, './' + scope + '.json', './paper.css', './paper.js?v=5', '../shared/journey-results.js', './assemble.js',
+        '../shared/reading-split.js?v=3', '../shared/reading-split.css?v=5', '../shared/exam-pages.js?v=1', '../shared/exam-pages.css?v=3',
         '../shared/oman-theme.css?v=29', '../shared/short-answer-marking.js',
         '../shared/data-charts.js', '../shared/learning-feedback.js?v=1', ...media];
       let done = 0;
@@ -379,7 +359,7 @@
     document.title = $('title').textContent + ' | My Exams';
     $('mobileExamTitle').textContent = title + ' · Grade ' + grade + (grade >= 11 ? ' ' + titleFor(track) : '');
     $('paperMarks').textContent = bank.marks + ' marks · ' + bank.minutes + ' minutes';
-    $('paper').innerHTML = studentSheet() + sections.map(renderSection).join('');
+    $('paper').innerHTML = sections.map(renderSection).join('');
     $('paper').addEventListener('submit', e => e.preventDefault());
     $('paper').addEventListener('play', event => {
       for (const audio of $('paper').querySelectorAll('audio')) {
@@ -404,13 +384,14 @@
     $('session').hidden = false;
     restore();
     window.MyExamsPages.refresh();
-    window.MyExamsPages.restore(state.page);
+    window.MyExamsPages.restore(Math.max(0, Math.min(state.page, sections.length - 1)));
     $('paper').addEventListener('exam:page', event => {
       state.page = event.detail.index;
-      if (!event.detail.studentSheet && state.started === null && !state.finished) state.started = Date.now();
+      if (state.started === null && !state.finished) state.started = Date.now();
       persist();
       tick(false);
     });
+    if (state.started === null && !state.finished) { state.started = Date.now(); persist(); }
     tick(false);
     if ($('finish').disabled) return;
     if (state.finished) finish(false, false);
