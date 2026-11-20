@@ -145,7 +145,7 @@ function evaluateAnswers(){
    const good=typeof q.answer==='number'?Number(actual)===q.answer:window.MyExamsShortAnswers.evaluate(actual,q).correct;
    if(good)correct++;
    const cell=input.closest('.question');
-   if(cell){
+   if(cell && $('mode').value!=='exam'){
      cell.style.borderLeft='4px solid '+(good?'#3b8f67':'#bc7240');
      cell.querySelectorAll('.mex-fb').forEach(n=>n.remove());
      if(window.MyExamsLearning)cell.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:part.skill,passage:part.data.passage,script:part.data.script||part.data.transcript},good));
@@ -153,8 +153,8 @@ function evaluateAnswers(){
   });
  });
  window.MyExamsJourney?.report({model:'unit-'+activeModel,skill:active.length===1?active[0].skill:'',earned:correct,possible:total,writingPending:active.some(p=>p.skill.startsWith('writing')||p.skill==='dataAnalysis')});
- $('result').textContent=total?'Objective responses: '+correct+' / '+total+'. Writing is not automatically graded; short answers may require teacher review.':'Chart / writing response saved in this session. No objective score applies: teacher assessment is needed for writing.';
- status('Your answers are ready for review. Writing requires teacher assessment.');
+ $('result').textContent=total?'Score: '+correct+' / '+total:'Score pending teacher assessment';
+ status('Result');
 }
 async function prepareOffline(){
  if(!('caches' in window)||!('serviceWorker' in navigator)){status('Offline caching unavailable. Open via HTTPS.');return}
