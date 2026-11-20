@@ -33,7 +33,7 @@ jobs:
               p=pathlib.PurePosixPath(filename)
               if p.parts[0] in {'.github','.git','_site','scripts','docs'}: continue
               if filename.endswith(('.zip','.csv','.md','.py')): continue
-              if not (p.parts[0] in {'grade9','grade10','grade11','grade12','upper-audio','grades5-6','grades7-8','audio-natural','shared','targeted_units'} or len(p.parts)==1):continue
+              if not (p.parts[0] in {'grade9','grade10','grade11','grade12','upper-audio','grades5-6','grades7-8','audio-natural','shared','targeted_units','mixed-exams'} or len(p.parts)==1):continue
               src=pathlib.Path(filename)
               if not src.is_file():continue
               dst=site.joinpath(*p.parts)
@@ -42,6 +42,8 @@ jobs:
               n+=1
           for need in ['index.html','exams.html','grade-skills.html','grade12-skills.html','shared/oman-theme.css','shared/grade-catalogue.js','shared/oman-hero.webp','shared/learning-feedback.js','shared/data-charts.js','shared/short-answer-marking.js','sw.js','grade9/index.html','grades5-6/index.html','grades7-8/index.html','grade9/natural_audio.js','grade10/index.html','grade10/data.json','grade11/core/index.html','grade11/core/data.json','upper-grades-practice.html','grade12/elective/units/index.html','grade12/elective/units/unit1-listening1-original-draft.json','grade12/elective/units/unit1-listening2-original-draft.json','grade12/elective/units/unit1-reading1-original-draft.json','grade12/elective/units/unit1-reading2-original-draft.json','grade12/elective/units/unit1-writing-original-draft.json','grade12/elective/units/paper-a-preview.html']:
               if not (site/need).is_file():raise SystemExit('Missing required page: '+need)
+          for exam in ['index.html','assemble.js','paper.js','paper.css','5.json','6.json','7.json','8.json','9.json','10.json','11-core.json','11-elective.json','12-core.json','12-elective.json']:
+              if not (site/'mixed-exams'/exam).is_file():raise SystemExit('Missing mixed exam asset: '+exam)
           count=len(list((site/'audio-natural'/'g9'/'a').rglob('*.mp3')))
           if count!=21:raise SystemExit(f'Expected 21 natural Grade 9 MP3, got {count}')
           for f in (site/'audio-natural').rglob('*.mp3'):
