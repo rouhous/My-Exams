@@ -343,7 +343,7 @@ GRAMMAR_POINTS = {
     "10": [
         "comparative phrasal-verb comparative-adverb phrasal-verb comparative",
         "reason conditional future-result result purpose",
-        "contrast concession time-clause relative-clause purpose",
+        "contrast concession time-clause adjective-suffix purpose",
         "passive degree-adverb passive focusing-adverb passive",
     ],
     "11-core": [
@@ -372,8 +372,8 @@ def label_grammar(ident, units):
         if ident == "10" and unit["unit"] == 3:
             questions[1] = question(dict(stem="_____ the weather was cloudy, the solar panels still produced electricity.",
                                          options=["Although", "Therefore", "Because of", "So that"], answer=0))
-            questions[3] = question(dict(stem="The engineer _____ designed the wind turbine spoke to our class.",
-                                         options=["who", "when", "where", "what"], answer=0))
+            questions[3] = question(dict(stem="Wind power is a _____ energy source because the wind is naturally replenished.",
+                                         options=["renewable", "renew", "renewal", "renewing"], answer=0))
         for q, point in zip(questions, points.split(), strict=True):
             q["point"] = point
 
