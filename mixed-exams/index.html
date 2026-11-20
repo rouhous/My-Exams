@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#073b2d">
+  <title>Semester Review | My Exams</title>
+  <link rel="stylesheet" href="../shared/oman-theme.css?v=29">
+  <link rel="stylesheet" href="paper.css">
+  <script defer src="../shared/short-answer-marking.js"></script>
+  <script defer src="../shared/data-charts.js"></script>
+  <script defer src="../shared/learning-feedback.js?v=1"></script>
+  <script defer src="assemble.js"></script>
+  <script defer src="paper.js"></script>
+</head>
+<body class="om-shell">
+  <header class="om-top">
+    <a class="om-brand" href="../exams.html">My Exams</a>
+    <a id="gradeLink" href="../exams.html" lang="ar" dir="rtl">العودة إلى الاختبارات</a>
+  </header>
+  <main class="paper-shell">
+    <h1 id="title">Semester Review</h1>
+    <p id="status" role="status">Loading the exam…</p>
+    <div id="session" hidden>
+      <div class="exam-bar">
+        <span id="paperMarks"></span>
+        <span id="clock" aria-label="Time remaining"></span>
+        <button type="button" id="finish">Finish and review</button>
+      </div>
+      <nav id="skills" aria-label="Exam sections"></nav>
+      <form id="paper" autocomplete="off"></form>
+      <div id="result" tabindex="-1" hidden></div>
+      <details class="offline">
+        <summary>Use this paper offline</summary>
+        <button type="button" id="download">Download this paper</button>
+        <p id="downloadState" role="status"></p>
+      </details>
+      <button type="button" id="retry" hidden>Retry comprehensive exam</button>
+      <a id="newPaper" class="om-btn" hidden>New random exam</a>
+    </div>
+  </main>
+  <footer class="om-footer">© Houssem Rouatbi</footer>
+</body>
+</html>
