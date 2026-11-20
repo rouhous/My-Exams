@@ -1,3 +1,4 @@
+const { checkMixed } = require('./check_mixed_browser.cjs');
 const {chromium}=require('playwright');
 (async()=>{
  const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
@@ -18,12 +19,7 @@ const {chromium}=require('playwright');
      if(!(await page.locator('#paperMeta').textContent()).includes(String(marks)+' total paper marks'))throw Error(track+' wrong marks');
      await page.click('#reset');
    }
-   await page.selectOption('#mode','random');await page.click('#start');
-   if(await page.locator('#questions section.part').count()!==sections)throw Error(track+' random missing sections');
-   if(await page.locator('#questions .question').count()!==items)throw Error(track+' random wrong question count');
-   const s=await page.locator('#questions section.part .meta').allTextContents();
-   if(s.some(t=>!/^Topic: \S/.test(t)))throw Error(track+' random paper sections missing source topics: '+s.join(','));
-   await page.click('#reset');
+   await checkMixed(page.context(),'upper-grades-practice.html',{track},{sections,items,marks});
    await page.selectOption('#mode','skill');await page.selectOption('#skill','rdg2');await page.click('#start');
    if(await page.locator('#questions section.part').count()!==1)throw Error(track+' skill should be single section');
    if((await page.locator('#timer').textContent())!=='No time limit')throw Error(track+' skill incorrectly timed');
