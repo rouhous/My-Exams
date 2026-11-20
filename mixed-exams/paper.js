@@ -373,6 +373,7 @@
     if (grade >= 7 && grade <= 9) prepareMatching(sections.find(section => section.key === 'reading1'));
     $('title').textContent = title + ' · Grade ' + grade + (grade >= 11 ? ' ' + titleFor(track) : '');
     document.title = $('title').textContent + ' | My Exams';
+    $('mobileExamTitle').textContent = title + ' · Grade ' + grade + (grade >= 11 ? ' ' + titleFor(track) : '');
     $('paperMarks').textContent = bank.marks + ' marks · ' + bank.minutes + ' minutes';
     $('paper').innerHTML = studentSheet() + sections.map(renderSection).join('');
     $('paper').addEventListener('submit', e => e.preventDefault());
