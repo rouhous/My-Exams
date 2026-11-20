@@ -167,10 +167,28 @@ async function prepareOffline(){
  }catch(e){status('Offline download failed: '+e.message)}
 }
 async function init(){
- try{var res=await fetch('./data.json');if(!res.ok)throw Error('HTTP '+res.status);var all=await res.json();models=all.models;
- for(const id of ['start','random','offline'])$(id).disabled=false;
- const params=new URLSearchParams(location.search);
- if(params.get('mode')==='random')$('random').click();$('intro').textContent='Choose your model and start';status('Choose a model or make a random comprehensive paper.')}catch(e){status('Unable to load exam data: '+e.message)}
+ try{
+  const response=await fetch('./data.json');
+  if(!response.ok)throw Error('HTTP '+response.status);
+  models=(await response.json()).models;
+  for(const id of ['start','random','offline'])$(id).disabled=false;
+  const params=new URLSearchParams(location.search);
+  const model=params.get('model'), mode=params.get('mode'), skill=params.get('skill');
+  const modelSelected=Boolean(find(model));
+  const skillSelected=[...$('skill').options].some(option=>option.value===skill);
+  if(modelSelected)$('model').value=model;
+  if(mode==='practice'||skillSelected){
+   $('mode').value='practice';
+   $('skillWrap').classList.remove('hidden');
+   if(skillSelected)$('skill').value=skill;
+  }
+  if(modelSelected&&(skillSelected||(mode==='exam'&&/^[A-D]$/.test(model)))){
+   start();
+  }else{
+   $('intro').textContent='Choose your model and start';
+   status('Choose a model or make a random comprehensive paper.');
+  }
+ }catch(e){status('Unable to load exam data: '+e.message)}
 }
 $('model').addEventListener('change',()=>{choiceModel=null});
 $('mode').addEventListener('change',()=>{$('skillWrap').classList.toggle('hidden',$('mode').value!=='practice')});
@@ -180,4 +198,4 @@ $('submit').addEventListener('click',evaluateAnswers);
 $('offline').addEventListener('click',prepareOffline);
 init();
 })();
-</script><script>window.addEventListener('load',()=>{const p=new URLSearchParams(location.search);const model=p.get('model');if(model&&[...document.querySelectorAll('#model option')].some(o=>o.value===model)){document.getElementById('model').value=model;document.getElementById('model').dispatchEvent(new Event('change'))}const skill=p.get('skill');if(p.get('mode')==='practice'||skill){document.getElementById('mode').value='practice';document.getElementById('mode').dispatchEvent(new Event('change'))}if(skill){const opts=[...document.querySelectorAll('#skill option')];if(opts.some(o=>o.value===skill))document.getElementById('skill').value=skill}});</script><script defer src="../shared/exam-tools.js"></script><footer style="text-align:center;background:#06442f;color:white;padding:12px;font:13px system-ui,Tahoma,sans-serif;margin-top:30px">© Houssem Rouatbi — جميع الحقوق محفوظة للأستاذ</footer></body></html>
+</script><script defer src="../shared/exam-tools.js"></script><footer style="text-align:center;background:#06442f;color:white;padding:12px;font:13px system-ui,Tahoma,sans-serif;margin-top:30px">© Houssem Rouatbi — جميع الحقوق محفوظة للأستاذ</footer></body></html>
