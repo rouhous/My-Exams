@@ -294,20 +294,23 @@ return '<section class="section" id="'+k+'"'+(k.startsWith('reading')?' data-rea
 function start(){clearInterval(timer);current=getModel();current={...current,timed:by('mode').value==='exam'};state={};const sections=current.timed?current.sections:[current.sections[+by('which').value]];endAt=Date.now()+120*60000;by('examSetup').hidden=true;by('examSession').hidden=false;by('exercise').innerHTML=`${sections.map(renderSection).join('')}<div class="assessment no-print"><button class="btn" id="submit">Submit and review</button> <button class="btn light" type="button" onclick="window.print()">Print</button><div id="result"></div></div><div class="page-foot">Original educational practice · No official paper questions reproduced</div>`;document.querySelectorAll('[data-k]').forEach(e=>e.addEventListener(e.tagName==='TEXTAREA'||e.type==='text'?'input':'change',()=>{state[e.dataset.k]=e.value;if(e.tagName==='TEXTAREA'){const target=by('words_'+e.dataset.k.split(':')[0]);if(target)target.textContent=wordCount(e.value,current.sections.find(s=>s.key===e.dataset.k.split(':')[0]).minWords)}}));by('submit').onclick=()=>finish();if(current.timed)timer=setInterval(progress,1000);progress();window.scrollTo(0,0)}
 function finish(){if(!current||!by('result'))return;clearInterval(timer);if(by('submit'))by('submit').disabled=true;let points=0,max=0,missing=0;document.querySelectorAll(".exam-match-review").forEach(el=>el.replaceChildren());const sections=current.timed?current.sections:[current.sections[+by('which').value]];for(const s of sections){if(s.type==='writing')continue;for(let i=0;i<(s.items?.length||s.texts?.length);i++){max++;const k=s.key+':'+i,v=state[k];if(v===undefined||v==='')missing++;let correct=false,expected='';if(s.type==='picture-choice'||s.type==='cloze'){correct=Number(v)===s.items[i].answer;expected=String.fromCharCode(65+s.items[i].answer)}if(s.type==='matching'){expected=String.fromCharCode(65+s.answers[i]);correct=String(v||'').trim().toUpperCase()===expected}if(s.type==='true-false'){correct=Number(v)===(s.items[i].answer?0:1);expected=s.items[i].answer?'True':'False'}if(s.type==='short-answer'){correct=window.MyExamsShortAnswers.evaluate(v,s.items[i]).correct;expected=s.items[i].answers[0]}if(correct)points++;
  const field=document.querySelector('[data-k="'+k+'"]');
- if(s.type==='matching'&&field){
+ if(!current.timed&&s.type==='matching'&&field){
   field.closest('label').dataset.verdict=correct?'correct':'incorrect';
   const list=by('review-'+s.key);
   list.insertAdjacentHTML('beforeend','<p>Item '+(i+1)+': '+(correct?'✓ ':'')+esc(expected)+'</p>');
  }
  const parent=field?.closest('.question,.q');
- if(parent){
+ if(parent&&!current.timed){
   parent.querySelectorAll('.mex-fb').forEach(el=>el.remove());
   const item=s.items?.[i]||s.texts?.[i]||{stem:k};
   parent.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(item,{skill:s.key||s.type,passage:s.passage||'',script:s.script||s.transcript||''},correct,expected));
  }
  }}
 window.MyExamsJourney?.report({grade:current.grade,model:'unit-'+current.model,skill:current.timed?'':sections[0].key,earned:points,possible:max,writingPending:sections.some(s=>s.type==='writing')});
-by('result').innerHTML=`<div class="results">Objective score: ${points}/${max}. Unanswered: ${missing}. Writing tasks require teacher assessment (5 marks each). <p class="meta">No automated writing score is treated as an official mark.</p></div>`}
+by('result').innerHTML=current.timed
+ ? `<div class="results"><strong>Score: ${points}/${max}</strong></div>`
+ : `<div class="results"><strong>Score: ${points}/${max}</strong></div>`;
+}
 by('start').onclick=start;
 by('changeExam').onclick=()=>{
  clearInterval(timer);
