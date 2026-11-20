@@ -32,3 +32,22 @@ img { max-width: 100%; }
   :is(.controls, .toolbar) select { min-width: 0; }
   :is(.question, .part, .section) { overflow-wrap: anywhere; }
 }
+
+
+/* Across all grade and skills exam screens: mobile-first available width. */
+@media (max-width:700px) {
+  html,body{max-width:100%;overflow-x:clip;}
+  body>main,main.screen,main.wrap,.screen.wrap,.content,.shell,.paper-shell{max-width:100%;min-width:0;}
+  body>main:not(.paper-shell),main.screen{padding-left:6px!important;padding-right:6px!important;}
+  .content{gap:7px!important;margin:6px auto!important;padding-left:5px!important;padding-right:5px!important;}
+  .content>.card,.paper,.panel,.section,.exam-part,.assessment,.source-group,
+  #exam,#exercise,#session,#paper,[data-exam-page]{min-width:0;max-width:100%;box-sizing:border-box;}
+  .content>.card,.paper,.panel,.section{padding-left:9px!important;padding-right:9px!important;margin-left:0;margin-right:0;}
+  .question,.q,.passage,.answers,.answergrid,.imagegrid,.pics,.exam-dual-grid{min-width:0;max-width:100%;}
+  .exam-page-nav{margin:5px 0!important;}
+  .section-title{margin:9px 0 5px;}
+  .section-title h2,.section h2{font-size:clamp(17px,4.6vw,21px);}
+  .exam-header{padding:8px;}
+  .exam-header h1,.exam-header h2{font-size:clamp(17px,4.7vw,22px);line-height:1.22;}
+  input,textarea,select{min-width:0;}
+}
