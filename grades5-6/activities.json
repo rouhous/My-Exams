@@ -2379,40 +2379,37 @@
       "format": "text-match",
       "passages": [
         {
-          "stem": "Every Saturday, Amina joins a sports club at the community centre. She enjoys football and cycling. The coaches remind children to warm up and drink water before activities. New members can borrow helmets and bicycles from the club."
+          "stem": "On Monday, Mariam visited the town library with her class. A new electronic board showed opening times and helped visitors find the correct reading rooms. She used the board to locate an English storybook and borrowed it for the weekend."
         },
         {
-          "stem": "Salim loves music. He joined a drumming group at school and practises with friends every Monday. At home, he listens to new rhythms and tries to copy them. His parents enjoy hearing his progress."
+          "stem": "After school, Yousuf joined a hiking group near the hills. The leader reminded everyone to carry water and follow the marked path. When the group reached the viewpoint, they rested and took photographs of the mountains."
         },
         {
-          "stem": "Maha likes quiet hobbies. She paints pictures of birds and flowers, then sends photographs to her cousin. She sometimes visits the park to find new ideas. She uses a small paintbrush and keeps her colours in a box."
+          "stem": "On Saturday morning, Huda helped volunteers clean the beach. They collected plastic bottles and separated recyclable materials into bins. Later, they made a poster to encourage families to protect the sea and its animals."
         }
       ],
       "questions": [
         {
-          "stem": "Which text describes football and cycling?",
+          "stem": "Which text describes using technology to find books?",
           "answer": 0
         },
         {
-          "stem": "Which text mentions borrowing safety equipment?",
+          "stem": "Which text mentions borrowing a storybook for the weekend?",
           "answer": 0
         },
         {
-          "stem": "Which text describes practising music?",
+          "stem": "Which text describes an outdoor activity in the hills?",
           "answer": 1
         },
         {
-          "stem": "Which text mentions sharing pictures with a cousin?",
-          "answer": 2
+          "stem": "Which text says that people followed a marked route?",
+          "answer": 1
         },
         {
-          "stem": "Which text mentions looking for ideas in a park?",
+          "stem": "Which text describes protecting the sea from plastic rubbish?",
           "answer": 2
         }
       ],
-      "sourceModel": "A",
-      "sourceActivityId": "g6-a-reading-1",
-      "mediaId": "g6-a-reading-1",
       "unitTheme": "Comprehensive semester review"
     },
     {
@@ -2424,32 +2421,29 @@
       "title": "Reading 2 · True or False",
       "marks": 5,
       "format": "tf",
-      "passage": "From: fatma@school.example\nTo: salma@school.example\nSubject: Our technology project\nDear Salma,\nYesterday we presented our new robot at the school science exhibition. It can water a small plant when a sensor detects dry soil. My sister helped me check the wires safely, and I wrote a simple program on the computer. At first the sensor gave the wrong reading. We moved it and tested the robot again. The model worked during the exhibition, and our teacher was pleased. Next month we hope to add a light to show when the water tank is empty. Please visit our technology club on Tuesday if you would like to see it.\nBest wishes,\nFatma",
+      "passage": "From: hamad@school.example\nTo: khalid@school.example\nSubject: Our class trip\nDear Khalid,\nLast Thursday our class visited an old fort and a museum in Nizwa. We travelled together by school bus and arrived before ten o'clock. At the fort, our guide explained how people protected the town long ago. Then we walked to the museum, where we saw traditional tools and old photographs. We used a tablet to read short descriptions of the objects, but our teacher asked us to write the important facts in our notebooks too. After lunch, we helped a guide collect empty bottles from the courtyard. The trip taught us about Omani history and caring for public places. I hope you can visit the museum with your family one day.\nBest wishes,\nHamad",
       "questions": [
         {
-          "stem": "Fatma's robot waters plants.",
+          "stem": "Hamad's class travelled to Nizwa by school bus.",
           "answer": "True"
         },
         {
-          "stem": "Her cousin checked the wires.",
+          "stem": "The class reached the fort after twelve o'clock.",
           "answer": "False"
         },
         {
-          "stem": "The sensor worked perfectly from the beginning.",
-          "answer": "False"
-        },
-        {
-          "stem": "They tested the robot again after changing the sensor position.",
+          "stem": "The museum displayed traditional tools and photographs.",
           "answer": "True"
         },
         {
-          "stem": "They hope to add a warning light.",
+          "stem": "The pupils were told not to take any notes.",
+          "answer": "False"
+        },
+        {
+          "stem": "The class collected empty bottles before leaving.",
           "answer": "True"
         }
       ],
-      "sourceModel": "B",
-      "sourceActivityId": "g6-b-reading-2",
-      "mediaId": "g6-b-reading-2",
       "unitTheme": "Comprehensive semester review"
     },
     {
