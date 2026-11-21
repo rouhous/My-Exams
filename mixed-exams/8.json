@@ -192,7 +192,10 @@
               "answer": 0,
               "kind": "mc",
               "stem": "Our eco-team _____ a small exhibition about plastic waste last week.",
-              "point": "past-simple"
+              "point": "past-simple",
+              "topicType": "grammar",
+              "explanationAr": "وجود last week يدل على حدث مكتمل في الماضي، لذلك نستعمل الماضي البسيط organised.",
+              "ruleAr": "وجود last week يدل على حدث مكتمل في الماضي، لذلك نستعمل الماضي البسيط organised."
             },
             {
               "options": [
@@ -203,7 +206,10 @@
               "answer": 2,
               "kind": "mc",
               "stem": "The science teacher said we _____ protect the sea.",
-              "point": "obligation"
+              "point": "obligation",
+              "topicType": "grammar",
+              "explanationAr": "must فعل ناقص للتعبير عن الواجب، ويأتي بعده الفعل المجرد من دون to: must protect.",
+              "ruleAr": "must فعل ناقص للتعبير عن الواجب، ويأتي بعده الفعل المجرد من دون to: must protect."
             },
             {
               "options": [
@@ -214,7 +220,10 @@
               "answer": 1,
               "kind": "mc",
               "stem": "She told us _____ throw rubbish into rivers.",
-              "point": "reported-instruction"
+              "point": "reported-instruction",
+              "topicType": "grammar",
+              "explanationAr": "بعد told us نستخدم not to + verb للنهي: told us not to throw.",
+              "ruleAr": "بعد told us نستخدم not to + verb للنهي: told us not to throw."
             },
             {
               "options": [
@@ -225,7 +234,10 @@
               "answer": 0,
               "kind": "mc",
               "stem": "My friend asked _____ plastic could harm turtles.",
-              "point": "reported-question"
+              "point": "reported-question",
+              "topicType": "grammar",
+              "explanationAr": "why أداة سؤال عن السبب: asked why plastic could harm turtles، بينما because تُستخدم غالبًا في الإجابة عن السبب.",
+              "ruleAr": "why أداة سؤال عن السبب: asked why plastic could harm turtles، بينما because تُستخدم غالبًا في الإجابة عن السبب."
             },
             {
               "options": [
@@ -236,7 +248,10 @@
               "answer": 1,
               "kind": "mc",
               "stem": "Everyone agreed that families _____ switch off unnecessary lights and use renewable energy whenever possible.",
-              "point": "advice"
+              "point": "advice",
+              "topicType": "grammar",
+              "explanationAr": "بعد should يأتي الفعل المجرد دون to: should switch off؛ للتعبير عن نصيحة.",
+              "ruleAr": "بعد should يأتي الفعل المجرد دون to: should switch off؛ للتعبير عن نصيحة."
             }
           ]
         },
@@ -252,7 +267,10 @@
               ],
               "answer": 2,
               "kind": "mc",
-              "stem": "We showed visitors some useful _____ materials and explained how to reuse bottles safely."
+              "stem": "We showed visitors some useful _____ materials and explained how to reuse bottles safely.",
+              "topicType": "vocabulary",
+              "explanationAr": "recycled مواد أُعيد تدويرها؛ هنا نحتاج صفة قبل materials لتصف المواد المعاد تدويرها.",
+              "meaningAr": "مُعاد تدويرها"
             },
             {
               "options": [
@@ -262,7 +280,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "stem": "We showed visitors some useful recycled materials and explained how to _____ bottles safely."
+              "stem": "We showed visitors some useful recycled materials and explained how to _____ bottles safely.",
+              "topicType": "vocabulary",
+              "explanationAr": "reuse يعني إعادة استعمال الزجاجات. بعد how to يأتي الفعل المجرد reuse، لا reusing أو reused.",
+              "meaningAr": "يعيد الاستعمال"
             },
             {
               "options": [
@@ -272,7 +293,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "stem": "During the talk, one pupil asked if a _____ could cause water shortages."
+              "stem": "During the talk, one pupil asked if a _____ could cause water shortages.",
+              "topicType": "vocabulary",
+              "explanationAr": "drought يعني جفافًا، وهو نقص طويل في الأمطار قد يؤدي إلى شح المياه، لا فيضانًا أو إعصارًا.",
+              "meaningAr": "جفاف"
             },
             {
               "options": [
@@ -282,7 +306,10 @@
               ],
               "answer": 2,
               "kind": "mc",
-              "stem": "Another group displayed photographs of a recent _____."
+              "stem": "Another group displayed photographs of a recent _____.",
+              "topicType": "vocabulary",
+              "explanationAr": "flood يعني فيضانًا، وهو ارتفاع المياه الذي يظهر في الصور بعد الأمطار الغزيرة.",
+              "meaningAr": "فيضان"
             },
             {
               "options": [
@@ -292,7 +319,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "stem": "Everyone agreed that families should switch off unnecessary lights and use _____ energy whenever possible."
+              "stem": "Everyone agreed that families should switch off unnecessary lights and use _____ energy whenever possible.",
+              "topicType": "vocabulary",
+              "explanationAr": "renewable تعني متجددة، وهي صفة تصف energy مثل الطاقة الشمسية أو طاقة الرياح.",
+              "meaningAr": "متجددة"
             }
           ]
         },
@@ -654,7 +684,10 @@
               "answer": 0,
               "kind": "mc",
               "stem": "Before our trip, the guide _____ checked the forecast.",
-              "point": "past-perfect"
+              "point": "past-perfect",
+              "topicType": "grammar",
+              "explanationAr": "نستخدم had + التصريف الثالث في الماضي التام: had checked، للدلالة على أن فحص الطقس سبق الرحلة.",
+              "ruleAr": "نستخدم had + التصريف الثالث في الماضي التام: had checked، للدلالة على أن فحص الطقس سبق الرحلة."
             },
             {
               "options": [
@@ -665,7 +698,10 @@
               "answer": 2,
               "kind": "mc",
               "stem": "We _____ packed our helmets before the bus arrived.",
-              "point": "past-perfect"
+              "point": "past-perfect",
+              "topicType": "grammar",
+              "explanationAr": "We had packed تعني أننا جهزنا الخوذ قبل وصول الحافلة؛ الفعل حدث قبل حدث آخر في الماضي.",
+              "ruleAr": "We had packed تعني أننا جهزنا الخوذ قبل وصول الحافلة؛ الفعل حدث قبل حدث آخر في الماضي."
             },
             {
               "options": [
@@ -676,7 +712,10 @@
               "answer": 2,
               "kind": "mc",
               "stem": "The instructor reminded us to protect _____.",
-              "point": "reflexive"
+              "point": "reflexive",
+              "topicType": "grammar",
+              "explanationAr": "نستخدم ourselves لأن الفاعل us/we يشير إلى جماعة تشمل المتكلم: protect ourselves.",
+              "ruleAr": "نستخدم ourselves لأن الفاعل us/we يشير إلى جماعة تشمل المتكلم: protect ourselves."
             },
             {
               "options": [
@@ -687,7 +726,10 @@
               "answer": 1,
               "kind": "mc",
               "stem": "One student hurt _____ while cycling.",
-              "point": "reflexive"
+              "point": "reflexive",
+              "topicType": "grammar",
+              "explanationAr": "himself ضمير انعكاسي يعود على student المفرد المذكر: hurt himself.",
+              "ruleAr": "himself ضمير انعكاسي يعود على student المفرد المذكر: hurt himself."
             },
             {
               "options": [
@@ -698,7 +740,10 @@
               "answer": 0,
               "kind": "mc",
               "stem": "By lunchtime, we _____ reached the campsite.",
-              "point": "past-perfect"
+              "point": "past-perfect",
+              "topicType": "grammar",
+              "explanationAr": "By lunchtime يدل على وقت اكتمل الفعل قبله، لذا نستخدم had reached في الماضي التام.",
+              "ruleAr": "By lunchtime يدل على وقت اكتمل الفعل قبله، لذا نستخدم had reached في الماضي التام."
             },
             {
               "options": [
@@ -709,7 +754,10 @@
               "answer": 1,
               "kind": "mc",
               "stem": "We enjoyed the scenery, _____ followed safety instructions.",
-              "point": "contrast"
+              "point": "contrast",
+              "topicType": "grammar",
+              "explanationAr": "but تربط بين فكرتين مختلفتين: الاستمتاع بالمناظر مع اتباع تعليمات السلامة.",
+              "ruleAr": "but تربط بين فكرتين مختلفتين: الاستمتاع بالمناظر مع اتباع تعليمات السلامة."
             },
             {
               "options": [
@@ -720,7 +768,10 @@
               "answer": 0,
               "kind": "mc",
               "stem": "Everyone was proud because we had completed the journey _____.",
-              "point": "reflexive"
+              "point": "reflexive",
+              "topicType": "grammar",
+              "explanationAr": "ourselves ضمير انعكاسي يعود على الجميع «نحن» ويؤكد أننا أتممنا الرحلة بأنفسنا.",
+              "ruleAr": "ourselves ضمير انعكاسي يعود على الجميع «نحن» ويؤكد أننا أتممنا الرحلة بأنفسنا."
             }
           ]
         },
@@ -736,7 +787,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "stem": "My brother wanted to try _____ near the cliffs, but we chose a route through the valley."
+              "stem": "My brother wanted to try _____ near the cliffs, but we chose a route through the valley.",
+              "topicType": "vocabulary",
+              "explanationAr": "rock climbing اسم نشاط تسلق الصخور، وهو التعبير الصحيح، لا rocks climbing ولا rock climb في هذا الموضع.",
+              "meaningAr": "تسلق الصخور"
             },
             {
               "options": [
@@ -746,7 +800,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "stem": "My brother wanted to try rock climbing near the cliffs, but we chose a route through the _____."
+              "stem": "My brother wanted to try rock climbing near the cliffs, but we chose a route through the _____.",
+              "topicType": "vocabulary",
+              "explanationAr": "valley يعني واديًا، وهو مسار طبيعي يمر عبر الجبال، بخلاف receipt أو customer.",
+              "meaningAr": "وادٍ"
             },
             {
               "options": [
@@ -756,7 +813,10 @@
               ],
               "answer": 2,
               "kind": "mc",
-              "stem": "At the beach, the _____ was unusually high."
+              "stem": "At the beach, the _____ was unusually high.",
+              "topicType": "vocabulary",
+              "explanationAr": "tide يعني المدّ البحري أو مستوى ارتفاع مياه البحر، ولذلك توصف موجة المد بأنها high.",
+              "meaningAr": "المدّ"
             }
           ]
         },
@@ -1115,7 +1175,10 @@
               "answer": 0,
               "kind": "mc",
               "stem": "If people _____ money carefully, they will avoid unnecessary spending.",
-              "point": "first-conditional"
+              "point": "first-conditional",
+              "topicType": "grammar",
+              "explanationAr": "الجملة شرط أول: if + مضارع بسيط، ومع people نستخدم manage دون s، ثم will في النتيجة.",
+              "ruleAr": "الجملة شرط أول: if + مضارع بسيط، ومع people نستخدم manage دون s، ثم will في النتيجة."
             },
             {
               "options": [
@@ -1126,7 +1189,10 @@
               "answer": 1,
               "kind": "mc",
               "stem": "He says that if he _____ more pocket money, he would donate some.",
-              "point": "second-conditional"
+              "point": "second-conditional",
+              "topicType": "grammar",
+              "explanationAr": "في الشرط الثاني نستخدم if + past simple: if he had more money، ثم would + الفعل المجرد.",
+              "ruleAr": "في الشرط الثاني نستخدم if + past simple: if he had more money، ثم would + الفعل المجرد."
             },
             {
               "options": [
@@ -1137,7 +1203,10 @@
               "answer": 0,
               "kind": "mc",
               "stem": "Another student asked what she _____ if she won a prize.",
-              "point": "second-conditional"
+              "point": "second-conditional",
+              "topicType": "grammar",
+              "explanationAr": "would do تُستخدم في السؤال غير المباشر عن موقف افتراضي: what she would do if she won.",
+              "ruleAr": "would do تُستخدم في السؤال غير المباشر عن موقف افتراضي: what she would do if she won."
             },
             {
               "options": [
@@ -1148,7 +1217,10 @@
               "answer": 1,
               "kind": "mc",
               "stem": "When shops offer discounts, prices usually _____.",
-              "point": "zero-conditional"
+              "point": "zero-conditional",
+              "topicType": "grammar",
+              "explanationAr": "prices فاعل جمع، ومع usually نستخدم المضارع البسيط fall دون s، أي تنخفض الأسعار عادة.",
+              "ruleAr": "prices فاعل جمع، ومع usually نستخدم المضارع البسيط fall دون s، أي تنخفض الأسعار عادة."
             },
             {
               "options": [
@@ -1159,7 +1231,10 @@
               "answer": 0,
               "kind": "mc",
               "stem": "If I found a wallet, I _____ return it.",
-              "point": "second-conditional"
+              "point": "second-conditional",
+              "topicType": "grammar",
+              "explanationAr": "في الشرط الثاني: If I found ... I would return it؛ نستخدم would + الفعل المجرد للحديث عن موقف افتراضي.",
+              "ruleAr": "في الشرط الثاني: If I found ... I would return it؛ نستخدم would + الفعل المجرد للحديث عن موقف افتراضي."
             }
           ]
         },
@@ -1175,7 +1250,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "stem": "If a product is broken, a _____ may ask for a refund."
+              "stem": "If a product is broken, a _____ may ask for a refund.",
+              "topicType": "vocabulary",
+              "explanationAr": "customer هو الزبون الذي اشترى المنتج وله حق السؤال عن استرجاع المال إذا كان المنتج تالفًا.",
+              "meaningAr": "زبون"
             },
             {
               "options": [
@@ -1185,7 +1263,10 @@
               ],
               "answer": 2,
               "kind": "mc",
-              "stem": "If a product is broken, a customer may ask for a _____."
+              "stem": "If a product is broken, a customer may ask for a _____.",
+              "topicType": "vocabulary",
+              "explanationAr": "refund يعني استرجاع المال المدفوع عند إعادة منتج، لا sunrise أو valley.",
+              "meaningAr": "استرداد المال"
             },
             {
               "options": [
@@ -1195,7 +1276,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "stem": "We should keep the _____ after buying something."
+              "stem": "We should keep the _____ after buying something.",
+              "topicType": "vocabulary",
+              "explanationAr": "receipt هي فاتورة/إيصال الشراء، وتُحفظ لإثبات الدفع عند الإرجاع.",
+              "meaningAr": "إيصال الشراء"
             },
             {
               "options": [
@@ -1205,7 +1289,10 @@
               ],
               "answer": 2,
               "kind": "mc",
-              "stem": "My friend buys _____ books."
+              "stem": "My friend buys _____ books.",
+              "topicType": "vocabulary",
+              "explanationAr": "second-hand صفة تعني مستعملًا، وتأتي قبل books لتصف الكتب التي ليست جديدة.",
+              "meaningAr": "مستعمل"
             },
             {
               "options": [
@@ -1215,7 +1302,10 @@
               ],
               "answer": 2,
               "kind": "mc",
-              "stem": "A bank _____ helps people pay online."
+              "stem": "A bank _____ helps people pay online.",
+              "topicType": "vocabulary",
+              "explanationAr": "card هنا بطاقة بنكية تساعد على الدفع إلكترونيًا: bank card.",
+              "meaningAr": "بطاقة"
             }
           ]
         },
