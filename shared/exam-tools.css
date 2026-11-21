@@ -17,3 +17,17 @@ body.ex-ink-mode{user-select:none}
 
 .ex-tools button[hidden]{display:none!important}
 @media(max-width:640px){.ex-tools.ex-collapsed{left:auto;right:8px;transform:none;padding:3px}.ex-tools.ex-collapsed button{min-width:42px}}
+
+/* Dedicated grab handle for moving the student tools on touch and desktop. */
+.ex-tools .ex-drag-grip{
+  display:flex;align-items:center;justify-content:center;
+  touch-action:none;user-select:none;-webkit-user-select:none;
+  cursor:grab;background:#0c604c;border:1px solid #e2bf75;
+  min-width:34px;min-height:42px;font-size:24px;line-height:1;
+  padding:3px 7px;flex-shrink:0;
+}
+.ex-tools.ex-dragging .ex-drag-grip{cursor:grabbing;background:#d0ad65;color:#073b2a}
+.ex-tools.ex-dragging{transition:none!important}
+.ex-tools .ex-drag-grip:focus-visible{outline:3px solid #fff2a9;outline-offset:2px}
+@media(max-width:560px){.ex-tools .ex-drag-grip{min-width:34px;min-height:42px;padding:2px 5px}}
+@media(max-width:640px){.ex-tools.ex-collapsed .ex-drag-grip{display:flex!important}}
