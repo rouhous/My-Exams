@@ -42,6 +42,8 @@
       source.unit, Math.floor(template.marks / planned.length) + Number(i < template.marks % planned.length)
     ]));
     const used = new Set();
+    const usedImages = new Set();
+    let requireDistinctImages = true;
     const results = [];
     const slots = Array.from({ length: template.marks }, (_, i) => template.questions[i]);
     const candidates = slots.map((slot, index) => {
@@ -63,17 +65,26 @@
       for (const { q, i, source, id } of candidates[index]) {
         const remaining = perUnit.get(source.unit);
         if (!remaining || used.has(id)) continue;
+        if (requireDistinctImages && (q.images || []).some(picture => usedImages.has(picture))) continue;
         used.add(id);
+        if (requireDistinctImages) for (const picture of q.images || []) usedImages.add(picture);
         perUnit.set(source.unit, remaining - 1);
         results[index] = { ...q, source, sourceIndex: i };
         if (fill(depth + 1)) return true;
         perUnit.set(source.unit, remaining);
         used.delete(id);
+        if (requireDistinctImages) for (const picture of q.images || []) usedImages.delete(picture);
       }
       return false;
     }
 
-    if (!fill(0)) throw Error('Unable to assemble ' + template.key + ' across all units.');
+    if (!fill(0)) {
+      // Preserve exam availability if a very constrained bank cannot supply unique pictures.
+      requireDistinctImages = false;
+      used.clear();
+      usedImages.clear();
+      if (!fill(0)) throw Error('Unable to assemble ' + template.key + ' across all units.');
+    }
     return results;
   }
 
