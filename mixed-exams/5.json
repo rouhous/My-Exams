@@ -210,7 +210,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "comparative"
+              "point": "comparative",
+              "topicType": "grammar",
+              "explanationAr": "نستخدم more confident للمقارنة بين شخصين عندما تكون الصفة طويلة، وبعدها than: more confident than.",
+              "ruleAr": "نستخدم more confident للمقارنة بين شخصين عندما تكون الصفة طويلة، وبعدها than: more confident than."
             },
             {
               "stem": "Of all the performers, Hamed was the ____.",
@@ -220,7 +223,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "point": "superlative"
+              "point": "superlative",
+              "topicType": "grammar",
+              "explanationAr": "funniest هي صيغة التفضيل الأعلى للصفة funny بعد the؛ نقارن هنا شخصًا بجميع المشاركين.",
+              "ruleAr": "funniest هي صيغة التفضيل الأعلى للصفة funny بعد the؛ نقارن هنا شخصًا بجميع المشاركين."
             },
             {
               "stem": "Maha is good at ____ a football.",
@@ -230,7 +236,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "participle"
+              "point": "participle",
+              "topicType": "grammar",
+              "explanationAr": "بعد التعبير good at يأتي الفعل مع ing: good at throwing، أي ماهرة في رمي الكرة.",
+              "ruleAr": "بعد التعبير good at يأتي الفعل مع ing: good at throwing، أي ماهرة في رمي الكرة."
             },
             {
               "stem": "The youngest singer was ____ than the older girls.",
@@ -240,7 +249,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "point": "comparative"
+              "point": "comparative",
+              "topicType": "grammar",
+              "explanationAr": "shorter هي صيغة المقارنة من short بإضافة er، ثم than للمقارنة بين المغنيتين.",
+              "ruleAr": "shorter هي صيغة المقارنة من short بإضافة er، ثم than للمقارنة بين المغنيتين."
             },
             {
               "stem": "Salim is the ____ student in our drama team.",
@@ -250,7 +262,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "superlative"
+              "point": "superlative",
+              "topicType": "grammar",
+              "explanationAr": "most polite صيغة التفضيل الأعلى من polite، وتأتي بعد the عند مقارنة طالب بكل أفراد الفريق.",
+              "ruleAr": "most polite صيغة التفضيل الأعلى من polite، وتأتي بعد the عند مقارنة طالب بكل أفراد الفريق."
             }
           ]
         },
@@ -573,7 +588,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "past-simple"
+              "point": "past-simple",
+              "topicType": "grammar",
+              "explanationAr": "wrote هو الماضي البسيط للفعل write؛ عندما نتحدث عن عادة في الماضي مع when he was young نستعمل التصريف الماضي.",
+              "ruleAr": "wrote هو الماضي البسيط للفعل write؛ عندما نتحدث عن عادة في الماضي مع when he was young نستعمل التصريف الماضي."
             },
             {
               "stem": "They ____ use tablets at school twenty years ago.",
@@ -583,7 +601,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "point": "past-negative"
+              "point": "past-negative",
+              "topicType": "grammar",
+              "explanationAr": "في نفي الماضي البسيط نستخدم did not ثم الفعل المجرد use، ولا نضع الفعل في الماضي بعد did.",
+              "ruleAr": "في نفي الماضي البسيط نستخدم did not ثم الفعل المجرد use، ولا نضع الفعل في الماضي بعد did."
             },
             {
               "stem": "____ you call your cousin yesterday?",
@@ -593,7 +614,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "past-question"
+              "point": "past-question",
+              "topicType": "grammar",
+              "explanationAr": "لصياغة سؤال في الماضي البسيط نبدأ بـ Did ثم الفاعل ثم الفعل المجرد call.",
+              "ruleAr": "لصياغة سؤال في الماضي البسيط نبدأ بـ Did ثم الفاعل ثم الفعل المجرد call."
             },
             {
               "stem": "When I was four, I ____ read short words.",
@@ -603,7 +627,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "point": "past-ability"
+              "point": "past-ability",
+              "topicType": "grammar",
+              "explanationAr": "could تعبر عن قدرة في الماضي: عندما كان عمره أربع سنوات كان يستطيع قراءة كلمات قصيرة.",
+              "ruleAr": "could تعبر عن قدرة في الماضي: عندما كان عمره أربع سنوات كان يستطيع قراءة كلمات قصيرة."
             },
             {
               "stem": "We ____ an email to our aunt last Friday.",
@@ -613,7 +640,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "past-simple"
+              "point": "past-simple",
+              "topicType": "grammar",
+              "explanationAr": "sent هو الماضي البسيط للفعل send، وlast Friday يدل على وقت في الماضي.",
+              "ruleAr": "sent هو الماضي البسيط للفعل send، وlast Friday يدل على وقت في الماضي."
             }
           ]
         },
@@ -936,7 +966,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "future-prediction"
+              "point": "future-prediction",
+              "topicType": "grammar",
+              "explanationAr": "will + الفعل المجرد تعبّر عن توقع للمستقبل: scientists will discover.",
+              "ruleAr": "will + الفعل المجرد تعبّر عن توقع للمستقبل: scientists will discover."
             },
             {
               "stem": "We ____ travel to the Moon tomorrow. It is only a class project.",
@@ -946,7 +979,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "point": "future-negative"
+              "point": "future-negative",
+              "topicType": "grammar",
+              "explanationAr": "will not + الفعل المجرد تنفي حدوث شيء في المستقبل؛ الرحلة إلى القمر ليست حقيقية غدًا.",
+              "ruleAr": "will not + الفعل المجرد تنفي حدوث شيء في المستقبل؛ الرحلة إلى القمر ليست حقيقية غدًا."
             },
             {
               "stem": "____ far is the Moon from Earth?",
@@ -956,7 +992,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "wh-question"
+              "point": "wh-question",
+              "topicType": "grammar",
+              "explanationAr": "للسؤال عن المسافة نستخدم How far: ما مدى بُعد القمر عن الأرض؟",
+              "ruleAr": "للسؤال عن المسافة نستخدم How far: ما مدى بُعد القمر عن الأرض؟"
             },
             {
               "stem": "Our guide ____ show us the telescope next week.",
@@ -966,7 +1005,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "point": "future-prediction"
+              "point": "future-prediction",
+              "topicType": "grammar",
+              "explanationAr": "next week يشير إلى المستقبل، فنستخدم will + الفعل المجرد show.",
+              "ruleAr": "next week يشير إلى المستقبل، فنستخدم will + الفعل المجرد show."
             },
             {
               "stem": "____ large is the new space station?",
@@ -976,7 +1018,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "wh-question"
+              "point": "wh-question",
+              "topicType": "grammar",
+              "explanationAr": "للسؤال عن الحجم أو المقدار نستخدم How مع الصفة large: How large is ...?",
+              "ruleAr": "للسؤال عن الحجم أو المقدار نستخدم How مع الصفة large: How large is ...?"
             }
           ]
         },
@@ -1299,7 +1344,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "relative-clause"
+              "point": "relative-clause",
+              "topicType": "grammar",
+              "explanationAr": "who ضمير وصل يُستخدم للأشخاص، والفشمنجر شخص يبيع السمك.",
+              "ruleAr": "who ضمير وصل يُستخدم للأشخاص، والفشمنجر شخص يبيع السمك."
             },
             {
               "stem": "This is the shop ____ my aunt works.",
@@ -1309,7 +1357,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "point": "relative-clause"
+              "point": "relative-clause",
+              "topicType": "grammar",
+              "explanationAr": "where ضمير وصل يشير إلى مكان حدوث العمل: the shop where my aunt works.",
+              "ruleAr": "where ضمير وصل يشير إلى مكان حدوث العمل: the shop where my aunt works."
             },
             {
               "stem": "The jacket ____ I bought is blue.",
@@ -1319,7 +1370,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "relative-clause"
+              "point": "relative-clause",
+              "topicType": "grammar",
+              "explanationAr": "which ضمير وصل يشير إلى شيء، وهو jacket في هذه الجملة.",
+              "ruleAr": "which ضمير وصل يشير إلى شيء، وهو jacket في هذه الجملة."
             },
             {
               "stem": "You ____ keep the receipt if you want to return the toy.",
@@ -1329,7 +1383,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "point": "obligation"
+              "point": "obligation",
+              "topicType": "grammar",
+              "explanationAr": "have to تفيد الضرورة: يجب الاحتفاظ بالإيصال لإرجاع اللعبة.",
+              "ruleAr": "have to تفيد الضرورة: يجب الاحتفاظ بالإيصال لإرجاع اللعبة."
             },
             {
               "stem": "We ____ buy the notebook today; we already have one.",
@@ -1339,7 +1396,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "no-obligation"
+              "point": "no-obligation",
+              "topicType": "grammar",
+              "explanationAr": "do not have to تعني عدم الضرورة، وليس المنع: لا نحتاج شراء دفتر لأن لدينا واحدًا.",
+              "ruleAr": "do not have to تعني عدم الضرورة، وليس المنع: لا نحتاج شراء دفتر لأن لدينا واحدًا."
             }
           ]
         },
