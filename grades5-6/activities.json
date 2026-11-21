@@ -125,40 +125,40 @@
       "marks": 5,
       "format": "picture-word-match",
       "pictureOptions": [
-        "drum",
-        "piano",
-        "paintbrush",
-        "camera",
-        "book"
+        "gift",
+        "cake",
+        "kite",
+        "clock",
+        "studio-microphone"
       ],
       "wordOptions": [
+        "kite",
         "football",
-        "piano",
-        "paintbrush",
-        "camera",
-        "book",
-        "drum"
+        "gift",
+        "microphone",
+        "cake",
+        "clock"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 5
-        },
-        {
-          "stem": "Picture 2",
-          "answer": 1
-        },
-        {
-          "stem": "Picture 3",
           "answer": 2
         },
         {
+          "stem": "Picture 2",
+          "answer": 4
+        },
+        {
+          "stem": "Picture 3",
+          "answer": 0
+        },
+        {
           "stem": "Picture 4",
-          "answer": 3
+          "answer": 5
         },
         {
           "stem": "Picture 5",
-          "answer": 4
+          "answer": 3
         }
       ],
       "unitTheme": "Talent show"
@@ -225,32 +225,32 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "drum",
-        "piano",
-        "paintbrush",
-        "camera",
-        "book"
+        "library",
+        "park",
+        "bus",
+        "computer",
+        "museum"
       ],
       "questions": [
         {
-          "stem": "A pupil will play a drum during the opening song of the school talent show.",
-          "answer": 0
-        },
-        {
-          "stem": "The school photographer will use a camera to take pictures of the performers.",
+          "stem": "The teacher used a computer to prepare music for the show.",
           "answer": 3
         },
         {
-          "stem": "Salma is holding a book of poems that she wrote for the show.",
+          "stem": "The students visited the library to look for poems for the talent show.",
+          "answer": 0
+        },
+        {
+          "stem": "The art club displayed drawings at the museum during the school exhibition.",
           "answer": 4
         },
         {
-          "stem": "A student will use a paintbrush to create a picture while the music plays.",
-          "answer": 2
+          "stem": "The dance group practised its moves in the park after school.",
+          "answer": 1
         },
         {
-          "stem": "A young musician will play the piano after the dance group leaves the stage.",
-          "answer": 1
+          "stem": "A school bus brought young performers to the concert hall.",
+          "answer": 2
         }
       ],
       "unitTheme": "Talent show"
@@ -433,40 +433,40 @@
       "marks": 5,
       "format": "picture-word-match",
       "pictureOptions": [
-        "boat",
-        "bicycle",
-        "clock",
-        "bus",
-        "camera"
+        "kite",
+        "library",
+        "bridge",
+        "computer",
+        "market"
       ],
       "wordOptions": [
+        "bridge",
+        "boat",
         "kite",
-        "bicycle",
-        "clock",
-        "bus",
-        "camera",
-        "boat"
+        "market",
+        "library",
+        "computer"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 5
-        },
-        {
-          "stem": "Picture 2",
-          "answer": 1
-        },
-        {
-          "stem": "Picture 3",
           "answer": 2
         },
         {
+          "stem": "Picture 2",
+          "answer": 4
+        },
+        {
+          "stem": "Picture 3",
+          "answer": 0
+        },
+        {
           "stem": "Picture 4",
-          "answer": 3
+          "answer": 5
         },
         {
           "stem": "Picture 5",
-          "answer": 4
+          "answer": 3
         }
       ],
       "unitTheme": "Then and now"
@@ -533,32 +533,32 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "boat",
-        "bicycle",
-        "clock",
-        "bus",
-        "camera"
+        "museum",
+        "park",
+        "robot",
+        "football",
+        "gift"
       ],
       "questions": [
         {
-          "stem": "Grandfather crossed the bay in a wooden boat when he was young.",
-          "answer": 0
-        },
-        {
-          "stem": "A child in an old photograph is riding a bicycle to school.",
-          "answer": 1
-        },
-        {
-          "stem": "The classroom clock was large and had hands instead of a digital screen.",
-          "answer": 2
-        },
-        {
-          "stem": "Today pupils take a bus along the road where their parents once walked.",
+          "stem": "Our grandparents played football with their neighbours after school.",
           "answer": 3
         },
         {
-          "stem": "Years ago a photographer used a camera with film to take family pictures.",
+          "stem": "The old museum displays objects that people used long ago.",
+          "answer": 0
+        },
+        {
+          "stem": "People once wrapped a birthday gift in brown paper instead of using a modern gift bag.",
           "answer": 4
+        },
+        {
+          "stem": "Children played traditional games in the park before electronic games became popular.",
+          "answer": 1
+        },
+        {
+          "stem": "Today a robot can do jobs that people once completed by hand.",
+          "answer": 2
         }
       ],
       "unitTheme": "Then and now"
@@ -741,40 +741,40 @@
       "marks": 5,
       "format": "picture-word-match",
       "pictureOptions": [
-        "rocket",
-        "telescope",
-        "planet",
-        "spacesuit",
-        "moon"
+        "robot",
+        "computer",
+        "solar-study-lamp",
+        "magnifying-leaf",
+        "recycling-station"
       ],
       "wordOptions": [
+        "lamp",
         "satellite",
-        "telescope",
-        "planet",
-        "spacesuit",
-        "moon",
-        "rocket"
+        "robot",
+        "recycling bin",
+        "computer",
+        "magnifying glass"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 5
-        },
-        {
-          "stem": "Picture 2",
-          "answer": 1
-        },
-        {
-          "stem": "Picture 3",
           "answer": 2
         },
         {
+          "stem": "Picture 2",
+          "answer": 4
+        },
+        {
+          "stem": "Picture 3",
+          "answer": 0
+        },
+        {
           "stem": "Picture 4",
-          "answer": 3
+          "answer": 5
         },
         {
           "stem": "Picture 5",
-          "answer": 4
+          "answer": 3
         }
       ],
       "unitTheme": "Let’s explore!"
@@ -841,32 +841,32 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "rocket",
-        "telescope",
-        "planet",
-        "spacesuit",
-        "moon"
+        "compass-hiking",
+        "boat",
+        "museum",
+        "bridge",
+        "library"
       ],
       "questions": [
         {
-          "stem": "The children built a rocket model for the school's science fair.",
-          "answer": 0
-        },
-        {
-          "stem": "At night the science club used a telescope to study the sky.",
-          "answer": 1
-        },
-        {
-          "stem": "Earth is a planet that moves around the Sun.",
-          "answer": 2
-        },
-        {
-          "stem": "An astronaut needs a spacesuit to stay safe outside a spacecraft.",
+          "stem": "The team crossed a bridge to reach the other side of the valley.",
           "answer": 3
         },
         {
-          "stem": "We can see the Moon in the night sky because it reflects sunlight.",
+          "stem": "The explorer used a compass to find the correct path through the hills.",
+          "answer": 0
+        },
+        {
+          "stem": "Before the expedition, the pupils read about the desert in the library.",
           "answer": 4
+        },
+        {
+          "stem": "The children travelled by boat to explore the small island.",
+          "answer": 1
+        },
+        {
+          "stem": "The young scientists visited a museum to learn about discoveries.",
+          "answer": 2
         }
       ],
       "unitTheme": "Let’s explore!"
@@ -1049,40 +1049,40 @@
       "marks": 5,
       "format": "picture-word-match",
       "pictureOptions": [
-        "market",
-        "apple",
-        "cake",
-        "gift",
-        "book"
+        "camera",
+        "football",
+        "bicycle",
+        "clock",
+        "paintbrush"
       ],
       "wordOptions": [
-        "cup",
+        "bicycle",
         "apple",
-        "cake",
-        "gift",
-        "book",
-        "market"
+        "camera",
+        "paintbrush",
+        "football",
+        "clock"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 5
-        },
-        {
-          "stem": "Picture 2",
-          "answer": 1
-        },
-        {
-          "stem": "Picture 3",
           "answer": 2
         },
         {
+          "stem": "Picture 2",
+          "answer": 4
+        },
+        {
+          "stem": "Picture 3",
+          "answer": 0
+        },
+        {
           "stem": "Picture 4",
-          "answer": 3
+          "answer": 5
         },
         {
           "stem": "Picture 5",
-          "answer": 4
+          "answer": 3
         }
       ],
       "unitTheme": "Off to the shops"
@@ -1149,32 +1149,32 @@
       "marks": 5,
       "format": "picture-match",
       "pictureOptions": [
-        "market",
-        "apple",
-        "cake",
-        "gift",
-        "book"
+        "piano",
+        "kite",
+        "computer",
+        "drum",
+        "robot"
       ],
       "questions": [
         {
-          "stem": "At the market, a customer compared the prices of fresh vegetables.",
-          "answer": 0
-        },
-        {
-          "stem": "A girl bought an apple from a stall for her lunch.",
-          "answer": 1
-        },
-        {
-          "stem": "The baker put a chocolate cake in a box for a birthday party.",
-          "answer": 2
-        },
-        {
-          "stem": "Hamad chose a gift for his younger sister at the shopping centre.",
+          "stem": "The children found a small drum in the musical instrument shop.",
           "answer": 3
         },
         {
-          "stem": "Maha bought a book from the bookshop after saving her pocket money.",
+          "stem": "The music shop displayed a new piano in its front window.",
+          "answer": 0
+        },
+        {
+          "stem": "The toy shop had a robot on sale for a special price.",
           "answer": 4
+        },
+        {
+          "stem": "Hamed saved his money to buy a colourful kite from the toy shop.",
+          "answer": 1
+        },
+        {
+          "stem": "The shop assistant used a computer to check the price of an item.",
+          "answer": 2
         }
       ],
       "unitTheme": "Off to the shops"
@@ -1357,32 +1357,32 @@
       "marks": 5,
       "format": "picture-spelling",
       "pictureOptions": [
-        "football",
-        "bicycle",
-        "drum",
-        "piano",
-        "kite"
+        "camera",
+        "book",
+        "boat",
+        "gift",
+        "clock"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "football"
+          "answer": "camera"
         },
         {
           "stem": "Picture 2",
-          "answer": "bicycle"
+          "answer": "book"
         },
         {
           "stem": "Picture 3",
-          "answer": "drum"
+          "answer": "boat"
         },
         {
           "stem": "Picture 4",
-          "answer": "piano"
+          "answer": "gift"
         },
         {
           "stem": "Picture 5",
-          "answer": "kite"
+          "answer": "clock"
         }
       ],
       "unitTheme": "Free-time fun"
@@ -1529,9 +1529,9 @@
       "minWords": 50,
       "prompt": "Look at the three pictures. Write a story of at least 50 words about joining a new free-time sports club. Explain what happened first, next and finally. Use past-time expressions.",
       "pictureOptions": [
-        "football",
         "park",
-        "bicycle"
+        "beach",
+        "bus"
       ]
     },
     {
@@ -1665,32 +1665,32 @@
       "marks": 5,
       "format": "picture-spelling",
       "pictureOptions": [
-        "robot",
-        "computer",
-        "camera",
-        "clock",
-        "book"
+        "solar-study-lamp",
+        "satellite",
+        "telescope",
+        "studio-microphone",
+        "bus-timetable-tablet"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "robot"
+          "answer": "lamp"
         },
         {
           "stem": "Picture 2",
-          "answer": "computer"
+          "answer": "satellite"
         },
         {
           "stem": "Picture 3",
-          "answer": "camera"
+          "answer": "telescope"
         },
         {
           "stem": "Picture 4",
-          "answer": "clock"
+          "answer": "microphone"
         },
         {
           "stem": "Picture 5",
-          "answer": "book"
+          "answer": "tablet"
         }
       ],
       "unitTheme": "Technology"
@@ -1837,9 +1837,9 @@
       "minWords": 50,
       "prompt": "Look at the three pictures. Write a story of at least 50 words about preparing a simple technology project for school. Explain how you used the devices and what happened.",
       "pictureOptions": [
-        "computer",
-        "robot",
-        "camera"
+        "library",
+        "park",
+        "bridge"
       ]
     },
     {
@@ -1973,32 +1973,32 @@
       "marks": 5,
       "format": "picture-spelling",
       "pictureOptions": [
-        "market",
-        "library",
-        "museum",
-        "park",
-        "clinic"
+        "bridge",
+        "football-field",
+        "recycling-station",
+        "bus-timetable-tablet",
+        "compass-hiking"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "market"
+          "answer": "bridge"
         },
         {
           "stem": "Picture 2",
-          "answer": "library"
+          "answer": "football field"
         },
         {
           "stem": "Picture 3",
-          "answer": "museum"
+          "answer": "recycling bin"
         },
         {
           "stem": "Picture 4",
-          "answer": "park"
+          "answer": "tablet"
         },
         {
           "stem": "Picture 5",
-          "answer": "clinic"
+          "answer": "compass"
         }
       ],
       "unitTheme": "Places"
@@ -2145,9 +2145,9 @@
       "minWords": 50,
       "prompt": "Look at the three pictures. Write a story of at least 50 words about exploring an unfamiliar place in Oman. Include your journey, something you discovered and how you returned home.",
       "pictureOptions": [
-        "bridge",
-        "museum",
-        "boat"
+        "boat",
+        "computer",
+        "clock"
       ]
     },
     {
@@ -2465,7 +2465,7 @@
       "prompt": "Look at the three pictures. Write a story of at least 50 words about exploring an unfamiliar place in Oman. Include your journey, something you discovered and how you returned home.",
       "pictureOptions": [
         "bridge",
-        "museum",
+        "beach",
         "boat"
       ],
       "sourceModel": "C",
