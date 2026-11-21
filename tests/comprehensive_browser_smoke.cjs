@@ -10,7 +10,8 @@ const { chromium, devices } = require('playwright');
    const model = grade === 5 ? 'E' : 'D';
    await page.goto(base + path + '?grade=' + grade + '&model=' + model + '&mode=' + mode,{waitUntil:'commit'});
    await page.waitForURL('**/mixed-exams/index.html?**');
-   await page.locator('[data-student-sheet]').waitFor({state:'visible'});
+   await page.locator('#listening1').waitFor({state:'visible'});
+   if (await page.locator('[data-student-sheet]').count()) throw Error('Student details page must not appear');
    const result = await page.evaluate(() => ({
      sections: document.querySelectorAll('#paper .exam-part:not([data-student-sheet])').length,
      all: [...document.querySelectorAll('#paper .exam-part:not([data-student-sheet])')].map(section => (
@@ -28,11 +29,19 @@ const { chromium, devices } = require('playwright');
    const signature = await page.locator('#paper .question h3').allTextContents();
    if (mode === 'random') {
      await page.locator('#newPaper').click();
-     await page.locator('[data-student-sheet]').waitFor({state:'visible'});
+     await page.locator('#listening1').waitFor({state:'visible'});
      if (JSON.stringify(signature) === JSON.stringify(await page.locator('#paper .question h3').allTextContents()))
        throw Error('Random paper did not change for grade ' + grade);
    }
-   console.log('PASS mixed content and legacy route',grade,mode);
+   if (grade === 5) {
+     const grid = page.locator('#vocabulary .vocabulary-word-grid');
+     await grid.waitFor({state:'attached'});
+     if ((await grid.locator('thead th.word-column').count()) !== 6 ||
+         (await grid.locator('tbody th').count()) !== 5 ||
+         (await grid.locator('tbody th').first().textContent()).trim() !== 'A')
+       throw Error('Incorrect Grade 5 picture-word matching grid');
+   }
+   console.log('PASS mixed content and direct entry',grade,mode);
  }
  for (const grade of [5,6,7,8]) {
    await mixed(grade,'exam');
@@ -44,7 +53,7 @@ const { chromium, devices } = require('playwright');
  await page.getByText('This paper is ready for offline use on this device.').waitFor({timeout:120000});
  await context.setOffline(true);
  await page.reload({waitUntil:'domcontentloaded'});
- await page.getByRole('button',{name:'Next page',exact:true}).click();
+ await page.locator('#listening1').waitFor({state:'visible'});
  await page.locator('#listening1-prepare').click();
  await page.getByText('Recording ready. Press play to begin.').waitFor({timeout:45000});
  const audio = page.locator('#listening1 audio');
