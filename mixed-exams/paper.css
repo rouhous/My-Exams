@@ -79,3 +79,6 @@ button[disabled] { opacity:.6; cursor:default; }
   #paper>.exam-part .exam-dual-panel{width:100%;min-width:0;max-width:none;}
 }
 @media print{#mobileExamTitle{display:none!important;}}
+
+/* Arabic task guidance for grades 5–8. */
+.exam-ar-instruction{direction:rtl;text-align:right;font:600 clamp(13px,3.5vw,16px)/1.65 system-ui,Tahoma,Arial,sans-serif;color:#17503c;background:#f0f8f1;border-right:4px solid #b28b43;border-radius:8px;padding:8px 11px;margin:9px 0 12px}
