@@ -19,7 +19,7 @@ audio{width:100%;max-width:630px}.script{white-space:pre-wrap;max-height:320px;o
 .controls{display:grid;grid-template-columns:1fr 1fr;gap:13px}
 .clock{font-weight:800;font-size:20px;font-variant-numeric:tabular-nums}
 @media(max-width:640px){.controls{grid-template-columns:1fr}}@media print{header,.setup,#end,#back,#clock{display:none!important}.paper{display:block!important}section{break-inside:avoid}}
-</style><link rel="stylesheet" href="../../../shared/exam-tools.css"><script src="../../../shared/short-answer-marking.js"></script><script id="short-answer-critical">
+</style><link rel="stylesheet" href="../../../shared/exam-tools.css?v=2"><script src="../../../shared/short-answer-marking.js"></script><script id="short-answer-critical">
 /* English short answer marking for My Exams.
    Accept the expected answer as a complete contiguous phrase, with up to four
    words above the question's stated maximum. This checks text, not meaning. */
@@ -142,4 +142,4 @@ if (direct.get('mode') === 'skill' && keys.includes(direct.get('skill'))) {
  $('mode').onchange();
 }
 $('start').onclick=start;$('end').onclick=finish;$('back').onclick=()=>{stopTimer();$('paper').classList.remove('active');$('setup').hidden=false;$('end').disabled=false;window.scrollTo(0,0)};initialize();
-</script><script defer src="../../../shared/exam-tools.js"></script></body></html>
+</script><script defer src="../../../shared/exam-tools.js?v=2"></script></body></html>
