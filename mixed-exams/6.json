@@ -157,35 +157,50 @@
               "answer": "camera",
               "kind": "short",
               "picture": "grades5-6/images/camera.webp",
-              "maxWords": 1
+              "maxWords": 1,
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «camera»؛ تُستخدم لالتقاط الصور. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "كاميرا"
             },
             {
               "stem": "Write the word.",
               "answer": "book",
               "kind": "short",
               "picture": "grades5-6/images/book.webp",
-              "maxWords": 1
+              "maxWords": 1,
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «book»؛ نقرأ الكتاب للحصول على معرفة أو للمتعة. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "كتاب"
             },
             {
               "stem": "Write the word.",
               "answer": "boat",
               "kind": "short",
               "picture": "grades5-6/images/boat.webp",
-              "maxWords": 1
+              "maxWords": 1,
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «boat»؛ يُستخدم للتنقل فوق الماء. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "قارب"
             },
             {
               "stem": "Write the word.",
               "answer": "gift",
               "kind": "short",
               "picture": "grades5-6/images/gift.webp",
-              "maxWords": 1
+              "maxWords": 1,
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «gift»؛ يُقدَّم الشيء لشخص في مناسبة مثل عيد الميلاد. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "هدية"
             },
             {
               "stem": "Write the word.",
               "answer": "clock",
               "kind": "short",
               "picture": "grades5-6/images/clock.webp",
-              "maxWords": 1
+              "maxWords": 1,
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «clock»؛ تُستخدم لمعرفة الوقت. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "ساعة حائط"
             }
           ]
         },
@@ -542,35 +557,50 @@
               "answer": "satellite",
               "kind": "short",
               "picture": "grades5-6/images/satellite.webp",
-              "maxWords": 1
+              "maxWords": 1,
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «satellite»؛ جهاز يدور في الفضاء لأغراض مثل الاتصال. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "قمر صناعي"
             },
             {
               "stem": "Write the word.",
               "answer": "telescope",
               "kind": "short",
               "picture": "grades5-6/images/telescope.webp",
-              "maxWords": 1
+              "maxWords": 1,
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «telescope»؛ أداة لرؤية الأجسام البعيدة في الفضاء. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "تلسكوب"
             },
             {
               "stem": "Write the word.",
               "answer": "rocket",
               "kind": "short",
               "picture": "grades5-6/images/rocket.webp",
-              "maxWords": 1
+              "maxWords": 1,
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «rocket»؛ مركبة يمكن إطلاقها إلى الفضاء. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "صاروخ"
             },
             {
               "stem": "Write the word.",
               "answer": "moon",
               "kind": "short",
               "picture": "grades5-6/images/moon.webp",
-              "maxWords": 1
+              "maxWords": 1,
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «moon»؛ جرم سماوي يدور حول الأرض. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "القمر"
             },
             {
               "stem": "Write the word.",
               "answer": "planet",
               "kind": "short",
               "picture": "grades5-6/images/planet.webp",
-              "maxWords": 1
+              "maxWords": 1,
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «planet»؛ جرم سماوي يدور حول نجم. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "كوكب"
             }
           ]
         },
@@ -927,35 +957,50 @@
               "answer": "bridge",
               "kind": "short",
               "picture": "grades5-6/images/bridge.webp",
-              "maxWords": 1
+              "maxWords": 1,
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «bridge»؛ طريق يربط بين ضفتين أو فوق وادٍ. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "جسر"
             },
             {
               "stem": "Write the word.",
               "answer": "clock",
               "kind": "short",
               "picture": "grades5-6/images/clock.webp",
-              "maxWords": 1
+              "maxWords": 1,
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «clock»؛ تُستخدم لمعرفة الوقت. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "ساعة حائط"
             },
             {
               "stem": "Write the word.",
               "answer": "computer",
               "kind": "short",
               "picture": "grades5-6/images/computer.webp",
-              "maxWords": 1
+              "maxWords": 1,
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «computer»؛ جهاز لإجراء الأعمال الرقمية. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "حاسوب"
             },
             {
               "stem": "Write the word.",
               "answer": "bus",
               "kind": "short",
               "picture": "grades5-6/images/bus.webp",
-              "maxWords": 1
+              "maxWords": 1,
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «bus»؛ مركبة تنقل مجموعة من الركاب. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "حافلة"
             },
             {
               "stem": "Write the word.",
               "answer": "bicycle",
               "kind": "short",
               "picture": "grades5-6/images/bicycle.webp",
-              "maxWords": 1
+              "maxWords": 1,
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «bicycle»؛ نركب الدراجة في التنقل والرياضة. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "دراجة هوائية"
             }
           ]
         },
