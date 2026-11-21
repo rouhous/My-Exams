@@ -516,17 +516,17 @@
           "marks": 5,
           "grid": "words",
           "options": [
-            "bridge",
-            "boat",
-            "kite",
             "market",
+            "boat",
+            "computer",
+            "bridge",
             "library",
-            "computer"
+            "kite"
           ],
           "questions": [
             {
               "stem": "Picture 1",
-              "answer": 2,
+              "answer": 5,
               "kind": "short",
               "picture": "grades5-6/images/kite.webp",
               "target": "kite"
@@ -540,21 +540,21 @@
             },
             {
               "stem": "Picture 3",
-              "answer": 0,
+              "answer": 3,
               "kind": "short",
               "picture": "grades5-6/images/bridge.webp",
               "target": "bridge"
             },
             {
               "stem": "Picture 4",
-              "answer": 5,
+              "answer": 2,
               "kind": "short",
               "picture": "grades5-6/images/computer.webp",
               "target": "computer"
             },
             {
               "stem": "Picture 5",
-              "answer": 3,
+              "answer": 0,
               "kind": "short",
               "picture": "grades5-6/images/market.webp",
               "target": "market"
@@ -879,12 +879,12 @@
           "marks": 5,
           "grid": "words",
           "options": [
-            "lamp",
-            "satellite",
-            "robot",
-            "recycling bin",
             "computer",
-            "magnifying glass"
+            "lamp",
+            "robot",
+            "magnifying glass",
+            "satellite",
+            "recycling bin"
           ],
           "questions": [
             {
@@ -896,28 +896,28 @@
             },
             {
               "stem": "Picture 2",
-              "answer": 4,
+              "answer": 0,
               "kind": "short",
               "picture": "grades5-6/images/computer.webp",
               "target": "computer"
             },
             {
               "stem": "Picture 3",
-              "answer": 0,
+              "answer": 1,
               "kind": "short",
               "picture": "grades5-6/images/solar-study-lamp.webp",
               "target": "lamp"
             },
             {
               "stem": "Picture 4",
-              "answer": 5,
+              "answer": 3,
               "kind": "short",
               "picture": "grades5-6/images/magnifying-leaf.webp",
               "target": "magnifying glass"
             },
             {
               "stem": "Picture 5",
-              "answer": 3,
+              "answer": 5,
               "kind": "short",
               "picture": "grades5-6/images/recycling-station.webp",
               "target": "recycling bin"
@@ -1242,45 +1242,45 @@
           "marks": 5,
           "grid": "words",
           "options": [
-            "bicycle",
             "apple",
-            "camera",
             "paintbrush",
-            "football",
-            "clock"
+            "bicycle",
+            "clock",
+            "camera",
+            "football"
           ],
           "questions": [
             {
               "stem": "Picture 1",
-              "answer": 2,
+              "answer": 4,
               "kind": "short",
               "picture": "grades5-6/images/camera.webp",
               "target": "camera"
             },
             {
               "stem": "Picture 2",
-              "answer": 4,
+              "answer": 5,
               "kind": "short",
               "picture": "grades5-6/images/football.webp",
               "target": "football"
             },
             {
               "stem": "Picture 3",
-              "answer": 0,
+              "answer": 2,
               "kind": "short",
               "picture": "grades5-6/images/bicycle.webp",
               "target": "bicycle"
             },
             {
               "stem": "Picture 4",
-              "answer": 5,
+              "answer": 3,
               "kind": "short",
               "picture": "grades5-6/images/clock.webp",
               "target": "clock"
             },
             {
               "stem": "Picture 5",
-              "answer": 3,
+              "answer": 1,
               "kind": "short",
               "picture": "grades5-6/images/paintbrush.webp",
               "target": "paintbrush"
