@@ -440,17 +440,17 @@
         "market"
       ],
       "wordOptions": [
-        "bridge",
-        "boat",
-        "kite",
         "market",
+        "boat",
+        "computer",
+        "bridge",
         "library",
-        "computer"
+        "kite"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 2
+          "answer": 5
         },
         {
           "stem": "Picture 2",
@@ -458,15 +458,15 @@
         },
         {
           "stem": "Picture 3",
-          "answer": 0
+          "answer": 3
         },
         {
           "stem": "Picture 4",
-          "answer": 5
+          "answer": 2
         },
         {
           "stem": "Picture 5",
-          "answer": 3
+          "answer": 0
         }
       ],
       "unitTheme": "Then and now"
@@ -748,12 +748,12 @@
         "recycling-station"
       ],
       "wordOptions": [
-        "lamp",
-        "satellite",
-        "robot",
-        "recycling bin",
         "computer",
-        "magnifying glass"
+        "lamp",
+        "robot",
+        "magnifying glass",
+        "satellite",
+        "recycling bin"
       ],
       "questions": [
         {
@@ -762,19 +762,19 @@
         },
         {
           "stem": "Picture 2",
-          "answer": 4
-        },
-        {
-          "stem": "Picture 3",
           "answer": 0
         },
         {
+          "stem": "Picture 3",
+          "answer": 1
+        },
+        {
           "stem": "Picture 4",
-          "answer": 5
+          "answer": 3
         },
         {
           "stem": "Picture 5",
-          "answer": 3
+          "answer": 5
         }
       ],
       "unitTheme": "Let’s explore!"
@@ -1056,33 +1056,33 @@
         "paintbrush"
       ],
       "wordOptions": [
-        "bicycle",
         "apple",
-        "camera",
         "paintbrush",
-        "football",
-        "clock"
+        "bicycle",
+        "clock",
+        "camera",
+        "football"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 2
-        },
-        {
-          "stem": "Picture 2",
           "answer": 4
         },
         {
-          "stem": "Picture 3",
-          "answer": 0
-        },
-        {
-          "stem": "Picture 4",
+          "stem": "Picture 2",
           "answer": 5
         },
         {
-          "stem": "Picture 5",
+          "stem": "Picture 3",
+          "answer": 2
+        },
+        {
+          "stem": "Picture 4",
           "answer": 3
+        },
+        {
+          "stem": "Picture 5",
+          "answer": 1
         }
       ],
       "unitTheme": "Off to the shops"
@@ -1837,9 +1837,9 @@
       "minWords": 50,
       "prompt": "Look at the three pictures. Write a story of at least 50 words about preparing a simple technology project for school. Explain how you used the devices and what happened.",
       "pictureOptions": [
-        "library",
-        "park",
-        "bridge"
+        "recycling-station",
+        "magnifying-leaf",
+        "library"
       ]
     },
     {
@@ -2146,8 +2146,8 @@
       "prompt": "Look at the three pictures. Write a story of at least 50 words about exploring an unfamiliar place in Oman. Include your journey, something you discovered and how you returned home.",
       "pictureOptions": [
         "boat",
-        "computer",
-        "clock"
+        "mountain",
+        "backpack"
       ]
     },
     {
