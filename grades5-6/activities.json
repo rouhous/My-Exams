@@ -142,23 +142,38 @@
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 2
+          "answer": 2,
+          "topicType": "vocabulary",
+          "meaningAr": "هدية",
+          "explanationAr": "الصورة تمثّل «gift»؛ يُقدَّم الشيء لشخص في مناسبة مثل عيد الميلاد. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 2",
-          "answer": 4
+          "answer": 4,
+          "topicType": "vocabulary",
+          "meaningAr": "كعكة",
+          "explanationAr": "الصورة تمثّل «cake»؛ تؤكل الكعكة عادة في الاحتفالات. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 3",
-          "answer": 0
+          "answer": 0,
+          "topicType": "vocabulary",
+          "meaningAr": "طائرة ورقية",
+          "explanationAr": "الصورة تمثّل «kite»؛ تطير الطائرة الورقية في الهواء. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 4",
-          "answer": 5
+          "answer": 5,
+          "topicType": "vocabulary",
+          "meaningAr": "ساعة حائط",
+          "explanationAr": "الصورة تمثّل «clock»؛ تُستخدم لمعرفة الوقت. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 5",
-          "answer": 3
+          "answer": 3,
+          "topicType": "vocabulary",
+          "meaningAr": "دراجة هوائية",
+          "explanationAr": "الصورة تمثّل «bicycle»؛ نركب الدراجة في التنقل والرياضة. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         }
       ],
       "unitTheme": "Talent show"
@@ -475,23 +490,38 @@
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 5
+          "answer": 5,
+          "topicType": "vocabulary",
+          "meaningAr": "طائرة ورقية",
+          "explanationAr": "الصورة تمثّل «kite»؛ تطير الطائرة الورقية في الهواء. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 2",
-          "answer": 4
+          "answer": 4,
+          "topicType": "vocabulary",
+          "meaningAr": "مكتبة",
+          "explanationAr": "الصورة تمثّل «library»؛ مكان يمكن استعارة الكتب وقراءتها. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 3",
-          "answer": 3
+          "answer": 3,
+          "topicType": "vocabulary",
+          "meaningAr": "جسر",
+          "explanationAr": "الصورة تمثّل «bridge»؛ طريق يربط بين ضفتين أو فوق وادٍ. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 4",
-          "answer": 2
+          "answer": 2,
+          "topicType": "vocabulary",
+          "meaningAr": "حاسوب",
+          "explanationAr": "الصورة تمثّل «computer»؛ جهاز لإجراء الأعمال الرقمية. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 5",
-          "answer": 0
+          "answer": 0,
+          "topicType": "vocabulary",
+          "meaningAr": "سوق",
+          "explanationAr": "الصورة تمثّل «market»؛ مكان تُباع فيه البضائع. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         }
       ],
       "unitTheme": "Then and now"
@@ -808,23 +838,38 @@
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 2
+          "answer": 2,
+          "topicType": "vocabulary",
+          "meaningAr": "روبوت",
+          "explanationAr": "الصورة تمثّل «robot»؛ آلة تؤدي أعمالًا آلية. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 2",
-          "answer": 4
+          "answer": 4,
+          "topicType": "vocabulary",
+          "meaningAr": "حاسوب",
+          "explanationAr": "الصورة تمثّل «computer»؛ جهاز لإجراء الأعمال الرقمية. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 3",
-          "answer": 0
+          "answer": 0,
+          "topicType": "vocabulary",
+          "meaningAr": "كاميرا",
+          "explanationAr": "الصورة تمثّل «camera»؛ تُستخدم لالتقاط الصور. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 4",
-          "answer": 5
+          "answer": 5,
+          "topicType": "vocabulary",
+          "meaningAr": "ساعة حائط",
+          "explanationAr": "الصورة تمثّل «clock»؛ تُستخدم لمعرفة الوقت. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 5",
-          "answer": 3
+          "answer": 3,
+          "topicType": "vocabulary",
+          "meaningAr": "شاطئ",
+          "explanationAr": "الصورة تمثّل «beach»؛ مكان رملي بجانب البحر. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         }
       ],
       "unitTheme": "Let’s explore!"
@@ -1141,23 +1186,38 @@
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": 4
+          "answer": 4,
+          "topicType": "vocabulary",
+          "meaningAr": "كاميرا",
+          "explanationAr": "الصورة تمثّل «camera»؛ تُستخدم لالتقاط الصور. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 2",
-          "answer": 5
+          "answer": 5,
+          "topicType": "vocabulary",
+          "meaningAr": "كرة قدم",
+          "explanationAr": "الصورة تمثّل «football»؛ تُستخدم في لعبة كرة القدم. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 3",
-          "answer": 2
+          "answer": 2,
+          "topicType": "vocabulary",
+          "meaningAr": "دراجة هوائية",
+          "explanationAr": "الصورة تمثّل «bicycle»؛ نركب الدراجة في التنقل والرياضة. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 4",
-          "answer": 3
+          "answer": 3,
+          "topicType": "vocabulary",
+          "meaningAr": "ساعة حائط",
+          "explanationAr": "الصورة تمثّل «clock»؛ تُستخدم لمعرفة الوقت. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 5",
-          "answer": 1
+          "answer": 1,
+          "topicType": "vocabulary",
+          "meaningAr": "فرشاة رسم",
+          "explanationAr": "الصورة تمثّل «paintbrush»؛ تُستخدم للرسم بالألوان. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         }
       ],
       "unitTheme": "Off to the shops"
@@ -1466,23 +1526,38 @@
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "camera"
+          "answer": "camera",
+          "topicType": "vocabulary",
+          "meaningAr": "كاميرا",
+          "explanationAr": "الصورة تمثّل «camera»؛ تُستخدم لالتقاط الصور. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 2",
-          "answer": "book"
+          "answer": "book",
+          "topicType": "vocabulary",
+          "meaningAr": "كتاب",
+          "explanationAr": "الصورة تمثّل «book»؛ نقرأ الكتاب للحصول على معرفة أو للمتعة. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 3",
-          "answer": "boat"
+          "answer": "boat",
+          "topicType": "vocabulary",
+          "meaningAr": "قارب",
+          "explanationAr": "الصورة تمثّل «boat»؛ يُستخدم للتنقل فوق الماء. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 4",
-          "answer": "gift"
+          "answer": "gift",
+          "topicType": "vocabulary",
+          "meaningAr": "هدية",
+          "explanationAr": "الصورة تمثّل «gift»؛ يُقدَّم الشيء لشخص في مناسبة مثل عيد الميلاد. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 5",
-          "answer": "clock"
+          "answer": "clock",
+          "topicType": "vocabulary",
+          "meaningAr": "ساعة حائط",
+          "explanationAr": "الصورة تمثّل «clock»؛ تُستخدم لمعرفة الوقت. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         }
       ],
       "unitTheme": "Free-time fun"
@@ -1799,23 +1874,38 @@
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "satellite"
+          "answer": "satellite",
+          "topicType": "vocabulary",
+          "meaningAr": "قمر صناعي",
+          "explanationAr": "الصورة تمثّل «satellite»؛ جهاز يدور في الفضاء لأغراض مثل الاتصال. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 2",
-          "answer": "telescope"
+          "answer": "telescope",
+          "topicType": "vocabulary",
+          "meaningAr": "تلسكوب",
+          "explanationAr": "الصورة تمثّل «telescope»؛ أداة لرؤية الأجسام البعيدة في الفضاء. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 3",
-          "answer": "rocket"
+          "answer": "rocket",
+          "topicType": "vocabulary",
+          "meaningAr": "صاروخ",
+          "explanationAr": "الصورة تمثّل «rocket»؛ مركبة يمكن إطلاقها إلى الفضاء. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 4",
-          "answer": "moon"
+          "answer": "moon",
+          "topicType": "vocabulary",
+          "meaningAr": "القمر",
+          "explanationAr": "الصورة تمثّل «moon»؛ جرم سماوي يدور حول الأرض. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 5",
-          "answer": "planet"
+          "answer": "planet",
+          "topicType": "vocabulary",
+          "meaningAr": "كوكب",
+          "explanationAr": "الصورة تمثّل «planet»؛ جرم سماوي يدور حول نجم. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         }
       ],
       "unitTheme": "Technology"
@@ -2132,23 +2222,38 @@
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "bridge"
+          "answer": "bridge",
+          "topicType": "vocabulary",
+          "meaningAr": "جسر",
+          "explanationAr": "الصورة تمثّل «bridge»؛ طريق يربط بين ضفتين أو فوق وادٍ. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 2",
-          "answer": "clock"
+          "answer": "clock",
+          "topicType": "vocabulary",
+          "meaningAr": "ساعة حائط",
+          "explanationAr": "الصورة تمثّل «clock»؛ تُستخدم لمعرفة الوقت. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 3",
-          "answer": "computer"
+          "answer": "computer",
+          "topicType": "vocabulary",
+          "meaningAr": "حاسوب",
+          "explanationAr": "الصورة تمثّل «computer»؛ جهاز لإجراء الأعمال الرقمية. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 4",
-          "answer": "bus"
+          "answer": "bus",
+          "topicType": "vocabulary",
+          "meaningAr": "حافلة",
+          "explanationAr": "الصورة تمثّل «bus»؛ مركبة تنقل مجموعة من الركاب. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 5",
-          "answer": "bicycle"
+          "answer": "bicycle",
+          "topicType": "vocabulary",
+          "meaningAr": "دراجة هوائية",
+          "explanationAr": "الصورة تمثّل «bicycle»؛ نركب الدراجة في التنقل والرياضة. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         }
       ],
       "unitTheme": "Places"
@@ -2467,23 +2572,38 @@
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "market"
+          "answer": "market",
+          "topicType": "vocabulary",
+          "meaningAr": "سوق",
+          "explanationAr": "الصورة تمثّل «market»؛ مكان تُباع فيه البضائع. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 2",
-          "answer": "library"
+          "answer": "library",
+          "topicType": "vocabulary",
+          "meaningAr": "مكتبة",
+          "explanationAr": "الصورة تمثّل «library»؛ مكان يمكن استعارة الكتب وقراءتها. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 3",
-          "answer": "museum"
+          "answer": "museum",
+          "topicType": "vocabulary",
+          "meaningAr": "متحف",
+          "explanationAr": "الصورة تمثّل «museum»؛ مكان يعرض أشياء تاريخية وعلمية. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 4",
-          "answer": "park"
+          "answer": "park",
+          "topicType": "vocabulary",
+          "meaningAr": "منتزه",
+          "explanationAr": "الصورة تمثّل «park»؛ مكان للتنزه واللعب. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         },
         {
           "stem": "Picture 5",
-          "answer": "clinic"
+          "answer": "clinic",
+          "topicType": "vocabulary",
+          "meaningAr": "عيادة",
+          "explanationAr": "الصورة تمثّل «clinic»؛ مكان لتلقي الرعاية الطبية. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة."
         }
       ],
       "sourceModel": "C",
