@@ -22,6 +22,55 @@ function draw(){
 function schedule(){if(renderPending)return;renderPending=true;requestAnimationFrame(()=>{renderPending=false;draw()})}
 const bar=element("div","ex-tools");bar.setAttribute("role","toolbar");bar.setAttribute("aria-label","أدوات الدراسة");
 const buttons={};
+/* Drag only from this grip so selecting answers and pressing tool buttons remain safe. */
+const dragGrip=element("button","ex-drag-grip","⠿");
+dragGrip.type="button";
+dragGrip.title="اسحب لتغيير مكان الأدوات";
+dragGrip.setAttribute("aria-label","مسك وتحريك الأدوات المساعدة");
+dragGrip.setAttribute("aria-description","اضغط واسحب لتغيير مكان الشريط");
+bar.append(dragGrip);
+const positionKey="my-exams-toolbar-position-v1";
+let storedPosition=null;
+try{const p=JSON.parse(localStorage.getItem(positionKey)||"null");if(p&&Number.isFinite(p.x)&&Number.isFinite(p.y))storedPosition={x:Math.max(0,Math.min(1,p.x)),y:Math.max(0,Math.min(1,p.y))}}catch(e){}
+function positionToolbar(x,y,persist=false){
+ const width=bar.offsetWidth,height=bar.offsetHeight;
+ const left=Math.max(4,Math.min(x,window.innerWidth-width-4));
+ const top=Math.max(4,Math.min(y,window.innerHeight-height-4));
+ bar.style.left=left+"px";bar.style.top=top+"px";
+ bar.style.right="auto";bar.style.bottom="auto";bar.style.transform="none";
+ if(persist){
+  storedPosition={x:window.innerWidth>width?left/(window.innerWidth-width):0,y:window.innerHeight>height?top/(window.innerHeight-height):0};
+  try{localStorage.setItem(positionKey,JSON.stringify(storedPosition))}catch(e){}
+ }
+}
+function restoreToolbarPosition(){
+ if(!storedPosition)return;
+ positionToolbar(storedPosition.x*Math.max(0,window.innerWidth-bar.offsetWidth),storedPosition.y*Math.max(0,window.innerHeight-bar.offsetHeight));
+}
+let drag=null;
+dragGrip.addEventListener("pointerdown",e=>{
+ if(e.pointerType==="mouse"&&e.button!==0)return;
+ if(mode)setMode("");
+ const box=bar.getBoundingClientRect();
+ drag={pointer:e.pointerId,dx:e.clientX-box.left,dy:e.clientY-box.top};
+ dragGrip.setPointerCapture(e.pointerId);
+ bar.classList.add("ex-dragging");
+ e.preventDefault();
+});
+dragGrip.addEventListener("pointermove",e=>{
+ if(!drag||e.pointerId!==drag.pointer)return;
+ positionToolbar(e.clientX-drag.dx,e.clientY-drag.dy);
+ e.preventDefault();
+});
+function endToolDrag(e){
+ if(!drag||e.pointerId!==drag.pointer)return;
+ drag=null;bar.classList.remove("ex-dragging");
+ if(e.type==="pointerup"){const rect=bar.getBoundingClientRect();positionToolbar(rect.left,rect.top,true)}
+}
+dragGrip.addEventListener("pointerup",endToolDrag);
+dragGrip.addEventListener("pointercancel",endToolDrag);
+dragGrip.addEventListener("lostpointercapture",endToolDrag);
+
 function add(id,label,handler){const b=element("button","");b.type="button";b.title=label;b.setAttribute("aria-label",label);b.innerHTML='<span class="ex-icon" aria-hidden="true">'+icon[id]+'</span><span class="ex-tool-text"></span>';b.querySelector(".ex-tool-text").textContent=label;bar.append(b);buttons[id]=b;b.addEventListener("click",handler)}
 function setMode(next){mode=next===mode?"":next;canvas.classList.toggle("active",mode==="pen"||mode==="eraser");doc.body.classList.toggle("ex-ink-mode",mode==="pen"||mode==="eraser");for(const id of ["pen","eraser"])buttons[id].setAttribute("aria-pressed",String(mode===id));if(mode)toast(mode==="pen"?"ارسم على الصفحة — اضغط القلم مرة ثانية للإيقاف":"المس الرسم لمسحه — اضغط الممحاة للإيقاف")}
 add("pen","قلم",()=>setMode("pen"));
@@ -69,8 +118,9 @@ buttons.paste.addEventListener("pointerdown",event=>event.preventDefault());
 add("undo","تراجع",()=>{if(data.strokes.length){data.strokes.pop()}else if(data.highlights.length)data.highlights.pop();save();schedule()});
 add("clear","مسح الكل",()=>{if(!data.strokes.length&&!data.highlights.length)return;if(confirm("مسح جميع الرسومات في هذه الصفحة؟")){data.strokes=[];data.highlights=[];save();schedule()}});
 buttons.copy.addEventListener("pointerdown",event=>event.preventDefault());
-add("min","إخفاء",()=>{collapsed=!collapsed;bar.classList.toggle("ex-collapsed",collapsed);for(const [id,b] of Object.entries(buttons))if(id!=="min")b.hidden=collapsed;buttons.min.setAttribute("aria-label",collapsed?"إظهار أدوات الدراسة":"إخفاء أدوات الدراسة");buttons.min.querySelector(".ex-tool-text").textContent=collapsed?"إظهار":"إخفاء";if(collapsed)setMode("")});
+add("min","إخفاء",()=>{collapsed=!collapsed;bar.classList.toggle("ex-collapsed",collapsed);for(const [id,b] of Object.entries(buttons))if(id!=="min")b.hidden=collapsed;restoreToolbarPosition();buttons.min.setAttribute("aria-label",collapsed?"إظهار أدوات الدراسة":"إخفاء أدوات الدراسة");buttons.min.querySelector(".ex-tool-text").textContent=collapsed?"إظهار":"إخفاء";if(collapsed)setMode("")});
 doc.body.append(bar);
+restoreToolbarPosition();
 if(doc.body.dataset.studyTools==="compact"&&matchMedia("(max-width: 640px)").matches)buttons.min.click();
 const note=element("aside","ex-note");note.setAttribute("aria-label","ملاحظاتي");
 const row=element("div","ex-heading");row.append(element("strong","", "ملاحظاتي وأفكاري"));
@@ -84,7 +134,7 @@ function distance(a,b){return Math.hypot(a.x-b.x,a.y-b.y)}
 function eraseAt(p){data.strokes=data.strokes.filter(s=>!s.points.some((q,i)=>i%2===0&&distance(q,p)<19));data.highlights=data.highlights.filter(h=>!(p.x>=h.x-12&&p.x<=h.x+h.w+12&&p.y>=h.y-12&&p.y<=h.y+h.h+12))}
 canvas.addEventListener("pointermove",e=>{if(!(e.buttons||e.pressure>0))return;const p=locate(e);if(mode==="pen"&&drawing){drawing.points.push(p);schedule()}if(mode==="eraser"){eraseAt(p);schedule()}});
 for(const ev of ["pointerup","pointercancel"]){canvas.addEventListener(ev,()=>{if(drawing){drawing=null;save()}else if(mode==="eraser")save()})}
-window.addEventListener("resize",resize);window.addEventListener("scroll",schedule,{passive:true});window.addEventListener("pagehide",save);
+window.addEventListener("resize",()=>{resize();restoreToolbarPosition()});window.addEventListener("scroll",schedule,{passive:true});window.addEventListener("pagehide",save);
 doc.addEventListener("keydown",e=>{if(e.key==="Escape"){setMode("");note.classList.remove("visible")}});
 resize();
 })();
