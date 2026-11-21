@@ -129,13 +129,13 @@
         "cake",
         "kite",
         "clock",
-        "studio-microphone"
+        "bicycle"
       ],
       "wordOptions": [
         "kite",
         "football",
         "gift",
-        "microphone",
+        "bicycle",
         "cake",
         "clock"
       ],
@@ -743,17 +743,17 @@
       "pictureOptions": [
         "robot",
         "computer",
-        "solar-study-lamp",
-        "magnifying-leaf",
-        "recycling-station"
+        "camera",
+        "clock",
+        "beach"
       ],
       "wordOptions": [
-        "computer",
-        "lamp",
-        "robot",
-        "magnifying glass",
+        "camera",
         "satellite",
-        "recycling bin"
+        "robot",
+        "beach",
+        "computer",
+        "clock"
       ],
       "questions": [
         {
@@ -762,19 +762,19 @@
         },
         {
           "stem": "Picture 2",
-          "answer": 0
+          "answer": 4
         },
         {
           "stem": "Picture 3",
-          "answer": 1
+          "answer": 0
         },
         {
           "stem": "Picture 4",
-          "answer": 3
+          "answer": 5
         },
         {
           "stem": "Picture 5",
-          "answer": 5
+          "answer": 3
         }
       ],
       "unitTheme": "Let’s explore!"
@@ -1665,32 +1665,32 @@
       "marks": 5,
       "format": "picture-spelling",
       "pictureOptions": [
-        "solar-study-lamp",
         "satellite",
         "telescope",
-        "studio-microphone",
-        "bus-timetable-tablet"
+        "rocket",
+        "moon",
+        "planet"
       ],
       "questions": [
         {
           "stem": "Picture 1",
-          "answer": "lamp"
-        },
-        {
-          "stem": "Picture 2",
           "answer": "satellite"
         },
         {
-          "stem": "Picture 3",
+          "stem": "Picture 2",
           "answer": "telescope"
         },
         {
+          "stem": "Picture 3",
+          "answer": "rocket"
+        },
+        {
           "stem": "Picture 4",
-          "answer": "microphone"
+          "answer": "moon"
         },
         {
           "stem": "Picture 5",
-          "answer": "tablet"
+          "answer": "planet"
         }
       ],
       "unitTheme": "Technology"
@@ -1974,10 +1974,10 @@
       "format": "picture-spelling",
       "pictureOptions": [
         "bridge",
-        "football-field",
-        "recycling-station",
-        "bus-timetable-tablet",
-        "compass-hiking"
+        "clock",
+        "computer",
+        "bus",
+        "bicycle"
       ],
       "questions": [
         {
@@ -1986,19 +1986,19 @@
         },
         {
           "stem": "Picture 2",
-          "answer": "football field"
+          "answer": "clock"
         },
         {
           "stem": "Picture 3",
-          "answer": "recycling bin"
+          "answer": "computer"
         },
         {
           "stem": "Picture 4",
-          "answer": "tablet"
+          "answer": "bus"
         },
         {
           "stem": "Picture 5",
-          "answer": "compass"
+          "answer": "bicycle"
         }
       ],
       "unitTheme": "Places"
