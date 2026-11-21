@@ -1,1 +1,1117 @@
-{"grade":6,"minutes":90,"marks":40,"units":[{"unit":1,"sections":[{"key":"listening1","marks":5,"grid":"images","options":["grades5-6/images/football.webp","grades5-6/images/bicycle.webp","grades5-6/images/drum.webp","grades5-6/images/piano.webp","grades5-6/images/kite.webp","grades5-6/images/paintbrush.webp"],"audio":"grades5-6/audio-reviewed/g6-a-listening-1.mp3","script":"","timing":{"intro":[0,6.357],"repeat":[71.328,72.72],"items":[[9.73,19.231],[22.685,31.019],[34.956,43.754],[47.189,55.223],[59.178,67.911]]},"questions":[{"stem":"Text 1","answer":0,"kind":"short","target":"grades5-6/images/football.webp","script":"After finishing my homework I play football with my neighbours at the small field. We meet there three evenings a week."},{"stem":"Text 2","answer":2,"kind":"short","target":"grades5-6/images/drum.webp","script":"I joined the school music club to learn the drum. We practise rhythms every Monday with our teacher."},{"stem":"Text 3","answer":1,"kind":"short","target":"grades5-6/images/bicycle.webp","script":"I love riding my bicycle on quiet paths. My father checks my helmet before we leave the house."},{"stem":"Text 4","answer":4,"kind":"short","target":"grades5-6/images/kite.webp","script":"The wind is strong today, so we will fly our kite in the open park away from roads and power lines."},{"stem":"Text 5","answer":5,"kind":"short","target":"grades5-6/images/paintbrush.webp","script":"During the holiday I started painting. My aunt lent me a paintbrush and I made a picture of our garden."}]},{"key":"listening2","marks":5,"audio":"grades5-6/audio-natural/g6-a-listening-2.mp3","script":"Interviewer: When does the free-time club meet, Yousuf? Yousuf: Every Saturday. Interviewer: Where do members meet? Yousuf: At the community sports centre. Interviewer: Which activity was popular last month? Yousuf: Cycling. Interviewer: Do children bring their own bicycles? Yousuf: No, the centre lends bicycles and helmets. Interviewer: What will you try next Saturday? Yousuf: Table tennis indoors.","questions":[{"stem":"When is the club?","options":["Monday","Saturday","Friday"],"answer":1,"kind":"mc"},{"stem":"Where is the club?","options":["At the sports centre","In the library","At the beach"],"answer":0,"kind":"mc"},{"stem":"What was most popular?","options":["Chess","Swimming","Cycling"],"answer":2,"kind":"mc"},{"stem":"What does the club lend?","options":["Books","Helmets and bicycles","Cameras"],"answer":1,"kind":"mc"},{"stem":"What is next week's activity?","options":["Table tennis","Horse riding","Painting"],"answer":0,"kind":"mc"}]},{"key":"vocabulary","marks":5,"questions":[{"stem":"Write the word.","answer":"football","kind":"short","picture":"grades5-6/images/football.webp","maxWords":1},{"stem":"Write the word.","answer":"bicycle","kind":"short","picture":"grades5-6/images/bicycle.webp","maxWords":1},{"stem":"Write the word.","answer":"drum","kind":"short","picture":"grades5-6/images/drum.webp","maxWords":1},{"stem":"Write the word.","answer":"piano","kind":"short","picture":"grades5-6/images/piano.webp","maxWords":1},{"stem":"Write the word.","answer":"kite","kind":"short","picture":"grades5-6/images/kite.webp","maxWords":1}]},{"key":"grammar","marks":5,"questions":[{"stem":"Sara usually ____ volleyball on Thursdays.","options":["plays","is playing"],"answer":0,"kind":"mc","point":"present-simple"},{"stem":"Listen! My friends ____ music in the garden.","options":["are playing","play"],"answer":0,"kind":"mc","point":"present-continuous"},{"stem":"We ____ board games every weekend.","options":["play","are playing"],"answer":0,"kind":"mc","point":"present-simple"},{"stem":"Look! The children ____ gymnastics now.","options":["do","are doing"],"answer":1,"kind":"mc","point":"present-continuous"},{"stem":"He ____ his diary every evening.","options":["writes","is writing"],"answer":0,"kind":"mc","point":"present-simple"}]},{"key":"reading1","marks":5,"questions":[{"stem":"Which text describes football and cycling?","answer":0,"kind":"match","options":["Every Saturday, Amina joins a sports club at the community centre. She enjoys football and cycling. The coaches remind children to warm up and drink water before activities. New members can borrow helmets and bicycles from the club.","Salim loves music. He joined a drumming group at school and practises with friends every Monday. At home, he listens to new rhythms and tries to copy them. His parents enjoy hearing his progress.","Maha likes quiet hobbies. She paints pictures of birds and flowers, then sends photographs to her cousin. She sometimes visits the park to find new ideas. She uses a small paintbrush and keeps her colours in a box."]},{"stem":"Which text mentions borrowing safety equipment?","answer":0,"kind":"match","options":["Every Saturday, Amina joins a sports club at the community centre. She enjoys football and cycling. The coaches remind children to warm up and drink water before activities. New members can borrow helmets and bicycles from the club.","Salim loves music. He joined a drumming group at school and practises with friends every Monday. At home, he listens to new rhythms and tries to copy them. His parents enjoy hearing his progress.","Maha likes quiet hobbies. She paints pictures of birds and flowers, then sends photographs to her cousin. She sometimes visits the park to find new ideas. She uses a small paintbrush and keeps her colours in a box."]},{"stem":"Which text describes practising music?","answer":1,"kind":"match","options":["Every Saturday, Amina joins a sports club at the community centre. She enjoys football and cycling. The coaches remind children to warm up and drink water before activities. New members can borrow helmets and bicycles from the club.","Salim loves music. He joined a drumming group at school and practises with friends every Monday. At home, he listens to new rhythms and tries to copy them. His parents enjoy hearing his progress.","Maha likes quiet hobbies. She paints pictures of birds and flowers, then sends photographs to her cousin. She sometimes visits the park to find new ideas. She uses a small paintbrush and keeps her colours in a box."]},{"stem":"Which text mentions sharing pictures with a cousin?","answer":2,"kind":"match","options":["Every Saturday, Amina joins a sports club at the community centre. She enjoys football and cycling. The coaches remind children to warm up and drink water before activities. New members can borrow helmets and bicycles from the club.","Salim loves music. He joined a drumming group at school and practises with friends every Monday. At home, he listens to new rhythms and tries to copy them. His parents enjoy hearing his progress.","Maha likes quiet hobbies. She paints pictures of birds and flowers, then sends photographs to her cousin. She sometimes visits the park to find new ideas. She uses a small paintbrush and keeps her colours in a box."]},{"stem":"Which text mentions looking for ideas in a park?","answer":2,"kind":"match","options":["Every Saturday, Amina joins a sports club at the community centre. She enjoys football and cycling. The coaches remind children to warm up and drink water before activities. New members can borrow helmets and bicycles from the club.","Salim loves music. He joined a drumming group at school and practises with friends every Monday. At home, he listens to new rhythms and tries to copy them. His parents enjoy hearing his progress.","Maha likes quiet hobbies. She paints pictures of birds and flowers, then sends photographs to her cousin. She sometimes visits the park to find new ideas. She uses a small paintbrush and keeps her colours in a box."]}]},{"key":"reading2","marks":5,"passage":"From: amina@school.example\nTo: reem@school.example\nSubject: Our new free-time club\nDear Reem,\nLast Saturday I joined the free-time club at the community sports centre. We met at nine in the morning. First, our coach showed us how to check bicycle helmets. Then we tried a short cycling course. I was nervous at the beginning, but a friend helped me. We also played a team game before lunch. Next Saturday we will try table tennis inside the centre. The club lends its equipment, so nobody needs to buy an expensive bicycle. I hope you can join us next week. Please ask the sports teacher by Thursday if you want to come.\nBest wishes,\nAmina","questions":[{"stem":"The club met on Saturday morning.","answer":0,"options":["True","False"],"kind":"tf"},{"stem":"Amina bought an expensive new bicycle.","answer":1,"options":["True","False"],"kind":"tf"},{"stem":"Her friend helped her during the cycling activity.","answer":0,"options":["True","False"],"kind":"tf"},{"stem":"The club will try table tennis next Saturday.","answer":0,"options":["True","False"],"kind":"tf"},{"stem":"Reem must contact a bus driver.","answer":1,"options":["True","False"],"kind":"tf"}]},{"key":"writing1","marks":5,"prompt":"Look at the three pictures. Write a story of at least 50 words about joining a new free-time sports club. Explain what happened first, next and finally. Use past-time expressions.","minWords":50,"images":["grades5-6/images/football.webp","grades5-6/images/park.webp","grades5-6/images/bicycle.webp"]},{"key":"writing2","marks":5,"prompt":"Write a short review of a sports club you visited. Describe the activities, facilities, people and one improvement you would suggest. Write at least 50 words.","minWords":50,"images":[]}]},{"unit":2,"sections":[{"key":"listening1","marks":5,"grid":"images","options":["grades5-6/images/robot.webp","grades5-6/images/computer.webp","grades5-6/images/camera.webp","grades5-6/images/clock.webp","grades5-6/images/bus.webp","grades5-6/images/book.webp"],"audio":"grades5-6/audio-reviewed/g6-b-listening-1.mp3","script":"","timing":{"intro":[0,6.36],"repeat":[72.648,74.04],"items":[[9.73,18.637],[22.061,30.776],[34.74,43.834],[47.237,56.167],[60.114,69.219]]},"questions":[{"stem":"Text 1","answer":1,"kind":"short","target":"grades5-6/images/computer.webp","script":"I am using a computer to design our class poster. It is easier to correct the headings on the screen."},{"stem":"Text 2","answer":0,"kind":"short","target":"grades5-6/images/robot.webp","script":"Our science team built a small robot that follows a black line. It moves because of the program we wrote."},{"stem":"Text 3","answer":2,"kind":"short","target":"grades5-6/images/camera.webp","script":"We will use a camera to record the experiment. We can compare the results before and after adding water."},{"stem":"Text 4","answer":3,"kind":"short","target":"grades5-6/images/clock.webp","script":"The classroom has a digital clock that shows the lesson time clearly. We use it during short group challenges."},{"stem":"Text 5","answer":5,"kind":"short","target":"grades5-6/images/book.webp","script":"I borrowed a book about inventions from the library. It explains how technology changed life in the past."}]},{"key":"listening2","marks":5,"audio":"grades5-6/audio-natural/g6-b-listening-2.mp3","script":"Interviewer: What did you build for the technology exhibition, Fatma? Fatma: A robot that waters plants. Interviewer: How does it check dry soil? Fatma: With a sensor connected to a computer program. Interviewer: Who helped you with the wires? Fatma: My older sister. Interviewer: Where did you demonstrate it? Fatma: At our school science exhibition. Interviewer: What will you add next? Fatma: A warning light for an empty water tank.","questions":[{"stem":"What does Fatma's robot do?","options":["Washes clothes","Waters plants","Carries bags"],"answer":1,"kind":"mc"},{"stem":"How does it check the soil?","options":["With a sensor","With a camera","With a clock"],"answer":0,"kind":"mc"},{"stem":"Who helped Fatma?","options":["Her teacher","Her cousin","Her sister"],"answer":2,"kind":"mc"},{"stem":"Where did she show the robot?","options":["At a market","At school","At a clinic"],"answer":1,"kind":"mc"},{"stem":"What will she add?","options":["A warning light","A bigger wheel","A keyboard"],"answer":0,"kind":"mc"}]},{"key":"vocabulary","marks":5,"questions":[{"stem":"Write the word.","answer":"robot","kind":"short","picture":"grades5-6/images/robot.webp","maxWords":1},{"stem":"Write the word.","answer":"computer","kind":"short","picture":"grades5-6/images/computer.webp","maxWords":1},{"stem":"Write the word.","answer":"camera","kind":"short","picture":"grades5-6/images/camera.webp","maxWords":1},{"stem":"Write the word.","answer":"clock","kind":"short","picture":"grades5-6/images/clock.webp","maxWords":1},{"stem":"Write the word.","answer":"book","kind":"short","picture":"grades5-6/images/book.webp","maxWords":1}]},{"key":"grammar","marks":5,"questions":[{"stem":"My grandfather ____ use a tablet when he was young.","options":["could not","does not"],"answer":0,"kind":"mc","point":"past-ability"},{"stem":"We ____ restart the computer yesterday.","options":["have to","had to"],"answer":1,"kind":"mc","point":"past-obligation"},{"stem":"This new laptop works ____ than our old one.","options":["more quickly","most quickly"],"answer":0,"kind":"mc","point":"comparative-adverb"},{"stem":"I ____ send the message because the internet was down.","options":["cannot","could not"],"answer":1,"kind":"mc","point":"past-ability"},{"stem":"The students ____ save their files before leaving yesterday.","options":["had to","has to"],"answer":0,"kind":"mc","point":"past-obligation"}]},{"key":"reading1","marks":5,"questions":[{"stem":"Which text describes a robot that waters plants?","answer":0,"kind":"match","options":["Our science club designed a robot to water plants when the soil became dry. The students connected a sensor to a simple program. They tested the model several times before showing it at the school exhibition.","The digital photography group used a camera to record an experiment. The students took pictures before and after adding water. They compared the results on a computer and explained their findings to the class.","Mariam wrote an online safety guide for younger pupils. She advised students not to share passwords and to ask an adult before downloading unknown files. Her teacher checked the guide before it appeared on the class website."]},{"stem":"Which text mentions a sensor?","answer":0,"kind":"match","options":["Our science club designed a robot to water plants when the soil became dry. The students connected a sensor to a simple program. They tested the model several times before showing it at the school exhibition.","The digital photography group used a camera to record an experiment. The students took pictures before and after adding water. They compared the results on a computer and explained their findings to the class.","Mariam wrote an online safety guide for younger pupils. She advised students not to share passwords and to ask an adult before downloading unknown files. Her teacher checked the guide before it appeared on the class website."]},{"stem":"Which text uses photographs to compare results?","answer":1,"kind":"match","options":["Our science club designed a robot to water plants when the soil became dry. The students connected a sensor to a simple program. They tested the model several times before showing it at the school exhibition.","The digital photography group used a camera to record an experiment. The students took pictures before and after adding water. They compared the results on a computer and explained their findings to the class.","Mariam wrote an online safety guide for younger pupils. She advised students not to share passwords and to ask an adult before downloading unknown files. Her teacher checked the guide before it appeared on the class website."]},{"stem":"Which text explains using a computer to study an experiment?","answer":1,"kind":"match","options":["Our science club designed a robot to water plants when the soil became dry. The students connected a sensor to a simple program. They tested the model several times before showing it at the school exhibition.","The digital photography group used a camera to record an experiment. The students took pictures before and after adding water. They compared the results on a computer and explained their findings to the class.","Mariam wrote an online safety guide for younger pupils. She advised students not to share passwords and to ask an adult before downloading unknown files. Her teacher checked the guide before it appeared on the class website."]},{"stem":"Which text gives advice about passwords?","answer":2,"kind":"match","options":["Our science club designed a robot to water plants when the soil became dry. The students connected a sensor to a simple program. They tested the model several times before showing it at the school exhibition.","The digital photography group used a camera to record an experiment. The students took pictures before and after adding water. They compared the results on a computer and explained their findings to the class.","Mariam wrote an online safety guide for younger pupils. She advised students not to share passwords and to ask an adult before downloading unknown files. Her teacher checked the guide before it appeared on the class website."]}]},{"key":"reading2","marks":5,"passage":"From: fatma@school.example\nTo: salma@school.example\nSubject: Our technology project\nDear Salma,\nYesterday we presented our new robot at the school science exhibition. It can water a small plant when a sensor detects dry soil. My sister helped me check the wires safely, and I wrote a simple program on the computer. At first the sensor gave the wrong reading. We moved it and tested the robot again. The model worked during the exhibition, and our teacher was pleased. Next month we hope to add a light to show when the water tank is empty. Please visit our technology club on Tuesday if you would like to see it.\nBest wishes,\nFatma","questions":[{"stem":"Fatma's robot waters plants.","answer":0,"options":["True","False"],"kind":"tf"},{"stem":"Her cousin checked the wires.","answer":1,"options":["True","False"],"kind":"tf"},{"stem":"The sensor worked perfectly from the beginning.","answer":1,"options":["True","False"],"kind":"tf"},{"stem":"They tested the robot again after changing the sensor position.","answer":0,"options":["True","False"],"kind":"tf"},{"stem":"They hope to add a warning light.","answer":0,"options":["True","False"],"kind":"tf"}]},{"key":"writing1","marks":5,"prompt":"Look at the three pictures. Write a story of at least 50 words about preparing a simple technology project for school. Explain how you used the devices and what happened.","minWords":50,"images":["grades5-6/images/computer.webp","grades5-6/images/robot.webp","grades5-6/images/camera.webp"]},{"key":"writing2","marks":5,"prompt":"Write a review of a school technology demonstration. Explain what the invention does, why it is useful, and how it could improve. Write at least 50 words.","minWords":50,"images":[]}]},{"unit":3,"sections":[{"key":"listening1","marks":5,"grid":"images","options":["grades5-6/images/market.webp","grades5-6/images/library.webp","grades5-6/images/museum.webp","grades5-6/images/park.webp","grades5-6/images/clinic.webp","grades5-6/images/beach.webp"],"audio":"grades5-6/audio-reviewed/g6-c-listening-1.mp3","script":"","timing":{"intro":[0,6.357],"repeat":[72.816,74.208],"items":[[9.73,19.589],[23.021,32.356],[36.324,44.101],[47.525,56.017],[59.97,69.419]]},"questions":[{"stem":"Text 1","answer":1,"kind":"short","target":"grades5-6/images/library.webp","script":"I need a book about Omani history, so I am visiting the public library near the roundabout. It closes at six."},{"stem":"Text 2","answer":2,"kind":"short","target":"grades5-6/images/museum.webp","script":"The old wooden boats are displayed inside the museum beside the fort. A guide tells visitors about sea trade."},{"stem":"Text 3","answer":4,"kind":"short","target":"grades5-6/images/clinic.webp","script":"My brother hurt his ankle, so we will visit the clinic opposite the supermarket this afternoon."},{"stem":"Text 4","answer":0,"kind":"short","target":"grades5-6/images/market.webp","script":"We buy vegetables and fresh fish at the market behind the bus station. It is busiest in the morning."},{"stem":"Text 5","answer":5,"kind":"short","target":"grades5-6/images/beach.webp","script":"Our family walked along the beach at the weekend. We collected litter, but did not swim because the waves were strong."}]},{"key":"listening2","marks":5,"audio":"grades5-6/audio-natural/g6-c-listening-2.mp3","script":"Interviewer: What is your favourite place in town, Dana? Dana: The public library. Interviewer: Where can we find it? Dana: Opposite the main park, beside the post office. Interviewer: When does it open on weekdays? Dana: At nine in the morning. Interviewer: What can children do there? Dana: Read and join story club. Interviewer: What happens every Wednesday? Dana: A librarian runs a reading activity. Interviewer: How do you get there? Dana: I walk with my father.","questions":[{"stem":"What is Dana's favourite place?","options":["Library","Museum","Beach"],"answer":0,"kind":"mc"},{"stem":"Where is it?","options":["Near the clinic","Opposite the main park","Inside the school"],"answer":1,"kind":"mc"},{"stem":"When does it open?","options":["At seven","At eight","At nine"],"answer":2,"kind":"mc"},{"stem":"What happens on Wednesday?","options":["A reading activity","A football match","A science test"],"answer":0,"kind":"mc"},{"stem":"How does Dana travel there?","options":["By bus","On foot","By boat"],"answer":1,"kind":"mc"}]},{"key":"vocabulary","marks":5,"questions":[{"stem":"Write the word.","answer":"market","kind":"short","picture":"grades5-6/images/market.webp","maxWords":1},{"stem":"Write the word.","answer":"library","kind":"short","picture":"grades5-6/images/library.webp","maxWords":1},{"stem":"Write the word.","answer":"museum","kind":"short","picture":"grades5-6/images/museum.webp","maxWords":1},{"stem":"Write the word.","answer":"park","kind":"short","picture":"grades5-6/images/park.webp","maxWords":1},{"stem":"Write the word.","answer":"clinic","kind":"short","picture":"grades5-6/images/clinic.webp","maxWords":1}]},{"key":"grammar","marks":5,"questions":[{"stem":"We ____ towards the museum when it started to rain.","options":["were walking","walk"],"answer":0,"kind":"mc","point":"past-continuous"},{"stem":"This is the building ____ my uncle works.","options":["who","where"],"answer":1,"kind":"mc","point":"relative-clause"},{"stem":"A guide is a person ____ helps visitors.","options":["who","where"],"answer":0,"kind":"mc","point":"relative-clause"},{"stem":"At four o’clock, the tourists ____ photos near the bridge.","options":["take","were taking"],"answer":1,"kind":"mc","point":"past-continuous"},{"stem":"I met a woman ____ lives beside the old fort.","options":["who","which"],"answer":0,"kind":"mc","point":"relative-clause"}]},{"key":"reading1","marks":5,"questions":[{"stem":"Which text mentions a study room?","answer":0,"kind":"match","options":["The public library is opposite the main park, beside the post office. It opens at nine on weekdays and has a quiet study room. Children can borrow books and join a story club every Wednesday.","The town museum displays old boats and photographs of the harbour. Visitors can learn about journeys along the coast. Our class listened to a guide explain how people traded goods in the past.","The community clinic is next to the market. A nurse helps families who need medical advice. The clinic opens in the morning and afternoon, but people should telephone before visiting on holidays."]},{"stem":"Which text describes old boats and a harbour?","answer":1,"kind":"match","options":["The public library is opposite the main park, beside the post office. It opens at nine on weekdays and has a quiet study room. Children can borrow books and join a story club every Wednesday.","The town museum displays old boats and photographs of the harbour. Visitors can learn about journeys along the coast. Our class listened to a guide explain how people traded goods in the past.","The community clinic is next to the market. A nurse helps families who need medical advice. The clinic opens in the morning and afternoon, but people should telephone before visiting on holidays."]},{"stem":"Which text is about a health service?","answer":2,"kind":"match","options":["The public library is opposite the main park, beside the post office. It opens at nine on weekdays and has a quiet study room. Children can borrow books and join a story club every Wednesday.","The town museum displays old boats and photographs of the harbour. Visitors can learn about journeys along the coast. Our class listened to a guide explain how people traded goods in the past.","The community clinic is next to the market. A nurse helps families who need medical advice. The clinic opens in the morning and afternoon, but people should telephone before visiting on holidays."]},{"stem":"Which text mentions borrowing books?","answer":0,"kind":"match","options":["The public library is opposite the main park, beside the post office. It opens at nine on weekdays and has a quiet study room. Children can borrow books and join a story club every Wednesday.","The town museum displays old boats and photographs of the harbour. Visitors can learn about journeys along the coast. Our class listened to a guide explain how people traded goods in the past.","The community clinic is next to the market. A nurse helps families who need medical advice. The clinic opens in the morning and afternoon, but people should telephone before visiting on holidays."]},{"stem":"Which text advises calling before visiting on holidays?","answer":2,"kind":"match","options":["The public library is opposite the main park, beside the post office. It opens at nine on weekdays and has a quiet study room. Children can borrow books and join a story club every Wednesday.","The town museum displays old boats and photographs of the harbour. Visitors can learn about journeys along the coast. Our class listened to a guide explain how people traded goods in the past.","The community clinic is next to the market. A nurse helps families who need medical advice. The clinic opens in the morning and afternoon, but people should telephone before visiting on holidays."]}]},{"key":"reading2","marks":5,"passage":"From: dana@school.example\nTo: reem@school.example\nSubject: A place I recommend\nDear Reem,\nI visited our town library with my father last Wednesday. It is opposite the main park, next to the post office. We arrived at ten in the morning. A librarian showed us the children's reading area and helped me choose a book about Oman. At eleven, we joined a storytelling activity with other pupils. My father borrowed a history book, and we walked home before lunch. I want to visit the museum next weekend because it has photographs of old boats. If you are free on Wednesday, we can go to the library together.\nBest wishes,\nDana","questions":[{"stem":"Dana visited the library on Wednesday.","answer":0,"options":["True","False"],"kind":"tf"},{"stem":"The library is beside the airport.","answer":1,"options":["True","False"],"kind":"tf"},{"stem":"A librarian helped Dana find a book.","answer":0,"options":["True","False"],"kind":"tf"},{"stem":"Dana's father borrowed a history book.","answer":0,"options":["True","False"],"kind":"tf"},{"stem":"Dana has already visited the museum this weekend.","answer":1,"options":["True","False"],"kind":"tf"}]},{"key":"writing1","marks":5,"prompt":"Look at the three pictures. Write a story of at least 50 words about exploring an unfamiliar place in Oman. Include your journey, something you discovered and how you returned home.","minWords":50,"images":["grades5-6/images/bridge.webp","grades5-6/images/museum.webp","grades5-6/images/boat.webp"]},{"key":"writing2","marks":5,"prompt":"Write a review of a place you visited, such as a museum, fort or town. Explain how you travelled, what you saw, and whether you recommend it. Write at least 50 words.","minWords":50,"images":[]}]}]}
+{
+  "grade": 6,
+  "minutes": 90,
+  "marks": 40,
+  "units": [
+    {
+      "unit": 1,
+      "sections": [
+        {
+          "key": "listening1",
+          "marks": 5,
+          "grid": "images",
+          "options": [
+            "grades5-6/images/football.webp",
+            "grades5-6/images/bicycle.webp",
+            "grades5-6/images/drum.webp",
+            "grades5-6/images/piano.webp",
+            "grades5-6/images/kite.webp",
+            "grades5-6/images/paintbrush.webp"
+          ],
+          "audio": "grades5-6/audio-reviewed/g6-a-listening-1.mp3",
+          "script": "",
+          "timing": {
+            "intro": [
+              0,
+              6.357
+            ],
+            "repeat": [
+              71.328,
+              72.72
+            ],
+            "items": [
+              [
+                9.73,
+                19.231
+              ],
+              [
+                22.685,
+                31.019
+              ],
+              [
+                34.956,
+                43.754
+              ],
+              [
+                47.189,
+                55.223
+              ],
+              [
+                59.178,
+                67.911
+              ]
+            ]
+          },
+          "questions": [
+            {
+              "stem": "Text 1",
+              "answer": 0,
+              "kind": "short",
+              "target": "grades5-6/images/football.webp",
+              "script": "After finishing my homework I play football with my neighbours at the small field. We meet there three evenings a week."
+            },
+            {
+              "stem": "Text 2",
+              "answer": 2,
+              "kind": "short",
+              "target": "grades5-6/images/drum.webp",
+              "script": "I joined the school music club to learn the drum. We practise rhythms every Monday with our teacher."
+            },
+            {
+              "stem": "Text 3",
+              "answer": 1,
+              "kind": "short",
+              "target": "grades5-6/images/bicycle.webp",
+              "script": "I love riding my bicycle on quiet paths. My father checks my helmet before we leave the house."
+            },
+            {
+              "stem": "Text 4",
+              "answer": 4,
+              "kind": "short",
+              "target": "grades5-6/images/kite.webp",
+              "script": "The wind is strong today, so we will fly our kite in the open park away from roads and power lines."
+            },
+            {
+              "stem": "Text 5",
+              "answer": 5,
+              "kind": "short",
+              "target": "grades5-6/images/paintbrush.webp",
+              "script": "During the holiday I started painting. My aunt lent me a paintbrush and I made a picture of our garden."
+            }
+          ]
+        },
+        {
+          "key": "listening2",
+          "marks": 5,
+          "audio": "grades5-6/audio-natural/g6-a-listening-2.mp3",
+          "script": "Interviewer: When does the free-time club meet, Yousuf? Yousuf: Every Saturday. Interviewer: Where do members meet? Yousuf: At the community sports centre. Interviewer: Which activity was popular last month? Yousuf: Cycling. Interviewer: Do children bring their own bicycles? Yousuf: No, the centre lends bicycles and helmets. Interviewer: What will you try next Saturday? Yousuf: Table tennis indoors.",
+          "questions": [
+            {
+              "stem": "When is the club?",
+              "options": [
+                "Monday",
+                "Saturday",
+                "Friday"
+              ],
+              "answer": 1,
+              "kind": "mc"
+            },
+            {
+              "stem": "Where is the club?",
+              "options": [
+                "At the sports centre",
+                "In the library",
+                "At the beach"
+              ],
+              "answer": 0,
+              "kind": "mc"
+            },
+            {
+              "stem": "What was most popular?",
+              "options": [
+                "Chess",
+                "Swimming",
+                "Cycling"
+              ],
+              "answer": 2,
+              "kind": "mc"
+            },
+            {
+              "stem": "What does the club lend?",
+              "options": [
+                "Books",
+                "Helmets and bicycles",
+                "Cameras"
+              ],
+              "answer": 1,
+              "kind": "mc"
+            },
+            {
+              "stem": "What is next week's activity?",
+              "options": [
+                "Table tennis",
+                "Horse riding",
+                "Painting"
+              ],
+              "answer": 0,
+              "kind": "mc"
+            }
+          ]
+        },
+        {
+          "key": "vocabulary",
+          "marks": 5,
+          "questions": [
+            {
+              "stem": "Write the word.",
+              "answer": "camera",
+              "kind": "short",
+              "picture": "grades5-6/images/camera.webp",
+              "maxWords": 1
+            },
+            {
+              "stem": "Write the word.",
+              "answer": "book",
+              "kind": "short",
+              "picture": "grades5-6/images/book.webp",
+              "maxWords": 1
+            },
+            {
+              "stem": "Write the word.",
+              "answer": "boat",
+              "kind": "short",
+              "picture": "grades5-6/images/boat.webp",
+              "maxWords": 1
+            },
+            {
+              "stem": "Write the word.",
+              "answer": "gift",
+              "kind": "short",
+              "picture": "grades5-6/images/gift.webp",
+              "maxWords": 1
+            },
+            {
+              "stem": "Write the word.",
+              "answer": "clock",
+              "kind": "short",
+              "picture": "grades5-6/images/clock.webp",
+              "maxWords": 1
+            }
+          ]
+        },
+        {
+          "key": "grammar",
+          "marks": 5,
+          "questions": [
+            {
+              "stem": "Sara usually ____ volleyball on Thursdays.",
+              "options": [
+                "plays",
+                "is playing"
+              ],
+              "answer": 0,
+              "kind": "mc",
+              "point": "present-simple"
+            },
+            {
+              "stem": "Listen! My friends ____ music in the garden.",
+              "options": [
+                "are playing",
+                "play"
+              ],
+              "answer": 0,
+              "kind": "mc",
+              "point": "present-continuous"
+            },
+            {
+              "stem": "We ____ board games every weekend.",
+              "options": [
+                "play",
+                "are playing"
+              ],
+              "answer": 0,
+              "kind": "mc",
+              "point": "present-simple"
+            },
+            {
+              "stem": "Look! The children ____ gymnastics now.",
+              "options": [
+                "do",
+                "are doing"
+              ],
+              "answer": 1,
+              "kind": "mc",
+              "point": "present-continuous"
+            },
+            {
+              "stem": "He ____ his diary every evening.",
+              "options": [
+                "writes",
+                "is writing"
+              ],
+              "answer": 0,
+              "kind": "mc",
+              "point": "present-simple"
+            }
+          ]
+        },
+        {
+          "key": "reading1",
+          "marks": 5,
+          "questions": [
+            {
+              "stem": "Which text describes football and cycling?",
+              "answer": 0,
+              "kind": "match",
+              "options": [
+                "Every Saturday, Amina joins a sports club at the community centre. She enjoys football and cycling. The coaches remind children to warm up and drink water before activities. New members can borrow helmets and bicycles from the club.",
+                "Salim loves music. He joined a drumming group at school and practises with friends every Monday. At home, he listens to new rhythms and tries to copy them. His parents enjoy hearing his progress.",
+                "Maha likes quiet hobbies. She paints pictures of birds and flowers, then sends photographs to her cousin. She sometimes visits the park to find new ideas. She uses a small paintbrush and keeps her colours in a box."
+              ]
+            },
+            {
+              "stem": "Which text mentions borrowing safety equipment?",
+              "answer": 0,
+              "kind": "match",
+              "options": [
+                "Every Saturday, Amina joins a sports club at the community centre. She enjoys football and cycling. The coaches remind children to warm up and drink water before activities. New members can borrow helmets and bicycles from the club.",
+                "Salim loves music. He joined a drumming group at school and practises with friends every Monday. At home, he listens to new rhythms and tries to copy them. His parents enjoy hearing his progress.",
+                "Maha likes quiet hobbies. She paints pictures of birds and flowers, then sends photographs to her cousin. She sometimes visits the park to find new ideas. She uses a small paintbrush and keeps her colours in a box."
+              ]
+            },
+            {
+              "stem": "Which text describes practising music?",
+              "answer": 1,
+              "kind": "match",
+              "options": [
+                "Every Saturday, Amina joins a sports club at the community centre. She enjoys football and cycling. The coaches remind children to warm up and drink water before activities. New members can borrow helmets and bicycles from the club.",
+                "Salim loves music. He joined a drumming group at school and practises with friends every Monday. At home, he listens to new rhythms and tries to copy them. His parents enjoy hearing his progress.",
+                "Maha likes quiet hobbies. She paints pictures of birds and flowers, then sends photographs to her cousin. She sometimes visits the park to find new ideas. She uses a small paintbrush and keeps her colours in a box."
+              ]
+            },
+            {
+              "stem": "Which text mentions sharing pictures with a cousin?",
+              "answer": 2,
+              "kind": "match",
+              "options": [
+                "Every Saturday, Amina joins a sports club at the community centre. She enjoys football and cycling. The coaches remind children to warm up and drink water before activities. New members can borrow helmets and bicycles from the club.",
+                "Salim loves music. He joined a drumming group at school and practises with friends every Monday. At home, he listens to new rhythms and tries to copy them. His parents enjoy hearing his progress.",
+                "Maha likes quiet hobbies. She paints pictures of birds and flowers, then sends photographs to her cousin. She sometimes visits the park to find new ideas. She uses a small paintbrush and keeps her colours in a box."
+              ]
+            },
+            {
+              "stem": "Which text mentions looking for ideas in a park?",
+              "answer": 2,
+              "kind": "match",
+              "options": [
+                "Every Saturday, Amina joins a sports club at the community centre. She enjoys football and cycling. The coaches remind children to warm up and drink water before activities. New members can borrow helmets and bicycles from the club.",
+                "Salim loves music. He joined a drumming group at school and practises with friends every Monday. At home, he listens to new rhythms and tries to copy them. His parents enjoy hearing his progress.",
+                "Maha likes quiet hobbies. She paints pictures of birds and flowers, then sends photographs to her cousin. She sometimes visits the park to find new ideas. She uses a small paintbrush and keeps her colours in a box."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "reading2",
+          "marks": 5,
+          "passage": "From: amina@school.example\nTo: reem@school.example\nSubject: Our new free-time club\nDear Reem,\nLast Saturday I joined the free-time club at the community sports centre. We met at nine in the morning. First, our coach showed us how to check bicycle helmets. Then we tried a short cycling course. I was nervous at the beginning, but a friend helped me. We also played a team game before lunch. Next Saturday we will try table tennis inside the centre. The club lends its equipment, so nobody needs to buy an expensive bicycle. I hope you can join us next week. Please ask the sports teacher by Thursday if you want to come.\nBest wishes,\nAmina",
+          "questions": [
+            {
+              "stem": "The club met on Saturday morning.",
+              "answer": 0,
+              "options": [
+                "True",
+                "False"
+              ],
+              "kind": "tf"
+            },
+            {
+              "stem": "Amina bought an expensive new bicycle.",
+              "answer": 1,
+              "options": [
+                "True",
+                "False"
+              ],
+              "kind": "tf"
+            },
+            {
+              "stem": "Her friend helped her during the cycling activity.",
+              "answer": 0,
+              "options": [
+                "True",
+                "False"
+              ],
+              "kind": "tf"
+            },
+            {
+              "stem": "The club will try table tennis next Saturday.",
+              "answer": 0,
+              "options": [
+                "True",
+                "False"
+              ],
+              "kind": "tf"
+            },
+            {
+              "stem": "Reem must contact a bus driver.",
+              "answer": 1,
+              "options": [
+                "True",
+                "False"
+              ],
+              "kind": "tf"
+            }
+          ]
+        },
+        {
+          "key": "writing1",
+          "marks": 5,
+          "prompt": "Look at the three pictures. Write a story of at least 50 words about joining a new free-time sports club. Explain what happened first, next and finally. Use past-time expressions.",
+          "minWords": 50,
+          "images": [
+            "grades5-6/images/park.webp",
+            "grades5-6/images/beach.webp",
+            "grades5-6/images/bus.webp"
+          ]
+        },
+        {
+          "key": "writing2",
+          "marks": 5,
+          "prompt": "Write a short review of a sports club you visited. Describe the activities, facilities, people and one improvement you would suggest. Write at least 50 words.",
+          "minWords": 50,
+          "images": []
+        }
+      ]
+    },
+    {
+      "unit": 2,
+      "sections": [
+        {
+          "key": "listening1",
+          "marks": 5,
+          "grid": "images",
+          "options": [
+            "grades5-6/images/robot.webp",
+            "grades5-6/images/computer.webp",
+            "grades5-6/images/camera.webp",
+            "grades5-6/images/clock.webp",
+            "grades5-6/images/bus.webp",
+            "grades5-6/images/book.webp"
+          ],
+          "audio": "grades5-6/audio-reviewed/g6-b-listening-1.mp3",
+          "script": "",
+          "timing": {
+            "intro": [
+              0,
+              6.36
+            ],
+            "repeat": [
+              72.648,
+              74.04
+            ],
+            "items": [
+              [
+                9.73,
+                18.637
+              ],
+              [
+                22.061,
+                30.776
+              ],
+              [
+                34.74,
+                43.834
+              ],
+              [
+                47.237,
+                56.167
+              ],
+              [
+                60.114,
+                69.219
+              ]
+            ]
+          },
+          "questions": [
+            {
+              "stem": "Text 1",
+              "answer": 1,
+              "kind": "short",
+              "target": "grades5-6/images/computer.webp",
+              "script": "I am using a computer to design our class poster. It is easier to correct the headings on the screen."
+            },
+            {
+              "stem": "Text 2",
+              "answer": 0,
+              "kind": "short",
+              "target": "grades5-6/images/robot.webp",
+              "script": "Our science team built a small robot that follows a black line. It moves because of the program we wrote."
+            },
+            {
+              "stem": "Text 3",
+              "answer": 2,
+              "kind": "short",
+              "target": "grades5-6/images/camera.webp",
+              "script": "We will use a camera to record the experiment. We can compare the results before and after adding water."
+            },
+            {
+              "stem": "Text 4",
+              "answer": 3,
+              "kind": "short",
+              "target": "grades5-6/images/clock.webp",
+              "script": "The classroom has a digital clock that shows the lesson time clearly. We use it during short group challenges."
+            },
+            {
+              "stem": "Text 5",
+              "answer": 5,
+              "kind": "short",
+              "target": "grades5-6/images/book.webp",
+              "script": "I borrowed a book about inventions from the library. It explains how technology changed life in the past."
+            }
+          ]
+        },
+        {
+          "key": "listening2",
+          "marks": 5,
+          "audio": "grades5-6/audio-natural/g6-b-listening-2.mp3",
+          "script": "Interviewer: What did you build for the technology exhibition, Fatma? Fatma: A robot that waters plants. Interviewer: How does it check dry soil? Fatma: With a sensor connected to a computer program. Interviewer: Who helped you with the wires? Fatma: My older sister. Interviewer: Where did you demonstrate it? Fatma: At our school science exhibition. Interviewer: What will you add next? Fatma: A warning light for an empty water tank.",
+          "questions": [
+            {
+              "stem": "What does Fatma's robot do?",
+              "options": [
+                "Washes clothes",
+                "Waters plants",
+                "Carries bags"
+              ],
+              "answer": 1,
+              "kind": "mc"
+            },
+            {
+              "stem": "How does it check the soil?",
+              "options": [
+                "With a sensor",
+                "With a camera",
+                "With a clock"
+              ],
+              "answer": 0,
+              "kind": "mc"
+            },
+            {
+              "stem": "Who helped Fatma?",
+              "options": [
+                "Her teacher",
+                "Her cousin",
+                "Her sister"
+              ],
+              "answer": 2,
+              "kind": "mc"
+            },
+            {
+              "stem": "Where did she show the robot?",
+              "options": [
+                "At a market",
+                "At school",
+                "At a clinic"
+              ],
+              "answer": 1,
+              "kind": "mc"
+            },
+            {
+              "stem": "What will she add?",
+              "options": [
+                "A warning light",
+                "A bigger wheel",
+                "A keyboard"
+              ],
+              "answer": 0,
+              "kind": "mc"
+            }
+          ]
+        },
+        {
+          "key": "vocabulary",
+          "marks": 5,
+          "questions": [
+            {
+              "stem": "Write the word.",
+              "answer": "lamp",
+              "kind": "short",
+              "picture": "grades5-6/images/solar-study-lamp.webp",
+              "maxWords": 1
+            },
+            {
+              "stem": "Write the word.",
+              "answer": "satellite",
+              "kind": "short",
+              "picture": "grades5-6/images/satellite.webp",
+              "maxWords": 1
+            },
+            {
+              "stem": "Write the word.",
+              "answer": "telescope",
+              "kind": "short",
+              "picture": "grades5-6/images/telescope.webp",
+              "maxWords": 1
+            },
+            {
+              "stem": "Write the word.",
+              "answer": "microphone",
+              "kind": "short",
+              "picture": "grades5-6/images/studio-microphone.webp",
+              "maxWords": 1
+            },
+            {
+              "stem": "Write the word.",
+              "answer": "tablet",
+              "kind": "short",
+              "picture": "grades5-6/images/bus-timetable-tablet.webp",
+              "maxWords": 1
+            }
+          ]
+        },
+        {
+          "key": "grammar",
+          "marks": 5,
+          "questions": [
+            {
+              "stem": "My grandfather ____ use a tablet when he was young.",
+              "options": [
+                "could not",
+                "does not"
+              ],
+              "answer": 0,
+              "kind": "mc",
+              "point": "past-ability"
+            },
+            {
+              "stem": "We ____ restart the computer yesterday.",
+              "options": [
+                "have to",
+                "had to"
+              ],
+              "answer": 1,
+              "kind": "mc",
+              "point": "past-obligation"
+            },
+            {
+              "stem": "This new laptop works ____ than our old one.",
+              "options": [
+                "more quickly",
+                "most quickly"
+              ],
+              "answer": 0,
+              "kind": "mc",
+              "point": "comparative-adverb"
+            },
+            {
+              "stem": "I ____ send the message because the internet was down.",
+              "options": [
+                "cannot",
+                "could not"
+              ],
+              "answer": 1,
+              "kind": "mc",
+              "point": "past-ability"
+            },
+            {
+              "stem": "The students ____ save their files before leaving yesterday.",
+              "options": [
+                "had to",
+                "has to"
+              ],
+              "answer": 0,
+              "kind": "mc",
+              "point": "past-obligation"
+            }
+          ]
+        },
+        {
+          "key": "reading1",
+          "marks": 5,
+          "questions": [
+            {
+              "stem": "Which text describes a robot that waters plants?",
+              "answer": 0,
+              "kind": "match",
+              "options": [
+                "Our science club designed a robot to water plants when the soil became dry. The students connected a sensor to a simple program. They tested the model several times before showing it at the school exhibition.",
+                "The digital photography group used a camera to record an experiment. The students took pictures before and after adding water. They compared the results on a computer and explained their findings to the class.",
+                "Mariam wrote an online safety guide for younger pupils. She advised students not to share passwords and to ask an adult before downloading unknown files. Her teacher checked the guide before it appeared on the class website."
+              ]
+            },
+            {
+              "stem": "Which text mentions a sensor?",
+              "answer": 0,
+              "kind": "match",
+              "options": [
+                "Our science club designed a robot to water plants when the soil became dry. The students connected a sensor to a simple program. They tested the model several times before showing it at the school exhibition.",
+                "The digital photography group used a camera to record an experiment. The students took pictures before and after adding water. They compared the results on a computer and explained their findings to the class.",
+                "Mariam wrote an online safety guide for younger pupils. She advised students not to share passwords and to ask an adult before downloading unknown files. Her teacher checked the guide before it appeared on the class website."
+              ]
+            },
+            {
+              "stem": "Which text uses photographs to compare results?",
+              "answer": 1,
+              "kind": "match",
+              "options": [
+                "Our science club designed a robot to water plants when the soil became dry. The students connected a sensor to a simple program. They tested the model several times before showing it at the school exhibition.",
+                "The digital photography group used a camera to record an experiment. The students took pictures before and after adding water. They compared the results on a computer and explained their findings to the class.",
+                "Mariam wrote an online safety guide for younger pupils. She advised students not to share passwords and to ask an adult before downloading unknown files. Her teacher checked the guide before it appeared on the class website."
+              ]
+            },
+            {
+              "stem": "Which text explains using a computer to study an experiment?",
+              "answer": 1,
+              "kind": "match",
+              "options": [
+                "Our science club designed a robot to water plants when the soil became dry. The students connected a sensor to a simple program. They tested the model several times before showing it at the school exhibition.",
+                "The digital photography group used a camera to record an experiment. The students took pictures before and after adding water. They compared the results on a computer and explained their findings to the class.",
+                "Mariam wrote an online safety guide for younger pupils. She advised students not to share passwords and to ask an adult before downloading unknown files. Her teacher checked the guide before it appeared on the class website."
+              ]
+            },
+            {
+              "stem": "Which text gives advice about passwords?",
+              "answer": 2,
+              "kind": "match",
+              "options": [
+                "Our science club designed a robot to water plants when the soil became dry. The students connected a sensor to a simple program. They tested the model several times before showing it at the school exhibition.",
+                "The digital photography group used a camera to record an experiment. The students took pictures before and after adding water. They compared the results on a computer and explained their findings to the class.",
+                "Mariam wrote an online safety guide for younger pupils. She advised students not to share passwords and to ask an adult before downloading unknown files. Her teacher checked the guide before it appeared on the class website."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "reading2",
+          "marks": 5,
+          "passage": "From: fatma@school.example\nTo: salma@school.example\nSubject: Our technology project\nDear Salma,\nYesterday we presented our new robot at the school science exhibition. It can water a small plant when a sensor detects dry soil. My sister helped me check the wires safely, and I wrote a simple program on the computer. At first the sensor gave the wrong reading. We moved it and tested the robot again. The model worked during the exhibition, and our teacher was pleased. Next month we hope to add a light to show when the water tank is empty. Please visit our technology club on Tuesday if you would like to see it.\nBest wishes,\nFatma",
+          "questions": [
+            {
+              "stem": "Fatma's robot waters plants.",
+              "answer": 0,
+              "options": [
+                "True",
+                "False"
+              ],
+              "kind": "tf"
+            },
+            {
+              "stem": "Her cousin checked the wires.",
+              "answer": 1,
+              "options": [
+                "True",
+                "False"
+              ],
+              "kind": "tf"
+            },
+            {
+              "stem": "The sensor worked perfectly from the beginning.",
+              "answer": 1,
+              "options": [
+                "True",
+                "False"
+              ],
+              "kind": "tf"
+            },
+            {
+              "stem": "They tested the robot again after changing the sensor position.",
+              "answer": 0,
+              "options": [
+                "True",
+                "False"
+              ],
+              "kind": "tf"
+            },
+            {
+              "stem": "They hope to add a warning light.",
+              "answer": 0,
+              "options": [
+                "True",
+                "False"
+              ],
+              "kind": "tf"
+            }
+          ]
+        },
+        {
+          "key": "writing1",
+          "marks": 5,
+          "prompt": "Look at the three pictures. Write a story of at least 50 words about preparing a simple technology project for school. Explain how you used the devices and what happened.",
+          "minWords": 50,
+          "images": [
+            "grades5-6/images/library.webp",
+            "grades5-6/images/park.webp",
+            "grades5-6/images/bridge.webp"
+          ]
+        },
+        {
+          "key": "writing2",
+          "marks": 5,
+          "prompt": "Write a review of a school technology demonstration. Explain what the invention does, why it is useful, and how it could improve. Write at least 50 words.",
+          "minWords": 50,
+          "images": []
+        }
+      ]
+    },
+    {
+      "unit": 3,
+      "sections": [
+        {
+          "key": "listening1",
+          "marks": 5,
+          "grid": "images",
+          "options": [
+            "grades5-6/images/market.webp",
+            "grades5-6/images/library.webp",
+            "grades5-6/images/museum.webp",
+            "grades5-6/images/park.webp",
+            "grades5-6/images/clinic.webp",
+            "grades5-6/images/beach.webp"
+          ],
+          "audio": "grades5-6/audio-reviewed/g6-c-listening-1.mp3",
+          "script": "",
+          "timing": {
+            "intro": [
+              0,
+              6.357
+            ],
+            "repeat": [
+              72.816,
+              74.208
+            ],
+            "items": [
+              [
+                9.73,
+                19.589
+              ],
+              [
+                23.021,
+                32.356
+              ],
+              [
+                36.324,
+                44.101
+              ],
+              [
+                47.525,
+                56.017
+              ],
+              [
+                59.97,
+                69.419
+              ]
+            ]
+          },
+          "questions": [
+            {
+              "stem": "Text 1",
+              "answer": 1,
+              "kind": "short",
+              "target": "grades5-6/images/library.webp",
+              "script": "I need a book about Omani history, so I am visiting the public library near the roundabout. It closes at six."
+            },
+            {
+              "stem": "Text 2",
+              "answer": 2,
+              "kind": "short",
+              "target": "grades5-6/images/museum.webp",
+              "script": "The old wooden boats are displayed inside the museum beside the fort. A guide tells visitors about sea trade."
+            },
+            {
+              "stem": "Text 3",
+              "answer": 4,
+              "kind": "short",
+              "target": "grades5-6/images/clinic.webp",
+              "script": "My brother hurt his ankle, so we will visit the clinic opposite the supermarket this afternoon."
+            },
+            {
+              "stem": "Text 4",
+              "answer": 0,
+              "kind": "short",
+              "target": "grades5-6/images/market.webp",
+              "script": "We buy vegetables and fresh fish at the market behind the bus station. It is busiest in the morning."
+            },
+            {
+              "stem": "Text 5",
+              "answer": 5,
+              "kind": "short",
+              "target": "grades5-6/images/beach.webp",
+              "script": "Our family walked along the beach at the weekend. We collected litter, but did not swim because the waves were strong."
+            }
+          ]
+        },
+        {
+          "key": "listening2",
+          "marks": 5,
+          "audio": "grades5-6/audio-natural/g6-c-listening-2.mp3",
+          "script": "Interviewer: What is your favourite place in town, Dana? Dana: The public library. Interviewer: Where can we find it? Dana: Opposite the main park, beside the post office. Interviewer: When does it open on weekdays? Dana: At nine in the morning. Interviewer: What can children do there? Dana: Read and join story club. Interviewer: What happens every Wednesday? Dana: A librarian runs a reading activity. Interviewer: How do you get there? Dana: I walk with my father.",
+          "questions": [
+            {
+              "stem": "What is Dana's favourite place?",
+              "options": [
+                "Library",
+                "Museum",
+                "Beach"
+              ],
+              "answer": 0,
+              "kind": "mc"
+            },
+            {
+              "stem": "Where is it?",
+              "options": [
+                "Near the clinic",
+                "Opposite the main park",
+                "Inside the school"
+              ],
+              "answer": 1,
+              "kind": "mc"
+            },
+            {
+              "stem": "When does it open?",
+              "options": [
+                "At seven",
+                "At eight",
+                "At nine"
+              ],
+              "answer": 2,
+              "kind": "mc"
+            },
+            {
+              "stem": "What happens on Wednesday?",
+              "options": [
+                "A reading activity",
+                "A football match",
+                "A science test"
+              ],
+              "answer": 0,
+              "kind": "mc"
+            },
+            {
+              "stem": "How does Dana travel there?",
+              "options": [
+                "By bus",
+                "On foot",
+                "By boat"
+              ],
+              "answer": 1,
+              "kind": "mc"
+            }
+          ]
+        },
+        {
+          "key": "vocabulary",
+          "marks": 5,
+          "questions": [
+            {
+              "stem": "Write the word.",
+              "answer": "bridge",
+              "kind": "short",
+              "picture": "grades5-6/images/bridge.webp",
+              "maxWords": 1
+            },
+            {
+              "stem": "Write the word.",
+              "answer": "football field",
+              "kind": "short",
+              "picture": "grades5-6/images/football-field.svg",
+              "maxWords": 2
+            },
+            {
+              "stem": "Write the word.",
+              "answer": "recycling bin",
+              "kind": "short",
+              "picture": "grades5-6/images/recycling-station.webp",
+              "maxWords": 2
+            },
+            {
+              "stem": "Write the word.",
+              "answer": "tablet",
+              "kind": "short",
+              "picture": "grades5-6/images/bus-timetable-tablet.webp",
+              "maxWords": 1
+            },
+            {
+              "stem": "Write the word.",
+              "answer": "compass",
+              "kind": "short",
+              "picture": "grades5-6/images/compass-hiking.webp",
+              "maxWords": 1
+            }
+          ]
+        },
+        {
+          "key": "grammar",
+          "marks": 5,
+          "questions": [
+            {
+              "stem": "We ____ towards the museum when it started to rain.",
+              "options": [
+                "were walking",
+                "walk"
+              ],
+              "answer": 0,
+              "kind": "mc",
+              "point": "past-continuous"
+            },
+            {
+              "stem": "This is the building ____ my uncle works.",
+              "options": [
+                "who",
+                "where"
+              ],
+              "answer": 1,
+              "kind": "mc",
+              "point": "relative-clause"
+            },
+            {
+              "stem": "A guide is a person ____ helps visitors.",
+              "options": [
+                "who",
+                "where"
+              ],
+              "answer": 0,
+              "kind": "mc",
+              "point": "relative-clause"
+            },
+            {
+              "stem": "At four o’clock, the tourists ____ photos near the bridge.",
+              "options": [
+                "take",
+                "were taking"
+              ],
+              "answer": 1,
+              "kind": "mc",
+              "point": "past-continuous"
+            },
+            {
+              "stem": "I met a woman ____ lives beside the old fort.",
+              "options": [
+                "who",
+                "which"
+              ],
+              "answer": 0,
+              "kind": "mc",
+              "point": "relative-clause"
+            }
+          ]
+        },
+        {
+          "key": "reading1",
+          "marks": 5,
+          "questions": [
+            {
+              "stem": "Which text mentions a study room?",
+              "answer": 0,
+              "kind": "match",
+              "options": [
+                "The public library is opposite the main park, beside the post office. It opens at nine on weekdays and has a quiet study room. Children can borrow books and join a story club every Wednesday.",
+                "The town museum displays old boats and photographs of the harbour. Visitors can learn about journeys along the coast. Our class listened to a guide explain how people traded goods in the past.",
+                "The community clinic is next to the market. A nurse helps families who need medical advice. The clinic opens in the morning and afternoon, but people should telephone before visiting on holidays."
+              ]
+            },
+            {
+              "stem": "Which text describes old boats and a harbour?",
+              "answer": 1,
+              "kind": "match",
+              "options": [
+                "The public library is opposite the main park, beside the post office. It opens at nine on weekdays and has a quiet study room. Children can borrow books and join a story club every Wednesday.",
+                "The town museum displays old boats and photographs of the harbour. Visitors can learn about journeys along the coast. Our class listened to a guide explain how people traded goods in the past.",
+                "The community clinic is next to the market. A nurse helps families who need medical advice. The clinic opens in the morning and afternoon, but people should telephone before visiting on holidays."
+              ]
+            },
+            {
+              "stem": "Which text is about a health service?",
+              "answer": 2,
+              "kind": "match",
+              "options": [
+                "The public library is opposite the main park, beside the post office. It opens at nine on weekdays and has a quiet study room. Children can borrow books and join a story club every Wednesday.",
+                "The town museum displays old boats and photographs of the harbour. Visitors can learn about journeys along the coast. Our class listened to a guide explain how people traded goods in the past.",
+                "The community clinic is next to the market. A nurse helps families who need medical advice. The clinic opens in the morning and afternoon, but people should telephone before visiting on holidays."
+              ]
+            },
+            {
+              "stem": "Which text mentions borrowing books?",
+              "answer": 0,
+              "kind": "match",
+              "options": [
+                "The public library is opposite the main park, beside the post office. It opens at nine on weekdays and has a quiet study room. Children can borrow books and join a story club every Wednesday.",
+                "The town museum displays old boats and photographs of the harbour. Visitors can learn about journeys along the coast. Our class listened to a guide explain how people traded goods in the past.",
+                "The community clinic is next to the market. A nurse helps families who need medical advice. The clinic opens in the morning and afternoon, but people should telephone before visiting on holidays."
+              ]
+            },
+            {
+              "stem": "Which text advises calling before visiting on holidays?",
+              "answer": 2,
+              "kind": "match",
+              "options": [
+                "The public library is opposite the main park, beside the post office. It opens at nine on weekdays and has a quiet study room. Children can borrow books and join a story club every Wednesday.",
+                "The town museum displays old boats and photographs of the harbour. Visitors can learn about journeys along the coast. Our class listened to a guide explain how people traded goods in the past.",
+                "The community clinic is next to the market. A nurse helps families who need medical advice. The clinic opens in the morning and afternoon, but people should telephone before visiting on holidays."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "reading2",
+          "marks": 5,
+          "passage": "From: dana@school.example\nTo: reem@school.example\nSubject: A place I recommend\nDear Reem,\nI visited our town library with my father last Wednesday. It is opposite the main park, next to the post office. We arrived at ten in the morning. A librarian showed us the children's reading area and helped me choose a book about Oman. At eleven, we joined a storytelling activity with other pupils. My father borrowed a history book, and we walked home before lunch. I want to visit the museum next weekend because it has photographs of old boats. If you are free on Wednesday, we can go to the library together.\nBest wishes,\nDana",
+          "questions": [
+            {
+              "stem": "Dana visited the library on Wednesday.",
+              "answer": 0,
+              "options": [
+                "True",
+                "False"
+              ],
+              "kind": "tf"
+            },
+            {
+              "stem": "The library is beside the airport.",
+              "answer": 1,
+              "options": [
+                "True",
+                "False"
+              ],
+              "kind": "tf"
+            },
+            {
+              "stem": "A librarian helped Dana find a book.",
+              "answer": 0,
+              "options": [
+                "True",
+                "False"
+              ],
+              "kind": "tf"
+            },
+            {
+              "stem": "Dana's father borrowed a history book.",
+              "answer": 0,
+              "options": [
+                "True",
+                "False"
+              ],
+              "kind": "tf"
+            },
+            {
+              "stem": "Dana has already visited the museum this weekend.",
+              "answer": 1,
+              "options": [
+                "True",
+                "False"
+              ],
+              "kind": "tf"
+            }
+          ]
+        },
+        {
+          "key": "writing1",
+          "marks": 5,
+          "prompt": "Look at the three pictures. Write a story of at least 50 words about exploring an unfamiliar place in Oman. Include your journey, something you discovered and how you returned home.",
+          "minWords": 50,
+          "images": [
+            "grades5-6/images/boat.webp",
+            "grades5-6/images/computer.webp",
+            "grades5-6/images/clock.webp"
+          ]
+        },
+        {
+          "key": "writing2",
+          "marks": 5,
+          "prompt": "Write a review of a place you visited, such as a museum, fort or town. Explain how you travelled, what you saw, and whether you recommend it. Write at least 50 words.",
+          "minWords": 50,
+          "images": []
+        }
+      ]
+    }
+  ]
+}
