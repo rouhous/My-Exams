@@ -64,6 +64,21 @@
 
   function renderGrid(s) {
     const { kind, options } = s.grid;
+    // Grade 5 vocabulary: picture letters down the left, shuffled words across columns.
+    if (bank.grade === 5 && s.key === 'vocabulary' && kind === 'words') {
+      const pictures = '<div class="image-options vocabulary-picture-list">' +
+        s.questions.map((q,i)=>'<figure><figcaption>'+letters[i]+'</figcaption><img src="'+file(q.picture)+'" alt="Picture '+letters[i]+'"></figure>').join('')+'</div>';
+      const headings = '<thead><tr><th scope="col">Picture</th>' + options.map(word =>
+        '<th scope="col" class="word-column">'+escape(word)+'</th>').join('')+'</tr></thead>';
+      const rows = s.questions.map((q,i)=>{
+        const id = s.key+'-'+(i+1);
+        assessed.push({id,q,skill:s.key});
+        return '<tr id="'+id+'-item" data-unit="'+q.source.unit+'"><th scope="row">'+letters[i]+'</th>' +
+          options.map((word,j)=>'<td><label>'+radio(id,j,'Picture '+letters[i]+', '+word)+'</label></td>').join('')+'</tr>';
+      }).join('');
+      return pictures+'<p class="exam-ar-instruction" lang="ar" dir="rtl">طابق الصور (A–E) مع الكلمات المكتوبة أعلى الأعمدة. توجد كلمة إضافية.</p>'+
+        '<div class="vocabulary-grid-wrap"><table class="answer-grid vocabulary-word-grid" aria-label="Match each picture letter with a word">'+headings+'<tbody>'+rows+'</tbody></table></div>';
+    }
     const gallery = kind === 'images'
       ? '<div class="image-options">' + options.map((src, i) =>
         '<figure><figcaption>' + letters[i] + '</figcaption><img src="' + file(src) + '" alt="Illustration ' + letters[i] + '"></figure>').join('') + '</div>'
