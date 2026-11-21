@@ -58,7 +58,7 @@ function evaluate(value,question){
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
-</script><script src="../../../shared/data-charts.js?v=1"></script><script src="../../../shared/learning-feedback.js?v=1"></script><link rel="stylesheet" href="../../../shared/assessment-theme.css?v=28"><link rel="stylesheet" href="../../../shared/reading-split.css?v=3"><link rel="stylesheet" href="../../../shared/exam-pages.css?v=1"><script defer src="../../../shared/reading-split.js?v=3"></script><script defer src="../../../shared/exam-pages.js?v=1" data-host="sections" data-reset="back"></script><script defer src="../../../shared/journey-results.js"></script></head><body data-study-tools="compact">
+</script><script src="../../../shared/data-charts.js?v=1"></script><script src="../../../shared/learning-feedback.js?v=7"></script><link rel="stylesheet" href="../../../shared/assessment-theme.css?v=28"><link rel="stylesheet" href="../../../shared/reading-split.css?v=3"><link rel="stylesheet" href="../../../shared/exam-pages.css?v=1"><script defer src="../../../shared/reading-split.js?v=3"></script><script defer src="../../../shared/exam-pages.js?v=1" data-host="sections" data-reset="back"></script><script defer src="../../../shared/journey-results.js"></script></head><body data-study-tools="compact">
 <header><a href="../../../grade12-skills.html?track=12-elective">← اختبارات المسار</a>
 <h1>Grade 12 Elective · Unit 1: The Arts</h1>
 <p>Semester 1 · 70 marks · 180-minute full practice · independent skills without a timer</p></header>
@@ -207,7 +207,7 @@ function finish(expired){
    const passed=Array.isArray(q.options)&&Number.isInteger(q.answer)?answer!==''&&Number(answer)===q.answer:window.MyExamsShortAnswers.evaluate(answer,q).correct;
    const part=tasks[key]||{};
    holder.querySelectorAll('.mex-fb').forEach(el=>el.remove());
-   if(window.MyExamsLearning)holder.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:key,passage:part.passage,script:part.script||part.transcript},passed));
+   if($('mode').value==='skill'&&window.MyExamsLearning)holder.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,{skill:key,passage:part.passage,script:part.script||part.transcript},passed));
   }
  });
  const writing=selected.filter(k=>k.startsWith('wrt')).length;
@@ -217,6 +217,7 @@ function finish(expired){
  '<p><strong>'+correct+' / '+scored+'</strong> automatically checked questions. '+manual+' answers require teacher review. '+writing+' writing task(s) require teacher assessment. '+blank+' unanswered question(s).</p>'+
  '<p>Short answers are accepted when the required answer appears in your response and the word count is no more than four words above the stated limit.</p>'+
  '<details open><summary>Question-by-question feedback</summary><ol>'+review.join('')+'</ol></details>';
+ if($('mode').value!=='skill')result.innerHTML='<h2>Result</h2><p>'+correct+' / '+scored+'</p>';
  result.scrollIntoView({behavior:'smooth'});
 }
 $('start').addEventListener('click',begin);
