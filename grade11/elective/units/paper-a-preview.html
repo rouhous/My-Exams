@@ -24,7 +24,7 @@ select{max-width:370px;width:100%}textarea{width:100%;min-height:220px}
 .clock{font-size:21px;font-weight:800;font-variant-numeric:tabular-nums}
 @media(max-width:600px){.controls{grid-template-columns:1fr}}
 @media print{header,.setup,#end,#back,#clock{display:none!important}.paper{display:block!important}section{break-inside:avoid}}
-</style><link rel="stylesheet" href="../../../shared/exam-tools.css?v=2"><script src="../../../shared/short-answer-marking.js"></script><script id="short-answer-critical">
+</style><link rel="stylesheet" href="../../../shared/exam-tools.css?v=3"><script src="../../../shared/short-answer-marking.js"></script><script id="short-answer-critical">
 /* English short answer marking for My Exams.
    Accept the expected answer as a complete contiguous phrase, with up to four
    words above the question's stated maximum. This checks text, not meaning. */
@@ -134,4 +134,4 @@ if (direct.get('mode') === 'skill' && keys.includes(direct.get('skill'))) {
  $('mode').onchange();
 }
 $('start').onclick=start;$('end').onclick=finish;$('back').onclick=()=>{stopClock();$('paper').classList.remove('active');$('setup').hidden=false;window.scrollTo(0,0)};init();
-</script><script defer src="../../../shared/exam-tools.js?v=2"></script></body></html>
+</script><script defer src="../../../shared/exam-tools.js?v=3"></script></body></html>
