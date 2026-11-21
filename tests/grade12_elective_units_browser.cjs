@@ -17,7 +17,7 @@ const {chromium}=require('playwright');
     if(!sections[0].includes('Listening 1')||!sections.at(-1).includes('Writing 2'))throw Error('Incorrect section order Unit '+u);
     await page.click('#finish');
     if(!(await page.locator('#results').textContent()).includes('0 / 45'))throw Error('Unit '+u+' expected 45 automatically checked questions');
-    if(!(await page.locator('#results').textContent()).includes('2 writing task(s) require teacher assessment'))throw Error('Unit '+u+' writing review boundary missing');
+    if((await page.locator('#results').textContent()).includes('teacher assessment'))throw Error('Unit '+u+' full paper must show score only');
     await page.click('#restart');
     await page.selectOption('#mode','skill');
     await page.selectOption('#skill','rdg2');
@@ -25,6 +25,10 @@ const {chromium}=require('playwright');
     if(await page.locator('#sections section.part').count()!==1)throw Error('Unit '+u+' skill mode not isolated');
     if(await page.locator('#sections .question').count()!==13)throw Error('Unit '+u+' reading 2 not 13 questions');
     if((await page.locator('#clock').textContent())!=='Untimed')throw Error('Unit '+u+' isolated skill not untimed');
+    await page.click('#finish');
+    if(!(await page.locator('#sections .question .mex-fb').first().textContent()).includes('Correct answer:') ||
+       !(await page.locator('#sections .question .mex-fb').first().textContent()).includes('Why?'))
+      throw Error('Unit '+u+' skill practice missing explained correction');
   }
   await page.goto('http://127.0.0.1:8765/grade12/elective/units/paper-a-preview.html?mixed=1');
   await page.waitForFunction(()=>document.querySelector('#start')&&!document.querySelector('#start').disabled,null,{timeout:30000});
