@@ -17,13 +17,13 @@
           {
             "stem": "Which instrument will the pupil play in the show?",
             "options": [
-              "guitar",
+              "violin",
               "drum",
               "piano"
             ],
             "answer": 1,
             "images": [
-              "guitar",
+              "violin-stage-g7d",
               "drum",
               "piano"
             ],
@@ -723,14 +723,14 @@
             "stem": "How will the tourists reach the small island?",
             "options": [
               "by boat",
-              "by train",
-              "by bus"
+              "by bicycle",
+              "on foot"
             ],
             "answer": 0,
             "images": [
               "sailboat",
-              "train-front",
-              "bus"
+              "bike",
+              "person-standing"
             ],
             "script": "The visitors will explore a small island near the coast. Their bus will take them to the harbour, but it cannot continue across the water. There is no railway nearby, so they will board a small boat and travel with a local guide."
           }
@@ -1341,7 +1341,7 @@
             "images": [
               "glass-water",
               "lamp-desk",
-              "trees"
+              "tree-pine"
             ],
             "script": "Our school already switches off lights and takes care of the garden. This month, the science team has decided to focus on the water we use. Every class will measure how much water it saves by turning off taps and reporting leaks immediately."
           },
@@ -2029,13 +2029,13 @@
             "stem": "What is Amal saving money for?",
             "options": [
               "a bicycle",
-              "a phone",
+              "a tablet",
               "a guitar"
             ],
             "answer": 0,
             "images": [
               "bike",
-              "smartphone",
+              "tablet",
               "guitar"
             ],
             "script": "Amal really enjoys music, but she can borrow a guitar from her sister. Her phone still works well, so she does not need another one. She has decided to save her pocket money for a bicycle because she wants to ride to the sports centre."
@@ -2065,8 +2065,8 @@
             "answer": 2,
             "images": [
               "wallet",
-              "backpack",
-              "book"
+              "schoolbag-repair-g8d",
+              "book-open"
             ],
             "script": "I took a damaged book back to the shop with my receipt. I first asked for my money, but the shop assistant explained that another copy was available. She suggested exchanging the book instead of asking for a refund, and I agreed."
           },
