@@ -35,7 +35,7 @@ function evaluate(value,question){
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
-</script><script src="../shared/learning-feedback.js?v=7"></script><script id="mex-learning-offline-critical">/* My Exams: source-grounded per-question feedback + shared MEJ AI writing review. */
+</script><script src="../shared/learning-feedback.js?v=8"></script><script id="mex-learning-offline-critical">/* My Exams: source-grounded per-question feedback + shared MEJ AI writing review. */
 (function(w,d){
 "use strict";
 if(w.MyExamsLearning)return;
@@ -68,13 +68,60 @@ function evidence(expected,source,question){
  return candidates.length?candidates.sort((a,b)=>b.ratio-a.ratio||b.found-a.found||a.text.length-b.text.length)[0].text.slice(0,300):"";
 }
 function completedGap(q,ctx,expected){
- const match=String(q?.stem||"").match(/\bGap\s*(\d+)\b/i);
- const src=String(ctx?.passage||"");
- if(!match||!src)return "";
+ const match=String(q?.stem||"").match(/\b(?:Gap|فراغ)\s*(\d+)\b/i);
+ const source=String(ctx?.passage||q?.passage||"");
+ if(!match||!source||!expected)return "";
  const rex=new RegExp("\\("+match[1]+"\\)\\s*_{2,}");
- const line=src.split(/\n|(?<=[.!?])\s+/).map(x=>x.trim()).find(x=>rex.test(x));
- return line?line.replace(rex,expected).slice(0,260):"";
+ const sentences=source.split(/(?<=[.!?])\s+|\n+/).map(x=>x.trim()).filter(Boolean);
+ const line=sentences.find(x=>rex.test(x))||"";
+ if(!line)return "";
+ let filled=line.replace(rex,expected);
+ if(Array.isArray(ctx?.items))filled=filled.replace(/\((\d+)\)\s*_{2,}/g,(full,n)=>{const item=ctx.items[Number(n)-1];return Array.isArray(item?.options)&&Number.isInteger(item.answer)?String(item.options[item.answer]):full});
+ return filled.slice(0,350);
 }
+function actualOption(q,expected,override){
+ if(Array.isArray(q?.options)&&Number.isInteger(q.answer))return String(q.options[q.answer]||"");
+ if(Array.isArray(q?.choices)&&Number.isInteger(q.answer))return String(q.choices[q.answer]||"");
+ return String(expected||override||"");
+}
+function grammarArabic(q,correct,ctx){
+ if(q?.ruleAr)return String(q.ruleAr);
+ const sentence=completedGap(q,ctx,correct),sl=sentence.toLowerCase();
+ const x=String(correct||"").toLowerCase(),opts=(q?.options||[]).map(v=>String(v).toLowerCase());
+ if(x==="since"&&/\b(?:have|has)\b/.test(sl))return "نستخدم since مع المضارع التام لتحديد نقطة بداية زمنية (مثل September)، أما for فتأتي مع مدة زمنية مثل two years.";
+ if(x==="for"&&/\b(?:have|has)\b/.test(sl))return "نستخدم for مع المضارع التام للدلالة على مدة زمنية، مثل for two years. أما since فتحدد نقطة البداية.";
+ if(x==="giving"&&/\bis giving\b/.test(sl))return "بعد is نستخدم الفعل مع ing لتكوين المضارع المستمر؛ is giving تعني «يقدّم الآن/في الوقت المحدد». ولا نقول is give أو is given هنا.";
+ if(x==="confident"&&/\bfeel(?:s)? more confident\b/.test(sl))return "بعد feel نستخدم صفة لوصف الشعور؛ confident صفة بمعنى «واثق»، أما confidence فاسم وconfidently ظرف.";
+ if(x==="coming"&&/\bare coming\b/.test(sl))return "صيغة are + verb-ing تعبّر عن ترتيب مستقبلي مقرر؛ لذلك نقول are coming.";
+ if(x==="forward"&&sl.includes("looking forward"))return "التعبير الثابت هو look forward to ويعني «يتطلع إلى»، ولا نستعمل look after أو look away هنا.";
+ if(x==="has been"&&/\bclub\b/.test(sl))return "الفاعل المفرد club يأخذ has been في المضارع التام، مع for two years للدلالة على مدة مستمرة حتى الآن.";
+ if(x==="has"&&/never performed/.test(sl))return "بعد الفاعل المفرد she نستخدم has مع التصريف الثالث: she has never performed، وهو المضارع التام.";
+ if(x==="are performing"||x==="is performing")return "نستخدم am/is/are + verb-ing للتعبير عن ترتيب مستقبلي مقرر أو نشاط جارٍ، مع مراعاة توافق الفاعل والفعل.";
+ if(x==="not to"&&/\btold us\b/.test(sl))return "بعد told + المفعول نستخدم not to + الفعل المجرد للنهي: told us not to throw.";
+ if(x==="must"||x==="should"||x==="could"||x==="might"||x==="will")return "هذه من الأفعال الناقصة (modal verbs)، ويأتي بعدها الفعل في المصدر دون to: "+correct+" + base verb.";
+ if(x==="had"&&/\b(?:before|by|already)\b/i.test(sentence))return "الماضي التام had + التصريف الثالث يبيّن أن فعلًا حدث قبل حدث آخر في الماضي.";
+ if(x==="would"||x==="would do")return "في الشرط الثاني نستخدم if + past simple ثم would + الفعل المجرد للتعبير عن موقف افتراضي أو غير مؤكد.";
+ if(x==="manage"&&/\bif people\b/.test(sl))return "في الشرط الأول نستخدم المضارع البسيط بعد if، ثم will في جملة النتيجة؛ ومع people يأتي الفعل بلا s.";
+ if(x==="gets"&&/\bif the weather\b/.test(sl))return "في جملة الشرط الأولى يأتي الفعل في المضارع البسيط، ومع الفاعل المفرد weather نضيف s إلى gets.";
+ if(x==="stay"&&/\bif visitors\b/.test(sl))return "في الشرط الأول يأتي الفعل في المضارع البسيط بعد if. والفاعل الجمع visitors يأخذ stay دون s.";
+ if(x==="protect"&&/\banimals\b/.test(sl))return "مع الفاعل الجمع Animals نستخدم الفعل المجرد protect في المضارع البسيط دون s.";
+ if(x==="reuse"&&sl.includes("how to"))return "بعد how to نستخدم الفعل في صورته الأساسية: how to reuse، أي «كيفية إعادة الاستخدام».";
+ if(x==="second-hand")return "second-hand صفة مركبة تأتي قبل الاسم للدلالة على شيء مستعمل، مثل second-hand books.";
+ if(x==="renewable")return "renewable صفة تصف نوع الطاقة قبل الاسم energy، بينما renewing صيغة فعل لا تناسب هذا التركيب.";
+ if(x==="recycled")return "recycled صفة تعني «أُعيد تدويره» وتصف materials، بينما recycling تشير غالبًا إلى عملية إعادة التدوير.";
+ if(x==="fall"&&/\bprices usually\b/.test(sl))return "مع الفاعل الجمع prices نستخدم المضارع البسيط fall دون s لوصف عادة أو حقيقة عامة.";
+ if(x==="opens"||x==="leaves")return "نستخدم المضارع البسيط للمواعيد والجداول الثابتة، ومع الفاعل المفرد نضيف s إلى الفعل.";
+ if(x==="are"&&sl.includes("going to"))return "صيغة المستقبل هي am/is/are going to + الفعل المجرد؛ الفاعل we يأخذ are.";
+ if(x==="going"&&sl.includes("going to"))return "صيغة be going to + الفعل المجرد تُستخدم للخطة أو النية المستقبلية.";
+ if(x==="had"&&opts.includes("has")&&opts.includes("have"))return "نستخدم had + التصريف الثالث عندما نعبّر عن فعل اكتمل قبل فعل آخر في الماضي.";
+ if(x==="will finish")return "بعد hope نستطيع استخدام will + الفعل المجرد للتعبير عن توقع أو أمل متعلق بالمستقبل.";
+ if(x==="himself"||x==="ourselves")return "نستخدم الضمير الانعكاسي عندما يعود الفعل على الفاعل نفسه: himself للمفرد المذكر، وourselves للمتكلم الجمع.";
+ if(x==="but")return "but أداة ربط تفيد التباين بين فكرتين؛ نستعملها هنا للربط بين الاستمتاع بالرحلة والالتزام بالتعليمات.";
+ if((opts.includes("was")&&opts.includes("were"))||(opts.includes("is")&&opts.includes("are")))return "تتغير صيغة الفعل be بحسب الفاعل: المفرد يأخذ is/was والجمع يأخذ are/were.";
+ if(/_{2,}/.test(q?.stem||""))return "تحدَّد الصيغة الصحيحة من وظيفة الكلمة في الجملة وزمن الفعل والفاعل.";
+ return "";
+}
+
 function rule(q,expected,ctx){
  const known=q?.rule||q?.grammarRule||q?.explanation||q?.feedback;
  if(typeof known==="string"&&known.trim())return known;
@@ -102,45 +149,52 @@ const GLOSSES={
 };
 function explanation(q,ctx={},override){
  const expected=answer(q,override),type=String(ctx.skill||ctx.key||q?.skill||"").toLowerCase();
- const spoken=/listen|lst/.test(type),grammar=/gram|^grm$|cloze/.test(type),vocab=/vocab|^vcb$|spell|word/.test(type);
- const tf=/^(true|false)$/i.test(String(expected).trim()),matching=/^(?:[A-F])$/i.test(String(expected).trim()) && /reading|matching/.test(type);
+ const correct=actualOption(q,expected,override);
+ const category=String(q?.topicType||q?.category||"").toLowerCase();
+ const spoken=/listen|lst/.test(type),grammar=category==="grammar"||(!category&&/gram|^grm$|cloze/.test(type));
+ const vocab=category==="vocabulary"||(!category&&/vocab|^vcb$|spell|word/.test(type)&&!grammar);
+ const tf=/^(true|false)$/i.test(String(expected).trim());
  const source=q?.script||q?.transcript||q?.passage||ctx.script||ctx.transcript||ctx.passage||ctx.text||"";
- const explicitEvidence=q?.evidence||q?.sourceQuote||"";
- const selected=Array.isArray(q?.options)&&typeof q.answer==="number"?q.options[q.answer]:Array.isArray(q?.choices)&&typeof q.answer==="number"?q.choices[q.answer]:"";
+ const evidenceText=q?.evidence||q?.sourceQuote||evidence(correct,source,q?.stem||"");
+ const selected=(Array.isArray(q?.options)&&Number.isInteger(q.answer))?q.options[q.answer]:"";
  const expanded=ctx.correctText||((/^[A-F]$/i.test(expected)&&selected)?selected:"");
- let reason=typeof q?.explanation==="string"?q.explanation.trim():"";
- if(!reason){
-  if(tf)reason=expected.toLowerCase()==="true"?
-   "The statement agrees with the information given in the text or recording.":
-   "The statement contradicts the information in the text or recording. Check the correct detail below.";
-  else if(matching && expanded)reason="This ending completes the numbered text in meaning and context.";
-  else if(grammar)reason="Complete the sentence using the correct grammatical form, then read it again to check the meaning.";
-  else if(vocab)reason="This is the word that matches the picture or context. Check its spelling and meaning.";
-  else if(spoken)reason="The correct choice matches what the speaker says, rather than a distractor.";
-  else if(/read/.test(type))reason="The answer must agree with the information stated in the reading passage.";
-  else reason="Compare the correct choice with the wording of the question.";
+ const sentence=completedGap(q,ctx,correct);
+ const ar=typeof q?.explanationAr==="string"&&q.explanationAr.trim()?q.explanationAr.trim():"";
+ let reasonAr=ar;
+ if(!reasonAr){
+  if(grammar)reasonAr=grammarArabic(q,correct,ctx);
+  else if(vocab)reasonAr=q?.meaningAr?
+    "الكلمة «"+correct+"» تعني «"+q.meaningAr+"» في هذا السياق؛ وهي الأنسب لمعنى الجملة.":
+    "نختار «"+correct+"» لأن معناها أو وظيفتها تناسب سياق الجملة، وليست مجرد كلمة تشبه الاختيارات الأخرى.";
+  else if(tf)reasonAr=expected.toLowerCase()==="true"?
+    "العبارة صحيحة لأنها تتفق مع المعلومة المذكورة في النص أو التسجيل.":
+    "العبارة خاطئة؛ المعلومة الواردة في النص أو التسجيل تختلف عن مضمونها. قارنها بالدليل أسفل التصحيح.";
+  else if(spoken)reasonAr="الإجابة تعتمد على ما قاله المتحدث فعلًا في التسجيل. راجع المعلومة الأساسية ولا تعتمد على الكلمات المشتتة في الخيارات.";
+  else if(/read|match/.test(type))reasonAr="الإجابة الصحيحة هي التي يثبتها مضمون النص. قارنها بالمعلومة الداعمة أدناه إن كانت متاحة.";
+  else reasonAr="قارن الإجابة الصحيحة بالسؤال ولاحظ الكلمات التي تحدد المعنى.";
  }
- const filled=completedGap(q,ctx,expected);
- const example=grammar?filled||(/_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,expected):""):
-  vocab&&/_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,expected):"";
- return {expected,expanded,reason,rule:grammar?rule(q,expected,ctx):"",
-   meaning:vocab?q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(expected)]||"": "",
-   example,evidence:explicitEvidence||evidence(expected,source,q?.stem||""),
-   kind:spoken?"Listening script":"Reading text"};
+ let reasonEn=typeof q?.explanation==="string"?q.explanation.trim():"";
+ if(!reasonEn&&tf)reasonEn=expected.toLowerCase()==="true"?"This statement matches the source.":"This statement contradicts the source.";
+ const ruleAr=grammar?(q?.ruleAr||grammarArabic(q,correct,ctx)):"";
+ const meaning=vocab?q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(correct)]||"":"";
+ const example=sentence||((grammar||vocab)&&/_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,correct):"");
+ return {expected,expanded,correct,reasonAr,reasonEn,ruleAr,
+   meaning,example,evidence:evidenceText,kind:spoken?"Listening script":"Reading text"};
 }
 function feedback(q,ctx={},ok=false,override){
  const p=explanation(q,ctx,override);
- let html='<div class="mex-fb '+(ok?"mex-fb-ok":"mex-fb-try")+'" role="note"><strong>'+(ok?"✓ Excellent! أحسنت، واصل.":"✗ Let’s correct it! لنصحح الإجابة معًا.")+'</strong>';
- if(p.expected)html+='<p><b>Correct answer:</b> '+esc(p.expected)+(p.expanded&&norm(p.expanded)!==norm(p.expected)?' — '+esc(p.expanded):'')+'</p>';
- if(p.reason)html+='<p><b>Why? السبب:</b> '+esc(p.reason)+'</p>';
- if(p.rule)html+='<p><b>Grammar rule:</b> '+esc(p.rule)+'</p>';
- if(p.meaning)html+='<p><b>Word meaning:</b> '+esc(p.meaning)+'</p>';
- if(p.example)html+='<p><b>Correct sentence:</b> '+esc(p.example)+'</p>';
+ let html='<div class="mex-fb '+(ok?"mex-fb-ok":"mex-fb-try")+'" role="note"><strong>'+(ok?"✓ Excellent! أحسنت، واصل.":"✗ لنصحح الإجابة معًا · Let’s correct it!")+'</strong>';
+ const display=p.expected&&/^[A-F]$/i.test(p.expected)&&p.correct&&p.correct!==p.expected?p.expected+' — '+p.correct:p.correct||p.expected;
+ if(display)html+='<p><b>الإجابة الصحيحة · Correct answer:</b> '+esc(display)+'</p>';
+ if(p.reasonAr)html+='<p dir="rtl" class="mex-fb-ar"><b>لماذا هذه الإجابة؟</b> '+esc(p.reasonAr)+'</p>';
+ if(p.ruleAr && p.ruleAr!==p.reasonAr)html+='<p dir="rtl" class="mex-fb-ar"><b>القاعدة:</b> '+esc(p.ruleAr)+'</p>';
+ if(p.meaning)html+='<p dir="rtl" class="mex-fb-ar"><b>معنى الكلمة:</b> '+esc(p.correct)+' = '+esc(p.meaning)+'</p>';
+ if(p.example)html+='<p><b>الجملة بعد التصحيح:</b> <span lang="en">'+esc(p.example)+'</span></p>';
  if(p.evidence){
-  let quote=esc(p.evidence);
-  const pos=p.expected?p.evidence.toLowerCase().indexOf(p.expected.toLowerCase()):-1;
-  if(pos>=0&&p.expected){quote=esc(p.evidence.slice(0,pos))+'<mark>'+esc(p.evidence.slice(pos,pos+p.expected.length))+'</mark>'+esc(p.evidence.slice(pos+p.expected.length))}
-  html+='<p><b>Evidence from the '+esc(p.kind)+':</b></p><blockquote>'+quote+'</blockquote>';
+  const quote=esc(p.evidence),pos=p.correct?p.evidence.toLowerCase().indexOf(p.correct.toLowerCase()):-1;
+  let highlighted=quote;
+  if(pos>=0&&p.correct)highlighted=esc(p.evidence.slice(0,pos))+'<mark>'+esc(p.evidence.slice(pos,pos+p.correct.length))+'</mark>'+esc(p.evidence.slice(pos+p.correct.length));
+  html+='<p dir="rtl" class="mex-fb-ar"><b>الدليل من '+(p.kind==="Listening script"?"نص الاستماع":"نص القراءة")+':</b></p><blockquote lang="en">'+highlighted+'</blockquote>';
  }
  return html+'</div>';
 }
@@ -171,7 +225,7 @@ function metadata(ta){
 const style=d.createElement("style");style.id="mex-feedback-style-v1";
 style.textContent=[
 '.mex-fb{font:14px/1.6 system-ui,Arial,sans-serif;direction:ltr;text-align:left;margin:9px 0 12px;padding:11px 13px;border:1px solid #b8d5c7;border-left:4px solid #0a7859;border-radius:10px;background:#f2faf5;color:#1b4036}',
-'.mex-fb mark{background:#ffdb63;padding:1px 2px;border-radius:2px;color:#263b27}.mex-fb-try{background:#fff8ef;border-color:#ead7b2;border-left-color:#b78839;color:#503b20}.mex-fb p{margin:6px 0}.mex-fb blockquote{margin:6px 0;padding:9px;background:#fff;border-left:3px solid #be9d50}.mex-fb-note{font-size:12px;color:#60766c}',
+'.mex-fb-ar{direction:rtl;text-align:right;line-height:1.8;font-size:14px}.mex-fb mark{background:#ffdb63;padding:1px 2px;border-radius:2px;color:#263b27}.mex-fb-try{background:#fff8ef;border-color:#ead7b2;border-left-color:#b78839;color:#503b20}.mex-fb p{margin:6px 0}.mex-fb blockquote{margin:6px 0;padding:9px;background:#fff;border-left:3px solid #be9d50}.mex-fb-note{font-size:12px;color:#60766c}',
 '.mex-ai-panel{margin:12px 0 18px;padding:12px;border:1px solid #b8d5c7;border-radius:12px;background:#f7fcf8;direction:rtl;text-align:right}',
 '.mex-ai-trigger{min-height:44px;padding:9px 14px;border:0;border-radius:9px;background:#0b6348;color:white;font:700 14px system-ui,sans-serif;cursor:pointer}.mex-ai-trigger:disabled{opacity:.55;cursor:wait}',
 '.mex-ai-status{font:13px/1.6 system-ui,sans-serif;margin:7px 0}.mex-ai-result{font:14px/1.65 system-ui,sans-serif;overflow-wrap:anywhere}',
