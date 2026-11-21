@@ -156,7 +156,7 @@
             "kite",
             "football",
             "gift",
-            "microphone",
+            "bicycle",
             "cake",
             "clock"
           ],
@@ -193,8 +193,8 @@
               "stem": "Picture 5",
               "answer": 3,
               "kind": "short",
-              "picture": "grades5-6/images/studio-microphone.webp",
-              "target": "microphone"
+              "picture": "grades5-6/images/bicycle.webp",
+              "target": "bicycle"
             }
           ]
         },
@@ -879,12 +879,12 @@
           "marks": 5,
           "grid": "words",
           "options": [
-            "computer",
-            "lamp",
-            "robot",
-            "magnifying glass",
+            "camera",
             "satellite",
-            "recycling bin"
+            "robot",
+            "beach",
+            "computer",
+            "clock"
           ],
           "questions": [
             {
@@ -896,31 +896,31 @@
             },
             {
               "stem": "Picture 2",
-              "answer": 0,
+              "answer": 4,
               "kind": "short",
               "picture": "grades5-6/images/computer.webp",
               "target": "computer"
             },
             {
               "stem": "Picture 3",
-              "answer": 1,
+              "answer": 0,
               "kind": "short",
-              "picture": "grades5-6/images/solar-study-lamp.webp",
-              "target": "lamp"
+              "picture": "grades5-6/images/camera.webp",
+              "target": "camera"
             },
             {
               "stem": "Picture 4",
-              "answer": 3,
+              "answer": 5,
               "kind": "short",
-              "picture": "grades5-6/images/magnifying-leaf.webp",
-              "target": "magnifying glass"
+              "picture": "grades5-6/images/clock.webp",
+              "target": "clock"
             },
             {
               "stem": "Picture 5",
-              "answer": 5,
+              "answer": 3,
               "kind": "short",
-              "picture": "grades5-6/images/recycling-station.webp",
-              "target": "recycling bin"
+              "picture": "grades5-6/images/beach.webp",
+              "target": "beach"
             }
           ]
         },
