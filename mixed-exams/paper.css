@@ -94,3 +94,14 @@ button[disabled] { opacity:.6; cursor:default; }
 .vocabulary-picture-list figure{min-width:0}
 .vocabulary-picture-list img{max-height:105px;width:100%;object-fit:contain}
 @media(max-width:480px){.vocabulary-word-grid th:first-child{width:42px}.vocabulary-word-grid th.word-column{font-size:10px;padding:5px 1px}.vocabulary-word-grid td label{min-height:43px}.vocabulary-word-grid input[type=radio]{width:17px;height:17px}}
+
+/* Compact vocabulary spelling: 3 picture-answer pairs followed by 2. */
+.mixed-five-spelling-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px 12px}
+.mixed-five-spelling-grid>.question{grid-column:span 2;min-width:0;padding:7px 8px;margin:0;border:1px solid #d7e4dc;border-radius:9px;display:flex;flex-direction:column;gap:5px}
+.mixed-five-spelling-grid>.question:nth-child(4){grid-column:2/span 2}
+.mixed-five-spelling-grid>.question:nth-child(5){grid-column:4/span 2}
+.mixed-five-spelling-grid>.question h3{font-size:clamp(12px,1.1vw,15px);margin:0}
+.mixed-five-spelling-grid>.question .stem-image{object-fit:contain;height:clamp(68px,12vh,110px);width:100%;max-width:100%;margin:0 auto}
+.mixed-five-spelling-grid>.question input[type=text]{width:100%;max-width:100%;box-sizing:border-box;min-height:36px;font-size:14px}
+@media(max-width:700px){.mixed-five-spelling-grid{gap:6px}.mixed-five-spelling-grid>.question{padding:5px}.mixed-five-spelling-grid>.question .stem-image{height:clamp(55px,10vh,80px)}.mixed-five-spelling-grid>.question h3{font-size:11px}}
+@media(max-width:390px){.mixed-five-spelling-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mixed-five-spelling-grid>.question,.mixed-five-spelling-grid>.question:nth-child(4),.mixed-five-spelling-grid>.question:nth-child(5){grid-column:auto}.mixed-five-spelling-grid>.question:nth-child(5){grid-column:1/-1;max-width:calc(50% - 4px);width:100%;justify-self:center}}
