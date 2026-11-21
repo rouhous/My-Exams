@@ -37,7 +37,10 @@ function completedGap(q,ctx,expected){
  const rex=new RegExp("\\("+match[1]+"\\)\\s*_{2,}");
  const sentences=source.split(/(?<=[.!?])\s+|\n+/).map(x=>x.trim()).filter(Boolean);
  const line=sentences.find(x=>rex.test(x))||"";
- return line?line.replace(rex,expected).slice(0,350):"";
+ if(!line)return "";
+ let filled=line.replace(rex,expected);
+ if(Array.isArray(ctx?.items))filled=filled.replace(/\((\d+)\)\s*_{2,}/g,(full,n)=>{const item=ctx.items[Number(n)-1];return Array.isArray(item?.options)&&Number.isInteger(item.answer)?String(item.options[item.answer]):full});
+ return filled.slice(0,350);
 }
 function actualOption(q,expected,override){
  if(Array.isArray(q?.options)&&Number.isInteger(q.answer))return String(q.options[q.answer]||"");
