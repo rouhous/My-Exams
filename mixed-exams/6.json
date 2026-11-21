@@ -729,9 +729,9 @@
           "prompt": "Look at the three pictures. Write a story of at least 50 words about preparing a simple technology project for school. Explain how you used the devices and what happened.",
           "minWords": 50,
           "images": [
-            "grades5-6/images/library.webp",
-            "grades5-6/images/park.webp",
-            "grades5-6/images/bridge.webp"
+            "grades5-6/images/recycling-station.webp",
+            "grades5-6/images/magnifying-leaf.webp",
+            "grades5-6/images/library.webp"
           ]
         },
         {
@@ -1100,8 +1100,8 @@
           "minWords": 50,
           "images": [
             "grades5-6/images/boat.webp",
-            "grades5-6/images/computer.webp",
-            "grades5-6/images/clock.webp"
+            "grades5-6/images/mountain.svg",
+            "grades5-6/images/backpack.svg"
           ]
         },
         {
