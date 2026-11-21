@@ -212,7 +212,14 @@ w.MyExamsLearning={feedback,answer,evidence,explanation,mount,metadata};
 .matrix-prompts li{padding:5px 0}
 @media(max-width:680px){#session .actions{position:static}}
 @media print{.answer-matrix{break-inside:avoid}.matrix-cell{min-height:31px}.matrix-cell input{print-color-adjust:exact}}
-</style><script src="../shared/mixed-exam-links.js" data-exam-source="foundations" defer></script><style>.shell.content{display:block}.unit-session-line{display:flex;justify-content:space-between;gap:10px;padding:6px 0}body:has(#session:not(.hidden))>header{display:none}</style><link rel="stylesheet" href="../shared/reading-split.css?v=5"><link rel="stylesheet" href="../shared/exam-pages.css?v=3"><script defer src="../shared/reading-split.js?v=3"></script><script defer src="../shared/exam-pages.js?v=1" data-host="exercise" data-group="session" data-reset="back"></script><script defer src="../shared/journey-results.js"></script><style id="exam-arabic-guidance">
+</style><script src="../shared/mixed-exam-links.js" data-exam-source="foundations" defer></script><style>.shell.content{display:block}.unit-session-line{display:flex;justify-content:space-between;gap:10px;padding:6px 0}body:has(#session:not(.hidden))>header{display:none}</style><link rel="stylesheet" href="../shared/reading-split.css?v=5"><link rel="stylesheet" href="../shared/exam-pages.css?v=3"><script defer src="../shared/reading-split.js?v=3"></script><script defer src="../shared/exam-pages.js?v=1" data-host="exercise" data-group="session" data-reset="back"></script><script defer src="../shared/journey-results.js"></script><style id="picture-word-grid-mobile">
+.answer-matrix-wrap{width:100%;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain}
+.vocabulary-words-grid{max-width:100%;width:100%;table-layout:fixed}
+.vocabulary-words-grid th.matrix-word-heading{font-size:clamp(10px,2.8vw,14px);line-height:1.22;overflow-wrap:anywhere;word-break:normal;padding:7px 2px;height:auto;min-height:47px}
+.vocabulary-words-grid th:first-child{width:48px}
+.vocabulary-words-grid tbody th{font-weight:800;font-size:17px}
+@media(max-width:430px){.vocabulary-words-grid th:first-child{width:37px}.vocabulary-words-grid th.matrix-word-heading{font-size:10.5px}.vocabulary-words-grid .matrix-cell{min-height:42px}.vocabulary-words-grid .matrix-cell input{height:18px;width:18px}}
+</style><style id="exam-arabic-guidance">
 .exam-ar-instruction{direction:rtl;text-align:right;font:600 clamp(13px,3.7vw,16px)/1.65 system-ui,Tahoma,Arial,sans-serif;color:#17503c;background:#f0f8f1;border-right:4px solid #b28b43;border-radius:8px;padding:8px 11px;margin:9px 0 13px}
 .exam-return-link{display:inline-flex;align-items:center;justify-content:center;gap:7px;background:#0b6348!important;color:#fff!important;font:700 15px/1.35 system-ui,Tahoma,Arial,sans-serif;text-decoration:none;border-radius:10px;padding:11px 15px;min-height:44px;border:2px solid #ccab65;box-shadow:0 2px 5px #0002}
 .exam-return-top{display:flex;align-items:center;justify-content:flex-start;margin:7px 0 12px}
@@ -271,17 +278,21 @@ function audioBackup(task){return audioPath(task).startsWith('audio-reviewed/')?
 function pics(options,six=false){return `<div class="imagegrid ${six?'six':''}">${options.map((v,i)=>`<div class="imgitem"><span class="picture-letter" aria-hidden="true">${letters[i]}</span><img loading="lazy" src="${safe(imagePath(v))}" alt="Illustration option ${letters[i]}"></div>`).join('')}</div>`}
 
 function matchingGrid(task, optionCount) {
- const listening = task.skill === 'listening';
- const kind = listening ? 'Text' : 'Item';
- const headings = Array.from(letters.slice(0,optionCount),(letter)=>`<th scope="col">${letter}</th>`).join('');
- const rows = task.questions.map((q,i)=>{
-  const key=task.id+':'+i, answer=state.answers[key];
-  const choices=Array.from(letters.slice(0,optionCount),(letter,j)=>`<td><label class="matrix-cell"><input type="radio" name="${safe(key)}" value="${j}" data-answer="${safe(key)}" aria-label="${kind} ${i+1}, option ${letter}" ${String(answer)===String(j)?'checked':''}></label></td>`).join('');
-  return `<tr><th scope="row">${i+1}</th>${choices}</tr>`;
+ const vocabularyPictures=task.format==='picture-word-match';
+ const listening=task.skill==='listening';
+ const kind=listening?'Text':vocabularyPictures?'Picture':'Item';
+ // Picture letters are row labels; the actual shuffled words are COLUMN HEADINGS.
+ const headings=vocabularyPictures
+   ?task.wordOptions.map(word=>`<th scope="col" class="matrix-word-heading">${safe(word)}</th>`).join('')
+   :Array.from(letters.slice(0,optionCount),letter=>`<th scope="col">${letter}</th>`).join('');
+ const rows=task.questions.map((q,i)=>{
+  const key=task.id+':'+i,answer=state.answers[key];
+  const choices=Array.from({length:optionCount},(_,j)=>`<td><label class="matrix-cell"><input type="radio" name="${safe(key)}" value="${j}" data-answer="${safe(key)}" aria-label="${kind} ${vocabularyPictures?letters[i]:i+1}, ${vocabularyPictures?task.wordOptions[j]:'option '+letters[j]}" ${String(answer)===String(j)?'checked':''}></label></td>`).join('');
+  return `<tr><th scope="row">${vocabularyPictures?letters[i]:i+1}</th>${choices}</tr>`;
  }).join('');
  const prompts=task.skill==='reading'?`<ol class="matrix-prompts">${task.questions.map(q=>`<li>${safe(q.stem)}</li>`).join('')}</ol>`:'';
  const feedback=task.questions.map((q,i)=>`<div class="feedback hidden" id="fb-${safe(task.id+':'+i)}"></div>`).join('');
- return `${prompts}<table class="answer-matrix" aria-label="Shade one answer per ${kind.toLowerCase()}"><thead><tr><th scope="col">${kind}</th>${headings}</tr></thead><tbody>${rows}</tbody></table>${feedback}`;
+ return `${prompts}<div class="answer-matrix-wrap"><table class="answer-matrix ${vocabularyPictures?'vocabulary-words-grid':''}" aria-label="Match picture letters to the word at the top of each column"><thead><tr><th scope="col">${kind}</th>${headings}</tr></thead><tbody>${rows}</tbody></table></div>${feedback}`;
 }
 
 function arabicInstruction(a){
@@ -298,7 +309,7 @@ function arabicInstruction(a){
  return 'اقرأ التعليمات وأجب عن جميع الأسئلة باللغة الإنجليزية.';
 }
 function renderActivities(){let str='';for(const a of state.acts){str+=`<section class="section" id="${safe(a.id)}"${a.skill==='reading'?' data-reading':''}><h2>${safe(a.title)} <span class="meta">(5 marks)</span></h2><p class="exam-ar-instruction" lang="ar" dir="rtl">${safe(arabicInstruction(a))}</p>`;const fmt=a.format;if(a.skill==='listening')str+=`<div class="notice">Listen carefully. The recording will be played twice in a formal test. ${state.full?'':'Use Show transcript only for practice.'}</div><audio controls preload="metadata" src="${safe(audioPath(a))}" data-backup="${safe(audioBackup(a))}" onerror="if(this.dataset.backup){this.src=this.dataset.backup;this.dataset.backup='';this.load()}"></audio>${state.full?'':`<details><summary>Show transcript (practice only)</summary><div class="passage">${safe(a.passages?.map((x,i)=>`Text ${i+1}: ${x}`).join('\n\n')||a.passage)}</div></details>`}`;if(a.skill==='reading'&&a.passage)str+=`<div class="passage">${safe(a.passage)}</div>`;if(fmt==='picture-match'){str+=pics(a.pictureOptions,a.pictureOptions.length===6);str+='<div class="notice">Match each numbered text with its picture. Shade one bubble in each row. Each picture can be used once.</div>'}
-if(fmt==='picture-word-match'){str+=pics(a.pictureOptions);str+=`<div class="notice">Words: ${a.wordOptions.map((w,i)=>`${letters[i]}. ${safe(w)}`).join(' &nbsp;&nbsp; ')}. One word is extra.</div>`}
+if(fmt==='picture-word-match'){str+=pics(a.pictureOptions);str+=`<div class="notice">Match each picture (A–E) with a word at the top of the table. One word is extra.</div>`}
 if(fmt==='text-match'){str+=a.passages.map((p,i)=>`<div class="passage"><b>Text ${letters[i]}</b> ${safe(p.stem)}</div>`).join('')}
 if(fmt==='writing'){if(a.pictureOptions?.length)str+=pics(a.pictureOptions);str+=`<div class="notice">${safe(a.prompt)}</div><textarea data-write="${safe(a.id)}" placeholder="Write your answer here..."></textarea><p class="meta" id="wc-${safe(a.id)}"></p>`}
 else if(['picture-match','picture-word-match','text-match'].includes(fmt)){
