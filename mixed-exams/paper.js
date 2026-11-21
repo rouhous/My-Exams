@@ -161,6 +161,23 @@
     return s.questions.map((q,i) => renderQuestion(q,i,s)).join('');
   }
 
+  function arabicExamInstruction(section) {
+    if (grade < 5 || grade > 8) return '';
+    const key = section.key || '';
+    let guidance = '';
+    if (section.writing) guidance = 'اقرأ موضوع الكتابة واكتب إجابتك باللغة الإنجليزية في المساحة المخصصة.';
+    else if (section.matching) guidance = 'اقرأ النصوص ثم طابق كل نص مع الاختيار المناسب. اكتب حرفًا واحدًا فقط، وهناك اختيار إضافي.';
+    else if (section.grid) guidance = key.startsWith('listening')
+      ? 'استمع إلى التسجيل، ثم طابق النصوص مع الصور أو الاختيارات المناسبة بتظليل حرف الإجابة.'
+      : 'انظر إلى الصور أو الكلمات، ثم ظلل حرف الإجابة المناسبة لكل سؤال.';
+    else if (key.startsWith('listening')) guidance = 'استمع إلى التسجيل كاملًا ثم أجب عن الأسئلة. سيُعاد التسجيل مرة ثانية.';
+    else if (key.startsWith('reading')) guidance = 'اقرأ النص بعناية، ثم أجب عن الأسئلة اعتمادًا على المعلومات الواردة فيه.';
+    else if (key.startsWith('grammar')) guidance = 'اقرأ الجمل أو الفقرة، ثم اختر الإجابة الصحيحة لكل فراغ.';
+    else if (key.startsWith('vocabulary')) guidance = 'اقرأ الجمل واختر المفردة المناسبة لكل سؤال.';
+    else guidance = 'اقرأ التعليمات جيدًا، ثم أجب عن جميع الأسئلة باللغة الإنجليزية.';
+    return '<p class="exam-ar-instruction" lang="ar" dir="rtl">' + guidance + '</p>';
+  }
+
   function renderSection(s) {
     const device = s.audio ? '<p>Listen to texts 1–5, then listen to the same texts again.</p><button type="button" id="' + s.key +
       '-prepare">Prepare recording</button><p id="' + s.key + '-audio-status" role="status"></p><audio controls hidden></audio>' : '';
@@ -177,7 +194,7 @@
           questions.map(q => renderQuestion(q, i++, s)).join('') + '</div>').join('')
       : s.questions.map(q => renderQuestion(q, i++, s)).join('');
     return '<section class="exam-part" id="' + s.key + '"><h2>' + titleFor(s.key) + '<small>' + s.marks + ' marks</small></h2>' +
-      device + content + '</section>';
+      arabicExamInstruction(s) + device + content + '</section>';
   }
 
   const sampleRate = 24000;
