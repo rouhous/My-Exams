@@ -45,7 +45,7 @@ for grade in (5,6):
   if len(parts)!=8 or sum(x['marks'] for x in parts)!=40:REPORT['errors'].append(f'G{grade} model {m} malformed')
   for task in parts:
    for pic in task.get('pictureOptions',[]):
-    if not (base/'images'/(pic+'.webp')).is_file():
+    if not any((base/'images'/(pic+'.'+ext)).is_file() for ext in ('webp','svg')):
      REPORT['errors'].append(f'G{grade} model {m}: missing picture {pic}')
 
   for x in parts:
@@ -73,7 +73,7 @@ for grade in (7,8):
     for qi,item in enumerate(section['items']):
      if len(item.get('images',[]))!=3:REPORT['errors'].append(f'G{grade} model {m["model"]}: question {qi+1} not three pictures')
      for pic in item.get('images',[]):
-      if not (base/'assets/illustrations'/(pic+'.webp')).is_file():REPORT['errors'].append(f'G{grade} model {m["model"]}: missing {pic}.webp')
+      if not any((base/'assets/illustrations'/(pic+'.'+ext)).is_file() for ext in ('webp','svg')):REPORT['errors'].append(f'G{grade} model {m["model"]}: missing image {pic}')
 
    if section['key'].startswith('listening'):
     if not (base/section['audio']).exists():REPORT['errors'].append(f'G{grade}: missing backup {section["audio"]}')
