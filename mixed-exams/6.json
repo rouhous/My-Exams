@@ -524,13 +524,6 @@
           "questions": [
             {
               "stem": "Write the word.",
-              "answer": "lamp",
-              "kind": "short",
-              "picture": "grades5-6/images/solar-study-lamp.webp",
-              "maxWords": 1
-            },
-            {
-              "stem": "Write the word.",
               "answer": "satellite",
               "kind": "short",
               "picture": "grades5-6/images/satellite.webp",
@@ -545,16 +538,23 @@
             },
             {
               "stem": "Write the word.",
-              "answer": "microphone",
+              "answer": "rocket",
               "kind": "short",
-              "picture": "grades5-6/images/studio-microphone.webp",
+              "picture": "grades5-6/images/rocket.webp",
               "maxWords": 1
             },
             {
               "stem": "Write the word.",
-              "answer": "tablet",
+              "answer": "moon",
               "kind": "short",
-              "picture": "grades5-6/images/bus-timetable-tablet.webp",
+              "picture": "grades5-6/images/moon.webp",
+              "maxWords": 1
+            },
+            {
+              "stem": "Write the word.",
+              "answer": "planet",
+              "kind": "short",
+              "picture": "grades5-6/images/planet.webp",
               "maxWords": 1
             }
           ]
@@ -901,30 +901,30 @@
             },
             {
               "stem": "Write the word.",
-              "answer": "football field",
+              "answer": "clock",
               "kind": "short",
-              "picture": "grades5-6/images/football-field.svg",
-              "maxWords": 2
-            },
-            {
-              "stem": "Write the word.",
-              "answer": "recycling bin",
-              "kind": "short",
-              "picture": "grades5-6/images/recycling-station.webp",
-              "maxWords": 2
-            },
-            {
-              "stem": "Write the word.",
-              "answer": "tablet",
-              "kind": "short",
-              "picture": "grades5-6/images/bus-timetable-tablet.webp",
+              "picture": "grades5-6/images/clock.webp",
               "maxWords": 1
             },
             {
               "stem": "Write the word.",
-              "answer": "compass",
+              "answer": "computer",
               "kind": "short",
-              "picture": "grades5-6/images/compass-hiking.webp",
+              "picture": "grades5-6/images/computer.webp",
+              "maxWords": 1
+            },
+            {
+              "stem": "Write the word.",
+              "answer": "bus",
+              "kind": "short",
+              "picture": "grades5-6/images/bus.webp",
+              "maxWords": 1
+            },
+            {
+              "stem": "Write the word.",
+              "answer": "bicycle",
+              "kind": "short",
+              "picture": "grades5-6/images/bicycle.webp",
               "maxWords": 1
             }
           ]
