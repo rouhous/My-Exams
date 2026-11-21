@@ -82,3 +82,15 @@ button[disabled] { opacity:.6; cursor:default; }
 
 /* Arabic task guidance for grades 5–8. */
 .exam-ar-instruction{direction:rtl;text-align:right;font:600 clamp(13px,3.5vw,16px)/1.65 system-ui,Tahoma,Arial,sans-serif;color:#17503c;background:#f0f8f1;border-right:4px solid #b28b43;border-radius:8px;padding:8px 11px;margin:9px 0 12px}
+
+
+/* Word-column grid: five lettered pictures, six actual words, one extra. */
+.vocabulary-grid-wrap{width:100%;max-width:100%;overflow-x:auto}
+.vocabulary-word-grid{max-width:100%;width:100%;table-layout:fixed;margin:8px auto 13px}
+.vocabulary-word-grid th.word-column{font-weight:700;line-height:1.25;overflow-wrap:anywhere;word-break:normal;padding:8px 2px;font-size:clamp(10px,2.6vw,14px)}
+.vocabulary-word-grid th:first-child{width:56px}
+.vocabulary-word-grid tbody th{background:#f0f7f1;font-size:17px}
+.vocabulary-picture-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.vocabulary-picture-list figure{min-width:0}
+.vocabulary-picture-list img{max-height:105px;width:100%;object-fit:contain}
+@media(max-width:480px){.vocabulary-word-grid th:first-child{width:42px}.vocabulary-word-grid th.word-column{font-size:10px;padding:5px 1px}.vocabulary-word-grid td label{min-height:43px}.vocabulary-word-grid input[type=radio]{width:17px;height:17px}}
