@@ -349,7 +349,7 @@
     button.disabled = true;
     try {
       const cache = await caches.open(cachedPaper);
-      const assets = [location.href, './' + scope + '.json', './paper.css', './paper.js?v=5', '../shared/journey-results.js', './assemble.js',
+      const assets = [location.href, './' + scope + '.json', './paper.css?v=8', './paper.js?v=8', '../shared/journey-results.js', './assemble.js?v=3',
         '../shared/reading-split.js?v=3', '../shared/reading-split.css?v=5', '../shared/exam-pages.js?v=1', '../shared/exam-pages.css?v=3',
         '../shared/oman-theme.css?v=29', '../shared/short-answer-marking.js',
         '../shared/data-charts.js', '../shared/learning-feedback.js?v=1', ...media];
