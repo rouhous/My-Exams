@@ -34,10 +34,9 @@ function completedGap(q,ctx,expected){
  const match=String(q?.stem||"").match(/\b(?:Gap|فراغ)\s*(\d+)\b/i);
  const source=String(ctx?.passage||q?.passage||"");
  if(!match||!source||!expected)return "";
- const rex=new RegExp("\\("+match[1]+"\\)\\s*_{2,}","g");
+ const rex=new RegExp("\\("+match[1]+"\\)\\s*_{2,}");
  const sentences=source.split(/(?<=[.!?])\s+|\n+/).map(x=>x.trim()).filter(Boolean);
  const line=sentences.find(x=>rex.test(x))||"";
- rex.lastIndex=0;
  return line?line.replace(rex,expected).slice(0,350):"";
 }
 function actualOption(q,expected,override){
@@ -138,7 +137,7 @@ function explanation(q,ctx={},override){
  if(!reasonEn&&tf)reasonEn=expected.toLowerCase()==="true"?"This statement matches the source.":"This statement contradicts the source.";
  const ruleAr=grammar?(q?.ruleAr||grammarArabic(q,correct,ctx)):"";
  const meaning=vocab?q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(correct)]||"":"";
- const example=sentence||(grammar&&/_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,correct):"");
+ const example=sentence||((grammar||vocab)&&/_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,correct):"");
  return {expected,expanded,correct,reasonAr,reasonEn,ruleAr,
    meaning,example,evidence:evidenceText,kind:spoken?"Listening script":"Reading text"};
 }
