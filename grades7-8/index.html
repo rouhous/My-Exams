@@ -35,7 +35,7 @@ function evaluate(value,question){
 g.MyExamsShortAnswers={evaluate,words};
 })(window);
 
-</script><script src="../shared/learning-feedback.js?v=1"></script><script id="mex-learning-offline-critical">/* My Exams: source-grounded per-question feedback + shared MEJ AI writing review. */
+</script><script src="../shared/learning-feedback.js?v=7"></script><script id="mex-learning-offline-critical">/* My Exams: source-grounded per-question feedback + shared MEJ AI writing review. */
 (function(w,d){
 "use strict";
 if(w.MyExamsLearning)return;
@@ -102,26 +102,46 @@ const GLOSSES={
 };
 function explanation(q,ctx={},override){
  const expected=answer(q,override),type=String(ctx.skill||ctx.key||q?.skill||"").toLowerCase();
- return {expected,rule:/gram|^grm$/.test(type)?rule(q,expected,ctx):"",
-   meaning:/vocab|^vcb$|spell|word/.test(type)?q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(expected)]||( /_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,expected):""):"",
-   example:/gram|^grm$/.test(type)?completedGap(q,ctx,expected):/vocab|^vcb$|spell|word/.test(type)&&/_{2,}/.test(q?.stem||"")&&(q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(expected)])?String(q.stem).replace(/_{2,}/,expected):"",
-   evidence:q?.evidence||q?.sourceQuote||evidence(expected,q?.script||q?.transcript||q?.passage||ctx.script||ctx.transcript||ctx.passage||ctx.text||"",q?.stem||""),
-   kind:/listen|lst/.test(type)?"Listening script":"Reading text"};
+ const spoken=/listen|lst/.test(type),grammar=/gram|^grm$|cloze/.test(type),vocab=/vocab|^vcb$|spell|word/.test(type);
+ const tf=/^(true|false)$/i.test(String(expected).trim()),matching=/^(?:[A-F])$/i.test(String(expected).trim()) && /reading|matching/.test(type);
+ const source=q?.script||q?.transcript||q?.passage||ctx.script||ctx.transcript||ctx.passage||ctx.text||"";
+ const explicitEvidence=q?.evidence||q?.sourceQuote||"";
+ const selected=Array.isArray(q?.options)&&typeof q.answer==="number"?q.options[q.answer]:Array.isArray(q?.choices)&&typeof q.answer==="number"?q.choices[q.answer]:"";
+ const expanded=ctx.correctText||((/^[A-F]$/i.test(expected)&&selected)?selected:"");
+ let reason=typeof q?.explanation==="string"?q.explanation.trim():"";
+ if(!reason){
+  if(tf)reason=expected.toLowerCase()==="true"?
+   "The statement agrees with the information given in the text or recording.":
+   "The statement contradicts the information in the text or recording. Check the correct detail below.";
+  else if(matching && expanded)reason="This ending completes the numbered text in meaning and context.";
+  else if(grammar)reason="Complete the sentence using the correct grammatical form, then read it again to check the meaning.";
+  else if(vocab)reason="This is the word that matches the picture or context. Check its spelling and meaning.";
+  else if(spoken)reason="The correct choice matches what the speaker says, rather than a distractor.";
+  else if(/read/.test(type))reason="The answer must agree with the information stated in the reading passage.";
+  else reason="Compare the correct choice with the wording of the question.";
+ }
+ const filled=completedGap(q,ctx,expected);
+ const example=grammar?filled||(/_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,expected):""):
+  vocab&&/_{2,}/.test(q?.stem||"")?String(q.stem).replace(/_{2,}/,expected):"";
+ return {expected,expanded,reason,rule:grammar?rule(q,expected,ctx):"",
+   meaning:vocab?q?.meaningAr||q?.arabicMeaning||q?.definition||q?.meaning||GLOSSES[norm(expected)]||"": "",
+   example,evidence:explicitEvidence||evidence(expected,source,q?.stem||""),
+   kind:spoken?"Listening script":"Reading text"};
 }
 function feedback(q,ctx={},ok=false,override){
  const p=explanation(q,ctx,override);
- let html='<div class="mex-fb '+(ok?"mex-fb-ok":"mex-fb-try")+'" role="note"><strong>'+(ok?"✓ Excellent! أحسنت، واصل.":"✗ Try again! حاول مرة أخرى.")+'</strong>';
- if(p.expected)html+='<p><b>Correct answer:</b> '+esc(p.expected)+'</p>';
+ let html='<div class="mex-fb '+(ok?"mex-fb-ok":"mex-fb-try")+'" role="note"><strong>'+(ok?"✓ Excellent! أحسنت، واصل.":"✗ Let’s correct it! لنصحح الإجابة معًا.")+'</strong>';
+ if(p.expected)html+='<p><b>Correct answer:</b> '+esc(p.expected)+(p.expanded&&norm(p.expanded)!==norm(p.expected)?' — '+esc(p.expanded):'')+'</p>';
+ if(p.reason)html+='<p><b>Why? السبب:</b> '+esc(p.reason)+'</p>';
  if(p.rule)html+='<p><b>Grammar rule:</b> '+esc(p.rule)+'</p>';
  if(p.meaning)html+='<p><b>Word meaning:</b> '+esc(p.meaning)+'</p>';
- if(p.example)html+='<p><b>Example:</b> '+esc(p.example)+'</p>';
+ if(p.example)html+='<p><b>Correct sentence:</b> '+esc(p.example)+'</p>';
  if(p.evidence){
   let quote=esc(p.evidence);
-  const pos=p.evidence.toLowerCase().indexOf(p.expected.toLowerCase());
+  const pos=p.expected?p.evidence.toLowerCase().indexOf(p.expected.toLowerCase()):-1;
   if(pos>=0&&p.expected){quote=esc(p.evidence.slice(0,pos))+'<mark>'+esc(p.evidence.slice(pos,pos+p.expected.length))+'</mark>'+esc(p.evidence.slice(pos+p.expected.length))}
-  html+='<p><b>From the '+esc(p.kind)+':</b></p><blockquote>'+quote+'</blockquote>';
+  html+='<p><b>Evidence from the '+esc(p.kind)+':</b></p><blockquote>'+quote+'</blockquote>';
  }
- if(!p.rule&&!p.meaning&&!p.example&&!p.evidence)html+='<p class="mex-fb-note">Compare your response with the reference answer. No verified explanation or source sentence was stored for this item.</p>';
  return html+'</div>';
 }
 function pageGrade(){
@@ -167,7 +187,7 @@ function mount(){
   seen.add(ta);
   const panel=d.createElement("div");panel.className="mex-ai-panel";
   const button=d.createElement("button");button.type="button";button.className="mex-ai-trigger";button.textContent="✨ راجع كتابتي بالذكاء الاصطناعي · AI Writing Feedback";
-  const status=d.createElement("p");status.className="mex-ai-status";status.textContent="تقدير تدريبي فقط — تصحيح المعلم هو المرجع.";
+  const status=d.createElement("p");status.className="mex-ai-status";status.textContent="تقدير تدريبي فقط. عند الضغط يُرسل النص إلى خدمة AI للمراجعة؛ لا تُدخل بيانات شخصية.";
   const result=d.createElement("div");result.className="mex-ai-result";
   panel.append(button,status,result);ta.insertAdjacentElement("afterend",panel);
   button.addEventListener("click",async()=>{
