@@ -192,7 +192,10 @@
               "answer": 0,
               "kind": "mc",
               "stem": "Our drama club _____ active for two years.",
-              "point": "present-perfect"
+              "point": "present-perfect",
+              "topicType": "grammar",
+              "explanationAr": "نستخدم has been لأن club فاعل مفرد، ويعبّر المضارع التام عن حالة بدأت في الماضي وما زالت مستمرة منذ سنتين.",
+              "ruleAr": "نستخدم has been لأن club فاعل مفرد، ويعبّر المضارع التام عن حالة بدأت في الماضي وما زالت مستمرة منذ سنتين."
             },
             {
               "options": [
@@ -203,7 +206,10 @@
               "answer": 2,
               "kind": "mc",
               "stem": "We have practised in the theatre _____ September.",
-              "point": "duration"
+              "point": "duration",
+              "topicType": "grammar",
+              "explanationAr": "since تحدد نقطة بداية زمنية وهي September، أما for فتأتي مع مدة زمنية مثل two years.",
+              "ruleAr": "since تحدد نقطة بداية زمنية وهي September، أما for فتأتي مع مدة زمنية مثل two years."
             },
             {
               "options": [
@@ -214,7 +220,10 @@
               "answer": 2,
               "kind": "mc",
               "stem": "We _____ next Friday because the tickets are ready.",
-              "point": "arrangement"
+              "point": "arrangement",
+              "topicType": "grammar",
+              "explanationAr": "are performing هو المضارع المستمر المستخدم هنا لترتيب مقرر في المستقبل next Friday، ولا نستخدم الماضي مع هذا المعنى.",
+              "ruleAr": "are performing هو المضارع المستمر المستخدم هنا لترتيب مقرر في المستقبل next Friday، ولا نستخدم الماضي مع هذا المعنى."
             },
             {
               "options": [
@@ -225,7 +234,10 @@
               "answer": 1,
               "kind": "mc",
               "stem": "My friend says she _____ never performed before.",
-              "point": "present-perfect"
+              "point": "present-perfect",
+              "topicType": "grammar",
+              "explanationAr": "بعد she نستخدم has لتكوين المضارع التام: she has never performed؛ لأن الفاعل مفرد والتجربة مرتبطة بما قبل الآن.",
+              "ruleAr": "بعد she نستخدم has لتكوين المضارع التام: she has never performed؛ لأن الفاعل مفرد والتجربة مرتبطة بما قبل الآن."
             },
             {
               "options": [
@@ -236,7 +248,11 @@
               "answer": 0,
               "kind": "mc",
               "stem": "A famous singer is _____ a concert that evening, so she cannot join us.",
-              "point": "verb-pattern"
+              "point": "verb-pattern",
+              "topicType": "grammar",
+              "explanationAr": "يأتي بعد is الفعل مع ing في المضارع المستمر: is giving a concert. كلمة given تصريف ثالث وgive صيغة مجردة.",
+              "ruleAr": "يأتي بعد is الفعل مع ing في المضارع المستمر: is giving a concert. كلمة given تصريف ثالث وgive صيغة مجردة.",
+              "meaningAr": "نكوّن المضارع المستمر من am/is/are + الفعل المنتهي بـ ing."
             },
             {
               "options": [
@@ -247,7 +263,10 @@
               "answer": 1,
               "kind": "mc",
               "stem": "Our parents are _____ to watch, and we are looking forward to the performance.",
-              "point": "arrangement"
+              "point": "arrangement",
+              "topicType": "grammar",
+              "explanationAr": "are coming صيغة المضارع المستمر لتعبير عن زيارة أو ترتيب مستقبلي معروف؛ بعد are نستعمل coming.",
+              "ruleAr": "are coming صيغة المضارع المستمر لتعبير عن زيارة أو ترتيب مستقبلي معروف؛ بعد are نستعمل coming."
             }
           ]
         },
@@ -263,7 +282,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "stem": "This week, our _____ is preparing a new show."
+              "stem": "This week, our _____ is preparing a new show.",
+              "topicType": "vocabulary",
+              "explanationAr": "director تعني مخرج العرض المسرحي، وهو الشخص الذي يُحضّر العرض ويُوجّه المشاركين، وليس مسافرًا أو وجهة.",
+              "meaningAr": "مخرج"
             },
             {
               "options": [
@@ -273,7 +295,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "stem": "Some pupils are _____ and others make costumes."
+              "stem": "Some pupils are _____ and others make costumes.",
+              "topicType": "vocabulary",
+              "explanationAr": "actors تعني الممثلين الذين يشاركون في العرض المسرحي، بخلاف pilots وclimbers.",
+              "meaningAr": "ممثلون"
             },
             {
               "options": [
@@ -283,7 +308,10 @@
               ],
               "answer": 2,
               "kind": "mc",
-              "stem": "We feel more _____ after every rehearsal."
+              "stem": "We feel more _____ after every rehearsal.",
+              "topicType": "grammar",
+              "explanationAr": "بعد feel more نحتاج صفة لوصف الشعور: confident «واثق». confidence اسم وconfidently ظرف.",
+              "ruleAr": "بعد feel more نحتاج صفة لوصف الشعور: confident «واثق». confidence اسم وconfidently ظرف."
             },
             {
               "options": [
@@ -293,7 +321,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "stem": "Our parents are coming to watch, and we are looking _____ to the performance."
+              "stem": "Our parents are coming to watch, and we are looking _____ to the performance.",
+              "topicType": "vocabulary",
+              "explanationAr": "التعبير look forward to يعني «يتطلع إلى شيء بشوق». كلمة forward تكمل التعبير الثابت، ولا تناسبه after أو away.",
+              "meaningAr": "إلى الأمام؛ ضمن التعبير: يتطلع إلى"
             }
           ]
         },
@@ -630,7 +661,10 @@
               "answer": 0,
               "kind": "mc",
               "stem": "Our guide said they _____ belong to a fox.",
-              "point": "possibility"
+              "point": "possibility",
+              "topicType": "grammar",
+              "explanationAr": "might فعل ناقص يعبر عن الاحتمال: might belong. ولا تأتي to بعد must أو can بهذه الطريقة.",
+              "ruleAr": "might فعل ناقص يعبر عن الاحتمال: might belong. ولا تأتي to بعد must أو can بهذه الطريقة."
             },
             {
               "options": [
@@ -641,7 +675,10 @@
               "answer": 0,
               "kind": "mc",
               "stem": "If visitors _____ quiet, more animals will appear.",
-              "point": "conditional"
+              "point": "conditional",
+              "topicType": "grammar",
+              "explanationAr": "هذه جملة شرط أول: if + مضارع بسيط. الفاعل visitors جمع، ولذلك نقول stay دون s.",
+              "ruleAr": "هذه جملة شرط أول: if + مضارع بسيط. الفاعل visitors جمع، ولذلك نقول stay دون s."
             },
             {
               "options": [
@@ -652,7 +689,10 @@
               "answer": 2,
               "kind": "mc",
               "stem": "We must not _____ wild creatures.",
-              "point": "modal-complement"
+              "point": "modal-complement",
+              "topicType": "grammar",
+              "explanationAr": "بعد must not يأتي الفعل المجرد من غير to أو ing: must not feed، أي يُمنع إطعام الحيوانات.",
+              "ruleAr": "بعد must not يأتي الفعل المجرد من غير to أو ing: must not feed، أي يُمنع إطعام الحيوانات."
             },
             {
               "options": [
@@ -663,7 +703,10 @@
               "answer": 1,
               "kind": "mc",
               "stem": "A feather _____ be from an eagle, but nobody was certain.",
-              "point": "possibility"
+              "point": "possibility",
+              "topicType": "grammar",
+              "explanationAr": "could be تعني «قد تكون» وتعبّر عن احتمال غير مؤكّد، وهو مناسب لأن النص يقول nobody was certain.",
+              "ruleAr": "could be تعني «قد تكون» وتعبّر عن احتمال غير مؤكّد، وهو مناسب لأن النص يقول nobody was certain."
             },
             {
               "options": [
@@ -674,7 +717,10 @@
               "answer": 0,
               "kind": "mc",
               "stem": "If the weather _____ hotter, we will leave early.",
-              "point": "conditional"
+              "point": "conditional",
+              "topicType": "grammar",
+              "explanationAr": "في الشرط الأول نقول If the weather gets hotter, we will leave؛ weather مفرد لذا نضيف s للفعل gets.",
+              "ruleAr": "في الشرط الأول نقول If the weather gets hotter, we will leave؛ weather مفرد لذا نضيف s للفعل gets."
             },
             {
               "options": [
@@ -685,7 +731,10 @@
               "answer": 2,
               "kind": "mc",
               "stem": "Animals _____ themselves in different ways.",
-              "point": "present-simple"
+              "point": "present-simple",
+              "topicType": "grammar",
+              "explanationAr": "Animals جمع، لذا يأتي الفعل في المضارع البسيط دون s: Animals protect themselves.",
+              "ruleAr": "Animals جمع، لذا يأتي الفعل في المضارع البسيط دون s: Animals protect themselves."
             }
           ]
         },
@@ -701,7 +750,10 @@
               ],
               "answer": 2,
               "kind": "mc",
-              "stem": "A bird had a long _____ for reaching food."
+              "stem": "A bird had a long _____ for reaching food.",
+              "topicType": "vocabulary",
+              "explanationAr": "beak هو منقار الطائر الذي يستخدمه لالتقاط الطعام، وليس claw (مخلبًا) أو wingtip (طرف الجناح).",
+              "meaningAr": "منقار"
             },
             {
               "options": [
@@ -711,7 +763,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "stem": "A lizard hid beneath a _____."
+              "stem": "A lizard hid beneath a _____.",
+              "topicType": "vocabulary",
+              "explanationAr": "rock تعني صخرة، وتناسب اختباء السحلية تحتها؛ أما ticket وscreen فلا يناسبان مكان الاختباء.",
+              "meaningAr": "صخرة"
             },
             {
               "options": [
@@ -721,7 +776,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "stem": "Each _____ needs food and shelter, so we should protect its habitat."
+              "stem": "Each _____ needs food and shelter, so we should protect its habitat.",
+              "topicType": "vocabulary",
+              "explanationAr": "species تعني نوعًا من الكائنات الحية؛ وكل نوع يحتاج إلى الغذاء والمأوى.",
+              "meaningAr": "نوع من الكائنات"
             },
             {
               "options": [
@@ -731,7 +789,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "stem": "Each species needs food and shelter, so we should _____ its habitat."
+              "stem": "Each species needs food and shelter, so we should _____ its habitat.",
+              "topicType": "vocabulary",
+              "explanationAr": "protect تعني يحمي؛ سياق الجملة يدعو إلى حماية الموطن الطبيعي وليس تجاهله أو إزالته.",
+              "meaningAr": "يحمي"
             }
           ]
         },
@@ -1067,7 +1128,10 @@
               "answer": 0,
               "kind": "mc",
               "stem": "The train _____ at seven thirty on Saturday.",
-              "point": "timetable"
+              "point": "timetable",
+              "topicType": "grammar",
+              "explanationAr": "نستخدم المضارع البسيط leaves مع الجداول والمواعيد الثابتة للقطار، حتى لو كانت الرحلة في المستقبل.",
+              "ruleAr": "نستخدم المضارع البسيط leaves مع الجداول والمواعيد الثابتة للقطار، حتى لو كانت الرحلة في المستقبل."
             },
             {
               "options": [
@@ -1078,7 +1142,10 @@
               "answer": 2,
               "kind": "mc",
               "stem": "I am _____ to bring a backpack.",
-              "point": "future-plan"
+              "point": "future-plan",
+              "topicType": "grammar",
+              "explanationAr": "صيغة الخطة المستقبلية هي am going to + فعل مجرد، لذلك I am going to bring.",
+              "ruleAr": "صيغة الخطة المستقبلية هي am going to + فعل مجرد، لذلك I am going to bring."
             },
             {
               "options": [
@@ -1089,7 +1156,10 @@
               "answer": 1,
               "kind": "mc",
               "stem": "The museum _____ at nine, so we have time for breakfast.",
-              "point": "timetable"
+              "point": "timetable",
+              "topicType": "grammar",
+              "explanationAr": "المتحف opens at nine موعد ثابت، ويأتي الفعل مع s لأن museum مفرد.",
+              "ruleAr": "المتحف opens at nine موعد ثابت، ويأتي الفعل مع s لأن museum مفرد."
             },
             {
               "options": [
@@ -1100,7 +1170,10 @@
               "answer": 2,
               "kind": "mc",
               "stem": "If it rains, we _____ take umbrellas.",
-              "point": "conditional"
+              "point": "conditional",
+              "topicType": "grammar",
+              "explanationAr": "في الشرط الأول If it rains نستخدم will + فعل مجرد في النتيجة: we will take umbrellas.",
+              "ruleAr": "في الشرط الأول If it rains نستخدم will + فعل مجرد في النتيجة: we will take umbrellas."
             },
             {
               "options": [
@@ -1111,7 +1184,10 @@
               "answer": 1,
               "kind": "mc",
               "stem": "My friend thinks the trip _____ be exciting.",
-              "point": "future-prediction"
+              "point": "future-prediction",
+              "topicType": "grammar",
+              "explanationAr": "بعد thinks نستطيع استخدام will be للتوقع المستقبلي: the trip will be exciting.",
+              "ruleAr": "بعد thinks نستطيع استخدام will be للتوقع المستقبلي: the trip will be exciting."
             },
             {
               "options": [
@@ -1122,7 +1198,10 @@
               "answer": 1,
               "kind": "mc",
               "stem": "After lunch, we _____ going to visit a fort.",
-              "point": "future-plan"
+              "point": "future-plan",
+              "topicType": "grammar",
+              "explanationAr": "نستخدم are مع we في تركيب المستقبل be going to: We are going to visit.",
+              "ruleAr": "نستخدم are مع we في تركيب المستقبل be going to: We are going to visit."
             },
             {
               "options": [
@@ -1133,7 +1212,10 @@
               "answer": 0,
               "kind": "mc",
               "stem": "We hope the journey _____ on time.",
-              "point": "future-prediction"
+              "point": "future-prediction",
+              "topicType": "grammar",
+              "explanationAr": "نستخدم will + الفعل المجرد للتعبير عن أمل يتعلق بالمستقبل: the journey will finish on time.",
+              "ruleAr": "نستخدم will + الفعل المجرد للتعبير عن أمل يتعلق بالمستقبل: the journey will finish on time."
             }
           ]
         },
@@ -1149,7 +1231,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "stem": "We checked the _____ before leaving."
+              "stem": "We checked the _____ before leaving.",
+              "topicType": "vocabulary",
+              "explanationAr": "timetable يعني جدول المواعيد، ونراجعه لمعرفة أوقات القطارات أو الرحلات.",
+              "meaningAr": "جدول المواعيد"
             },
             {
               "options": [
@@ -1159,7 +1244,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "stem": "We are meeting at the _____ before sunrise."
+              "stem": "We are meeting at the _____ before sunrise.",
+              "topicType": "vocabulary",
+              "explanationAr": "station تعني محطة القطار، وهي المكان الذي يجتمع فيه الطلاب لبدء رحلة القطار.",
+              "meaningAr": "محطة"
             },
             {
               "options": [
@@ -1169,7 +1257,10 @@
               ],
               "answer": 2,
               "kind": "mc",
-              "stem": "Our guide will find the correct _____."
+              "stem": "Our guide will find the correct _____.",
+              "topicType": "vocabulary",
+              "explanationAr": "platform تعني رصيف القطار الذي يغادر منه القطار، وهو ما يبحث عنه المرشد داخل المحطة.",
+              "meaningAr": "رصيف القطار"
             }
           ]
         },
