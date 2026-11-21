@@ -333,15 +333,23 @@ function start(){clearInterval(timer);by('changeExam').href='../grade-skills.htm
 function finish(){if(!current||!by('result'))return;clearInterval(timer);if(by('submit'))by('submit').disabled=true;let points=0,max=0,missing=0;document.querySelectorAll(".exam-match-review").forEach(el=>el.replaceChildren());const sections=current.timed?current.sections:[current.sections[+by('which').value]];for(const s of sections){if(s.type==='writing')continue;for(let i=0;i<(s.items?.length||s.texts?.length);i++){max++;const k=s.key+':'+i,v=state[k];if(v===undefined||v==='')missing++;let correct=false,expected='';if(s.type==='picture-choice'||s.type==='cloze'){correct=Number(v)===s.items[i].answer;expected=String.fromCharCode(65+s.items[i].answer)}if(s.type==='matching'){expected=String.fromCharCode(65+s.answers[i]);correct=String(v||'').trim().toUpperCase()===expected}if(s.type==='true-false'){correct=Number(v)===(s.items[i].answer?0:1);expected=s.items[i].answer?'True':'False'}if(s.type==='short-answer'){correct=window.MyExamsShortAnswers.evaluate(v,s.items[i]).correct;expected=s.items[i].answers[0]}if(correct)points++;
  const field=document.querySelector('[data-k="'+k+'"]');
  if(!current.timed&&s.type==='matching'&&field){
-  field.closest('label').dataset.verdict=correct?'correct':'incorrect';
+  const choice=s.continuations[s.answers[i]];
+  const matchedText=s.texts[i];
+  const item={stem:matchedText,evidence:matchedText+' '+choice,
+    explanation:'The correct ending continues the meaning of the numbered text. Read the opening and ending together.'};
+  const label=field.closest('label');
+  if(label)label.dataset.verdict=correct?'correct':'incorrect';
   const list=by('review-'+s.key);
-  list.insertAdjacentHTML('beforeend','<p>Item '+(i+1)+': '+(correct?'✓ ':'')+esc(expected)+'</p>');
+  list.insertAdjacentHTML('beforeend','<div class="match-feedback"><strong>Text '+(i+1)+'</strong>'+
+    window.MyExamsLearning.feedback(item,{skill:'reading',correctText:choice},correct,expected)+'</div>');
  }
  const parent=field?.closest('.question,.q');
- if(parent&&!current.timed){
+ if(parent&&!current.timed&&s.type!=='matching'){
   parent.querySelectorAll('.mex-fb').forEach(el=>el.remove());
-  const item=s.items?.[i]||s.texts?.[i]||{stem:k};
-  parent.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(item,{skill:s.key||s.type,passage:s.passage||'',script:s.script||s.transcript||''},correct,expected));
+  const item=s.items?.[i]||{stem:k};
+  const specific=s.type==='cloze'?{...item,stem:'Gap '+(i+1)}:item;
+  parent.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(specific,
+    {skill:s.key||s.type,passage:s.passage||'',script:s.script||s.transcript||''},correct,expected));
  }
  }}
 window.MyExamsJourney?.report({grade:current.grade,model:'unit-'+current.model,skill:current.timed?'':sections[0].key,earned:points,possible:max,writingPending:sections.some(s=>s.type==='writing')});
