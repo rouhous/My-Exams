@@ -1,10 +1,10 @@
-/* My Exams tools: pencil, eraser, selection highlighter, notes, copy, undo.
+/* My Exams tools: pencil, eraser, notes, copy, paste, undo.
    Drawings and notes are private browser-local per page; never uploaded. */
 (function(){
 "use strict";
 if(window.__myExamsTools)return; window.__myExamsTools=true;
 const doc=document, key="my-exams-tools:"+location.pathname;
-const icon={pen:"✎",eraser:"⌫",highlight:"▰",copy:"⧉",note:"▤",undo:"↶",clear:"✕",min:"−"};
+const icon={pen:"✎",eraser:"⌫",copy:"⧉",paste:"▣",note:"▤",undo:"↶",clear:"✕",min:"−"};
 let data={strokes:[],highlights:[],note:""};
 try{const saved=JSON.parse(localStorage.getItem(key)||"null");if(saved&&Array.isArray(saved.strokes)&&Array.isArray(saved.highlights))data={strokes:saved.strokes,highlights:saved.highlights,note:String(saved.note||"")}}catch(e){}
 let mode="",drawing=null,collapsed=false,renderPending=false;
@@ -24,19 +24,51 @@ const bar=element("div","ex-tools");bar.setAttribute("role","toolbar");bar.setAt
 const buttons={};
 function add(id,label,handler){const b=element("button","");b.type="button";b.title=label;b.setAttribute("aria-label",label);b.innerHTML='<span class="ex-icon" aria-hidden="true">'+icon[id]+'</span><span class="ex-tool-text"></span>';b.querySelector(".ex-tool-text").textContent=label;bar.append(b);buttons[id]=b;b.addEventListener("click",handler)}
 function setMode(next){mode=next===mode?"":next;canvas.classList.toggle("active",mode==="pen"||mode==="eraser");doc.body.classList.toggle("ex-ink-mode",mode==="pen"||mode==="eraser");for(const id of ["pen","eraser"])buttons[id].setAttribute("aria-pressed",String(mode===id));if(mode)toast(mode==="pen"?"ارسم على الصفحة — اضغط القلم مرة ثانية للإيقاف":"المس الرسم لمسحه — اضغط الممحاة للإيقاف")}
-function selectedRects(){
- const selection=getSelection();if(!selection||selection.isCollapsed||!selection.toString().trim())return[];
- const list=[];for(let i=0;i<selection.rangeCount;i++){const range=selection.getRangeAt(i);if(bar.contains(range.commonAncestorContainer))continue;for(const r of range.getClientRects()){if(r.width>1&&r.height>3)list.push({x:r.left+scrollX,y:r.top+scrollY,w:r.width,h:r.height})}}
- return list;
-}
-add("highlight","تحديد",()=>{if(mode)setMode("");const rects=selectedRects();if(!rects.length){toast("حدد النص أولًا ثم اضغط تحديد");return}data.highlights.push(...rects);save();schedule();getSelection()?.removeAllRanges();toast("تم تحديد النص")});
 add("pen","قلم",()=>setMode("pen"));
 add("eraser","ممحاة",()=>setMode("eraser"));
 add("note","أفكاري",()=>{setMode("");note.classList.toggle("visible");if(note.classList.contains("visible"))notes.focus()});
 add("copy","نسخ",async()=>{if(mode)setMode("");const selected=getSelection()?.toString().trim();const text=selected||notes.value.trim();if(!text){toast("حدد النص المراد نسخه");return}try{await navigator.clipboard.writeText(text);toast("تم نسخ النص")}catch(e){try{const area=element("textarea");area.value=text;area.style.position="fixed";area.style.opacity="0";doc.body.append(area);area.select();const ok=doc.execCommand("copy");area.remove();toast(ok?"تم نسخ النص":"لم يُسمح بالنسخ")}catch(x){toast("استخدم أمر النسخ في المتصفح")}}});
+/* Preserve the student's last editable field when toolbar buttons take focus. */
+let lastEditor=null,lastSelection=null;
+function editable(el){return !!el && ((el.matches?.('textarea,input:not([type=radio]):not([type=checkbox]):not([type=button]):not([type=submit]):not([type=hidden]):not([readonly]):not([disabled])'))||el.isContentEditable)}
+function trackEditor(el){if(!editable(el)||bar.contains(el))return;lastEditor=el;if(typeof el.selectionStart==="number")lastSelection={start:el.selectionStart,end:el.selectionEnd};}
+doc.addEventListener("focusin",e=>trackEditor(e.target),true);
+doc.addEventListener("keyup",e=>trackEditor(e.target),true);
+doc.addEventListener("mouseup",e=>trackEditor(e.target),true);
+doc.addEventListener("selectionchange",()=>{if(editable(doc.activeElement))trackEditor(doc.activeElement)});
+function pasteAtCursor(target,text){
+ if(!editable(target))return false;
+ target.focus({preventScroll:true});
+ if(target.isContentEditable){
+  const selection=doc.getSelection(),range=selection?.rangeCount?selection.getRangeAt(0):null;
+  if(range && target.contains(range.commonAncestorContainer)){
+   range.deleteContents();const node=doc.createTextNode(text);range.insertNode(node);range.setStartAfter(node);range.collapse(true);selection.removeAllRanges();selection.addRange(range);
+  }else target.append(doc.createTextNode(text));
+ }else{
+  const start=lastEditor===target&&lastSelection?lastSelection.start:target.selectionStart??target.value.length;
+  const stop=lastEditor===target&&lastSelection?lastSelection.end:target.selectionEnd??start;
+  target.setRangeText(text,start,stop,"end");
+  lastSelection={start:target.selectionStart,end:target.selectionEnd};
+ }
+ target.dispatchEvent(new Event("input",{bubbles:true}));
+ return true;
+}
+add("paste","لصق",async()=>{
+ if(mode)setMode("");
+ const target=editable(lastEditor)&&lastEditor.isConnected?lastEditor:(note.classList.contains("visible")?notes:null);
+ if(!target){toast("ضع المؤشر داخل خانة الإجابة أو الملاحظات أولًا");return}
+ try{
+  if(!navigator.clipboard?.readText)throw Error("clipboard-unavailable");
+  const text=await navigator.clipboard.readText();
+  if(!text){toast("الحافظة فارغة");return}
+  if(pasteAtCursor(target,text))toast("تم لصق النص");
+ }catch(e){target.focus();toast("اسمح بالوصول للحافظة أو استخدم Ctrl+V / لصق من لوحة المفاتيح")}
+});
+buttons.paste.addEventListener("pointerdown",event=>event.preventDefault());
+
 add("undo","تراجع",()=>{if(data.strokes.length){data.strokes.pop()}else if(data.highlights.length)data.highlights.pop();save();schedule()});
-add("clear","مسح الكل",()=>{if(!data.strokes.length&&!data.highlights.length)return;if(confirm("مسح جميع الرسومات وعلامات التحديد في هذه الصفحة؟")){data.strokes=[];data.highlights=[];save();schedule()}});
-buttons.highlight.addEventListener("pointerdown",event=>event.preventDefault());buttons.copy.addEventListener("pointerdown",event=>event.preventDefault());
+add("clear","مسح الكل",()=>{if(!data.strokes.length&&!data.highlights.length)return;if(confirm("مسح جميع الرسومات في هذه الصفحة؟")){data.strokes=[];data.highlights=[];save();schedule()}});
+buttons.copy.addEventListener("pointerdown",event=>event.preventDefault());
 add("min","إخفاء",()=>{collapsed=!collapsed;bar.classList.toggle("ex-collapsed",collapsed);for(const [id,b] of Object.entries(buttons))if(id!=="min")b.hidden=collapsed;buttons.min.setAttribute("aria-label",collapsed?"إظهار أدوات الدراسة":"إخفاء أدوات الدراسة");buttons.min.querySelector(".ex-tool-text").textContent=collapsed?"إظهار":"إخفاء";if(collapsed)setMode("")});
 doc.body.append(bar);
 if(doc.body.dataset.studyTools==="compact"&&matchMedia("(max-width: 640px)").matches)buttons.min.click();
