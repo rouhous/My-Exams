@@ -30,7 +30,7 @@ add("note","أفكاري",()=>{setMode("");note.classList.toggle("visible");if(n
 add("copy","نسخ",async()=>{if(mode)setMode("");const selected=getSelection()?.toString().trim();const text=selected||notes.value.trim();if(!text){toast("حدد النص المراد نسخه");return}try{await navigator.clipboard.writeText(text);toast("تم نسخ النص")}catch(e){try{const area=element("textarea");area.value=text;area.style.position="fixed";area.style.opacity="0";doc.body.append(area);area.select();const ok=doc.execCommand("copy");area.remove();toast(ok?"تم نسخ النص":"لم يُسمح بالنسخ")}catch(x){toast("استخدم أمر النسخ في المتصفح")}}});
 /* Preserve the student's last editable field when toolbar buttons take focus. */
 let lastEditor=null,lastSelection=null;
-function editable(el){return !!el && ((el.matches?.('textarea,input:not([type=radio]):not([type=checkbox]):not([type=button]):not([type=submit]):not([type=hidden]):not([readonly]):not([disabled])'))||el.isContentEditable)}
+function editable(el){return !!el && ((el.matches?.('textarea:not([readonly]):not([disabled]),input:not([readonly]):not([disabled]):is([type=text],[type=search],[type=email],[type=url],[type=tel],[type=password],:not([type]))'))||el.isContentEditable)}
 function trackEditor(el){if(!editable(el)||bar.contains(el))return;lastEditor=el;if(typeof el.selectionStart==="number")lastSelection={start:el.selectionStart,end:el.selectionEnd};}
 doc.addEventListener("focusin",e=>trackEditor(e.target),true);
 doc.addEventListener("keyup",e=>trackEditor(e.target),true);
