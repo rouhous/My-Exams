@@ -232,15 +232,43 @@ const G56_PARTS=[
  'listening:1','listening:2','vocabulary:1','grammar:1',
  'reading:1','reading:2','writing:1','writing:2'
 ];
+function diversifyG56Parts(parts, grade) {
+ const slots=parts.map((task,i)=>task.pictureOptions?.length?i:-1).filter(i=>i>=0);
+ let best=null;
+ function walk(depth,picked,seen,duplicates,changes){
+  if(depth===slots.length){
+   const score=duplicates*10000+changes;
+   if(!best||score<best.score)best={score,picked:[...picked]};
+   return;
+  }
+  const index=slots[depth],original=parts[index];
+  const candidates=bank.filter(x=>x.grade===grade&&'ABCD'.includes(x.model)
+    &&x.skill===original.skill&&x.part===original.part)
+    .sort((a,b)=>(a.id===original.id?-1:b.id===original.id?1:0));
+  for(const task of candidates){
+   const repeats=task.pictureOptions.filter(p=>seen.has(p)).length;
+   const nextDuplicates=duplicates+repeats,nextChanges=changes+(task.id===original.id?0:1);
+   if(best&&nextDuplicates*10000+nextChanges>=best.score)continue;
+   walk(depth+1,[...picked,task],new Set([...seen,...task.pictureOptions]),nextDuplicates,nextChanges);
+  }
+ }
+ walk(0,[],new Set(),0,0);
+ return parts.map((task,i)=>{
+  const slot=slots.indexOf(i);
+  return slot<0?task:best.picked[slot];
+ });
+}
 function buildG56Mixed(g,label,seed){
  const pools=['A','B','C','D'];
- return G56_PARTS.map((key,i)=>{
+ const selected=G56_PARTS.map((key,i)=>{
    const [skill,n]=key.split(':');
    const from=pools[([0,1,2,3,2,3,0,1][i]+seed)%pools.length];
    const orig=bank.find(x=>x.grade===g&&x.model===from&&x.skill===skill&&x.part===+n);
    if(!orig)throw Error('Missing mixed practice part '+g+' '+from+' '+key);
-   return {...orig,id:orig.id+'-mixed-'+label,model:label,sourceModel:from,sourceActivityId:orig.id,mediaId:orig.mediaId||orig.id};
+   return orig;
  });
+ return diversifyG56Parts(selected,g).map(orig=>({...orig,id:orig.id+'-mixed-'+label,
+   model:label,sourceModel:orig.model,sourceActivityId:orig.id,mediaId:orig.mediaId||orig.id}));
 }
 for(const g of [5,6])for(const [name,seed] of [['E',1],['F',2]])
  bank.push(...buildG56Mixed(g,name,seed));
@@ -254,7 +282,7 @@ function freshG56Random(){
   return {...orig,sourceModel:orig.model,sourceActivityId:orig.id,mediaId:orig.id};
  });
  if(parts.length!==8||parts.reduce((a,x)=>a+x.marks,0)!==40)throw Error('Random test incomplete');
- start(parts,true);
+ start(diversifyG56Parts(parts,g).map(orig=>({...orig,sourceModel:orig.model,sourceActivityId:orig.id,mediaId:orig.mediaId||orig.id})),true);
 }const $=s=>document.getElementById(s);const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const nameSkill={listening:'Listening',vocabulary:'Vocabulary',grammar:'Grammar',reading:'Reading',writing:'Writing'};let state=null,timer=null;const letters='ABCDEF';
 function examLabel(grade, model) {
  const labels = {"5": ["الوحدة الأولى · Talent show", "الوحدة الثانية · Then and now", "الوحدة الثالثة · Let’s explore!", "الوحدة الرابعة · Off to the shops"], "6": ["الوحدة الأولى · Free-time fun", "الوحدة الثانية · Technology", "الوحدة الثالثة · Places"]};
