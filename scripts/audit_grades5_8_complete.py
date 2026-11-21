@@ -20,6 +20,8 @@ for g in [5,6]:
         items=[x for x in tasks if x['model']==model]
         check(len(items)==8,f'G{g} {model}: expected 8 tasks')
         check(sum(x['marks'] for x in items)==40,f'G{g} {model}: expected 40 marks')
+        presented=[picture for item in items for picture in item.get('pictureOptions',[])]
+        check(len(presented)==len(set(presented)),f'G{g} {model}: duplicate pictures across skills')
         for x in items:
             if x['skill']!='listening':continue
             p=ROOT/'grades5-6'/x['audio']
@@ -99,6 +101,8 @@ for g in [7,8]:
             if x['key']=='listening1':
                 for i,q in enumerate(x.get('items',[])):
                     check(len(q.get('options',[]))==3 and isinstance(q.get('answer'),int) and 0<=q['answer']<3,f'{model["id"]}: image choice key invalid {i+1}')
+        seen_pictures=[img for sec in model['sections'] for q in sec.get('items',[]) for img in q.get('images',[])]
+        check(len(seen_pictures)==len(set(seen_pictures)),f'{model["id"]}: repeated listening pictures')
         for x in model['sections']:
             if not x['key'].startswith('listening'):continue
             backup=ROOT/'grades7-8'/x['audio']
@@ -111,7 +115,7 @@ for g in [7,8]:
                 for q in x.get('items',[]):
                     check(len(q.get('images',[]))==3,f'{model["id"]}: expected 3 pictures per question')
                     for img in q.get('images',[]):
-                        check((ROOT/'grades7-8/assets/illustrations'/f'{img}.webp').exists(),f'{model["id"]}: missing picture {img}')
+                        check(any((ROOT/'grades7-8/assets/illustrations'/f'{img}.{ext}').exists() for ext in ('webp','svg')),f'{model["id"]}: missing picture {img}')
     stats[str(g)]={'fixed_models':4,'mixed_models':2,'random_mode':True,'base_activities':28,'natural_mp3':8}
 report={'technical_status':'passed' if not errors else 'failed','grades':stats,'errors':errors,'unit_alignment_approved':False,'phone_offline_tested':False,'note':'A complete technical audit does not certify conformity to every textbook unit or originality of mixed model items.'}
 out=ROOT/'GRADES5_8_COMPREHENSIVE_TECHNICAL_AUDIT.json'
