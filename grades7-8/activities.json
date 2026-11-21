@@ -150,7 +150,10 @@
               "have been",
               "is being"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "نستخدم has been لأن club فاعل مفرد، ويعبّر المضارع التام عن حالة بدأت في الماضي وما زالت مستمرة منذ سنتين.",
+            "ruleAr": "نستخدم has been لأن club فاعل مفرد، ويعبّر المضارع التام عن حالة بدأت في الماضي وما زالت مستمرة منذ سنتين."
           },
           {
             "options": [
@@ -158,7 +161,10 @@
               "during",
               "since"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "grammar",
+            "explanationAr": "since تحدد نقطة بداية زمنية وهي September، أما for فتأتي مع مدة زمنية مثل two years.",
+            "ruleAr": "since تحدد نقطة بداية زمنية وهي September، أما for فتأتي مع مدة زمنية مثل two years."
           },
           {
             "options": [
@@ -166,7 +172,10 @@
               "director",
               "destination"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "vocabulary",
+            "explanationAr": "director تعني مخرج العرض المسرحي، وهو الشخص الذي يُحضّر العرض ويُوجّه المشاركين، وليس مسافرًا أو وجهة.",
+            "meaningAr": "مخرج"
           },
           {
             "options": [
@@ -174,7 +183,10 @@
               "pilots",
               "climbers"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "vocabulary",
+            "explanationAr": "actors تعني الممثلين الذين يشاركون في العرض المسرحي، بخلاف pilots وclimbers.",
+            "meaningAr": "ممثلون"
           },
           {
             "options": [
@@ -182,7 +194,10 @@
               "performed yesterday",
               "are performing"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "grammar",
+            "explanationAr": "are performing هو المضارع المستمر المستخدم هنا لترتيب مقرر في المستقبل next Friday، ولا نستخدم الماضي مع هذا المعنى.",
+            "ruleAr": "are performing هو المضارع المستمر المستخدم هنا لترتيب مقرر في المستقبل next Friday، ولا نستخدم الماضي مع هذا المعنى."
           },
           {
             "options": [
@@ -190,7 +205,10 @@
               "has",
               "have"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "بعد she نستخدم has لتكوين المضارع التام: she has never performed؛ لأن الفاعل مفرد والتجربة مرتبطة بما قبل الآن.",
+            "ruleAr": "بعد she نستخدم has لتكوين المضارع التام: she has never performed؛ لأن الفاعل مفرد والتجربة مرتبطة بما قبل الآن."
           },
           {
             "options": [
@@ -198,7 +216,11 @@
               "given",
               "give"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "يأتي بعد is الفعل مع ing في المضارع المستمر: is giving a concert. كلمة given تصريف ثالث وgive صيغة مجردة.",
+            "meaningAr": "نكوّن المضارع المستمر من am/is/are + الفعل المنتهي بـ ing.",
+            "ruleAr": "يأتي بعد is الفعل مع ing في المضارع المستمر: is giving a concert. كلمة given تصريف ثالث وgive صيغة مجردة."
           },
           {
             "options": [
@@ -206,7 +228,10 @@
               "confidently",
               "confident"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "grammar",
+            "explanationAr": "بعد feel more نحتاج صفة لوصف الشعور: confident «واثق». confidence اسم وconfidently ظرف.",
+            "ruleAr": "بعد feel more نحتاج صفة لوصف الشعور: confident «واثق». confidence اسم وconfidently ظرف."
           },
           {
             "options": [
@@ -214,7 +239,10 @@
               "coming",
               "come"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "are coming صيغة المضارع المستمر لتعبير عن زيارة أو ترتيب مستقبلي معروف؛ بعد are نستعمل coming.",
+            "ruleAr": "are coming صيغة المضارع المستمر لتعبير عن زيارة أو ترتيب مستقبلي معروف؛ بعد are نستعمل coming."
           },
           {
             "options": [
@@ -222,7 +250,10 @@
               "after",
               "away"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "vocabulary",
+            "explanationAr": "التعبير look forward to يعني «يتطلع إلى شيء بشوق». كلمة forward تكمل التعبير الثابت، ولا تناسبه after أو away.",
+            "meaningAr": "إلى الأمام؛ ضمن التعبير: يتطلع إلى"
           }
         ],
         "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
@@ -483,7 +514,10 @@
               "must to",
               "can to"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "might فعل ناقص يعبر عن الاحتمال: might belong. ولا تأتي to بعد must أو can بهذه الطريقة.",
+            "ruleAr": "might فعل ناقص يعبر عن الاحتمال: might belong. ولا تأتي to بعد must أو can بهذه الطريقة."
           },
           {
             "options": [
@@ -491,7 +525,10 @@
               "claw",
               "beak"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "vocabulary",
+            "explanationAr": "beak هو منقار الطائر الذي يستخدمه لالتقاط الطعام، وليس claw (مخلبًا) أو wingtip (طرف الجناح).",
+            "meaningAr": "منقار"
           },
           {
             "options": [
@@ -499,7 +536,10 @@
               "rock",
               "screen"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "vocabulary",
+            "explanationAr": "rock تعني صخرة، وتناسب اختباء السحلية تحتها؛ أما ticket وscreen فلا يناسبان مكان الاختباء.",
+            "meaningAr": "صخرة"
           },
           {
             "options": [
@@ -507,7 +547,10 @@
               "stays",
               "stayed"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "هذه جملة شرط أول: if + مضارع بسيط. الفاعل visitors جمع، ولذلك نقول stay دون s.",
+            "ruleAr": "هذه جملة شرط أول: if + مضارع بسيط. الفاعل visitors جمع، ولذلك نقول stay دون s."
           },
           {
             "options": [
@@ -515,7 +558,10 @@
               "fed",
               "feed"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "grammar",
+            "explanationAr": "بعد must not يأتي الفعل المجرد من غير to أو ing: must not feed، أي يُمنع إطعام الحيوانات.",
+            "ruleAr": "بعد must not يأتي الفعل المجرد من غير to أو ing: must not feed، أي يُمنع إطعام الحيوانات."
           },
           {
             "options": [
@@ -523,7 +569,10 @@
               "could",
               "does"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "could be تعني «قد تكون» وتعبّر عن احتمال غير مؤكّد، وهو مناسب لأن النص يقول nobody was certain.",
+            "ruleAr": "could be تعني «قد تكون» وتعبّر عن احتمال غير مؤكّد، وهو مناسب لأن النص يقول nobody was certain."
           },
           {
             "options": [
@@ -531,7 +580,10 @@
               "get",
               "got"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "في الشرط الأول نقول If the weather gets hotter, we will leave؛ weather مفرد لذا نضيف s للفعل gets.",
+            "ruleAr": "في الشرط الأول نقول If the weather gets hotter, we will leave؛ weather مفرد لذا نضيف s للفعل gets."
           },
           {
             "options": [
@@ -539,7 +591,10 @@
               "protecting",
               "protect"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "grammar",
+            "explanationAr": "Animals جمع، لذا يأتي الفعل في المضارع البسيط دون s: Animals protect themselves.",
+            "ruleAr": "Animals جمع، لذا يأتي الفعل في المضارع البسيط دون s: Animals protect themselves."
           },
           {
             "options": [
@@ -547,7 +602,10 @@
               "species",
               "receipt"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "vocabulary",
+            "explanationAr": "species تعني نوعًا من الكائنات الحية؛ وكل نوع يحتاج إلى الغذاء والمأوى.",
+            "meaningAr": "نوع من الكائنات"
           },
           {
             "options": [
@@ -555,7 +613,10 @@
               "ignore",
               "remove"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "vocabulary",
+            "explanationAr": "protect تعني يحمي؛ سياق الجملة يدعو إلى حماية الموطن الطبيعي وليس تجاهله أو إزالته.",
+            "meaningAr": "يحمي"
           }
         ],
         "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
@@ -815,7 +876,10 @@
               "is leaving yesterday",
               "leave"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "نستخدم المضارع البسيط leaves مع الجداول والمواعيد الثابتة للقطار، حتى لو كانت الرحلة في المستقبل.",
+            "ruleAr": "نستخدم المضارع البسيط leaves مع الجداول والمواعيد الثابتة للقطار، حتى لو كانت الرحلة في المستقبل."
           },
           {
             "options": [
@@ -823,7 +887,10 @@
               "gone",
               "going"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "grammar",
+            "explanationAr": "صيغة الخطة المستقبلية هي am going to + فعل مجرد، لذلك I am going to bring.",
+            "ruleAr": "صيغة الخطة المستقبلية هي am going to + فعل مجرد، لذلك I am going to bring."
           },
           {
             "options": [
@@ -831,7 +898,10 @@
               "opens",
               "open"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "المتحف opens at nine موعد ثابت، ويأتي الفعل مع s لأن museum مفرد.",
+            "ruleAr": "المتحف opens at nine موعد ثابت، ويأتي الفعل مع s لأن museum مفرد."
           },
           {
             "options": [
@@ -839,7 +909,10 @@
               "costume",
               "beak"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "vocabulary",
+            "explanationAr": "timetable يعني جدول المواعيد، ونراجعه لمعرفة أوقات القطارات أو الرحلات.",
+            "meaningAr": "جدول المواعيد"
           },
           {
             "options": [
@@ -847,7 +920,10 @@
               "did",
               "will"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "grammar",
+            "explanationAr": "في الشرط الأول If it rains نستخدم will + فعل مجرد في النتيجة: we will take umbrellas.",
+            "ruleAr": "في الشرط الأول If it rains نستخدم will + فعل مجرد في النتيجة: we will take umbrellas."
           },
           {
             "options": [
@@ -855,7 +931,10 @@
               "will",
               "was"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "بعد thinks نستطيع استخدام will be للتوقع المستقبلي: the trip will be exciting.",
+            "ruleAr": "بعد thinks نستطيع استخدام will be للتوقع المستقبلي: the trip will be exciting."
           },
           {
             "options": [
@@ -863,7 +942,10 @@
               "stage",
               "habitat"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "vocabulary",
+            "explanationAr": "station تعني محطة القطار، وهي المكان الذي يجتمع فيه الطلاب لبدء رحلة القطار.",
+            "meaningAr": "محطة"
           },
           {
             "options": [
@@ -871,7 +953,10 @@
               "director",
               "platform"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "vocabulary",
+            "explanationAr": "platform تعني رصيف القطار الذي يغادر منه القطار، وهو ما يبحث عنه المرشد داخل المحطة.",
+            "meaningAr": "رصيف القطار"
           },
           {
             "options": [
@@ -879,7 +964,10 @@
               "are",
               "is"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "نستخدم are مع we في تركيب المستقبل be going to: We are going to visit.",
+            "ruleAr": "نستخدم are مع we في تركيب المستقبل be going to: We are going to visit."
           },
           {
             "options": [
@@ -887,7 +975,10 @@
               "finished",
               "finishing"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "نستخدم will + الفعل المجرد للتعبير عن أمل يتعلق بالمستقبل: the journey will finish on time.",
+            "ruleAr": "نستخدم will + الفعل المجرد للتعبير عن أمل يتعلق بالمستقبل: the journey will finish on time."
           }
         ],
         "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
@@ -1149,7 +1240,10 @@
               "is leaving yesterday",
               "leave"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "نستخدم المضارع البسيط leaves مع الجداول والمواعيد الثابتة للقطار، حتى لو كانت الرحلة في المستقبل.",
+            "ruleAr": "نستخدم المضارع البسيط leaves مع الجداول والمواعيد الثابتة للقطار، حتى لو كانت الرحلة في المستقبل."
           },
           {
             "options": [
@@ -1157,7 +1251,10 @@
               "gone",
               "going"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "grammar",
+            "explanationAr": "صيغة الخطة المستقبلية هي am going to + فعل مجرد، لذلك I am going to bring.",
+            "ruleAr": "صيغة الخطة المستقبلية هي am going to + فعل مجرد، لذلك I am going to bring."
           },
           {
             "options": [
@@ -1165,7 +1262,10 @@
               "opens",
               "open"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "المتحف opens at nine موعد ثابت، ويأتي الفعل مع s لأن museum مفرد.",
+            "ruleAr": "المتحف opens at nine موعد ثابت، ويأتي الفعل مع s لأن museum مفرد."
           },
           {
             "options": [
@@ -1173,7 +1273,10 @@
               "costume",
               "beak"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "vocabulary",
+            "explanationAr": "timetable يعني جدول المواعيد، ونراجعه لمعرفة أوقات القطارات أو الرحلات.",
+            "meaningAr": "جدول المواعيد"
           },
           {
             "options": [
@@ -1181,7 +1284,10 @@
               "did",
               "will"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "grammar",
+            "explanationAr": "في الشرط الأول If it rains نستخدم will + فعل مجرد في النتيجة: we will take umbrellas.",
+            "ruleAr": "في الشرط الأول If it rains نستخدم will + فعل مجرد في النتيجة: we will take umbrellas."
           },
           {
             "options": [
@@ -1189,7 +1295,10 @@
               "will",
               "was"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "بعد thinks نستطيع استخدام will be للتوقع المستقبلي: the trip will be exciting.",
+            "ruleAr": "بعد thinks نستطيع استخدام will be للتوقع المستقبلي: the trip will be exciting."
           },
           {
             "options": [
@@ -1197,7 +1306,10 @@
               "stage",
               "habitat"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "vocabulary",
+            "explanationAr": "station تعني محطة القطار، وهي المكان الذي يجتمع فيه الطلاب لبدء رحلة القطار.",
+            "meaningAr": "محطة"
           },
           {
             "options": [
@@ -1205,7 +1317,10 @@
               "director",
               "platform"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "vocabulary",
+            "explanationAr": "platform تعني رصيف القطار الذي يغادر منه القطار، وهو ما يبحث عنه المرشد داخل المحطة.",
+            "meaningAr": "رصيف القطار"
           },
           {
             "options": [
@@ -1213,7 +1328,10 @@
               "are",
               "is"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "نستخدم are مع we في تركيب المستقبل be going to: We are going to visit.",
+            "ruleAr": "نستخدم are مع we في تركيب المستقبل be going to: We are going to visit."
           },
           {
             "options": [
@@ -1221,7 +1339,10 @@
               "finished",
               "finishing"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "نستخدم will + الفعل المجرد للتعبير عن أمل يتعلق بالمستقبل: the journey will finish on time.",
+            "ruleAr": "نستخدم will + الفعل المجرد للتعبير عن أمل يتعلق بالمستقبل: the journey will finish on time."
           }
         ],
         "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C.",
@@ -1491,7 +1612,10 @@
               "organise",
               "organising"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "وجود last week يدل على حدث مكتمل في الماضي، لذلك نستعمل الماضي البسيط organised.",
+            "ruleAr": "وجود last week يدل على حدث مكتمل في الماضي، لذلك نستعمل الماضي البسيط organised."
           },
           {
             "options": [
@@ -1499,7 +1623,10 @@
               "must to",
               "must"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "grammar",
+            "explanationAr": "must فعل ناقص للتعبير عن الواجب، ويأتي بعده الفعل المجرد من دون to: must protect.",
+            "ruleAr": "must فعل ناقص للتعبير عن الواجب، ويأتي بعده الفعل المجرد من دون to: must protect."
           },
           {
             "options": [
@@ -1507,7 +1634,10 @@
               "not to",
               "do not"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "بعد told us نستخدم not to + verb للنهي: told us not to throw.",
+            "ruleAr": "بعد told us نستخدم not to + verb للنهي: told us not to throw."
           },
           {
             "options": [
@@ -1515,7 +1645,10 @@
               "because",
               "which"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "why أداة سؤال عن السبب: asked why plastic could harm turtles، بينما because تُستخدم غالبًا في الإجابة عن السبب.",
+            "ruleAr": "why أداة سؤال عن السبب: asked why plastic could harm turtles، بينما because تُستخدم غالبًا في الإجابة عن السبب."
           },
           {
             "options": [
@@ -1523,7 +1656,10 @@
               "recycles",
               "recycled"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "vocabulary",
+            "explanationAr": "recycled مواد أُعيد تدويرها؛ هنا نحتاج صفة قبل materials لتصف المواد المعاد تدويرها.",
+            "meaningAr": "مُعاد تدويرها"
           },
           {
             "options": [
@@ -1531,7 +1667,10 @@
               "reuse",
               "reused"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "vocabulary",
+            "explanationAr": "reuse يعني إعادة استعمال الزجاجات. بعد how to يأتي الفعل المجرد reuse، لا reusing أو reused.",
+            "meaningAr": "يعيد الاستعمال"
           },
           {
             "options": [
@@ -1539,7 +1678,10 @@
               "flooding",
               "tornadoes"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "vocabulary",
+            "explanationAr": "drought يعني جفافًا، وهو نقص طويل في الأمطار قد يؤدي إلى شح المياه، لا فيضانًا أو إعصارًا.",
+            "meaningAr": "جفاف"
           },
           {
             "options": [
@@ -1547,7 +1689,10 @@
               "heat",
               "flood"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "vocabulary",
+            "explanationAr": "flood يعني فيضانًا، وهو ارتفاع المياه الذي يظهر في الصور بعد الأمطار الغزيرة.",
+            "meaningAr": "فيضان"
           },
           {
             "options": [
@@ -1555,7 +1700,10 @@
               "should",
               "should to"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "بعد should يأتي الفعل المجرد دون to: should switch off؛ للتعبير عن نصيحة.",
+            "ruleAr": "بعد should يأتي الفعل المجرد دون to: should switch off؛ للتعبير عن نصيحة."
           },
           {
             "options": [
@@ -1563,7 +1711,10 @@
               "renewing",
               "renew"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "vocabulary",
+            "explanationAr": "renewable تعني متجددة، وهي صفة تصف energy مثل الطاقة الشمسية أو طاقة الرياح.",
+            "meaningAr": "متجددة"
           }
         ],
         "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
@@ -1850,7 +2001,10 @@
               "has",
               "have"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "نستخدم had + التصريف الثالث في الماضي التام: had checked، للدلالة على أن فحص الطقس سبق الرحلة.",
+            "ruleAr": "نستخدم had + التصريف الثالث في الماضي التام: had checked، للدلالة على أن فحص الطقس سبق الرحلة."
           },
           {
             "options": [
@@ -1858,7 +2012,10 @@
               "are",
               "had"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "grammar",
+            "explanationAr": "We had packed تعني أننا جهزنا الخوذ قبل وصول الحافلة؛ الفعل حدث قبل حدث آخر في الماضي.",
+            "ruleAr": "We had packed تعني أننا جهزنا الخوذ قبل وصول الحافلة؛ الفعل حدث قبل حدث آخر في الماضي."
           },
           {
             "options": [
@@ -1866,7 +2023,10 @@
               "rock climbing",
               "rock climb"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "vocabulary",
+            "explanationAr": "rock climbing اسم نشاط تسلق الصخور، وهو التعبير الصحيح، لا rocks climbing ولا rock climb في هذا الموضع.",
+            "meaningAr": "تسلق الصخور"
           },
           {
             "options": [
@@ -1874,7 +2034,10 @@
               "receipt",
               "customer"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "vocabulary",
+            "explanationAr": "valley يعني واديًا، وهو مسار طبيعي يمر عبر الجبال، بخلاف receipt أو customer.",
+            "meaningAr": "وادٍ"
           },
           {
             "options": [
@@ -1882,7 +2045,10 @@
               "yourself",
               "ourselves"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "grammar",
+            "explanationAr": "نستخدم ourselves لأن الفاعل us/we يشير إلى جماعة تشمل المتكلم: protect ourselves.",
+            "ruleAr": "نستخدم ourselves لأن الفاعل us/we يشير إلى جماعة تشمل المتكلم: protect ourselves."
           },
           {
             "options": [
@@ -1890,7 +2056,10 @@
               "himself",
               "herself"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "himself ضمير انعكاسي يعود على student المفرد المذكر: hurt himself.",
+            "ruleAr": "himself ضمير انعكاسي يعود على student المفرد المذكر: hurt himself."
           },
           {
             "options": [
@@ -1898,7 +2067,10 @@
               "have",
               "were"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "By lunchtime يدل على وقت اكتمل الفعل قبله، لذا نستخدم had reached في الماضي التام.",
+            "ruleAr": "By lunchtime يدل على وقت اكتمل الفعل قبله، لذا نستخدم had reached في الماضي التام."
           },
           {
             "options": [
@@ -1906,7 +2078,10 @@
               "bank",
               "tide"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "vocabulary",
+            "explanationAr": "tide يعني المدّ البحري أو مستوى ارتفاع مياه البحر، ولذلك توصف موجة المد بأنها high.",
+            "meaningAr": "المدّ"
           },
           {
             "options": [
@@ -1914,7 +2089,10 @@
               "but",
               "so that"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "but تربط بين فكرتين مختلفتين: الاستمتاع بالمناظر مع اتباع تعليمات السلامة.",
+            "ruleAr": "but تربط بين فكرتين مختلفتين: الاستمتاع بالمناظر مع اتباع تعليمات السلامة."
           },
           {
             "options": [
@@ -1922,7 +2100,10 @@
               "us",
               "our"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "ourselves ضمير انعكاسي يعود على الجميع «نحن» ويؤكد أننا أتممنا الرحلة بأنفسنا.",
+            "ruleAr": "ourselves ضمير انعكاسي يعود على الجميع «نحن» ويؤكد أننا أتممنا الرحلة بأنفسنا."
           }
         ],
         "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
@@ -2206,7 +2387,10 @@
               "tornado",
               "cyclone"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "vocabulary",
+            "explanationAr": "customer هو الزبون الذي اشترى المنتج وله حق السؤال عن استرجاع المال إذا كان المنتج تالفًا.",
+            "meaningAr": "زبون"
           },
           {
             "options": [
@@ -2214,7 +2398,10 @@
               "sunrise",
               "refund"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "vocabulary",
+            "explanationAr": "refund يعني استرجاع المال المدفوع عند إعادة منتج، لا sunrise أو valley.",
+            "meaningAr": "استرداد المال"
           },
           {
             "options": [
@@ -2222,7 +2409,10 @@
               "receipt",
               "recite"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "vocabulary",
+            "explanationAr": "receipt هي فاتورة/إيصال الشراء، وتُحفظ لإثبات الدفع عند الإرجاع.",
+            "meaningAr": "إيصال الشراء"
           },
           {
             "options": [
@@ -2230,7 +2420,10 @@
               "manages",
               "managed"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "الجملة شرط أول: if + مضارع بسيط، ومع people نستخدم manage دون s، ثم will في النتيجة.",
+            "ruleAr": "الجملة شرط أول: if + مضارع بسيط، ومع people نستخدم manage دون s، ثم will في النتيجة."
           },
           {
             "options": [
@@ -2238,7 +2431,10 @@
               "second",
               "second-hand"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "vocabulary",
+            "explanationAr": "second-hand صفة تعني مستعملًا، وتأتي قبل books لتصف الكتب التي ليست جديدة.",
+            "meaningAr": "مستعمل"
           },
           {
             "options": [
@@ -2246,7 +2442,10 @@
               "had",
               "has"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "في الشرط الثاني نستخدم if + past simple: if he had more money، ثم would + الفعل المجرد.",
+            "ruleAr": "في الشرط الثاني نستخدم if + past simple: if he had more money، ثم would + الفعل المجرد."
           },
           {
             "options": [
@@ -2254,7 +2453,10 @@
               "will do",
               "does"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "would do تُستخدم في السؤال غير المباشر عن موقف افتراضي: what she would do if she won.",
+            "ruleAr": "would do تُستخدم في السؤال غير المباشر عن موقف افتراضي: what she would do if she won."
           },
           {
             "options": [
@@ -2262,7 +2464,10 @@
               "cliff",
               "card"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "vocabulary",
+            "explanationAr": "card هنا بطاقة بنكية تساعد على الدفع إلكترونيًا: bank card.",
+            "meaningAr": "بطاقة"
           },
           {
             "options": [
@@ -2270,7 +2475,10 @@
               "fall",
               "falls"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "prices فاعل جمع، ومع usually نستخدم المضارع البسيط fall دون s، أي تنخفض الأسعار عادة.",
+            "ruleAr": "prices فاعل جمع، ومع usually نستخدم المضارع البسيط fall دون s، أي تنخفض الأسعار عادة."
           },
           {
             "options": [
@@ -2278,7 +2486,10 @@
               "will",
               "am"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "في الشرط الثاني: If I found ... I would return it؛ نستخدم would + الفعل المجرد للحديث عن موقف افتراضي.",
+            "ruleAr": "في الشرط الثاني: If I found ... I would return it؛ نستخدم would + الفعل المجرد للحديث عن موقف افتراضي."
           }
         ],
         "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C."
@@ -2567,7 +2778,10 @@
               "tornado",
               "cyclone"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "vocabulary",
+            "explanationAr": "customer هو الزبون الذي اشترى المنتج وله حق السؤال عن استرجاع المال إذا كان المنتج تالفًا.",
+            "meaningAr": "زبون"
           },
           {
             "options": [
@@ -2575,7 +2789,10 @@
               "sunrise",
               "refund"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "vocabulary",
+            "explanationAr": "refund يعني استرجاع المال المدفوع عند إعادة منتج، لا sunrise أو valley.",
+            "meaningAr": "استرداد المال"
           },
           {
             "options": [
@@ -2583,7 +2800,10 @@
               "receipt",
               "recite"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "vocabulary",
+            "explanationAr": "receipt هي فاتورة/إيصال الشراء، وتُحفظ لإثبات الدفع عند الإرجاع.",
+            "meaningAr": "إيصال الشراء"
           },
           {
             "options": [
@@ -2591,7 +2811,10 @@
               "manages",
               "managed"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "الجملة شرط أول: if + مضارع بسيط، ومع people نستخدم manage دون s، ثم will في النتيجة.",
+            "ruleAr": "الجملة شرط أول: if + مضارع بسيط، ومع people نستخدم manage دون s، ثم will في النتيجة."
           },
           {
             "options": [
@@ -2599,7 +2822,10 @@
               "second",
               "second-hand"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "vocabulary",
+            "explanationAr": "second-hand صفة تعني مستعملًا، وتأتي قبل books لتصف الكتب التي ليست جديدة.",
+            "meaningAr": "مستعمل"
           },
           {
             "options": [
@@ -2607,7 +2833,10 @@
               "had",
               "has"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "في الشرط الثاني نستخدم if + past simple: if he had more money، ثم would + الفعل المجرد.",
+            "ruleAr": "في الشرط الثاني نستخدم if + past simple: if he had more money، ثم would + الفعل المجرد."
           },
           {
             "options": [
@@ -2615,7 +2844,10 @@
               "will do",
               "does"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "would do تُستخدم في السؤال غير المباشر عن موقف افتراضي: what she would do if she won.",
+            "ruleAr": "would do تُستخدم في السؤال غير المباشر عن موقف افتراضي: what she would do if she won."
           },
           {
             "options": [
@@ -2623,7 +2855,10 @@
               "cliff",
               "card"
             ],
-            "answer": 2
+            "answer": 2,
+            "topicType": "vocabulary",
+            "explanationAr": "card هنا بطاقة بنكية تساعد على الدفع إلكترونيًا: bank card.",
+            "meaningAr": "بطاقة"
           },
           {
             "options": [
@@ -2631,7 +2866,10 @@
               "fall",
               "falls"
             ],
-            "answer": 1
+            "answer": 1,
+            "topicType": "grammar",
+            "explanationAr": "prices فاعل جمع، ومع usually نستخدم المضارع البسيط fall دون s، أي تنخفض الأسعار عادة.",
+            "ruleAr": "prices فاعل جمع، ومع usually نستخدم المضارع البسيط fall دون s، أي تنخفض الأسعار عادة."
           },
           {
             "options": [
@@ -2639,7 +2877,10 @@
               "will",
               "am"
             ],
-            "answer": 0
+            "answer": 0,
+            "topicType": "grammar",
+            "explanationAr": "في الشرط الثاني: If I found ... I would return it؛ نستخدم would + الفعل المجرد للحديث عن موقف افتراضي.",
+            "ruleAr": "في الشرط الثاني: If I found ... I would return it؛ نستخدم would + الفعل المجرد للحديث عن موقف افتراضي."
           }
         ],
         "instructions": "Read the text. For each gap (1–10), choose the correct option A, B or C.",
