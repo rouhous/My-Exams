@@ -2029,13 +2029,13 @@
             "stem": "What is Amal saving money for?",
             "options": [
               "a bicycle",
-              "a tablet",
+              "a phone case",
               "a guitar"
             ],
             "answer": 0,
             "images": [
               "bike",
-              "tablet",
+              "phonecase-g8d",
               "guitar"
             ],
             "script": "Amal really enjoys music, but she can borrow a guitar from her sister. Her phone still works well, so she does not need another one. She has decided to save her pocket money for a bicycle because she wants to ride to the sports centre."
