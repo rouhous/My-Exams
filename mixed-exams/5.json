@@ -166,35 +166,50 @@
               "answer": 2,
               "kind": "short",
               "picture": "grades5-6/images/gift.webp",
-              "target": "gift"
+              "target": "gift",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «gift»؛ يُقدَّم الشيء لشخص في مناسبة مثل عيد الميلاد. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "هدية"
             },
             {
               "stem": "Picture 2",
               "answer": 4,
               "kind": "short",
               "picture": "grades5-6/images/cake.webp",
-              "target": "cake"
+              "target": "cake",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «cake»؛ تؤكل الكعكة عادة في الاحتفالات. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "كعكة"
             },
             {
               "stem": "Picture 3",
               "answer": 0,
               "kind": "short",
               "picture": "grades5-6/images/kite.webp",
-              "target": "kite"
+              "target": "kite",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «kite»؛ تطير الطائرة الورقية في الهواء. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "طائرة ورقية"
             },
             {
               "stem": "Picture 4",
               "answer": 5,
               "kind": "short",
               "picture": "grades5-6/images/clock.webp",
-              "target": "clock"
+              "target": "clock",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «clock»؛ تُستخدم لمعرفة الوقت. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "ساعة حائط"
             },
             {
               "stem": "Picture 5",
               "answer": 3,
               "kind": "short",
               "picture": "grades5-6/images/bicycle.webp",
-              "target": "bicycle"
+              "target": "bicycle",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «bicycle»؛ نركب الدراجة في التنقل والرياضة. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "دراجة هوائية"
             }
           ]
         },
@@ -544,35 +559,50 @@
               "answer": 5,
               "kind": "short",
               "picture": "grades5-6/images/kite.webp",
-              "target": "kite"
+              "target": "kite",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «kite»؛ تطير الطائرة الورقية في الهواء. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "طائرة ورقية"
             },
             {
               "stem": "Picture 2",
               "answer": 4,
               "kind": "short",
               "picture": "grades5-6/images/library.webp",
-              "target": "library"
+              "target": "library",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «library»؛ مكان يمكن استعارة الكتب وقراءتها. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "مكتبة"
             },
             {
               "stem": "Picture 3",
               "answer": 3,
               "kind": "short",
               "picture": "grades5-6/images/bridge.webp",
-              "target": "bridge"
+              "target": "bridge",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «bridge»؛ طريق يربط بين ضفتين أو فوق وادٍ. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "جسر"
             },
             {
               "stem": "Picture 4",
               "answer": 2,
               "kind": "short",
               "picture": "grades5-6/images/computer.webp",
-              "target": "computer"
+              "target": "computer",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «computer»؛ جهاز لإجراء الأعمال الرقمية. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "حاسوب"
             },
             {
               "stem": "Picture 5",
               "answer": 0,
               "kind": "short",
               "picture": "grades5-6/images/market.webp",
-              "target": "market"
+              "target": "market",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «market»؛ مكان تُباع فيه البضائع. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "سوق"
             }
           ]
         },
@@ -922,35 +952,50 @@
               "answer": 2,
               "kind": "short",
               "picture": "grades5-6/images/robot.webp",
-              "target": "robot"
+              "target": "robot",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «robot»؛ آلة تؤدي أعمالًا آلية. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "روبوت"
             },
             {
               "stem": "Picture 2",
               "answer": 4,
               "kind": "short",
               "picture": "grades5-6/images/computer.webp",
-              "target": "computer"
+              "target": "computer",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «computer»؛ جهاز لإجراء الأعمال الرقمية. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "حاسوب"
             },
             {
               "stem": "Picture 3",
               "answer": 0,
               "kind": "short",
               "picture": "grades5-6/images/camera.webp",
-              "target": "camera"
+              "target": "camera",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «camera»؛ تُستخدم لالتقاط الصور. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "كاميرا"
             },
             {
               "stem": "Picture 4",
               "answer": 5,
               "kind": "short",
               "picture": "grades5-6/images/clock.webp",
-              "target": "clock"
+              "target": "clock",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «clock»؛ تُستخدم لمعرفة الوقت. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "ساعة حائط"
             },
             {
               "stem": "Picture 5",
               "answer": 3,
               "kind": "short",
               "picture": "grades5-6/images/beach.webp",
-              "target": "beach"
+              "target": "beach",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «beach»؛ مكان رملي بجانب البحر. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "شاطئ"
             }
           ]
         },
@@ -1300,35 +1345,50 @@
               "answer": 4,
               "kind": "short",
               "picture": "grades5-6/images/camera.webp",
-              "target": "camera"
+              "target": "camera",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «camera»؛ تُستخدم لالتقاط الصور. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "كاميرا"
             },
             {
               "stem": "Picture 2",
               "answer": 5,
               "kind": "short",
               "picture": "grades5-6/images/football.webp",
-              "target": "football"
+              "target": "football",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «football»؛ تُستخدم في لعبة كرة القدم. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "كرة قدم"
             },
             {
               "stem": "Picture 3",
               "answer": 2,
               "kind": "short",
               "picture": "grades5-6/images/bicycle.webp",
-              "target": "bicycle"
+              "target": "bicycle",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «bicycle»؛ نركب الدراجة في التنقل والرياضة. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "دراجة هوائية"
             },
             {
               "stem": "Picture 4",
               "answer": 3,
               "kind": "short",
               "picture": "grades5-6/images/clock.webp",
-              "target": "clock"
+              "target": "clock",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «clock»؛ تُستخدم لمعرفة الوقت. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "ساعة حائط"
             },
             {
               "stem": "Picture 5",
               "answer": 1,
               "kind": "short",
               "picture": "grades5-6/images/paintbrush.webp",
-              "target": "paintbrush"
+              "target": "paintbrush",
+              "topicType": "vocabulary",
+              "explanationAr": "الصورة تمثّل «paintbrush»؛ تُستخدم للرسم بالألوان. انتبه إلى كتابة الكلمة الإنجليزية ومطابقتها بالصورة.",
+              "meaningAr": "فرشاة رسم"
             }
           ]
         },
