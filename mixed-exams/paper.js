@@ -198,7 +198,11 @@
       '-prepare">Prepare recording</button><p id="' + s.key + '-audio-status" role="status"></p><audio controls hidden></audio>' : '';
     s.audio?.forEach(({ path }) => file(path));
     let i = 0;
-    const content = s.writing ? renderWriting(s.writing)
+    const spellingGrid = bank.grade === 6 && s.key === 'vocabulary' && !s.grid &&
+      s.questions.length === 5 && s.questions.every(q => q.picture);
+    const content = spellingGrid ? '<div class="mixed-five-spelling-grid">' +
+        s.questions.map((q,index) => renderQuestion(q,index,s)).join('') + '</div>'
+      : s.writing ? renderWriting(s.writing)
       : s.matching ? renderMatching(s)
       : s.grid ? renderGrid(s)
       : s.key.startsWith('reading') ? renderReading(s)
