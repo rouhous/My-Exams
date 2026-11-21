@@ -201,7 +201,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "present-simple"
+              "point": "present-simple",
+              "topicType": "grammar",
+              "explanationAr": "usually وon Thursdays تدلان على عادة متكررة؛ مع Sara المفرد نضيف s للفعل plays.",
+              "ruleAr": "usually وon Thursdays تدلان على عادة متكررة؛ مع Sara المفرد نضيف s للفعل plays."
             },
             {
               "stem": "Listen! My friends ____ music in the garden.",
@@ -211,7 +214,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "present-continuous"
+              "point": "present-continuous",
+              "topicType": "grammar",
+              "explanationAr": "Listen! تدل على فعل يحدث الآن؛ مع friends الجمع نستخدم are + verb-ing: are playing.",
+              "ruleAr": "Listen! تدل على فعل يحدث الآن؛ مع friends الجمع نستخدم are + verb-ing: are playing."
             },
             {
               "stem": "We ____ board games every weekend.",
@@ -221,7 +227,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "present-simple"
+              "point": "present-simple",
+              "topicType": "grammar",
+              "explanationAr": "every weekend تدل على عادة، ومع We الجمع يأتي play دون s.",
+              "ruleAr": "every weekend تدل على عادة، ومع We الجمع يأتي play دون s."
             },
             {
               "stem": "Look! The children ____ gymnastics now.",
@@ -231,7 +240,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "point": "present-continuous"
+              "point": "present-continuous",
+              "topicType": "grammar",
+              "explanationAr": "Look! وnow تدلان على الحدث الجاري؛ children جمع، لذا نستخدم are doing.",
+              "ruleAr": "Look! وnow تدلان على الحدث الجاري؛ children جمع، لذا نستخدم are doing."
             },
             {
               "stem": "He ____ his diary every evening.",
@@ -241,7 +253,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "present-simple"
+              "point": "present-simple",
+              "topicType": "grammar",
+              "explanationAr": "every evening تدل على عادة؛ He مفرد، لذلك نضيف s للفعل writes.",
+              "ruleAr": "every evening تدل على عادة؛ He مفرد، لذلك نضيف s للفعل writes."
             }
           ]
         },
@@ -571,7 +586,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "past-ability"
+              "point": "past-ability",
+              "topicType": "grammar",
+              "explanationAr": "could not تعبّر عن عدم القدرة في الماضي: لم يكن الجد يستطيع استخدام الجهاز عندما كان صغيرًا.",
+              "ruleAr": "could not تعبّر عن عدم القدرة في الماضي: لم يكن الجد يستطيع استخدام الجهاز عندما كان صغيرًا."
             },
             {
               "stem": "We ____ restart the computer yesterday.",
@@ -581,7 +599,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "point": "past-obligation"
+              "point": "past-obligation",
+              "topicType": "grammar",
+              "explanationAr": "had to تعبر عن الضرورة أو الاضطرار في الماضي، وyesterday يؤكد أن الحدث ماضٍ.",
+              "ruleAr": "had to تعبر عن الضرورة أو الاضطرار في الماضي، وyesterday يؤكد أن الحدث ماضٍ."
             },
             {
               "stem": "This new laptop works ____ than our old one.",
@@ -591,7 +612,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "comparative-adverb"
+              "point": "comparative-adverb",
+              "topicType": "grammar",
+              "explanationAr": "more quickly هي صيغة المقارنة من الظرف quickly الذي يصف طريقة عمل الحاسوب، وتأتي مع than.",
+              "ruleAr": "more quickly هي صيغة المقارنة من الظرف quickly الذي يصف طريقة عمل الحاسوب، وتأتي مع than."
             },
             {
               "stem": "I ____ send the message because the internet was down.",
@@ -601,7 +625,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "point": "past-ability"
+              "point": "past-ability",
+              "topicType": "grammar",
+              "explanationAr": "could not تعبّر عن عدم القدرة في الماضي بسبب انقطاع الإنترنت.",
+              "ruleAr": "could not تعبّر عن عدم القدرة في الماضي بسبب انقطاع الإنترنت."
             },
             {
               "stem": "The students ____ save their files before leaving yesterday.",
@@ -611,7 +638,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "past-obligation"
+              "point": "past-obligation",
+              "topicType": "grammar",
+              "explanationAr": "had to + الفعل المجرد تستخدم للتعبير عن وجوب حفظ الملفات في الماضي.",
+              "ruleAr": "had to + الفعل المجرد تستخدم للتعبير عن وجوب حفظ الملفات في الماضي."
             }
           ]
         },
@@ -941,7 +971,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "past-continuous"
+              "point": "past-continuous",
+              "topicType": "grammar",
+              "explanationAr": "كانت عملية المشي جارية عندما بدأ المطر، لذا نستخدم الماضي المستمر were walking مع We.",
+              "ruleAr": "كانت عملية المشي جارية عندما بدأ المطر، لذا نستخدم الماضي المستمر were walking مع We."
             },
             {
               "stem": "This is the building ____ my uncle works.",
@@ -951,7 +984,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "point": "relative-clause"
+              "point": "relative-clause",
+              "topicType": "grammar",
+              "explanationAr": "where تشير إلى مكان عمل العم، وهو building.",
+              "ruleAr": "where تشير إلى مكان عمل العم، وهو building."
             },
             {
               "stem": "A guide is a person ____ helps visitors.",
@@ -961,7 +997,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "relative-clause"
+              "point": "relative-clause",
+              "topicType": "grammar",
+              "explanationAr": "who ضمير وصل للأشخاص، ويصف وظيفة المرشد الذي يساعد الزوار.",
+              "ruleAr": "who ضمير وصل للأشخاص، ويصف وظيفة المرشد الذي يساعد الزوار."
             },
             {
               "stem": "At four o’clock, the tourists ____ photos near the bridge.",
@@ -971,7 +1010,10 @@
               ],
               "answer": 1,
               "kind": "mc",
-              "point": "past-continuous"
+              "point": "past-continuous",
+              "topicType": "grammar",
+              "explanationAr": "At four o'clock تحدد لحظة في الماضي كان التقاط الصور مستمرًا فيها؛ tourists جمع فنستخدم were taking.",
+              "ruleAr": "At four o'clock تحدد لحظة في الماضي كان التقاط الصور مستمرًا فيها؛ tourists جمع فنستخدم were taking."
             },
             {
               "stem": "I met a woman ____ lives beside the old fort.",
@@ -981,7 +1023,10 @@
               ],
               "answer": 0,
               "kind": "mc",
-              "point": "relative-clause"
+              "point": "relative-clause",
+              "topicType": "grammar",
+              "explanationAr": "who ضمير وصل يشير إلى المرأة، وهي شخص يسكن قرب القلعة.",
+              "ruleAr": "who ضمير وصل يشير إلى المرأة، وهي شخص يسكن قرب القلعة."
             }
           ]
         },
