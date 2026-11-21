@@ -19,7 +19,7 @@ textarea{min-height:160px;resize:vertical}.passage{background:#f1f7f3;padding:15
 small,.muted{color:#5c7168}.hidden{display:none!important}.meta{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between}
 #clock{font-variant-numeric:tabular-nums;font-size:20px;font-weight:700}.score{font-size:20px}
 @media print{header,.controls,.notice,.no-print{display:none!important}body{background:white}.section{break-inside:avoid;border:none;padding:4px}}
-</style><script src="../../shared/learning-feedback.js?v=28"></script><link rel="stylesheet" href="../../shared/assessment-theme.css?v=30"><style>#setup[hidden],#changeExam[hidden]{display:none!important}</style><script src="../../shared/mixed-exam-links.js" data-exam-source="11-core" defer></script><link rel="stylesheet" href="../../shared/reading-split.css?v=5"><link rel="stylesheet" href="../../shared/exam-pages.css?v=3"><script defer src="../../shared/reading-split.js?v=3"></script><script defer src="../../shared/exam-pages.js?v=1" data-host="exam" data-reset="changeExam"></script></head><body>
+</style><script src="../../shared/learning-feedback.js?v=7"></script><link rel="stylesheet" href="../../shared/assessment-theme.css?v=30"><style>#setup[hidden],#changeExam[hidden]{display:none!important}</style><script src="../../shared/mixed-exam-links.js" data-exam-source="11-core" defer></script><link rel="stylesheet" href="../../shared/reading-split.css?v=5"><link rel="stylesheet" href="../../shared/exam-pages.css?v=3"><script defer src="../../shared/reading-split.js?v=3"></script><script defer src="../../shared/exam-pages.js?v=1" data-host="exam" data-reset="changeExam"></script></head><body>
 <header><h1>My Exams · Grade 11 Core</h1><p>Original Semester 1 English practice</p><a href="../../grade-skills.html?grade=11&amp;track=core">← اختبارات المسار</a></header>
 <main>
 <div class="panel"><div class="controls" id="setup">
@@ -98,13 +98,21 @@ function evaluateAnswers(){
   if(part.skill.startsWith('writing'))return;
   (part.data.questions||[]).forEach((q,i)=>{
    total++;
-   const name=part.skill+'-'+i;const input=[...document.querySelectorAll('#exam input')].find(n=>n.name===name&&(n.type==='text'||n.checked));
-   if(!input)return;
-   const actual=input.value;
-   const good=typeof q.answer==='number'?Number(actual)===q.answer:normalize(actual)===normalize(q.answer);
+   const name=part.skill+'-'+i;
+   const inputs=[...document.querySelectorAll('#exam input')].filter(n=>n.name===name);
+   const input=inputs.find(n=>n.type==='text'||n.checked);
+   const actual=input?.value||'';
+   const good=actual!==''&&(typeof q.answer==='number'?Number(actual)===q.answer:normalize(actual)===normalize(q.answer));
    if(good)correct++;
-   const cell=input.closest('.question');
-   if(cell)cell.style.borderLeft='4px solid '+(good?'#3b8f67':'#bc7240');
+   const cell=(input||inputs[0])?.closest('.question');
+   if(cell){
+    cell.style.borderLeft='4px solid '+(good?'#3b8f67':'#bc7240');
+    if($('mode').value==='practice'&&window.MyExamsLearning){
+     cell.querySelectorAll('.mex-fb').forEach(n=>n.remove());
+     cell.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(q,
+       {skill:part.skill,passage:part.data.passage||'',script:part.skill==='listening'?part.data.passage||'':''},good));
+    }
+   }
   });
  });
  $('result').textContent='Objective responses: '+correct+' / '+total+'. Writing is not automatically graded; short answers may require teacher review.';
