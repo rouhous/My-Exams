@@ -7,6 +7,7 @@ on:
       - '.github/workflows/grade10-natural-audio.yml'
       - 'grade10/data.json'
       - 'scripts/generate_grade10_audio.py'
+      - 'scripts/listening_voice_roles.py'
 concurrency:
   group: grade10-audio-latest
   cancel-in-progress: true
