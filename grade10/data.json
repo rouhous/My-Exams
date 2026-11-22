@@ -165,7 +165,10 @@
             ],
             "answer": 0
           }
-        ]
+        ],
+        "speakerGenders": {
+          "Maha": "female"
+        }
       },
       "vocabulary": {
         "title": "Vocabulary · New Media",
@@ -608,7 +611,10 @@
             ],
             "answer": 1
           }
-        ]
+        ],
+        "speakerGenders": {
+          "Salim": "male"
+        }
       },
       "vocabulary": {
         "title": "Vocabulary · Climate Change",
@@ -1052,7 +1058,10 @@
             ],
             "answer": 0
           }
-        ]
+        ],
+        "speakerGenders": {
+          "Student": "male"
+        }
       },
       "vocabulary": {
         "title": "Vocabulary · Renewable Energy",
@@ -1506,7 +1515,10 @@
             ],
             "answer": 1
           }
-        ]
+        ],
+        "speakerGenders": {
+          "Student": "male"
+        }
       },
       "vocabulary": {
         "title": "Vocabulary · Civilisation",
@@ -2003,7 +2015,10 @@
             ],
             "answer": 0
           }
-        ]
+        ],
+        "speakerGenders": {
+          "Maha": "female"
+        }
       },
       "vocabulary": {
         "title": "Vocabulary · Climate Change",
@@ -2470,7 +2485,10 @@
             ],
             "answer": 1
           }
-        ]
+        ],
+        "speakerGenders": {
+          "Student": "male"
+        }
       },
       "vocabulary": {
         "title": "Vocabulary · Renewable Energy",
