@@ -16,7 +16,8 @@ import edge_tts
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 UNIT_DIR = ROOT / "grade11/core/units"
 AUDIO_DIR = UNIT_DIR / "audio"
-VOICES = ("en-GB-SoniaNeural", "en-GB-RyanNeural")
+from listening_voice_roles import voice_for_speaker, voice_for_narration
+VOICES = ("en-GB-SoniaNeural", "en-GB-RyanNeural", "en-GB-LibbyNeural")
 AUDIO_DIR.mkdir(parents=True, exist_ok=True)
 
 def run_ffmpeg(*args):
@@ -34,14 +35,15 @@ async def render_task(source, target):
             speaker=m.group(1)
             if speaker not in speaker_names: speaker_names.append(speaker)
             if len(speaker_names)>2:raise ValueError("Dialogue has more than two speakers")
-            turns.append((m.group(2).strip(),speaker_names.index(speaker)))
+            turns.append((m.group(2).strip(),voice_for_speaker(speaker, source.get("speakerGenders", {}))))
         if not 25 <= len(turns) <= 30:
             raise ValueError("Dialogue turns missing")
         intro = "You are going to hear a conversation between two people about teenage wellbeing. Choose one answer for each question. You will hear the conversation twice."
     else:
         if not 350 <= len(script.split()) <= 400:
             raise ValueError("Monologue outside SAH word range")
-        solo_voice = 1 if ('male' in str(source.get("voice","")).lower() and 'female' not in str(source.get("voice","")).lower()) else 0
+        explicit_gender = "male" if "male" in str(source.get("voice","")).lower() and "female" not in str(source.get("voice","")).lower() else ("female" if "female" in str(source.get("voice","")).lower() else None)
+        solo_voice = voice_for_narration(script, explicit_gender=explicit_gender, fallback_voice=0)
         turns = [(paragraph.strip().replace("\n"," "),solo_voice) for paragraph in re.split(r"\n\s*\n",script) if paragraph.strip()]
         intro = "You are going to hear an informative text about students' study habits and wellbeing. Complete the notes and short answers. You will hear the recording twice."
 
@@ -109,7 +111,13 @@ async def main():
         identifier=source_path.stem.replace("-original-draft","")
         out=AUDIO_DIR/(identifier+".mp3")
         digest=hashlib.sha256(source["script"].encode("utf-8")).hexdigest()
-        expected_voices=list(VOICES) if source["skill"]=="Listening 1" else [VOICES[1 if ('male' in str(source.get("voice","")).lower() and 'female' not in str(source.get("voice","")).lower()) else 0]]
+        if source["skill"]=="Listening 1":
+            names=list(dict.fromkeys(re.findall(r"(?m)^([A-Za-z]+):",source["script"])))
+            voice_ids=sorted({voice_for_speaker(name,source.get("speakerGenders",{})) for name in names})
+        else:
+            explicit_gender = "male" if "male" in str(source.get("voice","")).lower() and "female" not in str(source.get("voice","")).lower() else ("female" if "female" in str(source.get("voice","")).lower() else None)
+            voice_ids=[voice_for_narration(source["script"],explicit_gender=explicit_gender,fallback_voice=0)]
+        expected_voices=[VOICES[i] for i in voice_ids]
         previous=prior.get(source_path.name)
         if previous and previous.get('voices')==expected_voices and previous.get('scriptSha256')==digest and out.exists() and out.stat().st_size>25000 and MP3(out).info.length>180:
             duration=round(MP3(out).info.length,2)
