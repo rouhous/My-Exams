@@ -83,7 +83,6 @@ function grammarArabic(q,correct,ctx){
  if(x==="himself"||x==="ourselves")return "نستخدم الضمير الانعكاسي عندما يعود الفعل على الفاعل نفسه: himself للمفرد المذكر، وourselves للمتكلم الجمع.";
  if(x==="but")return "but أداة ربط تفيد التباين بين فكرتين؛ نستعملها هنا للربط بين الاستمتاع بالرحلة والالتزام بالتعليمات.";
  if((opts.includes("was")&&opts.includes("were"))||(opts.includes("is")&&opts.includes("are")))return "تتغير صيغة الفعل be بحسب الفاعل: المفرد يأخذ is/was والجمع يأخذ are/were.";
- if(/_{2,}/.test(q?.stem||""))return "تحدَّد الصيغة الصحيحة من وظيفة الكلمة في الجملة وزمن الفعل والفاعل.";
  return "";
 }
 
@@ -127,7 +126,7 @@ function explanation(q,ctx={},override){
  const ar=typeof q?.explanationAr==="string"&&q.explanationAr.trim()&&!/complete the sentence using the correct grammatical form/i.test(q.explanationAr)?q.explanationAr.trim():"";
  let reasonAr=ar;
  if(!reasonAr){
-  if(grammar)reasonAr=grammarArabic(q,correct,ctx);
+  if(grammar){reasonAr=grammarArabic(q,correct,ctx);if(!reasonAr)reasonAr="لم تُسجَّل قاعدة تفسيرية خاصة بهذا السؤال بعد؛ لذلك لن نعرض قاعدة عامة قد تكون مضللة.";}
   else if(vocab)reasonAr=q?.meaningAr?
     "الكلمة «"+correct+"» تعني «"+q.meaningAr+"» في هذا السياق؛ وهي الأنسب لمعنى الجملة.":
     "نختار «"+correct+"» لأن معناها أو وظيفتها تناسب سياق الجملة، وليست مجرد كلمة تشبه الاختيارات الأخرى.";
