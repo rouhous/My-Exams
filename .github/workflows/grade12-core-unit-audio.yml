@@ -6,6 +6,7 @@ on:
     paths:
       - 'grade12/core/units/unit*-listening*-original-draft.json'
       - 'scripts/generate_grade12_core_unit_audio.py'
+      - 'scripts/listening_voice_roles.py'
       - '.github/workflows/grade12-core-unit-audio.yml'
 permissions:
   contents: write
