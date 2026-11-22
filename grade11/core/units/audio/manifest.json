@@ -3,11 +3,11 @@
     "sourceFile": "grade11/core/units/unit1-listening1-original-draft.json",
     "scriptSha256": "8d30f82008e793726fa3fff0eab6f6fd606b23f5f2d7e366feb7b8e787439d20",
     "mp3": "unit1-listening1.mp3",
-    "durationSeconds": 317.39,
-    "bytes": 3809010,
+    "durationSeconds": 337.84,
+    "bytes": 4054457,
     "voices": [
       "en-GB-SoniaNeural",
-      "en-GB-RyanNeural"
+      "en-GB-LibbyNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
@@ -28,11 +28,11 @@
     "sourceFile": "grade11/core/units/unit2-listening1-original-draft.json",
     "scriptSha256": "ad2e90f151842bac31556b6f81bf4f60b0ddfe3a4b24d431ca91a278460c9122",
     "mp3": "unit2-listening1.mp3",
-    "durationSeconds": 344.03,
-    "bytes": 4128749,
+    "durationSeconds": 360.83,
+    "bytes": 4330310,
     "voices": [
-      "en-GB-SoniaNeural",
-      "en-GB-RyanNeural"
+      "en-GB-RyanNeural",
+      "en-GB-LibbyNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
@@ -66,10 +66,10 @@
     "sourceFile": "grade11/core/units/unit3-listening2-original-draft.json",
     "scriptSha256": "53cabe6a89afb7e4e4cb1e1124404d2edfba8cc86e7fd3726dbd6dab3a30f202",
     "mp3": "unit3-listening2.mp3",
-    "durationSeconds": 361.4,
-    "bytes": 4337206,
+    "durationSeconds": 358.19,
+    "bytes": 4298649,
     "voices": [
-      "en-GB-SoniaNeural"
+      "en-GB-RyanNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
@@ -78,11 +78,11 @@
     "sourceFile": "grade11/core/units/unit4-listening1-original-draft.json",
     "scriptSha256": "9c2c777473a379fd45ed41613935382907b99170dce5eadc06bc90013ee19718",
     "mp3": "unit4-listening1.mp3",
-    "durationSeconds": 320.99,
-    "bytes": 3852269,
+    "durationSeconds": 343.98,
+    "bytes": 4128122,
     "voices": [
       "en-GB-SoniaNeural",
-      "en-GB-RyanNeural"
+      "en-GB-LibbyNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
