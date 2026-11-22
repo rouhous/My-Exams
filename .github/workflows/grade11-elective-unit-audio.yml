@@ -6,6 +6,7 @@ on:
     paths:
       - 'grade11/elective/units/unit*-listening*-original-draft.json'
       - 'scripts/generate_grade11_elective_unit_audio.py'
+      - 'scripts/listening_voice_roles.py'
       - '.github/workflows/grade11-elective-unit-audio.yml'
 permissions:
   contents: write
