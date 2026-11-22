@@ -6,11 +6,13 @@ const API="https://xboracsbzikojobumcke.supabase.co/functions/v1/mej-writing-ai"
 const esc=x=>String(x==null?"":x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const norm=x=>String(x==null?"":x).normalize("NFKC").toLowerCase().replace(/[’‘]/g,"'").replace(/[^\p{L}\p{N}]+/gu," ").trim().replace(/\s+/g," ");
 function answer(q,override){
- if(typeof override==="string"&&override.trim())return override;
+ // Prefer the keyed source answer over display labels (A/B/C) passed by older callers.
  if(Array.isArray(q?.options)&&Number.isInteger(q.answer))return String(q.options[q.answer]??"");
  if(Array.isArray(q?.choices)&&Number.isInteger(q.answer))return String(q.choices[q.answer]??"");
- if(Array.isArray(q?.answers))return String(q.answers[0]||"");
- return typeof q?.answer==="string"?q.answer:typeof q?.answer==="boolean"?(q.answer?"True":"False"):"";
+ if(Array.isArray(q?.answers)&&q.answers.length)return String(q.answers[0]||"");
+ if(typeof q?.answer==="string")return q.answer;
+ if(typeof q?.answer==="boolean")return q.answer?"True":"False";
+ return typeof override==="string"&&override.trim()?override:"";
 }
 function evidence(expected,source,question){
  if(!source)return "";
@@ -20,14 +22,14 @@ function evidence(expected,source,question){
   const matches=parts.filter(s=>{const t=norm(s),words=t.split(" ");return (" "+t+" ").includes(" "+key+" ")||(tokens.length>=2&&tokens.every(v=>words.includes(v)))});
   if(matches.length)return matches.sort((a,b)=>a.length-b.length)[0].slice(0,300);
  }
- const stop=new Set(["what","where","when","which","whose","does","did","this","that","they","them","with","have","from","into","about","should","will","would","their","there","your","were","was","does","uses","what","why","how","who","much","many","main","students","student"]);
+ const stop=new Set(["what","where","when","which","whose","does","did","this","that","they","them","with","have","from","into","about","should","will","would","their","there","your","were","was","uses","why","how","who","much","many","main","students","student","the","and","are","is","was","were","for","not","next"]);
  const qwords=[...new Set(norm(question).split(" ").filter(t=>t.length>3&&!stop.has(t)))];
  if(qwords.length<2)return "";
  const candidates=parts.map(t=>{
   const words=new Set(norm(t).split(" "));
   const found=qwords.filter(k=>words.has(k)).length;
   return {text:t,found,ratio:found/qwords.length};
- }).filter(a=>a.found>=2&&a.ratio>=0.6);
+ }).filter(a=>a.found>=2&&a.ratio>=0.5);
  return candidates.length?candidates.sort((a,b)=>b.ratio-a.ratio||b.found-a.found||a.text.length-b.text.length)[0].text.slice(0,300):"";
 }
 function completedGap(q,ctx,expected){
@@ -122,7 +124,7 @@ function explanation(q,ctx={},override){
  const selected=(Array.isArray(q?.options)&&Number.isInteger(q.answer))?q.options[q.answer]:"";
  const expanded=ctx.correctText||((/^[A-F]$/i.test(expected)&&selected)?selected:"");
  const sentence=completedGap(q,ctx,correct);
- const ar=typeof q?.explanationAr==="string"&&q.explanationAr.trim()?q.explanationAr.trim():"";
+ const ar=typeof q?.explanationAr==="string"&&q.explanationAr.trim()&&!/complete the sentence using the correct grammatical form/i.test(q.explanationAr)?q.explanationAr.trim():"";
  let reasonAr=ar;
  if(!reasonAr){
   if(grammar)reasonAr=grammarArabic(q,correct,ctx);
@@ -134,7 +136,8 @@ function explanation(q,ctx={},override){
     "العبارة خاطئة؛ المعلومة الواردة في النص أو التسجيل تختلف عن مضمونها. قارنها بالدليل أسفل التصحيح.";
   else if(spoken)reasonAr="الإجابة تعتمد على ما قاله المتحدث فعلًا في التسجيل. راجع المعلومة الأساسية ولا تعتمد على الكلمات المشتتة في الخيارات.";
   else if(/read|match/.test(type))reasonAr="الإجابة الصحيحة هي التي يثبتها مضمون النص. قارنها بالمعلومة الداعمة أدناه إن كانت متاحة.";
-  else reasonAr="قارن الإجابة الصحيحة بالسؤال ولاحظ الكلمات التي تحدد المعنى.";
+  else if(grammar)reasonAr="لم تُسجَّل قاعدة تفسيرية موثوقة لهذا السؤال بعد؛ راجع تركيب الجملة والاختيارات مع المعلم.";
+  else reasonAr="لم يُحفظ تفسير خاص بهذا السؤال بعد. استخدم الدليل من النص إن ظهر أدناه، أو راجع السؤال مع المعلم.";
  }
  let reasonEn=typeof q?.explanation==="string"?q.explanation.trim():"";
  if(!reasonEn&&tf)reasonEn=expected.toLowerCase()==="true"?"This statement matches the source.":"This statement contradicts the source.";
@@ -150,6 +153,7 @@ function feedback(q,ctx={},ok=false,override){
  const display=p.expected&&/^[A-F]$/i.test(p.expected)&&p.correct&&p.correct!==p.expected?p.expected+' — '+p.correct:p.correct||p.expected;
  if(display)html+='<p><b>الإجابة الصحيحة · Correct answer:</b> '+esc(display)+'</p>';
  if(p.reasonAr)html+='<p dir="rtl" class="mex-fb-ar"><b>لماذا هذه الإجابة؟</b> '+esc(p.reasonAr)+'</p>';
+ if(p.reasonEn&&!/complete the sentence using the correct grammatical form/i.test(p.reasonEn))html+='<p><b>Explanation:</b> '+esc(p.reasonEn)+'</p>';
  if(p.ruleAr && p.ruleAr!==p.reasonAr)html+='<p dir="rtl" class="mex-fb-ar"><b>القاعدة:</b> '+esc(p.ruleAr)+'</p>';
  if(p.meaning)html+='<p dir="rtl" class="mex-fb-ar"><b>معنى الكلمة:</b> '+esc(p.correct)+' = '+esc(p.meaning)+'</p>';
  if(p.example)html+='<p><b>الجملة بعد التصحيح:</b> <span lang="en">'+esc(p.example)+'</span></p>';
