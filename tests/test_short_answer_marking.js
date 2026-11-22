@@ -5,6 +5,9 @@ const source=fs.readFileSync('shared/short-answer-marking.js','utf8');
 const w={};new Function('window',source)(w);
 const grade=w.MyExamsShortAnswers;
 const questions=JSON.parse(fs.readFileSync('grade12/elective/units/unit1-reading1-original-draft.json','utf8')).questions;
+const grade7=JSON.parse(fs.readFileSync('grades7-8/activities.json','utf8')).find(m=>m.id==='g7-a').sections.find(s=>s.key==='reading2');
+const illness=grade7.items.find(q=>q.stem==='Why did the team change their interview plan?');
+assert(grade.evaluate('their guest became ill.',illness).correct,'Accept the source-supported wording used in the screenshot');
 assert.strictEqual(questions.length,12);
 for(const q of questions){
  const r=grade.evaluate(q.answer,q);
