@@ -300,14 +300,18 @@
               "their English teacher",
               "English teacher",
               "his English teacher"
-            ]
+            ],
+            "evidence": "One afternoon, his English teacher invited students to create a weekly show about local talents.",
+            "explanationAr": "توضح الفقرة أن «their English teacher»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "Who was the first guest supposed to be?",
             "answers": [
               "a young musician",
               "young musician"
-            ]
+            ],
+            "evidence": "Nasser volunteered to interview a young musician who played traditional Omani instruments.",
+            "explanationAr": "توضح الفقرة أن «a young musician»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "Why did the team change their interview plan?",
@@ -325,7 +329,9 @@
             "answers": [
               "in the library",
               "library"
-            ]
+            ],
+            "evidence": "His friend Mariam remembered a spare recorder kept in the library.",
+            "explanationAr": "توضح الفقرة أن «in the library»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What did the team decide to produce the following week?",
@@ -333,7 +339,9 @@
               "another episode",
               "a second episode",
               "another radio episode"
-            ]
+            ],
+            "evidence": "The team decided to produce another episode the following week.",
+            "explanationAr": "توضح الفقرة أن «another episode»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           }
         ],
         "instructions": "Read the narrative. Answer questions 1–5 in SHORT answers."
@@ -666,7 +674,9 @@
               "people approach too closely",
               "visitors approach too closely",
               "because people get too close"
-            ]
+            ],
+            "evidence": "She had expected to photograph every creature, but the ranger explained that wildlife often hides when people approach too closely.",
+            "explanationAr": "توضح الفقرة أن «people approach too closely»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What did the pupils find in the soft sand?",
@@ -674,28 +684,36 @@
               "tracks",
               "animal tracks",
               "tracks in the sand"
-            ]
+            ],
+            "evidence": "Huda saw tracks in the soft sand and guessed that they belonged to a turtle.",
+            "explanationAr": "توضح الفقرة أن «tracks»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What material was tangled among the plants?",
             "answers": [
               "a plastic bag",
               "plastic bag"
-            ]
+            ],
+            "evidence": "Later, the pupils found a plastic bag tangled among the plants.",
+            "explanationAr": "توضح الفقرة أن «a plastic bag»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "Where did the group watch birds drinking?",
             "answers": [
               "a shaded observation point",
               "shaded observation point"
-            ]
+            ],
+            "evidence": "As the sun became hotter, the students moved to a shaded observation point.",
+            "explanationAr": "توضح الفقرة أن «a shaded observation point»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What did the class agree to bring on future visits?",
             "answers": [
               "reusable bottles",
               "reusable water bottles"
-            ]
+            ],
+            "evidence": "They agreed to bring reusable bottles on future visits and to remind visitors to stay on marked paths.",
+            "explanationAr": "توضح الفقرة أن «reusable bottles»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           }
         ],
         "instructions": "Read the narrative. Answer questions 1–5 in SHORT answers."
@@ -1028,7 +1046,9 @@
               "an old fort",
               "old fort",
               "the fort"
-            ]
+            ],
+            "evidence": "Rania wanted to explore an old fort, while her younger brother hoped to see a waterfall.",
+            "explanationAr": "توضح الفقرة أن «an old fort»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "Why did the family change their route?",
@@ -1036,7 +1056,9 @@
               "one road was closed for repairs",
               "the road was closed",
               "road repairs"
-            ]
+            ],
+            "evidence": "The shopkeeper explained that one road had been closed for repairs and suggested a safer road through a nearby valley.",
+            "explanationAr": "توضح الفقرة أن «one road was closed for repairs»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "Who suggested a safer road?",
@@ -1044,14 +1066,18 @@
               "a local shopkeeper",
               "shopkeeper",
               "the shopkeeper"
-            ]
+            ],
+            "evidence": "After an hour, the family reached a village where they stopped to ask a local shopkeeper about the best route.",
+            "explanationAr": "توضح الفقرة أن «a local shopkeeper»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What did Rania buy at the craft exhibition?",
             "answers": [
               "a postcard",
               "postcard"
-            ]
+            ],
+            "evidence": "Rania watched an artist making colourful baskets and bought a postcard for her friend.",
+            "explanationAr": "توضح الفقرة أن «a postcard»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "Why did her brother decide not to visit the waterfall?",
@@ -1059,7 +1085,9 @@
               "it was getting late",
               "because it was late",
               "getting late"
-            ]
+            ],
+            "evidence": "Her brother took several photographs but decided not to visit the waterfall because it was getting late.",
+            "explanationAr": "توضح الفقرة أن «it was getting late»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           }
         ],
         "instructions": "Read the narrative. Answer questions 1–5 in SHORT answers."
@@ -1396,7 +1424,9 @@
               "people approach too closely",
               "visitors approach too closely",
               "because people get too close"
-            ]
+            ],
+            "evidence": "She had expected to photograph every creature, but the ranger explained that wildlife often hides when people approach too closely.",
+            "explanationAr": "توضح الفقرة أن «people approach too closely»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What did the pupils find in the soft sand?",
@@ -1404,28 +1434,36 @@
               "tracks",
               "animal tracks",
               "tracks in the sand"
-            ]
+            ],
+            "evidence": "Huda saw tracks in the soft sand and guessed that they belonged to a turtle.",
+            "explanationAr": "توضح الفقرة أن «tracks»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What material was tangled among the plants?",
             "answers": [
               "a plastic bag",
               "plastic bag"
-            ]
+            ],
+            "evidence": "Later, the pupils found a plastic bag tangled among the plants.",
+            "explanationAr": "توضح الفقرة أن «a plastic bag»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "Where did the group watch birds drinking?",
             "answers": [
               "a shaded observation point",
               "shaded observation point"
-            ]
+            ],
+            "evidence": "As the sun became hotter, the students moved to a shaded observation point.",
+            "explanationAr": "توضح الفقرة أن «a shaded observation point»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What did the class agree to bring on future visits?",
             "answers": [
               "reusable bottles",
               "reusable water bottles"
-            ]
+            ],
+            "evidence": "They agreed to bring reusable bottles on future visits and to remind visitors to stay on marked paths.",
+            "explanationAr": "توضح الفقرة أن «reusable bottles»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           }
         ],
         "instructions": "Read the narrative. Answer questions 1–5 in SHORT answers.",
@@ -1763,7 +1801,9 @@
             "answers": [
               "fishing line",
               "pieces of fishing line"
-            ]
+            ],
+            "evidence": "However, a marine researcher showed them small pieces of fishing line hidden between the rocks.",
+            "explanationAr": "توضح الفقرة أن «fishing line»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "How many plastic items did Mariam's group count on the first morning?",
@@ -1787,14 +1827,18 @@
               "labelled recycling points",
               "recycling bins at the entrance",
               "adding recycling points"
-            ]
+            ],
+            "evidence": "Instead of blaming visitors, the students suggested adding labelled recycling points at the entrance.",
+            "explanationAr": "توضح الفقرة أن «labelled recycling points»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What did Mariam ask younger pupils to continue doing?",
             "answers": [
               "collecting data",
               "collect data"
-            ]
+            ],
+            "evidence": "She presented the results at school and asked younger pupils to continue collecting data.",
+            "explanationAr": "توضح الفقرة أن «collecting data»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           }
         ],
         "instructions": "Read the narrative. Answer questions 1–5 in SHORT answers."
@@ -2152,35 +2196,45 @@
             "answers": [
               "on flat roads",
               "flat roads"
-            ]
+            ],
+            "evidence": "He had ridden on flat roads many times, but he had never explored a rocky mountain track.",
+            "explanationAr": "توضح الفقرة أن «on flat roads»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What had Hamad forgotten to fill?",
             "answers": [
               "his water bottle",
               "water bottle"
-            ]
+            ],
+            "evidence": "Hamad realised that he had forgotten to fill his water bottle, so he returned to the tent while the others waited.",
+            "explanationAr": "توضح الفقرة أن «his water bottle»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What caused his front wheel to slip?",
             "answers": [
               "loose stones",
               "stones on the path"
-            ]
+            ],
+            "evidence": "Hamad tried to overtake another rider, but his front wheel slipped on loose stones.",
+            "explanationAr": "توضح الفقرة أن «loose stones»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "Where did the cyclists stop at midday?",
             "answers": [
               "a shaded rest area",
               "shaded rest area"
-            ]
+            ],
+            "evidence": "At midday, the cyclists reached a shaded rest area.",
+            "explanationAr": "توضح الفقرة أن «a shaded rest area»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What did Hamad decide to practise after the trip?",
             "answers": [
               "his balance",
               "balance"
-            ]
+            ],
+            "evidence": "He decided to practise his balance and learn more about mountain safety before attempting a harder route.",
+            "explanationAr": "توضح الفقرة أن «his balance»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           }
         ],
         "instructions": "Read the narrative. Answer questions 1–5 in SHORT answers."
@@ -2538,7 +2592,9 @@
             "answers": [
               "a camera",
               "camera"
-            ]
+            ],
+            "evidence": "She decided not to buy the camera that week.",
+            "explanationAr": "توضح الفقرة أن «a camera»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "Who suggested comparing prices?",
@@ -2546,7 +2602,9 @@
               "her older brother",
               "older brother",
               "her brother"
-            ]
+            ],
+            "evidence": "Her older brother suggested comparing prices before making a decision.",
+            "explanationAr": "توضح الفقرة أن «her older brother»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What problem did the second-hand camera have?",
@@ -2554,7 +2612,9 @@
               "a loose button",
               "one button was loose",
               "loose button"
-            ]
+            ],
+            "evidence": "One button was loose, so Reem asked how much a repair would cost.",
+            "explanationAr": "توضح الفقرة أن «a loose button»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "Whose camera did Reem borrow for the exhibition?",
@@ -2562,7 +2622,9 @@
               "her cousin's camera",
               "her cousin",
               "cousin's camera"
-            ]
+            ],
+            "evidence": "Instead, she borrowed her cousin's camera for the school photography exhibition and continued saving.",
+            "explanationAr": "توضح الفقرة أن «her cousin's camera»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What did Reem learn from the experience?",
@@ -2933,35 +2995,45 @@
             "answers": [
               "on flat roads",
               "flat roads"
-            ]
+            ],
+            "evidence": "He had ridden on flat roads many times, but he had never explored a rocky mountain track.",
+            "explanationAr": "توضح الفقرة أن «on flat roads»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What had Hamad forgotten to fill?",
             "answers": [
               "his water bottle",
               "water bottle"
-            ]
+            ],
+            "evidence": "Hamad realised that he had forgotten to fill his water bottle, so he returned to the tent while the others waited.",
+            "explanationAr": "توضح الفقرة أن «his water bottle»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What caused his front wheel to slip?",
             "answers": [
               "loose stones",
               "stones on the path"
-            ]
+            ],
+            "evidence": "Hamad tried to overtake another rider, but his front wheel slipped on loose stones.",
+            "explanationAr": "توضح الفقرة أن «loose stones»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "Where did the cyclists stop at midday?",
             "answers": [
               "a shaded rest area",
               "shaded rest area"
-            ]
+            ],
+            "evidence": "At midday, the cyclists reached a shaded rest area.",
+            "explanationAr": "توضح الفقرة أن «a shaded rest area»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
             "stem": "What did Hamad decide to practise after the trip?",
             "answers": [
               "his balance",
               "balance"
-            ]
+            ],
+            "evidence": "He decided to practise his balance and learn more about mountain safety before attempting a harder route.",
+            "explanationAr": "توضح الفقرة أن «his balance»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           }
         ],
         "instructions": "Read the narrative. Answer questions 1–5 in SHORT answers.",
