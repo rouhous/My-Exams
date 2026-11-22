@@ -81,5 +81,7 @@
       "answer": 1
     }
   ],
-  "audioStatus": "pending_source_verified_MP3"
+  "audioStatus": "pending_source_verified_MP3",
+  "speaker": "Hamed",
+  "voice": "single male speaker"
 }
