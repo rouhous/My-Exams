@@ -3,11 +3,11 @@
     "sourceFile": "grade12/core/units/unit1-listening1-original-draft.json",
     "scriptSha256": "a708d408205964ff037b06d07f143f1c2762f0b6d7e15bf22f3ddd3b27198842",
     "mp3": "unit1-listening1.mp3",
-    "durationSeconds": 418.87,
-    "bytes": 5026839,
+    "durationSeconds": 435.77,
+    "bytes": 5229653,
     "voices": [
       "en-GB-SoniaNeural",
-      "en-GB-RyanNeural"
+      "en-GB-LibbyNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
@@ -28,11 +28,11 @@
     "sourceFile": "grade12/core/units/unit2-listening1-original-draft.json",
     "scriptSha256": "5ab7bd236157b5d2b8ee49866dd0c3deb8327b673d3b18abbf401134de93f7e1",
     "mp3": "unit2-listening1.mp3",
-    "durationSeconds": 391.47,
-    "bytes": 4698009,
+    "durationSeconds": 409.76,
+    "bytes": 4917438,
     "voices": [
       "en-GB-SoniaNeural",
-      "en-GB-RyanNeural"
+      "en-GB-LibbyNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
@@ -41,23 +41,23 @@
     "sourceFile": "grade12/core/units/unit2-listening2-original-draft.json",
     "scriptSha256": "04058671aa2b76b0d650e191bff8d3ec0f0d6f1aadedd2a98da2bc3da7cd6589",
     "mp3": "unit2-listening2.mp3",
-    "durationSeconds": 396.67,
-    "bytes": 4760390,
+    "durationSeconds": 395.81,
+    "bytes": 4750045,
     "voices": [
-      "en-GB-SoniaNeural"
+      "en-GB-RyanNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
   },
   "unit3-listening1-original-draft.json": {
     "sourceFile": "grade12/core/units/unit3-listening1-original-draft.json",
-    "scriptSha256": "a6d6f0a13fceae3a7bf3d764e54998e991942e6a941c7b7475256377a4c9f793",
+    "scriptSha256": "f003e5cc88e922ee082e6d0b6918eb070842843b156f3f874c9c13a35b187d7b",
     "mp3": "unit3-listening1.mp3",
-    "durationSeconds": 372.22,
-    "bytes": 4466982,
+    "durationSeconds": 363.15,
+    "bytes": 4358208,
     "voices": [
       "en-GB-SoniaNeural",
-      "en-GB-RyanNeural"
+      "en-GB-LibbyNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
@@ -76,10 +76,10 @@
   },
   "unit4-listening1-original-draft.json": {
     "sourceFile": "grade12/core/units/unit4-listening1-original-draft.json",
-    "scriptSha256": "af460aab153065057ceae66e22d5a7b152a4ec62d71e9adce59b80bed758310c",
+    "scriptSha256": "942588b5e9c3e1107a66047819fcd28fb6093a7fbc5d2b46c39cf54369afed38",
     "mp3": "unit4-listening1.mp3",
-    "durationSeconds": 374.28,
-    "bytes": 4491746,
+    "durationSeconds": 338.73,
+    "bytes": 4065115,
     "voices": [
       "en-GB-SoniaNeural",
       "en-GB-RyanNeural"
@@ -91,10 +91,10 @@
     "sourceFile": "grade12/core/units/unit4-listening2-original-draft.json",
     "scriptSha256": "ee94677665727d8ececa0cf819623e747e0b31c90d97306146af36ceef8f097b",
     "mp3": "unit4-listening2.mp3",
-    "durationSeconds": 360.41,
-    "bytes": 4325294,
+    "durationSeconds": 358.01,
+    "bytes": 4296455,
     "voices": [
-      "en-GB-SoniaNeural"
+      "en-GB-RyanNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
