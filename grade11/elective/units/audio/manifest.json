@@ -3,11 +3,11 @@
     "sourceFile": "grade11/elective/units/unit1-listening1-original-draft.json",
     "scriptSha256": "f7fbd52ad8ffc3b70e53beba133397c8c298d5f2c41953d2faa0bf64070fba34",
     "mp3": "unit1-listening1.mp3",
-    "durationSeconds": 433.08,
-    "bytes": 5197366,
+    "durationSeconds": 454.4,
+    "bytes": 5453157,
     "voices": [
       "en-GB-SoniaNeural",
-      "en-GB-RyanNeural"
+      "en-GB-LibbyNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
@@ -28,11 +28,11 @@
     "sourceFile": "grade11/elective/units/unit2-listening1-original-draft.json",
     "scriptSha256": "db3a2bbe8b2cb849a5251c033fddbd5a1332a2307558369e1871ada63915e256",
     "mp3": "unit2-listening1.mp3",
-    "durationSeconds": 406.15,
-    "bytes": 4874179,
+    "durationSeconds": 433.08,
+    "bytes": 5197366,
     "voices": [
       "en-GB-SoniaNeural",
-      "en-GB-RyanNeural"
+      "en-GB-LibbyNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
@@ -78,11 +78,11 @@
     "sourceFile": "grade11/elective/units/unit4-listening1-original-draft.json",
     "scriptSha256": "dbd5c93e591ea7f0cfff6cd1d77f18edd869054af4231e31b94ddfaa62c0d891",
     "mp3": "unit4-listening1.mp3",
-    "durationSeconds": 424.57,
-    "bytes": 5095175,
+    "durationSeconds": 447.61,
+    "bytes": 5371655,
     "voices": [
       "en-GB-SoniaNeural",
-      "en-GB-RyanNeural"
+      "en-GB-LibbyNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
