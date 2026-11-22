@@ -1811,7 +1811,9 @@
               "36",
               "thirty-six",
               "thirty six"
-            ]
+            ],
+            "evidence": "Mariam's group counted thirty-six plastic items on the first morning, but the researcher reminded them that a single day's figures could be misleading.",
+            "explanationAr": "عدّت مجموعة مريم 36 قطعة بلاستيكية في الصباح الأول، كما يذكر النص بوضوح."
           },
           {
             "stem": "Why did the team return to the beach more than once?",
@@ -1819,7 +1821,9 @@
               "to collect more reliable data",
               "to compare results",
               "one day's figures could be misleading"
-            ]
+            ],
+            "evidence": "The researcher reminded them that a single day's figures could be misleading. They returned twice more before drawing conclusions.",
+            "explanationAr": "عاد الفريق لأن نتائج يوم واحد قد تكون مضللة؛ لذلك كرروا الزيارة وجمعوا معلومات إضافية قبل استخلاص النتائج."
           },
           {
             "stem": "What change did the council agree to try?",
@@ -2593,7 +2597,7 @@
               "a camera",
               "camera"
             ],
-            "evidence": "She decided not to buy the camera that week.",
+            "evidence": "For several months, Reem had wanted to buy a camera.",
             "explanationAr": "توضح الفقرة أن «a camera»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
@@ -2623,7 +2627,7 @@
               "her cousin",
               "cousin's camera"
             ],
-            "evidence": "Instead, she borrowed her cousin's camera for the school photography exhibition and continued saving.",
+            "evidence": "She enjoyed taking photographs with her phone, but her cousin owned a camera that could produce clearer pictures.",
             "explanationAr": "توضح الفقرة أن «her cousin's camera»، وهي المعلومة التي تجيب مباشرة عن السؤال."
           },
           {
@@ -2633,7 +2637,9 @@
               "be patient and compare prices",
               "not to rush a purchase",
               "waiting and asking questions helped"
-            ]
+            ],
+            "evidence": "She realised that waiting and asking questions had helped her make a better decision.",
+            "explanationAr": "تعلمت ريم أن التريث وطرح الأسئلة ساعداها على اتخاذ قرار أفضل بدل التسرع في الشراء."
           }
         ],
         "instructions": "Read the narrative. Answer questions 1–5 in SHORT answers."
