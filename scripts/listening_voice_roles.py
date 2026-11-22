@@ -23,7 +23,7 @@ KNOWN_GENDERS = {
     'amina': FEMALE, 'reem': FEMALE, 'rana': FEMALE, 'layla': FEMALE,
     'maya': FEMALE, 'hamid': MALE, 'khalid': MALE, 'omar': MALE,
 }
-HOST_ROLES = {'interviewer', 'host', 'presenter', 'narrator'}
+HOST_ROLES = {'interviewer', 'host', 'presenter', 'narrator', 'counsellor', 'counselor', 'adviser', 'advisor'}
 SPEAKER_RE = re.compile(r'(?<![A-Za-z0-9])([A-Za-z][A-Za-z0-9]*)\s*:\s*')
 SELF_NAME_RE = re.compile(r"\b(?:my name is|i am|i'm)\s+([A-Za-z]+)\b", re.I)
 
