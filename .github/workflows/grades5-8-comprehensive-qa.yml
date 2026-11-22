@@ -11,6 +11,10 @@ on:
       - 'grades5-6/index.html'
       - 'grades7-8/activities.json'
       - 'grades7-8/index.html'
+      - 'shared/learning-feedback.js'
+      - 'shared/short-answer-marking.js'
+      - 'tests/test_learning_feedback.js'
+      - 'tests/test_short_answer_marking.js'
 permissions:
   contents: write
 jobs:
@@ -18,6 +22,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test automatic feedback and short-answer marking
+        run: node tests/test_learning_feedback.js && node tests/test_short_answer_marking.js
       - name: Install audio duration probe
         run: |
           sudo apt-get update -qq
