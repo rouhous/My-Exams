@@ -12,7 +12,8 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 DATA=json.loads((ROOT/'grade9/data.json').read_text(encoding='utf-8'))
 OUT=ROOT/'grade9/audio-natural'
 OUT.mkdir(parents=True,exist_ok=True)
-VOICES=['en-GB-SoniaNeural','en-GB-RyanNeural']
+from listening_voice_roles import VOICE_NAMES, voice_for_speaker, voice_for_narration
+VOICES=VOICE_NAMES
 SAMPLE_RATE='44100'
 
 def ffmpeg(*args):
@@ -42,7 +43,7 @@ def split_interview(transcript):
     out=[]
     for part in parts:
         m=re.match(r'\s*(Interviewer|Salim|Alya|Rashid)\s*:\s*(.+)',part,flags=re.S)
-        if m:out.append((m.group(2).strip(),0 if m.group(1)=='Interviewer' else 1))
+        if m:out.append((m.group(2).strip(),voice_for_speaker(m.group(1))))
     if len(out)<6:raise ValueError('Interview not split correctly')
     return out
 
@@ -70,7 +71,7 @@ async def build(model,task,tmp):
                 pause(2)
             for i,(label,item) in enumerate(zip(labels,task['items'])):
                 text=re.sub(r'^Text (?:one|two|three|four|five|[1-5])[. :]+','',item['script'],flags=re.I)
-                await say(f'Text {label}. '+text,i%2)
+                await say(f'Text {label}. '+text,voice_for_narration(text,item.get('speakerGender'),fallback_voice=0))
                 pause(3)
     else:
         await say('You are going to hear an interview. Listen carefully and choose the correct answer, A, B or C. You will hear the interview twice.')
