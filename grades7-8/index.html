@@ -403,7 +403,7 @@ function finish(){if(!current||!by('result'))return;clearInterval(timer);if(by('
   const item=s.items?.[i]||{stem:k};
   const specific=s.type==='cloze'?{...item,stem:'Gap '+(i+1)}:item;
   parent.insertAdjacentHTML('beforeend',window.MyExamsLearning.feedback(specific,
-    {skill:s.key||s.type,passage:s.passage||'',script:s.script||s.transcript||'',items:s.type==='cloze'?s.items:undefined},correct,expected));
+    {skill:s.key||s.type,passage:s.passage||'',script:s.script||s.transcript||'',items:s.type==='cloze'?s.items:undefined},correct));
  }
  }}
 window.MyExamsJourney?.report({grade:current.grade,model:'unit-'+current.model,skill:current.timed?'':sections[0].key,earned:points,possible:max,writingPending:sections.some(s=>s.type==='writing')});
