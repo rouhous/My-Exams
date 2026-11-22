@@ -91,5 +91,7 @@
       "answer": 1
     }
   ],
-  "audioStatus": "pending_source_bound_mp3_generation"
+  "audioStatus": "pending_source_bound_mp3_generation",
+  "speaker": "unnamed female student",
+  "voice": "single female speaker"
 }
