@@ -316,7 +316,9 @@
               "their guest became ill",
               "their guest was ill",
               "the musician was ill"
-            ]
+            ],
+            "explanationAr": "غيّر الفريق خطة المقابلة لأن الضيف الأصلي مرض؛ لذلك قرروا مقابلة معلمة الموسيقى بدلًا منه.",
+            "evidence": "The team had been preparing for two weeks when their guest became ill."
           },
           {
             "stem": "Where was the spare recorder kept?",
