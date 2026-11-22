@@ -80,5 +80,7 @@
   "status": "original_unit_teacher_review_draft",
   "certifiedTextbookMatch": false,
   "readyForStudentExam": false,
-  "audioStatus": "pending_source_verified_MP3"
+  "audioStatus": "pending_source_verified_MP3",
+  "speaker": "Khalid",
+  "voice": "single male speaker"
 }
