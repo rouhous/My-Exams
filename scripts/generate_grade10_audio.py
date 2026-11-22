@@ -7,7 +7,8 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 DATA=json.loads((ROOT/'grade10/data.json').read_text())
 OUT=ROOT/'grade10/audio'
 OUT.mkdir(exist_ok=True)
-VOICES=('en-GB-SoniaNeural','en-GB-RyanNeural')
+from listening_voice_roles import VOICE_NAMES, voice_for_speaker
+VOICES=VOICE_NAMES
 def ff(*args):subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y',*map(str,args)],check=True)
 async def one(model):
     passage=model['listening']['passage']
@@ -31,7 +32,7 @@ async def one(model):
         turns=[]
         for p in chunks:
             m=re.match(r'\s*([A-Za-z]+)\s*:\s*(.+)',p,flags=re.S)
-            if m:turns.append((m.group(2).strip(),0 if m.group(1) in ('Teacher','Presenter','Engineer','Guide','Interviewer') else 1))
+            if m:turns.append((m.group(2).strip(),voice_for_speaker(m.group(1),model['listening'].get('speakerGenders',{}))))
         if len(turns)<2:turns=[(passage,0)]
         for repeat in range(2):
             for text,voice in turns:
