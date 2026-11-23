@@ -55,7 +55,7 @@
     const updated = [...host.children].filter(child => child.matches(selector + ', [data-student-sheet]'));
     if (updated.length === pages.length && updated.every((page, i) => page === pages[i])) return;
     pages = updated;
-    document.body.classList.toggle('exam-single-activity', pages.length === 1);
+    document.body.classList.toggle('exam-single-activity', pages.length === 1 && !!host.querySelector('[data-reading], .exam-dual-grid'));
     nav.hidden = pages.length < 2;
     host.classList.toggle('exam-is-paged', pages.length > 1);
     if (pages.length) {
