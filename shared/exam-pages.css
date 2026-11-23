@@ -27,6 +27,6 @@
 /* Compact mobile chrome for one-skill practice pages. */
 @media(max-width:700px){
  body.exam-single-activity .exam-page-nav{display:none!important}
- body.exam-single-activity #paper>.section:first-child{box-shadow:none}
+ body.exam-single-activity #paper>section:first-child{box-shadow:none}
  body.exam-single-activity #sections>.part .exam-dual-grid{order:2}
 }
