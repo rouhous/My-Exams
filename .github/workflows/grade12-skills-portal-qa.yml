@@ -7,6 +7,14 @@ on:
       - shared/grade-catalogue.js
       - upper-grades-practice.html
       - grade12/elective/units/paper-a-preview.html
+      - grade12/core/units/paper-c-preview.html
+      - grade12/core/units/paper-d-preview.html
+      - grade12/core/units/unit3-paper-c.json
+      - grade12/core/units/unit4-paper-d.json
+      - grade12/elective/units/unit3-*-original-draft.json
+      - grade12/elective/units/unit4-*-original-draft.json
+      - grade12-skills.html
+      - sw.js
       - exams.html
       - index.html
       - .github/workflows/grade12-skills-portal-qa.yml
@@ -45,6 +53,35 @@ jobs:
                 temp=Path(directory)/'check.js';temp.write_text(code)
                 subprocess.run(['node','--check',str(temp)],check=True)
             print('PASS JS',path)
+          PY
+      - name: Verify Grade 12 Unit 3 and 4 skill routes for both tracks
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('.')
+          catalogue=(root/'shared/grade-catalogue.js').read_text()
+          page=(root/'grade12-skills.html').read_text()
+          assert "'12-core': ['Retail Therapy', 'Starting University', 'Tourism and Hospitality', 'Travel and Transport']" in catalogue
+          assert "'12-elective': ['The Arts', 'Doing the Right Thing', 'Living in a Changing World', 'Higher Education']" in catalogue
+          assert 'shared/grade-catalogue.js?v=34' in page
+          core=root/'grade12/core/units'
+          for n,paper,title in [(3,'c','Tourism and Hospitality'),(4,'d','Travel and Transport')]:
+            data=json.loads((core/f'unit{n}-paper-{paper}.json').read_text())
+            assert data['unit']=={'number':n,'title':title}
+            assert data['marks']==70 and data['status'].endswith('teacher_review_draft')
+            assert sum(s['marks'] for s in data['sections'].values())==55
+            assert (core/f'paper-{paper}-preview.html').is_file()
+            for kind,count in [('listening1',7),('listening2',8)]:
+              task=json.loads((core/f'unit{n}-{kind}-original-draft.json').read_text())
+              assert task['unit']['number']==n and len(task['questions'])==count
+          elective=root/'grade12/elective/units'
+          for n,title in [(3,'Living in a Changing World'),(4,'Higher Education')]:
+            for kind in ('listening1','listening2','reading1','reading2','writing'):
+              task=json.loads((elective/f'unit{n}-{kind}-original-draft.json').read_text())
+              assert task['unit']['number']==n and task['unit']['title']==title
+            assert (elective/'paper-a-preview.html').is_file()
+          print('PASS: Grade 12 Core and Elective Unit 3/4 source files and skill activity links are present')
           PY
       - name: Verify all Grade 12 skill links open an existing exercise and valid bank key
         run: |
