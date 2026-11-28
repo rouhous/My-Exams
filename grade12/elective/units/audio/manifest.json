@@ -3,11 +3,11 @@
     "sourceFile": "grade12/elective/units/unit1-listening1-original-draft.json",
     "scriptSha256": "e37fea2b36a9581f3b8a6e2054290b2b17e3cb41ac582398d8b9f4699e9aeeb4",
     "mp3": "unit1-listening1.mp3",
-    "durationSeconds": 411.9,
-    "bytes": 4943142,
+    "durationSeconds": 439.93,
+    "bytes": 5279495,
     "voices": [
-      "en-GB-SoniaNeural",
-      "en-GB-RyanNeural"
+      "en-GB-RyanNeural",
+      "en-GB-LibbyNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
@@ -28,11 +28,11 @@
     "sourceFile": "grade12/elective/units/unit2-listening1-original-draft.json",
     "scriptSha256": "3859ba68b321178ffc74b46fb4ebd5a4493bd07ad26caa82d3ec3038acf337b4",
     "mp3": "unit2-listening1.mp3",
-    "durationSeconds": 433.24,
-    "bytes": 5199247,
+    "durationSeconds": 456.96,
+    "bytes": 5483877,
     "voices": [
-      "en-GB-SoniaNeural",
-      "en-GB-RyanNeural"
+      "en-GB-RyanNeural",
+      "en-GB-LibbyNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
@@ -51,13 +51,13 @@
   },
   "unit3-listening1-original-draft.json": {
     "sourceFile": "grade12/elective/units/unit3-listening1-original-draft.json",
-    "scriptSha256": "1cb5a97410b804eb0c44e2cf9df355209256eb85b4759ca6f6060768524fbb6a",
+    "scriptSha256": "9d97ceca1fe9874a4891294e798903a8888b9c6cf876a7ec560d9fd7ab1bd5ae",
     "mp3": "unit3-listening1.mp3",
-    "durationSeconds": 420.23,
-    "bytes": 5043139,
+    "durationSeconds": 447.37,
+    "bytes": 5368834,
     "voices": [
-      "en-GB-SoniaNeural",
-      "en-GB-RyanNeural"
+      "en-GB-RyanNeural",
+      "en-GB-LibbyNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
@@ -76,13 +76,13 @@
   },
   "unit4-listening1-original-draft.json": {
     "sourceFile": "grade12/elective/units/unit4-listening1-original-draft.json",
-    "scriptSha256": "af96c42d1fb43188df0add5021bc9667b946e72974f91a6b608f83344eb29ab5",
+    "scriptSha256": "ba3c94a8c39176eec47174a3f2807cb3907bd003f294869eb684b850904e8fec",
     "mp3": "unit4-listening1.mp3",
-    "durationSeconds": 440.5,
-    "bytes": 5286391,
+    "durationSeconds": 463.49,
+    "bytes": 5562244,
     "voices": [
       "en-GB-SoniaNeural",
-      "en-GB-RyanNeural"
+      "en-GB-LibbyNeural"
     ],
     "scriptReadTwice": true,
     "status": "neural_mp3_generated__teacher_listening_quality_approval_pending"
